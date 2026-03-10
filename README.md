@@ -20,8 +20,7 @@ A library of general-purpose Claude Code agents that solve common development ta
   agents/          # Reusable agent definitions (the library)
   skills/          # Reusable skill definitions (the library)
 projects/
-  babyneeds/       # Project-specific artifacts, context, prompts
-  <project-name>/  # One subfolder per project
+  <project-name>/  # One subfolder per project (artifacts, context, prompts)
 docs/
   claude-code-reference.md  # CC primitives reference
   learnings/                # Extracted patterns & primitives from projects
