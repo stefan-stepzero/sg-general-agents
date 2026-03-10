@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-03-10",
+  "summary": {
+    "totalAgents": 0,
+    "totalSkills": 1,
+    "reusable": 1,
+    "projectSpecific": 0,
+    "byProject": {}
+  },
+  "components": [
+    {
+      "name": "create",
+      "type": "skill",
+      "location": ".claude/skills/create/SKILL.md",
+      "description": "Creates a new agent or skill following CC best practices. Updates the manifest.",
+      "tools": ["Read", "Write", "Edit", "Glob"],
+      "model": null,
+      "project": null,
+      "tags": ["meta", "scaffolding"],
+      "createdAt": "2026-03-10",
+      "promotedFrom": null
+    }
+  ]
+}

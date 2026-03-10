@@ -11,9 +11,17 @@ Reusable Claude Code agents and skills library. Framework-agnostic.
 - `docs/templates/` — Starter agent/skill templates for common patterns
 - `docs/learnings/` — Extracted patterns and primitives from project work
 
+## Available Components
+
+**Always check `manifest.json` at session start.** It lists every agent and skill in this repo — name, description, tools, location, and whether it's reusable or project-specific. Use `/create` to add new ones.
+
 ## Core Directive
 
 **Before writing code directly, always consider whether the task warrants a dedicated agent or skill.**
+
+- Use `/create agent <name>` or `/create skill <name>` to scaffold new components
+- Add `--project <name>` to scope it to a specific project
+- The manifest is updated automatically
 
 Read `docs/claude-code-reference.md` before creating any agent or skill. This is the canonical reference for CC primitives — frontmatter fields, tool restrictions, fork behavior, nesting patterns, and confirmed gotchas.
 
