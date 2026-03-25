@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-cleaning-grounds-grounds-maintenance-and-pest-control-lack-preventive-scheduling-dup",
+  "pain_point_label": "Grounds Maintenance and Pest Control Lack Preventive Scheduling and Monitoring",
+  "matches": [
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core pain is reactive, uncoordinated grounds and pest control work across multiple campuses. A scheduling optimizer can generate preventive maintenance calendars — assigning grounds crews, pest control vendors, and equipment to specific campuses and time slots based on seasonal cycles, campus size, and historical incident data. For a multi-site operator in the Philippines this directly replaces the ad-hoc, per-campus approach with a group-level plan.",
+      "opportunity_sketch": "A preventive maintenance scheduler that auto-generates monthly grounds and pest control assignments across all campuses, factoring in rainy season schedules, vendor availability, and campus-specific risk profiles (wooden structures = termite priority, canteen proximity = rodent priority).",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Grounds deterioration and pest activity in a tropical climate follow seasonal patterns tied to rainfall, temperature, and humidity — all time-ordered signals. A forecasting model trained on historical maintenance logs, weather data, and inspection records can predict when grass overgrowth, drainage blockages, or pest pressure will peak, enabling pre-emptive scheduling rather than reactive response. This directly addresses the 'reactive only when visible' failure mode described.",
+      "opportunity_sketch": "A seasonal risk forecasting tool that predicts high-risk maintenance windows per campus (e.g., drainage clog likelihood spikes in May–July rainy season) and triggers preventive work orders 2–3 weeks in advance.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "classification-visual",
+      "capability_label": "Image & Video Classification",
+      "match_rationale": "Grounds condition and early pest presence can be detected from photos taken during routine walkthroughs — overgrown grass, clogged drains, termite mud tubes, rodent burrow signs, and water pooling are all visually identifiable. A visual classifier trained on labeled campus inspection images could flag deterioration or infestation risk before it becomes severe, replacing subjective 'looks bad' judgments with consistent, scored assessments across campuses.",
+      "opportunity_sketch": "A mobile inspection app where grounds staff photograph areas during walkthroughs; the classifier scores each photo for grass overgrowth severity, drainage obstruction, and visible pest indicators — generating a per-campus condition report automatically.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The multi-campus coordination gap — where each campus independently manages grounds with no group-level oversight — is a workflow problem. A task automation agent can orchestrate the full preventive maintenance cycle: pulling campus schedules, generating work orders, dispatching to vendors, tracking completion, and escalating overdue items without manual coordination overhead. This replaces the fragmented, email-and-phone coordination that leads to inconsistent outcomes across campuses.",
+      "opportunity_sketch": "An automated grounds and pest control workflow agent that creates monthly work orders per campus, sends dispatch instructions to vendors, logs completions from vendor confirmations or photo submissions, and surfaces a group-level compliance dashboard to the facilities director.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Facilities teams lack standardized preventive maintenance documentation — schedules, inspection checklists, pest control treatment logs, and vendor briefs are inconsistent across campuses. Text generation can produce standardized inspection checklists, grounds maintenance SOPs, seasonal pest control briefs, and audit-ready maintenance reports from structured inputs, reducing the administrative burden on campus coordinators and improving consistency across sites.",
+      "opportunity_sketch": "An SOP and report generator that takes a campus profile (size, structure types, location zone) and produces a tailored grounds maintenance checklist and quarterly pest control schedule in plain language ready for campus staff and vendor briefings.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

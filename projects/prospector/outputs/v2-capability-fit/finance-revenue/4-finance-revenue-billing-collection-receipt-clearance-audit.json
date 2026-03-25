@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-receipt-clearance-audit",
+  "pain_point_label": "Official Receipt Issuance & Clearance Certification Bottleneck",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "BIR official receipts are physical paper documents — both the school's own issued receipts and incoming payment proofs from students. OCR and form field extraction can digitize handwritten receipt books, scanned receipt pads, and payment slips into structured records, eliminating the manual cross-check step. This directly attacks the root cause: the gap between physical receipt stock and the digital payment ledger.",
+      "opportunity_sketch": "A receipt digitization pipeline that scans physical OR books via mobile camera, extracts receipt number, amount, date, and student ID via OCR, and auto-posts to the ledger — reducing the manual filing and reconciliation step at issuance.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.55
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The clearance certification process is a multi-step workflow: verify all invoices exist, confirm each has a matching receipt, check for outstanding balances, then generate the clearance document. This is exactly the kind of branching, multi-system workflow an automation agent can execute autonomously — querying the billing system, cross-referencing receipt logs, and flagging exceptions — compressing what takes hours of manual staff time into a sub-minute check.",
+      "opportunity_sketch": "A clearance automation agent that, on request or at graduation trigger, pulls the student's full billing and receipt history, resolves any mismatches, and either issues a signed clearance certificate or surfaces a specific exception list for staff review.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Receipt series audits — ensuring no gaps, no duplicates, no out-of-sequence numbers — are fundamentally anomaly detection tasks on structured sequential data. AI can scan the full receipt number series across all campuses in seconds, flag gaps (missing receipts), duplicates (reused numbers), or suspicious clusters (e.g. large round-number receipts at period-end), replacing the 2-3 day manual audit per campus.",
+      "opportunity_sketch": "An automated receipt series integrity checker that runs nightly or on-demand, flags any receipt number anomalies across all campuses, and generates an audit-ready exception report for BIR compliance review.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Clearance certificates, 'free from liability' letters, and official receipt acknowledgment documents follow rigid BIR-mandated and institutional templates. Text generation can auto-populate these documents from verified payment data, producing print-ready, compliant documents without manual drafting — and can adapt the language for different audiences (student copy, registrar copy, BIR filing copy).",
+      "opportunity_sketch": "A document generation module that produces BIR-compliant official receipt acknowledgments and clearance certificates from structured payment data on demand, formatted for print or email delivery to the student.",
+      "impact": 3,
+      "feasibility": 5,
+      "visibility": 3,
+      "composite_score": 3.5
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Students frequently visit or call the finance office to ask 'Am I cleared?', 'Did my payment go through?', or 'Can I get my OR now?' A conversational agent connected to the billing and receipt system can answer these queries 24/7, reducing the walk-in volume at finance counters and freeing staff for exception handling rather than status lookups.",
+      "opportunity_sketch": "A student-facing WhatsApp or portal chatbot that checks payment and clearance status in real time, confirms which receipts have been issued, and tells the student exactly what outstanding items remain — without requiring a finance staff visit.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

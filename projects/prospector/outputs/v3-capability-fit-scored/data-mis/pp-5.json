@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-data-governance-no-mdm-dup",
+  "pain_point_label": "Absent Master Data Management (MDM) for Students & Staff",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core MDM problem is name and identifier fragmentation across systems — 'Juan Cruz', 'Juan C. Cruz', 'J. Cruz' stored as separate records. AI-assisted data transformation can normalize name formats, standardize identifier schemas, and map equivalent fields across SIS, LMS, finance, and HR schemas to a canonical golden record structure. This is precisely the ETL-with-AI-mapping use case in the capability definition.",
+      "opportunity_sketch": "A transformation layer that ingests raw identity records from each system, applies AI-driven field normalization and schema mapping, and outputs a standardized canonical record set ready for deduplication — reducing manual data cleaning effort by 70–90%.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Entity resolution (duplicate detection) on structured identity data — matching name tokens, birth dates, enrollment dates, campus codes — is a classic structured data classification task. A trained model can score record pairs as 'same person / different person / uncertain' with high precision, replacing the manual review process currently used. Multi-site operators have sufficient record volume to train or fine-tune a lightweight model.",
+      "opportunity_sketch": "A duplicate-detection classifier that ingests feature vectors from cross-system record pairs (name similarity scores, shared attributes, overlapping enrollment windows) and outputs merge/no-merge decisions with confidence scores, routing low-confidence cases to a human review queue.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-semantic",
+      "capability_label": "Semantic Search",
+      "match_rationale": "Fuzzy name matching — identifying that 'Juan Cruz', 'J. Cruz', and 'Juan C. Cruz' are the same person — is fundamentally a semantic similarity problem. Embedding-based search can surface candidate duplicate pairs across the full student and staff population far more accurately than exact-match or Levenshtein distance approaches, especially for Filipino naming conventions with abbreviations, nicknames, and middle name variations.",
+      "opportunity_sketch": "An identity resolution search layer that embeds every student and staff record, then at ingestion time queries for semantically similar existing records above a match threshold — presenting candidate duplicates to an admin for confirmation before a new ID is created.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Full MDM remediation is a multi-step workflow: extract records from each system, normalize formats, run similarity matching, cluster duplicates, generate merge proposals, route uncertain cases to human reviewers, execute confirmed merges, and update all downstream systems — exactly the kind of multi-system orchestration workflow this capability is designed for. A single-step tool cannot handle the branching logic and error handling required across four or more siloed systems.",
+      "opportunity_sketch": "An MDM remediation agent that runs on a nightly schedule: pulls identity deltas from SIS/LMS/HR/finance, applies normalization and matching, auto-merges high-confidence duplicates, queues low-confidence cases in a review dashboard, and writes the golden record back to a master identity store that all systems reference.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-receipt-clearance-audit",
+  "pain_point_label": "Official Receipt Issuance & Clearance Certification Bottleneck",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Physical official receipt pads are handwritten or printed documents; OCR/media parsing can digitize receipt images, handwritten receipt stubs, and scanned OR pads into structured records. This directly addresses the manual cross-check problem by converting physical receipts into machine-readable data for reconciliation and audit trail construction. Philippine BIR compliance requires documented receipt series — parsing scanned receipt batches automates the ingestion step.",
+      "opportunity_sketch": "A mobile or desktop tool where finance staff photograph completed receipt books; the AI extracts receipt number, amount, student ID, date, and OR series into a structured ledger — eliminating manual re-entry and enabling instant gap/duplicate detection.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Receipt series completeness audits are precisely anomaly detection tasks: identifying gaps (missing receipt numbers), duplicates, or out-of-sequence entries in a numeric series against expected consecutive patterns. This directly addresses the 2-3 day per campus month/year-end audit burden by automatically flagging receipt number gaps, duplicate issue entries, or amounts that deviate from corresponding invoices.",
+      "opportunity_sketch": "An automated audit module that ingests the receipt register, runs gap and duplicate analysis across OR series per campus, and produces a BIR-ready exception report — reducing 2-3 days of manual audit to a scheduled nightly job.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Clearance certification requires a multi-step verification workflow: check all invoice records paid, confirm each payment has a corresponding OR issued, verify no outstanding balances, then generate the clearance certificate. This is a classic multi-step decision workflow where an automation agent can orchestrate lookups across payment, invoice, and receipt systems without manual staff intervention. The agent handles branching logic (partial payment, instalment gaps, missing ORs) and only escalates true exceptions.",
+      "opportunity_sketch": "A clearance automation agent that, upon graduation or transfer request, automatically queries the student's full payment and receipt history across all campuses, evaluates clearance eligibility, and either issues the certificate digitally or routes to staff with a specific exception summary — cutting hours-long manual verification to minutes.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Clearance certificates and compliance-ready audit summaries are structured natural language documents with templated content (student name, OR numbers, payment amounts, certification statement). AI text generation can produce BIR-compliant receipt acknowledgment letters, clearance certificates, and audit narrative summaries from structured payment data — replacing manual drafting and ensuring consistent regulatory language.",
+      "opportunity_sketch": "Auto-generate official clearance certificates and BIR audit narrative reports from structured payment/OR data — finance staff review and sign off rather than draft from scratch, cutting document production time per student from 20+ minutes to under 2 minutes.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Multi-channel payment data (bank transfers, over-the-counter, online portals) arrives in disparate formats with inconsistent field naming; mapping these to a canonical OR-linked schema is a data transformation problem. AI-assisted schema mapping can normalize payment records from different channels into a unified receipt-issuance-ready format, directly enabling automated OR issuance against verified payment records.",
+      "opportunity_sketch": "An ETL pipeline that normalizes payment records from bank files, POS exports, and online portal CSVs into a canonical student-invoice-payment-OR schema — enabling automated OR matching and eliminating the manual reconciliation step that currently blocks clearance generation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

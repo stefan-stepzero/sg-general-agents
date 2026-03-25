@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-internal-audit-no-centralized-audit-protocol-dup",
+  "pain_point_label": "No Centralized Audit Protocol or Schedule",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a centralized audit protocol means there is no standardized checklist, schedule, or findings template across campuses. Text generation can produce these artifacts — master audit checklists, site-specific questionnaires, and templated findings reports — from regulatory frameworks and accreditation standards. For a multi-campus operator, this directly addresses the inconsistency problem: one authoritative set of documents replaces ad-hoc, per-campus variations.",
+      "opportunity_sketch": "An AI-assisted audit protocol generator that ingests the operator's accreditation requirements and produces a canonical checklist and findings report template, with campus-specific variants auto-generated from a master. Delivered as editable documents that compliance leads can version-control.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When audits do occur, findings accumulate across campuses in disparate formats — emails, Word docs, spreadsheets. Summarization capability can condense these into standardized executive briefs and cross-campus comparison summaries, making it possible for central leadership to see aggregate compliance posture rather than wading through raw site reports. This directly addresses the symptom that systemic gaps go unnoticed until external auditors arrive.",
+      "opportunity_sketch": "A findings digest tool that pulls audit notes from multiple campuses and generates a consolidated compliance status summary per domain (safety, finance, accreditation), flagging sites with gaps relative to peer campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core operational failure described is that some campuses are audited infrequently and procedural gaps go undetected. Anomaly detection over structured compliance data (audit frequency logs, finding counts, overdue action items per campus) can flag campuses whose audit cadence or findings profile deviates from the network norm — proactively surfacing the campuses that have gone dark before an external auditor does. This addresses the inconsistent coverage problem directly.",
+      "opportunity_sketch": "A compliance monitoring dashboard that ingests audit scheduling and findings data across all campuses and flags statistical outliers — campuses with zero audits in N months, or finding rates far below the network average suggesting under-reporting rather than genuine compliance.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The pain point explicitly names the absence of a formal audit schedule — some campuses audited twice a year, others never. Resource allocation and scheduling AI can generate an optimized audit calendar that accounts for campus risk profile, last audit date, staff availability, and regulatory deadlines, ensuring equitable and risk-weighted coverage across all sites. This directly solves the scheduling vacuum that is the root structural cause of the pain.",
+      "opportunity_sketch": "An audit scheduling optimizer that assigns internal audit visits across campuses based on risk scores, elapsed time since last audit, and auditor capacity — producing a rolling 12-month plan that central compliance leadership can approve and track.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The systemic failure is not just missing documents but a missing process: nobody triggers audits, collects findings, routes action items, or escalates overdue remediation. A task automation agent can own this workflow end-to-end — scheduling audit initiation reminders, distributing checklists to campus leads, collecting completed forms, routing findings to responsible owners, and escalating items that age past SLA. This transforms an ad-hoc, human-dependent process into a repeatable, auditable pipeline.",
+      "opportunity_sketch": "An internal audit orchestration agent that manages the full cycle: sends audit kickoff packages to campus coordinators on schedule, collects completed checklists, generates a findings summary, assigns remediation tasks, and sends escalation alerts to central compliance when deadlines are missed.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Compliance staff at individual campuses often lack access to a consolidated view of what policies, checklists, and prior findings exist across the organization. A RAG system over the operator's compliance document corpus enables campus auditors to ask natural-language questions — 'What does our policy say about safeguarding room checks?' or 'What did the central office flag at other campuses last year for this procedure?' — and get grounded, citation-backed answers. This directly addresses the inconsistency in what each campus auditor knows to look for.",
+      "opportunity_sketch": "A compliance knowledge assistant that indexes all audit checklists, policy documents, accreditation standards, and past findings reports across campuses, enabling any staff member to query it for authoritative guidance during an audit without relying on institutional memory.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

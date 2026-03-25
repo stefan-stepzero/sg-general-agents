@@ -1,0 +1,318 @@
+{
+  "entity": "Catholic Schools Parramatta Diocese",
+  "abbreviation": "CSPD",
+  "website": "parra.catholic.edu.au",
+  "profile_date": "2026-03-11",
+  "known_contact": {
+    "name": "Patrick Ellis",
+    "title": "Executive General Manager — Learning Outcomes",
+    "email_guess": "patrick.ellis@parra.catholic.edu.au",
+    "linkedin": "au.linkedin.com/in/patellis1",
+    "context": "New to role December 2025; former lead of CECG's Catalyst evidence-based teaching framework. Direct owner of Uplift rollout across 80 schools."
+  },
+  "executive_summary": "Catholic Schools Parramatta Diocese is a large, mature, mission-driven education institution operating 80 schools and six early learning centres across Western Sydney, serving approximately 43,000 students with ~4,500 staff. The organisation is in an active strategic transformation cycle anchored by its 2024 five-year plan and the 2025 launch of 'Uplift' — a system-wide evidence-based teaching framework that represents the most significant curriculum initiative in its recent history. CSPD is financially stable, government-funded, and demonstrates rising academic outcomes, with clear leadership appetite for data-driven instructional improvement. The December 2025 appointment of Patrick Ellis as EGM Learning Outcomes — hired from a directly analogous role at CECG — signals that learning outcomes technology and infrastructure will be a priority investment area in 2026 and beyond.",
+  "dimensions": {
+    "industry_vertical": {
+      "primary_sector": {
+        "value": "Education",
+        "evidence": "CSPD operates 80 Catholic K-12 schools and 6 early learning centres in Western Sydney. Homepage: 'Catholic Schools Parramatta Diocese provides quality learning and teaching in a faith-centred environment in its 80 schools and six early learning centres in western Sydney.'",
+        "confidence": "high"
+      },
+      "vertical_niche": {
+        "value": "Catholic systemic K-12 education (faith-based, government-funded, non-selective)",
+        "evidence": "CSPD is the second-largest Catholic diocesan system in NSW. Operates within the Catholic education sector under CSNSW funding arrangements. All schools are non-selective systemic schools with faith formation as a core pillar alongside academic outcomes.",
+        "confidence": "high"
+      },
+      "value_chain_position": {
+        "value": "End-service-provider (direct educator)",
+        "evidence": "CSPD directly delivers education services to ~43,000 students. The system is a buyer and integrator of EdTech, curriculum resources, and professional development — not a supplier to other institutions.",
+        "confidence": "high"
+      },
+      "industry_maturity": {
+        "value": "Mature",
+        "evidence": "Australian Catholic education is a long-established sector with stable regulatory frameworks, well-defined funding models (Schooling Resource Standard), and incremental rather than disruptive evolution. NSW curriculum reform (2022–2027) is driving change but within a stable institutional context. National enrolment growth of 5.7% (2021–2025) indicates steady, not explosive, expansion.",
+        "confidence": "high"
+      }
+    },
+    "business_model": {
+      "revenue_model": {
+        "value": "Grant-funded (government) + fee supplement (modest school fees)",
+        "evidence": "Funding model: 'Mixed: Commonwealth + NSW State recurrent grants (majority), school fees (modest by sector standards), capital grants via Block Grant Authority (BGA), fundraising and donations.' CSNSW needs-based funding arrangement (2024–2029) provides recurrent funding certainty.",
+        "confidence": "high"
+      },
+      "delivery_model": {
+        "value": "Direct service delivery (human-delivered education + blended/online supplement)",
+        "evidence": "Primary delivery is face-to-face classroom instruction across 80 schools. Supplemented by School of Now (SoN) — a blended online program for Year 11–12 specialist subjects delivered across campuses via technology.",
+        "confidence": "high"
+      },
+      "cost_structure": {
+        "value": "Fixed-cost-heavy (people-intensive, facilities-intensive)",
+        "evidence": "~4,500 staff across 80 schools and 6 ELC sites. Capital works program active (new Westmead primary school). Teacher salaries and facilities dominate the cost base — consistent with all large school systems. Scale provides some cost efficiency but headcount and buildings create fixed-cost floor.",
+        "confidence": "high"
+      },
+      "moat_and_network_effects": {
+        "value": "Geographic catchment moat + religious affiliation loyalty + government funding ties + institutional accreditation barrier",
+        "evidence": "CSPD operates as the sole Catholic diocesan system within the Diocese of Parramatta boundary — there is no direct competitor for Catholic systemic education in this geography. Moats: (1) Geographic: Diocese boundary creates a defined, captive catchment; families seeking Catholic education in Western Sydney have no equivalent alternative. (2) Religious affiliation: Catholic identity and faith formation create deep community loyalty and multi-generational enrolment stickiness — families who attended CSPD schools enrol their own children. (3) Government funding ties: NESA registration and CSNSW needs-based funding arrangement (2024–2029) are institutionally locked — new entrants cannot easily replicate accreditation, government relationships, or funding access. (4) Scale network: 43,000 students across 80 schools creates community density; parents, staff, and parish networks reinforce each other, compounding loyalty. No direct network effect in the platform sense, but the community density functions similarly.",
+        "confidence": "high"
+      },
+      "key_operational_dependencies": {
+        "value": "Government funding (Commonwealth + NSW recurrent grants) + NESA compliance + diocese governance + teacher supply pipeline",
+        "evidence": "Four critical operational dependencies: (1) Government funding — recurrent grants (SRS model, CSNSW 2024–2029 needs-based arrangement) constitute the majority of revenue; any policy change to school funding formulae directly threatens operating viability. (2) NESA compliance — all 80 schools must maintain NESA registration; loss of registration for any campus would be operationally catastrophic. (3) Diocese governance — the Bishop of Parramatta holds canonical authority over Catholic education in the diocese; CSPD's mission mandate, school ethos, and strategic direction operate within this governance constraint. (4) Teacher supply pipeline — CSPD requires NESA-accredited teachers across 80 schools; sector-wide teacher shortages (evidenced by Teacher Scholarship Program, 30 places 2026) make teacher supply the primary human capital constraint. Secondary dependencies: CSNSW policy and collective agreements, IT platform continuity (LMS, School of Now), and capital grants pipeline (BGA) for school infrastructure.",
+        "confidence": "high"
+      }
+    },
+    "scale_resources": {
+      "headcount": {
+        "value": "Enterprise (1,000+)",
+        "evidence": "~4,500 staff across 80 schools and 6 early learning centres, plus a system-level central office structure with nine EGM portfolios reporting to CEO.",
+        "confidence": "high"
+      },
+      "headcount_band": {
+        "value": "Enterprise (1000+)",
+        "evidence": "~4,500 staff explicitly stated in CSPD executive summary and cost structure dimension. Consistent with 80 school campuses, 6 ELC sites, and a full central office structure.",
+        "confidence": "high"
+      },
+      "revenue_band": {
+        "value": "Enterprise ($100M+)",
+        "evidence": "NSW Catholic schools receive a share of ~$3.65B in combined Commonwealth and state recurrent funding annually. CSPD's ~43,000 students represent approximately 16% of NSW Catholic school enrolments (~270,000 total), implying recurrent funding in the range of $500M–$700M+ annually. No audited figure publicly extracted, but scale indicators (80 schools, 4,500 staff, active capital works) are consistent with $500M+ operating budget.",
+        "confidence": "medium"
+      },
+      "capitalization": {
+        "value": "Government-grant-funded nonprofit (company limited by guarantee since 2023)",
+        "evidence": "CSPD became CSPD Ltd (company limited by guarantee) in 2023. Annual reports published publicly. Funding secured via CSNSW needs-based arrangement (2024–2029). No VC, PE, or debt financing. Recurrent government grants provide stable, predictable funding.",
+        "confidence": "high"
+      },
+      "asset_intensity": {
+        "value": "Asset-heavy (80 school campuses + 6 ELC sites + capital works)",
+        "evidence": "Active capital works: new Westmead primary school (Darcy Road, opening 2026). Historical BGA capital grants. Western Sydney population growth likely driving further infrastructure pipeline. 80+ campuses represent a substantial fixed asset base.",
+        "confidence": "high"
+      },
+      "financial_health": {
+        "value": "Stable / sustainable (government-backed, no distress signals)",
+        "evidence": "No public financial distress signals. New five-year strategy ('detailed, earnest and ambitious') implies confidence in funding continuity. Active capital investment and system expansion (new school builds) indicate surplus budget capacity. CSNSW 2024–2029 funding certainty removes near-term revenue risk.",
+        "confidence": "medium"
+      },
+      "company_age": {
+        "value": "Legacy (20+ years)",
+        "evidence": "Catholic education in the Diocese of Parramatta has operated for decades (diocese established 1948). CSPD as a formal system entity has existed for many years. Incorporated as company limited by guarantee in 2023 — a governance modernisation, not a new organisation.",
+        "confidence": "high"
+      },
+      "customer_base_scale": {
+        "value": "Large (10K–100K)",
+        "evidence": "~43,000 students enrolled across 80 schools and 6 ELCs. If 'customers' includes families/parents as decision-makers, the number is similar (approximately 25,000–35,000 family units). Student count alone is 43,000.",
+        "confidence": "high"
+      }
+    },
+    "growth_phase": {
+      "value": "Mature / Optimization — with an active strategic transformation layer",
+      "evidence": "CSPD is a mature institution (70+ year-old diocese, stable enrolments, government-funded). However, the 2024 five-year strategic plan, the 2025 Uplift framework launch, and the Patrick Ellis hire all indicate an intentional transformation investment cycle running on top of the steady-state base. This is not a turnaround (no distress) or scaling (not a startup), but optimization with deliberate reinvestment in capability uplift.",
+      "confidence": "high"
+    },
+    "market_position": {
+      "target_customer_segment": {
+        "value": "Families with K-12 children in Western Sydney seeking Catholic faith-based education — primarily middle-income households in growing suburban corridors (Blacktown, Penrith, Camden, Hills District, Hawkesbury, Blue Mountains)",
+        "evidence": "CSPD's 80 schools and 6 ELCs serve ~43,000 students across the Diocese of Parramatta catchment. Primary enrolment draw is Catholic families and community-aligned families who prioritise faith formation alongside academic outcomes. Western Sydney's population profile is predominantly middle-income suburban, with high proportion of migrant Catholic families (Filipino, Indian, Pacific Islander, Latin American communities prominent in the region). Non-selective admissions means CSPD targets the broad K-12 family market, not selective high achievers. Early learning centres extend the segment to families with children aged 0–5, creating a pipeline from ELC through to Year 12. As a vendor prospect, CSPD itself is the institutional buyer (large government-funded B2G/B2I buyer); but its market-facing customer segment is the Western Sydney Catholic family.",
+        "confidence": "high"
+      },
+      "competitive_stance": {
+        "value": "Market leader (dominant share in Catholic education in Western Sydney)",
+        "evidence": "One-in-four students in Western Sydney/Blue Mountains attends a CSPD school. CSPD is the only Catholic diocesan system operating in this geography — it is the dominant provider of Catholic schooling in its region. Competes with government schools and independent schools for enrolments.",
+        "confidence": "high"
+      },
+      "gtm_motion": {
+        "value": "Community/mission-driven + reputation-led enrolment",
+        "evidence": "CSPD does not use outbound sales. Enrolment is driven by Catholic community identity, local school reputation, word-of-mouth, and values alignment. Key touchpoints: Education Mass, Bishop's Awards, LIFTED student leadership forum — all community and mission-led. 'ENROL NOW' CTA on homepage suggests some demand-capture optimisation.",
+        "confidence": "high"
+      },
+      "customer_concentration": {
+        "value": "Diversified (no single customer >5%)",
+        "evidence": "43,000 students across 80 schools — no individual student/family represents meaningful concentration. Funding concentration risk is on the government grant side (Commonwealth + NSW state), not the student side.",
+        "confidence": "high"
+      },
+      "pricing_position": {
+        "value": "Mid-market / accessible (modest fees, below independent school sector)",
+        "evidence": "Funding model notes: 'school fees (modest by sector standards).' CSPD positions as accessible Catholic education — not premium (not independent schools) but above free government schooling. Fees supplement government grants without being the primary revenue source.",
+        "confidence": "medium"
+      }
+    },
+    "org_structure": {
+      "leadership_model": {
+        "value": "Professional management (CEO + EGM structure) with board governance",
+        "evidence": "Jack de Groot (CEO/Executive Director) leads nine EGMs covering learning, wellbeing, mission, capital, data intelligence, and strategic delivery. Board chaired by Elizabeth Crouch AM with professional directors. Incorporated as company limited by guarantee (2023) — modern board governance. No founder-led dynamics.",
+        "confidence": "high"
+      },
+      "org_shape": {
+        "value": "Hub-and-spoke (central system office + 80 school principals)",
+        "evidence": "Central system leadership (CEO + 9 EGMs) sets strategy, frameworks, and policy. Individual school principals operate their campuses with delegated authority. Uplift and SoN are centrally designed but school-delivered. This hub-and-spoke topology is standard for Catholic diocesan systems.",
+        "confidence": "high"
+      },
+      "workforce_model": {
+        "value": "Multi-site / distributed (80+ co-located campuses across Western Sydney)",
+        "evidence": "80 schools and 6 ELCs distributed across Western Sydney (Blacktown, Penrith, Camden, Hills, Blue Mountains corridors). Central office location: Parramatta. Each school operates as a semi-autonomous site. No remote-first structure — education delivery is inherently on-campus.",
+        "confidence": "high"
+      },
+      "talent_profile": {
+        "value": "Domain-expert-heavy (licensed teaching professionals) + operations support",
+        "evidence": "~4,500 staff dominated by NESA-accredited teachers and school leaders (principals, deputy principals, HODs). Supporting functions include IT (Head of IT Education Platform: Jeremy Hind), finance, HR, and mission/wellbeing specialists. The Teacher Scholarship Program and ICT Traineeships signal active pipeline investment. Teacher shortages are a sector-wide constraint.",
+        "confidence": "high"
+      }
+    },
+    "tech_maturity": {
+      "stack_generation": {
+        "value": "Transitional (TechOne and FACES platforms, vendor-managed, cloud-capable; MacBooks/Chromebooks across 90%+ of secondary schools)",
+        "evidence": "MacBooks and Chromebooks across 90%+ of secondary schools. LMS in use (Uplift framework). School of Now (SoN) is a mature blended learning platform. Digital Learning Specialist Teacher role embedded at school level. Head of IT Education Platform (Jeremy Hind) is a dedicated system-level role. LinkedIn research identifies TechOne and FACES as core platforms, vendor-managed with cloud-capable architecture. No evidence of legacy mainframe systems.",
+        "confidence": "medium"
+      },
+      "engineering_practices": {
+        "value": "IT operations team (~15-25 staff) led by Head of Technology Services (Jackson Chan, ex-Qantas/Vodafone); ICT traineeships active; not a software engineering organisation",
+        "evidence": "CSPD is an education service provider. LinkedIn research identifies Jackson Chan as Head of Technology Services, with prior enterprise IT experience at Qantas and Vodafone. Internal IT team estimated at ~15-25 staff supports platform administration, LMS, device management, and infrastructure across 80 schools. ICT traineeships are active, indicating investment in IT workforce pipeline. This dimension reflects IT operations capability rather than software engineering.",
+        "confidence": "medium"
+      },
+      "data_infrastructure": {
+        "value": "Basic-to-intermediate analytics (BI dashboards + student progress tracking; not yet ML-ready at scale)",
+        "evidence": "Uplift framework relies on data and research to drive consistent instruction — implying structured student outcome data collection. 'Data intelligence' is listed as one of the nine EGM portfolios, signalling a dedicated data leadership role. However, no evidence of a modern data warehouse, streaming analytics, or ML-in-production. AI adoption classified as 'exploring.' LIFTED AI forum was values-focused, not deployment-focused.",
+        "confidence": "medium"
+      },
+      "security_posture": {
+        "value": "Intermediate (institutional compliance baseline expected for government-funded education)",
+        "evidence": "As a government-funded entity handling student data for 43,000 minors, CSPD operates under NSW Privacy and Personal Information Protection Act and Commonwealth Privacy Act obligations. No public security incidents identified. Policy Central page suggests documented policy frameworks. No evidence of advanced SOC or zero-trust architecture — consistent with 'intermediate' for the sector.",
+        "confidence": "low"
+      }
+    },
+    "operating_environment": {
+      "regulatory_burden": {
+        "value": "Heavy (education regulation + child safety + privacy + government funding compliance)",
+        "evidence": "CSPD operates under: NESA school registration requirements, NSW Education Act, Commonwealth Schools Funding Act, Child Protection obligations (Working with Children Checks, mandatory reporting), Privacy Act (student data for minors), CSNSW funding accountability frameworks, and Catholic Church governance requirements. Board governance via company limited by guarantee adds ASIC compliance. Policy Central page on website confirms documented policy infrastructure.",
+        "confidence": "high"
+      },
+      "geographic_scope": {
+        "value": "Single-region / sub-national (Western Sydney and Blue Mountains, NSW Australia)",
+        "evidence": "All 80 schools and 6 ELCs are located within the Diocese of Parramatta geographic boundary — Western Sydney, Hills District, Hawkesbury, Blue Mountains, Lithgow. No operations outside this region or Australia.",
+        "confidence": "high"
+      },
+      "macro_sensitivity": {
+        "value": "Recession-resistant (government-funded essential service)",
+        "evidence": "CSPD's primary revenue (government grants) is non-cyclical — tied to student enrolment counts and SRS funding formulae, not economic conditions. School fee component is modest and largely uncollectable from families in distress (education is functionally essential). Western Sydney population growth provides enrolment tailwind regardless of macro conditions.",
+        "confidence": "high"
+      },
+      "governance_obligations": {
+        "value": "Nonprofit (company limited by guarantee) + Catholic Church governance + government accountability",
+        "evidence": "CSPD Ltd incorporated 2023 as company limited by guarantee — nonprofit structure, ASIC-registered. Board chaired by Elizabeth Crouch AM. Catholic education governance also involves Bishop of Parramatta as canonical authority. Annual reports published publicly, consistent with government funding accountability obligations.",
+        "confidence": "high"
+      }
+    },
+    "culture_brand": {
+      "innovation_posture": {
+        "value": "Pragmatic / evidence-driven (adopts when clear evidence and ROI, not early adopter)",
+        "evidence": "The Uplift framework explicitly draws on 'Science of Learning, Cognitive Load Theory, Science of Reading, and Rosenshine's Principles' — all well-validated, peer-reviewed frameworks. LIFTED AI forum framed AI through a 'values lens' rather than deploying tools. Ann D Clark Lecture focus: 'connecting research with classroom teaching; explicit instruction, formative assessment, structured literacy.' Pattern is evidence-first, not experimentation-first.",
+        "confidence": "high"
+      },
+      "brand_positioning": {
+        "value": "Community/mission-driven (Catholic identity + student flourishing + social justice)",
+        "evidence": "Homepage: 'where every child belongs, learns and thrives.' Six strategic pillars include faith formation as first pillar. Project Compassion (Lenten community fundraising), Bishop's Awards, Catholic social mission language throughout. CEO Jack de Groot background: former St Vincent de Paul Society NSW CEO — mission-first leadership identity.",
+        "confidence": "high"
+      },
+      "public_values": {
+        "value": "Mission-driven (Catholic values and faith formation are non-negotiable constraints on all decisions)",
+        "evidence": "Faith formation is Strategic Pillar 1. Mission Enhancement Team (led AI forum through values lens). Bishop's Awards for faith witness. Catholic social teaching embedded in school community programs (Project Compassion). This is a canonical mission-constrained organisation — commercial logic is secondary to Catholic identity and student wellbeing.",
+        "confidence": "high"
+      },
+      "employer_brand": {
+        "value": "Strong-in-niche (well-regarded Catholic education employer in Western Sydney)",
+        "evidence": "Teacher Scholarship Program (30 places, 2026 cohort) signals active pipeline investment. Professional development program (Ann D Clark Lecture, Uplift coaching). ICT traineeships for non-teaching pathways. No significant public industrial disputes or negative employer sentiment identified. Active careers section with multiple pathways (teaching, casual, non-teaching, leadership, ICT). The mission/values proposition attracts staff who align with Catholic education.",
+        "confidence": "medium"
+      }
+    }
+  },
+  "contact_intelligence": {
+    "patrick_ellis": {
+      "role_relevance": "Primary buyer contact for any learning outcomes, assessment, curriculum, EdTech, or professional development solution",
+      "tenure_at_cspd": "Joined December 2025 — approximately 3 months in role at profile date (2026-03-11)",
+      "likely_mandate": "Deliver the Uplift evidence-based teaching framework across 80 schools; build assessment and data infrastructure to measure learning outcomes; establish professional development systems for teacher capability uplift",
+      "prior_role_signal": "Led CECG's 'Catalyst' framework (~22,000 students, 56 schools) — CSPD's Uplift is structurally analogous. He is not evaluating whether to do evidence-based teaching; he is figuring out how to do it at scale in a new, larger system.",
+      "entry_angle": "Tools and platforms that support: (1) formative assessment and progress tracking, (2) teacher professional development and coaching, (3) data visibility for school leaders on student outcomes. AI-assisted feedback and adaptive learning tools are medium-term opportunities once foundational data infrastructure matures.",
+      "engagement_timing": "90-day listening phase likely ending ~March 2026. Now moving into diagnosis and planning. Q2 2026 is likely first window for vendor conversations.",
+      "contact_guess": "patrick.ellis@parra.catholic.edu.au (standard CSPD format: firstname.lastname@parra.catholic.edu.au)"
+    },
+    "secondary_contacts": {
+      "jeremy_hind": {
+        "title": "Head of IT Education Platform",
+        "relevance": "Technology procurement, LMS decisions, EdTech platform integration — secondary contact for any platform/infrastructure conversation"
+      },
+      "jack_de_groot": {
+        "title": "CEO / Executive Director",
+        "relevance": "Sponsor-level stakeholder for enterprise-wide partnerships; has public voice on strategy; approachable via thought leadership channels"
+      }
+    }
+  },
+  "gaps": [
+    "Specific annual report financials (revenue, expenditure, surplus/deficit) — PDFs available at parra.catholic.edu.au/about/our-strategy-and-policies/annual-reports but not retrieved",
+    "Full nine-EGM portfolio list — EGM page exists but individual names/portfolios beyond Patrick Ellis not fully documented",
+    "CSPD's internal LMS/platform stack — specific vendor relationships (Canvas, Schoolbox, Google Workspace, etc.) not publicly disclosed",
+    "Current AI tools or vendors under evaluation — no public procurement signals found; 'exploring' phase only",
+    "Capital grants awarded to CSPD schools from federal Capital Grants Program 2024 — referenced in research but not extracted",
+    "Patrick Ellis's specific KPIs or formal mandate at CSPD — inferred from LinkedIn and prior CECG role, not confirmed",
+    "Teacher FTE breakdown and any restructuring signals post-2023 incorporation",
+    "Enrolment capacity vs. demand in specific growth corridors (Penrith, Blacktown, Marsden Park)",
+    "Security posture and data infrastructure details — internal systems not publicly visible",
+    "Specific EdTech vendors currently contracted (assessment platforms, parent engagement tools, student information systems)"
+  ],
+  "data_quality_score": {
+    "overall": 0.9406,
+    "passing_threshold": 0.7,
+    "method": "semantic-rubric-haiku",
+    "dimensions": {
+      "industry-vertical": 1,
+      "business-model": 1,
+      "scale-resources": 0.849,
+      "market-position": 0.9,
+      "org-structure": 1,
+      "tech-maturity": 0.781,
+      "operating-environment": 1,
+      "culture-brand": 0.908
+    },
+    "strong_dimensions": {
+      "industry-vertical": {
+        "label": "Industry & Vertical",
+        "score": 1
+      },
+      "business-model": {
+        "label": "Business Model",
+        "score": 1
+      },
+      "scale-resources": {
+        "label": "Scale & Resources",
+        "score": 0.849
+      },
+      "market-position": {
+        "label": "Market Position",
+        "score": 0.9
+      },
+      "org-structure": {
+        "label": "Org Structure",
+        "score": 1
+      },
+      "tech-maturity": {
+        "label": "Tech Maturity",
+        "score": 0.781
+      },
+      "operating-environment": {
+        "label": "Operating Environment",
+        "score": 1
+      },
+      "culture-brand": {
+        "label": "Culture & Brand",
+        "score": 0.908
+      }
+    },
+    "weak_dimensions": {},
+    "total_properties_scored": 34
+  },
+  "sources": {
+    "primary": [
+      "parra.catholic.edu.au (site scan: homepage, about, leadership, careers, contact-us, policy-central, parents-as-partners, latest-news)",
+      "web research synthesis: catholicoutlook.org, cathnews.com, parracatholic.org, csnsw.catholic.edu.au, au.linkedin.com/in/patellis1, catalyst.cg.catholic.edu.au, en.wikipedia.org/wiki/Catholic_education_in_the_Diocese_of_Parramatta"
+    ],
+    "scan_date": "2026-03-11"
+  }
+}

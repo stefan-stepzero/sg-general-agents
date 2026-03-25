@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "payroll-salary-grade-inconsistency",
+  "pain_point_label": "Salary Grade & Allowance Logic Inconsistency",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Salary grade logic is currently fragmented across campus-specific spreadsheets and payroll system configs with no unified master schema. AI-assisted data transformation can consolidate these disparate structures — mapping campus-specific pay grades, allowance codes, and role hierarchies into a single canonical schema. This directly attacks the inconsistency root cause by making the scattered logic machine-readable and comparable across sites.",
+      "opportunity_sketch": "An AI-assisted ETL layer ingests salary spreadsheets and payroll exports from each campus, normalizes field names and grade codes to a unified master schema, and flags where definitions diverge — producing a canonical salary grade register as the single source of truth.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "When salary grades or allowances are inconsistently applied across hundreds of staff records, the deviations look like statistical anomalies relative to the expected grade-role-campus pattern. Anomaly detection can scan payroll records to surface staff whose pay components diverge from what the grade and role classification would predict, catching miscalculations or unapplied adjustments before payroll runs. This is especially valuable after grade changes cascade across sites.",
+      "opportunity_sketch": "An anomaly detection model trained on the normalized grade register continuously scans payroll records and flags staff whose allowance composition or base pay deviates from the expected grade profile — giving payroll staff a short exception list to review each cycle rather than manually cross-checking hundreds of rows.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "When a new allowance is introduced or a salary grade is revised, the current workflow requires manual recalculation across all affected staff records — a multi-step process spanning multiple campus payroll files. A task automation agent can orchestrate the full recalculation workflow: identify all staff in the affected grade, apply the revised logic, propagate changes across campus records, generate a change-impact report, and queue for payroll approval. This replaces days of manual rework with a supervised automated run.",
+      "opportunity_sketch": "A payroll adjustment agent accepts a grade change or new allowance definition as input, automatically propagates the recalculation across all affected staff records across campuses, and produces an audit trail showing before/after values per employee — ready for sign-off rather than manual computation.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "generation-code",
+      "capability_label": "Code Generation",
+      "match_rationale": "Salary grade logic is currently hardcoded in spreadsheet formulas or payroll system scripts that vary by campus, making it brittle and hard to audit. AI code generation can translate the natural-language salary policy rules into standardized, version-controlled calculation scripts or SQL salary computation logic that applies uniformly. This shifts grade logic from opaque spreadsheet cells to auditable, reusable code that can be tested and updated centrally.",
+      "opportunity_sketch": "Given documented salary policy rules (grade bands, allowance eligibility conditions, step increments), an AI coding tool generates a canonical salary calculation module — as SQL views or Python functions — that all campuses reference instead of maintaining their own formula variants.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Designing a unified salary grade structure that satisfies multiple simultaneous constraints — budget ceilings per campus, regulatory minimum wage floors, existing contract commitments, role hierarchy fairness, and inter-site equity — is a classic constraint satisfaction problem. AI constraint solvers can find valid unified grade configurations that honor all of these constraints, which is practically impossible to do manually across 500+ staff and multiple campuses.",
+      "opportunity_sketch": "A constraint satisfaction model takes the existing grade bands, staff distribution, and budget envelopes per campus as inputs, and outputs a proposed unified salary structure that is internally consistent, regulation-compliant, and budget-feasible — giving leadership a defensible starting point for standardization.",
+      "impact": 4,
+      "feasibility": 2,
+      "visibility": 5,
+      "composite_score": 3.9
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

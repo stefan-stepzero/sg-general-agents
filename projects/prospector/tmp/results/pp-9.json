@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-submission-delays-and-fund-holds",
+  "pain_point_label": "Submission Delays & Penalty-Triggered Fund Freezes",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step compliance workflow that repeatedly fails at the same friction points: gathering supporting docs, counter-signature cycles, resubmission within 10-day windows. A task automation agent can orchestrate the entire liquidation pipeline — pulling financial records, assembling required attachments, routing for internal sign-off, and submitting — with no human bottleneck until an exception occurs. For thin compliance teams (1-2 FTE per campus), this is the highest-leverage intervention because it removes the 'defer until deadline crunch' failure mode.",
+      "opportunity_sketch": "A deadline-driven agent that triggers 3 weeks before each GASTPE/LGU liquidation close, automatically collects supporting documents from the ERP and file store, checks completeness against a government-specific checklist, initiates internal approval routing, and tracks resubmission deadlines — alerting compliance staff only when human judgment is needed.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Government audit query responses and resubmission cover letters require precise, formal language — exactly the kind of output thin compliance teams struggle to produce under 10-day windows. LLM-generated draft responses grounded in the operator's financial records and prior correspondence would cut response time from days to hours. This also addresses the 'incomplete submission' failure mode: auto-generating cover letters that explicitly enumerate all attached supporting documents reduces the chance of reviewers flagging missing items.",
+      "opportunity_sketch": "An AI drafting assistant that generates audit response letters, resubmission narratives, and liquidation cover letters by reading the relevant financial records and prior government correspondence — producing compliance-ready drafts that a single FTE can review and sign off on within an hour.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The operator's CFO already assumes 20% of government revenue will not arrive — meaning the risk is felt but unquantified at a per-campus, per-program level. A risk model trained on historical submission outcomes (which campuses, which programs, which submission types have triggered freezes) can score each pending submission's freeze probability before it is filed. This lets the CFO prioritize intervention on the highest-risk submissions rather than treating all campuses identically.",
+      "opportunity_sketch": "A risk scoring model that ingests historical submission records, staff workload, deadline proximity, and completeness signals to output a freeze-risk score per pending claim — feeding a prioritized intervention dashboard the CFO reviews weekly.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Government notices, audit queries, and LGU correspondence arrive as PDFs or scanned documents with embedded deadlines, reference numbers, fund identifiers, and response windows. Compliance staff currently read these manually and often miss embedded 10-day resubmission windows. Entity extraction can automatically parse incoming government documents and surface the critical fields — deadline date, claim reference, required action, fund amount — into a structured tracker with no manual data entry.",
+      "opportunity_sketch": "An extraction layer that processes incoming government PDFs/emails, extracts deadline dates, fund references, required actions, and claim amounts, and feeds them directly into a compliance calendar — eliminating the manual reading step where deadlines are currently missed.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Supporting documents required for government liquidations frequently exist as scanned receipts, handwritten acknowledgment forms, counter-signed paper approvals, and image-based PDFs. When a submission is flagged as incomplete, it is often because a required scanned document was not machine-readable or indexable. OCR/media parsing converts these into searchable, structured records that can be verified against the submission checklist before filing, catching 'missing doc' errors before they trigger a freeze.",
+      "opportunity_sketch": "A document ingestion pipeline that OCRs all scanned supporting documents at upload time, extracts key fields (amounts, dates, signatories), and cross-checks them against the government program's required document matrix — flagging gaps before the submission deadline.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Government correspondence arrives from multiple agencies (GASTPE, LGU, DepEd, CHED) with varying urgency: some letters are acknowledgments, others are audit queries with hard response windows, others are fund release notices. Compliance staff currently triage these manually. A text classifier can route incoming government communications by type (audit query, fund release, compliance notice, resubmission request) and urgency tier — ensuring 10-day response windows are never lost in an inbox.",
+      "opportunity_sketch": "An email/document classifier that categorizes incoming government communications by agency, document type, and urgency, auto-assigning them to the correct compliance workflow with a computed response deadline — so nothing with a hard window sits unactioned.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 1-2 compliance FTEs per campus and overlapping government submission cycles across multiple programs, the thin staffing is the structural cause of deadline misses. A scheduling optimizer can sequence submission preparation tasks across staff and campuses, accounting for LGU counter-signature lead times, to ensure the highest-risk deadlines are staffed adequately and no two campuses simultaneously create a crunch for shared regional compliance resources.",
+      "opportunity_sketch": "A compliance workload scheduler that maps all upcoming government deadlines across campuses against staff capacity, flags overload windows 4-6 weeks in advance, and recommends task reassignment or external support engagement before the crunch period begins.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

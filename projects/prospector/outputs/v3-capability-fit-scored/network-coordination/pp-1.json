@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-decision-rights-approval-bottlenecks-dup",
+  "pain_point_label": "Multi-Level Approval Bottlenecks",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Approval chains spanning campus → regional → corporate are exactly the multi-step workflow this capability targets. The pain mechanism — unclear delegation, scattered signing authority, and sequential handoffs across 3+ decision makers — maps directly to autonomous workflow orchestration with branching logic. For a 500-staff operator this is technically feasible via integration with existing HRIS/ERP and email systems.",
+      "opportunity_sketch": "An approval-routing agent that ingests a request (budget, hire, curriculum change), determines the correct delegation path based on policy rules, routes to the right approver at each level, escalates on timeout, and surfaces a live status dashboard to the requestor.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A significant share of approval delay comes from requests arriving without sufficient justification or context, forcing back-and-forth clarification cycles. AI text generation can auto-draft the approval memo, business case summary, or supporting narrative from structured intake data, reducing the friction that causes requests to stall at each level.",
+      "opportunity_sketch": "A request-drafting assistant that takes a budget request or hiring need and generates a ready-to-submit approval memo with rationale, financial impact summary, and policy compliance language tailored to the receiving approver's level.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "The core bottleneck includes unclear delegation — requests that should be approved at the campus level incorrectly escalate upward, consuming senior capacity. Text classification can auto-triage incoming requests by type, dollar threshold, and urgency, routing each to the correct approval tier before a human touches it. This directly addresses the 'scattered signing authority' mechanism.",
+      "opportunity_sketch": "An intake classifier that reads a submitted request, assigns it an approval tier and priority score, flags any policy conflicts, and pre-routes it to the correct decision maker — eliminating the manual triage step that currently causes the first delay in the chain.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Approvers frequently delay decisions because they cannot quickly locate the relevant policy, delegation matrix, or precedent. RAG over the organization's policy corpus, board resolutions, and prior approvals lets any approver instantly answer 'am I authorized to approve this?' or 'what is the policy on capital projects above $X?' — removing a common reason approvals sit in an inbox.",
+      "opportunity_sketch": "A policy Q&A assistant embedded in the approval workflow that lets approvers query the full governance document corpus in plain language, surfacing the exact policy clause and any prior comparable approvals — with citations — in seconds.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Defining a delegation matrix that simultaneously satisfies dollar thresholds, role seniority, functional area ownership, regulatory requirements, and geographic scope is a constraint satisfaction problem. Current pain stems from this matrix being implicit and inconsistent; AI can generate and validate a coherent delegation configuration that satisfies all hard constraints before it is published.",
+      "opportunity_sketch": "A delegation-design tool that takes inputs (roles, thresholds, regulatory requirements, org structure) and outputs a valid, conflict-free signing authority matrix — with explanations of every constraint satisfied — that governance teams can adopt or adjust.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-extracurricular-cocurricular-program-sustainability-churn-dup",
+  "pain_point_label": "High Program Churn & Dependency on Individual Faculty Sponsors",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core governance gap is the absence of documented program frameworks — curricula, budgets, succession plans, recruitment processes. AI text generation can draft these artifacts from minimal inputs (program type, school context, goals), converting tribal knowledge held by one teacher into transferable documentation. This directly attacks the fragility mechanism: programs die when undocumented.",
+      "opportunity_sketch": "A program documentation generator where a faculty sponsor answers 10-15 structured questions and AI produces a full program charter — mission, curriculum outline, annual calendar, budget template, succession roles, and recruitment process — ready for administrator review and storage.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When a faculty sponsor does leave, institutional knowledge about a program is often scattered across emails, meeting notes, student records, and informal conversations. Summarization can condense this dispersed content into a program handover brief, reducing the cold-start cost for the incoming sponsor and making continuity plausible even mid-cycle.",
+      "opportunity_sketch": "An automated program-offboarding tool that ingests the departing teacher's emails, shared documents, and calendar entries related to the program and produces a structured handover summary for the incoming coordinator.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Multi-site operators could build a shared knowledge base of successful program governance frameworks, curricula, and operational playbooks across all campuses. A RAG system would let any teacher or administrator query this corpus and receive grounded, school-specific guidance on how to set up or revive a program, reducing dependency on any single individual's tacit knowledge.",
+      "opportunity_sketch": "An internal 'Program Playbook' assistant where staff at any campus can ask 'How do we run a debate team?' and receive a synthesized answer drawn from documented programs across all sites, with citations to specific charter documents they can adapt.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Program sustainability requires recurring governance actions — annual budget submissions, end-of-year reports, recruitment outreach, succession check-ins — that currently fall entirely on the individual sponsor and get dropped when they disengage. A task automation agent can manage these recurring workflow steps, sending prompts, collecting inputs, and escalating to administrators, so governance continuity does not depend on faculty initiative.",
+      "opportunity_sketch": "A program lifecycle agent that tracks each co-curricular program on a governance calendar, automatically prompts sponsors for annual reviews, flags programs with no documented succession plan, and escalates stalled programs to the Head of Student Life for intervention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

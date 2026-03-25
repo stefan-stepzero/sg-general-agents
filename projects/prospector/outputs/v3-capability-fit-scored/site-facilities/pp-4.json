@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "site-facilities-safety-security-access-control-inconsistency-across-campuses-dup",
+  "pain_point_label": "Physical Access Control Is Inconsistent and Poorly Documented Across Campuses",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Access control logs — even fragmented ones from keycards, gate books, or RFID — can be fed into an anomaly detection model to flag abnormal access patterns: a dismissed staff member's card being used after termination, an after-hours entry to a server room, or a contractor badge appearing on a campus they were never assigned to. The pain is precisely that no human is watching these patterns across campuses, which is exactly the gap anomaly detection fills.",
+      "opportunity_sketch": "A cross-campus access anomaly monitor that ingests electronic logs from any system (RFID exports, sign-in CSVs) and surfaces deviations — late-night entries, revoked credentials still active, unusual frequency — for a security coordinator to review daily.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The most acute pain is that when a staff member is dismissed, there is no systematic process to revoke access across all areas and systems. A task automation agent can orchestrate the offboarding workflow: receive a termination trigger from HR, identify which campuses and access systems that person is registered in, issue revocation commands or generate tickets for each campus security contact, and confirm completion — eliminating the manual coordination failure that leaves credentials active.",
+      "opportunity_sketch": "An AI-driven offboarding automation agent that, upon HR system trigger, cross-references all campus access registries, generates revocation instructions per system type, dispatches them to the responsible staff, and logs confirmation for audit purposes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each campus uses a different access control system — paper logs, keycards, RFID — producing data in incompatible formats. Before any unified audit trail can exist, these heterogeneous records must be normalized into a common schema. AI-assisted data transformation can map disparate log formats (CSV exports, scanned sign-in sheets post-OCR, database extracts) into a standardized access event schema without requiring all campuses to replace their systems.",
+      "opportunity_sketch": "A data normalization pipeline that ingests access logs from each campus's existing system and outputs a unified access event table (person_id, campus, zone, timestamp, entry/exit) — enabling the first cross-campus audit trail without replacing any hardware.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Many campuses still use paper visitor logs, handwritten gate registers, and printed key-issuance ledgers. These paper records contain real access data but are invisible to any digital system. OCR and handwriting recognition can digitize these records, converting them into structured entries that feed the unified access log — directly addressing the 'no audit trail' problem at campuses still operating with manual systems.",
+      "opportunity_sketch": "A document digitization pipeline that accepts scanned or photographed gate logs and sign-in books, extracts visitor name, time, purpose, and host via OCR/handwriting recognition, and ingests them into the central access registry.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Regulatory compliance requires documented access control policies, visitor management procedures, and audit-ready reports. Each campus currently operates without formal documentation. LLM-based text generation can produce standardized access control policy drafts, incident report templates, and pre-audit compliance summaries from structured access data — turning raw logs into the documentation that DepEd and local government auditors require.",
+      "opportunity_sketch": "An automated policy and compliance report generator that produces per-campus access control policy documents, monthly access summaries for leadership, and pre-audit evidence packages in the format required by DepEd inspection criteria.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all campuses represent equal security risk — some have labs, server rooms, or high-value equipment while others are primarily classrooms. A risk scoring model can evaluate each campus's access control posture (system type, recency of access reviews, number of active credentials, incident history) and produce a risk score that helps the central security team prioritize remediation efforts across 10+ campuses with limited resources.",
+      "opportunity_sketch": "A campus security posture scoring tool that rates each site on access control maturity — factoring in system type, credential hygiene, visitor logging completeness, and last audit date — and ranks campuses by remediation priority for the central security coordinator.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "When a security incident occurs and the organization needs to reconstruct who was on campus at a given time, staff must manually search across disparate logs from multiple campuses and systems. A RAG system over the unified access log corpus allows a security officer to ask natural language queries — 'Who had access to the server room on March 10 between 2pm and 6pm?' — and receive a grounded, cited answer synthesized from whatever records exist across campuses.",
+      "opportunity_sketch": "A security incident investigation assistant that allows authorized staff to query the cross-campus access log in natural language, returning a synthesized timeline of access events with source citations from each campus's records.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

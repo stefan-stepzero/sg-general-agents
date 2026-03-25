@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Executive Briefing Brief Builder",
+    "one_liner": "Generates executive briefings from board packs, strategic documents, and sector reports tailored for succession leaders or new executives.",
+    "problem": "WISE, Acasus, School for Life, and PHINMA face key-person executive dependency. When new CEOs or strategy leaders onboard, they spend months synthesizing institutional history, governance constraints, and strategic context. Institutional knowledge is scattered and not structured for new leaders.",
+    "ai_technique": "Hierarchical summarization with organization-specific context tagging (governance structures, key relationships, historical precedents)",
+    "how_it_works": "System ingests 5 years of board papers, strategy documents, and program evaluations. When a new executive joins, they receive a personalized briefing that covers: organizational governance structure (diagram of board roles, Catholic diocesan relationships for CSPD, funding sources and key dependencies), strategic priorities and historical precedent (why prior pivots succeeded or failed), and key stakeholder relationships (government partners, accreditation bodies, major donors). Briefing is auto-generated but can be customized by departing executive or board chair to highlight specific context.",
+    "target_companies": ["wise", "acasus", "school-for-life"],
+    "buyer_persona": "CEO, Chief Strategy Officer, Board Chair",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Leadership Dashboard with Governance Oversight",
+    "one_liner": "Unified executive dashboard displaying accreditation status, board decision timelines, regulatory compliance, and strategic KPIs in one view.",
+    "problem": "PHINMA, WISE, and Kinetic executive teams lack a single view of organizational health across governance (accreditation, compliance), financial (subsidy dependency, margin trends), and strategic (OKR progress, campus expansion) dimensions. Leadership spends time stitching data from multiple systems rather than on decision-making.",
+    "ai_technique": "Multi-source data integration with education-specific KPI tagging (CHED compliance status, AITSL faculty proficiency levels, student achievement trends)",
+    "how_it_works": "System connects to institutional data sources (SIS, HR, ERP, accreditation dashboards, board management software) and creates a single executive view with sections: Governance & Compliance (accreditation status from CHED, audit findings pipeline, board decision approval rates), Financial Health (tuition revenue trends, subsidy dependency, capital projects status), and Strategic Execution (campus expansion milestones, enrollment forecasts vs. targets, program launch progress). Each section is drillable; clicking on 'CHED accreditation at risk' surfaces underlying evidence and recommended actions.",
+    "target_companies": ["phinma", "wise", "kinetic"],
+    "buyer_persona": "CEO, CFO, Chief Operating Officer",
+    "tier": "standalone",
+    "confidence": "high"
+  },
+  {
+    "name": "Succession Readiness Planner",
+    "one_liner": "Identifies executive capability gaps and creates personalized development plans to prepare internal candidates for key leadership roles.",
+    "problem": "Acasus, School for Life, and WISE face succession risk as founder/long-serving CEOs consider transitions. Identifying and developing internal successors is ad hoc. There is no systematic way to assess capability gaps (strategic thinking, governance acumen, cross-functional leadership) or track development progress.",
+    "ai_technique": "Competency assessment combining structured feedback data, role-specific capability frameworks, and education-sector leadership benchmarks",
+    "how_it_works": "System ingests: 360-degree feedback on leadership candidates, historical board decisions they've influenced (if applicable), and education-sector executive competency frameworks (developed for K-12 principals and university presidents). Generates: capability assessment comparing candidate to CEO/COO role requirements, identifies gaps (e.g., 'lacks board-level strategic communication experience'), and auto-generates a 12-month development plan (board committee rotations, executive coaching on education governance, mentorship from external education leaders). Progress is tracked quarterly and tied to succession timeline.",
+    "target_companies": ["acasus", "school-for-life", "wise"],
+    "buyer_persona": "Board Chair, CEO, Chief Human Resources Officer",
+    "tier": "module",
+    "confidence": "medium"
+  },
+  {
+    "name": "Executive Decision Record Assistant",
+    "one_liner": "Structures executive decisions (strategic pivots, major investments, governance changes) with clear rationales, alternatives considered, and assumptions for future audit and learning.",
+    "problem": "Kinetic, PHINMA, and WISE leaders make major decisions (campus launches, program exits, accreditation strategy changes) but rarely document why. 2-3 years later, when a decision's assumptions prove wrong, teams can't understand the original logic, repeating analysis or reversing good decisions under new leadership.",
+    "ai_technique": "Decision documentation templates with multi-factor reasoning capture and assumption tracking",
+    "how_it_works": "When an executive decision is made, the process starts a decision record: name ('Launch STEM campus in Region X'), description, decision date, alternatives considered (with why each was rejected), key assumptions (government subsidy unchanged, enrollment demand of 500 students/year), success metrics, and review dates. System stores this and flagged assumptions are monitored—if government funding policy changes, system auto-alerts that a key assumption of campus launch decision has shifted, triggering leadership review. Useful for both institutional learning and for new leaders inheriting a prior team's decisions.",
+    "target_companies": ["kinetic", "phinma", "wise"],
+    "buyer_persona": "CEO, Chief Strategy Officer, Board Chair",
+    "tier": "feature",
+    "confidence": "medium"
+  }
+]

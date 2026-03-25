@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-donor-philanthropic-no-philanthropic-model-dup",
+  "pain_point_label": "No Clear Philanthropic Value Proposition or Give Options",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core of this pain point is the absence of compelling written content: a mission statement that resonates with donors, tiered giving menus (scholarship endowments, naming rights, capital projects), impact narratives showing how donations are used, and donor recognition copy. Text generation directly produces all of these artifacts from minimal institutional input. Education operators typically have scattered impact data but lack the communications staff to craft polished philanthropic messaging.",
+      "opportunity_sketch": "An AI-assisted philanthropy content suite that generates a tiered giving menu, impact stories, donor stewardship letters, and recognition program copy — tailored to the institution's programs and outcomes — from a structured intake form.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "A research agent can autonomously benchmark peer institutions' philanthropic models — surveying comparable schools' giving pages, naming opportunities, recognition tiers, and impact reporting to surface what compelling programs look like. Multi-site education operators often lack development staff with time for this comparative research, yet knowing what works elsewhere is exactly what's needed to design their own model.",
+      "opportunity_sketch": "A benchmarking agent that crawls 10–20 peer institution giving pages, extracts their giving tiers, naming opportunities, recognition structures, and impact metrics, and synthesizes a structured report with recommendations the operator can adapt.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "The institution likely has dispersed evidence of donor impact — annual reports, program outcome data, student success stories, capital project records — but cannot readily surface or synthesize this into donor-facing narratives. RAG enables a system to retrieve relevant institutional evidence and generate grounded, citation-backed impact statements that answer the donor question 'how is my money used?' without requiring staff to manually compile proof points.",
+      "opportunity_sketch": "A donor impact Q&A tool that draws on the institution's own documents (annual reports, program data, project completions) to generate specific, evidence-backed answers to prospective donor questions and draft impact sections of giving materials.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Standing up a philanthropic program involves coordinating multiple repetitive workflows: drafting and sending acknowledgment letters, routing gift notifications to the right department heads, generating tax receipts, and scheduling stewardship touchpoints. For a 500+ staff operator with no development infrastructure, an automation agent can handle these workflows end-to-end, making a new philanthropic program operationally sustainable without dedicated fundraising staff.",
+      "opportunity_sketch": "A gift acknowledgment and stewardship automation agent that triggers personalized acknowledgment letters, recognition notifications, and scheduled impact update emails based on donation events — removing the manual back-office burden that deters operators from launching giving programs.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "payroll-statutory-deduction-accuracy",
+  "pain_point_label": "Statutory Deduction Errors & Late Remittance",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Payroll statutory deduction processing is a multi-step workflow with branching logic.",
+      "opportunity_sketch": "An agentic payroll compliance workflow that applies rate tables, computes deductions, flags ceiling breaches, and generates remittance forms.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Over- and under-withholding errors follow statistical patterns that anomaly detection can flag.",
+      "opportunity_sketch": "A payroll anomaly scanner scoring each employee computed deductions against historical baselines and statutory ceiling rules.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Finance staff frequently need to query current statutory rates. A conversational agent can answer instantly.",
+      "opportunity_sketch": "A compliance Q&A assistant grounded in official agency circulars and rate schedules.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Multi-site operators receive payroll data in inconsistent formats. AI-assisted transformation handles schema mapping.",
+      "opportunity_sketch": "An AI-assisted ETL layer normalizing per-campus HR/payroll exports to a unified employee-salary schema.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "A risk scoring model can estimate probability and financial cost of non-compliance per remittance cycle.",
+      "opportunity_sketch": "A compliance risk dashboard scoring each pending statutory remittance on probability of penalty.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

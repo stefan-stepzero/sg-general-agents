@@ -1,0 +1,49 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-enrollment-volatility",
+  "pain_point_label": "Enrollment Forecast Decay & Cascading Revisions",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Enrollment numbers are inherently time-ordered: historical term-over-term counts, seasonal drift, and mid-year actuals provide the signal a time-series model needs. The pain is explicitly about forecast drift (+/- 10-15%).",
+      "opportunity_sketch": "A forecasting model trained on 3-5 years of per-campus enrollment actuals, term-start applications, and demographic inputs produces a rolling 6-month enrollment projection with confidence bands.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The cascading damage from enrollment drift is staffing: teachers are hired to budget headcount, then enrollment shifts, creating overages or shortfalls.",
+      "opportunity_sketch": "A scenario-aware staffing optimizer that takes enrollment forecast ranges and outputs optimal per-class teacher counts and support staff assignments.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A recurring explicit pain point is that finance cannot confidently explain tuition variance to the board — communication of mid-year reforecast changes to leadership is manual and time-consuming.",
+      "opportunity_sketch": "An LLM-driven reporting layer that auto-generates a plain-English variance commentary whenever enrollment actuals are logged, for CFO review before board distribution.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The serial reforecasting cycle (3-4 times per term) involves multiple steps: collecting principal headcount updates, propagating to staffing budgets, recalculating per-student cost allocations, and notifying stakeholders.",
+      "opportunity_sketch": "A reforecast automation agent that triggers on enrollment actuals upload, recalculates staffing and revenue budgets against current formula rules, produces updated variance reports, and routes approval requests.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": ["generation-code","generation-image","generation-audio","generation-video","generation-synthetic-data","extraction-media-parsing","extraction-entity","extraction-summarization","extraction-knowledge","extraction-transformation","classification-text","classification-visual","classification-structured","classification-anomaly","classification-audio","prediction-propensity","prediction-risk","prediction-regression","search-semantic","search-rag","search-recommendation","search-multimodal","optimization-routing","optimization-pricing","optimization-experiment","optimization-constraint","agents-conversational","agents-research","agents-coding","agents-multi"],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

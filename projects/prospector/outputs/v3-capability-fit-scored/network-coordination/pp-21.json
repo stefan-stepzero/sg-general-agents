@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "network-coordination-site-expansion-integration-capability-transfer-dup",
+  "pain_point_label": "Capability Transfer from Flagship to New Sites",
+  "matches": [
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "New campus leadership has no structured way to access the tacit knowledge embedded in flagship operations — staff procedures, HR decisions, finance workflows, and student services practices. RAG enables a knowledge base built from flagship documents, SOPs, email archives, and meeting notes, so new site leaders can query 'how do we handle X?' and get grounded, cited answers without bandwidth from flagship staff. This directly addresses the tacit knowledge problem and the incomplete handoff mechanism.",
+      "opportunity_sketch": "A knowledge portal where new campus leaders query flagship procedures and get synthesized answers grounded in real SOP documents, policy memos, and case records — reducing dependence on flagship staff mentorship.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of structured knowledge transfer materials — process guides, onboarding manuals, compliance checklists — forces new campus leaders to reinvent from scratch. AI text generation can accelerate production of these artifacts by drafting SOPs, role-specific onboarding guides, and compliance handoff documents from interview notes or existing flagship materials. This directly addresses the documentation gap in capability transfer.",
+      "opportunity_sketch": "An AI-assisted playbook generator that turns flagship staff interviews or existing materials into site-launch playbooks covering HR, finance, student services, and IT — produced before a new campus opens.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Flagship campuses accumulate years of meeting notes, policy documents, incident reports, and operational decisions that are never distilled for new sites. Summarization can compress this institutional memory into digestible briefings for new campus leaders, surfacing the most critical lessons without requiring flagship staff to manually curate and explain everything. This directly reduces the bandwidth burden on flagship staff.",
+      "opportunity_sketch": "A monthly or milestone-triggered digest that summarizes flagship operational records — board decisions, HR case outcomes, compliance audit findings — into a new-site orientation package.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Capability transfer involves many repeatable multi-step handoff workflows: collecting flagship process documentation, flagging gaps against a compliance checklist, routing items to relevant subject matter experts, and producing a transfer report. An automation agent can orchestrate this end-to-end across HR, finance, student services, and IT domains simultaneously — something no manual process achieves at scale. This directly addresses the incomplete and inconsistent handoff mechanism.",
+      "opportunity_sketch": "A site-launch readiness agent that autonomously audits a new campus against flagship process benchmarks, identifies gaps, and generates a prioritized remediation plan with suggested resources from the flagship knowledge base.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

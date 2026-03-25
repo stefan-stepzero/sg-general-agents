@@ -1,0 +1,55 @@
+{
+  "cell": {
+    "cellNum": 1,
+    "subCategory": "Skills & Development",
+    "domain": "Talent & People",
+    "heat": 57,
+    "oppScore": 45
+  },
+  "ideas": [
+    {
+      "name": "Teacher Appraisal Digest",
+      "one_liner": "AI-summarized teaching performance reviews with curriculum-aligned teaching standards mapping for principals across multi-site networks.",
+      "problem": "Principals and HR teams at CSPD and PHINMA managing hundreds of educators spend 40+ hours per cycle reading and synthesizing performance reviews, 360-degree feedback, and observation notes spread across email, Google Docs, and fragmented HRIS systems. They lack tools that understand NSW NESA teaching standards or CHED faculty competencies required for annual appraisal cycles.",
+      "ai_technique": "Summarization & Condensation with domain-specific prompt engineering",
+      "how_it_works": "Connects to TechOne HRIS, Outlook email, and Google Drive. Extracts review documents, student/peer feedback, and observation notes. Generates 2-page summaries keyed to NESA Professional Teaching Standards (NSW context) or CHED faculty competency framework (HE context), highlighting performance gaps, development needs, and promotion readiness signals.",
+      "target_companies": ["cspd", "phinma", "rising"],
+      "buyer_persona": "Principal or Head of HR managing 50-500 educators across distributed campuses",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Staff Data Integration Hub",
+      "one_liner": "Unified staff records reconciling payroll, teaching registration, appraisal tracking, and professional development history across fragmented systems.",
+      "problem": "Education organisations run 4-5 disconnected systems: national payroll (ATO integration), HRIS, state teaching registration databases (NESA, QTSB), appraisal spreadsheets, and PD tracking. HR teams manually cross-reference records to answer basic questions like 'which teachers need PD renewal' or 'who is eligible for promotion.' Data silos make workforce analytics impossible at CSPD and PHINMA.",
+      "ai_technique": "Data Transformation & Structuring with education schema normalization",
+      "how_it_works": "Ingests exports from TechOne (payroll/HRIS), state teaching registration APIs (NESA/QTSB), and local tracking sheets. Normalizes employment type (permanent/contract/relief), teaching area, registration status, PD hours completed, and contract end dates into a single schema. Flags mismatches (e.g., expired registration) and surfaces actionable insights via API for downstream HR tools.",
+      "target_companies": ["cspd", "phinma", "ipeople"],
+      "buyer_persona": "Chief People Officer or IT Manager responsible for HR data integrity",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Teacher Attrition Risk Forecast",
+      "one_liner": "Predicts teacher resignation risk 6-12 months ahead using enrollment, salary, location, and performance signals to enable proactive retention.",
+      "problem": "Rising Academies and PHINMA face unpredictable teacher churn driven by salary, remote postings, family circumstances, and subject scarcity. They cannot forecast hiring needs or plan relief-staff pools. Attrition costs 6-12 months of recruitment and onboarding per educator, compounded across multi-site networks.",
+      "ai_technique": "Time Series Forecasting with education-specific feature engineering",
+      "how_it_works": "Trains on historical attrition data from TechOne/HRIS, incorporating features: salary relative to market, contract length, days-to-certification-expiry, enrollment volatility at assigned school, tenure, remote posting hardship flag, subject scarcity (e.g., STEM premium). Outputs risk scores (low/medium/high) for each educator 6-12 months forward, enabling HR to trigger stay interviews or counter-offers.",
+      "target_companies": ["rising", "phinma", "school-for-life"],
+      "buyer_persona": "Head of HR or Talent Operations managing hiring pipelines for 200+ educators",
+      "tier": "standalone",
+      "confidence": "high"
+    },
+    {
+      "name": "Professional Development Scheduler",
+      "one_liner": "AI-optimized PD scheduling across distributed school networks respecting teacher availability, certification requirements, and award conditions.",
+      "problem": "Rising Academies and School for Life operate 80+ campuses with 500+ educators needing compliance PD (child safety, curriculum updates, mandatory training). Manual scheduling creates conflicts, leaves compliance gaps, and requires administrators to work around award conditions (e.g., PD cannot exceed 20 days/year in NSW Catholic schools).",
+      "ai_technique": "Resource Allocation & Scheduling with constraint satisfaction",
+      "how_it_works": "Ingests educator availability, required certifications (CHED accreditation renewals, NESA PD points), award contract constraints (day limits, release-time entitlements), and campus-level delivery calendar. Generates optimal PD schedules minimizing disruption, ensuring all staff complete mandatory training, and respecting work-life balance. Integrates with calendar systems (Outlook, Google Calendar) for automated notifications.",
+      "target_companies": ["rising", "school-for-life", "cspd"],
+      "buyer_persona": "Professional Development Coordinator or HR Manager at multi-site operator",
+      "tier": "feature",
+      "confidence": "medium"
+    }
+  ]
+}

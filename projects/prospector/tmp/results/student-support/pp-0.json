@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-pastoral-counseling-counselor-shortage-dup",
+  "pain_point_label": "Counselor Shortage & Unequal Coverage",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A conversational agent can serve as a first-line pastoral support interface available 24/7 at every campus — including rural sites with zero counselor presence. It addresses the core pain mechanism: students at underserved sites currently wait 4-8 weeks or see untrained staff, and a supervised conversational agent can provide structured triage, psychoeducation, and warm handoff to the counseling queue. Multi-campus operators can deploy a single instance across all sites instantly, removing geographic dispersion as a barrier.",
+      "opportunity_sketch": "A welfare chatbot embedded in the student portal that conducts structured check-ins, provides evidence-based coping resources, and escalates urgent cases to the nearest available counselor — reducing unmet demand at rural sites and freeing counselor time for high-acuity cases.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The scarcity of counselors means triage priority is critical — a propensity model can score each student's likelihood of escalating mental health need using attendance patterns, grade trajectories, LMS engagement, and disciplinary records. This directly addresses unequal coverage by ensuring the limited rotational counselor time is allocated to highest-risk students across all sites rather than first-come-first-served at urban campuses.",
+      "opportunity_sketch": "An early-warning risk-scoring system that flags students at rural and underserved campuses who show behavioral precursors to crisis, enabling counselors to proactively reach out during their rotational visits rather than reacting to self-referrals.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 1-3 counselors covering 10-15 sites, the scheduling of rotational visits is a high-stakes constraint satisfaction problem. AI-driven scheduling can optimize counselor deployment across campuses based on predicted demand, caseload severity, travel cost, and student wait times — directly reducing the 4-8 week appointment gaps at rural sites. This is technically feasible given existing student management system data.",
+      "opportunity_sketch": "A counselor deployment optimizer that balances rotational visit frequency across campuses against live demand signals (referral queue depth, risk scores), minimizing total unmet need within the fixed counselor headcount constraint.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Untrained staff at rural sites who currently handle student welfare cases cannot reliably identify urgency or risk level. A text classification model applied to written referral notes, student self-reports, or welfare form submissions can automatically triage cases by urgency (crisis vs. routine vs. informational) — compensating for the absence of trained clinical judgment at underserved sites.",
+      "opportunity_sketch": "An automated triage classifier that reads welfare referral text submitted by students or staff at any campus and assigns urgency priority, routing crisis-level cases to the duty counselor immediately regardless of geographic location.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

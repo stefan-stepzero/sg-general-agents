@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-asset-inventory-asset-tagging-and-physical-tracking-is-incomplete-and-inconsistent-dup",
+  "pain_point_label": "Asset Tagging and Physical Tracking Are Incomplete and Inconsistent Across Sites",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Physical asset tags (barcodes, QR codes, asset labels, handwritten asset IDs on equipment) can be captured via mobile camera and parsed through OCR/form extraction to digitize asset identifiers and condition notes into a central register. This directly addresses the tagging gap — even untagged or inconsistently tagged assets can be inventoried by photographing nameplates, serial number plates, or affixed labels. For a multi-campus operator doing a stocktake walk, this converts a laborious manual counting exercise into a camera-scan workflow.",
+      "opportunity_sketch": "A mobile-first asset capture tool where facilities staff photograph each asset; OCR extracts the tag ID, serial number, and any visible condition markings, and writes a structured record to the central asset register — replacing manual entry and enabling rapid stocktakes across all campuses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-visual",
+      "capability_label": "Image & Video Classification",
+      "match_rationale": "When assets lack tags entirely, visual classification models can identify asset type, condition grade, and approximate age from photographs taken during a walk-through or stocktake. This is directly applicable to the pain point where some campuses tag nothing and rely on visual inspection — AI can augment or replace human judgment about what an asset is and what state it is in. For high-value items like lab equipment or interactive displays, visual recognition can flag untagged assets as requiring immediate tagging.",
+      "opportunity_sketch": "A stocktake app where staff photograph assets; a visual classifier identifies asset category and condition (good/fair/poor/end-of-life), auto-populates asset type fields in the register, and flags items with no matching tag in the system as unregistered — accelerating the gap-closure process.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Inconsistent tagging and stale location data create detectable anomaly patterns in the asset register: assets last seen at Site A appearing on Site B's order forms, duplicate asset counts from the same serial number, assets with no location update for unusually long periods, or high-value items whose last-scan date is a statistical outlier relative to peer assets. Anomaly detection on the asset register can surface these data quality issues automatically without requiring a manual audit. This directly addresses the problem of assets being counted twice or going missing from records.",
+      "opportunity_sketch": "A data quality monitor layered over the asset register that flags statistical anomalies — duplicate entries, implausibly stale location timestamps, high-value assets with no recent scan, and inter-campus transfer records without matching tag updates — giving the facilities manager a prioritized remediation list.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end asset tagging and tracking workflow involves multiple steps across systems: scanning a tag, looking up the central register, updating location and condition, triggering a transfer record if the campus changed, and notifying the receiving campus. This multi-step workflow currently fails because it requires human coordination across campuses with no automated orchestration. A task automation agent can handle the full chain — from scan event through register update to inter-campus notifications — removing the human-coordination bottleneck that causes location data to go stale.",
+      "opportunity_sketch": "An automated asset lifecycle agent that, on any tag scan event (receipt, transfer, stocktake), autonomously updates the central register, reconciles against expected location, triggers transfer documentation if a campus mismatch is detected, and queues a follow-up task if the asset is untagged — closing the loop without manual intervention.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Audit findings related to asset tagging control weaknesses require formal written responses, remediation plans, and policy documentation. The pain point explicitly mentions auditors noting the lack of systematic tagging as a control weakness. LLM-based text generation can draft the audit response narrative, the updated asset management policy, and the remediation plan from structured inputs (current state, gap list, proposed controls) — reducing the drafting burden on the CFO or Head of Operations who must respond to auditors.",
+      "opportunity_sketch": "A policy and audit-response generator that takes a structured gap assessment as input and produces a board-ready asset management policy document and a formal auditor response letter — saving senior staff several hours of drafting per audit cycle.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

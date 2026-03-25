@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-alumni-engagement-no-regional-nodes-dup",
+  "pain_point_label": "No Geographic Clustering — Alumni Hubs in Key Cities",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "The school likely holds alumni data scattered across enrollment records, graduation registers, and contact forms that contain location fields in inconsistent formats. Entity extraction can parse these records to pull out city, region, and country attributes for each alumnus, enabling geographic clustering. Without this step, the operator cannot identify which cities have enough alumni density to justify a hub.",
+      "opportunity_sketch": "An extraction pipeline that reads alumni records from the SIS/CRM and outputs a structured dataset of alumni with normalized location fields (city, region, country, OFW flag), feeding directly into a hub-viability dashboard.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Alumni location data across 10-15 campuses is likely stored in inconsistent schemas (different campus SIS exports, spreadsheets, graduation yearbooks) with varying address formats. AI-assisted schema mapping and normalization can unify these into a single geocoded alumni roster. This is a prerequisite for any geographic hub analysis or liaison assignment.",
+      "opportunity_sketch": "A data pipeline that ingests multi-campus alumni exports in varied formats, standardizes address fields, and outputs a unified geocoded alumni table with Metro Manila / Cebu / Davao / OFW segment tags.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once alumni location data is normalized, structured classification can segment alumni into geographic hub candidates (Metro Manila, Cebu, Davao, OFW) and further sub-classify them by engagement potential based on attributes like recency of contact, donation history, and professional role. This lets the alumni office prioritize which cities to activate first and which alumni profiles to recruit as regional liaisons.",
+      "opportunity_sketch": "A segmentation model that classifies each alumnus into a hub tier (high-density cluster, emerging cluster, sparse) and an engagement-readiness score, surfaced as a filterable dashboard for the alumni relations team.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once regional hubs are identified, the alumni office needs outreach materials — invitations to founding meetups, recruitment messages for potential regional liaisons, and templated event announcements localized for Metro Manila, Cebu, Davao, and OFW communities. Text generation can produce personalized, contextually appropriate communications at scale without requiring a large central team to draft each version.",
+      "opportunity_sketch": "A communication toolkit that generates hub launch invitations, liaison recruitment letters, and recurring meetup announcements in Filipino/English variants, personalized by region and alumnus cohort year.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Assigning alumni liaisons to regional hubs involves satisfying multiple simultaneous constraints: the candidate must be in the right city, have sufficient alumni density to justify the role, be willing to volunteer, and ideally represent the school's program mix. This is a matching/assignment problem where AI constraint satisfaction can identify the best-fit liaison candidates across 10-15 campus alumni pools for each target city.",
+      "opportunity_sketch": "A liaison-matching tool that takes the normalized alumni roster and a set of hub criteria (location, density threshold, engagement history, professional standing) and surfaces a ranked shortlist of liaison candidates per city for the alumni coordinator to review and contact.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Standing up a regional hub involves a repeatable multi-step workflow: identify alumni density in a city, shortlist liaison candidates, send outreach, collect RSVPs, schedule a founding meetup, and log outcomes back to the CRM. An automation agent can orchestrate these steps across email, calendar, and CRM systems, reducing the head-office coordination burden that currently blocks hub formation.",
+      "opportunity_sketch": "A hub-activation workflow agent that, triggered by an alumni coordinator selecting a target city, automatically pulls the candidate list, drafts and sends liaison recruitment emails, tracks responses, schedules the inaugural meetup, and updates the alumni CRM — requiring human approval only at key decision gates.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

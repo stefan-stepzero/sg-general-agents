@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-allocation-contention",
+  "pain_point_label": "Opaque Shared Cost Allocation & Principal Accountability",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Generating plain-language explanations of how each shared-cost line item was allocated to a site directly addresses the transparency problem.",
+      "opportunity_sketch": "A tool that auto-generates a budget explainer memo for each principal showing allocation details and year-over-year changes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Shared cost allocation data exists across multiple semi-structured sources. AI-assisted transformation can normalize these into a unified allocation schema.",
+      "opportunity_sketch": "An ETL layer that maps cost pools to canonical drivers and outputs a structured allocation ledger.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Month-to-month swings in allocated amounts drive post-close disputes. Anomaly detection can flag when a site allocation deviates abnormally from trend.",
+      "opportunity_sketch": "A monitoring layer that flags site-cost-pool combinations where allocated amount is a statistical outlier relative to trailing 12 months.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "The choice of allocation driver is a configuration problem with multiple competing constraints. AI can enumerate valid driver combinations and score them.",
+      "opportunity_sketch": "An allocation design tool where finance inputs cost pools, candidate drivers, and constraints, and the system outputs a defensible driver assignment.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Principals have no self-service way to answer why their overhead charge changed. A RAG system can let them query their cost breakdown.",
+      "opportunity_sketch": "A principal-facing Q&A interface grounded in allocation policy documents and historical data.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,553 @@
+{
+  "company_id": "phinma",
+  "company_name": "PHINMA Education",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "education",
+        "evidence": "Operates 13 higher education institutions (universities and colleges) in the Philippines and Indonesia. Revenue entirely derived from tuition, enrollment, and education services.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "affordable private higher education for underserved markets",
+        "evidence": "Explicitly positions as serving 'underserved youth who are often the first in their families to go to college.' Programs skew toward high-board-exam-demand fields: Nursing, Criminology, Business Administration, Engineering, IT, Hospitality. Provincial campuses in Cabanatuan, Cagayan de Oro, Iloilo, Dagupan, Cebu — not elite urban institutions.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "downstream end-service-provider",
+        "evidence": "Directly delivers tertiary education to students. Also operates SWU Medical Center (teaching hospital). No upstream curriculum licensing or platform play — vertically integrated from acquisition through instruction.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "growth",
+        "evidence": "Philippine higher education market USD 154M in 2025, projected 20.23% CAGR to USD 847M by 2034. Expanding population, government Free TVET / Universal Tertiary Access Act tailwinds, and PE capital inflows (KKR, ADB, Kaizenvest) all signal growth phase. Provincial markets remain significantly underpenetrated.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "recurring tuition fees (quasi-subscription per academic year)",
+        "evidence": "Primary revenue is enrollment-based tuition paid per semester/year. 89% student retention rate implies high annual recurrence. Supplemented by hospital services (SWU Medical Center) and scholarship subsidies from partners/government.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "physical service delivery (in-person campus instruction) with early digital augmentation",
+        "evidence": "All 13 institutions are physical campuses. Proprietary PHINMA Ed Learning App handles scheduling, attendance, grades, and fee tracking — but instruction is campus-based. Active Learning methodology is in-person. No online-only degree programs identified.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "fixed-cost-heavy with moderate capex intensity",
+        "evidence": "PHINMA describes its own philosophy as 'bare-bones, no-frills, brass knuckles' — minimizing overhead to keep tuition affordable. Major fixed costs: faculty salaries, campus facilities, and acquisition debt service. New campus buildings (P432M SJC-DC acquisition, multiple recent inaugurations) indicate sustained capex. Revenue P6.5B, net income P1.5B = ~23% net margin, suggesting disciplined cost control at scale.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "enterprise ($100M+) — approximately $115M USD annually",
+        "evidence": "FY2024-2025 revenue: P6.5B (+14% YoY). At ~56 PHP/USD that is approximately USD 116M. Nine-month YTD to Dec 2025: P5.27B revenue, P1.42B net income — on track for another strong year.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "PE-backed (late-stage private equity with IPO optionality)",
+        "evidence": "P4.5B investment from KKR (Global Impact Fund II) + Kaizenvest fully closed by August 2025. PHINMA Corporation (PSE: PHN) retains majority. Prior investors ADB and FMO exited via secondary sales. IPO discussed but Salazar stated 'no immediate need' — deferred minimum 3 years from 2024. Parent PHINMA Corp market cap ~P5.52B as of Dec 2025.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "asset-heavy",
+        "evidence": "13 physical campuses across multiple cities in Philippines and Indonesia. Recent construction: Ramon V. del Rosario Building (SWU, Cebu), Aurora Building (SJC-QC, Cubao), 10-story Horizon University building (Karawang), PHINMA Hall (RCL, Calamba). Campus real estate and hospital (SWU Medical Center) represent substantial fixed assets. Expansion pipeline includes San Pablo, Roxas City, Bacolod, Butuan.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "profitable and accelerating",
+        "evidence": "FY2024-25 revenue P6.5B (+14% YoY), net income P1.5B (+8% YoY). Q1 FY2025 alone: revenue P2.1B, net income P907M. Enrollment at record 177,851 (SY2025-2026 Q1). 89% student retention. Net margin ~23%. Fresh P4.5B capital injection. Parent PHINMA Corp consolidated net income fell 66% to P279.55M in 2024 due to non-education segment costs — highlighting education as the group's financial engine.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "established (8-20 years) — 22 years in education operations",
+        "evidence": "PHINMA Education started in 2004 with acquisition of Araullo University. As of 2026 the network is 22 years old. PHINMA Corporation (parent) founded 1956 (70 years). Education entity incorporated as PHINMA Education Holdings, Inc. (PEHI) in 2015.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "massive (100K+)",
+        "evidence": "177,851 enrolled students as of Q1 SY2025-2026 — a record. Prior year: 167,000+ enrollees. In SY22-23: 124,501 students (highest at that time). Network has produced 40,000+ licensed professionals and 203 board topnotchers since 2004.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {},
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "market leader (dominant share in affordable Philippine private HE)",
+        "evidence": "Self-described as 'the largest private higher education provider in Southeast Asia in terms of enrollment.' 177,000+ students vs. next-largest Philippine private networks. 20-year head start in acquisition-and-turnaround model. Strong provincial footprint competitors have not replicated.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "reputation/word-of-mouth-led + community-led",
+        "evidence": "Board exam rankings are primary marketing — press coverage of #1 nursing school, topnotchers, pass rates. Scholarship programs generate community goodwill and enrollment. Facebook accounts per school for local community engagement. No evidence of significant paid digital advertising or sales team. Student success stories on homepage function as social proof.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "diversified (no single customer material)",
+        "evidence": "177,851 individual student customers across 13 institutions and multiple provinces. No single student or cohort represents more than a fraction of revenue. Government subsidies (Free HE Act) represent a meaningful revenue stream but are distributed across enrolled students, not a single contract.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "value/low-cost (affordable, accessible pricing as core proposition)",
+        "evidence": "Hawak Kamay scholarship at 5,500 PHP (~$100 USD) signals tuition is in an accessible range. PHINMA's 'bare-bones, no-frills' philosophy is explicitly designed to keep costs low for students. Positioned as quality education at accessible price — not a premium brand, not a budget diploma mill.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "founder-era CEO with dual-hat authority (Education CEO + Parent Corp President)",
+        "evidence": "Chito Salazar has been with PHINMA Education since its founding in 2004 and serves simultaneously as PHINMA Education President & CEO and PHINMA Corporation President & COO. This dual role gives him unusual authority across both the operating entity and the parent conglomerate. He is not the founder of PHINMA Corp (founded 1956) but is the founding architect of the education network.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "hub-and-spoke (central management team + semi-autonomous campus institutions)",
+        "evidence": "Network headquarters at 2F PHINMA Plaza, Rockwell Center, Makati. Central C-suite (CEO, COO, CFO, CIO, CAO, Country Head, Indonesia Head). Each institution retains its own name, local president, and brand identity but operates under shared network curriculum, the Student Success Program, and central financial oversight via PEHI.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "multi-site co-located (campus-based workforce)",
+        "evidence": "Faculty and student-facing staff are physically based at each campus. 13 campuses across Philippines and Indonesia. HQ management team is centrally located in Makati. No evidence of remote-first culture — in-person instruction is core to the model.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "domain-expert-heavy (licensed educators, healthcare professionals, board-exam instructors)",
+        "evidence": "Active Learning methodology requires trained instructors. Board exam performance is a KPI — faculty quality in Nursing, Criminology, Engineering is critical. Student Success Program coaches are a distinct talent category (academic/emotional support). PHINMA invests heavily in faculty development per their About page. C-suite includes PhD-holding academic leaders (Salazar, Reyes).",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "transitional (licensed HE ERP core + Lenovo device fleet; no cloud-native architecture)",
+        "evidence": "Core student information system: Mastersoft ERP Solutions (India-based HE ERP vendor, package ID com.iitms.phinma confirms the IITMS/Mastersoft platform). Mastersoft covers SIS, admissions, exams, academic management, hostel, payroll, finance, and administration — a standard all-in-one HE ERP. Deployed network-wide with institution-specific SIS instances (sis.phinma.edu.ph, sis-sjc.phinma.edu.ph) and a central admin portal (pensms.phinma.edu.ph). The PHINMA Ed Learning App (100,000+ downloads on Google Play, last updated Feb 2026) is the student-facing mobile layer built on the same Mastersoft platform — not custom-built internally. Lenovo partnership (2024): ~2,000 Lenovo devices consolidated across 13 institutions via Device as a Service (DaaS) + TruScale Managed Services + EdVision educator training (Microsoft Certified Educator certification). Public website runs on WordPress with Google Tag Manager and Google Analytics. No evidence of cloud-native architecture, microservices, data warehouse, or modern BI platform. CIO role exists centrally. KKR's digital transformation mandate explicitly acknowledged by CEO Salazar as a key priority — signals current state is the floor, not ceiling.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "vendor-managed (outsourced HE ERP + outsourced device management; no internal engineering capability visible)",
+        "evidence": "The PHINMA Ed Learning App is a licensed/deployed product from Mastersoft ERP Solutions (India), not a proprietary custom build — confirmed by package ID com.iitms.phinma (IITMS = Mastersoft's platform brand) and App Store attribution 'by Mastersoft ERP Solution Pvt Ltd.' This clarifies that PHINMA does not maintain an internal software engineering team for its core platform. Lenovo DaaS/TruScale further outsources device lifecycle and IT management. WordPress CMS for public site. No public engineering blog, OSS contributions, CI/CD signals, or DevOps culture indicators. The CIO role manages vendor relationships and IT governance, not internal product development. Engineering is a procurement/governance function, not a differentiator — typical for asset-heavy campus-based operators. KKR's digital transformation mandate may eventually shift this toward building internal capability.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "ERP-native reporting with centralized SIS data; no advanced analytics or data warehouse visible",
+        "evidence": "Data infrastructure is built on Mastersoft ERP's native reporting capabilities — the SIS captures enrollment, attendance, grades, fees, and academic records across all 13 campuses in a centralized system (sis.phinma.edu.ph with per-campus instances). The PHINMA Education Network admin portal (pensms.phinma.edu.ph) provides network-level reporting. Enrollment and board exam metrics reported with high precision (89% retention, topnotcher rankings per school) — consistent with ERP-native dashboards, not a separate BI layer. Google Analytics on public website. Lenovo TruScale manages device telemetry. No public evidence of a separate data warehouse, Tableau/Power BI deployment, ML in production, or advanced analytics pipeline. Data infrastructure is operationally sufficient for current scale but lacks the analytical sophistication typical of organizations preparing for IPO-level reporting or large-scale predictive analytics.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "basic-to-intermediate (compliance-mandated baseline; no advanced certifications)",
+        "evidence": "Privacy Policy published on website. HTTPS across web properties. As an educational institution handling student PII and payment data in the Philippines, compliance with the Data Privacy Act of 2012 (Republic Act 10173) and NPC (National Privacy Commission) is legally mandated. Lenovo device management partnership (TruScale Managed Services) provides managed endpoint security across the device fleet. SWU Medical Center subject to DOH healthcare data requirements. No evidence of SOC2, ISO27001, or formal security certifications. Standard for Philippine mid-size education operator — security is compliance-driven, not competitive.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "heavy",
+        "evidence": "All programs require CHED (Commission on Higher Education) approval and accreditation. Healthcare programs (Nursing, Medical Technology) additionally regulated by PRC (Professional Regulation Commission) for licensure exam eligibility. Indonesia operations navigate separate DIKTI/Kemdikbud regulatory framework. Data Privacy Act (Republic Act 10173) applies to student records. SWU Medical Center is subject to DOH hospital regulations.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "regional (Philippines + Indonesia, with expansion to additional ASEAN countries planned)",
+        "evidence": "11 Philippine institutions across Luzon, Visayas, Mindanao. 2 Indonesian institutions (Karawang/West Java + Jakarta). Salazar has stated a 5-country expansion target over 5 years — though the 3 additional countries are not yet publicly named.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "recession-resistant with moderate FX exposure",
+        "evidence": "Education demand in underserved markets is relatively inelastic — economic downturns often increase enrollment as people upskill. Government Free HE subsidies provide a floor. However: Indonesia operations generate IDR revenues against PHP/USD cost structures, creating FX exposure. Philippine peso depreciation affects parent company consolidated reporting.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "PE-backed with public parent company reporting obligations",
+        "evidence": "PHINMA Corporation (PHN) is listed on the Philippine Stock Exchange — triggering PSE disclosure requirements. PHINMA Education Holdings (PEHI) itself is not yet listed. KKR's Global Impact Fund II investment introduces UN SDG alignment reporting obligations. Salazar is aligned with ESG/SDG framing as a strategic and investor relations tool.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "pragmatic (adopts when clear ROI, evidence-driven)",
+        "evidence": "PHINMA's operational ethos — 'bare-bones, no-frills, brass knuckles' — is fundamentally conservative and execution-focused, not experimental. The Learning App was built because student tracking had direct retention impact. KKR's digital transformation mandate may shift this posture. AI tablet donation (HONOR Pad X9a, May 2025) is exploratory, not transformational. No evidence of internal innovation labs or rapid experimentation culture.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "mission/community-driven",
+        "evidence": "Tagline: 'Making lives better through education.' All homepage messaging centers on student transformation stories (financial burden relief, first-generation college students, working parents). KKR investment framed as SDG 4 alignment, not financial return. Silver Anvil PR Award for community bayanihan campaign. Mission is not just marketing — it structurally constrains pricing, campus location choices, and program selection.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "mission-driven (mission constrains commercial decisions)",
+        "evidence": "Explicitly turns down higher-income urban markets in favor of underserved provinces. Core values (Integrity, Competence, Commitment, Professionalism, Teamwork, Openness, Love of Country) are prominently published. Salazar mandates executive home visits to students' families — this is cultural practice, not marketing. KKR chose them specifically for SDG 4 alignment.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "stable/mission-attractive in niche (education sector) with compensation tradeoffs",
+        "evidence": "Glassdoor: 3.4/5 overall, 53% recommend, 84% positive business outlook. Culture rated 4.0/5. Employees cite mission alignment as a strong attractor. Pain points: entry-level salaries below market, work-life balance 3.3/5. Consistent with lean, mission-driven organization — attracts educators who prioritize purpose over compensation.",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

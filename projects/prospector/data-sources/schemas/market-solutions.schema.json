@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "market-solutions.schema.json",
+  "title": "MarketSolutions",
+  "description": "Market solutions entry for one org — extracted from market-solutions.json keyed by org ID",
+  "type": "object",
+  "required": ["name", "solutions", "patterns", "gaps"],
+  "properties": {
+    "name": { "type": "string" },
+    "solutions": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/PeerSolution" }
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "detail", "count"],
+        "properties": {
+          "label": { "type": "string" },
+          "detail": { "type": "string" },
+          "count": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Pain points no peer has addressed"
+    }
+  },
+  "definitions": {
+    "PeerSolution": {
+      "type": "object",
+      "required": ["org_name", "relationship", "pain_addressed", "solution", "detail", "outcome", "source"],
+      "properties": {
+        "org_name": { "type": "string" },
+        "relationship": {
+          "type": "string",
+          "description": "lookalike or competitor"
+        },
+        "pain_addressed": { "type": "string" },
+        "solution": { "type": "string" },
+        "detail": { "type": "string" },
+        "outcome": {
+          "type": "string",
+          "description": "What happened: successful | mixed | unknown | failed"
+        },
+        "source": { "type": "string" },
+        "implication": { "type": "string", "description": "What this means for the target org" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

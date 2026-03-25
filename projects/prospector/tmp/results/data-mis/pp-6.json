@@ -1,0 +1,71 @@
+{
+  "pain_point_id": "data-mis-data-governance-data-quality-incidents-dup",
+  "pain_point_label": "Undetected Data Quality Incidents & Silent Corruption",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "This capability is purpose-built to identify inputs that deviate from expected normal behavior — exactly what is happening when age < 5 is enrolled, a birthdate is set in the future, or a payment amount is negative. In a multi-site education operator context, a model trained on historical valid records can flag anomalous entries at point of entry in real time, before they silently accumulate. This directly addresses the core pain mechanism: errors go undetected because there is no systematic validation layer.",
+      "opportunity_sketch": "A real-time anomaly scoring service sits inline with the SIS/ERP data entry layer, flagging records with out-of-range or statistically improbable field values before they are committed — surfacing issues in minutes rather than at month-end reporting.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The pain point explicitly includes the absence of validation and standardization at point of entry — unstructured or semi-structured inputs (form submissions, manual entries, imports) arriving in inconsistent formats. AI-assisted data cleaning and schema normalization can enforce type constraints, normalize date formats, reject impossible values, and map incoming data to a validated target schema before persistence. For an education operator receiving data from multiple campuses with inconsistent entry practices, this directly reduces the accumulation of corrupt records.",
+      "opportunity_sketch": "An AI-assisted ETL validation layer that normalizes and cleans student/financial records on ingest — enforcing field-level constraints, flagging schema violations, and producing a per-record quality report with the corrected and rejected rows separated.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The remediation process described — discovering errors late, manually tracing root cause, applying inconsistent fixes with no audit trail — is a multi-step workflow that AI task automation can systematically replace. An automation agent can detect an anomaly, determine its scope across linked records, route a correction request to the responsible data owner, apply the fix, and write a timestamped audit log entry. This addresses not just detection but the downstream high-manual-effort remediation and the absence of an audit trail.",
+      "opportunity_sketch": "A data quality remediation agent that, upon detecting a corrupt or invalid record, automatically determines impact scope, generates a correction task assigned to the relevant campus data steward, applies approved fixes, and maintains a full immutable audit log — eliminating the month-end fire drill.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 3
+}

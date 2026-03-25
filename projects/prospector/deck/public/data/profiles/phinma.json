@@ -1,0 +1,307 @@
+{
+  "entity": "PHINMA Education",
+  "profile_date": "2026-03-11",
+  "known_contact": {
+    "name": "Chito Salazar",
+    "full_name": "Dr. Chito B. Salazar Jr.",
+    "title": "President & CEO, PHINMA Education; President & COO / Head of Education, PHINMA Corporation",
+    "linkedin": "https://www.linkedin.com/in/chito-salazar-602459118/",
+    "email_pattern": "c***@phinma.com.ph (likely chito.salazar@phinma.com.ph)",
+    "background": "Founding-era leader (since 2004). PhD International Relations (American University). Former EDCOM II business sector representative. Architect of PHINMA Education's acquisition-and-turnaround model."
+  },
+  "executive_summary": "PHINMA Education is the largest private higher education network in Southeast Asia by enrollment, serving 177,851 students across 13 institutions in the Philippines and Indonesia as of SY 2025-2026. Founded in 2004 under the PHINMA conglomerate, it operates a disciplined acquisition-and-turnaround model targeting underserved provincial markets with affordable, employment-outcome-focused education. The company is in an active scaling phase backed by a landmark P4.5B KKR + Kaizenvest investment (closed Oct 2024 / Aug 2025), generating P6.5B in annual revenue with strong 14% YoY growth and P1.5B net income. Technology adoption is early-stage but directionally active — a CIO is in place, digital transformation is an explicit KKR partnership mandate, and a proprietary mobile LMS app is deployed network-wide. Chito Salazar, the mission-driven CEO who built this network from a single 5,000-student school, is the decisive strategic entry point.",
+  "profile": {
+    "industry_vertical": {
+      "primary_sector": {
+        "value": "education",
+        "evidence": "Operates 13 higher education institutions (universities and colleges) in the Philippines and Indonesia. Revenue entirely derived from tuition, enrollment, and education services.",
+        "confidence": "high"
+      },
+      "vertical_niche": {
+        "value": "affordable private higher education for underserved markets",
+        "evidence": "Explicitly positions as serving 'underserved youth who are often the first in their families to go to college.' Programs skew toward high-board-exam-demand fields: Nursing, Criminology, Business Administration, Engineering, IT, Hospitality. Provincial campuses in Cabanatuan, Cagayan de Oro, Iloilo, Dagupan, Cebu — not elite urban institutions.",
+        "confidence": "high"
+      },
+      "value_chain_position": {
+        "value": "downstream end-service-provider",
+        "evidence": "Directly delivers tertiary education to students. Also operates SWU Medical Center (teaching hospital). No upstream curriculum licensing or platform play — vertically integrated from acquisition through instruction.",
+        "confidence": "high"
+      },
+      "industry_maturity": {
+        "value": "growth",
+        "evidence": "Philippine higher education market USD 154M in 2025, projected 20.23% CAGR to USD 847M by 2034. Expanding population, government Free TVET / Universal Tertiary Access Act tailwinds, and PE capital inflows (KKR, ADB, Kaizenvest) all signal growth phase. Provincial markets remain significantly underpenetrated.",
+        "confidence": "high"
+      }
+    },
+    "business_model": {
+      "revenue_model": {
+        "value": "recurring tuition fees (quasi-subscription per academic year)",
+        "evidence": "Primary revenue is enrollment-based tuition paid per semester/year. 89% student retention rate implies high annual recurrence. Supplemented by hospital services (SWU Medical Center) and scholarship subsidies from partners/government.",
+        "confidence": "high"
+      },
+      "delivery_model": {
+        "value": "physical service delivery (in-person campus instruction) with early digital augmentation",
+        "evidence": "All 13 institutions are physical campuses. Proprietary PHINMA Ed Learning App handles scheduling, attendance, grades, and fee tracking — but instruction is campus-based. Active Learning methodology is in-person. No online-only degree programs identified.",
+        "confidence": "high"
+      },
+      "cost_structure": {
+        "value": "fixed-cost-heavy with moderate capex intensity",
+        "evidence": "PHINMA describes its own philosophy as 'bare-bones, no-frills, brass knuckles' — minimizing overhead to keep tuition affordable. Major fixed costs: faculty salaries, campus facilities, and acquisition debt service. New campus buildings (P432M SJC-DC acquisition, multiple recent inaugurations) indicate sustained capex. Revenue P6.5B, net income P1.5B = ~23% net margin, suggesting disciplined cost control at scale.",
+        "confidence": "high"
+      },
+      "network_effects": {
+        "value": "multi-layer moat: regulatory accreditation barrier + brand/reputation flywheel + campus network density + government-subsidy dependency lock-in",
+        "evidence": "1) REGULATORY BARRIER: CHED accreditation is mandatory for degree-granting authority in the Philippines — only CHED-recognized institutions confer degrees eligible for PRC licensure exams, government scholarships, and employer acceptance. New entrants must pass CHED institutional recognition, program accreditation (PACUCOA/AACCUP), and minimum faculty/facility standards before enrolling a single student — a 3-5 year process minimum. PHINMA schools hold PACUCOA Level III accreditation, the highest tier. 2) BRAND/BOARD EXAM FLYWHEEL: PHINMA schools ranking #1 nationally in Nursing and Criminology topnotchers creates a self-reinforcing cycle — reputation attracts stronger students, stronger students produce better board results, board results reinforce ranking leadership, ranking drives next-cycle enrollment. 3) CAMPUS NETWORK DENSITY: 13 physical campuses embedded in provincial communities create switching costs for students (relocation, credit transfer barriers). Established relationships with local government units, employers, and community institutions compound this. 4) SUBSIDY LOCK-IN: Government Free HE Act subsidy flows to enrolled students at accredited institutions — students are financially locked in mid-program, and PHINMA institutions are beneficiaries of this flow at scale. No direct network effects between students, but geographic density across Luzon/Visayas/Mindanao creates employer pipeline advantages.",
+        "confidence": "high"
+      },
+      "key_dependencies": {
+        "value": "CHED accreditation + government tuition subsidies + campus infrastructure + faculty licensure pipeline + Indonesian joint venture structures",
+        "evidence": "1) CHED ACCREDITATION: All Philippine programs require CHED recognition and program approval. Loss of accreditation for healthcare programs would disqualify graduates from PRC licensure exams — an existential risk to Nursing/Criminology programs that drive enrollment. CHED also regulates tuition increase approvals, limiting pricing power. 2) GOVERNMENT SUBSIDIES (Free HE Act / UAQTEA): Government subsidy covers tuition for students at accredited institutions — a significant revenue floor. Policy reversal or defunding would directly impact affordability for PHINMA's target market. 3) CAMPUS INFRASTRUCTURE: 13 owned/leased campuses, SWU Medical Center (teaching hospital), and ongoing capex (Surabaya East Java campus in negotiation, 4 Philippine cities in pipeline). Campus availability gates enrollment capacity. 4) FACULTY LICENSURE PIPELINE: Board exam performance depends on licensed, experienced faculty — especially in Nursing, Medical Technology, Criminology, and Engineering. Structural scarcity of licensed healthcare educators in provincial markets is an ongoing constraint. 5) INDONESIA JV STRUCTURES: Horizon University Indonesia and Kalbis University operate through local Yayasan (foundation) joint ventures required under Indonesian foreign ownership regulations. Dependency on Yayasan Triputra Persada and other local partners for legal operating structure. 6) KKR/PE CAPITAL: P4.5B KKR + Kaizenvest capital is funding acquisition pipeline and Indonesia expansion — disruption to this relationship would constrain growth capex.",
+        "confidence": "high"
+      }
+    },
+    "scale_resources": {
+      "headcount": {
+        "value": "mid-market to large enterprise (3,500–5,000 FTE across the network)",
+        "evidence": "PHINMA Education's official website explicitly stated 'over 2,500 employees in ten schools' when operating 10 institutions. With 13 institutions (+30% campus count) and enrollment grown from ~130K to 177K (+36%), a proportional scaling implies at least 3,200–3,400 FTE at minimum. Adding Indonesia headcount (Horizon University + Kalbis University) and expanded Student Success coaching program pushes the estimate to 3,500–5,000 FTE network-wide. PitchBook reports PHINMA Corporation (parent conglomerate) at ~6,600 total employees across all divisions (education, steel, housing, BPO, energy) — education being the largest segment but not 100% of headcount. ZoomInfo HQ-only count (201–500) reflects Makati central office only. The 2,500+ official floor is the most credible anchor; current range of 3,500–5,000 reflects proportional growth since that disclosure. Faculty headcount is partially part-time, per standard Philippine HE practice.",
+        "confidence": "medium"
+      },
+      "revenue_band": {
+        "value": "enterprise ($100M+) — approximately $115M USD annually",
+        "evidence": "FY2024-2025 revenue: P6.5B (+14% YoY). At ~56 PHP/USD that is approximately USD 116M. Nine-month YTD to Dec 2025: P5.27B revenue, P1.42B net income — on track for another strong year.",
+        "confidence": "high"
+      },
+      "capitalization": {
+        "value": "PE-backed (late-stage private equity with IPO optionality)",
+        "evidence": "P4.5B investment from KKR (Global Impact Fund II) + Kaizenvest fully closed by August 2025. PHINMA Corporation (PSE: PHN) retains majority. Prior investors ADB and FMO exited via secondary sales. IPO discussed but Salazar stated 'no immediate need' — deferred minimum 3 years from 2024. Parent PHINMA Corp market cap ~P5.52B as of Dec 2025.",
+        "confidence": "high"
+      },
+      "asset_intensity": {
+        "value": "asset-heavy",
+        "evidence": "13 physical campuses across multiple cities in Philippines and Indonesia. Recent construction: Ramon V. del Rosario Building (SWU, Cebu), Aurora Building (SJC-QC, Cubao), 10-story Horizon University building (Karawang), PHINMA Hall (RCL, Calamba). Campus real estate and hospital (SWU Medical Center) represent substantial fixed assets. Expansion pipeline includes San Pablo, Roxas City, Bacolod, Butuan.",
+        "confidence": "high"
+      },
+      "financial_health": {
+        "value": "profitable and accelerating",
+        "evidence": "FY2024-25 revenue P6.5B (+14% YoY), net income P1.5B (+8% YoY). Q1 FY2025 alone: revenue P2.1B, net income P907M. Enrollment at record 177,851 (SY2025-2026 Q1). 89% student retention. Net margin ~23%. Fresh P4.5B capital injection. Parent PHINMA Corp consolidated net income fell 66% to P279.55M in 2024 due to non-education segment costs — highlighting education as the group's financial engine.",
+        "confidence": "high"
+      },
+      "company_age": {
+        "value": "established (8-20 years) — 22 years in education operations",
+        "evidence": "PHINMA Education started in 2004 with acquisition of Araullo University. As of 2026 the network is 22 years old. PHINMA Corporation (parent) founded 1956 (70 years). Education entity incorporated as PHINMA Education Holdings, Inc. (PEHI) in 2015.",
+        "confidence": "high"
+      },
+      "customer_base_scale": {
+        "value": "massive (100K+)",
+        "evidence": "177,851 enrolled students as of Q1 SY2025-2026 — a record. Prior year: 167,000+ enrollees. In SY22-23: 124,501 students (highest at that time). Network has produced 40,000+ licensed professionals and 203 board topnotchers since 2004.",
+        "confidence": "high"
+      }
+    },
+    "growth_phase": {
+      "primary_phase": {
+        "value": "active geographic scaling — acquisition-led, multi-country, backed by PE capital",
+        "evidence": "HARD EVIDENCE OF SCALING MILESTONES (2023-2026): 1) Enrollment growth: 124,501 (SY22-23) → 167,000+ (SY23-24) → 177,851 record (SY25-26 Q1) — 43% growth in 3 years. Target: 300,000 students by 2027-2028. 2) Indonesia expansion: Horizon University Indonesia (Karawang, West Java) inaugurated 10-story Horizon East building Nov 2025, adding 7,000 student capacity (total ~10,000). Kalbis University (Jakarta) acquired 2024. Surabaya (East Java) campus in advanced negotiation — targeting 100,000-student graduating market. 3) Philippine campus pipeline: SJC-Dasmariñas (Cavite) upgrades underway (Nov 2025). New campuses in San Pablo, Roxas City, Bacolod, and Butuan in pipeline. 4) Capital for scaling: P4.5B from KKR + Kaizenvest (fully closed Aug 2025) explicitly earmarked for expansion + digital transformation. P825M Kaizenvest tranche finalized separately. 5) Revenue trajectory: P5.27B 9-month revenue (Apr-Dec 2025), P1.42B net income — on track for 14%+ growth year. 6) 5-COUNTRY EXPANSION NOW NAMED: Philippines (11 schools) + Indonesia (2 schools, expanding) confirmed. Vietnam entry targeted by 2027 via acquisition — CEO Salazar: 'We're hoping we can enter Vietnam by 2027'; KKR specifically interested in Vietnam tertiary schools. Cambodia and Laos identified as subsequent targets beyond Vietnam. Full 5-country roadmap: PH → Indonesia → Vietnam → Cambodia → Laos. 10-20 new schools across these 5 countries over 5 years (2024-2029 window). All indicators consistent with high-velocity geographic scaling.",
+        "confidence": "high"
+      },
+      "secondary_phase": {
+        "value": "exit / transition (IPO optionality)",
+        "evidence": "KKR's investment implicitly structures toward eventual exit (PE fund lifecycle). Salazar acknowledged IPO as an option but deferred it at least 3 years from 2024. The company is building financial track record and governance infrastructure consistent with pre-IPO preparation.",
+        "confidence": "medium"
+      }
+    },
+    "market_position": {
+      "customer_segment": {
+        "value": "consumer (individual students) — specifically lower-income first-generation college students",
+        "evidence": "Explicitly targets 'underserved youth who are often the first in their families to go to college.' Hawak Kamay 5.5K-peso scholarship program (approx $100 USD) signals the price sensitivity of their market. Student testimonials emphasize financial burden relief. Provincial campuses serve communities with lower average incomes.",
+        "confidence": "high"
+      },
+      "competitive_stance": {
+        "value": "market leader (dominant share in affordable Philippine private HE)",
+        "evidence": "Self-described as 'the largest private higher education provider in Southeast Asia in terms of enrollment.' 177,000+ students vs. next-largest Philippine private networks. 20-year head start in acquisition-and-turnaround model. Strong provincial footprint competitors have not replicated.",
+        "confidence": "high"
+      },
+      "gtm_motion": {
+        "value": "reputation/word-of-mouth-led + community-led",
+        "evidence": "Board exam rankings are primary marketing — press coverage of #1 nursing school, topnotchers, pass rates. Scholarship programs generate community goodwill and enrollment. Facebook accounts per school for local community engagement. No evidence of significant paid digital advertising or sales team. Student success stories on homepage function as social proof.",
+        "confidence": "high"
+      },
+      "customer_concentration": {
+        "value": "diversified (no single customer material)",
+        "evidence": "177,851 individual student customers across 13 institutions and multiple provinces. No single student or cohort represents more than a fraction of revenue. Government subsidies (Free HE Act) represent a meaningful revenue stream but are distributed across enrolled students, not a single contract.",
+        "confidence": "high"
+      },
+      "pricing_position": {
+        "value": "value/low-cost (affordable, accessible pricing as core proposition)",
+        "evidence": "Hawak Kamay scholarship at 5,500 PHP (~$100 USD) signals tuition is in an accessible range. PHINMA's 'bare-bones, no-frills' philosophy is explicitly designed to keep costs low for students. Positioned as quality education at accessible price — not a premium brand, not a budget diploma mill.",
+        "confidence": "high"
+      }
+    },
+    "org_structure": {
+      "leadership_model": {
+        "value": "founder-era CEO with dual-hat authority (Education CEO + Parent Corp President)",
+        "evidence": "Chito Salazar has been with PHINMA Education since its founding in 2004 and serves simultaneously as PHINMA Education President & CEO and PHINMA Corporation President & COO. This dual role gives him unusual authority across both the operating entity and the parent conglomerate. He is not the founder of PHINMA Corp (founded 1956) but is the founding architect of the education network.",
+        "confidence": "high"
+      },
+      "org_shape": {
+        "value": "hub-and-spoke (central management team + semi-autonomous campus institutions)",
+        "evidence": "Network headquarters at 2F PHINMA Plaza, Rockwell Center, Makati. Central C-suite (CEO, COO, CFO, CIO, CAO, Country Head, Indonesia Head). Each institution retains its own name, local president, and brand identity but operates under shared network curriculum, the Student Success Program, and central financial oversight via PEHI.",
+        "confidence": "high"
+      },
+      "workforce_model": {
+        "value": "multi-site co-located (campus-based workforce)",
+        "evidence": "Faculty and student-facing staff are physically based at each campus. 13 campuses across Philippines and Indonesia. HQ management team is centrally located in Makati. No evidence of remote-first culture — in-person instruction is core to the model.",
+        "confidence": "high"
+      },
+      "talent_profile": {
+        "value": "domain-expert-heavy (licensed educators, healthcare professionals, board-exam instructors)",
+        "evidence": "Active Learning methodology requires trained instructors. Board exam performance is a KPI — faculty quality in Nursing, Criminology, Engineering is critical. Student Success Program coaches are a distinct talent category (academic/emotional support). PHINMA invests heavily in faculty development per their About page. C-suite includes PhD-holding academic leaders (Salazar, Reyes).",
+        "confidence": "high"
+      }
+    },
+    "tech_maturity": {
+      "stack_generation": {
+        "value": "Transitional (Mastersoft ERP + Lenovo DaaS ~2,000 devices; actively hiring Backend Devs, iOS Engineers, Lead Frontend Engineers)",
+        "evidence": "Core SIS: Mastersoft ERP Solutions (package ID com.iitms.phinma). PHINMA Ed Learning App (100K+ downloads, updated Feb 2026) is student-facing mobile layer. Lenovo partnership (2024): ~2,000 devices via DaaS + TruScale Managed Services + EdVision training. LinkedIn research reveals active hiring for Backend Developers, iOS Engineers, and Lead Frontend Engineers — a significant signal of building internal engineering capability. WordPress public site. CIO role exists centrally. KKR digital transformation mandate is key priority.",
+        "confidence": "medium"
+      },
+      "engineering_practices": {
+        "value": "Transitioning from vendor-managed to internal engineering — CTO Alex Ustaris (ETCIO Transformative CIO 2024, ISOG Cybersecurity Awards Best CTO 2024, World CIO 200 2020-2024); IT Operations Manager Winston Yu; actively hiring developers",
+        "evidence": "LinkedIn research identifies CTO Alex Ustaris with significant industry recognition: ETCIO Transformative CIO 2024, ISOG Cybersecurity Awards Best CTO 2024, World CIO 200 (2020-2024). IT Operations Manager Winston Yu supports operations. PHINMA Ed Learning App was originally Mastersoft-licensed, but active hiring for Backend Developers, iOS Engineers, and Lead Frontend Engineers signals shift toward internal engineering capability. Lenovo DaaS/TruScale outsources device lifecycle. KKR digital transformation mandate is likely driving this transition.",
+        "confidence": "medium"
+      },
+      "data_infrastructure": {
+        "value": "ERP-native reporting with centralized SIS data; no advanced analytics or data warehouse visible",
+        "evidence": "Data infrastructure is built on Mastersoft ERP's native reporting capabilities — the SIS captures enrollment, attendance, grades, fees, and academic records across all 13 campuses in a centralized system (sis.phinma.edu.ph with per-campus instances). The PHINMA Education Network admin portal (pensms.phinma.edu.ph) provides network-level reporting. Enrollment and board exam metrics reported with high precision (89% retention, topnotcher rankings per school) — consistent with ERP-native dashboards, not a separate BI layer. Google Analytics on public website. Lenovo TruScale manages device telemetry. No public evidence of a separate data warehouse, Tableau/Power BI deployment, ML in production, or advanced analytics pipeline. Data infrastructure is operationally sufficient for current scale but lacks the analytical sophistication typical of organizations preparing for IPO-level reporting or large-scale predictive analytics.",
+        "confidence": "medium"
+      },
+      "security_posture": {
+        "value": "Intermediate (CTO won ISOG Cybersecurity Awards Best CTO 2024; compliance-mandated baseline plus active security leadership)",
+        "evidence": "CTO Alex Ustaris won ISOG (Information Security Officers Group) Cybersecurity Awards Best CTO 2024, indicating active cybersecurity leadership at executive level. Privacy Policy published. HTTPS across web properties. Philippine Data Privacy Act (RA 10173) and NPC compliance legally mandated. Lenovo TruScale provides managed endpoint security across ~2,000 devices. SWU Medical Center subject to DOH healthcare data requirements. CTO cybersecurity awards elevate assessment from basic to intermediate — evidence of deliberate security investment beyond minimum compliance. No SOC2 or ISO27001 confirmed.",
+        "confidence": "medium"
+      }
+    },
+    "operating_environment": {
+      "regulatory_burden": {
+        "value": "heavy",
+        "evidence": "All programs require CHED (Commission on Higher Education) approval and accreditation. Healthcare programs (Nursing, Medical Technology) additionally regulated by PRC (Professional Regulation Commission) for licensure exam eligibility. Indonesia operations navigate separate DIKTI/Kemdikbud regulatory framework. Data Privacy Act (Republic Act 10173) applies to student records. SWU Medical Center is subject to DOH hospital regulations.",
+        "confidence": "high"
+      },
+      "geographic_scope": {
+        "value": "regional (Philippines + Indonesia, with expansion to additional ASEAN countries planned)",
+        "evidence": "11 Philippine institutions across Luzon, Visayas, Mindanao. 2 Indonesian institutions (Karawang/West Java + Jakarta). Salazar has stated a 5-country expansion target over 5 years — though the 3 additional countries are not yet publicly named.",
+        "confidence": "high"
+      },
+      "macro_sensitivity": {
+        "value": "recession-resistant with moderate FX exposure",
+        "evidence": "Education demand in underserved markets is relatively inelastic — economic downturns often increase enrollment as people upskill. Government Free HE subsidies provide a floor. However: Indonesia operations generate IDR revenues against PHP/USD cost structures, creating FX exposure. Philippine peso depreciation affects parent company consolidated reporting.",
+        "confidence": "medium"
+      },
+      "governance_obligations": {
+        "value": "PE-backed with public parent company reporting obligations",
+        "evidence": "PHINMA Corporation (PHN) is listed on the Philippine Stock Exchange — triggering PSE disclosure requirements. PHINMA Education Holdings (PEHI) itself is not yet listed. KKR's Global Impact Fund II investment introduces UN SDG alignment reporting obligations. Salazar is aligned with ESG/SDG framing as a strategic and investor relations tool.",
+        "confidence": "high"
+      }
+    },
+    "culture_brand": {
+      "innovation_posture": {
+        "value": "pragmatic (adopts when clear ROI, evidence-driven)",
+        "evidence": "PHINMA's operational ethos — 'bare-bones, no-frills, brass knuckles' — is fundamentally conservative and execution-focused, not experimental. The Learning App was built because student tracking had direct retention impact. KKR's digital transformation mandate may shift this posture. AI tablet donation (HONOR Pad X9a, May 2025) is exploratory, not transformational. No evidence of internal innovation labs or rapid experimentation culture.",
+        "confidence": "medium"
+      },
+      "brand_positioning": {
+        "value": "mission/community-driven",
+        "evidence": "Tagline: 'Making lives better through education.' All homepage messaging centers on student transformation stories (financial burden relief, first-generation college students, working parents). KKR investment framed as SDG 4 alignment, not financial return. Silver Anvil PR Award for community bayanihan campaign. Mission is not just marketing — it structurally constrains pricing, campus location choices, and program selection.",
+        "confidence": "high"
+      },
+      "public_values": {
+        "value": "mission-driven (mission constrains commercial decisions)",
+        "evidence": "Explicitly turns down higher-income urban markets in favor of underserved provinces. Core values (Integrity, Competence, Commitment, Professionalism, Teamwork, Openness, Love of Country) are prominently published. Salazar mandates executive home visits to students' families — this is cultural practice, not marketing. KKR chose them specifically for SDG 4 alignment.",
+        "confidence": "high"
+      },
+      "employer_brand": {
+        "value": "stable/mission-attractive in niche (education sector) with compensation tradeoffs",
+        "evidence": "Glassdoor: 3.4/5 overall, 53% recommend, 84% positive business outlook. Culture rated 4.0/5. Employees cite mission alignment as a strong attractor. Pain points: entry-level salaries below market, work-life balance 3.3/5. Consistent with lean, mission-driven organization — attracts educators who prioritize purpose over compensation.",
+        "confidence": "medium"
+      }
+    }
+  },
+  "gaps": [
+    "Chito Salazar's direct email not publicly confirmed — pattern suggests chito.salazar@phinma.com.ph or csalazar@phinma.com.ph",
+    "No public disclosure of KKR's specific digital transformation roadmap or tech platform upgrade initiatives planned for 2025-2027",
+    "No evidence of AI/GenAI curriculum integration or use of AI tools within PHINMA Education's academic programs",
+    "PHINMA Education Holdings full audited financial statements not retrieved — FY2024-25 figures sourced from press coverage, not SEC/PSE regulatory filing",
+    "Indonesia financials and enrollment not broken out separately from Philippines consolidated figures",
+    "Vietnam entry timeline (2027) confirmed but deal structure and target institution not yet publicly named",
+    "No student satisfaction data (NPS, student reviews) — only employee Glassdoor data obtained",
+    "Headcount estimate (3,500–5,000 FTE) anchored on official 'over 2,500' disclosure from ~10-school era — current figure may be higher with 13 institutions",
+    "Mastersoft ERP version, contract terms, or upgrade roadmap not publicly disclosed",
+    "Metro Manila expansion pipeline status (San Pablo, Bacolod, Butuan) — timeline and deal status unclear as of early 2026"
+  ],
+  "data_quality_score": {
+    "overall": 0.82,
+    "passing_threshold": 0.7,
+    "method": "semantic-rubric-haiku",
+    "dimensions": {
+      "industry-vertical": 1,
+      "business-model": 0.6,
+      "scale-resources": 0.857,
+      "growth-phase": 0.14,
+      "market-position": 0.84,
+      "org-structure": 1,
+      "tech-maturity": 0.77,
+      "operating-environment": 0.92,
+      "culture-brand": 0.885
+    },
+    "strong_dimensions": {
+      "industry-vertical": {
+        "label": "Industry & Vertical",
+        "score": 1
+      },
+      "scale-resources": {
+        "label": "Scale & Resources",
+        "score": 0.857
+      },
+      "market-position": {
+        "label": "Market Position",
+        "score": 0.84
+      },
+      "org-structure": {
+        "label": "Org Structure",
+        "score": 1
+      },
+      "tech-maturity": {
+        "label": "Tech Maturity",
+        "score": 0.77
+      },
+      "operating-environment": {
+        "label": "Operating Environment",
+        "score": 0.92
+      },
+      "culture-brand": {
+        "label": "Culture & Brand",
+        "score": 0.885
+      }
+    },
+    "weak_dimensions": {
+      "business-model": {
+        "label": "Business Model",
+        "score": 0.6,
+        "research_questions": [
+          "What is PHINMA Education's revenue mix — is it project-based, retainer, subscription, or blended?",
+          "What structural moats or switching costs does PHINMA Education have beyond brand/relationships?",
+          "What are PHINMA Education's critical operational dependencies — platform, talent pipeline, regulatory, or funding?"
+        ]
+      },
+      "growth-phase": {
+        "label": "Growth Phase",
+        "score": 0.14,
+        "research_questions": [
+          "Is PHINMA Education actively scaling (new markets, hiring) or optimizing (margins, retention, efficiency)?",
+          "What growth milestones has PHINMA Education hit in the last 2 years — new geographies, products, partnerships?",
+          "Is PHINMA Education preparing for any ownership transition (acquisition, IPO, leadership succession)?"
+        ]
+      }
+    },
+    "total_properties_scored": 38
+  }
+}

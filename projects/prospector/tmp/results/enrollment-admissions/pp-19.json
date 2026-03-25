@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "enrollment-admissions-intake-forecasting-market-context-dup",
+  "pain_point_label": "Blind Spots on Competitive & Market Dynamics",
+  "matches": [
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "This pain point is almost a textbook use case for a research agent: the operator lacks competitive intelligence on rival schools and demographic data about their catchment areas, problems that require ongoing, multi-source information gathering rather than a one-time analysis. A research agent can autonomously scrape competitor fee structures, enrollment announcements, new campus openings, and government demographic releases, synthesizing them into a periodic briefing. This is exactly the autonomous multi-source gather-and-synthesize pattern the capability is defined around.",
+      "opportunity_sketch": "An agent that runs weekly, pulling data from competitor websites, government census releases, and local news, then delivers a structured competitive landscape briefing to enrollment leadership — flagging new entrants, fee changes, demographic shifts, and catchment population trends.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Multi-site operators are flooded with potentially relevant long-form inputs — government reports, competitor annual reports, local council planning documents, and industry whitepapers — but have no capacity to read them systematically. Summarization directly addresses the mechanism: turning voluminous external documents into digestible strategic intelligence. The output is a denser, preserved-meaning version of inputs that leadership can act on without reading everything themselves.",
+      "opportunity_sketch": "An automated pipeline that ingests newly published government demographic reports, competitor prospectuses, and regional planning documents, summarizing each into a one-page brief tagged by strategic theme (pricing, catchment, new campuses).",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Demographic shifts in catchment areas are inherently time-series problems: birth rate cohorts, net migration flows, and population growth all produce time-ordered signals that predict future enrollment-eligible populations. An operator currently blind to these shifts can use time-series forecasting on public ABS/census data combined with their own historical enrollment figures to project demand per campus 2-5 years out — directly informing strategic decisions about capacity and positioning.",
+      "opportunity_sketch": "A forecasting model ingesting historical enrollment by campus, local birth registry data, and population projections to produce campus-level demand forecasts, surfacing which sites face enrolment risk from demographic decline and which have untapped growth.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Competitive and market intelligence lives in unstructured text — news articles, competitor websites, government statements, industry reports — and the relationships between entities (school X opened campus Y in suburb Z, operator A reduced fees after competitor B, demographic trend C is affecting catchment D) are exactly the structured relational facts that knowledge extraction is designed to surface. This goes beyond summarization: it produces a queryable knowledge graph of market dynamics rather than just condensed prose.",
+      "opportunity_sketch": "A knowledge extraction pipeline that continuously processes competitor web pages, local news, and public filings to build and update a structured competitive map — tracking which schools are opening, closing, raising fees, or targeting new demographics — queryable by enrollment strategists.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

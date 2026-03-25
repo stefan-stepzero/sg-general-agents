@@ -1,0 +1,583 @@
+{
+  "entity": "Catholic Schools Parramatta Diocese",
+  "short_name": "CSPD",
+  "abn": "Data not available",
+  "profile_date": "2026-03-25",
+  "website": "https://www.parra.catholic.edu.au",
+  "executive_summary": "Catholic Schools Parramatta Diocese (CSPD) is the second-largest Catholic diocesan school system in NSW, serving 45,646 students across 83 schools in Western Sydney and the Blue Mountains. CSPD completed a major governance transformation in 2023 — new name (formerly CEDP), new CEO Jack de Groot, and a skills-based Board — and launched a Five-Year Strategic Plan in October 2024 and its flagship 'Uplift' teaching framework in August 2025. The system is growing (1.3–2.5% YoY enrolment growth since 2022), financially stretched ($20.6m operating deficit in 2023 with $19m/year salary escalation locked in), and investing heavily in infrastructure, technology, and workforce quality.",
+  "executive_summary_detail": "ACARA 2025 data confirms 49,577 enrolments across 89 postcode-matched schools, with a system-level ICSEA average of 1,059 and LBOTE representation at 53.4% — reflecting the culturally diverse communities of Western Sydney. The 2023 operating result recorded a deficit of $20.6m before capital, against total revenue of $857.2m, with $85.9m in capital expenditure. Key signals include: accelerating enrolment growth (1.3–2.5% YoY since 2022), active teacher pipeline investment (scholarship program, new EGM Learning Outcomes), Canvas LMS deployed system-wide, and a 99% enterprise agreement approval rate in 2025.",
+  "known_contact": {
+    "name": "Jack de Groot",
+    "role": "Chief Executive Officer"
+  },
+  "leadership_team": [
+    {
+      "name": "Jack de Groot",
+      "title": "Chief Executive Officer",
+      "note": "Appointed January 2023. Previously CEO St Vincent de Paul Society NSW, CEO Caritas Australia (13 years). Holds board memberships at University of Notre Dame, St John of God Health Care, and Caritas Australia.",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership/our-chief-executive-officer)"
+    },
+    {
+      "name": "Elizabeth Crouch AM",
+      "title": "Chair, Board of Directors",
+      "note": "Appointed with new governance structure from 1 January 2023.",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.4 & p.13)"
+    },
+    {
+      "name": "Bishop Vincent Long Van Nguyen OFM Conv DD",
+      "title": "Bishop of Parramatta (pastoral leader)",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.3 & p.4)"
+    },
+    {
+      "name": "Patrick Ellis",
+      "title": "Executive General Manager, Learning Outcomes",
+      "note": "Recruited circa late 2025 via ANZUK Executive. Previously Education Lead at Catholic Education Canberra-Goulburn. LinkedIn post publicly associates him with the Uplift framework: 'look forward to working with the 80 school communities across the diocese to support high quality, evidence based teaching and learning #Uplift'.",
+      "source": "web-research.json (anzuk.education listing; parra.catholic.edu.au/about/our-leadership/executive-general-managers)"
+    },
+    {
+      "name": "Rob Beetson",
+      "title": "Executive General Manager, Legal, Governance & Risk",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership/executive-general-managers)"
+    },
+    {
+      "name": "Greg Elliott",
+      "title": "Executive General Manager, Quality & Performance",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership/executive-general-managers)"
+    },
+    {
+      "name": "Gerard Giesekam",
+      "title": "Executive General Manager, Finance & Infrastructure",
+      "note": "Also CSPD representative on CSNSW Finance Working Group.",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership); annual-report-extract.json (csnsw-annual-report-2024.pdf Appendix A)"
+    },
+    {
+      "name": "Daniel Lynch",
+      "title": "Executive General Manager, People & Culture",
+      "note": "Also CSPD representative on CSNSW Teacher Workforce Working Group.",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership); annual-report-extract.json (csnsw-annual-report-2024.pdf Appendix A)"
+    },
+    {
+      "name": "Elizabeth Scully",
+      "title": "Executive General Manager, Communications & Engagement",
+      "note": "Signed CSPD–St Vinnies NSW partnership on behalf of CSPD, September 16 2025.",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership)"
+    },
+    {
+      "name": "Mark Smith",
+      "title": "Executive General Manager, Mission",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership/executive-general-managers)"
+    },
+    {
+      "name": "Frances Waterford",
+      "title": "Executive General Manager, Information Technology (CIO)",
+      "note": "Background in Cancer Council NSW, ICT Design Performance and Alignment, and Origin Energy. Role elevated from Director Data Intelligence (pre-November 2023) to CIO in November 2023.",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership); annual-report-extract.json (cspd-annual-report-2023.pdf p.20)"
+    },
+    {
+      "name": "Dianne Van Berlo",
+      "title": "Executive General Manager, Student Support",
+      "source": "web-research.json (parra.catholic.edu.au/about/our-leadership/executive-general-managers)"
+    },
+    {
+      "name": "Lisa Crampton",
+      "title": "Head of Primary Learning",
+      "note": "Announced CSPD's new Effective Learning and Teaching Model at the 2025 Ann D Clark Lecture.",
+      "source": "web-research.json (parra.catholic.edu.au/whats-on/latest-news/2025/08/12/02/36/...)"
+    }
+  ],
+  "key_metrics": [
+    {
+      "label": "Total Student Enrolments (ACARA 2025)",
+      "value": "49,577",
+      "context": "89 CSPD-postcode-matched schools in ACARA 2025 dataset. Includes some order/non-CSPD-system schools at diocese geography boundary (e.g. Parramatta Marist, Patrician Brothers College).",
+      "source": "acara-extract.json (ACARA My School 2025)"
+    },
+    {
+      "label": "Total Enrolments (CSNSW August 2024 Census)",
+      "value": "45,646",
+      "context": "83 schools. Second largest diocese in NSW after Sydney (73,853 students, 147 schools).",
+      "source": "annual-report-extract.json (csnsw-annual-report-2024.pdf p.14)"
+    },
+    {
+      "label": "Number of Schools",
+      "value": "83 (CSNSW 2024) / 80 (CSPD self-reported 2023)",
+      "context": "CSPD 2023 Annual Report states 80 schools; CSNSW August 2024 census shows 83 — difference may reflect additions between 2023 and 2024.",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.3; csnsw-annual-report-2024.pdf p.14)"
+    },
+    {
+      "label": "Total Staff (2023)",
+      "value": "5,803",
+      "context": "Teaching: 3,760. Support: 1,385. System: 658.",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.8 & p.38)"
+    },
+    {
+      "label": "FTE Teaching Staff (ACARA 2025)",
+      "value": "3,474.2 FTE",
+      "context": "Across 89 postcode-matched schools.",
+      "source": "acara-extract.json (ACARA My School 2025)"
+    },
+    {
+      "label": "Student-Teacher Ratio (ACARA 2025)",
+      "value": "14.3:1",
+      "source": "acara-extract.json (ACARA My School 2025)"
+    },
+    {
+      "label": "Average ICSEA (ACARA 2025)",
+      "value": "1,059",
+      "context": "Range: 945–1,145. National ICSEA average is 1,000. CSPD is above national average, consistent with diverse suburban western Sydney catchment.",
+      "source": "acara-extract.json (ACARA My School 2025)"
+    },
+    {
+      "label": "LBOTE — System Average (ACARA 2025)",
+      "value": "53.4%",
+      "context": "NSW Catholic sector average is 36% (CSNSW 2024). CSPD serves significantly more linguistically diverse communities than the sector norm.",
+      "source": "acara-extract.json (ACARA My School 2025); annual-report-extract.json (csnsw-annual-report-2024.pdf p.13)"
+    },
+    {
+      "label": "Indigenous Students — System Average (ACARA 2025)",
+      "value": "2.7%",
+      "source": "acara-extract.json (ACARA My School 2025)"
+    },
+    {
+      "label": "Enrolment CAGR 2008–2025",
+      "value": "0.71%",
+      "context": "Total enrolments grew from 43,979 (2008) to 49,577 (2025) — 12.7% total growth. Growth accelerated: +2.5% (2022), +1.3% (2023), +1.8% (2024), +1.3% (2025).",
+      "source": "acara-trends.json (ACARA My School Historical Data 2008–2025)"
+    },
+    {
+      "label": "Total Operating Revenue (2023)",
+      "value": "$857.2m",
+      "context": "Commonwealth recurrent: $546.8m (63.8%). State recurrent: $144.9m (16.9%). Parent fees: $125.5m (14.6%). Investment: $24.0m.",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45)"
+    },
+    {
+      "label": "Operating Deficit Before Capital (2023)",
+      "value": "-$20.6m",
+      "context": "Total expenditure $877.9m vs revenue $857.2m. Salaries: $628.4m (71.6% of expenditure).",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45)"
+    },
+    {
+      "label": "Capital Expenditure (2023)",
+      "value": "$85.9m",
+      "context": "Net capital outflows against net capital revenue of $12.4m. 10-Year Capital Framework with business cases for 28 schools commenced late 2023.",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45)"
+    },
+    {
+      "label": "Employee Engagement Score (2023)",
+      "value": "69%",
+      "context": "Survey response rate: 53%. Described as stable. Focus areas: leader visibility, communication, work-life balance.",
+      "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.38)"
+    },
+    {
+      "label": "Enterprise Agreement Approval (2025)",
+      "value": "99% yes vote",
+      "context": "NSW and ACT Catholic Systemic Schools Enterprise Agreement 2025. Teacher pay: +3% p.a. 2024–2026.",
+      "source": "web-research.json (ieu.asn.au/catholic-systemic-vote-for-new-eas/)"
+    }
+  ],
+  "dimensions": {
+    "scale": {
+      "students": {
+        "value": "45646",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "students_source": {
+        "value": "annual-report-extract.json (csnsw-annual-report-2024.pdf p.14)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "students_note": {
+        "value": "August 2024 CSNSW census. ACARA 2025 postcode extract shows 49,577 across 89 matched schools.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "schools": {
+        "value": "83",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "schools_source": {
+        "value": "annual-report-extract.json (csnsw-annual-report-2024.pdf p.14)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "staff": {
+        "value": "5803",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "staff_source": {
+        "value": "annual-report-extract.json (cspd-annual-report-2023.pdf p.8 & p.38)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "geography": {
+        "value": "Western Sydney and Blue Mountains — Parramatta, Blacktown, Penrith, Hawkesbury, Hills District, Cumberland LGAs",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "sector_rank": {
+        "value": "Second largest diocesan Catholic school system in NSW",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "school_type_mix": {
+      "primary_schools": {
+        "value": "58",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "secondary_schools": {
+        "value": "22",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "trade_and_inquiry_campuses": {
+        "value": "2",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "high_support_learning_settings": {
+        "value": "3",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "virtual_school": {
+        "value": "1",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "early_learning_centres": {
+        "value": "6",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "before_after_school_care_centres": {
+        "value": "52",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "vet_program_sites": {
+        "value": "26",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "source": {
+        "value": "annual-report-extract.json (cspd-annual-report-2023.pdf p.3 & p.8)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "financial": {
+      "total_revenue_m": {
+        "value": "857.2",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "total_expenditure_m": {
+        "value": "877.9",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "operating_deficit_before_capital_m": {
+        "value": "-20.6",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "capital_expenditure_m": {
+        "value": "85.9",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "salary_cost_pct_of_expenditure": {
+        "value": "71.6%",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "revenue_dependence_commonwealth_pct": {
+        "value": "63.8%",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "revenue_dependence_state_pct": {
+        "value": "16.9%",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "parent_fees_pct": {
+        "value": "14.6%",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "student_demographics": {
+      "icsea_avg": {
+        "value": "1059",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "icsea_range": {
+        "value": "945–1,145",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "lbote_pct_system_avg": {
+        "value": "53.4%",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "indigenous_pct_system_avg": {
+        "value": "2.7%",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "acara-extract.json (ACARA My School 2025)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "workforce": {
+      "teaching_staff": {
+        "value": "3760",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "support_staff": {
+        "value": "1385",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "system_staff": {
+        "value": "658",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "new_teachers_2023": {
+        "value": "190",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "teacher_scholarship_recipients_2024": {
+        "value": "102",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "employee_engagement_pct": {
+        "value": "69",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "key_management_female_pct": {
+        "value": "40",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "new_management_appointments_female_pct": {
+        "value": "70",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "source": {
+        "value": "annual-report-extract.json (cspd-annual-report-2023.pdf p.26 & p.38-39)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "technology": {
+      "lms": {
+        "value": "Canvas (Instructure) — system-wide across all 80 schools",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "additional_platforms": {
+        "value": "Classm8, Grace (staff intranet)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "ai_policy": {
+        "value": "Domed approach — students only access CSPD-approved platforms; open generative AI chatbots blocked",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "device_procurement": {
+        "value": "BYOD via Compnow education partner with CSPD-specified configurations",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "cio_role": {
+        "value": "Frances Waterford, EGM Information Technology (elevated from Director Data Intelligence in November 2023)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "web-research.json (parra.catholic.edu.au/about/key-initiatives/canvas; catholicvoice.org.au)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "strategic_initiatives": {
+      "five_year_plan": {
+        "value": "2024–2029 strategy launched October 2024. Six pillars: Mission, People, Quality, Relevance, Sustainability, Trust.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "uplift_framework": {
+        "value": "System-wide teaching and learning framework launched August 2025. Explicit instruction, formative assessment, structured literacy. Endorsed by AERO CEO Dr Jenny Donovan.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "effective_learning_teaching_model": {
+        "value": "Operationalises Uplift using Catholic tradition and cognitive science. Announced August 2025 by Head of Primary Learning Lisa Crampton.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "reconciliation_action_plan": {
+        "value": "Innovate RAP 2025–2027 launched July 2025. Second RAP at Innovate level.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "aboriginal_fee_waiver": {
+        "value": "From 2026, school fees waived for all Aboriginal and Torres Strait Islander families across all 80 schools.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "mobile_phone_ban": {
+        "value": "System-wide ban effective January 2026 across all 80 schools.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "st_vinnies_partnership": {
+        "value": "First school-based education provider in NSW to formalise a partnership with St Vincent de Paul Society NSW (September 2025).",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "westmead_campus": {
+        "value": "New Sacred Heart Primary Westmead (Darcy Road) opening Term 3 2026, merging two existing primary schools. More than 500 applicants turned away annually.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "hsc_2025": {
+        "value": "4 First-in-Course state toppers, 20 NSW All Rounders. Parramatta Marist ranked 44th in NSW (29.3% Band 6) — highest-ranked Catholic systemic school.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "web-research.json (multiple URLs cited)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "compliance_and_governance": {
+      "governance_model": {
+        "value": "Company limited by guarantee from 1 January 2023. Board of Directors replacing Diocesan Schools Council. Three committees: Audit and Risk; Mission, Learning and People; Infrastructure and Property.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "registration_authority": {
+        "value": "CSNSW as single Catholic registration authority since July 2023",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "nesa_compliance": {
+        "value": "All teachers hold NESA accreditation and NSW Working with Children Check. RE accreditation required for primary and RE secondary teachers.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "sexual_harassment_duty": {
+        "value": "Positive duty to eliminate sexual harassment introduced 2023 — risk assessments and system-wide training completed.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "annual-report-extract.json (cspd-annual-report-2023.pdf p.12 & p.40); web-research.json (csnsw.catholic.edu.au)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "catholic_mission": {
+      "formation_framework": {
+        "value": "'Life in Abundance: Human Flourishing in the Way of Jesus' — Formation Foundation Document launched 2023. Led by Prof. Br David Hall.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "faith_in_action": {
+        "value": "Faith in Action Team Coordinators deployed to every school community.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "directors_of_catholic_identity": {
+        "value": "Piloted in 13 school communities in 2023.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "wellbeing_directorate": {
+        "value": "Second full year in 2023. 140+ specialist teachers, social workers and psychologists.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "student_wellbeing_framework": {
+        "value": "Released July 2023. Five themes: Leadership, Inclusion, Partnerships with Parish and Family, Support, Student Voice.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "annual-report-extract.json (cspd-annual-report-2023.pdf p.32-35)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    },
+    "enrolment_trends": {
+      "cagr_2008_2025_pct": {
+        "value": "0.71",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "total_growth_2008_2025_pct": {
+        "value": "12.7",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "enrolments_2008": {
+        "value": "43979",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "enrolments_2025": {
+        "value": "49577",
+        "evidence": "Source: ACARA/Annual Report",
+        "confidence": "high"
+      },
+      "recent_yoy": {
+        "value": "{'2022': '2.5%', '2023': '1.3%', '2024': '1.8%', '2025': '1.3%'}",
+        "evidence": "",
+        "confidence": "medium"
+      },
+      "sector_comparison": {
+        "value": "NSW Catholic sector YoY growth was 1.7% in 2024. CSPD 2024 growth of 1.8% was marginally above sector average.",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      },
+      "source": {
+        "value": "acara-trends.json (ACARA My School Historical Data 2008–2025); annual-report-extract.json (csnsw-annual-report-2024.pdf p.13-16)",
+        "evidence": "Source: profile assembly",
+        "confidence": "medium"
+      }
+    }
+  },
+  "gaps": [
+    "NAPLAN proficiency data — system-level aggregates — NAPLAN performance is not provided at system aggregate level in the ACARA extract. The 2023 Annual Report references numeracy proficiency gaps (Strong-to-Exceeding transition) but does not publish system-level scores or compare them to sector norms. School-by-school NAPLAN data exists in ACARA but was not aggregated in the extraction.",
+    "Annual report — 2024 or 2025 — Only the 2023 Annual Report was available for extraction. Financial results, workforce data, and strategy data may have changed materially given the 2025 EA, Uplift launch, and ELT restructure.",
+    "Complete authoritative school list — 18 schools confirmed by name from annual report references; 83 schools confirmed by CSNSW census; 89 in ACARA postcode match (includes boundary schools). A full school directory was not available in source documents.",
+    "Student retention and attrition rates — No data on student retention, year-level attrition, or movement to/from government sector available in any source file.",
+    "Catholic student percentage for CSPD specifically — NSW Catholic sector average is 63% Catholic students (CSNSW 2024). No CSPD-specific figure is available.",
+    "Uplift framework — detailed program structure and outcomes metrics — Uplift is confirmed launched August 2025 but detailed implementation metrics and early outcomes data are not available in the extracted sources."
+  ]
+}

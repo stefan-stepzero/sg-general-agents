@@ -1,0 +1,84 @@
+{
+  "title": "Board-Level Success Scorecard",
+  "subtitle": "Hypothetical KPI framework for CSPD board reporting — derived from profile data, strategic pillars, and sector norms. Not sourced from CSPD internal data.",
+  "as_of": "2026-03 (estimated)",
+  "categories": [
+    {
+      "id": "enrollment",
+      "label": "Enrolment Health",
+      "icon": "📊",
+      "metrics": [
+        { "label": "Total enrolment", "value": "~43,000", "target": "44,500", "status": "on-track", "note": "5.7% national Catholic enrolment growth 2021–2025; Western Sydney population growth corridor" },
+        { "label": "Re-enrolment rate", "value": "~92%", "target": "95%", "status": "watch", "note": "Estimated from sector norms; no CSPD-specific data. Key metric for system stability" },
+        { "label": "New enrolment pipeline", "value": "Healthy", "target": "—", "status": "on-track", "note": "Westmead primary opening 2026; ELC-to-K pipeline across 6 centres" },
+        { "label": "Waitlist demand", "value": "Unknown", "target": "—", "status": "gap", "note": "Growth corridors (Marsden Park, Penrith, Camden) likely have excess demand; data not public" }
+      ]
+    },
+    {
+      "id": "academic",
+      "label": "Academic Outcomes",
+      "icon": "🎓",
+      "metrics": [
+        { "label": "Uplift framework rollout", "value": "Year 1", "target": "80 schools by 2028", "status": "on-track", "note": "Evidence-based teaching framework launched 2025; Patrick Ellis hired Dec 2025 to lead" },
+        { "label": "NAPLAN above national avg", "value": "Rising", "target": "All domains above", "status": "on-track", "note": "Research shows rising academic outcomes; exact domain-level results not extracted" },
+        { "label": "HSC outcomes", "value": "Unknown", "target": "At/above Catholic avg", "status": "gap", "note": "School of Now (SoN) blended delivery for Yr 11-12 specialist subjects; no HSC aggregate data found" },
+        { "label": "Formative assessment maturity", "value": "Early", "target": "Systematic", "status": "watch", "note": "Uplift emphasises formative assessment & cognitive load theory; infrastructure still building" }
+      ]
+    },
+    {
+      "id": "financial",
+      "label": "Financial Sustainability",
+      "icon": "💰",
+      "metrics": [
+        { "label": "Funding certainty", "value": "Secured to 2029", "target": "—", "status": "strong", "note": "CSNSW needs-based funding arrangement 2024–2029 provides multi-year recurrent grant certainty" },
+        { "label": "Operating surplus", "value": "Assumed positive", "target": "Balanced+", "status": "on-track", "note": "Capital works (new Westmead school) and active hiring signal surplus capacity; no financials public" },
+        { "label": "Fee collection rate", "value": "Unknown", "target": ">95%", "status": "gap", "note": "Modest fees supplement government grants; collection challenges likely in lower-income corridors" },
+        { "label": "Capital investment pipeline", "value": "Active", "target": "—", "status": "on-track", "note": "New Westmead primary school (Darcy Road) opening 2026; BGA capital grants" }
+      ]
+    },
+    {
+      "id": "workforce",
+      "label": "Workforce & Talent",
+      "icon": "👥",
+      "metrics": [
+        { "label": "Teacher vacancy rate", "value": "Sector pressure", "target": "<3%", "status": "watch", "note": "Sector-wide teacher shortages; Teacher Scholarship Program (30 places, 2026) signals pipeline investment" },
+        { "label": "Staff retention", "value": "Unknown", "target": ">90%", "status": "gap", "note": "No public attrition data; employer brand assessed as strong-in-niche" },
+        { "label": "Professional development", "value": "Active", "target": "—", "status": "on-track", "note": "Ann D Clark Lecture series, Uplift coaching, ICT traineeships — sustained PD investment" },
+        { "label": "Leadership pipeline", "value": "Structured", "target": "—", "status": "on-track", "note": "9-EGM structure with clear succession pathways; external hire (Ellis from CECG) shows ability to recruit" }
+      ]
+    },
+    {
+      "id": "compliance",
+      "label": "Compliance & Safeguarding",
+      "icon": "🛡️",
+      "metrics": [
+        { "label": "NESA registration", "value": "All 80 schools", "target": "100%", "status": "strong", "note": "All schools maintain NESA registration — existential requirement" },
+        { "label": "Child protection compliance", "value": "Expected compliant", "target": "100%", "status": "on-track", "note": "Working with Children Checks, mandatory reporting obligations; no public incidents found" },
+        { "label": "Privacy (student data)", "value": "Intermediate", "target": "Strong", "status": "watch", "note": "43,000 minors' data; NSW PPIPA + Commonwealth Privacy Act obligations; no public incidents" },
+        { "label": "Governance modernisation", "value": "Complete", "target": "—", "status": "strong", "note": "Incorporated as company limited by guarantee (2023); professional board chaired by Elizabeth Crouch AM" }
+      ]
+    },
+    {
+      "id": "mission",
+      "label": "Catholic Mission & Community",
+      "icon": "✝️",
+      "metrics": [
+        { "label": "Faith formation integration", "value": "Strategic Pillar 1", "target": "—", "status": "strong", "note": "Faith formation is the first of six strategic pillars; non-negotiable constraint on all decisions" },
+        { "label": "Community engagement", "value": "Active", "target": "—", "status": "on-track", "note": "Education Mass, Bishop's Awards, LIFTED forums, Project Compassion, Parents as Partners" },
+        { "label": "Social justice programs", "value": "Active", "target": "—", "status": "on-track", "note": "Project Compassion (Lenten fundraising), Catholic social teaching embedded in school programs" },
+        { "label": "Values-aligned AI adoption", "value": "Exploring", "target": "Framework set", "status": "watch", "note": "LIFTED AI forum framed AI through values lens — deliberate, cautious approach" }
+      ]
+    },
+    {
+      "id": "technology",
+      "label": "Technology & Data",
+      "icon": "💻",
+      "metrics": [
+        { "label": "Device coverage", "value": "90%+ secondary", "target": "100% K-12", "status": "on-track", "note": "MacBooks and Chromebooks across 90%+ of secondary schools" },
+        { "label": "Data intelligence capability", "value": "Building", "target": "Mature BI", "status": "watch", "note": "Dedicated EGM portfolio for data intelligence; basic-to-intermediate analytics currently" },
+        { "label": "School of Now platform", "value": "Operational", "target": "—", "status": "on-track", "note": "Blended online program for Yr 11-12 specialist subjects across campuses" },
+        { "label": "IT leadership", "value": "Enterprise-grade", "target": "—", "status": "on-track", "note": "Jackson Chan (Head of Tech Services, ex-Qantas/Vodafone); Jeremy Hind (Head of IT Education Platform)" }
+      ]
+    }
+  ]
+}

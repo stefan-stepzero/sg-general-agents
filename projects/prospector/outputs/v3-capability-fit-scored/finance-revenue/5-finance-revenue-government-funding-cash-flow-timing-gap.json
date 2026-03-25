@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-cash-flow-timing-gap",
+  "pain_point_label": "Claim-to-Cash Timing Misalignment",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Government funding cycles are time-ordered and seasonally patterned — Q2/Q3 clustering and month 2/5/8 cash shortfalls are precisely the kind of lag patterns a time-series model can learn and project. A multi-campus operator accumulates historical claim submission dates, approval delays, and fund-transfer timestamps that form actionable training data. This converts unpredictable treasurer scrambles into a 30–90-day rolling cash position forecast.",
+      "opportunity_sketch": "A cash-flow forecasting module that ingests historical claim submission, approval, and receipt dates per campus, then surfaces 60-day projected shortfall windows by site — giving the CFO early warnings instead of reactive firefighting.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The claim-to-cash process involves a repeatable multi-step workflow: compile supporting documents, submit claim to government portal, track approval status, chase partial releases, and log receipts against expected amounts. This is precisely the multi-step, branching, error-handling workflow that a task automation agent can own end-to-end. Manual tracking across 3–7 campuses multiplies the coordination burden and is where delays compound.",
+      "opportunity_sketch": "An agent that monitors government funding portals for approval status changes, triggers follow-up actions on partial releases, logs receipts into the accounting system, and alerts the treasurer when a claim is overdue against its expected settlement window.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 32
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When partial fund releases require re-submission or follow-up, finance staff must draft correspondence to government agencies explaining discrepancies and requesting the remainder. For a multi-campus operator, this happens repeatedly across sites and claim cycles — drafting these letters is low-value but error-sensitive work. LLM-generated follow-up communications grounded in the specific claim data and regulatory language reduce turnaround time on re-submissions.",
+      "opportunity_sketch": "A template-driven drafting tool that generates government follow-up letters and re-submission cover notes from structured claim data (amounts, dates, discrepancy fields), reviewed and sent by the finance officer.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "When government funding arrives in lumps or is delayed, the CFO must decide how to allocate available working capital across campuses — which site's payroll is paid first, which vendor payments are deferred, and which inter-campus transfers are made. This is a constrained allocation problem: fixed obligations, variable and delayed inflows, multiple sites competing for the same pool. AI-assisted allocation recommendations reduce the manual judgment calls and reduce the risk of systematic errors under time pressure.",
+      "opportunity_sketch": "A working-capital allocation model that, given current balances per campus and upcoming fixed obligations (payroll dates, rent, utilities), recommends an optimal payment schedule and inter-campus fund movements to minimize default risk across the period until funding arrives.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Government funding claim documents, approval notices, and partial-release letters contain structured entities — amounts, claim reference numbers, approval dates, conditions, and shortfall reasons — buried in semi-structured or free-text correspondence. Manually extracting these into the accounting system is slow and error-prone across 3–7 campus claim streams. Automated entity extraction turns these documents into structured records that feed downstream forecasting and reconciliation.",
+      "opportunity_sketch": "An extraction pipeline that parses incoming government correspondence (emails, PDFs) to pull claim IDs, approved amounts, settlement dates, and rejection reasons into a structured claims register, eliminating manual data entry.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Government agencies frequently issue funding approvals and payment remittance advices as scanned PDFs or image-based documents. OCR and form-field extraction converts these into machine-readable records that can be automatically matched against submitted claims and reconciled in the accounting system. Without this digitization step, the finance team manually keys data from paper or image documents, a bottleneck that delays cash reconciliation.",
+      "opportunity_sketch": "A document ingestion service that applies OCR to scanned government remittance advices and approval letters, extracts payment amounts and reference numbers, and posts them to the claims register for automated reconciliation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

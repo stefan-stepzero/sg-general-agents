@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-deployment-scheduling-timetable-constraints-dup",
+  "pain_point_label": "Timetable Conflicts & Subject Specialization Mismatches",
+  "matches": [
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Timetabling is a canonical constraint satisfaction problem: teacher qualifications, campus availability, subject requirements, load limits, and student cohort needs must all be simultaneously satisfied. This directly addresses the pain mechanism — schedules built without cross-campus visibility produce constraint violations that take 15-20 days to remediate manually. A constraint solver can validate feasibility before schedule release, eliminating reactive churn.",
+      "opportunity_sketch": "A timetable validation and generation tool that ingests teacher specialty profiles, campus availability, and subject requirements across all sites, then produces or validates schedules that satisfy all hard constraints (qualifications) and optimizes soft constraints (load balance, travel). Flags conflicts before schedule release.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core pain is that specialist teachers (STEM, Special Ed) are not optimally assigned across campuses — a direct resource allocation problem. AI scheduling can model specialist availability as a constrained resource pool and assign them across sites to meet coverage requirements, replacing the manual campus-by-campus approach that creates misalignment and rushed hires.",
+      "opportunity_sketch": "A cross-campus resource allocation engine that treats specialist teachers as shared resources, automatically distributing them across sites based on subject demand, qualification match, and contracted hours — surfacing gaps weeks in advance so hiring can be planned rather than reactive.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Before scheduling, each proposed teacher-subject assignment can be classified as qualified, underqualified, or misaligned based on structured teacher profile data (certifications, specializations, experience). This pre-validation step directly addresses the pain of teachers being forced into misaligned loads by flagging mismatches in the draft schedule before it is released.",
+      "opportunity_sketch": "An assignment qualification checker that scores every teacher-subject pairing in a draft schedule as compliant, borderline, or non-compliant, with reasons — integrated into the schedule build workflow so conflicts surface before publication rather than after staff receive rosters.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Employee attrition propensity modeling can identify which teachers are most likely to disengage or leave when assigned outside their specialty — quantifying the morale risk of specific scheduling decisions. This gives leadership an early signal on which misalignment scenarios are highest risk before finalizing the schedule.",
+      "opportunity_sketch": "A morale-risk scoring model that predicts which teachers are at elevated attrition risk when assigned outside specialty, integrated into the scheduling review so planners can prioritize resolving high-risk mismatches first.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The 15-20 day post-release iteration cycle involves repetitive multi-step workflows: identifying conflicts, notifying affected teachers, sourcing alternatives, updating rosters across systems, and communicating changes to parents. An automation agent can handle the orchestration of these steps — pulling conflict data, drafting notifications, and updating scheduling systems — compressing the remediation cycle significantly.",
+      "opportunity_sketch": "A schedule-remediation automation agent that, when a conflict is flagged, autonomously identifies available qualified alternatives, drafts staff and parent communications, and queues system updates for human approval — reducing the 15-20 day iteration to a same-day triage workflow.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

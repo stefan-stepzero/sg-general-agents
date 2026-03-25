@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "external-relations-industry-employer-no-industry-map-dup",
+  "pain_point_label": "No Strategic Industry Mapping or Account Management",
+  "matches": [
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core deficit is that employer-partnership knowledge lives in people's heads and disappears when staff leave. Knowledge extraction can ingest emails, meeting notes, LinkedIn exports, and CRM dumps to surface which staff member holds which employer relationship, at which campus, across which sector — creating a structured relationship map that persists beyond individuals.",
+      "opportunity_sketch": "An AI pipeline that ingests staff email threads and contact histories to extract employer-relationship triples (staff member → employer contact → campus/sector) and populate a shared CRM-style knowledge graph, making invisible relationship capital explicit and transferable.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Existing employer data exists in fragmented, semi-structured forms — spreadsheets per campus, email signatures, ad-hoc notes, event attendance lists. Transformation AI can normalize these heterogeneous sources into a canonical account schema (employer, sector, campus, contact, last-touch date) without requiring clean input data to begin with.",
+      "opportunity_sketch": "A one-time and ongoing ETL layer that consolidates campus-level employer lists into a single structured account registry, standardizing sector tags and contact fields so account planning becomes possible for the first time.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once a target sector list and employer account registry exist, account plans, outreach emails, and partnership briefs still need to be authored. Text generation dramatically reduces the manual effort of producing per-employer account plans, sector briefings, and templated partnership proposals that currently don't get written because staff time is too limited.",
+      "opportunity_sketch": "An AI drafting tool that takes a structured employer record (sector, campus, last-touch, key contacts) and generates a draft account plan or outreach email, enabling partnership managers to produce documentation 10x faster than writing from scratch.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end problem — gather employer contact data across campuses, detect relationship gaps, flag stale accounts, draft outreach, and log touches — is a multi-step workflow that no single AI capability handles alone. A task automation agent can orchestrate the full account management cycle: scanning for contacts who haven't been engaged in X months, generating alert summaries, and drafting re-engagement emails without manual coordination.",
+      "opportunity_sketch": "An account management agent that monitors the employer registry, identifies at-risk partnerships (e.g., key contact changed roles, no touch in 90 days), and autonomously drafts re-engagement briefings and alert emails to the relevant campus partnership lead.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The organization has no documented target sector map. A research agent can autonomously gather labor market data, employer directories by sector, and industry association membership lists for the geographic markets the operator serves — producing a seeded target account list that partnership managers couldn't realistically build manually.",
+      "opportunity_sketch": "A research agent that, given a campus location and a set of target sectors, scrapes employer directories and industry association sites to produce a prioritized prospect list with company size, contact hints, and sector tags — giving the team a starting account list where none exists today.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Employer contacts and partnership notes need to be tagged by sector (tech, healthcare, finance, FMCG, manufacturing) before any strategic account view is possible. Text classification can automatically assign sector labels to employer names, job titles, and company descriptions ingested from existing lists, removing the manual tagging bottleneck that blocks sector-level visibility.",
+      "opportunity_sketch": "A classification layer applied to employer contact imports that automatically assigns sector tags to each account based on company name, job title, and any available description text, enabling immediate sector-level reporting across campuses.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "When a new partnership manager joins or a colleague leaves, institutional knowledge about past employer interactions is effectively lost. A RAG system over emails, meeting notes, and CRM records lets staff ask 'What do we know about Employer X?' and receive grounded answers from the organization's own historical records — directly countering the personality-driven, undocumented nature of current partnerships.",
+      "opportunity_sketch": "An internal Q&A tool where partnership staff can ask 'Which employers has the Melbourne campus engaged in healthcare in the last two years?' and receive answers synthesized from ingested emails and notes, preserving relationship context across staff turnover.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

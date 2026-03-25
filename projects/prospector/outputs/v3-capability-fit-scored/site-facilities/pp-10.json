@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-cleaning-grounds-cleaning-supply-procurement-and-inventory-is-fragmented-dup",
+  "pain_point_label": "Cleaning Supply Procurement and Inventory Management Are Fragmented and Unreliable",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The core failure is reactive procurement — campuses only discover shortages when they occur. Time series forecasting applied to historical consumption data (by campus, by supply type, by semester period) would predict when stock will run low, enabling proactive reorder triggers. Education operators have predictable seasonal demand spikes (exam periods, back-to-school, peak enrollment) that make time series models especially effective here.",
+      "opportunity_sketch": "A demand forecasting layer integrated with campus order history and enrollment calendars that generates automated reorder alerts by campus and supply category, replacing reactive emergency purchases with planned procurement cycles.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The financial inefficiency stems from uncoordinated allocation — some campuses hoard stock while others go without, and the central budget is spent suboptimally because there is no allocation logic. AI-driven resource allocation can optimize how a centrally-purchased bulk order is distributed across campuses based on their consumption rates, population, and current stock levels, eliminating the mismatch between over- and under-supplied sites.",
+      "opportunity_sketch": "A central procurement allocation tool that ingests current stock levels and consumption rates per campus, then recommends how to split bulk orders across sites to minimise both stockouts and overstock simultaneously.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The fragmented procurement process involves many repetitive, multi-step tasks: site managers checking stock, raising purchase orders, getting approvals, and placing supplier orders — all done independently per campus with no orchestration. A task automation agent can own the end-to-end reorder workflow: monitoring stock inputs, triggering purchase orders when thresholds are crossed, routing approvals, and placing orders with preferred suppliers, removing the dependency on individual site managers remembering to act.",
+      "opportunity_sketch": "An autonomous procurement agent that monitors campus stock submissions (even via simple form inputs), triggers consolidated purchase orders when inventory thresholds are breached, and routes them through an approval chain — replacing ad-hoc manual ordering across 10+ campuses.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 9.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Per-campus supply cost variance is flagged as a symptom — some campuses spend significantly more per student on cleaning supplies than others, either through emergency premium purchases or supplier quality issues. Anomaly detection on procurement spend data can surface campuses with abnormal cost-per-unit or order frequency patterns, giving the central procurement team early warning of problem sites before budget reviews.",
+      "opportunity_sketch": "A spend monitoring layer that flags campuses with statistically abnormal procurement patterns (e.g., unusually high emergency order frequency, cost-per-unit deviations vs. peer campuses), enabling targeted intervention before costs escalate.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Central procurement teams lack visibility into actual campus consumption, and part of the communication breakdown is that site managers do not report stock status in a structured or timely way. Text generation can automate the production of procurement status summaries, shortage alerts to management, and standardized supplier briefs — reducing the reporting burden on site managers and improving information flow to central teams.",
+      "opportunity_sketch": "Auto-generated weekly procurement status reports per campus, compiled from stock input data and surfaced to central management, replacing the current silence-until-crisis communication pattern.",
+      "pain_salience": 1,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 16.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

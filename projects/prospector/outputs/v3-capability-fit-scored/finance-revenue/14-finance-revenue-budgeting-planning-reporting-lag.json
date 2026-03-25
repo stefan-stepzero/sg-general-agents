@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-reporting-lag",
+  "pain_point_label": "Actuals Reporting Lag & Real-Time Variance Blindness",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step manual process: site accountants collect transactions, reconcile payroll, submit to network finance, who then consolidate and produce variance reports. An automation agent can orchestrate the close pipeline — chasing outstanding submissions, auto-pulling payroll data from HR systems, flagging incomplete records, and triggering consolidation steps — compressing a 3-4 week cycle to days. This is a workflow with defined branching logic (what if a site hasn't submitted? what if payroll file is missing?) that suits agentic execution.",
+      "opportunity_sketch": "A month-end close agent that monitors submission status across all sites, sends escalation nudges, pulls payroll actuals from the HRIS on lock date, runs automated reconciliation checks, and surfaces a consolidated draft P&L to finance within 48 hours of month-end rather than 3-4 weeks.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The lag problem means leaders are reacting to data that is 4-6 weeks old. Time series forecasting addresses this by estimating current-month actuals from partial data — using early-month signals (payroll run data, procurement orders, utility meter reads) to project where the month will close before the accounting cycle completes. For a multi-site operator with recurring cost structures (wages, utilities, facilities), historical patterns are stable enough that mid-month forecasts would be materially more accurate than waiting for actuals.",
+      "opportunity_sketch": "A predictive close model that generates site-level P&L estimates by the 5th working day of each month using available leading indicators, giving budget holders a 90%+ confidence view of the prior month before accounting formally closes.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "A key pain manifestation is that cost overruns (utility spikes, staffing overages) are invisible until 6+ weeks after they occur. Anomaly detection applied to near-real-time transaction feeds — even partial ones — can flag outliers within days of the transaction posting, not after the full close cycle. For a 500+ staff education network, payroll is the dominant cost line and staffing variances follow recognisable patterns, making anomaly detection on weekly payroll runs immediately viable.",
+      "opportunity_sketch": "An anomaly monitor that ingests weekly payroll exports and daily purchasing transactions, flags site-level spend anomalies (e.g., a campus running 15% above normal casual staff cost) in near-real-time, and alerts the principal and finance manager before the month closes.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Board reporting is compressed into the last days before submission deadline because variance narratives are written manually after actuals arrive late. Text generation can draft the variance commentary — explaining budget vs actual movements, providing site-level callouts, and flagging key risks — from structured financial data inputs, dramatically reducing the time finance staff spend writing and allowing board packs to be assembled faster even under current reporting lags.",
+      "opportunity_sketch": "An AI narrative generator that takes the consolidated variance table (even with partially estimated actuals) and produces a draft CFO commentary and board pack narrative, ready for review and light editing rather than written from scratch under deadline pressure.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "A root cause of the reporting lag is that transaction data from multiple sites arrives in inconsistent formats — different chart-of-accounts mappings, varying payroll export structures, manual spreadsheet submissions. AI-assisted data transformation can normalize and map these disparate inputs into the consolidated schema automatically, eliminating the manual rework that currently extends the close timeline by days per site.",
+      "opportunity_sketch": "An ETL normalization layer that accepts site financial submissions in whatever format each campus uses, maps them to the network's standard chart of accounts, flags unmappable items for human review, and feeds a consolidated ledger in hours rather than the days currently consumed by manual reconciliation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

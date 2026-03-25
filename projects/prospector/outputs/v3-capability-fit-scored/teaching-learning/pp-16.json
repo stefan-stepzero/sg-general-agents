@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-examination-administration-exam-quality-consistency-dup",
+  "pain_point_label": "Inconsistent Exam Question Quality & Standards",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "AI can generate exam questions aligned to specified learning outcomes, difficulty levels, and bloom's taxonomy tiers — directly countering the root cause of teachers creating questions in isolation without a standard. For a multi-site operator, this provides a repeatable, prompt-driven authoring tool that enforces quality parameters at the point of creation rather than after review.",
+      "opportunity_sketch": "A question-generation tool where teachers input the learning outcome, subject, grade, and desired difficulty; the AI produces draft items with distractors and mapped standards, inserted directly into a shared item bank.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Existing exam questions can be classified by Bloom's taxonomy level, difficulty tier, and alignment to learning outcomes — providing the org its first structured view of what its question bank actually contains. This directly surfaces the inconsistency problem by labelling which items meet standards and which do not.",
+      "opportunity_sketch": "An automated item audit pipeline that ingests past exam papers and tags each question by cognitive level, topic, and outcome alignment, producing a quality dashboard per subject and site.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full exam quality workflow — question submission, automated classification, peer/AI review, approval, and item bank ingestion — is a multi-step process that currently relies on ad hoc teacher behaviour. A task automation agent can enforce the process: route new questions through classification and alignment checks, flag items that fail thresholds, and only release approved items to the shared bank.",
+      "opportunity_sketch": "An exam quality gate agent: teacher submits question → agent classifies and checks outcome alignment → flags or approves → approved items route to the centralised item bank with metadata attached.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "A RAG system over the organisation's curriculum documents and approved item bank allows teachers to query 'find me three difficulty-4 questions aligned to outcome X' and receive grounded, sourced answers — directly replacing the current practice of writing in isolation. It surfaces existing approved items before teachers write new ones, reducing duplication and drift.",
+      "opportunity_sketch": "A teacher-facing exam assistant: query the item bank by learning outcome and difficulty, retrieve existing approved questions, or generate new ones grounded in curriculum documents — all in one interface.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

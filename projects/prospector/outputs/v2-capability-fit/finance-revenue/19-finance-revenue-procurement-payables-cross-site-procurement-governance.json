@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-cross-site-procurement-governance",
+  "pain_point_label": "Procurement Governance & Compliance Fragmentation Across Sites",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Invoices arriving without a matching PO or requisition approval are precisely the kind of deviation from expected behavior that anomaly detection is designed to flag. An AI trained on normal procurement patterns (vendor, amount, category, site, approval chain) can surface unauthorized or policy-bypassing purchases in real time rather than at audit time. For a multi-site operator where central finance cannot monitor every campus, this creates a scalable oversight layer that currently does not exist.",
+      "opportunity_sketch": "An anomaly detection model ingests AP transaction data and flags invoices that lack PO matches, use non-preferred vendors, exceed thresholds without required quote documentation, or show unusual spend spikes at a particular campus, alerting central finance before payment is released.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.05
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The procurement compliance workflow — collect requisitions, verify quote documentation, route for approvals, check preferred vendor list, generate POs, track status across sites — is a multi-step process currently executed inconsistently via email and manual follow-up. A task automation agent can enforce the policy programmatically at each step, ensuring the approval chain is completed before a PO is issued and creating an auditable digital trail. This directly addresses the audit-time failure mode where approval evidence is scattered across email threads.",
+      "opportunity_sketch": "An AI-driven procurement workflow agent receives a requisition, checks whether the purchase exceeds the quote threshold, prompts the campus for the required number of quotes, routes through the defined approval chain, and only generates a PO upon completion, with every step logged for audit retrieval.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4.10
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Supplier qualification documents, quote PDFs, tax registration certificates, and government-required compliance documentation arrive as scanned files or PDFs that are currently stored inconsistently or not at all. OCR and document parsing can digitize and index these materials automatically, enabling a central compliance repository that site-specific regulatory rules can be checked against. This is a prerequisite for any audit-readiness system and is technically straightforward to deploy.",
+      "opportunity_sketch": "As supplier documents are submitted, a parsing pipeline extracts key fields (supplier name, registration number, document type, expiry date, issuing authority) and stores them in a central supplier registry, with alerts when documentation expires or is missing for active vendors.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Procurement data currently lives in multiple semi-structured sources including email threads, spreadsheet logs, campus-level ledgers, and AP system exports. Before any governance dashboard or audit report can be produced, this data must be normalized into a single schema — mapping site-specific field names, currency formats, vendor naming conventions, and approval status codes to a unified structure. AI-assisted ETL can handle the heterogeneity that manual consolidation cannot scale across 10+ campuses.",
+      "opportunity_sketch": "A transformation pipeline pulls procurement records from each campus system or spreadsheet, maps them to a standard schema (site, vendor, amount, category, PO number, approval status, payment date), and loads them into a central analytics store, enabling the CFO to answer basic questions like how many suppliers the organization uses for the first time.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all non-compliant procurements carry equal audit risk — a missing quote on a small recurring supply purchase differs from an undocumented contract renewal with an unregistered vendor. A risk scoring model can prioritize which transactions and vendors warrant central finance review, helping a lean team triage rather than inspect everything. For government-funded schools where non-compliance can trigger clawbacks, a risk-ranked vendor and transaction list gives the CFO actionable prioritization.",
+      "opportunity_sketch": "Each vendor relationship and open purchase is scored on dimensions like documentation completeness, spend relative to threshold, vendor registration status, and deviation from the preferred vendor list, producing a ranked compliance risk register that the central finance team reviews weekly.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.80
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Campus administrators and finance staff regularly need to know what the procurement policy requires for a specific situation — whether a particular purchase needs 3 quotes, which vendors are on the preferred list, or what documentation a specific site's local government requires. A RAG system grounded in the procurement policy, site-specific compliance rules, and vendor registry lets staff get precise answers without ambiguity, reducing policy-bypass decisions that stem from not knowing the rule rather than intentional circumvention.",
+      "opportunity_sketch": "A policy Q&A assistant lets a campus business manager ask whether they need 3 quotes for an HVAC maintenance renewal and receive a grounded answer citing the policy threshold and site-specific government documentation requirements, with a prompt to initiate the correct workflow.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

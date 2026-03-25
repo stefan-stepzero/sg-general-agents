@@ -1,0 +1,288 @@
+{
+  "company_id": "wise",
+  "company_name": "WISE - World Innovation Summit for Education",
+  "assessment_date": "2026-03-11",
+  "assessment_method": "Manual taxonomy evaluation",
+  "total_properties": 38,
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise, well-evidenced value (Education) with multiple corroborating sources (mission, portfolio, Qatar Foundation alignment)."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Highly specific niche articulation with concrete evidence of vertical specialization (EdTech, AI-in-education, girls' education, policy)."
+    },
+    {
+      "property_id": "industry-vertical-value-chain-position",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear platform/infrastructure positioning with strong evidence of convening, funding, and knowledge-production role."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Growth assessment is reasonable but confidence is medium — distinguishes global EdTech market growth from WISE's niche maturity, though evidence is somewhat indirect."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Unambiguous grant/endowment model with high certainty — WISE has no commercial revenue, funded entirely by Qatar Foundation."
+    },
+    {
+      "property_id": "business-model-delivery-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise hybrid delivery (events + grants + research) with clear evidence of each component and their respective mechanisms."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Fixed-cost-heavy assessment is well-reasoned but lacks precise budget breakdown; confidence is medium because actual cost ratios are not disclosed."
+    },
+    {
+      "property_id": "business-model-network-effects",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Exceptionally detailed multi-layered moat analysis with concrete evidence for each layer (sovereign backing, patronage, brand equity, network density, flywheel)."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Comprehensive articulation of five critical dependencies with specific evidence for each (funding, patronage, network quality, logistics, research partnerships)."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Estimated 11-50 range with ~36 FTE is reasonable but not definitive; evidence is from secondary sources (Crunchbase, RocketReach) rather than primary disclosure."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "coverage": 0.4,
+      "confidence_multiplier": 0.55,
+      "final_score": 0.22,
+      "justification": "Marked as not applicable with speculative $5-15M estimate; lacks confidence because WISE is non-revenue entity with no public budget disclosure."
+    },
+    {
+      "property_id": "scale-resources-capitalization",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear sovereign/endowment-funded model with strong evidence of Qatar Foundation backing and no external fundraising or runway pressure."
+    },
+    {
+      "property_id": "scale-resources-asset-intensity",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Asset-light assessment is sound with reasonable evidence, but confidence is medium because precise asset inventory is not disclosed publicly."
+    },
+    {
+      "property_id": "scale-resources-financial-health",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Structurally sustainable position is well-supported; sovereign funding removes commercial sustainability risk, making financial health assessment clear."
+    },
+    {
+      "property_id": "scale-resources-company-age",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Established (founded 2009, 17 years old) with high certainty from founding date and continuous biennial summits since inception."
+    },
+    {
+      "property_id": "scale-resources-customer-base-scale",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Well-articulated with concrete scale metrics (35K community, 150K followers, 4K summit attendees, 12K cumulative across summits, 4.9K prize applications)."
+    },
+    {
+      "property_id": "growth-phase-scaling",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear mature/optimization phase with evidence of strategic reinvention under new CEO; distinguishes stable format from deliberate pivot toward implementation and Africa focus."
+    },
+    {
+      "property_id": "market-position-customer-segment",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Three distinct, well-articulated segments (policymakers, innovators, philanthropy) with concrete evidence for each from speaker profiles, prize recipients, and consortium partners."
+    },
+    {
+      "property_id": "market-position-competitive-stance",
+      "coverage": 0.9,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.81,
+      "justification": "Niche specialist positioning is clear with competitive analysis, though peer comparison is somewhat limited; high confidence but not absolute precision on market share claims."
+    },
+    {
+      "property_id": "market-position-gtm-motion",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Community/mission-driven GTM is clear and distinct; strong evidence of reputation-led engagement, no sales team, and invitation-based participation model."
+    },
+    {
+      "property_id": "market-position-customer-concentration",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Tension between single-funder and diversified stakeholders is well-articulated; high confidence in Qatar Foundation 100% funding dependency and stakeholder diversity."
+    },
+    {
+      "property_id": "market-position-pricing-position",
+      "coverage": 0.8,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.8,
+      "justification": "Not applicable assessment is reasonable given no commercial pricing; coverage is high (no ambiguity) but the property is not applicable to this business model."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Professional CEO-led governance is clear with specific individuals identified (Yiannouka tenure, Kazmi appointment); high confidence in leadership model."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Flat functional structure inference is reasonable from available evidence (named functional roles, 36 FTE size), but precise org chart is not publicly disclosed."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Co-located Doha assessment is sound with evidence of HQ and summit location, but remote/hybrid composition is not explicitly confirmed; medium confidence."
+    },
+    {
+      "property_id": "org-structure-talent-profile",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Domain-expert-heavy profile is well-evidenced through leadership backgrounds (Kazmi doctorate + 30 years policy, Yiannouka McKinsey + LKY), reflecting policy/research talent composition."
+    },
+    {
+      "property_id": "tech-maturity-stack-generation",
+      "coverage": 1.0,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.85,
+      "justification": "Minimal tech assessment is clear and justified; high coverage as non-tech organisation with standard tools, medium confidence due to limited public evidence of internal systems."
+    },
+    {
+      "property_id": "tech-maturity-engineering-practices",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Not applicable is appropriate and clearly justified; WISE has no software engineering function, so engineering practices are not relevant."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "Basic analytics assessment is reasonable but largely speculative; low confidence due to lack of public visibility into actual data infrastructure maturity."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "Basic-to-intermediate assessment is generic and not well-evidenced; low confidence as no specific security posture details are available publicly."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Low-to-moderate regulatory burden assessment is reasonable but somewhat generic; medium confidence due to limited visibility into actual compliance requirements."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Global multi-continent scope is well-articulated with specific evidence of consortium members, prize recipients, and attendee geographies."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Recession-resistant classification is clearly justified through sovereign endowment funding and insulation from commercial cycles."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "State-backed governance structure is clear with evidence of QF foundation governance and alignment with Qatar national education strategy."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "coverage": 1.0,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.9,
+      "justification": "Pragmatic-to-fast-follower posture is well-evidenced through WISE 12 theme and prize selections; high confidence with slight caution on inferring internal culture."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Thought-leader/visionary positioning is clearly articulated with evidence from summit framing, prize narrative, and media coverage positioning."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Mission-driven values are explicitly evidenced through prize criteria, speaker selection, CEO background, and organisational programming."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Strong-in-niche employer assessment is reasonable from leadership credentials and Qatar Foundation prestige, but limited visibility into broader employer perception."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": 0.92,
+    "business-model": 0.89,
+    "scale-resources": 0.73,
+    "growth-phase": 1.0,
+    "market-position": 0.92,
+    "org-structure": 0.83,
+    "tech-maturity": 0.67,
+    "operating-environment": 0.95,
+    "culture-brand": 0.89
+  },
+  "overall_score": 0.86,
+  "notes": "WISE data quality is strong across mission-aligned dimensions (industry, business model, market position, operating environment, culture/brand). Weaker areas are technical maturity (minimal tech organisation) and internal operational details (org structure, internal talent visibility). Financial metrics are constrained by grant-funding model with no independent revenue disclosure. Single high-confidence finding: WISE is a mature, institutionally-moored education-innovation convener with sovereign backing and multi-layered competitive moats."
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-parent-engagement-retention-parent-advocacy-capacity-gap-dup",
+  "pain_point_label": "Low Parent Leadership & Advocacy Capacity in Governance",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Parent representatives from low-income or non-English-speaking backgrounds often lack the language confidence and drafting skills to write formal concerns, submissions, or board agenda items. AI text generation can translate their spoken or informal concerns into polished governance communications. This directly lowers the cultural-capital barrier that silences marginalized parents in formal settings.",
+      "opportunity_sketch": "A tool where parents describe their concern in plain language (or their native language) and receive a ready-to-submit formal letter or board agenda item — reducing the confidence gap without requiring literacy or governance experience.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Parents who fear direct confrontation with staff or don't know governance channels need a low-stakes, always-available entry point for raising concerns. A conversational agent can guide a parent through the complaint or feedback process step by step, in their language, at their pace — acting as a neutral intermediary before escalation to a human administrator. This addresses the power-imbalance dynamic by giving parents a structured, non-threatening channel.",
+      "opportunity_sketch": "A multilingual parent-facing chatbot embedded in the school portal or WhatsApp that walks parents through lodging a concern, explains their rights, and routes the concern to the appropriate staff member with a written record — anonymously if requested.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Multi-site operators receive parent feedback across many informal channels — email, forms, WhatsApp messages, exit surveys — but have no systematic way to detect which concerns represent governance or advocacy gaps versus routine operational complaints. Text classification can triage incoming parent feedback by topic, urgency, and whether it signals a systemic pattern (e.g., repeated concerns about a specific teacher or policy) that warrants board-level attention.",
+      "opportunity_sketch": "An automated triage layer on top of all parent feedback channels that tags concerns by category and flags recurring themes for governance reporting, ensuring that patterns from marginalized families surface to decision-makers rather than being lost in inboxes.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Parent board representatives who are not professional administrators struggle to process lengthy board papers, policy documents, and meeting minutes — leaving them unable to contribute meaningfully during governance meetings. AI summarization can distill complex documents into plain-language briefings tailored to a parent representative's role, closing the information asymmetry that keeps them silent.",
+      "opportunity_sketch": "Automated plain-language summaries of board agendas, policy proposals, and meeting minutes delivered to parent representatives ahead of each meeting, with key decisions highlighted and questions they might want to raise flagged.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of structured feedback mechanisms means parent concerns go untracked — there is no workflow that captures a concern, routes it to the right person, logs the resolution, and closes the loop with the parent. A task automation agent can own this end-to-end feedback pipeline across all sites, ensuring no concern is silently dropped and that patterns are visible to governance leads.",
+      "opportunity_sketch": "An automated concern-management workflow that ingests parent submissions from any channel, assigns them to the correct site administrator, tracks resolution status, sends updates back to the parent, and produces a monthly governance summary report showing open versus resolved concerns by site.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

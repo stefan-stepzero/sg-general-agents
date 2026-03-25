@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-talent-acquisition-competing-tuition-expectations-dup",
+  "pain_point_label": "Competing Compensation & Tuition Expectations",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core pain is inability to articulate the total compensation story — tuition waivers, benefits, and mission value — in a compelling way during offer negotiation. Text generation can produce tailored offer narratives that translate opaque benefit structures into concrete, personalized financial comparisons. Multi-campus variability in HQ vs. branch compensation packages can each have purpose-built messaging templates generated on demand.",
+      "opportunity_sketch": "A tool that takes candidate profile inputs (role, campus, family size, prior salary) and generates a personalized total-compensation narrative letter showing tuition waiver value, retirement contributions, and comparable take-home vs. corporate/international school alternatives — ready for the recruiter to send or present.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "prediction-regression",
+      "capability_label": "Regression & Quantitative Estimation",
+      "match_rationale": "Multi-campus compensation variability creates confusion because leaders lack a shared quantitative model of total compensation equivalence across sites. A regression model trained on accepted vs. rejected offers, role type, campus, and benefit mix can estimate the effective total compensation value of each package — giving recruiters a defensible number to anchor negotiations. This directly addresses the 15-25% offer rejection signal by identifying which compensation components swing candidate decisions.",
+      "opportunity_sketch": "A compensation equivalence model that inputs role, campus, and benefit bundle and outputs an estimated total-comp dollar figure comparable to market benchmarks, enabling recruiters to say 'this package is equivalent to $X at a corporate employer' with data backing.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Recruiters and hiring managers currently lack fast access to accurate, up-to-date compensation policy details across campuses — including tuition waiver tiers, eligibility windows, and benefit comparisons — leading to inconsistent messaging. A RAG system over internal HR policy documents, benefit plan summaries, and campus-specific compensation guides enables recruiters to get precise, sourced answers during live offer conversations rather than guessing or delaying. This directly solves the multi-campus variability confusion problem at the point of negotiation.",
+      "opportunity_sketch": "An internal recruiter assistant that answers questions like 'What is the tuition waiver value for a part-time staff member at the downtown campus?' by retrieving the exact policy and generating a clear, plain-language answer — deployable as a Slack bot or embedded HR portal widget.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Candidates themselves are often confused about how tuition waivers and benefit structures compare to market — and recruiters cannot always be present to clarify. A conversational agent embedded in the candidate portal or reachable via chat could walk candidates through a total-compensation comparison interactively, answering follow-up questions about eligibility, dependents coverage, and campus-specific nuances that a static FAQ cannot address. This reduces recruiter load while improving candidate clarity during the critical post-offer window.",
+      "opportunity_sketch": "A candidate-facing benefits FAQ chatbot that guides prospective hires through a personalized total-compensation breakdown — 'How does the tuition waiver work if my child enrolls?' — reducing offer rejection driven by benefit misunderstanding without requiring recruiter time.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

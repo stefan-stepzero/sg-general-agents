@@ -1,0 +1,13 @@
+{
+  "pipeline": "cspd",
+  "started": "2026-03-25",
+  "phases": {
+    "1a": { "status": "done", "started": "2026-03-25", "outputs": ["raw/annual-report-extract.json", "raw/school-names.json"], "note": "78 schools extracted from PDFs" },
+    "1b": { "status": "done", "started": "2026-03-25", "completed": "2026-03-25", "outputs": ["raw/acara-extract.json", "raw/acara-trends.json", "raw/web-research.json"] },
+    "2": { "status": "done", "started": "2026-03-25", "completed": "2026-03-25", "outputs": ["assembled/profile.json", "assembled/scorecard.json", "assembled/signals.json"] },
+    "3": { "status": "done", "started": "2026-03-25", "completed": "2026-03-25", "outputs": ["assembled/lookalikes.json", "assembled/competitors.json", "assembled/market-solutions.json"] },
+    "4": { "status": "done", "started": "2026-03-25", "completed": "2026-03-25", "outputs": ["analysis/pain-points.json"] },
+    "5": { "status": "done", "started": "2026-03-25", "completed": "2026-03-25", "outputs": ["analysis/opportunities.json", "analysis/summary.json"] },
+    "deploy": { "status": "done", "started": "2026-03-25", "completed": "2026-03-25" }
+  }
+}

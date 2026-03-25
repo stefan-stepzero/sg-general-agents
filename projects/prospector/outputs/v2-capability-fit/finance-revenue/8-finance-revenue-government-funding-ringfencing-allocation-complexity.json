@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-ringfencing-allocation-complexity",
+  "pain_point_label": "Grant Ringfencing & Cross-Campus Allocation Complexity",
+  "matches": [
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Each grant has hard eligibility constraints (GASTPE funds teacher salaries only; LGU funds infrastructure; DepEd funds materials), and a multi-campus operator must find a valid cost allocation that satisfies all constraints simultaneously across 3-7 campuses with different grant mixes. This is a classic constraint satisfaction problem: find the configuration of cost assignments that maximizes utilization while violating no grant rules. AI can enumerate valid solutions that human spreadsheet logic misses.",
+      "opportunity_sketch": "A constraint-solving layer that ingests grant eligibility rules and shared cost pools, then outputs the legally defensible allocation split per campus per grant — flagging any cost that cannot be cleanly assigned and requires manual CFO review.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.50
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "A key risk is ineligible expenses being inadvertently charged to a grant, triggering clawback. Anomaly detection can flag transactions that deviate from a grant's established eligibility pattern — for example, an infrastructure line item appearing against a GASTPE teacher-salary grant, or an expense coded to campus A's DepEd grant that matches campus B's historical LGU-funded cost patterns. This acts as a pre-audit tripwire before the external auditor finds it.",
+      "opportunity_sketch": "A real-time or monthly batch scan of grant expenditures that scores each transaction for eligibility risk, surfacing the top misalignment candidates to the finance team for correction before period close — reducing auditor findings and clawback exposure.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4.00
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core pain is deciding how to split shared costs (a principal's salary, electricity, administrative staff) across multiple grants in a defensible, auditable way — this is a constrained resource allocation problem. AI can optimize cost distribution across grant budgets, maximizing the operator's use of government funds while respecting each grant's eligibility rules. This directly addresses the current practice of conservative under-allocation that leaves budgets siloed and inefficient.",
+      "opportunity_sketch": "A grant allocation engine where shared staff and overhead costs are automatically apportioned across grants based on documented allocation rules (time-tracking inputs, campus enrollment ratios, usage logs), producing audit-ready allocation schedules per funding source.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The recurring workflow of pulling actuals, applying allocation rules, checking eligibility, flagging mismatches, and preparing restatements is a multi-step process currently done manually in spreadsheets — exactly what a task automation agent addresses. The agent can ingest grant rules, payroll data, utility invoices, and enrollment figures, then autonomously produce draft allocation reports and restatement summaries for CFO sign-off. This removes the error-prone manual step where no one fully understands the spreadsheet logic.",
+      "opportunity_sketch": "A monthly grant allocation agent that pulls data from payroll, utilities, and procurement systems, applies per-grant eligibility filters, calculates the allocation split, and generates a draft audit package with allocation methodology documentation — ready for CFO review before submission.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Audit documentation is a recurring deliverable — the finance team must explain and justify their allocation methodology to government auditors. AI can generate the narrative allocation methodology section from structured allocation data, saving significant manual drafting time and ensuring consistent language across restatements.",
+      "opportunity_sketch": "An allocation-to-narrative generator that converts structured cost split data into audit-ready written methodology justifications, formatted for DepEd, LGU, or GASTPE audit requirements.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Finance staff must interpret grant MOAs, DepEd circulars, LGU ordinances, and GASTPE guidelines to determine eligibility rules — documents that are dense, version-sensitive, and spread across multiple government sources. A RAG system lets the finance team query eligibility questions in natural language and receive grounded, citation-backed answers, reducing reliance on informal interpretation or outside counsel.",
+      "opportunity_sketch": "A grant eligibility Q&A assistant trained on all relevant government funding documents, MOAs, and audit findings, enabling finance staff to quickly resolve eligibility questions with documented sources — building institutional knowledge and reducing CFO escalations.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

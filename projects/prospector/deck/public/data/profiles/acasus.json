@@ -1,0 +1,360 @@
+{
+  "entity": "Acasus",
+  "profile_date": "2026-03-11",
+  "profile_last_enriched": "2026-03-11-enriched-r2",
+  "known_contact": {
+    "name": "Fenton Whelan",
+    "role": "Founder & Chair (formerly CEO; stepped back 2025)"
+  },
+  "website": "https://www.acasus.com",
+  "hq_address": "Acasus AG, Dorfstrasse 13, CH-6340 Baar, Switzerland",
+  "phone": "+41 41 562 09 99",
+  "email": "opportunities@acasus.com",
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/acasus",
+    "facebook": "https://www.facebook.com/acasusorg",
+    "instagram": "https://www.instagram.com/acasusorg",
+    "spotify_podcast": "https://open.spotify.com/show/0onMZiNHOzPS5pFGo7dApQ"
+  },
+  "leadership_team": [
+    {
+      "name": "Fenton Whelan",
+      "title": "Founder & Chair",
+      "linkedin": "https://www.linkedin.com/in/fentonwhelan/"
+    },
+    {
+      "name": "Jonny Barty",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/jonny-barty-82787b23/"
+    },
+    {
+      "name": "Ahmed Razzak",
+      "title": "Head of Partnerships",
+      "linkedin": "https://www.linkedin.com/in/ahmed-razzak/"
+    },
+    {
+      "name": "Akber Syed Ali",
+      "title": "Project Director (leads Pakistan office, 10 years at Acasus)",
+      "linkedin": "https://www.linkedin.com/in/syed-akber-ali-b895721b/"
+    },
+    {
+      "name": "Tamás Gyurcsek",
+      "title": "Head of Hungary Office (shared services centre, Budapest)",
+      "linkedin": "https://www.linkedin.com/in/tamasgyurcsek/"
+    },
+    {
+      "name": "Vincent ter Weele",
+      "title": "Finance Director",
+      "linkedin": "https://www.linkedin.com/in/vincent-ter-weele-0a111262/"
+    },
+    {
+      "name": "Dóra Forgács",
+      "title": "Head of Recruitment & HR",
+      "linkedin": "https://www.linkedin.com/in/dora-forgacs-752b27102/"
+    },
+    {
+      "name": "Joseph Marsico",
+      "title": "Head of Swiss Office (entrepreneur & technology specialist)",
+      "linkedin": "https://www.linkedin.com/in/jfmarsico/"
+    },
+    {
+      "name": "Hunain Mandvia",
+      "title": "Project Director - Pakistan",
+      "linkedin": "https://www.linkedin.com/in/hunain-mandvia-4b82952b/"
+    }
+  ],
+  "executive_summary": "Acasus is a founder-built, mission-driven international development consultancy (~230–265 staff, ~$35M estimated revenue) specialising in large-scale public sector reform across health and education systems in low- and middle-income countries. The firm is mid-transition: Fenton Whelan stepped back from CEO to Founder & Chair in 2025, handing operations to internally-promoted CEO Jonny Barty with an explicit mandate to 'drive team growth' — the firm has grown 'significantly in projects, team size, and impact' in the prior 18 months per the official CEO transition statement. Active 2025 job postings confirm concurrent field operations across 10+ countries: Pakistan, Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, and Bahrain — a broader footprint than historical case studies alone indicated. Acasus differentiates on embedded delivery — not just advisory — with 80% of staff drawn from the countries they serve, and a track record of measurable outcomes (Punjab vaccination coverage 50%→90% in two years). A notable structural finding: the Budapest hub (opened 2020) houses a real Data and Engineering team of ~24 people led by Nikolett Korompai (Head of Data and Engineering, ex-IBM Budapest Lab/Ustream), building ETL pipelines, Tableau dashboards, and cloud-based data systems (AWS S3, Google Cloud, Angular/React frontend) for government clients — confirmed by RocketReach and Slintel technology profiles. This is a meaningful differentiator vs. advisory-only competitors. Funder mix remains undisclosed; the active country footprint overlaps with USAID priority geographies, though USAID exposure is unconfirmed. When engaging Whelan, note he speaks fluently about AI as a governance and accountability problem — a framing worth leading with rather than a product pitch.",
+  "dimensions": {
+    "industry_vertical": {
+      "primary_sector": {
+        "value": "Professional Services",
+        "evidence": "Acasus is a consulting firm delivering advisory and implementation support to governments and multilateral organisations. Homepage headline: 'world's leading impact-consultancy'. No product revenue or software licensing visible.",
+        "confidence": "high"
+      },
+      "vertical_niche": {
+        "value": "International Development Consulting — Public Sector Reform (Health & Education in LMICs)",
+        "evidence": "Service lines: Change Strategy, Management & Leadership, Tech & Implementation, Education & Health. Case studies reference Punjab vaccination, Nigeria polio, Mozambique, Peru. Website explicitly positions in global health system reform, vaccine delivery, education transformation, and political advocacy in developing-country contexts.",
+        "confidence": "high"
+      },
+      "value_chain_position": {
+        "value": "End-service-provider / embedded delivery partner",
+        "evidence": "Acasus does not sell to intermediaries — it is contracted directly by governments and multilaterals to deliver reform programs. Positioning emphasises on-the-ground delivery ('The courage to be on the ground, wherever we are needed') not upstream research or downstream training products.",
+        "confidence": "high"
+      },
+      "industry_maturity": {
+        "value": "Mature",
+        "evidence": "International development consulting is a decades-old sector with established players (Palladium, DAI, Oxford Policy Management). The LMIC public sector reform niche is competitive but stable. Web research notes 'global education consulting market projected to grow through 2031' but the aid-funded segment faces headwinds from US foreign aid contraction.",
+        "confidence": "medium"
+      }
+    },
+    "business_model": {
+      "revenue_model": {
+        "value": "Professional services / project-based consulting fees",
+        "evidence": "No subscription product, no SaaS, no pricing page. Revenue model is inferred as contract-based engagements with governments and multilateral funders. No pricing page exists on the site.",
+        "confidence": "high"
+      },
+      "delivery_model": {
+        "value": "Consulting / professional services (human-delivered, embedded)",
+        "evidence": "Site describes delivery of management interventions, stakeholder capacity building, data-driven implementation, and deployment of software solutions — all framed as advisory and embedded delivery, not a self-serve product. Firm explicitly positions on embedded, on-the-ground delivery as differentiator.",
+        "confidence": "high"
+      },
+      "cost_structure": {
+        "value": "Variable-cost-heavy (people-driven)",
+        "evidence": "With ~265 staff delivering services across 6 continents, Acasus's cost base is dominated by people costs. Asset-light: no manufacturing, no physical inventory. High variable component tied to project delivery teams.",
+        "confidence": "high"
+      },
+      "moat_and_network_effects": {
+        "value": "Brand/trust moat + switching costs (relationship-based)",
+        "evidence": "No network effects or data moats evident. Moat derives from (1) track record and sector reputation (World Health Summit presence, published results), (2) embedded relationships with government clients, (3) 80%-local-talent model which creates trust and access that competitors struggle to replicate quickly. High switching costs once embedded in a multi-year reform program.",
+        "confidence": "medium"
+      },
+      "key_operational_dependencies": {
+        "value": "Talent-market-dependent + regulation/aid-funding-dependent",
+        "evidence": "Business requires scarce specialist talent (development professionals with field experience in LMICs) and depends heavily on government and multilateral aid budgets (FCDO, World Bank, Gates Foundation tier). US foreign aid cuts represent a structural sector risk, though Acasus's specific funder mix is undisclosed. No platform or supply-chain dependency.",
+        "confidence": "medium"
+      }
+    },
+    "scale_resources": {
+      "headcount_band": {
+        "value": "Large (201–1000)",
+        "evidence": "Multiple third-party sources converge on 230–265 staff as of late 2025. LeadIQ cited ~265 as of July 2025 (up 22% year-over-year from ~217); RocketReach company profile records 231 employees. ZoomInfo and Growjo model ~138 using per-employee revenue formulas — methodologically weaker for a global field-delivery firm and not averaged in. LinkedIn company page lists 51–200 (lagging indicator). The CEO transition article (Acasus.com, 2025) explicitly confirms 'significant' growth 'in team size' over the prior 18 months. Engineering/IT department alone is ~24 people (Budapest). Best estimate: 230–265 staff across 6 continents, with field teams confirmed active in Pakistan, Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, and Bahrain as of 2025 job postings.",
+        "confidence": "medium",
+        "note": "Third-party estimate; Acasus does not publish headcount officially. 230–265 is the most defensible range from aggregator data."
+      },
+      "revenue_band": {
+        "value": "Scale ($10M–$100M), estimated mid-range ~$35M",
+        "evidence": "LeadIQ (July 2025) and Tracxn (2025 profile) independently cite ~$35M annual revenue — the most recent and most consistently sourced figure. Growjo's $3.8M outlier uses a per-employee revenue formula calibrated to generic consulting; not applicable to a government-reform boutique with high day-rates and multi-year contracts. The $35M figure is directionally consistent with 230–265 staff at blended development-sector billing rates of $130–170/hr fully-loaded average, which is the norm for embedded-delivery LMIC consultancies. No audited financials are public. The CEO transition article confirms the firm has grown 'significantly in projects' over the prior 18 months, consistent with revenue growth alongside headcount growth.",
+        "confidence": "low-medium"
+      },
+      "capitalization": {
+        "value": "Bootstrapped / private partnership (no external funding)",
+        "evidence": "No funding rounds found on Crunchbase, Tracxn. Swiss holding company structure (Acasus Holding AG, Baar, ZUG) consistent with private consulting partnership. No VC, PE, or grant-funded (nonprofit) indicators found.",
+        "confidence": "medium"
+      },
+      "asset_intensity": {
+        "value": "Asset-light",
+        "evidence": "Services business, no physical manufacturing, no fleet, no data centres identified. Swiss holding entity and operating entity are the main corporate assets.",
+        "confidence": "high"
+      },
+      "financial_health": {
+        "value": "Appears healthy and growing (profitability unknown)",
+        "evidence": "22% headcount growth year-over-year to mid-2025 is a strong growth signal. No distress indicators — no layoffs, no restructuring announcements, no adverse press. Swiss corporate auditor change (Feb 2026) is a minor compliance signal, significance unclear. No audited financials available.",
+        "confidence": "low-medium"
+      },
+      "company_age": {
+        "value": "Established (8–20 years)",
+        "evidence": "Founded 2013 by Fenton Whelan. As of 2026, ~13 years old. Founder describes '20+ years working on large-scale public sector reform' (personal track record predates Acasus).",
+        "confidence": "high"
+      },
+      "customer_base_scale": {
+        "value": "Micro-to-small in number (large in impact scope)",
+        "evidence": "Consulting engagements are typically government or multilateral clients — a small number of large, multi-year contracts. No volume of customers disclosed. Historical case studies reference Punjab (Pakistan), Nigeria, Peru, Mozambique — consistent with a handful of major contracts at any time.",
+        "confidence": "medium"
+      }
+    },
+    "growth_phase": {
+      "value": "Scaling",
+      "evidence": "Confirmed by multiple signals: (1) Acasus's own CEO transition article states the firm 'has grown significantly — in projects, in team size, and in the impact delivered alongside government partners' over the 18 months to mid-2025. (2) Headcount grew ~22% year-over-year (217→265) against a contracting aid sector, implying active client-side expansion. (3) Active job postings in 2025 span 10+ countries — Pakistan, Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, Bahrain — significantly wider geographic footprint than historical case studies alone. (4) Leadership transition from founder-CEO to professional CEO (Jonny Barty) is a classic scaling milestone; Barty's mandate explicitly includes 'driving team growth.' (5) Budapest engineering team continues active hiring (Data Engineer role open). The pattern is expansion-first, not optimization — best characterised as active scaling with the professionalisation infrastructure (CEO hire, shared services hub, data platform) now in place to support it.",
+      "confidence": "medium-high"
+    },
+    "market_position": {
+      "target_customer_segment": {
+        "value": "Government / public sector + multilateral organisations (NGO/international)",
+        "evidence": "Service lines explicitly target governments seeking to reform health and education systems. Clients implied by case studies: national governments (Pakistan, Nigeria, Peru, Mozambique) and likely multilateral funders (UNICEF, Gavi, World Bank tier — inferred from vaccine delivery and health system work). No private sector clients visible.",
+        "confidence": "high"
+      },
+      "competitive_stance": {
+        "value": "Niche specialist (defensible segment)",
+        "evidence": "Acasus positions against larger generalist development consultancies (Palladium, DAI) on delivery depth and LMIC-local talent (80% from served countries). Not attempting to be market leader by volume — competing on quality and embeddedness in a defined niche (delivery-focused reform in health/education LMICs).",
+        "confidence": "medium"
+      },
+      "gtm_motion": {
+        "value": "Relationship/reputation-led (no formal sales motion visible)",
+        "evidence": "No sales team, pricing, or inbound demand-gen infrastructure visible on site. Thought leadership (articles, podcasts, sector forums) is the primary visibility vehicle. Sector conferences (World Health Summit, Harvard Africa Health Conference) signal relationship-driven business development. Typical for government-facing professional services.",
+        "confidence": "medium"
+      },
+      "customer_concentration": {
+        "value": "Moderately concentrated (government contract model, but wider than previously estimated)",
+        "evidence": "Active 2025 job postings confirm concurrent field operations in at least 10 countries: Pakistan (multiple provinces), Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, and Bahrain. Each country-level program is a separate government client engagement, suggesting 10–15+ concurrent major programs — wider than the 5–10 estimate from historical case studies. By nature of the business (large, multi-year government contracts), individual engagements are large, so revenue remains concentrated by contract — but the breadth of active geographies in 2025 reduces single-client dependence risk compared to a narrower portfolio. Acasus appears on DevelopmentAid's supplier database; not among FCDO's top contractors in Devex 2024/25 league tables — suggesting no single dominant funder. USAID exposure not confirmed but the 2025 country mix (Pakistan, Afghanistan, sub-Saharan Africa) overlaps with USAID priority geographies. No client revenue distribution data disclosed.",
+        "confidence": "medium"
+      },
+      "pricing_position": {
+        "value": "Premium / mid-market for development sector",
+        "evidence": "Acasus positions as 'world's leading impact-consultancy' and competes with Palladium, DAI, and Oxford Policy Management. DevelopmentAid sector norms for senior development consultants run $800–$1,500/day; boutique firms with embedded-delivery models and measurable outcome track records typically command the upper end. The implied blended revenue per employee ($35M / ~250 staff = ~$140K/employee), while lower than McKinsey-tier, is solidly above the development-sector norm for field-heavy teams — consistent with day rates at the upper mid-market ($1,000–$1,400/day for senior staff). Acasus's brand emphasis on results ('Punjab vaccination 50%→90% in two years'), thought leadership at World Health Summit and Harvard Africa Health Conference, and simultaneous operations across 10+ countries all support premium-niche positioning. No day rates or contract values are publicly disclosed.",
+        "confidence": "medium"
+      }
+    },
+    "org_structure": {
+      "leadership_model": {
+        "value": "Founder transitioning to professional management (founder + professional CEO)",
+        "evidence": "Fenton Whelan founded Acasus in 2013 and served as CEO for ~12 years. In 2025 he transitioned to Founder & Chair, with internally-promoted Jonny Barty (10 years at Acasus, formerly Deputy CEO) becoming CEO. Whelan retains strategic influence and equity. Classic founder + professional CEO dual structure.",
+        "confidence": "high"
+      },
+      "org_shape": {
+        "value": "Hub-and-spoke / functional with field teams",
+        "evidence": "Swiss holding entity (HQ), field delivery teams across 6 continents. Site implies functional service lines (Change Strategy, Management & Leadership, Tech & Implementation, Education & Health). Exact org topology not publicly documented.",
+        "confidence": "low-medium"
+      },
+      "workforce_model": {
+        "value": "Globally distributed, field-deployed",
+        "evidence": "Staff operate across 6 continents. 80% are from the countries Acasus serves — a deliberate talent strategy that implies distributed, largely field-based workforce. Swiss HQ for corporate/leadership functions.",
+        "confidence": "high"
+      },
+      "talent_profile": {
+        "value": "Domain-expert-heavy (development professionals, public sector specialists)",
+        "evidence": "Leadership backgrounds: Oxford Arabic → McKinsey public sector (Whelan); 15+ years development field operations (Barty). Site calls for 'people excited to be at the forefront of the global challenge to improve the life of millions.' Podcast guests: project managers and directors with LMIC field experience. Tech capability exists (data systems, software deployment service line) but is secondary to domain expertise.",
+        "confidence": "high"
+      }
+    },
+    "tech_maturity": {
+      "stack_generation": {
+        "value": "Modern cloud stack (Google Cloud, Angular, TypeScript, AWS, Webpack) powering a real internal engineering function",
+        "evidence": "Website confirms four sub-capabilities under Tech & Implementation. The Budapest hub (opened 2020) houses a dedicated Data and Engineering department of ~24 people led by Nikolett Korompai. RocketReach confirms 35 tracked technologies including Amazon S3, AWS, and Angular. LinkedIn tech team research confirms modern stack: Google Cloud, Angular, TypeScript, AWS, Webpack in active use. Slintel adds React, G Suite, Google Tag Manager. Active Data Engineer and Frontend Developer hiring continues (Budapest, 2025). Corporate website uses Squarespace/ButterCMS (deliberately lightweight). No SaaS product, no GitHub public presence found.",
+        "confidence": "medium-high"
+      },
+      "engineering_practices": {
+        "value": "Small dedicated engineering team (~8-15 core engineers within ~24 IT/Engineering staff); Head of Data & Engineering leads; hiring Data Engineers and Frontend Devs in Budapest",
+        "evidence": "RocketReach confirms IT/Engineering department at 24 employees (~10% of 231-person company). LinkedIn research identifies Nikolett Korompai as Head of Data & Engineering (Budapest), with active hiring for Data Engineers and Frontend Developers, suggesting ~8-15 core developers within the broader department. Team roles include: Head of Data and Engineering, Data Analyst Team Lead (Tamas Varga, departed to Sanofi after 4 years), Full Stack Developers/Engineers, Data Engineers, Technical Project Manager, Support Engineers, Data Evaluators. Builds BI platforms and ETL pipelines for government clients. Job postings require Python, SQL, ETL automation, Hungarian+English fluency. Confirmed 35 tracked tools in use including AWS/S3, Angular, React. Delivery engineering function, not a product R&D team.",
+        "confidence": "medium"
+      },
+      "data_infrastructure": {
+        "value": "Structured data and analytics capability (client-facing BI/ETL on AWS/Google Cloud); ETL pipelines, Tableau dashboards; internal tooling lightweight",
+        "evidence": "Acasus builds and deploys data infrastructure for government clients: ETL pipelines, BI dashboards (Tableau confirmed from Tamas Varga public Tableau profile), and data visualisation platforms. Client-facing infrastructure spans Google Cloud and AWS (Amazon S3 confirmed by RocketReach). Frontend stack includes Angular and React for dashboard delivery. G Suite in active use. Active hiring for Data Engineers with Python/SQL/ETL experience (Budapest, 2025). Internal infrastructure deliberately lightweight (Squarespace/ButterCMS). Dual cloud presence (GCP + AWS) shaped by client environment requirements. LinkedIn/careers findings confirm structured data/analytics for client delivery.",
+        "confidence": "medium"
+      },
+      "security_posture": {
+        "value": "Basic (no SOC2/ISO27001 found; standard for professional services at this scale)",
+        "evidence": "Corporate site uses Cloudflare Rocket Loader for performance/security. No SOC2, ISO27001, Cyber Essentials, or security-first positioning found in public materials or LinkedIn research. Consistent with a professional services firm delivering bespoke government analytics. Government client contracts may impose data handling requirements not publicly visible.",
+        "confidence": "low-medium"
+      }
+    },
+    "operating_environment": {
+      "regulatory_burden": {
+        "value": "Moderate (Swiss corporate law + international aid procurement rules)",
+        "evidence": "Swiss holding entity (Acasus Holding AG, Baar, ZUG) subject to Swiss corporate law. Operating in developing countries requires compliance with local labour laws and international procurement rules (World Bank, UN). No healthcare data regulations (they advise systems, not process patient data). No HIPAA/FDA equivalent burden.",
+        "confidence": "medium"
+      },
+      "geographic_scope": {
+        "value": "Global / multi-continent",
+        "evidence": "Described as operating across 6 continents. Historical case studies in Pakistan, Nigeria, Peru, Mozambique, DRC. HQ in Switzerland. Website describes staff 'on the ground, wherever we are needed.'",
+        "confidence": "high"
+      },
+      "macro_sensitivity": {
+        "value": "Aid-budget-dependent (government-spending-sensitive)",
+        "evidence": "Revenue depends on government and multilateral aid budgets. US foreign aid contraction (Trump administration, 45.5% drop in global health job postings per Devex) is a material sector risk. Acasus appears primarily FCDO/World Bank/bilateral-funded rather than USAID-dependent, which may provide insulation — but this is unconfirmed. Not cyclical in the commercial sense; sensitive to geopolitical and donor-policy cycles.",
+        "confidence": "medium"
+      },
+      "governance_obligations": {
+        "value": "Private partnership (founder-controlled, no external board oversight visible)",
+        "evidence": "Private Swiss company structure. No VC board, no public company obligations, no B-corp certification found. Founder retains Chair role. A separate Acasus Foundation entity exists but appears dormant/in liquidation.",
+        "confidence": "medium"
+      }
+    },
+    "culture_brand": {
+      "innovation_posture": {
+        "value": "Pragmatic / evidence-driven",
+        "evidence": "Whelan's public AI framing at World Health Summit: 'We don't have a technology problem; we have an accountability problem.' Calls for rigour, results-tied funding, local data ownership. This is not a bleeding-edge or fast-follower posture — it is deliberate, evidence-first. Site tagline: 'Brave Change' with emphasis on courage and delivery over innovation rhetoric.",
+        "confidence": "medium-high"
+      },
+      "brand_positioning": {
+        "value": "Thought-leader / mission-driven challenger",
+        "evidence": "Positions as 'world's leading impact-consultancy' and 'Brave Change.' Active thought leadership: articles on DRC zero-dose children, measles surges, AI accountability. Podcast series. World Health Summit and Harvard Africa Health Conference presence. Explicitly challenges sector norms (AI hype, advisory-only models).",
+        "confidence": "high"
+      },
+      "public_values": {
+        "value": "Mission-driven (mission guides commercial decisions)",
+        "evidence": "Homepage: 'We believe expertise alone cannot change the world, that it also takes courage.' Careers: 'forefront of the global challenge to improve the life of millions.' 80% local staff policy is a values-driven constraint on talent strategy. Foundation entity (even if dormant) signals mission intent. Acasus does not present as a purely commercial firm.",
+        "confidence": "high"
+      },
+      "employer_brand": {
+        "value": "Strong-in-niche (development sector), mixed internally",
+        "evidence": "Glassdoor: 3.4/5 overall, 72% recommend, 4.1/5 compensation, 2.7/5 work-life balance (69 reviews). Negative themes: work-life balance, founder management style described as 'not mature and open' by some, reported favoritism. External reputation is strong — sector visibility, measurable results. Internal reputation is mixed but within normal range for high-intensity development boutiques. CEO transition may shift internal culture.",
+        "confidence": "medium-high"
+      }
+    }
+  },
+  "gaps": [
+    "Audited financials not public — all revenue estimates (~$35M) are third-party modelled figures (LeadIQ, Tracxn) and should not be relied upon for financial sizing. Growjo's divergent $3.8M figure uses a per-employee revenue model and has been discarded.",
+    "Funder/client mix is undisclosed — USAID exposure vs. FCDO, Gates, World Bank, or bilateral contracts cannot be confirmed. 2025 active country footprint (Pakistan, Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, Bahrain) overlaps with USAID priority geographies, raising but not confirming USAID exposure. Acasus does not appear in FCDO's top contractor league tables (Devex 2024/25), suggesting no single dominant funder.",
+    "Full leadership team now documented (9 leaders from About page) — gap closed.",
+    "February 2026 auditor change at Acasus Holding AG (Switzerland) is recorded but significance remains unknown.",
+    "AI adoption depth is ambiguous — Whelan speaks about AI at a thought leadership level but whether Acasus is building internal AI tools, running client pilots, or partnering with vendors is not publicly visible. The Budapest engineering team (AWS, GCP, Python, ETL) is the likely locus of any AI capability.",
+    "Acasus Foundation status is unclear — Moneyhouse signals possible dormancy or liquidation.",
+    "Current contract wins / active tender activity remain unconfirmed via public sources — the 2025 job posting geographic footprint (10+ countries) is the best available proxy for active program scope.",
+    "Glassdoor sample (69 reviews) is modest for a 230–265-person firm — employee sentiment data may not be representative and predates the CEO transition to Jonny Barty.",
+    "Engineering team attrition signal: Tamás Varga (Data Analyst Team Lead, 4 years) departed to Sanofi. Whether this reflects broader team turnover is unknown; active Data Engineer hiring in 2025 suggests the function continues to invest.",
+    "No pricing, contract size, or deal structure data available — implied blended revenue-per-employee (~$140K) provides weak triangulation only."
+  ],
+  "data_quality_score": {
+    "overall": 0.76,
+    "passing_threshold": 0.7,
+    "method": "semantic-rubric-haiku",
+    "dimensions": {
+      "industry-vertical": 0.92,
+      "business-model": 0.87,
+      "scale-resources": 0.67,
+      "growth-phase": 0.72,
+      "market-position": 0.68,
+      "org-structure": 0.82,
+      "tech-maturity": 0.55,
+      "operating-environment": 0.76,
+      "culture-brand": 0.91
+    },
+    "strong_dimensions": {
+      "industry-vertical": {
+        "label": "Industry & Vertical",
+        "score": 0.92
+      },
+      "business-model": {
+        "label": "Business Model",
+        "score": 0.87
+      },
+      "growth-phase": {
+        "label": "Growth Phase",
+        "score": 0.72
+      },
+      "org-structure": {
+        "label": "Org Structure",
+        "score": 0.82
+      },
+      "operating-environment": {
+        "label": "Operating Environment",
+        "score": 0.76
+      },
+      "culture-brand": {
+        "label": "Culture & Brand",
+        "score": 0.91
+      }
+    },
+    "weak_dimensions": {
+      "scale-resources": {
+        "label": "Scale & Resources",
+        "score": 0.67,
+        "research_questions": [
+          "What is Acasus's current headcount and how has it changed in the last 12 months?",
+          "What is Acasus's approximate annual revenue or budget, and is it growing or flat?",
+          "What is Acasus's financial health — profitable, break-even, grant-dependent, or burning runway?"
+        ]
+      },
+      "market-position": {
+        "label": "Market Position",
+        "score": 0.68,
+        "research_questions": [
+          "Who are Acasus's target buyers and what does their buying process look like?",
+          "How concentrated is Acasus's revenue — top 5 clients as % of total?",
+          "Where does Acasus sit on the price-value spectrum vs. alternatives?"
+        ]
+      },
+      "tech-maturity": {
+        "label": "Tech Maturity",
+        "score": 0.55,
+        "research_questions": [
+          "What core technology does Acasus use internally — custom-built, off-the-shelf, or minimal?",
+          "Does Acasus have engineering/product teams, or is tech outsourced/minimal?",
+          "What data infrastructure exists — spreadsheets, BI dashboards, data warehouse, or ML-ready pipelines?"
+        ]
+      }
+    },
+    "total_properties_scored": 38
+  }
+}

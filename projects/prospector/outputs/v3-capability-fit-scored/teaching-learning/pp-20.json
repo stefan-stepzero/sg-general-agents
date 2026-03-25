@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-academic-progression-promotion-criteria-inconsistency-dup",
+  "pain_point_label": "Unclear & Inconsistently Applied Promotion Criteria",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of clear, standardized promotion criteria documentation is a core driver of inconsistency. AI text generation can produce a canonical, plain-language promotion policy document from structured inputs (thresholds, weightings, exception rules), which can then be versioned and distributed across all campuses. This directly addresses the parent/student clarity gap and the ad hoc special-case handling by giving staff a reference document they can cite.",
+      "opportunity_sketch": "A policy generation tool where curriculum leads input grade-level parameters and AI drafts a unified promotion criteria handbook — including assessment weightings, attendance thresholds, and exception pathways — formatted for both staff and parent communication.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Designing a promotion framework that satisfies multiple simultaneous constraints — minimum grade thresholds, attendance floors, assessment weighting, campus-level variance allowances, and exception criteria — is a classic constraint satisfaction problem. AI can enumerate valid policy configurations and flag contradictions before rollout, replacing the current ad hoc approach where each campus independently interprets ambiguous rules.",
+      "opportunity_sketch": "A configuration tool where a central academic team defines the constraint set (e.g., 'assessment weight must be 60-80%', 'attendance floor between 70-85%') and AI generates all compliant policy variants, enabling deliberate standardization rather than accidental divergence.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once a standardized policy exists, applying it consistently is the next failure mode — promotion decisions still get made ad hoc because staff interpret borderline cases differently. A structured classification model trained on student feature vectors (grades per subject, attendance rate, assessment scores) can produce a promotion recommendation (promote / borderline / retain) that enforces the same decision logic across all campuses, reducing reviewer subjectivity.",
+      "opportunity_sketch": "An end-of-term promotion decision support tool that ingests student academic records and outputs a recommendation with supporting rationale, flagging borderline cases for human review while auto-approving clear-cut promote and retain decisions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A significant portion of the pain is experienced by parents and students who cannot get a straight answer about promotion requirements or the status of a borderline case. A conversational agent grounded in the official promotion policy can answer multi-turn questions ('What does my child need to pass? What happens if attendance is 72%?') in plain language, reducing disputes and staff time spent on repetitive parent inquiries.",
+      "opportunity_sketch": "A parent-facing promotion advisory chatbot embedded in the school portal, able to explain the promotion criteria, walk through a student's current standing against thresholds, and outline next steps — escalating to a human counselor only for documented exception cases.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

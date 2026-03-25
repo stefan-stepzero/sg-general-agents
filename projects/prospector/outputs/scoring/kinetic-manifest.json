@@ -1,0 +1,567 @@
+{
+  "company_id": "kinetic",
+  "company_name": "Kinetic Software",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Technology / B2B SaaS",
+        "evidence": "Kinetic develops and sells operations management software (student accommodation management, conferencing and events, catering, student engagement app). It is a software business; its product is software-as-a-service, not hardware, professional services, or physical goods.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "EdTech / Higher Education Operations Software — specifically PBSA (Purpose-Built Student Accommodation) tech and university operations management",
+        "evidence": "Kinetic's entire product suite (KxStudent, KxConferencing, KxCatering, KxEngage) is designed for higher education institutions and private PBSA operators. 85% of UK universities are customers. The company self-describes as serving 'student accommodation, PBSA, catering, and venue management.' 25+ year specialisation with no diversification outside this niche.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Picks-and-shovels / software infrastructure layer",
+        "evidence": "Kinetic provides the operational software layer on which universities and PBSA operators run their accommodation and events businesses. It is a horizontal enabler within its niche — not delivering education directly, but enabling the operational infrastructure of institutions that do. Comparable to property management software in real estate.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Mature with consolidation dynamics",
+        "evidence": "The HE operations software market is 25+ years old with established dominant players (Kinetic UK-centric, StarRez US-centric). Market is consolidating via Volaris/Constellation model. Growth is incremental rather than explosive — driven by international expansion, product breadth, and PBSA private sector growth rather than category creation. The APUC framework ranking and 85% UK penetration confirm a market that has moved through growth into entrenchment.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Recurring subscription (SaaS/software licensing) with professional services secondary",
+        "evidence": "Kinetic's product suite is enterprise SaaS sold to universities on multi-year contracts. The site references 'Book a Demo' and customer portal access consistent with SaaS delivery. The Volaris acquisition thesis explicitly values recurring revenue. Industry comparables (StarRez) are subscription-first. 'KxEngage' mobile app and modules suggest a per-module licensing structure. No transactional or usage-based pricing signals found.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Managed software product with implementation/support services",
+        "evidence": "Kinetic delivers software platforms (KxStudent, KxConferencing, etc.) but the complexity of HE operations systems implies significant implementation, onboarding, and ongoing support. The site references 'Customer Experience' and a 'Customer Portal' and 'Ideas Forum,' consistent with a managed SaaS model rather than pure self-serve. The HeyHub/KxEngage mobile app adds a lighter-weight product-led layer.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Fixed-cost-heavy; high gross margin software business",
+        "evidence": "As a B2B SaaS company with 350+ customers, Kinetic's cost base is dominated by R&D (platform development, product expansion), customer success/support, and sales. Physical infrastructure costs are minimal. The Volaris permanent-hold model implies focus on profitability and margin extraction — consistent with a high-margin software model. No manufacturing or significant variable COGS.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Multi-layered moat: deep switching costs + procurement lock-in + data scale advantages + community flywheel",
+        "evidence": "Primary moat is switching cost depth: Kinetic is embedded in university HR/finance/accommodation workflows with 25+ years of institutional configuration. Migrating away involves multi-year data migration, staff retraining, and significant disruption risk to live student accommodation operations. Secondary moat is procurement lock-in: APUC #1 ranking means Scottish universities can purchase without tender — a structural barrier to entry. Data network effects: 700,000+ managed bed-spaces generate cross-customer benchmarking data ('38% more revenue for Kinetic users'); the larger the installed base, the better the benchmarking product becomes, creating a moderate data moat. Community flywheel: Kinetic Live annual conference, Ideas Forum, and CUBO partnership create institutional switching costs via community identity — customers are embedded in the Kinetic ecosystem beyond the software. These compound: a competitor must overcome procurement frameworks, community ties, AND integration depth simultaneously.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "University IT infrastructure + higher education sector health + cloud/hosting infrastructure + Volaris capital allocation",
+        "evidence": "Four critical operational dependencies: (1) University IT infrastructure — Kinetic's products integrate with institutional HR, finance, and identity systems (Active Directory, student records). Dependency on university IT teams for integration maintenance and system upgrades. (2) Higher education sector health — 85% revenue concentration in HE institutions means sector-level shocks (UK university closures, enrollment declines, funding cuts) directly threaten revenue base. Kinetic Live 2026 explicitly flagged HE 'demand volatility and affordability pressures' as a concern. (3) Cloud/hosting infrastructure — as a SaaS platform managing live student accommodation for 700,000+ beds, dependency on underlying cloud infrastructure (likely AWS or Azure) creates operational concentration risk. (4) Volaris Group capital allocation — all tuck-in acquisitions (Occam 2018, HeyHub 2024, Bullet Solutions 2024) require Volaris approval. Growth strategy is gated by parent capital decisions. Barry Anns' mandate from Volaris is not publicly stated but implicitly constrains strategic optionality.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Small-medium (~86 employees as of Oct 2024; 51-100 band)",
+        "evidence": "LeadIQ data (October 2024) reports approximately 86 employees across 5 continents. This aligns with the company's profile: Milton Keynes HQ (~40-50 staff, Mon/Wed in-office), Ludlow second office (~10-15 staff, Tue/Thu in-office), fully remote North America team, and smaller presences in other regions. Revenue intelligence sources (GrowJo/LeadIQ) estimate ~$15M annual revenue consistent with an 86-person SaaS company. This is more precise than the prior 51-200 estimate.",
+        "confidence": "medium — third-party headcount data (LeadIQ Oct 2024); not confirmed from primary source",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Scale ($10M-$100M ARR estimated)",
+        "evidence": "350+ customers globally, 85% of UK universities, 700,000+ beds managed. At typical HE enterprise SaaS ACV of £30k-£150k per institution, a customer base of 350+ implies £10M-£50M ARR range. Volaris does not disclose subsidiary financials. The multi-product platform and 10-year Volaris ownership with tuck-in acquisitions funded suggest a self-sustaining revenue base well above $10M.",
+        "confidence": "low — fully inferred; no public financials",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Corporate-subsidiary / permanent-hold (Constellation Software / Volaris Group)",
+        "evidence": "Kinetic was acquired by Volaris Group (Constellation Software, TSX: CSU) in January 2015. Volaris operates a permanent-hold, decentralized model with no exit intent. Capital allocation for tuck-in acquisitions (Occam 2018, HeyHub 2024, Bullet Solutions 2024) is sourced through Volaris. No independent fundraising, VC, or IPO signals.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Asset-light (software company)",
+        "evidence": "Kinetic is a software business with no manufacturing, physical inventory, or significant infrastructure assets beyond office facilities and cloud hosting. Company number 03169474 on Companies House (UK). Product is intellectual property and recurring software access.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Profitable / stable; positive cash flow; acquisition-funded growth",
+        "evidence": "Constellation Software subsidiaries are operated for profitability — Volaris explicitly values ROIC and recurring revenue stability. No distress signals found. 85% UK penetration and multi-year contracts imply stable ARR. Four tuck-in acquisitions over 11 years under Volaris suggests a generating entity with investable surplus. The Kinetic Live conference, annual user community events, and active marketing investment are consistent with a profitable, stable business.",
+        "confidence": "medium — inferred from Volaris model; no public financials",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Legacy (20+ years) — founded 1998",
+        "evidence": "Kinetic was co-founded by Chris Wildsmith and Steve Ashley in 1998. The site claims '25+ years' of market presence. Company number 03169474 has UK registration history consistent with late 1990s founding.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {
+        "value": "Mature/Optimization with deliberate inorganic growth layer",
+        "evidence": "Core UK market is saturated (85% HEI penetration) — organic growth in the domestic market is limited. Kinetic is in mature/optimization posture for its core UK base while pursuing growth vectors via: (1) international expansion (20+ countries), (2) private PBSA sector growth, (3) product breadth acquisitions (HeyHub, Bullet Solutions), and (4) AI/innovation investment. The Volaris permanent-hold model optimizes for ROIC, consistent with optimization-phase priorities. There is no evidence of pre-PMF searching, rapid scaling chaos, or turnaround dynamics.",
+        "confidence": "high"
+      },
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Enterprise and mid-market — higher education institutions (universities, colleges) and private PBSA operators",
+        "evidence": "Kinetic's customers are universities (HEIs), colleges, and private PBSA companies (e.g., Student Roost with 23,000+ beds). These are institutional buyers with formal procurement processes (APUC framework), multi-year contracts, and IT/operations decision-makers. The APUC #1 ranking signals public sector procurement dynamics. The customer segment is closer to enterprise (complex procurement, multi-stakeholder) than SMB.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Market leader (dominant share in UK/Europe); strong challenger internationally",
+        "evidence": "85% UK university penetration = dominant market leader in home market. #1 APUC framework ranking across all applicable lots confirms procurement-level dominance. Globally, StarRez dominates North America and Australia (1,400 customers, 3M+ beds) — Kinetic is a strong challenger outside UK/Europe. The sector has two dominant players with clear geographic splits.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Sales-led (direct enterprise sales) + procurement-framework-led + partner/channel",
+        "evidence": "Kinetic's primary GTM is direct enterprise sales with 'Book a Demo' as the primary CTA. APUC framework positioning (ranked #1) is a critical GTM lever enabling no-tender procurement. CUBO partnership and Kinetic Live annual conference signal community and partner-led elements. The KxEngage mobile app may introduce lighter product-led motion at the student engagement layer.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Diversified — no single customer dominant",
+        "evidence": "350+ customers across UK, Europe, and 20+ countries. 85% of UK universities are customers, implying broad spread. No signals of any single customer representing a significant revenue concentration. Case studies feature Student Roost, Homerton College, and multiple institutions — consistent with diversified base.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Mid-market to premium for the niche",
+        "evidence": "Kinetic is the market leader with a 25+ year track record and deep institutional trust. It does not compete on price — the APUC framework positioning and Volaris ownership suggest premium or at least mid-market pricing. The '38% more revenue for Kinetic users vs non-Kinetic users' ROI claim is a premium positioning signal. No evidence of discount or value-tier positioning.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Professional management (external CEO appointed by corporate parent)",
+        "evidence": "Barry Anns (CEO, appointed mid-2024) is an externally recruited professional manager — not a founder. Original co-founders (Chris Wildsmith, Steve Ashley) stepped back circa 2020. Volaris Group, as parent, controls capital allocation and strategic oversight. Leadership succession has been managed twice post-acquisition without founder involvement. This is a professionally managed corporate subsidiary.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Functional silos with divisional product lines across two UK offices and a distributed international layer",
+        "evidence": "Kinetic's product suite spans 4+ distinct verticals (student accommodation, PBSA, conferencing/events, catering) plus acquired timetabling. The Innovation Acceleration team is a distinct unit. Customer Experience/Support is a separate function. Office structure reinforces functional separation: Milton Keynes office designated Mon/Wed (likely product/engineering/commercial teams), Ludlow office Tue/Thu (likely implementation/support teams), and North America fully remote. Cultural differences between offices noted in Glassdoor reviews. The dual-office UK model with product and support/implementation split is a common functional-silo pattern for vertical SaaS.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Hybrid multi-office (UK-primary: Milton Keynes + Ludlow) with fully remote North America and distributed international presence across 5 continents",
+        "evidence": "Confirmed office locations: Milton Keynes HQ (249 Silbury Boulevard, MK9 1NA) with in-office days Monday/Wednesday; Ludlow second UK office (7 The Business Quarter, Eco Park Road, SY8 1FD) with in-office days Tuesday/Thursday. North America team is fully remote. LeadIQ data confirms ~86 employees across 5 continents (Europe, North America, Asia confirmed). The hybrid structure balances face-time with reduced commuting — explicitly stated in careers materials. The Ludlow office (a small Shropshire market town) suggests legacy presence from an acquisition or founder location, not a major commercial hub.",
+        "confidence": "high — office locations and working patterns confirmed from careers pages via search",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Engineering/product-heavy with growing commercial emphasis",
+        "evidence": "As a 25-year-old software product company, Kinetic's core is an R&D/product/engineering workforce. The Innovation Acceleration Graduate Engineer role, the HeyHub acquisition (bringing mobile product DNA), and the Bullet Solutions integration suggest product-engineering as the dominant skill profile. Barry Anns' commercial/CRO background at the CEO level signals deliberate effort to balance or shift toward commercial talent emphasis.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Transitional (25-year-old core platform modernising; new layers cloud-native)",
+        "evidence": "Kinetic's core student accommodation software dates to 1998. A 25-year-old enterprise software platform almost certainly carries legacy architecture. However, KxEngage (iOS/Android mobile app, launched 2024) and the 'Products Hub' represent modern, cloud-native additions. The company is investing in AI integration (Innovation Acceleration team) while maintaining and evolving the legacy core — classic transitional pattern for mature vertical SaaS.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Intermediate (CI/CD and product iteration capability evident; not elite)",
+        "evidence": "Multiple product releases (KxEngage launch, Bullet Solutions integration) and an 'Ideas Forum' for customer-driven feature requests suggest structured product development practices. The Innovation Acceleration team and AI prototyping signal active R&D investment. No public engineering blog, open source contributions, or signals of elite engineering culture. The Volaris acquisition model typically imposes financial discipline over engineering investment.",
+        "confidence": "low — limited public signals on engineering practices",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic to intermediate (BI and reporting for customers; AI-readiness building)",
+        "evidence": "Kinetic manages 700,000+ beds of operational data — this is a substantial data asset. The '38% more revenue for Kinetic users' claim implies some cross-customer benchmarking/analytics capability. AI exploration hiring (Innovation Acceleration Graduate Engineer focused on AI integration) suggests current data infrastructure is pre-ML-production but building toward it. No public announcement of a modern data stack or real-time analytics capability.",
+        "confidence": "low — inferred",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Intermediate to advanced (enterprise-grade for HE sector compliance)",
+        "evidence": "Kinetic serves UK universities, which are subject to GDPR, Cyber Essentials, and often JISC/NCSC frameworks. A dedicated 'Security' page on kineticsoftware.com signals formal security posture communication to enterprise buyers. 25+ years managing sensitive student data implies established security practices. The APUC public procurement framework ranking requires demonstrable compliance. Likely holds Cyber Essentials or equivalent UK certification.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Moderate (data privacy — GDPR; sector-specific HE compliance; public procurement rules)",
+        "evidence": "Kinetic operates in the UK HE sector, subject to: GDPR (student personal data, accommodation records), UK PECR, JISC/NCSC guidance for educational institutions. Public procurement frameworks (APUC) impose formal compliance and evaluation requirements. Not subject to heavy financial regulation (FCA) or healthcare regulation (MHRA/FDA) — moderate rather than heavy regulatory burden.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Regional-to-global (UK/Europe primary; 20+ countries)",
+        "evidence": "85% of UK universities as customers establishes clear UK dominance. 20+ country presence and 350+ global customers places this as regional-to-global in scope. Kinetic Live 2026 explicitly mentioned North America as a growing market with 'demand volatility and affordability pressures.' Bullet Solutions acquisition also expanded 'global HE footprint.'",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Moderately recession-resistant with HE-sector-specific exposure",
+        "evidence": "University operations software is essential infrastructure — universities do not stop managing student accommodation in a recession. However, Kinetic is exposed to HE sector health: UK university demand volatility (mentioned at Kinetic Live 2026), student affordability pressures, and potential funding cuts create risk at the customer level. Private PBSA sector is more cyclical than public HE. Overall: more resilient than pure commercial software but not fully recession-proof.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Parent-company governed (Volaris Group / Constellation Software — TSX: CSU)",
+        "evidence": "Kinetic is a wholly-owned subsidiary of Volaris Group, which is itself a subsidiary of Constellation Software Inc. (Toronto Stock Exchange: CSU). Constellation's quarterly reporting obligations, ROIC targets, and permanent-hold acquisition philosophy flow down as governance constraints on Kinetic. Capital allocation, M&A decisions, and strategic direction are reviewed within the Volaris framework. Kinetic has no independent board obligations but is subject to Constellation's financial discipline model.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Pragmatic with fast-follower AI ambition",
+        "evidence": "Kinetic's 25-year history in a conservative institutional market (HE procurement, public universities) implies a stability-first culture. However, the Innovation Acceleration team, HeyHub acquisition (startup buy vs build), AI exploration at Kinetic Live, and Barry Anns' commercially-minded leadership suggest active movement toward pragmatic innovation — adopting AI when the ROI case is clear, not as a first-mover. The Volaris parent's 'Redefining Vertical Market Software in the AI Era' content signals group-level intent to become AI-enabled within 1-3 years.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Trust/reliability-first with community-building elements",
+        "evidence": "Kinetic's brand is built on 25+ years of institutional trust: '85% of UK universities,' APUC #1 ranking, long-tenured customer relationships, and emphasis on 'unwavering support.' The Kinetic Live annual conference, 'Ideas Forum,' CUBO partnership, and 'Best PBSA Leader 2025' / 'Woman of the Year 2025' awards all signal deliberate community-building in the PBSA/HE sector. Barry Anns' personal brand as 'values-driven' maps to a trust and community positioning, not disruption or technical-craft-first.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Stable/reliable in niche; limited broader recognition",
+        "evidence": "Kinetic is well-known within the HE operations software sector but has limited employer brand recognition outside it. Glassdoor has only ~8 reviews for the entity, suggesting limited employee volume or low review engagement. The graduate 'Innovation Acceleration' programme at £30k-£40k targets early-career talent with a structured development path — a stable employer signal, not scrappy/startup. The Volaris parent ownership provides stability but may create perception of constrained upside for equity-motivated talent.",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

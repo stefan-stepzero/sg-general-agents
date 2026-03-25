@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-safety-security-emergency-evacuation-drills-and-disaster-planning-are-theoretical-dup",
+  "pain_point_label": "Emergency Evacuation Drills and Disaster Planning Remain Theoretical, Not Tested",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Emergency plans that are filed away and never updated are a documentation problem at their core. AI text generation can produce site-specific evacuation plans tailored to each campus's actual layout, current staff roster, and seasonal risk profile (typhoon, flood, earthquake zones in the Philippines), replacing generic templates that don't reflect reality. This directly addresses the regulatory-compliance-only drafting cycle that results in plans no one uses.",
+      "opportunity_sketch": "An AI-powered emergency plan generator that takes campus layout data, headcount, and location-based risk inputs to auto-produce and periodically refresh site-specific emergency plans and drill scripts — with a compliance-ready format aligned to DepEd mandates.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The pain explicitly involves unassessed and unquantified risk: campuses in typhoon corridors, flood-prone areas, and earthquake zones with untested plans. A risk scoring model can evaluate each campus against location-based hazard data, building age, staff preparedness indicators, and drill frequency to surface which sites are highest-risk. This gives the group-level emergency coordinator the cross-campus visibility they currently lack.",
+      "opportunity_sketch": "A campus emergency-readiness risk dashboard that scores each site monthly on preparedness factors (last drill date, plan update recency, seasonal hazard proximity, staff turnover) and flags high-risk campuses for priority intervention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The failure mode described is a process gap: plans are drafted, filed, and never revisited. A task automation agent can orchestrate the recurring workflow of drill scheduling, plan review reminders, post-drill report collection, and compliance checklist submission across all campuses — ensuring the process actually executes rather than stalls at the first human handoff. This tackles the multi-campus coordination problem where the group coordinator has no visibility into campus-level compliance.",
+      "opportunity_sketch": "An automated emergency preparedness workflow agent that triggers pre-drill preparation tasks, collects post-drill evaluation forms from campus coordinators, compares actual vs. target evacuation times, and flags non-compliant campuses to the group safety officer.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff and students not knowing their evacuation routes is a knowledge-access problem that a conversational agent can directly address. A chatbot accessible via school communication channels (messaging apps widely used in Philippine schools) could answer 'Where is my assembly point?', 'What do I do during a typhoon warning?', or walk staff through shelter-in-place protocol — on-demand, without requiring everyone to have memorized a filed document.",
+      "opportunity_sketch": "A campus safety assistant chatbot deployed on the school's existing messaging platform that answers emergency procedure questions per-campus, sends pre-drill briefings, and collects post-drill feedback from staff and students.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Drills being conducted infrequently — and not scheduled around seasonal risks — is partly a scheduling problem. An AI scheduling optimizer can plan drill calendars across all campuses accounting for staff availability, academic calendar constraints, peak typhoon/earthquake risk seasons, and regulatory minimum frequency requirements, ensuring drills actually occur at the right time without conflicting with exams or enrollment periods.",
+      "opportunity_sketch": "An annual drill scheduler that ingests the academic calendar, DepEd compliance requirements, and regional seasonal hazard data to produce an optimized drill schedule for each campus, with automated reminders and compliance tracking.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

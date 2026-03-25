@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-lgu-community-no-political-strategy-dup",
+  "pain_point_label": "No Systematic LGU Relationship & Political Navigation Strategy",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "The institution lacks a map of local government officials across 10-15 footprints. Entity extraction can systematically pull named officials (mayors, barangay captains, provincial education supervisors), their roles, contact details, and jurisdictions from public documents, government websites, and news sources to build and maintain that stakeholder directory.",
+      "opportunity_sketch": "An extraction pipeline that ingests LGU websites, DepEd regional bulletins, and local news to auto-populate and refresh an official-stakeholder registry per campus footprint — replacing the current ad-hoc, memory-dependent approach.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Political navigation requires understanding relationships between officials — who reports to whom, which barangay captain influences which mayor, which provincial supervisor controls DepEd budget allocations. Knowledge extraction can build a graph of these power relationships from public records, local news, and government documents, enabling the institution to understand influence networks across all 10-15 footprints.",
+      "opportunity_sketch": "A knowledge graph of LGU stakeholder relationships per campus site, surfacing chains of influence (e.g., barangay captain → municipal mayor → provincial governor) and flagging relationship changes when officials change roles or elections occur.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The institution currently has no annual engagement calendar or structured communication cadence with LGUs. Text generation can draft personalized outreach letters, briefing documents, and engagement memos tailored to each official's priorities (local employment, DepEd targets), turning a blank-slate relationship-building effort into a scalable templated workflow.",
+      "opportunity_sketch": "A communication toolkit that generates LGU-specific outreach materials — annual greeting letters, project update memos, permit request cover letters, and alignment briefs linking the school's programs to local development priorities — customized per footprint and official.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Building a political navigation strategy requires ongoing intelligence: who won the last barangay election, what local development priorities are in each municipality's annual investment plan, which officials are allies vs. critics of private education. A research agent can autonomously gather this multi-source intelligence across all 10-15 footprints and synthesize it into actionable briefings, something no staff member currently does systematically.",
+      "opportunity_sketch": "A research agent that monitors local government news, election results, municipal investment plans, and DepEd regional announcements per campus footprint — producing quarterly stakeholder briefings that inform the engagement calendar and flag political risks (e.g., incoming official with anti-private school stance).",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Designing an annual LGU engagement calendar across 10-15 footprints involves satisfying multiple constraints simultaneously: which officials to prioritize, how often to engage each tier, budget for relationship events, staff availability, election cycles, and local holiday calendars. Constraint satisfaction can generate valid engagement plan configurations that balance all these factors across sites.",
+      "opportunity_sketch": "An engagement calendar optimizer that takes as inputs the stakeholder map, staff bandwidth, budget, and local calendars across all footprints and outputs a valid annual engagement plan — assigning which staff member engages which official, when, and through what channel.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

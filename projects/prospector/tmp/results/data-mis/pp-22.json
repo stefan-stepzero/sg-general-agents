@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-it-operations-helpdesk-no-monitoring-alerting-dup",
+  "pain_point_label": "No Proactive Monitoring or Alerting; Reactive-Only Model",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "This is the core fit: the pain is entirely about failing to detect deviations from normal system behavior — disk fill rates accelerating, batch jobs running longer than baseline, backup jobs returning unexpected exit codes, email server latency spiking. Anomaly detection on infrastructure telemetry (system metrics, logs, job status streams) is exactly the use case this capability covers. For a 500+ staff education operator with a SIS, email server, and batch jobs, the telemetry exists but is unwatched.",
+      "opportunity_sketch": "An AI monitoring layer ingests infrastructure metrics and job logs in near-real-time, learns baseline patterns per system (e.g. nightly backup duration, disk delta per day), and fires alerts when behavior deviates — catching silent backup failures and disk exhaustion days before impact.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Disk space exhaustion and resource capacity problems are fundamentally time-series forecasting problems: given historical disk usage growth or memory consumption trends, predict when thresholds will be breached. This directly addresses the 'capacity planning non-existent' dimension of the pain point, enabling the IT team to act weeks in advance rather than when a system slows down. Multi-site operators have multiple servers/campuses, making manual trend-watching impractical.",
+      "opportunity_sketch": "A forecasting model trained on disk usage, memory, and database size time series predicts exhaustion dates per system with a rolling horizon, surfacing a weekly 'infrastructure runway' report so IT can schedule capacity expansions before they become incidents.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reactive fire-fighting cycle (IT spends 70% on incidents) could be partially broken by an automation agent that performs first-response triage autonomously: detecting an alert condition, running diagnostic scripts, correlating recent change logs, and drafting a structured incident summary before a human is paged. This reduces mean-time-to-resolution and frees IT capacity for proactive work. A 500-staff school operator with a small IT team (likely 2-5 people) gains disproportionate leverage from automating incident intake.",
+      "opportunity_sketch": "An IT ops automation agent monitors alert queues, auto-runs predefined diagnostic playbooks (ping check, service status, disk query), and posts a pre-filled incident ticket with findings to the helpdesk system — so IT arrives at an incident already knowing the scope.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once monitoring and alerting data exists, IT teams at this archetype often lack the bandwidth to communicate status to non-technical stakeholders (principals, finance, board). Text generation can convert structured incident logs and system health snapshots into plain-language status reports and post-incident summaries without requiring IT to write prose. This is a secondary but real pain: IT teams that fight fires rarely document them, creating organizational blind spots.",
+      "opportunity_sketch": "After each incident or on a weekly cadence, an LLM synthesizes system health metrics and incident logs into a plain-English IT operations digest delivered to school leadership — replacing the informal 'the SIS was down' verbal report with documented, actionable summaries.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

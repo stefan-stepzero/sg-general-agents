@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "enrollment-admissions-reenrollment-campaigns-parent-feedback-loop-dup",
+  "pain_point_label": "No Feedback Loop on Withdrawal Reasons",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Families withdraw without completing formal exit interviews largely because the process is friction-heavy or never offered. A conversational AI agent can proactively reach out via SMS or email at the point of withdrawal notice, conduct a structured but empathetic multi-turn dialogue to capture withdrawal reasons, and persist responses into the SIS — replacing the paper/staff-driven exit interview that consistently fails. For a multi-site operator this is especially valuable because centralized data collection currently depends on inconsistent campus-level staff behavior.",
+      "opportunity_sketch": "An AI-driven exit interview bot that triggers when a withdrawal form is submitted, conducts a 5-7 turn conversation capturing cost, relocation, academic, and service factors, and writes structured results to a retention dashboard — requiring zero staff time per withdrawal.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "When families do communicate withdrawal reasons — via email, notes in the SIS, or informal messages — those reasons exist as unstructured text and are never systematically parsed. Entity extraction can tag each withdrawal record with structured reason codes (cost, relocation, academic dissatisfaction, competitor, service issue) from free-text fields, enabling aggregation across campuses that was previously impossible without manual coding by staff.",
+      "opportunity_sketch": "A lightweight NLP layer applied to existing withdrawal notes and correspondence that extracts and tags reason entities, feeding a cross-site dashboard that surfaces which campuses have disproportionate cost- or service-related withdrawals.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Even where partial withdrawal reason data exists, it is inconsistently categorized — some staff free-text reasons, others leave blank, others use internal shorthand. A text classifier can assign standardized reason categories (financial, relocation, academic, competitor, service quality, unknown) to all historical and incoming withdrawal notes at scale, creating a consistent taxonomy across campuses without requiring staff to change behavior.",
+      "opportunity_sketch": "A classification model trained on labeled withdrawal records that auto-categorizes all incoming and historical withdrawal reasons into a fixed taxonomy, enabling trend analysis and campus benchmarking without new data entry workflows.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The deeper pain is not just understanding why families left, but identifying at-risk families before they withdraw so intervention is possible. A propensity model trained on historical withdrawal patterns — attendance trends, payment delays, LMS engagement, support ticket volume — gives each enrolled family a real-time withdrawal risk score, enabling proactive outreach before the decision is made rather than a post-mortem exit interview.",
+      "opportunity_sketch": "A churn propensity model that surfaces families with elevated withdrawal likelihood 30-60 days in advance, allowing enrollment coordinators to prioritize outreach and capture feedback while there is still retention potential — turning the feedback loop into a prevention tool.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Multi-site operators accumulate withdrawal data across campuses over time, but campus directors and executives rarely have time to read individual records. Summarization can synthesize withdrawal reason data monthly per campus into concise narrative briefs — surfacing patterns like a spike in cost-related withdrawals at one campus or a correlation between a staffing change and service complaints — making the feedback loop actionable at the leadership level.",
+      "opportunity_sketch": "Automated monthly campus withdrawal intelligence reports summarizing top withdrawal themes, trend shifts, and campus comparisons, generated from structured and unstructured withdrawal data and delivered to site directors and the executive team.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a feedback loop is partly a workflow failure: no one is assigned to collect, code, and route withdrawal reasons systematically. A task automation agent can orchestrate the full withdrawal data pipeline — triggering exit surveys, extracting reason entities from responses, updating the SIS, routing campus-specific patterns to the relevant site director, and escalating repeat patterns to operations leadership — without requiring manual coordination across campuses.",
+      "opportunity_sketch": "An end-to-end withdrawal intelligence pipeline that automates collection (survey trigger), classification (reason coding), routing (notify site director), and escalation (flag repeat patterns to operations), closing the feedback loop without additional headcount.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

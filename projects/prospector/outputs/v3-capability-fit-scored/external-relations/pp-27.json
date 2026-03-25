@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-donor-philanthropic-donor-data-fragmented-dup",
+  "pain_point_label": "Fragmented Donor Records and No Lifetime Value Tracking",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Donor records are scattered across campuses in inconsistent formats — spreadsheets, campus CRMs, email threads, paper pledge cards. AI-assisted ETL can normalize these disparate sources into a unified donor schema, deduplicating records and mapping fields (e.g., 'Gift Amount', 'Donation', 'Pledge') to a canonical structure. This directly addresses the fragmentation mechanism without requiring infrastructure that doesn't exist.",
+      "opportunity_sketch": "An AI-powered data unification pipeline that ingests exports from campus-level systems, resolves duplicate donor identities, and outputs a clean, consolidated donor database with standardized giving history and relationship touchpoints.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once donor records are unified, the organization needs segmentation by giving capacity, affinity type (alumni vs. corporate vs. foundation), and engagement tier — none of which currently exists. Structured data classification over donor attributes (gift size, frequency, relationship type, campus affiliation) produces the segmentation layers needed for differentiated outreach. This directly addresses the stated gap of no segmentation by giving capacity or affinity.",
+      "opportunity_sketch": "A donor segmentation model that classifies each record into capacity tiers (major gift prospect, mid-level, annual fund), affinity category (alumni, corporate, foundation, community), and engagement status (active, lapsed, at-risk) — enabling targeted stewardship campaigns per segment.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The explicit pain includes no analysis of donor retention/churn and inability to identify at-risk relationships — these are canonical propensity modeling problems. With a unified donor record (giving history, recency, frequency, touchpoint engagement), a propensity model can score each donor on churn likelihood and predict lifetime value, which is the core gap described. This is technically feasible once basic data unification is in place and is high-value for development teams.",
+      "opportunity_sketch": "A donor health scoring system that flags at-risk relationships based on declining engagement signals (e.g., RFM patterns: recency, frequency, monetary value) and surfaces predicted lifetime value estimates to guide where relationship managers should focus attention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Consolidating donor records across campuses is a recurring, multi-step operational workflow: pull exports, deduplicate, merge, validate, and update the central record. An automation agent can execute this pipeline on a schedule or trigger — handling the multi-system orchestration that currently requires manual staff effort. This directly addresses the no unified donor database problem through ongoing automated maintenance, not just a one-time migration.",
+      "opportunity_sketch": "An automated donor data sync agent that runs nightly, pulls campus-level giving records from configured sources, merges them into the central database, flags conflicts for human review, and logs all touchpoints — keeping the unified view current without manual intervention.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

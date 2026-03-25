@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-asset-inventory-disposal-and-write-off-procedures-are-ad-hoc-and-environmentally-non-compliant-dup",
+  "pain_point_label": "Asset Disposal and Write-Off Procedures Are Ad-Hoc and Environmentally Non-Compliant",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core failure here is the absence of a systematic, multi-step workflow: asset identification → valuation → approval → disposal routing → documentation → register write-off. A task automation agent can orchestrate this entire lifecycle — triggering disposal requests, routing to approvers, checking asset registers, generating compliance documentation, and confirming write-off — replacing the current ad-hoc, undocumented practice. For a multi-campus operator, this directly addresses the decentralized disposal problem where staff discard items without central authorization.",
+      "opportunity_sketch": "An AI-driven disposal workflow agent that accepts asset disposal requests, validates against the asset register, routes for approval, generates e-waste compliance documentation, and auto-triggers the write-off entry — all without manual coordination across campuses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The pain includes inability to produce disposal records, compliance documentation, and donation receipts when auditors or regulators request them. AI text generation can produce standardized disposal certificates, e-waste compliance notices, and donation acknowledgment letters from structured inputs (asset ID, disposal method, date, recipient). This directly addresses the 'cannot produce records' failure mode at low risk and low cost for a school operator.",
+      "opportunity_sketch": "A template-driven document generator that produces audit-ready disposal certificates, environmental compliance declarations, and donation receipts from form inputs — ensuring every disposal event creates a traceable paper trail.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Asset descriptions submitted for disposal vary in format across campuses and staff. A text classifier can automatically categorize disposal items into e-waste, furniture, learning materials, or data-bearing equipment — driving the correct regulatory pathway (secure wipe, licensed recycler, donation) without requiring staff to know the rules. This addresses the root cause of non-compliance: staff are unaware which disposal route applies to which asset type.",
+      "opportunity_sketch": "An intake classifier that reads a plain-language asset description ('old Dell laptop, broken screen') and outputs the required disposal category and mandatory compliance steps, routing IT equipment to secure data destruction and electronics to licensed e-waste recyclers automatically.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Many schools have partial asset records in unstructured formats — spreadsheets with inconsistent naming, handwritten inventories, or legacy system exports. Extracting asset identifiers, acquisition dates, model numbers, and campus locations from these sources is a prerequisite for reconciling the asset register and identifying items that have been physically removed but never written off. This directly addresses the 'assets remain on register indefinitely' failure mode.",
+      "opportunity_sketch": "An entity extraction pipeline that processes mixed-format asset records (spreadsheets, scanned inventories, emails) to output a structured asset list with IDs, locations, and status — enabling register reconciliation and surfacing assets overdue for write-off.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Assets that were written off years ago but still appearing on the register, or assets that should have triggered a disposal workflow but never did, represent detectable anomalies in the asset register data. An anomaly detection model can flag assets where age + depreciation status + last-seen date patterns suggest they are phantom entries — items that exist on paper but have been physically removed without documentation.",
+      "opportunity_sketch": "An asset register auditing tool that identifies statistically anomalous entries — fully depreciated items with no maintenance history, assets at campuses with no recent check-in — and surfaces them for human review and formal write-off initiation.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

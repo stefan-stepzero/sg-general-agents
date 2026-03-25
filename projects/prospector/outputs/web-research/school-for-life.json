@@ -1,0 +1,199 @@
+{
+  "entity": "School for Life Foundation",
+  "research_date": "2026-03-11",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2025-05-03",
+          "headline": "Black Tie Gala Ball 2025 raises over $3 million in single night",
+          "detail": "The 16th annual Gala Ball at The Venue, Alexandria (later moved to a new venue) attracted 650+ attendees. An anonymous family matched all pledges dollar-for-dollar, lifting a base raise of $1.5M to over $3M. Cumulative event series total now exceeds $7M raised.",
+          "source": "https://www.schoolforlife.org.au/blog/over-3-million-raised-in-one-unforgettable-night"
+        },
+        {
+          "date": "2025-05",
+          "headline": "Leadership team visits Uganda — letter from Annabelle",
+          "detail": "Annabelle Chauncy and team visited schools in Uganda alongside the Blake family (Hamish, Zoë, and their two children) to observe programs firsthand. Activities included attending classes, sports, music, assemblies, and home visits to fetch water with students in villages.",
+          "source": "https://www.schoolforlife.org.au/blog/a-letter-from-annabelle-what-i-saw-during-my-recent-trip-to-uganda-and-whats-next"
+        },
+        {
+          "date": "2024",
+          "headline": "Student Pauline represents Mpigi District at Uganda National Primary Schools Athletic Championships",
+          "detail": "First time a School for Life student competed in a new Special Needs category at the national level — a milestone for the foundation's inclusive education mandate.",
+          "source": "https://www.schoolforlife.org.au/"
+        },
+        {
+          "date": "2024",
+          "headline": "Student Ritah graduates top of class and pursues teaching career",
+          "detail": "Student success story highlighted in 2025 comms as evidence of long-term impact of their holistic education model.",
+          "source": "https://www.schoolforlife.org.au/"
+        },
+        {
+          "date": "2025-ongoing",
+          "headline": "17th Annual Black Tie Gala Ball 2026 announced",
+          "detail": "The 2026 Gala Ball is already listed on galabid.com auction platform, indicating event planning is underway. Sponsorship contact: tamara@schoolforlife.org.au.",
+          "source": "https://app.galabid.com/sfl/categories"
+        },
+        {
+          "date": "2024-11-12",
+          "headline": "Gala Ball 2025 partner recruitment drive launched",
+          "detail": "Blog post announcing partnership opportunities for the 2025 event, targeting business leaders in finance, real estate, and philanthropy.",
+          "source": "https://www.schoolforlife.org.au/blog/2024/11/12/join-us-as-a-gala-ball-partner-at-sydneys-most-exclusive-event"
+        }
+      ],
+      "synthesis": "The organization's most newsworthy 2025 event was the May 2025 Gala Ball, which set a fundraising record ($3M+ in a single night via matched giving). Activity in 2025-2026 shows continuity: annual gala cadence, leadership Uganda visits, and ongoing impact storytelling. No negative news events, controversies, or leadership changes surfaced in the research window. The 2026 gala is already in motion.",
+      "confidence": "high — multiple corroborating sources including the org's own site, galabid auction platform, and Smiley Charity Film Awards listing"
+    },
+    "industry": {
+      "synthesis": "The broader context for nonprofit education in East Africa is under significant stress in 2025-2026. Key dynamics: (1) USAID dismantlement in early 2025 removed approximately 90% of US foreign aid contracts, causing 30-50% budget cuts at many mid-sized NGOs. This has triggered office closures and staff reductions across the sector. (2) Uganda's total registered NGO count dropped from ~14,000 (2019) to ~5,021 (2023) due to stricter compliance and funding gaps. (3) Donor-government funding is shifting toward government-to-government partnerships, squeezing independent NGOs. (4) Social enterprise models and locally-led structures are gaining preference over foreign-led NGO models — School for Life's approach aligns well with this trend. (5) There is increasing interest in digital and AI integration in East African education, including generative AI pilots in Uganda via Enabel/VIVES partnerships. School for Life's locally-led, Australian-donor-funded model insulates it from USAID cuts, a structural advantage in the current environment.",
+      "confidence": "high — based on multiple independent development sector sources (CEO East Africa, ODI, ISS Africa, World Bank, The Conversation)"
+    },
+    "financial": {
+      "items": [
+        {
+          "source_name": "Gala Ball fundraising (cumulative)",
+          "detail": "Over $7M raised total across the annual gala ball series. 2025 event alone: $3M+ (with matched giving).",
+          "type": "fundraising_event"
+        },
+        {
+          "source_name": "100 Women philanthropic giving circle (Australia)",
+          "detail": "$39,383 grant awarded October 2022 for the 'Advancing Girls Education' project — 50 girls in their first year of secondary school at Mbazzi High School, Uganda. Covers learning materials, menstrual hygiene, mentoring, nutrition.",
+          "type": "grant"
+        },
+        {
+          "source_name": "Seisma (IT consultancy, corporate partner)",
+          "detail": "Seisma is a Pledge 1% partner. Sponsors 85 secondary school girls plus IT Teacher Jerome. Has a staff pre-tax salary gifting program with dollar-for-dollar employer matching. Also participated as matched funding partner in a Giving Day.",
+          "type": "corporate_partnership"
+        },
+        {
+          "source_name": "RAWCS / Rotary auspice",
+          "detail": "Rotary Australia World Community Service (RAWCS) auspices School for Life, providing DGR (Deductible Gift Recipient) status and enabling Australian donors to receive tax receipts. A Rotary Director sits on the School for Life board as a governance condition of the arrangement.",
+          "type": "structural_funding_enabler"
+        },
+        {
+          "source_name": "ACNC registration",
+          "detail": "Registered as 'School for Life Foundation Australia Limited' with the ACNC. ACFID accredited. Financial statements filed but specific revenue figures were not accessible via search.",
+          "type": "regulatory"
+        }
+      ],
+      "synthesis": "School for Life is primarily funded through Australian private philanthropy (individuals, corporate partners, events) rather than government aid or USAID-type contracts. This insulates it from the 2025 USAID cuts devastating many peer organizations. The Gala Ball is the cornerstone revenue event — the 2025 result ($3M+) is the largest single-night raise to date. Corporate partnerships (Seisma, unnamed event sponsors) and philanthropic giving circles (100 Women) supplement. Detailed annual revenue/expenditure figures are not publicly searchable and would require direct ACNC database access or a request to the organization. No financial distress signals found.",
+      "confidence": "medium — funding model and major events are well-documented, but granular annual revenue data was not accessible via public search"
+    },
+    "technology": {
+      "ai_adoption": "none",
+      "items": [
+        {
+          "technology": "Google Classroom",
+          "date": "2021",
+          "detail": "Implemented during COVID-19 school closures as a paperless, contactless learning channel. Supplemented with hard-copy home-based learning packages for students without internet access.",
+          "source": "https://www.schoolforlife.org.au/blog/2021/google-classroom-closing-the-digital-divide-in-rural-uganda"
+        },
+        {
+          "technology": "Computer literacy curriculum",
+          "date": "ongoing",
+          "detail": "Computer literacy is blended into learning from primary school level. An IT teacher (Jerome) is specifically sponsored by corporate partner Seisma to deliver IT education to secondary school girls.",
+          "source": "https://www.schoolforlife.org.au/"
+        }
+      ],
+      "synthesis": "School for Life's technology adoption is practical and access-focused rather than cutting-edge. They implemented Google Classroom during COVID (2021) and integrate basic computer literacy into their curriculum. An IT teacher role is funded specifically for girls' secondary education — indicating gender-equitable digital access is a deliberate program component. No evidence of AI adoption, machine learning tools, donor-facing tech platforms beyond standard website/donation infrastructure, or exploratory AI partnerships. The broader Uganda education sector is beginning to see GenAI pilots (Enabel/VIVES initiative), but School for Life is not a named participant in those initiatives.",
+      "confidence": "medium — tech programs are described at a high level; deeper program detail would require direct engagement"
+    },
+    "reputation": {
+      "synthesis": "School for Life's reputation is strongly positive across all accessible channels. Key markers: (1) ACFID accreditation — voluntary standard ensuring accountability to Australian aid donors; (2) RAWCS/Rotary endorsement with board oversight; (3) OAM recognition for both founders (2015) — a government-awarded honor reinforcing integrity; (4) Consistent media presence in Australian philanthropic circles (Mamamia podcast, Saxton Speakers Bureau, NSW Government Women of the Year feature); (5) Annual Gala Ball is described as one of Australia's premier philanthropic events, attracting 650+ business and community leaders; (6) Smiley Charity Film Awards listing indicates international recognition for storytelling/communications; (7) No critical reviews, watchdog flags, or negative media surfaced. (8) Locally-led model is aligned with current best-practice standards in international development, reducing 'white saviour' critique risk. The foundation has a 17-year track record with transparent impact reporting (specific students named, measurable outcomes cited). No charity navigator/GiveWell ratings found — SFL is Australian-registered, not in their databases.",
+      "confidence": "high — consistent positive signals across independent sources; absence of negative coverage is notable given 17-year operational history"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Annabelle Chauncy OAM",
+          "role": "CEO and Co-Founder",
+          "background": "Grew up in rural NSW. BA/Law graduate, University of Sydney. In 2007 (age 21) spent 3 months volunteering in Kenya and Uganda with women's organisations, street children, medical camps, and orphanages. Co-founded SFL in 2008 with David Everett. Has dedicated her adult career to the organization. Awards: OAM (2015), NSW Young Woman of the Year (2015), Sydney University Alumni Award for Service to Humanity (2016). Currently also serves as Governor of Winifred West Schools Ltd (independent Australian school). Active on the keynote speaking circuit via Saxton Speakers Bureau and Halogen Foundation. Listed as LinkedIn connection update in November 2025, confirming active professional presence.",
+          "linkedin": "https://www.linkedin.com/in/annabellechauncy/"
+        },
+        {
+          "name": "David Everett OAM",
+          "role": "Co-Founder (founding director; current role unclear — now at Nadia and Alf Taylor Foundation)",
+          "background": "Born in South Africa, grew up in Botswana, moved to Australia. Studied BA (Development Studies and Culture Change) at Macquarie University. In 2007 undertook World Youth International Overseas Service Project in Kenya (women's health clinic, Red Cross work). Co-founded SFL 2008. Spent 5 years in East Africa building SFL operations: purchased 43 acres of land, constructed primary and vocational school, recruited staff, established government relationships, designed education/agriculture/health programs. OAM awarded 2015 (jointly with Annabelle). Current LinkedIn shows him at Nadia and Alf Taylor Foundation — suggesting he may have transitioned away from SFL operations.",
+          "linkedin": "https://www.linkedin.com/in/david-everett-oam-40805961/"
+        },
+        {
+          "name": "Jessica Ledieu",
+          "role": "Philanthropy Head of Projects (formerly Head of Fundraising and Impact)",
+          "background": "Joined SFL in early roles as Program Manager and Fundraising Coordinator, progressed to Manager of Donor Relations, Head of Fundraising, then Philanthropy Head of Projects. In 2018 spent 6 months in Uganda conducting field impact assessment with local team. Strong background in international development and community empowerment. Sydney-based.",
+          "linkedin": "https://www.linkedin.com/in/jessica-ledieu/"
+        },
+        {
+          "name": "Tamara (surname unknown)",
+          "role": "Gala Ball / Corporate Partnerships lead",
+          "background": "Named as the sponsorship and partnerships contact for the Gala Ball. Email: tamara@schoolforlife.org.au. No further public profile found.",
+          "linkedin": null
+        },
+        {
+          "name": "Lexi (surname unknown)",
+          "role": "Corporate partnerships contact",
+          "background": "Named as the contact for corporate partnership enquiries. Email: lexi@schoolforlife.org.au. No further public profile found.",
+          "linkedin": null
+        },
+        {
+          "name": "Jerome (surname unknown)",
+          "role": "IT Teacher, Uganda (Seisma-sponsored)",
+          "background": "Secondary school IT teacher at SFL schools in Uganda. His role is specifically sponsored by Seisma as part of their corporate partnership. Teaches IT to 85 secondary school girls.",
+          "linkedin": null
+        }
+      ],
+      "synthesis": "Leadership is founder-led at the CEO level with Annabelle Chauncy remaining the central public figure after 17 years. David Everett appears to have transitioned out of an active SFL role and is now associated with the Nadia and Alf Taylor Foundation — this is a potential gap in the succession/stability narrative worth flagging. The Australian operations team (Jess Ledieu, Tamara, Lexi) handle fundraising, philanthropy, and corporate partnerships. The Ugandan team (teachers, nurses, local leaders) is deliberately not named in public-facing materials, consistent with the locally-led model ethos. Board composition is not publicly detailed beyond the RAWCS-appointed director condition.",
+      "confidence": "medium — Australian-side leadership is well-documented; Ugandan leadership team composition is intentionally kept out of public materials; David Everett's current SFL involvement is ambiguous"
+    }
+  },
+  "sources_consulted": [
+    "https://www.schoolforlife.org.au/",
+    "https://www.schoolforlife.org.au/who-we-are",
+    "https://www.schoolforlife.org.au/what-weve-acheved-to-date",
+    "https://www.schoolforlife.org.au/blog/over-3-million-raised-in-one-unforgettable-night",
+    "https://www.schoolforlife.org.au/blog/a-letter-from-annabelle-what-i-saw-during-my-recent-trip-to-uganda-and-whats-next",
+    "https://www.schoolforlife.org.au/blog/2021/google-classroom-closing-the-digital-divide-in-rural-uganda",
+    "https://www.schoolforlife.org.au/blog/2023/12/12/15yearsofsfl",
+    "https://www.schoolforlife.org.au/blog/2024/11/12/join-us-as-a-gala-ball-partner-at-sydneys-most-exclusive-event",
+    "https://www.schoolforlife.org.au/events/2025/5/3/jc63ar5ffpve1secnzd0zgn4mwyz32",
+    "https://www.schoolforlife.org.au/partners",
+    "https://www.schoolforlife.org.au/healthcare",
+    "https://www.schoolforlife.org.au/holistic-quality-education-model",
+    "https://gala-ball-2025.schoolforlife.org.au/",
+    "https://app.galabid.com/sfl/categories",
+    "https://www.acnc.gov.au/charity/charities/19991137-3aaf-e811-a963-000d3ad24077",
+    "https://www.linkedin.com/in/annabellechauncy/",
+    "https://www.linkedin.com/in/david-everett-oam-40805961/",
+    "https://www.linkedin.com/in/jessica-ledieu/",
+    "https://au.linkedin.com/company/school-for-life-foundation",
+    "https://www.nsw.gov.au/departments-and-agencies/women-nsw/awards-and-events/past-nsw-women-of-year-awards/2015-awards/annabelle-chauncy-oam",
+    "https://www.sydney.edu.au/law/news-and-events/news/2017/11/28/alumni-award-winner-transforms-the-lives-of-thousands.html",
+    "https://www.mq.edu.au/about_us/faculties_and_departments/faculty_of_arts/department_of_anthropology/news/student_david_everett_awarded_order_of_australia_medal",
+    "http://www.medianet.com.au/releases/release-details/?id=820068",
+    "https://fivepointfive.org/annabelle-chauncy-david-everett-school-for-life-foundation/",
+    "https://www.saxton.com.au/speakers/annabelle-chauncy",
+    "https://100women.org.au/grant/school-for-life-foundation-australia/",
+    "https://smileycharityfilmawards.com/charities/school-for-life-foundation",
+    "https://www.schoolforlife.org.au/blog/2021/12/14/seisma-pledging-1-to-help-break-the-cycle-of-poverty",
+    "https://ngojobsinafrica.com/non-profit-organization/school-for-life-foundation-sfl/",
+    "https://www.idealist.org/en/nonprofit/7a42b0d6a5974e199c36f5bfdc75f484-school-for-life-foundation-kampala",
+    "https://www.theofficespace.com.au/profile-school-for-life-foundation/",
+    "https://www.ceo.co.ug/ngo-funding-crisis-africa/",
+    "https://theconversation.com/international-aid-groups-are-dealing-with-the-pain-of-slashed-usaid-funding-by-cutting-staff-localizing-and-coordinating-better-273184",
+    "https://issafrica.org/iss-today/data-modelling-reveals-the-heavy-toll-of-usaid-cuts-on-africa",
+    "https://www.crowsnestrotary.org.au/stories/school-for-life-foundation-uganda",
+    "https://alumni.wcc.nsw.edu.au/news/alumnus-of-the-year/41/41-2009-Dave-Everett-Class-of-",
+    "https://rawcs.org.au/wp-content/uploads/2025/01/RABS-Project-Criteria-January-2025.pdf"
+  ],
+  "gaps": [
+    "Annual financial statements (revenue, expenses, program ratios) — ACNC-filed but not accessible via public search; requires direct ACNC database lookup or direct request to org",
+    "David Everett's current role at SFL — LinkedIn places him at Nadia and Alf Taylor Foundation; unclear if he remains on SFL board or has fully departed",
+    "Full board composition — only RAWCS-appointed director condition is known; other board members not identified",
+    "Ugandan leadership team — local staff, school principals, and community leaders are intentionally kept out of public-facing materials; no named individuals identified",
+    "2025-2026 giving day results — Seisma's 2021 giving day participation documented but no 2024-2025 giving day data found",
+    "Specific government grants (Australian DFAT, state government) — no evidence found of government funding; org appears entirely privately funded but this is unconfirmed",
+    "AI or technology roadmap — no evidence of planned AI adoption or digital strategy documents",
+    "GiveWell / independent impact evaluations — no third-party charity effectiveness ratings found; ACFID accreditation is the only independent quality signal available",
+    "Recent podcast or media appearances by Annabelle Chauncy in 2025-2026 — speaking engagements listed on Saxton/Halogen but no specific recent bookings confirmed",
+    "Partnership details beyond Seisma — partners page exists but specific names of other corporate partners were not returned in search results"
+  ]
+}

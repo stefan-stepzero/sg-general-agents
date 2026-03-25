@@ -1,10 +1,10 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-03-10",
+  "lastUpdated": "2026-03-11",
   "summary": {
-    "totalAgents": 0,
+    "totalAgents": 8,
     "totalSkills": 1,
-    "reusable": 1,
+    "reusable": 9,
     "projectSpecific": 0,
     "byProject": {}
   },
@@ -19,6 +19,102 @@
       "project": null,
       "tags": ["meta", "scaffolding"],
       "createdAt": "2026-03-10",
+      "promotedFrom": null
+    },
+    {
+      "name": "site-scanner",
+      "type": "agent",
+      "location": ".claude/agents/site-scanner.md",
+      "description": "Playwright browser agent that systematically navigates a website and extracts structured content from each page type.",
+      "tools": ["mcp__claude-in-chrome__*"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["recon", "browser", "scraping"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "web-researcher",
+      "type": "agent",
+      "location": ".claude/agents/web-researcher.md",
+      "description": "Research agent that gathers information about an entity from public web sources — news, industry data, financial signals.",
+      "tools": ["WebSearch", "WebFetch", "Read", "Write"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["recon", "research", "web"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "company-profiler",
+      "type": "agent",
+      "location": ".claude/agents/company-profiler.md",
+      "description": "Synthesis agent that takes raw site content and web research and produces a structured company profile following the Company Profile Taxonomy.",
+      "tools": ["Read", "Write"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["recon", "synthesis", "profiling"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "problem-mapper",
+      "type": "agent",
+      "location": ".claude/agents/problem-mapper.md",
+      "description": "Analytical agent that maps an organization's likely problem landscape using a problem typology taxonomy weighted by company profile properties.",
+      "tools": ["Read", "Write"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["analysis", "problem-mapping"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "capability-matcher",
+      "type": "agent",
+      "location": ".claude/agents/capability-matcher.md",
+      "description": "Matrix intersection agent that matches identified business problems against AI capabilities to identify opportunities.",
+      "tools": ["Read", "Write"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["analysis", "matching", "opportunities"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "opportunity-ranker",
+      "type": "agent",
+      "location": ".claude/agents/opportunity-ranker.md",
+      "description": "Scoring and prioritization agent that produces a final ranked opportunity list with conversation framing.",
+      "tools": ["Read", "Write"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["analysis", "ranking", "strategy"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "pitch-builder",
+      "type": "agent",
+      "location": ".claude/agents/pitch-builder.md",
+      "description": "Narrative generation agent that creates structured pitch briefs for leadership conversations.",
+      "tools": ["Read", "Write"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["pitch", "content", "narrative"],
+      "createdAt": "2026-03-11",
+      "promotedFrom": null
+    },
+    {
+      "name": "report-compiler",
+      "type": "agent",
+      "location": ".claude/agents/report-compiler.md",
+      "description": "Report generation agent that assembles pipeline outputs into a polished interactive HTML report.",
+      "tools": ["Read", "Write", "Glob"],
+      "model": "sonnet",
+      "project": null,
+      "tags": ["report", "html", "deliverable"],
+      "createdAt": "2026-03-11",
       "promotedFrom": null
     }
   ]

@@ -1,0 +1,186 @@
+{
+  "entity": "Phinma Education",
+  "research_date": "2026-03-11",
+  "contact": "Chito Salazar (Dr. Chito B. Salazar Jr.) — President & CEO, PHINMA Education; President & COO, Head of Education at PHINMA Corporation",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2025-11-28",
+          "headline": "PHINMA St. Jude College Dasmariñas rolls out campus upgrades",
+          "summary": "New computer lab, modern library, and mock hospital. New courses in allied health, criminal justice, hospitality, and business planned for SY 2026-2027.",
+          "source": "BusinessWorld"
+        },
+        {
+          "date": "2025-11-24",
+          "headline": "PHINMA Education sees no immediate need for IPO",
+          "summary": "IPO delayed due to soft market conditions and availability of private investment (KKR). An IPO remains an option but unlikely for at least three years from 2024.",
+          "source": "BusinessWorld"
+        },
+        {
+          "date": "2025-12",
+          "headline": "New campus buildings inaugurated at SWU PHINMA (Cebu) and St. Jude College (Cubao)",
+          "summary": "Ramon V. del Rosario Building at SWU PHINMA inaugurated Dec 12, 2025; Aurora Building at PHINMA St. Jude College inaugurated Dec 15, 2025. Combined capacity: up to 12,000 additional students.",
+          "source": "InsiderPH"
+        },
+        {
+          "date": "2025",
+          "headline": "PHINMA opens 10-story Horizon University building in Indonesia",
+          "summary": "Tallest university building in Karawang. Brings Horizon University's capacity to nearly 10,000 students.",
+          "source": "InsiderPH"
+        },
+        {
+          "date": "2025-08",
+          "headline": "PHINMA Education receives P825M investment from KKR (Kaizenvest tranche)",
+          "summary": "Finalizes the full P4.5B KKR + Kaizenvest investment round. Kaizenvest remitted its P825M share. KKR invested from Global Impact Fund II targeting UN SDG 4 (Quality Education).",
+          "source": "Manila Times / Insider PH"
+        },
+        {
+          "date": "2025-07-24",
+          "headline": "PHINMA Education expanding to underserved communities",
+          "summary": "New campuses planned in San Pablo (Laguna), Roxas City, Bacolod City, and Butuan City.",
+          "source": "Philstar"
+        },
+        {
+          "date": "2025",
+          "headline": "PHINMA Education students rise to top in Nursing and Criminology board exams",
+          "summary": "PHINMA University of Pangasinan ranked #1 nursing school nationally with 99.16% pass rate, 9 Top 10 passers. PHINMA Araullo University named Top 1 performing school nationwide for August 2025 Criminology Licensure Exam (92.80% pass rate, 3 topnotchers). Multiple schools achieved 100% first-time taker rates.",
+          "source": "Inquirer Business / GMA Network"
+        },
+        {
+          "date": "2024",
+          "headline": "Kalbis University (Jakarta) added to PHINMA Indonesia portfolio",
+          "summary": "Expanded Indonesia presence to Jakarta. PHINMA targets 50,000 Indonesian students in 5 years, 400,000 in 10-15 years.",
+          "source": "CEO Magazine interview"
+        },
+        {
+          "date": "2024-05-22",
+          "headline": "KKR invests P4.5B in PHINMA Education (deal announced)",
+          "summary": "KKR's Global Impact Fund II led the investment. ADB, FMO, and Kaizenvest II exited via secondary share sales. PHINMA Corporation retained majority. Focus areas: digital transformation, ESG, completion rates, underserved expansion.",
+          "source": "BusinessWire / PHINMA Corp press release"
+        },
+        {
+          "date": "2024",
+          "headline": "PHINMA Education acquires St. Jude College Dasmariñas, raises stake to 94.62%",
+          "summary": "Acquisition cost P432M. Added 3,000 students. Entered Cavite market. Network reached 167,000+ enrollees.",
+          "source": "InsiderPH"
+        }
+      ],
+      "synthesis": "PHINMA Education is in an active expansion phase, aggressively opening new campuses across provincial Philippines and Indonesia, completing a landmark P4.5B KKR investment (Oct 2024, fully closed Aug 2025), and delivering strong academic outcomes. The network grew to 177,851 students in SY 2025-2026 Q1 — a record. An IPO is deferred but on the table. The company is the largest private school network in Southeast Asia by enrollment.",
+      "confidence": "high — multiple corroborating Philippine business press sources across the 2024-2026 period"
+    },
+    "industry": {
+      "synthesis": "The Philippine higher education market reached USD 154M in 2025 and is projected to grow at 20.23% CAGR to USD 847M by 2034, driven by a young population (median age ~25), underserved provincial demand, and government subsidies (Universal Access to Quality Tertiary Education Act / RA 10931, Free TVET). The affordable private higher education segment is particularly attractive: public universities are congested, and low-income families increasingly rely on private schools that can deliver quality at accessible price points. PHINMA's model directly addresses this gap. Regionally, Southeast Asia's edtech market is growing rapidly, with the Philippines positioned as an English-instruction hub that could attract ASEAN students. The Philippine government's PPP education overhaul (Angara initiative) and DepEd/CHED AI digitization push (E-CAIR launched Feb 2025) add policy tailwinds. Global PE interest (KKR, ADB, Kaizenvest) signals the sector is attracting serious capital, validating the opportunity.",
+      "confidence": "high"
+    },
+    "financial": {
+      "synthesis": "PHINMA Education Holdings financials (fiscal year April–March): FY2024-2025 revenue P6.5B (+14% YoY), net income P1.5B (+8% YoY). Nine-month YTD (to Dec 2025): revenue P5.27B, net income P1.42B on record enrollment of 177,851. Q1 FY2025 alone: revenue P2.1B, net income P907M. Retention rate is strong at 89%. Parent PHINMA Corporation (PSE: PHN): 2024 revenue P23.76B (+11.68% YoY), but consolidated net income fell 66% to P279.55M due to higher costs in non-education segments. The education segment is the clear growth driver and is largely ring-fenced within PHINMA Education Holdings, which received P4.5B in fresh capital from KKR+Kaizenvest. PHINMA Corp market cap as of Dec 2025: ~P5.52B. Education's P6.5B annual revenue effectively exceeds the parent's market cap — indicating significant value still unlocked if PHINMA Education Holdings pursues an IPO. IPO timing: Salazar indicated 'no immediate need,' deferring to market conditions.",
+      "confidence": "high — sourced from BusinessWorld, Inquirer Business, PNA, PHINMA Corp press releases"
+    },
+    "technology": {
+      "ai_adoption": "exploring",
+      "synthesis": "PHINMA Education's technology adoption is early-stage but directionally active. Known initiatives: (1) PHINMA Ed Learning App — proprietary mobile app for attendance, scheduling, grades, fee tracking; deployed across the network. (2) KKR partnership explicitly includes digital transformation as a collaboration focus. (3) HONOR Philippines donated AI-equipped HONOR Pad X9a tablets via PHINMA Foundation for future educators (May 2025). (4) Salazar has publicly framed KKR as bringing 'global expertise' to refine digital strategy. No public announcements of AI-specific curriculum, generative AI tools, or advanced EdTech platforms have been identified. The organization's 'bare-bones, no-frills' operational philosophy suggests technology is adopted pragmatically — student-facing utility apps and LMS basics — rather than cutting-edge AI experimentation. Given the KKR partnership's digital transformation mandate, more significant investments likely in 2025-2027.",
+      "confidence": "medium — limited direct disclosure of internal tech roadmap; inferred from partnership terms and public statements"
+    },
+    "reputation": {
+      "synthesis": "PHINMA Education's reputation is strong among its target segment (lower-income Filipino students and families) and improving in academic standing. Board exam performance is a key reputational signal in the Philippines: multiple PHINMA schools now rank #1 or produce topnotchers in Nursing, Criminology, Optometry, and Pharmacy — which directly differentiates them from 'diploma mills.' The network is consistently cited as the largest private school network in Southeast Asia by enrollment. International investors (ADB, FMO, KKR) provide institutional credibility. Employee sentiment is mixed: Glassdoor rating 3.4/5 (25 reviews), 53% recommend, 84% positive business outlook. Culture rated 4.0/5 — employees appreciate the mission-driven environment. Pain points: entry-level salaries are low, work-life balance scores 3.3/5. This is consistent with a lean, high-output organization focused on keeping costs low. Media coverage is predominantly positive — expansion stories, student success, investment milestones.",
+      "confidence": "high"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Dr. Chito B. Salazar Jr.",
+          "title": "President & CEO, PHINMA Education; President & COO / Head of Education, PHINMA Corporation",
+          "background": "At PHINMA Education since 2004 (founder-era). BS Management Engineering, Ateneo de Manila. MA International Political Economy & Development, Fordham University. PhD International Relations (International Development), American University. Appointed PHINMA Corp President in October 2022 while retaining Education head role. Former EDCOM II (Second Congressional Commission on Education) business sector representative.",
+          "philosophy": "Mission-driven: 'Education is the route out of poverty.' Operational philosophy: 'bare-bones, no-frills, brass knuckles' — strip costs, apply business discipline, serve underserved. Mandates all staff including executives to conduct home visits to students' families to understand the market. Employment-outcome focus: partners with employers to bridge education and job placement.",
+          "linkedin": "https://www.linkedin.com/in/chito-salazar-602459118/",
+          "email_pattern": "c***@phinma.com.ph (per ZoomInfo)"
+        },
+        {
+          "name": "Dr. Raymundo P. Reyes",
+          "title": "Chief Operating Officer, PHINMA Education Network",
+          "background": "Ed.D. Academic and operational leadership across the school network."
+        },
+        {
+          "name": "Daisy C. Montinola, CPA",
+          "title": "Chief Finance Officer, PHINMA Education",
+          "background": "CPA. Oversees financial management across PHINMA Education Holdings."
+        },
+        {
+          "name": "Christopher A. Tan, JD, MPP",
+          "title": "Country Head, Philippines",
+          "background": "JD, MPP. Manages Philippines institutional portfolio."
+        },
+        {
+          "name": "Francis L. Larios",
+          "title": "Chief Academics Officer",
+          "background": "Oversees curriculum and academic standards across the network."
+        },
+        {
+          "name": "Sebastien G. Foulch",
+          "title": "Chief Information Officer",
+          "background": "Leads technology and digital transformation initiatives — key contact for AI/EdTech discussions."
+        },
+        {
+          "name": "Emon P. Reyes",
+          "title": "Head of Indonesia Network",
+          "background": "Strategic direction for Indonesian institutions (Horizon University Karawang, Kalbis University Jakarta)."
+        },
+        {
+          "name": "Ricky R. Ruiz",
+          "title": "Chief, Asset Management",
+          "background": "Oversees physical campus assets and infrastructure development."
+        }
+      ],
+      "synthesis": "Chito Salazar is the defining leader of PHINMA Education — he built it from a single acquired school in 2004 to a 177,000-student regional network. His dual role as PHINMA Corp President & PHINMA Education CEO gives him unusual authority and line-of-sight across both the conglomerate parent and the operating entity. He is intellectually engaged (PhD in International Development), mission-driven, and publicly active (EDCOM II, conference speaker circuit). He is the right entry point for any strategic conversation. The management team beneath him is functionally specialized, with a CIO (Foulch) who would be the relevant counterpart for technology-related discussions. The Indonesia expansion signals Salazar's ambition is regional, not just national.",
+      "confidence": "high"
+    }
+  },
+  "sources_consulted": [
+    "https://www.bworldonline.com/corporate/2025/11/28/715162/phinma-st-jude-college-dasmarinas-rolls-out-campus-upgrades/",
+    "https://www.bworldonline.com/corporate/2025/11/24/714051/phinma-education-sees-no-immediate-need-for-ipo/",
+    "https://insiderph.com/phinma-opens-10-story-horizon-university-building-in-indonesia",
+    "https://insiderph.com/phinma-education-expands-campuses-to-widen-access-for-underserved",
+    "https://insiderph.com/phinma-education-expands-with-p432-m-acquisition-of-st-jude-college-in-cavite",
+    "https://insiderph.com/kaizenvest-finalizes-p825-m-phinma-education-investment-with-kkr",
+    "https://www.philstar.com/business/2025/07/24/2460165/phinma-education-expanding-underserved-communities",
+    "https://www.gmanetwork.com/regionaltv/specials/113015/licensed-professionals-topnotchers-mark-swu-phinmas-strong-2025-board-run/story/",
+    "https://business.inquirer.net/534090/phinma-education-students-rise-to-the-top-in-nursing-and-criminology",
+    "https://www.businesswire.com/news/home/20240520933429/en/KKR-Invests-in-Leading-Filipino-Higher-Education-Group-PHINMA-Education",
+    "https://mb.com.ph/2024/10/6/kkr-completes-investment-in-phinma-education",
+    "https://www.phinma.com.ph/kkr-invests-in-leading-filipino-higher-education-group-phinma-education/",
+    "https://bilyonaryo.com/2024/08/16/del-rosarios-phinma-education-eyes-regional-growth-with-kkr-funding-10-to-20-new-schools-in-five-countries-over-five-years/business/",
+    "https://www.bworldonline.com/corporate/2024/04/29/591473/phinma-eyes-school-acquisitions-in-metro-manila-cavite-and-davao/",
+    "https://mb.com.ph/2025/5/13/phinma-banks-on-education-property-units-to-sustain-growth",
+    "https://business.inquirer.net/520029/phinma-earnings-shrink-66-on-higher-costs",
+    "https://www.pna.gov.ph/articles/1262731",
+    "https://www.phinma.com.ph/director/dr-chito-b-salazar-jr-2/",
+    "https://www.theceomagazine.com/executive-interviews/education/chito-b-salazar/",
+    "https://step2022.ateneo.edu/speakers/chito-b-salazar",
+    "https://en.wikipedia.org/wiki/Chito_Salazar",
+    "https://theorg.com/org/phinma-corp/org-chart/chito-b-salazar-jr",
+    "https://www.zoominfo.com/p/Chito-Salazar/87964586",
+    "https://manilastandard.net/business/314551133/dr-chito-salazar-advocates-equitable-quality-education.html",
+    "https://www.phinma.edu.ph/",
+    "https://www.phinma.edu.ph/schools-and-admission/",
+    "https://www.glassdoor.com/Reviews/PHINMA-Education-Reviews-E2275164.htm",
+    "https://www.techpinas.com/2025/05/HONOR-PHINMA-Students-Pad-X9a-Tablets-Donation.html",
+    "https://filgit.com/market/phinma-education-expansion-backed-by-kkr",
+    "https://play.google.com/store/apps/details?id=com.iitms.phinma",
+    "https://www.imarcgroup.com/philippines-higher-education-market",
+    "https://www.imarcgroup.com/philippines-edtech-market",
+    "https://stockanalysis.com/quote/pse/PHN/",
+    "https://www.phinma.com.ph/our-leaders/",
+    "https://up.phinma.edu.ph/management/"
+  ],
+  "gaps": [
+    "Chito Salazar's direct email address not publicly confirmed — ZoomInfo shows c***@phinma.com.ph pattern; likely chito.salazar@phinma.com.ph or csalazar@phinma.com.ph",
+    "No public detail on specific AI curriculum or LLM/generative AI tools being trialed in classrooms",
+    "KKR's post-investment digital transformation roadmap has not been publicly disclosed in detail",
+    "Phinma Education Holdings' full audited financial statements not retrieved (fiscal year ends March; FY2024-25 full year figure sourced from press coverage, not filing)",
+    "Specific Metro Manila acquisition target (Cavite/Davao pipeline from 2024) — outcome/status unclear from search results",
+    "No data on student satisfaction (NPS, student reviews) — only employee Glassdoor data obtained",
+    "Indonesia financials and enrollment split not broken out separately from Philippines consolidated figures",
+    "No detail on the five-country expansion plan (10-20 new schools) beyond Philippines and Indonesia — which three additional countries are targeted"
+  ]
+}

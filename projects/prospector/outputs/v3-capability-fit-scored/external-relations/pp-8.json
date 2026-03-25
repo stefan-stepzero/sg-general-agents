@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-alumni-engagement-reciprocity-asymmetry-dup",
+  "pain_point_label": "Unilateral Ask Model — Alumni Feel Mined, Not Valued",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The unilateral ask model stems partly from communications that are transactional and formulaic — donation requests, event invitations, referral asks — with no personalization or value exchange signaling. AI text generation can produce differentiated outreach that leads with value (career resources, industry insights, alumni spotlights) rather than asks, and can scale personalised messaging across thousands of alumni segments without additional staff.",
+      "opportunity_sketch": "A personalized alumni comms engine that generates segment-specific newsletters, value-led email sequences, and alumni spotlight content — ensuring every touchpoint offers something before it asks for anything.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Alumni sentiment and engagement intent can be classified from inbound email replies, survey responses, and social mentions. Multi-site operators currently have no systematic way to detect when alumni sentiment is shifting negative (feeling exploited) or when alumni are signalling willingness to contribute beyond donations. Classifying inbound signals by sentiment, topic, and intent enables a feedback loop the institution currently lacks entirely.",
+      "opportunity_sketch": "An alumni signal classifier that tags inbound messages and survey free-text by sentiment, topic (career, nostalgia, complaint, offer to help), and urgency — feeding a dashboard that shows engagement health per cohort and campus.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The institution treats all alumni identically — blasting donation asks regardless of life stage, career trajectory, or engagement history. Propensity modeling on alumni behavioral data (email opens, event attendance, career milestones scraped from LinkedIn-style enrichment) can identify which alumni are receptive to which type of engagement (mentoring, giving, referrals, advisory roles), enabling value-matched outreach instead of spray-and-pray asks.",
+      "opportunity_sketch": "An alumni engagement propensity model that scores each alumnus for likelihood to mentor, donate, refer a student, or join an advisory board — so relationship managers prioritise the right ask for the right person at the right time.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "Alumni disengage partly because there is no personalised value being surfaced to them — no career resources, no relevant events, no peer connections. A recommendation engine can proactively surface to each alumnus the jobs posted by alumni employers, relevant professional development content, or alumni peers in the same industry — turning the relationship from extractive to genuinely useful without requiring alumni to seek anything out themselves.",
+      "opportunity_sketch": "An alumni value portal that recommends relevant job postings, mentors, events, and professional content to each alumnus based on their career stage and interests — giving alumni a reason to stay connected beyond being solicited.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Alumni currently have no channel to express what they need from the institution — the relationship is one-directional broadcast. A conversational agent deployed via the alumni portal or email can proactively ask alumni what support they're looking for, capture structured feedback, match them to available resources (career services, mentoring programmes, networking events), and surface unmet needs back to the institution — creating a genuine two-way relationship at scale.",
+      "opportunity_sketch": "An alumni engagement chatbot that onboards alumni post-graduation, periodically checks in on career milestones, surfaces personalised resources, and captures feedback — replacing the silent post-graduation void with an ongoing value exchange.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

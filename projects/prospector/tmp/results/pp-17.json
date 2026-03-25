@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-supplier-contract-enforcement",
+  "pain_point_label": "Supplier Contract Enforcement & Preferred Vendor List Drift",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Invoice amounts that deviate from contracted preferred vendor rates are textbook anomalies — a model trained on approved purchase orders and contracted unit prices can flag invoices where the charged rate exceeds the negotiated rate or where the supplier is not on the approved vendor list. For a multi-site education operator, this directly addresses the 'invoices arriving at prices higher than budgeted' manifestation without requiring process change first.",
+      "opportunity_sketch": "An invoice anomaly scanner that ingests submitted invoices, matches them against the preferred vendor list and contracted rates, and flags deviations (unapproved supplier, price variance > threshold, payment terms mismatch) before the payables clerk approves payment.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Supplier contracts contain the key-value data that should govern procurement — unit prices, payment terms, penalty clauses, validity periods — but this data is locked in PDFs or paper. Extracting these structured attributes into a machine-readable register enables automated compliance checks and is a prerequisite for most downstream AI capabilities in this domain. Education operators typically have dozens of supplier contracts and no structured data layer above them.",
+      "opportunity_sketch": "A contract digitization pipeline that extracts supplier name, contracted unit prices, payment terms, penalty clauses, and contract expiry from PDF/scanned contracts into a structured register, which then feeds invoice-matching and compliance workflows.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Supplier contracts and purchase orders are frequently scanned PDFs or physical documents in Philippine education operators. Before any structured comparison or entity extraction can occur, these documents must be digitized via OCR and layout analysis. Invoice parsing — extracting line items, unit prices, supplier identity — also falls here and is the foundational input to any price-variance or preferred-vendor compliance check.",
+      "opportunity_sketch": "An OCR and form-extraction layer that converts scanned supplier contracts, purchase orders, and invoices into structured text, enabling downstream entity extraction and anomaly detection without manual re-keying.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The enforcement gap is fundamentally a workflow gap: invoices arrive, nobody checks them against the preferred vendor list, payment goes through. A task automation agent can close that loop autonomously — parse incoming invoices, look up the supplier and contracted rate, flag non-compliant invoices with a specific reason code, and route them to the finance manager for approval hold rather than straight to payment. This addresses both the unapproved supplier problem and the price-drift problem in a single automated workflow.",
+      "opportunity_sketch": "An invoice compliance agent that runs on each submitted invoice: extracts supplier and line-item data, checks against the preferred vendor register, scores compliance (approved supplier? rate within tolerance? terms match?), and either auto-approves or routes to a named approver with a structured exception report.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Penalty clause enforcement fails partly because finance staff lack the authority and the drafted language to formally notify suppliers of a breach. Text generation can produce formal supplier notices (price variance dispute letters, delivery penalty notifications, contract non-compliance warnings) from structured invoice deviation data, removing the drafting barrier and giving finance staff an action-ready document to escalate rather than absorbing the cost silently.",
+      "opportunity_sketch": "An automated supplier correspondence generator that takes a flagged invoice exception (unapproved supplier, price over contract rate, late delivery) and produces a formal written notice to the supplier citing the specific contract clause, the deviation amount, and the required remediation — ready for finance manager review and send.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Purchase and invoice data is fragmented across campuses — each site may use a different format, spreadsheet template, or ERP module. Consolidating this into a normalized spend register (supplier, item, quantity, unit price, campus, date) is the prerequisite for identifying volume aggregation opportunities and detecting preferred vendor list drift across sites. AI-assisted schema mapping can normalize heterogeneous campus data without requiring a full ERP standardization project.",
+      "opportunity_sketch": "A spend data normalization pipeline that ingests per-campus purchase records in varying formats, maps them to a standard schema (supplier ID, item category, unit price, campus, date), and outputs a consolidated spend register enabling total-organization volume analysis and contract compliance reporting.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all suppliers or campuses pose equal compliance risk — a campus with a history of off-list purchases, or a supplier category where prices change frequently (uniforms, consumables), warrants closer scrutiny. A risk scoring model trained on historical invoice data can surface high-risk supplier relationships and campus procurement patterns before invoices arrive, enabling proactive rather than reactive enforcement.",
+      "opportunity_sketch": "A procurement risk scoring model that ranks active supplier relationships and campus ordering patterns by compliance risk (frequency of off-list orders, historical price variance, contract expiry proximity), surfacing the top-risk relationships for monthly review by the central procurement team.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

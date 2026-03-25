@@ -1,0 +1,107 @@
+{
+  "entity": "Acasus",
+  "research_date": "2026-03-11",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2025",
+          "headline": "Leadership transition: Fenton Whelan steps back as CEO, becomes Founder & Chair",
+          "detail": "After over a decade as CEO, Fenton Whelan transitioned to Founder and Chair. Deputy CEO Jonny Barty was named the new CEO.",
+          "source": "https://www.acasus.com/impact/article/a-new-chapter-for-acasus"
+        },
+        {
+          "date": "2025",
+          "headline": "Fenton Whelan speaks at World Health Summit on AI and accountability",
+          "detail": "Whelan joined a panel of five leaders to discuss AI for women's and children's health. His key message: 'We don't have a technology problem; we have an accountability problem.' Called for rigour in public systems, results-tied funding, and local ownership of data and design.",
+          "source": "https://www.acasus.com/impact/article/turning-ai-into-action-for-womens-and-childrens-health"
+        },
+        {
+          "date": "2026-02-23",
+          "headline": "Corporate change at Acasus Holding AG (Switzerland)",
+          "detail": "A commercial register change was recorded for Acasus Holding AG in Baar, ZUG. Auditor changed from Urs Küchler Treuhand AG to Amadeo Wirtschaftsprüfung AG. Nature of change unclear — could reflect routine compliance, restructuring, or new investment activity.",
+          "source": "https://www.moneyhouse.ch/en/company/acasus-holding-ag-20992099271"
+        },
+        {
+          "date": "2025",
+          "headline": "Jonny Barty publishes op-ed on measles surge as a warning signal",
+          "detail": "New CEO Jonny Barty authored commentary on Devex warning that measles resurgence reflects broader immunisation system failures in developing countries.",
+          "source": "https://www.devex.com/news/measles-is-surging-and-it-s-a-warning-we-can-t-ignore-110781"
+        }
+      ],
+      "synthesis": "The dominant 2025 news story for Acasus is the planned CEO succession — Whelan to Barty — marking a coming-of-age milestone for a firm that has historically been founder-led. Whelan remains engaged as Chair and continues to represent the firm at high-profile forums (World Health Summit). The February 2026 Swiss corporate register change signals some ongoing structural activity at the holding entity, though the implications are unclear without deeper access. No adverse press, contract losses, or scandal coverage was found.",
+      "confidence": "medium-high — leadership transition well documented; corporate register change flagged but unexplained"
+    },
+    "industry": {
+      "synthesis": "Acasus operates in the international development consulting sector, specifically at the intersection of public sector reform, global health, and education in low- and middle-income countries (LMICs). Key industry dynamics relevant to Acasus in 2025-2026: (1) USAID cuts and broader US foreign aid contraction under Trump administration — a significant macro threat to the sector; Devex reports a 45.5% drop in global health job postings and widespread project cancellations. Acasus's funding model appears primarily government-to-government or multilateral (not USAID-dependent), which may provide some insulation. (2) Competitors in this space include Palladium (which acquired DAI), as well as smaller boutiques. Acasus's positioning as a delivery-focused (not just advisory) consultancy with 80% staff from the countries they serve is a differentiator. (3) The global education consulting market is projected to grow through 2031, but the development-aid-funded segment faces headwinds. (4) Acasus's employee count grew 22% in the year to mid-2025, reaching ~265 staff across 6 continents — suggesting the firm was expanding against sector trends.",
+      "confidence": "medium — industry macro context is well-documented; Acasus's specific client/funding base and USAID exposure are not publicly disclosed"
+    },
+    "financial": {
+      "synthesis": "Acasus does not appear to have raised external venture or private equity funding. The firm is structured as a private consulting partnership with a Swiss holding company (Acasus Holding AG, Baar, ZUG, CHE-137.193.230). Estimated annual revenue as of mid-2025 is approximately $35M (sourced from Growjo/Tracxn modelling — treat as indicative, not audited). Employee count grew 22% year-over-year to ~265 staff as of mid-2025, implying meaningful top-line growth. Acasus Foundation (a separate Swiss entity) exists but appears to be in liquidation or dormant. The February 2026 auditor change at the holding entity (to Amadeo Wirtschaftsprüfung AG) is a minor corporate hygiene signal with no clear financial implication. No funding rounds, acquisitions, or distress signals were found.",
+      "confidence": "low-medium — no audited financials are public; all revenue/size figures are third-party estimates from data aggregators"
+    },
+    "technology": {
+      "ai_adoption": "exploring",
+      "synthesis": "Acasus is engaging with AI at the thought leadership and strategic framing level, but there is no evidence of proprietary AI product development or deep technology partnerships as of early 2026. Key signals: (1) Fenton Whelan spoke at the 2025 World Health Summit on AI for women's and children's health, but his message was notably skeptical of pure technology solutions — he framed AI as an accountability and governance challenge, not a technology one. (2) Acasus published an article titled 'Turning AI Into Action for Women's and Children's Health' summarising the summit panel; the article's conclusion calls for AI that is 'scaled responsibly, financed sustainably, and governed ethically.' (3) No AI-specific product launches, tech partnerships, or digital platform announcements were found. (4) Acasus's core model remains human-delivered, embedded advisory and implementation support — technology appears to be a topic they advise on within client systems, rather than a product they build or sell.",
+      "confidence": "medium — clear thought leadership engagement with AI; absence of product/partnership announcements may reflect private development or genuine non-prioritisation"
+    },
+    "reputation": {
+      "synthesis": "External reputation is solidly positive in the development sector — Acasus is recognised for delivering measurable results (e.g., Punjab vaccination coverage 50%→90% in two years, Nigeria polio eradication contribution). Leadership visibility through Devex, World Health Summit, and Harvard Africa Health Conference signals sector credibility. Internal reputation (Glassdoor, 69 reviews) is more mixed: overall rating 3.4/5, with 72% recommending to a friend. Compensation and benefits score well (4.1/5). Negative themes include: poor work-life balance (2.7/5), leadership culture described as 'not mature and open' by some reviewers with specific criticism of the founder's management style, reported favoritism in performance reviews, and expectation of late nights and weekends. These are common complaints in high-intensity development consulting boutiques, and the overall 3.4 score is within the normal range for this type of firm. The CEO transition may address some of these concerns if Barty brings a different management style.",
+      "confidence": "medium-high — Glassdoor data is reasonably robust at 69 reviews; external reputation draws on published project results and sector presence"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Fenton Whelan",
+          "role": "Founder & Chair (formerly CEO)",
+          "background": "Read Arabic at Oxford. Joined McKinsey's public sector practice focusing on Middle Eastern health and education systems. Founded Acasus in 2013. Over 20 years working on large-scale public sector reform across 30+ countries. Stepped back from CEO role in 2025 to become Founder and Chair. Remains active at sector forums (World Health Summit 2025). Based in Hergiswil, Switzerland.",
+          "linkedin": "https://www.linkedin.com/in/fentonwhelan/"
+        },
+        {
+          "name": "Jonny Barty",
+          "role": "CEO (from 2025)",
+          "background": "15+ years in global development. Joined Acasus as Principal in 2015, served as Deputy CEO from 2023-2025 before becoming CEO. Deep operational experience in immunisation, health system strengthening, and last-mile delivery in Afghanistan, Ethiopia, Sudan, Somalia. Also has education reform experience in Pakistan and Spanish-speaking contexts.",
+          "linkedin": "https://ch.linkedin.com/in/jonny-barty-82787b23"
+        }
+      ],
+      "synthesis": "The leadership picture is defined by a deliberate founder-to-professional-CEO transition. Whelan built the firm over 12 years and retains equity and strategic influence as Chair. Barty's promotion is internal and organic — he has been at Acasus for a decade — suggesting continuity over disruption. The leadership team beyond Whelan and Barty is not well documented in public sources; The Org lists a leadership team but names are not detailed in search results. Acasus's model of 80% staff from the countries they serve is a notable people strategy differentiator.",
+      "confidence": "medium-high — Whelan background well documented; Barty profile solid; broader leadership team is a gap"
+    }
+  },
+  "sources_consulted": [
+    "https://www.acasus.com/about",
+    "https://www.acasus.com/impact/article/a-new-chapter-for-acasus",
+    "https://www.acasus.com/impact/article/turning-ai-into-action-for-womens-and-childrens-health",
+    "https://www.acasus.com/impact/education-health/health-system-reform",
+    "https://www.worldhealthsummit.org/speaker/f13d2981-1dcf-486e-82d0-fe5297d9839e",
+    "https://www.moneyhouse.ch/en/company/acasus-holding-ag-20992099271",
+    "https://www.moneyhouse.ch/en/company/acasus-ag-19184464551",
+    "https://www.moneyhouse.ch/en/company/acasus-foundation-2555702671",
+    "https://www.glassdoor.com/Reviews/Acasus-Reviews-E981603.htm",
+    "https://www.glassdoor.com/Overview/Working-at-Acasus-EI_IE981603.11,17.htm",
+    "https://ch.linkedin.com/in/fentonwhelan",
+    "https://ch.linkedin.com/in/jonny-barty-82787b23",
+    "https://theorg.com/org/acasus",
+    "https://theorg.com/org/acasus/teams/leadership-team",
+    "https://growjo.com/company/Acasus_%7C_Help_governments_help_people",
+    "https://tracxn.com/d/companies/acasus/__2jEfUcwcHJFHxDl_I6-d2ywPF-R98W4qVfCsiPNgQWY",
+    "https://www.crunchbase.com/organization/acasus",
+    "https://www.devex.com/news/measles-is-surging-and-it-s-a-warning-we-can-t-ignore-110781",
+    "https://www.devex.com/news/authors/jonny-barty-2675237",
+    "https://shows.acast.com/oa-stories/episodes/fenton-whelan",
+    "https://www.impactpool.org/jobs/539548",
+    "https://join.acasus.com/",
+    "http://www.cabinetgovernment.net/fenton-whelan-bio.pdf",
+    "https://www.hsph.harvard.edu/africa-health-conference/people_categories/digital-transformation-service/"
+  ],
+  "gaps": [
+    "Acasus does not publish audited financials — all revenue estimates ($35M) are third-party modelled data and should be treated with caution.",
+    "Client/funder mix is not publicly disclosed — unclear how exposed Acasus is to USAID cuts versus other bilateral donors (FCDO, Gates, World Bank, bilateral government contracts).",
+    "The full leadership team beyond Whelan and Barty is not well documented in public sources.",
+    "The February 2026 auditor change at Acasus Holding AG (Switzerland) is recorded but its significance is unknown — could be routine, could signal restructuring or new investment.",
+    "AI adoption depth is unclear — Acasus engages AI at the thought leadership level but whether they are building internal tools, piloting digital products with clients, or partnering with tech vendors is not publicly visible.",
+    "Acasus Foundation status (Moneyhouse shows it may be in liquidation) — no detail found on what this entity was or why it may be winding down.",
+    "No data found on specific current contract wins, tender activity, or named government clients beyond historical case studies (Pakistan Punjab, Nigeria, Peru, Mozambique).",
+    "Glassdoor sample size (69 reviews) is modest for a 265-person firm — employee sentiment data may not be fully representative."
+  ]
+}

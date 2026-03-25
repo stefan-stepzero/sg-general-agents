@@ -1,0 +1,300 @@
+{
+  "name": "Catholic Schools Parramatta Diocese",
+  "generated_date": "2026-03-25",
+  "slides": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "title": "Catholic Schools Parramatta Diocese",
+      "subtitle": "Second-largest Catholic diocesan school system in NSW, serving Western Sydney and the Blue Mountains. Governance restructured in 2023. New five-year strategy and system-wide teaching framework launched in 2024-2025. Accelerating enrolment growth in a high-demand corridor.",
+      "metrics": [
+        {
+          "label": "Students",
+          "value": "45,646 (CSNSW 2024 census) / 49,577 (ACARA 2025, postcode-matched)",
+          "source": "CSNSW Annual Report 2024 p.14; ACARA My School 2025"
+        },
+        {
+          "label": "Schools",
+          "value": "83 (CSNSW 2024)",
+          "source": "CSNSW Annual Report 2024 p.14"
+        },
+        {
+          "label": "Total Staff",
+          "value": "5,803 (2023) — 3,760 teaching, 1,385 support, 658 system",
+          "source": "CSPD Annual Report 2023 p.8 & p.38"
+        },
+        {
+          "label": "Total Operating Revenue",
+          "value": "$857.2m (2023)",
+          "source": "CSPD Annual Report 2023 p.44-45"
+        },
+        {
+          "label": "Operating Deficit Before Capital",
+          "value": "-$20.6m (2023); salary cost 71.6% of expenditure",
+          "source": "CSPD Annual Report 2023 p.44-45"
+        },
+        {
+          "label": "Enrolment Growth",
+          "value": "+1.8% in 2024 (above NSW Catholic sector 1.7%); CAGR 0.71% over 2008-2025",
+          "source": "ACARA My School Historical Data 2008-2025; CSNSW Annual Report 2024 p.13-16"
+        },
+        {
+          "label": "LBOTE Students",
+          "value": "53.4% system average (NSW Catholic sector average: 36%)",
+          "source": "ACARA My School 2025; CSNSW Annual Report 2024 p.13"
+        },
+        {
+          "label": "Average ICSEA",
+          "value": "1,059 (national average 1,000)",
+          "source": "ACARA My School 2025"
+        },
+        {
+          "label": "CEO",
+          "value": "Jack de Groot (appointed January 2023)",
+          "source": "CSPD Annual Report 2023; parra.catholic.edu.au"
+        },
+        {
+          "label": "Strategic Plan",
+          "value": "2024-2029 Five-Year Strategic Plan (six pillars: Mission, People, Quality, Relevance, Sustainability, Trust)",
+          "source": "catholicoutlook.org; CSPD website October 2024"
+        },
+        {
+          "label": "Flagship Teaching Framework",
+          "value": "Uplift (launched August 2025) — explicit instruction, formative assessment, structured literacy; AERO-endorsed",
+          "source": "catholicoutlook.org August 2025; parra.catholic.edu.au"
+        }
+      ]
+    },
+    {
+      "id": "competitive",
+      "label": "Competitive Position",
+      "position": "Pedagogically ambitious but operationally stretched — strong mission and reform momentum, financial pressure compounding execution risk",
+      "position_detail": "CSPD has made significant structural investments in 2023-2025 — new governance, new CEO, AERO-endorsed teaching framework, CIO elevation, Canvas system-wide — that position it ahead of many NSW Catholic peers on the quality agenda. However, a -$20.6m structural operating deficit compounded by locked-in EA salary escalation (~$19m/year), a capacity-constrained infrastructure pipeline, and a teacher shortage market create execution risk across all simultaneously running initiatives. Independent school competitors are growing at 3.3%/year in the same catchment; SCS is moving faster on parent communication innovation. CSPD's distinctive strength is its Western Sydney community rootedness and demographically distinct 53.4% LBOTE student base — which is both a mission differentiator and an unaddressed design challenge.",
+      "advantages": [
+        {
+          "label": "AERO-Endorsed Teaching Framework",
+          "detail": "Uplift framework (August 2025) is the only system-wide Catholic school teaching framework in NSW endorsed by the Australian Education Research Organisation's inaugural CEO. This is the sector's highest external quality signal and positions CSPD ahead of peers on evidence-based teaching credibility."
+        },
+        {
+          "label": "System-Wide Canvas LMS with Internal Support Team",
+          "detail": "Canvas deployed across all 80+ schools with a dedicated internal team for course design and school leadership support — above the deployment level of most comparable dioceses. Creates a rich data layer for analytics and a platform for consistent parent communication."
+        },
+        {
+          "label": "Technology Leadership at EGM Level",
+          "detail": "Frances Waterford elevated from Director Data Intelligence to EGM Information Technology in 2023 — placing ICT at peer level with Finance, People, and Mission on the Executive Leadership Team. Private-sector background signals strategic technology intent rather than compliance-only posture."
+        },
+        {
+          "label": "Strong Workforce Alignment Post-Transformation",
+          "detail": "99% EA approval vote in October 2025 — above the 98% sector average across nine NSW/ACT Catholic dioceses. Indicates high staff confidence in the new leadership team and direction, despite the 2023 baseline engagement score of 69%."
+        },
+        {
+          "label": "Above-Proportional Capital Grant Success",
+          "detail": "Secured ~$24.5m in CBGA capital grants in 2024 — approximately 21.5% of the NSW Catholic round against a 16.8% enrolment share. Westmead campus (Term 3 2026) and Schofields grant demonstrate effective capital advocacy."
+        },
+        {
+          "label": "VET and Innovation Campus Differentiator",
+          "detail": "26 VET program sites (33% of schools) and CathWest Innovation College as a purpose-built dual-campus VET institution. Structurally differentiated from most dioceses and aligned to western Sydney community employment pathways."
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "label": "Structural Operating Deficit with Locked-In Salary Escalation",
+          "detail": "-$20.6m operating deficit in 2023. EA 2025 adds ~$19m/year in salary costs through 2026, roughly equalling the full deficit. Net capital outflows of $49.7m/year require balance sheet drawdown. The Sustainability pillar of the strategy has no published efficiency targets."
+        },
+        {
+          "label": "Uplift Implementation Consistency Risk Across 80 Schools",
+          "detail": "Framework launched August 2025 with no published curriculum resource library, no confirmed external evaluator, and the EGM Learning Outcomes only in post from September 2025. Prior engagement data (69% score, communication gaps) suggests system-wide adoption is not a given."
+        },
+        {
+          "label": "Structural Teacher Shortage Amplified by RE Accreditation Requirement",
+          "detail": "NSW teacher shortage is a sector-wide high-level risk. CSPD's dual-accreditation requirement (NESA + RE) further narrows the eligible candidate pool versus public and independent school competitors in the same labour market."
+        },
+        {
+          "label": "LBOTE Demographic Complexity Without a Validated System-Level Model",
+          "detail": "53.4% LBOTE — significantly above the 36% NSW Catholic sector average. No peer has a validated EAL/D support model at this demographic concentration. Independent Islamic and Christian schools are growing in the same catchment by targeting this cohort explicitly."
+        },
+        {
+          "label": "No Published Analytics Layer Above Canvas",
+          "detail": "Formative assessment data is collected via Canvas but no system-level analytics platform providing principal dashboards or NAPLAN benchmarking is documented. Uplift depends on formative data loops that require system intelligence infrastructure that is not yet confirmed to exist."
+        },
+        {
+          "label": "Competitive Pressure from Independent Sector and SCS",
+          "detail": "Low-to-mid fee independent schools growing at 3.3%/year in CSPD's catchment. SCS's Magis 2033 (Boston College partnership) and school reporting overhaul (February 2026) outpace CSPD on academic credibility signalling and parent communication innovation."
+        }
+      ]
+    },
+    {
+      "id": "opportunities",
+      "label": "Top Opportunities",
+      "items": [
+        {
+          "rank": 1,
+          "id": "opp-1",
+          "title": "Structured Curriculum Resource Library and External Evaluation for Uplift",
+          "pain": "Uplift launched without a curriculum resource library; NAPLAN numeracy gap acknowledged; teacher adoption consistency at risk across 80 schools",
+          "buyer": "Patrick Ellis, EGM Learning Outcomes",
+          "confidence": "high",
+          "rationale": "CECG's Catalyst — the direct ancestor of Uplift, run by Patrick Ellis before he joined CSPD — proved the model: 5,400+ resources + Deloitte evaluation = 75% reading proficiency (vs 66% national) in 3 years. MACS corroborates at scale."
+        },
+        {
+          "rank": 2,
+          "id": "opp-2",
+          "title": "AI-Assisted Teacher Workload Reduction Within the Domed Policy Framework",
+          "pain": "Teacher shortage (high external risk), 69% engagement score, work-life balance gap, Uplift adding professional learning obligations to stretched staff",
+          "buyer": "Frances Waterford (EGM IT) and Daniel Lynch (EGM People & Culture)",
+          "confidence": "high",
+          "rationale": "BCE's Copilot trial saved 9.3 hrs/week per teacher and produced 7.22% Year 3 NAPLAN improvement in 8 pilot schools. BCE's custom Catholic-values-grounded approach shows delivery within a governance model analogous to CSPD's 'domed' policy."
+        },
+        {
+          "rank": 3,
+          "id": "opp-3",
+          "title": "Principal-Facing Analytics Layer on Existing Canvas and CSNSW Data Infrastructure",
+          "pain": "No system-level analytics translating Canvas formative assessment data into principal insights; Uplift outcomes cannot be tracked at system level without it",
+          "buyer": "Frances Waterford (EGM IT) and Patrick Ellis (EGM Learning Outcomes)",
+          "confidence": "high",
+          "rationale": "CEWA's LEADing Lights proves the model. CSNSW's Azure Databricks platform already serves CSPD — making this an incremental layer build, not greenfield. 2026 NAPLAN cycle creates a hard deadline."
+        },
+        {
+          "rank": 4,
+          "id": "opp-4",
+          "title": "Operational Cost Efficiency Programme for the Sustainability Pillar",
+          "pain": "-$20.6m operating deficit; ~$19m/year locked-in salary escalation; multi-platform fragmentation across 80+ schools",
+          "buyer": "Gerard Giesekam, EGM Finance & Infrastructure",
+          "confidence": "medium",
+          "rationale": "MACS's SAP ERP transformation (July 2025) and CEWA's Freshservice ITSM validate the approach at comparable scale. CSPD's governance restructure creates the mandate. The efficiency quantum requires a diagnostic to confirm."
+        },
+        {
+          "rank": 5,
+          "id": "opp-5",
+          "title": "Uplift Adaptation for LBOTE and EAL/D Learners",
+          "pain": "53.4% LBOTE (vs 36% sector average) with no validated system-level EAL/D support model; independent competitor schools targeting this demographic",
+          "buyer": "Dianne Van Berlo (EGM Student Support) and Patrick Ellis (EGM Learning Outcomes)",
+          "confidence": "medium",
+          "rationale": "No peer has solved this at scale — creating both a gap and a first-mover differentiation opportunity. Explicit instruction is broadly EAL/D-compatible but adaptation requires design work. Competitor threat (3.3%/year independent growth targeting LBOTE) makes this strategically urgent."
+        },
+        {
+          "rank": 6,
+          "id": "opp-6",
+          "title": "Parent Communication Programme Activating Canvas for Richer Family Engagement",
+          "pain": "Canvas deployed but parent communication features not confirmed to be consistently activated; SCS reporting overhaul (Feb 2026) signals competitive gap forming",
+          "buyer": "Elizabeth Scully, EGM Communications & Engagement",
+          "confidence": "medium",
+          "rationale": "Infrastructure exists (Canvas parent-facing features, 6 years of TTFM data). SCS's announcement creates a 12-18 month competitive window. The 'Relevance' pillar provides organisational mandate. Leverages existing investment — not a new platform."
+        },
+        {
+          "rank": 7,
+          "id": "opp-7",
+          "title": "System-to-School Communication Architecture for Uplift Adoption",
+          "pain": "2023 Annual Report explicitly identifies 'need for greater System Leader visibility' and 'better communication'; initiative fatigue risk across 80 schools running multiple simultaneous programmes",
+          "buyer": "Jack de Groot (CEO) and Patrick Ellis (EGM Learning Outcomes)",
+          "confidence": "medium",
+          "rationale": "Pain self-confirmed by CSPD in public document. CECG's Catalyst success attributes community of practice infrastructure as a key success factor. Change management and communication design — not a technology build."
+        },
+        {
+          "rank": 8,
+          "id": "opp-8",
+          "title": "Enrolment Demand Conversion — Retaining Waitlisted Families Through Capacity Build",
+          "pain": "500+ families turned away annually from Westmead alone; new campus opens Term 3 2026; turned-away families risk permanent loss to independent competitors",
+          "buyer": "Elizabeth Scully (EGM Communications & Engagement) and Jack de Groot (CEO)",
+          "confidence": "low",
+          "rationale": "Excess demand is confirmed (public source data). No peer has validated a demand retention model. Opportunity is plausible and timely given Westmead opening, but evidence of the gap in CSPD's current practice requires a discovery conversation to confirm."
+        }
+      ]
+    },
+    {
+      "id": "why-now",
+      "label": "Why Now",
+      "items": [
+        {
+          "title": "First Post-Uplift NAPLAN Cycle — 2026",
+          "signal": "The first NAPLAN results under the Uplift framework will be collected in 2026. Without curriculum resources, analytics infrastructure, and a communications architecture in place before that cycle, CSPD will lack the evidence to demonstrate progress — and peers (MACS, BCE) already have 2025 data showing improvement.",
+          "relevant_opportunities": ["opp-1", "opp-3"]
+        },
+        {
+          "title": "Patrick Ellis In Post as EGM Learning Outcomes (September 2025)",
+          "signal": "Ellis brings direct CECG Catalyst experience — the proven model CSPD is following. As a new EGM building his programme, he has immediate need for the resource library, evaluation framework, and communication architecture that the first opportunities address. Window is now, not after his programme is set.",
+          "relevant_opportunities": ["opp-1", "opp-7"]
+        },
+        {
+          "title": "EA 2025 Salary Escalation Locks In ~$19m/Year Cost Increase",
+          "signal": "The 99% October 2025 EA approval locked in 3% teacher pay rises through 2026. The structural deficit already exists; the new cost commitment makes the Sustainability pillar urgent and gives the efficiency programme a hard financial justification. Each quarter of delay compounds the deficit.",
+          "relevant_opportunities": ["opp-2", "opp-4"]
+        },
+        {
+          "title": "BCE's AI Workload Data Published August 2025",
+          "signal": "BCE's 9.3 hrs/week teacher saving (published August 2025) is now the sector benchmark. CSPD's board, CEO, and EGM IT will be aware of it. The question of whether CSPD should move beyond its 'domed' restriction for teacher-facing tools is live. The window to design a controlled pilot is open before other systems move further ahead.",
+          "relevant_opportunities": ["opp-2"]
+        },
+        {
+          "title": "SCS School Reporting Overhaul Announced February 2026",
+          "signal": "SCS declared parents 'short-changed' by current reports and announced a Boston College-backed framework overhaul. CSPD has no equivalent announced programme. The 12-18 month window before SCS has a live programme is the opportunity to build the Canvas-based parent communication programme on infrastructure CSPD already owns.",
+          "relevant_opportunities": ["opp-6"]
+        },
+        {
+          "title": "Sacred Heart Primary Westmead Opening Term 3 2026",
+          "signal": "The new Westmead campus opens in less than 12 months. Without a waitlist re-engagement programme and enrolment marketing strategy, the capacity addition may not fill to demand potential. Turned-away families need to be contacted before their children start school elsewhere in Term 1 2026.",
+          "relevant_opportunities": ["opp-8"]
+        },
+        {
+          "title": "Independent School Growth Running at 3.3%/Year in CSPD's Catchment",
+          "signal": "Low-to-mid fee independent schools grew enrolments at 3.3%/year (2020-2025) vs CSPD's 1.2-1.8% range — specifically targeting LBOTE families. Each year without a differentiated LBOTE support model and a stronger parent value proposition concedes market share that is structurally difficult to recover.",
+          "relevant_opportunities": ["opp-5", "opp-6", "opp-8"]
+        }
+      ]
+    },
+    {
+      "id": "stakeholders",
+      "label": "Stakeholders",
+      "buyers": [
+        {
+          "name": "Jack de Groot",
+          "title": "Chief Executive Officer",
+          "note": "Appointed January 2023. Strategic authority for all six pillars of the Five-Year Plan. The Sustainability pillar (financial efficiency) and Relevance pillar (family experience) both map to opportunities in this analysis. Leader visibility was explicitly cited as a 2023 staff feedback gap — making him personally invested in the communication architecture opportunity.",
+          "opportunities": ["opp-4", "opp-6", "opp-7", "opp-8"]
+        },
+        {
+          "name": "Patrick Ellis",
+          "title": "Executive General Manager, Learning Outcomes",
+          "note": "In post from September 2025. Previously Education Lead at CECG — the exact system whose Catalyst programme is CSPD's closest Uplift analogue. Will immediately recognise the curriculum resource gap from his CECG experience. His programme's success is directly measured by post-Uplift NAPLAN outcomes, making opp-1 and opp-3 direct personal priorities.",
+          "opportunities": ["opp-1", "opp-3", "opp-5", "opp-7"]
+        },
+        {
+          "name": "Frances Waterford",
+          "title": "Executive General Manager, Information Technology (CIO)",
+          "note": "Role elevated from Director Data Intelligence to EGM IT in November 2023. Private-sector ICT background (Cancer Council NSW, Origin Energy). Technology platform investment decisions sit here. The analytics layer (opp-3) and AI workload programme (opp-2) both require her mandate and budget. Her background means ROI framing and business case discipline will be expected.",
+          "opportunities": ["opp-2", "opp-3", "opp-4"]
+        },
+        {
+          "name": "Gerard Giesekam",
+          "title": "Executive General Manager, Finance & Infrastructure",
+          "note": "Holds P&L accountability and capital programme oversight. CSPD representative on the CSNSW Finance Working Group — indicates engagement with sector-level financial management innovation. The Sustainability pillar efficiency programme (opp-4) is squarely in his domain. The capital programme and Westmead campus execution are also his accountability.",
+          "opportunities": ["opp-4", "opp-8"]
+        },
+        {
+          "name": "Daniel Lynch",
+          "title": "Executive General Manager, People & Culture",
+          "note": "Workforce strategy, engagement, and retention. CSPD representative on the CSNSW Inter-Diocesan Teacher Workforce Working Group. The teacher AI workload programme (opp-2) requires his mandate to be framed as a people strategy investment, not just an IT programme. The teacher shortage risk is in his ownership.",
+          "opportunities": ["opp-2"]
+        },
+        {
+          "name": "Dianne Van Berlo",
+          "title": "Executive General Manager, Student Support",
+          "note": "LBOTE support, wellbeing, and student equity sit in this portfolio. The EAL/D adaptation of Uplift (opp-5) requires her domain expertise and staff resources. 53.4% LBOTE is the system's most distinctive demographic characteristic and an unaddressed design challenge.",
+          "opportunities": ["opp-5"]
+        },
+        {
+          "name": "Elizabeth Scully",
+          "title": "Executive General Manager, Communications & Engagement",
+          "note": "Parent and community communication, partnerships, and external relations. Signed the St Vinnies NSW partnership in September 2025 — demonstrates executive authority for community-facing initiatives. Parent reporting innovation (opp-6) and enrolment demand conversion (opp-8) both sit in her domain.",
+          "opportunities": ["opp-6", "opp-8"]
+        },
+        {
+          "name": "Greg Elliott",
+          "title": "Executive General Manager, Quality & Performance",
+          "note": "System improvement and performance analytics. The analytics layer (opp-3) and Uplift implementation tracking directly support his function. He will be a co-buyer alongside Frances Waterford for analytics infrastructure, as the use case is quality/performance not just technology.",
+          "opportunities": ["opp-1", "opp-3"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-instalment-tracking",
+  "pain_point_label": "Instalment Plan & Partial Payment Reconciliation",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Partial payments arriving from mobile wallets, bank transfers, and cash receipts are semi-structured but land in inconsistent formats across systems. AI-assisted ETL can normalize payment records, map them to the correct instalment schedule and invoice line items, and flag residual amounts that don't reconcile cleanly — exactly the drift problem described. For a multi-site operator, this reduces the manual spreadsheet reconciliation cycle from days to minutes.",
+      "opportunity_sketch": "An AI transformation layer sits between the payment gateway/bank feed and the SIS/accounting system, auto-mapping each incoming payment to the right instalment, splitting partials across invoice lines, and flagging unresolvable cases for staff review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core operational crisis is that by month 3, accounting state has drifted from actual receipts — staff cannot distinguish families who are genuinely behind from families whose payments are simply mis-posted. An anomaly detection model trained on expected instalment patterns can flag accounts where the payment trajectory deviates from their plan, separating true delinquency from reconciliation errors before collection actions are triggered.",
+      "opportunity_sketch": "A model monitors each family account's running balance trajectory against their instalment schedule and raises an alert when the gap exceeds a threshold, with a confidence label distinguishing 'likely data entry error' from 'likely non-payment' to direct staff triage.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Families with hardship-driven schedule changes (job loss, scholarship adjustment) exhibit early behavioral signals — partial payments, late payment patterns, requests for rescheduling — before formal default. A propensity model per family account predicts likelihood of continued non-payment vs. temporary disruption, allowing the collection team to prioritize outreach and offer payment plans proactively rather than reactively chasing every overdue account.",
+      "opportunity_sketch": "Per-family payment propensity scores, updated monthly, feed a prioritized collection queue — flagging high-risk accounts for personal outreach and low-risk ones for automated reminder escalation only.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full instalment reconciliation workflow — receiving payment notification, matching to invoice, computing residual, updating schedule, notifying family, recalculating downstream balances for hardship changes — is a multi-step process with conditional branching that is currently executed manually. A task automation agent can orchestrate this end-to-end: pulling payment data, applying matching rules, handling partial allocation logic, updating the ledger, and routing exceptions to a human queue without staff touching routine cases.",
+      "opportunity_sketch": "An automation agent processes each incoming payment event: matches it to the family's active instalment plan, applies partial payment rules, posts the journal entry, updates the outstanding balance, and triggers a family notification — staff only see the unresolved exceptions.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 32
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When a hardship rescheduling is approved, staff must communicate the revised payment schedule to families in a clear, empathetic way across potentially hundreds of accounts simultaneously. Text generation can produce personalized balance statements and revised instalment letters at scale, reducing the clerical burden and ensuring consistent, accurate communication of complex schedule changes.",
+      "opportunity_sketch": "Automated generation of personalized 'your revised payment schedule' letters triggered when a schedule change is saved, pulling the family's new instalment dates and amounts into a natural-language summary sent via email or SMS.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "When a family requests a hardship plan change mid-term, the school must find a new instalment configuration that satisfies hard constraints (total fees owed, school-year end deadline, minimum instalment amounts, scholarship deduction rules) and soft constraints (family cash flow, existing sibling accounts). This is a constraint satisfaction problem — finding a valid revised schedule from a large configuration space — that staff currently solve ad hoc with spreadsheet trial and error.",
+      "opportunity_sketch": "A constraint solver generates 2-3 valid revised payment schedule options for staff to present to families, given the outstanding balance, remaining term weeks, and policy rules — replacing spreadsheet trial-and-error with instant, policy-compliant alternatives.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

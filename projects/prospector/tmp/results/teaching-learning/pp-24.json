@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "teaching-learning-academic-progression-graduation-pathway-visibility-dup",
+  "pain_point_label": "Unclear Graduation Pathways & Requirements Tracking",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Students frequently ask advisors about graduation requirements and missing prerequisites — a high-volume, repetitive information need that is ideal for a conversational agent. The agent can maintain dialogue across multiple turns to walk a student through their specific situation, check their completed courses, and explain what remains. This directly addresses the 'slow response to student questions about pathways' pain and reduces advisor load.",
+      "opportunity_sketch": "A student-facing chatbot integrated with the SIS that answers 'What do I still need to graduate?' questions 24/7, pulling each student's completion record and explaining requirements in plain language across any campus.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Advisors currently manually track each student's completion status — a multi-step workflow involving pulling records from multiple systems, checking requirements, and flagging gaps. A task automation agent can orchestrate this end-to-end: ingest transcript data, cross-reference degree requirements per campus, flag students with missing prerequisites, and push alerts to advisors or students. This directly addresses the 'advisors manually tracking' and 'last-minute discoveries' pain mechanisms.",
+      "opportunity_sketch": "An automated graduation audit agent that runs nightly across all enrolled students, generates a completion gap report per student, and routes exception alerts to the assigned advisor before registration windows open.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Graduation requirements exist in handbooks, policy documents, and catalog PDFs that differ across campuses and cohort years — a fragmented corpus that advisors and students struggle to query consistently. RAG grounds every answer in the specific policy documents relevant to a student's campus and entry year, eliminating inconsistency and hallucination. This directly addresses 'inconsistent graduation requirements across campuses' and 'slow response to student questions.'",
+      "opportunity_sketch": "A requirements lookup tool that ingests all campus-specific degree catalogs and handbook PDFs, then answers natural-language queries like 'What are the elective requirements for the 2023 cohort at the Northside campus?' with cited source passages.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Students who are at risk of discovering a missing prerequisite too late exhibit early warning signals in their enrollment patterns, course sequencing choices, and advising engagement frequency. A propensity model trained on historical graduation outcomes can score each current student's likelihood of hitting a last-minute blocking gap, enabling proactive outreach well before the problem becomes critical. This directly targets the 'last-minute discoveries of missing prerequisites' pain.",
+      "opportunity_sketch": "An at-risk graduation model that scores every student each semester on their probability of encountering a prerequisite block at graduation, surfacing the top-risk cohort to advisors for targeted early intervention.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Advisors and administrators need to communicate individualized graduation pathway summaries to students — currently done manually and inconsistently. Text generation can produce personalized, plain-language graduation plan letters or dashboard narrative summaries for each student, derived from their structured completion data. This addresses the 'students unaware of requirements' pain by making requirement status legible and accessible.",
+      "opportunity_sketch": "An automated system that generates a personalized 'Your path to graduation' summary email or PDF for each student each semester, explaining remaining requirements, recommended next courses, and any flags — ready for advisor review and send.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Mapping a student's remaining courses to available offerings while satisfying prerequisites, credit-hour limits, and graduation deadlines is a constraint satisfaction problem — exactly what this capability handles. For multi-campus operators with varying course availability, automatically generating a valid completion plan per student is technically feasible and high-value. This addresses 'no progress-to-graduation dashboard' by producing an actionable, constraint-valid course sequence.",
+      "opportunity_sketch": "A graduation pathway planner that, given a student's completed credits and remaining requirements, generates one or more valid semester-by-semester course sequences that satisfy all prerequisites and are available at their campus.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

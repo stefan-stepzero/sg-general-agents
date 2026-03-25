@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-conduct-discipline-restorative-vs-punitive-gap-dup",
+  "pain_point_label": "Punitive-First Culture Without Restorative Alternatives",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Restorative practice requires structured dialogue scripts, incident reflection prompts, victim-offender conference facilitation guides, and community service agreement templates — all natural language artifacts that staff currently lack. AI can generate context-specific restorative documentation (e.g., a tailored conference agenda given the nature of the incident) far faster than staff can draft them manually, lowering the barrier to using restorative tools at all.",
+      "opportunity_sketch": "An AI-assisted case tool that generates a customized restorative intervention plan — including facilitation script, reflection questions for the student, and a letter to affected parties — based on the incident type and student history entered by the staff member.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incident reports and discipline logs contain free-text descriptions that can be classified by root-cause category (peer conflict, trauma response, unmet academic need, boundary-testing) — the exact causal factors the pain point identifies as unaddressed. Classifying incidents by underlying cause is a prerequisite for routing to the right intervention tier rather than defaulting to punishment.",
+      "opportunity_sketch": "An incident triage classifier that reads a staff-submitted incident description and outputs a root-cause category and recommended intervention tier (warning → restorative conference → exclusion), providing a structured decision aid rather than leaving it to individual staff discretion.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Students who repeat offenses after punitive-only responses are identifiable in retrospect from attendance, prior incident frequency, academic disengagement signals, and welfare referrals — structured data most multi-site operators already hold. A propensity model predicting re-offense or dropout risk post-discipline event gives welfare coordinators a data-driven basis to escalate to restorative or pastoral intervention before the next incident.",
+      "opportunity_sketch": "A post-incident re-offense propensity score surfaced in the student management system 48 hours after a discipline event, flagging high-risk students for a proactive welfare check or restorative referral before the next incident cycle begins.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff lack restorative training, which is the stated causal factor. A conversational agent can guide a staff member through a restorative conversation in real time — prompting the right questions, offering alternative phrasings when a student becomes defensive, and keeping the interaction on track — effectively substituting for formal restorative training in the moment.",
+      "opportunity_sketch": "A staff-facing chat assistant embedded in the school's pastoral care platform that walks a teacher or welfare officer through a structured restorative conversation with a student, providing live coaching prompts and capturing the agreed-upon repair plan as a structured record.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

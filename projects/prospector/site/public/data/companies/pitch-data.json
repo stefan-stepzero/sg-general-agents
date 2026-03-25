@@ -1,0 +1,50 @@
+{
+  "cspd": {
+    "situation": "CSPD launched Uplift — a major pedagogical transformation — across 80 schools in August 2025, just as it locked in ~$19m/year in new salary costs and recorded a -$20.6m operating deficit. Patrick Ellis, recruited from CECG where he ran the exact same programme, knows what's missing. The missing pieces — structured curriculum resources, a formative assessment analytics layer, and a teacher workload relief programme — are buildable within 12 months. The first post-Uplift NAPLAN cycle is 2026. That deadline is not soft.",
+    "investments": [
+      "Uplift framework launched August 2025 — system-wide explicit instruction across all 80 schools",
+      "Canvas LMS deployed system-wide — already generating rich assessment data",
+      "Patrick Ellis hired as EGM Learning Outcomes from CECG — the person who built Catalyst",
+      "Frances Waterford elevated to EGM IT (CIO) — technology is now a strategic function",
+      "Five-Year Strategic Plan 2024-2029 — Mission, People, Quality, Relevance, Sustainability, Trust",
+      "99% EA approval October 2025 — highest staff confidence in the new leadership team"
+    ],
+    "peers": [
+      { "name": "CECG — Catalyst", "detail": "5,400+ curriculum resources, 75% reading proficiency vs 66% national, teachers save 6 hrs/week. Patrick Ellis built this." },
+      { "name": "MACS — Vision for Instruction", "detail": "Launched Feb 2024, early-adopter schools showed up to 46 percentage point NAPLAN improvement. One year ahead of CSPD." },
+      { "name": "BCE — AI Copilot", "detail": "12,500 educators, 9.3 hrs/week saved per teacher, Year 3 NAPLAN +7.22% while state average fell. Catholic-values-grounded, within a governed environment." },
+      { "name": "CEWA — LEADing Lights", "detail": "Real-time principal dashboards across 164 schools integrating student, attendance, wellbeing, HR and finance data." }
+    ],
+    "pains": [
+      { "title": "Will Uplift actually land before 2026 NAPLAN?", "loss": "Without a curriculum resource base and evaluation baseline before the 2026 NAPLAN cycle, CSPD will have no way to demonstrate Uplift's impact — and peers will already be publishing data." },
+      { "title": "Can we hold our teachers?", "loss": "Teacher attrition during the Uplift rollout would be doubly costly — salary costs are locked in at +3%/year while the programme depends on sustained teacher engagement." },
+      { "title": "Will the operating deficit compound?", "loss": "Each year the Sustainability pillar remains an aspiration rather than a programme, the structural deficit compounds and eventually forces a choice between investment and stability." }
+    ],
+    "recommendations": [
+      { "title": "Curriculum Resource Library + External Evaluation", "who": "Patrick Ellis, EGM Learning Outcomes", "detail": "Co-develop structured resources for Uplift with CSPD's Canvas team. Establish a Deloitte-style evaluation baseline before the 2026 NAPLAN cycle." },
+      { "title": "Principal Analytics Layer on Canvas + CSNSW", "who": "Frances Waterford, EGM IT", "detail": "Surface Canvas formative assessment data into principal dashboards. Incremental build on existing CSNSW Azure infrastructure, not greenfield." },
+      { "title": "AI Teacher Workload Programme (Within Domed Policy)", "who": "Frances Waterford + Daniel Lynch, EGM People & Culture", "detail": "Teacher-facing AI pilot modelled on BCE's St Francis trial. Not student-facing. Within the existing governance model." }
+    ],
+    "capabilities_summary": [
+      { "category": "Generation", "count": 6, "examples": ["Curriculum resource authoring", "Lesson plan adaptation", "Parent progress narratives", "Leadership communications"] },
+      { "category": "Extraction & Structuring", "count": 4, "examples": ["Canvas data normalisation", "Resource distillation", "Report condensation", "Implementation health synthesis"] },
+      { "category": "Autonomous Agents & Orchestration", "count": 4, "examples": ["Teacher admin automation", "Report generation pipeline", "Waitlist communication sequences", "Back-office workflow automation"] },
+      { "category": "Search & Retrieval", "count": 3, "examples": ["Curriculum resource Q&A", "EAL/D resource recommendation", "Uplift-grounded Copilot responses"] },
+      { "category": "Prediction & Forecasting", "count": 2, "examples": ["Uplift adoption risk scoring", "Waitlist re-engagement propensity"] }
+    ],
+    "timing": [
+      "2026 NAPLAN cycle — first post-Uplift measurement, baseline must be set before it",
+      "Patrick Ellis — six months in post, building his programme now",
+      "EA salary commitment — ~$19m/year locked in, efficiency case is now concrete",
+      "BCE AI data published August 2025 — the 9.3 hrs/week benchmark is in the market",
+      "SCS reporting overhaul announced February 2026 — 12-18 month competitive window"
+    ],
+    "starters": [
+      "\"Patrick, you ran the CECG Catalyst build from 2020. When you walked into CSPD in September, what was the first thing you looked for that wasn't there yet?\"",
+      "\"The 2026 NAPLAN cycle is the first data point that will tell the Board whether Uplift is working. What's the measurement architecture you're putting in place?\"",
+      "\"BCE published results showing 9.3 hours saved per teacher per week through their Copilot pilot — grounded in Catholic values. Has that landed in any conversations here?\"",
+      "\"The Sustainability pillar — is that mostly a capital allocation story, or is there a back-office efficiency programme being scoped alongside?\"",
+      "\"With 500+ families turned away from Westmead every year and the new campus opening in Term 3, what's the plan to convert that waitlist?\""
+    ]
+  }
+}

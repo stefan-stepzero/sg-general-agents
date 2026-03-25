@@ -1,0 +1,55 @@
+{
+  "cell": {
+    "cellNum": 2,
+    "subCategory": "Revenue & Funding Diversification",
+    "domain": "Growth & Market",
+    "heat": 57,
+    "oppScore": 41
+  },
+  "ideas": [
+    {
+      "name": "Enrollment Intent Classifier",
+      "one_liner": "Real-time classification of student/parent inquiry intent and dropout risk from SMS, WhatsApp, email, and web forms to optimize outreach.",
+      "problem": "Rising Academies and iPeople operate in price-sensitive African and Southeast Asian markets where inquiry-to-enrollment conversion rates are 5-15% and student dropout is 20-30% in year 1. They manually triage hundreds of inbound inquiries via SMS, WhatsApp, and email to gauge intent, but lack signals for immediate outreach (e.g., 'parent cost-sensitive, likely to drop', 'high intent but needs scholarship clarification').",
+      "ai_technique": "Text Classification with education-specific intent taxonomy",
+      "how_it_works": "Ingests SMS/WhatsApp messages, emails, and web form submissions. Classifies intent: program-inquiry, scholarship-question, fee-payment, enrollment-confirmation, dropout-risk. For dropout-risk flags, extracts signals (e.g., 'cannot afford fees', 'family relocation', 'poor grades'). Triggers automated outreach workflows: scholarship counters for cost-sensitive, support calls for dropout-risk, program recommendations for low-intent leads.",
+      "target_companies": ["rising", "ipeople", "phinma"],
+      "buyer_persona": "Enrollment Manager or Student Success Officer at multi-campus or international institution",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Cohort Retention Predictor",
+      "one_liner": "Forecasts multi-year enrollment cohort retention (completion rates) to predict revenue sustainability and intervention opportunities.",
+      "problem": "PHINMA (affordable HE) and iPeople (STEM HE) struggle to forecast completion rates across 4-year degree programs, making revenue forecasting opaque. Student dropout occurs after semester 2-3 when financial/academic hardship emerges. They need 6-month ahead visibility into cohort risk to allocate tutoring, mentoring, or scholarship interventions.",
+      "ai_technique": "Time Series Forecasting with academic progression patterns",
+      "how_it_works": "Trains on cohort enrollment history, academic performance (GPA per semester), financial status (fee payment timeliness), and demographic profile (first-gen status, family income proxy). Forecasts semester-by-semester retention probability to program completion. Flags at-risk students by semester 1, enabling academic support interventions (tutoring, mentoring) before dropout decision.",
+      "target_companies": ["phinma", "ipeople", "acasus"],
+      "buyer_persona": "Registrar or Student Success Officer in multi-year degree programs",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Student Enrollment Propensity Scorer",
+      "one_liner": "Scores application propensity using academic record, demographics, and family income proxies to optimize recruitment spend and targeted outreach.",
+      "problem": "PHINMA (affordable HE) receives 20,000+ annual applications and has low marketing ROI because they cannot distinguish high-propensity applicants (likely to enroll, likely to afford tuition) from low-propensity (price-shopping, insufficient qualification). Rising Academies faces similar challenges in West Africa where household income proxies are hard to validate. Manual review consumes HR time without predictive accuracy.",
+      "ai_technique": "Structured Data Classification with enrollment decision modeling",
+      "how_it_works": "Ingests application data: academic qualifications, prior schooling, family background (parent education, occupation proxies), geographic location (urban/rural, distance-to-campus), and inquiry source. Trains on historical enrollment outcomes (enrolled vs. not, stayed through semester 2+). Scores new applicants 0-100 for 'likely to enroll and afford'. Enables targeted marketing (high-propensity: heavy outreach; medium: scholarship focus; low: auto-reply).",
+      "target_companies": ["phinma", "rising", "ipeople"],
+      "buyer_persona": "Director of Admissions or Marketing Manager at HE institution",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Tuition Price Elasticity Model",
+      "one_liner": "Quantifies demand sensitivity to tuition fees and scholarship offers, optimizing program pricing and scholarship allocation for revenue growth.",
+      "problem": "PHINMA and iPeople introduce new affordable HE programs but lack data-driven pricing strategy. They guess at tuition and scholarship levels, leading to either revenue loss (too-low pricing) or enrollment loss (too-high). They cannot measure impact of scholarship offers on propensity, making scholarship budgets non-strategic.",
+      "ai_technique": "Regression & Quantitative Estimation with pricing elasticity modeling",
+      "how_it_works": "Analyzes historical enrollment data: tuition levels, scholarship offer types (partial waiver, payment plan, merit scholarship), and enrollment outcomes by cohort and program. Fits regression model estimating demand elasticity: 'a 5% increase in tuition leads to X% enrollment drop.' Also models scholarship impact: 'scholarship offer increases enrollment propensity by Y%'. Outputs pricing recommendations: optimal tuition and scholarship mix for target enrollment/revenue.",
+      "target_companies": ["phinma", "ipeople", "acasus"],
+      "buyer_persona": "Chief Financial Officer or VP of Strategic Planning in HE institution",
+      "tier": "feature",
+      "confidence": "medium"
+    }
+  ]
+}

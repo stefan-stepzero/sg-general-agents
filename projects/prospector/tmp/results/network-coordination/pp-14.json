@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "network-coordination-performance-benchmarking-frequency-lag-dup",
+  "pain_point_label": "Reporting Frequency & Actionability Lag",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The core pain is that by the time HQ sees data, it's 3+ months stale and emerging problems (rising dropout mid-semester) go undetected. Time series forecasting on enrollment, attendance, and assessment data can project trend trajectories in near-real-time, giving HQ leading indicators rather than lagging reports. Education operators typically have enrollment and gradebook data in SIS systems that can feed these models without requiring major new infrastructure.",
+      "opportunity_sketch": "A continuous forecasting layer on top of existing SIS data that predicts end-of-semester dropout risk and performance trajectories at the campus level, surfaced as a weekly HQ dashboard rather than a semester report.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The explicit pain includes the inability to detect and respond to emerging problems like rising dropout mid-semester. Anomaly detection on attendance, gradebook, and engagement signals can flag campuses or cohorts deviating from historical norms in near-real-time, replacing the calendar-driven reporting cycle with event-driven alerts. This directly addresses the 'no ability to detect emerging problems' mechanism without requiring a full dashboard overhaul.",
+      "opportunity_sketch": "An alert system that monitors weekly campus-level metrics and flags statistical deviations — e.g., a campus with attendance trending 15% below its historical seasonal baseline — routing alerts to the relevant HQ team lead automatically.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reporting lag is partly a workflow problem: data sits in campus systems and only moves to HQ through a manual, periodic reporting cycle. A task automation agent can orchestrate the end-to-end pipeline — pulling data from SIS/LMS systems, transforming it, populating a central data store, and triggering summary reports — on a weekly or even daily cadence without requiring campus staff to manually compile and submit reports. This removes the human bottleneck that causes the 3-month staleness.",
+      "opportunity_sketch": "An automated ETL and reporting agent that ingests campus data on a rolling weekly basis, generates standardized performance summaries per campus, and pushes them to HQ dashboards — replacing the semester-end manual consolidation cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Even when data is available more frequently, HQ leaders often delay action because interpreting raw metrics into narrative context requires analyst time. LLM-generated narrative summaries can transform weekly campus data snapshots into plain-language briefings — 'Campus A has seen a 12% attendance decline over 3 weeks, historically correlated with semester-end dropout spikes' — making data immediately actionable without requiring a data analyst to write it up.",
+      "opportunity_sketch": "Auto-generated weekly campus health narratives delivered to HQ leadership, synthesizing metric changes into plain-language summaries with flagged items requiring attention, reducing interpretation lag to zero.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-outstanding-balance-collection",
+  "pain_point_label": "Outstanding Balance Tracking & Collection Follow-Up",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The multi-step collection workflow — checking current balance, verifying last contact date, generating a personalized reminder, logging the outcome, updating the promise-to-pay record — is exactly the kind of branching multi-step process where a task automation agent replaces manual coordination. The pain point explicitly describes collectors not knowing who was called last week or what payment was promised; an agent that orchestrates across billing system, CRM, and messaging channels eliminates this by making every step auditable and automatic.",
+      "opportunity_sketch": "An agentic workflow that each morning checks balances against payment channel data, identifies families whose promised payment date has passed without payment, generates and dispatches a tiered reminder (SMS to call to formal notice), and updates the AR system with the outcome — requiring human intervention only at escalation decision points.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.3
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all outstanding balances represent the same collectability risk — some families are genuinely unable to pay and will require write-off or legal action, while others are just disorganized. A risk model estimating probability of non-collection (based on balance age, prior default history, enrollment continuity, subsidy status) lets finance leadership make proactive provisioning decisions and prioritize which accounts to escalate to legal versus soft collection. This is a leadership-level financial visibility tool.",
+      "opportunity_sketch": "A monthly collectability risk score per account, surfaced in the CFO dashboard, showing estimated recovery probability and recommended action (standard collection, payment plan, legal referral, subsidy follow-up with government) — enabling accurate bad debt provisioning and structured escalation policy.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.15
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "With 2,000+ families carrying balances, collection staff cannot manually triage who deserves urgent attention. A classifier trained on account age, balance amount, payment history, and prior contact outcomes can segment families into actionable priority tiers (immediate escalation, standard follow-up, hold for subsidy clearance) — directly attacking the same-effort-for-PHP-2k-vs-PHP-50k problem. Education operators already hold this data in their SIS or billing system, making it immediately viable.",
+      "opportunity_sketch": "An automated daily triage engine that reads the AR ledger and classifies every outstanding account into a priority queue, routing high-value or chronic accounts to senior collectors and filtering out recently-paid or subsidy-pending families before any calls are made.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The core inefficiency is that all delinquent families are treated identically — no model distinguishes a family that will pay within 3 days of a reminder from one that will require legal escalation. A propensity model trained on payment history, enrollment status, sibling count, and past contact outcomes can score each account on likelihood to self-cure and likelihood to respond to a phone call vs SMS, enabling differentiated collection strategies. This directly reduces wasted call volume on families who were about to pay anyway.",
+      "opportunity_sketch": "A collection propensity score dashboard refreshed nightly, telling collectors which accounts to call today versus which to send an automated SMS to, and which to escalate immediately — reducing call volume by targeting only accounts where human contact will change the outcome.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Many collection interactions are repetitive: families calling in to ask their current balance, dispute a prior payment reflection, or negotiate a payment schedule. A conversational agent can handle these inbound contacts 24/7, retrieve real-time balance data, explain outstanding amounts, and offer pre-approved payment plan options — freeing collection staff for only complex negotiations and escalations. This is especially relevant for a 2,000+ family base where inbound volume is unmanageable for a small collections team.",
+      "opportunity_sketch": "An inbound voice or SMS chatbot integrated with the billing system that answers balance inquiries, accepts payment plan requests within pre-set parameters, and creates a logged interaction record — reducing human-handled inbound contacts by 40-60% and eliminating callbacks for routine inquiries.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Collection communication is high-volume and high-stakes: a generic you-owe-money SMS damages family relationships while a personalized, empathetic message preserves trust. Text generation can produce balance-specific, family-context-aware messages (acknowledging a partial payment, referencing a prior payment plan conversation, using the family's preferred language — Tagalog vs English) at scale across 2,000+ accounts without drafting each message manually. This directly addresses the emotional friction from incorrect or duplicate reminders.",
+      "opportunity_sketch": "A template-free message generation layer that accepts account data (balance, days overdue, last contact summary, family name, enrolled children) and produces a distinct, personalized SMS or email for each family — including payment plan offer language for high-balance accounts — at daily automation scale.",
+      "impact": 3,
+      "feasibility": 5,
+      "visibility": 3,
+      "composite_score": 3.3
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

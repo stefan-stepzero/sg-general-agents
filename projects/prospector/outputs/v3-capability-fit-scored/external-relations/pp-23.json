@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-press-pr-no-brand-consistency-dup",
+  "pain_point_label": "Fragmented Brand Voice — No Institutional Communications Standard",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core pain is the absence of a unified institutional voice — no templates, no position statements, no staff guidelines. Text generation directly produces these artifacts: brand-aligned press release templates, approved language for policy positions (outcomes, pricing, social responsibility), and a staff communication handbook tailored to the institution's tone and values. This is a direct, non-tangential match: the output is exactly the missing asset.",
+      "opportunity_sketch": "An AI-assisted communications standards toolkit: generate a master messaging framework with approved statements on key policy topics, campus-specific tone adaptation guidelines, and fill-in-the-blank templates for common external communications scenarios (media inquiries, parent letters, social posts).",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "With dozens of campuses and departments issuing their own statements, the institution cannot manually review all outgoing communications for brand alignment. Text classification can score drafts against the institutional voice standard before publication — flagging tone deviations, off-brand policy positions, or language that contradicts approved messaging. This addresses the mechanism of inconsistency at the point of origin rather than after damage is done.",
+      "opportunity_sketch": "A pre-publication brand compliance checker integrated into the communications workflow: staff paste or submit draft external communications, and the system scores alignment with the institutional messaging standard and flags specific problem phrases for revision before sending.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff across 500+ people and multiple campuses cannot be expected to memorize a communications standard. A RAG system grounded in the institutional messaging framework lets any staff member ask 'What is our approved position on X?' or 'How should we respond to media questions about tuition?' and receive a grounded, policy-consistent answer with citations to the source document. This operationalizes the standard at the point of need rather than leaving it in a PDF nobody reads.",
+      "opportunity_sketch": "An internal communications assistant — staff ask natural language questions about approved messaging, institutional positions, or escalation protocols, and receive answers drawn directly from the official communications framework, with source references and suggested draft language.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Fragmented brand voice persists partly because there is no enforcement workflow — departments issue statements without any central review gate. A task automation agent can intercept outgoing external communications, classify them for brand alignment, route off-standard drafts to a communications lead for approval, and log the decision. This creates a lightweight governance process without requiring a full-time central PR team to manually chase every campus.",
+      "opportunity_sketch": "An automated communications review pipeline: drafts submitted via a simple form or email trigger an AI review for brand consistency, approved drafts are auto-cleared, flagged drafts are routed to the central communications office with a specific explanation of the deviation, and all decisions are logged for audit.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

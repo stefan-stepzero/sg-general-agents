@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-asset-inventory-consumable-reorder-points-and-stock-levels-are-not-systematized-dup",
+  "pain_point_label": "Consumable Inventory Reorder Points and Stock Levels Are Not Systematized",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Consumable consumption follows time-ordered patterns driven by academic calendars, term schedules, and enrollment cycles. Forecasting future consumption from historical usage data directly addresses the core pain — reorder triggers and quantity decisions become data-driven rather than reactive guesswork. A 500+ staff multi-campus operator accumulates sufficient transaction history to train useful models.",
+      "opportunity_sketch": "A consumption forecasting engine that ingests purchase and usage history per campus per item category, outputs predicted depletion dates and recommended reorder quantities, and surfaces alerts when projected stock falls below a safety threshold given supplier lead times.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Determining how to allocate a finite procurement budget across campuses and item categories — while respecting supplier minimum order quantities, bulk discount thresholds, and storage constraints — is a resource allocation problem. AI can optimize order timing and quantities across all campuses simultaneously, enabling coordinated bulk purchasing that a decentralized manual process cannot achieve.",
+      "opportunity_sketch": "A centralized procurement optimizer that takes consumption forecasts across all campuses, applies budget and storage constraints, and produces a consolidated order schedule that maximizes bulk discount capture and minimizes stockout risk.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Once baseline consumption rates are established per campus and item, anomaly detection can flag deviations that indicate a problem — a campus ordering 3x normal quantity of lab chemicals, inventory tied up for months beyond normal turnover, or sudden spikes suggesting waste or misuse. This directly addresses the manifestation where procurement costs are higher than expected without an obvious cause.",
+      "opportunity_sketch": "An inventory anomaly monitor that tracks per-campus consumption rates against learned baselines and surfaces outliers for procurement staff review — catching over-ordering, potential waste, and cross-campus inconsistencies before they compound.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full reorder workflow — detecting when stock falls below a threshold, generating a purchase order, routing it for approval, and updating inventory records — is a multi-step process currently done manually (if at all). An automation agent can execute this workflow end-to-end across campuses, removing the human bottleneck that causes reactive stockouts.",
+      "opportunity_sketch": "An automated reorder agent that monitors inventory levels against dynamically calculated reorder points, drafts purchase orders when thresholds are crossed, routes them through an approval chain, and logs the transaction — reducing the reactive firefighting cycle to an automated background process.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

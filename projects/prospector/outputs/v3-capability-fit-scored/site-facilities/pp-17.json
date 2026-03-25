@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-classroom-lab-setup-consumable-learning-materials-distribution-and-stock-management-dup",
+  "pain_point_label": "Consumable Learning Materials Distribution and Stock Management Are Decentralized and Unreliable",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Consumable demand is driven by predictable patterns — academic calendars, curriculum schedules, and seasonal science/art/home-economics units create repeating cycles. Historical consumption data per subject and campus can train models to forecast how much of each consumable will be needed by period, reducing both stockouts and over-ordering. This directly addresses the cash-tied-up-in-buffer-stock and last-minute-shortage failure modes described.",
+      "opportunity_sketch": "A demand forecasting module ingests past consumption records per campus and subject area, then generates rolling reorder recommendations aligned to curriculum schedules — alerting procurement weeks ahead of predicted shortfalls rather than after a class is cancelled.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core problem is allocating finite consumable stock (a constrained resource) across campuses and classrooms over time, given variable demand from differing curricula. AI-driven allocation can prioritize distribution to campuses with upcoming practical sessions, prevent one campus from accumulating excess buffer while another runs short, and suggest optimal central-to-campus transfer timing. This directly attacks the decentralized hoarding and uneven distribution described.",
+      "opportunity_sketch": "A centralized allocation engine takes curriculum schedules and current stock levels per campus as input, then produces a weekly distribution plan that assigns consumables from central or inter-campus stock to meet confirmed upcoming sessions — reducing both shortfalls and idle over-stock.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reorder cycle is currently manual and slow — teachers chase materials, administrators raise purchase orders reactively. A task automation agent can monitor stock levels against curriculum schedules, automatically generate purchase requests when thresholds are breached, route approvals, and update inventory records when deliveries are confirmed. This removes the human bottleneck that causes stockouts and expiry waste.",
+      "opportunity_sketch": "An inventory automation agent continuously monitors stock across campuses, cross-references the teaching schedule, triggers draft purchase orders at defined reorder points, routes them for one-click approval, and logs receipts — replacing the current ad-hoc, teacher-initiated chase process.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Significant spending variance per campus (noted explicitly in the pain description) and unexpectedly high consumable loss rates (expiry, spoilage, pilferage) are anomaly detection problems. An AI model trained on normal consumption rates per subject/enrollment can flag campuses where usage patterns deviate — either indicating waste, poor storage, or unauthorised use — enabling targeted intervention before costs compound.",
+      "opportunity_sketch": "A consumption anomaly monitor compares actual consumable drawdown per campus and subject against expected benchmarks, surfacing outliers in a weekly operations dashboard so facilities managers can investigate spoilage, storage failures, or purchasing inefficiencies before the annual budget review reveals them.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

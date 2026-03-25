@@ -1,0 +1,603 @@
+{
+  "_extraction_notes": {
+    "cspd_report_source": "cspd-annual-report-2023.pdf (48 pages)",
+    "csnsw_report_source": "csnsw-annual-report-2024.pdf (102 pages)",
+    "extraction_date": "2026-03-25",
+    "school_list_gap": "The CSPD 2023 Annual Report does NOT contain a complete enumerated list of all 80 schools. School names were extracted only from incidental references throughout the document (VET awards, HSC results, teacher recruitment stories) plus capital grants listed in the CSNSW report. The school-names.json file contains 18 confirmed school names — a partial list only. A full school directory is not present in either PDF and must be sourced from ACARA or the CSPD website."
+  },
+  "cspd_report": {
+    "school_list": [
+      {
+        "name": "Bede Polding College",
+        "suburb": "South Windsor",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.28 VET awards"
+      },
+      {
+        "name": "Caroline Chisholm College",
+        "suburb": "Glenmore Park",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.28-29 VET awards"
+      },
+      {
+        "name": "Catherine McAuley",
+        "suburb": "Westmead",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.28 VET awards"
+      },
+      {
+        "name": "CathWest Innovation College",
+        "suburb": "Emu Plains and Mount Druitt (dual campus)",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.11 & p.29 VET awards"
+      },
+      {
+        "name": "Cerdon College",
+        "suburb": "Merrylands",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.24 HSC First in Course; p.31 HSC VET results"
+      },
+      {
+        "name": "Mary Immaculate Primary School",
+        "suburb": "Quakers Hill",
+        "type": "primary",
+        "source": "csnsw-annual-report-2024.pdf p.98 CBGA capital grants (Parramatta diocese)"
+      },
+      {
+        "name": "Nagle College",
+        "suburb": "Blacktown",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.31 HSC VET results"
+      },
+      {
+        "name": "St Agnes Catholic High School",
+        "suburb": "Rooty Hill",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.26 beginning teachers"
+      },
+      {
+        "name": "St Andrew's Primary School",
+        "suburb": "Marayong",
+        "type": "primary",
+        "source": "csnsw-annual-report-2024.pdf p.98 CBGA capital grants (Parramatta diocese)"
+      },
+      {
+        "name": "St Andrews College",
+        "suburb": "Marayong",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.25 HSC First in Course; p.31 VET results; p.43 IT traineeship"
+      },
+      {
+        "name": "St Columbas College",
+        "suburb": "Springwood",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.31 HSC VET results"
+      },
+      {
+        "name": "St John Paul II College",
+        "suburb": "Schofields",
+        "type": "secondary",
+        "source": "csnsw-annual-report-2024.pdf p.98 CBGA capital grants (Parramatta diocese)"
+      },
+      {
+        "name": "St John XXIII Catholic College",
+        "suburb": "Stanhope Gardens",
+        "type": "secondary",
+        "source": "cspd-annual-report-2023.pdf p.11 & p.29 & p.31 VET awards"
+      },
+      {
+        "name": "St John's Primary School",
+        "suburb": "Riverstone",
+        "type": "primary",
+        "source": "csnsw-annual-report-2024.pdf p.98 CBGA capital grants (Parramatta diocese)"
+      },
+      {
+        "name": "St Margaret Mary's Primary",
+        "suburb": "Merrylands",
+        "type": "primary",
+        "source": "cspd-annual-report-2023.pdf p.43 IT traineeship"
+      },
+      {
+        "name": "St Michael's Primary",
+        "suburb": "Baulkham Hills",
+        "type": "primary",
+        "source": "cspd-annual-report-2023.pdf p.26 beginning teachers"
+      },
+      {
+        "name": "St Patrick's Primary",
+        "suburb": "Guildford",
+        "type": "primary",
+        "source": "cspd-annual-report-2023.pdf p.24 & p.26 HSC story, beginning teacher story"
+      }
+    ],
+    "system_stats": {
+      "total_students": "44,000+",
+      "primary_schools": 58,
+      "secondary_schools": 22,
+      "total_schools": 80,
+      "total_staff": 5803,
+      "teaching_staff": 3760,
+      "support_staff": 1385,
+      "system_staff": 658,
+      "trade_and_inquiry_campuses": 2,
+      "high_support_learning_settings": 3,
+      "virtual_school_of_now": 1,
+      "co_located_early_learning_centres": 6,
+      "before_and_after_school_care_centres": 52,
+      "vet_program_sites": 26,
+      "new_teachers_welcomed_2023": 190,
+      "teacher_scholarship_recipients_inaugural_2024_program": 102,
+      "employee_engagement_score_2023_pct": 69,
+      "employee_survey_response_rate_2023_pct": 53,
+      "source": "cspd-annual-report-2023.pdf p.3 & p.8 & p.38"
+    },
+    "financial_summary_2023": {
+      "operating_revenue_000": {
+        "commonwealth_general_recurrent_grants": 546775,
+        "state_general_recurrent_grants": 144852,
+        "other_commonwealth_and_state_grants": 4723,
+        "parent_fees": 125487,
+        "investment_revenue": 24031,
+        "other_revenue": 11373,
+        "total": 857241
+      },
+      "operating_expenditure_000": {
+        "salaries_and_wages": 628444,
+        "depreciation": 65533,
+        "other_expenses": 183899,
+        "total": 877876
+      },
+      "deficit_from_operations_before_capital_000": -20635,
+      "capital_000": {
+        "commonwealth_and_state_capital_grants": 12213,
+        "diocesan_school_building_fund_net_revenue": 23059,
+        "interest_subsidy": 917,
+        "total_capital_revenue": 36189,
+        "interest_expense": -23803,
+        "net_capital_revenue": 12386,
+        "capital_expenditure": 85948,
+        "repayments_of_borrowings": 12373,
+        "total_capital_expenditure_and_repayments": 98321,
+        "net_capital_outflows": 85935
+      },
+      "revenue_mix_pct": {
+        "commonwealth_recurrent": "63.8%",
+        "state_recurrent": "16.9%",
+        "parent_fees": "14.6%",
+        "other_sources_income": "4.1%",
+        "other_grants": "0.5%"
+      },
+      "source": "cspd-annual-report-2023.pdf p.44-45"
+    },
+    "strategic_priorities": [
+      {
+        "priority": "Performance-driven culture",
+        "detail": "Derived from 2023 NAPLAN data — emphasis on shifting students from 'Strong' to 'Exceeding' proficiency, particularly in Numeracy",
+        "source": "cspd-annual-report-2023.pdf p.22"
+      },
+      {
+        "priority": "Evidence-based explicit teaching methodologies",
+        "detail": "Identified as a system priority following NAPLAN analysis",
+        "source": "cspd-annual-report-2023.pdf p.22"
+      },
+      {
+        "priority": "Flexible learning environments",
+        "detail": "Identified as a system priority following NAPLAN analysis",
+        "source": "cspd-annual-report-2023.pdf p.22"
+      },
+      {
+        "priority": "Catholic formation — Life in Abundance framework",
+        "detail": "Formation Foundation Document launched in 2023 titled 'Life in Abundance: Human Flourishing in the Way of Jesus', developed by collaboration led by Prof. Br David Hall. Supported by additional release time for Religious Education Coordinators, Faith in Action Team Coordinators for every school community, and piloting of Directors of Catholic Identity and Mission in 13 school communities.",
+        "source": "cspd-annual-report-2023.pdf p.32"
+      },
+      {
+        "priority": "Student and staff wellbeing",
+        "detail": "Wellbeing Directorate in second full year (2023): 140+ specialist teachers, social workers and psychologists. Staff Wellbeing Policy and Framework launched May 2023. Student Wellbeing Framework released July 2023 — five themes: Leadership, Inclusion, Partnerships with Parish and Family, Support, Student Voice.",
+        "source": "cspd-annual-report-2023.pdf p.33-35"
+      },
+      {
+        "priority": "Infrastructure — 10-Year Capital Framework",
+        "detail": "CSPD Infrastructure 10-Year Capital Framework developed 2023. Focus areas: equity (access to excellent facilities), growth (rising enrolment), Universal Preschool preparation, support services. Business cases and master plans for 28 schools commenced late 2023.",
+        "source": "cspd-annual-report-2023.pdf p.36"
+      },
+      {
+        "priority": "New organisation-wide strategy (for 2024)",
+        "detail": "Board letter states: 'We move into 2024 with an even greater sense of common direction and purpose that will be crystallised in the development of a new organisation-wide strategy.' No further detail available in the 2023 report.",
+        "source": "cspd-annual-report-2023.pdf p.4"
+      },
+      {
+        "priority": "Early Careers Engagement — Teacher Scholarship Program",
+        "detail": "2024 CSPD Teacher Scholarship Program announced late 2023 targeting current Year 12 students pursuing teaching degrees. 102 inaugural recipients. $5,000/year tuition support plus laptop. Part of a broader Early Careers Engagement strategy.",
+        "source": "cspd-annual-report-2023.pdf p.26"
+      },
+      {
+        "priority": "New governance model implementation",
+        "detail": "CSPD became incorporated company limited by guarantee from 1 January 2023. New name (from CEDP), new Board of Directors replacing Diocesan Schools Council, new Executive Director Jack de Groot. Three Board committees: Audit and Risk; Mission, Learning and People; Infrastructure and Property.",
+        "source": "cspd-annual-report-2023.pdf p.3 & p.12 & p.18"
+      },
+      {
+        "priority": "Reconciliation Action Plan",
+        "detail": "Innovate RAP in development. Cultural and Ceremonial Leave Policy introduced for Aboriginal and Torres Strait Islander employees. Two dedicated RAP roles established in People & Culture Directorate.",
+        "source": "cspd-annual-report-2023.pdf p.41"
+      }
+    ],
+    "uplift_details": "No reference to an 'Uplift Framework' by that name found in the CSPD 2023 Annual Report. School improvement mechanisms described include: annual school improvement plans tied to the Formation Foundation Document (p.32); NAPLAN proficiency data driving teaching methodology priorities (p.22); Tell Them From Me (TTFM) surveys as primary customer experience and school improvement indicator — sixth consecutive year in 2023 (p.37); Employee Engagement Survey (p.38). The Wellbeing Directorate (p.33-35) and the 10-Year Capital Framework (p.36) are the main system-level uplift mechanisms described. A discrete 'Uplift Framework' may be a 2024+ initiative not yet reported in this document.",
+    "new_schools": [
+      {
+        "detail": "St John Paul II College, Schofields listed in CSNSW 2024 CBGA capital grants (Parramatta diocese) — $16.5m total project, $11.6m grant. Schofields is a high-growth area in north-west Sydney, suggesting new or significantly expanded school.",
+        "source": "csnsw-annual-report-2024.pdf p.98"
+      },
+      {
+        "detail": "CSPD Infrastructure 10-Year Capital Framework references 'Growth: Accommodating rising enrolment and catering to future needs' and 'Universal Preschool: Preparing for the implementation' as key investment areas. Business cases for 28 schools commenced late 2023. No specific new school openings or closures named in the 2023 annual report.",
+        "source": "cspd-annual-report-2023.pdf p.36"
+      }
+    ],
+    "leadership": [
+      {
+        "name": "Elizabeth Crouch AM",
+        "role": "Chair, Catholic Schools Parramatta Diocese Ltd Board",
+        "source": "cspd-annual-report-2023.pdf p.4 & p.13"
+      },
+      {
+        "name": "Jack de Groot",
+        "role": "Executive Director of Schools, CSPD (from 30 January 2023)",
+        "source": "cspd-annual-report-2023.pdf p.4 & p.20"
+      },
+      {
+        "name": "Bishop Vincent Long Van Nguyen OFM Conv DD",
+        "role": "Bishop of Parramatta — pastoral leader of CSPD schools",
+        "source": "cspd-annual-report-2023.pdf p.3 & p.4"
+      },
+      {
+        "name": "Michael Howard",
+        "role": "Board Director — General Manager, IDE Australia",
+        "source": "cspd-annual-report-2023.pdf p.13"
+      },
+      {
+        "name": "Scott Jenkins",
+        "role": "Board Director (appointed September 2023) — CFO, Australian Catholic University",
+        "source": "cspd-annual-report-2023.pdf p.15"
+      },
+      {
+        "name": "Greg Jones",
+        "role": "Board Director — educator, founding Principal Peninsula Community of Schools",
+        "source": "cspd-annual-report-2023.pdf p.15"
+      },
+      {
+        "name": "Anthony Karam",
+        "role": "Board Director — Executive Chairman, TMA Group of Companies",
+        "source": "cspd-annual-report-2023.pdf p.16"
+      },
+      {
+        "name": "Emeritus Professor Marea Nicholson AM",
+        "role": "Board Director — Emeritus Professor ACU, past Associate Vice-Chancellor NSW/ACT",
+        "source": "cspd-annual-report-2023.pdf p.16"
+      },
+      {
+        "name": "Nicole Patterson",
+        "role": "Board Director — Head of Finance, Westpac Group charitable foundations",
+        "source": "cspd-annual-report-2023.pdf p.17"
+      },
+      {
+        "name": "Maria Pearson",
+        "role": "Board Director — retired educator, former Principal Mount St Benedict College",
+        "source": "cspd-annual-report-2023.pdf p.17"
+      },
+      {
+        "name": "Very Rev Robert Riedling EV",
+        "role": "Board Director — Dean and Administrator, St Patrick's Cathedral Parramatta",
+        "source": "cspd-annual-report-2023.pdf p.18"
+      },
+      {
+        "name": "Geoff Officer",
+        "role": "Board member (Bishop's Nominated Observer) — Chief of Operations & Finance, Diocese of Parramatta",
+        "source": "cspd-annual-report-2023.pdf p.18"
+      },
+      {
+        "name": "John Vassallo",
+        "role": "Past Board Member — retired during 2023",
+        "source": "cspd-annual-report-2023.pdf p.18"
+      },
+      {
+        "name": "Sue Walsh",
+        "role": "Past Board Member — retired during 2023",
+        "source": "cspd-annual-report-2023.pdf p.18"
+      },
+      {
+        "name": "The Hon. John Watkins AM",
+        "role": "Past Board Member — retired during 2023",
+        "source": "cspd-annual-report-2023.pdf p.18"
+      },
+      {
+        "name": "(ELT) Deputy Executive Director of Schools and Director Learning",
+        "role": "Name not disclosed in report. Was Director Strategic Delivery to Feb 2023, then Director Learning from March 2023",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Director Finance and Infrastructure",
+        "role": "Name not disclosed in report",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Director Mission",
+        "role": "Name not disclosed. Director to 5 September 2023, then Acting Director Mission",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Director Wellbeing",
+        "role": "Name not disclosed in report",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Chief Information Officer",
+        "role": "Name not disclosed. Was Director Data Intelligence to 16 October 2023, then CIO from 20 November 2023",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Director People and Culture",
+        "role": "Name not disclosed. New position from 12 March 2023",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Director Communications and Engagement",
+        "role": "Name not disclosed. New position from 16 October 2023",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      },
+      {
+        "name": "(ELT) Director Legal and Governance",
+        "role": "Name not disclosed. New position to commence in 2024",
+        "source": "cspd-annual-report-2023.pdf p.20"
+      }
+    ],
+    "challenges": [
+      {
+        "challenge": "NAPLAN proficiency gap — numeracy ceiling",
+        "detail": "The 2023 NAPLAN dataset shed light on the imperative for CSPD to increase the transition of students from 'Strong' to 'Exceeding', particularly in the area of Numeracy.",
+        "source": "cspd-annual-report-2023.pdf p.22"
+      },
+      {
+        "challenge": "Major organisational transformation in a single year",
+        "detail": "2023 was 'a year of significant change for the organisation, with a new governance model and Board, a new name and branding, and a new Executive Director.' Organisation-wide strategy not yet developed — to be crystallised in 2024.",
+        "source": "cspd-annual-report-2023.pdf p.4"
+      },
+      {
+        "challenge": "Staff engagement and communication gaps",
+        "detail": "Employee engagement score stable at 69%. Areas of focus: increasing presence and visibility of System Leaders, enhancing communication, work-life balance, wellbeing for staff.",
+        "source": "cspd-annual-report-2023.pdf p.38"
+      },
+      {
+        "challenge": "Gender equity gap in senior leadership",
+        "detail": "Room for improvement in the upper quartile of the workforce (primarily leadership roles). Key management personnel: 40% female, 60% male. Appointments into management roles trending positive (70% women in reporting period).",
+        "source": "cspd-annual-report-2023.pdf p.39"
+      },
+      {
+        "challenge": "New sexual harassment compliance obligations",
+        "detail": "New positive duty to eliminate sexual harassment in 2023. System Leaders required to complete risk assessments, attend information sessions, and deliver training to teams by end of year.",
+        "source": "cspd-annual-report-2023.pdf p.40"
+      },
+      {
+        "challenge": "Operating deficit",
+        "detail": "Deficit from operations before capital: -$20.6m in 2023. Total operating revenue $857.2m vs total operating expenditure $877.9m. Capital outflows $85.9m against net capital revenue $12.4m.",
+        "source": "cspd-annual-report-2023.pdf p.44-45"
+      },
+      {
+        "challenge": "Infrastructure pressure from growing enrolments in Western Sydney",
+        "detail": "10-Year Capital Framework addresses rising enrolment. Business cases for 28 schools commenced late 2023. Growing demand for quality Catholic education in Western Sydney and Blue Mountains explicitly acknowledged.",
+        "source": "cspd-annual-report-2023.pdf p.36"
+      },
+      {
+        "challenge": "Teacher supply pipeline",
+        "detail": "Teacher Scholarship Program launched late 2023 targeting Year 12 students — part of a new 'Early Careers Engagement strategy'. Indicates recognition of future teacher supply risk.",
+        "source": "cspd-annual-report-2023.pdf p.26"
+      }
+    ],
+    "raw_quotes": [
+      {
+        "page": 4,
+        "quote": "Education is an unrelenting commitment to every child and we thank everyone at CSPD for their ongoing ministry of leadership and outreach.",
+        "speaker": "Elizabeth Crouch AM and Jack de Groot (joint welcome letter)",
+        "topic": "mission / organisational ethos"
+      },
+      {
+        "page": 4,
+        "quote": "We move into 2024 with an even greater sense of common direction and purpose that will be crystallised in the development of a new organisation-wide strategy. Our focus will be on giving our students what they need to flourish, about their growth and development and that of each member of our staff, and striving for excellence in all things.",
+        "speaker": "Elizabeth Crouch AM and Jack de Groot (joint welcome letter)",
+        "topic": "2024 strategic direction"
+      },
+      {
+        "page": 22,
+        "quote": "The 2023 NAPLAN dataset has shed light on the imperative for CSPD to increase the transition of students from 'Strong' to 'Exceeding', particularly in the area of Numeracy. These insights from the 2023 NAPLAN data have significantly influenced and contributed to CSPD's priorities, encompassing the cultivation of a performance-driven culture, evidence-based explicit teaching methodologies, and the implementation of flexible learning environments.",
+        "speaker": "Annual Report (system statement)",
+        "topic": "NAPLAN gap — numeracy, teaching methodology, learning environments"
+      },
+      {
+        "page": 25,
+        "quote": "All our schools place a very high value on academic achievement. Young people in Greater Western Sydney deserve the very best opportunities in life. Great HSC results are just one way of making sure that we give our students every option for the future.",
+        "speaker": "Jack de Groot, Executive Director of Schools",
+        "topic": "equity and aspiration — Western Sydney"
+      },
+      {
+        "page": 36,
+        "quote": "Stakeholder engagement remains a cornerstone of our planning process. We deeply value the support of our school leaders and look forward to working together as we fulfil the growing demand for quality Catholic education in Western Sydney and the Blue Mountains.",
+        "speaker": "Annual Report (infrastructure section)",
+        "topic": "growing enrolment demand"
+      },
+      {
+        "page": 38,
+        "quote": "In line with what our staff have told us, our areas of focus include co-designing an organisational strategy that incorporates the voices of staff and students, increasing the presence and visibility of our System Leaders, enhancing our communication, and launching initiatives that foster greater work-life balance and improved wellbeing for our staff.",
+        "speaker": "Annual Report (Employee Engagement Survey findings)",
+        "topic": "staff challenges — visibility, communication, wellbeing"
+      },
+      {
+        "page": 33,
+        "quote": "The Policy acknowledges that working in the mission of education, on behalf of the Catholic Church, is rewarding yet complex.",
+        "speaker": "Annual Report (Staff Wellbeing Policy description)",
+        "topic": "staff wellbeing — complexity of mission work"
+      }
+    ]
+  },
+  "csnsw_report": {
+    "sector_stats": {
+      "total_students_nsw_catholic": 271407,
+      "diocesan_students_total": 230915,
+      "diocesan_primary_students": 129200,
+      "diocesan_secondary_students": 101715,
+      "ri_mpjp_students_total": 40492,
+      "female_students": 136001,
+      "male_students": 135406,
+      "total_schools_nsw_catholic": 593,
+      "diocesan_schools_total": 547,
+      "diocesan_primary_schools": 417,
+      "diocesan_secondary_schools": 107,
+      "diocesan_combined_schools": 18,
+      "diocesan_special_schools": 5,
+      "ri_mpjp_schools_total": 46,
+      "co_educational_schools": 541,
+      "boarding_schools": 14,
+      "total_staff_nsw_catholic": 33627,
+      "teaching_staff": 23073,
+      "non_teaching_staff": 10554,
+      "staff_female_pct": "79%",
+      "staff_full_time_pct": "56%",
+      "student_catholic_pct": "63%",
+      "student_lbote_pct": "36%",
+      "average_school_size_all": 458,
+      "average_primary_school_size": 294,
+      "average_secondary_school_size": 886,
+      "enrolment_trend_nsw_catholic": {
+        "2019": 255200,
+        "2020": 256700,
+        "2021": 259300,
+        "2022": 262600,
+        "2023": 266900,
+        "2024": 271400,
+        "yoy_growth_2024_pct": "1.7%"
+      },
+      "source": "csnsw-annual-report-2024.pdf p.13-16"
+    },
+    "parramatta_stats": {
+      "students": 45646,
+      "schools": 83,
+      "note": "August 2024 CSNSW census data. CSPD 2023 report states 80 schools — difference may reflect additions between 2023 and August 2024.",
+      "source": "csnsw-annual-report-2024.pdf p.14"
+    },
+    "funding": {
+      "commonwealth_recurrent_grants_diocesan_m": 3004.7,
+      "nsw_government_recurrent_grants_diocesan_m": 777.1,
+      "capital_projects_2023_application_round_m": 113.9,
+      "total_recurrent_funding_distributed_approx_m": 3000,
+      "note_on_3bn": "CSNSW is 'responsible for distributing recurrent funding in excess of $3 billion each year for diocesan school systems'",
+      "targeted_programs_2024": {
+        "special_needs_support_m": 1.2,
+        "vet_for_secondary_students_m": 6.2,
+        "special_fund_nsw_m": 0.1,
+        "national_school_wellbeing_m": 2.4,
+        "road_safety_education_m": 0.9,
+        "choice_and_affordability_fund_m": 22.9,
+        "consent_and_respectful_relationship_education_m": 1.2,
+        "australian_early_development_index_initiative_m": 0.04
+      },
+      "non_government_school_taxpayer_savings_research": {
+        "current_savings_pa_bn": 4.5,
+        "full_entitlement_scenario_savings_pa_bn": 6.31,
+        "catholic_school_share_bn": 2.96,
+        "source_publication": "Public Savings from Non-Public Schools, KBRI, 2024"
+      },
+      "new_preschool_programme": {
+        "total_nsw_government_funding_m": 60,
+        "duration_years": 3,
+        "target_sites": 50,
+        "new_build_grant_max_m": 4.0,
+        "upgrade_grant_max_k": 350
+      },
+      "funding_distribution_model": "New FDM 2024-2029 approved by Bishop Members July 2023, first implemented January 2024.",
+      "source": "csnsw-annual-report-2024.pdf p.8 & p.15 & p.29 & p.52 & p.54"
+    },
+    "challenges": [
+      {
+        "challenge": "National School Reform Agreement negotiations unresolved",
+        "detail": "Better and Fairer Schools Agreement (2025-2035) not finalised at end of 2024. NSW Government had not concluded negotiations with Commonwealth. NSRA extended a further year for NSW. Negotiations continue in 2025.",
+        "source": "csnsw-annual-report-2024.pdf p.57"
+      },
+      {
+        "challenge": "Threat to non-government school funding model",
+        "detail": "CSNSW launched 'Keep School Funding Fair' campaign December 2024. Research shows lack of public understanding leaves funding model vulnerable to ideological attack ahead of 2025 Federal Election.",
+        "source": "csnsw-annual-report-2024.pdf p.27"
+      },
+      {
+        "challenge": "Teacher workforce sustainability",
+        "detail": "Inter-Diocesan Teacher Workforce Working Group met five times in 2024 coordinating response to National Teacher Workforce Action Plan. Recruitment and retention named as central theme at Sydney Morning Herald Schools Summit.",
+        "source": "csnsw-annual-report-2024.pdf p.30 & p.73"
+      },
+      {
+        "challenge": "Increasing compliance and regulatory burden",
+        "detail": "Governments continue trend of increased oversight. CSNSW as single Catholic registration authority since July 2023 — still maturing: 'The challenge moving forward will be the maturation of the CSNSW registration system over the next few years.'",
+        "source": "csnsw-annual-report-2024.pdf p.9 & p.55"
+      },
+      {
+        "challenge": "Violent extremism and countering radicalisation",
+        "detail": "ASIO escalated national terrorism threat level from 'possible' to 'probable' in August 2024. Substantial increase in reported incidents across education sector. CSNSW secured $2.8m NSW Government CVE funding through end of 2028.",
+        "source": "csnsw-annual-report-2024.pdf p.33"
+      },
+      {
+        "challenge": "Child protection complexity — rising student welfare demands",
+        "detail": "Notable increase in support requests for student violence, self-harm, and problematic sexualised behaviour. Network also managing historical abuse claims.",
+        "source": "csnsw-annual-report-2024.pdf p.63"
+      },
+      {
+        "challenge": "Online assessment equity — cost-recovery transition",
+        "detail": "NSW Department of Education advised that from July 2025 access to online assessments (including Year 1 Phonics Screening Check) will transition to cost-recovery model, potentially affecting non-government school voluntary participation. CSNSW advocating for equitable access.",
+        "source": "csnsw-annual-report-2024.pdf p.60"
+      },
+      {
+        "challenge": "NSW Curriculum Reform implementation burden",
+        "detail": "Comprehensive curriculum reform 2020-2027. First reform in three decades. Schools implementing revised syllabuses simultaneously across K-6, 7-10, 11-12. Demand for online assessments expected to increase during reform period.",
+        "source": "csnsw-annual-report-2024.pdf p.59 & p.72"
+      },
+      {
+        "challenge": "CSNSW operating deficit 2024",
+        "detail": "CSNSW consolidated deficit 2024: -$1,349,553 (vs surplus of $2,789,738 in 2023). Revenue fell from $42.1m to $38.7m (consolidated). 77% of revenue from government programs (84% in 2023) — high economic dependency.",
+        "source": "csnsw-annual-report-2024.pdf p.79 & p.86"
+      },
+      {
+        "challenge": "School counselling — rising student mental health burden",
+        "detail": "Key areas of concern in 2024: self-harm, suicidality, anxiety, depression, family and domestic violence issues.",
+        "source": "csnsw-annual-report-2024.pdf p.64"
+      }
+    ],
+    "parramatta_references": [
+      {
+        "reference": "Parramatta diocese: 45,646 students and 83 schools (August 2024) — second largest diocese in NSW after Sydney (73,853 students, 147 schools)",
+        "source": "csnsw-annual-report-2024.pdf p.14"
+      },
+      {
+        "reference": "NSWCPS MacKillop group (primary sport): Parramatta contributes 676 students",
+        "source": "csnsw-annual-report-2024.pdf p.41"
+      },
+      {
+        "reference": "NSWCCC (secondary sport): Parramatta contributes 787 students",
+        "source": "csnsw-annual-report-2024.pdf p.41"
+      },
+      {
+        "reference": "John Gildea, CSPD — member of Inter-Diocesan Registration and Accreditation Committee (IDRAC)",
+        "source": "csnsw-annual-report-2024.pdf p.20"
+      },
+      {
+        "reference": "Francis Mackay, CSPD — IDRAC proxy; member Inter-Diocesan Educational Accountability Group",
+        "source": "csnsw-annual-report-2024.pdf p.21 & p.73"
+      },
+      {
+        "reference": "CBGA capital grants 2024 — Parramatta diocese projects: St Andrew's Primary School Marayong ($4.2m total / $2.9m grant); Mary Immaculate Primary School Quakers Hill ($10.8m / $7.6m); St John's Primary School Riverstone ($3.4m / $2.4m); St John Paul II College Schofields ($16.5m / $11.6m)",
+        "source": "csnsw-annual-report-2024.pdf p.98"
+      },
+      {
+        "reference": "Bishop Vincent Long Van Nguyen OFM Conv DD — listed as Bishop of Parramatta in CSNSW Bishop Members",
+        "source": "csnsw-annual-report-2024.pdf p.17"
+      },
+      {
+        "reference": "Multiple CSPD staff active in CSNSW advisory groups: Georgina Vega and John Gildea (Transition/Pathways); John Wills (VET Advisory); Kim Grinham (VET Reference); Lisa Nash and Stefan Boffa (K-6 Curriculum Reform); Paul Develin and Attila Lendvai (Online Curriculum Assessment); Sonya Roy (Records Retention); Amruta Dhage, Gerard Giesekam and Shrey Chopra (Finance Working Group); Daniel Lynch and Megan Bisset (Teacher Workforce); Brenda Dora-Higgins and Francis Mackay (Educational Accountability); Julie Waddell (Aboriginal Education); Frank Chiment and Kelly Bauer (Catholic Secondary Schools Reference); Christine Howe (Education Policy, until March 2024)",
+        "source": "csnsw-annual-report-2024.pdf Appendix A (various pages 57-77)"
+      }
+    ]
+  }
+}

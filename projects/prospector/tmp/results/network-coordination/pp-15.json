@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "network-coordination-best-practice-transfer-siloed-knowledge-dup",
+  "pain_point_label": "Siloed Campus-Level Innovations & Best Practices",
+  "matches": [
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Campus-level innovations exist as unstructured documents, emails, meeting notes, and program reports. Summarization can condense these into digestible best-practice summaries that HQ and peer campuses can quickly scan. This directly addresses the 'no mechanism to document wins' problem by making existing content usable network-wide.",
+      "opportunity_sketch": "A tool that ingests campus reports and communications, then surfaces concise summaries of novel initiatives — flagging what's new, what worked, and what's transferable — to a network-wide digest for HQ and campus leads.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core of this pain point is that knowledge relationships — which campus developed what, under what conditions, with what outcomes — are never captured. Knowledge extraction can construct a structured map of innovations, linking programs to campuses, staff, outcomes, and contexts. This enables HQ to see the full landscape of what exists across the network.",
+      "opportunity_sketch": "An AI pipeline that processes campus documentation to build a knowledge graph of initiatives: nodes for programs/practices, edges for outcomes, staff, campuses, and transferability conditions — making hidden excellence discoverable.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-semantic",
+      "capability_label": "Semantic Search",
+      "match_rationale": "Once campus innovations are documented, the challenge becomes findability — a campus leader seeking 'student attendance support programs' won't know Campus A already solved this. Semantic search over a shared innovation repository lets staff find relevant practices by meaning, not just keywords, breaking down silos through discovery.",
+      "opportunity_sketch": "A network-wide semantic search layer over campus practice documents, letting any campus leader query 'how have other campuses reduced student dropout?' and surface relevant documented practices from across the network.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "A RAG system grounded in the network's accumulated best-practice documentation directly solves the 'HQ unaware of hidden excellence' problem. Staff can ask questions like 'what cost-control approaches have worked across our campuses?' and receive synthesized, citation-backed answers drawn from actual campus records — not generic advice.",
+      "opportunity_sketch": "An internal knowledge assistant for the operator network that lets HQ staff and campus leads ask questions about what's worked elsewhere, receiving grounded answers with links to the source campus documentation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The failure mode here is that knowledge capture requires deliberate human action that never gets prioritized. A task automation agent can proactively trigger documentation workflows — after a program completes, after a positive outcome is logged, or on a schedule — removing the reliance on staff remembering to share. This addresses the 'no formal mechanism' gap directly.",
+      "opportunity_sketch": "An agent that monitors campus data signals (enrollment changes, cost variances, attendance spikes) and automatically initiates a structured documentation workflow prompting campus leads to capture and submit what drove the outcome.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "An HQ team trying to identify what's working across 10+ campuses faces a multi-source synthesis problem identical to what research agents solve. The agent can autonomously gather campus reports, outcome data, and staff communications, then synthesize a cross-network intelligence report — substituting for the institutional knowledge that currently exists only in people's heads.",
+      "opportunity_sketch": "A periodic research agent that sweeps campus data sources and produces a quarterly 'Network Intelligence Report' for HQ: what innovations emerged, where outcomes improved, and which practices are candidate for network-wide rollout.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Even when knowledge exists informally, it is rarely documented in a transferable format. AI text generation can convert rough notes, interview transcripts, or outcome data into polished best-practice case studies and playbooks — drastically lowering the documentation burden that prevents sharing. This directly tackles the 'innovations die when staff leave' failure mode.",
+      "opportunity_sketch": "A tool where a campus lead submits a short voice note or bullet-point summary of what worked, and AI generates a structured, shareable best-practice document ready for the network library.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

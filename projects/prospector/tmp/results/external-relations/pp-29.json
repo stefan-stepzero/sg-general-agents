@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-donor-philanthropic-no-foundation-grants-dup",
+  "pain_point_label": "No Systematic Grant Research or Foundation Development",
+  "matches": [
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The core pain is absence of a grant research pipeline — no one is systematically scanning Philippine foundations, international NGOs, USAID, ADB, or World Bank education programs. A research agent can autonomously crawl donor websites, foundation directories, and bilateral program pages, then synthesize findings into a prioritized grant opportunity list. This directly replaces the missing human capacity for proactive donor discovery.",
+      "opportunity_sketch": "An autonomous agent that weekly scans 30-50 donor/foundation sources and outputs a ranked grant calendar with deadlines, eligibility fit scores, and funding amounts — delivered to the development officer without manual research.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The pain explicitly names inability to write competitive grant proposals as a capacity gap consuming development officer time. LLMs can draft narrative sections of grant proposals — organizational background, program descriptions, theory of change, budget narratives — grounded in institution-specific context files. This directly addresses the proposal-writing bottleneck without needing a dedicated grant writer.",
+      "opportunity_sketch": "A grant proposal drafting tool that, given a funder brief and school context document, generates a first-draft narrative (problem statement, proposed activities, expected outcomes) tailored to the specific foundation's priorities and eligibility criteria.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Grant applications require citing institutional data — enrollment figures, program outcomes, financial metrics, past projects — scattered across internal documents. RAG enables a development officer to query 'What evidence do we have of student learning outcomes in STEM?' and get grounded, citation-backed answers drawn from school reports, accreditation documents, and program evaluations. This accelerates proposal evidence-gathering significantly.",
+      "opportunity_sketch": "An internal knowledge base Q&A tool over the institution's historical reports, accreditation filings, and program data, allowing development staff to rapidly retrieve evidence and quotes for grant application narrative sections.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Building and maintaining a grant pipeline requires repetitive multi-step tasks: checking funder deadlines, updating opportunity status, flagging new eligibility windows, generating reminders. A task automation agent can manage the pipeline workflow — ingesting new grants found by the research agent, routing to approval, tracking submission status, and following up on outcomes — replacing manual spreadsheet management.",
+      "opportunity_sketch": "A grant pipeline management agent that tracks each opportunity through stages (identified → qualified → drafted → submitted → outcome), sends deadline alerts, and updates a shared dashboard — functioning as an AI-powered development office CRM for grants.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

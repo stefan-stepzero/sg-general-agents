@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "data-mis-it-operations-helpdesk-remote-support-gaps-dup",
+  "pain_point_label": "Remote Support & Multi-Campus Coverage Gaps",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Campus staff currently escalate to central IT for issues they cannot resolve themselves, triggering costly technician travel. A conversational helpdesk agent handles Tier-1 troubleshooting dialogue (printer resets, network reconnections, login issues) without human IT involvement, available 24/7 across all campuses. This directly reduces the volume of escalations that require physical dispatch.",
+      "opportunity_sketch": "An AI helpdesk assistant deployed via web or messaging platform that campus principals and staff interact with to diagnose and resolve common IT issues step-by-step, escalating to a human ticket only when the problem genuinely requires on-site intervention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Central IT knowledge (fix guides, device configs, network procedures) exists in scattered documents but is inaccessible to campus staff who lack IT skills. A RAG system lets any staff member ask natural language questions and receive grounded, step-by-step answers drawn from IT documentation, reducing the need to call central helpdesk for known issues. This is the foundational layer that makes self-service IT support viable across skill-level-varied campuses.",
+      "opportunity_sketch": "An internal IT knowledge assistant that ingests existing runbooks, vendor manuals, and past ticket resolutions, then answers campus staff queries with cited, actionable instructions — reducing first-contact resolution time and cutting escalation rates.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Without remote access, IT incidents at campuses go undetected until staff manually report them, and there is no automated monitoring of backup systems or device health. A task automation agent can continuously poll available telemetry endpoints, auto-generate and route tickets on detection of anomalies, send pre-visit context bundles to technicians, and alert campus principals when issues are escalated — replacing the manual, phone-based coordination that currently slows response. Backup status checks and standardization alerts can also be automated across all campuses.",
+      "opportunity_sketch": "An AI workflow agent that monitors campus system health endpoints (where accessible), auto-creates prioritized helpdesk tickets with pre-filled diagnostics context, and triggers escalation workflows with travel scheduling prompts when remote resolution fails.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Helpdesk tickets arriving from 10-15 campuses vary widely in urgency and type, but are currently triaged manually or not at all, causing central IT to under-prioritize issues that compound into major failures. AI text classification assigns urgency, issue category, and campus risk level to each incoming ticket, ensuring that critical hardware failures at a remote campus are not queued behind routine requests at HQ. This also surfaces patterns (e.g., repeated printer failures at Campus 7) that warrant a proactive maintenance visit.",
+      "opportunity_sketch": "An automatic ticket triage layer that classifies inbound helpdesk requests by issue type, severity, and campus, routing urgent items immediately to the on-call technician with a travel-required flag versus items resolvable via remote guidance.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Campus principals using personal devices for school work creates shadow IT that the operator cannot monitor, inventory, or secure. Anomaly detection applied to network traffic logs or device registration data can flag unknown devices accessing school systems, unusual data transfer patterns, or unauthorized application usage — making shadow IT visible without requiring full endpoint management infrastructure. This converts an invisible security risk into a manageable monitoring alert.",
+      "opportunity_sketch": "A network behavior monitoring layer that ingests firewall or DNS logs from each campus and flags anomalous device activity indicative of shadow IT or security incidents, surfacing a prioritized risk dashboard for central IT to act on remotely or during scheduled visits.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "When on-site visits are unavoidable, the operator has no systematic way to batch-schedule technician travel across 10-15 campuses, leading to reactive single-campus trips that are time and cost inefficient. AI resource allocation optimizes technician dispatch schedules by batching co-located campus visits, matching technician skill sets to queued issue types, and balancing workload — reducing total travel days while improving coverage. This directly addresses the 4-8 hour travel cost embedded in every escalation.",
+      "opportunity_sketch": "A scheduling optimization tool that takes the current helpdesk queue across all campuses and generates an optimal multi-day technician dispatch plan — minimizing travel time while ensuring the highest-priority issues at each campus are addressed per visit.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

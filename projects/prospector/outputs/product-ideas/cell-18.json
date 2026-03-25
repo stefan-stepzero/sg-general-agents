@@ -1,0 +1,44 @@
+{
+  "cell": {
+    "cellNum": 18,
+    "subCategory": "Acquisition & Demand",
+    "domain": "Growth & Market",
+    "heat": 28,
+    "oppScore": 20
+  },
+  "ideas": [
+    {
+      "name": "Inquiry Intent Classifier",
+      "one_liner": "Classifies parent/student inquiries from SMS, WhatsApp, and email by enrollment intent, program preference, and dropout risk to route warm leads to enrollment counsellors.",
+      "problem": "Rising Academies and iPeople operate in price-sensitive markets (West Africa, Philippines) where inquiry volume is high but conversion tracking is manual. Distinguishing genuine enrollment interest from casual inquiries, and identifying at-risk applicants during the funnel, requires reading unstructured messages. Current CRM systems lack education-specific signal parsing.",
+      "ai_technique": "Text classification on messaging data with education intent vocabulary",
+      "how_it_works": "Ingests incoming SMS/WhatsApp/email inquiries to admissions. Classifies by intent (admission inquiry, financial aid question, program info, complaint), program interest (STEM, commerce, vocational), family income signal (payment plan question, scholarship eligibility), and risk (deadline approaching, competitor mentioned, payment concern). Assigns confidence score and routes to appropriate counsellor queue.",
+      "target_companies": ["rising", "ipeople"],
+      "buyer_persona": "Admissions Manager / Enrollment Counsellor",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Enrollment Funnel Forecaster",
+      "one_liner": "Forecasts semester cohort enrollment based on inquiry patterns, application pipeline, and prior-year academic calendar seasonality.",
+      "problem": "iPeople and PHINMA operate on predictable academic calendars (enrollment surges before semester, drops after exam periods) but lack tools to forecast cohort sizes and conversion rates by program. Budget planning, instructor hiring, and facility allocation depend on accurate enrollment forecasting, yet CRM systems only report backward-looking metrics.",
+      "ai_technique": "Time series forecasting with academic calendar features",
+      "how_it_works": "Ingests historical enrollment data, inquiry-to-enrollment conversion timelines, and academic calendar events (application deadlines, exam schedules, scholarship release dates). Builds per-program cohort forecasts for next 2-3 semesters. Flags downside scenarios (low inquiry, high dropout risk) and recommends recruitment intensity adjustments.",
+      "target_companies": ["ipeople", "phinma"],
+      "buyer_persona": "Admissions Director / Academic Program Head",
+      "tier": "standalone",
+      "confidence": "medium"
+    },
+    {
+      "name": "Student Propensity Scorer",
+      "one_liner": "Predicts which applicants and households are most likely to enroll using structured data—prior education, family income proxies, program fit—to prioritise outreach.",
+      "problem": "PHINMA (affordable HE, high applicant volume) and Rising Academies (household-targeting in West Africa) currently contact all applicants equally despite high variation in conversion likelihood. Targeting high-propensity households with scholarship and payment plan offers would improve yield and reduce acquisition cost, but requires education-specific enrollment signals not available in generic lead-scoring tools.",
+      "ai_technique": "Supervised classification on enrollment and demographic data",
+      "how_it_works": "Builds propensity model from historical applicant data: family income proxy (location, parent education, prior school type), academic readiness (prior exam scores, subject choices), fit signal (program choice match to prior strengths), and demographic seasonality (cohort age, geographic access to campus). Scores new applicants 0-100. Feeds into targeted outreach campaigns.",
+      "target_companies": ["phinma", "rising"],
+      "buyer_persona": "Enrollment Analyst / Marketing Manager",
+      "tier": "feature",
+      "confidence": "high"
+    }
+  ]
+}

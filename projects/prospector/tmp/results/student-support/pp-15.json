@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-conduct-discipline-inconsistent-code-enforcement-dup",
+  "pain_point_label": "Inconsistent Code of Conduct Enforcement Across Campuses",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-campus operators lack a standardized enforcement protocol — AI text generation can produce a canonical severity matrix, decision trees, and written enforcement guidelines tailored to specific violation types. Generating consistent, authoritative documentation removes the ambiguity that allows principal discretion to drift into arbitrary enforcement. This directly addresses the absence of a standardized protocol as the root cause.",
+      "opportunity_sketch": "An AI-assisted policy authoring tool generates a unified Code of Conduct Enforcement Handbook: violation severity tiers, prescribed responses by tier, and a standard appeal process template — deployed as a living document updated centrally and distributed to all campus principals.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incident reports submitted by campus staff vary in language and framing, leading to inconsistent severity interpretations. A text classifier trained on the operator's own incident corpus can assign a standardized severity tier (minor misconduct / serious misconduct / harassment / suspension-worthy) to each incoming report, flagging discrepancies between the AI's classification and the campus principal's decision. This directly targets the 'absence of a severity matrix' problem.",
+      "opportunity_sketch": "A severity triage module that reads incident narrative text and outputs a recommended enforcement tier with a confidence score — integrated into the student management system so that principal decisions outside the recommended tier are automatically flagged for review by the central student welfare team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Enforcement inconsistency across campuses produces statistically anomalous patterns in disciplinary outcomes — one campus issuing suspensions at 3x the network rate for the same violation category is a detectable outlier. Anomaly detection over structured incident logs can surface these campus-level deviations automatically, giving the central leadership team an evidence-based trigger to intervene rather than relying on complaints.",
+      "opportunity_sketch": "A campus equity monitoring dashboard that ingests disciplinary outcome data across all sites and flags campuses whose enforcement distributions deviate significantly from the network median — ranked by violation type, student demographics, and severity tier — delivered to the student welfare director monthly.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full enforcement workflow — incident logged, severity assessed, response selected, appeal rights communicated, record updated — is a multi-step process currently handled inconsistently by individual principals. A task automation agent can execute this workflow end-to-end: classify the incident, propose an enforcement action per the severity matrix, route for principal confirmation, generate the required communications to student and family, and log the outcome in the central system. This operationalizes the standardized protocol rather than just documenting it.",
+      "opportunity_sketch": "An automated conduct workflow agent embedded in the student management system that guides every incident from report to resolution through a standardized decision scaffold — reducing principal discretion to approval/override rather than open-ended judgment, with all overrides logged and reviewable.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Principals often justify inconsistent decisions by citing their interpretation of policy language — a RAG system grounded in the canonical Code of Conduct, case precedents, and the severity matrix can answer 'how should I handle this incident?' with a citation-backed recommendation. This converts the static policy document into an interactive decision-support tool accessible at the point of judgment, directly reducing interpretive drift.",
+      "opportunity_sketch": "A principal-facing policy assistant where staff describe an incident in natural language and receive a grounded enforcement recommendation with specific policy citations and precedent examples — accessible via web or mobile so it is available at the moment a disciplinary decision must be made.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

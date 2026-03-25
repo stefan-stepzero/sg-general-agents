@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "site-facilities-classroom-lab-setup-furniture-and-av-equipment-reconfiguration-is-time-consuming-and-inflexible-dup",
+  "pain_point_label": "Furniture and AV Equipment Reconfiguration Is Time-Consuming and Inflexible",
+  "matches": [
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core operational problem is coordinating which rooms get reconfigured, when, by whom, and for what instructional mode — a classic resource scheduling problem. AI can optimize room assignment and support staff deployment across campuses to minimize reconfiguration labor, ensure the right room format is available for each class, and schedule setup tasks around staff capacity.",
+      "opportunity_sketch": "A room scheduling optimizer that, given the week's timetable and room inventory, automatically assigns instructional modes to rooms with matching configurations, flagging only the minimum necessary reconfigurations and assigning support staff slots accordingly.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Assigning instructional modes (lecture, lab, exam, discussion) to available rooms across a multi-campus schedule is a constraint satisfaction problem: room capacity, furniture type, AV equipment installed, staff availability for setup, and adjacency to labs all constrain valid assignments. AI constraint solvers can find valid timetable configurations that minimize physical reconfiguration need rather than just optimize around it.",
+      "opportunity_sketch": "A timetabling configuration engine that matches class formats to rooms with compatible fixed furniture and AV, surfacing a weekly reconfiguration plan that minimizes total labor — particularly valuable at exam season when full-campus layout changes are needed.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Much of the coordination burden — notifying support staff of upcoming reconfigurations, logging AV equipment faults, tracking which rooms have been set up, issuing reminders before high-stakes events — is repetitive multi-step workflow that an automation agent can own. This directly addresses the 'coordination must be scheduled' and 'deferred or forgotten' dimensions of the pain.",
+      "opportunity_sketch": "An automation agent integrated with the timetable system that automatically generates support staff work orders for room reconfigurations, tracks completion, sends pre-class AV readiness checks to teachers, and escalates unresolved faults before the session starts.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Teachers and support staff could interact with a conversational interface to request room reconfigurations, report AV faults, check room availability for a given layout, or get guided troubleshooting for AV equipment issues — reducing the friction that causes reconfiguration to be deferred. This addresses the 'coordination must be scheduled' bottleneck by making requests instant rather than requiring advance planning.",
+      "opportunity_sketch": "A staff-facing chatbot (accessible via mobile or web) where teachers can request room setup, report equipment faults, or ask 'which rooms are already configured for discussion groups tomorrow?' — routed to support staff or AV maintenance as work orders.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Standardizing AV and furniture configuration guides, room setup checklists, and maintenance SOPs across multiple campuses is a documentation problem that AI text generation can solve — reducing the inconsistency between campuses where some are well-equipped and others are not through lack of clear standards and training materials.",
+      "opportunity_sketch": "AI-generated room setup playbooks per instructional mode (exam, lecture, lab, discussion) tailored to each campus's actual inventory, automatically updated when equipment changes, distributed as QR-code-accessible guides in each room.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "AV equipment that fails during presentations often has detectable precursors — intermittent connectivity, degraded signal, irregular usage patterns — that anomaly detection can flag before failure. For a multi-campus operator with inconsistent AV reliability, proactive fault detection directly addresses the 'temperamental systems' dimension of the pain.",
+      "opportunity_sketch": "An anomaly detection layer on AV equipment telemetry (network-connected projectors, smart displays, microphone systems) that flags devices showing abnormal behavior and triggers maintenance tickets before the next scheduled class.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

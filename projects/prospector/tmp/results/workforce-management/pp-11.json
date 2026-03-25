@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-performance-evaluation-principal-subjectivity-dup",
+  "pain_point_label": "High Principal Subjectivity & Bias",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Historical evaluation data (scores, rubric dimensions, branch, principal ID, staff tenure, subject area) can be fed into a structured classifier to flag ratings that are statistical outliers relative to peer principals — surfacing likely bias-driven ratings without requiring subjective review. For a 500+ staff operator with multi-year evaluation records, sufficient labelled data exists to train such a model. This directly attacks the 'wide variance in ratings' mechanism rather than treating the symptom.",
+      "opportunity_sketch": "A calibration-flag dashboard that compares each principal's rating distribution against network norms and automatically escalates anomalous evaluations to central HR for second-rater review before they enter the promotion cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Variance in principal rating distributions — a single principal consistently rating 20-30% lower than the network average on identical rubric dimensions — is precisely an anomaly detection problem. The model learns 'normal' rating behavior across principals and flags statistically abnormal patterns, catching favoritism or excessive harshness before grievances reach central HR. This is more sensitive than structured classification because it requires no predefined 'bias' label.",
+      "opportunity_sketch": "An always-on anomaly scorer that runs after each evaluation cycle, producing a per-principal 'calibration risk score' and a drill-down report showing which rubric dimensions diverge most from peers.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A large share of the pain comes from unstructured, inconsistently written observation notes that encode principal bias rather than objective evidence. LLM-based generation can assist principals in translating raw classroom observations into standardized, rubric-aligned written evidence — prompting them to describe behaviours rather than impressions. This reduces the surface area for personal bias to contaminate written records without requiring cultural change first.",
+      "opportunity_sketch": "A guided observation note assistant: the principal inputs raw notes and the tool rewrites them against the official FPKRT rubric, flagging vague or inferential language and suggesting observable evidence gaps before the evaluation is submitted.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full evaluation workflow — observation scheduling, note submission, rubric scoring, second-rater flagging, appeals routing, promotion-cycle gate — is a multi-step process that currently has no automated backbone, which is why variance and delays compound. A task automation agent can enforce the structured protocol end-to-end: blocking evaluation submission without required evidence fields, auto-routing borderline scores to a calibration reviewer, and notifying central HR when appeal thresholds are breached. This directly addresses the 'no structured observation protocol' root cause.",
+      "opportunity_sketch": "An evaluation workflow agent embedded in the HR system that acts as a protocol enforcer: it gates each stage of the evaluation process, triggers calibration steps when statistical flags fire, and maintains an audit trail that replaces ad-hoc appeals with a documented escalation path.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Calibration meetings between principals require participants to quickly absorb multiple observation records and ratings for the same staff member. Summarization can distill long, inconsistently written observation notes into structured evidence summaries, enabling calibration reviewers to compare principal assessments side-by-side without reading entire files. This is a direct enabler of the second-rater validation process that currently does not exist.",
+      "opportunity_sketch": "A pre-calibration briefing generator that produces a one-page structured summary per evaluated staff member, comparing each principal's written evidence and scores against the network rubric — ready for use in calibration meetings.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

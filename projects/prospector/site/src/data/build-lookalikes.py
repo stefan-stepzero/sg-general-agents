@@ -1,0 +1,219 @@
+#!/usr/bin/env python3
+"""Generate sub-archetypes, lookalikes, and common pain points per org."""
+import json
+
+data = {
+    "acasus": {
+        "name": "Acasus",
+        "sub_archetype": "Embedded Development Consultancy",
+        "sub_archetype_detail": "Mid-size, founder-led consulting firm delivering implementation (not just advice) for public sector reform in LMICs. Revenue from government/multilateral contracts. Differentiates on field presence, local talent, and measurable outcomes.",
+        "defining_traits": ["Embedded field delivery (not fly-in/fly-out)", "Government/multilateral clients in LMICs", "Health + education focus", "Data-driven reform methodology", "200-500 staff, $20-80M revenue"],
+        "lookalikes": [
+            {"name": "Oxford Policy Management (OPM)", "hq": "Oxford, UK", "detail": "Research-driven development consultancy. 500+ staff. LMIC policy advisory and implementation. Overlaps on evidence-based reform."},
+            {"name": "Dalberg", "hq": "Geneva, Switzerland", "detail": "Impact advisory firm. 700+ staff across 25 offices. Strategy consulting for social impact. More strategy, less embedded delivery."},
+            {"name": "Adam Smith International", "hq": "London, UK", "detail": "Government reform advisory. 2,000+ staff. Heavy FCDO/USAID contract base. Larger, more traditional contractor."},
+            {"name": "Results for Development (R4D)", "hq": "Washington DC, USA", "detail": "Non-profit think tank + advisory. Health and education systems. Evidence-based. Smaller, more research-oriented."},
+            {"name": "IDinsight", "hq": "New Delhi / San Francisco", "detail": "Data analytics for social impact. 200+ staff. Uses data science for development decisions. Strong analytics parallel to Acasus Budapest hub."},
+            {"name": "Palladium", "hq": "London, UK", "detail": "Large-scale development management. 4,000+ staff. More program management than reform delivery. Competes for same donor contracts."},
+            {"name": "DAI", "hq": "Bethesda, USA", "detail": "International development company. 5,000+ staff. Strong USAID relationships. Traditional development contractor at larger scale."},
+            {"name": "Chemonics", "hq": "Washington DC, USA", "detail": "Largest USAID contractor by volume. 5,000+ staff. Supply chain and health systems. Different model but same donor ecosystem."},
+            {"name": "Abt Associates", "hq": "Rockville, USA", "detail": "Research + implementation in health, education, governance. 3,500+ staff. More US government focused than Acasus."},
+            {"name": "Clinton Health Access Initiative (CHAI)", "hq": "Boston, USA", "detail": "Health systems strengthening in LMICs. Non-profit. 2,000+ staff. Overlaps on public health reform delivery. Different funding model."}
+        ],
+        "common_pain_points": [
+            {"pain": "Talent pipeline for field-based LMIC specialists", "prevalence": "Universal", "detail": "Every firm in this archetype struggles to recruit people with the rare combination of field experience, analytical skills, and willingness to work in challenging environments."},
+            {"pain": "Donor funding volatility and contract lumpiness", "prevalence": "Universal", "detail": "Revenue depends on aid budget cycles. US foreign aid contraction, FCDO freezes, and EU budget politics create systemic risk."},
+            {"pain": "Knowledge management across distributed teams", "prevalence": "Very common", "detail": "Field teams generate institutional knowledge that gets lost between projects. Methodologies, data, and relationships are trapped in individuals."},
+            {"pain": "Proposal/bid management overhead", "prevalence": "Very common", "detail": "Government procurement requires lengthy proposals. Win rates are 10-25%. Significant staff time devoted to business development."},
+            {"pain": "Impact measurement and attribution", "prevalence": "Very common", "detail": "Clients demand proof of outcomes but causation is hard to establish. Data collection in LMICs is patchy. RCTs are expensive."},
+            {"pain": "Succession risk in relationship-based businesses", "prevalence": "Common", "detail": "Key client relationships often sit with individuals. Founder/partner transitions can destabilize business development pipeline."}
+        ]
+    },
+    "cspd": {
+        "name": "Catholic Schools Parramatta Diocese",
+        "sub_archetype": "Faith-Based K-12 System Operator",
+        "sub_archetype_detail": "Large diocesan or denominational school system. Government-funded, non-selective, mission-driven. Operates 30-200 schools under centralized governance with local school leadership. Revenue from government grants + modest parent fees.",
+        "defining_traits": ["Diocesan/denominational governance", "Government needs-based funding (75%+ of revenue)", "Non-selective enrollment", "Faith formation + academic outcomes dual mission", "30-200 schools, $100M+ revenue"],
+        "lookalikes": [
+            {"name": "Sydney Catholic Schools (Archdiocese)", "hq": "Sydney, Australia", "detail": "150+ schools. Largest Catholic system in NSW. Same funding model, different geography (Eastern Sydney vs Western)."},
+            {"name": "Melbourne Archdiocese Catholic Schools (MACS)", "hq": "Melbourne, Australia", "detail": "300+ schools. Largest Catholic system in Australia. Recently restructured governance (2021). Similar transformation challenges."},
+            {"name": "Brisbane Catholic Education", "hq": "Brisbane, Australia", "detail": "140+ schools. Queensland Catholic system. Similar scale, different state regulatory environment."},
+            {"name": "Catholic Education Canberra-Goulburn (CECG)", "hq": "Canberra, Australia", "detail": "56 schools. Patrick Ellis came from here to lead CSPD learning outcomes. Smaller, regional. Known for data-driven improvement."},
+            {"name": "Catholic Education Western Australia (CEWA)", "hq": "Perth, Australia", "detail": "160+ schools. WA Catholic system. Similar governance model. Remote/regional school challenges."},
+            {"name": "Diocese of Parramatta (other systems)", "hq": "Various, Australia", "detail": "Other diocesan systems in growing corridors (Broken Bay, Wollongong). Face same growth/capex pressure as CSPD."},
+            {"name": "Anglican Schools Commission (WA)", "hq": "Perth, Australia", "detail": "Faith-based school system, different denomination. Similar governance + funding model. Shows pattern extends beyond Catholic."},
+            {"name": "Catholic Schools NSW (CSNSW)", "hq": "Sydney, Australia", "detail": "State-level Catholic coordinating body. Manages funding distribution across NSW dioceses. Not an operator but key stakeholder."},
+            {"name": "Catholic Education South Australia", "hq": "Adelaide, Australia", "detail": "100+ schools. SA Catholic system. Similar challenges with teacher shortage, data integration, and faith formation."},
+            {"name": "London Diocesan Board for Schools", "hq": "London, UK", "detail": "155 Church of England schools. UK equivalent: faith-based, government-funded, centrally governed. Different regulatory environment but same archetype."}
+        ],
+        "common_pain_points": [
+            {"pain": "Teacher supply shortage", "prevalence": "Universal", "detail": "Australia-wide crisis. Catholic systems compete with government and independent sectors for the same shrinking pool. Acute in growth corridors and specialist subjects (STEM, languages)."},
+            {"pain": "Data fragmentation across schools", "prevalence": "Universal", "detail": "Each school has some autonomy in tools and systems. Aggregating student outcomes, attendance, wellbeing, and operational data across 50-200 schools is a multi-year integration challenge."},
+            {"pain": "Balancing faith formation with academic outcomes", "prevalence": "Very common", "detail": "Dual mission creates tension in curriculum time, hiring (faith requirements), and measurement. Neither purely academic nor purely pastoral."},
+            {"pain": "Capex pressure from population growth", "prevalence": "Very common", "detail": "Growth corridors require new school builds ($30-80M each). Existing schools need modernization. Capital allocation across many schools is complex."},
+            {"pain": "NAPLAN/ACARA benchmark pressure", "prevalence": "Very common", "detail": "MySchool transparency means parents compare schools. System offices need to identify and support underperforming schools without creating a punitive culture."},
+            {"pain": "Student wellbeing and complex needs", "prevalence": "Very common", "detail": "Rising student mental health, disability, and behavioral needs. Non-selective enrollment means accepting all students. Specialist support resources are stretched."}
+        ]
+    },
+    "ipeople": {
+        "name": "iPeople Inc",
+        "sub_archetype": "Conglomerate-Backed HE Network (Emerging Market)",
+        "sub_archetype_detail": "Publicly listed or PE-backed holding company operating multiple higher education institutions in a high-growth emerging market. Revenue from tuition, funded by parent conglomerate or PE. Scale via acquisition and organic enrollment growth.",
+        "defining_traits": ["Multi-institution HE portfolio", "Conglomerate or PE ownership", "Publicly listed (capital markets access)", "Emerging market (Philippines, India, Brazil)", "50K-200K students, $50M-500M revenue"],
+        "lookalikes": [
+            {"name": "PHINMA Education", "hq": "Makati, Philippines", "detail": "Direct competitor. 177,851 students. KKR-backed. Provincial affordable HE. Larger, higher margins, different geographic focus."},
+            {"name": "Centro Universitario (CEUNI/Yduqs)", "hq": "Rio de Janeiro, Brazil", "detail": "Brazilian private HE group. 1.6M+ students. Listed (B3). Acquisition-led growth in affordable tertiary education."},
+            {"name": "Cogna Educacao", "hq": "Sao Paulo, Brazil", "detail": "Largest private education company in Brazil. 1.5M+ students. K-12 + HE. Content + operations. Listed (B3)."},
+            {"name": "Manipal Education", "hq": "Manipal, India", "detail": "Multi-campus HE group. 400K+ students across India, Malaysia, Antigua. Medical + engineering focus."},
+            {"name": "Amity Education Group", "hq": "Noida, India", "detail": "Large Indian private university network. 150K+ students. Multi-campus across India and international."},
+            {"name": "Ama Education System", "hq": "Manila, Philippines", "detail": "Philippine IT-focused HE network. Direct competitor in tech education. Broader geographic spread."},
+            {"name": "STI Education Systems", "hq": "Manila, Philippines", "detail": "Listed (PSE:STI). ICT and business vocational education. Different tier but same market."},
+            {"name": "Anima Educacao", "hq": "Belo Horizonte, Brazil", "detail": "Brazilian private HE. 200K+ students. Premium positioning. Listed. Acquisition-led growth."},
+            {"name": "Sharda University", "hq": "Greater Noida, India", "detail": "Multi-campus Indian university. STEM + medical focus. Growing through branch campuses."},
+            {"name": "INTI International University (Laureate)", "hq": "Nilai, Malaysia", "detail": "Malaysian private HE. Part of former Laureate network. Regional private HE model in SEA."}
+        ],
+        "common_pain_points": [
+            {"pain": "Post-acquisition integration and standardization", "prevalence": "Universal", "detail": "Each acquired institution has different systems, culture, and quality levels. Standardizing without losing local identity is the central operational challenge."},
+            {"pain": "Thin margins under tuition regulation", "prevalence": "Very common", "detail": "Government tuition caps (CHED in Philippines, MEC in Brazil) limit pricing power. Cost discipline is essential but constrains investment."},
+            {"pain": "Board exam / accreditation performance as brand driver", "prevalence": "Very common", "detail": "In regulated HE markets, pass rates on licensure exams are the primary quality signal. Directly drives enrollment. Hard to improve across many campuses."},
+            {"pain": "Faculty quality and retention at scale", "prevalence": "Very common", "detail": "Licensed faculty (especially healthcare, engineering) are scarce in emerging markets. Salary pressure from competitors and private practice."},
+            {"pain": "Technology modernization across legacy campuses", "prevalence": "Very common", "detail": "Acquired institutions often have minimal IT. Enterprise SIS, LMS, and data systems need to be deployed across 5-20 heterogeneous campuses."},
+            {"pain": "Dual stakeholder tension (parent company + students)", "prevalence": "Common", "detail": "Conglomerate/PE owners expect returns. Students expect affordability. Balancing financial performance with mission is constant tension."}
+        ]
+    },
+    "kinetic": {
+        "name": "Kinetic Software",
+        "sub_archetype": "Vertical SaaS for Higher Education Operations",
+        "sub_archetype_detail": "Niche B2B SaaS company selling to universities and colleges. Focuses on non-academic operations: accommodation, facilities, conferencing, student services. Revenue from subscriptions + implementation. 50-200 employees, dominant in one geography.",
+        "defining_traits": ["Vertical SaaS (not horizontal)", "Higher education customers exclusively", "Non-academic operations focus", "Geographic market leader", "50-200 employees, $10-50M ARR"],
+        "lookalikes": [
+            {"name": "StarRez", "hq": "Denver, USA", "detail": "Direct competitor. Student accommodation software. 1,400 customers, 3M+ beds. Dominates North America and Australia. The other half of the global duopoly."},
+            {"name": "Tribal Group", "hq": "Bath, UK", "detail": "UK-based HE management software. Student records, admissions, fees. 400+ customers. Different functional focus but same buyer."},
+            {"name": "Unit4", "hq": "Amsterdam, Netherlands", "detail": "ERP for service-centric organizations including universities. Finance, HR, student management. Larger, more horizontal."},
+            {"name": "Ellucian", "hq": "Reston, USA", "detail": "Largest HE-specific software company. SIS, ERP, CRM for 2,700+ institutions. Market leader in academic administration. Different functional layer."},
+            {"name": "Civitas Learning", "hq": "Austin, USA", "detail": "Student success analytics for HE. Predictive analytics for retention. Different function but same institutional buyer and data integration challenge."},
+            {"name": "Symplicity", "hq": "Arlington, USA", "detail": "Student affairs and career services software. Campus conduct, disability, housing. Overlaps on student services operations."},
+            {"name": "Anthology (Blackboard)", "hq": "Boca Raton, USA", "detail": "Large HE platform (LMS + SIS + analytics). Different primary function (academic) but expanding into operations."},
+            {"name": "Concord (accommodation)", "hq": "Birmingham, UK", "detail": "UK student accommodation management software. Smaller, direct competitor in UK market. Kinetic has largely won this competition."},
+            {"name": "Planet eStream / Panopto", "hq": "Various", "detail": "HE-focused SaaS in content/media. Same buyer persona (university IT/operations). Shows the vertical SaaS for HE pattern."},
+            {"name": "Kx (student engagement)", "hq": "Various", "detail": "Student engagement and wellbeing platforms for HE. Adjacent vertical. Same institutional procurement process."}
+        ],
+        "common_pain_points": [
+            {"pain": "Geographic expansion beyond saturated home market", "prevalence": "Universal", "detail": "Vertical SaaS leaders hit 60-90% penetration in home geography. International expansion requires different sales motion, regulatory compliance, and product localization."},
+            {"pain": "Product breadth vs depth tension", "prevalence": "Very common", "detail": "Expand into adjacent modules (Kinetic: accommodation + conferencing + catering + engagement) or go deeper in core? Small teams cant do both."},
+            {"pain": "Enterprise sales cycle in public sector", "prevalence": "Very common", "detail": "University procurement is slow (6-18 months), framework-driven, and committee-based. High CAC relative to deal size."},
+            {"pain": "Integration with university legacy systems", "prevalence": "Very common", "detail": "Universities run decades-old SIS, HR, and finance systems. Every customer needs different integration work. Professional services burden."},
+            {"pain": "Platform risk from horizontal SaaS players", "prevalence": "Common", "detail": "Large platforms (Yardi, Oracle, SAP) could move into education vertical. Vertical SaaS moat is domain expertise, not technology."},
+            {"pain": "Scaling professional services without killing margins", "prevalence": "Common", "detail": "Enterprise HE customers need implementation, training, and ongoing support. Services revenue has lower margins than subscriptions."}
+        ]
+    },
+    "phinma": {
+        "name": "PHINMA Education",
+        "sub_archetype": "Affordable HE Network Operator (Acquisition-Led)",
+        "sub_archetype_detail": "Large-scale operator of affordable higher education institutions in emerging markets, growing through disciplined acquisition of underperforming schools and turnaround. Revenue from tuition + government subsidies. PE-backed or public. 100K+ students.",
+        "defining_traits": ["Acquisition-and-turnaround model", "Affordable/accessible pricing", "Provincial/underserved market focus", "PE or conglomerate backing", "100K+ students, $100M+ revenue, 20%+ margins"],
+        "lookalikes": [
+            {"name": "Cogna Educacao", "hq": "Sao Paulo, Brazil", "detail": "1.5M+ students. Largest private education company in Brazil. Acquisition-led growth. Listed. Content + operations + K-12."},
+            {"name": "Yduqs (Estacio)", "hq": "Rio de Janeiro, Brazil", "detail": "1.6M+ students. Brazilian HE group. Acquisition-led. Distance learning + campus. Direct model parallel."},
+            {"name": "Ser Educacional", "hq": "Recife, Brazil", "detail": "300K+ students. Northeast Brazil focus (underserved). Acquisition model targeting provincial markets. Closest parallel to PHINMA."},
+            {"name": "Anima Educacao", "hq": "Belo Horizonte, Brazil", "detail": "200K+ students. Premium + affordable tiers. Acquisition-led. Listed on B3. Growing margins through standardization."},
+            {"name": "Manipal Education", "hq": "Manipal, India", "detail": "400K+ students. Multi-campus Indian HE group. Medical + engineering. Different market but same operating model."},
+            {"name": "NIIT University / NIIT Learning", "hq": "Gurugram, India", "detail": "Tech-focused education in India. Growing through partnerships and campuses. Smaller scale but same acquisition logic."},
+            {"name": "Ama Education System", "hq": "Manila, Philippines", "detail": "IT-focused Philippine HE network. Direct domestic competitor. Broader geographic spread but lower prestige."},
+            {"name": "Adtalem Global Education", "hq": "Chicago, USA", "detail": "US healthcare-focused HE. Chamberlain University (nursing), Ross Medical. Parallels PHINMA nursing focus."},
+            {"name": "Strategic Education (Capella/Strayer)", "hq": "Minneapolis, USA", "detail": "US online HE focused on working adults. Different delivery but same affordable-accessible-employment-outcome model."},
+            {"name": "Universitas Ciputra", "hq": "Surabaya, Indonesia", "detail": "Indonesian private university. Entrepreneurship focus. Potential competitor in PHINMA Indonesia expansion."}
+        ],
+        "common_pain_points": [
+            {"pain": "Post-acquisition turnaround execution", "prevalence": "Universal", "detail": "Acquired schools are underperforming by definition. Standardizing operations, upgrading faculty, fixing facilities, and improving outcomes while keeping costs low is the central challenge."},
+            {"pain": "Faculty pipeline in provincial markets", "prevalence": "Universal", "detail": "Licensed professionals (nursing, engineering, criminology) prefer urban practice over provincial teaching. Structural shortage limits growth."},
+            {"pain": "Government subsidy policy risk", "prevalence": "Very common", "detail": "Free HE Act (Philippines), PROUNI (Brazil), reservation quotas (India). Revenue floors depend on government policy stability."},
+            {"pain": "Technology standardization across acquired campuses", "prevalence": "Very common", "detail": "Each acquired school has different (or no) IT systems. Deploying unified SIS, LMS, and operational systems across 10-20+ campuses."},
+            {"pain": "Quality consistency measured by board exam pass rates", "prevalence": "Very common", "detail": "Licensure exams are the primary quality signal. One underperforming campus can damage network brand. Monitoring and intervention across many sites."},
+            {"pain": "Cross-border expansion complexity", "prevalence": "Common", "detail": "Different regulatory environments (CHED vs Indonesian Dikti). JV structures. Currency risk. Cultural differences in education delivery."}
+        ]
+    },
+    "rising": {
+        "name": "Rising Academies",
+        "sub_archetype": "Evidence-Led School Operator (Sub-Saharan Africa)",
+        "sub_archetype_detail": "Mission-driven organization operating or supporting schools in Sub-Saharan Africa, with government partnerships and technology-enabled delivery. Revenue from grants, impact investment, and government contracts. Focus on measurable learning outcomes.",
+        "defining_traits": ["School-level operations in SSA", "Government partnership model (B2G)", "Evidence-based / RCT-validated", "Mobile/WhatsApp technology layer", "Grant + impact capital funded"],
+        "lookalikes": [
+            {"name": "NewGlobe", "hq": "Nairobi, Kenya", "detail": "Largest SSA school management platform. Government partnerships in Nigeria (EdoBEST), Liberia, India. Scripted curriculum + tech. More scale, more controversy."},
+            {"name": "Bridge International Academies", "hq": "Nairobi, Kenya", "detail": "Low-cost private school chain. Pioneer of the model. Political backlash in Kenya/Uganda. Rising differentiates on evidence + B-Corp."},
+            {"name": "BRAC Education (Bangladesh)", "hq": "Dhaka, Bangladesh", "detail": "World largest NGO-run education program. 1M+ students. Non-formal + formal schools. Different geography but same mission-driven model."},
+            {"name": "Pratham", "hq": "Mumbai, India", "detail": "Indias largest education NGO. ASER (Annual Status of Education Report) creator. Evidence-driven. Overlaps on measurement rigor."},
+            {"name": "Teach For All / Teach First", "hq": "Various", "detail": "Global teacher recruitment/training network. Overlaps on teacher quality improvement. Different model (placement vs operation)."},
+            {"name": "Lively Minds", "hq": "Accra, Ghana", "detail": "Early childhood education in Ghana and Uganda. RCT-validated. Government partnership model. Smaller, earlier stage."},
+            {"name": "Eneza Education", "hq": "Nairobi, Kenya", "detail": "Mobile learning platform for SSA. SMS + app tutoring. Overlaps on mobile delivery channel. Less school-level integration."},
+            {"name": "Ubongo", "hq": "Dar es Salaam, Tanzania", "detail": "Edutainment media for SSA. TV + mobile. 30M+ learners reached. Content approach vs Rising operational model."},
+            {"name": "IDP Foundation (Rising spin-off investor)", "hq": "Atlanta, USA", "detail": "Impact investor in African education. Funded Rising. Portfolio includes other SSA education ventures."},
+            {"name": "Omega Schools (Ghana)", "hq": "Accra, Ghana", "detail": "Low-cost private school chain in Ghana. Pay-as-you-learn model. Smaller. Different funding model but same market."}
+        ],
+        "common_pain_points": [
+            {"pain": "Government payment delays and political risk", "prevalence": "Universal", "detail": "B2G contracts in SSA = budget cycle dependency, political turnover risk, and 3-12 month payment delays. Cash flow management is existential."},
+            {"pain": "Quality consistency across hundreds of sites", "prevalence": "Universal", "detail": "Operating 100-1,000+ schools across multiple countries with limited infrastructure, connectivity, and management bandwidth."},
+            {"pain": "Teacher quality and retention in rural areas", "prevalence": "Universal", "detail": "Qualified teachers prefer urban employment. Rural/remote school staffing depends on local recruitment with intensive training."},
+            {"pain": "Revenue sustainability beyond grants", "prevalence": "Very common", "detail": "Transitioning from grant-funded to earned revenue (government contracts, fee-based services) without losing mission focus."},
+            {"pain": "Technology deployment in low-connectivity environments", "prevalence": "Very common", "detail": "WhatsApp works but internet is unreliable. Offline-first design, SMS fallbacks, and low-bandwidth optimization are constant constraints."},
+            {"pain": "Impact attribution and donor reporting", "prevalence": "Very common", "detail": "Donors and governments demand proof of learning outcomes. RCTs are expensive. Routine assessment data collection in SSA is unreliable."}
+        ]
+    },
+    "school-for-life": {
+        "name": "School for Life Foundation",
+        "sub_archetype": "Diaspora-Funded Education Charity (Single-Country Operator)",
+        "sub_archetype_detail": "Small to mid-size charity headquartered in a wealthy country (Australia, UK, US), raising funds through events and major donors, operating schools directly in a single developing country. Deep community engagement, founder-led, 5-20 schools.",
+        "defining_traits": ["Dual-geography (fundraise in West, operate in South)", "Founder/personality-led fundraising", "5-20 schools, deep local engagement", "Event-driven revenue (galas, walks, dinners)", "$1-10M annual budget"],
+        "lookalikes": [
+            {"name": "PEAS (Promoting Equality in African Schools)", "hq": "London, UK", "detail": "35 secondary schools in Uganda and Zambia. UK charity. Direct model parallel. Larger, more institutional funding."},
+            {"name": "Educate! (Uganda)", "hq": "Kampala, Uganda", "detail": "Youth skills and entrepreneurship education in Uganda, Rwanda, Kenya. Similar geography. More government integration."},
+            {"name": "One Girl", "hq": "Melbourne, Australia", "detail": "Australian charity for girls education in Sierra Leone. Same donor base (Australian women). Different country, similar model."},
+            {"name": "The School Fund", "hq": "San Francisco, USA", "detail": "US-based, funds schools in East Africa. Smaller. Direct scholarship model rather than school operation."},
+            {"name": "BuildOn", "hq": "Stamford, USA", "detail": "US charity building schools in developing countries. Different model (build not operate). Same event-driven fundraising."},
+            {"name": "Opportunity International (Education Finance)", "hq": "Chicago / Melbourne", "detail": "Microfinance for school fees in developing countries. Australian office. Some donor base overlap."},
+            {"name": "Asante Africa Foundation", "hq": "San Carlos, USA", "detail": "US-based charity operating education programs in East Africa (Kenya, Uganda, Tanzania). Similar geography and model."},
+            {"name": "African Revival", "hq": "London, UK", "detail": "UK charity supporting schools in Uganda and Zambia. 300+ schools supported. Similar geography, different scale."},
+            {"name": "Children in Crossfire", "hq": "Derry, Northern Ireland", "detail": "Education charity operating in Tanzania and Ethiopia. Event-driven fundraising. Founder-led."},
+            {"name": "Empower Africa", "hq": "Sydney, Australia", "detail": "Australian charity supporting education and health in East Africa. Same donor ecosystem. Event-driven model."}
+        ],
+        "common_pain_points": [
+            {"pain": "Revenue concentration in events and major donors", "prevalence": "Universal", "detail": "Gala balls, dinners, and a small number of HNW individuals drive 60-80% of revenue. One bad year or donor departure is material."},
+            {"pain": "Founder dependency and succession planning", "prevalence": "Universal", "detail": "Founder personal brand is the primary fundraising asset. Organizational sustainability beyond the founder is the existential question."},
+            {"pain": "Foreign exchange exposure", "prevalence": "Very common", "detail": "Revenue in AUD/GBP/USD, costs in local currency (UGX, KES, TZS). Currency swings directly affect operational capacity."},
+            {"pain": "Impact measurement for donor reporting", "prevalence": "Very common", "detail": "Donors want stories AND data. Small charities lack resources for rigorous M&E. Balancing narrative with evidence is constant."},
+            {"pain": "Dual-geography management overhead", "prevalence": "Very common", "detail": "HQ team of 10-30 managing field team of 100-300 across time zones, cultures, and infrastructure gaps. Communication and oversight challenges."},
+            {"pain": "Scaling without losing authenticity", "prevalence": "Common", "detail": "Growth (more schools) requires more institutional funding. Institutional funders demand different reporting, governance, and professionalization than event-based donors."}
+        ]
+    },
+    "wise": {
+        "name": "WISE",
+        "sub_archetype": "Sovereign-Backed Global Convening Platform",
+        "sub_archetype_detail": "Education or development-focused convening organization backed by sovereign wealth or state foundation. Operates global summits, prizes, research programs, and community networks. Value measured in influence and network, not revenue. 20-100 FTE.",
+        "defining_traits": ["State/foundation-backed (single funder)", "Global summit/prize as flagship", "Policy influence mission", "20-100 FTE, fully grant-funded", "Community/network model"],
+        "lookalikes": [
+            {"name": "World Economic Forum (WEF)", "hq": "Geneva, Switzerland", "detail": "Global convening platform. Davos summit. Much larger but same model: sovereign/corporate backing + global influence mission. Gold standard for the archetype."},
+            {"name": "Aga Khan Foundation (Education)", "hq": "Geneva, Switzerland", "detail": "Education programs + convening via Aga Khan Development Network. Sovereign-backed (Ismaili community). Schools + policy + research."},
+            {"name": "Brookings Institution (Education)", "hq": "Washington DC, USA", "detail": "Think tank with major education policy program (Center for Universal Education). Research + convening. Different funding model (endowment + grants)."},
+            {"name": "HundrED", "hq": "Helsinki, Finland", "detail": "Education innovation platform. Identifies and shares innovations. Finnish credibility. Smaller, less political clout than WISE."},
+            {"name": "GEMS Education Foundation", "hq": "Dubai, UAE", "detail": "Gulf-based education foundation (GEMS group). Overlaps on Gulf education ecosystem. More operator-focused than WISE."},
+            {"name": "ASU+GSV Summit", "hq": "Scottsdale, USA", "detail": "Largest EdTech investment summit. 7,000+ attendees. US-centric, commercially focused. WISE is policy-focused, Global South."},
+            {"name": "UNESCO IIEP", "hq": "Paris, France", "detail": "UN education planning institute. Research + capacity building. Institutional authority. More bureaucratic than WISE."},
+            {"name": "Global Partnership for Education (GPE)", "hq": "Washington DC, USA", "detail": "Multilateral fund for education in developing countries. $7B+ deployed. Funding mechanism vs convening, but overlapping stakeholders."},
+            {"name": "Varkey Foundation", "hq": "Dubai, UAE", "detail": "Gulf-based education foundation. Global Teacher Prize ($1M). Direct parallel to WISE Prize model. Same regional ecosystem."},
+            {"name": "Salzburg Global Seminar", "hq": "Salzburg, Austria", "detail": "Global convening platform across sectors including education. Fellowship model. European rather than Gulf-backed. Same archetype pattern."}
+        ],
+        "common_pain_points": [
+            {"pain": "Single-funder dependency and strategic alignment", "prevalence": "Universal", "detail": "When one entity provides ~100% of funding, strategic priorities must align with funder leadership. Organizational independence is constrained."},
+            {"pain": "Impact measurement for convening activities", "prevalence": "Universal", "detail": "How do you prove a summit changed policy? ROI metrics (attendees, media mentions, community size) are weak proxies for actual influence."},
+            {"pain": "Year-round relevance between flagship events", "prevalence": "Very common", "detail": "Summits happen biannually or annually. Maintaining community engagement, research output, and brand presence in between is resource-intensive."},
+            {"pain": "Small team, global ambition mismatch", "prevalence": "Very common", "detail": "20-100 FTE cannot produce research, manage community, organize events, run prizes, AND maintain policy influence simultaneously."},
+            {"pain": "Geopolitical perception management", "prevalence": "Common", "detail": "Sovereign backing (Gulf states, China, etc.) creates perception challenges. Balancing funder interests with credibility among Western/Global South audiences."},
+            {"pain": "Talent retention in non-commercial organization", "prevalence": "Common", "detail": "Mission-driven staff but limited career progression in a 20-100 person organization. Burnout from global scope on small team."}
+        ]
+    }
+}
+
+out_path = "P:/Projects2/sg-general-agents/projects/prospector/site/public/data/companies/lookalikes.json"
+with open(out_path, "w") as f:
+    json.dump(data, f, indent=2)
+print(f"Wrote {out_path}")

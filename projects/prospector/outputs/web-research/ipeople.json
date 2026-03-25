@@ -1,0 +1,216 @@
+{
+  "entity": "iPeople Inc",
+  "ticker": "PSE:IPO",
+  "website": "ipeople.com.ph",
+  "contact": "Fred Ayala (President & COO)",
+  "research_date": "2026-03-11",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2026-03-08",
+          "headline": "Mapua University expansion underway, says iPeople",
+          "summary": "iPeople president Fred Ayala confirmed expansion plans including a new building groundbreaking in Cabuyao, Laguna, and further growth in Mindanao. The company is stepping up after enrollment surge in recent years.",
+          "source": "https://www.philstar.com/business/2026/03/08/2512700/mapua-university-expansion-underway-says-ipeople"
+        },
+        {
+          "date": "2026-03-01",
+          "headline": "Mapúa Education Group and Arizona State University launch groundbreaking academic partnership",
+          "summary": "Expanded partnership covers all Mapúa Education Group campuses (Mapúa University, MMCL, MMCM, MMDC). Students get access to ASU course content, AI-powered learning, international enrollment, and faculty/student exchanges. Builds on 2022-2025 initial collaboration.",
+          "source": "https://www.dotdailydose.net/2026/02/27/mapua-education-group-arizona-state-university-launch-groundbreaking-academic-partnership-to-globalize-ph-higher-education/"
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "Two iPeople schools merge under National Teachers College",
+          "summary": "APEC Schools (ACCET) merged into National Teachers College (NTC), effective October 28, 2025 per SEC approval October 21, 2025. NTC is surviving entity with 24,000+ students in K-12, college, and graduate school.",
+          "source": "https://www.philstar.com/business/2025/10/30/2483421/two-ipeople-schools-merge-under-national-teachers-college"
+        },
+        {
+          "date": "2025-08-15",
+          "headline": "Ayala Corp. boosts iPeople ownership to 36.3% after P351-M deal",
+          "summary": "Ayala Corporation acquired 29,239,370 common shares from A. Soriano Corp. (Anscor) via special block sale for P351 million, raising its stake from 33.5% to 36.3%. PCC cleared the transaction July 29, 2025.",
+          "source": "https://www.bworldonline.com/corporate/2025/08/15/691765/ayala-corp-boosts-ipeople-ownership-to-36-3-after-p351-m-deal/"
+        },
+        {
+          "date": "2025-03-12",
+          "headline": "iPeople and Coursera expand partnership to deliver AI-powered education to 45,000 students",
+          "summary": "Partnership tripled in scope from 15,000 to 45,000 learners annually. Covers Mapúa University, MMCL, MMCM, MMDC, UNC, and NTC. Students can earn 20-30% of academic credits through Coursera. Includes Generative AI tools and Coursera Coach AI assistant. Mapúa ranked second highest in GenAI course enrollments among Coursera for Campus partners in Asia.",
+          "source": "https://mb.com.ph/2025/3/12/i-people-and-coursera-expand-partnership-to-deliver-ai-powered-future-ready-education-to-45-000-students"
+        },
+        {
+          "date": "2025-01-01",
+          "headline": "Mapúa University celebrates centennial — 100 years of world-class education",
+          "summary": "Mapúa University marked its 100th anniversary in January 2025, a major institutional milestone for the flagship asset.",
+          "source": "https://stockanalysis.com/quote/pse/IPO/"
+        }
+      ],
+      "synthesis": "iPeople is in an active phase of expansion and strategic consolidation. Key 2025-2026 developments: (1) Ayala deepened ownership to 36.3%, signaling continued long-term commitment; (2) APEC Schools merged into NTC to create a larger consolidated K-12/college entity; (3) Mapúa's ASU partnership expanded to cover all group campuses and integrate AI curriculum; (4) Coursera AI partnership tripled reach to 45,000 students; (5) Physical infrastructure expanding in Laguna and Mindanao. The company is positioning itself as the Philippine market leader in tech-forward, affordable quality education.",
+      "confidence": "high"
+    },
+    "industry": {
+      "synthesis": "Philippine higher education is a high-growth sector. Market size reached USD 154M in 2025 and is projected to reach USD 847M by 2034 (CAGR ~20%). As of 2024 there were 1,714 private HEIs competing alongside 113 state universities. Growth drivers: large and growing youth population, rising demand for STEM and tech skills, government incentives for foreign HEIs, digital learning adoption, and international partnership frameworks. iPeople sits at the premium-affordable intersection — strong brands (Mapúa as ABET-accredited engineering leader) combined with APEC/NTC's affordable K-12 and teacher education. Government policy (EDCOM 2 reforms, CHED program reviews) is raising quality bars, which favors larger, institutionally capable operators over weaker private schools. Consolidation pressure on smaller schools benefits iPeople's rollup strategy.",
+      "confidence": "high"
+    },
+    "financial": {
+      "key_metrics": {
+        "revenue_fy2024_php": "5.32 billion",
+        "revenue_growth_fy2024": "+18.49% YoY",
+        "revenue_ttm_php": "5.97 billion",
+        "earnings_fy2024_php": "844.47 million",
+        "earnings_growth_fy2024": "+30.86% YoY",
+        "earnings_ttm_php": "1.04 billion",
+        "ebitda_php": "1.76 billion",
+        "ebitda_margin": "28.68%",
+        "market_cap_php": "6.13 billion (as of Dec 2025)",
+        "share_price_php": "6.19 (Dec 1, 2025)",
+        "pe_ratio_trailing": "6.19",
+        "roe": "6.49%",
+        "roic": "4.48%",
+        "dividend_yield": "~2.4-3.66%",
+        "payout_ratio": "~28-31%",
+        "52_week_change": "+3.17%",
+        "1yr_market_cap_change": "-2.00%"
+      },
+      "enrollment": {
+        "total_students_2024_25": "74,000",
+        "enrollment_growth_yoy": "+10%",
+        "affordable_segment_share": "54%",
+        "ntc_cagr_since_2019": "12%"
+      },
+      "capex_signals": "New building groundbreaking in Cabuyao, Laguna; planned expansion in Mindanao; NTC expansion to Bulacan approved. House of Investments (parent) disclosed P22 billion spending plan through 2026.",
+      "synthesis": "Strong fundamental growth trajectory: revenue +18% and earnings +31% in FY2024, with TTM showing continued acceleration. Enrollment grew 10% to 74,000 students for 2024-25. The stock is modestly valued (PE ~6x) relative to growth, suggesting the market is not fully pricing in the expansion momentum. Market cap of ~PHP 6.1B on ~PHP 1B TTM earnings reflects a discount possibly due to PSE market liquidity and sector sentiment. Dividend yield of 2-3.6% suggests income-positive profile. Ayala's P351M stake increase is a strong confidence signal from a sophisticated owner. Key risk: capital-intensive physical expansion may compress near-term margins.",
+      "confidence": "high"
+    },
+    "technology": {
+      "ai_adoption": "active",
+      "initiatives": [
+        {
+          "name": "Coursera GenAI Partnership",
+          "status": "active",
+          "detail": "45,000 students annually get access to Generative AI courses and Coursera Coach AI assistant. Students earn 20-30% of credits through Coursera. Mapúa ranked #2 in Asia among Coursera Campus partners for GenAI enrollments."
+        },
+        {
+          "name": "BS AI Engineering Program",
+          "status": "launched 2025-26",
+          "detail": "Mapúa launched the first undergraduate BS in Artificial Intelligence Engineering program in the Philippines for AY2025-26."
+        },
+        {
+          "name": "Arizona State University AI Integration",
+          "status": "active",
+          "detail": "Expanded ASU partnership integrates AI concepts into curriculum across all Mapúa Education Group campuses. Includes ladderized programs in electronics engineering and AI for workforce development."
+        },
+        {
+          "name": "Alibaba Cloud Partnership",
+          "status": "active",
+          "detail": "Mapúa University partnered with Alibaba Cloud to cultivate next-generation digital talent."
+        },
+        {
+          "name": "Mapúa Malayan Digital College",
+          "status": "operational",
+          "detail": "Dedicated digital-first campus (MMDC) as part of the group's portfolio, signaling online/blended learning strategy."
+        }
+      ],
+      "synthesis": "iPeople / Mapúa is among the most AI-forward higher education groups in the Philippines. Multiple simultaneous AI bets: first BS AI Engineering in the PH, Coursera GenAI integration at scale (45K students), ASU AI curriculum framework, Alibaba Cloud tech partnership, and a dedicated digital college. The pace and breadth of these moves — across curriculum, infrastructure, and partnerships — suggests a deliberate strategy to position as the AI-ready education leader in PH. This is not superficial badge-collecting; the Coursera #2-in-Asia ranking for GenAI enrollments suggests genuine uptake.",
+      "confidence": "high"
+    },
+    "reputation": {
+      "accreditations": [
+        "ABET accreditation — first Southeast Asian university (Mapúa)",
+        "CHED Centers of Excellence and Centers for Development in Engineering and IT",
+        "QS Asia University Rankings 2024: top 550 Asian, top 100 SEA",
+        "Times Higher Education WUR 2025: 1501+ overall rank",
+        "Quality Matters (QM) certification — first in Philippine education system"
+      ],
+      "brand_positioning": "Mapúa is the flagship — positioned as the Philippines' premier engineering and technology university. NTC carries the teacher education brand. APEC Schools (now merged into NTC) served the affordable K-12 segment. University of Nueva Caceres serves the Bicol region.",
+      "sentiment": "positive",
+      "no_major_controversies_found": true,
+      "synthesis": "iPeople's reputation is predominantly positive and anchored on Mapúa's century-long engineering brand. International accreditations (ABET, QM) and rankings (QS, THE) provide credible third-party validation that differentiate it from typical Philippine private HEIs. The Coursera GenAI ranking (#2 in Asia) adds a contemporary tech credibility layer. No significant controversies, regulatory issues, or quality scandals were surfaced in research. The affordable education mission (54% of enrollment from affordable segment) provides social legitimacy. The Yuchengco-Ayala co-ownership lends governance credibility from two respected Philippine conglomerate families.",
+      "confidence": "medium-high"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Alfredo 'Fred' Antonio I. Ayala",
+          "title": "President, COO, and Director",
+          "appointed": "Director/COO: May 6, 2019; President: February 1, 2022",
+          "age": 64,
+          "nationality": "Filipino",
+          "education": "MBA, Harvard University; BA Development Studies (Honors) & Economics, Brown University; Ateneo de Manila (secondary)",
+          "background": "Managing Director and Management Committee member of Ayala Group. Also President & CEO of National Teachers College. Leads Ayala Group's investments in education. Previously head of AC Education before the 2019 merger with iPeople.",
+          "affiliation": "Ayala Group / Ayala Corporation",
+          "contact_relevance": "Primary executive contact. Represents Ayala's strategic interests in iPeople and drives day-to-day operations and expansion strategy."
+        },
+        {
+          "name": "Dr. Reynaldo B. Vea",
+          "title": "Chairman and CEO",
+          "appointed": "February 1, 2022",
+          "age": 73,
+          "nationality": "Filipino",
+          "education": "PhD Engineering, UC Berkeley; SM Naval Architecture & Marine Engineering, MIT; BS Mechanical Engineering (magna cum laude), University of the Philippines",
+          "background": "Former President & CEO of Mapúa University for 23 years (until June 2023). Career began as naval architect and marine engineer at Hudson Shipbuilding (Mississippi) and Herbert Engineering Corp (San Francisco). Former Chair of UP College of Engineering. Named FEIAP 2022 Engineer of the Year. Now ASU Global Fellow (Philippines). Chairman of NTC, Linc Institute; Chairman of Board of Trustees of UNC.",
+          "affiliation": "Yuchengco / House of Investments side; academic leader",
+          "contact_relevance": "Board chair and institutional figurehead. Deep academic and technical credibility."
+        },
+        {
+          "name": "House of Investments / Yuchengco Group",
+          "role": "Majority shareholder bloc",
+          "detail": "Yuchengco Group (via House of Investments) holds controlling interest. Ayala Corp. holds 36.3% (as of August 2025). A. Soriano Corp. (Anscor) holds remaining ~6.1% after selling to Ayala."
+        }
+      ],
+      "synthesis": "The leadership structure reflects the joint venture nature: Dr. Vea (Yuchengco/academic side) chairs the board as CEO, while Fred Ayala (Ayala conglomerate side) runs operations as President/COO. This dual-principal governance is common in Philippine conglomerate JVs. Fred Ayala is the operational face of the business — the person managing growth strategy, partnerships, and day-to-day execution. His Harvard MBA + Ayala Group pedigree and his role bridging both the Ayala and Yuchengco interests makes him a high-trust, high-influence executive. Vea provides academic legitimacy and institutional relationships. The team has deep networks in Philippine business and government.",
+      "confidence": "high"
+    }
+  },
+  "ownership_structure": {
+    "house_of_investments_yuchengco": "majority (controlling)",
+    "ayala_corporation": "36.3% (as of August 2025, up from 33.5%)",
+    "a_soriano_anscor": "~6.1% (post sale to Ayala)",
+    "public_float": "remainder"
+  },
+  "institutions": [
+    "Mapúa University (flagship — engineering, tech, Manila)",
+    "Mapúa Malayan Colleges Laguna (MMCL — Cabuyao, Laguna)",
+    "Mapúa Malayan Colleges Mindanao (MMCM — Mindanao)",
+    "Mapúa Malayan Digital College (MMDC — online/blended)",
+    "Malayan High School of Science",
+    "National Teachers College (NTC — teacher ed + APEC Schools merged in)",
+    "University of Nueva Caceres (UNC — Naga, Bicol region)"
+  ],
+  "sources_consulted": [
+    "https://ipeople.com.ph/ (company website)",
+    "https://stockanalysis.com/quote/pse/IPO/ (stock overview)",
+    "https://stockanalysis.com/quote/pse/IPO/statistics/ (financial metrics)",
+    "https://www.philstar.com/business/2026/03/08/2512700/mapua-university-expansion-underway-says-ipeople",
+    "https://www.philstar.com/business/2025/10/30/2483421/two-ipeople-schools-merge-under-national-teachers-college",
+    "https://www.bworldonline.com/corporate/2025/08/15/691765/ayala-corp-boosts-ipeople-ownership-to-36-3-after-p351-m-deal/",
+    "https://insiderph.com/ayala-corp-boosts-stake-in-mapua-university-operator-via-p351-m-deal",
+    "https://mb.com.ph/2025/3/12/i-people-and-coursera-expand-partnership-to-deliver-ai-powered-future-ready-education-to-45-000-students",
+    "https://www.gizguide.com/2025/03/coursera-ipeople-partnership-expansioniPe.html",
+    "https://www.manilatimes.net/2025/03/17/campus-press/education-group-steps-up-ai-enabled-platforms/2074086",
+    "https://ipeople.com.ph/mapua-debuts-ai-engineering-program-for-2025-26/",
+    "https://www.alibabacloud.com/blog/alibaba-cloud-and-map%C3%BAa-university-forge-partnership-to-cultivate-next-gen-digital-talents_602243",
+    "https://www.dotdailydose.net/2026/02/27/mapua-education-group-arizona-state-university-launch-groundbreaking-academic-partnership-to-globalize-ph-higher-education/",
+    "https://newsbytes.ph/2026/03/01/mapua-expands-tie-up-with-arizona-state-university-to-cover-all-programs/",
+    "https://bilyonaryo.com/2025/10/29/yuchengco-ayala-education-venture-ipeople-merges-schools-under-national-teachers-college/business/",
+    "https://manilastandard.net/business/314525093/enrolment-at-ipeople-schools-increases-10.html",
+    "https://mb.com.ph/2024/11/18/i-people-s-earnings-jump-as-enrollments-swell",
+    "https://www.imarcgroup.com/philippines-higher-education-market",
+    "https://www.asugsvsummit.com/speakers/alfredo-i-ayala (Fred Ayala profile)",
+    "https://udi.asu.edu/co-lab/video/ipeople-ceo-reynaldo-vea-23-years-change-and-innovation (Vea profile)",
+    "https://ipeople.com.ph/our-company/board-of-directors-management-team-and-executive-officers/",
+    "https://www.phcc.gov.ph/resource-details/pcc-clears-ayala-s-increased-stake-in-ipeople",
+    "https://context.ph/2025/08/13/house-of-investments-bares-p22-b-capex-plan-through-2026/",
+    "https://ipeople.com.ph/wp-content/uploads/2025/05/2024-iPeople-Annual-Report-SEC-17-A.pdf (2024 Annual Report — not directly fetched)"
+  ],
+  "gaps": [
+    "Could not directly read the 2024 Annual Report PDF (WebFetch disabled) — detailed financial statements, segment breakdowns, and capex specifics unavailable",
+    "Could not access iPeople Board of Directors page directly — leadership details assembled from secondary sources",
+    "No direct access to Philstar March 2026 expansion article — details sourced from search snippets",
+    "Fred Ayala's specific talking points or priorities for 2026 are inferred from news; no direct interview quotes captured",
+    "NTC post-merger integration status and performance metrics not available",
+    "APEC Schools brand fate post-merger unclear (brand retention vs. NTC rebrand)",
+    "No data on specific sales/revenue breakdown by institution",
+    "H1 2025 or Q3/Q4 2025 financial results not confirmed — most financial data is FY2024 or TTM as of late 2025",
+    "Competitive positioning vs. other Philippine education groups (e.g., SM-backed schools, Ateneo system, UP) not researched in depth"
+  ]
+}

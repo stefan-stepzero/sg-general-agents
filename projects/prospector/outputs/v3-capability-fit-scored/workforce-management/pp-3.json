@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-talent-acquisition-onboarding-scattering-dup",
+  "pain_point_label": "Fragmented Onboarding Across Campuses",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core absence driving this pain is a standardized onboarding playbook — contracts, policy documents, role expectation briefs, IT setup checklists, and campus-specific welcome guides all need to exist but currently don't. Text generation can produce first-draft versions of every document type from structured templates, with campus-specific variables filled in. This directly attacks the 'each campus improvises' root cause.",
+      "opportunity_sketch": "A playbook generator that takes campus name, role type, and start date as inputs and produces a complete, consistent onboarding packet — welcome letter, role brief, checklist, policy summary — ready for HR review and distribution.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The onboarding failure is a multi-step workflow failure: system access provisioning, payroll registration, campus assignment, role briefing, and document delivery all need to happen in sequence across multiple systems. A task automation agent can orchestrate these steps — triggering IT provisioning, sending policy documents, confirming payroll registration, and flagging blockers — without manual coordination from HR at each campus. The 30% early attrition figure signals the cost of these gaps is measurable and acute.",
+      "opportunity_sketch": "An onboarding orchestration agent that triggers on a new hire record, dispatches system access requests, sends the correct document set per campus and role type, tracks completion of each step, and escalates uncompleted items before day one.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "New hires — especially temp and contract staff — face first-week confusion because there is no single place to ask questions about their role, campus, systems, or policies. A conversational agent can serve as an always-available onboarding guide that answers FAQs, surfaces the right documents, and routes escalations to the correct HR contact per campus. This directly addresses the 'unclear role expectations' pain mechanism without requiring HR bandwidth at each site.",
+      "opportunity_sketch": "A new-hire chatbot deployed via Slack or a web portal, pre-loaded with campus-specific policies, role briefs, and IT setup guides, that walks each hire through their first week and hands off unresolved issues to the right person.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Even when onboarding documents exist in scattered forms across campuses, staff cannot find the right version for their situation. A RAG system over the existing policy corpus — contracts, IT guides, payroll forms, campus handbooks — lets HR staff and new hires ask natural-language questions and get grounded, citation-backed answers. This is a realistic first step for an operator that has documents but no centralized access to them.",
+      "opportunity_sketch": "An internal knowledge base chatbot that indexes all onboarding materials from every campus and answers questions like 'What IT access does a part-time instructor need at the Westside campus?' with direct document citations.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The 30% early attrition rate within 90 days for temp/contract staff is a measurable outcome that a propensity model can predict at the individual level. Features like campus assignment clarity, document completion rate, system access timing, and role type can be used to flag hires at elevated flight risk before they disengage. This turns a lagging indicator (attrition) into an actionable early warning.",
+      "opportunity_sketch": "A 90-day attrition risk model that scores each new hire during their first two weeks based on onboarding completion signals, and triggers proactive check-ins from managers for high-risk individuals.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Faculty hired for HQ without a clear campus assignment at start represents a matching/assignment problem: each hire has a role, qualifications, and preferences; each campus has headcount needs, schedule constraints, and role requirements. A constraint satisfaction system can produce valid assignments that satisfy both sides, replacing the ad-hoc 'figure it out after they arrive' process that creates first-week ambiguity.",
+      "opportunity_sketch": "A campus assignment tool that takes a new hire's profile and available openings across campuses and produces an optimal, constraint-satisfying assignment before the start date — eliminating the 'unclear campus assignment' gap entirely.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

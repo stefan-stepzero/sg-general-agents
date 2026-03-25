@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-sponsor-reporting-variance",
+  "pain_point_label": "Sponsor reporting & compliance variance",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full reporting workflow — extracting ledger data, mapping to sponsor schema, reconciling discrepancies, populating report templates, version-controlling per sponsor, and flagging missing fields — is a multi-step process that currently requires manual coordination across campuses. A task automation agent can orchestrate this end-to-end pipeline on a schedule tied to each sponsor's submission calendar, handling branching logic for different sponsor types (LGU quarterly, government annual, donor ad-hoc). This directly addresses the missed-deadline compliance risk and funding hold exposure.",
+      "opportunity_sketch": "An automated reporting pipeline that triggers on sponsor deadlines, pulls ledger data, runs schema mapping, generates draft reports, logs version history per sponsor, and alerts finance staff to reconciliation gaps requiring human judgment before submission.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The absence of a master reporting calendar means staff effort is unplanned and concentrated at submission windows, creating bottlenecks across campuses. An AI scheduling system can build and maintain a dynamic reporting calendar across all sponsors and campuses, allocating staff preparation time in advance of deadlines and flagging conflicts where multiple submissions cluster. This converts reactive deadline scrambles into planned workload distribution visible to finance leadership.",
+      "opportunity_sketch": "A reporting calendar optimizer that maps all sponsor submission deadlines across the year, back-calculates preparation start dates, and assigns campus finance staff to tasks based on workload capacity — surfacing a forward-looking compliance schedule for finance leadership.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain is that ledger data (posted amounts, disbursement records) does not map cleanly to sponsor-mandated schemas — e.g., sponsors want \"beneficiary outcome\" but the system tracks only \"posted amount\". AI-assisted schema mapping can learn and apply the translation rules between the school's internal data model and each sponsor's required format, eliminating manual pivot-table work. This directly addresses the 25-40 hrs/month extraction burden concentrated at submission windows.",
+      "opportunity_sketch": "A transformation layer that ingests ledger exports and applies per-sponsor schema mappings to produce submission-ready report files in each sponsor's required format, with field-level reconciliation notes where data does not map perfectly.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Reconciliation between ledger records and sponsor expectations is currently slow and error-prone because discrepancies are found late in the process. An anomaly detection model trained on historical reconciliation data can flag unusual variances — amounts that deviate from expected disbursement patterns or student counts that do not match enrollment records — before submission, functioning as a pre-submission validation layer. This addresses the stated pain of having no pre-submission validation step.",
+      "opportunity_sketch": "A reconciliation validator that runs before each report is finalized, scoring each line item for variance from expected values and surfacing high-risk discrepancies to the finance team with explanations, reducing last-minute scrambles before submission deadlines.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.45
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Each sponsor report requires narrative sections — student outcome summaries, aid utilization commentary, compliance attestations — that are currently drafted manually from financial data. AI text generation can produce sponsor-tailored prose from structured ledger and enrollment data, adapting tone and vocabulary to each sponsor's template requirements. This removes the drafting bottleneck that occurs at every submission window.",
+      "opportunity_sketch": "Per-sponsor report generation that populates both structured fields (via transformation) and narrative sections, producing a near-final draft document in the sponsor's preferred format ready for finance officer review and sign-off.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

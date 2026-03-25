@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-performance-evaluation-inconsistent-rubrics-dup",
+  "pain_point_label": "Inconsistent Evaluation Rubrics Across Campuses",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a standardized evaluation form aligned with DepEd RPMS is a content generation problem — AI can draft standardized rubric templates, behavioral anchors, and scoring descriptors that align with RPMS competency domains. This directly addresses the ad-hoc/outdated-template problem by producing a canonical, consistent document that all principals can use. Education operators have the RPMS framework published as a reference corpus, giving the model grounded source material.",
+      "opportunity_sketch": "An AI tool that ingests the official DepEd RPMS framework and generates a complete, campus-agnostic performance evaluation form with competency indicators, rating scales, and narrative guide language — ready for HR to review and deploy across all sites.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Multiple campuses already have ad-hoc checklists and paper templates — these are semi-structured inputs that need to be mapped to a unified target schema (the RPMS framework). AI-assisted schema mapping can normalize the existing heterogeneous criteria into a single standardized structure, revealing which campuses already partially comply and which need the most remediation. This tackles the root cause of inconsistency rather than just producing a new document.",
+      "opportunity_sketch": "Ingest scanned or digitized evaluation forms from each campus, extract the criteria used, and map them to RPMS competency codes — producing a gap report showing where each campus deviates and a reconciled master schema.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Once a standard rubric exists, AI can classify completed evaluations or written comments by RPMS competency domain, detecting which areas principals are and are not assessing — surfacing compliance gaps and bias patterns across campuses. This addresses the grievance and fairness dimension by providing objective evidence that certain campuses over-index on attendance vs. pedagogy, making audit findings defensible.",
+      "opportunity_sketch": "A classification layer that processes submitted evaluation narratives and tags each statement to an RPMS competency, then generates a cross-campus compliance dashboard showing coverage gaps and outlier campuses for HR review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full evaluation cycle — distributing forms, collecting submissions, checking for completeness, flagging non-compliant rubrics, routing for principal sign-off, and archiving — is a multi-step workflow that today requires manual HR coordination across campuses. A task automation agent can own this pipeline end-to-end, enforcing the standardized rubric at the point of submission and blocking incomplete or off-template evaluations before they create grievances downstream.",
+      "opportunity_sketch": "An automated evaluation workflow agent that sends the standardized RPMS-aligned form to each campus on schedule, validates submissions against required criteria, flags deviations for HR review, and archives completed evaluations in a central record — reducing manual coordination and ensuring audit-ready compliance.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

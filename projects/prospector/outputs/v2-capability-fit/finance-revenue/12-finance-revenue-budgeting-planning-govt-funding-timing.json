@@ -1,0 +1,59 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-govt-funding-timing",
+  "pain_point_label": "Government Funding Tranche Misalignment with Operating Cycle",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The core pain is inability to predict when government tranches will actually arrive versus when operating costs fall due. Time series models trained on historical government disbursement dates (with their delays and variances) plus monthly expenditure patterns across all sites can produce a rolling 13-week cash flow forecast per site and network-wide. This directly addresses the 'no single reliable cash flow forecast across the network' symptom.",
+      "opportunity_sketch": "A network-wide cash flow forecasting model that ingests historical tranche receipt dates, operating cost schedules, and site-level balances to output a rolling 90-day liquidity forecast — flagging sites projected to hit zero before the next tranche.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 5,
+      "composite_score": 4.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Inter-site cash transfers and short-term borrowing decisions are resource allocation problems: which sites have surplus, which have shortfall, and how much to move when. An optimization model can schedule inter-site transfers to minimize total borrowing cost and eliminate emergency requests by pre-positioning liquidity before shortfalls occur.",
+      "opportunity_sketch": "A liquidity scheduling tool that takes forecast site balances and known tranche dates as inputs, then recommends the optimal inter-site transfer schedule and timing to eliminate unplanned debt service costs — replacing ad hoc emergency requests with a planned monthly liquidity calendar.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Government disbursement delays are a known but unpredictable shock. An anomaly detection system monitoring incoming funding receipts against expected schedules can flag delays in real time — giving finance days of advance warning rather than discovering a shortfall when payroll is due. It can also detect unusual outflow patterns at individual sites that signal impending cash crisis.",
+      "opportunity_sketch": "An early-warning monitor that flags when a government tranche is overdue relative to historical receipt patterns, and separately alerts when site-level outflows are trending toward a cash floor — giving the central finance team lead time to arrange transfers proactively.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Governance confusion about true liquidity position is cited explicitly. AI-generated executive cash position reports — synthesizing forecast data, tranche receipt status, and inter-site transfer activity into plain-language board and leadership summaries — directly address the visibility and communication gap without requiring finance staff to manually author them.",
+      "opportunity_sketch": "Automated weekly liquidity briefings generated for CFO and board: network cash position, tranche receipt status vs. schedule, sites at risk, and recommended actions — replacing ad hoc status emails with a consistent, structured narrative.",
+      "impact": 2,
+      "feasibility": 5,
+      "visibility": 4,
+      "composite_score": 3.3
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code", "generation-image", "generation-audio", "generation-video",
+    "generation-synthetic-data", "extraction-media-parsing", "extraction-entity",
+    "extraction-summarization", "extraction-knowledge", "extraction-transformation",
+    "classification-text", "classification-visual", "classification-structured",
+    "classification-audio", "prediction-propensity", "prediction-risk",
+    "prediction-regression", "search-semantic", "search-rag", "search-recommendation",
+    "search-multimodal", "optimization-routing", "optimization-pricing",
+    "optimization-experiment", "optimization-constraint", "agents-conversational",
+    "agents-task-automation", "agents-research", "agents-coding", "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,86 @@
+{
+  "cell": {
+    "cellNum": 6,
+    "subCategory": "Retention & Engagement",
+    "domain": "Talent & People",
+    "heat": 48,
+    "oppScore": 37
+  },
+  "ideas": [
+    {
+      "name": "Appraisal Digest Engine",
+      "one_liner": "Automatically condenses teacher performance reviews, 360-degree feedback, and professional development portfolios into executive appraisal summaries for principals and HR teams.",
+      "problem": "CSPD and PHINMA manage hundreds of educators across multiple campuses. Annual appraisal cycles involve consolidating narrative reviews from line managers, peer feedback, and self-assessments into appraisal documents. Principals spend days manually summarizing these; education-specific context like teaching standards alignment and pastoral observation is lost in generic HRIS summaries.",
+      "ai_technique": "Summarization & Condensation (education-context-aware)",
+      "how_it_works": "Ingest teacher appraisal documents (manager review, 360 feedback, PD portfolio, certification status) and automatically generate 1-2 page executive summary. Use education-specific ontology (NESA teaching standards, pastoral care metrics, curriculum alignment) to retain domain context. Output: standardized appraisal digest ready for principal sign-off, reducing appraisal processing time from days to hours per teacher.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "acasus"
+      ],
+      "buyer_persona": "Principal or Head of HR",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Workforce Data Unifier",
+      "one_liner": "Integrates fragmented education HR systems (payroll, HRIS, teaching registration, appraisal tracking) into a normalized unified schema for workforce analytics.",
+      "problem": "CSPD, PHINMA, and other multi-site operators run payroll on one system, HRIS on another, national teacher registration in a third, and appraisal tracking in spreadsheets. No system knows the complete picture of a teacher's registration status, teaching area, professional learning hours, or compensation. Standard HR integration platforms ignore education-specific schemas.",
+      "ai_technique": "Data Transformation & Structuring (education HR schema mapping)",
+      "how_it_works": "Map source systems (payroll, national registration databases, HRIS) to a canonical education HR schema capturing registration status, teaching subject/area, contract type, PD hours, and compensation. Build ETL pipelines with education-specific transformations (recognition of vocational vs. academic subjects, handling of multi-site contract splits). Output: unified staff database enabling cross-system workforce analytics without point-to-point integrations.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "ipeople"
+      ],
+      "buyer_persona": "Director of IT or Head of HR",
+      "tier": "module",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teacher Attrition Forecaster",
+      "one_liner": "Predicts individual and cohort-level teacher attrition and hiring pipeline needs based on seasonal patterns, contract milestones, and certification renewal cycles.",
+      "problem": "Rising Academies and PHINMA face severe teacher retention pressure (52 heat in Talent domain). Seasonal enrollment cycles drive staffing needs that vary by school and grade level. Certification renewal dates and contract milestones are scattered across systems. Legacy HRIS cannot forecast hiring pipeline needs or anticipate attrition surges before they impact classes.",
+      "ai_technique": "Time Series Forecasting (school-calendar-aware, contract-aware)",
+      "how_it_works": "Ingest teacher roster data by contract type, subject area, tenure, and certification expiry. Model attrition as seasonal (e.g., end-of-year departures) and event-driven (contract renewals, certification lapses). Forecast hiring need for next 2-3 academic terms by grade and subject. Output: monthly hiring plan, attrition risk alerts by individual teacher (contract expiry, certification lapse), and recruitment lead-time recommendations.",
+      "target_companies": [
+        "rising",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Chief People Officer or Talent Manager",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Professional Development Scheduler",
+      "one_liner": "Optimizes PD budget allocation and training schedule across distributed school networks, respecting award conditions and certification requirements.",
+      "problem": "Rising Academies and School for Life operate 50+ distributed campuses where coordinating professional development is manual and error-prone. Teachers have mandatory PD hours, accreditation programs have staff certification requirements, and relief teacher pools must cover classes during training. Current spreadsheet-based scheduling creates conflicts and misses cost-saving consolidation opportunities.",
+      "ai_technique": "Resource Allocation & Scheduling (constraint-aware)",
+      "how_it_works": "Model PD budget, teacher availability by site, award compliance rules (e.g., minimum PD days per year), and program certification requirements. Solve constraint satisfaction problem: allocate courses to dates/sites to maximize attendance, minimize relief cover costs, and ensure certification compliance. Output: annual PD schedule by campus, budget allocation recommendation, and substitution plan for school coverage.",
+      "target_companies": [
+        "rising",
+        "school-for-life",
+        "cspd"
+      ],
+      "buyer_persona": "Director of Professional Learning or Operations Manager",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teacher Risk Intervention Queue",
+      "one_liner": "Scores individual teachers on flight risk, performance risk, and certification lapse risk to prioritize HR intervention.",
+      "problem": "PHINMA's distributed workforce (1000+ teachers) faces high attrition. HR teams lack systematic tools to identify at-risk teachers before they resign. High performers in remote postings, teachers whose certifications are about to lapse, and those in roles with high subject-scarcity premium are all critical to retain but are identified only reactively.",
+      "ai_technique": "Risk Scoring & Assessment (education-specific factors)",
+      "how_it_works": "Build risk model combining: (a) flight risk factors (tenure, age, remote posting, prior attrition cohort); (b) performance risk (appraisal scores, student feedback, absence patterns); (c) compliance risk (certification expiry, registration renewal). Score each teacher monthly and flag top-risk cohorts for intervention (1-on-1 discussion, role adjustment, professional development). Output: ranked intervention queue for HR, cohort-level retention insights.",
+      "target_companies": [
+        "phinma",
+        "rising",
+        "cspd"
+      ],
+      "buyer_persona": "Head of HR or Talent Development Manager",
+      "tier": "feature",
+      "confidence": "medium"
+    }
+  ]
+}

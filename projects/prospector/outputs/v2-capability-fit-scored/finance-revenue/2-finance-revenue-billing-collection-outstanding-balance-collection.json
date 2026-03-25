@@ -1,0 +1,49 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-outstanding-balance-collection",
+  "pain_point_label": "Outstanding Balance Tracking & Collection Follow-Up",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "The core pain is that 2,000+ accounts all look the same on a spreadsheet. A structured classification model can segment accounts into priority tiers automatically each morning.",
+      "opportunity_sketch": "A daily-refreshed priority scoring layer that sits over the SIS/billing system and outputs a ranked work queue for collection staff.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The real collection question is: which families will pay if contacted this week vs. which will go delinquent regardless? A propensity model lets collection staff focus effort on recoverable accounts.",
+      "opportunity_sketch": "A payment likelihood within 30 days score per account that drives a contact-now queue for high-propensity families and an escalation-now flag for low-propensity/high-balance accounts.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Collection staff currently compose ad hoc SMS/call scripts without knowing each family context. LLM-generated, context-aware message drafts reduce friction and reputational damage from incorrect-balance contacts.",
+      "opportunity_sketch": "A message drafting tool embedded in the collection workflow that generates a family-specific SMS or call script pulling from the live account record.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The workflow — check account balance, verify last contact date, check if a payment promise is due today, send reminder, log outcome — is a multi-step repeatable process currently done manually.",
+      "opportunity_sketch": "An autonomous daily collection workflow agent that handles routine low-balance reminders and payment-promise follow-ups, escalating edge cases to a human queue.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": ["generation-code","generation-image","generation-audio","generation-video","generation-synthetic-data","extraction-media-parsing","extraction-entity","extraction-summarization","extraction-knowledge","extraction-transformation","classification-text","classification-visual","classification-anomaly","classification-audio","prediction-time-series","prediction-risk","prediction-regression","search-semantic","search-rag","search-recommendation","search-multimodal","optimization-resource","optimization-routing","optimization-pricing","optimization-experiment","optimization-constraint","agents-conversational","agents-research","agents-coding","agents-multi"],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

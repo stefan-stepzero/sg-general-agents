@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-donor-philanthropic-no-major-donor-strategy-dup",
+  "pain_point_label": "No Systematic Major Donor Cultivation or Prospect Pipeline",
+  "matches": [
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The core gap is that no one is doing prospect research — there is no process to find, profile, and rate potential major donors. A research agent can autonomously gather public intelligence on prospects from news, LinkedIn, foundation directories, and philanthropic databases to build structured donor profiles without requiring a dedicated development officer. This directly replaces the missing prospect screening process.",
+      "opportunity_sketch": "An agent that accepts a prospect name and returns a structured profile: estimated giving capacity, known philanthropic interests, board affiliations, recent news, and warm connection paths — ready to feed into a cultivation pipeline.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The pain explicitly names the absence of donor rating by capacity and interest — the foundational input to a major gift pipeline. Propensity modeling on existing alumni, parent, and community data can score each contact by giving likelihood and estimated capacity, enabling staff to prioritize cultivation efforts without a full-time development officer. This turns an ad-hoc, personality-driven process into a data-driven one.",
+      "opportunity_sketch": "A donor scoring model trained on giving history, engagement signals (event attendance, email open rates, board involvement), and demographic proxies that ranks the contact database by major gift potential and flags top-100 prospects for cultivation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Major donor cultivation is communication-intensive: personalized briefing notes before meetings, stewardship letters after gifts, cultivation emails tied to donor interests, and multi-year ask narratives. Without a dedicated development officer, these communications never get written systematically. AI text generation can produce tailored, relationship-aware outreach at scale from donor profile data.",
+      "opportunity_sketch": "A tool that ingests a donor profile and interaction history and generates a pre-meeting briefing, a draft cultivation email, or a personalized ask letter — allowing a principal or head of school to maintain high-quality donor relationships without dedicated staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When a donor relationship is personality-driven, relationship knowledge lives in emails, meeting notes, and one person's memory. When that person leaves, the donor is lost. Summarization can distill accumulated correspondence and notes into concise relationship histories — preserving institutional knowledge and enabling any staff member to be briefed before a donor interaction.",
+      "opportunity_sketch": "An automated donor dossier builder that summarizes all prior correspondence, meeting notes, and interaction records for each major donor into a 1-page relationship brief, updated continuously and accessible to any authorized staff member.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff turnover destroys donor relationships because there is no queryable record of what was discussed, promised, or agreed. A RAG system over donor correspondence, meeting notes, and gift records lets any staff member ask 'What did we last discuss with this donor?' or 'What are their stated interests?' and get a grounded, cited answer — directly addressing the knowledge-loss problem on staff departure.",
+      "opportunity_sketch": "A donor knowledge base where all historical communications, notes, and records are indexed and searchable via natural language — allowing a new development officer or principal to get up to speed on any donor relationship in minutes rather than months.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "Without a pipeline, cultivation is reactive — staff engage donors only when prompted by an event or crisis. A recommendation system can proactively surface which donors are due for outreach based on time since last contact, giving anniversaries, engagement signals, and capacity ratings, turning ad-hoc relationship management into a systematic cadence.",
+      "opportunity_sketch": "A CRM-integrated recommendation engine that surfaces daily or weekly 'donor actions' — which prospects to contact this week, what touchpoint to use, and what message angle fits their known interests — replacing the absent pipeline with an AI-driven cultivation cadence.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

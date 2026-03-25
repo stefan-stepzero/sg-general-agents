@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-multi-scheme-reconciliation",
+  "pain_point_label": "Multi-scheme account posting & reconciliation",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each aid scheme (institutional scholarship, government voucher, LGU slot, donor stipend) arrives in different formats with different posting rules. AI-assisted schema mapping and format normalization can ingest heterogeneous scheme data and map it to a canonical ledger structure, eliminating the manual translation step that causes fragmented posting across account types A, B, and cash accounts.",
+      "opportunity_sketch": "A transformation pipeline that ingests raw disbursement files from each scheme source and normalizes them into a unified posting manifest — specifying account type, posting sequence, timing, and credit amount — before anything touches the student ledger.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.55
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core month-end problem is identifying orphaned credits, over/under-postings, and mismatched donor transfer amounts — all of which are anomalies relative to expected posting patterns. An anomaly detection model trained on historical correct postings can flag variance conditions in near real-time rather than waiting for month-end manual review, cutting the 20+ hrs/month per campus variance analysis dramatically.",
+      "opportunity_sketch": "A continuous reconciliation monitor that scores each posting transaction against expected patterns (by scheme, student account type, timing) and surfaces flagged line items to finance staff as they occur — eliminating batch month-end discovery.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.3
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Multi-award students (institutional + voucher + stipend) fail specifically because posting sequence rules conflict and there is no system that evaluates the full constraint set simultaneously. Constraint satisfaction can determine the valid posting order and account assignment given each scheme's rules — treating this as a configuration problem where all scheme constraints must be satisfied at once.",
+      "opportunity_sketch": "A posting rule engine that, given a student's active awards and their respective scheme constraints, computes the correct posting sequence, account type assignment, and timing — generating a validated posting plan before ledger writes occur.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full reconciliation workflow — ingesting scheme files, normalizing formats, applying posting rules, posting to student accounts, matching donor transfers, flagging variances — is a multi-step business process that currently requires 20+ hrs/month of manual work per campus. A task automation agent can execute this end-to-end workflow autonomously across all campuses, including branching logic for error handling when variances are detected.",
+      "opportunity_sketch": "An automated reconciliation agent that runs on a nightly or weekly cycle: pulls disbursement data from each scheme source, applies posting rules, executes ledger entries, performs variance matching, and generates an exception report for finance staff — reducing human effort to exception review only.",
+      "impact": 5,
+      "feasibility": 2,
+      "visibility": 5,
+      "composite_score": 4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

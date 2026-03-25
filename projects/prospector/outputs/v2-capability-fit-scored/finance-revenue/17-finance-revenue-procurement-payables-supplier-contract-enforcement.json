@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-supplier-contract-enforcement",
+  "pain_point_label": "Supplier Contract Enforcement & Preferred Vendor List Drift",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Invoice prices above contracted rates and unapproved vendors are statistical anomalies against a known baseline.",
+      "opportunity_sketch": "An invoice anomaly monitor comparing every incoming invoice against the preferred vendor list and contracted price schedule.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Invoices arrive as PDFs or paper from informal suppliers. OCR and invoice parsing converts these into structured line-item records.",
+      "opportunity_sketch": "An invoice ingestion pipeline that parses incoming invoices into structured records for a central procurement dashboard.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Contracts define specific terms buried in unstructured documents. Entity extraction can pull key-value pairs into a structured contract register.",
+      "opportunity_sketch": "A contract digitization pass extracting pricing tables, payment terms, and penalty clauses from PDF vendor contracts.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The enforcement failure is not just detection but the absence of a workflow that escalates exceptions and blocks payment.",
+      "opportunity_sketch": "An automated procurement compliance workflow that validates vendor and pricing against the approved list and routes exceptions through an approval chain.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

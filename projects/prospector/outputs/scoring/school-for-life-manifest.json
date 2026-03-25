@@ -1,0 +1,557 @@
+{
+  "company_id": "school-for-life",
+  "company_name": "School for Life Foundation",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Education / Nonprofit",
+        "evidence": "Registered with ACNC as 'School for Life Foundation Australia Limited'. Operates schools (primary, secondary, vocational) in Uganda. ACFID-accredited international development charity. Tagline: 'Educating Poverty Out of Existence'.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "International development — holistic K-12 + vocational education in Sub-Saharan Africa (Uganda), with embedded health, agriculture, and community uplift programs",
+        "evidence": "Site pages include 'Holistic Quality Education Model', 'Post School Pathways', 'Community Uplift', 'Healthcare'. Programs span primary education, secondary girls' scholarships, vocational training, school feeding, menstrual hygiene, and water access. Geographic focus is Mpigi District, Uganda, with stated expansion toward East Africa network.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Direct service provider (end-service-provider) — owns and operates schools and programs; also acts as a fundraising and philanthropy intermediary between Australian donors and Ugandan communities",
+        "evidence": "Owns 43 acres of land; constructed primary school and vocational school; recruits and pays local staff; designs and delivers education, agriculture, and health curricula. Simultaneously operates donor-facing Australian fundraising infrastructure (Gala Ball, corporate partnerships, giving circles).",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Mature — international NGO / education charity sector is well-established with entrenched models, though undergoing structural disruption (USAID cuts, localization trend, digital education adoption)",
+        "evidence": "17-year operational history; sector context research notes Uganda NGO count dropped from ~14,000 (2019) to ~5,021 (2023) due to funding pressures and compliance tightening; broader trend toward locally-led models aligns with SFL's approach.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Donation-dependent / philanthropic funding — event-driven (Gala Ball), corporate partnerships, individual major donors, giving circles; no earned revenue from program delivery",
+        "evidence": "Gala Ball is the cornerstone revenue event ($3M+ in 2025; $7M+ cumulative series). Seisma corporate partnership includes salary gifting + employer matching + giving day. 100 Women giving circle grant ($39,383 for girls' education). RAWCS auspicing enables tax deductibility for Australian donors. No evidence of program fees, government contracts, or USAID/DFAT grants.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Human-delivered, place-based service — operates a network of 10 primary, secondary and vocational schools in Uganda serving 4,500+ students; Australian HQ handles donor relations, fundraising, and communications",
+        "evidence": "10 schools across Mpigi District confirmed May 2025 (up from 3 campuses at Mbazzi and Katuuso in earlier records). 250 Ugandan staff on-site. Dedicated teaching staff includes Seisma-sponsored IT teacher (Jerome). Healthcare programs (nurses), school feeding, agricultural programs. Australian HQ team manages fundraising events, corporate partnerships, and impact communications.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Fixed-cost-heavy — ongoing staff wages for 250 Ugandan field staff (teachers, nurses, admin across 10 schools) represent the dominant cost centre; land/facility maintenance for 43-acre campus plus expanded school network; Australian HQ team (~27–31 staff) are overhead; Gala Ball event production is a significant periodic fixed cost",
+        "evidence": "250 Ugandan staff confirmed May 2025 across 10 schools — wage bill at Ugandan teacher salary levels is the primary operational cost. 43 acres of owned land and constructed buildings = fixed asset base. Year-round teaching, healthcare, and agriculture programs require permanent on-site staff. Australian team permanent employees (not volunteer). Gala Ball event production (catering, venue, GalaBid platform, AV) is a recurring fixed-cost event.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Growth band — estimated $2M–$5M annual revenue (AUD); possibly higher in Gala Ball years",
+        "evidence": "Gala Ball raised $3M+ in 2025 alone; $1.5M in a non-matched year would be a reasonable baseline. Corporate partnerships, giving circles, and individual donors add incremental revenue. $7M cumulative over ~16 Gala Ball events implies average $437K per event historically, but recent events are much larger (growth trend). Granular annual figures not publicly accessible.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Grant/donation-funded nonprofit — no equity, no VC/PE, no debt financing; cash reserves unknown",
+        "evidence": "ACNC-registered company limited by guarantee. RAWCS/Rotary auspicing. No evidence of government grants (DFAT), bank debt, or equity investment. Gala Ball success ($3M+ in 2025) suggests healthy cash position post-event but annual burn unknown.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Asset-medium to asset-heavy for a nonprofit — owns 43 acres of land in Uganda with constructed school buildings and vocational facilities; Australian HQ is likely leased/virtual",
+        "evidence": "43 acres of land purchased by David Everett during 2008–2013 founding period. Constructed primary school, vocational school on that land. Healthcare clinic infrastructure implied by healthcare programs. Australian office presence noted (The Office Space, a co-working provider, has a School for Life Foundation profile).",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Financially stable and growing — accelerating fundraising trajectory with no financial distress signals",
+        "evidence": "2025 Gala Ball $3M+ (record single-night result). Cumulative $7M+ in gala series. 2026 Gala Ball already planned. No redundancies, office closures, or program cuts reported. Structurally insulated from USAID cuts affecting peer organizations. No negative watchdog signals. 17-year uninterrupted operations.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Established — 17–18 years (founded 2008)",
+        "evidence": "Co-founded 2008 by Annabelle Chauncy and David Everett following their 2007 volunteering experience in Kenya/Uganda. Blog post '15yearsofsfl' (December 2023). 16th annual Gala Ball held May 2025 (consistent with 2009 or 2010 first event). OAM awards in 2015 cited '7 years of service'.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Medium beneficiary base — 4,500+ students across 10 schools in Uganda as of 2025; donor/supporter base: medium (650+ Gala Ball attendees annually, dozens of corporate partners, individual major donors including an anonymous matched-giving family)",
+        "evidence": "Annabelle Chauncy May 2025 letter confirms '4,500 students and 250 staff across 10 schools'. Seisma sponsors 85 secondary girls. 100 Women grant for 50 girls in first-year secondary. First student competing at national athletics level — selective program reach for elite pathway. 650+ Gala Ball attendees (donors/supporters). Program reach has grown substantially from earlier 3-campus estimate.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {
+        "value": "Active growth / scaling — operational programs have expanded materially to 10 schools and 4,500 students (up from 3 campuses in earlier records); fundraising is simultaneously scaling (Gala Ball $3M+ in 2025, 2026 event planned); organisation is growing both its Uganda program footprint and its Australian revenue base concurrently",
+        "evidence": "May 2025 data confirms 10 schools and 250 staff — meaningful expansion beyond the 3-campus baseline captured in earlier research. Gala Ball series is in its 16th–17th consecutive year with accelerating totals ($3M in 2025 vs historical $437K average). Annabelle's May 2025 Uganda visit letter frames the next phase as network expansion across East Africa. 2026 Gala Ball already planned. Both sides of the model — programs and fundraising — are growing simultaneously.",
+        "confidence": "medium"
+      },
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Niche specialist — differentiated by: locally-led model, holistic education (not just schooling), 17-year track record, founder-credibility (OAM, keynote circuit), and premium donor event brand in Australian philanthropic market",
+        "evidence": "Research notes SFL's 'locally-led, Australian-donor-funded model' explicitly aligns with current best-practice development standards, reducing 'white saviour' critique risk. Gala Ball described as one of Australia's 'most exclusive' philanthropic events. Smiley Charity Film Awards recognition for communications excellence. No direct head-to-head competitors named, but sector includes many Australian-run East Africa education NGOs.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Relationship-led / community-led — primary acquisition of major donors through curated event (Gala Ball), personal outreach (Annabelle's speaking circuit, Lexi/Tamara partnership outreach), and word-of-mouth among donor networks; supplemented by content marketing (blog, impact stories, Mamamia podcast)",
+        "evidence": "Gala Ball is the cornerstone acquisition and retention event. Tamara and Lexi hold corporate partnership development roles. Annabelle listed on Saxton Speakers Bureau and Halogen Foundation — keynote speaking extends reach into new donor pools. Blog impact stories (Pauline, Ritah) serve content marketing function.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Moderately concentrated — Gala Ball and its attendee base drives the dominant revenue share; a small number of anonymous major donors (e.g., the family that matched $1.5M in 2025) represent very high single-donor exposure",
+        "evidence": "2025 Gala Ball raised $3M+, with an anonymous family match accounting for $1.5M (50% of the total event). This represents extreme concentration risk on a single donor family. Corporate partnerships (Seisma, others) appear to cover discrete program costs rather than core operations.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Not applicable as a charity (no priced offering); however, donor experience is positioned as premium — the Gala Ball is explicitly framed as 'exclusive', attracting high-net-worth individuals",
+        "evidence": "Gala Ball marketed as 'Sydney's most exclusive event'. Sponsorship tiers for corporate partners (implying structured giving levels). GalaBid auction platform used for live event bidding — premium format typical of high-ticket charity events.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Founder-led (single active founder) — Annabelle Chauncy is the dominant public face and CEO; co-founder David Everett appears to have transitioned out; RAWCS-appointed board director adds governance layer",
+        "evidence": "Annabelle leads Uganda leadership visits, anchors all public communications, keynote speaker, OAM-awarded. David Everett's LinkedIn now shows Nadia and Alf Taylor Foundation — departure from SFL operational role inferred. RAWCS/Rotary governance condition requires one RAWCS-appointed board director. Full board composition unknown.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Hub-and-spoke — Australian HQ (~27–31 staff) coordinates a large Ugandan operational team (250 staff across 10 schools); functional split between Australian fundraising/communications and Ugandan program delivery",
+        "evidence": "Named Australian roles: CEO (Annabelle), Philanthropy Head of Projects (Jess Ledieu), Gala Ball/Partnerships (Tamara), Corporate Partnerships (Lexi). ContactOut/RocketReach list 27–31 Australian-side staff. Ugandan team: 250 staff across 10 schools (May 2025) — teachers, nurses, local leaders — intentionally not named in public materials. Two distinct operational geographies with different functions.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Multi-site / distributed — Australian HQ (Sydney-based, likely hybrid or co-working given The Office Space profile) + permanent Ugandan school staff on-site",
+        "evidence": "The Office Space (Sydney co-working provider) has a School for Life Foundation profile. Annabelle confirmed Sydney-based. Ugandan staff permanently on-site at the 43-acre campus. Jessica Ledieu spent 6 months in Uganda in 2018 for impact assessment — implies occasional cross-site travel as standard.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Mission-driven generalists (Australian HQ) + domain educators and community workers (Uganda) — fundraising, donor relations, and impact communications skills dominate Australian side; teaching, nursing, agriculture skew Ugandan side",
+        "evidence": "Jess Ledieu career progression: Program Manager → Fundraising Coordinator → Donor Relations → Philanthropy Head of Projects — classic nonprofit generalist-to-specialist path. Tamara and Lexi in partnership/events roles. Ugandan IT teacher (Jerome) Seisma-sponsored. No evidence of technology, data, or engineering talent in the organization.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Minimal tech — standard nonprofit website/CMS (Squarespace based on URL patterns), email-based donor communications, Google Classroom for student delivery; no custom software development",
+        "evidence": "Website URL patterns and Squarespace-style structure visible in site scan. GalaBid third-party auction platform for Gala Ball. Google Classroom implemented 2021. Donation infrastructure likely via standard third-party processor. No evidence of CRM sophistication, custom donor portals, or internal tooling.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Ad-hoc / no engineering function — website and digital tools are procured third-party services; no software development capability",
+        "evidence": "No technology, engineering, or product roles in leadership or job listings. Website is hosted third-party CMS. GalaBid is an off-the-shelf charity auction platform. No job postings for technical roles found.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Minimal — website notification tooling (Hello Bar) and Google Classroom are the only identifiable data-touching tools; no CRM, BI platform, or structured data pipeline evident; impact reporting is narrative and anecdotal rather than quantitative; donor tracking likely spreadsheet-based given absence of any CRM vendor signals",
+        "evidence": "ContactOut technology stack page for School for Life Foundation identifies Hello Bar (website notification/lead capture tool) — consistent with small-nonprofit digital footprint. No Salesforce, Raiser's Edge, HubSpot, or equivalent CRM identified in any search. All published impact reporting uses individual named student stories and single fundraising event totals — no dashboards, no cohort outcome data, no enrollment trend charts. Google Classroom implemented 2021 as COVID response (Seisma partnership). IT teacher Jerome (Seisma-sponsored) supports digital literacy curriculum. ACNC Annual Information Statement is the only structured financial data obligation. No analytics platform or data engineering roles in any staff listing.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Minimal — standard third-party platform security inherited from Squarespace (website), GalaBid (event bidding), and payment processors; no formal security program, no certifications, no dedicated security staff; appropriate for a sub-100-person international development nonprofit with no sensitive financial data custody",
+        "evidence": "No SOC2, ISO 27001, or equivalent certification found. No data breach events or watchdog alerts found across 17-year operational history. Donor transactions flow through GalaBid and third-party payment processors (security outsourced). Standard HTTPS on schoolforlife.org.au. Squarespace-hosted website (inherits Squarespace platform security). No technology, security, or engineering roles in any known staff listing. ACNC compliance is the primary formal data obligation.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Moderate (dual-jurisdiction) — Australian nonprofit compliance (ACNC, ACFID, tax law, RAWCS auspice conditions) + Ugandan NGO regulatory environment (NGO Bureau registration, government school oversight)",
+        "evidence": "ACNC registered company limited by guarantee. ACFID accreditation requires adherence to ACFID Code of Conduct (governance, transparency, accountability). RAWCS auspice has board composition condition. Uganda NGO Bureau oversight — sector context notes rising compliance requirements that eliminated ~9,000 NGOs 2019–2023.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Multi-continent — operations in Uganda (East Africa); fundraising and HQ in Australia; communications reaching global philanthropic audience",
+        "evidence": "43-acre campus in Mpigi District, Uganda. Australian HQ Sydney. Smiley Charity Film Awards (international). Idealist.org listing (Kampala office). NGO Jobs in Africa listing.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Donor-cycle-sensitive (linked to Australian HNW discretionary giving patterns) + forex-exposed (AUD-to-UGX; Ugandan shilling operational costs vs AUD fundraising); partially recession-resistant due to relationship-based major donor model",
+        "evidence": "Fundraising from Australian HNW individuals and corporates makes revenue cyclical with Australian economic confidence and corporate profitability. Ugandan program costs denominated in UGX but funded in AUD. However, major donor relationships are sticky — the anonymous family match in 2025 demonstrates deep commitment independent of macro conditions. USAID-cut context shows SFL is explicitly insulated from government aid cycles.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Nonprofit / charity — ACNC reporting, ACFID Code of Conduct, donor accountability, RAWCS board condition; no public shareholders, no quarterly earnings pressure",
+        "evidence": "ACNC annual financial statement filing obligation. ACFID accreditation requires annual compliance submission including financial transparency. RAWCS auspice requires Rotary-appointed director on board. Mission primacy: 'Educating Poverty Out of Existence' — mission constrains all commercial decisions.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Pragmatic — adopts proven tools (Google Classroom for COVID continuity) when there is clear programmatic need; not a technology innovator; deep conservatism on program model (17-year-old holistic model with no major pivots)",
+        "evidence": "Google Classroom adopted in 2021 as a practical COVID response, not as an innovation initiative. IT literacy integrated into curriculum pragmatically (with Seisma sponsoring a dedicated teacher). No AI adoption, no digital strategy documents, no exploratory tech partnerships. Program model (holistic education + health + agriculture) unchanged for 17 years.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Community/mission-driven — purpose-over-everything brand anchored in named individual impact stories and founder-as-face credibility; premium positioning within Australian philanthropy event circuit",
+        "evidence": "Tagline 'Educating Poverty Out of Existence'. Impact storytelling foregrounds individual students by name (Pauline, Ritah). Annabelle Chauncy is the public face — featured in NSW Women of the Year, Sydney Uni alumni awards, Mamamia podcast, Saxton keynote bureau. Gala Ball positioned as Sydney's 'most exclusive' philanthropic event. Smiley Charity Film Awards recognition signals award-winning communications craft.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Mission-driven (constrains all decisions) — locally-led development, holistic child welfare, gender equity in education, community self-determination",
+        "evidence": "Locally-led model explicitly cited as core to their approach (intentionally not naming Ugandan staff in public materials — deference to local leadership). 100 Women grant specifically for girls' education. Seisma partnership includes IT teacher for 85 secondary girls — gender equity in digital access. Healthcare programs. Vocational pathways. Website: 'community-led schools'. Founders declined to 'parachute in' after initial build — visited and stepped back.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Strong-in-niche — well-known in Australian international development and philanthropic circles; attracts mission-aligned people with international development backgrounds",
+        "evidence": "Jess Ledieu (strong international development background) built a decade-long career at SFL. Work With Us page exists (careers page scraped). Featured in Mamamia, NSW Government, Saxton Speakers Bureau — signals cultural cachet for purpose-driven talent. Small team means intense mission alignment required. No Glassdoor reviews found; no negative employer signals.",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

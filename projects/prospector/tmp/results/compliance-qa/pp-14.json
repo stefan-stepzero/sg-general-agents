@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-teacher-registration-cpd-accredited-provider-vetting-dup",
+  "pain_point_label": "Accredited CPD Provider Vetting and Sourcing",
+  "matches": [
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "The core pain is that staff cannot reliably answer 'does this provider/offering count toward compliance?' at the moment of decision. A RAG system ingesting DepEd approved provider lists, CHED accreditation bulletins, and DO/memoranda can generate grounded, citation-backed answers to natural language queries — directly replacing the manual lookup process that fails in practice. This is a strong fit because the knowledge corpus is relatively bounded (DepEd/CHED regulatory documents) and the query pattern is highly repetitive.",
+      "opportunity_sketch": "A compliance knowledge base tool where admin staff type 'Is [Provider Name] an approved CPD provider for DepEd teachers?' and receive a yes/no answer with the relevant regulatory citation and validity date — reducing vetting time from hours to seconds.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "DepEd and CHED publish approved provider lists as PDFs, scanned memoranda, and image-based documents that are not machine-readable. Before any vetting system (RAG, entity extraction, automated checks) can function, these documents must be parsed into structured text. This capability is the critical prerequisite step that unlocks all downstream automation.",
+      "opportunity_sketch": "An ingestion pipeline that continuously fetches and OCR-parses DepEd/CHED regulatory PDFs and scanned bulletins, converting them into a searchable, structured corpus of approved providers, accreditation codes, validity periods, and CPD hour values.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Approved provider documents and CPD marketing materials contain key accreditation identifiers — provider names, CHED registration numbers, DepEd approval references, CPD unit values, and validity dates — that are embedded in unstructured prose. Extracting these as structured key-value pairs enables operators to build a reliable internal registry of approved providers, making vetting programmatic rather than manual and judgment-based.",
+      "opportunity_sketch": "An extraction layer that processes incoming provider marketing emails, PDFs, and DepEd bulletins to automatically populate a structured 'approved CPD registry' with provider name, accreditation number, valid date range, and eligible CPD hours — giving compliance staff a single source of truth.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The most costly failure mode described is teachers registering and attending non-accredited CPD before the compliance issue is discovered. An automated workflow agent that intercepts CPD registration requests, validates the provider against the approved registry, checks CPD hour eligibility, and either approves, flags, or blocks the registration — before money is spent — directly eliminates this failure mode. This is a multi-step workflow with branching logic and tool use that goes beyond single-step classification.",
+      "opportunity_sketch": "A CPD pre-approval workflow where any teacher CPD registration triggers an automated check: the agent queries the approved provider registry, validates the CPD offering details, and routes the request to auto-approve, flag for HR review, or reject with an explanation and alternative provider suggestions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The approved provider landscape is dynamic — DepEd and CHED periodically add, remove, and update accreditations, and new CPD providers emerge constantly. A research agent that autonomously monitors DepEd/CHED websites, official gazettes, and education portals for updated provider lists and new memoranda ensures the compliance registry stays current without manual curation — addressing the ongoing sourcing dimension of the pain point.",
+      "opportunity_sketch": "A scheduled research agent that weekly crawls DepEd and CHED official sites, detects changes to approved provider lists or new CPD-related issuances, extracts relevant provider/accreditation data, and pushes updates to the compliance registry with change summaries for the HR/compliance team to review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

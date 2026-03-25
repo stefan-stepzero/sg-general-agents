@@ -1,0 +1,1111 @@
+{
+  "company_id": "wise",
+  "company_name": "WISE",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.35,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.28,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "WISE is established with 35,000+ community members, 150,000+ engaged followers, and FT/Euronews/Al-Fanar coverage; no evidence of a brand awareness problem in its niche."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of poor content resonance; 6,000+ registration applications for WISE 12 against 4,000 places suggests strong demand, but the 35,000-member community's depth of engagement is not documented."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Summit over-subscription (6,000 applications, 4,000 places) and 427 prize applicants suggest no funnel conversion problem; score reflects generic plausibility for any organisation."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile identifies three clearly articulated target segments with high-confidence evidence; no signals of misdirected acquisition effort."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.45,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Biennial summit model means 'onboarding' is event-based; no evidence of first-summit dropout or new-member disengagement; score reflects generic plausibility only."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 35,000+ community members vs 4,000 summit attendees, indicating a large passive base; biennial cadence creates natural engagement gaps between events, and no evidence of active inter-summit community programming exists in the profile."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Biennial format with no subscription model means re-commitment is tested every two years; one weak signal — no documented community re-engagement mechanism between summits."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of satisfaction erosion; CEO transition from a 13-year tenure could create relational uncertainty with long-standing stakeholders, which is one weak signal."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.44,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO Kazmi has explicitly named Africa as a priority expansion region, and the IIE-WISE consortium already spans 7 countries; the organisation is actively navigating entry into new geographies, making this problem likely."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Kazmi's stated shift toward low-income learners and girls' education represents a deliberate new segment entry for an organisation historically convening governments and elites; pattern-level confidence this challenge is active."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Delivery is currently limited to biennial in-person summit, research publications, and prize; no evidence of digital channel, regional hub, or year-round programming development, one weak structural signal."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Biennial summit format was designed for global elites; adapting programming to Africa and low-income learner contexts is an implicit challenge signalled by Kazmi's priorities but not yet evidenced as a formal problem."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.70,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.9,
+              "rubric_level": "critical",
+              "reasoning": "Profile directly states 'customer_concentration: Single-funder dependent (Qatar Foundation = ~100% of operational funding)' — this is an explicitly identified structural risk with no mitigation documented."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO signals shift toward 'demonstrable programme impact' rather than pure convening; this strategic pivot implies exploring new delivery/funding models, and the current model is entirely grant-funded with no earned-revenue track record."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes the only financial risk is political (Qatar/QF priority shift), and WISE has no independent revenue; while current QF backing is strong, this structural dependency makes sustainability contingent on state priorities that could shift."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of portfolio management challenges; WISE has a single funding source and limited programme lines, so multi-stream balancing is not a visible problem."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.37,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.35,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms no engineering team, WordPress site, and data infrastructure described as 'basic analytics (standard BI/CRM if any)'; at 36 FTE running prize applications, research, and global event logistics, automation gaps are highly likely."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of redundant processes; small flat org of ~36 FTE is more likely lean than over-engineered, generic plausibility only."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "WISE coordinates between Programmes, Research, Events, Communications, and Operations functions with no named middle management visible; at small scale handoffs between functional silos are a plausible weak signal."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Single-location Doha HQ, small team, biennial cadence limits process variance risks; no evidence of undocumented tribal knowledge problems."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Biennial event cadence with 427 prize applicants handled by ~36 FTE creates predictable surge demand; no direct evidence of throughput constraints but small team size is one weak signal."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.44,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Technology is handled at Qatar Foundation level as shared services; no proprietary legacy systems visible for WISE itself; structurally unlikely for a small non-tech organisation."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes data infrastructure is 'basic analytics (standard BI/CRM if any)' with no evidence of integrated systems; prize applications, event registration, community CRM, and research outputs likely exist in separate disconnected tools."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Infrastructure is managed by Qatar Foundation; no evidence of reliability issues; small-scale operation with low technology criticality makes this unlikely."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'basic to intermediate' security posture; QF shared infrastructure provides baseline, but WISE's own systems are unaudited; one weak signal given the lack of any documented security posture."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly identifies 'no CTO, VP of Technology, or Head of Technology found' and data infrastructure as a weak dimension (score 0.67); reliance on WordPress and standard cloud tools for a 35,000-member global community operation is a strong pattern signal."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.30,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Summit held at Qatar National Convention Centre (QF venue) with capacity for 4,000+; no evidence of physical constraints; WISE owns no assets and uses shared QF facilities."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO's pivot toward 'demonstrable programme impact' in Africa and low-income learners requires scaling beyond the biennial summit model; current delivery is non-scalable (single event, invitation model), making this a likely emerging challenge."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "~36 FTE team managing prize, accelerator, research, events, and communications simultaneously faces resource allocation trade-offs; one weak signal from the breadth of programming relative to headcount."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "IIE consortium managed from Doha HQ across 7 countries; no sub-offices documented; Kazmi's Africa priority would require geographic coverage WISE currently lacks, but this is a strategic plan not yet an operational gap."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "Think tank/convener with no physical supply chain; this problem is structurally inapplicable to WISE's asset-light events-and-grants model."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.38,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of documented delivery standards; prize judging criteria exist but delivery quality standards for research or event experience are not mentioned; one weak signal for a 17-year organisation."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of quality control processes; prize selection is peer-reviewed but research quality mechanisms, event experience QC, and accelerator outcomes are undocumented; one weak signal."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Single Doha HQ, no branch or multi-site operations; cross-site variance is structurally not applicable to WISE's co-located model."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly notes 'no independent impact evaluation of WISE Prize alumni organisations available publicly' in the gaps section; the strategic shift toward 'demonstrable programme impact' under Kazmi implies this gap is recognised and active."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of quality culture problems; small mission-driven team with elite leadership profile suggests high-standards culture; generic plausibility only."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.40,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.43,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Summit is oversubscribed (6,000 applications vs 4,000 places) and prize attracts 427 applicants; no evidence the core offering misreads market need."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Existing segments are well-defined and validated; however, the new CEO's stated pivot toward low-income learners and Africa is a signal that the current offering may not be calibrated to these new segments, which is one weak signal."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes WISE is 17 years old in 'mature/optimization' phase with 'strategic reinvention inflection'; the CEO transition signals recognition that the biennial summit-centric model may not fully serve evolving stakeholder expectations for implementation impact."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes WISE's value chain position as 'convener, funder, and knowledge producer upstream of implementation' with no direct delivery; the gap between convening impact and educational outcome is a structural challenge signalled by the strategic pivot."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.28,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes clear positioning as 'Davos of education'; no evidence of confusion about what WISE offers; generic plausibility only."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile identifies a multi-layered institutional moat (sovereign funding, Sheikha Moza patronage, 17-year brand, laureate network) that is described as structurally unreplicable; low commoditisation risk."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "New CEO's shift from thought leadership to implementation impact suggests the existing differentiation axis (convening, prize prestige) may not match what education stakeholders increasingly value; one weak signal."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile explicitly documents the moat as structurally unreplicable: 'no competitor can replicate this structural advantage without equivalent sovereign backing'; defensibility is a strength, not a problem."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.50,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Biennial summit cadence structurally limits iteration speed; programme changes take 2-year cycles; one weak signal that this inhibits responsive evolution."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes WISE as 'pragmatic to fast-follower' on innovation posture; no evidence of a systematic process for generating new programme concepts beyond theme selection; the CEO's shift toward implementation signals recognition of a pipeline gap."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "WISE has no proprietary technology product; technical debt is structurally inapplicable to a think tank/convener without engineering teams."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly notes the CEO transition signals 'intent to move from convening and thought leadership toward demonstrable programme impact'; the 17-year-old biennial summit format and the strategic pivot are converging indicators that format relevance is under pressure."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.36,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "WordPress site with no UX complaints documented; primary stakeholder experience is in-person events, not digital interfaces; generic plausibility only."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Summit is invitation-based or application-based; no evidence of difficult onboarding for new community members; generic plausibility only."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "WISE's primary audience is senior policymakers at an elite in-person event; the organisation's explicit mission of equity and inclusion for low-income learners is structurally contradicted by the current invitation-only, Qatar-hosted model — a converging contextual signal."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of high user effort; the summit is a well-funded premium event; prize application burden (427 applicants completing full applications) is the only mild signal."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of trust-eroding interactions; WISE's brand positioning and Sheikha Moza's personal prize presentation suggest a high-prestige emotional experience; generic plausibility only."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.44,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.38,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Doha, Qatar location restricts the accessible talent pool for globally specialised education policy and research professionals; one weak geographic constraint signal."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'strong in niche' employer brand attracting elite CEOs (Gates Foundation, McKinsey backgrounds); no evidence of employer brand weakness."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Elite leadership credentials visible; no evidence of selection quality problems; generic plausibility only."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Qatar Foundation backing provides strong compensation support; however Doha location may require premium packages for internationally mobile education professionals — one weak geographic signal."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Government-adjacent institution operating under QF governance may have bureaucratic hiring processes; one weak institutional-type signal but no direct evidence."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.46,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "WISE is a 36-FTE unit with ~4-5 functional directors; career advancement paths are structurally limited in a flat, small org with a specialised niche — this is a convergent contextual signal."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Biennial summit creates extreme workload surges; small team managing prize, accelerator, research, and event simultaneously; one weak signal from programmatic breadth relative to headcount."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "QF backing suggests reasonable compensation; no evidence of recognition failures; generic plausibility only."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "New CEO (only 3 months in role as of scoring date) is still establishing management relationships; leadership transition period is one weak signal for relational uncertainty."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO's strategic pivot from thought leadership to implementation impact may create mission uncertainty for staff hired under the prior 13-year leadership era; convergent signals from leadership transition and strategic shift."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.48,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of workforce planning capability; small org under new CEO with a new strategic direction would benefit from skills mapping but no capability is documented; one weak signal."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of internal training programmes; small specialised team with elite hires may rely on prior expertise rather than internal development; generic plausibility only."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Prior CEO held the role for 13 years suggesting thin bench; new CEO externally hired (Gates Foundation); no internal succession was visible; flat 36-FTE structure has very limited leadership development runway."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes no technology leadership and 'basic analytics (standard BI/CRM if any)'; the new CEO's AI-in-education priority and digital community ambitions require digital capabilities that are structurally absent from the current talent profile."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.46,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes strong mission-driven culture with explicit equity values; no evidence of values-behaviour gaps; generic plausibility only."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Flat functional structure under CEO with 4-5 functional directors; limited visibility into whether roles and decision rights are clearly defined; one weak signal from the inferred rather than documented org design."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Co-located Doha team with global partner network (IIE, HundrED) managed remotely; cross-boundary coordination with external research partners is a generic plausibility signal."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "New CEO after 13-year founding era requires the organisation to absorb a significant strategic pivot (thought leadership to impact); convergent indicators — leadership transition + strategic reinvention + staff accustomed to stable 13-year model — make change capacity challenges highly likely."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes talent is 'domain-expert-heavy — education policy professionals' from elite institutions; WISE's own workforce may lack diversity despite its external equity mission; one weak indirect signal."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.36,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.26,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile rates regulatory burden as 'low to moderate'; non-profit foundation in Qatar not subject to financial services, healthcare, or heavy sector regulation; no evidence of compliance gaps."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Cross-border grant-making (Armenia, Jordan, global prize winners) involves international transfer regulations; weak plausibility signal for a global grant-making operation."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Think tank/convener has no accreditation requirements; not a higher education provider or healthcare entity; structurally inapplicable."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Operates under QF governance with no independent external filings; low regulatory reporting burden; generic plausibility for any non-profit."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "QF provides shared services infrastructure; compliance handled at QF level reduces direct burden on WISE's 36-FTE team; one weak signal from reliance on parent's infrastructure."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.26,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No evidence of litigation; mission-driven foundation with sovereign backing operating in invitation-based model faces minimal litigation surface; no disputes cited in any sources."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "IIE consortium agreements, event production contracts, and prize legal frameworks create standard contractual surface; generic plausibility for any organisation with partner agreements."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Doha-based with international staff mix; Qatar labour law applies; no evidence of employment disputes; generic plausibility for an international foundation."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Research publications and prize brand have IP dimensions; no evidence of IP disputes; generic plausibility for a knowledge-producing organisation."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Sovereign-backed foundation operating events and grants with no physical product; low liability surface; QF institutional coverage likely provides umbrella protection."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.44,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile rates security posture as 'basic to intermediate'; QF infrastructure provides baseline but WISE's own systems are undocumented; one weak signal from the absence of any documented security programme."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Global prize applicants and 35,000+ community members across 200 countries creates GDPR-relevant data processing; no evidence of privacy compliance programme; one weak signal."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes data infrastructure is 'basic analytics (standard BI/CRM if any)' with no data leadership visible; managing prize applications, community records, and research data without formal governance is likely for an organisation with this tech profile."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "IIE consortium across 7 countries and global event partners process WISE-related data; standard third-party data exposure for any organisation with multi-country partner network."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of breach preparedness plan; tech handled at QF level suggests WISE lacks its own incident response; one weak signal from absence of documented security posture."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.48,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "WISE does not deliver education directly to learners; prize winners operate programmes independently; safeguarding obligations are limited; generic plausibility only."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'Qatar Foundation's political/soft-power scrutiny (academic freedom, Gulf geopolitics) is a contextual risk' in the gaps section; Qatar's geopolitical positioning creates ongoing reputational exposure for WISE as a sovereign-backed platform."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Governance obligations are explicitly state-backed with 'alignment with Qatar's national education and soft-power strategy'; potential tension between mission independence and state interests is one weak signal for ethical conduct scrutiny."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO after 13-year founding tenure introduces stakeholder uncertainty; profile notes transition signals new strategic direction; long-standing partner relationships (IIE, HundrED, prize alumni) face relationship reset — convergent contextual factors."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.34,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.10,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.0,
+              "rubric_level": "na",
+              "reasoning": "WISE has no commercial pricing; it is 100% grant-funded with no ticket or subscription revenue; this problem is structurally impossible for a non-commercial cost-centre entity."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Fixed costs (event production, prize fund, staff) are stable and sovereign-backed; no commercial margin pressure; unlikely given structural insulation from market cost forces."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.0,
+              "rubric_level": "na",
+              "reasoning": "WISE has no revenue mix to degrade; single grant-funded model with no commercial revenue streams makes this structurally inapplicable."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "WISE intentionally does not monetise its convening value; value capture failure is by design, not a problem; structurally very unlikely for a mission-driven grant-funded platform."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.45,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Qatar Foundation's sovereign endowment provides effectively unlimited capital within mandate; no fundraising required; capital access is not a problem."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Sovereign-funded cost centre with no receivables or payables cycle in a commercial sense; QF budget allocation is the only cash flow mechanism; liquidity pressure is structurally minimal."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO's pivot toward Africa, AI-in-education, and implementation impact requires reallocating a fixed programmatic budget; the strategic shift under Kazmi will require difficult internal prioritisation choices within a fixed grant envelope."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 100% funder concentration in Qatar Foundation with 'alignment with Qatar's national education and soft-power strategy'; governance obligations require WISE to maintain QF confidence, and the new CEO's strategic pivot must be validated by QF board — this is a live management challenge."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.43,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly notes 'WISE operating budget and annual staff headcount not publicly disclosed — financials consolidated within Qatar Foundation's non-public accounts'; operating without independent financial reporting is structurally normal for a QF unit but creates internal visibility gaps."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of sophisticated forecasting; budget comes from QF allocation rather than demand-driven revenue; one weak signal from the absence of any documented financial planning function."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'total annual operating budget likely in the $5-15M range (estimated)' with low confidence; cost per prize laureate, per research publication, per summit attendee is unknown; no evidence of programme-level cost analysis."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "QF budget allocation cycle likely drives WISE planning; no evidence of internal budgeting process; one weak signal from absence of documented financial management."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.38,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states 100% funding concentration in Qatar Foundation; funder concentration risk is directly evidenced as the dominant financial risk — stated as the only macro risk that matters to WISE's financial health."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Financial compliance is handled at QF level; no evidence of SOX obligations or audit findings for WISE specifically; generic plausibility only."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of internal controls programme at WISE level; QF shared services likely handle this; one weak signal from absence of documented internal audit function."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Single-entity non-profit unit with no subsidiaries, no equity structure, and QF as sole funder; financial structure optimisation is not applicable to this organisational form."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.53,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.55,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO simultaneously pursuing AI-in-education, Africa expansion, girls' education, implementation impact, and maintaining existing summit/prize/research programmes with a 36-FTE team; converging signals of initiative breadth relative to resource."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO (December 2025) inheriting a 13-year institutional model; alignment between Kazmi's vision and QF board's expectations for the strategic pivot has not been documented; pattern-level confidence this is a live challenge."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes programmatic changes post-December 2025 are 'not yet detailed beyond broad statements'; CEO transition 3 months old as of scoring date means strategy exists at aspiration level without operational translation yet."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "The strategic pivot from thought leadership to implementation impact represents a significant shift in organisational identity for a 17-year-old institution; profile explicitly frames this as an 'inflection' — moderate-to-high confidence this tension is active."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.28,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile documents multi-layered structural moat; no evidence of erosion of sovereign backing, Sheikha Moza patronage, or brand equity; generic plausibility only."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "UNESCO, OECD, WEF are noted as scaling education innovation programmes; however WISE's sovereign moat makes it largely insulated from new entrant threats; generic plausibility only."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of formal competitive intelligence function; however WISE's convening model gives natural access to global education leaders; generic plausibility only."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "WISE holds category-leader position in its niche with 4,000 attendees and 427 prize applicants; no evidence of market position erosion; brand equity is described as compounding."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.62,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO's shift toward implementation impact (Africa, low-income learners, measurable outcomes) requires moving from a pure convening model to a programme-delivery or impact model; profile frames this as a deliberate strategic pivot."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO is explicitly pursuing AI-in-education strategy with no current engineering team, no technology leadership, and basic digital infrastructure; implementing AI-in-education as an organisational capability is a transformation WISE is not currently equipped for."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Leadership transition with a new strategic direction may require restructuring functional teams; no evidence of active reorganisation, but CEO transition context makes this likely."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes WISE as 'pragmatic to fast-follower' with no systematic innovation process; the CEO's 'implementation impact' mandate requires new programme models that WISE has not historically built; converging signals."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No crisis event documented; leadership transition is planned succession, not post-crisis recovery; WISE's financial and brand position is strong."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.53,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "WISE manages IIE consortium (7 countries), HundrED partnership, university research partners, and event production relationships under a new CEO; managing complex partner relationships through a leadership transition is a convergent contextual signal."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "WISE's value depends on convening flywheel network effects; no evidence of a formal ecosystem strategy beyond the summit model; the pivot to Africa and AI-in-education requires deliberate ecosystem positioning that is currently undocumented."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "WISE's core stakeholders are education ministers and multilateral bodies (UNESCO, OECD, World Bank); managing government relationships across Africa expansion while maintaining Doha's geopolitical alignment is a likely active challenge under new CEO."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "35,000+ community members with engagement concentrated around biennial events; profile flags no inter-summit engagement mechanisms; managing this community with a 36-FTE team is a moderate structural challenge."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.58,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.48,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "WISE governance sits within QF board structure; no detail on WISE-specific advisory board composition visible; generic plausibility for a state-affiliated entity with undisclosed board details."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of board engagement problems; however QF governance model may result in rubber-stamping of new CEO's direction without substantive scrutiny; one weak signal."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes WISE as requiring 'alignment with Qatar's national education and soft-power strategy'; new CEO must navigate QF board expectations while establishing her own direction — a convergent pattern signal for board-management tension."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Governance operates at QF level; WISE-specific governance framework is undocumented; small programmatic unit operating under parent governance with no independent board creates a structural framework gap."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.60,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "New CEO Kazmi has strong credentials (Gates Foundation, UCL, OBE) well matched to the strategic direction; no evidence of skill mismatch; however 3-month tenure means judgment is untested in this specific role."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO inheriting a leadership team built under 13 years of prior leadership; team cohesion during leadership transition is a convergent contextual signal — new leader + unchanged team + new strategic direction creates typical alignment risk."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile confirms no technology leadership exists despite AI-in-education strategic priority; no CFO/financial leadership visible in the named roles; the gap between stated priorities (AI, Africa, impact measurement) and available functional expertise is directly evidenced."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly documents the CEO transition (Yiannouka to Kazmi, December 2025); 13-year founding era ending with external hire; profile notes 'no independent impact evaluation' and 'programmatic changes not yet detailed' — direct evidence of transition-phase challenges."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.54,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO 3 months into role with undocumented delegation frameworks; operating under QF governance with implicit rather than explicit WISE-level decision authorities; convergent pattern signal."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "State-affiliated institution operating under QF governance likely has multi-layer approval requirements; biennial programme cycle limits agile decision-making; convergent contextual factors."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes data infrastructure is 'basic analytics (standard BI/CRM if any)'; 'no independent impact evaluation of WISE Prize alumni' means strategic decisions lack outcomes data; convergent signals."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New strategic direction under Kazmi is 'not yet detailed beyond broad statements' 3 months in; pattern of aspirational statements without documented operational translation is one moderate signal."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "No specific poor decisions documented; however operating without impact evaluation data (explicitly noted gap), basic data infrastructure, and a 3-month-old leadership team creates structural conditions for judgment gaps; very likely based on converging factors."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.60,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Qatar Foundation's charter and Sheikha Moza's role as patron concentrate formal power above WISE CEO level; WISE's mandate and budget are determined by QF board priorities — structural power concentration is inherent and documented."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes Sheikha Moza is 'not operationally involved' but personally presents the Prize; the patron relationship and QF's state-backed governance model create informal influence channels typical of royal/state-affiliated foundations."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states Sheikha Moza's 'absence would materially reduce the event's convening draw' and her patronage role is described as 'non-transferable' — this is direct evidence of a critical key-person dependency at the patron level."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly notes operating budget, headcount, and financials are 'not publicly disclosed — financials consolidated within Qatar Foundation's non-public accounts'; structural opacity is confirmed by the profile gaps section."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "revenue-diversification-concentration",
+      "leadership-capability-transition",
+      "power-transparency-key-person",
+      "capital-funding-stakeholder-management",
+      "financial-risk-controls-market-exposure"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 1,
+      "high": 7,
+      "medium": 47,
+      "low": 19,
+      "na": 3
+    }
+  }
+}

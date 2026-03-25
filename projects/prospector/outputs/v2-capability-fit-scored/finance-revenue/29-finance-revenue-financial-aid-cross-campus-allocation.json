@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-cross-campus-allocation",
+  "pain_point_label": "Cross-campus aid allocation & transfer rules",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Multi-step workflow spanning allocation rules, transfer governance, and cross-campus reconciliation.",
+      "opportunity_sketch": "An agent applying campus-demand weighting rules, monitoring transfers, and writing allocation records.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate posting risk is a textbook anomaly detection problem.",
+      "opportunity_sketch": "A real-time anomaly detector monitoring financial aid posting events across all campuses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Distributing group scholarships subject to enrollment demand and sponsor conditions is a constraint satisfaction problem.",
+      "opportunity_sketch": "A constraint solver outputting recommended cross-campus allocation satisfying all constraints.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Text generation can synthesize cross-campus allocation data into sponsor responses.",
+      "opportunity_sketch": "A report generator producing sponsor-facing allocation summaries on demand.",
+      "pain_salience": 2,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 32
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-cross-campus-allocation",
+  "pain_point_label": "Cross-campus aid allocation & transfer rules",
+  "matches": [
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core problem of distributing group scholarship slots (e.g., '50 slots across 3 campuses') based on enrollment demand and campus policy is a constrained resource allocation problem. AI can optimize how limited award slots are distributed across campuses given demand signals, historical uptake, and campus-level policy rules — replacing the manual allocation process that currently takes 8-12 hrs/month per group award cycle.",
+      "opportunity_sketch": "An allocation engine that ingests enrollment forecasts, existing award balances, and campus-level demand to recommend optimal slot distribution for each group scholarship cycle, with override controls for campus admins.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Transfer rules for aid portability — whether an award follows a student to a new campus, whether balances carry, whether credit continues — represent a constraint satisfaction problem with multiple hard rules (eligibility, funder terms, campus policy) and soft preferences (student continuity, campus balance). An AI system can evaluate a transfer scenario against all applicable rules simultaneously and produce a valid configuration rather than requiring a staff member to manually cross-reference governance documents.",
+      "opportunity_sketch": "A transfer-rules engine that takes a student transfer record as input and applies the full set of award portability, balance carry, and credit continuation rules to produce a deterministic outcome recommendation, flagging exceptions for human review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate posting risk — where both student and admin record a transfer resulting in the same award appearing twice — is precisely an anomaly detection problem. The system can monitor posting events across campuses in real time, flag cases where the same award ID, student ID, or benefit quantum appears more than once across campuses within a time window, and alert before reconciliation errors compound.",
+      "opportunity_sketch": "A duplicate-detection monitor that scans financial aid posting events across all campus ledgers, flags suspicious duplicate or near-duplicate benefit postings for review before period close, and generates a daily exception report.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The cross-campus reconciliation workflow — pulling award data from multiple campus systems, matching records, identifying discrepancies, and producing a sponsor-facing report on award utilization — is a multi-step, multi-system workflow that currently requires 8-12 hours of manual effort per cycle. A task automation agent can orchestrate the data collection, matching, and discrepancy flagging steps across systems, reducing human effort to exception review only.",
+      "opportunity_sketch": "An end-of-cycle reconciliation agent that connects to each campus's financial aid records, matches group award disbursements against sponsor commitments, highlights discrepancies and double-posts, and generates a consolidated utilization report answerable to sponsor queries.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Sponsor queries asking 'did the money reach the intended campus?' currently require manual cross-system review to answer. An LLM with access to reconciled award data can generate accurate, citation-grounded narrative responses to sponsor queries and produce the cross-campus utilization summaries that currently require manual assembly — converting structured data outputs into prose reports.",
+      "opportunity_sketch": "A report generation layer that takes structured reconciliation data and produces sponsor-ready narrative summaries explaining how group awards were distributed across campuses, which campuses drew down which amounts, and any outstanding balances.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

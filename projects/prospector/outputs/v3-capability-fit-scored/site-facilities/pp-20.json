@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-campus-it-infrastructure-structured-cabling-and-network-hardware-maintenance-is-neglected-dup",
+  "pain_point_label": "Structured Cabling and Network Hardware Maintenance Are Neglected or Deferred",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Network infrastructure continuously emits telemetry — switch port error rates, packet loss percentages, interface utilization, temperature readings from server rooms, UPS battery levels — that forms time-series signals. Anomaly detection can flag deviations from baseline before they become outages, directly addressing the pattern where 'occasional instability is attributed to vague connectivity issues but not diagnosed.' This targets the core pain mechanism: invisible degradation that only surfaces as an emergency.",
+      "opportunity_sketch": "An always-on monitoring layer that ingests SNMP/syslog/ICMP data from network hardware across all campuses and surfaces anomalous device behavior (high error rates, thermal spikes, unusual traffic patterns) as prioritized alerts to central IT, replacing reactive break-fix with early warning.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Hardware age, model end-of-life status, error log frequency, and environmental conditions (temperature, uptime) are structured inputs that can feed a risk model predicting probability of hardware failure within a forward window. For a multi-campus operator with uneven infrastructure maturity, this directly addresses the budgeting and prioritization gap — central IT cannot currently distinguish which campuses face imminent failure vs. which can wait another year.",
+      "opportunity_sketch": "A campus infrastructure risk dashboard that scores each site's network hardware on failure likelihood using device age, observed error rates, and environmental sensor data, enabling IT leadership to build defensible replacement budgets and prioritize interventions across campuses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A specific sub-pain is missing or outdated documentation of cabling runs, patch panels, and network topology — making troubleshooting slower and auditor compliance harder. Text generation can convert raw technician notes, port labels, and discovery scan outputs into structured maintenance records, topology narratives, and audit-ready documentation. This directly addresses the documentation gap without requiring the operator to hire a dedicated technical writer.",
+      "opportunity_sketch": "A documentation assistant that takes technician field notes and network scan exports as input and generates formatted cabling records, topology summaries, and maintenance log entries that satisfy audit requirements and remain readable by future campus IT staff.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The remediation workflow — detect issue, create ticket, assign to vendor or campus tech, track resolution, update documentation — spans multiple systems (network monitoring, helpdesk, asset register) and is currently done inconsistently or not at all. A task automation agent can orchestrate this multi-step workflow end-to-end: receiving an alert, opening a service ticket with pre-populated device context, routing to the right technician, and closing the loop by updating asset records when work is complete. This addresses the coordination gap between campus-level detection and central IT visibility.",
+      "opportunity_sketch": "An infrastructure incident automation agent that bridges network monitoring alerts to helpdesk ticket creation, vendor dispatch, and asset record updates across all campuses — replacing email chains and manual logging with a traceable, auditable workflow.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Campus IT staff and central IT teams frequently face troubleshooting scenarios where documentation is fragmented across PDFs, old tickets, vendor manuals, and spreadsheets. A RAG system over this corpus would let a technician query 'what switches are in Building C server room and what firmware version are they running?' and get a grounded, cited answer — directly addressing the documented pain that 'campus IT staff cannot troubleshoot because documentation of network topology is missing.' The value compounds as more documentation is ingested.",
+      "opportunity_sketch": "A campus infrastructure knowledge base that ingests all available network documentation, past incident tickets, and asset inventories and answers natural-language queries from IT staff, dramatically reducing time-to-diagnosis for network faults.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

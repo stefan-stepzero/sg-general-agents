@@ -1,0 +1,44 @@
+{
+  "cell": {
+    "cellNum": 19,
+    "subCategory": "Board & Governance Effectiveness",
+    "domain": "Governance & Leadership",
+    "heat": 45,
+    "oppScore": 20
+  },
+  "ideas": [
+    {
+      "name": "Board Meeting Transcript & Index",
+      "one_liner": "Transcribes board and committee meetings, then indexes by governance topic (accreditation, financial risk, staffing) to create searchable governance archives.",
+      "problem": "PHINMA and School for Life hold regular board and accreditation meetings that must be archived for governance compliance and institutional memory, but transcription is manual and searches across multiple meeting recordings are time-consuming. Board management software used at these organisations does not provide education-specific parsing (e.g., accreditation terminology, policy approval language).",
+      "ai_technique": "Speech-to-text transcription with governance entity tagging",
+      "how_it_works": "Automatically transcribes recorded board meetings, committee sessions, and accreditation hearings. Tags entities (policy names, accreditation standards referenced, financial metrics, decision outcomes). Indexes by topic for later search—e.g., 'all accreditation evidence discussed in 2024' or 'board decisions on staffing policy.' Exports governance audit trail with decision date and approver.",
+      "target_companies": ["phinma", "school-for-life"],
+      "buyer_persona": "Board Secretary / Governance Officer",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Accreditation Evidence Map",
+      "one_liner": "Transforms accreditation reports and policy documents into a navigable evidence map showing compliance gaps and required actions by accreditation standard.",
+      "problem": "PHINMA (CHED-accredited HE) and School for Life (government oversight) undergo periodic accreditation reviews requiring comprehensive evidence submission. Compiling evidence across committee reports, policy documents, and operational dashboards to match accreditation matrices is labour-intensive and error-prone. Leadership lacks a live view of evidence location and compliance status.",
+      "ai_technique": "Document extraction and hierarchical data structuring against accreditation taxonomy",
+      "how_it_works": "Extracts key evidence types from governance documents, strategic plans, and operational reports. Maps to CHED accreditation matrices (or equivalent government standards) showing which evidence supports each requirement. Highlights gaps where evidence is missing or incomplete. Surfaces deadlines for evidence updates before next accreditation cycle.",
+      "target_companies": ["phinma", "school-for-life"],
+      "buyer_persona": "Accreditation Lead / Principal",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Governance Document Classifier",
+      "one_liner": "Automatically categorises board submissions, committee reports, and stakeholder correspondence by compliance type and escalation level.",
+      "problem": "Governance documents at PHINMA and School for Life arrive from multiple sources—board members, committee chairs, accreditation bodies, government regulators—each requiring different handling and approval workflows. Manual classification delays processing and creates compliance risk.",
+      "ai_technique": "Text classification with multi-label governance taxonomy",
+      "how_it_works": "Classifies incoming documents by type (policy change, accreditation evidence, financial report, complaint, audit finding), regulatory domain (government, accreditation, internal governance), and urgency flag. Routes to appropriate board committee or compliance queue. Tracks routing and approval timelines to surface governance delays.",
+      "target_companies": ["phinma", "school-for-life"],
+      "buyer_persona": "Governance Officer / Board Secretary",
+      "tier": "feature",
+      "confidence": "medium"
+    }
+  ]
+}

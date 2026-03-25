@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-professional-development-unfocused-training-spend-dup",
+  "pain_point_label": "Unfocused & Reactive Training Spend",
+  "matches": [
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "The core pain is generic, one-size-fits-all training procurement with low relevance to individual staff roles or institutional priorities. A recommendation system can match each staff member's role, performance history, identified skill gaps, and the school's strategic priorities (e.g., STEM improvement, blended learning rollout) to proactively surface specific, relevant CPD options — without requiring HR to manually curate. This directly replaces the ad-hoc procurement dynamic with a needs-aligned pull model.",
+      "opportunity_sketch": "A CPD recommendation engine that ingests staff profiles, performance appraisal data, and institutional priority flags to surface ranked training options (courses, workshops, providers) tailored per individual — replacing generic seminar procurement with targeted spend.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a coherent CPD roadmap is a direct textual artifact gap — the operator lacks structured planning documents that map training investments to institutional priorities. LLMs can generate CPD roadmaps, individual learning plans, and training procurement briefs aligned to stated school priorities, DepEd INSET requirements, and staff development goals. This addresses both the planning void and the compliance-as-checkbox problem by producing substantive documentation that forces strategic alignment.",
+      "opportunity_sketch": "An LLM-powered CPD planning tool that generates annual training roadmaps per school or staff cohort, mapping proposed investments to institutional priorities and DepEd compliance obligations — turning ad-hoc procurement into a defensible, documented plan.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Staff cynicism about training relevance and low visible impact stem partly from poor targeting — the wrong people attend the wrong training. A propensity model trained on staff features (role, tenure, appraisal scores, prior training completion, subject area) can predict which individuals are most likely to translate a specific training into measurable performance improvement, enabling procurement decisions that maximize ROI rather than spreading spend uniformly.",
+      "opportunity_sketch": "A propensity model that scores staff-training fit and predicts post-training performance uplift likelihood, allowing HR to prioritize high-ROI training allocations and justify spend decisions with data rather than gut feel.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 10-15% of payroll going to training across 500+ staff on multiple campuses, budget allocation is a genuine constrained optimization problem: which staff, at which sites, get which training, in which sequence, within budget and without disrupting school operations. AI-driven resource allocation can optimize training spend across cohorts to maximize coverage of strategic priorities while respecting per-campus budget caps and operational scheduling constraints.",
+      "opportunity_sketch": "A training budget allocation optimizer that distributes CPD spend across campuses and staff cohorts based on declared institutional priorities, identified skill gaps, and budget envelopes — replacing ad-hoc approvals with an optimized, auditable allocation plan.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Training coordinators making procurement decisions lack easy access to institutional history: what was purchased before, what DepEd INSET credits were earned, which providers delivered measurable results, and what the current strategic priorities are. A RAG system over internal training records, provider evaluations, DepEd compliance documents, and strategic plans enables coordinators to ask grounded questions ('What STEM-focused CPD has proven effective for secondary teachers at our network?') and receive cited, synthesized answers rather than starting from scratch each cycle.",
+      "opportunity_sketch": "An internal CPD knowledge assistant that lets HR and campus principals query the organization's training history, DepEd compliance status, and provider track record to make informed, evidence-backed procurement decisions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "DepEd INSET compliance tracking, training attendance recording, CPD credit accumulation, and post-training evaluation collection are multi-step administrative workflows currently done manually or not at all — which is why compliance is treated as a checkbox. A task automation agent can handle end-to-end CPD cycle administration: enroll staff, send reminders, collect completions, log DepEd credits, trigger post-training surveys, and aggregate impact data — creating the data infrastructure needed to measure ROI.",
+      "opportunity_sketch": "An automated CPD administration agent that manages the full training lifecycle per staff member across sites: enrollment confirmation, attendance tracking, DepEd INSET credit logging, post-training feedback collection, and impact summary generation for HR reporting.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

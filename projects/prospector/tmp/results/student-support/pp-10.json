@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-sen-sped-accommodation-identification-delays-dup",
+  "pain_point_label": "Late or Missed Identification of Learning Differences",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Early warning signs — fine motor delays, speech delays, poor phonemic awareness, attendance patterns, assessment scores — are all structured or semi-structured data already captured in student information systems. A classification model trained on these feature vectors can flag students in Grades 1-2 who exhibit risk profiles consistent with dyslexia, ADHD, or other learning differences, without requiring a diagnostician on site. This directly addresses the core pain mechanism: absence of a systematic screening protocol that can operate at scale across rural and urban campuses.",
+      "opportunity_sketch": "A universal early-screening model that ingests existing SIS data (grades, teacher ratings, attendance, assessment sub-scores) each term and outputs a risk flag per student, triggering a standardized teacher checklist before Grade 2 ends. Deployable as a dashboard layer on top of existing student data exports.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The problem is precisely about adverse outcomes — 2-3 years of unidentified learning differences leading to compounded academic failure — which maps directly to risk stratification. A risk score per student, derived from early academic and behavioral signals, gives SEN coordinators a ranked watchlist rather than waiting for reading gaps to become visible. This is especially high-value for campuses with only one part-time psychometrician: triage by AI-generated risk score means the limited specialist sees the highest-need students first.",
+      "opportunity_sketch": "A per-student SEN risk score updated each semester, surfaced in a coordinator dashboard, with configurable alert thresholds so rural campuses without on-site specialists can prioritize referrals to traveling diagnosticians or telehealth psychologists.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Class teachers at rural campuses lack training in early SEN identification. A conversational agent can guide teachers through a structured developmental screening interview — asking about specific classroom behaviors, providing examples, and collecting structured responses — replicating the intake process a trained psychometrician would run. This directly addresses the 'absence of trained screeners' causal factor without requiring specialist hiring at every campus.",
+      "opportunity_sketch": "A teacher-facing chat assistant that walks through a validated early screening protocol (e.g., adapted DIBELS or universal screener questions) for flagged or teacher-nominated students, outputs a structured referral summary, and routes it to the SEN coordinator for follow-up.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a universal screening protocol means that even when concern is raised, the referral-to-assessment pipeline is manual, slow, and inconsistent across campuses. A task automation agent can orchestrate the end-to-end workflow: flagging students based on risk model output, notifying class teachers, triggering a screening checklist, routing completed checklists to the SEN coordinator, scheduling specialist review, and logging outcomes — eliminating the administrative gaps that cause cases to fall through.",
+      "opportunity_sketch": "An automated SEN referral pipeline that triggers on risk-flag or teacher nomination, routes tasks to the right person at each step, tracks SLA (e.g., screening completed within 10 school days), and escalates overdue referrals — replacing the current ad-hoc email/paper process.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

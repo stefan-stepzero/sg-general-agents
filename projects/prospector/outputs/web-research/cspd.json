@@ -1,0 +1,204 @@
+{
+  "entity": "Catholic Schools Parramatta Diocese",
+  "abbreviation": "CSPD",
+  "website": "parra.catholic.edu.au",
+  "research_date": "2026-03-11",
+  "contact": "Patrick Ellis, EGM Learning Outcomes",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2026-02",
+          "title": "Project Compassion 2026 launch — Unite Against Poverty",
+          "summary": "School communities across the diocese launched Project Compassion 2026 for the Lenten season, reinforcing Catholic social mission as a core community identity driver.",
+          "source": "parra.catholic.edu.au/whats-on"
+        },
+        {
+          "date": "2026-02",
+          "title": "2026 Teacher Scholarship Program cohort welcomed",
+          "summary": "Thirty Year 12 graduates from across CSPD schools selected for teacher training scholarships — signals active pipeline investment in future staffing.",
+          "source": "parra.catholic.edu.au/whats-on"
+        },
+        {
+          "date": "2025-12",
+          "title": "HSC 2025 results celebration",
+          "summary": "Parramatta Marist achieved 29.3% Band 6 results, ranked 44th in NSW and highest-ranked Catholic systemic school. 20 NSW All Rounders across the diocese. 15 schools improved Band 6 rates year-on-year.",
+          "source": "parra.catholic.edu.au/whats-on/latest-news/2025/12/18"
+        },
+        {
+          "date": "2025-09",
+          "title": "Bishop's Awards for Student Excellence",
+          "summary": "Annual awards recognising one Year 12 student per Catholic secondary school for faith witness and community contribution — a key reputation and community engagement mechanism.",
+          "source": "parra.catholic.edu.au/whats-on/latest-news/2025/09/12"
+        },
+        {
+          "date": "2025-08",
+          "title": "Annual Ann D Clark Lecture — evidence-based teaching",
+          "summary": "CSPD hosted its flagship education research lecture focusing on connecting research with classroom teaching; explicit instruction, formative assessment, structured literacy foregrounded. Signals 'Uplift' program momentum.",
+          "source": "parra.catholic.edu.au/whats-on/latest-news/2025/08/12"
+        },
+        {
+          "date": "2025",
+          "title": "Uplift program launched system-wide",
+          "summary": "CSPD formally launched 'Uplift' — a system-wide evidence-based teaching and learning framework aligned to NSW curriculum reforms, replacing open learning approaches. Designed for all 80 schools and 43,000 students.",
+          "source": "catholicoutlook.org"
+        },
+        {
+          "date": "2025",
+          "title": "LIFTED Student Leaders Forum — AI focus",
+          "summary": "Over 100 Year 12 leaders gathered at West HQ, Rooty Hill to explore the impact of AI. Diocese framed AI through values lens (not just capability), led by Mission Enhancement Team.",
+          "source": "catholicoutlook.org/student-leaders-tackle-the-future-of-ai"
+        },
+        {
+          "date": "2024-10",
+          "title": "Five-year strategic plan announced",
+          "summary": "CSPD CEO Jack de Groot described the plan as 'detailed, earnest and ambitious'. Six strategic priorities: faith formation, staff excellence, evidence-based learning, diverse subject pathways, capital investment, and community wellbeing. Developed via consultation with principals, staff, and families.",
+          "source": "cathnews.com/2024/10/04; catholicoutlook.org"
+        },
+        {
+          "date": "2024-08",
+          "title": "STEM MAD Showcase 2024",
+          "summary": "94 teams from 20+ schools demonstrated STEM projects at annual showcase — signals strong STEM pipeline and project-based learning culture.",
+          "source": "parra.catholic.edu.au/whats-on/latest-news/2024/08/14"
+        },
+        {
+          "date": "2024",
+          "title": "New primary school at Darcy Road, Westmead (opening 2026)",
+          "summary": "Four-stream school transitioned from Term 3 2024 into new facilities at Darcy Road, Westmead — capital expansion into growing corridor.",
+          "source": "parra.catholic.edu.au/whats-on/latest-news/2024/02/09"
+        }
+      ],
+      "synthesis": "CSPD is in an active strategic transformation period. The 2024 five-year plan and 2025 'Uplift' teaching framework represent the most significant system-level investment in recent years. Academic outcomes are strong and improving. Community engagement is high. The Patrick Ellis appointment (EGM Learning Outcomes, Dec 2025) is directly aligned to delivering Uplift — making him the operational owner of the system's most important current initiative.",
+      "confidence": "high"
+    },
+    "industry": {
+      "synthesis": "CSPD operates in the Australian Catholic school system, the second-largest education provider nationally after government schools. In NSW, Catholic schools receive ~$3.65B in combined Commonwealth and state recurrent funding annually (2024 forecast). Western Sydney is one of the fastest-growing regions in Australia — new suburbs in the Blacktown, Penrith, Camden, and Hills corridors are generating sustained enrolment pressure. Catholic school enrolments nationally grew 5.7% between 2021–2025 (1.6% in NSW in 2024). NSW curriculum reform (2022–2027) is driving a sector-wide shift to explicit instruction and structured literacy — CSPD's Uplift program is its direct response. The sector is also navigating teacher workforce shortages, wellbeing pressures post-COVID, and growing EdTech integration expectations. Federal Schooling Resource Standard (SRS) debates continue to shape future funding trajectories for non-government schools.",
+      "confidence": "high"
+    },
+    "financial": {
+      "funding_model": "Mixed: Commonwealth + NSW State recurrent grants (majority), school fees (modest by sector standards), capital grants via Block Grant Authority (BGA), fundraising and donations.",
+      "scale_indicators": "80 schools, 6 early learning centres, ~43,000 students, ~4,500 staff — one of the largest Catholic diocesan systems in Australia by student count.",
+      "capital_programs": "Active capital works: new Westmead primary school (Darcy Road, opening 2026). Capital projects historically funded via parent contributions and BGA capital grants. Western Sydney population growth likely driving pipeline of additional infrastructure needs in outer growth corridors (Penrith, Blacktown, Stanhope Gardens, Marsden Park).",
+      "financial_signals": "CSPD became a company limited by guarantee (CSPD Ltd) in 2023 — governance professionalisation suggests increased financial rigour and accountability. Annual reports published publicly. No financial distress signals identified. CSNSW's needs-based funding arrangement (2024–2029) provides recurrent funding certainty.",
+      "synthesis": "CSPD is financially stable with diversified government funding, a professionalised governance structure since 2023, and active capital investment tied to Western Sydney growth. The Uplift rollout and new school builds suggest budget capacity for system-level programs. No public signs of cost pressure or cuts — the new five-year strategy implies confidence in funding continuity.",
+      "confidence": "medium"
+    },
+    "technology": {
+      "ai_adoption": "exploring",
+      "key_initiatives": [
+        {
+          "name": "School of Now (SoN)",
+          "description": "Blended online learning program allowing Year 11–12 students across different CSPD schools to access specialist teachers for subjects otherwise unavailable at their campus. Scalable, technology-delivered curriculum expansion.",
+          "status": "active"
+        },
+        {
+          "name": "Uplift — evidence-based teaching framework",
+          "description": "System-wide teaching and learning program using data and research to drive consistent, explicit instruction across 80 schools. Technology (including LMS, student progress tracking tools) underpins feedback loops and teacher professional development.",
+          "status": "launched 2025"
+        },
+        {
+          "name": "LIFTED Student Leaders AI Forum",
+          "description": "Diocese-hosted forum bringing 100+ Year 12 leaders together to explore AI's impact — values-led approach to AI literacy (not tool adoption). Mission-framed.",
+          "status": "2025 event"
+        },
+        {
+          "name": "Device rollout",
+          "description": "MacBooks and Chromebooks across 90%+ of secondary schools. Established device ecosystem suggesting readiness for software/platform integration.",
+          "status": "ongoing"
+        },
+        {
+          "name": "Digital Learning Specialist Teachers",
+          "description": "Dedicated CSPD role for Digital Learning Specialist Teachers at school level — structured digital literacy support within schools.",
+          "status": "ongoing"
+        },
+        {
+          "name": "Head of IT Education Platform",
+          "description": "Dedicated CSPD system-level IT leadership role covering LMS, EdTech, instructional design, and CMS — Jeremy Hind identified in this role.",
+          "status": "ongoing"
+        }
+      ],
+      "synthesis": "CSPD is in the 'exploring' phase for AI specifically, but is an active EdTech adopter more broadly. School of Now is a mature, flagship blended learning innovation. The Uplift framework creates a platform demand for teacher-facing tools (formative assessment, progress tracking, data analytics). The Patrick Ellis appointment signals that evidence-based learning outcomes data is now a system priority — creating natural entry points for adaptive learning, assessment analytics, and AI-assisted feedback platforms. Leadership is engaging students on AI values/ethics rather than deploying AI tools at scale yet. The diocese has infrastructure (devices, LMS, specialist roles) to support adoption when strategic readiness matures.",
+      "confidence": "medium-high"
+    },
+    "reputation": {
+      "academic": "Strong and improving. Parramatta Marist is top-ranked Catholic systemic school in NSW (44th statewide). 20 NSW All Rounders in 2025 HSC. 15 schools improved Band 6 rates year-on-year.",
+      "community": "High community trust in Western Sydney's Catholic community. One-in-four students in Western Sydney/Blue Mountains attends a CSPD school — deep community penetration. Annual Education Mass, Bishop's Awards, and LIFTED student leadership programs reinforce belonging and identity.",
+      "employer_brand": "Teacher Scholarship Program (30 places, 2026 cohort) and professional development investment (Ann D Clark Lecture, Uplift) suggest active retention and recruitment positioning. No significant public industrial disputes or teacher dissatisfaction signals found.",
+      "governance": "Incorporated as company limited by guarantee in 2023 — signals modernised governance. Board chaired by Elizabeth Crouch AM; includes academic, legal, and community profiles.",
+      "synthesis": "CSPD has a strong, community-embedded reputation in Western Sydney. Academic outcomes are solid and trending positive. The Uplift launch and new strategic plan have been publicly framed as ambitious and credible. No reputational controversies identified. The diocese benefits from deep Catholic identity in its community which sustains enrolments even in competitive environments.",
+      "confidence": "high"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Jack de Groot",
+          "title": "Chief Executive Officer (Executive Director)",
+          "background": "20+ years leading large Australian not-for-profits. Former CEO, St Vincent de Paul Society NSW (2016–2022). Strong focus on Catholic values, social outreach, mission. Appointed ~2022–2023.",
+          "relevance": "Sponsor-level stakeholder for system initiatives; framed Uplift and five-year strategy publicly."
+        },
+        {
+          "name": "Patrick Ellis",
+          "title": "Executive General Manager — Learning Outcomes",
+          "background": "Formerly Education Lead at Catholic Education, Archdiocese of Canberra and Goulburn (CECG). Led 'Catalyst' — CECG's evidence-based teaching and learning framework grounded in Science of Learning, Cognitive Load Theory, Science of Reading, and Rosenshine's Principles. Nationally Certified Lead Teacher and Assessor. Championed equity and excellence across 56 CECG schools (~22,000 students). Joined CSPD December 2025.",
+          "relevance": "Primary contact. Owns learning outcomes strategy system-wide. Directly responsible for Uplift rollout across 80 schools. His arrival from CECG's Catalyst program strongly suggests CSPD is deepening its evidence-based teaching investment — his mandate likely includes building assessment capability, teacher coaching, and data infrastructure.",
+          "linkedin": "au.linkedin.com/in/patellis1",
+          "twitter": "x.com/ellis_patrick"
+        },
+        {
+          "name": "Elizabeth Crouch AM",
+          "title": "Board Chair",
+          "background": "Experienced not-for-profit and public sector board director.",
+          "relevance": "Governance stakeholder."
+        },
+        {
+          "name": "Jeremy Hind",
+          "title": "Head of IT Education Platform",
+          "background": "Expertise in LMS, EdTech, instructional design, CMS.",
+          "relevance": "Technology procurement and platform decisions — secondary contact for EdTech solutions."
+        },
+        {
+          "name": "Greg Jones / Anthony Karam / Maria Pearson / Nicole Patterson / Professor Marea Nicholson AM",
+          "title": "Board of Directors members",
+          "background": "Diverse professional backgrounds; board composition as of late 2023.",
+          "relevance": "Governance stakeholders only."
+        }
+      ],
+      "egm_structure": "Nine Executive General Managers report to CEO Jack de Groot, covering learning, wellbeing, mission, capital resourcing, data intelligence, and strategic delivery.",
+      "synthesis": "CSPD has a professionalised leadership structure with a clear separation between CEO (mission/strategy) and EGMs (operational delivery). Patrick Ellis as EGM Learning Outcomes is the most relevant contact for any learning-related initiative — he is new to the role (Dec 2025), likely in a 90-day listening and diagnosis phase, and carries deep personal credibility in evidence-based teaching from his CECG/Catalyst work. His hiring signals CSPD is treating learning outcomes as a priority investment area. The CEO Jack de Groot is approachable via public channels and has a clear public voice on strategy.",
+      "confidence": "high"
+    }
+  },
+  "sources_consulted": [
+    "https://www.parra.catholic.edu.au/",
+    "https://www.parra.catholic.edu.au/about/our-leadership",
+    "https://www.parra.catholic.edu.au/about/our-leadership/our-chief-executive-officer",
+    "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+    "https://www.parra.catholic.edu.au/whats-on/latest-news",
+    "https://www.parra.catholic.edu.au/about/our-strategy-and-policies/annual-reports",
+    "https://schoolofnow.parra.catholic.edu.au/",
+    "https://catholicoutlook.org/new-catholic-schools-parramatta-diocese-executive-director-announced/",
+    "https://catholicoutlook.org/detailed-earnest-and-ambitious-catholic-schools-announces-new-strategy/",
+    "https://catholicoutlook.org/student-leaders-tackle-the-future-of-ai/",
+    "https://catholicoutlook.org/the-move-to-evidence-based-teaching-in-our-catholic-schools-annual-ann-d-clark-lecture-inspires-teachers/",
+    "https://cathnews.com/2024/10/04/parramatta-schools-announce-new-five-year-strategy/",
+    "https://parracatholic.org/about/governance/board-of-directors-catholic-schools-parramatta-diocese-ltd-cspdl/",
+    "https://en.wikipedia.org/wiki/Catholic_education_in_the_Diocese_of_Parramatta",
+    "https://au.linkedin.com/in/patellis1",
+    "https://catalyst.cg.catholic.edu.au/resource/s1e9-leading-catalyst-with-patrick-ellis/",
+    "https://www.learnwithlee.net/kft-patrickellis/",
+    "https://www.csnsw.catholic.edu.au/explore-our-community/how-catholic-schools-are-funded",
+    "https://www.education.gov.au/download/17871/capital-grants-program-2024-approved-projects/39301/document/pdf",
+    "https://www.abs.gov.au/statistics/people/education/schools/latest-release"
+  ],
+  "gaps": [
+    "Specific annual report financials (revenue, expenditure, surplus/deficit) — PDFs not fetched; available at parra.catholic.edu.au/about/our-strategy-and-policies/annual-reports",
+    "Full list of nine EGMs and their portfolios — EGM page exists but content not retrieved",
+    "Specific capital grants awarded to CSPD schools from federal Capital Grants Program 2024",
+    "Details of Patrick Ellis's specific mandate/KPIs at CSPD — only inferred from LinkedIn post and prior CECG role",
+    "CSPD's internal LMS/platform stack — vendor relationships not publicly disclosed",
+    "Specific AI tools or vendors under evaluation within CSPD — no public procurement signals found",
+    "Patrick Ellis's direct contact details (email format) — not publicly available; standard CSPD format likely firstname.lastname@parra.catholic.edu.au",
+    "Current teacher FTE breakdown and any staff restructuring signals",
+    "Enrolment capacity vs. demand analysis for specific growth corridors (Penrith, Blacktown, Marsden Park)"
+  ]
+}

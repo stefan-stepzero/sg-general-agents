@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-compensation-benefits-allowance-eligibility-chaos-dup",
+  "pain_point_label": "Opaque Allowance Eligibility & Computation",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Allowance policies are often locked in fragmented memos, circulars, and principal discretion — not a single codified document. LLMs can generate clear, plain-language policy documentation from scattered inputs, producing eligibility rule summaries, staff-facing FAQs, and computation guides that reduce disputes at source. For a multi-site operator this directly tackles the 'no visibility' complaint and HR-finance miscommunication.",
+      "opportunity_sketch": "Feed existing policy fragments and historical payroll decisions into an LLM to generate a unified allowance policy handbook and staff-facing eligibility explainer — updated each cycle when rules change.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Allowance computation currently lives in manual spreadsheets with inconsistent schemas across sites. AI-assisted ETL can parse these semi-structured sheets, normalize them to a canonical schema (staff ID, allowance type, eligibility flag, amount, approval status), and surface discrepancies — directly replacing the error-prone manual consolidation step. This is the foundational data layer needed before any computation rules can be enforced.",
+      "opportunity_sketch": "An AI transformation layer ingests each site's monthly payroll spreadsheets, maps fields to a unified schema, flags anomalies (missing eligibility markers, formula overrides), and outputs a clean structured dataset ready for payroll processing.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Computation errors and retroactive payroll corrections follow detectable patterns: duplicate allowance entries, amounts outside expected bands by role/grade, allowances paid to ineligible staff categories. An anomaly detection model trained on historical payroll data can flag suspicious rows before payment runs, catching the errors that currently surface only after staff raise disputes or auditors review records.",
+      "opportunity_sketch": "A pre-payroll validation agent scans each cycle's allowance batch, scores each line for deviation from expected norms (by role, site, allowance type), and holds flagged rows for HR/finance review — reducing retroactive corrections and audit findings.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff and HR officers frequently need to answer 'am I eligible for X allowance?' or 'how is the locality allowance calculated?' — questions that require both retrieving the relevant policy clause and synthesizing a clear answer. A RAG system over the policy corpus surfaces the exact rule with its source citation, reducing the volume of HR queries and the principal-discretion workarounds that fuel disputes.",
+      "opportunity_sketch": "A policy Q&A assistant lets staff or HR officers ask natural-language questions about allowance eligibility; the system retrieves the governing clause from the codified policy corpus and generates a cited, plain-English answer — with an audit trail of who asked what.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Allowance eligibility is inherently a constraint satisfaction problem: each allowance type has multiple simultaneous conditions (role, grade, site, tenure, performance rating, principal approval) that must all be satisfied. A constraint-based engine can encode these rules formally, evaluate each employee's profile against them, and produce a deterministic eligibility decision — eliminating the ambiguity and discretion that drive disputes.",
+      "opportunity_sketch": "An allowance eligibility configurator encodes all multi-condition rules per allowance type; HR enters or imports staff profile data and the engine outputs a per-employee entitlement matrix with the specific rules satisfied or failed — replacing spreadsheet formulas with auditable logic.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end allowance computation workflow — collect eligibility data from site systems, apply rules, flag exceptions, route to approvers, update payroll — is a multi-step process currently executed manually by HR and finance staff. A task automation agent can orchestrate this pipeline across systems, with branching logic for approvals and error handling for missing data, replacing the error-prone manual handoffs that cause late and incorrect payments.",
+      "opportunity_sketch": "An allowance processing agent runs each pay cycle: pulls staff records, evaluates eligibility rules, computes amounts, routes edge cases to a human approver queue, and pushes confirmed entries to the payroll system — with a full audit log of decisions and approvals.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

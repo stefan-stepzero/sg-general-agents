@@ -1,0 +1,343 @@
+[
+  {
+    "name": "Teacher Appraisal Digest",
+    "one_liner": "AI-summarized teaching performance reviews with curriculum-aligned teaching standards mapping for principals across multi-site networks.",
+    "problem": "Principals and HR teams at CSPD and PHINMA managing hundreds of educators spend 40+ hours per cycle reading and synthesizing performance reviews, 360-degree feedback, and observation notes spread across email, Google Docs, and fragmented HRIS systems. They lack tools that understand NSW NESA teaching standards or CHED faculty competencies required for annual appraisal cycles.",
+    "ai_technique": "Summarization & Condensation with domain-specific prompt engineering",
+    "how_it_works": "Connects to TechOne HRIS, Outlook email, and Google Drive. Extracts review documents, student/peer feedback, and observation notes. Generates 2-page summaries keyed to NESA Professional Teaching Standards (NSW context) or CHED faculty competency framework (HE context), highlighting performance gaps, development needs, and promotion readiness signals.",
+    "target_companies": [
+      "cspd",
+      "phinma",
+      "rising"
+    ],
+    "buyer_persona": "Principal or Head of HR managing 50-500 educators across distributed campuses",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-01",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Skills & Development",
+    "_cellHeat": 57,
+    "_cellOppScore": 45
+  },
+  {
+    "name": "Staff Data Integration Hub",
+    "one_liner": "Unified staff records reconciling payroll, teaching registration, appraisal tracking, and professional development history across fragmented systems.",
+    "problem": "Education organisations run 4-5 disconnected systems: national payroll (ATO integration), HRIS, state teaching registration databases (NESA, QTSB), appraisal spreadsheets, and PD tracking. HR teams manually cross-reference records to answer basic questions like 'which teachers need PD renewal' or 'who is eligible for promotion.' Data silos make workforce analytics impossible at CSPD and PHINMA.",
+    "ai_technique": "Data Transformation & Structuring with education schema normalization",
+    "how_it_works": "Ingests exports from TechOne (payroll/HRIS), state teaching registration APIs (NESA/QTSB), and local tracking sheets. Normalizes employment type (permanent/contract/relief), teaching area, registration status, PD hours completed, and contract end dates into a single schema. Flags mismatches (e.g., expired registration) and surfaces actionable insights via API for downstream HR tools.",
+    "target_companies": [
+      "cspd",
+      "phinma",
+      "ipeople"
+    ],
+    "buyer_persona": "Chief People Officer or IT Manager responsible for HR data integrity",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-01",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Skills & Development",
+    "_cellHeat": 57,
+    "_cellOppScore": 45
+  },
+  {
+    "name": "Teacher Attrition Risk Forecast",
+    "one_liner": "Predicts teacher resignation risk 6-12 months ahead using enrollment, salary, location, and performance signals to enable proactive retention.",
+    "problem": "Rising Academies and PHINMA face unpredictable teacher churn driven by salary, remote postings, family circumstances, and subject scarcity. They cannot forecast hiring needs or plan relief-staff pools. Attrition costs 6-12 months of recruitment and onboarding per educator, compounded across multi-site networks.",
+    "ai_technique": "Time Series Forecasting with education-specific feature engineering",
+    "how_it_works": "Trains on historical attrition data from TechOne/HRIS, incorporating features: salary relative to market, contract length, days-to-certification-expiry, enrollment volatility at assigned school, tenure, remote posting hardship flag, subject scarcity (e.g., STEM premium). Outputs risk scores (low/medium/high) for each educator 6-12 months forward, enabling HR to trigger stay interviews or counter-offers.",
+    "target_companies": [
+      "rising",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "Head of HR or Talent Operations managing hiring pipelines for 200+ educators",
+    "tier": "standalone",
+    "confidence": "high",
+    "_cell": "cell-01",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Skills & Development",
+    "_cellHeat": 57,
+    "_cellOppScore": 45
+  },
+  {
+    "name": "Professional Development Scheduler",
+    "one_liner": "AI-optimized PD scheduling across distributed school networks respecting teacher availability, certification requirements, and award conditions.",
+    "problem": "Rising Academies and School for Life operate 80+ campuses with 500+ educators needing compliance PD (child safety, curriculum updates, mandatory training). Manual scheduling creates conflicts, leaves compliance gaps, and requires administrators to work around award conditions (e.g., PD cannot exceed 20 days/year in NSW Catholic schools).",
+    "ai_technique": "Resource Allocation & Scheduling with constraint satisfaction",
+    "how_it_works": "Ingests educator availability, required certifications (CHED accreditation renewals, NESA PD points), award contract constraints (day limits, release-time entitlements), and campus-level delivery calendar. Generates optimal PD schedules minimizing disruption, ensuring all staff complete mandatory training, and respecting work-life balance. Integrates with calendar systems (Outlook, Google Calendar) for automated notifications.",
+    "target_companies": [
+      "rising",
+      "school-for-life",
+      "cspd"
+    ],
+    "buyer_persona": "Professional Development Coordinator or HR Manager at multi-site operator",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-01",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Skills & Development",
+    "_cellHeat": 57,
+    "_cellOppScore": 45
+  },
+  {
+    "name": "Enrollment Intent Classifier",
+    "one_liner": "Real-time classification of student/parent inquiry intent and dropout risk from SMS, WhatsApp, email, and web forms to optimize outreach.",
+    "problem": "Rising Academies and iPeople operate in price-sensitive African and Southeast Asian markets where inquiry-to-enrollment conversion rates are 5-15% and student dropout is 20-30% in year 1. They manually triage hundreds of inbound inquiries via SMS, WhatsApp, and email to gauge intent, but lack signals for immediate outreach (e.g., 'parent cost-sensitive, likely to drop', 'high intent but needs scholarship clarification').",
+    "ai_technique": "Text Classification with education-specific intent taxonomy",
+    "how_it_works": "Ingests SMS/WhatsApp messages, emails, and web form submissions. Classifies intent: program-inquiry, scholarship-question, fee-payment, enrollment-confirmation, dropout-risk. For dropout-risk flags, extracts signals (e.g., 'cannot afford fees', 'family relocation', 'poor grades'). Triggers automated outreach workflows: scholarship counters for cost-sensitive, support calls for dropout-risk, program recommendations for low-intent leads.",
+    "target_companies": [
+      "rising",
+      "ipeople",
+      "phinma"
+    ],
+    "buyer_persona": "Enrollment Manager or Student Success Officer at multi-campus or international institution",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-02",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Revenue & Funding Diversification",
+    "_cellHeat": 57,
+    "_cellOppScore": 41
+  },
+  {
+    "name": "Cohort Retention Predictor",
+    "one_liner": "Forecasts multi-year enrollment cohort retention (completion rates) to predict revenue sustainability and intervention opportunities.",
+    "problem": "PHINMA (affordable HE) and iPeople (STEM HE) struggle to forecast completion rates across 4-year degree programs, making revenue forecasting opaque. Student dropout occurs after semester 2-3 when financial/academic hardship emerges. They need 6-month ahead visibility into cohort risk to allocate tutoring, mentoring, or scholarship interventions.",
+    "ai_technique": "Time Series Forecasting with academic progression patterns",
+    "how_it_works": "Trains on cohort enrollment history, academic performance (GPA per semester), financial status (fee payment timeliness), and demographic profile (first-gen status, family income proxy). Forecasts semester-by-semester retention probability to program completion. Flags at-risk students by semester 1, enabling academic support interventions (tutoring, mentoring) before dropout decision.",
+    "target_companies": [
+      "phinma",
+      "ipeople",
+      "acasus"
+    ],
+    "buyer_persona": "Registrar or Student Success Officer in multi-year degree programs",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-02",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Revenue & Funding Diversification",
+    "_cellHeat": 57,
+    "_cellOppScore": 41
+  },
+  {
+    "name": "Student Enrollment Propensity Scorer",
+    "one_liner": "Scores application propensity using academic record, demographics, and family income proxies to optimize recruitment spend and targeted outreach.",
+    "problem": "PHINMA (affordable HE) receives 20,000+ annual applications and has low marketing ROI because they cannot distinguish high-propensity applicants (likely to enroll, likely to afford tuition) from low-propensity (price-shopping, insufficient qualification). Rising Academies faces similar challenges in West Africa where household income proxies are hard to validate. Manual review consumes HR time without predictive accuracy.",
+    "ai_technique": "Structured Data Classification with enrollment decision modeling",
+    "how_it_works": "Ingests application data: academic qualifications, prior schooling, family background (parent education, occupation proxies), geographic location (urban/rural, distance-to-campus), and inquiry source. Trains on historical enrollment outcomes (enrolled vs. not, stayed through semester 2+). Scores new applicants 0-100 for 'likely to enroll and afford'. Enables targeted marketing (high-propensity: heavy outreach; medium: scholarship focus; low: auto-reply).",
+    "target_companies": [
+      "phinma",
+      "rising",
+      "ipeople"
+    ],
+    "buyer_persona": "Director of Admissions or Marketing Manager at HE institution",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-02",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Revenue & Funding Diversification",
+    "_cellHeat": 57,
+    "_cellOppScore": 41
+  },
+  {
+    "name": "Tuition Price Elasticity Model",
+    "one_liner": "Quantifies demand sensitivity to tuition fees and scholarship offers, optimizing program pricing and scholarship allocation for revenue growth.",
+    "problem": "PHINMA and iPeople introduce new affordable HE programs but lack data-driven pricing strategy. They guess at tuition and scholarship levels, leading to either revenue loss (too-low pricing) or enrollment loss (too-high). They cannot measure impact of scholarship offers on propensity, making scholarship budgets non-strategic.",
+    "ai_technique": "Regression & Quantitative Estimation with pricing elasticity modeling",
+    "how_it_works": "Analyzes historical enrollment data: tuition levels, scholarship offer types (partial waiver, payment plan, merit scholarship), and enrollment outcomes by cohort and program. Fits regression model estimating demand elasticity: 'a 5% increase in tuition leads to X% enrollment drop.' Also models scholarship impact: 'scholarship offer increases enrollment propensity by Y%'. Outputs pricing recommendations: optimal tuition and scholarship mix for target enrollment/revenue.",
+    "target_companies": [
+      "phinma",
+      "ipeople",
+      "acasus"
+    ],
+    "buyer_persona": "Chief Financial Officer or VP of Strategic Planning in HE institution",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-02",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Revenue & Funding Diversification",
+    "_cellHeat": 57,
+    "_cellOppScore": 41
+  },
+  {
+    "name": "Cross-Campus Variance Scanner",
+    "one_liner": "Identifies organizational inconsistencies across distributed school networks (teaching standards, classroom management, curriculum fidelity) to drive cultural alignment.",
+    "problem": "CSPD manages 80+ Catholic schools with varying teaching quality, pastoral approaches, and curriculum adherence. Principals operate as fiefdoms with limited oversight from the network office. Without visibility into cross-site variance, network leaders cannot enforce quality standards or share best practices. Annual inspections are expensive and episodic; they need continuous measurement.",
+    "ai_technique": "Summarization & Condensation with structured comparison analysis",
+    "how_it_works": "Ingests classroom observation reports (NESA-aligned teaching standard assessments), student feedback surveys, and curriculum fidelity audits from TechOne. Summarizes findings per school and compares across network: 'School A: 78% NESA standard 1 compliance vs network avg 82%', 'School C principals report weak pastoral care implementation.' Flags outliers (positive and negative) and surfaces peer-learning opportunities (e.g., 'School X excels in Indigenous curriculum integration').",
+    "target_companies": [
+      "cspd",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "Network Director or Chief Academic Officer overseeing 40+ school sites",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-03",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Culture & Organization",
+    "_cellHeat": 50,
+    "_cellOppScore": 39
+  },
+  {
+    "name": "Teacher Development Portfolio Engine",
+    "one_liner": "Transforms scattered PD records, observation notes, and feedback into structured learning portfolios aligned to career progression pathways.",
+    "problem": "ipeople, CSPD, and PHINMA lack integrated systems to track teacher development over time. A teacher's PD (courses, hours, certifications), observation scores (NESA standards progress), and peer feedback exist in spreadsheets and email. When a principal evaluates promotion eligibility, they manually reconstruct a narrative. Teachers have no visibility into 'what am I missing to advance to senior teacher or master teacher?'",
+    "ai_technique": "Data Transformation & Structuring with career-progression schema",
+    "how_it_works": "Ingests PD transcripts (Moodle, Coursera, in-house), observation reports, and 360 feedback from disparate systems. Normalizes into structured portfolio: PD hours per domain (pedagogy, subject knowledge, ICT), NESA standard mastery level, peer feedback themes, and classroom impact metrics (student outcomes, parent satisfaction). Maps against senior teacher and master teacher advancement criteria (CHED, NESA). Generates personalized development plans: 'complete 20 ICT hours and 1 peer-mentoring role to become senior teacher.'",
+    "target_companies": [
+      "cspd",
+      "ipeople",
+      "phinma"
+    ],
+    "buyer_persona": "Head of Teacher Development or Professional Learning Communities Manager",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-03",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Culture & Organization",
+    "_cellHeat": 50,
+    "_cellOppScore": 39
+  },
+  {
+    "name": "Organizational Health Monitor",
+    "one_liner": "Aggregates staff engagement, turnover, and capability signals into quarterly health scorecards for network leadership.",
+    "problem": "Network leaders (Kinetic, CSPD, PHINMA) lack real-time visibility into organizational health across 40+ distributed teams. They know about crises after the fact (e.g., principal resignation, recruitment failure). They cannot measure culture change or identify early signs of disengagement. Quarterly surveys are slow and unreliable.",
+    "ai_technique": "Summarization & Condensation with health metric aggregation",
+    "how_it_works": "Consolidates data from HRIS (turnover, tenure), engagement surveys (pulse surveys via email/Slack), performance reviews, and exit interview notes. Generates quarterly health scorecard per campus: engagement score (0-100), estimated attrition risk (%), capability maturity (are teachers meeting standards?), and culture themes (e.g., 'high morale but concerns about workload'). Flags red zones (e.g., 'HR manager turnover at 3 campuses suggests systemic issue'). Enables network leaders to intervene before problems cascade.",
+    "target_companies": [
+      "kinetic",
+      "cspd",
+      "phinma",
+      "rising"
+    ],
+    "buyer_persona": "Chief People Officer or Network Director managing 40+ distributed campuses",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-03",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Culture & Organization",
+    "_cellHeat": 50,
+    "_cellOppScore": 39
+  },
+  {
+    "name": "Regulatory Compliance Status Tracker",
+    "one_liner": "Aggregates teaching registration status, child safety clearances, and mandatory training completion to flag compliance risks proactively.",
+    "problem": "Education organisations face heavy regulatory burden: teachers must maintain current registration (NESA, QTSB, CHED), complete child safety training annually, and update certifications. Compliance failures create liability (unregistered teacher on payroll) and operational disruption (classes cancelled when teacher falls out of compliance). Manual tracking via spreadsheets creates gaps at scale.",
+    "ai_technique": "Data Transformation & Structuring with compliance schema and alert logic",
+    "how_it_works": "Ingests HRIS records and integrates with state teaching registration APIs (NESA, QTSB, CHED) to verify current status. Tracks mandatory training completion (child safety, CPR, curriculum updates) from Learning Management System (TechOne compliance module, Coursera). Generates compliance dashboards: '95 of 100 teachers current; 3 expiring in 30 days; 2 non-compliant (action required).' Triggers automated alerts and remediation workflows (e.g., 'enroll in child safety refresher course by June 1').",
+    "target_companies": [
+      "cspd",
+      "phinma",
+      "rising"
+    ],
+    "buyer_persona": "Compliance Officer or Head of HR responsible for regulatory adherence",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-03",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Culture & Organization",
+    "_cellHeat": 50,
+    "_cellOppScore": 39
+  },
+  {
+    "name": "Teacher Resume Parser & Matcher",
+    "one_liner": "Extracts teaching qualifications, certification, and subject specialty from unstructured CVs to automatically match candidates against open roles and qualification requirements.",
+    "problem": "CSPD, PHINMA, and School for Life post 200+ educator positions across distributed campuses annually. Recruiting teams manually review CVs to extract qualification details (degree type, subject, certification status, teaching experience). They miss qualified candidates and waste time contacting unqualified applicants. Manual extraction creates compliance risk if teaching registration is not properly verified.",
+    "ai_technique": "Structured Data Classification with resume parsing",
+    "how_it_works": "Ingests CV uploads and email attachments. Extracts: degree type and major (B.Ed, B.Sc with teaching diploma), subject specialization (STEM, languages, humanities), teaching experience (years, grade levels), state registration status (NESA, QTSB, CHED), and certifications (International Baccalaureate, Cambridge, special education). Matches against open role specifications (e.g., 'need STEM teacher, NESA-registered, 3+ years experience'). Auto-flags candidates who meet criteria and routes to hiring manager; auto-rejects obvious mismatches.",
+    "target_companies": [
+      "cspd",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "Recruiting Manager or HR Specialist responsible for educator hiring",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-04",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Hiring & Recruitment",
+    "_cellHeat": 49,
+    "_cellOppScore": 38
+  },
+  {
+    "name": "Predictive Hiring Pipeline Forecast",
+    "one_liner": "Forecasts teacher hiring needs 6-12 months ahead based on enrollment trends, attrition risk, and budget cycles to optimize recruitment lead time.",
+    "problem": "Rising Academies and PHINMA face unpredictable hiring demand: enrollment spikes require rapid hiring (but teacher recruitment takes 4-6 months), attrition creates mid-cycle openings (but recruitment budgets are fixed annually), and geographic expansion opens new roles. They lack visibility into future staffing needs, leading to unfilled positions or rushed, suboptimal hires.",
+    "ai_technique": "Time Series Forecasting with education staffing model",
+    "how_it_works": "Trains on historical data: enrollment by program and campus, teacher-to-student ratios, attrition rates by role and location, and hiring pipeline duration. Forecasts staffing needs by role (primary, secondary, STEM, leadership) and campus 6-12 months forward. Factors in known events (campus expansion, program launch, known retirements). Outputs hiring plan: 'need 15 primary teachers by August, 5 STEM by October, 3 principals by next July.' Enables HR to source candidates in advance, negotiate recruitment timelines, and avoid crisis hiring.",
+    "target_companies": [
+      "rising",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "Head of HR or Talent Planning Manager at multi-site education organization",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-04",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Hiring & Recruitment",
+    "_cellHeat": 49,
+    "_cellOppScore": 38
+  },
+  {
+    "name": "Teacher Interview Scoring Assistant",
+    "one_liner": "Summarizes candidate interview performance against teaching-specific competency rubrics (pedagogical approach, subject mastery, pastoral skill) to standardize hiring decisions.",
+    "problem": "Recruiting teams at CSPD and School for Life conduct 10-20 teacher interviews per open position but lack standardized evaluation rubrics. Interview notes are unstructured (email summaries, handwritten notes), making it hard to compare candidates objectively. Hiring committees debate candidate fit without structured evidence, and they sometimes hire suboptimal candidates or miss strong fits.",
+    "ai_technique": "Summarization & Condensation with competency rubric alignment",
+    "how_it_works": "Ingests unstructured interview notes (from email, recorded transcripts, or form submissions). Generates structured scoring summary against education competencies: 'Pedagogical Approach (4/5): candidate articulated inquiry-based learning philosophy, strong example given'; 'Subject Mastery (3/5): solid content knowledge but limited depth in modern curriculum context'; 'Pastoral/Classroom Management (4/5): calm under pressure, inclusive language noted'. Also flags red flags (e.g., 'showed limited awareness of NESA standards', 'poor cultural fit signals'). Enables hiring committee to compare candidates on common rubric.",
+    "target_companies": [
+      "cspd",
+      "school-for-life",
+      "phinma"
+    ],
+    "buyer_persona": "Recruiting Manager or Principal involved in teacher hiring panel",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-04",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Hiring & Recruitment",
+    "_cellHeat": 49,
+    "_cellOppScore": 38
+  },
+  {
+    "name": "Teacher Onboarding Curriculum Builder",
+    "one_liner": "Generates customized onboarding programs based on teacher experience level, subject area, and campus context (enrollment stage, accreditation status).",
+    "problem": "New teachers at multi-site networks (Rising Academies, PHINMA, School for Life) receive ad-hoc onboarding: IT setup, building tour, syllabus overview. But onboarding is inconsistent across campuses and does not account for teacher experience (experienced hire needs different support than graduate). This leads to higher early attrition and longer time-to-productivity.",
+    "ai_technique": "Data Transformation & Structuring with personalization logic",
+    "how_it_works": "Ingests new teacher profile (years of experience, subject, prior school context, role), campus context (school maturity, curriculum stage, accreditation status, enrollment trend), and onboarding template library. Generates personalized onboarding plan: experienced external hire gets 2-week program (systems, culture, curriculum); graduate teacher gets 8-week program (teaching philosophy, peer mentoring, professional development roadmap). Includes milestones (e.g., 'deliver first observed lesson by week 3', 'meet with curriculum lead by week 2'), resources (curriculum guides, NESA standard mapping, parent communication templates), and mentorship assignment. Tracks progress and flags at-risk new hires.",
+    "target_companies": [
+      "rising",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "Onboarding Coordinator or Head of New Teacher Support",
+    "tier": "module",
+    "confidence": "medium",
+    "_cell": "cell-04",
+    "_cellDomain": "Talent & People",
+    "_cellSubCategory": "Hiring & Recruitment",
+    "_cellHeat": 49,
+    "_cellOppScore": 38
+  },
+  {
+    "name": "Inquiry Intent Classifier",
+    "one_liner": "AI system that classifies prospective student and parent inquiries by enrollment intent and risk, automating lead prioritization for K-12 and HE operators.",
+    "problem": "Rising Academies and iPeople acquire students in price-sensitive African and Asian markets where thousands of inquiries arrive via SMS, WhatsApp, and email. Current admissions staff manually triage these, leading to slow response times and missed conversions. Student dropout-risk signals embedded in early inquiries go undetected.",
+    "ai_technique": "Text Classification (SMS/email/WhatsApp intent detection)",
+    "how_it_works": "Ingest incoming student and parent inquiries into a classifier trained on education-specific intent signals (scholarship enquiries, geographic constraints, cost concerns, prior qualifications). Flag high-intent prospects for immediate follow-up and retention-at-risk students for intervention. Output: automated lead scoring and routing to admissions staff.",
+    "target_companies": [
+      "rising",
+      "ipeople",
+      "phinma"
+    ],
+    "buyer_persona": "Director of Admissions or Enrollment Manager",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-05",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Market Expansion",
+    "_cellHeat": 51,
+    "_cellOppScore": 37
+  }
+]

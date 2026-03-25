@@ -1,0 +1,174 @@
+{
+  "entity": "Kinetic Software",
+  "research_date": "2026-03-11",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2026-02-24",
+          "title": "Kinetic Live 2026 — two-day annual conference",
+          "summary": "Held at East Midlands Conference Centre, University of Nottingham. Sessions included AI adoption discussion, gender diversity / 'Best PBSA Leader 2025' and 'Woman of the Year 2025' awards, strategic partnerships, and sectoral challenges (demand volatility, affordability pressures in UK and North America). Kinetic leaders discussed how the company is adopting AI.",
+          "source": "kineticsoftware.com/kinetic-live/"
+        },
+        {
+          "date": "2025-10",
+          "title": "Ranked 1st on new APUC Purchasing Framework",
+          "summary": "Kinetic achieved #1 ranking across all applicable lots: Lot 1 – Student Accommodation Management Systems, Lot 2 – Conference and Event Management Systems, Lot 4 – Hotel Management Systems, Lot 5 – Multi-Functional Systems. Enables single-supplier procurement without tender for Scottish universities.",
+          "source": "kineticsoftware.com/newsinsight/kinetic_ranked_1st_apuc/"
+        },
+        {
+          "date": "2025",
+          "title": "KxEngage student experience app — broad rollout",
+          "summary": "App launched March 2024 following acquisition of HeyHub (founded by George Lengyel). Student Roost (UK's third-largest PBSA provider, 23,000+ beds) launched KxEngage across all 50+ properties in 2025. Features: room rebooking, 24/7 wellbeing support, maintenance reporting, community groups, events, facilities booking.",
+          "source": "kineticsoftware.com/newsinsight/student-roost-launches-kxengage/"
+        },
+        {
+          "date": "2025",
+          "title": "10 Years at Volaris — Kinetic Software anniversary",
+          "summary": "2025 marked ten years since Volaris Group acquired Kinetic in January 2015. Volaris published retrospective highlighting successful leadership succession and tuck-in acquisitions since acquisition.",
+          "source": "volarisgroup.com/acquired-knowledge/10-years-at-volaris-kinetic/"
+        },
+        {
+          "date": "2024-07-11",
+          "title": "Acquisition of Bullet Solutions",
+          "summary": "Kinetic acquired Bullet Solutions, a timetabling software provider for the higher education market, supported by Volaris Group. Expanded Kinetic's global HE footprint.",
+          "source": "globenewswire.com/news-release/2024/07/11/2911829/"
+        },
+        {
+          "date": "2024-03",
+          "title": "KxEngage app launch — HeyHub acquisition",
+          "summary": "Kinetic acquired HeyHub app (founded 2016 by George Lengyel and Rohit Makol) and relaunched as KxEngage. CUBO (Conference of University Business Officers) announced as partner.",
+          "source": "kineticsoftware.com/newsinsight/a-new-student-experience-app-joins-kinetic/"
+        }
+      ],
+      "synthesis": "Kinetic had an active 2024-2026 period: one product acquisition (HeyHub/KxEngage), one tuck-in M&A (Bullet Solutions), a top-ranked APUC procurement framework result, and a growing annual user conference. The trajectory is deliberate expansion of product breadth (student engagement, timetabling) while strengthening procurement framework positioning in the UK.",
+      "confidence": "high"
+    },
+    "industry": {
+      "synthesis": "Kinetic operates in the higher education operations software market, specifically student accommodation management (SIS/HMS), conferencing and events, catering, and student engagement. The sector is often called PBSA (Purpose-Built Student Accommodation) tech. Key market dynamics: (1) UK universities face demand volatility and student affordability pressures pushing some HEIs toward more efficient operations software; (2) the PBSA private sector is growing — Kinetic serves both HEIs and private PBSA operators; (3) the market has two dominant global platform players — Kinetic (UK-centric, 85% UK university penetration, 700,000+ beds) and StarRez (US-centric, 1,400 customers, 3M+ beds globally). Kinetic is the clear UK market leader, with StarRez dominant in North America and Australia. International growth for both involves head-to-head competition. Kinetic's 20+ country presence skews toward UK/Europe and Australasia. The sector is consolidating via Volaris Group's buy-and-hold model — Kinetic itself is a platform within Volaris to which smaller HE ops tools (Occam Systems 2018, Bullet Solutions 2024) are added.",
+      "confidence": "high"
+    },
+    "financial": {
+      "items": [
+        {
+          "event": "Volaris Group acquisition of Kinetic Solutions",
+          "date": "2015-01-05",
+          "detail": "Volaris (subsidiary of Constellation Software Inc., TSX: CSU) acquired Kinetic Solutions Ltd. Volaris operates a permanent-hold, decentralized model — no exit intent. Terms not disclosed."
+        },
+        {
+          "event": "HeyHub acquisition by Kinetic",
+          "date": "2024-Q1",
+          "detail": "Kinetic acquired HeyHub student engagement app startup. Terms undisclosed. Relaunched as KxEngage."
+        },
+        {
+          "event": "Bullet Solutions acquisition by Kinetic",
+          "date": "2024-07-11",
+          "detail": "Timetabling software for HE acquired. Terms undisclosed."
+        },
+        {
+          "event": "Occam Systems acquisition",
+          "date": "2018-03",
+          "detail": "Joined Kinetic/Volaris family. Asset management and logistics for HE."
+        }
+      ],
+      "synthesis": "Kinetic is wholly owned by Volaris Group (a Constellation Software subsidiary). No independent fundraising or IPO signals — Volaris is a permanent capital model. Revenue is not publicly disclosed. Kinetic's growth strategy is acquisition-led (4 tuck-ins since 2015 acquisition) plus organic platform expansion. PBSA claim of '38% more revenue for Kinetic users vs non-Kinetic' suggests strong ROI positioning with customers. No distress signals; multi-year customer contracts and 85% UK HEI penetration imply stable recurring revenue.",
+      "confidence": "medium — no public financials; all inferences from Volaris context and market positioning"
+    },
+    "technology": {
+      "ai_adoption": "exploring",
+      "items": [
+        {
+          "signal": "Innovation Acceleration Graduate Engineer role — AI",
+          "detail": "Kinetic advertised an 'Innovation Acceleration Graduate Engineer 2026' role (deadline Oct 2025, salary £30k-£40k, Milton Keynes). Role specifically focused on integrating AI capabilities across student accommodation and event management platforms — prototyping, identifying AI opportunities, working under a Senior Innovation Acceleration Engineer.",
+          "source": "brightnetwork.co.uk/graduate-jobs/kinetic/innovation-acceleration-graduate-engineer-milton-keynes-2026"
+        },
+        {
+          "signal": "Kinetic Live 2026 AI track",
+          "detail": "The Kinetic Live 2026 conference included an innovation track where 'Kinetic leaders discussed how the company is adopting AI' and 'expert-led discussions on emerging trends.' Described as leveraging 'experimentation and curiosity.'",
+          "source": "kineticsoftware.com/kinetic-live/"
+        },
+        {
+          "signal": "Products Hub and platform modernization",
+          "detail": "kineticsoftware.com/products-hub/ references ongoing product updates. KxEngage mobile app (iOS/Android) shows investment in modern UX. No public announcement of specific AI features shipped to date.",
+          "source": "kineticsoftware.com/products-hub/"
+        }
+      ],
+      "synthesis": "Kinetic is in an early-active AI exploration phase. They have a dedicated 'Innovation Acceleration' team and are hiring specifically for AI-led product development. AI is being discussed publicly at their flagship user conference. However, no shipped AI features have been announced publicly — they appear to be building internal capability and prototyping rather than marketing AI features to customers yet. The Volaris parent has published content on 'Redefining Vertical Market Software in the AI Era,' signalling group-level strategic intent. Kinetic is likely 12-24 months from meaningful AI feature releases.",
+      "confidence": "medium"
+    },
+    "reputation": {
+      "synthesis": "Kinetic has strong institutional market reputation in the UK: 85% university penetration, #1 APUC framework ranking, and long-standing customer base (25+ years in market, 350+ customers globally). The CUBO partnership signals trust from the university business officers community. Customer sentiment from case studies (Student Roost, etc.) is positive. Employee sentiment on Glassdoor is very limited (8 reviews for the UK EdTech Kinetic Software entity), making systematic assessment difficult. One Indeed review noted cultural differences between offices and described collaboration as 'a work in progress.' The company presents as values-led under Barry Anns' stated positioning ('building a values-driven' organisation per his LinkedIn tagline). No public scandals, contract losses, or negative press found. Volaris ownership provides financial stability but can create tension around investment levels vs profit extraction — a common Constellation Software pattern.",
+      "confidence": "medium — limited public review data; reputation signals mostly from self-published content"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Barry Anns",
+          "title": "CEO, Kinetic Software",
+          "notes": "Current CEO as of his LinkedIn profile (title confirmed: 'CEO at Kinetic | Building a values-driven...'). Joined Kinetic circa mid-2024 (LinkedIn post ID 7398144879442157568 announcing new role). Career history: CEO of Double First Ltd (EdTech admin software for schools, UK) 2013-2020/21. When Double First was acquired by Education Horizons Group (Australian EdTech conglomerate, April 2020), Barry became Chief International Officer / Group Head of International at EHG. Subsequently CRO at Tes (following Tes acquisition of Education Horizons assets) for a period before joining Kinetic. Prior to Double First: various roles at DU PRE PLC 2004-2013, rising to CEO. Education: Newbury College 1995-1997. Pattern: serial EdTech operator, experienced at navigating acquisitions and integration.",
+          "linkedin": "uk.linkedin.com/in/barry-anns"
+        },
+        {
+          "name": "Luke Warren",
+          "title": "Former CEO (2020-2024), current role unclear",
+          "notes": "Joined Kinetic 2017 as Head of Sales. Became Chief Sales Officer, then Chief Commercial Officer, then CEO in 2020 following Chris Wildsmith's departure. Luke Warren appeared to be CEO until Barry Anns' arrival circa mid-2024. His current role at Kinetic (if any) is not confirmed in public sources.",
+          "linkedin": "linkedin.com/in/lukeawarren/"
+        },
+        {
+          "name": "Chris Wildsmith",
+          "title": "Co-founder (retired from operational role ~2020)",
+          "notes": "Co-founded Kinetic in 1998 with Steve Ashley. Remained as Managing Director after 2015 Volaris acquisition. Stepped back circa 2020 when Luke Warren became CEO."
+        },
+        {
+          "name": "Steve Ashley",
+          "title": "Co-founder",
+          "notes": "Co-founded Kinetic in 1998. Limited current public presence."
+        },
+        {
+          "name": "Rob Johnstone",
+          "title": "Product leadership role",
+          "notes": "LinkedIn post (activity-7402746913952845825) tagged with #productleadership #highereducation #partnership — involved in product direction at Kinetic. Exact title not confirmed."
+        }
+      ],
+      "synthesis": "Kinetic has undergone a CEO transition circa mid-2024 with the appointment of Barry Anns. Barry brings a background in EdTech operator roles — notably as CEO of Double First (schools SIS) and CRO at Education Horizons Group / Tes — giving him relevant experience in higher education software markets and managing post-acquisition integration. His stated personal brand is 'values-driven' leadership. The fact that Volaris brought in an external CEO (rather than promoting internally) suggests a strategic shift, possibly toward revenue growth or product transformation. Barry's background in CRO/commercial roles (vs pure engineering/product) suggests Kinetic may be prioritising sales, market expansion, and partner relationships under his tenure.",
+      "confidence": "medium — CEO transition confirmed via LinkedIn but exact timing and Luke Warren's current status not independently verified"
+    }
+  },
+  "sources_consulted": [
+    "kineticsoftware.com (homepage, about-us, resources, kinetic-live, products-hub, kxengage, events, newsinsight pages)",
+    "volarisgroup.com/acquired-knowledge/10-years-at-volaris-kinetic/",
+    "volarisgroup.com/acquired-knowledge/volaris-groups-2025-ma-year-in-review/",
+    "volarisgroup.com/press-room/bullet-solutions-acquired-by-kinetic-a-volaris-group-company/",
+    "globenewswire.com/news-release/2024/07/11/2911829/ (Bullet Solutions acquisition)",
+    "globenewswire.com/news-release/2015/01/05/1437638/ (original Volaris acquisition)",
+    "uk.linkedin.com/in/barry-anns (Barry Anns CEO profile)",
+    "linkedin.com/posts/barry-anns_delighted-to-share... (new role announcement)",
+    "linkedin.com/in/lukeawarren/ (Luke Warren former CEO)",
+    "brightnetwork.co.uk/graduate-jobs/kinetic/innovation-acceleration-graduate-engineer-milton-keynes-2026",
+    "kineticsoftware.com/newsinsight/kinetic_ranked_1st_apuc/",
+    "kineticsoftware.com/newsinsight/a-new-student-experience-app-joins-kinetic/",
+    "kineticsoftware.com/newsinsight/student-roost-launches-kxengage-to-promote-student-connectivity-and-well-being/",
+    "cubo.ac.uk/Resources/News/View (KxEngage CUBO partnership)",
+    "tracxn.com/d/companies/kinetic-software/",
+    "find-and-update.company-information.service.gov.uk/company/16495341 (Companies House)",
+    "rocketreach.co/barry-anns-email_836995941",
+    "contactout.com/Barry-Anns-83374479",
+    "doublefirst.com.au/2020/04/06/double-first-joins-education-horizons-group/",
+    "insidermedia.com/news/south-east/double-first-snapped-up-by-australian-edtech",
+    "fm.volarisgroup.com/sell-software-business/kinetic-solutions-acquisition-story/",
+    "starrez.com (competitor reference)",
+    "softwaresuggest.com/starrez/alternatives",
+    "glassdoor.com/Reviews/Kinetic-Software-Reviews-E2120409.htm",
+    "indeed.com/cmp/Kinetic-Software/reviews"
+  ],
+  "gaps": [
+    "Barry Anns' exact start date and title at Kinetic not confirmed from a primary source — LinkedIn profile confirms CEO title but announcement post content not fully accessible",
+    "Luke Warren's current status (still at Kinetic in another role, or departed) is unknown",
+    "No public revenue, ARR, or employee headcount figures — Volaris does not break out subsidiary financials",
+    "Specific AI features shipped to customers not identified — only hiring signals and conference discussion",
+    "No customer satisfaction scores (NPS, CSAT) from independent sources found — review data is sparse",
+    "International expansion specifics (which of the 20+ countries are growing, which are strategic targets) not detailed",
+    "Kinetic Software Ltd company number 16495341 on Companies House is relatively recent — relationship to the original Kinetic Solutions Ltd (founded 1998) not clarified",
+    "Barry Anns' specific mandate from Volaris (growth targets, product transformation, geographic expansion) not publicly stated"
+  ]
+}

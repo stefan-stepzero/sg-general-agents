@@ -1,0 +1,292 @@
+{
+  "company_id": "rising",
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise value 'Education' matches taxonomy with strong evidence across all business lines."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Detailed niche 'EdTech + Low-cost private school management' with market data and positioning."
+    },
+    {
+      "property_id": "industry-vertical-value-chain-position",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Clear dual positioning as end-service provider and platform layer with revenue evidence."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Growth phase with market projections ($7.3B–$19.2B) and TAM expansion."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Hybrid model with four distinct revenue streams (tuition, B2G, grants, SaaS)."
+    },
+    {
+      "property_id": "business-model-delivery-model",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Dual delivery (managed service + software) clearly articulated with evidence."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.72,
+      "justification": "Mixed variable-to-fixed cost profile with some specificity but margin bands underspecified."
+    },
+    {
+      "property_id": "business-model-go-to-market",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "GTM strategy clear for B2G and B2B2C with entry mechanisms documented."
+    },
+    {
+      "property_id": "business-model-unit-economics",
+      "coverage": 0.75,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.64,
+      "justification": "Framework present but LTV/CAC metrics and per-stream margins missing."
+    },
+    {
+      "property_id": "business-model-moat-network-effects",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Profile_fill is null; moat and network effects not documented."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Profile_fill is null; key operational dependencies not assessed."
+    },
+    {
+      "property_id": "strategy-positioning",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Positioning as affordable provider in underserved markets with tech differentiation."
+    },
+    {
+      "property_id": "strategy-competitive-advantage",
+      "coverage": 0.85,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.85,
+      "justification": "Key advantages identified though defensibility could be deeper."
+    },
+    {
+      "property_id": "strategy-growth-strategy",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Multi-pronged growth: school expansion, government partnerships, product licensing, AI."
+    },
+    {
+      "property_id": "strategy-market-expansion",
+      "coverage": 0.8,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.8,
+      "justification": "Geographic expansion across West/East Africa with progression logic."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Profile_fill is null; headcount band not documented."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "Revenue streams identified but ARR/revenue band not explicitly quantified."
+    },
+    {
+      "property_id": "scale-resources-company-age",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Established company (12 years, founded 2014) with precise founding date and history."
+    },
+    {
+      "property_id": "scale-resources-customer-base-scale",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Profile_fill is null; customer/user base scale not formally documented."
+    },
+    {
+      "property_id": "growth-phase-scaling",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Scaling phase with multiple signals: school growth, government expansion, Series A."
+    },
+    {
+      "property_id": "market-position-customer-segment",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Profile_fill is null; target customer segment not formally documented."
+    },
+    {
+      "property_id": "market-position-pricing-strategy",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Value/low-cost positioning clearly articulated with specific pricing evidence ($5/student)."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Co-founder team transitioning to professional CEO with explicit names and roles."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Functional/hub-and-spoke inferred but not comprehensively documented."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.6,
+      "justification": "Multi-office regional model indicated but remote/hybrid specifics not detailed."
+    },
+    {
+      "property_id": "tech-maturity-frontend",
+      "coverage": 0.5,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.35,
+      "justification": "Frontend technology (WhatsApp) evident but framework details not specified."
+    },
+    {
+      "property_id": "tech-maturity-backend",
+      "coverage": 0.55,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.39,
+      "justification": "Backend inferred but infrastructure, databases, architecture not documented."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "AI/ML in production with research data pipelines and published RCT evidence."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.6,
+      "justification": "Intermediate security (KCS membership, child safeguarding) but SOC2 not mentioned."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.72,
+      "justification": "Moderate-to-heavy burden across education regulation, child safeguarding, AI governance."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Regional Sub-Saharan Africa (4 countries) with operational presence, not just sales."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Moderate sensitivity: donor cycles, government budgets, forex exposure identified."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "B Corp certified, VC-backed Series A, mission constraints clearly documented."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Pragmatic-to-bleeding-edge with evidence-driven AI adoption and research rigor."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Thought-leader/mission-driven positioning with evidence, research, awards documented."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Mission-driven with B Corp certification constraining commercial decisions since 2014."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "coverage": 0.75,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.64,
+      "justification": "Strong-in-niche employer brand with mission-aligned talent but limited detail."
+    },
+    {
+      "property_id": "product-core-offering",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Core offerings precisely described: RisingFaster, Rori, Tari—WhatsApp-native, low-bandwidth."
+    },
+    {
+      "property_id": "product-differentiation",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Clear differentiation: WhatsApp-native, ultra-low bandwidth, teacher focus, contextual."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": 0.92,
+    "business-model": 0.68,
+    "strategy": 0.86,
+    "scale-resources": 0.53,
+    "growth-phase": 0.95,
+    "market-position": 0.5,
+    "org-structure": 0.81,
+    "tech-maturity": 0.63,
+    "operating-environment": 0.88,
+    "culture-brand": 0.87,
+    "product": 0.93
+  },
+  "overall_score": 0.79
+}

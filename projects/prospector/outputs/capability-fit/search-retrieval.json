@@ -1,0 +1,187 @@
+{
+  "category": "search-retrieval",
+  "category_label": "Search & Retrieval",
+  "sector_context": "Education & development — K-12, HE, EdTech, dev consulting, education community. Transitional tech maturity, heavy regulatory burden (child safety, accreditation, government funding), domain-expert-heavy workforce (teachers, educators), multi-site/distributed operations. Problem heat: Talent (52), Governance (52), Operations (49), Risk (47), Strategy (47), Financial (45), Growth (42), Product (38).",
+  "capabilities": {
+    "search-semantic": {
+      "label": "Semantic Search",
+      "domains": {
+        "talent-people": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Education orgs struggle to match teachers and administrators across campuses and grade levels by competency rather than job title — semantic search over CVs, performance reviews, and professional development records is a direct unlock. Rising Academies (West Africa multi-site) and PHINMA (affordable HE, Philippines) face high-volume teacher hiring in markets where credentials vary widely; semantic matching against a proprietary competency framework is the only scalable approach. Generic ATS keyword search systematically misses qualified educators with non-standard credentials."
+        },
+        "governance-leadership": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Education governance produces dense corpora: board minutes, regulatory submissions, accreditation evidence dossiers, government funding reports. Institutions like CSPD (Catholic diocese K-12) and WISE (global summit, Qatar) must surface past decisions and commitments quickly for accountability and audit. Semantic search over this corpus — by meaning rather than exact phrase — is distinctly valuable given the formal but varied language of governance documents, and no generic SaaS product indexes proprietary board records."
+        },
+        "risk-compliance": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Education regulation is multi-layered: child safety legislation, accreditation standards (CHED in Philippines, TEQSA in Australia, Qatari MOE), government funding compliance, and safeguarding obligations. Searching these heterogeneous regulatory corpora by meaning — not keyword — is critical because the same requirement appears in different words across jurisdictions. For Rising Academies (West Africa, multiple national systems) and iPeople (STEM HE Philippines), a semantic index over regulatory and policy documents reduces compliance gaps that manual review misses."
+        },
+        "operations-delivery": {
+          "fit": 0.70,
+          "specificity": "mid",
+          "reasoning": "Multi-campus education operations generate large procedural corpora: curriculum guides, student welfare SOPs, facilities protocols, safeguarding procedures. Semantic search lets frontline staff (teachers, campus administrators) locate relevant procedures without knowing exact document titles or filing conventions. Kinetic (student accommodation SaaS) and School for Life (community education) have distributed non-technical workforces where keyword search consistently fails. Specificity is mid because the operational corpus is less unique than regulatory or HR records."
+        },
+        "financial": {
+          "fit": 0.55,
+          "specificity": "low",
+          "reasoning": "Education finance is largely structured (grants, fees, government disbursements) and already indexed by ERP or finance systems at institutions that have them. Semantic search adds marginal value unless dealing with unstructured grant applications, donor correspondence, or procurement narratives. Most companies in this cohort lack the data infrastructure to make semantic financial search a priority investment."
+        },
+        "strategy-direction": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Strategy in education development consulting (Acasus) and EdTech (Kinetic, iPeople) requires synthesizing across program evaluations, policy briefs, sector reports, and internal OKR histories. Semantic search over this heterogeneous corpus enables leadership to surface relevant precedents and evidence without deep knowledge of filing structures. Specificity is mid — the use case exists but generic research tools partially address it."
+        },
+        "growth-market": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Growth use cases in education are constrained — most companies serve regulated, relationship-driven markets (government contracts, institutional admissions, B2B SaaS). Semantic search over CRM notes, partnership reports, and prospect communications can surface signals, but the low volume of deal flow in LMIC development consulting (Acasus, Rising Academies) limits ROI. Kinetic (SaaS) is the clearest beneficiary for sales intelligence search."
+        },
+        "product-service": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "EdTech product teams (Kinetic, iPeople) can use semantic search over student feedback, support tickets, and usage comments to identify unmet needs without manual tagging. For curriculum developers at CSPD or Rising Academies, semantic search over learning resource libraries by pedagogical intent — not just subject keywords — is a genuine capability gap. Specificity is mid because the problem is real but the corpus size at these companies is moderate."
+        }
+      }
+    },
+    "search-rag": {
+      "label": "Retrieval-Augmented Generation",
+      "domains": {
+        "talent-people": {
+          "fit": 0.88,
+          "specificity": "high",
+          "reasoning": "HR business partners in education institutions deal with complex, jurisdiction-specific policy questions daily: teacher certification requirements, safeguarding obligations, performance management procedures, union entitlements. RAG over HR policy documents, enterprise agreements, and regulatory guidance gives cited, accurate answers without escalation. For PHINMA (affordable HE, Philippines) and Rising Academies (multi-country West Africa), HR policies vary by country and campus — a RAG system over proprietary policy corpora is the only scalable way to serve distributed HR queries accurately."
+        },
+        "governance-leadership": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Governance in education requires auditable answers: what did the board decide about this policy, what commitments were made to the regulator, what does the accreditation standard require? RAG over board minutes, regulatory submissions, accreditation evidence, and stakeholder commitments gives executives cited answers with traceable sources — critical in environments where accountability to government funders and accreditation bodies is high. WISE (Qatar) and CSPD (Catholic diocese) face particular scrutiny requiring this level of documentation precision."
+        },
+        "risk-compliance": {
+          "fit": 0.93,
+          "specificity": "high",
+          "reasoning": "Compliance in education is citation-mandatory: child protection officers, compliance managers, and registrars need verifiable answers with source references, not summaries. RAG over proprietary regulatory mappings (local child safety law, accreditation standards, funding conditions) is the canonical high-value use case. No generic SaaS product holds the intersection of CHED (Philippines), TEQSA (Australia), Qatari MOE requirements, and each institution's internal policy interpretations. Errors in compliance carry regulatory and reputational consequences that amplify ROI of accurate, cited retrieval."
+        },
+        "operations-delivery": {
+          "fit": 0.84,
+          "specificity": "high",
+          "reasoning": "Frontline education staff — teachers, campus coordinators, student welfare officers — face operational queries that require accurate procedure retrieval: incident reporting protocols, student support referral pathways, safeguarding response steps. RAG over SOPs, welfare frameworks, and campus operating guides gives staff cited, contextually accurate answers without requiring escalation to administrators. For Rising Academies (low-resource West Africa schools) and School for Life (community education), reducing reliance on scarce administrative expertise is a direct operational unlock. Corpus is proprietary and stakes (child safety) are high."
+        },
+        "financial": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Education finance involves grant conditions, donor reporting requirements, government funding rules, and budget policy documents that are voluminous and institution-specific. RAG over funding agreements, financial policies, and audit reports lets CFOs and finance staff query the institution's financial obligations with cited evidence. For Acasus (development consulting) and PHINMA (government-linked affordable HE), grant compliance queries are common and currently require manual document review."
+        },
+        "strategy-direction": {
+          "fit": 0.76,
+          "specificity": "high",
+          "reasoning": "Education strategy requires synthesizing across program evaluations, sector research, government policy documents, and internal strategic plans — a heterogeneous corpus that no generic tool indexes. RAG enables leadership at Acasus (LMIC development consulting) and WISE (global education summit) to query across proprietary research archives, past project reports, and policy briefs with citations. The differentiation from generic search tools is high because the strategic corpus is proprietary and spans multiple languages and jurisdictions."
+        },
+        "growth-market": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Growth teams in education (Kinetic SaaS sales, PHINMA enrolment, iPeople partnerships) can use RAG over CRM history, proposal libraries, and market research to assemble contextualized responses to prospects. The use case is real but specificity is mid — growth corpora in education are smaller than enterprise sales contexts, and the primary constraint on growth is relationship and reputation rather than information retrieval."
+        },
+        "product-service": {
+          "fit": 0.78,
+          "specificity": "mid",
+          "reasoning": "EdTech product managers (Kinetic, iPeople) benefit from RAG over user research, support transcripts, and feature request histories to get synthesized, cited answers to product questions. For curriculum development organizations (CSPD, Rising Academies), RAG over learning resource libraries, curriculum standards, and research evidence enables educators to retrieve evidence-based practice recommendations with citations — a genuine gap in current EdTech tooling."
+        }
+      }
+    },
+    "search-recommendation": {
+      "label": "Recommendation Systems",
+      "domains": {
+        "talent-people": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Professional development recommendation is a high-heat, underserved problem in education: which training should this teacher do next, which internal role aligns with their growth trajectory, which mentor matches their development needs? Generic HRIS tools lack the pedagogical career ontologies needed for education-specific recommendations. For Rising Academies (teacher development in West Africa) and PHINMA (HE faculty development), recommending personalized learning pathways from proprietary CPD libraries based on performance data and career trajectory is directly tied to the talent retention problem (heat: 52)."
+        },
+        "product-service": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "EdTech platforms (Kinetic student accommodation SaaS, iPeople STEM HE) can drive engagement and outcomes through content and resource recommendation. For iPeople, recommending next learning activities or support services based on student engagement signals is a direct product differentiator. For Kinetic, recommending accommodation services or support resources to students increases platform stickiness. Both require proprietary usage telemetry — generic recommendation engines cannot substitute."
+        },
+        "operations-delivery": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Recommending optimal staff deployment across campuses, timetabling adjustments based on enrolment patterns, or resource allocation across school sites has operational value for multi-campus groups like CSPD and PHINMA. Specificity is mid because the transaction volume required for collaborative filtering signal is moderate and rule-based scheduling tools partially address this."
+        },
+        "risk-compliance": {
+          "fit": 0.42,
+          "specificity": "low",
+          "reasoning": "Compliance recommendations in education must be deterministic and traceable — probabilistic collaborative filtering is inappropriate where child safety, accreditation, or funding compliance is at stake. Rule-based and checklist-driven compliance tools are preferred by regulators and auditors. Recommendation systems add limited value in this domain."
+        },
+        "financial": {
+          "fit": 0.48,
+          "specificity": "low",
+          "reasoning": "Budget allocation recommendations or vendor selection suggestions based on historical spend have limited applicability: education institutions in this cohort have constrained discretionary spend, government-determined allocation rules, and low transaction volume. The signal required for meaningful recommendation is thin in nonprofit and government-funded education entities."
+        },
+        "strategy-direction": {
+          "fit": 0.52,
+          "specificity": "mid",
+          "reasoning": "Recommending analogous programs, partnership models, or strategic moves based on sector benchmarks could benefit development consultants like Acasus and summit curators like WISE. However, the low frequency of strategic decisions and the bespoke nature of LMIC education contexts limit how much collaborative filtering across organizations adds over expert judgment."
+        },
+        "growth-market": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Enrolment recommendation — suggesting relevant programs to prospective students based on academic profile and interest signals — is a natural fit for iPeople (STEM HE) and PHINMA (affordable HE Philippines). For Kinetic (student accommodation SaaS), recommending accommodation options and ancillary services to student users drives revenue. Specificity is mid because the student corpus size at individual institutions may not support high-confidence collaborative filtering without cross-institution data sharing."
+        },
+        "governance-leadership": {
+          "fit": 0.30,
+          "specificity": "low",
+          "reasoning": "Governance decisions in education — board resolutions, policy adoption, accreditation responses — are too infrequent, high-stakes, and qualitative to benefit from behavioral recommendation systems. Institutional accountability requirements also create resistance to algorithmic influence on governance processes."
+        }
+      }
+    },
+    "search-multimodal": {
+      "label": "Multimodal & Cross-Modal Retrieval",
+      "domains": {
+        "operations-delivery": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Education operations generate rich multimodal content: instructional videos, classroom observation recordings, facility inspection photos, handwritten student records (especially in LMIC settings). For Rising Academies and School for Life, retrieving relevant teaching demonstration videos by text query, or surfacing similar facility issues from inspection photo archives, addresses genuine operational gaps. Cross-modal retrieval of scanned handwritten student records is a distinctive need in low-resource education settings with no good SaaS equivalent."
+        },
+        "product-service": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "EdTech platforms can enable cross-modal search over learning resources: finding a relevant video lesson by text description, retrieving worked examples from image-based problem sets, or searching lecture recordings by topic. For iPeople (STEM HE) and Kinetic (accommodation platform), multimodal search over rich media libraries improves student self-service. Specificity is mid — the capability is real but requires substantial content libraries to justify the infrastructure."
+        },
+        "risk-compliance": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Safeguarding and child protection in education generates multimodal evidence: incident photos, CCTV footage, handwritten witness statements, scanned forms. Retrieving relevant historical incident evidence across these modalities for regulatory reporting or legal review is a genuine compliance need — particularly for distributed school networks like CSPD (Catholic K-12) and Rising Academies. Specificity is mid because few institutions have digitized this evidence systematically enough to make retrieval tractable today."
+        },
+        "talent-people": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Talent processes in education are primarily text and relationship-driven. Some niche applications exist — retrieving classroom observation videos for teacher performance review, or searching professional development recordings by competency — but these require specialized infrastructure most institutions don't have. Not a primary use case at current tech maturity."
+        },
+        "governance-leadership": {
+          "fit": 0.32,
+          "specificity": "low",
+          "reasoning": "Governance in education is document and meeting-driven. Retrieval of meeting recordings or presentation decks by text query has marginal value but does not constitute a priority capability investment given the infrequency of governance queries and the primacy of text-based minutes."
+        },
+        "financial": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Education finance is overwhelmingly structured or text-based. Retrieval of scanned financial documents (grant receipts, audit evidence) is the only material multimodal case, and this is addressed by document scanning and OCR pipelines rather than cross-modal retrieval systems."
+        },
+        "strategy-direction": {
+          "fit": 0.42,
+          "specificity": "low",
+          "reasoning": "Strategy research in education development (Acasus, WISE) occasionally requires retrieving images, charts, or video from sector conferences and program evaluations. Cross-modal search over these materials is a niche productivity gain rather than a primary capability investment."
+        },
+        "growth-market": {
+          "fit": 0.40,
+          "specificity": "low",
+          "reasoning": "Education marketing and enrolment is increasingly visual — prospective student journeys involve campus videos, social content, and program showcase materials. Cross-modal retrieval of brand assets could accelerate campaign production, but education institutions in this cohort are not media-heavy enough to justify purpose-built multimodal retrieval infrastructure."
+        }
+      }
+    }
+  }
+}

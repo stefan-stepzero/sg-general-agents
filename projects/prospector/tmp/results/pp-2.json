@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-outstanding-balance-collection",
+  "pain_point_label": "Outstanding Balance Tracking & Collection Follow-Up",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Collection staff need personalized outreach messages (SMS, email, letter) tailored to account status, amount owed, payment history, and family context. Generating these manually at scale across 2,000+ accounts is impractical. AI can draft contextually appropriate communications — firm for chronic non-payers, gentle for families with subsidy delays — reducing the emotional friction caused by generic or incorrect reminders.",
+      "opportunity_sketch": "An AI-drafted outreach module that generates personalized SMS/email templates per account segment (amount owed, days overdue, prior contact history), ready for staff review before send. Could be embedded in the collections dashboard.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "The core triage problem — which of 2,000+ overdue accounts to prioritize today — is a structured classification task. Input features include amount owed, days overdue, prior payment behavior, contact history, and funding source (private vs. government-subsidy). AI can classify each account into priority tiers (urgent escalation, active follow-up, low-value hold) replacing the manual judgment calls that currently lead to wasted effort on PHP 2k accounts.",
+      "opportunity_sketch": "A daily priority queue that classifies each outstanding account into action tiers, surfaced to collection staff as a ranked worklist. Rules-based scoring exists today but AI classification can incorporate behavioral patterns that rule sets miss (e.g., families who promise and don't pay vs. genuinely delayed subsidy cases).",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Not all delinquent accounts behave the same way. A propensity model trained on historical collection outcomes can predict which families are likely to pay given a reminder, which need a payment plan offer, and which are likely to default regardless. This directly addresses the problem of staff spending equal effort on PHP 2k and PHP 50k accounts — effort should correlate with both amount AND predicted collectability.",
+      "opportunity_sketch": "A 'collectability score' per account that combines balance size, payment history, subsidy status, and prior contact outcomes to predict probability of collection within 30/60/90 days. Used to weight the priority queue and guide staff on which accounts warrant phone calls vs. automated reminders.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The collections workflow is a multi-step process: check payment status across channels → update account → determine next action → log outcome → schedule follow-up → escalate if needed. Today this is manual, leading to staff calling families who already paid and no structured escalation path. A task automation agent can orchestrate this workflow end-to-end: pulling payment updates, refreshing balances, triggering appropriate outreach, logging promises, and escalating overdue escalation accounts without human intervention at each step.",
+      "opportunity_sketch": "An automated collections workflow agent that runs nightly: reconciles payments from all channels, updates account statuses, sends first-tier automated reminders for small balances, surfaces high-value or escalation-ready accounts to human staff with a full contact history, and logs promised payment dates for follow-up scheduling.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A significant portion of collection follow-up is repetitive: confirming balances, explaining what is owed, offering standard payment plan options, and capturing payment commitments. A conversational AI agent (SMS/chat-based) can handle this first-tier interaction for families with straightforward balances, freeing human staff for complex negotiations and escalations. This also reduces emotional friction from incorrect balances — the AI can pull live data rather than reciting a stale spreadsheet figure.",
+      "opportunity_sketch": "An SMS or web chat bot that families can query to check their current balance, confirm recent payments, and request or confirm a standard payment plan. Escalates to a human agent when the balance is disputed, the account is flagged for legal, or the family requests a non-standard arrangement.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Payments arrive through multiple channels (bank transfer, GCash, over-the-counter, post-dated checks) and are recorded in inconsistent formats across systems. The root cause of staff calling families who already paid is that these payment records aren't reconciled into a single clean account view. AI-assisted data transformation can normalize and merge payment records from disparate sources into a unified account status, eliminating the stale-data problem.",
+      "opportunity_sketch": "An ETL pipeline with AI-assisted schema mapping that ingests payment records from multiple channels (bank files, mobile payment APIs, manual entry logs) and normalizes them into a single account balance record updated in near-real-time. The prerequisite infrastructure layer that makes every other collection AI solution accurate.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

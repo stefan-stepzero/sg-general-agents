@@ -1,0 +1,1014 @@
+[
+  {
+    "cellNum": 1,
+    "subCategory": "Skills & Development",
+    "domain": "Talent & People",
+    "heat": 57,
+    "oppScore": 45,
+    "hotCompanies": [
+      "cspd",
+      "ipeople",
+      "kinetic",
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "cspd: Cross-Site & Cross-Team Variance, Technology & Digital Upskilling, Source Concentration Risk",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.78,
+        "specificity": "mid",
+        "reasoning": "Summarising teacher performance reviews, professional development portfolios, and 360-degree feedback at scale reduces administrative load for principals and HR teams across distributed campuses. CSPD and PHINMA managing hundreds of educators face real bottlenecks in appraisal cycles. While HRIS copilots are emerging, they lack education-specific appraisal context (teaching standards, curriculum alignment, pastoral observation)."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education organisations typically run fragmented HR systems — national payroll, HRIS, teaching registration databases, and spreadsheet-based appraisal tracking rarely integrate. Transforming and normalising staff data across these systems for workforce analytics is a real pain at CSPD and PHINMA, and standard HR integration platforms do not cover education-specific schemas (registration status, teaching area, professional learning hours)."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Teacher attrition and hiring pipeline forecasting is a pressing pain point (52 heat) across multi-site operators like Rising Academies and PHINMA. Seasonal enrollment patterns drive staffing cycles that legacy HR systems cannot forecast. Mid specificity because general workforce forecasting tools exist but lack education-sector features like teacher certification lead times and school-year periodicity."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Allocating professional development budgets, scheduling training across distributed school networks (Rising Academies, School for Life), and managing relief teacher or relief-staff pools require constraint-aware scheduling. The workforce is large, domain-expert-heavy, and multi-site, making manual allocation error-prone at scale. Mid specificity because generic workforce scheduling tools partially address this, but do not encode education award conditions or certification requirements."
+      },
+      {
+        "name": "Risk Scoring & Assessment",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Composite risk scores for individual staff (flight risk + performance risk + certification lapse risk) give HR leaders an actionable intervention queue across large distributed workforces like PHINMA's. Mid specificity because the scoring logic draws on standard HR analytics patterns, though education-specific risk factors (remote posting hardship, subject scarcity premium, contract type) require domain customization."
+      }
+    ]
+  },
+  {
+    "cellNum": 2,
+    "subCategory": "Revenue & Funding Diversification",
+    "domain": "Growth & Market",
+    "heat": 57,
+    "oppScore": 41,
+    "hotCompanies": [
+      "acasus",
+      "phinma",
+      "rising",
+      "school-for-life",
+      "wise"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Text Classification",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Rising Academies and iPeople face parent/student acquisition challenges in price-sensitive markets where classifying inquiry intent and dropout-risk signals from SMS, WhatsApp, and email could improve conversion and retention outreach. WISE and Kinetic can classify event registration intent and student accommodation enquiries. Moderate fit — value exists but most companies lack the volume of structured digital acquisition funnels."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Enrollment conversion funnel forecasting — inquiry to application to enrollment — follows predictable academic-cycle patterns for iPeople and PHINMA. Forecasting cohort retention rates over multi-year degree programs is a meaningful growth metric. Mid specificity because CRM tools offer basic funnel forecasting but lack education-specific stage definitions and dropout pattern recognition."
+      },
+      {
+        "name": "Structured Data Classification",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Student enrollment propensity classification using structured application and demographic data is valuable at PHINMA (affordable HE, large applicant volume) and iPeople (STEM recruitment). Rising Academies classifying community households by school enrollment likelihood enables targeted outreach in West African markets. Kinetic classifying accommodation prospects by conversion likelihood aids B2B sales. Mid specificity — education-sector enrollment data has unique signals (family income proxies, prior schooling records) that generic lead scoring misses."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrollment yield regression — quantifying which recruitment activities, scholarship offers, or marketing channels drive conversion — is directly actionable for iPeople and PHINMA growing in competitive markets. Estimating tuition price elasticity for new program pricing also applies. Mid specificity because the regression methodology is standard marketing analytics but the education enrollment funnel has sector-specific variables (academic calendar gating, qualification requirements, family income sensitivity)."
+      },
+      {
+        "name": "Recommendation Systems",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrolment recommendation — suggesting relevant programs to prospective students based on academic profile and interest signals — is a natural fit for iPeople (STEM HE) and PHINMA (affordable HE Philippines). For Kinetic (student accommodation SaaS), recommending accommodation options and ancillary services to student users drives revenue. Specificity is mid because the student corpus size at individual institutions may not support high-confidence collaborative filtering without cross-institution data sharing."
+      }
+    ]
+  },
+  {
+    "cellNum": 3,
+    "subCategory": "Culture & Organization",
+    "domain": "Talent & People",
+    "heat": 50,
+    "oppScore": 39,
+    "hotCompanies": [
+      "acasus",
+      "cspd",
+      "ipeople",
+      "kinetic",
+      "phinma"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "cspd: Cross-Site & Cross-Team Variance, Technology & Digital Upskilling, Source Concentration Risk",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.78,
+        "specificity": "mid",
+        "reasoning": "Summarising teacher performance reviews, professional development portfolios, and 360-degree feedback at scale reduces administrative load for principals and HR teams across distributed campuses. CSPD and PHINMA managing hundreds of educators face real bottlenecks in appraisal cycles. While HRIS copilots are emerging, they lack education-specific appraisal context (teaching standards, curriculum alignment, pastoral observation)."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education organisations typically run fragmented HR systems — national payroll, HRIS, teaching registration databases, and spreadsheet-based appraisal tracking rarely integrate. Transforming and normalising staff data across these systems for workforce analytics is a real pain at CSPD and PHINMA, and standard HR integration platforms do not cover education-specific schemas (registration status, teaching area, professional learning hours)."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Teacher attrition and hiring pipeline forecasting is a pressing pain point (52 heat) across multi-site operators like Rising Academies and PHINMA. Seasonal enrollment patterns drive staffing cycles that legacy HR systems cannot forecast. Mid specificity because general workforce forecasting tools exist but lack education-sector features like teacher certification lead times and school-year periodicity."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Allocating professional development budgets, scheduling training across distributed school networks (Rising Academies, School for Life), and managing relief teacher or relief-staff pools require constraint-aware scheduling. The workforce is large, domain-expert-heavy, and multi-site, making manual allocation error-prone at scale. Mid specificity because generic workforce scheduling tools partially address this, but do not encode education award conditions or certification requirements."
+      },
+      {
+        "name": "Risk Scoring & Assessment",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Composite risk scores for individual staff (flight risk + performance risk + certification lapse risk) give HR leaders an actionable intervention queue across large distributed workforces like PHINMA's. Mid specificity because the scoring logic draws on standard HR analytics patterns, though education-specific risk factors (remote posting hardship, subject scarcity premium, contract type) require domain customization."
+      }
+    ]
+  },
+  {
+    "cellNum": 4,
+    "subCategory": "Hiring & Recruitment",
+    "domain": "Talent & People",
+    "heat": 49,
+    "oppScore": 38,
+    "hotCompanies": [
+      "cspd",
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "cspd: Cross-Site & Cross-Team Variance, Technology & Digital Upskilling, Source Concentration Risk",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.78,
+        "specificity": "mid",
+        "reasoning": "Summarising teacher performance reviews, professional development portfolios, and 360-degree feedback at scale reduces administrative load for principals and HR teams across distributed campuses. CSPD and PHINMA managing hundreds of educators face real bottlenecks in appraisal cycles. While HRIS copilots are emerging, they lack education-specific appraisal context (teaching standards, curriculum alignment, pastoral observation)."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education organisations typically run fragmented HR systems — national payroll, HRIS, teaching registration databases, and spreadsheet-based appraisal tracking rarely integrate. Transforming and normalising staff data across these systems for workforce analytics is a real pain at CSPD and PHINMA, and standard HR integration platforms do not cover education-specific schemas (registration status, teaching area, professional learning hours)."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Teacher attrition and hiring pipeline forecasting is a pressing pain point (52 heat) across multi-site operators like Rising Academies and PHINMA. Seasonal enrollment patterns drive staffing cycles that legacy HR systems cannot forecast. Mid specificity because general workforce forecasting tools exist but lack education-sector features like teacher certification lead times and school-year periodicity."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Allocating professional development budgets, scheduling training across distributed school networks (Rising Academies, School for Life), and managing relief teacher or relief-staff pools require constraint-aware scheduling. The workforce is large, domain-expert-heavy, and multi-site, making manual allocation error-prone at scale. Mid specificity because generic workforce scheduling tools partially address this, but do not encode education award conditions or certification requirements."
+      },
+      {
+        "name": "Risk Scoring & Assessment",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Composite risk scores for individual staff (flight risk + performance risk + certification lapse risk) give HR leaders an actionable intervention queue across large distributed workforces like PHINMA's. Mid specificity because the scoring logic draws on standard HR analytics patterns, though education-specific risk factors (remote posting hardship, subject scarcity premium, contract type) require domain customization."
+      }
+    ]
+  },
+  {
+    "cellNum": 5,
+    "subCategory": "Market Expansion",
+    "domain": "Growth & Market",
+    "heat": 51,
+    "oppScore": 37,
+    "hotCompanies": [
+      "ipeople",
+      "kinetic",
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Text Classification",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Rising Academies and iPeople face parent/student acquisition challenges in price-sensitive markets where classifying inquiry intent and dropout-risk signals from SMS, WhatsApp, and email could improve conversion and retention outreach. WISE and Kinetic can classify event registration intent and student accommodation enquiries. Moderate fit — value exists but most companies lack the volume of structured digital acquisition funnels."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Enrollment conversion funnel forecasting — inquiry to application to enrollment — follows predictable academic-cycle patterns for iPeople and PHINMA. Forecasting cohort retention rates over multi-year degree programs is a meaningful growth metric. Mid specificity because CRM tools offer basic funnel forecasting but lack education-specific stage definitions and dropout pattern recognition."
+      },
+      {
+        "name": "Structured Data Classification",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Student enrollment propensity classification using structured application and demographic data is valuable at PHINMA (affordable HE, large applicant volume) and iPeople (STEM recruitment). Rising Academies classifying community households by school enrollment likelihood enables targeted outreach in West African markets. Kinetic classifying accommodation prospects by conversion likelihood aids B2B sales. Mid specificity — education-sector enrollment data has unique signals (family income proxies, prior schooling records) that generic lead scoring misses."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrollment yield regression — quantifying which recruitment activities, scholarship offers, or marketing channels drive conversion — is directly actionable for iPeople and PHINMA growing in competitive markets. Estimating tuition price elasticity for new program pricing also applies. Mid specificity because the regression methodology is standard marketing analytics but the education enrollment funnel has sector-specific variables (academic calendar gating, qualification requirements, family income sensitivity)."
+      },
+      {
+        "name": "Recommendation Systems",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrolment recommendation — suggesting relevant programs to prospective students based on academic profile and interest signals — is a natural fit for iPeople (STEM HE) and PHINMA (affordable HE Philippines). For Kinetic (student accommodation SaaS), recommending accommodation options and ancillary services to student users drives revenue. Specificity is mid because the student corpus size at individual institutions may not support high-confidence collaborative filtering without cross-institution data sharing."
+      }
+    ]
+  },
+  {
+    "cellNum": 6,
+    "subCategory": "Retention & Engagement",
+    "domain": "Talent & People",
+    "heat": 48,
+    "oppScore": 37,
+    "hotCompanies": [
+      "acasus",
+      "cspd",
+      "ipeople",
+      "phinma"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "cspd: Cross-Site & Cross-Team Variance, Technology & Digital Upskilling, Source Concentration Risk",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.78,
+        "specificity": "mid",
+        "reasoning": "Summarising teacher performance reviews, professional development portfolios, and 360-degree feedback at scale reduces administrative load for principals and HR teams across distributed campuses. CSPD and PHINMA managing hundreds of educators face real bottlenecks in appraisal cycles. While HRIS copilots are emerging, they lack education-specific appraisal context (teaching standards, curriculum alignment, pastoral observation)."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education organisations typically run fragmented HR systems — national payroll, HRIS, teaching registration databases, and spreadsheet-based appraisal tracking rarely integrate. Transforming and normalising staff data across these systems for workforce analytics is a real pain at CSPD and PHINMA, and standard HR integration platforms do not cover education-specific schemas (registration status, teaching area, professional learning hours)."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Teacher attrition and hiring pipeline forecasting is a pressing pain point (52 heat) across multi-site operators like Rising Academies and PHINMA. Seasonal enrollment patterns drive staffing cycles that legacy HR systems cannot forecast. Mid specificity because general workforce forecasting tools exist but lack education-sector features like teacher certification lead times and school-year periodicity."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Allocating professional development budgets, scheduling training across distributed school networks (Rising Academies, School for Life), and managing relief teacher or relief-staff pools require constraint-aware scheduling. The workforce is large, domain-expert-heavy, and multi-site, making manual allocation error-prone at scale. Mid specificity because generic workforce scheduling tools partially address this, but do not encode education award conditions or certification requirements."
+      },
+      {
+        "name": "Risk Scoring & Assessment",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Composite risk scores for individual staff (flight risk + performance risk + certification lapse risk) give HR leaders an actionable intervention queue across large distributed workforces like PHINMA's. Mid specificity because the scoring logic draws on standard HR analytics patterns, though education-specific risk factors (remote posting hardship, subject scarcity premium, contract type) require domain customization."
+      }
+    ]
+  },
+  {
+    "cellNum": 7,
+    "subCategory": "Financial Visibility & Planning",
+    "domain": "Financial",
+    "heat": 51,
+    "oppScore": 37,
+    "hotCompanies": [
+      "acasus",
+      "ipeople",
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Retrieval-Augmented Generation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education finance involves grant conditions, donor reporting requirements, government funding rules, and budget policy documents that are voluminous and institution-specific. RAG over funding agreements, financial policies, and audit reports lets CFOs and finance staff query the institution's financial obligations with cited evidence. For Acasus (development consulting) and PHINMA (government-linked affordable HE), grant compliance queries are common and currently require manual document review."
+      },
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Summarising grant reports, budget variance analyses, and funder acquittals is useful for education organisations managing complex funding streams (PHINMA, Acasus, Rising Academies), but the summarisation task is relatively generic once documents are structured."
+      },
+      {
+        "name": "Propensity & Behavioral Modeling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Fee default propensity modeling helps affordable HE operators (PHINMA, iPeople) target financial aid interventions before students drop out for financial reasons. Mid specificity — propensity to default is a generic credit modeling problem, but the education context adds constraints (cannot simply cut off service, must balance access mission against financial sustainability)."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Allocating capex across campuses, distributing program budgets under government funding conditions, and optimizing facility utilization rates to justify spend are relevant for PHINMA, iPeople, and CSPD. Requires institution-specific funding rules and enrollment projections to parameterize correctly. Mid specificity because generic budgeting tools cover the basics."
+      },
+      {
+        "name": "Constraint Satisfaction & Configuration",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Budget configuration under multiple simultaneous constraints — government funding rules with restricted and unrestricted categories, donor conditions, cross-subsidy targets between programs, and minimum program viability thresholds — is a constraint satisfaction problem. Relevant for PHINMA and Acasus-supported institutions where funding is multi-source with conflicting allocation conditions."
+      }
+    ]
+  },
+  {
+    "cellNum": 8,
+    "subCategory": "Capital & Funding",
+    "domain": "Financial",
+    "heat": 49,
+    "oppScore": 35,
+    "hotCompanies": [
+      "acasus",
+      "rising",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Retrieval-Augmented Generation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education finance involves grant conditions, donor reporting requirements, government funding rules, and budget policy documents that are voluminous and institution-specific. RAG over funding agreements, financial policies, and audit reports lets CFOs and finance staff query the institution's financial obligations with cited evidence. For Acasus (development consulting) and PHINMA (government-linked affordable HE), grant compliance queries are common and currently require manual document review."
+      },
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Summarising grant reports, budget variance analyses, and funder acquittals is useful for education organisations managing complex funding streams (PHINMA, Acasus, Rising Academies), but the summarisation task is relatively generic once documents are structured."
+      },
+      {
+        "name": "Propensity & Behavioral Modeling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Fee default propensity modeling helps affordable HE operators (PHINMA, iPeople) target financial aid interventions before students drop out for financial reasons. Mid specificity — propensity to default is a generic credit modeling problem, but the education context adds constraints (cannot simply cut off service, must balance access mission against financial sustainability)."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Allocating capex across campuses, distributing program budgets under government funding conditions, and optimizing facility utilization rates to justify spend are relevant for PHINMA, iPeople, and CSPD. Requires institution-specific funding rules and enrollment projections to parameterize correctly. Mid specificity because generic budgeting tools cover the basics."
+      },
+      {
+        "name": "Constraint Satisfaction & Configuration",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Budget configuration under multiple simultaneous constraints — government funding rules with restricted and unrestricted categories, donor conditions, cross-subsidy targets between programs, and minimum program viability thresholds — is a constraint satisfaction problem. Relevant for PHINMA and Acasus-supported institutions where funding is multi-source with conflicting allocation conditions."
+      }
+    ]
+  },
+  {
+    "cellNum": 9,
+    "subCategory": "Financial Risk & Controls",
+    "domain": "Financial",
+    "heat": 47,
+    "oppScore": 34,
+    "hotCompanies": [
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Retrieval-Augmented Generation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education finance involves grant conditions, donor reporting requirements, government funding rules, and budget policy documents that are voluminous and institution-specific. RAG over funding agreements, financial policies, and audit reports lets CFOs and finance staff query the institution's financial obligations with cited evidence. For Acasus (development consulting) and PHINMA (government-linked affordable HE), grant compliance queries are common and currently require manual document review."
+      },
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Summarising grant reports, budget variance analyses, and funder acquittals is useful for education organisations managing complex funding streams (PHINMA, Acasus, Rising Academies), but the summarisation task is relatively generic once documents are structured."
+      },
+      {
+        "name": "Propensity & Behavioral Modeling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Fee default propensity modeling helps affordable HE operators (PHINMA, iPeople) target financial aid interventions before students drop out for financial reasons. Mid specificity — propensity to default is a generic credit modeling problem, but the education context adds constraints (cannot simply cut off service, must balance access mission against financial sustainability)."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Allocating capex across campuses, distributing program budgets under government funding conditions, and optimizing facility utilization rates to justify spend are relevant for PHINMA, iPeople, and CSPD. Requires institution-specific funding rules and enrollment projections to parameterize correctly. Mid specificity because generic budgeting tools cover the basics."
+      },
+      {
+        "name": "Constraint Satisfaction & Configuration",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Budget configuration under multiple simultaneous constraints — government funding rules with restricted and unrestricted categories, donor conditions, cross-subsidy targets between programs, and minimum program viability thresholds — is a constraint satisfaction problem. Relevant for PHINMA and Acasus-supported institutions where funding is multi-source with conflicting allocation conditions."
+      }
+    ]
+  },
+  {
+    "cellNum": 10,
+    "subCategory": "Retention & Churn",
+    "domain": "Growth & Market",
+    "heat": 39,
+    "oppScore": 28,
+    "hotCompanies": [],
+    "companyContext": [],
+    "capabilities": [
+      {
+        "name": "Text Classification",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Rising Academies and iPeople face parent/student acquisition challenges in price-sensitive markets where classifying inquiry intent and dropout-risk signals from SMS, WhatsApp, and email could improve conversion and retention outreach. WISE and Kinetic can classify event registration intent and student accommodation enquiries. Moderate fit — value exists but most companies lack the volume of structured digital acquisition funnels."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Enrollment conversion funnel forecasting — inquiry to application to enrollment — follows predictable academic-cycle patterns for iPeople and PHINMA. Forecasting cohort retention rates over multi-year degree programs is a meaningful growth metric. Mid specificity because CRM tools offer basic funnel forecasting but lack education-specific stage definitions and dropout pattern recognition."
+      },
+      {
+        "name": "Structured Data Classification",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Student enrollment propensity classification using structured application and demographic data is valuable at PHINMA (affordable HE, large applicant volume) and iPeople (STEM recruitment). Rising Academies classifying community households by school enrollment likelihood enables targeted outreach in West African markets. Kinetic classifying accommodation prospects by conversion likelihood aids B2B sales. Mid specificity — education-sector enrollment data has unique signals (family income proxies, prior schooling records) that generic lead scoring misses."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrollment yield regression — quantifying which recruitment activities, scholarship offers, or marketing channels drive conversion — is directly actionable for iPeople and PHINMA growing in competitive markets. Estimating tuition price elasticity for new program pricing also applies. Mid specificity because the regression methodology is standard marketing analytics but the education enrollment funnel has sector-specific variables (academic calendar gating, qualification requirements, family income sensitivity)."
+      },
+      {
+        "name": "Recommendation Systems",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrolment recommendation — suggesting relevant programs to prospective students based on academic profile and interest signals — is a natural fit for iPeople (STEM HE) and PHINMA (affordable HE Philippines). For Kinetic (student accommodation SaaS), recommending accommodation options and ancillary services to student users drives revenue. Specificity is mid because the student corpus size at individual institutions may not support high-confidence collaborative filtering without cross-institution data sharing."
+      }
+    ]
+  },
+  {
+    "cellNum": 11,
+    "subCategory": "Revenue & Margin Pressure",
+    "domain": "Financial",
+    "heat": 37,
+    "oppScore": 27,
+    "hotCompanies": [
+      "rising"
+    ],
+    "companyContext": [
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability"
+    ],
+    "capabilities": [
+      {
+        "name": "Retrieval-Augmented Generation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Education finance involves grant conditions, donor reporting requirements, government funding rules, and budget policy documents that are voluminous and institution-specific. RAG over funding agreements, financial policies, and audit reports lets CFOs and finance staff query the institution's financial obligations with cited evidence. For Acasus (development consulting) and PHINMA (government-linked affordable HE), grant compliance queries are common and currently require manual document review."
+      },
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Summarising grant reports, budget variance analyses, and funder acquittals is useful for education organisations managing complex funding streams (PHINMA, Acasus, Rising Academies), but the summarisation task is relatively generic once documents are structured."
+      },
+      {
+        "name": "Propensity & Behavioral Modeling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Fee default propensity modeling helps affordable HE operators (PHINMA, iPeople) target financial aid interventions before students drop out for financial reasons. Mid specificity — propensity to default is a generic credit modeling problem, but the education context adds constraints (cannot simply cut off service, must balance access mission against financial sustainability)."
+      },
+      {
+        "name": "Resource Allocation & Scheduling",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Allocating capex across campuses, distributing program budgets under government funding conditions, and optimizing facility utilization rates to justify spend are relevant for PHINMA, iPeople, and CSPD. Requires institution-specific funding rules and enrollment projections to parameterize correctly. Mid specificity because generic budgeting tools cover the basics."
+      },
+      {
+        "name": "Constraint Satisfaction & Configuration",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Budget configuration under multiple simultaneous constraints — government funding rules with restricted and unrestricted categories, donor conditions, cross-subsidy targets between programs, and minimum program viability thresholds — is a constraint satisfaction problem. Relevant for PHINMA and Acasus-supported institutions where funding is multi-source with conflicting allocation conditions."
+      }
+    ]
+  },
+  {
+    "cellNum": 12,
+    "subCategory": "Transformation & Change",
+    "domain": "Strategy & Direction",
+    "heat": 52,
+    "oppScore": 26,
+    "hotCompanies": [
+      "ipeople",
+      "kinetic",
+      "phinma",
+      "rising",
+      "school-for-life",
+      "wise"
+    ],
+    "companyContext": [
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "rising: Source Concentration Risk, Funding Sustainability & Continuity, Service Delivery Scalability",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Distilling international education research, LMIC policy landscapes, and sector intelligence into strategic briefs is directly valuable for Acasus and WISE, whose positioning depends on deep sector knowledge. Synthesis depth required exceeds what general AI summarisers reliably produce for development sector contexts."
+      },
+      {
+        "name": "Semantic Search",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Strategy in education development consulting (Acasus) and EdTech (Kinetic, iPeople) requires synthesizing across program evaluations, policy briefs, sector reports, and internal OKR histories. Semantic search over this heterogeneous corpus enables leadership to surface relevant precedents and evidence without deep knowledge of filing structures. Specificity is mid — the use case exists but generic research tools partially address it."
+      },
+      {
+        "name": "Experiment Design & Optimization",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Pilot-before-scale is the dominant strategy pattern for education development organizations (Acasus, Rising Academies, School for Life). Structured experiment design for program pilots — defining counterfactuals, controlling for selection bias, measuring learning outcomes with appropriate lags — is high-value. Mid specificity because this requires education sector measurement expertise that is not embedded in generic experiment tools."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Market sizing regression (estimating addressable student population from demographic and economic indicators) supports strategy for PHINMA, iPeople, and Acasus's LMIC program design. ROI estimation for strategic investments in new campuses or programs uses regression on comparable cases. Mid specificity — useful analytical technique but the education-sector overlay is moderate and competes with standard analyst modeling approaches."
+      },
+      {
+        "name": "Entity & Attribute Extraction",
+        "fit": 0.58,
+        "specificity": "mid",
+        "reasoning": "Extracting competitive signals, policy developments, and sector trends from government white papers, international development reports, and EdTech industry publications supports strategy teams at Acasus and WISE. Useful but the extraction task is relatively straightforward compared to the synthesis challenge."
+      }
+    ]
+  },
+  {
+    "cellNum": 13,
+    "subCategory": "Partnerships & Ecosystem",
+    "domain": "Strategy & Direction",
+    "heat": 51,
+    "oppScore": 26,
+    "hotCompanies": [
+      "ipeople",
+      "kinetic",
+      "phinma",
+      "school-for-life",
+      "wise"
+    ],
+    "companyContext": [
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Distilling international education research, LMIC policy landscapes, and sector intelligence into strategic briefs is directly valuable for Acasus and WISE, whose positioning depends on deep sector knowledge. Synthesis depth required exceeds what general AI summarisers reliably produce for development sector contexts."
+      },
+      {
+        "name": "Semantic Search",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Strategy in education development consulting (Acasus) and EdTech (Kinetic, iPeople) requires synthesizing across program evaluations, policy briefs, sector reports, and internal OKR histories. Semantic search over this heterogeneous corpus enables leadership to surface relevant precedents and evidence without deep knowledge of filing structures. Specificity is mid — the use case exists but generic research tools partially address it."
+      },
+      {
+        "name": "Experiment Design & Optimization",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Pilot-before-scale is the dominant strategy pattern for education development organizations (Acasus, Rising Academies, School for Life). Structured experiment design for program pilots — defining counterfactuals, controlling for selection bias, measuring learning outcomes with appropriate lags — is high-value. Mid specificity because this requires education sector measurement expertise that is not embedded in generic experiment tools."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Market sizing regression (estimating addressable student population from demographic and economic indicators) supports strategy for PHINMA, iPeople, and Acasus's LMIC program design. ROI estimation for strategic investments in new campuses or programs uses regression on comparable cases. Mid specificity — useful analytical technique but the education-sector overlay is moderate and competes with standard analyst modeling approaches."
+      },
+      {
+        "name": "Entity & Attribute Extraction",
+        "fit": 0.58,
+        "specificity": "mid",
+        "reasoning": "Extracting competitive signals, policy developments, and sector trends from government white papers, international development reports, and EdTech industry publications supports strategy teams at Acasus and WISE. Useful but the extraction task is relatively straightforward compared to the synthesis challenge."
+      }
+    ]
+  },
+  {
+    "cellNum": 14,
+    "subCategory": "Strategic Clarity & Alignment",
+    "domain": "Strategy & Direction",
+    "heat": 49,
+    "oppScore": 25,
+    "hotCompanies": [
+      "ipeople",
+      "kinetic",
+      "wise"
+    ],
+    "companyContext": [
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Distilling international education research, LMIC policy landscapes, and sector intelligence into strategic briefs is directly valuable for Acasus and WISE, whose positioning depends on deep sector knowledge. Synthesis depth required exceeds what general AI summarisers reliably produce for development sector contexts."
+      },
+      {
+        "name": "Semantic Search",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Strategy in education development consulting (Acasus) and EdTech (Kinetic, iPeople) requires synthesizing across program evaluations, policy briefs, sector reports, and internal OKR histories. Semantic search over this heterogeneous corpus enables leadership to surface relevant precedents and evidence without deep knowledge of filing structures. Specificity is mid — the use case exists but generic research tools partially address it."
+      },
+      {
+        "name": "Experiment Design & Optimization",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Pilot-before-scale is the dominant strategy pattern for education development organizations (Acasus, Rising Academies, School for Life). Structured experiment design for program pilots — defining counterfactuals, controlling for selection bias, measuring learning outcomes with appropriate lags — is high-value. Mid specificity because this requires education sector measurement expertise that is not embedded in generic experiment tools."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Market sizing regression (estimating addressable student population from demographic and economic indicators) supports strategy for PHINMA, iPeople, and Acasus's LMIC program design. ROI estimation for strategic investments in new campuses or programs uses regression on comparable cases. Mid specificity — useful analytical technique but the education-sector overlay is moderate and competes with standard analyst modeling approaches."
+      },
+      {
+        "name": "Entity & Attribute Extraction",
+        "fit": 0.58,
+        "specificity": "mid",
+        "reasoning": "Extracting competitive signals, policy developments, and sector trends from government white papers, international development reports, and EdTech industry publications supports strategy teams at Acasus and WISE. Useful but the extraction task is relatively straightforward compared to the synthesis challenge."
+      }
+    ]
+  },
+  {
+    "cellNum": 15,
+    "subCategory": "Power Concentration & Transparency",
+    "domain": "Governance & Leadership",
+    "heat": 56,
+    "oppScore": 25,
+    "hotCompanies": [
+      "acasus",
+      "ipeople",
+      "kinetic",
+      "phinma",
+      "school-for-life",
+      "wise"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Text Generation",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Board papers, trustee communications, and principal leadership reports require structured formats sensitive to Catholic school governance (CSPD) and Qatar Foundation stakeholder expectations (WISE) that off-the-shelf templates don't address."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Transforming governance documents, committee reports, and accreditation evidence into unified dashboards for leadership supports oversight but is partially addressable with existing BI tools. Differentiation comes when transforming education-specific regulatory formats (AITSL standards, CHED accreditation matrices) that generic BI connectors do not handle."
+      },
+      {
+        "name": "Text Classification",
+        "fit": 0.6,
+        "specificity": "mid",
+        "reasoning": "Governance is joint top heat domain (52). Board documents, committee reports, and stakeholder submissions accumulate across all eight organisations. Classifying these for policy compliance, escalation triggers, and fiduciary obligations is meaningful given education governance complexity — accreditation boards, government regulators, Catholic diocesan structures (CSPD), and international funders (Rising Academies, School for Life). More specific than the generic case because education governance involves multi-stakeholder reporting with distinct regulatory vocabularies."
+      },
+      {
+        "name": "Media Parsing & Transcription",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Board and committee meetings, accreditation hearings, and stakeholder consultations generate recorded content that must be archived and referenced. Transcription creates searchable governance records, though the downstream value is in analysis rather than transcription itself. Board-management software used by WISE and PHINMA does not provide education-specific parsing."
+      },
+      {
+        "name": "Anomaly & Fraud Detection",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Detecting anomalous patterns in board decision records, policy approval timelines, or audit finding resolution rates can surface governance integrity risks. PHINMA (ASX-listed equivalent governance obligations) and WISE (Qatar Foundation accountability) have the most at stake. Detecting unusual procurement approvals or expenditure authorisation patterns feeds directly into fiduciary governance. Mid specificity — governance anomaly detection requires integration with board management and ERP systems."
+      }
+    ]
+  },
+  {
+    "cellNum": 16,
+    "subCategory": "Executive Leadership Capability",
+    "domain": "Governance & Leadership",
+    "heat": 53,
+    "oppScore": 24,
+    "hotCompanies": [
+      "acasus",
+      "kinetic",
+      "phinma",
+      "school-for-life",
+      "wise"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Text Generation",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Board papers, trustee communications, and principal leadership reports require structured formats sensitive to Catholic school governance (CSPD) and Qatar Foundation stakeholder expectations (WISE) that off-the-shelf templates don't address."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Transforming governance documents, committee reports, and accreditation evidence into unified dashboards for leadership supports oversight but is partially addressable with existing BI tools. Differentiation comes when transforming education-specific regulatory formats (AITSL standards, CHED accreditation matrices) that generic BI connectors do not handle."
+      },
+      {
+        "name": "Text Classification",
+        "fit": 0.6,
+        "specificity": "mid",
+        "reasoning": "Governance is joint top heat domain (52). Board documents, committee reports, and stakeholder submissions accumulate across all eight organisations. Classifying these for policy compliance, escalation triggers, and fiduciary obligations is meaningful given education governance complexity — accreditation boards, government regulators, Catholic diocesan structures (CSPD), and international funders (Rising Academies, School for Life). More specific than the generic case because education governance involves multi-stakeholder reporting with distinct regulatory vocabularies."
+      },
+      {
+        "name": "Media Parsing & Transcription",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Board and committee meetings, accreditation hearings, and stakeholder consultations generate recorded content that must be archived and referenced. Transcription creates searchable governance records, though the downstream value is in analysis rather than transcription itself. Board-management software used by WISE and PHINMA does not provide education-specific parsing."
+      },
+      {
+        "name": "Anomaly & Fraud Detection",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Detecting anomalous patterns in board decision records, policy approval timelines, or audit finding resolution rates can surface governance integrity risks. PHINMA (ASX-listed equivalent governance obligations) and WISE (Qatar Foundation accountability) have the most at stake. Detecting unusual procurement approvals or expenditure authorisation patterns feeds directly into fiduciary governance. Mid specificity — governance anomaly detection requires integration with board management and ERP systems."
+      }
+    ]
+  },
+  {
+    "cellNum": 17,
+    "subCategory": "Decision-Making & Accountability",
+    "domain": "Governance & Leadership",
+    "heat": 51,
+    "oppScore": 23,
+    "hotCompanies": [
+      "acasus",
+      "ipeople",
+      "phinma",
+      "school-for-life",
+      "wise"
+    ],
+    "companyContext": [
+      "acasus: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry",
+      "wise: Source Concentration Risk, Leadership Transition & Succession, Key-Person Executive Dependency"
+    ],
+    "capabilities": [
+      {
+        "name": "Text Generation",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Board papers, trustee communications, and principal leadership reports require structured formats sensitive to Catholic school governance (CSPD) and Qatar Foundation stakeholder expectations (WISE) that off-the-shelf templates don't address."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Transforming governance documents, committee reports, and accreditation evidence into unified dashboards for leadership supports oversight but is partially addressable with existing BI tools. Differentiation comes when transforming education-specific regulatory formats (AITSL standards, CHED accreditation matrices) that generic BI connectors do not handle."
+      },
+      {
+        "name": "Text Classification",
+        "fit": 0.6,
+        "specificity": "mid",
+        "reasoning": "Governance is joint top heat domain (52). Board documents, committee reports, and stakeholder submissions accumulate across all eight organisations. Classifying these for policy compliance, escalation triggers, and fiduciary obligations is meaningful given education governance complexity — accreditation boards, government regulators, Catholic diocesan structures (CSPD), and international funders (Rising Academies, School for Life). More specific than the generic case because education governance involves multi-stakeholder reporting with distinct regulatory vocabularies."
+      },
+      {
+        "name": "Media Parsing & Transcription",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Board and committee meetings, accreditation hearings, and stakeholder consultations generate recorded content that must be archived and referenced. Transcription creates searchable governance records, though the downstream value is in analysis rather than transcription itself. Board-management software used by WISE and PHINMA does not provide education-specific parsing."
+      },
+      {
+        "name": "Anomaly & Fraud Detection",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Detecting anomalous patterns in board decision records, policy approval timelines, or audit finding resolution rates can surface governance integrity risks. PHINMA (ASX-listed equivalent governance obligations) and WISE (Qatar Foundation accountability) have the most at stake. Detecting unusual procurement approvals or expenditure authorisation patterns feeds directly into fiduciary governance. Mid specificity — governance anomaly detection requires integration with board management and ERP systems."
+      }
+    ]
+  },
+  {
+    "cellNum": 18,
+    "subCategory": "Acquisition & Demand",
+    "domain": "Growth & Market",
+    "heat": 28,
+    "oppScore": 20,
+    "hotCompanies": [],
+    "companyContext": [],
+    "capabilities": [
+      {
+        "name": "Text Classification",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Rising Academies and iPeople face parent/student acquisition challenges in price-sensitive markets where classifying inquiry intent and dropout-risk signals from SMS, WhatsApp, and email could improve conversion and retention outreach. WISE and Kinetic can classify event registration intent and student accommodation enquiries. Moderate fit — value exists but most companies lack the volume of structured digital acquisition funnels."
+      },
+      {
+        "name": "Time Series Forecasting",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Enrollment conversion funnel forecasting — inquiry to application to enrollment — follows predictable academic-cycle patterns for iPeople and PHINMA. Forecasting cohort retention rates over multi-year degree programs is a meaningful growth metric. Mid specificity because CRM tools offer basic funnel forecasting but lack education-specific stage definitions and dropout pattern recognition."
+      },
+      {
+        "name": "Structured Data Classification",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Student enrollment propensity classification using structured application and demographic data is valuable at PHINMA (affordable HE, large applicant volume) and iPeople (STEM recruitment). Rising Academies classifying community households by school enrollment likelihood enables targeted outreach in West African markets. Kinetic classifying accommodation prospects by conversion likelihood aids B2B sales. Mid specificity — education-sector enrollment data has unique signals (family income proxies, prior schooling records) that generic lead scoring misses."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrollment yield regression — quantifying which recruitment activities, scholarship offers, or marketing channels drive conversion — is directly actionable for iPeople and PHINMA growing in competitive markets. Estimating tuition price elasticity for new program pricing also applies. Mid specificity because the regression methodology is standard marketing analytics but the education enrollment funnel has sector-specific variables (academic calendar gating, qualification requirements, family income sensitivity)."
+      },
+      {
+        "name": "Recommendation Systems",
+        "fit": 0.68,
+        "specificity": "mid",
+        "reasoning": "Enrolment recommendation — suggesting relevant programs to prospective students based on academic profile and interest signals — is a natural fit for iPeople (STEM HE) and PHINMA (affordable HE Philippines). For Kinetic (student accommodation SaaS), recommending accommodation options and ancillary services to student users drives revenue. Specificity is mid because the student corpus size at individual institutions may not support high-confidence collaborative filtering without cross-institution data sharing."
+      }
+    ]
+  },
+  {
+    "cellNum": 19,
+    "subCategory": "Board & Governance Effectiveness",
+    "domain": "Governance & Leadership",
+    "heat": 45,
+    "oppScore": 20,
+    "hotCompanies": [
+      "phinma",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Text Generation",
+        "fit": 0.65,
+        "specificity": "mid",
+        "reasoning": "Board papers, trustee communications, and principal leadership reports require structured formats sensitive to Catholic school governance (CSPD) and Qatar Foundation stakeholder expectations (WISE) that off-the-shelf templates don't address."
+      },
+      {
+        "name": "Data Transformation & Structuring",
+        "fit": 0.62,
+        "specificity": "mid",
+        "reasoning": "Transforming governance documents, committee reports, and accreditation evidence into unified dashboards for leadership supports oversight but is partially addressable with existing BI tools. Differentiation comes when transforming education-specific regulatory formats (AITSL standards, CHED accreditation matrices) that generic BI connectors do not handle."
+      },
+      {
+        "name": "Text Classification",
+        "fit": 0.6,
+        "specificity": "mid",
+        "reasoning": "Governance is joint top heat domain (52). Board documents, committee reports, and stakeholder submissions accumulate across all eight organisations. Classifying these for policy compliance, escalation triggers, and fiduciary obligations is meaningful given education governance complexity — accreditation boards, government regulators, Catholic diocesan structures (CSPD), and international funders (Rising Academies, School for Life). More specific than the generic case because education governance involves multi-stakeholder reporting with distinct regulatory vocabularies."
+      },
+      {
+        "name": "Media Parsing & Transcription",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Board and committee meetings, accreditation hearings, and stakeholder consultations generate recorded content that must be archived and referenced. Transcription creates searchable governance records, though the downstream value is in analysis rather than transcription itself. Board-management software used by WISE and PHINMA does not provide education-specific parsing."
+      },
+      {
+        "name": "Anomaly & Fraud Detection",
+        "fit": 0.55,
+        "specificity": "mid",
+        "reasoning": "Detecting anomalous patterns in board decision records, policy approval timelines, or audit finding resolution rates can surface governance integrity risks. PHINMA (ASX-listed equivalent governance obligations) and WISE (Qatar Foundation accountability) have the most at stake. Detecting unusual procurement approvals or expenditure authorisation patterns feeds directly into fiduciary governance. Mid specificity — governance anomaly detection requires integration with board management and ERP systems."
+      }
+    ]
+  },
+  {
+    "cellNum": 20,
+    "subCategory": "Technology & Infrastructure",
+    "domain": "Operations & Delivery",
+    "heat": 52,
+    "oppScore": 19,
+    "hotCompanies": [
+      "cspd",
+      "ipeople",
+      "kinetic",
+      "phinma",
+      "school-for-life"
+    ],
+    "companyContext": [
+      "cspd: Cross-Site & Cross-Team Variance, Technology & Digital Upskilling, Source Concentration Risk",
+      "ipeople: Regulatory Change Adaptation, Structural Reorganization, Geographic & Regional Entry",
+      "kinetic: Geographic & Regional Entry, Technology-Led Transformation, Segment Discovery & Entry",
+      "phinma: Geographic & Regional Entry, Integration & Data Silos, Digital Tooling Gaps",
+      "school-for-life: Source Concentration Risk, Key-Person Executive Dependency, Geographic & Regional Entry"
+    ],
+    "capabilities": [
+      {
+        "name": "Risk Scoring & Assessment",
+        "fit": 0.74,
+        "specificity": "mid",
+        "reasoning": "Operational risk scores at school or campus level — combining staffing gaps, resource shortfalls, maintenance backlogs, and delivery performance — enable multi-site operators to triage central support. Rising Academies across West Africa and PHINMA across Philippines campuses need ranked site risk to allocate limited oversight capacity. Mid specificity because multi-site operational risk scoring is a general pattern, though school-year rhythms and education-specific KPIs add sector nuance."
+      },
+      {
+        "name": "Structured Data Classification",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Classifying student support cases, maintenance requests, or resource allocation decisions by priority using operational system data improves multi-site delivery for CSPD, Rising Academies, and PHINMA. Kinetic's SaaS model benefits from classifying tenant service requests by resolution path. Constrained by legacy and low-data-maturity systems in LMIC contexts — Rising Academies and School for Life may lack the structured data pipelines to feed classifiers reliably."
+      },
+      {
+        "name": "Regression & Quantitative Estimation",
+        "fit": 0.72,
+        "specificity": "mid",
+        "reasoning": "Estimating resource requirements (teacher hours, facility capacity, material costs) per student cohort across sites enables more accurate operational planning for multi-site operators. Regression models linking enrollment size, program mix, and site characteristics to delivery cost are directly useful for PHINMA and Rising Academies scaling decisions. Mid specificity because cost regression is a general technique though the education cost driver structure (fixed vs. variable staff, regulatory minimums) is distinctive."
+      },
+      {
+        "name": "Summarization & Condensation",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Condensing student welfare case notes, shift handover summaries in residential settings (Kinetic), and operational reports across distributed school networks reduces coordinator workload. Education-specific language (behaviour incident terminology, welfare frameworks) benefits from domain-aware summarisation over generic tools."
+      },
+      {
+        "name": "Text Classification",
+        "fit": 0.7,
+        "specificity": "mid",
+        "reasoning": "Multi-site operators like Rising Academies (400+ schools) and PHINMA (distributed campuses) generate high volumes of operational requests, incident reports, and maintenance tickets across staff. Classifying these by urgency, type, and routing destination reduces administrative burden on non-technical staff. CSPD and School for Life face similar triage needs across sites. Constrained by thin IT infrastructure to consume the output."
+      }
+    ]
+  }
+]

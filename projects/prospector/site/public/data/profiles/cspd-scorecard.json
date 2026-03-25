@@ -1,0 +1,296 @@
+{
+  "title": "Strategic Scorecard — Catholic Schools Parramatta Diocese",
+  "subtitle": "Outside-in assessment. Observed values from public data; benchmarks from sector norms. Status determined by benchmark comparison, not judgement.",
+  "data_vintage_note": "Financial and workforce data from CSPD 2023 Annual Report. Enrolment and demographic data from ACARA 2025 snapshot and ACARA historical 2008–2025. Sector benchmarks from CSNSW Annual Report 2024 and ACARA national figures. Strategic and leadership data from web research (sources dated 2024–2026).",
+  "status_definitions": {
+    "strong": "Observed meaningfully exceeds benchmark — a competitive or strategic strength",
+    "on-track": "Observed is at or near benchmark — performing to sector norm",
+    "watch": "Observed is below benchmark or a known gap is acknowledged — warrants monitoring",
+    "gap": "Observed is materially below benchmark with no clear remediation plan evident",
+    "at-risk": "Observed indicates a material failure risk with immediate implications"
+  },
+  "categories": [
+    {
+      "id": "enrolment_health",
+      "label": "Enrolment Health",
+      "icon": "👥",
+      "metrics": [
+        {
+          "label": "Enrolment Growth Rate — Recent (2024)",
+          "status": "on-track",
+          "source": "acara-trends.json (ACARA My School Historical Data 2008–2025); annual-report-extract.json (csnsw-annual-report-2024.pdf p.13-16)",
+          "value": "1.8% YoY in 2024 (48,116 to 48,962 — ACARA historical data)",
+          "target": "1.7% YoY — NSW Catholic sector 2024 (255,200 to 271,400 over 2019–2024, implied rate; CSNSW Annual Report 2024 p.13-16 states 1.7% 2023–2024)",
+          "note": "CSPD 2024 enrolment growth of 1.8% marginally exceeds the NSW Catholic sector rate of 1.7%. Post-2021 acceleration (2.5% in 2022, 1.3% 2023, 1.8% 2024, 1.3% 2025) signals a sustained recovery from the flat/declining period of 2015–2018. Western Sydney population growth and infrastructure investment (Westmead campus, 28-school business cases) support continued demand."
+        },
+        {
+          "label": "Enrolment Growth — Long Run CAGR 2008–2025",
+          "status": "watch",
+          "source": "acara-trends.json (ACARA My School Historical Data 2008–2025); annual-report-extract.json (csnsw-annual-report-2024.pdf p.13-16)",
+          "value": "0.71% CAGR; +12.7% total growth over 17 years (43,979 to 49,577)",
+          "target": "NSW Catholic sector grew from ~255,200 (2019) to 271,400 (2024), implying ~1.25% p.a. over 5 years. Long-run CSPD CAGR of 0.71% is below the recent sector rate.",
+          "note": "CSPD's 17-year CAGR of 0.71% trails the estimated NSW Catholic sector recent pace of ~1.25% p.a. This reflects a period of flat/declining enrolments from 2015–2018 (when enrolments fell from 46,021 to 45,182). The recent acceleration (2022–2025) has improved momentum, and Western Sydney's ongoing population growth is a structural demand tailwind. Infrastructure capacity is the binding constraint, which the 10-Year Capital Framework is designed to address."
+        },
+        {
+          "label": "Average School Size",
+          "status": "strong",
+          "source": "acara-extract.json (ACARA My School 2025 aggregates); annual-report-extract.json (csnsw-annual-report-2024.pdf p.15)",
+          "value": "557 students/school (ACARA 2025, 89-school postcode match)",
+          "target": "NSW Catholic sector: 458 average all schools; 294 average primary; 886 average secondary (CSNSW Annual Report 2024 p.15)",
+          "note": "CSPD's average school size of 557 is 22% above the NSW Catholic sector all-schools average of 458. This reflects the urban Western Sydney context where large primary and secondary schools are typical. All 89 ACARA-matched CSPD schools are in the 'Major Cities' geolocation. Larger school sizes indicate good asset utilisation and provide economies of scale for specialist staffing."
+        },
+        {
+          "label": "Unmet Demand / Capacity Pressure",
+          "status": "watch",
+          "source": "web-research.json (parra.catholic.edu.au/about/key-initiatives/westmead-catholic-community); annual-report-extract.json (csnsw-annual-report-2024.pdf p.98; cspd-annual-report-2023.pdf p.36)",
+          "value": "500+ applicants turned away annually from Westmead Catholic schools alone. New Westmead campus (Darcy Road, 4-stream K-6) opening Term 3 2026. CBGA capital grant for St John Paul II College Schofields ($11.6m of $16.5m project) for high-growth north-west Sydney corridor.",
+          "target": "No quantitative sector benchmark for unmet demand. Qualitative indicator: documented demand significantly exceeding supply is a positive enrolment health signal with an infrastructure risk dimension.",
+          "note": "The 500+ Westmead figure represents substantial unmet demand and is a positive signal for enrolment trajectory. However, the inability to convert that demand into enrolments due to infrastructure constraints means the system is leaving value on the table. Classified 'watch' (not 'strong') because demand outstripping supply creates a community relationship risk — frustrated families may select alternative providers. The capital program is the mitigant."
+        }
+      ]
+    },
+    {
+      "id": "academic_outcomes",
+      "label": "Academic Outcomes",
+      "icon": "🎓",
+      "metrics": [
+        {
+          "label": "NAPLAN Proficiency — Numeracy (system level)",
+          "status": "watch",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.22); web-research.json (Uplift framework launch August 2025)",
+          "value": "CSPD self-identifies 'imperative to increase transition of students from Strong to Exceeding, particularly in Numeracy' (2023 Annual Report p.22). No system-level proficiency percentages published in available sources.",
+          "target": "ACARA NAPLAN 2023 national data: 'Exceeding' proficiency rates for numeracy range approximately 16–22% across Year 3–9 depending on year level. NSW Catholic sector aggregate not publicly available. The gap CSPD identifies is between 'Strong' and 'Exceeding' bands — students are performing adequately but not at the highest level.",
+          "note": "The organisation's self-identification of this gap as a strategic priority is the key signal. Three of CSPD's stated 2023 priorities (performance-driven culture, explicit teaching, flexible learning environments) are direct responses to the NAPLAN numeracy finding. The Uplift framework (August 2025) is the primary intervention. Outcome data from post-Uplift NAPLAN cycles is not yet available. Classified 'watch' because the gap is acknowledged, the intervention is recent, and external benchmark comparison is not possible with available data."
+        },
+        {
+          "label": "HSC Outcomes (2025)",
+          "status": "on-track",
+          "source": "web-research.json (parra.catholic.edu.au/whats-on/latest-news/2025/12/17/...)",
+          "value": "4 First-in-Course state toppers (Catherine McAuley Westmead, Santa Sophia Catholic College Gables, Gilroy Catholic College, Caroline Chisholm College). 20 NSW All Rounders system-wide. Parramatta Marist ranked 44th in NSW (29.3% Band 6) — highest-ranked Catholic systemic school in NSW.",
+          "target": "NSW public school comparison: top-20 schools dominated by selective high schools and elite independent schools. For a non-selective systemic Catholic school system serving Western Sydney, reaching rank 44 statewide and producing 4 First-in-Course results is consistent with performance expectations for ICSEA ~1,059 average.",
+          "note": "The results are strong for a Western Sydney equity-focused school system. Four First-in-Course results across 80+ schools and 20 All Rounders indicate distributed academic strength, not just one flagship school. Parramatta Marist at rank 44 with 29.3% Band 6 is a strong result for a non-selective school. System-wide Band 5/6 distribution data is not available for a full benchmark comparison, which limits a 'strong' assessment."
+        },
+        {
+          "label": "Evidence-Based Teaching Framework",
+          "status": "strong",
+          "source": "web-research.json (parra.catholic.edu.au/whats-on/latest-news/2025/08/12/...; catholicoutlook.org)",
+          "value": "Uplift framework launched August 2025. Endorsed by Dr Jenny Donovan (inaugural CEO, Australian Education Research Organisation). Explicit instruction, formative assessment, structured literacy. Moving away from open-plan designs. Effective Learning and Teaching Model announced concurrently.",
+          "target": "NSW Curriculum Reform 2020–2027 mandates evidence-based teaching across all NSW schools. AERO endorsement is the highest external validation available in the Australian school sector. CSPD's named, system-wide framework with dedicated EGM (Patrick Ellis, EGM Learning Outcomes) and AERO endorsement is ahead of most comparable dioceses.",
+          "note": "AERO endorsement is a gold-standard signal — AERO is the independent federal government body responsible for identifying and promoting evidence-based practice in Australian schooling. A system-wide framework with dedicated leadership (EGM), formal external endorsement, and a published Effective Learning and Teaching Model represents above-sector investment in academic quality infrastructure."
+        },
+        {
+          "label": "VET Participation",
+          "status": "strong",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.8 & p.28-31); annual-report-extract.json (csnsw-annual-report-2024.pdf p.52)",
+          "value": "26 VET program sites across the system. CathWest Innovation College (dual campus, Emu Plains and Mount Druitt) is a dedicated VET/innovation campus. Multiple HSC VET First-in-Course award winners from CSPD schools in 2023.",
+          "target": "CSNSW VET for Secondary Students program: $6.2m distributed across ~547 diocesan schools in 2024 (CSNSW Annual Report 2024 p.52). CSPD's 26 VET sites from ~80 schools (33% of schools) is proportionally high vs the sector average implied by funding distribution.",
+          "note": "26 VET sites from 80 schools equals 33% penetration. CathWest Innovation College as a purpose-built dual-campus VET institution is a structural differentiator not available in most dioceses. VET First-in-Course results across multiple schools (Cerdon, CathWest, Caroline Chisholm, St John XXIII, St Andrews, Nagle, St Columba) in 2023 shows distributed VET quality. Aligned with CSPD's equity mission for Western Sydney students who may not pursue university pathways."
+        }
+      ]
+    },
+    {
+      "id": "financial_sustainability",
+      "label": "Financial Sustainability",
+      "icon": "💰",
+      "metrics": [
+        {
+          "label": "Operating Result Before Capital (2023)",
+          "status": "watch",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45); annual-report-extract.json (csnsw-annual-report-2024.pdf p.79 & p.86)",
+          "value": "-$20.6m deficit. Total operating revenue $857.2m; total operating expenditure $877.9m. Operating deficit margin: -2.4%.",
+          "target": "Not-for-profit Catholic school systems commonly run operating deficits when in capital-investment phases, offset by building fund and capital grant income. CSNSW itself ran a -$1.35m deficit in 2024 (on $38.7m revenue — a -3.5% margin). No published benchmark for acceptable diocesan operating deficit. Sector context: structural deficit during growth investment is common.",
+          "note": "A -2.4% operating margin is manageable in isolation but is compounded by $85.9m in capital expenditure against only $36.2m in total capital revenue — a net capital shortfall of $49.7m. This requires balance sheet capacity (borrowings, reserves) not visible in the available data. The 2025 Enterprise Agreement will add approximately $19m per annum to the salary base, widening the potential deficit further. Classified 'watch' as the structural deficit is real and forward salary pressure is locked in, but no balance sheet data is available to assess total financial position."
+        },
+        {
+          "label": "Government Funding Concentration",
+          "status": "on-track",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45); annual-report-extract.json (csnsw-annual-report-2024.pdf p.8 & p.54 & p.57)",
+          "value": "Commonwealth recurrent 63.8% ($546.8m); State recurrent 16.9% ($144.9m). Combined government dependence: 80.7% of total 2023 operating revenue.",
+          "target": "CSNSW's own revenue is 77–84% government-sourced (84% in 2023, 77% in 2024). CSPD at 80.7% is consistent with sector norms for NSW Catholic school systems.",
+          "note": "CSPD's government revenue dependence is within the typical range for NSW Catholic systemic schools. Parent fees at 14.6% ($125.5m) provide meaningful revenue diversification. The sector-wide risks — unresolved Better and Fairer Schools Agreement (2025–2035), CSNSW 'Keep School Funding Fair' campaign — apply equally to CSPD. These are sector-wide policy risks, not CSPD-specific."
+        },
+        {
+          "label": "Salary Cost as % of Expenditure",
+          "status": "watch",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45); web-research.json (ieu.asn.au/catholic-systemic-vote-for-new-eas/)",
+          "value": "$628.4m salaries and wages out of $877.9m total operating expenditure — 71.6% in 2023.",
+          "target": "Australian school systems: salaries typically represent 70–75% of operating expenditure. CSPD at 71.6% is within the normal range.",
+          "note": "71.6% is within the normal range for now, but the 2025 Enterprise Agreement locks in 3% annual teacher pay rises (2024–2026). A 3% increase on $628m = approximately $19m per annum in additional salary cost — roughly equivalent to the entire 2023 operating deficit. This forward pressure is the primary watch signal. Classified 'watch' as a known and quantifiable forward risk, not a current failure."
+        },
+        {
+          "label": "Capital Investment Programme",
+          "status": "on-track",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.44-45; csnsw-annual-report-2024.pdf p.98)",
+          "value": "Capital expenditure $85.9m (2023). Total capital revenue $36.2m (capital grants $12.2m + Building Fund net revenue $23.1m + interest subsidy $0.9m). Net capital outflows: $85.9m. CBGA grants 2024 for Parramatta diocese: 4 projects, $24.5m grant component of $34.9m project value. 10-Year Capital Framework with 28 school business cases commenced late 2023.",
+          "target": "CSNSW total capital grants 2023 application round: $113.9m for all NSW Catholic dioceses. Parramatta received ~$24.5m in 2024 — approximately 21.5% of the round, above CSPD's ~16.8% share of diocesan student enrolments (45,646 / 271,400). This indicates above-proportional capital grant success.",
+          "note": "CSPD is securing above-proportional capital grant funding and is committing $85.9m p.a. in capital expenditure — appropriate for a growing system with significant infrastructure pressure in Western Sydney. Classified 'on-track' rather than 'strong' because the net capital shortfall ($49.7m in 2023) requires balance sheet capacity not visible in available data, and a 28-school program carries delivery execution risk."
+        }
+      ]
+    },
+    {
+      "id": "workforce_talent",
+      "label": "Workforce & Talent",
+      "icon": "👷",
+      "metrics": [
+        {
+          "label": "Employee Engagement Score (2023)",
+          "status": "watch",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.38)",
+          "value": "69% engagement score; 53% survey response rate. Identified gaps: leadership visibility, communication effectiveness, work-life balance.",
+          "target": "Australian education sector: Gallup global average engagement ~23% (actively engaged); broader satisfaction-based surveys typically show 65–72% in education. CSPD's 69% is at the lower end of the 'acceptable' range for a large mission-driven organisation. The 53% response rate is below the 60–70% typical for well-managed staff surveys.",
+          "note": "69% engagement is below the aspirational 75%+ expected for a values-led Catholic education system, and the 53% response rate means nearly half of staff chose not to participate — itself a disengagement signal. The organisation's self-identified focus areas (leader visibility, communication, work-life balance) are consistent with common challenges in organisations undergoing major governance transformation in 2023. Leading indicator: the 99% EA approval in 2025 suggests workforce sentiment improved materially by year 2 of the new leadership team."
+        },
+        {
+          "label": "Enterprise Agreement Approval (2025)",
+          "status": "strong",
+          "source": "web-research.json (ieu.asn.au/catholic-systemic-vote-for-new-eas/)",
+          "value": "99% yes vote from CSPD employees for the NSW and ACT Catholic Systemic Schools Enterprise Agreement 2025. Sector average across 9 dioceses: 98%.",
+          "target": "98% sector average across nine NSW/ACT Catholic dioceses. CSPD's 99% is above the sector benchmark.",
+          "note": "A 99% yes vote on an enterprise agreement is an exceptionally strong industrial relations result and indicates staff goodwill toward the organisation and confidence in its direction. This is a significant data point for the 2025 workforce posture — a 30-point improvement in industrial relations confidence from the 2023 engagement score of 69% suggests the leadership transition (new CEO, new strategy, new ELT) had a materially positive impact on staff sentiment by 2025."
+        },
+        {
+          "label": "Teacher Supply Pipeline",
+          "status": "watch",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.26); annual-report-extract.json (csnsw-annual-report-2024.pdf p.30 & p.73); web-research.json (anzuk.education)",
+          "value": "190 new teachers welcomed in 2023 (~5% of 3,760 teaching staff). 102 inaugural Teacher Scholarship recipients in 2024 program (Year 12 students, $5,000/year + laptop). 'Early Careers Engagement strategy' established.",
+          "target": "NSW Catholic sector: teacher workforce sustainability is a central sector challenge (CSNSW Annual Report 2024 p.30 & p.73). Inter-Diocesan Teacher Workforce Working Group met five times in 2024. No published benchmark for new teacher intake rates. The national context: teacher shortages are projected to worsen through 2030 in NSW.",
+          "note": "The fact that CSPD established a Year 12 scholarship program signals recognition of a medium-term supply risk — the pipeline is being built 4–5 years ahead of when those students would enter the classroom. This is proactive but the risk is real. 190 new teachers against 3,760 teaching staff is normal attrition replacement. The EGM Learning Outcomes (Patrick Ellis, recruited late 2025) focused on evidence-based teaching also addresses the quality dimension of teacher capability, not just quantity. Classified 'watch' because the structural teacher shortage is sector-wide and nascent pipeline initiatives cannot resolve it in the short term."
+        },
+        {
+          "label": "Gender Equity in Senior Leadership",
+          "status": "watch",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.39); annual-report-extract.json (csnsw-annual-report-2024.pdf p.15)",
+          "value": "Key management personnel: 40% female, 60% male (2023). New management appointments in 2023 reporting period: 70% women.",
+          "target": "NSW Catholic sector total staff: 79% female (CSNSW Annual Report 2024 p.15). The gap between 40% female in key management and 79% female workforce is a known sector-wide pattern.",
+          "note": "A 40% female key management composition against a 79% female workforce represents a material equity gap. CSPD itself acknowledges 'room for improvement in the upper quartile of the workforce.' The positive trend (70% of 2023 management appointments were women) should close the gap over time if sustained. The 2025 ELT visible from the CSPD website shows a more balanced picture. Classified 'watch' as the 2023 state is the most recent verifiable data point and shows an unresolved gap."
+        },
+        {
+          "label": "Student-Teacher Ratio (ACARA 2025)",
+          "status": "on-track",
+          "source": "acara-extract.json (ACARA My School 2025 aggregates)",
+          "value": "14.3:1 system average across 89 CSPD-area schools (49,577 students; 3,474 FTE teaching staff)",
+          "target": "National Australian average student-to-teacher ratio: approximately 13.5–14.5:1 (ACARA national figures). NSW Catholic sector specific STR not published separately.",
+          "note": "14.3:1 is within the national norm range and consistent with a well-resourced urban school system. The Wellbeing Directorate (140+ additional specialists) provides supplementary support beyond the teaching ratio, effectively improving the total professional-to-student ratio. No evidence of resource stress in this metric."
+        }
+      ]
+    },
+    {
+      "id": "compliance_safeguarding",
+      "label": "Compliance & Safeguarding",
+      "icon": "🛡️",
+      "metrics": [
+        {
+          "label": "NESA Registration & Teacher Accreditation",
+          "status": "on-track",
+          "source": "annual-report-extract.json (csnsw-annual-report-2024.pdf p.20-21 & p.55); web-research.json (csnsw.catholic.edu.au/school-management/teacher-accreditation)",
+          "value": "CSPD schools registered under CSNSW as single Catholic registration authority (from July 2023). CSPD representatives active on IDRAC: John Gildea (member), Francis Mackay (proxy). All teachers hold NESA accreditation, Working with Children Check, and RE accreditation (where required).",
+          "target": "Registration compliance is a binary requirement — all NSW non-government schools must be registered. No compliance failures cited in any available source.",
+          "note": "Active CSPD participation in IDRAC (Inter-Diocesan Registration and Accreditation Committee) and the Inter-Diocesan Educational Accountability Group indicates engagement with governance at sector level, not just minimum compliance. CSNSW describes its registration system as 'maturing' — CSPD's representation helps shape that maturation. No compliance incidents noted."
+        },
+        {
+          "label": "Child Protection & Wellbeing Infrastructure",
+          "status": "on-track",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.33-35); annual-report-extract.json (csnsw-annual-report-2024.pdf p.52 & p.63-64)",
+          "value": "Wellbeing Directorate in second full year (2023): 140+ specialist teachers, social workers and psychologists. Student Wellbeing Framework released July 2023. TTFM surveys in sixth consecutive year. CSNSW sector-wide: 'notable increase in support requests for student violence, self-harm, and problematic sexualised behaviour' in 2024.",
+          "target": "NSW Catholic sector: CSNSW National School Wellbeing Program $2.4m distributed across all dioceses in 2024 (CSNSW Annual Report 2024 p.52). CSPD's 140+ Wellbeing specialists across 80 schools (~1.75 per school) is above the baseline implied by sector funding distribution. No specific CSPD incident or failure in available data.",
+          "note": "CSPD has invested structurally in child protection and wellbeing — a dedicated Directorate, 140+ specialists, a published Student Wellbeing Framework, and six years of TTFM longitudinal data. The sector-wide increase in welfare demands is shared across all dioceses; CSPD's resourcing level is proportionally strong. Classified 'on-track' because no failures are cited and the infrastructure investment is above average."
+        },
+        {
+          "label": "Sexual Harassment — Positive Duty Compliance",
+          "status": "on-track",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.40)",
+          "value": "New positive duty to eliminate sexual harassment introduced in 2023 (Anti-Discrimination and Human Rights Legislation Amendment Act 2022 commenced). CSPD System Leaders completed risk assessments, attended information sessions, and delivered team training by end of 2023.",
+          "target": "National legislative obligation for all employers from 2023. Compliance is mandatory. CSPD completed all required steps within the 2023 obligation period.",
+          "note": "The annual report explicitly documents the obligation and the training response, indicating it was treated as a live compliance activity in 2023. Completing risk assessments and team training across a 5,800-person organisation in the year of obligation is a credible compliance posture. No incidents or enforcement actions noted."
+        },
+        {
+          "label": "Mobile Phone Policy",
+          "status": "strong",
+          "source": "web-research.json (parra.catholic.edu.au/whats-on/latest-news/2025/11/18/...)",
+          "value": "System-wide mobile phone ban announced November 18, 2025, effective January 2026 across all 80 CSPD schools. Exceptions for medical necessity. Aligned with Australia's social media ban for under-16s (December 2025).",
+          "target": "NSW Government directed all government schools to implement phone bans in 2024. NSW Catholic systemic schools were not mandated but CSPD implemented voluntarily, proactively, and system-wide (rather than school-by-school discretion).",
+          "note": "A clear, system-wide, consistent policy issued with sufficient lead time (announced November for January commencement) is a governance strength. CSPD chose to implement system-wide rather than school-by-school, eliminating inconsistency risk and making the policy easy to communicate to families. This is a proactive compliance and community trust action."
+        }
+      ]
+    },
+    {
+      "id": "catholic_mission_community",
+      "label": "Catholic Mission & Community",
+      "icon": "❤️",
+      "metrics": [
+        {
+          "label": "Catholic Formation Framework",
+          "status": "strong",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.32); web-research.json (catholicoutlook.org)",
+          "value": "'Life in Abundance: Human Flourishing in the Way of Jesus' — Formation Foundation Document launched 2023. Developed via collaboration led by Prof. Br David Hall. Faith in Action Team Coordinators deployed to every school community. Directors of Catholic Identity and Mission piloted in 13 school communities in 2023.",
+          "target": "No published comparative benchmark for formation program depth across Australian Catholic school dioceses. Qualitative assessment: a named, published, academically-developed framework with dedicated coordinator roles in every school is above the minimum baseline of most comparable diocesan systems.",
+          "note": "The 'Life in Abundance' framework is not just a policy document — it is operationalised through dedicated roles (Faith in Action Team Coordinators in every school), tied to school improvement planning, and informed by academic collaboration. Piloting Directors of Catholic Identity in 13 communities in the first year of implementation demonstrates serious structural commitment. The framework also directly informs the Uplift teaching model ('learning should form us, inform us and transform us')."
+        },
+        {
+          "label": "Reconciliation and Aboriginal Education",
+          "status": "strong",
+          "source": "web-research.json (parra.catholic.edu.au/about/key-initiatives; ieu.asn.au); annual-report-extract.json (cspd-annual-report-2023.pdf p.41)",
+          "value": "Innovate RAP 2025–2027 launched July 2025 — CSPD's second RAP at Innovate level. Artwork co-created with 90 First Nations students and staff. Free education for all Aboriginal and Torres Strait Islander families from 2026. Three days annual ceremonial leave in 2025 Enterprise Agreement. Two dedicated RAP roles in People & Culture.",
+          "target": "Reconciliation Australia framework: Innovate is the second of four levels (Reflect → Innovate → Stretch → Elevate). Achieving a second Innovate-level RAP is above minimum. The fee waiver is a concrete material commitment that goes beyond symbolic reconciliation activity.",
+          "note": "The combination of an Innovate RAP, an unconditional school fee waiver for all First Nations families (from 2026), ceremonial leave in the EA, dedicated RAP staffing, and co-creation with 90 First Nations community members represents one of the more substantive reconciliation commitments among NSW Catholic school systems. The fee waiver is particularly significant as a financially material action, not just a policy statement."
+        },
+        {
+          "label": "Community Partnership — St Vincent de Paul",
+          "status": "strong",
+          "source": "web-research.json (parra.catholic.edu.au/whats-on/latest-news/2025/09/18/...)",
+          "value": "Formalised partnership signed September 16, 2025 — first school-based education provider in NSW to formalise a partnership with St Vincent de Paul Society NSW. Covers Vinnies Van, Mini Vinnies, seasonal appeals, School Sleepouts, Return and Earn, Vinnies Service Medallion for secondary students.",
+          "target": "No sector benchmark — the source explicitly states this is a first-of-type for NSW school systems.",
+          "note": "Being first in NSW to formalise this partnership is a differentiated mission signal. The breadth of the partnership (from primary Mini Vinnies to secondary Vinnies Service Medallion) creates structured service engagement across year levels. It operationalises Catholic social teaching through a recognised national organisation's framework rather than ad hoc school initiatives."
+        },
+        {
+          "label": "Student Wellbeing & Voice (TTFM)",
+          "status": "on-track",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.37)",
+          "value": "Sixth consecutive year of Tell Them From Me (TTFM) surveys in 2023 — primary customer experience and school improvement indicator. Wellbeing Framework released July 2023 with five themes: Leadership, Inclusion, Partnerships with Parish and Family, Support, Student Voice.",
+          "target": "TTFM is used widely across Australian Catholic school systems. Six consecutive years of use with results informing strategic priorities is above average for longitudinal data maturity.",
+          "note": "Six years of TTFM creates a longitudinal dataset that enables trend analysis rather than point-in-time snapshots — a data maturity advantage. TTFM results are not published in available sources, so outcome quality cannot be assessed. Classified 'on-track' because the measurement infrastructure is mature but outcomes data is not available to warrant 'strong'."
+        }
+      ]
+    },
+    {
+      "id": "technology_data",
+      "label": "Technology & Data",
+      "icon": "💻",
+      "metrics": [
+        {
+          "label": "Learning Management System — Canvas",
+          "status": "strong",
+          "source": "web-research.json (parra.catholic.edu.au/about/key-initiatives/canvas)",
+          "value": "Canvas (Instructure) deployed system-wide across all 80 CSPD schools. Student access from any device. Dedicated CSPD Canvas team for school leadership support and custom course design. Canvas catalog for staff professional learning.",
+          "target": "Canvas is a leading enterprise LMS adopted by major Australian Catholic systems (e.g. Catholic Education Melbourne). System-wide standardised deployment (vs school-by-school choice) is best practice for data consistency and teacher workload. CSPD's dedicated internal Canvas team is above the baseline of many comparable systems.",
+          "note": "A single system-wide LMS with a dedicated internal support and course design team is a mature technology posture. Canvas is not just a license deployment — the internal team building custom courses and providing school leadership support adds capability beyond what a license alone provides. The professional learning catalog extends the platform to staff development, not just student learning."
+        },
+        {
+          "label": "Technology Leadership Elevation",
+          "status": "strong",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.20); web-research.json (parra.catholic.edu.au/about/our-leadership)",
+          "value": "Role progression: Director Data Intelligence (pre-October 2023) → CIO (November 2023) → EGM Information Technology (2025). Frances Waterford holds the role with enterprise private sector background (Cancer Council NSW, ICT Design Performance and Alignment, Origin Energy).",
+          "target": "Having technology leadership at EGM peer level (alongside Finance, People, Mission, Learning) signals technology as a first-class strategic function. Most Catholic diocesan school systems have a CIO or IT Director, but EGM-level elevation is above the norm.",
+          "note": "The three-step role elevation over 2023–2025 reflects deliberate strategic investment in technology leadership. Appointing someone with enterprise private-sector ICT background (not a career educator in a technology role) signals intent to build professional technology capability. This elevation is structurally important for data-driven teaching improvement under the Uplift framework."
+        },
+        {
+          "label": "AI Policy & Governance",
+          "status": "on-track",
+          "source": "web-research.json (catholicvoice.org.au; catholicoutlook.org/student-leaders-tackle-the-future-of-ai/)",
+          "value": "'Domed approach' — students only access CSPD-approved platforms; open generative AI chatbots (e.g. ChatGPT) blocked. All tools operate under the CSPD system umbrella. LIFTED Forum (June 2025): 100+ Year 12 student leaders explored AI ethics and societal impact.",
+          "target": "Most Australian school systems are still developing AI policies in 2024–2025. A defined, named governance model ('domed') with operational blocking and documented rationale is at the structured end of the current policy spectrum. No Australian Catholic school system has yet published a widely-cited AI curriculum framework.",
+          "note": "CSPD has a defined, operational AI policy ahead of most comparable systems. The LIFTED Forum signals student-facing AI literacy engagement rather than purely restrictive policy. The 'domed' model is a defensible and implementable approach in a complex multi-school environment. Classified 'on-track' rather than 'strong' because the approved AI tool list and any AI literacy curriculum framework are not publicly available, limiting assessment of the positive capability side of the policy."
+        },
+        {
+          "label": "Data Intelligence for School Improvement",
+          "status": "on-track",
+          "source": "annual-report-extract.json (cspd-annual-report-2023.pdf p.22 & p.37); annual-report-extract.json (csnsw-annual-report-2024.pdf Appendix A)",
+          "value": "NAPLAN data drives system-level strategic priorities (2023 Annual Report p.22). TTFM surveys in sixth consecutive year as primary school improvement indicator. Former Director Data Intelligence role (pre-2023) elevated to CIO and now EGM Information Technology. CSPD representatives on CSNSW Inter-Diocesan Online Curriculum Assessment Working Group (Paul Develin, Attila Lendvai).",
+          "target": "Use of NAPLAN at system level to set strategic priorities is sector standard. Six-year TTFM longitudinal dataset is above the sector norm. CIO at ELT level is above the norm.",
+          "note": "CSPD demonstrably uses data at the strategic level — NAPLAN findings directly produced three organisational priorities in 2023. The six-year TTFM longitudinal dataset is a genuine data asset. The CIO/EGM elevation signals continued investment. However, no published data strategy, analytics maturity framework, or technology roadmap is available in public sources. Classified 'on-track' — data use is real and above average, but the depth of analytics infrastructure is not visible from external evidence."
+        }
+      ]
+    }
+  ],
+  "as_of": "2026-03-25"
+}

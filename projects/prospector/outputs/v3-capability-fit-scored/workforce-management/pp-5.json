@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-deployment-scheduling-inter-campus-allocation-dup",
+  "pain_point_label": "Inter-Campus Staff Allocation & Mobility",
+  "matches": [
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "This is the most direct match: the pain is exactly about assigning limited staff (who, what role) to campuses (where) given capacity constraints. An AI optimizer can ingest headcount data across 10-15 campuses, identify surplus/deficit by role, and recommend redeployment or cross-campus assignments — replacing the ad-hoc principal-to-principal phone calls. For a 500+ staff operator, the constraint space (role types, qualifications, contract terms, travel distance) is tractable for standard optimization models.",
+      "opportunity_sketch": "A centralized staffing optimization tool that ingests campus-level roster and enrollment data, then surfaces weekly redeployment recommendations (e.g., 'Campus B has 2 surplus admin; Campus F needs 1 math teacher — Teacher X is qualified and within 10km'). Principals review and approve; the system logs decisions and tracks mobility over time.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Inter-campus allocation is fundamentally a matching/assignment problem with multiple simultaneous hard constraints: staff qualifications, contract type, union/employment rules, commute radius, minimum staffing ratios per campus, and soft constraints like staff preferences. Constraint satisfaction models handle this class of problem directly, especially when simple priority rules fail because constraints conflict (e.g., the only surplus qualified teacher is on a part-time contract that doesn't allow inter-campus work).",
+      "opportunity_sketch": "A constraint-satisfaction engine that takes the full set of staffing rules, staff profiles, and campus needs as inputs and outputs a valid (or near-valid) allocation configuration — flagging constraint violations rather than silently producing infeasible plans. Could run nightly or on-demand when a campus raises a shortage flag.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The chronic understaffing at branches is partly a mobility problem — staff reluctance to transfer. A propensity model can predict which staff members are most likely to accept a mobility offer based on features like tenure, commute patterns, past transfer history, role type, and engagement indicators. This lets HR target redeployment conversations at staff who are realistically movable, rather than blanket requests that generate resistance and delay.",
+      "opportunity_sketch": "An employee mobility propensity score surfaced inside the HR dashboard: for any open inter-campus need, the system ranks eligible staff by likelihood to accept a transfer and flags the top candidates for a proactive conversation. Reduces the approval-delay frustration by front-loading feasibility assessment.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The approval delay pain is partly a workflow problem: requests go principal-to-principal informally, then escalate to central HR manually. A task automation agent can own the inter-campus request workflow end-to-end — receiving a shortage notification, checking the centralized staffing view, drafting a redeployment proposal, routing it for approval, and updating rosters across systems once approved. This removes the manual coordination bottleneck without requiring principals to change how they flag needs.",
+      "opportunity_sketch": "An automated staffing request pipeline: principal submits a shortage flag via a simple form, the agent checks available staff across all campuses, generates a proposed redeployment with justification, routes to HR and the relevant principal for approval, then updates HRIS records on confirmation. Target: reduce time-to-resolution from weeks to 48 hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A secondary but real use case: once a redeployment recommendation is generated, someone must communicate it persuasively to the receiving principal and the staff member. AI text generation can draft the inter-campus transfer proposal, the staff communication explaining the opportunity, and the central HR summary report — reducing the administrative writing burden that currently falls on overloaded principals or HR staff.",
+      "opportunity_sketch": "Automated drafting of transfer communications and staffing summary reports: given structured data (staff profile, campus need, proposed dates), the system generates a ready-to-send email to the staff member and a one-page summary for the receiving principal. Saves 30-60 minutes per redeployment event.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

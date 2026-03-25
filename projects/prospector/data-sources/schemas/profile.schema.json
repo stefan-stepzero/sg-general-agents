@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "profile.schema.json",
+  "title": "Profile",
+  "description": "Organization profile — fetched at /data/profiles/{org}.json",
+  "type": "object",
+  "required": ["entity", "profile_date"],
+  "properties": {
+    "entity": { "type": "string", "description": "Full legal/display name of the organization" },
+    "profile_date": { "type": "string", "description": "ISO date string when profile was created (YYYY-MM-DD)" },
+    "profile_last_enriched": { "type": "string", "description": "ISO date string when profile was last enriched" },
+    "known_contact": {
+      "type": "object",
+      "required": ["name", "role"],
+      "properties": {
+        "name": { "type": "string" },
+        "role": { "type": "string" }
+      }
+    },
+    "website": { "type": "string", "description": "Primary website URL" },
+    "hq_address": { "type": "string" },
+    "phone": { "type": "string" },
+    "email": { "type": "string" },
+    "social": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "leadership_team": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "title"],
+        "properties": {
+          "name": { "type": "string" },
+          "title": { "type": "string" },
+          "linkedin": { "type": "string" }
+        }
+      }
+    },
+    "executive_summary": { "type": "string" },
+    "dimensions": {
+      "type": "object",
+      "description": "Keyed by dimension group name. Each value is a DimensionGroup (object of Dimension objects or strings)",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "oneOf": [
+            { "type": "string" },
+            {
+              "type": "object",
+              "required": ["value", "evidence", "confidence"],
+              "properties": {
+                "value": { "type": "string" },
+                "evidence": { "type": "string" },
+                "confidence": { "type": "string" },
+                "note": { "type": "string" }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Data gaps as formatted strings"
+    },
+    "data_quality_score": {
+      "type": "object",
+      "required": ["overall", "dimensions"],
+      "properties": {
+        "overall": { "type": "number", "minimum": 0, "maximum": 1 },
+        "dimensions": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

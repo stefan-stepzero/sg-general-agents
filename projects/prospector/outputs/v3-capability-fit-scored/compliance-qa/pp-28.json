@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-inspection-response-corrective-action-evidence-insufficiency-dup",
+  "pain_point_label": "Corrective Action Evidence Insufficiency and Disputes",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Operators struggle to write CAPs that satisfy inspectors because they describe intended actions rather than demonstrable systemic change. AI text generation can scaffold compliant CAP documents that include required elements: specific timelines, assigned owners, measurable milestones, and evidence checkpoints — guided by inspection finding type. Education operators routinely lack compliance writing expertise, making this directly applicable.",
+      "opportunity_sketch": "A CAP drafting assistant that takes the inspection finding text as input and generates a structured corrective action plan with mandatory evidence fields pre-populated, reducing the risk of submitting a plan that will later fail re-audit.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "The core failure mode is that submitted CAPs are accepted in form but rejected in substance — they address the finding in theory without specifying concrete evidence. A classifier trained on approved vs. rejected CAP submissions can flag whether a submitted CAP contains sufficient evidence language before it is filed, catching the gap pre-submission. This is a tractable classification problem with labelled historical data from inspection records.",
+      "opportunity_sketch": "An automated CAP quality gate that classifies submitted CAP text as 'evidence-sufficient' or 'evidence-insufficient' before submission, prompting staff to strengthen evidence specificity and include implementation timelines.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Inspector findings and CAP submissions contain implicit structured data — finding category, required resolution type, evidence type expected, responsible party, and deadline — that operators rarely make explicit. Extracting these entities from finding documents and mapping them to required CAP fields would surface gaps between what was cited and what evidence was actually provided. This directly addresses the 'theory but not evidence' failure mode.",
+      "opportunity_sketch": "An entity extraction layer that parses inspection finding reports to identify the specific evidence requirements, then maps them against submitted CAP text to surface missing evidence fields before re-audit.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The CAP lifecycle — receiving finding, drafting plan, tracking implementation milestones, collecting evidence artifacts, and submitting to the regulator — is a multi-step workflow that education operators manage manually and inconsistently. An automation agent can orchestrate the entire pipeline: parse the finding, generate the CAP structure, create implementation task assignments, send evidence collection reminders at deadline intervals, and assemble the final evidence package for re-audit submission.",
+      "opportunity_sketch": "A CAP lifecycle agent that receives an inspection finding and autonomously manages the corrective action workflow end-to-end — from structured plan generation through milestone tracking and evidence package assembly at re-audit time.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not every CAP is equally at risk of failing re-audit — the risk depends on finding severity, evidence type required, operator's historical compliance record, and staff capacity to implement systemic change. A risk scoring model applied to submitted CAPs could prioritize which plans need proactive intervention before the re-audit clock runs out, allowing compliance staff to focus attention where escalation risk is highest.",
+      "opportunity_sketch": "A CAP risk scorer that assesses each submitted corrective action plan's probability of failing re-audit based on finding type, evidence specificity, and operator history — surfacing high-risk CAPs for early human review and intervention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

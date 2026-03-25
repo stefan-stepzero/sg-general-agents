@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-asset-inventory-asset-transfers-between-campuses-lack-formal-process-and-tracking-dup",
+  "pain_point_label": "Asset Transfers Between Campuses Lack Formal Process and Tracking",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is the absence of a formal, documented workflow for inter-campus asset transfers — assets move physically without any system update. A task automation agent can orchestrate the end-to-end transfer workflow: triggering a transfer request, routing it for approval, updating the asset register at source and destination, sending confirmation, and generating an audit-trail entry — all without manual data entry. This directly addresses the ad-hoc, undocumented nature of transfers that creates register discrepancies and compliance risk.",
+      "opportunity_sketch": "An AI-driven transfer workflow that intercepts a transfer request (email, form, or chat), extracts asset ID and destination campus, checks the asset register, routes for approval, and updates both campus registers — producing a timestamped audit record automatically.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Asset transfer records across a multi-campus operator often exist in disparate, inconsistent formats — spreadsheets per campus, email chains, handwritten notes, or partial ERP exports. AI-assisted data transformation can normalize these fragmented records into a unified schema, map legacy asset IDs to a canonical register, and clean duplicate entries that arise when both campuses believe they own the same asset. This directly addresses the discrepancy and duplicate-record manifestation of the pain point.",
+      "opportunity_sketch": "A one-time (then recurring) pipeline that ingests each campus's asset register, normalises fields, detects cross-campus duplicates by asset ID or description, and outputs a reconciled master register with flagged transfer discrepancies for human review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "After a unified asset register is in place, anomaly detection can continuously monitor for patterns that indicate undocumented transfers or phantom assets — for example, an asset suddenly appearing in stocktake data at Campus B while still listed at Campus A, or an IT asset whose last-seen location no longer matches its registered location. This turns the reactive stocktake-discovery problem into a proactive alert before audits or campus closures surface discrepancies.",
+      "opportunity_sketch": "A monitoring layer over the asset register that flags statistically abnormal location discrepancies or usage patterns (e.g. an asset scanned at a campus it is not registered to) and notifies facilities management for investigation and documentation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Auditors and management require formal documentation of each asset transfer — a transfer notice, a chain-of-custody record, and a summary for campus closure reports. Generating these documents from structured transfer data (who, what, when, from/to) removes the manual writing burden that discourages staff from documenting transfers in the first place. Lowering documentation friction increases compliance with the formal process.",
+      "opportunity_sketch": "Auto-generate transfer dockets, chain-of-custody memos, and campus closure asset-movement summaries from structured transfer records, ready for sign-off and audit filing.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-enrollment-volatility",
+  "pain_point_label": "Enrollment Forecast Decay & Cascading Revisions",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Enrollment counts are inherently time-ordered data with clear seasonal structure (term starts, mid-year attrition, intake cycles). A time-series model trained on historical campus-level enrollment trajectories can produce probabilistic forecasts with confidence intervals, replacing the current principal-submitted point estimates that drift 10-15%. This directly attacks the root cause of the reforecasting cascade.",
+      "opportunity_sketch": "A per-campus enrollment forecasting model that generates rolling 3-6 month projections with uncertainty bands, updated monthly as actual headcounts are confirmed, surfaced in the finance team's planning dashboard to anchor the budget rather than principal intuition.",
+      "impact": 5,
+      "feasibility": 4,
+      "visibility": 5,
+      "composite_score": 4.75
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Once enrollment forecasts shift, the pain amplifies through staffing: teacher counts per class, support staff ratios, and deployment cycles must all be recalculated. An AI-driven resource allocation layer can automatically recompute staffing plans when enrollment projections change, replacing the manual serial reforecasting process that currently takes weeks and collides with recruitment cycles.",
+      "opportunity_sketch": "An automated staffing recalculation engine that ingests updated enrollment projections and produces revised headcount plans by campus and role, flagging conflicts with existing recruitment commitments so HR and finance can act in days rather than weeks.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reforecasting process itself — pulling actuals from the SIS, updating budget models, recalculating per-student allocations, regenerating variance reports — is a multi-step, multi-system workflow that currently requires manual coordination across finance, HR, and campus operations. An automation agent can orchestrate this end-to-end on a scheduled or trigger-based cadence, eliminating the 3-4 manual reforecast cycles per term.",
+      "opportunity_sketch": "A reforecast automation agent that triggers whenever enrollment actuals deviate beyond a threshold, pulls data from SIS and payroll systems, updates the budget model, recalculates tuition revenue and staffing budgets, and delivers a variance summary to CFO and board — without requiring manual coordination.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A recurring leadership pain is the inability to explain tuition variance to the board and set credible contingency reserves. Generating board-ready narrative explanations of enrollment variance — grounded in the forecast vs. actuals data — removes a high-stakes communication bottleneck that currently falls entirely on the CFO to produce manually under time pressure.",
+      "opportunity_sketch": "An automated variance narrative generator that produces a board-level memo explaining enrollment shortfalls, their staffing and revenue implications, and recommended contingency positions, generated fresh each reforecast cycle from updated model outputs.",
+      "impact": 3,
+      "feasibility": 5,
+      "visibility": 4,
+      "composite_score": 3.65
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

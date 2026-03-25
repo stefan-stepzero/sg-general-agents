@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-alumni-tracking-manual-labor-dup",
+  "pain_point_label": "Manual Data Reconciliation & Entry Burden",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Alumni questionnaires and employer feedback forms contain unstructured text that must be parsed for names, job titles, employers, graduation years, and salary bands. Staff currently read these manually and transcribe values into tracking databases. NER and slot-filling can extract these key-value pairs at ingestion, eliminating the transcription step.",
+      "opportunity_sketch": "An extraction layer that ingests alumni survey responses and employer feedback emails, extracts structured attributes (employer, role, salary range, location), and pushes them directly into the alumni tracking database — replacing manual copy-paste.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The pain includes reconciling data arriving in inconsistent formats across LinkedIn exports, questionnaire CSVs, and employer feedback forms — each with different column names, date formats, and job-title conventions. Data Transformation maps these semi-structured inputs to a canonical alumni record schema, normalises values, and deduplicates entries across systems.",
+      "opportunity_sketch": "A schema-mapping pipeline that ingests alumni data from all source formats, normalises job titles and employer names against a reference taxonomy, deduplicates records, and outputs clean rows ready for import — reducing the multi-hour monthly reconciliation cycle to a review-and-approve step.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Some alumni outcome data arrives as scanned paper forms, PDF feedback documents, or structured tables embedded in PDFs from government reporting templates. OCR and table extraction convert these into machine-readable rows before any downstream reconciliation can happen, removing the manual re-keying step that is explicitly called out in the pain description.",
+      "opportunity_sketch": "A document ingestion service that accepts scanned alumni forms and PDF employer feedback packages, extracts tabular data and form fields via OCR, and routes the parsed records to the transformation pipeline — eliminating manual re-keying of paper-sourced data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end pain is a multi-step workflow: collect data from multiple sources, parse it, match alumni identities across systems, verify claimed positions, write records into enrollment and tracking databases. No single extraction or classification step solves this; it requires an agent that orchestrates the full pipeline — fetching, parsing, deduplicating, flagging mismatches, and writing to target systems — with human review only at exception points.",
+      "opportunity_sketch": "An alumni data reconciliation agent that runs on a weekly schedule: pulls new survey responses, LinkedIn export files, and employer forms; resolves identity matches across the enrollment system and alumni database; flags unverifiable or conflicting records for human review; and auto-writes confirmed matches — cutting staff effort from hours to a short exceptions queue.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once raw alumni records are parsed, staff must decide whether a claimed employment outcome is plausible (e.g. does this job title match the qualification, is the employer real, is the salary band credible). A classifier trained on historical verified outcomes can score incoming records as 'auto-approve', 'plausible-review', or 'likely-invalid', triaging the manual verification queue.",
+      "opportunity_sketch": "A verification triage classifier that scores each incoming alumni outcome record against historical verified data and flags low-confidence claims for human review — converting a full manual verification pass into a focused exceptions workflow.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

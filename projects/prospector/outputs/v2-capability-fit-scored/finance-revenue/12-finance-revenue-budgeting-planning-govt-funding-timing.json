@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-govt-funding-timing",
+  "pain_point_label": "Government Funding Tranche Misalignment with Operating Cycle",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "A time series model trained on multi-year funding receipt history and operating cost accruals can produce a rolling 13-week cash flow forecast.",
+      "opportunity_sketch": "A per-site and network-level cash runway forecaster that flags sites likely to exhaust working capital before the next tranche.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "A task automation agent can monitor inbound government payment confirmations, trigger inter-site liquidity reallocation workflows, and generate alerts.",
+      "opportunity_sketch": "An automated liquidity monitoring agent that polls bank feeds and government payment portals nightly, compares actuals to forecast, and escalates when any site drops below a buffer.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Finance teams spend significant time producing board reports explaining liquidity variances. AI text generation can automate narrative reporting.",
+      "opportunity_sketch": "An automated monthly cash flow commentary tool that drafts the CFO narrative report including variance explanations and projected tranche timing risk.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The optimization problem is how to allocate limited central reserve funds across sites over time to minimize external borrowing costs.",
+      "opportunity_sketch": "A network-level liquidity allocation optimizer that recommends the optimal schedule of inter-site transfers to neutralize shortfalls at minimum cost.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

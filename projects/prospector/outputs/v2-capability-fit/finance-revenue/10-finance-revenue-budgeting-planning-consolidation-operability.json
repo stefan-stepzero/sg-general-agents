@@ -1,0 +1,69 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-consolidation-operability",
+  "pain_point_label": "Fragmented Budget Consolidation Process",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain mechanism is heterogeneous spreadsheet and email submissions requiring manual re-keying and schema normalization before they can be aggregated. AI-assisted data transformation can ingest submissions across different column layouts, naming conventions, and templates and map them to a canonical line-item schema automatically. For a multi-site education operator where each principal uses their own spreadsheet format, this directly eliminates the bottleneck that causes the 2–4 week planning delay.",
+      "opportunity_sketch": "A transformation layer that accepts budget submissions in any format (Excel, CSV, email table) and outputs normalized rows against a master chart of accounts — finance staff review exceptions rather than re-key everything from scratch.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Budget consolidation is a multi-step workflow: receive submission, parse format, validate against prior period, flag anomalies, map to chart of accounts, merge into network view, and generate variance report. A task automation agent can orchestrate this entire pipeline autonomously, routing edge cases to a human queue rather than requiring finance staff to manage each step manually. This directly addresses the weekend bottleneck and compresses the consolidation cycle from weeks to days.",
+      "opportunity_sketch": "An automated consolidation pipeline that runs nightly during submission windows — ingesting new files, transforming them, detecting issues, and producing a ready-to-review network budget draft for the finance lead each morning.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.35
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate and inconsistent line items are anomalies relative to expected submission patterns — prior-period actuals, peer-site benchmarks, and the network's standard cost structure. Anomaly detection can flag submissions where a line item is missing, duplicated, or statistically implausible before consolidation, preventing the 'month-end surprise changes' that currently propagate errors to the full network forecast. This targets the error propagation mechanism directly rather than just speeding up manual review.",
+      "opportunity_sketch": "A validation layer that scores each site submission on arrival, surfacing high-risk line items (statistical outliers vs. prior year or peer sites) with specific flags so finance can resolve them before consolidation runs — not after board reporting.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Some submissions arrive as PDF attachments, scanned forms, or email body tables — formats that cannot be processed by conventional ETL without a digitization step first. AI-powered media parsing (OCR + table extraction) converts these into machine-readable data, removing the manual transcription step that creates errors and delays for the subset of principals who submit in non-machine-readable formats.",
+      "opportunity_sketch": "An ingestion endpoint that accepts any file type — PDF, image, Excel — parses table structures and form fields via OCR, and feeds extracted rows into the transformation pipeline, eliminating the re-keying step for non-standard submissions.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Low-financial-literacy principals are a root cause of late and incomplete submissions. A conversational agent (chat or voice) can guide principals through the submission process step by step, prompting for missing line items, explaining terminology, and confirming data before submission — reducing incompleteness without requiring finance staff to chase individuals. This addresses the people-process gap without a culture change program.",
+      "opportunity_sketch": "A principal-facing chat assistant embedded in the submission tool that walks each site through their budget template, answers 'what does this field mean?' questions, and won't allow submission until mandatory fields are complete — reducing late and partial submissions.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text", "generation-code", "generation-image", "generation-audio",
+    "generation-video", "generation-synthetic-data", "extraction-entity",
+    "extraction-summarization", "extraction-knowledge", "classification-text",
+    "classification-visual", "classification-structured", "classification-audio",
+    "prediction-time-series", "prediction-propensity", "prediction-risk",
+    "prediction-regression", "search-semantic", "search-rag", "search-recommendation",
+    "search-multimodal", "optimization-resource", "optimization-routing",
+    "optimization-pricing", "optimization-experiment", "optimization-constraint",
+    "agents-research", "agents-coding", "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

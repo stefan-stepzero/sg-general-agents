@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-assessment-grading-inconsistent-rubrics-dup",
+  "pain_point_label": "Inconsistent & Subjective Assessment Rubrics",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core problem is that rubrics don't exist or are created ad hoc by individual teachers. AI can generate standardized, well-structured rubrics from curriculum standards or learning objectives — producing clear A/B/C descriptors for essay and project work that can be shared across all campuses. This directly attacks the 'no shared rubrics' and 'no clear standards' mechanisms.",
+      "opportunity_sketch": "A rubric-generation tool where curriculum coordinators specify the learning objective, grade level, and task type, and the AI outputs a fully formatted rubric with performance-level descriptors — ready to deploy across all sites with one click.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Subjective grading of essays and projects introduces grade variance across teachers and sites. AI can classify student work against standardized rubric descriptors — assigning a preliminary performance band (e.g., 'Meets Standard', 'Exceeds Standard') to reduce inter-rater variability. This directly addresses the 'subjective grading' and 'grades not comparable across sites' mechanisms.",
+      "opportunity_sketch": "An AI-assisted grading layer that reads a student essay submission and a shared rubric, then outputs a suggested performance level with evidence citations — teachers review and confirm, but the AI anchors them to the same standard.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When disputes arise between teachers and students over grades, part of the problem is that the original grading rationale is not documented or is inconsistent. AI can summarize teacher feedback annotations on student work into a structured grade justification — making grading decisions auditable and defensible across sites.",
+      "opportunity_sketch": "A feedback-to-justification summarizer that takes a teacher's inline comments on student work and produces a standardized grade rationale document aligned to the shared rubric, reducing dispute frequency and improving transparency.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Rubric adoption fails when teachers don't understand how to apply descriptors consistently in borderline cases. A conversational agent can guide teachers through calibration scenarios — presenting example student work, asking the teacher to score it, then explaining where the scoring aligns or diverges from the standardized rubric. This addresses the people-side of the inconsistency problem without being a pure culture/change-management band-aid.",
+      "opportunity_sketch": "A 'rubric calibration assistant' deployed to teaching staff — each teacher completes a short calibration session before assessment season where the agent walks them through anchor examples, surfacing where their judgment deviates from the network standard.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

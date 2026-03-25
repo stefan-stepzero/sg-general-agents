@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-disbursement-timing-cash-flow",
+  "pain_point_label": "Disbursement timing & cash flow mismatches",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Aid inflows from government, institutional, and donor sources follow cyclical but misaligned schedules — exactly the multi-cycle time series problem this capability is built for. By modeling historical disbursement timing (LGU transfer delays, voucher arrival patterns, scholarship tranche triggers), the system predicts cash gaps weeks in advance, enabling proactive float management rather than reactive scrambling. For a multi-site operator, per-campus and aggregate forecasts give finance leadership visibility into which campuses face the largest upcoming mismatches.",
+      "opportunity_sketch": "A cash flow forecasting model trained on 2-3 years of aid disbursement history per sponsor type, producing weekly inflow projections per campus with confidence intervals — surfaced in a finance dashboard so the CFO sees upcoming gaps before they become collection crises.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.05
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The 10-15 hrs/month per campus spent on tracking disbursements, rescheduling payment deadlines, and handling exceptions is a multi-step workflow with predictable branching: check sponsor transfer status, compare against student account balances, flag mismatches, trigger notification or rescheduling actions. An automation agent can orchestrate this across student information systems, finance ledgers, and sponsor portals — replacing manual coordination loops with autonomous exception handling. Multi-tranche award tracking with release condition checks is a clear automation target.",
+      "opportunity_sketch": "An agent that runs nightly: pulls sponsor transfer confirmations, matches against expected disbursement schedules, auto-applies credits to student accounts where amounts match, and queues exceptions (delayed LGU transfers, partial amounts) for human review with a pre-drafted resolution action — cutting manual reconciliation to exception-only work.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core scheduling problem — aligning student payment installment deadlines to sponsor disbursement windows across multiple aid schemes, campuses, and term calendars — is a constraint-satisfaction scheduling problem. AI-assisted scheduling can optimize when to set tuition due dates, when to trigger interim collection holds, and how to sequence disbursement batches to minimize float exposure. This directly addresses the VP voucher arriving after deadline scenario by computing grace period or interim deadline configurations that reduce enforcement conflicts.",
+      "opportunity_sketch": "An optimization model that, at the start of each term, recommends per-campus tuition installment schedules and disbursement batch timing that minimizes the number of students whose aid arrives after their payment deadline — presented to finance as a scheduling recommendation with projected enrollment-compliance risk reduction.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Sponsor transfer delays from LGUs and government bodies are a known but irregularly occurring problem — anomaly detection on payment timelines can flag when a transfer is deviating from its historical pattern (e.g., LGU transfer normally arrives day 15 of the quarter but has not arrived by day 20), triggering early escalation before a cash flow gap materializes. This shifts the finance team from discovering gaps reactively (when a student payment is already overdue) to detecting them proactively when transfer behavior first deviates.",
+      "opportunity_sketch": "A monitoring layer on sponsor payment feeds that flags transfers deviating from expected timing patterns, ranked by campus-level cash flow impact, so finance can initiate follow-up with government sponsors or activate bridge float mechanisms before student payment deadlines are affected.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

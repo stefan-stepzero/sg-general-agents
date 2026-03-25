@@ -1,0 +1,71 @@
+{
+  "name": "Catholic Schools Parramatta Diocese",
+  "generated_date": "2026-03-25",
+  "lookalikes": [
+    {
+      "name": "Melbourne Archdiocese Catholic Schools (MACS)",
+      "relationship": "lookalike",
+      "why_similar": "Largest Catholic diocesan system in Australia. Comparable governance structure (archdiocese-operated, not independent), K-12 systemic schools, government-funded. Facing the same pedagogical transformation pressures — moved to explicit instruction system-wide in 2024, directly analogous to CSPD's Uplift launch in 2025.",
+      "scale": "~300 schools, ~120,000 students, ~18,000 staff",
+      "key_initiatives": [
+        "MACS 2030 strategic plan ('Forming Lives to Enrich the World') launched 2022 — four pillars: Inspired by Faith, Flourishing Learners, Enabled Leaders, Enriched Communities",
+        "Vision for Instruction (VFI) launched February 2024 — system-wide switch to explicit instruction for literacy and numeracy across all 291 primary schools; early adopters showing NAPLAN improvements of up to 46 percentage points",
+        "Vision for Engagement (VFE) framework — addresses screen time, student wellbeing and conditions for learning",
+        "SAP S/4HANA Cloud + SAP SuccessFactors ERP transformation via Infosys — announced July 2025, consolidating HR, finance, and operations across ~300 schools onto a single cloud platform with AI readiness as an explicit goal"
+      ],
+      "source": "https://www.macs.vic.edu.au/News-Events/Media-Releases/2024/Vision-for-Instruction.aspx; https://www.infosys.com/newsroom/press-releases/2025/collaborates-drive-network-wide-digital-transformation.html; https://melbournecatholic.org/news/melbourne-archdiocese-catholic-schools-launches-inaugural-strategic-plan"
+    },
+    {
+      "name": "Sydney Catholic Schools (SCS)",
+      "relationship": "lookalike",
+      "why_similar": "Direct NSW Catholic peer operating under the same CSNSW umbrella. Governed and funded on the same state/commonwealth model. Neighbouring diocese — shares the NSW Enterprise Agreement, NESA accreditation framework, and CSNSW shared services. Key point of differentiation: SCS is significantly larger (~74,000 students, 147 schools) and serves more affluent communities (inner and south Sydney vs. western Sydney).",
+      "scale": "147 schools, ~74,000 students",
+      "key_initiatives": [
+        "Magis 2033 strategic plan launched early 2026 — decade-long roadmap with three focus areas: 'Integral Formation for Human Excellence' (core), 'Schooling Excellence Accessible to All', 'Stewardship Excellence for Mission'; developed with Boston College researchers",
+        "School reporting overhaul announced February 2026 — ED Danielle Cronin declared parents 'short-changed' by current reports; new framework to assess creativity, discernment, resilience, practical wisdom alongside academic results; questions twice-yearly reporting cycle",
+        "CSNSW-level data and analytics platform (joint with all NSW dioceses) — Azure Databricks + Power BI centralising data from 257,000 students across 11 dioceses, saving 6-8 weeks annually previously spent on data reconciliation"
+      ],
+      "source": "https://sydcatholicschools.nsw.edu.au/scs_news/magis-2033-a-bold-new-direction-for-catholic-education-in-sydney; https://cathnews.com/2026/02/04/sydney-catholic-schools-reveals-plan-to-fix-school-reports/; https://news.microsoft.com/en-au/features/catholic-schools-nsw-chalks-up-big-data-and-analytics-win-for-schools-and-students/"
+    },
+    {
+      "name": "Brisbane Catholic Education (BCE)",
+      "relationship": "lookalike",
+      "why_similar": "Comparable scale Catholic diocesan system in a major Australian city. Faces same teacher burnout and workload pressures. Most advanced Catholic diocesan system in Australia on AI deployment — their M365 Copilot rollout is the largest K-12 generative AI deployment globally, and their AI-assisted teaching pilot showed measurable NAPLAN gains.",
+      "scale": "146 schools, ~77,000 students",
+      "key_initiatives": [
+        "Microsoft 365 Copilot deployment to 12,500 educators and support staff — largest K-12 Copilot rollout globally; phased Jan 2025 to 2026; trial at St Francis College Crestmead showed average 9.3 hours saved per teacher per week",
+        "Custom AI chatbot ('Copilot Studio' grounded in Catholic values) deployed system-wide across 146 schools — first sector-wide generative AI deployment in a non-government school system in NSW/QLD",
+        "AI-assisted teaching pilot — 8 pilot schools grew NAPLAN scores from 490 to 555 points (2023 to 2024); Year 3 improved 7.22% while state average fell 0.57%",
+        "BCE Education Strategy 2025-2027 — emphasis on 'transformational experiences' via emerging technology and evidence-based teaching; 1,900 inputs from staff and 100+ student voices"
+      ],
+      "source": "https://news.microsoft.com/en-au/features/brisbane-catholic-education-to-deploy-microsoft-365-copilot-to-12500-educators-and-support-staff-in-largest-rollout-for-k-12-globally/; https://cathnews.com/2025/08/06/ai-helps-boost-naplan-results-in-brisbane-catholic-schools/; https://www.bne.catholic.edu.au/aboutus/Documents/BCE%20Strategic%20Plan%202025-2027.pdf"
+    },
+    {
+      "name": "Catholic Education Canberra-Goulburn (CECG)",
+      "relationship": "lookalike",
+      "why_similar": "Smaller Catholic diocesan system (56 schools) but the most directly instructive peer for CSPD's Uplift framework. CECG launched the Catalyst explicit instruction program in 2020 — five years ahead of CSPD — and has published externally evaluated, measurable outcomes (Deloitte Access Economics evaluation). CSPD's new EGM Learning Outcomes Patrick Ellis previously held an Education Lead role at CECG, making this the closest methodological ancestor of Uplift.",
+      "scale": "56 schools, ~21,000 students, ~2,000 staff",
+      "key_initiatives": [
+        "Catalyst program launched 2020 — system-wide explicit instruction and High Impact Teaching Practice (HITP) rollout; 5,400+ professional learning units completed; 5,400+ curriculum resources developed with Ochre Education for primary English and Mathematics",
+        "Deloitte Access Economics external evaluation (2020-2023) — established baseline and tracked three-year impact; findings published 2024",
+        "Measurable NAPLAN outcomes: 75% of CECG students assessed as proficient readers in 2024 vs national average of 66%; 13 of top 20 ACT schools 'making the most difference' (ACARA 2023/24) were CECG schools",
+        "Teacher time savings: teachers report saving up to 6 hours per week through structured curriculum resources; 4 in 5 teachers recommend the Catalyst approach to colleagues"
+      ],
+      "source": "https://catalyst.cg.catholic.edu.au/the-impact/; https://region.com.au/catholic-schools-show-way-as-new-explicit-teaching-approach-reaps-naplan-rewards/694918/; https://www.canberratimes.com.au/story/7801662/the-education-revolution-taking-place-in-canberra-schools/"
+    },
+    {
+      "name": "Catholic Education Western Australia (CEWA)",
+      "relationship": "lookalike",
+      "why_similar": "Large Catholic diocesan system with the most advanced data and digital infrastructure investment among Australian Catholic systems. CEWA's LEADing Lights platform (student analytics, predictive intervention) and Microsoft 365 migration represent the most mature digital operating model in Catholic education nationally. CSPD elevated its CIO role in November 2023 — CEWA demonstrates what a mature next-state looks like.",
+      "scale": "164 schools, ~80,000 students, ~12,000 staff",
+      "key_initiatives": [
+        "LEADing Lights platform (Learning, Engagement, Accountability, Discipleship) — single Microsoft cloud platform integrating HR, finance, attendance, student performance and wellbeing data across all 164 schools; enables principal-level dashboards with real-time NAPLAN and WACE benchmarking",
+        "Predictive student intervention: platform designed to flag early warning signals (unusual absence patterns, unexpected assessment drops) for individual students and trigger support actions",
+        "Microsoft 365 global data science partnership — three-year research collaboration on teaching effectiveness; 90,000+ M365 accounts, 1PB+ data under management",
+        "Network upgrade: dual NBN fibre + 4G into every school; connection speeds increased 400%+ to ensure equitable digital access for regional/remote students",
+        "Freshservice IT service management platform deployed across 164 schools — unified ticketing, asset lifecycle management (Jamf integration), and self-service portal; previously fragmented email-based helpdesk"
+      ],
+      "source": "https://www.cio.com/article/213543/catholic-education-western-australia-to-apply-data-science-to-school-life.html; https://www.freshworks.com/customers/stories/cewa/; https://orro.group/press-release/wa-catholic-schools-to-benefit-from-high-speed-network-deal-2/"
+    }
+  ]
+}

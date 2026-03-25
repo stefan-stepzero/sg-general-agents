@@ -1,0 +1,244 @@
+<div class="narrative-section" id="rpt-products">
+
+  <div class="section-num">04</div>
+  <h2>Product Recommendations</h2>
+
+  <div class="narrative-body">
+
+    <p class="narrative-intro">
+      The five products below were selected by triangulating three independent signals: cross-company problem heat (sub-categories scoring &ge;&nbsp;50 across five or more of the eight organisations), leader salience (how front-of-mind the domain is when education executives discuss strategy, not just operations), and AI capability fit with high specificity (whether a well-defined AI technique &mdash; RAG, time-series forecasting, risk scoring &mdash; addresses the root cause, not a surface symptom). Products where the AI application is generic or undifferentiated from existing SaaS were excluded regardless of heat score. The result is a portfolio ordered by composite opportunity score: two high-conviction plays, two mid-tier bets, and one longer-cycle option included because its strategic value justifies patient entry.
+    </p>
+
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+      <div class="product-name">Staffroom</div>
+      <div class="product-tagline">AI-powered educator performance and professional development intelligence for multi-site school networks</div>
+      <dl class="product-grid">
+        <div>
+          <dt>Problem</dt>
+          <dd>
+            Multi-site school operators run appraisal cycles at scale with no analytics layer connecting teacher performance, accreditation status, and professional learning records. Catholic Schools Parramatta Diocese manages 3,500&ndash;5,000 staff across 80+ campuses through spreadsheet-based tracking disconnected from NESA registration databases. PHINMA oversees 74,000 enrolled students across distributed Philippine campuses with no holding-company HR analytics; its Director of IT has no CTO peer to drive integration. The problem is not ambition &mdash; it is that education-specific HR schemas (teaching area, accreditation status, professional learning hours, pastoral observation notes) are invisible to generic HRIS copilots. Skills &amp; Development registers a cross-company heat score of 57, with six of eight organisations scoring &ge;&nbsp;50.
+          </dd>
+        </div>
+        <div>
+          <dt>Solution</dt>
+          <dd>
+            Staffroom ingests fragmented HR exports, appraisal documents, and registration data; normalises them against national teaching standards (AITSL Graduate&ndash;Highly Accomplished progression, DepEd RPMS matrices); and surfaces a ranked principal dashboard: who needs a development conversation, who is a flight risk, whose certification lapses in the next 90 days. Core AI stack: summarisation and condensation (78), data transformation and structuring (72), time-series forecasting (72), and risk scoring (70) &mdash; all applied to education-native inputs, not generic employee records.
+          </dd>
+        </div>
+        <div>
+          <dt>Target Companies</dt>
+          <dd>
+            CSPD (68) &mdash; primary beachhead, existing TechOne/FACES infrastructure provides structured export surface. PHINMA (63) &mdash; holding-company HR analytics gap is the buyer pain. School for Life (60) &mdash; distributed staff management across Sub-Saharan campuses. iPeople (60) &mdash; faculty development tied to CHED accreditation cycles. Rising Academies (55) &mdash; 400+ school network with no central HR intelligence. Kinetic (55) &mdash; acquisition-heavy growth phase creates immediate integration demand.
+          </dd>
+        </div>
+        <div>
+          <dt>Moat</dt>
+          <dd>
+            Workday and Salesforce HR Cloud do not encode AITSL career-stage progressions, DepEd RPMS appraisal matrices, or teaching-area scarcity premiums. They also require a full IT integration project that a 15-person school IT team cannot execute. The first moat is schema depth: an education-specific ontology built in, not bolted on. The second is deployment model: CSV upload or lightweight connector to TechOne/FACES/Coursera, not a months-long ERP integration. The third is corpus: each customer&rsquo;s appraisal data trains institution-specific risk signals that compound over time and cannot be replicated by a competitor starting cold.
+          </dd>
+        </div>
+        <div>
+          <dt>Entry Point</dt>
+          <dd>
+            <strong>Phase 1 &mdash; Consulting engagement (4&ndash;6 weeks, $25&ndash;40K):</strong> Map HR data sources, appraisal process, and registration databases at one site (CSPD Blacktown corridor or PHINMA Mapúa Manila). Deliver a static risk dashboard as proof of concept using exported data &mdash; sell the output, not the platform.<br>
+            <strong>Phase 2 &mdash; Pilot (3 months, $8&ndash;12K/month):</strong> Deploy live-connected Staffroom for one or two regions. Instrument principal usage and measure appraisal cycle time reduction against baseline.<br>
+            <strong>Phase 3 &mdash; Product ($3&ndash;6K/month per network):</strong> Self-service SaaS with standard connectors to TechOne, HRIS exports, and NESA/DepEd APIs. Expansion within a network requires no additional sales motion &mdash; principals onboard themselves.
+          </dd>
+        </div>
+        <div>
+          <dt>Opportunity Score</dt>
+          <dd>
+            <strong>45</strong> &mdash; the highest in this cohort. Driven by: cross-company heat 57 (highest domain average), six companies scoring hot, salience weight of 1.0 (talent is front-of-mind for every education executive), and AI capability fit 72+ across all relevant techniques. The combination of breadth (six addressable customers) and specificity (education-native HR schema) makes this the strongest near-term building block.
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+      <div class="product-name">Enrolflow</div>
+      <div class="product-tagline">Enrollment intelligence platform &mdash; from inquiry signal to cohort yield forecast &mdash; built for education organisations in price-sensitive markets</div>
+      <dl class="product-grid">
+        <div>
+          <dt>Problem</dt>
+          <dd>
+            Revenue diversification (heat 57, five companies) and market expansion (heat 51, five companies) share a common root cause: these organisations cannot predict which students will convert, re-enrol, or drop out before it happens. Rising Academies operates 400+ low-fee private schools in West Africa where the conversion decision travels via SMS and community word-of-mouth, not a CRM funnel. School for Life (78) and WISE (70) depend on donor and impact-investor funding where cohort retention metrics determine whether the next grant tranche is released. iPeople&rsquo;s STEM programs compete against ASU partnerships and Mapúa (now PHINMA) with an acquisition funnel driven by academic-cycle timing that generic marketing automation does not understand.
+          </dd>
+        </div>
+        <div>
+          <dt>Solution</dt>
+          <dd>
+            Enrolflow classifies inquiry signals from SMS, email, and WhatsApp by intent and dropout risk; forecasts cohort yield through the academic calendar; and surfaces intervention queues for admissions staff &mdash; no data science team required. AI stack: text classification (72) for intent parsing across informal message channels, time-series forecasting (70) for yield modelling against academic-year periodicity, structured data classification (68) for fee payment and attendance signals, and regression (68) for enrolment probability estimation. The classifier is trained on education-specific behavioural patterns &mdash; fee payment gaps, term-boundary attendance dips &mdash; not e-commerce churn.
+          </dd>
+        </div>
+        <div>
+          <dt>Target Companies</dt>
+          <dd>
+            School for Life (78) &mdash; highest score; aid-funding model makes cohort retention existential. WISE (70) &mdash; grant-dependent; cohort evidence required for funder reporting. Rising Academies (68) &mdash; 400-school West Africa network; informal enrollment decision channels. Acasus (63) &mdash; advises governments on enrollment policy; internal use case for methodology validation. PHINMA (53) &mdash; RA 10931 subsidy eligibility complicates standard yield models. Kinetic (45) &mdash; acquisition-phase growth requires unified enrollment intelligence across new campuses.
+          </dd>
+        </div>
+        <div>
+          <dt>Moat</dt>
+          <dd>
+            HubSpot and Salesforce Education Cloud model a standard SaaS sales funnel &mdash; not the West African school enrollment decision, which involves parental income proxies, school-year periodicity, government subsidy eligibility (RA 10931 in the Philippines), and community-level outreach signals. The dropout-risk classifier must be trained on education-specific behavioural patterns rather than e-commerce churn. The compounding advantage: cross-institution signal aggregation (opt-in, anonymised) improves forecast accuracy for any individual operator, creating a data network effect that a first-mover can sustain and that a late entrant cannot replicate without years of comparable coverage.
+          </dd>
+        </div>
+        <div>
+          <dt>Entry Point</dt>
+          <dd>
+            <strong>Phase 1 &mdash; Consulting engagement (6&ndash;8 weeks, $30&ndash;50K):</strong> Audit enrollment data pipeline at Rising Academies or PHINMA. Build a cohort yield regression on historical data; present findings to admissions leadership with a quantified accuracy baseline.<br>
+            <strong>Phase 2 &mdash; Pilot (4 months, $10&ndash;15K/month):</strong> Deploy real-time classifier on one intake cycle. Measure actual vs. forecast yield and intervention conversion rate.<br>
+            <strong>Phase 3 &mdash; Product ($4&ndash;8K/month per institution):</strong> Multi-channel inbox connector (WhatsApp Business API, email, SMS gateway) with academic-calendar-aware forecasting. LMIC pricing tier at $1&ndash;2K/month for Sub-Saharan Africa organisations; full pricing for Australian and Philippine institutions.
+          </dd>
+        </div>
+        <div>
+          <dt>Opportunity Score</dt>
+          <dd>
+            <strong>41</strong> &mdash; second-ranked. Driven by: dual problem sub-categories both scoring 57 and 51 across five companies, and AI capability fit across five distinct techniques. Slightly below Staffroom because the buyer is admissions/marketing leadership (lower IT budget authority) rather than HR/operations, and the informal-channel data dependency at Rising Academies introduces a data readiness risk that must be validated before committing to product investment.
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+      <div class="product-name">GrantLens</div>
+      <div class="product-tagline">Grant compliance and multi-source funding intelligence for education organisations navigating complex government and donor reporting</div>
+      <dl class="product-grid">
+        <div>
+          <dt>Problem</dt>
+          <dd>
+            Financial visibility registers a cross-company heat of 51 across five organisations, but the acute version of the problem is structural rather than operational: these organisations manage dozens of concurrent funding instruments &mdash; Commonwealth recurrent grants, donor grant conditions, government tuition subsidies, impact-investor covenants &mdash; with no unified compliance tracking layer. Acasus advises governments in 20+ countries and must track restricted vs. unrestricted budget pools across dozens of engagements simultaneously. PHINMA navigates RA 10931 tuition subsidies, CHED funding rules, PSE disclosure obligations, and donor conditions &mdash; today a manual document-review exercise. School for Life (63) and Rising Academies (55) depend almost entirely on donor funding; grant acquittal failures are existential.
+          </dd>
+        </div>
+        <div>
+          <dt>Solution</dt>
+          <dd>
+            GrantLens is a retrieval-augmented generation layer over funding agreements: ingest grant agreements, government funding determination letters, audit findings, and donor reporting templates; allow finance staff to query compliance obligations in plain language with cited source passages; and alert on upcoming reporting deadlines and budget utilisation thresholds. The AI core is RAG (72) for cited Q&amp;A over document corpora, summarisation (62) for deadline digest generation, and constraint satisfaction (62) for budget utilisation modelling against spending restriction clauses. No ML infrastructure is required client-side &mdash; document upload or Google Drive connector is the full integration requirement.
+          </dd>
+        </div>
+        <div>
+          <dt>Target Companies</dt>
+          <dd>
+            School for Life (63) &mdash; highest score; aid-dependent funding model makes compliance tracking survival-critical. PHINMA (55) &mdash; multi-regulator environment with simultaneous government, PSE, and donor obligations. Rising Academies (55) &mdash; donor-dependent across four countries with inconsistent reporting frameworks. Acasus (53) &mdash; 20+ country advisory portfolio; compliance tracking is internal overhead that compresses margins. iPeople (53) &mdash; CHED funding rules intersect with private operator obligations under RA 10931.
+          </dd>
+        </div>
+        <div>
+          <dt>Moat</dt>
+          <dd>
+            Notion AI and Microsoft Copilot perform generic document Q&amp;A but have no concept of Commonwealth recurrent grants, CHED-mandated program funding floors, or DFAT donor reporting acquittal schedules. The value is not in the RAG technology &mdash; any capable team can build RAG. The moat is the document taxonomy (knowing that a &ldquo;Programme Memorandum&rdquo; from DFAT and an &ldquo;Annual Grant Determination&rdquo; from the NSW Department of Education are structurally equivalent funding instruments) and the compliance ontology (knowing which clauses trigger reporting obligations vs. spending restrictions). This domain knowledge takes two to three client engagements to build and cannot be replicated by a general-purpose tool without equivalent investment.
+          </dd>
+        </div>
+        <div>
+          <dt>Entry Point</dt>
+          <dd>
+            <strong>Phase 1 &mdash; Consulting engagement (3&ndash;4 weeks, $15&ndash;25K):</strong> Audit funding instrument portfolio at School for Life or Acasus. Manually tag compliance obligations and build the initial ontology. Deliver a structured compliance calendar as the artefact &mdash; no AI required at this stage, just domain expertise.<br>
+            <strong>Phase 2 &mdash; Pilot (3 months, $6&ndash;10K/month):</strong> Deploy GrantLens over the live document corpus. Finance staff test Q&amp;A queries; measure time-to-answer vs. manual review baseline.<br>
+            <strong>Phase 3 &mdash; Product ($2&ndash;4K/month per organisation):</strong> Lightweight web application with document upload or Google Drive connector, compliance Q&amp;A interface, and deadline alert digest. Low price point justified by low integration cost and near-zero churn in an existential-compliance use case.
+          </dd>
+        </div>
+        <div>
+          <dt>Opportunity Score</dt>
+          <dd>
+            <strong>37</strong> &mdash; third-ranked. Driven by: financial visibility heat 51 across five companies, RAG capability fit at 72, and the structural nature of the problem (compliance failures have binary consequences for grant-dependent organisations). Held back by buyer persona: this is a CFO or grants manager sale, not a CEO priority &mdash; so it advances more slowly than Staffroom or Enrolflow but has higher retention once adopted.
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product-card">
+      <div class="product-name">SectorPulse</div>
+      <div class="product-tagline">Sector intelligence and evidence synthesis engine for education leaders &mdash; turning policy documents, research reports, and sector data into cited strategic briefs</div>
+      <dl class="product-grid">
+        <div>
+          <dt>Problem</dt>
+          <dd>
+            Transformation (heat 52, six companies) and partnerships (heat 51, five companies) score below Talent and Financial domains because leaders acknowledge these problems but default to human consultants rather than tools. The underlying information problem, however, is tractable: every organisation in this cohort must synthesise across program evaluations, government policy white papers, international development reports, and EdTech market analysis to make strategy decisions &mdash; and none has a dedicated research function to do it at volume. WISE (62 on transformation) is the Qatar Foundation&rsquo;s education convening platform; its programming staff synthesise OECD, UNESCO, and EdTech market research for biennial summits attended by 4,000+ participants. Acasus advises governments across 20+ countries and competes on the depth of sector knowledge its consultants carry into engagements.
+          </dd>
+        </div>
+        <div>
+          <dt>Solution</dt>
+          <dd>
+            SectorPulse is a RAG-over-sector-corpus tool: ingest curated education research feeds (OECD Education at a Glance, World Bank EdStats, DFAT research series, USAID evaluations), allow leadership teams to ask cross-document strategy questions, and receive cited multi-source briefs rather than single-document summaries. AI stack: summarisation and condensation (72) for brief generation, semantic search (65) for cross-corpus retrieval, entity and attribute extraction (58) for policy position tagging, and experiment design (65) for evidence-strength assessment. The corpus is the product &mdash; the RAG infrastructure is commodity.
+          </dd>
+        </div>
+        <div>
+          <dt>Target Companies</dt>
+          <dd>
+            WISE (62) &mdash; primary customer; programming team has the highest query volume and lowest internal research capacity. iPeople (56) &mdash; competitive positioning against ASU and Coursera partnerships requires sector evidence. Kinetic (57) &mdash; acquisition-phase strategy requires rapid synthesis of target-market policy environments. PHINMA (52) &mdash; CHED policy navigation and EdTech partnership evaluation. Rising Academies (52) &mdash; donor-facing strategy documents require cited evidence base. School for Life (54) &mdash; impact investor reporting demands policy and outcome evidence.
+          </dd>
+        </div>
+        <div>
+          <dt>Moat</dt>
+          <dd>
+            Perplexity, ChatGPT web browsing, and generic research tools produce plausible-sounding summaries without citations and without awareness of the LMIC education policy landscape. The moat is corpus curation: knowing which sources are authoritative for Sub-Saharan Africa school quality improvement versus South-East Asian higher education reform versus Australian school governance is a judgement that takes years of domain experience to encode. The secondary moat is the question taxonomy &mdash; pre-built query templates for common strategy questions (&ldquo;What evidence exists for low-cost private school quality improvement?&rdquo; &ldquo;What EdTech partnerships have peer institutions formed with Coursera or Alibaba Cloud?&rdquo;) &mdash; which compounds with each client engagement that surfaces new document sources and question types.
+          </dd>
+        </div>
+        <div>
+          <dt>Entry Point</dt>
+          <dd>
+            <strong>Phase 1 &mdash; Consulting engagement (2&ndash;3 weeks, $10&ndash;20K):</strong> Identify WISE&rsquo;s or Acasus&rsquo;s top 20 recurring research questions. Build a curated corpus from public sources. Deliver three example cited briefs as proof of concept &mdash; the output speaks for itself.<br>
+            <strong>Phase 2 &mdash; Pilot (2 months, $5&ndash;8K/month):</strong> Provide SectorPulse as a shared web or Slack interface. Measure query volume and time saved per research brief against current manual baseline.<br>
+            <strong>Phase 3 &mdash; Product ($1.5&ndash;3K/month per organisation + corpus licensing):</strong> Subscription access to the curated corpus with custom document upload. WISE as reference customer enables positioning for other education convening bodies (Brookings, T4 Education, UNESCO Institute for Statistics).
+          </dd>
+        </div>
+        <div>
+          <dt>Opportunity Score</dt>
+          <dd>
+            <strong>26</strong> &mdash; fourth-ranked. Driven by: six addressable companies, heat scores in the 52&ndash;57 range across two sub-categories, and a highly specific AI application (curated RAG corpus). Suppressed by salience weight: transformation and partnerships are acknowledged as important but leaders frame them as requiring human judgment, not AI tools. The sell at WISE is the strongest because the buyer (programming team, not strategy executives) has a concrete and recurring research workload that SectorPulse addresses directly.
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- PRODUCT 5 -->
+    <div class="product-card">
+      <div class="product-name">BoardBrief</div>
+      <div class="product-tagline">Governance intelligence layer for education boards &mdash; turning board packs, accreditation evidence, and audit findings into structured compliance intelligence</div>
+      <dl class="product-grid">
+        <div>
+          <dt>Problem</dt>
+          <dd>
+            Governance is the joint top heat domain at a cross-company average of 52, with power concentration and transparency scoring 56 across six organisations. The structural problem is genuine: PHINMA must satisfy Yuchengco Group, Ayala Corporation, PSE listing obligations, CHED, DepEd, NPC, and ABET simultaneously &mdash; generating committee papers that no individual board member can process in full. CSPD operates under dual accountability to the Bishop of Parramatta and Commonwealth government funding bodies, where compliance failures carry both regulatory and reputational consequences. School for Life (68) and Acasus (64) operate under impact investor and philanthropic governance where evidence of outcomes is contractual, not discretionary. The problem is real; the suppressed opportunity score (25) reflects buyer conservatism, not problem size.
+          </dd>
+        </div>
+        <div>
+          <dt>Solution</dt>
+          <dd>
+            BoardBrief ingests board packs, committee reports, accreditation evidence matrices, and audit findings &mdash; and produces structured governance intelligence: a compliance status dashboard, a decision-by-decision accountability log, and anomaly flags when approval timelines or expenditure authorisation patterns deviate from policy norms. AI stack: text generation (65) for structured summary production, data transformation and structuring (62) for obligation extraction, text classification (60) for regulatory vocabulary tagging, and anomaly detection (55) for deviation flagging. The product is deliberately positioned as compliance documentation software, not AI analytics, to navigate conservative board buyer psychology.
+          </dd>
+        </div>
+        <div>
+          <dt>Target Companies</dt>
+          <dd>
+            School for Life (68) &mdash; highest score; impact investor governance obligations are evidenced and time-bound. Acasus (64) &mdash; multi-country donor governance creates recurring compliance documentation load. PHINMA (60) &mdash; most complex multi-regulator environment in the cohort; highest compliance surface area. WISE (60) &mdash; Qatar Foundation governance plus donor and partner accountability structures. iPeople (58) &mdash; CHED accreditation cycles require structured evidence production. Kinetic (50) &mdash; PE-backed acquisition phase introduces new board-level reporting obligations.
+          </dd>
+        </div>
+        <div>
+          <dt>Moat</dt>
+          <dd>
+            Board management platforms (Diligent, BoardPad) manage document distribution but do not classify governance obligations, detect anomalies, or produce compliance status summaries. The moat is regulatory vocabulary: AITSL teacher standards, CHED accreditation matrices, Catholic diocesan governance norms, and PSE listing rules are distinct regulatory vocabularies requiring distinct compliance logic. This is not a product any platform player will build &mdash; the market (education boards globally) is too fragmented and the vocabulary too domain-specific. The honest constraint: education boards are among the most conservative buyers in any sector. Expect an 18&ndash;24 month sales cycle from first conversation to product contract, and plan the entry accordingly.
+          </dd>
+        </div>
+        <div>
+          <dt>Entry Point</dt>
+          <dd>
+            <strong>Phase 1 &mdash; Consulting engagement (4&ndash;6 weeks, $20&ndash;35K):</strong> Governance audit at School for Life or PHINMA. Map the multi-regulator compliance calendar. Deliver a structured compliance status report as the artefact &mdash; frame this as governance advisory, not AI deployment.<br>
+            <strong>Phase 2 &mdash; Pilot (4 months, $8&ndash;12K/month retainer):</strong> Ingest one year of board packs. Build accountability log and anomaly baseline. Present to CFO and Company Secretary as a compliance efficiency tool. Never use the word &ldquo;AI&rdquo; in this phase.<br>
+            <strong>Phase 3 &mdash; Product ($3&ndash;6K/month per board):</strong> Board pack upload interface, structured compliance dashboard, monthly anomaly digest. Positioned as governance documentation software. Revenue is modest but retention is near-total once embedded in a board cycle.
+          </dd>
+        </div>
+        <div>
+          <dt>Opportunity Score</dt>
+          <dd>
+            <strong>25</strong> &mdash; fifth-ranked, and included despite the lower score because the domain heat is genuine (52 cross-company average, joint-highest domain), six companies are addressable, and the long sales cycle is a feature for a consulting-led go-to-market, not a barrier. The opportunity score is suppressed by the salience weight of 0.7 &mdash; governance problems are real but leaders deprioritise them as AI-solvable. Staffroom or Enrolflow should be the first commercial engagement; BoardBrief runs in parallel as a consulting-only relationship that converts to product on the board&rsquo;s timeline.
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+  </div><!-- /narrative-body -->
+
+</div><!-- /narrative-section #rpt-products -->

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-examination-administration-manual-marking-moderation-dup",
+  "pain_point_label": "Manual Marking & Weak Moderation Across Campuses",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "AI can generate standardized answer keys, marking rubrics, and examiner guidance notes from curriculum specifications, directly eliminating the 'no standardized answer keys' problem. For essay questions, AI-generated calibration guides provide concrete anchor examples at each score band, giving markers objective reference points that reduce inter-rater variance across campuses.",
+      "opportunity_sketch": "A tool where exam coordinators input the question and syllabus objectives, and AI generates a comprehensive mark scheme with model answers, common error patterns, and partial-credit guidance — distributed to all markers before marking begins.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Handwritten exam scripts must be digitized before any AI-assisted marking or moderation can occur. OCR and handwriting recognition converts physical answer scripts into machine-readable text, enabling downstream processing. This is the critical digitization step for education operators who still run paper-based exams across multiple campuses.",
+      "opportunity_sketch": "Scan or photograph answer scripts at each campus; OCR pipeline converts handwritten responses to structured text, feeding into a centralized marking and moderation workflow — eliminating the need to physically ship scripts between sites for moderation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "AI can score short-answer and essay responses by classifying them against rubric-defined score bands, providing a first-pass mark that human markers then validate — directly addressing inconsistent human marking. Across multiple campuses, the AI provides a consistent baseline that flags divergence when a human marker's score differs significantly, enabling targeted moderation rather than full re-marking.",
+      "opportunity_sketch": "An automated first-pass marking system where AI assigns a score band to each student response; a human marker reviews and confirms or overrides, with the system flagging responses where human and AI scores diverge by more than one band for mandatory second-marking.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Mark distributions across campuses can be compared statistically; AI identifies anomalous marking patterns — a campus where a specific teacher consistently marks 20% higher than the cross-site average, or where the distribution of scores is implausibly narrow. This directly addresses the 'admin staff manually reconciling marks' problem by automating the detection of inter-campus inconsistencies.",
+      "opportunity_sketch": "A moderation dashboard that ingests mark sheets from all campuses and flags statistical outliers — individual markers, question items, or whole cohorts — showing where moderation effort should be focused rather than requiring uniform re-marking of everything.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end moderation workflow — collecting marks from multiple campuses, running consistency checks, flagging discrepancies, routing scripts for second-marking, and producing final reconciled grade sheets — is a multi-step process that currently requires significant manual admin effort. An automation agent can orchestrate this pipeline across systems, replacing the manual reconciliation work.",
+      "opportunity_sketch": "A moderation workflow agent that automatically collects mark submissions from each campus system, runs cross-site statistical checks, generates a discrepancy report, routes flagged responses to designated moderators, and compiles the final approved grade sheet — reducing admin overhead from days to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

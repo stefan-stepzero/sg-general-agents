@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Board Paper Generator with Governance Templates",
+    "one_liner": "Auto-generates board papers with education-specific compliance sections for Catholic governance, CHED accreditation, and government funding obligations.",
+    "problem": "CSPD, Kinetic, and PHINMA board secretaries spend 40+ hours per quarter on board papers, repeatedly building sections on governance compliance, accreditation status, and fiduciary obligations. Template libraries exist but don't account for Australia's Catholic school governance structures or CHED's specific disclosure requirements.",
+    "ai_technique": "Education governance document templates with smart field population from compliance dashboards",
+    "how_it_works": "User selects organization type (Catholic K-12, Philippines HE, international school) and agenda items. System generates a board paper template with pre-built sections: governance compliance checklist (education regulator-specific: NESA for NSW, CHED for Philippines), risk register aligned to education audit frameworks, accreditation status summary (pulling from live accreditation dashboard), and fiduciary obligations tracker. User fills in substantive content; system handles formatting, compliance language, and cross-references to prior board decisions.",
+    "target_companies": ["cspd", "kinetic", "phinma"],
+    "buyer_persona": "Board Secretary, Governance Officer",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Accreditation Evidence Aggregator",
+    "one_liner": "Collects and structures scattered accreditation evidence (AITSL portfolios, CHED self-study data, audit reports) into a unified accreditation dashboard.",
+    "problem": "PHINMA, CSPD, and Kinetic must maintain continuous accreditation compliance across multiple regulatory bodies (CHED, NESA, ABET). Evidence is scattered across systems (TechOne for attendance, FACES for student outcomes, faculty portfolios in Google Drive). When accreditation bodies request evidence, teams spend weeks compiling and reformatting.",
+    "ai_technique": "Data transformation and structuring with education regulatory vocabulary (AITSL standards, CHED maturity levels, NESA outcomes framework)",
+    "how_it_works": "System connects to institutional data sources (SIS, HR systems, LMS, document repositories) and extracts accreditation-relevant data: student achievement trends, faculty qualifications (AITSL rankings), program curriculum alignment, and governance records. Structures data into accreditation-body-specific formats. When a regulator requests evidence (e.g., CHED's Self-Evaluation Report template), system auto-generates filled sections with current data, flags gaps where evidence is missing, and routes for leadership verification before submission.",
+    "target_companies": ["phinma", "cspd", "kinetic"],
+    "buyer_persona": "Accreditation Officer, Quality Assurance Manager",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Governance Anomaly Monitor",
+    "one_liner": "Flags unusual patterns in board decisions, procurement approvals, and audit findings to surface governance integrity risks.",
+    "problem": "PHINMA (publicly listed with ASX-equivalent obligations) and WISE (Qatar Foundation accountability) face complex governance requirements. Detecting red flags—unusual procurement patterns, delayed audit finding resolutions, board decision timing anomalies—is done ad hoc by audit committees, missing emerging risks.",
+    "ai_technique": "Time-series anomaly detection on governance event data with education sector baseline patterns",
+    "how_it_works": "System ingests: board decision logs (from board management software), procurement records (from ERP), and audit finding status (from audit management tool). Learns normal patterns: typical board approval timelines, procurement review cycles, audit follow-up timelines. Flags deviations: procurement exceptions approvals accelerating, audit findings stalling, board decisions on sensitive topics clustering unusually. Monthly alerts to board audit committee with: flagged items, context (e.g., 'This procurement exception rate is 3x historical norm'), and recommended review steps.",
+    "target_companies": ["phinma", "wise", "kinetic"],
+    "buyer_persona": "Audit Committee Chair, Chief Compliance Officer",
+    "tier": "feature",
+    "confidence": "medium"
+  },
+  {
+    "name": "Board Communication Workbench",
+    "one_liner": "Unified interface to draft, circulate, and archive trustee/stakeholder communications with compliance checks and audit trail.",
+    "problem": "School for Life, Acasus, and WISE must maintain clear communication with multiple governance bodies (boards, diocesan authorities, government funders). Communications are scattered across email and shared drives. Compliance history is hard to audit, and key stakeholder decisions are not consistently documented.",
+    "ai_technique": "Document classification with compliance flag detection and role-based access control",
+    "how_it_works": "User opens the workbench to draft communication (board memo, trustee letter, government compliance report). System auto-classifies content, checks for compliance risks (flagging if communication discloses sensitive accreditation status without board approval), routes for necessary approvals, and archives with full audit trail. Integrates with board management software for distribution. Maintains searchable archive for governance audits.",
+    "target_companies": ["school-for-life", "acasus", "wise"],
+    "buyer_persona": "Board Secretary, Governance Officer, CEO",
+    "tier": "feature",
+    "confidence": "medium"
+  }
+]

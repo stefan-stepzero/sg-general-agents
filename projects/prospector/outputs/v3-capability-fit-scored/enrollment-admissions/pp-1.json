@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "enrollment-admissions-marketing-outreach-feeder-relationships-dup",
+  "pain_point_label": "Underdeveloped Feeder School Relationships",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Feeder school relationship management is fundamentally a communications problem — the operator lacks a structured cadence of outreach. AI text generation can produce personalized letters, quarterly updates, event invitations, and school-specific newsletters tailored to each feeder school's context, replacing the current sporadic ad-hoc outreach with consistent, high-quality communication at scale across dozens of feeder schools.",
+      "opportunity_sketch": "A template-driven outreach engine that generates personalized communications to each feeder school principal and counselor on a defined cadence — including term updates, open day invitations, and student outcome reports — populated from CRM and enrollment data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The operator has no baseline data on which feeder schools generate highest-value leads — this is precisely a relationship-mapping and fact-extraction problem. AI can mine historical enrollment records, CRM notes, and communications to extract structured knowledge about which schools send which student profiles, the strength of existing relationships, and implicit referral chains that have never been formally tracked.",
+      "opportunity_sketch": "An ingestion pipeline that processes historical enrollment records, email threads, and meeting notes to build a knowledge graph of feeder school relationships — surfacing which schools are high-yield, which relationships are dormant, and what staff interactions have occurred.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The operator lacks data on which feeder schools generate highest-value leads — propensity modeling can score feeder schools by their likelihood of producing enrolled students based on historical conversion rates, geographic proximity, socioeconomic alignment, and past engagement signals. This directly addresses the missing baseline data gap and enables prioritization of liaison effort.",
+      "opportunity_sketch": "A feeder school scoring model that ranks partner schools by predicted enrollment yield, enabling the admissions team to allocate liaison time and relationship investment to the highest-potential feeders rather than spreading effort evenly across all.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Referral tracking and incentive program design require segmenting feeder schools into tiers — high-value partners, occasional sources, and untapped schools. Structured data classification can automatically segment feeder schools by attributes (enrollment volume, lead quality, geographic reach, engagement frequency) to drive differentiated relationship strategies.",
+      "opportunity_sketch": "An automated feeder school tiering system that classifies partner schools into relationship tiers (Platinum/Gold/Silver) based on structured enrollment and engagement data, triggering differentiated communication cadences and incentive levels for each tier.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core failure is the absence of a structured communication cadence — there is no systematic process to maintain feeder relationships at scale. A task automation agent can orchestrate the end-to-end liaison workflow: tracking outreach schedules per school, triggering communications, logging responses back to CRM, flagging lapsed relationships, and escalating high-priority feeders — replacing manual, sporadic effort with a managed pipeline.",
+      "opportunity_sketch": "A feeder relationship automation agent that manages the full outreach cadence — scheduling touchpoints, generating personalized messages, logging interactions, tracking response rates, and alerting admissions staff when key feeder relationships have gone cold beyond a defined threshold.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The operator has no systematic understanding of which feeder schools exist in their catchment area, their enrollment sizes, leadership contacts, or competitive relationships with other secondary schools. A research agent can autonomously profile feeder schools by scraping public directories, school websites, and government education datasets to build a comprehensive partner universe the operator doesn't currently have.",
+      "opportunity_sketch": "An autonomous feeder school discovery agent that researches all primary/elementary schools within defined catchment zones, compiles structured profiles (size, leadership, current secondary school preferences, proximity), and surfaces untapped relationship opportunities ranked by strategic value.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

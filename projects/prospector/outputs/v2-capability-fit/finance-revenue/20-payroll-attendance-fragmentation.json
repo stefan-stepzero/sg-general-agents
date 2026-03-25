@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "payroll-attendance-fragmentation",
+  "pain_point_label": "Attendance Data Fragmentation",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain is attendance data arriving from biometric systems, manual timesheets, and spreadsheets in incompatible formats across campuses — exactly the schema mapping and format normalization problem this capability addresses. AI-assisted ETL can ingest heterogeneous inputs, normalize field names, units, and date formats, and map them to a canonical payroll schema without manual rekeying. This directly eliminates the consolidation and reconciliation effort before each payroll run.",
+      "opportunity_sketch": "An AI-assisted data pipeline that ingests attendance exports from each campus system, auto-detects format variations (CSV column headers, biometric system schemas, ad-hoc spreadsheet layouts), normalizes them to a unified schema, and flags rows that fail validation — replacing the manual pre-payroll consolidation ritual with a single reviewed output file.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Transcription errors and late or incomplete attendance data create silent payroll errors that are hard to catch before gross pay is computed. Anomaly detection can flag records that deviate from expected patterns — e.g., a campus submitting zero entries, a staff member with implausibly high hours, or timestamps that conflict with biometric logs — surfacing data quality issues before they propagate into payroll runs. For a 500+ staff operator across multiple sites, even a 1-2% error rate compounds into material payroll corrections.",
+      "opportunity_sketch": "An anomaly scoring layer applied to the consolidated attendance dataset each payroll cycle: it learns per-staff, per-campus baselines and flags outliers (missing data, duplicate punches, impossible shift lengths) for payroll staff to review, replacing the manual spot-check with a prioritized exception queue.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pre-payroll attendance consolidation is a repeating multi-step workflow: collect files from multiple sources, reformat them, reconcile discrepancies, escalate missing data to campus administrators, and produce a clean input for the payroll system. A task automation agent can own this end-to-end — fetching data from connected systems, running transformation and validation steps, sending targeted follow-up requests for missing campus data, and handing off a verified consolidated file. This removes the manual coordination burden from the payroll team.",
+      "opportunity_sketch": "A payroll-prep agent that runs automatically on a defined schedule before each payroll cycle: it pulls attendance exports from each campus integration, transforms and validates them, sends automated requests to campus contacts for any missing or late submissions, and delivers a consolidated, validated dataset ready for gross pay computation.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Where manual timesheets exist as handwritten or scanned paper forms — common in campuses that lack biometric terminals — OCR and form-field extraction can digitize these documents directly into structured attendance records. This closes the last-mile data gap that forces payroll staff to manually re-enter paper timesheets, a common source of transcription errors in multi-site education operators.",
+      "opportunity_sketch": "A document ingestion pipeline where campus administrators photograph or scan manual timesheets, and the system extracts staff ID, dates, shift start/end times into structured records — eliminating manual data entry for paper-based campuses and feeding results into the same consolidation pipeline as digital sources.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-three-way-matching-chaos",
+  "pain_point_label": "Three-Way Invoice Matching Breakdown Across Multiple Sites",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Invoices arrive at central office as paper or PDF scans, delivery notes are physical documents at campuses, and POs may exist in printed form. OCR and structured extraction from these documents is the essential first step to enable any three-way match — without digitizing these inputs, the matching process remains manual and error-prone. For a 500+ staff education operator in emerging markets where paper-based processes are common, this is the foundational digitization layer.",
+      "opportunity_sketch": "An invoice and delivery note ingestion pipeline that uses document parsing to extract vendor name, line items, quantities, amounts, and PO references from incoming invoices (email attachments, scanned PDFs) and any campus delivery slips photographed by warehouse staff, feeding a central matching database.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once documents are digitized, extracting specific structured fields — PO numbers, line-item quantities, unit prices, delivery dates, vendor codes, campus identifiers — is necessary to populate the three-way match record. Invoices often reference POs in inconsistent formats, and entity extraction can normalize these references across documents even when vendors use non-standard naming or reference conventions.",
+      "opportunity_sketch": "A post-OCR extraction layer that pulls structured key-value pairs (PO#, line items, quantities, amounts, site codes) from parsed invoice and delivery documents, normalizing vendor references and linking them to the corresponding PO records in the central system.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core financial risk in this pain point is abnormal invoice patterns: duplicate submissions, quantities invoiced exceeding PO quantities, invoices for items with no corresponding PO, amounts inconsistent with historical pricing for recurring contracts. Anomaly detection directly addresses the fraud and overpayment risks that make this pain point financially material for school operators, particularly the emerging-market dynamic of normalized short-delivery with full invoicing.",
+      "opportunity_sketch": "A matching anomaly scorer that flags invoices where quantity billed exceeds delivery records by more than a threshold, where the same invoice number appears twice, where no linked PO exists, or where the unit price deviates significantly from the supplier's historical rates — routing flagged invoices to a human reviewer before payment approval.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The three-way match process itself — retrieve invoice, find matching PO, find delivery confirmation, compare quantities and amounts, flag discrepancies, route for approval or escalation — is a multi-step workflow with conditional branching that is exactly what task automation agents are designed to handle. The current process collapses into manual email chains because no automated workflow orchestrates these steps; an agent can do this end-to-end across fragmented systems.",
+      "opportunity_sketch": "An accounts payable automation agent that, on invoice receipt, automatically retrieves the referenced PO from the central system, requests delivery confirmation from the relevant campus (via a structured mobile form or email prompt), compares all three records, and either auto-approves matched invoices or escalates mismatches with a pre-populated dispute summary to the finance team.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "PO data from the central system, delivery records from campus files (which may be spreadsheets, WhatsApp logs, or emails), and invoice data from vendor submissions exist in incompatible formats and schemas. Data transformation bridges these disparate sources into a unified matching schema — a prerequisite for any automated or semi-automated three-way match process in a multi-site education operator environment.",
+      "opportunity_sketch": "A data normalization layer that ingests PO exports from the ERP, delivery records submitted by campus coordinators in whatever format they use, and parsed invoice data, and maps all three to a canonical match schema with standardized item codes, quantities, and site identifiers.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Finance staff investigating a disputed invoice need to quickly surface the original PO, any amendments, delivery confirmations, prior correspondence with the supplier, and payment history — currently requiring manual search across multiple systems and inboxes. A RAG system over the organization's procurement document corpus lets a finance officer ask 'show me everything related to PO-2024-1142 from Campus 7' and receive a synthesized, citation-backed summary rather than searching five systems manually.",
+      "opportunity_sketch": "A procurement document Q&A interface where central finance staff can query across all POs, invoices, delivery notes, and email correspondence to reconstruct the audit trail for any supplier transaction, with cited sources and a conflict summary when records disagree.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

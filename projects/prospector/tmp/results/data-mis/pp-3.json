@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-sis-lms-admin-transcript-generation-delays-dup",
+  "pain_point_label": "Transcript & Credential Generation Delays & Errors",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step manual workflow: querying SIS, cross-referencing LMS grade data in Excel, calculating GPA, validating degree requirements, and producing the transcript document. A task automation agent can orchestrate all of these steps across systems autonomously — including validation checks and error flagging — replacing the error-prone human-in-the-loop process. For a 500+ staff operator running this daily across many student requests, the ROI is immediate and measurable.",
+      "opportunity_sketch": "An agent that, on student request, pulls raw grade and enrollment records from SIS/LMS APIs, runs degree-requirement validation logic, calculates GPA, flags anomalies for registrar review, and generates the transcript — reducing 3-5 day turnaround to same-day with a human approval gate.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate entries, missing grades, and GPA calculation errors are data anomalies that emerge when records are manually assembled from multiple systems. An anomaly detection model trained on expected grade distributions, course completion patterns, and credit accumulation norms can flag records that deviate — catching errors before the transcript is issued rather than after a student or employer discovers them.",
+      "opportunity_sketch": "A validation layer that scans assembled transcript data before issuance and flags suspicious patterns (duplicate course entries, implausible GPA jumps, missing required-course credits) for registrar review, acting as an automated QA gate.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The immediate cause of errors is that grade and enrollment data exists across SIS, LMS, and Excel in incompatible schemas, requiring manual cross-referencing. AI-assisted data transformation can map these disparate schemas to a canonical transcript record schema, normalizing course codes, credit units, and grade scales across systems — eliminating the Excel intermediary that introduces errors.",
+      "opportunity_sketch": "A transformation pipeline that ingests raw exports from SIS and LMS, resolves schema differences (e.g., different course ID formats, grade scale conventions), and outputs a clean, unified student record ready for transcript generation — deployable as a nightly sync or on-demand trigger.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Degree requirement validation is fundamentally a constraint satisfaction problem: a student's completed courses and credits must satisfy a set of hard requirements (mandatory courses, minimum credits per category, GPA thresholds) and soft requirements (elective combinations, transfer credit rules). Encoding these rules as constraints and running automated validation replaces the manual registrar check that is currently a bottleneck and error source.",
+      "opportunity_sketch": "A degree audit engine that takes a student's academic record as input, evaluates it against all program-specific graduation requirements expressed as constraint rules, and outputs a pass/fail report with specific gap identification — enabling automated pre-validation before transcript issuance.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "site-facilities-classroom-lab-setup-lab-and-specialized-space-setup-consistency-and-readiness-is-variable-dup",
+  "pain_point_label": "Lab and Specialized Space Setup Consistency and Readiness Are Variable Across Sites",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is that lab readiness checks, consumable restocking triggers, equipment calibration scheduling, and safety compliance verification are fragmented across campuses with no consistent workflow. A task automation agent can orchestrate a multi-step pre-session readiness pipeline: pulling scheduled lab sessions from the timetable, cross-referencing inventory records, triggering restocking requests, escalating unresolved issues to campus managers, and logging compliance status — all without requiring teacher or lab manager initiative.",
+      "opportunity_sketch": "A lab readiness automation agent that runs nightly before scheduled lab sessions: checks equipment status logs, flags missing consumables, auto-generates purchase requests, and produces a per-campus readiness dashboard for the operations manager.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Each lab type (chemistry, biology, computer, vocational) requires specific setup checklists, safety protocols, and post-session cleaning procedures that vary by experiment and curriculum. Multi-site operators struggle to maintain current, standardized documentation across campuses. AI text generation can produce and maintain tailored setup SOPs, experiment-specific checklists, and safety briefing templates, ensuring all campuses operate from the same standard rather than relying on individual lab managers' institutional knowledge.",
+      "opportunity_sketch": "A generative SOP tool that takes a scheduled experiment, equipment list, and safety requirements as inputs and produces a structured setup checklist and safety briefing document for that specific lab session — exportable for lab managers and substitute staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-visual",
+      "capability_label": "Image & Video Classification",
+      "match_rationale": "Lab readiness is fundamentally a visual state problem — broken glassware, cluttered benches, improperly stored chemicals, missing safety equipment, and non-functional hardware are all visually detectable. Lab managers or teachers can photograph a lab space before a session and a visual classification model can flag non-compliant conditions against a defined readiness standard, providing an objective and consistent assessment across all campuses rather than relying on subjective human inspection.",
+      "opportunity_sketch": "A mobile app for lab staff to photograph the lab space pre-session; a computer vision model classifies readiness status (ready / needs attention / unsafe) by zone (benches, chemical storage, safety equipment, equipment stations) and generates a punch list of issues to resolve.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "When lab readiness data is logged over time (equipment checks, incident reports, consumable usage, inspection scores), anomaly detection can surface campuses or specific labs that are consistently underperforming against baseline readiness standards. This shifts the operations team from reactive discovery (a practicum is cancelled, an accreditor finds issues) to proactive identification of campuses drifting out of compliance before a critical failure.",
+      "opportunity_sketch": "A readiness monitoring system that ingests periodic lab audit scores and flags campuses or lab spaces showing anomalous deterioration trends, triggering targeted intervention before an accreditation review or safety incident.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Lab safety incidents and accreditation findings are adverse outcomes with real liability and regulatory consequences. A risk scoring model trained on lab inspection records, incident history, maintenance logs, and consumable stock levels can produce a per-campus, per-lab risk score identifying which spaces are most likely to generate a safety incident or fail a compliance check. This gives operations leadership a prioritized intervention list rather than treating all campuses equally.",
+      "opportunity_sketch": "A lab compliance risk dashboard that scores each campus lab on a composite risk index — incorporating equipment age, last inspection date, recent incident frequency, and consumable stock levels — and ranks sites requiring urgent attention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Lab managers and teachers frequently need to answer specific procedural questions: how to dispose of a specific chemical, what calibration procedure applies to a particular instrument, what the regulatory standard is for eyewash station placement. A RAG system over the operator's safety manuals, curriculum documents, equipment manuals, and regulatory guidelines provides authoritative, grounded answers instantly, reducing reliance on individual staff expertise and ensuring consistent application of standards across campuses.",
+      "opportunity_sketch": "A lab knowledge assistant that answers natural language queries from staff (e.g. 'How do I calibrate the pH meter before a Year 10 chemistry session?') by retrieving from the operator's SOPs, equipment manuals, and curriculum documents — with citations to the source.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Multi-site operators often have skilled lab technicians unevenly distributed — one campus may have an experienced technician while another relies on teachers to set up labs. Resource allocation AI can optimize the scheduling and assignment of technician support time across campuses, matching lab sessions with the highest complexity or risk to available qualified support, and identifying when centralized or traveling technician resources should be deployed.",
+      "opportunity_sketch": "A technician scheduling tool that ingests the multi-campus lab timetable, equipment complexity flags, and available technician capacity, then produces an optimized weekly assignment plan that covers high-risk sessions first and surfaces gaps requiring additional hiring or cross-campus support.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-systems-integration-offline-capacity-gap-dup",
+  "pain_point_label": "Offline & Low-Connectivity Campus Data Sync Failures",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "When connectivity is restored, local Excel offline copies arrive in inconsistent schemas, date formats, and naming conventions compared to the central SIS. AI-assisted schema mapping and data normalization can reconcile these structural differences automatically before sync, reducing the manual cleanup burden that currently delays central system updates by weeks. This directly addresses the structural mismatch between ad-hoc offline spreadsheets and structured SIS tables.",
+      "opportunity_sketch": "An AI transformation layer that ingests offline Excel exports from remote campuses, maps their columns to the canonical SIS schema, standardizes formats, and outputs clean import-ready records — eliminating the manual re-keying step on reconnection.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Sync conflicts and duplicate records are the direct harmful output of offline data entry — the same student enrolled twice, grades entered at two different values, timestamps colliding. Anomaly detection on incoming offline data batches can flag duplicate keys, conflicting field values, and statistically improbable record combinations before they are committed to the central SIS. This prevents the data corruption that currently forces IT to do weeks of post-hoc cleanup.",
+      "opportunity_sketch": "A pre-commit anomaly detection layer that scores each incoming offline record for duplicate likelihood and conflict severity, surfacing only the flagged records to a data steward for manual resolution rather than requiring a full manual audit.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The offline-to-online transition is a multi-step, error-prone workflow: detect connectivity restored → collect local offline files from campus staff → run conflict detection → stage records for review → push approved records to SIS → notify IT and campus coordinator. This is precisely the pattern task automation agents address — a branching, multi-system workflow that currently requires manual coordination across IT, campus staff, and central admin. Automating this workflow reduces the enrollment delays and data loss that result from human-dependent reconnection steps.",
+      "opportunity_sketch": "An automated reconnection agent that monitors campus connectivity, ingests pending offline data files when connectivity is restored, runs deduplication and conflict checks, routes exceptions to a reviewer queue, and pushes clean records to the SIS — reducing a multi-day manual process to a near-real-time automated handoff.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-code",
+      "capability_label": "Code Generation",
+      "match_rationale": "Remote campuses lack IT support and central IT cannot troubleshoot remotely. The root technical gap is the absence of offline-first sync logic in the SIS — a problem that requires writing conflict-resolution code, change data capture scripts, and retry/merge handlers that the operator's lean IT team has never built. AI code generation can dramatically accelerate development of this custom sync layer, generating conflict resolution algorithms, offline queue management scripts, and SIS API integration code from natural language specs.",
+      "opportunity_sketch": "Use AI code generation to produce a lightweight offline sync client — a background script installed on campus machines that queues data changes locally and applies a last-write-wins or field-level merge strategy on reconnection — reducing the dependency on central IT for a bespoke build.",
+      "pain_salience": 3,
+      "adoption_likelihood": 2,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

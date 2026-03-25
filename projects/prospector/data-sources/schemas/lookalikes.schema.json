@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "lookalikes.schema.json",
+  "title": "CompanyLookalikes",
+  "description": "Lookalikes entry for one org — extracted from lookalikes.json keyed by org ID",
+  "type": "object",
+  "required": ["name", "sub_archetype", "sub_archetype_detail", "defining_traits", "lookalikes", "common_pain_points"],
+  "properties": {
+    "name": { "type": "string" },
+    "sub_archetype": { "type": "string" },
+    "sub_archetype_detail": { "type": "string" },
+    "defining_traits": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "lookalikes": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/LookalikeEntry" }
+    },
+    "common_pain_points": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/LookalikePainPoint" }
+    }
+  },
+  "definitions": {
+    "LookalikeEntry": {
+      "type": "object",
+      "required": ["name", "hq", "detail"],
+      "properties": {
+        "name": { "type": "string" },
+        "hq": { "type": "string", "description": "City/country HQ, or descriptive size string for system-level orgs" },
+        "detail": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "LookalikePainPoint": {
+      "type": "object",
+      "required": ["pain", "prevalence", "detail"],
+      "properties": {
+        "pain": { "type": "string" },
+        "prevalence": { "type": "string" },
+        "detail": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": true
+}

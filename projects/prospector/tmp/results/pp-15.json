@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-decentralized-cash-control",
+  "pain_point_label": "Decentralized Cash Advances & Petty Cash Control",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Cash advance reconciliation relies on physical receipts, handwritten vouchers, and paper-based documentation that must be digitized before any analysis or audit can occur. For a 15-site operator with 5-10 purchase cycles per site per month, manually keying receipts is the primary bottleneck delaying reconciliations by weeks. OCR and form-field extraction directly addresses the 'thin audit trail' mechanism by converting paper evidence into machine-readable records at point of submission.",
+      "opportunity_sketch": "A mobile receipt capture tool where campus staff photograph receipts immediately after purchase; the system extracts vendor, amount, date, and category automatically, attaching the parsed data to the cash advance record before the cash even returns to the office.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain explicitly describes financial leakage and fraud enabled by reconciliation delays — missing cash discovered only after staff rotation, grey-area spending, and supplier-credit workarounds that mask outflows. Anomaly detection on structured cash transaction data (advance amounts, recipient patterns, time-to-reconcile, vendor frequency) can surface suspicious patterns far earlier than month-end review, directly attacking the detection-delay mechanism that enables loss.",
+      "opportunity_sketch": "A continuous monitoring layer over the cash advance ledger that flags statistical outliers — unusually large advances to specific staff, repeated same-vendor cash payments across sites, advances with no corresponding reconciliation within N days — and routes alerts to the CFO dashboard for review.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core operational bottleneck is a fragmented, manual approval-and-reconciliation workflow: staff request advances, central office approves piecemeal, receipts trickle in, finance staff manually reconcile weeks later. This is a multi-step, multi-system workflow with clear decision branches (approve/reject/query) and repetitive data-entry tasks — exactly what task automation agents address. The 'piecemeal micro-purchase approval' complaint and month-end reconciliation taking 2-4 weeks both point to workflow automation as the structural fix.",
+      "opportunity_sketch": "An agentic cash advance workflow that handles request intake via a structured mobile form, routes approval based on configurable thresholds (auto-approve under $X, escalate above), chases missing receipts automatically via WhatsApp/email, and compiles the reconciliation package by aggregating parsed receipt data — reducing finance staff reconciliation effort from weeks to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once receipts are digitized and transactions are recorded, classifying spend into approved vs. semi-approved vs. grey-area categories is a structured classification problem. Education operators have budget codes and procurement policies; a classifier trained on historical transaction data can automatically flag policy-breaching purchases (e.g., non-educational items, unapproved vendors) at the point of reconciliation submission rather than during the delayed month-end audit.",
+      "opportunity_sketch": "A spend classification model that evaluates each submitted cash transaction against the organization's procurement policy and budget codes, tagging each line as compliant, requires-review, or policy-breach — feeding directly into the approver's queue with pre-populated audit notes.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all cash advances carry equal fraud or leakage risk — risk varies by site, staff tenure, advance size, vendor type, and historical reconciliation behavior. A risk scoring model applied at the advance-request stage enables the central office to apply proportional oversight: low-risk advances auto-approved, high-risk advances require pre-documentation or supervisor co-sign. This directly addresses the CFO's segregation-of-duties compliance problem and the scaling constraint (more sites = more risk surface).",
+      "opportunity_sketch": "A risk score generated for each cash advance request, combining requestor history, amount, vendor category, and site-level patterns, used to determine approval pathway — replacing flat approval thresholds with dynamic, evidence-based controls that scale across 15+ sites without adding finance headcount.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-it-operations-helpdesk-ticket-triage-chaos-dup",
+  "pain_point_label": "Helpdesk Ticket Triage Chaos & Slow Resolution",
+  "matches": [
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incoming helpdesk requests (email, chat, SMS) can be classified by urgency, category, and impact — automatically separating critical issues like enrollment blocks or grade entry failures from low-priority requests like printer jams. This directly addresses the core triage pain: the inability to prioritize without manual review of every inbound message.",
+      "opportunity_sketch": "An AI triage layer that reads incoming messages from all channels (email, Teams, SMS), assigns priority (critical/high/medium/low) and category (LMS access, enrollment, password reset, hardware), then routes or queues accordingly — before a human ever sees the ticket.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full lifecycle of helpdesk ticket management — ingesting requests from multiple channels, classifying them, creating structured tickets, routing to the right person, sending acknowledgment, and following up — is a multi-step workflow with branching decisions that a task automation agent can own end-to-end. The current state (no ticket system, requests via email/chat/SMS, follow-ups lost) is exactly the gap this capability fills.",
+      "opportunity_sketch": "An AI agent that monitors all inbound channels, extracts ticket details, creates a structured record, assigns priority and owner, sends user acknowledgment with expected SLA, and escalates unresolved tickets after defined thresholds — removing the COO escalation loop entirely.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A significant fraction of helpdesk volume (password resets, LMS access instructions, enrollment status checks) can be resolved without human intervention through a conversational agent that guides users through self-service steps. This directly reduces the ticket volume the single IT person must handle, compressing resolution time from 3-5 days to minutes for routine requests.",
+      "opportunity_sketch": "A staff-facing chatbot deployed in Teams or a portal that handles the top 5-10 request types autonomously — resetting passwords via API, providing LMS login steps, checking enrollment status — escalating to a human only when it cannot resolve.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Requests arriving via email, chat, and SMS are unstructured and inconsistent. Transforming these free-form messages into structured ticket records (category, affected system, user, campus, timestamp, urgency signals) imposes the schema needed to enable prioritization, tracking, and SLA measurement — which is the foundational gap before any triage logic can work.",
+      "opportunity_sketch": "An AI parsing layer that converts raw inbound messages into structured ticket objects with standardized fields, feeding a simple ticketing database or spreadsheet that currently does not exist.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

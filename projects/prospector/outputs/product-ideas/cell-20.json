@@ -1,0 +1,55 @@
+{
+  "cell": {
+    "cellNum": 20,
+    "subCategory": "Technology & Infrastructure",
+    "domain": "Operations & Delivery",
+    "heat": 52,
+    "oppScore": 19
+  },
+  "ideas": [
+    {
+      "name": "Campus Operations Risk Triage",
+      "one_liner": "Ranks school/campus sites by operational risk—staffing gaps, maintenance backlogs, resource shortfalls, delivery KPI deviations—to allocate central support.",
+      "problem": "Rising Academies (400+ schools across West Africa) and PHINMA (distributed Philippines campuses) lack visibility into which sites need urgent central support. Current dashboards report individual metrics (staff turnover, maintenance requests) but don't synthesise risk across operational domains. Central teams cannot triage limited oversight capacity effectively.",
+      "ai_technique": "Multi-factor risk scoring with site-level aggregation",
+      "how_it_works": "Ingests staffing data (teacher vacancies, substitute usage, turnover rate), maintenance system tickets (unresolved requests, backlogs), resource allocation (per-student spend variance), and operational KPIs (student learning outcomes, attendance rates, facility utilisation). Scores each campus/site on composite operational risk. Flags sites with multiple stressors. Recommends central intervention priority.",
+      "target_companies": ["rising", "phinma"],
+      "buyer_persona": "Regional Director / Head of Operations",
+      "tier": "standalone",
+      "confidence": "high"
+    },
+    {
+      "name": "Student Support Case Triager",
+      "one_liner": "Classifies student welfare and support requests by priority and resolution type—counselling, financial aid, academic intervention, discipline—to route cases efficiently.",
+      "problem": "Multi-site operators (CSPD, PHINMA, Rising Academies, Kinetic residential settings) handle high volumes of student support requests—welfare concerns, financial aid inquiries, academic performance alerts, discipline matters—through email and informal reporting. Manual triage is error-prone; urgent cases risk being missed amid volume.",
+      "ai_technique": "Multi-class text classification with priority scoring",
+      "how_it_works": "Classifies incoming student support requests (email, form submissions, counsellor notes) by type (mental health, financial hardship, academic struggle, behavioral issue) and urgency (immediate safety concern, time-bound deadline, routine request). Routes to appropriate team—counselling, finance, academic advisor, discipline committee. Escalates welfare flags automatically.",
+      "target_companies": ["cspd", "phinma", "kinetic", "school-for-life"],
+      "buyer_persona": "Student Support Coordinator / Dean of Students",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Resource Requirements Estimator",
+      "one_liner": "Forecasts teacher hours, facility capacity, and material costs per student cohort across sites to enable accurate operational planning.",
+      "problem": "Rising Academies and PHINMA scaling across new geographic markets and CSPD managing variance across 80 schools lack data-driven models for resource planning. Current practice relies on manual estimation, leading to understaffing, overcapacity, or excess spending. Education cost drivers (teacher-student ratio minimums, facility standards, regulatory staffing levels) differ from general business models.",
+      "ai_technique": "Regression estimation with education-specific cost drivers",
+      "how_it_works": "Builds regression models from historical operational data linking enrollment size, program mix, delivery mode (residential, commute), and site characteristics (urban/rural, existing infrastructure) to required teacher FTE, facility square footage, and material budget. Predicts resource requirements for new cohorts or expansion to new sites. Identifies cost outliers and efficiency opportunities.",
+      "target_companies": ["rising", "phinma", "cspd"],
+      "buyer_persona": "Director of Operations / CFO",
+      "tier": "module",
+      "confidence": "medium"
+    },
+    {
+      "name": "Operational Handover Summariser",
+      "one_liner": "Automatically summarises shift handover notes, student welfare case updates, and maintenance logs to reduce coordinator documentation burden.",
+      "problem": "Multi-site operators with residential settings (Kinetic) and distributed school networks (CSPD, Rising Academies) generate daily shift handover notes, student welfare updates, and maintenance reports that must be read and acted upon by next-shift/day staff. Manual reading is time-consuming; critical information can be buried in narrative text.",
+      "ai_technique": "Text summarisation with education-specific entity tagging",
+      "how_it_works": "Ingests shift notes, welfare case summaries, and maintenance tickets. Automatically extracts key facts—students of concern, outstanding actions, safety incidents, repair status—and generates concise handover summary. Tags behaviour incident terminology and welfare frameworks relevant to education safeguarding. Highlights items requiring escalation.",
+      "target_companies": ["kinetic", "cspd", "school-for-life"],
+      "buyer_persona": "Residential Coordinator / School Operations Manager",
+      "tier": "feature",
+      "confidence": "medium"
+    }
+  ]
+}

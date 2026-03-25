@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "enrollment-admissions-registration-onboarding-system-data-entry-dup",
+  "pain_point_label": "Manual Student Record Creation & Data Quality Issues",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Paper enrollment forms are the root cause of this pain — OCR and form field extraction can digitize handwritten or printed forms directly into structured student records, eliminating manual re-entry. Multi-site operators typically receive high volumes of paper forms during enrollment periods, making automated digitization a high-leverage intervention. This directly addresses the data entry delay and incomplete record issues.",
+      "opportunity_sketch": "An intake pipeline that scans paper enrollment forms, extracts student name, DOB, health info, emergency contacts, and learning needs via OCR+form parsing, and populates the SIS automatically — flagging low-confidence fields for human review before record creation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Once paper forms are digitized (or data arrives from multiple feeder systems with inconsistent schemas), AI-assisted transformation normalizes name formats, standardizes dates, maps fields to the target SIS schema, and cleans inconsistent entries before they enter the database. This directly targets duplicate record creation caused by inconsistent naming conventions (e.g., 'Jon Smith' vs 'Jonathan Smith'). Multi-site operators often aggregate data from multiple sources with different field conventions.",
+      "opportunity_sketch": "A pre-write normalization layer that standardizes incoming student data — canonicalizing names, formatting phone numbers and dates, resolving common abbreviations — before records are committed to the SIS, with schema mapping to handle multi-campus data source variation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate student records are a classic anomaly detection problem — new incoming records that closely resemble existing ones should be flagged before creation rather than after. AI can detect near-duplicate records using fuzzy matching on name, DOB, address, and guardian info, catching cases that exact-match deduplication misses. This directly addresses the duplicate record problem caused by data entry errors and inconsistent naming.",
+      "opportunity_sketch": "A real-time deduplication check at point of record creation that scores incoming student data against existing records, surfacing probable duplicates for staff review with a confidence score and side-by-side field comparison — preventing duplicate creation rather than requiring post-hoc cleanup.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full onboarding data pipeline — form intake, digitization, normalization, deduplication check, SIS population, completeness validation, and teacher notification — is a multi-step workflow that a task automation agent can orchestrate end-to-end. This addresses all four pain sub-components simultaneously: data entry delays, duplicates, incomplete records, and teacher preparedness. Multi-site operators benefit especially from consistent automated workflows that don't depend on individual staff habits.",
+      "opportunity_sketch": "An enrollment processing agent that receives digitized form data, validates completeness against a required-field checklist (health info, emergency contacts, learning needs), routes incomplete records back to families via templated requests, and only commits complete normalized records to the SIS — with a daily digest to teachers showing newly enrolled students and their key attributes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

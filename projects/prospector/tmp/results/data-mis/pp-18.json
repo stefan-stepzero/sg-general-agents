@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "data-mis-systems-integration-api-governance-absent-dup",
+  "pain_point_label": "API Governance & Third-Party Integration Risk",
+  "matches": [
+    {
+      "capability_id": "generation-code",
+      "capability_label": "Code Generation",
+      "match_rationale": "Integration code scattered across staff laptops with no version control is a direct use case: AI can generate formal API client modules, OpenAPI specs from existing scripts, and secure credential-handling wrappers. For a multi-site education operator, this means converting ad-hoc payroll/LMS glue scripts into maintainable, documented code with proper error handling for rate limits.",
+      "opportunity_sketch": "An AI coding assistant that ingests existing integration scripts and outputs refactored, version-controlled API clients with OpenAPI spec stubs, rate-limit retry logic, and secrets-vault patterns — reducing laptop-silo risk immediately.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Undocumented integration scripts and plaintext config files represent semi-structured artifacts that need to be inventoried and normalized into a governed schema. AI-assisted ETL mapping can parse disparate script files to extract API endpoints, parameters, and auth patterns into a central registry — the first step toward formal API governance.",
+      "opportunity_sketch": "A pipeline that ingests all integration scripts and config files, extracts API call signatures, credentials references, and vendor endpoints, and outputs a structured API inventory JSON/registry that feeds a governance dashboard.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "API rate-limit failures and unexpected bulk operation failures are anomalies in API call patterns. An anomaly detection layer monitoring API traffic logs can surface unexpected spikes, failed authentication events (leaked plaintext keys being used), and deviation from baseline call volumes — all critical security and reliability signals for an operator with payment gateway integrations.",
+      "opportunity_sketch": "A lightweight anomaly detector on API gateway logs that flags rate-limit threshold breaches, unusual off-hours calls, and repeated auth failures — alerting IT ops before a bulk operation fails silently or a compromised key causes a data breach.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Each third-party vendor integration (LMS, payroll, tuition payment gateway) carries a different failure, deprecation, and security risk profile. AI risk scoring can assess each integration's exposure based on factors like deprecation signals in vendor changelogs, plaintext key exposure, lack of SLA documentation, and integration age — giving leadership a prioritized remediation list.",
+      "opportunity_sketch": "An integration risk dashboard that scores each vendor API connection on security posture, deprecation likelihood, and operational fragility — enabling the operator to sequence remediation effort and justify budget for integration governance tooling.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of API governance is an ongoing operational gap requiring multi-step remediation: scanning for plaintext credentials, generating API specs, creating version-controlled configs, and setting up monitoring. An automation agent can orchestrate this workflow — reading scripts, detecting secrets, refactoring to vault references, generating OpenAPI docs, and committing results — without requiring staff to manually coordinate across systems.",
+      "opportunity_sketch": "An AI agent that runs on a schedule: scans integration scripts for hardcoded secrets, files security alerts, auto-generates or updates OpenAPI specs from live endpoint responses, and creates PRs with remediated config files — turning a manual audit into a continuous governance loop.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

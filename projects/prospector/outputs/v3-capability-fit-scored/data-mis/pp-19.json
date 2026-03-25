@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "data-mis-systems-integration-change-velocity-bottleneck-dup",
+  "pain_point_label": "Change Velocity Bottleneck & Integration Testing Gaps",
+  "matches": [
+    {
+      "capability_id": "generation-code",
+      "capability_label": "Code Generation",
+      "match_rationale": "When a field like 'scholarship status' is added to the SIS, the downstream impact spans multiple dependent systems, reports, and ETL scripts — all requiring manual code changes today. Code generation can automatically produce the boilerplate integration code, data migration scripts, and API mapping code for each dependent system. For a 500+ staff education operator, the ability to describe a schema change in natural language and receive ready-to-deploy update scripts across dependent systems directly addresses the velocity bottleneck.",
+      "opportunity_sketch": "An AI coding assistant that, given a SIS schema change spec, auto-generates the corresponding update scripts, ETL mappings, and report query patches for all dependent systems — reducing multi-week manual effort to hours of review-and-deploy.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-synthetic-data",
+      "capability_label": "Synthetic Data Generation",
+      "match_rationale": "Integration testing gaps are a core driver of production bugs in this pain point — bugs surface late because tests are ad hoc and untested edge cases are missed. Synthetic data generation can produce realistic test fixtures that simulate the new field (e.g., scholarship_status with varied values) across all dependent systems, enabling automated regression testing before rollout. Education operators rarely have robust test data environments because real student data is privacy-sensitive, making synthetic generation especially well-suited.",
+      "opportunity_sketch": "A tool that generates synthetic SIS-consistent student record datasets populated with new fields, used to seed integration test environments across all dependent downstream systems — enabling automated regression coverage without touching production data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step manual workflow: identify impacted systems, update each schema, update ETL jobs, update reports, verify consistency, and test — all done by hand today. A task automation agent can orchestrate this entire change propagation workflow: receiving a schema change request, identifying dependent systems from a registry, generating and applying update scripts, triggering integration checks, and flagging failures — replacing the fragmented manual process. This directly addresses the slow time-to-market complaint from leadership.",
+      "opportunity_sketch": "A change propagation agent that accepts a schema change spec, queries a system dependency map, auto-generates and dispatches update artifacts to each dependent system, runs smoke tests, and returns a pass/fail report — reducing a multi-day manual coordination cycle to an automated pipeline.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-coding",
+      "capability_label": "Code & Development Agents",
+      "match_rationale": "Unlike single-step code generation, this pain requires an autonomous agent that can read existing integration code across multiple systems, plan what needs to change, write the changes, and run validation — a multi-step development loop. A coding agent can be given the schema change requirement and the relevant codebases, then autonomously produce coordinated changes across SIS connectors, report queries, and dependent API layers. This directly targets both the change velocity bottleneck and the integration testing gap.",
+      "opportunity_sketch": "A coding agent integrated into the operator's dev workflow that, on receipt of a schema change ticket, autonomously reads all dependent codebases, generates coordinated patches, writes integration tests, and surfaces a PR for human review — compressing weeks of manual effort.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "A recurring pain is that new fields must be mapped through 3-4 dependent systems with different schemas — this is fundamentally a schema mapping and ETL problem. AI-assisted data transformation can automate the mapping of new fields across heterogeneous system schemas, reducing the manual effort of tracing how a new attribute flows through each downstream format. For education operators using legacy SIS platforms with rigid schemas, this capability directly cuts the integration backlog.",
+      "opportunity_sketch": "An AI-assisted schema mapper that, given a new SIS field definition, automatically generates field-level mappings and transformation rules for each dependent system's schema — cutting the manual cross-system mapping work from days to minutes.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-alumni-tracking-contact-decay-dup",
+  "pain_point_label": "Contact Information Decay & Lost Connectivity",
+  "matches": [
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "A research agent can autonomously scan multiple public sources — LinkedIn profiles, Facebook pages, alumni association posts, government employment registries, and Philippine telecom directories — to surface updated contact signals for lost alumni. This directly addresses the decay mechanism: the institution loses track because it relies on alumni self-reporting, while public digital footprints often contain fresher data. The autonomous multi-source synthesis is exactly what makes this more powerful than a one-time lookup.",
+      "opportunity_sketch": "An agent that takes a cohort list (name, last known graduation year, last known contact) and autonomously searches public web sources to surface likely current email addresses, phone numbers, or social handles, returning a confidence-scored enrichment file for staff review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a systematic update mechanism is itself the workflow gap — there is no automated process that detects a bounce, flags the record as stale, triggers an alternative outreach channel, and routes unresolved cases to a staff member. A task automation agent can orchestrate exactly this multi-step pipeline: detect delivery failure → attempt SMS fallback → attempt LinkedIn/Facebook message → escalate to human. This addresses the structural process failure, not just the data gap.",
+      "opportunity_sketch": "An automated alumni contact health pipeline: nightly job checks bounce/undeliverable signals from the email system, triggers SMS or WhatsApp fallback via Philippine-compatible messaging APIs, and surfaces a daily 'uncontactable alumni' queue for staff-initiated social outreach.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Alumni often voluntarily share updated contact information in graduation group chats, Facebook alumni pages, or event RSVPs — but this data is unstructured text, not form submissions. Entity extraction can parse these informal communications to pull out phone numbers, email addresses, employer names, and locations, feeding them back into the alumni CRM without requiring alumni to fill in a form. This directly combats passive decay by harvesting updates that already exist in the organization's digital ecosystem.",
+      "opportunity_sketch": "A lightweight extraction pipeline that monitors alumni Facebook groups and WhatsApp exports (with appropriate consent), extracts contact entities and location signals, and proposes record updates in the alumni database for staff approval.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Not all alumni go dark equally — graduation year, campus location, program type, and early engagement behavior are predictors of contact decay likelihood. A propensity model trained on historical alumni records can score current graduates at risk of becoming unreachable within 1-3 years, enabling proactive outreach before the contact goes stale rather than reactive recovery after. This shifts the institution from firefighting to prevention.",
+      "opportunity_sketch": "A churn-prediction-style model that scores each graduating cohort member's 'contact decay risk' based on enrollment history, digital engagement patterns, and demographic features, surfacing high-risk alumni for a proactive update campaign within the first 12 months post-graduation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Re-engagement outreach to lost alumni requires personalized, warm messaging that doesn't feel like a mass blast — cold, generic emails are ignored. AI text generation can produce personalized reconnect messages at scale, varying tone and reference points by graduation year, campus, or program, increasing the probability that the small percentage of reachable alumni actually respond with updated details. Without persuasive outreach copy, even a technically recovered contact list yields low update rates.",
+      "opportunity_sketch": "A personalized alumni re-engagement email/SMS generator that drafts cohort-specific outreach messages referencing graduation year, program milestones, and current institutional news, enabling staff to send high-volume personalized campaigns without manual copywriting.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Contact record decay can be modeled as anomaly detection: records that suddenly show patterns of bounce accumulation, non-delivery across multiple channels, or zero engagement over an abnormal period deviate from the baseline of active alumni contacts. Flagging these records early — before the contact is entirely lost — enables timely intervention. This is more precise than a simple time-based staleness rule because it accounts for alumni who receive emails but never engage (different decay signature than hard bounces).",
+      "opportunity_sketch": "A contact health monitor that scores each alumni record continuously using engagement anomaly signals (bounce rates, SMS failure codes, email open absence) and flags records entering the 'decay zone' for a targeted update request before full loss of connectivity.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

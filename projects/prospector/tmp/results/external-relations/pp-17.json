@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-lgu-community-townhall-absence-dup",
+  "pain_point_label": "No Regular Community Townhalls or Accountability Forums",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site education operators that lack structured community engagement need to produce outreach materials, forum announcements, community newsletters, and response letters to local grievances. AI text generation can systematically draft these per-campus communications at scale, reducing the effort barrier that causes operators to skip forums entirely. The problem partially stems from the administrative cost of organizing and communicating — lowering that cost directly attacks the root cause.",
+      "opportunity_sketch": "A templated communication engine that drafts campus-specific community forum invitations, meeting agendas, and post-forum summary letters for each site, requiring only a human review before distribution.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When community concerns are submitted via forms, emails, or recorded meetings, education operators lack a structured mechanism to distill them into actionable summaries for leadership. AI summarization converts raw community feedback — noise complaints, traffic grievances, student conduct issues — into concise briefings that campus principals and the central office can act on, creating the accountability loop the institution currently lacks.",
+      "opportunity_sketch": "An automated feedback digest that ingests community emails and form submissions after each forum (or on a rolling basis) and produces a prioritized summary report for campus leadership, flagging recurring themes and unresolved concerns.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Community grievances that do reach the institution — via email, social media, or informal channels — are rarely triaged or categorized, so they either get lost or escalate. Text classification can automatically tag incoming community messages by issue type (noise, traffic, safety, conduct), urgency level, and campus, routing them to the right person and creating an audit trail that demonstrates responsiveness.",
+      "opportunity_sketch": "A community feedback triage layer that classifies inbound messages from any channel by topic and urgency, routes them to the relevant campus coordinator, and tracks resolution status — providing the structured feedback mechanism the institution currently lacks.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "The absence of community forums means residents have no channel to raise concerns outside of escalation. A conversational agent deployed on the institution's public website or via SMS/WhatsApp can serve as an always-on community liaison — accepting concerns, answering questions about school policies (noise hours, traffic plans), and logging issues for human follow-up. This directly substitutes for the informal accessibility that townhalls provide.",
+      "opportunity_sketch": "A campus community chatbot accessible via the school website and mobile channel that handles community inquiries 24/7, collects structured concern reports, and escalates to a human coordinator when urgency thresholds are met — reducing the 'closed-off' perception without requiring scheduled forums.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

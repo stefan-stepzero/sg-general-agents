@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-compensation-benefits-salary-compression-dup",
+  "pain_point_label": "Salary Compression & Unjustified Variability",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Salary compression manifests as statistical outliers in pay data — staff hired at negotiated rates that deviate significantly from peers with equivalent grade, tenure, and specialization. An anomaly detection model trained on compensation records can surface unjustified pay deviations (e.g., contractual staff earning above median for permanent staff in the same role) before they become grievances. This directly attacks the 'staff discover pay inequity' mechanism by proactively flagging it to HR instead.",
+      "opportunity_sketch": "An anomaly detection layer over payroll exports that scores each staff record against peers (same grade, branch, contract type, years of service) and flags outliers above a configurable z-score threshold for HR review — generating a monthly equity audit report.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-regression",
+      "capability_label": "Regression & Quantitative Estimation",
+      "match_rationale": "The organization lacks a principled salary structure — there is no model linking grade, specialty, tenure, branch location, and contract type to a fair pay band. A regression model trained on internal compensation data (and optionally market benchmarks) can estimate what each role should earn, producing objective pay bands that make the DepEd step-increase schedule consistent and defensible. This directly addresses the 'no clear linkage between grade, specialty, and pay' mechanism.",
+      "opportunity_sketch": "A salary benchmarking model that ingests job grade, specialty area, years of service, branch, and contract type to output a recommended pay band and midpoint — used by HR to standardize new-hire offers and annual review increments across all campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once a salary structure is designed, communicating it consistently across 500+ staff at multiple campuses — branch-specific memos, FAQ documents, manager talking points, grievance response templates — is a high-volume drafting task. LLM text generation can produce role-appropriate communications from a single canonical pay policy document, reducing the risk that branch managers interpret and communicate the policy differently. This addresses the 'branch managers sometimes set local rates' pattern by codifying and broadcasting a single authoritative narrative.",
+      "opportunity_sketch": "A policy communication toolkit: input a finalized compensation policy; output branch-specific staff announcements, manager briefing scripts, and FAQ sheets — all consistently worded and locatable in a shared portal.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Salary equity audits today require HR to manually pull payroll records, cross-reference DepEd step-increase schedules, compare against contract type tables, and compile findings — a fragmented multi-system process prone to inconsistency. A task automation agent can orchestrate this end-to-end: pulling payroll exports, applying step-increase rules, computing peer group statistics, and producing a structured audit report with flagged anomalies and retroactive liability estimates. This directly reduces the 'equity audit findings create retroactive liability' risk by making audits routine rather than crisis-driven.",
+      "opportunity_sketch": "A periodic compensation audit agent that ingests payroll data from the HR system, applies DepEd step rules and internal grade tables, identifies compression violations and unjustified differentials, and outputs a structured remediation report ranked by severity and estimated cost to correct.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

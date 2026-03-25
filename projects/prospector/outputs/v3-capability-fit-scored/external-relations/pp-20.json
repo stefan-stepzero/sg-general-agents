@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-press-pr-no-pr-function-dup",
+  "pain_point_label": "No Dedicated PR/Communications Function",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site education operators without a PR function still need press releases, media statements, crisis communications, and proactive story pitches — all natural language outputs. AI text generation directly substitutes for the missing communications officer by drafting these documents from brief factual inputs. For an institution that assigns PR tasks to admissions or marketing staff, this is an immediate force multiplier.",
+      "opportunity_sketch": "A tool that takes a school event or achievement as input and outputs a press release, media pitch email, or spokesperson statement ready for review — enabling non-PR staff to publish-quality output without communications expertise.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a PR function means no protocol for handling media inquiries, no consistent press release workflow, and no proactive media monitoring — all multi-step workflows that an automation agent can own. An agent can monitor for media mentions, draft initial responses, route to the appropriate staff member for approval, and log actions taken. This is exactly the 'process automation without dedicated headcount' use case.",
+      "opportunity_sketch": "A PR workflow agent that monitors Google Alerts and social mentions across all campuses, drafts suggested responses to media inquiries, and routes them through an approval chain — giving the institution response capability without a communications hire.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Without a PR function, no one is systematically monitoring the sentiment or urgency of incoming media inquiries, parent complaints, or social media mentions. Text classification can triage inbound communications by urgency, sentiment, and topic — ensuring the small team handling PR ad hoc knows what requires an immediate response versus routine acknowledgment. This addresses the 'cannot respond quickly to negative stories' pain directly.",
+      "opportunity_sketch": "An inbox triage layer that classifies inbound emails and social mentions as urgent/crisis, neutral inquiry, or routine positive — routing crisis flags immediately to the principal or head of communications.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Building proactive media relationships requires knowing which journalists cover education, what topics they recently wrote about, and what story angles fit the institution's news. Without a PR officer, no one has time for this research. A research agent can autonomously scan education media outlets, identify relevant journalists across coverage areas (policy, STEM, wellbeing), and produce a briefing on media landscape and story opportunities.",
+      "opportunity_sketch": "A media landscape briefing agent that runs weekly, surfacing education journalists active in the institution's region and topic areas, with suggested story angles matched to current school initiatives.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

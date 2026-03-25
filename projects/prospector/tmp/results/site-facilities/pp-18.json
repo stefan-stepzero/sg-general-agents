@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-classroom-lab-setup-physical-signage-and-wayfinding-are-inadequate-or-outdated-dup",
+  "pain_point_label": "Physical Signage and Wayfinding Are Inadequate, Outdated, or Inconsistent Across Sites",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Creating consistent, standards-compliant signage copy (room labels, directional text, emergency route instructions, welcome board content) is a direct text generation task. Multi-site operators need uniform language, tone, and formatting across dozens or hundreds of signs — something that is tedious to maintain manually and where inconsistencies compound quickly across campuses.",
+      "opportunity_sketch": "An AI-assisted signage content system that generates and standardizes all sign text from a campus layout input — ensuring emergency route wording meets regulatory language, directional signs follow a consistent format, and any renovation triggers auto-regeneration of affected sign copy.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "generation-image",
+      "capability_label": "Image & Visual Generation",
+      "match_rationale": "Physical signage requires visual design artifacts — floor plan maps, evacuation route diagrams, campus wayfinding graphics, and room identification panels. AI image generation can produce print-ready sign templates and facility map graphics that maintain brand consistency across sites, dramatically reducing the cost and turnaround time compared to hiring a designer for each campus.",
+      "opportunity_sketch": "A signage design automation tool where facilities managers input room/zone data and receive print-ready sign artwork (wayfinding arrows, facility maps, room labels) in a consistent visual style, exportable to common print formats for each campus.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Auditing existing signage across multiple campuses requires processing photographs or scanned floor plans to extract current sign content and identify gaps. OCR and layout analysis can parse photos of existing signs and architectural drawings to build a structured inventory of what signage exists, where it is located, and what it says — creating a baseline for gap analysis without manual data entry.",
+      "opportunity_sketch": "A signage audit tool where facilities staff photograph existing signs on a mobile device; the AI extracts text, classifies sign type, and builds a structured site-by-site inventory identifying missing, outdated, or non-compliant signs automatically.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full signage lifecycle — detecting renovation triggers, pulling updated room data from the facilities management system, generating new sign copy and artwork, routing to approval, and creating a print order — is a multi-step workflow that today requires manual coordination across multiple teams. An automation agent can monitor the facilities system for room changes and orchestrate the downstream signage update process end-to-end.",
+      "opportunity_sketch": "A signage lifecycle agent that monitors room/space assignment changes in the school's facilities or SIS system, automatically generates updated sign content for affected locations, routes for approval, and issues a print job or supplier order — closing the gap between renovations and updated physical signage.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

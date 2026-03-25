@@ -1,0 +1,116 @@
+{
+  "pain_point_id": "student-support-child-protection-safeguarding-incident-data-loss-dup",
+  "pain_point_label": "No Centralized Incident Tracking or Pattern Detection",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Safeguarding incidents are currently recorded in notebooks, discipline files, and informal documents across campuses. Entity extraction can parse these heterogeneous sources to pull out structured data: staff IDs, student IDs, incident types, dates, locations, and campuses — creating the foundational structured dataset that a central registry requires. Without this extraction step, migrating legacy unstructured records into any centralized system is a manual bottleneck.",
+      "opportunity_sketch": "An extraction pipeline that ingests uploaded incident documents (PDFs, scanned notebooks, Word files) and auto-populates a central incident registry with structured fields — staff name, student, campus, date, incident category — ready for cross-campus deduplication and review.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Incident records exist in multiple inconsistent formats across campuses — some structured in discipline databases, others in free-text fields, others as spreadsheet rows. Data transformation normalizes these varied schemas into a single canonical incident record format, enabling cross-campus aggregation and deduplication. This directly closes the gap that allows staff history to be lost on transfer.",
+      "opportunity_sketch": "A schema-mapping layer that ingests exports from campus-level systems (spreadsheets, HRIS exports, discipline module CSVs) and unifies them into a normalized incident table with consistent field names, date formats, and staff identifiers — feeding a live central dashboard.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core danger described is serial predatory behavior that exploits gaps between campuses — a pattern-detection problem that anomaly detection is purpose-built for. By treating staff-incident pairings as behavioral signals, an anomaly model can flag when a single staff member accumulates complaints across multiple campuses at a rate that deviates significantly from the norm, surfacing potential serial abusers who would otherwise remain invisible. This is the highest-stakes match in the pain point.",
+      "opportunity_sketch": "A behavioral anomaly monitor that scores every staff member's incident footprint across campuses, flagging individuals whose cross-site complaint rate or complaint clustering exceeds statistical thresholds — triggering a safeguarding review workflow rather than relying on manual pattern-spotting.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Detecting predatory patterns requires not just entity extraction but relationship mapping: which staff member is connected to which students, across which campuses, over what time span, and whether those connections recur. Knowledge extraction builds the entity-relationship graph — staff → incident → student → campus → date — that makes cross-campus pattern analysis possible. This underpins any graph-based serial-abuser detection capability.",
+      "opportunity_sketch": "A relationship graph built from incident records linking staff, students, campuses, and incident types — enabling queries like 'show all incidents involving Staff X across all sites' or 'which staff appear in incidents at 3+ campuses' without manual cross-referencing.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incident reports written in free text vary enormously in how safeguarding concerns are described — some explicit, others euphemistic. Text classification can standardize incident categorization (e.g., physical, sexual, emotional, neglect, boundary violation) across all campuses, ensuring that incidents of the same type are grouped consistently regardless of which staff member wrote the report or which campus originated it. This is a prerequisite for reliable cross-campus pattern analysis.",
+      "opportunity_sketch": "An incident-type classifier applied at submission time that assigns standardized safeguarding categories to free-text incident descriptions, with urgency/severity scores — enabling like-for-like cross-campus comparison and automated escalation triggers.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "A significant portion of legacy incident data exists as handwritten notebooks and scanned paper forms — the pain point explicitly mentions this. Media parsing (OCR + handwriting recognition) converts these physical records into machine-readable text, which is the necessary first step before entity extraction or transformation can build the central registry. Without this, the 'scattered across campuses' problem cannot be resolved for legacy data.",
+      "opportunity_sketch": "A document digitization pipeline where campus administrators photograph or scan legacy incident notebooks, and OCR with handwriting recognition produces searchable digital records that feed into the central incident registry — eliminating the paper backlog.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Once a central incident registry exists, risk scoring can estimate the probability that a given staff member poses an ongoing safeguarding risk based on their incident history, complaint patterns, and campus transfer history. This gives leadership a ranked list of at-risk situations to investigate rather than requiring manual review of all records. It directly addresses the accountability gap described in the pain point.",
+      "opportunity_sketch": "A staff safeguarding risk score generated nightly from the central incident registry, surfacing a ranked watchlist of staff with elevated risk indicators (multiple complaints, cross-campus patterns, recent escalations) for review by the designated safeguarding lead.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The fragmented incident documentation workflow — where staff record incidents inconsistently across systems and formats, and transfers do not trigger any data migration — is a multi-step process automation problem. A task automation agent can orchestrate the end-to-end workflow: intake a new incident report, classify it, extract entities, check for duplicates against the central registry, assign a case ID, and notify the safeguarding lead — replacing a currently non-existent manual process.",
+      "opportunity_sketch": "An incident intake agent that accepts reports via a simple web form or chat interface, automatically classifies the incident, extracts key fields, checks for prior complaints against the same staff member across campuses, and routes to the appropriate safeguarding lead — with full audit trail.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 8
+}

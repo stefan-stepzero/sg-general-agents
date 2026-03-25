@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "network-coordination-brand-identity-mixed-brand-architecture-dup",
+  "pain_point_label": "Inconsistent Brand Architecture (Monolithic vs. Federated)",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core deliverable of resolving brand architecture confusion is a set of governing documents: brand usage guidelines, messaging hierarchies, naming convention frameworks, and communications templates that clarify the parent-subsidiary relationship to employers and families. Text generation directly produces these artifacts at scale across campuses. Education operators often lack dedicated brand strategists, so an AI that can draft, iterate, and localize brand architecture documentation fills a real gap.",
+      "opportunity_sketch": "A brand governance assistant that generates campus-specific communications collateral (enrollment letters, employer outreach decks, website copy) auto-adapted to the approved brand hierarchy — monolithic or federated — with campus-level variables injected per template.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Before fixing brand inconsistency, operators need to audit how campuses are currently positioning themselves in outbound communications, websites, and enrollment materials. Text classification can systematically tag every piece of campus-generated content by brand posture (campus-branded, network-branded, hybrid, conflicting) at a scale no human auditor could match across 500+ staff. This surfaces the scope of the problem empirically rather than anecdotally.",
+      "opportunity_sketch": "An automated brand compliance auditor that classifies emails, web pages, and marketing documents across all campuses into a brand consistency taxonomy, producing a heat map of misalignment by campus and content type.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Multi-site operators accumulate years of campus-level brand decisions, board minutes, enrollment marketing, and HQ directives that each implicitly reflect a brand stance. Summarization can distill this historical record into a coherent brand posture audit — surfacing where campuses diverged from HQ intent and why — so leadership can make an informed architecture decision rather than guessing. This is faster and cheaper than hiring a brand consultant to do the same document review.",
+      "opportunity_sketch": "A brand history synthesizer that ingests years of campus communications and governance documents and outputs a structured summary of how each campus brand evolved and where the key divergence points occurred.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Brand architecture confusion partly stems from not knowing how peer networks (other multi-site education operators, vocational networks, franchise school chains) have resolved the monolithic vs. federated decision. A research agent can autonomously survey competitor and analogous brand structures from public-facing digital presence — websites, LinkedIn, job postings, enrollment pages — and synthesize a benchmark report that gives leadership concrete precedents to anchor their decision. This is currently done ad hoc or not at all.",
+      "opportunity_sketch": "A competitive brand benchmarking agent that scans 20-30 comparable education network websites and produces a structured report on how peers frame their network vs. campus identity, with annotated examples and recommended architecture patterns.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

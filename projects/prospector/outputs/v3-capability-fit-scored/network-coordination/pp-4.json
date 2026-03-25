@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-decision-rights-government-funding-compliance-dup",
+  "pain_point_label": "Government Funding Compliance Overhead on Decision-Making",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site education operators must produce recurring compliance documentation — subsidy justification letters, DEPED/CHED reporting narratives, accreditation self-study reports — that are structurally formulaic but time-consuming to draft. AI text generation can produce first-draft compliance documents from structured inputs (budget figures, enrollment data, program descriptions), dramatically reducing the hours spent on regulatory paperwork that delays decisions.",
+      "opportunity_sketch": "A compliance document generator that takes structured school data as input and produces draft DEPED/CHED reports, pre-approval request letters, and accreditation narratives ready for administrator review and submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Government funding regulations, DEPED/CHED memoranda, and accreditation standards are voluminous and frequently updated. Administrators spend significant time parsing dense regulatory documents to determine whether a proposed budget or staffing change requires pre-approval. AI summarization reduces this overhead by condensing new circulars and guidelines into actionable decision triggers relevant to the operator's context.",
+      "opportunity_sketch": "A regulatory digest tool that automatically summarizes new government memoranda and flags which operational decisions they affect — e.g., 'This CHED memo requires pre-approval for any faculty headcount change above 10%'.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Compliance decisions hinge on whether a specific action — a budget reallocation, a staffing change, a program modification — triggers a government pre-approval requirement. Administrators currently have to manually search through layered regulations to answer this. A RAG system grounded in DEPED, CHED, and funding body regulations can answer 'Does this action require prior approval?' with cited regulatory basis, directly reducing the compliance review bottleneck on routine decisions.",
+      "opportunity_sketch": "A compliance Q&A assistant trained on DEPED/CHED issuances and funding body guidelines that answers specific operational questions (e.g., 'Can we reallocate subsidy funds between campuses mid-year?') with cited regulatory support.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not every operational decision carries equal compliance risk — some budget changes clearly require government pre-approval while others clearly do not; many fall in a grey zone that causes delays. AI risk scoring can assess a proposed decision against regulatory thresholds and historical audit outcomes to assign a compliance risk level, enabling operators to fast-track low-risk decisions and focus review effort on genuinely uncertain cases.",
+      "opportunity_sketch": "A compliance risk screener that ingests a proposed decision (type, amount, timing, campus) and outputs a risk score with reasoning — 'High risk: subsidy reallocation above threshold; obtain DEPED clearance before proceeding' vs. 'Low risk: internal budget shift within approved envelope'.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The compliance review process involves multiple sequential steps: identifying the applicable regulation, checking approval thresholds, assembling supporting documentation, routing to the appropriate signatory, and tracking submission status with the government body. This workflow is currently manual and creates decision delays across all campuses. A task automation agent can orchestrate these steps — retrieving relevant rules, pre-populating forms, routing approvals, and logging outcomes — without human coordination at each step.",
+      "opportunity_sketch": "A compliance workflow agent that, triggered by a flagged operational decision, automatically pulls the relevant regulatory requirements, pre-fills the government pre-approval form, routes it internally for sign-off, submits to the agency portal, and tracks status — cutting the end-to-end compliance cycle from weeks to days.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

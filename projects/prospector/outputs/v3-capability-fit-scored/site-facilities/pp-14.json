@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "site-facilities-classroom-lab-setup-room-utilization-scheduling-conflicts-and-overbooking-dup",
+  "pain_point_label": "Room Utilization Scheduling Creates Conflicts, Double-Bookings, and Setup Delays",
+  "matches": [
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Room scheduling across a multi-campus operator is a classic constraint satisfaction problem: rooms must be assigned to classes, exams, and meetings such that no two events occupy the same space simultaneously, setup buffer times are respected, room capacity and equipment requirements are met, and soft preferences (e.g. keep a department's rooms contiguous) are satisfied. The pain point explicitly describes overlapping bookings, insufficient setup windows, and exam-room competition — all hard and soft constraints. This capability directly targets the combinatorial assignment problem at the core of the issue.",
+      "opportunity_sketch": "An AI-powered room allocation engine that ingests the teaching timetable, exam calendar, extracurricular requests, and room capability data, then generates conflict-free schedules with mandatory setup buffers for labs — surfacing unresolvable clashes for human review before the timetable is published.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Rooms are finite resources that must be allocated to time slots across competing demand categories (teaching, labs, exams, meetings, events). The scheduling conflict and double-booking problem is precisely a capacity planning and assignment problem. For a 500+ staff multi-campus operator, coordinating hundreds of concurrent class sessions with differentiated room types (standard classroom, computer lab, science lab, exam hall) requires optimization beyond manual or spreadsheet-based coordination.",
+      "opportunity_sketch": "A resource scheduling layer — potentially as an add-on to an existing SIS or a standalone tool — that continuously checks requests against confirmed bookings, flags conflicts in real time, and suggests alternative slots or rooms when a request cannot be accommodated.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The current booking process is fragmented — staff send emails, write names on paper, or use inconsistent systems on different campuses. A task automation agent can replace this by accepting booking requests through a single channel (email, form, or chat), parsing the request, checking availability across all campuses, confirming or rerouting, and updating the central schedule without manual admin intervention. This directly addresses the 'staff waste time chasing room confirmations' pain and the inconsistency between campus practices.",
+      "opportunity_sketch": "An intake and booking automation agent that accepts natural-language or structured room requests, queries the scheduling system for availability, applies setup-buffer rules for specialist rooms, and issues confirmations or conflict alerts — eliminating the email-chain bottleneck for administrators.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff currently book rooms informally (email, paper notes) because centralized systems are too cumbersome. A conversational agent deployed via an internal messaging tool (Teams, Slack, or a portal) lowers the friction of booking by letting staff say 'I need a 30-seat room with a projector on Thursday at 2pm' and receive instant availability and confirmation. Multi-turn dialogue is needed to handle edge cases: the requested room is taken, setup time is required, or the user needs to rebook.",
+      "opportunity_sketch": "A room-booking chatbot integrated into the staff communication platform that handles natural-language requests, resolves conflicts interactively, and writes confirmed bookings back to the central scheduling system in real time.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Room demand in schools follows strong seasonal and weekly patterns: exam periods, term-start surges, parent-meeting nights, and extracurricular spikes are predictable from historical timetable data. Forecasting room utilization peaks allows facilities planners to proactively block rooms for exams or reconfigure spaces before conflicts emerge rather than discovering them at publication. This is a supporting capability — it reduces the frequency of conflicts rather than resolving them in real time.",
+      "opportunity_sketch": "A utilization forecasting dashboard that predicts high-demand periods for each room type per campus, enabling proactive reservation of exam halls and specialist labs weeks in advance, reducing last-minute timetable revisions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Within a published schedule, anomalous patterns — back-to-back lab bookings with zero buffer, the same room appearing twice in the same time slot, a room allocated to more attendees than its rated capacity — represent scheduling errors that can be automatically flagged before they cause operational disruption. Anomaly detection on the structured schedule dataset can catch these errors at timetable-draft stage rather than when classes physically collide.",
+      "opportunity_sketch": "An automated schedule audit that runs anomaly detection across the draft timetable to surface double-bookings, capacity violations, and missing setup buffers before the schedule is published to staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

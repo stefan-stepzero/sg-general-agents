@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-multi-scheme-reconciliation",
+  "pain_point_label": "Multi-scheme account posting & reconciliation",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core pain is identifying orphaned credits, over/under-postings, and mismatched donor transfer amounts across heterogeneous ledger entries — precisely the 'deviant vs expected' pattern anomaly detection addresses. A model trained on correct posting sequences for each scheme type could flag line items that deviate from expected posting rules (e.g., institutional scholarship landing in account type B, or a donor stipend missing its corresponding cash receipt).",
+      "opportunity_sketch": "An anomaly detection layer that monitors incoming ledger posts in near-real-time, flagging entries that violate scheme-specific posting rules before month-end close — shrinking the 20+ hr manual variance hunt to a curated exception queue.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each financial aid scheme arrives with its own structure: government voucher files, donor transfer advices, LGU slot rosters, and institutional award tables all carry differing field names, credit rules, and timing metadata. AI-assisted schema mapping can normalize these semi-structured inputs into a canonical posting record with standardized fields (scheme_type, credit_account, posting_sequence, amount, student_id) before they hit the ledger — eliminating the root cause of posting fragmentation.",
+      "opportunity_sketch": "An ingestion pipeline that accepts raw disbursement files from each scheme source and outputs a normalized posting batch conforming to the institution's chart of accounts, with posting sequence derived from configurable scheme rules.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Month-end reconciliation is a multi-step workflow: pull ledger exports, cross-reference scheme award registers, identify unmatched items, compute variances, generate correction entries, and escalate outliers to the finance officer. Each step involves branching logic (e.g., donor transfer shortfall triggers a separate follow-up flow vs. a duplicate posting requires a reversal), which is exactly the autonomous multi-step decision-making task automation agents handle. Manual effort of 20+ hrs/month per campus is a strong signal this workflow is ripe for automation.",
+      "opportunity_sketch": "A reconciliation automation agent that runs nightly or at month-end, ingests ledger data and scheme registers from the SIS/ERP, produces a reconciliation report with matched/unmatched/variance line items, and drafts correction journal entries for finance officer review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Multi-award students (institutional + voucher + stipend) face posting sequence ambiguity — the order in which credits are applied determines remaining balances and triggers downstream calculations. This is a constraint satisfaction problem: given a student's award set and the posting rules of each active scheme (priority, account type, timing), find the valid posting sequence that satisfies all scheme-specific constraints simultaneously without over- or under-applying credits.",
+      "opportunity_sketch": "A posting sequence resolver that, for each multi-award student, computes the compliant application order given concurrent scheme rules — producing a deterministic posting plan that finance staff can review and confirm before execution.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

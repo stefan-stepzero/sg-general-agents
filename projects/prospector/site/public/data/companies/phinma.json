@@ -1,0 +1,1111 @@
+{
+  "company_id": "phinma",
+  "company_name": "PHINMA Education",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.47,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.23,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "GTM is explicitly 'reputation/word-of-mouth-led' via board exam rankings with 'no evidence of significant paid digital advertising' — awareness is structurally self-limiting by design, but 177K enrollees and 14% YoY growth show the model is working; generic plausibility for expansion markets (Indonesia, Vietnam) where PHINMA brand has no established presence."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Record enrollment at 177,851 with 14% YoY growth and community-embedded Facebook accounts per campus — no evidence of engagement quality problems; profile shows the student success story format is resonating with target market."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "89% retention and record enrollment contradict conversion problems in existing markets; for expansion into Indonesia and Vietnam, conversion from awareness to enrollment in unfamiliar cultural contexts is theoretically possible but no direct evidence."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile explicitly confirms a highly defined and validated target — 'underserved youth, often first in their families to go to college' in provincial markets with specific program mix — targeting is a demonstrated strength; extremely unlikely to be a problem in Philippines context."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.45,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms 89% retention implying ~11% annual attrition; Student Success Program coaches exist specifically to combat early disengagement; the 11% gap in a financially constrained first-generation student population with academic pressure makes early-semester attrition a structurally active and managed problem — pattern strongly converges."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Student Success Program's academic and emotional support mandate implies ongoing engagement is an active concern; PHINMA Ed Learning App handles scheduling and attendance tracking which suggests engagement monitoring is occurring; one indirect signal."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Year-to-year re-enrollment is the key renewal boundary for PHINMA; 89% retention is strong but 11% non-renewal in a financially constrained market (Hawak Kamay scholarship at ~$100 signaling extreme price sensitivity) makes renewal friction a structurally managed challenge — likely active but well-resourced."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No student NPS or satisfaction data in the profile (explicitly noted as a gap); 89% retention is a positive proxy; CEO home visits to students' families signals relational investment — one indirect signal only, no direct evidence of erosion."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.65,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly documents active expansion into Indonesia (DIKTI/Kemdikbud regulatory framework, Yayasan JV structures), Vietnam targeted 2027, Cambodia and Laos beyond that, plus 4 Philippine pipeline cities — navigating multiple distinct national regulatory regimes simultaneously is directly evidenced."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Indonesia and Vietnam have different student demographics, income levels, and educational cultures than Philippines; Surabaya target is described as a '100,000-student graduating market' confirming active segment sizing — very likely challenge in expansion contexts even if not a Philippines problem."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Board exam reputation flywheel and community-embedded GTM are Philippines-specific; entering Indonesia and Vietnam requires building entirely new community channels, local employer pipelines, and accreditation relationships from scratch — Yayasan JV structures confirm this channel-building challenge is already active."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Horizon University Indonesia and Kalbis University must operate under DIKTI/Kemdikbud frameworks distinct from CHED; PRC board exam reputation model is Philippines-specific and cannot transfer directly; Active Learning methodology requires local pedagogical adaptation; 3+ converging indicators of offer adaptation challenge."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.525,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile's own key_dependencies section directly names 'GOVERNMENT SUBSIDIES: policy reversal or defunding would directly impact affordability for PHINMA's target market' as a dependency risk — tuition + government Free HE Act subsidy as the near-exclusive revenue model is directly flagged as a concentration exposure."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Tuition is the only confirmed revenue model; KKR's digital transformation mandate and HONOR tablet donation suggest exploratory moves; for a PE-backed org approaching IPO readiness, failure to develop alternative revenue models (online, corporate training, executive education) is a likely investor-level conversation."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly flags 'government subsidy policy reversal' and 'KKR/PE capital disruption' as named sustainability risks; ADB and FMO exit via secondary removed prior capital sources — two directly named sustainability dependencies."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "With tuition as near-sole revenue and SWU Medical Center as a minor supplement, there is little portfolio to balance — this problem requires multiple streams in tension; generic plausibility only."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.58,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.60,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states tech stack is 'Transitional' with active hiring for Backend Devs, iOS Engineers, and Lead Frontend Engineers — a direct signal that existing processes rely on vendor-managed or manual workflows that internal engineering is being hired to automate; KKR digital transformation mandate reinforces this."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke with 13 semi-autonomous campuses each retaining own administration plus central PEHI oversight creates structural conditions for duplicated approval and reporting steps — strong contextual pattern for a network acquired institution-by-institution with no common process baseline."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes per-campus ERP instances (sis.phinma.edu.ph with per-campus subdomains) and a separate PENSMS network admin portal — multiple system endpoints across 13 campuses in hub-and-spoke structure without a data warehouse is a directly evidenced architectural precondition for handoff failures between campus and HQ."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states each institution 'retains its own name, local president, and brand identity' operating under shared curriculum — 13 campuses with semi-autonomous local presidents across 2 countries with turnaround acquisition history is a direct structural precondition for execution variance in academic delivery."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Salazar holds dual authority as Education CEO and Corp President/COO managing acquisition pipeline in 4 Philippine cities plus Surabaya simultaneously — strong contextual pattern for approval bottlenecks in a lean 'bare-bones' HQ scaled to its limits."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.62,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly names Mastersoft ERP as core SIS, confirms PHINMA Ed App was 'originally Mastersoft-licensed,' and that shift toward internal engineering is in progress — KKR's digital transformation mandate as 'key priority' directly implies the current stack is insufficient for scale; strong circumstantial evidence."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'no evidence of a separate data warehouse' and describes per-campus ERP instances plus PENSMS network portal plus PHINMA Ed Learning App as distinct non-integrated layers — this is a direct evidence statement of data silos across 13 campuses."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of outage or reliability problems; Lenovo TruScale provides managed services suggesting baseline reliability investment; 177K students on ERP-native systems could stress performance at peak enrollment periods but this is generic."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "CTO won ISOG Cybersecurity Best CTO 2024 suggesting active security leadership; however 'no SOC2 or ISO27001 confirmed' with per-campus ERP instances that may have inconsistent patch levels — one weak signal of infrastructure gaps below CTO-level attention."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states 'no evidence of a separate data warehouse, Tableau/Power BI deployment, ML in production, or advanced analytics pipeline' — a direct evidence statement; KKR's digital transformation mandate as 'key priority' confirms the tooling gap is recognized at the highest level."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.56,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile documents multiple simultaneous campus construction projects (Ramon V. del Rosario Building, Aurora Building, Horizon East building, PHINMA Hall) and acquisition pipeline in 4 Philippine cities plus Surabaya — active sustained capex directly indicates physical capacity is constraining the path from 177K to 300K student target."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Active Learning methodology requires trained instructors and the Student Success Program requires coaches — both are people-intensive non-automated service models; scaling from 177K to 300K students with these models across 5 countries creates direct service scalability pressure on people-dependent delivery."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous Philippines campus upgrades, Indonesia 2-school operation, Surabaya negotiation, Vietnam 2027 target, and KKR digital transformation mandate — a lean 'bare-bones' HQ managing this many concurrent expansion tracks converges strongly on resource allocation as a live challenge."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies pipeline campuses in San Pablo, Roxas City, Bacolod, Butuan as 'timeline and deal status unclear as of early 2026' — gaps between targeted geographies and current operational presence are acknowledged in the profile itself."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Education services have no physical supply chain in the traditional sense; faculty hiring is the primary input constraint (classified under Talent); campus construction materials are project-specific not ongoing supply chain — generic plausibility only."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.56,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "13 semi-autonomous institutions each with local presidents sharing 'network curriculum' and Active Learning methodology — the combination of semi-autonomous governance and recently acquired turnaround institutions strongly patterns toward standards enforcement difficulty as the network continues scaling."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Board exam pass rates and topnotcher rankings serve as lagging quality signals; no evidence of in-semester quality monitoring or teaching observation programs — quality control appears outcome-based (board exams) rather than in-process; likely pattern for a network with 13 semi-autonomous campuses."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly notes each institution 'retains its own name, local president, and brand identity' and is characterized as 'semi-autonomous' — 13 campuses across Philippines and Indonesia with separately managed local presidents is direct structural evidence; acquisition model specifically targets institutions needing turnaround, implying incoming quality variation."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly flags 'No student satisfaction data (NPS, student reviews) — only employee Glassdoor data obtained' as a gap; board exam pass rates measure one narrow outcome; holistic learning outcomes and employer readiness are not measured."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Board exam rankings create a strong and clear quality metric; mission alignment (Glassdoor culture 4.0/5) suggests quality ownership is present; risk of metric gaming around board exam KPIs exists but no direct evidence of it — moderate-low."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.40,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.25,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "177K enrollment record, 89% retention, #1 national rankings in Nursing and Criminology, 40,000+ licensed professionals produced — these are direct evidence of strong product-market fit; structurally impossible to call this a current problem."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile shows clear validated segment focus on first-generation provincial students; all campus locations, program mix, and pricing are deliberately aligned to this segment with 20 years of refinement — no evidence of mismatch; unlikely."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'no evidence of AI/GenAI curriculum integration' as an explicit gap, and HONOR tablet donation is 'exploratory, not transformational' — employer demand for digital skills in Nursing/IT/Engineering is rising and curriculum adaptation pace is explicitly an information gap; very likely pattern given conservative innovation posture."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "40,000+ licensed professionals, 203 board topnotchers, 89% retention, and 177K enrollment at record — core value is being delivered at scale; unlikely to be a problem."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.30,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Highly consistent messaging: 'affordable, employment-outcome-focused education for underserved youth' reinforced by board exam rankings, scholarship programs, and student stories — value proposition is operationally demonstrated and consistently communicated; unlikely to be a problem."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile identifies 4-layer moat (CHED accreditation, board exam flywheel, campus density, subsidy lock-in) — however, in Indonesia and Vietnam where PHINMA is new, differentiation is not yet established; one weak signal for expansion markets."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Board exam rankings as primary differentiation align directly with what licensure-track students (Nursing, Criminology, Engineering) value most; alignment between differentiation axis and market need is confirmed; generic plausibility only for non-licensure programs."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile explicitly describes multi-layer moat including regulatory barriers and board exam flywheel — defensibility is a documented organizational strength, not a current vulnerability; generic plausibility."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.575,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "PHINMA's 'bare-bones, no-frills' ethos is 'fundamentally conservative and execution-focused, not experimental'; CHED requires program approval for curriculum changes — both organizational culture and regulatory structure constrain how quickly academic programs can iterate; strong contextual pattern."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly states 'no evidence of internal innovation labs or rapid experimentation culture' and HONOR tablet donation is 'exploratory, not transformational' — these are direct profile statements about innovation pipeline weakness; KKR mandate implies investor expectation exceeds current pipeline."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms PHINMA Ed Learning App 'originally Mastersoft-licensed' with active hiring for Backend Developers, iOS Engineers, and Lead Frontend Engineers signaling transition from licensed to internal — transitioning from vendor-managed to internal tech is a classic technical debt drag scenario for product evolution."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly notes 'no evidence of AI/GenAI curriculum integration' as a gap; in IT and Engineering programs, curriculum must rapidly incorporate AI tools or graduates face employer relevance questions; conservative innovation posture makes this decay risk very likely."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.42,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "PHINMA Ed Learning App has 100K+ downloads on a network of 177K students — significant non-adoption; for first-generation students with lower digital literacy, app usability is a likely barrier; Mastersoft ERP is enterprise admin software not designed for student UX."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "First-generation college students enrolling in formal higher education for the first time face steep learning curves for institutional systems; Student Success Program coaches exist precisely because onboarding friction causes early attrition — this problem is actively managed, implying it is real."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Target market is lower-income first-generation students — device access constraints are real (hence Lenovo DaaS and HONOR tablet donations), and instruction is in-person campus-based; Hawak Kamay scholarship at $100 signals financial accessibility focus; one weak signal for digital accessibility gaps."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of high effort-to-value problems; Student Success Program coaching exists to guide students through requirements; generic plausibility for newly acquired campuses with legacy administrative processes."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CEO home visits to students' families, mission-driven culture, Silver Anvil PR Award for community bayanigan — emotional trust is a documented organizational strength; 89% retention supports this; generic plausibility only for newly acquired turnaround institutions."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.54,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.56,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'structural scarcity of licensed healthcare educators in provincial markets is an ongoing constraint' as a named key dependency — this is a direct profile statement of a talent sourcing problem for Nursing, Medical Technology, Criminology, and Engineering faculty in provincial locations."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Glassdoor 3.4/5 with 53% recommend rate and explicitly documented 'entry-level salaries below market' — for tech talent (Backend Dev, iOS Engineer) needed for digital transformation, sub-market compensation is a very likely attraction barrier in a competitive tech talent market."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of selection or assessment problems; faculty hiring for licensure-required disciplines has natural qualification filters (PRC board results); for tech roles, selection rigor is unconfirmed but not evidenced as problematic."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'entry-level salaries below market' as a documented employee pain point (Glassdoor); for tech roles needed for KKR's digital transformation mandate, below-market compensation is direct evidence of offer competitiveness problems."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of hiring process inefficiency; with 13 campuses hiring faculty plus HQ hiring tech roles, coordination across a lean 'bare-bones' HR function is plausible — one weak signal but no direct evidence."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.50,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "In a hub-and-spoke network where each campus has a local president, career advancement for faculty typically means staying at the same institution; for HQ staff, growth paths are unclear in a lean organization — strong pattern for mission-driven networks with flat management structures."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Glassdoor directly documents work-life balance 3.3/5 in a lean 'bare-bones' organization scaling rapidly — combined with board exam pressure and below-market salaries, work experience satisfaction problems are very likely and directly evidenced by Glassdoor ratings."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'entry-level salaries below market' and 'compensation tradeoffs' as documented Glassdoor pain points — below-market compensation in a growing PE-backed organization is strong circumstantial evidence of reward and recognition problems, especially for the tech talent PHINMA is now trying to hire."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission-driven culture (Glassdoor culture 4.0/5) and Salazar's visible leadership suggest positive manager relationships at senior level; for campus-based faculty managed by local presidents who are ex-distressed-institution leaders, quality varies — one weak signal."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile shows deeply mission-embedded culture attracting 'educators who prioritize purpose over compensation' — belonging and purpose are documented organizational strengths; Glassdoor culture 4.0/5; generic plausibility only for newly acquired campuses."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.625,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "With 10-20 new campuses planned across 5 countries, PHINMA needs to systematically forecast faculty and admin headcount needs — no evidence of a formal workforce planning process; the scale of ambition (300K students) strongly patterns toward workforce planning gaps in a lean HQ organization."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Active Learning methodology requires trained instructors across 13 campuses; profile notes 'PHINMA invests heavily in faculty development' but newly acquired turnaround institutions need faculty reskilling — the ongoing acquisition model makes learning delivery a permanent operational challenge."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "With 10-20 new schools planned across 5 countries and a turnaround model requiring strong local campus presidents, leadership pipeline is directly pressured — the acquisition ambition requires developing or acquiring ~10-20 additional campus leaders, a direct leadership pipeline challenge at scale."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "KKR's digital transformation mandate requires workforce adoption of new tools across 13 campuses; profile notes conservative, non-experimental organizational culture; 3,500-5,000 FTE with varying digital literacy across provincial campuses makes technology upskilling a strongly converging challenge."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.50,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Core values published and practiced (CEO home visits, mission-driven culture, Silver Anvil community award) — values-behavior alignment is a documented strength; Glassdoor culture 4.0/5; generic plausibility only for newly acquired turnaround institutions."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke with 13 semi-autonomous campuses plus Indonesia Country Head plus Makati HQ, all under a CEO holding dual authority — adding 10-20 more campuses across 5 countries is very likely to require structural redesign of reporting relationships and decision rights."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "13 campuses with semi-autonomous local presidents across Philippines and Indonesia plus central Makati HQ — geographic dispersion, time zone differences, and hub-and-spoke structure create strong conditions for collaboration gaps between campuses and between campuses and HQ."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "KKR's digital transformation mandate, simultaneous 5-country expansion, Active Learning rollout to newly acquired institutions, and IPO preparation all require large-scale simultaneous change — profile explicitly characterizes culture as 'fundamentally conservative and execution-focused, not experimental'; direct tension between scale of change required and cultural capacity."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No DEI program data in profile; mission to serve underserved populations implicitly addresses equity at student level; no evidence of internal DEI programs or leadership diversity gaps identified — generic plausibility."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.46,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.45,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly states 'CHED also regulates tuition increase approvals, limiting pricing power' — direct evidence of regulatory pricing constraints; in a cost-rising environment (campus construction, tech investment), inability to price freely is a directly named structural tension."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "23% net margin with 'bare-bones, no-frills' cost discipline — cost structure is a documented organizational strength; however, tech investment for digital transformation and 5-country expansion capex are rising fixed costs; one weak signal that cost structure will come under pressure."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Tuition is near-sole revenue with no documented higher-margin offerings; Indonesia campuses (lower-fee markets) growing as proportion of network could shift mix — one weak indirect signal; no direct evidence."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms PHINMA delivers substantial value (board exam #1 rankings, 40K licensed professionals) but CHED price controls prevent capturing that value through premium pricing — structural value capture gap is a likely active strategic tension recognized by KKR."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.43,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "P4.5B from KKR + Kaizenvest fully closed August 2025 — capital is freshly and explicitly secured; the opposite of a capital access problem; extremely unlikely."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Tuition collected per semester creates predictable cash flows; P4.5B fresh capital injection provides buffer; 23% net margin — no evidence of liquidity strain; generic plausibility only for peak construction capex periods."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "P4.5B explicitly earmarked for 'expansion + digital transformation' — two competing priorities fighting for the same capital pool; simultaneous campus acquisitions in 5 countries plus tech buildout plus IPO readiness investments create very likely capital allocation tension."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "KKR Global Impact Fund II (SDG reporting requirements), Kaizenvest, PSE-listed parent PHINMA Corp (disclosure requirements), and deferred IPO optionality — multiple capital providers with different reporting requirements and time horizons create very likely investor relations management complexity."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.55,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly notes 'FY2024-25 figures sourced from press coverage, not SEC/PSE regulatory filing' and 'Indonesia financials not broken out separately from Philippines consolidated figures' — these are explicitly flagged reporting gaps in the profile itself."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-country expansion with simultaneous campus construction, acquisition pipeline, and enrollment growth to 300K target requires sophisticated multi-year financial modeling — ERP-native reporting without a BI layer (directly evidenced) makes advanced forecasting infrastructure unlikely to exist; very likely gap."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly flags 'Indonesia financials not broken out separately' as a gap — with 13 campuses in 2 countries, per-campus and per-country unit economics transparency is a directly acknowledged absence; KKR and pre-IPO readiness require this level of financial granularity."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "With 10-20 campuses planned across 5 countries and digital transformation investment, budgeting must integrate acquisition timelines, construction schedules, and tech buildout — no evidence of advanced budgeting infrastructure beyond ERP-native; strong contextual pattern."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.55,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly notes 'Indonesia operations generate IDR revenues against PHP/USD cost structures, creating FX exposure' and 'Philippine peso depreciation affects parent company consolidated reporting' — direct evidence of FX exposure across multi-currency operations."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms 'PEHI full audited financial statements not retrieved' and identifies multiple entity layers (PEHI, PHINMA Corp PSE-listed, Yayasan JVs in Indonesia) — financial compliance across listed parent, unlisted sub, and foreign JV entities is a structurally complex management task."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "13 semi-autonomous campuses each with local financial administration under central PEHI oversight — no evidence of a formal internal audit function; pre-IPO preparation explicitly described as in-progress suggests internal controls are being built rather than already established."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Yayasan JV structures in Indonesia required by foreign ownership regulations, PEHI holding structure, PSE-listed parent — intercompany complexity across multiple entities and jurisdictions with different tax regimes is a directly evidenced structural complexity challenge."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.47,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.48,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous competing priorities: Philippines campus upgrades (4 cities), Indonesia expansion (2 schools + Surabaya), Vietnam 2027 target, digital transformation mandate, and IPO preparation — with a lean 'bare-bones' HQ and a single dual-role CEO, priority overload is very likely."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Salazar's 'bare-bones, no-frills' conservative ethos vs. KKR's digital transformation and IPO readiness agenda — profile describes KKR mandate as a 'key priority' while the organizational culture is explicitly conservative; tension between PE investor agenda and founder-era culture is a strongly plausible leadership misalignment."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke with 13 semi-autonomous local presidents means strategic direction from Makati HQ must cascade through campus presidents — semi-autonomous governance creates natural strategy-execution gap risk; strong contextual pattern at this org structure and scale."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission is deeply embedded in operational decisions (provincial campus locations, affordable pricing, scholarship programs) — profile shows 22 years of consistent mission adherence; KKR explicitly selected PHINMA for SDG 4 alignment; mission drift is unlikely."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.35,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile documents 4-layer moat (CHED accreditation, board exam flywheel, campus density, subsidy lock-in) maintained over 22 years — current advantage erosion is low probability in Philippines; generic plausibility for Indonesia and Vietnam where moats do not yet exist."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Online education platforms (Coursera, local Philippine EdTech) and government free TVET could disrupt the employment-outcome model; no direct evidence of emerging threat disruption currently, but expansion into Indonesia and Vietnam exposes PHINMA to new competitive dynamics — one weak signal."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'strong provincial footprint competitors have not replicated' the model, suggesting PHINMA is watching the competitive landscape; however, no formal competitive intelligence function is documented; for Indonesia, Vietnam, Cambodia expansion, market intelligence is an acknowledged research gap."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "177K enrollment at record high, 14% YoY growth, market leader positioning, 5-country expansion — active growth is the opposite of market position stagnation; extremely unlikely."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.52,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "KKR's digital transformation mandate and IPO preparation suggest PHINMA must evolve beyond pure physical campus tuition — whether to online, corporate training, or platform models is not yet defined; profile notes 'no AI/GenAI curriculum integration' — business model evolution is a likely but not yet urgent strategic challenge."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly names KKR's digital transformation mandate as a 'key priority'; shift from vendor-managed to internal engineering is in-flight; data warehouse and analytics are direct evidence gaps; transformation is documented as required and actively underway but incomplete — strong circumstantial evidence of execution challenge."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "10-20 new campuses across 5 countries will require redesigning the hub-and-spoke structure — adding Indonesia Country Head was a first step; Vietnam, Cambodia, Laos will require regional management layers not yet in place; very likely structural reorganization need."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly states 'no evidence of internal innovation labs or rapid experimentation culture' and HONOR tablet donation is 'exploratory, not transformational' — core business (campus acquisition) is crowding out strategic innovation investment; very likely pattern."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No evidence of a crisis requiring recovery; PHINMA is financially strong (23% margins, fresh P4.5B capital) and growing; this problem is structurally inapplicable to current org state."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.55,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile documents KKR (Global Impact Fund II), Kaizenvest, Lenovo (DaaS/TruScale/EdVision), Yayasan Triputra Persada (Indonesia JV), and HONOR as active partnerships — managing multiple investor, operational, and JV partnerships with different objectives is a structurally likely active challenge."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "PHINMA's board exam reputation moat is campus-based and not ecosystem-positioned — no evidence of platform strategy, employer ecosystem play, or EdTech ecosystem integration; KKR's digital mandate will likely push ecosystem strategy development."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Salazar's prior EDCOM II business sector representation confirms active government engagement; managing CHED, PRC, DOH, DIKTI/Kemdikbud, and Vietnam/Cambodia/Laos regulatory bodies simultaneously across a scaling network is directly evidenced as a management challenge."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Silver Anvil PR Award for community bayanigan campaign and community-led GTM reflect strong community engagement in Philippines — in Indonesia and Vietnam expansion markets, community relationships must be built from zero; one weak signal."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.64,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Loss of CHED accreditation for healthcare programs described as 'an existential risk' — while PHINMA holds PACUCOA Level III (highest tier), newly acquired turnaround institutions may have compliance gaps upon acquisition; turnaround model specifically targets distressed institutions creating structural remediation exposure."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile documents active expansion into countries with entirely different regulatory frameworks (DIKTI/Kemdikbud in Indonesia, unnamed frameworks in Vietnam/Cambodia/Laos); Universal Tertiary Access Act evolution and CHED policy changes in Philippines — tracking and adapting to regulatory change across 5 countries is directly evidenced as a live challenge."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly flags CHED accreditation as an existential dependency; 13 campuses must maintain PACUCOA Level III across all institutions; newly acquired Kalbis University (2024) needs integration into accreditation standards; healthcare programs require PRC alignment — 3+ converging indicators of accreditation maintenance complexity."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "PSE disclosure requirements for PHINMA Corp (parent), KKR UN SDG alignment reporting, CHED program reporting, PRC licensure data, DOH hospital reports, and Indonesian DIKTI reporting — multi-regulator, multi-country reporting stack is directly evidenced."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile rates regulatory burden as 'heavy' with CHED, PRC, DIKTI, Data Privacy Act, and DOH as active simultaneous regulatory relationships — a 'bare-bones' lean HQ managing compliance across 13 campuses in 2 countries (expanding to 5) is a directly evidenced resource capacity challenge."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.38,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of active litigation; however, 177K students plus SWU Medical Center operations create exposure for student disputes and medical liability; generic plausibility at this org scale."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile documents Yayasan JV structures in Indonesia, Lenovo DaaS contracts, Mastersoft ERP licensing, KKR and Kaizenvest investment agreements — multiple active commercial contracts across 2 countries; for a lean HQ, contract management depth may be insufficient at this complexity level."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Glassdoor documents work-life balance 3.3/5 and below-market salaries — conditions associated with employment law risk; Indonesia has different labor law requirements than Philippines; one weak signal."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile mentions curriculum and PHINMA Ed Learning App as potential IP assets; no evidence of IP disputes; generic plausibility for an EdTech-transitioning organization."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "SWU Medical Center operations create healthcare liability exposure; 13 campuses with construction activity creates premises liability; no evidence of inadequate insurance coverage but profile does not confirm insurance adequacy — one weak signal."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.56,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "CTO won ISOG Cybersecurity Best CTO 2024 suggesting deliberate security investment; however 'no SOC2 or ISO27001 confirmed' with per-campus ERP instances and 177K student records — intermediate posture with no confirmed third-party validation; moderately likely gaps below the CTO level."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Philippine Data Privacy Act (RA 10173) applies to student records; DOH requirements apply to SWU Medical Center; Indonesia has separate privacy requirements — 177K student records plus medical records across 2 countries with no confirmed ISO27001 makes privacy compliance a very likely active management challenge."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'no evidence of a separate data warehouse' and describes per-campus ERP instances as the data architecture — inconsistent data definitions across 13 campus ERP instances without a data warehouse is direct evidence of data governance and quality gaps."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Mastersoft ERP processes student records across 13 campuses; Lenovo TruScale manages ~2,000 devices with data telemetry; Yayasan JV partners in Indonesia have access to student data — third-party data processors without confirmed DPA agreements is a plausible gap."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "CTO cybersecurity leadership suggests awareness; however no evidence of a documented breach response plan or tabletop exercises across 13 campuses — for an organization with 177K student records subject to Philippine NPC breach notification requirements, readiness is structurally required but unconfirmed."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.35,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "177K students including vulnerable first-generation youth plus SWU Medical Center teaching hospital — duty of care obligations are structurally significant; no direct evidence of safeguarding failures but scale creates systemic exposure; one weak signal."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Board exam rankings generate positive organic press; Silver Anvil PR Award; KKR investment framed as SDG 4 — media relations is managed effectively and public trust is high; generic plausibility for a potential accreditation or board exam scandal at this scale."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission-driven culture with published core values (Integrity as first value) and CEO home visits — no evidence of ethical conduct concerns; 22-year track record with no named scandal; unlikely."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "KKR investment signals high investor confidence; board exam rankings maintain public trust; however, KKR's digital transformation requirements create a confidence gap if delivery lags — one weak signal for the PE investor relationship."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.54,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.50,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies KKR, Kaizenvest, and PHINMA Corp as stakeholders but board composition of PEHI is not disclosed; pre-IPO governance infrastructure being built suggests board composition is being actively shaped; strong pattern for PE-backed companies preparing for IPO."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of board engagement problems; Salazar holds dual authority and KKR is actively engaged; generic plausibility for a founder-era CEO managing multiple board-level stakeholders."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Salazar serves simultaneously as Education CEO and Corp President/COO — this dual role concentrates governance and management authority in one person; KKR as PE investor introduces board oversight with different expectations than founder-controlled governance; moderately likely tension."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly states company is 'building financial track record and governance infrastructure consistent with pre-IPO preparation' — governance framework is explicitly described as under construction, constituting direct evidence of current framework inadequacy for the anticipated stage."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.60,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Salazar is a founding-era leader since 2004 who built the acquisition-turnaround model — strong in the established model; managing 5-country expansion simultaneously with digital transformation and pre-IPO preparation represents a new complexity level that may exceed any single leader's capacity; moderate pattern."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies central C-suite (CEO, COO, CFO, CIO, CAO, Country Head, Indonesia Head) — no evidence of dysfunction, but concentration of strategic authority in Salazar's dual role may suppress productive challenge from the exec team; generic plausibility."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "CTO Alex Ustaris is strong (industry awards); however, scaling digital transformation across 13 campuses with an engineering team being built from scratch, plus country-level leadership for Vietnam/Cambodia/Laos (not yet recruited), represent likely functional leadership gaps at the executive level."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly describes Salazar as 'founding-era leader (since 2004)' serving 22 years with 'dual-hat authority' as both Education CEO and Corp President/COO — profile names him as 'the decisive strategic entry point'; KKR PE investment with deferred IPO creates an exit horizon; founder-to-professional-management transition is a directly evidenced structural need."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.52,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke with 13 semi-autonomous local presidents who 'retain their own brand identity' while operating under shared network standards — the boundary between campus-level decisions and network-level decisions is structurally ambiguous; very likely pattern at this organizational complexity."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Salazar holds dual authority as Education CEO and Corp President/COO with acquisition decisions likely bottlenecking at his level; KKR board oversight adds a layer; pipeline campuses in 4 Philippine cities plus Surabaya with 'unclear timeline' per profile suggests decision speed on acquisitions may be constrained."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Per-campus ERP instances without a central data warehouse mean consolidated campus performance data is not automatically available to HQ decision-makers — directly evidenced architectural gap in decision information flow from 13 campuses to Makati headquarters."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Semi-autonomous campus presidents with own brands and admin suggest accountability diffusion between network standards and local execution — strong contextual pattern for hub-and-spoke networks at this scale."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "20-year track record of acquisition-and-turnaround execution with strong financial results (23% margins, 177K enrollment) — decision quality appears strong in the established model; generic plausibility for new domains (Vietnam regulatory environment, digital transformation investment choices)."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.60,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "PHINMA Corporation (PSE-listed majority owner) retains control while KKR and Kaizenvest hold minority stakes — structural entrenchment of parent company control limits PE investor influence on governance; for IPO preparation, this structural dynamic is a likely tension."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Salazar's 22-year tenure and dual authority creates conditions where informal influence may be significant — no direct evidence of shadow governance; generic plausibility for a founding-era CEO who has built all key relationships."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly names Salazar as 'architect of PHINMA Education's acquisition-and-turnaround model' and 'the decisive strategic entry point' — 22-year institutional relationship holder, dual-role authority, and named decision-maker for all major acquisitions constitutes direct evidence of key-person executive dependency."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly notes 'PEHI full audited financial statements not retrieved' and 'Indonesia financials not broken out separately' — external information accessibility gaps are a proxy for internal reporting transparency; combined with pre-IPO governance infrastructure being built from scratch, information asymmetry is a directly evidenced governance concern."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "hiring-recruitment-sourcing-reach",
+      "technology-infrastructure-integration-silos",
+      "technology-infrastructure-tooling-gaps",
+      "power-transparency-key-person",
+      "leadership-capability-transition"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 0,
+      "high": 25,
+      "medium": 65,
+      "low": 51,
+      "na": 0
+    }
+  }
+}

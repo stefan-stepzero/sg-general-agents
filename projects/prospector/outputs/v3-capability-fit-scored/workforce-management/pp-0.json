@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-talent-acquisition-candidate-screening-bottleneck-dup",
+  "pain_point_label": "Screening & Qualification Bottleneck",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "CVs are unstructured text containing key qualification signals — certifications, degrees, years of experience, subject specializations, and teaching registrations. Extracting these attributes automatically from hundreds of applications eliminates the manual read-through that creates the 2-4 week bottleneck. For a multi-campus education operator with no ATS, this is the foundational digitization step that enables all downstream screening logic.",
+      "opportunity_sketch": "An AI layer that parses uploaded CVs and extracts structured qualification fields (teaching license, subject area, years of experience, location, prior institution type) into a unified candidate record, replacing manual data entry across 10-15 campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Once CV text is available, a classifier can score each application against a defined rubric — qualified, underqualified, or needs review — replacing inconsistent human judgments across campuses. This directly addresses the duplicate effort and inconsistent qualification standards pain: the same model applies the same rubric everywhere, instantly. Multi-label classification can also flag specific disqualifiers (no registration, wrong subject area) without human reading.",
+      "opportunity_sketch": "A qualification-tier classifier trained or prompted on the operator's hiring criteria that auto-tags each CV as Pass/Review/Reject with a reason code, feeding a shared dashboard visible across all campuses simultaneously.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full screening workflow — receiving applications, parsing CVs, scoring against rubrics, deduplicating candidates who applied to multiple campuses, routing shortlists to the right campus coordinator — is a multi-step process that currently requires manual coordination across 10-15 sites. An automation agent can orchestrate this end-to-end, replacing the fragmented email/spreadsheet workflow that creates the 2-4 week delay. This is the capability that compresses the full pipeline rather than just one step.",
+      "opportunity_sketch": "An agent-driven applicant processing pipeline that ingests applications from a central intake form, runs extraction and classification, deduplicates cross-campus applicants, and delivers a ranked shortlist per campus — reducing time-to-shortlist from weeks to hours.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Beyond initial screening, allocating shortlisted candidates across campuses is a matching problem with hard constraints: a candidate's location, subject qualification, and availability must match a campus's open role and subject need. With 10-15 campuses competing for a thin provincial talent pool, naive assignment causes duplication and missed placements. Constraint satisfaction finds valid assignments that maximize overall coverage given hard qualification requirements and soft preferences.",
+      "opportunity_sketch": "A candidate-to-campus matching tool that takes the screened shortlist and assigns candidates to interview slots at the most suitable campus, respecting qualification fit, travel feasibility, and campus priority — preventing two campuses from pursuing the same candidate independently.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

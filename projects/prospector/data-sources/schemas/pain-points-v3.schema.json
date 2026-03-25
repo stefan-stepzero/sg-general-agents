@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "pain-points-v3.schema.json",
+  "title": "CompanyPainPoints",
+  "description": "Pain points (v3) entry for one org — extracted from pain-points-v3.json keyed by org ID",
+  "type": "object",
+  "required": ["name", "domains"],
+  "properties": {
+    "name": { "type": "string" },
+    "domains": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/PainDomain" }
+    }
+  },
+  "definitions": {
+    "PainDomain": {
+      "type": "object",
+      "required": ["domain", "pain_points"],
+      "properties": {
+        "domain": { "type": "string" },
+        "pain_points": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/PainPointV3" }
+        }
+      }
+    },
+    "PainPointV3": {
+      "type": "object",
+      "required": ["id", "title", "severity", "evidence", "unknowns", "sources"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "significant", "moderate", "low"]
+        },
+        "evidence": { "type": "string" },
+        "unknowns": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

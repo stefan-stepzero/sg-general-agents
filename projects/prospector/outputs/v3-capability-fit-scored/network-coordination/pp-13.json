@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-performance-benchmarking-external-benchmark-absence-dup",
+  "pain_point_label": "Absence of External Benchmark Data",
+  "matches": [
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The core pain is operating in isolation without peer data — precisely what a research agent addresses. An autonomous agent can continuously gather publicly available data from government education portals, accreditation bodies, employer surveys, and peer institution reports across multiple sources, synthesizing it into structured benchmark comparisons. This directly solves the absence of external reference points without requiring data-sharing agreements.",
+      "opportunity_sketch": "An agent that weekly crawls government education statistics portals, industry association reports, and employer competency surveys, then synthesizes findings into a benchmarking dashboard comparing the network's KPIs (graduation rates, employment outcomes, student-to-staff ratios) against peer institutions of similar size and funding model.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Large volumes of publicly available benchmark data exist in government reports, accreditation documents, and industry publications — but they are lengthy and heterogeneous. Summarization AI can condense multi-hundred-page sector reports into the specific metrics relevant to a 500+ staff education operator, making external benchmark data actionable without manual analyst work.",
+      "opportunity_sketch": "A document-ingestion pipeline that automatically summarizes annual government education sector reports, employer graduate competency surveys, and accreditation body publications into 1-page benchmark briefs tailored to the operator's specific programme areas and funding model.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Benchmark data is scattered across disparate public documents with inconsistent terminology — extracting the relational facts (institution X achieves Y% employment rate under Z funding conditions) requires relationship extraction to build a structured comparison knowledge base. This is more powerful than entity extraction alone because the operator needs to understand how performance metrics relate to context variables (size, location, funding model) across peers.",
+      "opportunity_sketch": "A pipeline that ingests public sector reports and accreditation data to construct a knowledge graph of peer institution performance — allowing the network to query 'what do institutions with similar size and government-funding achieve on outcome X?' with structured, citable answers.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Leadership and campus heads need to ask specific comparative questions (e.g., 'how does our Year 12 retention rate compare to government-funded peers in regional areas?') against a corpus of external benchmark documents. RAG enables grounded, citation-backed answers from ingested sector reports, removing the need for manual literature review while ensuring responses are traceable to authoritative sources.",
+      "opportunity_sketch": "An internal Q&A tool over a corpus of indexed government education statistics, accreditation body publications, and employer survey reports — allowing principals and network executives to ask natural-language benchmark questions and receive sourced comparative answers without hiring a dedicated research analyst.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once external benchmark data is assembled, the operator still needs to communicate performance positioning to boards, government funders, and staff. Text generation can produce narrative benchmark reports that contextualise the network's metrics against peer institutions, translating raw comparisons into board-ready strategic language — addressing the governance dimension of the pain point.",
+      "opportunity_sketch": "An automated benchmark narrative generator that takes structured comparison data (operator metrics vs. sector averages) and produces a polished 2-4 page board report section framing performance in context, highlighting strengths, and flagging competitive gaps with recommended response language.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

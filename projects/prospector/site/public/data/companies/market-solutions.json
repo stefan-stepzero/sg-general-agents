@@ -1,0 +1,256 @@
+{
+  "cspd": {
+    "name": "Catholic Schools Parramatta Diocese",
+    "generated_date": "2026-03-25",
+    "solutions": [
+      {
+        "org_name": "Catholic Education Canberra-Goulburn (CECG)",
+        "relationship": "lookalike",
+        "pain_addressed": "Poor and inconsistent student literacy and numeracy outcomes; teachers lacking structured curriculum resources and evidence-based instructional frameworks",
+        "solution": "Catalyst program — system-wide explicit instruction rollout (High Impact Teaching Practice / HITP) with structured curriculum resources developed in partnership with Ochre Education and a professional learning program built on the Science of Learning",
+        "detail": "Launched 2020 across all 56 schools. 5,400+ professional learning units completed; 5,400+ curriculum resources developed for primary English and Mathematics. Deloitte Access Economics commissioned as external evaluator from inception, publishing findings in 2024. Teachers save up to 6 hours/week through structured resources. 4 in 5 teachers recommend the approach.",
+        "outcome": "successful",
+        "outcome_evidence": "75% of CECG students assessed as proficient readers in 2024 vs national average of 66%. 13 of top 20 ACT schools 'making the most difference' (ACARA 2023/24) were CECG schools. Multiple CECG schools (e.g. Sts Peter and Paul Primary Garran, St Vincent's Primary Aranda) achieving scores above ACT, NSW and national averages.",
+        "source": "https://catalyst.cg.catholic.edu.au/the-impact/; https://region.com.au/catholic-schools-show-way-as-new-explicit-teaching-approach-reaps-naplan-rewards/694918/",
+        "implication": "CSPD's Uplift framework (launched August 2025) is directly modelled on CECG's Catalyst approach — the new EGM Learning Outcomes Patrick Ellis came from CECG. CECG's 5-year trajectory is the closest available roadmap for what CSPD can expect: professional learning infrastructure investment, curriculum resource production at scale, and external evaluation as a credibility mechanism. The Catalyst timeline suggests CSPD should invest now in structured resources and external evaluation to have measurable outcomes to report by 2027-2028."
+      },
+      {
+        "org_name": "Melbourne Archdiocese Catholic Schools (MACS)",
+        "relationship": "lookalike",
+        "pain_addressed": "Inconsistent instructional quality and literacy/numeracy outcomes across a large school network; need for a system-wide pedagogical framework that teachers can practically implement",
+        "solution": "Vision for Instruction (VFI) — launched February 2024 across all 291 primary schools; system-wide adoption of explicit instruction for literacy, mathematics, and writing; teacher professional development and curriculum resources aligned to the Science of Learning",
+        "detail": "VFI is part of MACS 2030 strategy. Accompanied by Vision for Engagement (managing screen time, student wellbeing) and Vision for Leadership. Rollout was system-directed — not optional. MACS Chief of Education Shauna-Maree Sykes publicly attributed NAPLAN numeracy improvements to VFI.",
+        "outcome": "successful",
+        "outcome_evidence": "Schools that were early adopters of explicit instruction (pre-VFI) showed NAPLAN improvements of up to 46 percentage points. MACS reported 'widespread shift in proficiency levels in Year 3, 5, 7 and 9 in numeracy' following VFI rollout across 291 primary schools.",
+        "source": "https://www.macs.vic.edu.au/News-Events/Media-Releases/2024/Vision-for-Instruction.aspx; https://cathnews.com/2025/09/18/new-way-of-teaching-sees-boost-in-naplan-results/",
+        "implication": "MACS is one year ahead of CSPD on the same pedagogical transformation. Their early NAPLAN data provides the strongest publicly available benchmark for what CSPD's Uplift framework can achieve by 2026-2027. MACS's companion frameworks (Vision for Engagement on screen time, Vision for Leadership) suggest CSPD will need parallel investments in school leadership capability and student wellbeing infrastructure as Uplift scales."
+      },
+      {
+        "org_name": "Melbourne Archdiocese Catholic Schools (MACS)",
+        "relationship": "lookalike",
+        "pain_addressed": "Fragmented, legacy HR and finance systems unable to support a network of ~300 schools; no unified digital infrastructure to enable AI adoption or centralised reporting",
+        "solution": "Cloud ERP transformation: SAP S/4HANA Cloud (finance/operations) + SAP SuccessFactors (HR/people) deployed by Infosys across all ~300 schools; unified identity and access management; master data management",
+        "detail": "Announced July 2025. Programme designed to give every staff member role-based access to a single digital workspace; enable team-based communities; streamline communication. Explicit AI-readiness framing: 'paves the way to adopt generative AI applications geared towards educational outcomes.' Rollout in waves to allow adoption at school level.",
+        "outcome": "unknown",
+        "outcome_evidence": "Announced July 2025; implementation ongoing. No published outcome data yet.",
+        "source": "https://www.prnewswire.com/apac/news-releases/infosys-collaborates-with-melbourne-archdiocese-catholic-schools-to-drive-network-wide-digital-transformation-302506455.html",
+        "implication": "CSPD's CIO role was elevated in November 2023 and the system runs Canvas LMS + Classm8 + Grace intranet across 80+ schools. The MACS ERP investment signals that at CSPD's scale, fragmented finance/HR/people systems are a material risk to operational efficiency and AI readiness. CSPD should assess whether its current back-office infrastructure can support the data integration required for Uplift's formative assessment loop and future AI tools."
+      },
+      {
+        "org_name": "Brisbane Catholic Education (BCE)",
+        "relationship": "lookalike",
+        "pain_addressed": "Teacher burnout and workload — nearly half of Australian educators surveyed in 2023 considered leaving the profession; administrative burden consuming teaching time and contributing to attrition",
+        "solution": "Microsoft 365 Copilot deployment to 12,500 educators and support staff — largest K-12 generative AI rollout globally. Custom Copilot Studio solution grounded in Catholic values to guide lesson planning with Catholic lens. Phased rollout Jan 2025 to 2026.",
+        "detail": "Trial at St Francis College Crestmead showed average 9.3 hours saved per teacher per week in administrative tasks, information search, and lesson/curriculum planning. BCE also launched a custom AI chatbot across 146 schools — first sector-wide generative AI chatbot in a non-government school system. Students use Copilot to take ownership of their learning.",
+        "outcome": "successful",
+        "outcome_evidence": "9.3 hours/week saved per teacher in trial. 8 pilot schools using AI-assisted teaching grew NAPLAN scores from 490 to 555 (2023 to 2024); Year 3 improved 7.22% while state average fell 0.57%.",
+        "source": "https://news.microsoft.com/en-au/features/brisbane-catholic-education-to-deploy-microsoft-365-copilot-to-12500-educators-and-support-staff-in-largest-rollout-for-k-12-globally/; https://cathnews.com/2025/08/06/ai-helps-boost-naplan-results-in-brisbane-catholic-schools/",
+        "implication": "CSPD's 69% employee engagement score and Uplift framework implementation both depend on retaining and energising teachers. BCE's Copilot trial data (9+ hours/week saved) is the most credible published evidence of AI's workload impact in Australian Catholic schools. CSPD currently blocks open generative AI ('domed' approach) — this is appropriate risk management but BCE's custom-grounded model shows a pathway to providing AI tools within a controlled, values-aligned environment. The teacher retention business case for AI tools is now empirically supported."
+      },
+      {
+        "org_name": "Catholic Education Western Australia (CEWA)",
+        "relationship": "lookalike",
+        "pain_addressed": "Inability to identify at-risk students early; principals lacking real-time, integrated data to compare school performance, track initiatives, or intervene before students fall behind",
+        "solution": "LEADing Lights platform — single Microsoft cloud platform (Dynamics 365, Office 365, Claned) integrating student performance, attendance, wellbeing, HR, and finance data across all 164 schools; principal-level Power BI dashboards with real-time benchmarking against NAPLAN, WACE, system averages and past years",
+        "detail": "Platform goal: move from 'big picture analytics' to 'moment in time, individual person recommendations' — flagging unusual absence patterns or unexpected assessment drops for individual students. Three-year Microsoft global partnership for data science expertise. 90,000+ M365 accounts, 1PB+ data. Also includes historical reporting back 15 years. Connectivity investment: dual NBN fibre + 4G into all 164 schools, 400%+ speed increase.",
+        "outcome": "mixed",
+        "outcome_evidence": "Platform is operational; connectivity investment complete. Predictive individual-student recommendations remain aspirational ('want to move to' framing in 2023 reporting). No published student outcome data attributable directly to LEADing Lights.",
+        "source": "https://www.cio.com/article/213543/catholic-education-western-australia-to-apply-data-science-to-school-life.html; https://itbrief.com.au/story/catholic-education-wa-boosts-microsoft-365-data-resilience-with-cloud",
+        "implication": "CSPD's Uplift framework relies on formative assessment data — but the system's ability to aggregate and act on that data at scale depends on infrastructure that does not yet appear to exist at the CSPD system level. CSPD's Canvas LMS deployment gives it a data collection layer; what it likely lacks is the analytics and reporting layer that CEWA has built. A CSPD equivalent of LEADing Lights — even a lighter version — would turn Uplift from a school-level practice into a system-level intelligence capability."
+      },
+      {
+        "org_name": "Catholic Education Western Australia (CEWA)",
+        "relationship": "lookalike",
+        "pain_addressed": "Fragmented IT service management across 164 geographically dispersed schools; email-based legacy helpdesk unable to support centralised operations after corporate governance restructure in 2020",
+        "solution": "Freshservice ITSM platform deployed system-wide — unified incident/change management, self-service portal, automated onboarding/offboarding workflows, asset lifecycle management (via Discovery Agent and Jamf integration for Apple devices), team and leadership dashboards",
+        "detail": "Replaced a rigid, email-based ITSM system after CEWA's 2020 governance restructure that centralised operations. Workflow Automator simplified ticket management. Change Advisory Board established. Schools are now requesting their own localised Freshservice implementations.",
+        "outcome": "successful",
+        "outcome_evidence": "Improved agent morale; enhanced transparency between IT staff and school principals; increased demand from schools for Freshservice access. No quantified metrics published.",
+        "source": "https://www.freshworks.com/customers/stories/cewa/",
+        "implication": "CSPD underwent a similar governance restructure in January 2023 (new company limited by guarantee, CIO role created November 2023). If CSPD's IT service management is still fragmented across 80+ schools, the CEWA Freshservice model is a directly applicable reference. Low-complexity, high-visibility quick win."
+      },
+      {
+        "org_name": "Catholic Schools NSW (CSNSW) — all dioceses incl. SCS",
+        "relationship": "lookalike",
+        "pain_addressed": "School leaders and system administrators spending 6-8 weeks annually manually locating and reconciling data across multiple siloed school systems; inability to combine attendance, extracurricular, and academic data for integrated student insights",
+        "solution": "NSW Catholic Data and Analytics Platform — Azure Databricks for data ingestion from all schools and dioceses; Power BI for reporting; Analytics Workbench and DataShare for agile analytics; implemented with Microsoft partner Insight",
+        "detail": "Serves 257,000 students across 11 NSW dioceses plus 46 independent Catholic schools. Automatically ingests NSW Department of Education census data. Enables per-school dashboards combining attendance, extracurricular and academic data. 'Literally saving hundreds of hours of time.'",
+        "outcome": "successful",
+        "outcome_evidence": "6-8 weeks per year saved in data reconciliation per diocese. Instant access to Department of Education census requirements previously requiring manual compilation.",
+        "source": "https://news.microsoft.com/en-au/features/catholic-schools-nsw-chalks-up-big-data-and-analytics-win-for-schools-and-students/",
+        "implication": "CSPD is one of the 11 NSW dioceses served by this platform. To the extent CSPD is already connected to the CSNSW data platform, the marginal investment is adding school-level and student-level analytics on top of the existing foundation. The priority is not building from scratch — it is activating the system-level data CSPD already produces through Canvas LMS and Classm8 and surfacing it in a form principals can act on."
+      },
+      {
+        "org_name": "Sydney Catholic Schools (SCS)",
+        "relationship": "lookalike",
+        "pain_addressed": "School reports that parents describe as uninformative; over-reliance on twice-yearly academic grade summaries that fail to communicate the full picture of student development",
+        "solution": "New student assessment and reporting framework being developed with Boston College researchers; measures creativity, discernment, resilience, practical wisdom, and problem-solving alongside academic results; questions whether twice-yearly reporting cycle should continue",
+        "detail": "Announced February 2026 by ED Danielle Cronin. Described as part of the eight-year Magis 2033 strategic plan. Framework under development — no implementation date confirmed. NAPLAN and HSC remain relevant but are not the only lens.",
+        "outcome": "unknown",
+        "outcome_evidence": "Framework still in development as of February 2026.",
+        "source": "https://cathnews.com/2026/02/04/sydney-catholic-schools-reveals-plan-to-fix-school-reports/",
+        "implication": "CSPD's Five-Year Strategic Plan (2024-2029) includes 'Relevance' as a pillar — student and family experience of education is explicitly a strategic priority. SCS's reporting overhaul signals that the sector is converging on broader, richer parent communication as a differentiation strategy. CSPD has Canvas LMS deployed system-wide, which already generates granular student engagement and assessment data. The infrastructure for more frequent, richer reporting to parents may already exist — the question is whether it is being surfaced effectively."
+      }
+    ],
+    "patterns": [
+      {
+        "label": "Explicit instruction as the dominant pedagogical intervention",
+        "detail": "Three of five lookalikes (CECG, MACS, BCE) have deployed system-wide explicit instruction frameworks. All three report measurable NAPLAN improvements. The evidence base is now strong enough that this is no longer an experimental approach — it is sector consensus. CSPD's Uplift launch in 2025 is consistent with this pattern but is 1-5 years behind peers. Speed of implementation and quality of curriculum resource production will be the key differentiators.",
+        "count": 3
+      },
+      {
+        "label": "AI for teacher workload relief — ahead of AI for student learning",
+        "detail": "BCE's Copilot deployment is the most advanced example; CECG's curriculum resources also reduce teacher planning time. The primary AI use case being deployed at scale in Catholic systems is administrative and lesson planning burden reduction, not direct student-facing AI. BCE's 9.3 hours/week saving per teacher is the most-cited figure in the sector and creates a benchmark CSPD will be expected to respond to. CSPD's current 'domed' AI policy (blocking open generative AI) is defensible but may create tension as peer systems demonstrate teacher retention benefits.",
+        "count": 2
+      },
+      {
+        "label": "Cloud data platforms as the precondition for AI and analytics",
+        "detail": "CEWA (LEADing Lights), CSNSW (Azure Databricks), and MACS (SAP S/4HANA) have all made large infrastructure investments in unified cloud data platforms before deploying AI or advanced analytics. This is a consistent pattern: the data plumbing has to come first. CSPD's challenge is that Canvas LMS gives it a rich data layer for learning, but back-office (finance, HR, facilities) data likely remains siloed. Without integration, the 'full student view' that CEWA aspires to remains impossible.",
+        "count": 3
+      },
+      {
+        "label": "External evaluation as a credibility mechanism",
+        "detail": "CECG commissioned Deloitte Access Economics as an independent external evaluator from day one of Catalyst. MACS cited independent NAPLAN analysis for VFI outcomes. BCE cited Black Dog Institute research on teacher burnout. Catholic systems are increasingly using external evaluation partnerships to validate strategic investments and build public trust. CSPD endorsed Uplift with AERO CEO Dr Jenny Donovan — this is a solid start, but a longitudinal external evaluation commitment would strengthen credibility.",
+        "count": 3
+      },
+      {
+        "label": "Workforce retention as a strategic platform investment",
+        "detail": "BCE's Copilot deployment is explicitly framed around teacher retention (Black Dog Institute burnout data). CECG's curriculum resources reduce teacher planning load. CEWA's data platform includes staff wellbeing metrics. The sector has moved from treating workforce as an HR problem to treating it as a platform investment problem — the systems that retain teachers are investing in reducing cognitive load and improving working conditions through technology.",
+        "count": 3
+      }
+    ],
+    "gaps": [
+      "No peer has published a credible solution to the LBOTE student support challenge at scale. CSPD has 53.4% LBOTE students (vs 36% NSW Catholic sector average). CECG, MACS and BCE operate in more homogeneous demographic contexts. This is CSPD's most distinctive structural characteristic and no market solution exists that has been validated at comparable scale.",
+      "High-growth greenfield school establishment: CSPD is opening new schools (Sacred Heart Westmead, Term 3 2026) in a rapidly expanding corridor while managing 500+ applicants turned away annually. No peer has documented a technology or operational model for managing rapid school establishment while maintaining system coherence.",
+      "Operating deficit management: CSPD's -$20.6m operating deficit (2023) against $857m revenue is a structural financial challenge that none of the researched lookalikes have publicly addressed. No peer has documented technology investments explicitly framed around cost reduction or revenue diversification for Catholic diocesan systems.",
+      "Catholic identity formation + technology: CSPD has a dedicated Formation Foundation document and Faith in Action Coordinators in every school. BCE's AI chatbot is grounded in Catholic values but no peer has published a rigorous account of how digital platforms interact with (or undermine) Catholic identity formation. This is an unaddressed design challenge for CSPD's AI policy evolution.",
+      "Aboriginal and Torres Strait Islander student engagement: CSPD's fee waiver for Aboriginal and Torres Strait Islander families from 2026 and Innovate RAP 2025-2027 are forward-looking. No peer in this study has documented a technology-enabled model for supporting First Nations students in a predominantly suburban Catholic school context."
+    ]
+  },
+  "acasus": {
+    "name": "Acasus",
+    "solutions": [
+      {
+        "org_name": "IDinsight",
+        "relationship": "lookalike",
+        "pain_addressed": "Scaling data capabilities beyond project work",
+        "solution": "Embedded data science team as a service line",
+        "detail": "IDinsight built a permanent data science practice that serves both internal projects and external clients directly. Positioned as a differentiator vs traditional development consultancies.",
+        "outcome": "successful",
+        "source": "IDinsight website and annual report"
+      },
+      {
+        "org_name": "Oxford Policy Management",
+        "relationship": "lookalike",
+        "pain_addressed": "Revenue concentration on few large donors",
+        "solution": "Diversification into commercial advisory",
+        "detail": "OPM expanded from pure donor-funded work into commercial government advisory, reducing dependency on DFID/FCDO contracts. Now serves middle-income country governments directly.",
+        "outcome": "mixed",
+        "source": "OPM annual accounts (Companies House)"
+      },
+      {
+        "org_name": "Palladium",
+        "relationship": "competitor",
+        "pain_addressed": "Scaling delivery without proportional headcount growth",
+        "solution": "Technology-enabled program management platform",
+        "detail": "Palladium invested in proprietary program management and M&E tooling to standardise delivery across country offices, reducing the consultant-heavy model.",
+        "outcome": "successful",
+        "source": "Palladium Impact Report 2023"
+      }
+    ],
+    "patterns": [
+      {
+        "label": "Data/tech as a named service line",
+        "detail": "Development consultancies (IDinsight, Palladium, DAI) are all building dedicated data/technology practices rather than treating tech as a project add-on. Acasus's Budapest data team fits this pattern.",
+        "count": 4
+      },
+      {
+        "label": "Diversifying away from single-donor dependency",
+        "detail": "OPM, Dalberg, and R4D have all expanded client base beyond traditional bilateral donors to include foundations, multilateral banks, and commercial government contracts.",
+        "count": 3
+      }
+    ],
+    "gaps": [
+      "AI-powered policy analysis — no development consultancy has productised AI for policy document analysis or evidence synthesis at scale",
+      "Real-time program monitoring using satellite/remote sensing — discussed in the sector but no boutique has operationalised it"
+    ]
+  },
+  "phinma": {
+    "name": "PHINMA Education",
+    "solutions": [
+      {
+        "org_name": "Cogna Educacao",
+        "relationship": "lookalike",
+        "pain_addressed": "Scaling student support across campuses",
+        "solution": "AI-powered adaptive learning platform (Kroton)",
+        "detail": "Cogna's Kroton subsidiary deployed adaptive learning technology across its network of 170+ campuses in Brazil, personalising content delivery for low-income students with varied preparation levels.",
+        "outcome": "mixed",
+        "source": "Cogna annual report and investor presentations"
+      },
+      {
+        "org_name": "iPeople Inc",
+        "relationship": "competitor",
+        "pain_addressed": "Board exam pass rates as competitive differentiator",
+        "solution": "Intensive review programs and faculty incentives",
+        "detail": "iPeople invested in dedicated board exam review centres and performance-linked faculty compensation to drive engineering and nursing pass rates.",
+        "outcome": "successful",
+        "source": "iPeople SEC filings (PSE)"
+      },
+      {
+        "org_name": "Strategic Education (Capella/Strayer)",
+        "relationship": "lookalike",
+        "pain_addressed": "Student retention in affordable HE segment",
+        "solution": "Predictive analytics for at-risk students",
+        "detail": "Deployed machine learning models to identify students likely to drop out based on engagement, grades, and financial signals. Triggers proactive advisor outreach.",
+        "outcome": "successful",
+        "source": "Strategic Education investor day 2023"
+      }
+    ],
+    "patterns": [
+      {
+        "label": "Adaptive learning tech for scale",
+        "detail": "Affordable HE operators in Brazil (Cogna, Yduqs) and US (Strayer) have all invested in adaptive platforms. PHINMA's scale (177K students) makes this pattern relevant.",
+        "count": 3
+      },
+      {
+        "label": "Predictive retention models",
+        "detail": "At-risk student identification using data is now standard at scale operators. Each 1% retention improvement = ~1,780 students for PHINMA.",
+        "count": 3
+      }
+    ],
+    "gaps": [
+      "Employer-connected curriculum — no affordable HE operator has built real-time labour market feedback into curriculum design despite employability being the core value proposition",
+      "Cross-country student mobility — PHINMA operates in Philippines and Indonesia but has no framework for credit transfer or student exchange between its own institutions"
+    ]
+  },
+  "kinetic": {
+    "name": "Kinetic",
+    "solutions": [],
+    "patterns": [],
+    "gaps": []
+  },
+  "ipeople": {
+    "name": "iPeople Inc",
+    "solutions": [],
+    "patterns": [],
+    "gaps": []
+  },
+  "rising": {
+    "name": "Rising Academies",
+    "solutions": [],
+    "patterns": [],
+    "gaps": []
+  },
+  "school-for-life": {
+    "name": "School for Life",
+    "solutions": [],
+    "patterns": [],
+    "gaps": []
+  },
+  "wise": {
+    "name": "WISE",
+    "solutions": [],
+    "patterns": [],
+    "gaps": []
+  }
+}

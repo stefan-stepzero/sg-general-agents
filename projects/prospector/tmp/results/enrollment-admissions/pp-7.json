@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "enrollment-admissions-application-processing-assessment-bottleneck-dup",
+  "pain_point_label": "Entrance Assessment & Interview Scheduling Bottleneck",
+  "matches": [
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core bottleneck is a capacity and scheduling problem: limited proctors, venues, and time slots must be matched against applicant demand. AI-driven scheduling can optimize proctor and venue assignments across multiple campuses, spread demand across available windows, and auto-resolve conflicts — directly attacking the manual scheduling and limited-venue causes. This is technically well-suited to constraint-aware scheduling systems that a 500-staff operator could deploy via SaaS integration.",
+      "opportunity_sketch": "An AI scheduling engine that ingests applicant volume, venue capacity, proctor availability, and parent time preferences across all campuses, then produces conflict-free schedules and automatically offers rescheduling slots when cancellations occur.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Beyond simple scheduling, assessment bottlenecks involve satisfying multiple simultaneous hard constraints: proctor certifications per exam type, venue accessibility requirements, applicant age cohort groupings, and blackout dates. This overlaps with but is distinct from time-based scheduling — the configuration space includes which proctor can run which exam at which venue for which applicant cohort. Constraint satisfaction finds valid combinations that pure scheduling optimization might miss.",
+      "opportunity_sketch": "A constraint-based assignment engine that matches applicants to assessment slots respecting proctor qualification, venue type, campus proximity preferences, and cohort-grouping rules — surfacing valid configurations that a manual coordinator would take hours to find.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A significant share of the pain is parent-facing: unpredictable timelines, difficulty rescheduling, and frustration with communication gaps. A conversational agent can handle inbound parent inquiries about assessment dates, proactively notify parents of available slots, guide rescheduling workflows, and answer FAQ — reducing staff load on the admissions office while improving the parent experience. Multi-site operators are particularly likely to adopt this because the volume of parent contacts scales with campus count.",
+      "opportunity_sketch": "A parent-facing chat agent integrated into the admissions portal that answers assessment timeline questions, surfaces available slots, collects rescheduling requests, and escalates to staff only when human judgment is required.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Manual scheduling coordination involves multiple steps: checking applicant eligibility, querying venue/proctor availability across systems, sending confirmation emails, logging bookings, and triggering reminders. An automation agent can execute this end-to-end workflow across the SIS, calendar, and email systems — eliminating the manual coordination that causes delays and conflicts. For a multi-site operator running the same workflow across many campuses, the ROI multiplies with site count.",
+      "opportunity_sketch": "A workflow automation agent that, upon application approval, queries cross-campus capacity, books an assessment slot, sends parent confirmation with calendar invite, and triggers reminder sequences — with human review only for edge cases like applicants needing special accommodations.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "No-show and cancellation rates directly worsen the bottleneck: reserved slots go unfilled while other applicants wait. Propensity models trained on historical applicant data (distance from campus, application completeness, prior contact responsiveness) can predict no-show likelihood, enabling overbooking of slots at calibrated rates or priority outreach to at-risk bookings. This is a tractable ML problem for an operator with 2+ years of admissions data.",
+      "opportunity_sketch": "A no-show propensity model that scores each booked applicant and triggers targeted reminder campaigns or flags slots for controlled overbooking, improving effective assessment capacity without adding venues or proctors.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Parent frustration stems partly from unclear, delayed, or impersonal communications about assessment timelines. AI text generation can produce personalized confirmation emails, status update messages, rescheduling notifications, and FAQ responses at scale — ensuring every parent receives timely, consistent communication without additional staff effort. This is a lightweight capability that directly addresses the 'unpredictable timelines' and communication pain.",
+      "opportunity_sketch": "Automated generation of personalized assessment confirmation, delay notification, and rescheduling emails that incorporate each applicant's specific slot details, campus location, and next-step instructions — triggered by status changes in the admissions system.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Assessment bottlenecks are partly a demand planning failure: single-date events become oversubscribed because capacity was not expanded ahead of application surges. Time series forecasting on historical application volumes (by campus, cohort, month) can predict peak demand windows, enabling operators to pre-schedule additional assessment dates, proactively engage more proctors, and avoid reactive oversubscription.",
+      "opportunity_sketch": "A demand forecasting model that predicts application volume by campus and intake cycle, triggering advance scheduling of additional assessment sessions before oversubscription occurs — shifting the operator from reactive capacity management to proactive planning.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

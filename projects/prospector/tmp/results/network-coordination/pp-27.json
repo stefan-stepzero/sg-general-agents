@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-brand-identity-reputation-interdependence-dup",
+  "pain_point_label": "Reputation Interdependence & Quality Variance Exposure",
+  "matches": [
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Social media complaints, reviews, and parent feedback about individual campuses generate a continuous stream of text that can be classified by sentiment, urgency, and topic, enabling the network to detect reputational signals from a specific site before they cascade. A multi-site education operator can route this monitoring across all campuses simultaneously, flagging negative sentiment at any location in near-real-time. This directly addresses the pain of not having a mechanism to contain or anticipate cross-site reputational risk.",
+      "opportunity_sketch": "An automated social listening and review-monitoring system that classifies incoming public mentions (Google reviews, Facebook, local news) by campus, sentiment, and urgency, triggering alerts when a site crosses a risk threshold — allowing central leadership to intervene before a local complaint becomes a network story.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Quality variance across campuses — enrolment drops, complaint spikes, attendance anomalies, or accreditation-related metric deviations — represents abnormal patterns in structured operational data that anomaly detection is purpose-built to surface. For a 500+ staff operator, early detection of a campus drifting below network norms allows intervention before the reputational damage becomes visible externally. This addresses quality variance exposure at its root: detecting the operational signal before the reputational consequence.",
+      "opportunity_sketch": "A network-wide quality monitoring dashboard that ingests campus-level KPIs (complaints, attendance, assessment outcomes, inspection scores) and flags campuses exhibiting statistically anomalous patterns, giving central leadership early warning of sites at risk of damaging the network brand.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Reputational risk for a multi-site education operator is distributed across dozens of public channels — review platforms, social media, regulatory notices, local news, and accreditation body announcements. A research agent can autonomously monitor and synthesize these sources across all campuses, producing a structured reputational intelligence brief that human staff cannot consistently maintain. This directly addresses the lack of a mechanism to contain or even detect cross-campus reputational exposure.",
+      "opportunity_sketch": "A scheduled research agent that sweeps public reputation signals for every campus weekly, synthesizes findings into a network reputational health report, and surfaces which sites carry elevated risk — enabling proactive reputation management rather than reactive crisis response.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The strong reputation of a flagship campus is not being systematically leveraged for satellite sites — a content gap that text generation directly addresses. AI can produce campus-specific communications, parent newsletters, accreditation narrative drafts, and brand-aligned marketing copy that embeds network-level reputation signals while personalising them to each site. This converts the flagship's reputational equity into reusable content assets across the network.",
+      "opportunity_sketch": "A templated content generation system where central brand guidelines and flagship success narratives are used to auto-draft site-specific communications (newsletters, website copy, open day materials) for satellite campuses, ensuring consistent brand voice and leveraging network reputation at every site.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "When an accreditation issue or public complaint at one campus arises, network leadership needs to quickly retrieve and synthesize relevant policy, past responses, and comparable precedents to draft a defensible and brand-consistent response. RAG enables a grounded question-answering system over the network's internal document corpus — policies, past communications, inspection reports — ensuring responses are accurate, consistent, and reflect the network's stated standards rather than being improvised per campus.",
+      "opportunity_sketch": "An internal knowledge assistant that allows campus principals and central communications staff to query network policies, past accreditation responses, and approved messaging templates — ensuring every campus response to a reputational incident is consistent, policy-grounded, and aligned with the network's brand position.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

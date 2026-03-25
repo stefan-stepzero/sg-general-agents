@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "site-facilities-maintenance-repair-unfunded-maintenance-backlog-grows-uncontrolled-dup",
+  "pain_point_label": "Unfunded Maintenance Backlog Grows Uncontrolled Due to Budget Constraints",
+  "matches": [
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The unfunded maintenance backlog is a compound risk problem: each deferred item carries a probability and severity of failure that, if unscored, gets treated as a uniform 'someday' list. An AI risk scoring model trained on asset type, age, condition rating, and failure history could assign each backlog item a structural/safety/compliance risk score — surfacing items likely to cause emergency failure or regulatory citation before they do. For a 500+ staff education operator managing dozens of buildings, this turns a flat backlog into a prioritized risk register that leadership can defend to a board.",
+      "opportunity_sketch": "A risk scoring tool ingests the maintenance backlog (asset ID, category, age, last inspection date, estimated cost) and outputs a ranked risk register with failure probability and consequence severity, enabling the CFO to justify capital prioritization with data rather than anecdote.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Facility condition deterioration follows time-dependent decay curves — roofs, HVAC systems, electrical panels all degrade on predictable timelines once deferred. Time series forecasting on asset condition scores and maintenance spend history can project the future backlog value and condition index at 1, 3, and 5 years under different funding scenarios, giving leadership a credible capital planning model. Education operators typically have multi-year historical maintenance logs (even if informal) and asset registers that can feed this model.",
+      "opportunity_sketch": "A capital planning forecaster that takes current backlog, asset age profiles, and proposed annual maintenance budgets and outputs a 5-year facility condition projection — including the projected point at which emergency capital spend becomes statistically likely.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A critical barrier to addressing the backlog is that facility teams struggle to translate technical maintenance lists into board-level financial narratives — the language needed to unlock capital budget. AI text generation can take structured backlog data (asset, condition, cost, risk) and produce executive summaries, board papers, and capital case documents that frame deferred maintenance as financial liability and safety risk in terms that resonate with governors and auditors. This directly attacks the communication gap between facilities staff and budget decision-makers.",
+      "opportunity_sketch": "An AI report generator that accepts a structured maintenance backlog export and produces a board-ready Capital Maintenance Report — including executive summary, risk narrative, 3-year funding scenarios, and regulatory compliance implications — in the organization's house style.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Maintenance backlogs in education operators are often held as unstructured or inconsistently categorized lists — items logged with varying priority labels, mixed safety/cosmetic/compliance items, and no systematic severity classification. A structured data classifier trained on asset category, description keywords, age, and cost can automatically classify each backlog item by urgency tier (life-safety, regulatory compliance, operational, cosmetic) and asset criticality, replacing ad hoc human triage with a consistent schema. This is feasible because the input is tabular feature data, not unstructured text.",
+      "opportunity_sketch": "An automated backlog triage tool that classifies every maintenance item in the CMMS or spreadsheet into standardized urgency and risk categories, enabling facilities managers to present a defensible prioritization to leadership without manual review of hundreds of line items.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The backlog grows uncontrolled partly because the process of logging, categorizing, estimating costs for, and escalating maintenance requests is manual and leaky — requests fall off lists, never get cost estimates, and never reach a budget submission. A task automation agent can orchestrate the full lifecycle: receive a maintenance request, retrieve asset data, generate a cost estimate via benchmark data, classify urgency, append to the backlog register, and trigger a budget alert if cumulative backlog crosses a threshold. This closes the process gaps that allow unmonitored accumulation.",
+      "opportunity_sketch": "An agentic maintenance intake workflow that automatically processes new requests end-to-end — pulling asset history, estimating remediation cost, classifying risk tier, updating the backlog register, and notifying the CFO when the backlog-to-budget ratio exceeds a configured threshold.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Education operators managing large maintenance backlogs often have institutional knowledge scattered across inspection reports, contractor quotes, warranty documents, and previous capital plans — none of it easily queryable. A RAG system over this document corpus allows facilities managers and CFOs to ask questions like 'What was the last roof inspection finding at Campus B?' or 'Which assets have exceeded their expected service life?' and get grounded, cited answers. This directly accelerates the due diligence needed to build a capital funding case.",
+      "opportunity_sketch": "A facilities knowledge assistant that indexes all inspection reports, maintenance histories, warranties, and capital plans and answers natural-language queries from facilities managers and finance teams — reducing the hours spent manually searching documents when preparing budget submissions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

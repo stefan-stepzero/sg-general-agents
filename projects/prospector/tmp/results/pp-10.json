@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-consolidation-operability",
+  "pain_point_label": "Fragmented Budget Consolidation Process",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain is heterogeneous submission formats — spreadsheets in different templates, emails, and varied structures — that finance staff must manually remap to a canonical budget schema. Data transformation AI can ingest these semi-structured inputs and normalize them to a target schema automatically, eliminating manual rekey. For a multi-site education operator, this directly removes the weekend rework caused by format inconsistencies and reduces propagation of transcription errors into the network forecast.",
+      "opportunity_sketch": "An AI-assisted ingestion layer that accepts spreadsheet/email submissions from site principals, maps them to the network's canonical budget template, and flags unmappable line items for human review before they enter the consolidation model.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "A recurring pain symptom is reconciliation of duplicate and inconsistent line items across site submissions, and month-end surprise changes to the network budget. Anomaly detection can flag line items that deviate significantly from the site's own historical submissions or from peer-site norms, catching errors before consolidation rather than after board reporting. This is feasible given that multi-year budget data already exists across sites.",
+      "opportunity_sketch": "An anomaly scoring layer applied to each site submission at ingestion time, surfacing line items that are statistically inconsistent with the site's own history or with comparable campuses — enabling finance to challenge errors proactively rather than discover them at board review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The consolidation bottleneck is a multi-step workflow: collect submissions, chase missing ones, remap formats, reconcile duplicates, validate totals, and assemble the network view. A task automation agent can orchestrate this entire pipeline — ingesting files from email/shared drives, triggering validation steps, sending automated follow-up requests to late-submitting principals, and producing a draft consolidated budget with an exception report for finance review. This replaces the fragmented manual coordination that delays the process by 2-4 weeks.",
+      "opportunity_sketch": "An end-to-end budget consolidation agent that monitors submission channels, auto-ingests and normalizes received files, sends structured nudges to overdue principals, and delivers a draft consolidated budget with a variance exception report to the finance team — reducing manual coordination overhead by the majority.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Low financial literacy among principals is explicitly named as a submission quality driver. AI text generation can produce plain-language submission guides, annotated template instructions, and follow-up emails that explain what is expected in each budget line — reducing incomplete and incorrectly formatted submissions at the source. Additionally, once the consolidated budget is assembled, text generation can draft the board narrative report from the structured data, directly relieving the time compression at reporting deadlines.",
+      "opportunity_sketch": "Two uses: (1) auto-generated, personalized submission guidance emails sent to principals with their specific template pre-filled and annotated; (2) AI-drafted board budget narrative synthesized from the consolidated figures, requiring only finance-team review before submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Site principals sometimes submit budget data embedded in unstructured email bodies or narrative documents rather than clean spreadsheets. Entity extraction can identify budget line items, amounts, cost center references, and time periods from these unstructured submissions, converting them into structured records ready for consolidation. This is a precise, contained capability that fits the 'email submissions in heterogeneous formats' element of the pain description.",
+      "opportunity_sketch": "An extraction layer that parses incoming budget-related emails from principals, pulling out cost categories, figures, and period references into structured rows that feed directly into the consolidation model — eliminating manual data entry from narrative submissions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

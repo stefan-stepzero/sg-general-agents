@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Strategy Brief Generator",
+    "one_liner": "Distils education policy documents and sector research into 2-page strategic briefings for leadership and boards.",
+    "problem": "iPeople, PHINMA, and School for Life spend 20+ hours monthly synthesizing international education research, LMIC policy landscapes, and CHED/DepEd regulatory changes into board-ready materials. Generic AI summarizers lose crucial nuance in education development contexts, requiring manual rework by strategy staff.",
+    "ai_technique": "Hierarchical summarization with education domain vocabulary (accreditation frameworks, education development metrics, regulatory compliance pathways)",
+    "how_it_works": "User uploads policy briefs, sector reports, or program evaluation documents. System identifies policy themes, regulatory implications, and strategic precedents using education-specific entity tagging (school types, funding mechanisms, accreditation bodies), then generates a structured brief with sections for market context, risk factors, and strategic options tailored to the organization's operating environment.",
+    "target_companies": ["ipeople", "phinma", "school-for-life"],
+    "buyer_persona": "Chief Strategy Officer, Program Director",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Precedent Search Assistant",
+    "one_liner": "Semantic search over internal program evaluations, pilot reports, and OKR histories to surface relevant past decisions and outcomes.",
+    "problem": "Kinetic and iPeople manage multiple geographic and program expansions, but program pilots and evaluation reports are scattered across shared drives. Strategy leaders waste time recreating analysis or missing precedent lessons because search is keyword-based, not semantic.",
+    "ai_technique": "Dense vector embeddings of education program reports with multi-lingual support for LMIC contexts",
+    "how_it_works": "System ingests PDFs of program evaluations, feasibility studies, and board papers. When a strategy leader searches ('What happened when we expanded to a new region?'), the system returns semantically similar past pilots, their outcomes, and enabling factors—ranked by relevance to the current question. Integrates with Google Drive or SharePoint.",
+    "target_companies": ["kinetic", "ipeople", "phinma"],
+    "buyer_persona": "Strategy Manager, M&A Lead",
+    "tier": "feature",
+    "confidence": "high"
+  },
+  {
+    "name": "Pilot Design Framework Assistant",
+    "one_liner": "Guides education leaders through structured experiment design for program pilots, with sample size calculators and bias-control templates.",
+    "problem": "Rising Academies and School for Life operate on a 'pilot-before-scale' model, but lack in-house measurement experts. Pilot designs often conflate implementation fidelity issues with outcome failures, and selection bias is not controlled, making it hard to distinguish whether a program works or scale strategy is flawed.",
+    "ai_technique": "Education-specific experiment design patterns with learning outcome lag accounting and multi-site randomization guidance",
+    "how_it_works": "User describes the program, student population, and key outcomes. System generates a pilot design template including: comparison group definition (with guidance on ethical alternatives to RCTs), sample size calculator adjusted for education attrition and learning lag cycles, pre/post measurement timing aligned to school calendars, and bias checklist (selection bias, Hawthorne effects common in school pilots, implementation variance).",
+    "target_companies": ["school-for-life", "rising", "acasus"],
+    "buyer_persona": "Program Director, Monitoring & Evaluation Lead",
+    "tier": "module",
+    "confidence": "medium"
+  },
+  {
+    "name": "Market Sizing Model Generator",
+    "one_liner": "Estimates addressable student population for new regions/programs using demographic data and education-sector benchmarks.",
+    "problem": "PHINMA, iPeople, and Acasus do market sizing for new campus locations or program launches but lack consistent methodology. External consultants are expensive; internal models often miss sector-specific variables (government subsidy eligibility, competing school capacity, parent income sensitivity to tuition increases).",
+    "ai_technique": "Regression models on comparable education markets with demographic and economic feature engineering",
+    "how_it_works": "User inputs location (region/district), program type (STEM HE, affordable K-12, vocational), and target student profile. System pulls demographic indicators (population, median income, school-age cohort size) and constructs regression model against comparable markets in database (historical campuses or peer institutions). Returns addressable market estimate with confidence intervals and sensitivity analysis on key drivers (subsidy changes, competitor entry, parent affordability).",
+    "target_companies": ["phinma", "ipeople", "acasus"],
+    "buyer_persona": "CFO, Campus Director",
+    "tier": "feature",
+    "confidence": "medium"
+  }
+]

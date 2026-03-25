@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "enrollment-admissions-intake-forecasting-historical-data-gaps-dup",
+  "pain_point_label": "Poor Historical Data & Trend Analysis",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Multi-site operators typically have enrollment data scattered across spreadsheets, legacy SIS records, and paper forms in inconsistent schemas. AI-assisted ETL can map these disparate sources into a unified schema — normalizing site names, year levels, and entry points — creating the historical baseline that currently doesn't exist. This directly addresses the root cause: data exists but is unstructured and incompatible across years and sites.",
+      "opportunity_sketch": "A transformation pipeline that ingests historical enrollment exports (CSVs, Access DBs, spreadsheets) from each site, standardizes them to a canonical schema (site, year level, cohort year, enrolment count, exits), and loads them into a centralized data store ready for trend analysis.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Once historical enrollment data is consolidated, time series forecasting directly addresses the stated need for understanding growth and decline trends at the site and year-level. The capability models seasonal patterns, cohort progression, and attrition rates across time — exactly what leadership needs for capacity planning and resource allocation across 500+ staff operations. This is the primary analytical output the pain point is blocking.",
+      "opportunity_sketch": "A per-site, per-year-level enrollment forecasting model that projects next 1-3 year intake numbers, flags sites where a year level is trending down, and surfaces attrition hotspots by entry point — feeding directly into annual planning cycles.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Even with clean data and forecasts, leadership at multi-site operators need narrative context — not just numbers. AI text generation can automatically produce board-ready enrollment trend reports, site-level summaries, and cohort health narratives that interpret the data in plain language. This addresses the gap between having trend data and being able to act on it strategically, which is especially acute when data literacy varies across site principals.",
+      "opportunity_sketch": "An automated reporting layer that takes structured enrollment trend data and generates per-site narrative summaries each term — highlighting which year levels are growing, which are at-risk, and what the 3-year trajectory looks like — formatted for board packs or principal briefings.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pain point isn't just analytical — it's operational: nobody is systematically collecting and archiving enrollment data by site and year level. A task automation agent can run on a recurring schedule to pull data from each site's SIS or admin system, normalize it, append it to the historical record, and flag data quality issues. This closes the feedback loop so the problem doesn't recur after initial data recovery.",
+      "opportunity_sketch": "An ongoing enrollment data collection agent that runs at the close of each enrollment period, pulls confirmed enrollment counts from each site system, validates them against expected year-level ranges, and writes them to the central history store — eliminating the manual archiving gap going forward.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

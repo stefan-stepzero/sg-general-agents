@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-cleaning-grounds-daily-cleaning-quality-and-consistency-is-unmonitored-dup",
+  "pain_point_label": "Daily Cleaning Quality and Consistency Are Unmonitored and Inconsistent Across Sites",
+  "matches": [
+    {
+      "capability_id": "classification-visual",
+      "capability_label": "Image & Video Classification",
+      "match_rationale": "Cleaning quality is fundamentally a visual inspection problem — are surfaces clean, are bathrooms presentable, is clutter present? Computer vision can assess cleanliness from photos taken by staff or fixed cameras, flagging areas that fall below standard without requiring manual supervisor walkthroughs. For a multi-site operator in the Philippines with no group-level oversight, this provides the systematic quality check that currently does not exist.",
+      "opportunity_sketch": "A mobile app or fixed camera system where cleaning staff or campus coordinators take photos of key areas (bathrooms, classrooms, corridors) post-cleaning; a vision model scores cleanliness and flags deficiencies to the site manager and group operations team in real time.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The pain point explicitly includes the absence of standardized cleaning protocols — quality expectations are communicated verbally or informally. Text generation can produce detailed, site-specific cleaning SOPs, shift checklists, and onboarding guides for new cleaning staff that are consistent across all campuses. This directly addresses the protocol gap without requiring infrastructure investment.",
+      "opportunity_sketch": "An LLM-powered tool that takes the operator's campus layout and schedule as input and outputs a complete set of cleaning checklists, shift handover notes, and seasonal-adjustment guides (e.g., rainy season mud protocols) localized for the Philippines context.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a backup roster and redistribution mechanism when cleaning staff are absent is a direct workflow gap — the problem is not just quality monitoring but the lack of any operational response loop. A task automation agent can monitor absence notifications, trigger a redistribution of cleaning tasks across available staff across the campus, and alert the site coordinator, closing the loop that currently results in areas going uncleaned for days.",
+      "opportunity_sketch": "An agent that receives absence notifications (SMS, WhatsApp, or form submission), automatically reassigns cleaning zones to available staff using the campus cleaning schedule, notifies affected staff of their expanded duties, and logs the incident for group-level tracking.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "If cleaning completion logs, inspection scores, or photo submission timestamps are collected, anomaly detection can surface sites or shifts that systematically underperform without the operator needing to define explicit thresholds. This is especially valuable for catching gradual degradation — a campus that slowly worsens over weeks — which manual oversight tends to miss until it reaches a complaint-triggering level.",
+      "opportunity_sketch": "An anomaly detection layer over a simple digital cleaning log (staff check-in/check-out, area-by-area sign-off) that flags campuses or shifts showing irregular patterns — missed zones, accelerating skip rates, unusual timing — and surfaces these as alerts to the group operations manager.",
+      "pain_salience": 3,
+      "adoption_likelihood": 2,
+      "build_complexity": 2,
+      "composite_score": 9.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Cleaning staff absence and the inability to redistribute work is an explicit pain mechanism. Resource allocation AI can optimize cleaning staff assignments across a campus (or across nearby campuses) given real-time availability, area size, and priority, producing a rebalanced schedule when absences occur. This addresses the operational gap where affected areas go uncleaned because no redistribution mechanism exists.",
+      "opportunity_sketch": "A scheduling module that maintains a cleaning task roster per campus, accepts real-time absence inputs, and outputs a reassigned schedule for the day — with priority weighting for high-visibility areas like bathrooms and corridors — deployable via WhatsApp bot or simple web form.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

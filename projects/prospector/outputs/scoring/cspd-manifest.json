@@ -1,0 +1,577 @@
+{
+  "company_id": "cspd",
+  "company_name": "Catholic Schools Parramatta Diocese",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Education",
+        "evidence": "CSPD operates 80 Catholic K-12 schools and 6 early learning centres in Western Sydney. Homepage: 'Catholic Schools Parramatta Diocese provides quality learning and teaching in a faith-centred environment in its 80 schools and six early learning centres in western Sydney.'",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Catholic systemic K-12 education (faith-based, government-funded, non-selective)",
+        "evidence": "CSPD is the second-largest Catholic diocesan system in NSW. Operates within the Catholic education sector under CSNSW funding arrangements. All schools are non-selective systemic schools with faith formation as a core pillar alongside academic outcomes.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "End-service-provider (direct educator)",
+        "evidence": "CSPD directly delivers education services to ~43,000 students. The system is a buyer and integrator of EdTech, curriculum resources, and professional development — not a supplier to other institutions.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Mature",
+        "evidence": "Australian Catholic education is a long-established sector with stable regulatory frameworks, well-defined funding models (Schooling Resource Standard), and incremental rather than disruptive evolution. NSW curriculum reform (2022–2027) is driving change but within a stable institutional context. National enrolment growth of 5.7% (2021–2025) indicates steady, not explosive, expansion.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Grant-funded (government) + fee supplement (modest school fees)",
+        "evidence": "Funding model: 'Mixed: Commonwealth + NSW State recurrent grants (majority), school fees (modest by sector standards), capital grants via Block Grant Authority (BGA), fundraising and donations.' CSNSW needs-based funding arrangement (2024–2029) provides recurrent funding certainty.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Direct service delivery (human-delivered education + blended/online supplement)",
+        "evidence": "Primary delivery is face-to-face classroom instruction across 80 schools. Supplemented by School of Now (SoN) — a blended online program for Year 11–12 specialist subjects delivered across campuses via technology.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Fixed-cost-heavy (people-intensive, facilities-intensive)",
+        "evidence": "~4,500 staff across 80 schools and 6 ELC sites. Capital works program active (new Westmead primary school). Teacher salaries and facilities dominate the cost base — consistent with all large school systems. Scale provides some cost efficiency but headcount and buildings create fixed-cost floor.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Geographic catchment moat + religious affiliation loyalty + government funding ties + institutional accreditation barrier",
+        "evidence": "CSPD operates as the sole Catholic diocesan system within the Diocese of Parramatta boundary — there is no direct competitor for Catholic systemic education in this geography. Moats: (1) Geographic: Diocese boundary creates a defined, captive catchment; families seeking Catholic education in Western Sydney have no equivalent alternative. (2) Religious affiliation: Catholic identity and faith formation create deep community loyalty and multi-generational enrolment stickiness — families who attended CSPD schools enrol their own children. (3) Government funding ties: NESA registration and CSNSW needs-based funding arrangement (2024–2029) are institutionally locked — new entrants cannot easily replicate accreditation, government relationships, or funding access. (4) Scale network: 43,000 students across 80 schools creates community density; parents, staff, and parish networks reinforce each other, compounding loyalty. No direct network effect in the platform sense, but the community density functions similarly.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Government funding (Commonwealth + NSW recurrent grants) + NESA compliance + diocese governance + teacher supply pipeline",
+        "evidence": "Four critical operational dependencies: (1) Government funding — recurrent grants (SRS model, CSNSW 2024–2029 needs-based arrangement) constitute the majority of revenue; any policy change to school funding formulae directly threatens operating viability. (2) NESA compliance — all 80 schools must maintain NESA registration; loss of registration for any campus would be operationally catastrophic. (3) Diocese governance — the Bishop of Parramatta holds canonical authority over Catholic education in the diocese; CSPD's mission mandate, school ethos, and strategic direction operate within this governance constraint. (4) Teacher supply pipeline — CSPD requires NESA-accredited teachers across 80 schools; sector-wide teacher shortages (evidenced by Teacher Scholarship Program, 30 places 2026) make teacher supply the primary human capital constraint. Secondary dependencies: CSNSW policy and collective agreements, IT platform continuity (LMS, School of Now), and capital grants pipeline (BGA) for school infrastructure.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Enterprise (1000+)",
+        "evidence": "~4,500 staff explicitly stated in CSPD executive summary and cost structure dimension. Consistent with 80 school campuses, 6 ELC sites, and a full central office structure.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Enterprise ($100M+)",
+        "evidence": "NSW Catholic schools receive a share of ~$3.65B in combined Commonwealth and state recurrent funding annually. CSPD's ~43,000 students represent approximately 16% of NSW Catholic school enrolments (~270,000 total), implying recurrent funding in the range of $500M–$700M+ annually. No audited figure publicly extracted, but scale indicators (80 schools, 4,500 staff, active capital works) are consistent with $500M+ operating budget.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Government-grant-funded nonprofit (company limited by guarantee since 2023)",
+        "evidence": "CSPD became CSPD Ltd (company limited by guarantee) in 2023. Annual reports published publicly. Funding secured via CSNSW needs-based arrangement (2024–2029). No VC, PE, or debt financing. Recurrent government grants provide stable, predictable funding.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Asset-heavy (80 school campuses + 6 ELC sites + capital works)",
+        "evidence": "Active capital works: new Westmead primary school (Darcy Road, opening 2026). Historical BGA capital grants. Western Sydney population growth likely driving further infrastructure pipeline. 80+ campuses represent a substantial fixed asset base.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Stable / sustainable (government-backed, no distress signals)",
+        "evidence": "No public financial distress signals. New five-year strategy ('detailed, earnest and ambitious') implies confidence in funding continuity. Active capital investment and system expansion (new school builds) indicate surplus budget capacity. CSNSW 2024–2029 funding certainty removes near-term revenue risk.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Legacy (20+ years)",
+        "evidence": "Catholic education in the Diocese of Parramatta has operated for decades (diocese established 1948). CSPD as a formal system entity has existed for many years. Incorporated as company limited by guarantee in 2023 — a governance modernisation, not a new organisation.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Large (10K–100K)",
+        "evidence": "~43,000 students enrolled across 80 schools and 6 ELCs. If 'customers' includes families/parents as decision-makers, the number is similar (approximately 25,000–35,000 family units). Student count alone is 43,000.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {
+        "value": "Mature / Optimization — with an active strategic transformation layer",
+        "evidence": "CSPD is a mature institution (70+ year-old diocese, stable enrolments, government-funded). However, the 2024 five-year strategic plan, the 2025 Uplift framework launch, and the Patrick Ellis hire all indicate an intentional transformation investment cycle running on top of the steady-state base. This is not a turnaround (no distress) or scaling (not a startup), but optimization with deliberate reinvestment in capability uplift.",
+        "confidence": "high"
+      },
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Families with K-12 children in Western Sydney seeking Catholic faith-based education — primarily middle-income households in growing suburban corridors (Blacktown, Penrith, Camden, Hills District, Hawkesbury, Blue Mountains)",
+        "evidence": "CSPD's 80 schools and 6 ELCs serve ~43,000 students across the Diocese of Parramatta catchment. Primary enrolment draw is Catholic families and community-aligned families who prioritise faith formation alongside academic outcomes. Western Sydney's population profile is predominantly middle-income suburban, with high proportion of migrant Catholic families (Filipino, Indian, Pacific Islander, Latin American communities prominent in the region). Non-selective admissions means CSPD targets the broad K-12 family market, not selective high achievers. Early learning centres extend the segment to families with children aged 0–5, creating a pipeline from ELC through to Year 12. As a vendor prospect, CSPD itself is the institutional buyer (large government-funded B2G/B2I buyer); but its market-facing customer segment is the Western Sydney Catholic family.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Market leader (dominant share in Catholic education in Western Sydney)",
+        "evidence": "One-in-four students in Western Sydney/Blue Mountains attends a CSPD school. CSPD is the only Catholic diocesan system operating in this geography — it is the dominant provider of Catholic schooling in its region. Competes with government schools and independent schools for enrolments.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Community/mission-driven + reputation-led enrolment",
+        "evidence": "CSPD does not use outbound sales. Enrolment is driven by Catholic community identity, local school reputation, word-of-mouth, and values alignment. Key touchpoints: Education Mass, Bishop's Awards, LIFTED student leadership forum — all community and mission-led. 'ENROL NOW' CTA on homepage suggests some demand-capture optimisation.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Diversified (no single customer >5%)",
+        "evidence": "43,000 students across 80 schools — no individual student/family represents meaningful concentration. Funding concentration risk is on the government grant side (Commonwealth + NSW state), not the student side.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Mid-market / accessible (modest fees, below independent school sector)",
+        "evidence": "Funding model notes: 'school fees (modest by sector standards).' CSPD positions as accessible Catholic education — not premium (not independent schools) but above free government schooling. Fees supplement government grants without being the primary revenue source.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Professional management (CEO + EGM structure) with board governance",
+        "evidence": "Jack de Groot (CEO/Executive Director) leads nine EGMs covering learning, wellbeing, mission, capital, data intelligence, and strategic delivery. Board chaired by Elizabeth Crouch AM with professional directors. Incorporated as company limited by guarantee (2023) — modern board governance. No founder-led dynamics.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Hub-and-spoke (central system office + 80 school principals)",
+        "evidence": "Central system leadership (CEO + 9 EGMs) sets strategy, frameworks, and policy. Individual school principals operate their campuses with delegated authority. Uplift and SoN are centrally designed but school-delivered. This hub-and-spoke topology is standard for Catholic diocesan systems.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Multi-site / distributed (80+ co-located campuses across Western Sydney)",
+        "evidence": "80 schools and 6 ELCs distributed across Western Sydney (Blacktown, Penrith, Camden, Hills, Blue Mountains corridors). Central office location: Parramatta. Each school operates as a semi-autonomous site. No remote-first structure — education delivery is inherently on-campus.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Domain-expert-heavy (licensed teaching professionals) + operations support",
+        "evidence": "~4,500 staff dominated by NESA-accredited teachers and school leaders (principals, deputy principals, HODs). Supporting functions include IT (Head of IT Education Platform: Jeremy Hind), finance, HR, and mission/wellbeing specialists. The Teacher Scholarship Program and ICT Traineeships signal active pipeline investment. Teacher shortages are a sector-wide constraint.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Transitional (partially modernised, cloud-capable, EdTech-adopting)",
+        "evidence": "MacBooks and Chromebooks across 90%+ of secondary schools. LMS in use (referenced in Uplift framework as underpinning feedback loops). School of Now (SoN) is a mature blended learning platform. Digital Learning Specialist Teacher role embedded at school level. Head of IT Education Platform (Jeremy Hind) is a dedicated system-level role. No evidence of legacy mainframe systems — consistent with a modernising mid-2010s infrastructure.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "N/A — not a software engineering organisation",
+        "evidence": "CSPD is an education service provider, not a software company. Internal IT supports platform administration, LMS, and device management rather than custom software development. This dimension is not directly applicable.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic-to-intermediate analytics (BI dashboards + student progress tracking; not yet ML-ready at scale)",
+        "evidence": "Uplift framework relies on data and research to drive consistent instruction — implying structured student outcome data collection. 'Data intelligence' is listed as one of the nine EGM portfolios, signalling a dedicated data leadership role. However, no evidence of a modern data warehouse, streaming analytics, or ML-in-production. AI adoption classified as 'exploring.' LIFTED AI forum was values-focused, not deployment-focused.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Intermediate (institutional compliance baseline expected for government-funded education)",
+        "evidence": "As a government-funded entity handling student data for 43,000 minors, CSPD operates under NSW Privacy and Personal Information Protection Act and Commonwealth Privacy Act obligations. No public security incidents identified. Policy Central page suggests documented policy frameworks. No evidence of advanced SOC or zero-trust architecture — consistent with 'intermediate' for the sector.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Heavy (education regulation + child safety + privacy + government funding compliance)",
+        "evidence": "CSPD operates under: NESA school registration requirements, NSW Education Act, Commonwealth Schools Funding Act, Child Protection obligations (Working with Children Checks, mandatory reporting), Privacy Act (student data for minors), CSNSW funding accountability frameworks, and Catholic Church governance requirements. Board governance via company limited by guarantee adds ASIC compliance. Policy Central page on website confirms documented policy infrastructure.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Single-region / sub-national (Western Sydney and Blue Mountains, NSW Australia)",
+        "evidence": "All 80 schools and 6 ELCs are located within the Diocese of Parramatta geographic boundary — Western Sydney, Hills District, Hawkesbury, Blue Mountains, Lithgow. No operations outside this region or Australia.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Recession-resistant (government-funded essential service)",
+        "evidence": "CSPD's primary revenue (government grants) is non-cyclical — tied to student enrolment counts and SRS funding formulae, not economic conditions. School fee component is modest and largely uncollectable from families in distress (education is functionally essential). Western Sydney population growth provides enrolment tailwind regardless of macro conditions.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Nonprofit (company limited by guarantee) + Catholic Church governance + government accountability",
+        "evidence": "CSPD Ltd incorporated 2023 as company limited by guarantee — nonprofit structure, ASIC-registered. Board chaired by Elizabeth Crouch AM. Catholic education governance also involves Bishop of Parramatta as canonical authority. Annual reports published publicly, consistent with government funding accountability obligations.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Pragmatic / evidence-driven (adopts when clear evidence and ROI, not early adopter)",
+        "evidence": "The Uplift framework explicitly draws on 'Science of Learning, Cognitive Load Theory, Science of Reading, and Rosenshine's Principles' — all well-validated, peer-reviewed frameworks. LIFTED AI forum framed AI through a 'values lens' rather than deploying tools. Ann D Clark Lecture focus: 'connecting research with classroom teaching; explicit instruction, formative assessment, structured literacy.' Pattern is evidence-first, not experimentation-first.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Community/mission-driven (Catholic identity + student flourishing + social justice)",
+        "evidence": "Homepage: 'where every child belongs, learns and thrives.' Six strategic pillars include faith formation as first pillar. Project Compassion (Lenten community fundraising), Bishop's Awards, Catholic social mission language throughout. CEO Jack de Groot background: former St Vincent de Paul Society NSW CEO — mission-first leadership identity.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Mission-driven (Catholic values and faith formation are non-negotiable constraints on all decisions)",
+        "evidence": "Faith formation is Strategic Pillar 1. Mission Enhancement Team (led AI forum through values lens). Bishop's Awards for faith witness. Catholic social teaching embedded in school community programs (Project Compassion). This is a canonical mission-constrained organisation — commercial logic is secondary to Catholic identity and student wellbeing.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Strong-in-niche (well-regarded Catholic education employer in Western Sydney)",
+        "evidence": "Teacher Scholarship Program (30 places, 2026 cohort) signals active pipeline investment. Professional development program (Ann D Clark Lecture, Uplift coaching). ICT traineeships for non-teaching pathways. No significant public industrial disputes or negative employer sentiment identified. Active careers section with multiple pathways (teaching, casual, non-teaching, leadership, ICT). The mission/values proposition attracts staff who align with Catholic education.",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

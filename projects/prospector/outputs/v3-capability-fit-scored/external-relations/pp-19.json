@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-lgu-community-campus-institution-divide-dup",
+  "pain_point_label": "Campus-Level Community Relations Not Coordinated With System Strategy",
+  "matches": [
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Campus-level community engagement happens across dozens of touchpoints — emails, meeting notes, partnership agreements, event reports — that head office never sees. Summarization can digest campus-generated reports and communications into concise briefs, making distributed community activity visible to central leadership without manual curation. This directly addresses the 'head office unaware' and 'community perspectives not escalated' mechanisms in the pain point.",
+      "opportunity_sketch": "An automated pipeline that ingests campus community reports, meeting notes, and partnership updates weekly, summarizes each campus's activity, and delivers a system-wide community relations digest to the head office strategy team.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core of this pain point is invisible relationships — community organizations, local government units, and partner entities that individual campuses are engaged with but the system has no map of. Knowledge extraction can parse partnership documents, MOU files, and correspondence to build a structured relationship graph: which community entities each campus interacts with, the nature of those relationships, and overlap across campuses. This directly surfaces redundancy and gaps.",
+      "opportunity_sketch": "A relationship intelligence tool that parses partnership agreements and campus communications to construct and maintain a cross-campus community relationship map, flagging duplicate engagements and surfacing uncoordinated strategies.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Campus community communications and partnership requests vary widely in urgency, strategic alignment, and risk. Text classification can automatically label incoming community signals — complaints, partnership proposals, local government correspondence — by type, priority, and strategic relevance, enabling head office to triage what requires system-level attention versus campus discretion. This addresses the 'community perspectives not escalated to governance' failure mode.",
+      "opportunity_sketch": "An escalation routing tool that classifies inbound community correspondence by urgency and strategic impact, automatically flagging items that meet escalation thresholds for leadership review rather than staying siloed at the campus level.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "A system of 500+ staff across campuses accumulates community relations knowledge — what worked, what failed, which local organizations are valuable partners — but this learning stays in people's heads or siloed campus files. RAG over a shared knowledge corpus lets any campus relations coordinator query what other campuses have done with similar community partners or in similar contexts, directly addressing 'no shared learning on community partnership best practices'.",
+      "opportunity_sketch": "A community relations knowledge base where campuses log partnership outcomes and lessons learned, with a RAG interface that lets staff query past experiences — e.g., 'how have other campuses engaged with the municipal youth office?' — to avoid reinventing the wheel.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The coordination gap between campus community activity and system strategy is partly a workflow problem: there is no structured process for campuses to report community activities upward or receive strategic guidance downward. Task automation agents can enforce a lightweight reporting loop — triggering campus update submissions on a cadence, routing summaries to the right head office owners, and escalating flagged items — without requiring full system redesign. This addresses both the 'head office unaware' problem and the absence of a shared learning mechanism.",
+      "opportunity_sketch": "An agent-driven community relations coordination workflow: campuses receive periodic prompts to log key community activity, the agent aggregates and routes summaries to system strategy owners, and flags activities that conflict with or duplicate other campuses' programs.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "One concrete blocker to coordination is the effort required to produce system-level community relations strategy documents, campus briefing templates, and partnership frameworks that head office could provide to align campus activity. Text generation can dramatically reduce the production cost of these strategic alignment artifacts. This addresses the root cause of campuses operating independently — there is nothing to align to — by making it cheap to produce and maintain shared guidance.",
+      "opportunity_sketch": "A strategy-to-guidance generation tool that takes head office community relations priorities as input and produces campus-tailored engagement briefs, partnership criteria documents, and community messaging templates that give campuses a framework to operate within.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

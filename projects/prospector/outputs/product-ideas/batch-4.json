@@ -1,0 +1,343 @@
+[
+  {
+    "name": "Strategy Brief Generator",
+    "one_liner": "Distils education policy documents and sector research into 2-page strategic briefings for leadership and boards.",
+    "problem": "iPeople, PHINMA, and School for Life spend 20+ hours monthly synthesizing international education research, LMIC policy landscapes, and CHED/DepEd regulatory changes into board-ready materials. Generic AI summarizers lose crucial nuance in education development contexts, requiring manual rework by strategy staff.",
+    "ai_technique": "Hierarchical summarization with education domain vocabulary (accreditation frameworks, education development metrics, regulatory compliance pathways)",
+    "how_it_works": "User uploads policy briefs, sector reports, or program evaluation documents. System identifies policy themes, regulatory implications, and strategic precedents using education-specific entity tagging (school types, funding mechanisms, accreditation bodies), then generates a structured brief with sections for market context, risk factors, and strategic options tailored to the organization's operating environment.",
+    "target_companies": [
+      "ipeople",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "Chief Strategy Officer, Program Director",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-13",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Partnerships & Ecosystem",
+    "_cellHeat": 51,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Precedent Search Assistant",
+    "one_liner": "Semantic search over internal program evaluations, pilot reports, and OKR histories to surface relevant past decisions and outcomes.",
+    "problem": "Kinetic and iPeople manage multiple geographic and program expansions, but program pilots and evaluation reports are scattered across shared drives. Strategy leaders waste time recreating analysis or missing precedent lessons because search is keyword-based, not semantic.",
+    "ai_technique": "Dense vector embeddings of education program reports with multi-lingual support for LMIC contexts",
+    "how_it_works": "System ingests PDFs of program evaluations, feasibility studies, and board papers. When a strategy leader searches ('What happened when we expanded to a new region?'), the system returns semantically similar past pilots, their outcomes, and enabling factors—ranked by relevance to the current question. Integrates with Google Drive or SharePoint.",
+    "target_companies": [
+      "kinetic",
+      "ipeople",
+      "phinma"
+    ],
+    "buyer_persona": "Strategy Manager, M&A Lead",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-13",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Partnerships & Ecosystem",
+    "_cellHeat": 51,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Pilot Design Framework Assistant",
+    "one_liner": "Guides education leaders through structured experiment design for program pilots, with sample size calculators and bias-control templates.",
+    "problem": "Rising Academies and School for Life operate on a 'pilot-before-scale' model, but lack in-house measurement experts. Pilot designs often conflate implementation fidelity issues with outcome failures, and selection bias is not controlled, making it hard to distinguish whether a program works or scale strategy is flawed.",
+    "ai_technique": "Education-specific experiment design patterns with learning outcome lag accounting and multi-site randomization guidance",
+    "how_it_works": "User describes the program, student population, and key outcomes. System generates a pilot design template including: comparison group definition (with guidance on ethical alternatives to RCTs), sample size calculator adjusted for education attrition and learning lag cycles, pre/post measurement timing aligned to school calendars, and bias checklist (selection bias, Hawthorne effects common in school pilots, implementation variance).",
+    "target_companies": [
+      "school-for-life",
+      "rising",
+      "acasus"
+    ],
+    "buyer_persona": "Program Director, Monitoring & Evaluation Lead",
+    "tier": "module",
+    "confidence": "medium",
+    "_cell": "cell-13",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Partnerships & Ecosystem",
+    "_cellHeat": 51,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Market Sizing Model Generator",
+    "one_liner": "Estimates addressable student population for new regions/programs using demographic data and education-sector benchmarks.",
+    "problem": "PHINMA, iPeople, and Acasus do market sizing for new campus locations or program launches but lack consistent methodology. External consultants are expensive; internal models often miss sector-specific variables (government subsidy eligibility, competing school capacity, parent income sensitivity to tuition increases).",
+    "ai_technique": "Regression models on comparable education markets with demographic and economic feature engineering",
+    "how_it_works": "User inputs location (region/district), program type (STEM HE, affordable K-12, vocational), and target student profile. System pulls demographic indicators (population, median income, school-age cohort size) and constructs regression model against comparable markets in database (historical campuses or peer institutions). Returns addressable market estimate with confidence intervals and sensitivity analysis on key drivers (subsidy changes, competitor entry, parent affordability).",
+    "target_companies": [
+      "phinma",
+      "ipeople",
+      "acasus"
+    ],
+    "buyer_persona": "CFO, Campus Director",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-13",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Partnerships & Ecosystem",
+    "_cellHeat": 51,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "OKR Synthesis Dashboard",
+    "one_liner": "Aggregates quarterly OKR updates from multiple campuses into a unified strategic alignment dashboard with variance analysis.",
+    "problem": "Kinetic (distributed student housing network) and iPeople (multi-campus higher ed) struggle to maintain strategic coherence as they scale. Campus leaders set local OKRs but senior leadership can't easily see where local priorities diverge from strategy or spot cross-campus conflicts. Quarterly reviews require manual aggregation of spreadsheets.",
+    "ai_technique": "Semantic clustering of organizational objectives with goal decomposition and dependency mapping",
+    "how_it_works": "Each campus submits quarterly OKR updates via a form or document. System extracts objectives, key results, and progress notes using NLP; clusters similar goals across campuses (e.g., 'improve student retention' at Campus A, 'reduce dropout rate' at Campus B); identifies misalignment (conflicting resource allocation) and dependencies ('Campus A's enrollment growth depends on Campus B's housing capacity'). Dashboard shows strategic alignment heat map and recommends OKR refinements for leadership discussion.",
+    "target_companies": [
+      "kinetic",
+      "ipeople",
+      "wise"
+    ],
+    "buyer_persona": "Chief Strategy Officer, Regional VP",
+    "tier": "standalone",
+    "confidence": "medium",
+    "_cell": "cell-14",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Strategic Clarity & Alignment",
+    "_cellHeat": 49,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Strategic Context Retrieval for Board Packs",
+    "one_liner": "Retrieves relevant historical decisions, policy context, and sector trends to automatically populate strategic briefing sections in board papers.",
+    "problem": "WISE, iPeople, and Kinetic boards meet quarterly with dense agendas. Board secretaries spend hours researching policy context, competitive moves, or historical precedent for each agenda item. Information is siloed—stored in emails, past minutes, or closed reports—making it hard to craft evidence-based papers quickly.",
+    "ai_technique": "Semantic search with document ranking by recency and organizational relevance",
+    "how_it_works": "User specifies the board agenda item ('Approve new Egypt campus expansion'). System searches internal documents (board minutes, strategy papers, program reports), sector databases (CHED guidelines, Egyptian education policy updates), and external sources for relevant context. Returns: comparable expansion precedents from organization history, policy changes in target country, competitive activity, and success factors identified in past evaluations. Content is pre-formatted for board paper inclusion.",
+    "target_companies": [
+      "wise",
+      "ipeople",
+      "kinetic"
+    ],
+    "buyer_persona": "Board Secretary, Chief Strategy Officer",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-14",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Strategic Clarity & Alignment",
+    "_cellHeat": 49,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Strategic Pivot Readiness Assessment",
+    "one_liner": "Analyzes current strategy, market trends, and internal capabilities to surface when a strategic pivot is needed and what blockers exist.",
+    "problem": "Kinetic, iPeople, and WISE face regulatory change (DepEd rules, CHED licensing shifts, Qatar education reform) that can invalidate their strategic assumptions. Leaders rarely have a systematic way to spot when accumulated evidence suggests strategy needs revising. Decisions are reactive rather than proactive.",
+    "ai_technique": "Multi-factor trend analysis combining internal performance data, regulatory monitoring, and competitor activity",
+    "how_it_works": "System ingests: quarterly performance dashboards (enrollment, retention, margin trends), regulatory alerts (CHED circulars, DepEd orders, policy monitoring feeds), and internal strategy documents. Continuously monitors for early warning signals (e.g., declining market share in a key segment, new competitor entry, major regulatory change). When threshold combinations are met, generates a 'Pivot Readiness Report' with: evidence for strategic shift, internal capabilities gaps that would block pivot, and recommended next steps (feasibility studies, board discussion topics).",
+    "target_companies": [
+      "kinetic",
+      "ipeople",
+      "wise"
+    ],
+    "buyer_persona": "Chief Strategy Officer, CEO",
+    "tier": "module",
+    "confidence": "medium",
+    "_cell": "cell-14",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Strategic Clarity & Alignment",
+    "_cellHeat": 49,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Competitive Intelligence Digest",
+    "one_liner": "Weekly digest of competitor moves, policy changes, and sector trends extracted from news, government publications, and industry reports.",
+    "problem": "Strategy teams at Acasus, WISE, and iPeople rely on manual news monitoring to track competitors and regulatory changes. Information is fragmented (email alerts, LinkedIn, government circulars) and often arrives too late to inform quarterly planning.",
+    "ai_technique": "Multi-source entity extraction and classification with education sector vocabulary",
+    "how_it_works": "System monitors government publications (CHED, DepEd, Qatar education authority), education news (EdSurge, The Economist education reports), and competitor websites. Weekly digest auto-generates sections: Regulatory Changes (CHED accreditation updates, government funding policy), Competitor Activity (new campus launches, program launches, acquisitions), and Sector Trends (demographic shifts, employment outcomes data, funding environment). Articles are ranked by relevance to organization's markets and auto-categorized (threat, opportunity, FYI).",
+    "target_companies": [
+      "acasus",
+      "wise",
+      "ipeople"
+    ],
+    "buyer_persona": "Chief Strategy Officer, Market Research Lead",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-14",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Strategic Clarity & Alignment",
+    "_cellHeat": 49,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Board Paper Generator with Governance Templates",
+    "one_liner": "Auto-generates board papers with education-specific compliance sections for Catholic governance, CHED accreditation, and government funding obligations.",
+    "problem": "CSPD, Kinetic, and PHINMA board secretaries spend 40+ hours per quarter on board papers, repeatedly building sections on governance compliance, accreditation status, and fiduciary obligations. Template libraries exist but don't account for Australia's Catholic school governance structures or CHED's specific disclosure requirements.",
+    "ai_technique": "Education governance document templates with smart field population from compliance dashboards",
+    "how_it_works": "User selects organization type (Catholic K-12, Philippines HE, international school) and agenda items. System generates a board paper template with pre-built sections: governance compliance checklist (education regulator-specific: NESA for NSW, CHED for Philippines), risk register aligned to education audit frameworks, accreditation status summary (pulling from live accreditation dashboard), and fiduciary obligations tracker. User fills in substantive content; system handles formatting, compliance language, and cross-references to prior board decisions.",
+    "target_companies": [
+      "cspd",
+      "kinetic",
+      "phinma"
+    ],
+    "buyer_persona": "Board Secretary, Governance Officer",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-15",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Power Concentration & Transparency",
+    "_cellHeat": 56,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Accreditation Evidence Aggregator",
+    "one_liner": "Collects and structures scattered accreditation evidence (AITSL portfolios, CHED self-study data, audit reports) into a unified accreditation dashboard.",
+    "problem": "PHINMA, CSPD, and Kinetic must maintain continuous accreditation compliance across multiple regulatory bodies (CHED, NESA, ABET). Evidence is scattered across systems (TechOne for attendance, FACES for student outcomes, faculty portfolios in Google Drive). When accreditation bodies request evidence, teams spend weeks compiling and reformatting.",
+    "ai_technique": "Data transformation and structuring with education regulatory vocabulary (AITSL standards, CHED maturity levels, NESA outcomes framework)",
+    "how_it_works": "System connects to institutional data sources (SIS, HR systems, LMS, document repositories) and extracts accreditation-relevant data: student achievement trends, faculty qualifications (AITSL rankings), program curriculum alignment, and governance records. Structures data into accreditation-body-specific formats. When a regulator requests evidence (e.g., CHED's Self-Evaluation Report template), system auto-generates filled sections with current data, flags gaps where evidence is missing, and routes for leadership verification before submission.",
+    "target_companies": [
+      "phinma",
+      "cspd",
+      "kinetic"
+    ],
+    "buyer_persona": "Accreditation Officer, Quality Assurance Manager",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-15",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Power Concentration & Transparency",
+    "_cellHeat": 56,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Governance Anomaly Monitor",
+    "one_liner": "Flags unusual patterns in board decisions, procurement approvals, and audit findings to surface governance integrity risks.",
+    "problem": "PHINMA (publicly listed with ASX-equivalent obligations) and WISE (Qatar Foundation accountability) face complex governance requirements. Detecting red flags—unusual procurement patterns, delayed audit finding resolutions, board decision timing anomalies—is done ad hoc by audit committees, missing emerging risks.",
+    "ai_technique": "Time-series anomaly detection on governance event data with education sector baseline patterns",
+    "how_it_works": "System ingests: board decision logs (from board management software), procurement records (from ERP), and audit finding status (from audit management tool). Learns normal patterns: typical board approval timelines, procurement review cycles, audit follow-up timelines. Flags deviations: procurement exceptions approvals accelerating, audit findings stalling, board decisions on sensitive topics clustering unusually. Monthly alerts to board audit committee with: flagged items, context (e.g., 'This procurement exception rate is 3x historical norm'), and recommended review steps.",
+    "target_companies": [
+      "phinma",
+      "wise",
+      "kinetic"
+    ],
+    "buyer_persona": "Audit Committee Chair, Chief Compliance Officer",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-15",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Power Concentration & Transparency",
+    "_cellHeat": 56,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Board Communication Workbench",
+    "one_liner": "Unified interface to draft, circulate, and archive trustee/stakeholder communications with compliance checks and audit trail.",
+    "problem": "School for Life, Acasus, and WISE must maintain clear communication with multiple governance bodies (boards, diocesan authorities, government funders). Communications are scattered across email and shared drives. Compliance history is hard to audit, and key stakeholder decisions are not consistently documented.",
+    "ai_technique": "Document classification with compliance flag detection and role-based access control",
+    "how_it_works": "User opens the workbench to draft communication (board memo, trustee letter, government compliance report). System auto-classifies content, checks for compliance risks (flagging if communication discloses sensitive accreditation status without board approval), routes for necessary approvals, and archives with full audit trail. Integrates with board management software for distribution. Maintains searchable archive for governance audits.",
+    "target_companies": [
+      "school-for-life",
+      "acasus",
+      "wise"
+    ],
+    "buyer_persona": "Board Secretary, Governance Officer, CEO",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-15",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Power Concentration & Transparency",
+    "_cellHeat": 56,
+    "_cellOppScore": 25
+  },
+  {
+    "name": "Executive Briefing Brief Builder",
+    "one_liner": "Generates executive briefings from board packs, strategic documents, and sector reports tailored for succession leaders or new executives.",
+    "problem": "WISE, Acasus, School for Life, and PHINMA face key-person executive dependency. When new CEOs or strategy leaders onboard, they spend months synthesizing institutional history, governance constraints, and strategic context. Institutional knowledge is scattered and not structured for new leaders.",
+    "ai_technique": "Hierarchical summarization with organization-specific context tagging (governance structures, key relationships, historical precedents)",
+    "how_it_works": "System ingests 5 years of board papers, strategy documents, and program evaluations. When a new executive joins, they receive a personalized briefing that covers: organizational governance structure (diagram of board roles, Catholic diocesan relationships for CSPD, funding sources and key dependencies), strategic priorities and historical precedent (why prior pivots succeeded or failed), and key stakeholder relationships (government partners, accreditation bodies, major donors). Briefing is auto-generated but can be customized by departing executive or board chair to highlight specific context.",
+    "target_companies": [
+      "wise",
+      "acasus",
+      "school-for-life"
+    ],
+    "buyer_persona": "CEO, Chief Strategy Officer, Board Chair",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-16",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Executive Leadership Capability",
+    "_cellHeat": 53,
+    "_cellOppScore": 24
+  },
+  {
+    "name": "Leadership Dashboard with Governance Oversight",
+    "one_liner": "Unified executive dashboard displaying accreditation status, board decision timelines, regulatory compliance, and strategic KPIs in one view.",
+    "problem": "PHINMA, WISE, and Kinetic executive teams lack a single view of organizational health across governance (accreditation, compliance), financial (subsidy dependency, margin trends), and strategic (OKR progress, campus expansion) dimensions. Leadership spends time stitching data from multiple systems rather than on decision-making.",
+    "ai_technique": "Multi-source data integration with education-specific KPI tagging (CHED compliance status, AITSL faculty proficiency levels, student achievement trends)",
+    "how_it_works": "System connects to institutional data sources (SIS, HR, ERP, accreditation dashboards, board management software) and creates a single executive view with sections: Governance & Compliance (accreditation status from CHED, audit findings pipeline, board decision approval rates), Financial Health (tuition revenue trends, subsidy dependency, capital projects status), and Strategic Execution (campus expansion milestones, enrollment forecasts vs. targets, program launch progress). Each section is drillable; clicking on 'CHED accreditation at risk' surfaces underlying evidence and recommended actions.",
+    "target_companies": [
+      "phinma",
+      "wise",
+      "kinetic"
+    ],
+    "buyer_persona": "CEO, CFO, Chief Operating Officer",
+    "tier": "standalone",
+    "confidence": "high",
+    "_cell": "cell-16",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Executive Leadership Capability",
+    "_cellHeat": 53,
+    "_cellOppScore": 24
+  },
+  {
+    "name": "Succession Readiness Planner",
+    "one_liner": "Identifies executive capability gaps and creates personalized development plans to prepare internal candidates for key leadership roles.",
+    "problem": "Acasus, School for Life, and WISE face succession risk as founder/long-serving CEOs consider transitions. Identifying and developing internal successors is ad hoc. There is no systematic way to assess capability gaps (strategic thinking, governance acumen, cross-functional leadership) or track development progress.",
+    "ai_technique": "Competency assessment combining structured feedback data, role-specific capability frameworks, and education-sector leadership benchmarks",
+    "how_it_works": "System ingests: 360-degree feedback on leadership candidates, historical board decisions they've influenced (if applicable), and education-sector executive competency frameworks (developed for K-12 principals and university presidents). Generates: capability assessment comparing candidate to CEO/COO role requirements, identifies gaps (e.g., 'lacks board-level strategic communication experience'), and auto-generates a 12-month development plan (board committee rotations, executive coaching on education governance, mentorship from external education leaders). Progress is tracked quarterly and tied to succession timeline.",
+    "target_companies": [
+      "acasus",
+      "school-for-life",
+      "wise"
+    ],
+    "buyer_persona": "Board Chair, CEO, Chief Human Resources Officer",
+    "tier": "module",
+    "confidence": "medium",
+    "_cell": "cell-16",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Executive Leadership Capability",
+    "_cellHeat": 53,
+    "_cellOppScore": 24
+  },
+  {
+    "name": "Executive Decision Record Assistant",
+    "one_liner": "Structures executive decisions (strategic pivots, major investments, governance changes) with clear rationales, alternatives considered, and assumptions for future audit and learning.",
+    "problem": "Kinetic, PHINMA, and WISE leaders make major decisions (campus launches, program exits, accreditation strategy changes) but rarely document why. 2-3 years later, when a decision's assumptions prove wrong, teams can't understand the original logic, repeating analysis or reversing good decisions under new leadership.",
+    "ai_technique": "Decision documentation templates with multi-factor reasoning capture and assumption tracking",
+    "how_it_works": "When an executive decision is made, the process starts a decision record: name ('Launch STEM campus in Region X'), description, decision date, alternatives considered (with why each was rejected), key assumptions (government subsidy unchanged, enrollment demand of 500 students/year), success metrics, and review dates. System stores this and flagged assumptions are monitored—if government funding policy changes, system auto-alerts that a key assumption of campus launch decision has shifted, triggering leadership review. Useful for both institutional learning and for new leaders inheriting a prior team's decisions.",
+    "target_companies": [
+      "kinetic",
+      "phinma",
+      "wise"
+    ],
+    "buyer_persona": "CEO, Chief Strategy Officer, Board Chair",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-16",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Executive Leadership Capability",
+    "_cellHeat": 53,
+    "_cellOppScore": 24
+  },
+  {
+    "name": "Board Pack Generator",
+    "one_liner": "Automatically synthesises governance documents, accreditation evidence, and committee reports into structured board papers aligned with Catholic education and multi-stakeholder governance frameworks.",
+    "problem": "Boards at CSPD (Catholic schools) and PHINMA (multicampus) spend weeks manually compiling board papers from fragmented governance sources—accreditation reports, committee minutes, policy updates, financial summaries—each requiring distinct formatting for diocesan approval, government compliance, and international funder expectations (WISE, Rising Academies). Off-the-shelf board software doesn't handle education-specific regulatory formats.",
+    "ai_technique": "Text generation with domain-aware templates",
+    "how_it_works": "Ingests scanned/text accreditation evidence (CHED matrices, AITSL standards compliance), committee reports, and operational dashboards. Generates board-ready summaries with appropriate sections for policy approval, fiduciary accountability, and stakeholder communication—sensitive to governance structure (Catholic trustee boards vs. foundation-backed vs. publicly traded).",
+    "target_companies": [
+      "cspd",
+      "phinma",
+      "school-for-life",
+      "wise"
+    ],
+    "buyer_persona": "Board Secretary / Principal / Governance Officer",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-17",
+    "_cellDomain": "Governance & Leadership",
+    "_cellSubCategory": "Decision-Making & Accountability",
+    "_cellHeat": 51,
+    "_cellOppScore": 23
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-remediation-intervention-progress-monitoring-dup",
+  "pain_point_label": "Weak Monitoring & Lack of Evidence of Intervention Success",
+  "matches": [
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Students cycling through remediation without exit is a behavioral prediction problem — the system needs to predict which students are likely to achieve mastery given their current trajectory and intervention type. Propensity modeling on student-level features (assessment scores over time, attendance, intervention hours, teacher) can generate 'likelihood of exit readiness' scores that replace anecdotal judgment. This directly addresses the 'no exit criteria' and 'no comparison of intervention vs. non-intervention outcomes' gaps.",
+      "opportunity_sketch": "A student-level intervention outcome model that scores probability of mastery attainment within N weeks, trained on historical intervention and assessment data across all sites. Feeds into a dashboard that flags students who have exceeded expected remediation duration without progress.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "The lack of systematic progress tracking means that when data does exist (assessment scores, attendance, intervention logs), it is not being used to classify student status — e.g., 'on track to exit', 'stalled', 'regressing', 'ready for exit'. Structured data classification can operationalize exit criteria by assigning intervention-phase labels to each student based on their feature vector, replacing subjective teacher judgment with a consistent, auditable rule.",
+      "opportunity_sketch": "A classification layer over the SIS/LMS data that assigns each remediation student a status label (e.g., Progressing / Plateaued / Regressing / Exit-Ready) updated after each assessment cycle, giving teachers and administrators a shared, objective language for intervention reviews.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The monitoring gap is partly a workflow gap — baseline assessments are not triggered before interventions start, progress checks are not scheduled, and no automated comparison is run against non-intervention peers. A task automation agent can enforce the monitoring protocol: trigger baseline assessment on intervention enrollment, schedule check-in assessments at fixed intervals, pull comparison cohort data, and surface a progress report to the responsible teacher or coordinator. This addresses the systemic absence of monitoring without requiring staff to remember to do it.",
+      "opportunity_sketch": "An intervention monitoring agent that hooks into the enrollment workflow: auto-schedules baseline and progress assessments, generates a bi-weekly progress brief for each student, and escalates to the coordinator when a student exceeds the expected intervention duration without meeting exit criteria.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Leadership and boards require evidence of intervention success in narrative form — summary reports, program reviews, and funding justifications. Currently these rely on anecdote because no structured data exists. Even where data is collected, synthesizing it into a coherent evidence narrative is time-consuming. AI text generation can convert structured progress data (score tables, intervention logs, cohort comparisons) into readable intervention effectiveness reports for principals and boards, replacing anecdotal claims with data-grounded narratives.",
+      "opportunity_sketch": "An automated intervention effectiveness report generator that takes assessment data inputs and produces a plain-language summary per student cohort or intervention program, formatted for inclusion in board packs or accreditation submissions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Students cycling through remediation without exit represent a deviation from expected intervention trajectories — they are behavioral anomalies in the intervention population. Anomaly detection on time-series assessment and attendance data can flag students whose progress curve deviates significantly from peers who successfully exited, enabling early identification of cases that need escalated review rather than continued standard intervention.",
+      "opportunity_sketch": "An anomaly detection layer over remediation enrollment data that flags students whose duration and assessment trajectory fall outside the expected exit band, prompting an automated escalation to the intervention coordinator for case review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

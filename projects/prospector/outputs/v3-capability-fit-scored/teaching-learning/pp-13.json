@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-assessment-grading-special-learner-accommodation-dup",
+  "pain_point_label": "No Systematic Accommodations for Students with Learning Differences",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site operators lack differentiated assessment materials — alternate rubrics, modified question formats, extended-time instructions, and IEP-aligned versions of existing assessments. Text generation can produce these variants at scale from a base assessment, reducing the per-teacher burden that currently prevents systematic accommodation. This directly addresses the 'no alternate assessment formats' and 'no modified rubrics' pain mechanisms.",
+      "opportunity_sketch": "A tool where teachers upload an existing assessment and select an accommodation profile (ELL, dyslexia, IEP-extended time, etc.) and receive a modified version — alternate phrasing, simplified language, scaffolded instructions — ready to distribute.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Systematic identification of students who may have undiagnosed learning differences is a core gap in this pain point. Structured student data — attendance patterns, grade trajectories, support service usage, teacher flags — can be used to classify students into risk tiers for learning differences, enabling proactive referral rather than reactive identification. This is technically feasible given that multi-site operators already collect this data in SIS/LMS systems.",
+      "opportunity_sketch": "A screening layer integrated with the SIS that flags students exhibiting patterns consistent with undiagnosed learning differences, generating a referral recommendation for the learning support team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "IEP and accommodation data often exists in unstructured or inconsistently formatted documents across a multi-site operator — PDFs, Word docs, or handwritten notes — making it impossible to systematically apply accommodations at assessment time. Transformation tooling can normalize accommodation records into a structured schema that integrates with grading and assessment workflows, directly addressing the 'assessments not aligned to IEP/accommodations' mechanism.",
+      "opportunity_sketch": "An ingestion pipeline that reads existing IEP documents and accommodation letters and outputs a standardized accommodation profile per student, fed into the assessment and grading system.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end accommodation workflow — identifying a student's accommodation needs, retrieving their IEP profile, generating a modified assessment, routing it to the right teacher, and logging compliance — is a multi-step process that no single capability handles alone. A task automation agent can orchestrate this entire workflow, connecting SIS data, document generation, and teacher notification in a repeatable pipeline. This directly addresses the systematic gap: current failures happen because no one has automated the coordination, not because teachers are unwilling.",
+      "opportunity_sketch": "An accommodation workflow agent that triggers when an assessment is created, checks enrolled students against accommodation records, auto-generates modified versions for flagged students, and delivers them to teachers with a compliance log.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

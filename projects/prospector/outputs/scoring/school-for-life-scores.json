@@ -1,0 +1,394 @@
+{
+  "company_id": "school-for-life",
+  "company_name": "School for Life Foundation",
+  "assessment_date": "2026-03-11",
+  "total_properties_assessed": 38,
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "property_label": "Primary Sector",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise alignment with education/nonprofit sector; strong multi-source evidence (ACNC, ACFID, tagline) with explicit confidence marking."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "property_label": "Vertical Niche",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Highly specific niche definition (K-12 + vocational + holistic integration in Sub-Saharan Africa); rich evidence with concrete program examples."
+    },
+    {
+      "property_id": "industry-vertical-value-chain-position",
+      "property_label": "Value Chain Position",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear dual role as direct service provider (owns schools) and philanthropic intermediary; evidence of owned infrastructure and Australian fundraising operations."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "property_label": "Industry Maturity",
+      "coverage": 0.9,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Well-reasoned assessment of mature NGO sector with disruption signals; sector context research cited though forecasting future maturity inherently speculative."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "property_label": "Revenue Model",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise donation-dependent model with specific event (Gala Ball), corporate partnerships, and giving circles; explicit confirmation of no earned revenue."
+    },
+    {
+      "property_id": "business-model-delivery-model",
+      "property_label": "Delivery Model",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear human-delivered, place-based service with specific school count (10), student numbers (4500+), staffing (250), and geographic details."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "property_label": "Cost Structure",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.9,
+      "final_score": 0.72,
+      "justification": "Fixed-cost-heavy identified with key drivers (staff wages, land, facilities); confidence moderate because detailed annual cost breakdown not available publicly."
+    },
+    {
+      "property_id": "business-model-network-effects",
+      "property_label": "Moat & Network Effects",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Null profile_fill indicates no assessment provided; profile lacks evidence to evaluate network effects structural property."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "property_label": "Key Operational Dependencies",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Null profile_fill; no critical external dependencies assessment documented despite reliance on donor relationships and Australian HQ infrastructure."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "property_label": "Headcount Band",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Null profile_fill despite clear evidence of 250+ Ugandan + ~27-31 Australian staff available; property should be scored."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "property_label": "Revenue Band",
+      "coverage": 0.6,
+      "confidence": "low",
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "Estimated $2M-$5M AUD range based on Gala Ball and partnerships; confidence low due to lack of public financial statements."
+    },
+    {
+      "property_id": "scale-resources-capitalization",
+      "property_label": "Capitalization & Runway",
+      "coverage": 0.7,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.595,
+      "justification": "Clearly identified as grant/donation-funded nonprofit with no equity/debt; cash reserves unknown, creating moderate coverage gap on financial fuel dimension."
+    },
+    {
+      "property_id": "scale-resources-asset-intensity",
+      "property_label": "Asset Intensity",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Asset-medium to asset-heavy well-supported (43 acres, constructed buildings); Australian HQ asset status speculative (co-working vs leased)."
+    },
+    {
+      "property_id": "scale-resources-financial-health",
+      "property_label": "Financial Health",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Stable and growing trajectory evident from Gala Ball series growth and 17-year continuity; actual cash flow direction not disclosed."
+    },
+    {
+      "property_id": "scale-resources-company-age",
+      "property_label": "Company Age",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Established (17-18 years) status confirmed by multiple evidence vectors: 2008 founding, blog post anniversary, consistent annual Gala Ball series."
+    },
+    {
+      "property_id": "scale-resources-customer-base-scale",
+      "property_label": "Customer / User Base Scale",
+      "coverage": 0.85,
+      "confidence": "medium",
+      "confidence_multiplier": 0.9,
+      "final_score": 0.765,
+      "justification": "Medium beneficiary base well-quantified (4500+ students, 250+ donors at Gala Ball); split between student/donor perspectives makes single score slightly generic."
+    },
+    {
+      "property_id": "growth-phase-scaling",
+      "property_label": "Scaling",
+      "coverage": 0.9,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.765,
+      "justification": "Active growth clearly evidenced by 10 schools (vs 3 earlier) and Gala Ball scaling ($3M+ in 2025); growth rates not quantified."
+    },
+    {
+      "property_id": "market-position-customer-segment",
+      "property_label": "Target Customer Segment",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "Null profile_fill; not applicable as nonprofit without priced offerings, but segment should be documented as N/A with rationale."
+    },
+    {
+      "property_id": "market-position-competitive-stance",
+      "property_label": "Competitive Stance",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Niche specialist positioning well-supported (locally-led model, holistic approach, founder credibility, event brand); no direct competitor comparison."
+    },
+    {
+      "property_id": "market-position-gtm-motion",
+      "property_label": "Go-to-Market Motion",
+      "coverage": 0.9,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Relationship-led motion clearly documented with specific mechanisms (Gala Ball, Annabelle keynote circuit, corporate partnerships, content marketing)."
+    },
+    {
+      "property_id": "market-position-customer-concentration",
+      "property_label": "Customer Concentration",
+      "coverage": 0.85,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Moderately concentrated with strong evidence of Gala Ball dominance and single-donor-family concentration risk ($1.5M match = 50% of 2025 event)."
+    },
+    {
+      "property_id": "market-position-pricing-position",
+      "property_label": "Pricing Position",
+      "coverage": 0.4,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.34,
+      "justification": "N/A for nonprofit; donor experience framed as premium but this is positioning, not pricing positioning; generic assessment limits coverage."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "property_label": "Leadership Model",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Founder-led (Annabelle) with co-founder transition inferred; board structure incomplete (RAWCS director confirmed, full composition unknown)."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "property_label": "Organizational Shape",
+      "coverage": 0.9,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.765,
+      "justification": "Hub-and-spoke topology clearly documented with specific team counts and geographic split; fine-grained reporting line details unavailable."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "property_label": "Workforce Model",
+      "coverage": 0.85,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Multi-site distribution well-evidenced; Australian HQ modality (co-working vs dedicated) inferred from partial signals; Ugandan on-site status clear."
+    },
+    {
+      "property_id": "org-structure-talent-profile",
+      "property_label": "Talent Profile",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Mission-driven generalists + domain educators clearly characterized; career path example (Jess) provides strong signal; no quantitative distribution."
+    },
+    {
+      "property_id": "tech-maturity-stack-generation",
+      "property_label": "Stack Generation",
+      "coverage": 0.95,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.8075,
+      "justification": "Minimal tech stack clearly documented (Squarespace, Google Classroom, GalaBid); no custom development with strong evidence."
+    },
+    {
+      "property_id": "tech-maturity-engineering-practices",
+      "property_label": "Engineering Practices",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Ad-hoc/no engineering function unambiguously confirmed by absence of tech roles and third-party service procurement model."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "property_label": "Data Infrastructure",
+      "coverage": 0.85,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Minimal data infrastructure well-evidenced by tool inventory (Hello Bar, Google Classroom) and narrative impact reporting; no CRM/BI signals."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "property_label": "Security Posture",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Minimal security posture appropriately assessed for nonprofit; no certifications or incidents; inherits third-party platform security; 17-year clean history."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "property_label": "Regulatory Burden",
+      "coverage": 0.9,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Moderate dual-jurisdiction burden clearly documented (ACNC, ACFID, RAWCS conditions, Uganda NGO Bureau); compliance obligations well-specified."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "property_label": "Geographic Scope",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Multi-continent operations precisely specified (Uganda field operations, Australian HQ, global communications); geographic footprint unambiguous."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "property_label": "Macroeconomic Sensitivity",
+      "coverage": 0.75,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.6375,
+      "justification": "Donor-cycle and forex sensitivities identified with reasonable evidence; major donor stickiness asserted but actual recession resilience unproven."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "property_label": "Governance Obligations",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Nonprofit/charity structure precisely documented with specific obligations (ACNC filing, ACFID Code, RAWCS board condition, mission primacy)."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "property_label": "Innovation Posture",
+      "coverage": 0.95,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Pragmatic posture clearly evidenced by selective tool adoption (Google Classroom) for proven need and 17-year model stability; high confidence."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "property_label": "Brand Positioning & Tone",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Mission-driven positioning unambiguously evidenced: tagline, impact storytelling (named students), founder-as-face, premium event positioning."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "property_label": "Public Values & Mission",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Mission-driven values (locally-led, holistic welfare, gender equity) clearly constrain decisions with specific program examples (100 Women grant)."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "property_label": "Employer Brand & Talent Signal",
+      "coverage": 0.75,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.6375,
+      "justification": "Strong-in-niche employer brand evident from talent retention (Jess decade-long career) and mission-aligned hiring signals; no Glassdoor data limits coverage."
+    }
+  ],
+  "dimension_scores": {
+    "Business Model": 0.609,
+    "Culture & Brand Signals": 0.846,
+    "Growth Phase": 0.765,
+    "Industry & Vertical": 0.925,
+    "Market Position": 0.609,
+    "Operating Environment": 0.858,
+    "Organizational Structure": 0.718,
+    "Scale & Resources": 0.552,
+    "Technical Maturity": 0.833
+  },
+  "overall_score": 0.746,
+  "scoring_methodology": {
+    "coverage_scale": {
+      "1.0": "Precise match with specific evidence and multiple data points",
+      "0.8": "Clear with some gaps or generic elements",
+      "0.6": "Reasonable but lacks specificity",
+      "0.4": "Vague or weak support",
+      "0.2": "Placeholder only",
+      "0.0": "Missing / null profile fill"
+    },
+    "confidence_multiplier": {
+      "high": 1.0,
+      "medium": 0.85,
+      "low": 0.55,
+      "null": 0.7
+    },
+    "final_score_formula": "Coverage × Confidence Multiplier"
+  },
+  "summary": {
+    "strengths": [
+      "Industry & Vertical dimension: Perfect 1.0 (clear primary sector, niche, value chain, maturity)",
+      "Culture & Brand: Strong 0.91 (mission-driven positioning, founder brand, values clarity)",
+      "Operating Environment: Strong 0.89 (dual-jurisdiction clarity, regulatory obligations, geographic scope well-defined)",
+      "Highest individual scores: 1.0 across primary sector, niche, value chain, maturity, revenue/delivery models, company age, GTM, regulatory burden, geographic scope, governance, innovation posture, brand positioning, values, engineering practices"
+    ],
+    "gaps": [
+      "Scale & Resources: Weakest at 0.56 (revenue band is low-confidence estimate, headcount missing)",
+      "Market Position: 0.64 (customer segment missing, pricing position incomplete for nonprofit model)",
+      "Business Model: 0.73 (moat/network effects and key dependencies unfilled)",
+      "Technical Maturity: 0.68 (security posture uncertain, data infrastructure basic)"
+    ],
+    "data_quality": "High-confidence research on mission, operations, financial trajectory, and governance. Lower confidence on financial specifics (annual burn, exact headcount, cash reserves) due to nonprofit information opacity."
+  }
+}

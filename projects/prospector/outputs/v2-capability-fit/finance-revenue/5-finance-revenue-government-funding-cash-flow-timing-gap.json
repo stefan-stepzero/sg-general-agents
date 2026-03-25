@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-cash-flow-timing-gap",
+  "pain_point_label": "Claim-to-Cash Timing Misalignment",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Government funding receipts follow repeatable seasonal patterns tied to budget cycles (Q2/Q3 peaks, months 2/5/8 cash shortfalls). A forecasting model trained on 2-3 years of claim submission dates, approval lag distributions, and partial-release history can project cash inflow with enough lead time for treasury action. This directly addresses the CFO's scramble — replacing reactive creditor prioritization with a forward cash position view across all 3-7 campuses.",
+      "opportunity_sketch": "A rolling 13-week cash forecast that models expected government receipt dates per claim batch, flags projected shortfall windows 6-8 weeks in advance, and surfaces which campuses are most exposed — giving the CFO time to arrange bridging credit before payroll pressure hits.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.45
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "A meaningful portion of the cash-flow delay stems from claim submission errors, missing documentation, and manual follow-up on partial releases — all of which extend the claim-to-cash cycle. A task automation agent can monitor claim status portals, detect partial approvals, auto-generate re-submission packages, and trigger follow-up communications without waiting for a staff member to notice. Reducing rework cycles by even one week per claim batch directly narrows the cash gap.",
+      "opportunity_sketch": "An agent that watches the government funding portal for claim status updates, automatically prepares and routes re-submission documents when a partial release is flagged, and logs every action into the finance system — cutting manual follow-up effort and compressing the average claim resolution timeline.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Claim data, approval notices, and partial-release letters arrive in varied formats (PDF remittance advices, portal exports, email notifications) across multiple campuses and funding streams. Before any forecasting or automation is possible, this data must be normalized into a consistent schema. AI-assisted transformation maps disparate government data formats into a unified ledger view, enabling the CFO to see actual vs. expected funding at a glance rather than manually reconciling per-campus spreadsheets.",
+      "opportunity_sketch": "A data pipeline that ingests government remittance documents across all campuses, maps them to a standardized funding-ledger schema (claim ID, expected date, received date, shortfall), and feeds both the forecasting model and the CFO dashboard — replacing ad-hoc spreadsheet reconciliation.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.2
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "When a cash shortfall is confirmed, the operator must decide which creditor payments to defer, which campuses to draw funds from, and how to sequence payroll across sites to stay compliant — a constrained allocation problem with hard deadlines. An optimization layer that takes the forecasted cash position and automatically recommends an inter-campus fund transfer schedule and creditor payment sequencing would replace the treasurer's manual scramble with a defensible, audit-ready decision.",
+      "opportunity_sketch": "A cash allocation optimizer that, given a projected shortfall and known payment obligations (payroll dates, rent, utilities) across campuses, recommends the minimum-disruption fund transfer and deferral schedule — producing an audit trail the CFO can present to the board.",
+      "impact": 4,
+      "feasibility": 2,
+      "visibility": 4,
+      "composite_score": 3.3
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

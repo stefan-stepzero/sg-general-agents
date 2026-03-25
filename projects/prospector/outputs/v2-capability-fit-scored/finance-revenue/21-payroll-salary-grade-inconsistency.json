@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "payroll-salary-grade-inconsistency",
+  "pain_point_label": "Salary Grade & Allowance Logic Inconsistency",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Salary grade and allowance logic is fragmented across campus-specific spreadsheets. AI-assisted ETL can normalize field definitions.",
+      "opportunity_sketch": "An AI-assisted tool that maps each campus payroll spreadsheet fields to a unified master salary grade schema.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Anomaly detection can flag records where pay components deviate from expected values for the employee role and grade.",
+      "opportunity_sketch": "An anomaly detection layer surfacing employees whose total compensation is statistically inconsistent with peers in the same grade.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The cascade of manual re-work when a salary grade changes is a multi-step workflow automation can handle.",
+      "opportunity_sketch": "A payroll adjustment agent that propagates grade changes across all affected staff records and flags outliers for approval.",
+      "pain_salience": 4,
+      "adoption_likelihood": 2,
+      "build_complexity": 2,
+      "composite_score": 12.8
+    },
+    {
+      "capability_id": "generation-code",
+      "capability_label": "Code Generation",
+      "match_rationale": "AI code generation can translate natural-language salary policy into executable, version-controlled logic.",
+      "opportunity_sketch": "A tool where HR describes allowance rules in plain language and AI generates the corresponding payroll calculation logic.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

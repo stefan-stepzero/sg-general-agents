@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-assessment-grading-assessment-frequency-gaps-dup",
+  "pain_point_label": "Insufficient Formative Assessment & Feedback Cycles",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Teachers at multi-site operators lack time to create low-stakes quizzes, practice prompts, and mid-course check-in questions for every unit. Text generation can automatically produce formative question banks, feedback templates, and progress-nudge messages tailored to the curriculum topic and grade level. This directly addresses the absence of systematic low-stakes quizzing and mid-course feedback materials.",
+      "opportunity_sketch": "A quiz-generation tool that takes a lesson plan or learning objective as input and outputs a ready-to-deploy formative quiz with answer keys and diagnostic rubrics. Teachers review and assign in minutes rather than hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Short-answer and open-response formative submissions can be automatically classified by mastery level (e.g., emerging / developing / proficient) or by misconception type, giving teachers diagnostic signal without manual marking of every response. This directly closes the gap where teachers lack diagnostic data to adjust instruction mid-course.",
+      "opportunity_sketch": "An auto-triage layer on top of a learning management system that classifies student short responses against a rubric and surfaces a class-level misconception heat-map to the teacher after each formative task.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Multi-site operators accumulate historical assessment, attendance, and engagement data per student. A propensity model can predict which students are at risk of end-of-term failure early enough for intervention, directly replacing the current state where students are unaware of their standing until final grades. The output is an individual-level risk flag rather than an aggregate statistic.",
+      "opportunity_sketch": "An early-warning dashboard that scores every enrolled student weekly on likelihood of term failure, surfaced to homeroom teachers and student welfare coordinators so they can trigger check-ins before the exam period.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A conversational agent can serve as a persistent practice tutor that students interact with between formal lessons, providing low-stakes quizzing, immediate feedback, and progress summaries on demand. This fills the exact gap of minimal mid-course feedback and students being unaware of progress, without requiring teacher time for each interaction.",
+      "opportunity_sketch": "A subject-specific conversational tutor embedded in the student portal that asks practice questions, explains misconceptions in dialogue, and sends a weekly progress summary to both student and teacher.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When formative data does exist (e.g., LMS activity logs, assignment comments, quiz attempts), teachers at multi-campus operators have no time to read across all of it. Summarization can condense a student's mid-term activity record into a concise progress snapshot, making feedback cycles faster and more likely to happen.",
+      "opportunity_sketch": "An automated mid-term progress digest per student that summarizes assignment performance, participation signals, and teacher comments into a one-page overview sent to the student and their tutor.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

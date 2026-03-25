@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-lgu-community-community-needs-opacity-dup",
+  "pain_point_label": "No Systematic Community Needs Assessment",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Community needs assessment requires producing survey instruments, stakeholder engagement letters to barangay and municipal bodies, and structured community profile reports. Multi-site education operators currently produce these manually or not at all, and AI text generation can systematize these communication artifacts at scale across all campuses. This directly addresses the gap in structured engagement rather than ad-hoc outreach.",
+      "opportunity_sketch": "A template-driven tool that generates community needs survey instruments, LGU engagement letters, and campus-community profile narratives from structured campus data inputs — enabling uniform assessment methodology across all sites.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "LGUs, municipal planning offices, and barangay councils produce local development plans, community profiles, and socioeconomic reports that institutions rarely read or synthesize. AI summarization can condense these documents into campus-relevant community needs briefs, directly replacing the manual gap analysis that currently does not happen. This addresses the lack of alignment between extension programs and documented community priorities.",
+      "opportunity_sketch": "An automated pipeline that ingests publicly available LGU development plans and community profiles, summarizes them into campus-level needs briefs highlighting educational gaps and livelihood priorities relevant to each institution's catchment area.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Multiple unstructured sources — LGU plans, barangay data, TESDA reports, community survey responses — contain latent relationships between skill gaps, livelihood needs, and geographic communities. Knowledge extraction can surface structured fact triples such as (Barangay X, lacks, technical-vocational training) or (Municipality Y, prioritizes, agri-fisheries livelihood) that directly inform campus extension program alignment. This is exactly the structured community intelligence the institution currently lacks.",
+      "opportunity_sketch": "A knowledge graph builder that extracts and maps community needs, skill gaps, and livelihood priorities from LGU planning documents to specific campus catchment areas, producing an actionable community needs map.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The absence of systematic community needs data is fundamentally a research gap — the institution has no process to gather, synthesize, and report on community intelligence across multiple campus catchment areas. A research agent can autonomously gather data from LGU websites, NEDA regional plans, PSA community statistics, and TESDA assessments per campus location, then synthesize findings into structured community needs reports. This replaces a missing function entirely rather than augmenting an existing one.",
+      "opportunity_sketch": "A per-campus research agent that autonomously collects and synthesizes publicly available LGU, PSA, and TESDA data for each campus's catchment area, producing quarterly community needs summaries that feed directly into extension program planning.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Structured community engagement requires consistent dialogue with barangay officials, community members, and local stakeholders — a process that is currently absent because it requires sustained human effort across many campuses. A conversational agent can administer structured community needs surveys through SMS, web chat, or Facebook Messenger (dominant channels in Philippine communities), enabling systematic data collection at scale without proportionally scaling staff. This directly addresses the lack of formal community surveying.",
+      "opportunity_sketch": "A community survey chatbot deployable via Messenger or SMS that guides barangay residents and officials through structured needs assessments, with responses feeding into a centralized community intelligence dashboard per campus.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

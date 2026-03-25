@@ -1,0 +1,116 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-submission-delays-and-fund-holds",
+  "pain_point_label": "Submission Delays & Penalty-Triggered Fund Freezes",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step, deadline-driven workflow — gathering supporting documents, cross-checking completeness, routing for counter-signatures, submitting to government portals, and tracking response windows — that today relies on 1-2 stressed FTE per campus. A task automation agent can own the entire liquidation pipeline: pulling transaction records, flagging missing attachments before submission, triggering approval routing, and monitoring government response deadlines with auto-escalation. This directly attacks the one-incomplete-submission-delays-the-entire-batch failure mode.",
+      "opportunity_sketch": "An AI-orchestrated government claims pipeline that auto-assembles supporting docs from accounting and HR systems, validates completeness against each agency checklist before submission, and sends calendar-anchored follow-up reminders for 10-day resubmission windows — reducing the human coordination burden to exception handling only.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Each campus submission has a varying likelihood of triggering a fund freeze based on factors like historical compliance record, document completeness rate, submission timing, and agency-specific audit patterns. A risk scoring model can flag high-risk submissions before they are sent, giving compliance staff a prioritized intervention list — shifting from reactive crisis management to proactive risk mitigation.",
+      "opportunity_sketch": "A pre-submission risk score per campus per claim period that ranks the probability of a freeze or audit query, enabling the CFO to allocate scarce compliance FTE to the highest-risk submissions first and giving leadership a quantified view of revenue-at-risk before each quarter closes.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The CFO already reforecasts quarterly assuming 20% of government revenue will not arrive — this is an informal, judgment-based prediction. A time series model trained on historical submission outcomes, freeze durations, and fund release timings can produce a quantified forecast of government revenue receipt by period, giving treasury a defensible number rather than a gut estimate.",
+      "opportunity_sketch": "A government revenue receipt forecast model that predicts, for each upcoming quarter, the expected timing and probability of fund release per agency and campus — replacing the CFO manual 20% haircut assumption with a data-driven range and enabling more accurate cash flow planning.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When government audit queries arrive with a 10-day response window, drafting formal written responses under deadline pressure is a high-stakes, time-consuming task for thin compliance staff. AI text generation can draft agency-appropriate response letters, corrective action explanations, and resubmission cover letters from structured input — dramatically compressing the turnaround time on audit responses.",
+      "opportunity_sketch": "A response-drafting assistant that takes extracted audit query requirements and generates a formal government response letter pre-populated with operator claim data, corrective actions taken, and resubmission attachments — ready for CFO review and sign-off within hours rather than days.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 1-2 compliance FTE per campus and multiple submission deadlines converging across campuses and agencies simultaneously, the scheduling of who prepares what and when is a recurring bottleneck. An AI scheduling tool can map all upcoming deadlines across all campuses and agencies, estimate preparation time per claim type, and generate an optimal work allocation plan — ensuring no deadline crunch catches staff unprepared.",
+      "opportunity_sketch": "A compliance workload calendar that ingests all government submission deadlines across every campus and agency, estimates per-claim prep effort, and auto-generates a weekly task assignment plan for compliance staff — surfacing conflicts 3-4 weeks in advance so the CFO can arrange temporary support before crunch hits.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3.0
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Government claim submissions require supporting documents — often scanned receipts, signed liquidation forms, physical audit notices, and counter-signed LGU approval letters — that exist as PDFs or images rather than structured data. Media parsing converts these into machine-readable records that can be indexed, checked for completeness, and attached to the correct claim line. Without this digitization step, any downstream automation or validation is blocked.",
+      "opportunity_sketch": "An ingestion layer that OCRs incoming government notices, audit query letters, and scanned supporting documents on arrival — automatically extracting deadline dates, claim reference numbers, and required resubmission items — so nothing gets buried in email or a filing cabinet.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Government audit notices and fund-freeze notifications contain critical structured information — claim IDs, deadline dates, required documents, agency names, penalty amounts — buried in bureaucratic prose. Extracting these entities automatically ensures every deadline and requirement is captured and routed to the right person without manual reading and re-keying, which is where delays accumulate.",
+      "opportunity_sketch": "Automated parsing of incoming government correspondence that extracts and logs claim reference, deadline, required corrective action, and penalty amount — feeding directly into a compliance task tracker so nothing falls through email inboxes.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Compliance staff across multiple campuses need to quickly look up what documents are required for a specific agency liquidation, what the deadline is for the current period, and what the status of a submitted claim is. A conversational agent over the operator compliance knowledge base enables instant answers without escalating to the central finance team — reducing the coordination overhead that causes deadline slippage.",
+      "opportunity_sketch": "An internal compliance assistant chatbot that lets campus finance staff ask what a specific agency requires for quarterly liquidation or whether a submitted claim has been acknowledged — drawing real-time answers from agency requirement docs and submission tracking records.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 2,
+      "composite_score": 2.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 8
+}

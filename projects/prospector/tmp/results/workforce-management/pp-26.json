@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-workforce-planning-retention-reactive-hiring-dup",
+  "pain_point_label": "Reactive Hiring vs. Proactive Workforce Planning",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Enrollment at each campus follows seasonal and multi-year trends that can be modeled from historical data. Forecasting enrollment trajectories per branch directly produces the staffing demand signal that is currently absent, enabling operators to see 6-18 months ahead rather than reacting to mid-year spikes. This is technically feasible with 3-5 years of historical enrollment records a 500-staff operator almost certainly holds.",
+      "opportunity_sketch": "An enrollment-to-headcount forecasting module that ingests per-campus enrollment history and outputs monthly staffing demand projections by role category, flagging branches trending toward under- or over-staffing thresholds.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Unexpected departures are a root cause of reactive hiring; if the model can score individual staff members on attrition likelihood using features like tenure, role, campus performance, salary band, and absence patterns, operators gain the runway to develop successors or recruit before the seat goes empty. Education operators typically have HR data sufficient to train a basic attrition model.",
+      "opportunity_sketch": "A staff attrition risk dashboard that flags employees with elevated departure probability each quarter, giving principals and HR 2-3 months of advance notice to initiate succession or back-fill pipelines.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Once enrollment forecasts and attrition signals are available, the downstream problem is optimally assigning existing staff across campuses and planning new hires against budgeted headcount caps — a classic resource allocation problem. Multi-site operators face the added constraint of role-qualification requirements (e.g., STEM head credentials), making manual optimization error-prone and slow.",
+      "opportunity_sketch": "A workforce allocation tool that takes enrollment forecasts and role-qualification constraints as inputs and outputs an optimal staff distribution plan across campuses, highlighting gaps that require external hiring versus internal transfers.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A multi-year staffing roadmap is cited as absent — once quantitative forecasts exist, leadership still needs narrative plans, board briefings, and succession documentation that can be drafted rapidly from structured data. Text generation can convert headcount projections and gap analyses into readable roadmap documents, succession narratives, and role-profile briefs that currently do not exist.",
+      "opportunity_sketch": "An automated workforce-planning narrative generator that converts tabular staffing gap data into board-ready multi-year roadmap documents and succession plan summaries per campus, reducing the hours required to produce planning artefacts from scratch.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

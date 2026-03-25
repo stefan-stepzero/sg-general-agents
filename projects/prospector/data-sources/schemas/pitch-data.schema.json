@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "pitch-data.schema.json",
+  "title": "PitchData",
+  "description": "Pitch data entry for one org — extracted from pitch-data.json keyed by org ID",
+  "type": "object",
+  "required": ["situation", "investments", "peers", "pains", "recommendations", "timing", "starters"],
+  "properties": {
+    "situation": {
+      "type": "string",
+      "description": "Opening situation summary for the pitch"
+    },
+    "investments": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Recent investments or strategic moves"
+    },
+    "peers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "detail"],
+        "properties": {
+          "name": { "type": "string" },
+          "detail": { "type": "string" }
+        }
+      },
+      "description": "Peer organizations and what they are doing"
+    },
+    "pains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "loss"],
+        "properties": {
+          "title": { "type": "string" },
+          "loss": { "type": "string", "description": "The cost or loss associated with this pain" }
+        }
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "who", "detail"],
+        "properties": {
+          "title": { "type": "string" },
+          "who": { "type": "string", "description": "Who this recommendation is for (buyer/user)" },
+          "detail": { "type": "string" }
+        }
+      }
+    },
+    "timing": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Why now — timing signals"
+    },
+    "starters": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Conversation starter questions"
+    }
+  },
+  "additionalProperties": true
+}

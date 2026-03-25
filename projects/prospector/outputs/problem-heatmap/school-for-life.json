@@ -1,0 +1,1111 @@
+{
+  "company_id": "school-for-life",
+  "company_name": "School for Life Foundation",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.33,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No profile evidence of awareness gaps; SFL has Mamamia podcast, Saxton speaker bureau, OAM recognition, and Smiley Film Awards — suggesting adequate reach in their target niche, but no data on pipeline depth beyond the Gala Ball attendee base."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile indicates strong engagement (impact storytelling, named individual stories, Seisma partnership) within the existing donor network; no evidence of engagement failure, though the relationship-led GTM limits systematic assessment."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Single weak signal: 100% event-driven model means acquisition funnels outside the Gala Ball are largely untested; the org size and relationship-led model suggests conversion is handled personally rather than systematically, creating a plausible gap."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile confirms clear targeting of Australian HNW individuals in finance/real estate/philanthropy; no evidence of mis-targeting or wasted acquisition effort on the donor side."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.48,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of early donor attrition; the 16-year Gala Ball series suggests high retention of the attendee base, and beneficiary (student) onboarding is an operational not a 'churn' issue in this model."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: the growing Gala Ball ($3M+ in 2025 vs ~$437K historical average) suggests no decay, but the profile notes no CRM or donor tracking platform — making it genuinely difficult to detect gradual disengagement in the non-Gala-Ball donor segment."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: the anonymous matched-giving family represents 50% of the 2025 Gala Ball total ($1.5M of $3M); if this family does not re-commit, renewal failure could be significant — pattern of single-event concentration makes renewal reliability structurally uncertain."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "16-year Gala Ball series with accelerating totals and no negative watchdog signals over 17 years indicates no satisfaction erosion evidence in the profile."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.65,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Direct evidence: Annabelle's May 2025 Uganda letter explicitly frames 'next phase as network expansion across East Africa' — a stated geographic expansion ambition with no evidence of a plan, funding model, or operational blueprint for executing multi-country entry."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: SFL serves a narrow dual constituency (Australian HNW donors + Ugandan rural students); growing reliance on corporate ESG partnerships (Seisma) suggests emerging segment exploration, but no systematic segment development beyond the existing Gala Ball base."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely based on pattern: 100% of fundraising runs through the Gala Ball event and personal outreach — no digital giving, recurring donation infrastructure, or online channel development evident; Squarespace website and no CRM confirm absence of channel diversification."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial evidence: stated East Africa expansion ambition requires adapting the current Mpigi District model (built over 17 years in specific communities) to new geographies with different languages, governments, and community dynamics — a known challenge the profile does not address."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.78,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.9,
+              "rubric_level": "critical",
+              "reasoning": "Overwhelming convergent evidence: Gala Ball raised $3M+ vs $39K from 100 Women grant (76:1 ratio); one anonymous family matched $1.5M = 50% of the event total; profile explicitly identifies this as a dependency — 'loss of the event or its major donor base would be existential.'"
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: 17-year-old charity with zero earned revenue, no government grants (DFAT), no subscription giving infrastructure, no digital donation channel — org has never developed a non-event revenue model despite stated East Africa expansion ambitions requiring more capital."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Direct evidence: RAWCS auspice for DGR status is a single-point dependency explicitly called out in the profile — 'loss of RAWCS relationship would directly impair fundraising capacity'; Gala Ball has no multi-year funding commitments documented."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: with effectively one revenue stream (Gala Ball), there is no portfolio to balance; corporate partnerships (Seisma) cover discrete costs not core operations — misallocation between streams is not yet a structural problem but the imbalance itself is the issue."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.53,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.47,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial evidence: no CRM, donor management via personal relationships, Squarespace website, no automation tooling identified — a 250-staff multi-site charity operating with 27-31 Australian HQ staff and zero workflow automation is very likely experiencing manual process bottlenecks."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No profile evidence; small team with high mission alignment suggests lean operation rather than bureaucratic bloat — though absence of documented processes raises the question."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: hub-and-spoke model with Australian HQ (fundraising/communications) + 250 Ugandan staff (delivery) across two continents with no documented integration systems — handoffs between Australian donor relations and Ugandan program impact reporting rely on personal relationships and Annabelle's Uganda visits."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: 10 schools across Mpigi District with 250 staff and no CRM or documented quality management system — standardization across 10 schools with a 17-year-old model is plausible but no evidence either confirming or ruling out variance."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: Annabelle is the single approval authority for all major decisions (founder-led, no co-founder) across a scaling organization with 10 schools and active East Africa expansion ambition — CEO bottleneck is a structurally predictable outcome."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.58,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No legacy systems to accumulate debt from — Squarespace, GalaBid, Google Classroom are all cloud/SaaS; the org is too small and tech-light to have meaningful technical debt."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: three separate platforms (Squarespace website, GalaBid for events, Google Classroom for Uganda delivery) with no integration layer or CRM — donor data, event data, and program data exist in completely separate silos with no unified view."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: all systems are third-party SaaS (Squarespace, GalaBid, Google) with vendor-managed reliability — no custom infrastructure to fail; extremely unlikely to be an org-level problem."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: profile explicitly states 'no SOC2, ISO 27001, or equivalent certification found' and 'no dedicated security staff' — though the profile also notes this is 'appropriate for a sub-100-person international development nonprofit,' suggesting low actual risk materiality."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Direct evidence: 'no CRM, BI, or analytics roles' confirmed; 'no Salesforce, Raiser's Edge, HubSpot identified'; reliance on 'individual stories and single event totals' for impact reporting — absence of donor management, impact analytics, and reporting tools is explicitly documented."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.58,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: profile shows growth from 3 campuses to 10 schools with 4,500 students on 43 acres — East Africa expansion will require new land, buildings, and infrastructure; the existing 43-acre campus has finite capacity and the growth trajectory makes physical limits a likely near-term constraint."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: SFL's holistic education model (health, agriculture, vocational, primary, secondary) is inherently bespoke and people-intensive; 250 staff serving 4,500 students across 10 schools indicates a non-scalable delivery ratio, and East Africa expansion explicitly invokes further scaling of this model."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: simultaneous scaling of Uganda programs and Australian fundraising with a small Australian HQ team — the profile notes 'growing both sides of the model concurrently' without documenting whether the Australian team has adequate capacity to support both."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: currently concentrated in Mpigi District, Uganda; East Africa expansion ambition with no documented expansion infrastructure — geographic gaps between aspiration and operational reach are structurally predictable."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: operating in rural Uganda with healthcare programs, school feeding, and agricultural programs implies procurement of food, medical supplies, and materials in a supply-constrained rural environment — but no direct evidence of supply chain problems in the profile."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.47,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: 10 schools with 250 staff and a 17-year-old 'Holistic Quality Education Model' but no evidence of documented quality standards, inspection processes, or enforcement mechanisms across the school network — ACFID accreditation covers governance not program standards."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: profile explicitly notes 'impact reporting uses individual stories and single event totals — no dashboards, cohort data, or trend charts'; absence of systematic quality measurement in a 10-school network is a converging indicator."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: 10 schools across Mpigi District serving different communities (Mbazzi and Katuuso) with different programs — without documented quality infrastructure, site-to-site variance in education outcomes is structurally plausible but unconfirmed."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Direct evidence: profile explicitly states impact reporting is 'individual stories and single event totals — no dashboards, cohort data, or trend charts'; gaps note 'no third-party effectiveness ratings (GiveWell, Founders Pledge, etc.)'; this is a confirmed pattern, not inference."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of quality culture failure; 17-year blemish-free record and strong mission alignment suggest quality ownership exists at the cultural level even absent formal structures."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.33,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.2,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "Extremely unlikely: 17-year operational history in the same communities with stated student growth (4,500 students), community trust, and government school partnerships confirms the holistic education model meets actual community needs."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: SFL explicitly targets underserved rural Ugandan children and Australian HNW philanthropists — both segments are well-defined, confirmed, and generating results (4,500 students, $3M Gala Ball); no evidence of mis-targeting."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of needs drift; the profile notes 'Seisma-sponsored IT teacher' and 'vocational pathways' as adaptive responses to evolving market needs — pragmatic but not comprehensive adaptation to digital education trends."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: $3M+ Gala Ball, 100 Women grant, corporate sponsorships, and OAM awards all validate that donors perceive the value as sufficient to motivate giving; beneficiary outcomes (national athletics, post-school pathways) confirm student-level value."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.33,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of clarity failure; 'Educating Poverty Out of Existence' tagline and individual impact storytelling (Pauline, Ritah) are effective communication formats validated by Smiley Charity Film Awards recognition."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: sector includes 'many Australian-run East Africa education NGOs'; however SFL's 17-year track record, locally-led model, and Gala Ball brand position it distinctively — convergence risk is plausible but not evidenced."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: differentiation on locally-led model, founder credibility, and holistic education explicitly aligns with 'current best-practice development standards' per profile research — differentiating on the right axis for the current donor market."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: Annabelle Chauncy's personal brand is a differentiation pillar ('cannot be transferred or bought') — if founder-dependent differentiation is a risk, it is also captured under key-person dependency; the 17-year community trust is a structural moat."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.43,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Not applicable in the same sense for an education charity; curriculum changes in a nonprofit setting don't follow product release cycles, and the 17-year-old model has proven durable."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: profile describes 'deep conservatism on program model (17-year-old holistic model with no major pivots)' and 'not a technology innovator' — while the model works, an absence of systematic innovation pipeline creates drift risk as the broader development sector evolves toward digital and AI-enabled education."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: no custom software or technology product to accumulate debt from; Squarespace, GalaBid, and Google Classroom are externally maintained SaaS tools."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: the 'holistic quality education model' has been unchanged for 17 years; the sector is undergoing digital education adoption and AI integration globally — profile notes Google Classroom as a 2021 COVID response but no evidence of systematic curriculum modernization since."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.35,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Structurally limited applicability: SFL's primary 'product' is place-based schooling, not a digital interface; usability problems apply minimally — Squarespace website and GalaBid are third-party maintained."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of onboarding friction for donors (the Gala Ball is a curated event with personal invitation) or students (school enrollment is community-based); not a structural concern for this org type."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: profile notes the 100 Women grant specifically for girls' education and menstrual hygiene programs — signals awareness of gender barriers; however, rural Uganda context raises structural accessibility questions (disability inclusion, language diversity, physical access) not addressed in the profile."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of disproportionate burden on students or donors relative to value received; $39K from 100 Women and $1.5M from a single family match suggest value perception is high relative to giving effort."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "17-year blemish-free public record and Annabelle's personal communications (Uganda visit letter, podcast appearances) indicate a trust-affirming rather than trust-eroding donor experience."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.56,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.52,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: 250 Ugandan staff across 10 schools in rural Mpigi District is explicitly identified as a 'persistent and now materially larger operational constraint'; rural Uganda has limited qualified teacher and nurse supply pipelines."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: Australian HQ has strong mission-aligned employer brand (Mamamia, NSW Women of the Year, Saxton); Ugandan field recruitment relies on local community trust built over 17 years — employer brand gap is plausible for Ugandan specialist roles but not evidenced."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: no evidence of structured assessment processes in the profile; small team with mission-alignment filtering may compensate, but 250-staff scale across 10 schools suggests informal selection approaches carry risk."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: nonprofit wage constraints in both Australian and Ugandan markets; profile notes 'no evidence of technology, data, or engineering talent' — likely reflects inability to compete for those roles on compensation, not just a preference gap."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: small HQ team with Annabelle as dominant decision-maker — CEO bottleneck in hiring decisions is plausible at this scale but not evidenced directly."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.46,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: Jess Ledieu's decade-long career progression at SFL (Program Manager → Philanthropy Head) is one data point; a 27-31 person Australian HQ with flat structure offers limited advancement paths — career plateau is structurally likely for mid-tenure staff."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: no Glassdoor reviews, no negative employer signals in 17-year history; co-working office model for HQ suggests reasonable working environment; small team with high mission alignment typically mitigates burnout risk."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: nonprofit compensation constraints are endemic to the sector; with $2-5M estimated revenue and 27-31 Australian staff, average salary budget is tight — below-market compensation is structurally predictable without evidence to the contrary."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of poor manager relationships; Annabelle's long-term team retention (Jess Ledieu 10+ years) suggests reasonable managerial environment at the HQ level."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: SFL's mission-driven culture, OAM recognition, and high-profile social impact work attract and retain purpose-aligned staff; 'strong-in-niche employer brand' and Jess Ledieu's long tenure confirm purpose as a retention driver."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.6,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: no evidence of systematic workforce planning or skills inventory across 250+ staff in two geographies; rapid scale from 3 campuses to 10 schools without documented capability planning is a converging indicator."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: no evidence of formal professional development programs for 250 Ugandan teaching and healthcare staff; Google Classroom was adopted as a COVID response, not as a systematic L&D platform."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: co-founder David Everett has departed with no named successor; Ugandan leadership team is intentionally absent from public materials; full board composition unknown — thin leadership pipeline is evidenced by the departure of one of two founders without apparent succession planning."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: 'no evidence of technology, data, or engineering talent in the organization'; 'no AI adoption, no digital strategy documents'; 250 Ugandan staff using Google Classroom as the sole digital tool — digital upskilling gap across the entire workforce is a confirmed profile pattern."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.44,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: 17-year blemish-free public record, OAM awards to founders, ACFID accreditation, and locally-led model alignment with stated values all suggest strong values-behavior coherence."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: hub-and-spoke with Australian HQ and 250 Ugandan staff across two geographies — the intentional absence of Ugandan leadership in public materials and unknown local leadership structure creates ambiguity about whether the structural design is adequate for a 10-school network."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: Australian HQ and Ugandan field staff across two continents with no documented collaboration tools beyond Google Classroom; cross-continental coordination relies on Annabelle's periodic Uganda visits — structural communication gaps in a distributed model are predictable."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: profile notes 'deep conservatism on program model (17-year-old holistic model with no major pivots)' while simultaneously pursuing East Africa expansion — whether the culture can absorb rapid organizational change while maintaining program fidelity is genuinely uncertain."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: Australian HQ team composition is unknown beyond named roles (all appear female in public-facing roles); Ugandan leadership intentionally obscured; gender equity is a stated program value but org-internal equity practices are undocumented."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.52,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.56,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of compliance gaps or citations over 17-year history; ACNC, ACFID, and RAWCS compliance appear maintained; 'blemish-free public record' specifically noted in profile."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: Uganda NGO Bureau regulatory tightening documented — NGO count dropped from ~14,000 to ~5,021 (2019-2023); operating in an increasingly stringent Ugandan regulatory environment while simultaneously expanding to East Africa creates real horizon-scanning and adaptation risk."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: ACFID accreditation, RAWCS auspice, and Ugandan school operating licenses all require sustained compliance — each is a single-point dependency identified in the profile; loss of any one would impair operations or fundraising."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: dual-jurisdiction reporting (ACNC Australia + Uganda NGO Bureau) with minimal tech infrastructure — no evidence of reporting failures but the manual burden on a small HQ team is a plausible operational strain."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: dual-jurisdiction compliance (ACNC + ACFID + RAWCS + Uganda NGO Bureau + school operating licenses) managed by a 27-31 person Australian HQ with no dedicated compliance staff identified — compliance burden relative to team size is a converging indicator of strain."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.28,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: no litigation signals in 17-year history; nonprofit with ACFID accreditation and OAM-awarded founders presents low litigation profile."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: RAWCS auspice contract and Ugandan school operating licenses are legally structured relationships — loss of either creates contractual exposure, but no evidence of contractual disputes currently."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: dual-jurisdiction employment (Australian HQ under Fair Work Act; 250 Ugandan staff under Ugandan labor law) — cross-jurisdictional employment compliance is structurally complex but no evidence of exposure in the profile."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "Structurally almost impossible for a service-delivering education charity with no proprietary technology, no software products, and no commercial IP — extremely unlikely to face IP disputes."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: operating schools with children in Uganda requires duty-of-care insurance; profile notes no D&O liability or insurance details — small charity with 250 staff and 4,500 student beneficiaries has real but unverified insurance exposure."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.38,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: 'no SOC2, ISO 27001, or equivalent certification found' and 'no dedicated security staff'; however all data flows through third-party platforms (Squarespace, GalaBid, Google) that handle their own security — residual risk is low given the outsourced model."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: collecting donor personal data (650+ Gala Ball attendees, corporate partners, giving circles) subject to Australian Privacy Act obligations; Hello Bar for website notifications may involve consent capture — no evidence of privacy compliance framework."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: 'no CRM or BI platform' confirmed; donor data managed through personal relationships without a structured data governance framework; student outcome data across 4,500 students in 10 schools with no documented data architecture — absence of governance is directly evidenced."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: GalaBid processes donor payment and bidding data; Squarespace stores website visitor data; these are third-party processors without documented vendor assessment processes — risk exists but is low-materiality for this org size."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of breach preparedness plans; however the low volume of sensitive data and outsourced platform security make this low-materiality — unlikely to be an active organizational concern given profile characteristics."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.48,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: 4,500 students including children in rural Uganda with healthcare programs — mandatory safeguarding obligations exist for schools serving minors; no safeguarding policy documentation in the profile despite ACFID accreditation requiring code-of-conduct compliance for child protection."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "17-year blemish-free public record, Smiley Film Awards, NSW Government recognition — no media exposure risk evidenced; the very public founder persona (Mamamia, Saxton) creates some amplified risk if an incident occurs, but not a current problem."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No ethical conduct red flags in 17-year history; ACFID accreditation requires ethics governance; OAM awards imply governmental-level reputational vetting."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: David Everett's departure and unknown board composition create a latent stakeholder confidence gap — anonymous matched-giving family's continued engagement is unconfirmed; major donor concentration means any single relationship deterioration materially impacts org confidence."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.56,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.33,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.0,
+              "rubric_level": "na",
+              "reasoning": "Structurally impossible: SFL is a charity with no priced offering to donors; 'pricing power' has no direct application to a donation-funded model — the Gala Ball premium positioning is a donor experience, not a commercial price."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: 250 Ugandan staff wages + 43-acre facility maintenance + Australian HQ + Gala Ball production costs are all fixed — scaling from 3 to 10 schools has materially increased the fixed cost base without a proportional fundraising increase documented; cost structure is expanding concurrently with revenue."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Not applicable in traditional sense; as a nonprofit, 'mix shift' would mean shifting toward lower-impact programs — no evidence of this; the 100 Women grant ($39K) relative to the Gala Ball ($3M) confirms the mix has always been dominated by the event."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: profile notes 'no evidence of DFAT grants, state government support, or Ugandan government co-funding' — there may be funding eligibility the org is not pursuing; RAWCS/Rotary auspice potentially limits access to direct DGR status and some grant programs."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.68,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: 100% private philanthropy with no government funding, no debt access, and no endowment — East Africa expansion aspirations require capital beyond current fundraising run-rate; scaling 10 schools to a regional network requires capital access the current model doesn't provide."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: single annual fundraising event (Gala Ball) creates extreme cash timing concentration — operating costs (250 Ugandan staff wages, 10 school operations) are year-round while 50%+ of revenue arrives in a single night in May; cash flow timing mismatch is structurally near-certain."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: profile notes simultaneous scaling of Uganda programs (10 schools) and Australian fundraising infrastructure without documented capital allocation framework — peanut-butter spreading across expansion priorities is a growth-stage nonprofit pattern."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: the anonymous matched-giving family at 50% of Gala Ball revenue creates extreme funder concentration; managing this relationship, its expectations, and its potential non-renewal is a documented structural risk — 'extreme concentration risk on a single donor family' is explicitly stated in the profile."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.63,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: 'annual revenue and expenditure figures not accessible via public search' and 'granular annual figures not publicly accessible' — no CRM, no BI platform, no analytics staff; financial reporting is likely ACNC-minimum compliance only."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: single-event revenue model with one anonymous major donor representing 50% of proceeds makes reliable forecasting extremely difficult; 'cash reserves unknown' and 'revenue band confidence: low' in the profile confirm external observers cannot model it — internal capability is likely no better."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: no CRM, no BI, no program-level cost allocation across 10 schools — cost-per-student, cost-per-program, and contribution margins by school are almost certainly unknown; 'impact reporting uses individual stories' confirms absence of systematic financial-outcome linkage."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: expansion from 3 to 10 schools with simultaneous East Africa ambition in an org with no documented financial planning infrastructure — annual budgeting likely occurs but sophistication and linkage to strategy is uncertain."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.58,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Direct evidence: AUD-to-UGX forex exposure explicitly documented ('Ugandan program costs denominated in UGX but funded in AUD'); anonymous family match = 50% of Gala Ball revenue = funder concentration risk explicitly named in profile — two converging financial risk exposures confirmed."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: ACNC filing obligation documented but actual compliance state unknown; no audit findings in public record; ACFID annual submission is an independent review mechanism."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: no dedicated finance or internal audit function identified; RAWCS board condition provides one governance check but full board composition unknown; founder-dominant decision-making with limited documented financial control framework is a converging indicator."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: RAWCS auspice for DGR status (rather than direct registration) suggests the current legal structure may be suboptimal for full fundraising flexibility — direct DGR registration could potentially expand fundraising access but is not pursued."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.51,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.48,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: simultaneously scaling Uganda programs (3 to 10 schools), growing Australian fundraising (Gala Ball growth), planning East Africa expansion, and maintaining existing operations — the profile notes all are growing concurrently without evidence of explicit prioritization framework."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: David Everett's departure with unknown circumstances and unknown board composition creates a latent misalignment risk; however Annabelle's dominant founder-CEO role means strategic direction is effectively hers — alignment risk is reduced by concentration."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: East Africa expansion is stated as the 'next phase' but no documented operational plan, funding model, or timeline exists in the profile; 17-year single-geography operation with stated multi-country ambition and no implementation evidence is a textbook strategy-execution gap."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of drift; 17-year commitment to the same holistic education model in Uganda with no major pivots suggests strong mission coherence — East Africa expansion is mission-consistent, not drift."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.33,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: 'sector includes many Australian-run East Africa education NGOs'; founder personal brand differentiation is inherently time-limited — no evidence of current erosion but structural vulnerability exists."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of new competitive threats to donor or beneficiary base; USAID cuts actually improve SFL's relative position by weakening peers — context is currently favorable for SFL competitively."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: no evidence of systematic competitive monitoring or benchmarking; 'no independent impact evaluations (GiveWell, Founders Pledge)' suggests limited external market intelligence about SFL's relative effectiveness."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: Gala Ball $3M+ (record), 10 schools (up from 3), 4,500 students — growth indicators across both funding and programs confirm expanding market position, not stagnation."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.54,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: stated East Africa expansion requires a business model evolution from a single-geography, single-event-funded model to a multi-country operation — whether SFL can execute this transition without changing its funding model is genuinely uncertain."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: profile explicitly identifies no AI adoption, no digital strategy, no tech talent — in a sector undergoing digital education transformation, the absence of any technology transformation agenda in a 17-year-old org is a convergent indicator of unaddressed need."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: co-founder departure and unknown board composition suggest ongoing informal reorganization; East Africa expansion will require structural evolution from a single-country hub-and-spoke to a multi-country model — structural design for this transition is undocumented."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Likely: 'deep conservatism on program model (17-year-old holistic model with no major pivots)' explicitly stated; 'not a technology innovator'; pragmatic adaptation only — no evidence of systematic innovation strategy for program or funding model evolution."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Unlikely: no evidence of existential crisis; USAID immunity actually strengthened SFL's relative position in 2025; 17-year blemish-free record with record fundraising in 2025."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.53,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: Seisma corporate partnership (IT teacher, salary gifting) and RAWCS auspice are critical structured relationships; Tamara and Lexi manage corporate partnerships but scale and depth of partner portfolio beyond Seisma is undocumented — partnership management capacity relative to ambition is uncertain."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: East Africa expansion requires ecosystem positioning (government relationships, local NGO partnerships, community structures) in new countries — no documented ecosystem strategy for multi-country operation exists in the profile."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: Uganda NGO Bureau regulatory tightening (14,000 to 5,021 NGOs 2019-2023) directly affects SFL's operating licenses; expansion to East Africa requires new government relationships in new jurisdictions — regulatory relationship management in a tightening environment is a convergent high-risk indicator."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: strong community trust documented in Mpigi District after 17 years; however Ugandan community leadership is intentionally absent from public materials — stakeholder engagement in expansion communities (beyond Mpigi) is undocumented."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.64,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.58,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: 'full board composition unknown — only RAWCS-appointed director condition is known'; David Everett's departure status unclear; board size, other member backgrounds, and independence are all undocumented — structural opacity around composition is itself a governance signal."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: founder-dominant CEO with unknown board composition — boards with strong founding CEOs frequently exhibit rubber-stamping dynamics; no evidence either confirming or ruling out engagement failure, but the structural conditions are present."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: Annabelle is simultaneously CEO and public face with a 17-year tenure — founder-CEO dominance over a board whose composition is unknown creates structural risk of information asymmetry and inadequate challenge."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: 'full board composition — only RAWCS-appointed director condition is known'; 'ACNC registered company limited by guarantee' imposes minimal formal governance requirements for a nonprofit this size — formal governance documents, committee structure, and board evaluation processes are all undocumented."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.63,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: Annabelle's 17-year tenure, OAM, Saxton speaking circuit, and fundraising excellence are all strengths; however leading a 10-school network scaling to East Africa requires different capabilities than the relationship-driven founder-fundraiser role she's held — stage-transition risk is a pattern, not a personal criticism."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: David Everett's departure and Annabelle's dominant role mean there is effectively no executive team in the traditional sense — the risk is concentration rather than team dysfunction."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: no CFO, no COO, no CTO identified in a 280-person organization spanning two continents; named Australian roles are CEO, Philanthropy Head of Projects, and two partnership/events staff — executive functional coverage is severely thin for the org's current complexity."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Direct evidence: David Everett (co-founder) has departed with no named successor; no succession plan documented for CEO Annabelle Chauncy; Ugandan leadership team intentionally absent from public materials; 'potential succession/stability gap' is explicitly named in the profile's gaps section."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.54,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: founder-led with unknown board structure and thin executive team — decision rights in a hub-and-spoke model with 250 Ugandan staff and no documented Ugandan leadership are likely informally distributed; formalization absent at this scale."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: single founder-CEO bottleneck with no named deputies — scaling from 3 to 10 schools with East Africa ambitions creates decision volume that a single-leader model handles with increasing difficulty."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Very likely: Australian HQ relies on periodic Uganda visits (Annabelle May 2025 letter) and no documented dashboards or reporting systems — real-time operational information from 10 schools to Australian decision-makers flows through informal personal channels."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: no documented OKR, KPI, or accountability framework across 250 Ugandan staff; impact reporting based on 'individual stories' rather than systematic tracking — accountability structures beyond personal relationship-based management are likely absent."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "One weak signal: OAM, 17-year track record, and successful Gala Ball growth suggest strong judgment; however the co-founder's departure circumstances and the absence of documented strategic planning suggest some decisions may be intuition-driven at this scale."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.68,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: 'company limited by guarantee' structure with RAWCS board condition — founder CEO for 17 years; specific entrenchment mechanisms (voting rights, removal provisions) are unknown but standard for Australian nonprofit structures which often lack robust removal procedures."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Moderate: Annabelle's personal donor relationships (Gala Ball, anonymous family match) and Saxton speaking network mean key organizational relationships exist outside formal governance structures — informal influence is structurally embedded in the model."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.9,
+              "rubric_level": "critical",
+              "reasoning": "Overwhelming convergent evidence: Annabelle Chauncy holds the personal brand (OAM, Saxton, Mamamia), the donor relationships ($1.5M anonymous family, 650+ Gala Ball network), the public face, and the 17-year institutional knowledge — profile explicitly notes her personal brand 'cannot be transferred or bought'; sole remaining founder after David Everett's departure."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Strong circumstantial: 'annual revenue and expenditure figures not accessible', 'full board composition unknown', 'Ugandan leadership intentionally absent from public materials', 'David Everett's departure status unclear' — multiple confirmed information gaps suggest systematic opacity rather than accidental absence."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "revenue-diversification-concentration",
+      "power-transparency-key-person",
+      "market-expansion-geographic",
+      "leadership-capability-transition",
+      "capital-funding-liquidity"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 2,
+      "high": 20,
+      "medium": 58,
+      "low": 10,
+      "na": 1
+    }
+  }
+}

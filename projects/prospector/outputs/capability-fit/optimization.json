@@ -1,0 +1,231 @@
+{
+  "category": "optimization",
+  "category_label": "Optimization & Planning",
+  "capabilities": {
+    "optimization-resource": {
+      "label": "Resource Allocation & Scheduling",
+      "domains": {
+        "operations-delivery": {
+          "fit": 0.92,
+          "specificity": "high",
+          "reasoning": "Timetabling, classroom and room allocation, teacher rostering, and multi-campus staff scheduling are defining operational bottlenecks across K-12 (CSPD), HE (iPeople, PHINMA), and student accommodation (Kinetic). Constraint density is high — accreditation staffing ratios, regulatory contact-hour minimums, multi-site logistics — and institution-specific constraint sets make off-the-shelf tools inadequate. Purpose-built optimization is a direct, high-value fit."
+        },
+        "talent-people": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Allocating professional development budgets, scheduling training across distributed school networks (Rising Academies, School for Life), and managing relief teacher or relief-staff pools require constraint-aware scheduling. The workforce is large, domain-expert-heavy, and multi-site, making manual allocation error-prone at scale. Mid specificity because generic workforce scheduling tools partially address this, but do not encode education award conditions or certification requirements."
+        },
+        "financial": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Allocating capex across campuses, distributing program budgets under government funding conditions, and optimizing facility utilization rates to justify spend are relevant for PHINMA, iPeople, and CSPD. Requires institution-specific funding rules and enrollment projections to parameterize correctly. Mid specificity because generic budgeting tools cover the basics."
+        },
+        "product-service": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Optimizing course scheduling and cohort structures for EdTech platforms (Kinetic, WISE) or curriculum delivery windows requires constraint satisfaction on enrollment capacity, faculty availability, and technology access. Specificity is mid because embedded scheduling modules in SaaS platforms like Kinetic may partially address this natively."
+        },
+        "risk-compliance": {
+          "fit": 0.5,
+          "specificity": "mid",
+          "reasoning": "Ensuring resource allocations comply with child safety supervision ratios, accreditation staffing minimums, and government funding conditions (CSPD, Rising Academies) requires constraint checking integrated into scheduling. This is primarily a compliance validation overlay on operational scheduling rather than a standalone optimization problem."
+        },
+        "growth-market": {
+          "fit": 0.42,
+          "specificity": "low",
+          "reasoning": "Resource allocation for program expansion or new campus rollout (Rising Academies, Acasus-supported institutions) has some relevance but decisions are governed by funding availability, community need, and government partnership rather than optimization models. Generic planning tools cover most of the need at this level."
+        },
+        "strategy-direction": {
+          "fit": 0.3,
+          "specificity": "low",
+          "reasoning": "Strategic resource prioritization — which markets to enter, which programs to scale — is a judgment-driven exercise that optimization models inform at the margins. Scenario planning and advisory frameworks dominate over algorithmic allocation in education governance contexts."
+        },
+        "governance-leadership": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Governance decisions around resource allocation — board approval of budgets, principal appointments — are qualitative and politically mediated in education institutions. Optimization models have minimal traction here."
+        }
+      }
+    },
+    "optimization-routing": {
+      "label": "Route & Logistics Optimization",
+      "domains": {
+        "operations-delivery": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Multi-site education operators (Rising Academies across West Africa, PHINMA across Philippine campuses, School for Life in remote Australia) face genuine logistics challenges: distributing learning materials, deploying field staff and coaches, and coordinating supply chains to under-resourced locations. Relevant but logistics infrastructure constraints — road quality, connectivity, transport availability — often dominate over optimization model quality. Mid specificity because generic routing tools cover the algorithmic side; the education-specific challenge is data and infrastructure, not solver sophistication."
+        },
+        "financial": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Reducing logistics costs for materials distribution or field staff travel is a real but secondary cost line for multi-site operators. Staffing and program costs dominate the P&L. Generic fleet and travel tools cover the main need."
+        },
+        "growth-market": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Physical expansion routing for new school or campus locations (Rising Academies, Acasus project delivery) could use geospatial optimization, but site selection decisions are primarily driven by community need, government mandate, and funding availability rather than logistics efficiency."
+        },
+        "talent-people": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Routing field supervisors or instructional coaches to visit schools across distributed networks (Rising Academies) has marginal optimization value but is typically resolved by simple geography-based assignment rather than algorithmic route solving."
+        },
+        "risk-compliance": {
+          "fit": 0.22,
+          "specificity": "low",
+          "reasoning": "Logistics reliability for delivering exam materials or ensuring staff coverage at regulated events has compliance implications, but this is handled through manual contingency planning rather than optimization models in education-sector organizations."
+        },
+        "product-service": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Education products and services are largely campus-based or digital; physical logistics optimization has minimal bearing on product design or service delivery quality in this sector."
+        },
+        "strategy-direction": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Strategic decisions about geographic footprint are informed by demand analysis, funding availability, and government relations — not logistics routing optimization."
+        },
+        "governance-leadership": {
+          "fit": 0.08,
+          "specificity": "low",
+          "reasoning": "No meaningful connection between logistics optimization and governance or leadership decisions in education-sector organizations."
+        }
+      }
+    },
+    "optimization-pricing": {
+      "label": "Pricing & Revenue Optimization",
+      "domains": {
+        "financial": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Fee-setting is a high-stakes, politically sensitive exercise across affordable HE (PHINMA, iPeople), K-12 (CSPD), and student accommodation (Kinetic). Dynamic pricing for room allocations (Kinetic), scholarship tiering to maximize enrollment revenue while meeting access mandates (PHINMA), and event registration pricing (WISE) all benefit from optimization. High specificity because pricing constraints are institution-specific: government fee caps, cross-subsidy models between programs, donor conditions, and affordability commitments."
+        },
+        "growth-market": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Enrollment conversion optimization through targeted scholarship offers, tiered fee structures by student segment, and early-enrolment incentives are relevant growth levers for iPeople, PHINMA, and Kinetic. Mid specificity because behavioral segmentation data quality in these organizations is typically limited and enrollment cycles are long, reducing optimization velocity."
+        },
+        "product-service": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Program portfolio pricing — optimizing course fees, micro-credential pricing, and bundled service packages — is relevant for HE and EdTech players. Requires willingness-to-pay data that most of these organizations do not yet systematically collect, limiting model fidelity."
+        },
+        "strategy-direction": {
+          "fit": 0.48,
+          "specificity": "mid",
+          "reasoning": "Revenue mix decisions — shifting toward higher-margin programs, international student recruitment, or premium services — benefit from pricing optimization models, but are ultimately governed by mission constraints, regulatory approval processes, and board priorities that limit optimization scope."
+        },
+        "risk-compliance": {
+          "fit": 0.42,
+          "specificity": "mid",
+          "reasoning": "Fee structures must comply with government accreditation conditions, consumer protection regulations, and funding agreements. Optimization models need regulatory guardrails built in; without them, pricing optimization in this sector risks compliance exposure rather than reducing it."
+        },
+        "operations-delivery": {
+          "fit": 0.3,
+          "specificity": "low",
+          "reasoning": "Pricing optimization has limited operational relevance beyond procurement and vendor contract negotiations, which are not a primary differentiator in education delivery contexts."
+        },
+        "governance-leadership": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Fee-setting decisions require board approval in most education institutions. Optimization models serve as decision support, but boards in education organizations tend to be mission-oriented and may resist algorithmic pricing recommendations without strong contextual and ethical framing."
+        },
+        "talent-people": {
+          "fit": 0.2,
+          "specificity": "low",
+          "reasoning": "Compensation benchmarking has surface resemblance to pricing optimization but is a distinct HR domain governed by education awards, union agreements, and accreditation requirements that pricing algorithms do not address."
+        }
+      }
+    },
+    "optimization-experiment": {
+      "label": "Experiment Design & Optimization",
+      "domains": {
+        "product-service": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "EdTech product iteration (Kinetic platform, WISE digital engagement tools) benefits from rigorous A/B testing on onboarding flows, feature adoption, and engagement mechanics. Curriculum intervention testing (Rising Academies, Acasus, School for Life) requires experiment design with proper randomization under clustered school structures and small sample sizes — conditions where generic A/B testing tools fail and purpose-built design is essential. High specificity because education outcome measurement (learning gains, attendance, progression) requires domain-specific metric construction."
+        },
+        "strategy-direction": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Pilot-before-scale is the dominant strategy pattern for education development organizations (Acasus, Rising Academies, School for Life). Structured experiment design for program pilots — defining counterfactuals, controlling for selection bias, measuring learning outcomes with appropriate lags — is high-value. Mid specificity because this requires education sector measurement expertise that is not embedded in generic experiment tools."
+        },
+        "operations-delivery": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Testing operational interventions — new teaching methodologies, attendance tracking systems, student support protocols — requires experiment design integrated with school data systems. Relevant for Rising Academies and School for Life, where systematic improvement is the core organizational mission, but data infrastructure limitations constrain experiment quality."
+        },
+        "growth-market": {
+          "fit": 0.52,
+          "specificity": "mid",
+          "reasoning": "Testing enrollment marketing channels, messaging variants, and outreach sequencing is a growth lever for iPeople, PHINMA, and Kinetic. Standard digital marketing experimentation tools partially cover this, but long enrollment cycles (6-18 months) and small annual cohorts reduce statistical power and limit experiment velocity significantly."
+        },
+        "talent-people": {
+          "fit": 0.45,
+          "specificity": "mid",
+          "reasoning": "Testing professional development interventions, new teacher training formats, and management practice changes at scale is a genuine need for large distributed operators (Rising Academies, PHINMA). However, sample sizes per school are small, outcome measurement lags are long, and ethical constraints on withholding interventions from control groups complicate deployment."
+        },
+        "financial": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Financial experiment design — testing fee incentives or payment plan structures — is limited by regulatory constraints and mission commitments that restrict pricing experimentation in education. Scenario modeling substitutes for controlled trials in financial planning."
+        },
+        "risk-compliance": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Experimenting with compliance or child safety processes is heavily constrained by regulatory requirements that mandate specific protocols. There is limited scope for optimization-style experimentation in regulated education risk domains."
+        },
+        "governance-leadership": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Governance structures are not amenable to A/B experimentation. Changes to board composition, leadership accountability, or committee processes are institutional decisions governed by constitutions and regulatory requirements, not empirical tests."
+        }
+      }
+    },
+    "optimization-constraint": {
+      "label": "Constraint Satisfaction & Configuration",
+      "domains": {
+        "operations-delivery": {
+          "fit": 0.9,
+          "specificity": "high",
+          "reasoning": "Education operations are defined by hard, interlocking constraints: accreditation staffing ratios, timetable clash rules, exam scheduling exclusion windows, room capacity limits, regulatory contact-hour minimums, and prerequisite sequencing. Automating constraint-satisfying configurations for timetables, course offerings, and staffing plans is a direct high-value application across CSPD, iPeople, and PHINMA. High specificity because constraint sets are institution-specific, jurisdiction-specific, and not embedded in generic scheduling software."
+        },
+        "risk-compliance": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Compliance configuration — ensuring every policy, system setting, and operational process aligns with child safety frameworks, government funding conditions, and accreditation standards — is fundamentally a constraint satisfaction problem. For CSPD (Catholic education compliance in Australia) and iPeople/PHINMA (Philippine CHED regulations), the constraint space is large, multi-jurisdictional, and subject to frequent regulatory change. High specificity because generic GRC tools do not encode education-sector regulatory logic, and misconfiguration carries accreditation and funding consequences."
+        },
+        "product-service": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Configuring accreditation-compliant program architectures, prerequisite chains, and credit recognition frameworks requires constraint satisfaction over curriculum rules and progression requirements. Directly relevant for iPeople and PHINMA program design, where CHED accreditation mandates specific course configurations that cannot be violated. Mid specificity because curriculum management systems handle parts of this, but constraint solver depth is limited."
+        },
+        "talent-people": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Configuring valid employment arrangements under education award conditions, teacher certification requirements, and fair work obligations across multi-site networks requires constraint checking at scale. Relevant for CSPD and Rising Academies, where workforce rules are complex, multi-jurisdiction, and HR systems are often fragmented across sites."
+        },
+        "financial": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Budget configuration under multiple simultaneous constraints — government funding rules with restricted and unrestricted categories, donor conditions, cross-subsidy targets between programs, and minimum program viability thresholds — is a constraint satisfaction problem. Relevant for PHINMA and Acasus-supported institutions where funding is multi-source with conflicting allocation conditions."
+        },
+        "governance-leadership": {
+          "fit": 0.48,
+          "specificity": "mid",
+          "reasoning": "Governance configuration — ensuring committee compositions meet quorum requirements, conflict-of-interest rules, skills diversity mandates, and regulatory board composition requirements — is a constraint satisfaction problem with real compliance stakes in regulated education bodies (CSPD, iPeople, PHINMA). Mid specificity because board governance tools are emerging in this space but are not yet education-sector-specific."
+        },
+        "growth-market": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Growth configurations — program mix, campus locations, partnership structures — must satisfy regulatory and funding constraints, but growth decisions in education are primarily driven by community need assessment, funding opportunity, and government relations rather than constraint-solving algorithms."
+        },
+        "strategy-direction": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Strategic option space is constrained by mission, funding availability, and regulatory approval timelines, but strategic decisions in education organizations are not typically framed or resolved as constraint satisfaction problems. Scenario planning and stakeholder deliberation dominate over algorithmic approaches."
+        }
+      }
+    }
+  }
+}

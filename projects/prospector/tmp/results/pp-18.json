@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-payment-timing-liquidity",
+  "pain_point_label": "Supplier Payment Timing & Liquidity Mismatch",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Invoices arriving as PDFs, scanned paper forms, or email attachments are a root cause of the reactive, episodic payables cycle. OCR and invoice parsing directly converts these documents into structured payables records with due dates, discount cutoff dates, and supplier IDs — the foundation for any systematic AP process. Multi-site education operators in emerging markets frequently receive handwritten or image-based invoices that cannot be ingested by basic ERP systems.",
+      "opportunity_sketch": "An invoice ingestion pipeline that OCRs incoming supplier documents, extracts key fields (amount, due date, discount term, supplier account), and pushes records into the AP ledger automatically — eliminating manual data entry and the 'pile-up' backlog.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once invoices are digitised, entity extraction pulls the specific attributes needed for systematic AP management: payment terms, due dates, early-payment discount windows, supplier bank account details, and PO references. This directly addresses the pain that finance staff manually track due dates and have no systematic view of discount cutoffs or contract terms. Extracting supplier account type (personal vs. business) also flags the fraud-and-traceability risk described in the pain point.",
+      "opportunity_sketch": "A post-OCR extraction layer that normalises every invoice into a canonical payables record — due date, net terms, discount deadline, supplier entity, account type flag — feeding a real-time AP dashboard that prioritises by due date and discount cutoff.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The stated WHY is that cash flow is unpredictable and the organisation cannot forecast when payables will be discharged. Time series forecasting on historical payables and cash inflows (tuition cycles, government disbursement schedules) can produce a forward-looking cash-flow model that shows when payment runs are feasible without triggering a liquidity shortfall. For emerging-market operators with seasonal enrollment revenues, this is directly relevant.",
+      "opportunity_sketch": "A 13-week rolling cash-flow forecast that models expected payables due, available cash, and revenue inflows — surfacing which invoices can be paid this week vs. which will cause a shortfall, so finance teams make proactive rather than reactive payment decisions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain point explicitly names supplier fraud risks: payments routed to personal accounts instead of business accounts, informal 'payment facilitator' agents taking cuts, and suppliers demanding advance payments outside contracted terms. Anomaly detection on payables patterns — supplier account changes, deviation from contracted payment channels, invoice amounts inconsistent with purchase orders — directly surfaces these risks before payments are released. Education operators in emerging markets are particularly exposed to procurement fraud.",
+      "opportunity_sketch": "An AP fraud-monitoring layer that flags anomalous payment requests — new or changed bank account details, invoices without matching POs, duplicate submissions, or suppliers requesting personal-account remittance — for finance manager review before payment authorisation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Payment prioritisation is described as political rather than systematic. Resource allocation and scheduling AI can replace this with a constraint-aware payment run optimiser that allocates available cash across outstanding invoices, respecting due dates, early-payment discount deadlines, supplier relationship risk (micro-enterprise suppliers who will withhold deliveries), and contracted payment terms. This is fundamentally a resource allocation problem: finite cash, multiple competing claims, prioritisation rules.",
+      "opportunity_sketch": "A payment run optimiser that, given current cash balance and projected inflows, recommends which invoices to pay this cycle — maximising captured early-payment discounts, preventing high-criticality supplier holds, and staying within liquidity constraints — replacing manual and political prioritisation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end AP workflow described in the pain — invoice receipt, data extraction, due-date tracking, payment run scheduling, supplier communication — is a multi-step process that a task automation agent can execute autonomously. The current state is entirely reactive and human-driven; an automation agent can handle invoice ingestion, match to POs, flag payment windows, trigger payment runs, and send supplier status notifications without finance staff intervening at each step. This directly addresses the episodic, relationship-driven nature of the current process.",
+      "opportunity_sketch": "An AP automation agent that ingests invoices from email/shared folders, extracts and validates key fields, matches to POs, queues invoices in due-date order, triggers scheduled payment runs, and sends automated status notifications to suppliers — eliminating the 'phone calls asking when they'll be paid' failure mode.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-eligibility-claw-back",
+  "pain_point_label": "Mid-year eligibility verification & claw-back processing",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "The core of mid-year eligibility verification is classifying each student-award pair as still-eligible or ineligible based on structured feature inputs: current GPA, attendance percentage, enrollment status, income re-qualification flag, and program persistence. This is a classic structured classification problem where feature vectors map to binary or multi-class labels, replacing the manual audit across campus systems. For a multi-site operator, the same model runs across all campuses once integrated with the SIS/LMS data feeds.",
+      "opportunity_sketch": "A nightly batch classifier ingests structured student records per campus, flags each active award as 'eligible / at-risk / ineligible', and surfaces a prioritized exception list to the financial aid team — replacing the end-of-year surprise audit with a continuous watch.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Claw-back processing is a multi-step workflow: detect ineligibility → determine claw-back mechanic per sponsor agreement → calculate refund/credit/offset amount → generate sponsor notification → update ledger. Each step involves branching logic (different sponsor terms, different claw-back timelines) and touches multiple systems (SIS, finance, communication). A task automation agent can orchestrate this end-to-end, replacing the reactive manual process with a proactive, rules-driven pipeline. The 15+ hrs/month per campus pain is directly a workflow orchestration problem.",
+      "opportunity_sketch": "An automation agent monitors eligibility flags daily, looks up the applicable sponsor agreement terms, calculates the correct claw-back amount, drafts the sponsor notification, and queues a ledger adjustment for staff approval — reducing human effort to review-and-approve rather than discover-and-calculate.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Students whose GPA, attendance, or enrollment status deviates sharply from expected trajectories mid-term are precisely the anomaly pattern this capability targets. Rather than waiting for a threshold breach, anomaly detection can surface students whose trajectories are trending toward ineligibility — giving the financial aid team a proactive lead time before a claw-back becomes necessary. This is distinct from the binary classification check: it catches edge cases and borderline patterns that rule-based thresholds miss.",
+      "opportunity_sketch": "An anomaly detector runs weekly on the student behavioral data stream, flagging sudden drops in attendance or GPA with an 'eligibility risk alert' — giving staff 4-6 weeks to intervene or prepare claw-back paperwork rather than discovering breaches at term end.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Sponsor notification and claw-back communication is a high-stakes, high-volume writing task: each sponsor has different agreement language, claw-back conditions, and preferred notification formats. Manually drafting these letters is slow and error-prone. LLM text generation grounded in the specific sponsor agreement terms and the computed claw-back details can produce accurate, tailored notifications at scale — directly addressing the 'sponsor escalations common when claw-backs are delayed or miscalculated' pain.",
+      "opportunity_sketch": "When a claw-back is triggered, the system auto-drafts a sponsor notification letter that references the specific award conditions breached, the calculated recovery amount, and the timeline — staff review and send rather than compose from scratch, cutting per-notification time from 30+ minutes to under 5.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Sponsor agreements contain heterogeneous claw-back conditions, timelines, and notification requirements buried in dense contract language. Extracting the structured ruleset — which conditions trigger claw-back, what the recovery mechanic is, what the notification window is — from each sponsor's agreement documents is a relationship extraction problem. This structured knowledge then powers the automation and classification layers. Without it, staff must manually look up each agreement when a claw-back is triggered.",
+      "opportunity_sketch": "A one-time extraction pass over all sponsor agreement PDFs produces a structured claw-back rule library (sponsor → conditions → mechanic → timeline), stored as queryable records that drive automated claw-back calculation and notification drafting.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Sponsor agreements and financial aid records are frequently in PDF or scanned document form. Before knowledge extraction or rule structuring can happen, these documents must be digitized and parsed into machine-readable text. OCR and layout-aware document parsing is the prerequisite digitization step for the knowledge extraction layer above — without it, automated rule ingestion from scanned or PDF-based sponsor contracts is blocked.",
+      "opportunity_sketch": "A document parsing pipeline processes the library of sponsor agreement PDFs — extracting text, preserving table structure for payment schedules and condition tables — feeding clean structured text into downstream extraction and rule-building workflows.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

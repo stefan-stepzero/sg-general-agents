@@ -1,0 +1,186 @@
+{
+  "category": "prediction",
+  "category_label": "Prediction",
+  "capabilities": {
+    "prediction-time-series": {
+      "label": "Time Series Forecasting",
+      "domains": {
+        "talent-people": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Teacher attrition and hiring pipeline forecasting is a pressing pain point (52 heat) across multi-site operators like Rising Academies and PHINMA. Seasonal enrollment patterns drive staffing cycles that legacy HR systems cannot forecast. Mid specificity because general workforce forecasting tools exist but lack education-sector features like teacher certification lead times and school-year periodicity."
+        },
+        "governance-leadership": {
+          "fit": 0.48,
+          "specificity": "low",
+          "reasoning": "Board reporting cadences and policy-cycle tracking have temporal patterns but governance decisions are driven more by qualitative judgment than quantitative forecasts. Limited differentiated value over standard dashboard trend lines."
+        },
+        "operations-delivery": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Education operations have strong seasonal time series signals: enrollment intake cycles, exam scheduling, facility utilization, and budget drawdown. Multi-site operators like CSPD and PHINMA need site-level demand forecasting to allocate teachers and classrooms. Kinetic's student accommodation SaaS has textbook occupancy forecasting needs. Generic time series tools lack school-year periodicity and multi-campus hierarchical structure."
+        },
+        "product-service": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "EdTech product usage shows strong semester-driven seasonality (iPeople, Kinetic). Forecasting feature adoption curves and engagement drop-offs within academic terms informs roadmap timing. Mid specificity — general SaaS usage analytics provide baseline forecasting but lack academic-calendar context."
+        },
+        "risk-compliance": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Forecasting compliance deadline pressure, audit cycles, and regulatory reporting windows has value for CSPD (Catholic education authority) and PHINMA (CHED Philippines). Child safety incident trend forecasting is relevant for Rising Academies. Mid specificity because risk materialization is often event-driven rather than smoothly forecastable."
+        },
+        "financial": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "Government funding disbursement is heavily time-structured (quarterly grants, annual appropriations) for LMIC operators like Acasus, Rising Academies, and PHINMA. Forecasting tuition fee collection curves against cash flow needs is critical for affordable-HE operators with thin margins. School-year revenue recognition patterns differ fundamentally from standard SaaS models, making generic FP&A tools ill-fitted."
+        },
+        "strategy-direction": {
+          "fit": 0.55,
+          "specificity": "low",
+          "reasoning": "Macro enrollment trend forecasting (demographic shifts, population curves affecting K-12 intake) supports long-term strategy but is largely served by national statistics and sector research. WISE and Acasus may use this for market entry analysis. Low specificity — the underlying data is public and the models are generic demographic projections."
+        },
+        "growth-market": {
+          "fit": 0.70,
+          "specificity": "mid",
+          "reasoning": "Enrollment conversion funnel forecasting — inquiry to application to enrollment — follows predictable academic-cycle patterns for iPeople and PHINMA. Forecasting cohort retention rates over multi-year degree programs is a meaningful growth metric. Mid specificity because CRM tools offer basic funnel forecasting but lack education-specific stage definitions and dropout pattern recognition."
+        }
+      }
+    },
+    "prediction-propensity": {
+      "label": "Propensity & Behavioral Modeling",
+      "domains": {
+        "talent-people": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "Teacher flight-risk propensity modeling is directly relevant given the 52-heat talent problem. Multi-site operators in LMICs (Rising Academies) and affordable HE (PHINMA) face chronic attrition. Behavioral signals — absence patterns, professional development engagement, load imbalance — are available in existing HR and LMS data. Education workforce propensity models require school-specific covariates (class size, subject scarcity, location remoteness) absent from generic HR churn tools."
+        },
+        "governance-leadership": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Modeling stakeholder or board member behavior has limited structured data and low tractability. Governance decisions are shaped by relationship dynamics and institutional politics more than behavioral patterns amenable to propensity modeling."
+        },
+        "operations-delivery": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Predicting which students will require additional support services, which classrooms will face resource shortfalls, or which sites will miss operational KPIs has operational value. School-level behavioral patterns (late submissions, absenteeism spikes) are leading indicators of service delivery failures. Mid specificity because student information systems touch this but rarely surface propensity scores for operational intervention."
+        },
+        "product-service": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Student dropout propensity is the defining product-quality metric for affordable HE operators (PHINMA, iPeople). Behavioral signals from LMS engagement, attendance, and assessment performance predict dropout weeks before it occurs, enabling intervention. This is well-researched in education AI literature but rarely implemented by resource-constrained operators. High specificity because the feature space (academic behavioral signals) is education-domain-specific and not served by generic churn tools."
+        },
+        "risk-compliance": {
+          "fit": 0.65,
+          "specificity": "high",
+          "reasoning": "Child safeguarding risk propensity — identifying students at elevated risk of harm based on attendance, behavioral, and welfare signals — is directly relevant for Rising Academies and CSPD given child safety regulatory requirements. Also relevant: modeling which campuses are at risk of accreditation non-compliance based on staffing and outcome patterns. High specificity because the risk signals are education-sector-specific and regulatory expectations around early warning systems are increasing."
+        },
+        "financial": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Fee default propensity modeling helps affordable HE operators (PHINMA, iPeople) target financial aid interventions before students drop out for financial reasons. Mid specificity — propensity to default is a generic credit modeling problem, but the education context adds constraints (cannot simply cut off service, must balance access mission against financial sustainability)."
+        },
+        "strategy-direction": {
+          "fit": 0.45,
+          "specificity": "low",
+          "reasoning": "Modeling which markets or segments are most likely to respond to strategic expansion has some application for Acasus (LMIC market entry) and WISE (summit audience growth). Low specificity — this resembles generic market propensity modeling without strong education-sector differentiation at the strategic level."
+        },
+        "growth-market": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Enrollment conversion propensity — which inquiries are most likely to enroll, which enrolled students are at risk of not re-enrolling — is high-value for iPeople and PHINMA competing for price-sensitive students. Behavioral signals from application portal interactions, financial aid queries, and peer referral patterns are education-specific and not captured by generic CRM lead scoring."
+        }
+      }
+    },
+    "prediction-risk-scoring": {
+      "label": "Risk Scoring & Assessment",
+      "domains": {
+        "talent-people": {
+          "fit": 0.70,
+          "specificity": "mid",
+          "reasoning": "Composite risk scores for individual staff (flight risk + performance risk + certification lapse risk) give HR leaders an actionable intervention queue across large distributed workforces like PHINMA's. Mid specificity because the scoring logic draws on standard HR analytics patterns, though education-specific risk factors (remote posting hardship, subject scarcity premium, contract type) require domain customization."
+        },
+        "governance-leadership": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Governance risk scoring — assessing which campuses, programs, or leadership teams carry elevated fiduciary, reputational, or compliance risk — maps directly onto the 52-heat governance problem. CSPD (Catholic governance), PHINMA (multi-campus accreditation), and Acasus (donor-funded program governance) operate under scrutiny where a scored risk register is more actionable than qualitative assessment. High specificity because education governance risk dimensions (accreditation status, child safety incidents, staff misconduct history) differ materially from corporate governance frameworks."
+        },
+        "operations-delivery": {
+          "fit": 0.74,
+          "specificity": "mid",
+          "reasoning": "Operational risk scores at school or campus level — combining staffing gaps, resource shortfalls, maintenance backlogs, and delivery performance — enable multi-site operators to triage central support. Rising Academies across West Africa and PHINMA across Philippines campuses need ranked site risk to allocate limited oversight capacity. Mid specificity because multi-site operational risk scoring is a general pattern, though school-year rhythms and education-specific KPIs add sector nuance."
+        },
+        "product-service": {
+          "fit": 0.76,
+          "specificity": "high",
+          "reasoning": "Program-level and course-level risk scoring (risk of poor learning outcomes, accreditation failure, or student attrition) is central to quality assurance in education. CSPD and iPeople need to identify at-risk courses before end-of-year assessments. High specificity because the risk indicators (assessment score distributions, attendance trends, teacher qualification flags) are education-domain constructs not represented in generic product analytics tools."
+        },
+        "risk-compliance": {
+          "fit": 0.90,
+          "specificity": "high",
+          "reasoning": "This is the natural home for risk scoring in this sector. Education operators face layered compliance risk: child safeguarding (Rising Academies, CSPD), government funding compliance (Acasus, PHINMA), accreditation (iPeople, PHINMA), and data privacy regulations. Automated risk scoring across entities, incidents, and obligations replaces manual audit checklists. High specificity because education compliance risk dimensions are sector-specific and generic GRC tools do not encode educational standards frameworks or safeguarding obligations."
+        },
+        "financial": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Financial risk scoring for education operators must account for government funding dependency (concentration risk for Acasus and Rising Academies), tuition fee collectability (PHINMA, iPeople), and facility cost exposure (Kinetic). Thin-margin affordable education operators are more financially fragile than enterprise clients, making early warning scores high-value. High specificity because revenue structure (grants + tuition + subsidies) differs fundamentally from commercial revenue models and standard credit scoring assumptions do not apply."
+        },
+        "strategy-direction": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Strategic risk scoring for market entry, program portfolio, or partnership decisions is applicable for Acasus and WISE. Mid specificity — strategic risk frameworks are relatively generic and the education-sector overlay is thinner here than in operational or compliance domains."
+        },
+        "growth-market": {
+          "fit": 0.55,
+          "specificity": "low",
+          "reasoning": "Scoring market or segment risk for growth planning is useful but the methodology is largely standard market analysis. Education context adds some nuance (demographic risk, policy risk in regulated markets) but low specificity reflects that this does not require education-domain modeling expertise."
+        }
+      }
+    },
+    "prediction-regression": {
+      "label": "Regression & Quantitative Estimation",
+      "domains": {
+        "talent-people": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Quantitative modeling of compensation benchmarks, hiring cost estimation, and time-to-fill across teacher roles and geographies has practical value for PHINMA and Rising Academies. Mid specificity because regression-based compensation modeling is a general HR analytics technique, though education workforce data (public sector pay scales, regional scarcity coefficients, qualification premiums) requires sector-specific data sourcing."
+        },
+        "governance-leadership": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Quantitative estimation in governance contexts has limited tractability and sparse data availability at the organization sizes in this sector (200–5000 employees). Governance quality is largely non-quantitative and regression adds minimal value over qualitative frameworks."
+        },
+        "operations-delivery": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Estimating resource requirements (teacher hours, facility capacity, material costs) per student cohort across sites enables more accurate operational planning for multi-site operators. Regression models linking enrollment size, program mix, and site characteristics to delivery cost are directly useful for PHINMA and Rising Academies scaling decisions. Mid specificity because cost regression is a general technique though the education cost driver structure (fixed vs. variable staff, regulatory minimums) is distinctive."
+        },
+        "product-service": {
+          "fit": 0.70,
+          "specificity": "high",
+          "reasoning": "Learning outcome regression — quantifying the effect of instructional interventions, technology adoption, or class size changes on student achievement — is core to evidence-based program improvement. Acasus (development consulting) and Rising Academies explicitly operate in outcomes-measurement contexts where regression-based impact estimation is the standard evaluation methodology. High specificity because education outcome regression requires understanding of value-added models, socioeconomic controls, and assessment psychometrics absent from generic analytics."
+        },
+        "risk-compliance": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Quantitative estimation of compliance cost, penalty exposure, or incident likelihood draws on regression approaches but the dependent variables are often sparse events (audits, incidents) that limit model reliability. Mid specificity — useful for financial exposure estimation around compliance failures but not the primary analytical tool in this domain."
+        },
+        "financial": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Revenue and cost estimation in education has distinctive structure: per-student unit economics, government subsidy regression against enrollment volume, tuition elasticity modeling for price-sensitive populations (PHINMA, iPeople). Estimating the financial impact of enrollment changes, retention improvements, or cost reduction programs requires education-sector regression models calibrated to grant-plus-tuition revenue structures. High specificity because standard FP&A regression assumptions (stable unit economics, linear scaling) break down in subsidized education contexts."
+        },
+        "strategy-direction": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Market sizing regression (estimating addressable student population from demographic and economic indicators) supports strategy for PHINMA, iPeople, and Acasus's LMIC program design. ROI estimation for strategic investments in new campuses or programs uses regression on comparable cases. Mid specificity — useful analytical technique but the education-sector overlay is moderate and competes with standard analyst modeling approaches."
+        },
+        "growth-market": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Enrollment yield regression — quantifying which recruitment activities, scholarship offers, or marketing channels drive conversion — is directly actionable for iPeople and PHINMA growing in competitive markets. Estimating tuition price elasticity for new program pricing also applies. Mid specificity because the regression methodology is standard marketing analytics but the education enrollment funnel has sector-specific variables (academic calendar gating, qualification requirements, family income sensitivity)."
+        }
+      }
+    }
+  }
+}

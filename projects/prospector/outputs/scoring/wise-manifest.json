@@ -1,0 +1,577 @@
+{
+  "company_id": "wise",
+  "company_name": "WISE - World Innovation Summit for Education",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Education",
+        "evidence": "WISE's stated mission is advancing global education through innovation. All programming — the summit, prize, accelerator, research — targets the education sector. Housed within Qatar Foundation's education portfolio.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Global education innovation, policy, and philanthropy (think tank + convening platform); sub-verticals include EdTech, AI-in-education, and girls'/low-income learner access",
+        "evidence": "WISE 12 theme 'Humanity.io' centred on AI and human values in education. Prize winners include AI-powered learning tools (TUMO Path AI, Darsel maths chatbot) and Arabic child development (Iqrali.jo). IIE-WISE AI consortium spans 7 countries. New CEO Kazmi explicitly named Africa and girls' education as priorities. WISE is distinct from pure EdTech vendors — it does not sell software but convenes, funds, and researches.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Platform / infrastructure layer — convener, funder, and knowledge producer upstream of implementation",
+        "evidence": "WISE does not deliver education itself. It convenes stakeholders (governments, NGOs, academia, EdTech), funds innovators via prize and accelerator grants, and publishes research. Its value-chain role is to surface, legitimise, and accelerate innovations produced by others. Closest analogy: a foundation-plus-conference platform.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Growth — the global education innovation and EdTech convening market is expanding, with growing multilateral investment in AI-in-education",
+        "evidence": "WISE operates in a space that has seen significant growth: UNESCO, OECD, WEF, and major foundations are all scaling education innovation programmes. The biennial summit attracted 4,000+ attendees in 2025. AI-in-education is a rapidly expanding sub-theme. However WISE's specific niche (Gulf-state-backed global summit) is relatively mature within itself — 12 editions since 2009.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Grant / endowment funded (no commercial revenue model) — funded as a programmatic unit of Qatar Foundation",
+        "evidence": "WISE has no disclosed independent revenue. Qatar Foundation is funded by Qatar's hydrocarbon endowment and state allocations. WISE operates as a cost centre within QF, not a revenue-generating entity. No membership fees, subscriptions, or ticket revenues are visible in public sources. The $1M prize is an expenditure, not revenue.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Events + grants + research publishing (hybrid: biennial summit, competitive prize grants, and knowledge products)",
+        "evidence": "Primary delivery mechanisms: (1) WISE Summit — biennial in-person convening at Qatar National Convention Centre; (2) WISE Prize — $1M competitive grant to education innovators; (3) WISE Accelerator — MVP development grants ($125K per finalist); (4) Research publications (e.g., IIE-WISE AI consortium report); (5) Digital content via wise-qatar.org.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Fixed-cost-heavy — event production, research programme staffing, prize administration, and HQ operations are largely fixed regardless of output volume",
+        "evidence": "The biennial summit at Qatar National Convention Centre with 4,000+ attendees, 200+ speakers is a large fixed production cost. Prize fund ($1M + $750K in MVP grants per cycle), IIE consortium, and a permanent staff team are recurring fixed costs. No variable COGS structure visible — this is not a manufacturing or service-delivery business.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Multi-layered institutional moat: (1) QF sovereign backing removes financial pressure competitors face; (2) Sheikha Moza's personal patronage (UNESCO Special Envoy) is structurally unreplicable; (3) 17-year brand equity as the 'Davos of education'; (4) growing laureate and alumni network (78 WISE Award winners, 6 Prize finalists per cycle) creates incumbent advantage for prize prestige; (5) convening flywheel — high-profile speakers attract senior attendees, reinforcing network value for all participants; (6) 35,000+ community member base and 150,000+ engaged followers create compounding network density",
+        "evidence": "Qatar Foundation is a state-backed entity with hydrocarbon endowment funding — no competitor can replicate this structural advantage without equivalent sovereign backing. Sheikha Moza is a globally respected UNESCO Special Envoy who personally presents the Prize; this patron role is non-transferable. The 17-year cumulative laureate network (78 WISE Award winners from 150+ countries, 4,900+ total prize/awards applications since 2009) creates a self-reinforcing prestige moat. The biennial summit at 4,000+ attendees with speakers including Nobel laureates creates a convening flywheel: the more prestigious the convening, the more prestigious speakers agree to attend, reinforcing the cycle. WISE community reported at 35,000+ diverse members and 150,000+ engaged followers (Wikipedia, Gulf Times). No credible peer organisation combines sovereign funding + royal patronage + 17-year brand + prize network.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Five critical operational dependencies: (1) Qatar Foundation funding allocation — 100% of budget; (2) Sheikha Moza's active patronage — convening authority depends on her participation; (3) global education policy network — quality of speakers and participants; (4) summit logistics infrastructure — Qatar National Convention Centre + event production partnerships; (5) research and consortium partnerships (IIE, HundrED, university partners) for programmatic credibility",
+        "evidence": "(1) All operational funding flows from QF — no independent revenue diversification. (2) Sheikha Moza personally presents the WISE Prize; her absence would materially reduce the event's convening draw. (3) WISE's value to participants is access to senior education leaders — degradation of the network quality would reduce summit and prize value. (4) The biennial summit is a 4,000+ person international event at QNCC; complex logistics depend on Qatar's convention infrastructure and contracted event suppliers. (5) Research credibility depends on academic partnerships — the IIE-WISE consortium spans 7 countries; WISE's thought-leadership product depends on these external research partners.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "11–50 (estimated ~36 FTE core staff)",
+        "evidence": "Crunchbase lists WISE in the 11-50 employee band; RocketReach corroborates ~36 FTE. LinkedIn company page does not display a precise headcount figure publicly. Consistent with scope of a programmatic foundation unit running a biennial summit, prize programme, accelerator, and research consortium from Doha HQ. Additional event-period contractors not counted in core headcount.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Not applicable — grant-funded non-profit unit; no independent revenue",
+        "evidence": "WISE is a cost centre within Qatar Foundation. Operating budget is not publicly disclosed. Proxies: $1M prize fund disbursed biennially; $750K in finalist MVP grants per cycle; multi-country research consortium operational costs. Total annual operating budget likely in the $5-15M range (estimated), but this is speculative.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Sovereign / endowment-funded — effectively unlimited within mandate, no external fundraising required",
+        "evidence": "Qatar Foundation's broader education spend is ~$405M/yr for Education City campuses alone. QF has committed $6.7B+ to Education City since 2006. WISE is funded as a programmatic unit with effectively sovereign-level financial backing. No fundraising, no runway pressure, no VC or donor dependency.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Asset-light — WISE operates from Qatar Foundation facilities (Qatar National Convention Centre for the summit, QF campus for HQ) but owns no significant physical assets itself",
+        "evidence": "Summit held at QNCC (Qatar Foundation venue). No manufacturing, logistics, or significant capital equipment. Primary assets are intellectual (brand, prize alumni network, research publications) and human (staff expertise). Classic think tank / foundation asset profile.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Structurally sustainable — sovereign endowment-funded with no commercial revenue pressure; financial health is a function of Qatar state/QF priorities, not market performance",
+        "evidence": "No revenue risk, no burn rate concerns, no debt. Financial risk is political (Qatar/QF priority shift) not operational. WISE's financial health is essentially as stable as Qatar's sovereign wealth position, which is very strong.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Established (founded 2009 — 17 years old as of 2026)",
+        "evidence": "WISE was founded in 2009 as a Qatar Foundation initiative. WISE 12 ran in November 2025, consistent with biennial cadence since inception. 16+ years of continuous operation.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "35,000+ community members; 150,000+ engaged followers; 4,000+ summit attendees per cycle; 12,000+ cumulative across all summits",
+        "evidence": "Self-reported community figures: 35,000+ diverse community members, 150,000+ engaged followers (Wikipedia/Gulf Times 2025). WISE 12: 4,000+ in-person attendees, 6,000+ registration applications. Cumulative across 12 summits: 12,000+ attendees from 150+ countries. Prize/awards: 4,900+ total applications since 2009. The network spans 200 countries.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {
+        "value": "Mature / Optimization — with a strategic reinvention inflection under new CEO",
+        "evidence": "WISE is 17 years old with a well-established biennial summit format (12 editions), a stable prize programme, and proven convening authority. It is not scaling rapidly or searching for product-market fit. However, the December 2025 CEO transition (Kazmi succeeding Yiannouka) signals a deliberate strategic pivot: from thought leadership toward implementation impact, Africa focus, and AI-in-education programming. This is an optimization/reinvention phase, not scaling or decline.",
+        "confidence": "high"
+      },
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Three distinct segments: (1) Primary — education policymakers and government officials (ministers of education, senior MoE officials, multilateral bodies such as UNESCO, OECD, World Bank); (2) Secondary — education innovators and social entrepreneurs (NGOs, EdTech founders, universities seeking prize/award recognition and funding); (3) Tertiary — education philanthropy (foundations, bilateral aid agencies, corporate CSR funders seeking deal flow and convening access)",
+        "evidence": "WISE 12 speakers confirmed the policymaker-heavy audience: Nobel laureate Abhijit Banerjee (economist), X Prize CEO, senior figures from multilateral institutions. Prize applicants are verified NGOs and social enterprises: TUMO (Armenia — national-scale youth coding), Iqrali.jo (Jordan — Arabic early childhood), Darsel (India — maths chatbot). IIE consortium partners are universities and bilateral education bodies. New CEO Asyia Kazmi's background (Gates Foundation Global Education Policy, UK government Ofsted/DfE/DFID, Girls' Education Challenge) reflects the target segment precisely — senior government and philanthropy decision-makers. WISE does not serve individual learners, parents, or SMBs. The convening value proposition is access to peer senior leaders and legitimation for education innovators seeking credibility.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Niche specialist with category-leader positioning in Gulf-state-backed global education convening",
+        "evidence": "WISE occupies a distinctive niche: no direct competitor combines Gulf-state sovereign funding, Sheikha Moza patronage, a biennial summit with 4,000+ attendees, a $1M prize, and global south coverage. Closest peers are Brookings CUE (think tank, no prize/summit), HundrED (curation, Finnish, no prize), ASU GSV Summit (more commercial, US-centric), Jacobs Foundation (funder, no summit). WISE has a defensible but narrow niche.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Community/mission-driven — network and reputation-led engagement, no sales team or commercial GTM",
+        "evidence": "WISE does not sell. Engagement is driven by: (1) summit invitations to global leaders; (2) open prize applications; (3) research distribution; (4) partnerships (IIE, HundrED). The convening model is invitation + reputation. No evidence of outbound sales, paid acquisition, or channel partners in a commercial sense.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Single-funder dependent (Qatar Foundation = ~100% of operational funding) but diversified stakeholder base",
+        "evidence": "Funding is 100% concentrated in Qatar Foundation. However, WISE's stakeholder/audience base is highly diversified across geographies, institution types, and sectors — no single stakeholder relationship is existential beyond QF funding.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Not applicable (grant-funded, no commercial pricing); operates on invitation/open-application model",
+        "evidence": "WISE does not charge customers. Summit attendance is by invitation or registration (no disclosed ticket price in public sources). Prize is a grant, not a fee. Research is published openly. The value exchange is access and legitimacy, not monetary.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Professional management under patron-board governance — CEO-led organisation with Qatar Foundation as governing body and Sheikha Moza as patron",
+        "evidence": "WISE is led by a professional CEO (now Dr. Asyia Kazmi, OBE, as of Dec 2025). Governance sits within Qatar Foundation's board structure. Sheikha Moza is patron but not operationally involved. Yiannouka's 13-year tenure demonstrates stability in professional management model. No founder-led dynamic — WISE was created institutionally by QF.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Flat functional structure under CEO — 4-5 functional units: Programmes (prize + accelerator + awards + curation), Research, Summit/Events, Communications, and Operations/Administration; no geographic or divisional splits",
+        "evidence": "LinkedIn confirms named senior functional roles: CEO (Dr. Asyia Kazmi, from Dec 2025); Director of Programs and Chief Curator (Dr. Ameena Abdul-Majeed Hussain — title updated to include 'Chief Curator', per LinkedIn 2025, reflecting expanded curation remit for prize/awards); Administrative Coordinator (Rekha Zachariah — operations function). The four programme product lines (WISE Prize, WISE Awards, WISE Accelerator, WISE Research/publications) map directly to programme team responsibilities under a single Programmes director. At ~36 FTE in a Doha HQ, a matrix or divisional structure would be atypical — flat functional is standard for a foundation unit of this size. No geographic sub-offices; international operations (IIE consortium, global prize applicants) are managed from HQ with contracted support. Governance hierarchy: Qatar Foundation Board → WISE CEO → functional directors (~4-5) → programme managers → coordinators.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Co-located (Doha, Qatar) with global event operations",
+        "evidence": "HQ is at Qatar Foundation campus, Doha. Summit is held at Qatar National Convention Centre. No evidence of remote-first or distributed workforce. International research consortium (IIE) operates as a partner, not WISE staff. Likely small co-located core team with contracted global event support.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Domain-expert-heavy — education policy professionals, researchers, programme managers, and communications specialists; no significant engineering or sales function",
+        "evidence": "CEO profile (Kazmi: doctorate in education, 30 years in education policy, Gates Foundation, Ofsted, UCL) is representative of the talent profile WISE attracts. Prior CEO Yiannouka: McKinsey, LKY School of Public Policy. WISE is not a technology company — it runs on policy expertise, convening skills, and research capability. No evidence of engineering team.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Minimal tech (non-tech organisation with standard web and productivity tools) — technology is not WISE's product or operational core",
+        "evidence": "WISE's website (wise-qatar.org) is a standard WordPress-class content site. No evidence of proprietary platforms, applications, or technology products. WISE researches and convenes around EdTech but does not build technology itself. Internal tooling is likely standard cloud productivity suite.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Not applicable — WISE is not a software development organisation",
+        "evidence": "No engineering team, no software product, no CI/CD relevant context. Web presence is managed content, not engineered product.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic analytics (likely standard BI/CRM for network management and event operations); no evidence of advanced data infrastructure",
+        "evidence": "No public evidence of sophisticated data infrastructure. Research programme (IIE consortium) uses academic research methods, not data engineering. Summit registration and prize application processes likely use standard event/grant management platforms.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic to intermediate — standard for a small non-profit/foundation operating in public sector-adjacent space",
+        "evidence": "No evidence of advanced security posture or certifications. Operating within Qatar Foundation's broader IT infrastructure likely provides institutional-grade baseline security. No indication WISE handles sensitive personal data at scale.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Low to moderate — non-profit foundation operating in Qatar with global event and grant-making activities; primarily subject to QF governance, not heavy external regulation",
+        "evidence": "WISE is not a financial services, healthcare, or defence entity. As a Qatar Foundation unit, it operates under QF's governance framework and Qatari non-profit law. Cross-border grant-making (prize winners in Armenia, Jordan, etc.) may involve some international transfer regulations but this is not a dominant operational constraint.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Global / multi-continent — operations headquartered in Qatar, but programming, partnerships, and prize recipients span all major world regions",
+        "evidence": "IIE-WISE consortium covers Qatar, Colombia, Ghana, India, Kazakhstan, Spain, USA. Prize winners from Armenia, Jordan, and other regions. Summit draws speakers and attendees from global education community. New CEO's stated priority includes Africa. Website available in Arabic and English.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Recession-resistant — sovereign endowment funded, insulated from commercial economic cycles; only meaningful macro risk is Qatar's geopolitical or fiscal position",
+        "evidence": "WISE is funded by Qatar Foundation's hydrocarbon endowment, not commercial revenues. Global recessions do not directly affect its operational budget. The only macroeconomic risk is a sustained collapse in Qatar's sovereign wealth (unlikely given current reserves) or a major geopolitical event affecting Qatar's international standing.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "State-backed / government-owned — operates under Qatar Foundation governance as a programmatic unit of a state-affiliated non-profit; subject to QF board oversight and Qatar government policy alignment",
+        "evidence": "Qatar Foundation was founded by the Emir of Qatar (Hamad bin Khalifa Al Thani) and is chaired by Sheikha Moza. It is effectively a quasi-governmental institution. WISE's mandate, budget, and strategic direction are ultimately governed by QF board priorities, which are aligned with Qatar's national education and soft-power strategy.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Pragmatic to fast-follower — WISE champions innovation but is itself an institutional convener, not an experimenter; adopts emerging themes (AI-in-education) when they reach credible institutional consensus",
+        "evidence": "WISE 12 theme 'Humanity.io' adopted AI as the central challenge but framed it values-led and cautiously ('technology must not outpace human learning') — aligned with UNESCO/OECD framing, not bleeding-edge. Prize selections include proven, scaled innovations (TUMO operates at national scale in Armenia). New CEO Kazmi (Gates Foundation, Ofsted) signals evidence-driven, implementation-oriented rather than experimentalist posture.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Thought-leader / visionary + mission-driven — WISE positions as the authoritative global platform for education innovation, with strong convening legitimacy and explicit human-values-in-education narrative",
+        "evidence": "WISE summit tagline, prize narrative, and CEO communications consistently frame WISE as the premier global convening space for education transformation. Coverage in FT, Euronews, Al-Fanar positions WISE as a credible institutional voice. The 'human-centred AI' framing at WISE 12 is a deliberate narrative leadership play in the global AI-in-education conversation.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Mission-driven — equity-in-education, innovation, and human-centred learning are explicit values that guide prize criteria, speaker selection, and programming choices",
+        "evidence": "WISE Prize criteria explicitly favour innovations serving marginalised learners. WISE 12 warned against AI inequality if deployed without teacher training/governance. New CEO Kazmi's background (Girls' Education Challenge, Africa focus, low-income learner access) reflects and reinforces these values. Qatar Foundation's broader education-as-public-good mission underpins WISE's mandate.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Strong in niche — attractive to global education policy professionals, researchers, and convening experts seeking prestige, mission alignment, and international exposure",
+        "evidence": "Two consecutive CEOs with elite credentials (Yiannouka: McKinsey + LKY School; Kazmi: Gates Foundation + UCL doctorate + OBE) suggest WISE attracts high-calibre leadership. Qatar Foundation affiliation provides institutional prestige. However WISE is small and specialised — employer brand is niche, not broad-market.",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

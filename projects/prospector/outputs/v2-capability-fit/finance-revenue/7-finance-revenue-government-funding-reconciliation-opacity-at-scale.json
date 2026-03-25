@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-reconciliation-opacity-at-scale",
+  "pain_point_label": "Reconciliation Opacity Across Multi-Campus Claims & Transfers",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a fragmented, multi-step matching workflow: submitted claims must be tracked across submission dates, fund receipt dates (often months apart), partial/bundled payments, and campus-level splits — all currently done via unreliable spreadsheets. A task automation agent can continuously monitor the government funding portal, accounting system, and bank feeds, match claims to receipts using configurable rules, flag unmatched items after configurable aging thresholds, and automatically update the reconciliation ledger without manual intervention. This directly removes the backlog accumulation and book-close delay that define the pain.",
+      "opportunity_sketch": "An autonomous reconciliation agent ingests ESC voucher submission records and bank transfer data daily, applies matching logic (amount, date range, campus batch), flags orphaned claims older than 60 days, and posts matched entries to the GL — eliminating the spreadsheet entirely and producing a live AR aging view for government receivables.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "A stated consequence of reconciliation opacity is that the CFO cannot forecast government revenue reliably — cash timing is unpredictable when claim settlement lags are unknown. Time series models trained on historical submission-to-receipt lag distributions by program type and fiscal period can produce probabilistic cash receipt forecasts, enabling treasury planning even before actual fund arrival. This addresses the downstream financial planning failure, not just the reconciliation mechanics.",
+      "opportunity_sketch": "A forecasting model uses historical ESC voucher settlement lag data segmented by program and quarter to project expected government cash inflows 30/60/90 days out, giving the CFO a revenue forecast with confidence intervals that survives the submission-to-receipt gap.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.15
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain explicitly includes orphaned claims (submitted 6+ months ago, no receipt, no rejection) and unexplained variances such as a 0k YTD government revenue gap. Anomaly detection models trained on historical claim-to-receipt patterns can surface claims whose aging, partial-payment ratio, or campus-batch behavior deviates significantly from normal — distinguishing genuine processing delays from likely rejections or lost submissions before they become audit findings. This converts reactive variance explanation into proactive exception management.",
+      "opportunity_sketch": "An anomaly scoring model flags government receivable line items that exceed expected settlement time or show unusual partial-payment patterns by campus, giving the CFO a prioritized exception list each week rather than a 90-day-old backlog discovered at audit time.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Government fund remittance advices often arrive as semi-structured PDFs or portal exports with inconsistent formats — bundling multiple programs, campuses, and periods in a single document. AI-assisted data transformation can normalize these into a canonical schema (claim ID, campus, program, amount, period) that maps against submission records, removing the manual parsing step that introduces typos and version conflicts. This is the foundational clean-data step before any matching logic can run reliably.",
+      "opportunity_sketch": "A transformation pipeline ingests remittance PDFs and portal CSVs from 3-7 campuses, maps each line item to a standardized claim schema, and outputs structured records ready for automated reconciliation matching — replacing the error-prone manual data entry that currently causes variance queries.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Rejection notices from government agencies are often unstructured letters or portal messages containing claim IDs, rejection reasons, and amounts that require manual reading to link back to specific submissions. NER-based entity extraction can automatically parse these notices, extract claim identifiers and rejection codes, and route them to the correct campus reconciliation record — closing the loop on claims rejected with no explanation by ensuring rejections are captured and matched rather than lost in inboxes.",
+      "opportunity_sketch": "An extraction layer processes incoming government correspondence (emails, portal messages, PDFs) to identify claim IDs, amounts, and rejection reason codes, then automatically updates the reconciliation tracker — eliminating the manual reading step that causes orphaned-claim accumulation.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

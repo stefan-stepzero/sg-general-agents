@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-extracurricular-cocurricular-hidden-curriculum-design-gaps-dup",
+  "pain_point_label": "Weak Integration with Core Curriculum & Hidden Learning Outcomes",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a co-curricular curriculum map and competency framework is a document creation problem. AI can draft the framework itself — mapping co-curricular activities to 21st-century competency standards — and generate activity-specific learning outcome statements that teachers can review and adopt. This directly attacks the root cause: no articulated connection between enrichment activities and academic competencies.",
+      "opportunity_sketch": "A generator that takes a co-curricular activity description and outputs a structured learning outcome narrative aligned to school competency frameworks, suitable for inclusion in student portfolios or teacher lesson notes.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core problem is that relationships between co-curricular activities and academic competencies are invisible — they exist implicitly but are never articulated. Knowledge extraction can parse existing activity logs, student records, club descriptions, and curriculum documents to surface latent competency connections (e.g., robotics club → engineering design process → STEM standards). This creates the structural backbone of a co-curricular curriculum map without requiring staff to build it manually.",
+      "opportunity_sketch": "An extraction pipeline that ingests co-curricular program descriptions and academic standards documents, outputs a relationship graph linking activities to competencies, which can seed a living curriculum map dashboard for coordinators.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff don't see co-curricular as core to learning because they lack easy access to evidence and precedents linking enrichment to outcomes. A RAG system over internal activity records, student performance data, and external competency frameworks lets teachers query 'which clubs develop the communication skills I need for this unit?' and get grounded, citation-backed answers. This converts invisible curriculum connections into an on-demand staff resource.",
+      "opportunity_sketch": "A staff-facing Q&A tool that answers questions like 'Which students in my class have co-curricular experience relevant to this project unit?' by retrieving and synthesizing from student activity logs and curriculum standards.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Building and maintaining a co-curricular curriculum map requires ongoing multi-step work: collecting activity data from club coordinators, mapping competencies, updating records when programs change, and notifying relevant teachers. A task automation agent can orchestrate this workflow — pulling activity submissions, running them through a competency-mapping model, updating a shared curriculum map, and triggering notifications to teachers whose subject areas are touched. This removes the human coordination overhead that currently makes the map nonexistent.",
+      "opportunity_sketch": "An automated pipeline triggered each term: collects co-curricular activity reports, maps them to curriculum competencies, updates a central map, and sends each teacher a digest of co-curricular activity relevant to their subject — with zero manual coordination.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Strategic Intelligence Digest",
+    "one_liner": "Auto-synthesizes policy briefs, sector research, and program evaluations into monthly strategic briefings for leadership.",
+    "problem": "Acasus, WISE, and education development consultancies depend on sector intelligence (policy trends, LMIC education outcomes data, donor priorities, competitor moves) to inform strategy and proposals. Leadership teams cannot read hundreds of research papers and policy documents monthly. Manual synthesis is time-intensive and inconsistent. Organizations risk missing critical market signals or blind-spotting strategy decisions.",
+    "ai_technique": "Multi-document abstractive summarization + semantic topic clustering",
+    "how_it_works": "Monitor feeds: government education white papers, international development reports (World Bank, UNESCO), sector publications (EdTech innovation reports), internal program evaluations. Monthly, batch new documents. Extract themes (e.g., 'EdTech adoption in Sub-Saharan Africa,' 'Government funding constraints'), surface contradictions (e.g., two reports with opposite conclusions on blended learning impact). Generate 2-page strategic brief synthesizing themes with source cites. Leadership reviews, edits, circulates. Measure decision impact by tracking cited insights.",
+    "target_companies": ["acasus", "wise"],
+    "buyer_persona": "Executive Director / Chief Strategy Officer",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Pilot Experiment Designer",
+    "one_liner": "Structures program pilot design (counterfactual, control selection, learning outcome metrics, duration) based on education intervention best practices.",
+    "problem": "Pilot-before-scale is standard for education development organizations (Acasus, Rising, School for Life) but pilot design is ad-hoc. Teams struggle to define credible counterfactuals, select comparable controls, design learning outcome measures that reflect lags (learning effects take 6-12 months), and set sample sizes. Weak pilot design leads to inconclusive results and wasted funding. Rigorous RCT design is expensive and slow.",
+    "ai_technique": "Decision tree + evidence synthesis from RCT literature",
+    "how_it_works": "Interviewing mode: walk practitioner through intervention type (curriculum change, teacher training, management practice, tech deployment), target student population, geographic context, existing baseline data. System recommends: sample size (power calculation), control design (matched school, waitlist, geographic phase-in), outcome metrics (aligned to intervention logic model), measurement timeline (accounting for learning lag), and credibility checks (threat to internal validity). Output structured pilot protocol. Practitioner refines; system flags high-risk design choices.",
+    "target_companies": ["acasus", "rising", "school-for-life"],
+    "buyer_persona": "Program Manager / Monitoring & Evaluation Lead",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Market Sizing Estimator",
+    "one_liner": "Estimates addressable student population by geography and demographic segment to size new program or geographic expansion opportunity.",
+    "problem": "PHINMA, iPeople, and Acasus plan expansions (new campus, new program, new country) but lack rigorous market-sizing analysis. Decisions default to consultant reports or competitor observation. Missing systematic use of census data, demographic trends, economic indicators, and education stage-gating (e.g., 'secondary completion rate limits HE addressable market'). Risk of oversizing/undersizing capacity and investment.",
+    "ai_technique": "Regression with demographic and economic predictors",
+    "how_it_works": "Define target student profile (age range, income level, prior education). For proposed geography, pull census data (age distribution, income distribution, education completion rates), economic indicators (unemployment, wage growth), infrastructure data (internet access, transport). Train regression on comparable existing markets where organization has enrollment data. Estimate addressable population for proposed market. Sensitivity analysis: 'If unemployment rises 2%, addressable market drops 8%.' Validate against competitor presence and local surveys.",
+    "target_companies": ["phinma", "ipeople", "acasus"],
+    "buyer_persona": "VP of Strategy / COO",
+    "tier": "feature",
+    "confidence": "high"
+  },
+  {
+    "name": "Regulatory Change Impact Assessor",
+    "one_liner": "Extracts and assesses impact of government education policy changes (accreditation rules, funding models, qualification requirements) on institution strategy.",
+    "problem": "iPeople, Kinetic, and PHINMA operate in heavily regulated sectors (CHED, DepEd, higher-ed accreditation bodies). Policy changes (tuition regulation, mandatory curriculum elements, accreditor standards) require rapid strategic response. Organizations miss signals buried in white papers or don't assess impact until implementation deadline. Competitive advantage goes to early adapters with systematic policy monitoring.",
+    "ai_technique": "Entity extraction + impact logic modeling",
+    "how_it_works": "Monitor government/regulator policy releases (CHED circulars, DepEd memoranda, NESA announcements). Extract new rules, deadlines, requirements. Classify by institution impact: 'This accreditation standard requires X infrastructure investment; affects Y programs; deadline is Z months.' Link to institution's current compliance posture (do we already meet this? where are gaps?). Generate impact brief: 'New DepEd curriculum requirements add 120 contact hours per program; current allocation allows 30 hours buffer. Recommend curriculum audit and potential program restructuring.' Flag compliance risk by timeline.",
+    "target_companies": ["ipeople", "kinetic", "phinma"],
+    "buyer_persona": "Chief Academic Officer / VP of Compliance",
+    "tier": "feature",
+    "confidence": "medium"
+  },
+  {
+    "name": "Partnership Opportunity Matcher",
+    "one_liner": "Identifies strategic partnership opportunities (curriculum partnerships, tech integrations, campus networks) by analyzing sector landscape and institution gaps.",
+    "problem": "Education organizations (iPeople, PHINMA, School for Life) pursue partnerships for curriculum credibility (e.g., industry affiliations, international university links), technology scaling (LMS, admission systems), or geographic expansion (franchise, shared services). Partner discovery is network-driven ('We know someone who knows someone'). Organizations miss complementary capabilities and geographies. Due diligence is manual and time-intensive.",
+    "ai_technique": "Semantic similarity matching + market gap analysis",
+    "how_it_works": "Index universe of potential partners: edtech vendors, international universities, training organizations, employers in key verticals. Profile each: capabilities, geographies, target segments, pricing models, performance data. Profile institution: programs, geographies, tech stack, strategic gaps. Run similarity search: 'You need LMS replacement; Coursera and Moodle Workplace both match your segment and budget.' Assess mutual fit: 'Potential partner serves 15 countries including 3 that you're expanding to; track record with similar institutions.' Generate 'partnership pipeline' with pre-scored opportunity and due-diligence checklist. Partnership team executes.",
+    "target_companies": ["ipeople", "phinma", "school-for-life"],
+    "buyer_persona": "VP of Strategy / Academic Partnerships Director",
+    "tier": "feature",
+    "confidence": "medium"
+  }
+]

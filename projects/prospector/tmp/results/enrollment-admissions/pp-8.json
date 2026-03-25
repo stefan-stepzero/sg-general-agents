@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "enrollment-admissions-application-processing-admissions-criteria-ambiguity-dup",
+  "pain_point_label": "Ambiguous or Unevenly Applied Admissions Criteria",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Ambiguous criteria are often an artifact of undocumented or poorly written policy — AI can generate clear, structured admissions rubrics, scoring guides, and appeal process documentation from existing loosely-stated criteria. For a multi-site operator, this directly addresses the root cause: decision rules that exist in people's heads but were never codified into consistent written standards.",
+      "opportunity_sketch": "An AI-assisted rubric builder that takes existing criteria (in any form — emails, meeting notes, policy fragments) and generates a standardized, site-agnostic admissions scoring guide with defined score bands, tie-breaker rules, and appeal procedures.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Uneven application of criteria means different officers weight the same applicant attributes differently — a structured classification model trained on historical decisions can provide a consistent baseline score for each application, flagging cases where human decisions deviate significantly from the model's recommendation. This directly counteracts subjective interpretation by different admissions officers across sites.",
+      "opportunity_sketch": "A decision-support scoring model that ingests structured application fields (test scores, GPA, attendance records, demographic flags) and outputs a standardized admissibility score with confidence bands, surfaced alongside — not replacing — the officer's review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "In a multi-site operator, inconsistency shows up as statistical anomalies — one campus accepts applicants with significantly lower scores than another, or one officer reverses decisions at a higher rate. Anomaly detection over the admissions decision log can surface these deviations without requiring a predefined rule, making implicit bias or policy drift visible to leadership.",
+      "opportunity_sketch": "An admissions equity monitor that continuously analyzes decision outcomes across sites and officers, flagging statistically unusual patterns (e.g., acceptance rate variance beyond expected range, disproportionate reversals) for leadership review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end admissions workflow — collecting materials, scoring against criteria, routing for review, triggering appeals — is a multi-step process where inconsistency creeps in at each handoff. A task automation agent can enforce a standardized process across all sites, ensuring every application goes through the same sequence of scoring gates and documentation steps regardless of which officer handles it.",
+      "opportunity_sketch": "An admissions workflow agent that orchestrates application intake, auto-populates a structured scoring template from submitted materials, routes to the correct review queue based on score bands, and enforces documentation requirements before a decision can be finalized.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

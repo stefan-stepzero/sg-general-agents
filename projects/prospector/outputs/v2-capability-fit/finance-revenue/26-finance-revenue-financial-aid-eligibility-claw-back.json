@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-eligibility-claw-back",
+  "pain_point_label": "Mid-year eligibility verification & claw-back processing",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a reactive, manual audit process — checking grades, attendance, and enrollment status across campuses against multiple award conditions, then triggering different claw-back mechanics depending on sponsor agreements. This is precisely a multi-step workflow with conditional branching that task automation agents are designed for. The agent can pull eligibility signals from SIS and financial systems on a scheduled basis, apply per-award condition rules, and route exceptions to staff — replacing the 15+ hrs/month per campus of manual checking.",
+      "opportunity_sketch": "An automated eligibility monitoring agent runs weekly across all campuses, cross-references student GPA, attendance, and enrollment records against each active award's conditions, flags ineligible students proactively, and generates claw-back instructions aligned to sponsor agreement terms — turning a year-end reactive audit into a continuous background process.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Beyond identifying students who are already ineligible, a propensity model can predict which students are at risk of losing eligibility in the next 4-6 weeks based on current GPA trajectory, attendance trends, and enrollment behavior signals — enabling proactive outreach and intervention before a claw-back becomes necessary. This shifts the operator from claw-back processor to retention enabler, which is a leadership-visible outcome.",
+      "opportunity_sketch": "An at-risk eligibility model scores all award recipients monthly, surfacing students most likely to breach a condition threshold, triggering early advisor outreach that reduces both student disruption and sponsor escalation volume.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 3.95
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Each student-award combination at any point mid-year can be classified as still eligible, conditionally at risk, or ineligible requiring claw-back using structured inputs: current GPA, attendance rate, enrollment status, income re-verification status, and program persistence flags. This is a classic structured classification task with a finite, predefined label set that maps directly to action states. Education operators already hold this data in SIS/LMS systems, making data acquisition feasible.",
+      "opportunity_sketch": "A classification model trained on historical eligibility data and sponsor condition rules scores every active award each term, producing an eligibility status label and confidence score per student-award pair, enabling finance staff to action exceptions rather than audit everything from scratch.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Sponsor agreements specify claw-back conditions in varied formats — different timelines, refund-vs-credit-vs-offset mechanics, and notification requirements per agreement. AI-assisted data transformation can parse and normalize these semi-structured agreement terms into a unified rule schema, enabling systematic application of the right claw-back mechanic per sponsor rather than relying on staff memory or manual reference to PDFs.",
+      "opportunity_sketch": "Agreement condition extraction maps each sponsor's claw-back terms into a structured rule table (condition type, threshold, timeline, mechanic) that feeds directly into the eligibility monitoring workflow — eliminating the ambiguity about which claw-back approach applies in each case.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Sponsor notifications for claw-backs must be timely, accurate, and tailored to each agreement's communication requirements — a volume-sensitive writing task that varies by sponsor and claw-back type. AI text generation can draft these notifications automatically from structured claw-back event data, reducing staff effort and ensuring consistency in external communications that currently trigger escalations when delayed.",
+      "opportunity_sketch": "When a claw-back event is triggered, the system auto-drafts the sponsor notification letter using the relevant student data, award details, and agreement-specific language — staff review and approve rather than compose from scratch, cutting notification turnaround time significantly.",
+      "impact": 3,
+      "feasibility": 5,
+      "visibility": 2,
+      "composite_score": 2.85
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

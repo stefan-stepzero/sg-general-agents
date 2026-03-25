@@ -1,0 +1,231 @@
+{
+  "category": "classification",
+  "category_label": "Classification & Detection",
+  "capabilities": {
+    "classification-text": {
+      "label": "Text Classification",
+      "domains": {
+        "growth-market": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Rising Academies and iPeople face parent/student acquisition challenges in price-sensitive markets where classifying inquiry intent and dropout-risk signals from SMS, WhatsApp, and email could improve conversion and retention outreach. WISE and Kinetic can classify event registration intent and student accommodation enquiries. Moderate fit — value exists but most companies lack the volume of structured digital acquisition funnels."
+        },
+        "operations-delivery": {
+          "fit": 0.70,
+          "specificity": "mid",
+          "reasoning": "Multi-site operators like Rising Academies (400+ schools) and PHINMA (distributed campuses) generate high volumes of operational requests, incident reports, and maintenance tickets across staff. Classifying these by urgency, type, and routing destination reduces administrative burden on non-technical staff. CSPD and School for Life face similar triage needs across sites. Constrained by thin IT infrastructure to consume the output."
+        },
+        "product-service": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Kinetic (SaaS) benefits most directly — classifying support tickets, NPS verbatims, and feature requests maps well to standard product classification use cases. For the non-SaaS companies, classifying student feedback, parent complaints, and curriculum reviews surfaces service gaps at scale. WISE can classify session feedback from summit delegates. Moderate fit overall given that most companies are not software businesses."
+        },
+        "talent-people": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Talent is the top heat domain (52). Education-sector hiring is volume-heavy (teachers, community educators) with domain-specific vocabulary. Classifying application essays, reference letters, and interview transcripts for competency signals, safeguarding red flags, or culture fit is directly valuable at CSPD, Rising Academies, PHINMA, and School for Life. Child safety and safeguarding requirements at CSPD and Rising Academies create a high-specificity use case for flagging concerning text in staff communications and background check documents."
+        },
+        "risk-compliance": {
+          "fit": 0.88,
+          "specificity": "high",
+          "reasoning": "Heavy regulatory load across all eight companies — accreditation (iPeople, PHINMA), government funding compliance (Rising Academies, School for Life), child safety obligations (CSPD, Rising Academies, School for Life), and Catholic governance standards (CSPD). Classifying policy documents, incident reports, communications, and student welfare flags against regulatory and safeguarding taxonomies is a strong fit. Rising Academies operating in Sierra Leone, Liberia, and Ghana face government partnership compliance documents in volume. High specificity because generic compliance tools lack education and child-safety domain training."
+        },
+        "financial": {
+          "fit": 0.55,
+          "specificity": "low",
+          "reasoning": "Classifying expense claims, grant narrative reports, or student fee correspondence has limited differentiated value. PHINMA and Rising Academies receive government subsidies with reporting requirements — classifying narrative grant reports by compliance category has some utility. Mostly covered by basic document management. Low specificity for education sector."
+        },
+        "strategy-direction": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Acasus (development consulting) is the strongest fit here — classifying reports, policy documents, and research literature by theme and intervention type supports evidence synthesis for LMIC education clients. WISE classifies global education discourse for summit agenda design. For the others, strategic research classification is a supporting activity rather than a core pain. Mid specificity given Acasus's document-heavy consulting model."
+        },
+        "governance-leadership": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Governance is joint top heat domain (52). Board documents, committee reports, and stakeholder submissions accumulate across all eight organisations. Classifying these for policy compliance, escalation triggers, and fiduciary obligations is meaningful given education governance complexity — accreditation boards, government regulators, Catholic diocesan structures (CSPD), and international funders (Rising Academies, School for Life). More specific than the generic case because education governance involves multi-stakeholder reporting with distinct regulatory vocabularies."
+        }
+      }
+    },
+    "classification-visual": {
+      "label": "Image & Video Classification",
+      "domains": {
+        "growth-market": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Limited direct application for these education-sector companies. WISE could classify promotional images or video content for brand consistency across summit materials. Rising Academies might classify community engagement photos for impact reporting. Generally low volume, low sophistication marketing operations reduce the ROI threshold for visual classification tooling."
+        },
+        "operations-delivery": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "School facility inspection and condition monitoring is an emerging use case — CSPD (Catholic school network), Rising Academies (low-cost school buildings in West Africa), and School for Life (community sites) could classify facility images for maintenance triage and reporting to government or donors. Kinetic manages student accommodation properties where visual inspection classification of maintenance issues has operational value. Mid specificity because facility management is a real pain but deployment requires mobile capture workflows."
+        },
+        "product-service": {
+          "fit": 0.48,
+          "specificity": "mid",
+          "reasoning": "iPeople (STEM education) has a niche use case — classifying student lab work, practical assessment images, or science experiment outputs could automate formative assessment at scale. Video classification of recorded teaching sessions to identify pedagogy quality signals is applicable to Rising Academies and CSPD's teacher development programs. Fit is bounded by low digital infrastructure in LMIC and community settings."
+        },
+        "talent-people": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Significant legal, ethical, and child-safety constraints in education contexts make facial or demographic visual classification of staff or students highly problematic. Video analysis of classroom footage raises child protection concerns at every company in this set. Not a viable domain application."
+        },
+        "risk-compliance": {
+          "fit": 0.62,
+          "specificity": "high",
+          "reasoning": "Child safeguarding is a non-negotiable compliance obligation for CSPD, Rising Academies, and School for Life. Classifying images and video content on school systems and devices for inappropriate material is a direct child protection use case requiring domain-specific (education, child-safety) trained models. Detecting unsafe physical conditions (broken equipment, unsupervised areas) via facility imagery adds an operational safety layer. High specificity because the safeguarding classification task is education-sector specific."
+        },
+        "financial": {
+          "fit": 0.30,
+          "specificity": "low",
+          "reasoning": "Document image classification (receipts, invoices, asset photos for depreciation) has marginal value. Some utility for PHINMA and iPeople in classifying government subsidy documentation images, but the volume and ROI don't differentiate this from generic OCR-plus-classification tools."
+        },
+        "strategy-direction": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Essentially no meaningful strategic planning application for visual classification in this sector. Acasus might use it for classifying images in field research reports, but the value is marginal."
+        },
+        "governance-leadership": {
+          "fit": 0.15,
+          "specificity": "low",
+          "reasoning": "No meaningful fit for governance and leadership processes in education organisations. Governance is document and relationship-driven, not image-driven."
+        }
+      }
+    },
+    "classification-structured": {
+      "label": "Structured Data Classification",
+      "domains": {
+        "growth-market": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Student enrollment propensity classification using structured application and demographic data is valuable at PHINMA (affordable HE, large applicant volume) and iPeople (STEM recruitment). Rising Academies classifying community households by school enrollment likelihood enables targeted outreach in West African markets. Kinetic classifying accommodation prospects by conversion likelihood aids B2B sales. Mid specificity — education-sector enrollment data has unique signals (family income proxies, prior schooling records) that generic lead scoring misses."
+        },
+        "operations-delivery": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Classifying student support cases, maintenance requests, or resource allocation decisions by priority using operational system data improves multi-site delivery for CSPD, Rising Academies, and PHINMA. Kinetic's SaaS model benefits from classifying tenant service requests by resolution path. Constrained by legacy and low-data-maturity systems in LMIC contexts — Rising Academies and School for Life may lack the structured data pipelines to feed classifiers reliably."
+        },
+        "product-service": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Kinetic is the clearest fit — classifying accommodation products, tenancy types, and student segments for pricing and service personalisation. iPeople can classify student learning profiles for adaptive curriculum routing. For services-not-software companies the product classification use case is thinner. Mid specificity; education-specific usage data (assessment scores, course enrollment patterns) differentiates from generic product classification."
+        },
+        "talent-people": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Classifying teacher and staff records by performance tier, professional development needs, and deployment risk is a high-value use case for Rising Academies (managing hundreds of teachers across multiple countries), CSPD (school network staffing), and PHINMA (distributed campus HR). Structured HR data — attendance, assessment delivery records, student outcome correlations — enables data-driven teacher classification that manual appraisal processes miss at scale. High specificity because teacher classification against learning outcomes is education-sector specific."
+        },
+        "risk-compliance": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Classifying students by safeguarding risk tier using attendance, behavior incident, and welfare assessment data is a direct regulatory obligation for CSPD, Rising Academies, and School for Life operating under child protection frameworks. PHINMA and iPeople face accreditation compliance classifications — assigning courses, faculty, and facilities to accreditation categories. Government funding classification (correctly categorising students for subsidy eligibility) is critical for Rising Academies and School for Life. High specificity because the classification taxonomies are defined by education regulation."
+        },
+        "financial": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "Classifying student fee accounts by payment risk, subsidy eligibility, and financial aid category is a high-frequency operational task at PHINMA (affordable HE, high student volume with fee payment plans) and iPeople. Classifying expenditure against government grant categories is critical for Rising Academies and School for Life to maintain funder compliance. Grant and project cost classification by donor requirement is a persistent pain for Acasus. High specificity because education finance involves complex government and donor funding category rules."
+        },
+        "strategy-direction": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Classifying schools, markets, or program opportunities by strategic fit criteria using demographic and outcomes data is relevant for Rising Academies (expansion decisions across West Africa) and Acasus (country and sector opportunity assessment for clients). WISE classifies participating organisations and delegations by thematic and geographic tier for summit program design. Mid specificity — the classification logic requires education-sector and development-sector domain knowledge."
+        },
+        "governance-leadership": {
+          "fit": 0.52,
+          "specificity": "mid",
+          "reasoning": "Classifying policy documents, audit findings, and board action items by governance category using structured data from GRC or board management systems has growing value as education companies mature their compliance functions. CSPD (Catholic diocesan governance), PHINMA (listed company governance), and WISE (Qatar Foundation accountability) have the most formal governance data systems. Mid specificity — education governance classification logic is less standardised than financial services."
+        }
+      }
+    },
+    "classification-anomaly": {
+      "label": "Anomaly & Fraud Detection",
+      "domains": {
+        "growth-market": {
+          "fit": 0.45,
+          "specificity": "low",
+          "reasoning": "Detecting anomalous drops in enrollment inquiries or registration conversion rates could trigger early marketing response, but the data volumes and digital funnel sophistication at most of these companies are too low to make anomaly detection a high-value growth investment over simpler trend monitoring."
+        },
+        "operations-delivery": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Detecting anomalous patterns in student attendance, facility utilisation, and program delivery metrics across distributed school networks (Rising Academies, CSPD, PHINMA) can surface operational failures or under-performance before they become crises. Kinetic can detect anomalous accommodation occupancy or maintenance patterns. Mid specificity — education operations anomalies (sudden attendance drops, unexplained cost spikes) have sector-specific signatures."
+        },
+        "product-service": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Kinetic benefits from anomaly detection in platform usage (unusual access patterns, booking anomalies). iPeople can flag anomalous student engagement drops in digital learning environments as early intervention signals. For program-delivery organisations, detecting anomalous student outcome patterns (sudden assessment score drops across a cohort) is a meaningful service quality use case."
+        },
+        "talent-people": {
+          "fit": 0.58,
+          "specificity": "high",
+          "reasoning": "Detecting anomalous staff absence patterns, unexpected turnover spikes, or unusual payroll entries is operationally important for distributed school operators managing teacher workforces across multiple sites and countries (Rising Academies, PHINMA, CSPD). Payroll fraud and ghost teacher detection is a documented problem in LMIC education systems — directly relevant to Rising Academies operating in West Africa. High specificity because ghost teacher fraud is an education-specific operational fraud pattern."
+        },
+        "risk-compliance": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Anomaly detection in student welfare data — sudden behavioral changes, unexplained absences, unusual access patterns — is a child safeguarding obligation at CSPD, Rising Academies, and School for Life. Detecting anomalous accreditation metric patterns before a review (sudden faculty changes, unexplained enrollment shifts) helps iPeople and PHINMA avoid compliance failures. Financial anomalies in government grant expenditure are high-risk for Rising Academies and School for Life given donor accountability requirements. High specificity because education safeguarding and accreditation have distinct anomaly signatures."
+        },
+        "financial": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Fee payment anomalies, procurement fraud signals, and government subsidy claim irregularities are financially material for PHINMA (listed company), iPeople, and Rising Academies. Ghost teacher and inflated enrollment fraud in government-funded school programs in West Africa is a specific and known financial risk for Rising Academies — anomaly detection on payroll and enrollment data against field verification has clear ROI. Acasus faces consultant billing anomalies in multi-country project management. High specificity because government-funded education finance has unique fraud patterns."
+        },
+        "strategy-direction": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Detecting anomalous trends in education market data or competitive signals has limited strategic value over standard horizon scanning. Not a primary use case for these organisations."
+        },
+        "governance-leadership": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Detecting anomalous patterns in board decision records, policy approval timelines, or audit finding resolution rates can surface governance integrity risks. PHINMA (ASX-listed equivalent governance obligations) and WISE (Qatar Foundation accountability) have the most at stake. Detecting unusual procurement approvals or expenditure authorisation patterns feeds directly into fiduciary governance. Mid specificity — governance anomaly detection requires integration with board management and ERP systems."
+        }
+      }
+    },
+    "classification-audio": {
+      "label": "Audio & Speech Classification",
+      "domains": {
+        "growth-market": {
+          "fit": 0.40,
+          "specificity": "low",
+          "reasoning": "Classifying tone and intent in enrollment inquiry calls could support conversion coaching, but most companies in this set lack the call volume and CRM infrastructure to operationalise audio classification for growth. WISE delegate engagement via phone is a marginal use case."
+        },
+        "operations-delivery": {
+          "fit": 0.55,
+          "specificity": "high",
+          "reasoning": "Classroom audio classification — detecting disruptive behavior, off-task noise levels, or student engagement quality — is a niche but education-specific use case applicable to Rising Academies and CSPD's teacher quality improvement programs. Automated quality monitoring of recorded teaching sessions at scale (Rising Academies supervises hundreds of classrooms across West Africa with limited observer capacity) is a genuine operational pain point that audio classification could address. High specificity because classroom acoustics and pedagogy classification is an education-sector-specific application."
+        },
+        "product-service": {
+          "fit": 0.52,
+          "specificity": "high",
+          "reasoning": "iPeople (STEM HE) and PHINMA deploying digital or hybrid learning environments can classify student audio participation, language proficiency signals, and comprehension indicators from lecture recordings. For School for Life (community education) working with adult learners, classifying spoken responses in assessment contexts enables literacy and numeracy tracking without written test infrastructure. High specificity because these use cases are education-domain-specific and require models tuned to local language and pedagogy contexts."
+        },
+        "talent-people": {
+          "fit": 0.48,
+          "specificity": "mid",
+          "reasoning": "Classifying recorded teacher observation sessions by pedagogical quality dimension is a meaningful teacher development application for CSPD, Rising Academies, and PHINMA — replacing or augmenting expensive in-person observation visits. Structured audio feedback classification from coaching sessions can personalise CPD pathways. Constrained by privacy concerns (classroom recordings) and infrastructure limitations in LMIC contexts. Mid specificity because teacher audio quality classification is education-specific but ethically complex."
+        },
+        "risk-compliance": {
+          "fit": 0.62,
+          "specificity": "high",
+          "reasoning": "Safeguarding obligations at CSPD, Rising Academies, and School for Life create a legitimate use case for classifying audio in school environments to detect distress signals, bullying behavior, or adult-child interaction patterns that trigger welfare protocols. This is a high-sensitivity, high-specificity education safeguarding application. Regulatory compliance around language of instruction (governments in Philippines, West Africa have specific policies) can be monitored via classroom audio classification at iPeople and Rising Academies."
+        },
+        "financial": {
+          "fit": 0.25,
+          "specificity": "low",
+          "reasoning": "Audio classification has minimal direct financial domain application for these education organisations. Earnings calls are not relevant for most; any useful signal from financial discussions is better captured via transcription and text classification."
+        },
+        "strategy-direction": {
+          "fit": 0.30,
+          "specificity": "low",
+          "reasoning": "Classifying audio from stakeholder consultations or strategy sessions has marginal value beyond transcription. Acasus runs stakeholder engagement processes in LMICs where voice-first communication is dominant — classifying community audio feedback by theme could support development program design, but this is a highly niche application."
+        },
+        "governance-leadership": {
+          "fit": 0.38,
+          "specificity": "mid",
+          "reasoning": "Classifying tone and content of recorded board or leadership meetings could surface alignment issues or detect procedural non-compliance in governance discussions. WISE (Qatar Foundation setting) and PHINMA have formal board recording practices. Constrained by sensitivity of board proceedings and limited willingness to deploy audio classification in leadership contexts. Mid specificity given education governance's multi-stakeholder and regulatory accountability framing."
+        }
+      }
+    }
+  }
+}

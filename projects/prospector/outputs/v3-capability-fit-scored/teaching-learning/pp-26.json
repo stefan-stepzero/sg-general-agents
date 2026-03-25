@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-remediation-intervention-remedial-program-structure-dup",
+  "pain_point_label": "Unstructured or Ad Hoc Remedial Programs",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site operators lack standardized intervention curricula and trained staff — AI can generate structured remedial program frameworks, session plans, entry/exit criteria rubrics, and training guides for volunteer/part-time staff. This directly addresses the absence of documented program structure without requiring centralized curriculum expertise at every campus.",
+      "opportunity_sketch": "An AI tool that generates campus-ready remedial program kits: session-by-session lesson plans, facilitator guides for untrained volunteers, and measurable entry/exit criteria aligned to grade-level standards.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Without systematic entry criteria, remedial programs enroll the wrong students and miss those who need help. A propensity model trained on attendance, assessment scores, and prior grades can predict which students are likely to fall behind and flag them for early intervention, replacing ad hoc identification with a data-driven trigger.",
+      "opportunity_sketch": "A student-level risk model that scores every learner weekly on remediation need, surfacing a prioritized intervention list for teachers — replacing gut-feel referrals with consistent, evidence-based triage.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Multi-site operators have fragmented data on student performance but no consistent logic for classifying who meets entry or exit criteria for remediation. A structured classification model can apply uniform entry/exit rules across all campuses using existing SIS and assessment data, replacing subjective teacher decisions with auditable, consistent labels.",
+      "opportunity_sketch": "An automated classification layer that reads assessment scores, attendance, and teacher flags from the SIS and outputs a remediation status (Needs Intervention / Active / Ready to Exit) for every student — creating the missing entry/exit criteria at scale.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The problem is not just missing content but missing processes — scheduling sessions, enrolling students, tracking attendance, and measuring effectiveness all happen sporadically. A task automation agent can orchestrate the end-to-end remediation workflow: trigger enrollment when a student meets entry criteria, schedule sessions, send reminders, and log outcomes — turning ad hoc activity into a managed program.",
+      "opportunity_sketch": "A remediation operations agent that monitors student classification outputs, auto-schedules sessions with available staff or volunteers, sends calendar invites, and logs attendance and progress to a central dashboard — making the program self-running across all campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Where trained tutors are unavailable and volunteers lack pedagogical skill, a conversational AI tutor can deliver consistent, adaptive remedial sessions directly to students. This addresses both the staffing gap (volunteers/part-timers without training) and the inconsistency across campuses, since the AI agent delivers the same quality of support everywhere.",
+      "opportunity_sketch": "A student-facing AI tutoring agent that runs structured remedial sessions on foundational literacy or numeracy, adapts difficulty based on responses, and records progress data that feeds back into the classification model for exit decisions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-teacher-registration-cpd-performance-appraisal-tie-in-dup",
+  "pain_point_label": "Performance Appraisal and Compliance Linkage",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Teacher compliance status — license expiry dates, CPD hours logged, credential validity — is structured tabular data that can be classified as compliant, at-risk, or deficient before an appraisal decision is made. This directly addresses the pain mechanism: HR lacks an automatic flag, but a classification model on existing HR and licensing records can produce a real-time compliance label per teacher at the moment an appraisal record is opened. For a 500+ staff operator this is feasible using data already held in HR/payroll systems.",
+      "opportunity_sketch": "A compliance classifier runs against each teacher's structured record at appraisal-open time, surfacing a status badge (compliant / at-risk / blocked) directly in the appraisal form before the line manager submits a promotion or salary recommendation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The adverse outcome — a promotion or raise that cannot be processed due to non-compliance — is exactly the risk prediction frame: estimating the probability that a given teacher's appraisal cycle will be blocked before it reaches payroll. A risk score generated weeks before the appraisal deadline gives HR time to resolve deficiencies rather than discovering them after the decision is made. This is a compliance risk prediction task, not a behavioral propensity task, and the data (license renewal cadence, CPD completion rates, prior appraisal flags) is plausibly available.",
+      "opportunity_sketch": "A pre-appraisal risk score is generated for each teacher 30–60 days before their review date, flagging high-risk individuals so HR or the compliance team can prompt them to renew licenses or complete outstanding CPD before the cycle closes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core problem is a broken cross-system workflow: compliance data sits in a licensing or CPD system, appraisal data sits in an HR platform, and payroll is a third system — none of them talk to each other at decision time. A task automation agent can orchestrate the end-to-end sequence: monitor compliance status, trigger notifications to HR reviewers when a teacher under appraisal has a deficiency, gate or annotate appraisal submissions, and update downstream payroll flags. This is multi-step, multi-system — the exact profile for task automation agents.",
+      "opportunity_sketch": "An automation agent watches the appraisal workflow queue, queries the licensing and CPD registries for each teacher in the active appraisal cycle, injects a compliance gate before the recommendation is finalised, and routes exception cases to the compliance officer — eliminating the mid-cycle payroll surprise.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Philippine education operators typically hold teacher license data from PRC, CPD records from DepEd or third-party providers, and HR appraisal records in separate systems with inconsistent schemas and ID formats. AI-assisted ETL — mapping teacher identifiers across systems, normalising CPD unit formats, and aligning license renewal dates to appraisal calendar periods — is the prerequisite layer that makes any compliance-appraisal linkage technically possible. Without this, any classification or automation layer has no clean input.",
+      "opportunity_sketch": "A data transformation pipeline ingests raw exports from the PRC license registry, CPD provider logs, and the HR platform, produces a unified per-teacher compliance record keyed to the appraisal cycle, and feeds it into the HR system as a read-only compliance panel.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Even where structured flags exist, HR managers and school principals need interpretable, plain-language compliance summaries — not raw status codes — to act on them. AI text generation can produce a per-teacher compliance narrative for inclusion in the appraisal packet: summarising license status, CPD shortfall (if any), and recommended action, in language calibrated for a non-technical HR audience. This reduces the effort required for HR to act on compliance data and makes the flag actionable rather than just visible.",
+      "opportunity_sketch": "Each appraisal packet auto-generates a one-paragraph compliance briefing: 'Teacher X holds a valid PRC license (expires March 2026) but is 6 CPD units short of the DepEd minimum for this cycle. Promotion recommendation should be deferred until completion is confirmed.'",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

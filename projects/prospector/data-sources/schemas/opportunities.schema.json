@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "opportunities.schema.json",
+  "title": "CompanyOpportunities",
+  "description": "Opportunities entry for one org — extracted from opportunities.json keyed by org ID",
+  "type": "object",
+  "required": ["name", "opportunities"],
+  "properties": {
+    "name": { "type": "string" },
+    "opportunities": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Opportunity" }
+    }
+  },
+  "definitions": {
+    "Opportunity": {
+      "type": "object",
+      "required": ["id", "title", "pain_point", "market_evidence", "opportunity", "why_now", "who_cares", "confidence", "confidence_reasoning", "sources"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "pain_point": { "type": "string" },
+        "market_evidence": { "type": "string" },
+        "opportunity": { "type": "string" },
+        "why_now": { "type": "string" },
+        "who_cares": {
+          "type": "object",
+          "required": ["buyer", "user"],
+          "properties": {
+            "buyer": { "type": "string" },
+            "user": { "type": "string" }
+          }
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"]
+        },
+        "confidence_reasoning": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "ai_capabilities": {
+          "type": "array",
+          "description": "AI capabilities from the taxonomy that are relevant to this opportunity, with a concrete application description.",
+          "items": { "$ref": "#/definitions/OpportunityCapability" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "OpportunityCapability": {
+      "type": "object",
+      "required": ["category", "capability", "application"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Top-level AI capability category from the taxonomy (e.g. 'Generation', 'Extraction & Structuring')"
+        },
+        "capability": {
+          "type": "string",
+          "description": "Sub-capability label from the taxonomy (e.g. 'Text Generation', 'Summarization & Condensation')"
+        },
+        "application": {
+          "type": "string",
+          "description": "One-line concrete description of how this AI capability applies to this specific opportunity"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

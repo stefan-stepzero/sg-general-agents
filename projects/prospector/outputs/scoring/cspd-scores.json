@@ -1,0 +1,254 @@
+{
+  "company_id": "cspd",
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise 'Education' match with strong direct evidence from 80 schools, 6 ELCs, and homepage confirmation."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Catholic systemic K-12 (faith-based, government-funded, non-selective) precisely defined with diocesan and funding model evidence."
+    },
+    {
+      "property_id": "industry-vertical-value-chain-position",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear end-service-provider with 43,000 direct student delivery; EdTech buyer/integrator role documented."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Mature sector confirmed with stable regulatory frameworks, 5.7% incremental growth, and established funding models."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Grant-funded plus modest fees precisely documented with Commonwealth/NSW recurrent and CSNSW 2024-2029 arrangement details."
+    },
+    {
+      "property_id": "business-model-delivery-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Direct human-delivered classroom education plus School of Now blended supplement explicitly described with delivery mechanisms."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Fixed-cost-heavy confirmed by 4,500 staff and 80+ facilities with active capital works program evidence."
+    },
+    {
+      "property_id": "business-model-network-effects",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Four structural moats documented (geographic catchment, religious loyalty, government funding ties, accreditation barriers) with specific evidence."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Four critical dependencies precisely identified (government funding, NESA compliance, diocese governance, teacher supply) with detailed evidence."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Enterprise band (1000+) confirmed by explicit 4,500 staff figure consistent with 80-campus footprint."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.595,
+      "justification": "Enterprise ($500M+) inferred from 16% NSW Catholic enrolment share and $3.65B sector funding; not publicly audited per-entity."
+    },
+    {
+      "property_id": "scale-resources-capitalization",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Government-grant-funded nonprofit (company limited by guarantee 2023) with CSNSW 2024-2029 funding certainty confirmed."
+    },
+    {
+      "property_id": "scale-resources-asset-intensity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Asset-heavy confirmed by 80+ school campuses, 6 ELC sites, and active Westmead primary school capital works (opening 2026)."
+    },
+    {
+      "property_id": "market-position-market-structure",
+      "coverage": 0.9,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.765,
+      "justification": "Fragmented Catholic education market reasonable for sector; diocese boundary creates local monopoly without broader competitive analysis."
+    },
+    {
+      "property_id": "market-position-competitive-stance",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Market leader confirmed as sole Catholic diocesan system in region serving one-in-four Western Sydney students."
+    },
+    {
+      "property_id": "market-position-gtm-motion",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Community/mission-driven enrolment precisely described (Education Mass, Bishop's Awards, LIFTED forum) with no outbound sales."
+    },
+    {
+      "property_id": "market-position-customer-concentration",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Diversified customer base confirmed by 43,000 students across 80 schools; government funding concentration separately identified."
+    },
+    {
+      "property_id": "market-position-pricing-position",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Mid-market/accessible supported by 'modest fees' descriptor; lacks specific pricing tiers or fee range quantification."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Professional management with CEO Jack de Groot, 9 EGMs, and board governance under Elizabeth Crouch AM documented precisely."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Hub-and-spoke topology precisely identified (central system office + 80 semi-autonomous principals); standard for diocesan systems."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Multi-site distributed model documented for 80+ Western Sydney campuses; inherently on-campus education delivery."
+    },
+    {
+      "property_id": "org-structure-talent-profile",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Domain-expert-heavy (NESA-accredited teachers) confirmed with Teacher Scholarship Program and ICT traineeship pipeline evidence."
+    },
+    {
+      "property_id": "tech-maturity-stack-generation",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Transitional classification supported by MacBooks/Chromebooks, School of Now blended platform; lacks specific technical architecture details."
+    },
+    {
+      "property_id": "tech-maturity-engineering-practices",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "N/A appropriately applied — CSPD is education service provider, not software development company; dimension not applicable."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.595,
+      "justification": "Basic-to-intermediate analytics inferred from Uplift data requirements and dedicated Data Intelligence EGM; no modern data warehouse confirmed."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "Intermediate classification weakly inferred from government compliance obligations; lacks direct evidence of controls, SOC, or penetration testing."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Heavy burden comprehensively documented across NESA, Education Act, Schools Funding, Privacy Act, Working with Children, and Catholic governance."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Single-region scope precisely defined as Diocese of Parramatta boundary (Western Sydney and Blue Mountains); no international operations."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Recession-resistant confirmed by government funding non-cyclicality, essential service status, and Western Sydney population growth tailwind."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Nonprofit structure documented via company limited by guarantee (2023), Catholic Church canonical authority, and government accountability."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Pragmatic/evidence-driven demonstrated through Uplift framework grounded in Science of Reading and cognitive load theory; minor adoption barrier gap."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Community/mission-driven positioning confirmed through Catholic identity, student flourishing messaging, and Project Compassion engagement."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Mission-driven values confirmed through faith formation as Strategic Pillar 1 with non-negotiable mission constraints on decisions."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Strong-in-niche inferred from Teacher Scholarship Program, professional development, and active recruitment; lacks public sentiment validation."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": 1.0,
+    "business-model": 1.0,
+    "scale-resources": 0.8488,
+    "market-position": 0.9,
+    "org-structure": 1.0,
+    "tech-maturity": 0.7806,
+    "operating-environment": 1.0,
+    "culture-brand": 0.9075
+  },
+  "overall_score": 0.9406
+}

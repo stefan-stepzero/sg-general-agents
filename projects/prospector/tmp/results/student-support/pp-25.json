@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-parent-engagement-retention-communication-asymmetry-dup",
+  "pain_point_label": "One-Way Communication & Parent Information Asymmetry",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "The core pain mechanism is parents having no easy mechanism to query the school on their child's progress, incidents, or concerns between formal touchpoints. A conversational agent directly addresses this by enabling parents to ask questions and receive responses in a multi-turn dialogue — replacing the current void between annual parent-teacher conferences. For international/OFW parents especially, an always-on text-based assistant that can answer 'How is my child doing in Math this semester?' is precisely the missing channel.",
+      "opportunity_sketch": "A WhatsApp or SMS-accessible AI assistant per school that parents can message at any time to ask about attendance, grades, upcoming events, or flag concerns — the agent pulls from the school's SIS and escalates to staff when human judgment is needed.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Progress reports are rare (end-of-semester only) because composing individualized narrative updates for hundreds of students is prohibitively time-consuming for teachers. AI text generation can draft personalized progress narratives from structured grade/attendance/behavioral data, enabling schools to issue monthly or bi-monthly reports without adding teacher workload. This directly attacks the 'incomplete information' problem parents face when making tuition and retention decisions.",
+      "opportunity_sketch": "An automated report generator that converts a student's grade records, attendance log, and teacher incident notes into a readable 200-word narrative update, delivered to parents via email or SMS on a monthly cadence.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of structured two-way communication is partly an operational problem: schools lack workflows that collect parent concerns, route them to the right staff member, track resolution, and confirm back to the parent. A task automation agent can orchestrate this end-to-end — receiving a parent concern submission, classifying it, routing to the relevant teacher or counselor, sending acknowledgment, and following up when unresolved. This transforms an ad-hoc process into a governed workflow.",
+      "opportunity_sketch": "A concern-triage automation layer integrated into the school's existing communication platform (WhatsApp Business, email) that captures parent messages, logs them as tickets, assigns to staff, and sends parents a status update without manual admin overhead.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The pain point explicitly names tuition retention risk: parents making retention decisions with incomplete information. Propensity modeling can predict which families are at elevated churn risk based on engagement signals — parent communication frequency, unanswered concerns, declining grades, attendance drops — enabling proactive outreach before a family decides to leave. This turns a reactive communication problem into a retention management system.",
+      "opportunity_sketch": "A churn-risk dashboard for principals that scores each enrolled family monthly on withdrawal likelihood, surfacing the top 20 at-risk families so the registrar or homeroom adviser can initiate a personal check-in before re-enrollment season.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "When parents do communicate concerns (via SMS, group chat, or email), there is no structured triage — messages are missed or handled inconsistently. Text classification can automatically tag incoming parent messages by type (academic concern, safety incident, billing query, general inquiry), urgency level, and required responder role. This creates the routing layer needed to operationalize two-way communication at scale across 500+ staff and multiple campuses.",
+      "opportunity_sketch": "An inbox classifier that processes all incoming parent messages across channels and labels them with topic, urgency, and assigned department — enabling a centralized parent communications coordinator to prioritize and delegate without reading every message.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

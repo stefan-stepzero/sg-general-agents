@@ -1,0 +1,46 @@
+{
+  "name": "Catholic Schools Parramatta Diocese",
+  "generated_date": "2026-03-25",
+  "competitors": [
+    {
+      "name": "NSW Department of Education (government schools)",
+      "relationship": "competitor",
+      "competitive_dynamic": "Primary enrolment competitor for all families in CSPD's western Sydney catchment. Government schools are tuition-free — the strongest structural cost advantage in the market. NSW DoE is actively building new and upgraded schools directly in CSPD's growth corridors (Blacktown, Penrith, Hills District, south-west Sydney), increasing supply of free schooling precisely where CSPD's enrolment growth is concentrated. NSW DoE lost market share at the sector level (down ~3.7% of enrolments over five years to 2025) but the new capital program may stabilise or reverse this in specific corridors where CSPD is most exposed.",
+      "threat_level": "high",
+      "key_moves": [
+        "$3.6 billion committed in 2024-25 NSW Budget for new and upgraded schools in western Sydney — record education infrastructure spend, including 24 new schools and 51 upgraded schools",
+        "Melonba Public School (north-west Sydney) opened Term 1 2025 ahead of schedule; Melonba High School catering up to 2,000 students — directly in CSPD's Blacktown/Hills growth corridor",
+        "New high school for Gledswood Hills/Gregory Hills (south-west Sydney) — temporary campus 2025, permanent campus 2027 — in CSPD's south-west expansion corridor",
+        "Upgrades at Leppington and Austral Public Schools (20+ new permanent classrooms each) to meet enrolment demand in areas where CSPD has high LBOTE populations",
+        "NSW DoE 2024 NAPLAN messaging: 81% of Year 3 students recording Strong or Exceeding in writing; active counter-narrative to CSPD's NAPLAN positioning"
+      ],
+      "source": "https://education.nsw.gov.au/news/latest-news/new-public-schools-for-sydneys-growing-north-west; https://www.schoolinfrastructure.nsw.gov.au/news/2024/11/construction-of-two-new-public-schools-for-3-000-north-west-sydn.html; https://www.nsw.gov.au/ministerial-releases/major-public-school-upgrades-underway-sydneys-south-west"
+    },
+    {
+      "name": "Low-to-mid fee independent schools in western Sydney",
+      "relationship": "competitor",
+      "competitive_dynamic": "Fastest-growing enrolment competitor. Since 2000, NSW independent schools have captured almost two-thirds of the state's additional student enrolments (101,565 students) vs 39,817 for Catholic systemic schools. Ten new low-to-mid fee independent schools opened in Sydney's north-west and south-west in the past decade — directly overlapping CSPD's growth corridor. The typical competing school is co-ed, K-12, faith-based (Christian, Islamic, Anglican), located west of Parramatta, and charging under $6,000 per year — closely matching CSPD's fee profile. They are winning on responsiveness to parent preferences ('they really pay attention to what parents and students want') and on marketing agility that CSPD as a large diocesan system cannot easily match.",
+      "threat_level": "high",
+      "key_moves": [
+        "Independent sector grew enrolments at 3.3% per year over five years (2020-2025) vs Catholic systemic growth of 1.2% per year",
+        "10 new low-to-mid fee independent schools opened in Sydney's north-west and south-west in the past decade, with many existing schools expanding",
+        "More than half of independent school students now come from low-to-medium income households — eroding CSPD's traditional positioning as the accessible Catholic option",
+        "Faith-based Islamic and evangelical Christian schools in western Sydney specifically targeting LBOTE families — CSPD's core demographic (53.4% LBOTE) is the key contested segment"
+      ],
+      "source": "https://educationmattersmag.com.au/independent-enrolments-surge-in-sydneys-west/; https://cathnews.com/2026/03/03/nsw-catholic-schools-reach-highest-ever-market-share/"
+    },
+    {
+      "name": "Sydney Catholic Schools (SCS / Archdiocese of Sydney)",
+      "relationship": "competitor",
+      "competitive_dynamic": "Overlapping catchment competitor in border areas. SCS operates 147 schools in the Archdiocese of Sydney, which geographically adjoins CSPD's diocese. Families in boundary zones (e.g. Liverpool, parts of Blacktown, Campbelltown) may have access to both SCS and CSPD schools. More importantly, SCS competes for the same teacher workforce, for CSNSW influence, and for brand positioning as the 'lead' Catholic school system in NSW. SCS is larger ($73,853 students, 147 schools), publishes more prominently, and its strategic initiatives (Magis 2033, school reporting overhaul) set a benchmark that CSPD must match or differentiate against. This is as much a reputational competitor as a direct enrolment competitor.",
+      "threat_level": "medium",
+      "key_moves": [
+        "Magis 2033 launched early 2026 with Boston College partnership — elevates SCS's academic credibility and national profile above CSPD's current positioning",
+        "School reporting overhaul (Feb 2026) positions SCS as innovating on parent communication — directly addresses a dimension where CSPD has no announced equivalent initiative",
+        "73,853 students, 147 schools vs CSPD's 45,646 / 83 — SCS's scale advantage enables shared services efficiencies and negotiating leverage CSPD cannot match independently",
+        "Teacher recruitment: SCS actively recruits in western Sydney suburbs and shares the same EA, meaning CSPD competes directly with SCS for teacher talent in the same labour market"
+      ],
+      "source": "https://sydcatholicschools.nsw.edu.au/scs_news/magis-2033-a-bold-new-direction-for-catholic-education-in-sydney; https://cathnews.com/2026/02/04/sydney-catholic-schools-reveals-plan-to-fix-school-reports/; https://cathnews.com/2026/03/03/nsw-catholic-schools-reach-highest-ever-market-share/"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "enrollment-admissions-reenrollment-campaigns-site-level-variability-dup",
+  "pain_point_label": "Inconsistent Site-Level Retention Tactics",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of standardized communication templates is a direct pain mechanism here — sites improvise outreach with inconsistent quality and timing. Text generation can produce a library of re-enrollment communication templates (emails, scripts, letters) tailored to different family segments and milestone triggers, giving every site a consistent baseline while allowing light personalization.",
+      "opportunity_sketch": "An AI-assisted template engine that generates site-customizable re-enrollment outreach sequences (initial notice, follow-up, urgency reminder) aligned to corporate milestones, reducing dependence on individual site head judgment for communication quality.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Corporate leadership is unaware of local retention barriers because site-level knowledge is buried in notes, CRM logs, and informal reports. Summarization can distill what each site is doing — retention tactics used, barriers raised, outreach outcomes — into structured digests that surface best practices and flag struggling sites before it's too late.",
+      "opportunity_sketch": "A weekly AI-generated retention briefing per site, summarizing outreach activity, local barriers reported, and re-enrollment progress against targets — feeding a corporate dashboard that enables knowledge sharing and early intervention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "A core failure mode is that sites apply uniform tactics when individual families have very different re-enrollment risk profiles. Propensity modeling on enrollment history, engagement signals, payment patterns, and demographic features can score each family's likelihood to re-enroll, enabling sites to prioritize high-risk families early rather than relying on ad hoc intuition.",
+      "opportunity_sketch": "A re-enrollment risk model that scores every returning family at the start of the enrollment window, allowing site heads to triage outreach effort — focusing personal calls on high-risk families and automated communications on low-risk ones.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The lack of standardized milestones and communication cadences across sites is exactly the workflow consistency problem task automation addresses. An autonomous agent can trigger the right outreach action (send template, log contact attempt, escalate to site head) based on enrollment status and calendar milestones — removing reliance on individual site staff to remember and execute each step.",
+      "opportunity_sketch": "A re-enrollment workflow automation agent that monitors enrollment status per student, fires templated communications at defined milestones, and escalates unresponsive families to site heads — creating a consistent process across all sites regardless of local staff capability.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Strong-performing sites have tacit knowledge about what works locally, but that knowledge never reaches struggling sites or corporate. A RAG system over site reports, past campaign notes, and retention playbooks would let site heads query for proven tactics relevant to their context — effectively democratizing best practices without requiring structured knowledge transfer programs.",
+      "opportunity_sketch": "An internal knowledge assistant where site heads can ask 'what has worked for families with X barrier?' and receive grounded answers drawn from documented site experiences and retention playbooks — closing the knowledge-sharing gap without manual curation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

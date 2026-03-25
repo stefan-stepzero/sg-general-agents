@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-inspection-response-uncoordinated-readiness-dup",
+  "pain_point_label": "Uncoordinated Campus Inspection Readiness",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core failure is a multi-step coordination workflow that currently runs entirely on human initiative: collect evidence status from each campus, verify completeness against the specific accreditor's checklist, identify gaps, escalate to executives, and confirm corrective actions before audit day. A task automation agent can own this end-to-end workflow autonomously — triggered by inspection notice receipt, it queries each campus coordinator, maps submitted evidence against requirements, flags deficiencies, and generates an executive dashboard. This directly addresses the 'no executive-level verification' mechanism rather than just improving one step.",
+      "opportunity_sketch": "An inspection readiness agent is triggered when an audit notice is logged. It contacts each campus coordinator via a structured form, aggregates evidence completeness across all campuses against the specific accreditor's requirements, and delivers a gap report to executives with per-campus readiness scores and recommended actions — all within 48 hours of notice receipt.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Executives currently have no signal about which campuses are likely to be poorly prepared until it is too late. A risk scoring model trained on historical inspection data, campus compliance records, past audit findings, and self-reported evidence completeness can surface a per-campus readiness risk score in the days before an inspection. This gives operators the ability to triage intervention effort — sending executive or compliance team support to high-risk campuses rather than treating all sites equally.",
+      "opportunity_sketch": "A readiness risk model ingests each campus's historical audit findings, evidence submission rates, staff training completion, and facility maintenance records to produce a 0-100 risk score per campus per inspection cycle, enabling executives to allocate pre-audit support where it is most needed.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "One concrete gap in this pain point is that staff are not consistently briefed — campus coordinators receive inspection notices but lack standardized, accreditor-specific briefing documents, staff talking points, and evidence checklists. Generative text can produce tailored pre-inspection briefing packets for each campus that reference the specific accreditor's known priorities, the campus's last audit findings, and the current evidence status. This addresses the 'staff are briefed' gap with minimal infrastructure.",
+      "opportunity_sketch": "Upon receiving an inspection notice, the system generates a campus-specific briefing packet: a staff FAQ, a priority evidence checklist keyed to the accreditor's framework, and a talking-points memo for campus heads — all grounded in the campus's compliance history and the accreditor's published standards.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "A specific sub-problem in this pain point is evidence completeness verification: submitted documents need to be matched against the accreditor's requirements and classified as compliant, incomplete, or missing. Text classification can automate this triage across hundreds of documents submitted by multiple campuses, flagging which evidence items are absent or insufficient before a human reviewer spends time on them. This removes a significant manual bottleneck in the readiness verification step.",
+      "opportunity_sketch": "A document intake classifier receives evidence submissions from all campuses and tags each item as 'complete,' 'incomplete,' or 'missing' relative to the inspection checklist — producing an aggregate evidence gap matrix across campuses that campus coordinators and executives can act on immediately.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Campus coordinators and compliance officers frequently need to answer 'what exactly does DepEd/CHED/this accreditor require for this evidence category?' — a question that requires navigating dense regulatory documents under time pressure. A RAG system grounded in the actual regulatory handbooks, accreditation frameworks, and past inspection finding reports lets coordinators get specific, cited answers instantly rather than searching PDFs manually or waiting for a central compliance team response. This directly reduces the scramble dynamic at individual campuses.",
+      "opportunity_sketch": "A compliance Q&A assistant indexed over DepEd, CHED, and PAASCU/PACUCOA regulatory documents answers campus coordinators' specific questions about evidence requirements with citations, reducing the time spent interpreting standards and enabling faster, more accurate evidence preparation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

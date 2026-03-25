@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-industry-employer-placement-misalignment-dup",
+  "pain_point_label": "Curriculum-Employer Skills Mismatch — No Real-Time Feedback Loop",
+  "matches": [
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Employer feedback on graduate skills currently exists as scattered anecdotal comments from hiring managers — emails, meeting notes, informal conversations — with no aggregation mechanism. Summarization AI can condense these inputs into structured insight reports for curriculum teams, turning noise into usable signals without requiring formal advisory board infrastructure. This directly addresses the 'feedback is anecdotal' pain mechanism.",
+      "opportunity_sketch": "An automated digest that periodically summarizes employer feedback collected via email, surveys, or LinkedIn messages into a skills-gap report delivered to academic heads — replacing ad-hoc anecdote with structured summaries.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core problem is that labor market signals (employer complaints, job postings, industry reports) are not connected to curriculum content in any structured way. Knowledge extraction can parse job descriptions, employer surveys, and industry publications to build a structured map of in-demand skills and their relationships — linking specific competencies to job roles, sectors, and graduate outcomes. This creates the structured knowledge base that curriculum teams currently lack.",
+      "opportunity_sketch": "A pipeline that ingests job postings and employer feedback and extracts a living skills taxonomy — mapping which competencies are rising/falling in demand and which current course units address them, surfacing gaps to curriculum planners.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incoming employer feedback — through surveys, exit reviews, recruitment partner emails, or LinkedIn messages — can be classified by skill category (communication, teamwork, problem-solving, technical) and sentiment, enabling the institution to quantify which skill gaps are mentioned most frequently and track trends over time. This directly converts anecdotal feedback into measurable, categorized signals without needing formal advisory boards.",
+      "opportunity_sketch": "A feedback triage system that classifies all employer touchpoints by skill dimension and urgency, producing a ranked skills-gap dashboard that curriculum teams can review each semester.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The institution lacks the staff capacity to continuously monitor labor market trends, employer expectations, and industry skills frameworks. A research agent can autonomously gather signals from job boards, industry bodies, government workforce reports, and employer publications — synthesizing a regular skills-market briefing that bridges the gap between academic departments and labor market reality without requiring dedicated analyst headcount.",
+      "opportunity_sketch": "A scheduled research agent that scrapes industry job postings, employer association reports, and skills framework updates weekly, producing a synthesized briefing on emerging competency gaps for curriculum leads at each campus.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Employer advisory input is currently constrained to infrequent formal meetings that many employers don't attend. A conversational agent deployed as a lightweight employer portal or chatbot can collect structured feedback from hiring managers asynchronously — asking targeted questions about graduate readiness on their schedule, replacing the missing advisory board function with a persistent, low-friction feedback channel.",
+      "opportunity_sketch": "An employer-facing chatbot that hiring partners can interact with at any time to log specific graduate skill observations, which feeds a structured database used by curriculum teams for semester planning reviews.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

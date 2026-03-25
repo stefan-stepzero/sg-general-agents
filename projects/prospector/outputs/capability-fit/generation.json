@@ -1,0 +1,276 @@
+{
+  "category": "generation",
+  "category_label": "Generation",
+  "capabilities": {
+    "generation-text": {
+      "label": "Text Generation",
+      "domains": {
+        "growth-market": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Content for student recruitment, donor outreach, and partnership proposals is high-volume for Rising Academies and PHINMA, but education CRMs like Salesforce EDU are already adding AI copywriting."
+        },
+        "operations-delivery": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Lesson plans, curriculum scaffolds, teacher guides, and student progress narratives are education-specific high-volume text tasks that generic SaaS cannot produce without deep pedagogical grounding — especially critical for Rising Academies' low-resource West Africa context."
+        },
+        "product-service": {
+          "fit": 0.70,
+          "specificity": "high",
+          "reasoning": "Course descriptions, learning objective mapping, assessment rubrics, and program marketing copy require education-domain calibration; Kinetic's SaaS product documentation and iPeople's STEM curriculum content are recurring generation needs."
+        },
+        "talent-people": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Teacher job descriptions, performance observation notes, professional development plans, and educator appraisal reports are recurring and domain-specific — CSPD's multi-school Catholic HR context and Rising Academies' large teacher workforce amplify this need."
+        },
+        "risk-compliance": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Accreditation narratives, child safeguarding policy documents, government grant compliance reports, and CHED/ACARA regulatory filings require structured, defensible text that generic tools cannot produce reliably for Australian and Philippine education regulators."
+        },
+        "financial": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Grant applications, donor impact reports, and board budget narratives are high-stakes recurring text tasks for Rising Academies and School for Life — templates help but human review loops are mandatory."
+        },
+        "strategy-direction": {
+          "fit": 0.68,
+          "specificity": "high",
+          "reasoning": "Synthesizing student outcome data, sector benchmarks, and expansion options into strategic briefs for Acasus clients or WISE knowledge reports is genuinely novel and not a feature of education management platforms."
+        },
+        "governance-leadership": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Board papers, trustee communications, and principal leadership reports require structured formats sensitive to Catholic school governance (CSPD) and Qatar Foundation stakeholder expectations (WISE) that off-the-shelf templates don't address."
+        }
+      }
+    },
+    "generation-code": {
+      "label": "Code Generation",
+      "domains": {
+        "growth-market": {
+          "fit": 0.25,
+          "specificity": "low",
+          "reasoning": "These companies have limited engineering teams and growth problems are not code problems — Rising Academies, School for Life, and CSPD have no meaningful engineering capacity to leverage code generation for growth."
+        },
+        "operations-delivery": {
+          "fit": 0.50,
+          "specificity": "high",
+          "reasoning": "Generating data pipeline scripts, SMS/attendance automation, and student information system integrations from natural language is a genuine multiplier for Kinetic and Acasus with small dev teams serving operational gaps."
+        },
+        "product-service": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Kinetic's SaaS platform and iPeople's EdTech tools are the primary beneficiaries — feature scaffolding, SQL for learning analytics, and integration code are real needs, though IDE copilots commoditize basic completion."
+        },
+        "talent-people": {
+          "fit": 0.10,
+          "specificity": "low",
+          "reasoning": "Education and development organizations are domain-expert-heavy with almost no internal engineering culture — code generation has effectively zero direct application to teacher hiring, PD, or workforce management."
+        },
+        "risk-compliance": {
+          "fit": 0.35,
+          "specificity": "high",
+          "reasoning": "Generating compliance audit scripts, data access controls, and child-safety data handling code is valuable for Kinetic's SaaS compliance posture, but irrelevant to the school operators in this portfolio."
+        },
+        "financial": {
+          "fit": 0.40,
+          "specificity": "high",
+          "reasoning": "Generating financial model scripts, grant tracking queries, and budget dashboard SQL for finance teams without engineering support (PHINMA, Rising Academies) has real value but requires significant technical facilitation."
+        },
+        "strategy-direction": {
+          "fit": 0.20,
+          "specificity": "low",
+          "reasoning": "Strategy problems at these organizations are people, funding, and policy problems — code generation is essentially irrelevant to Acasus consulting deliverables or WISE summit strategy."
+        },
+        "governance-leadership": {
+          "fit": 0.10,
+          "specificity": "low",
+          "reasoning": "Board and leadership governance at Catholic schools, Philippine HE institutions, and a Qatar education foundation are entirely non-technical — no meaningful fit."
+        }
+      }
+    },
+    "generation-image": {
+      "label": "Image & Visual Generation",
+      "domains": {
+        "growth-market": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Student recruitment visuals, school brand assets, and WISE summit promotional imagery are genuine high-volume needs for resource-constrained marketing teams — Canva is already embedded but AI generation accelerates throughput."
+        },
+        "operations-delivery": {
+          "fit": 0.48,
+          "specificity": "mid",
+          "reasoning": "Classroom learning material visuals, illustrated worksheets, and infographic-based lesson content are operationally relevant for Rising Academies and School for Life in low-resource community contexts where professional design is unaffordable."
+        },
+        "product-service": {
+          "fit": 0.52,
+          "specificity": "mid",
+          "reasoning": "Course cover imagery, eLearning module visuals, and UI mockups for Kinetic and iPeople product teams can be accelerated, but design tooling is already adding generative capabilities natively."
+        },
+        "talent-people": {
+          "fit": 0.30,
+          "specificity": "low",
+          "reasoning": "Employer brand imagery for teacher recruitment is a niche use — education organizations typically rely on authentic photography rather than AI-generated imagery for trust-sensitive recruitment."
+        },
+        "risk-compliance": {
+          "fit": 0.12,
+          "specificity": "low",
+          "reasoning": "Visual generation has no meaningful compliance application in education — child safeguarding, accreditation, and regulatory filings are document-driven."
+        },
+        "financial": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Donor report infographics and grant application visuals are minor use cases; BI tools and Canva handle these sufficiently for education finance teams."
+        },
+        "strategy-direction": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Strategic presentation decks and market landscape visuals for Acasus consulting outputs and WISE knowledge reports benefit marginally — this is presentation polish, not strategic insight."
+        },
+        "governance-leadership": {
+          "fit": 0.25,
+          "specificity": "low",
+          "reasoning": "Board slide visuals and annual report imagery are low-frequency and handled adequately by existing design tools — not a governance pain point."
+        }
+      }
+    },
+    "generation-audio": {
+      "label": "Audio & Speech Generation",
+      "domains": {
+        "growth-market": {
+          "fit": 0.42,
+          "specificity": "mid",
+          "reasoning": "Localized audio recruitment messages for Rising Academies' West African communities and multilingual PHINMA student outreach are genuine use cases where TTS in local languages (Twi, Tagalog) exceeds what generic marketing platforms offer."
+        },
+        "operations-delivery": {
+          "fit": 0.68,
+          "specificity": "high",
+          "reasoning": "Audio-narrated lesson content, teacher training modules, and student instruction in low-literacy or low-connectivity contexts (Rising Academies, School for Life) are high-impact applications requiring multilingual, curriculum-aligned generation beyond generic TTS."
+        },
+        "product-service": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Narrated eLearning modules, audio course content, and voice-accessible student support for iPeople and PHINMA's higher education platforms reduce production cost substantially — but require LMS integration and accessibility compliance."
+        },
+        "talent-people": {
+          "fit": 0.45,
+          "specificity": "mid",
+          "reasoning": "Audio-based teacher professional development modules and onboarding narration for multi-site school operators (CSPD, Rising Academies) scale L&D without recording studios — genuine need in distributed educator workforces."
+        },
+        "risk-compliance": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Audio policy acknowledgment for child safeguarding training is a narrow use case; compliance in education is primarily document and observation-driven."
+        },
+        "financial": {
+          "fit": 0.15,
+          "specificity": "low",
+          "reasoning": "Minimal fit — audio has no meaningful application to grant management, tuition revenue, or financial reporting in these organizations."
+        },
+        "strategy-direction": {
+          "fit": 0.25,
+          "specificity": "low",
+          "reasoning": "Audio briefing summaries for busy education leaders are a convenience feature, not a strategy capability — and conferencing tools are adding this natively."
+        },
+        "governance-leadership": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Voice-based meeting transcription summaries for board meetings have minor utility but are already provided by Zoom/Teams AI — not a differentiated governance solution."
+        }
+      }
+    },
+    "generation-video": {
+      "label": "Video & Animation Generation",
+      "domains": {
+        "growth-market": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "AI-generated student testimonial videos, school tour explainers, and WISE summit promotion content address a real production bottleneck for resource-constrained marketing teams — but current video quality and trust sensitivity in education limit immediate adoption."
+        },
+        "operations-delivery": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Animated instructional content, teacher training videos, and student lesson videos for Rising Academies' low-resource schools and PHINMA's affordable HE campuses are high-volume, high-impact needs where production cost is the primary barrier — purpose-built education video generation is genuinely novel."
+        },
+        "product-service": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "eLearning module video generation, course intro animations, and product demo walkthroughs for Kinetic and iPeople reduce time-to-publish — LMS vendors are beginning to add basic versions, reducing long-term specificity."
+        },
+        "talent-people": {
+          "fit": 0.45,
+          "specificity": "mid",
+          "reasoning": "Teacher recruitment videos, culture content, and PD video modules can be generated at scale for multi-site operators like CSPD and Rising Academies — though authenticity concerns limit AI-generated content for trust-sensitive teacher recruitment."
+        },
+        "risk-compliance": {
+          "fit": 0.38,
+          "specificity": "mid",
+          "reasoning": "Child safeguarding training videos and compliance e-learning modules are recurring production needs across all school operators — LMS vendors will likely commoditize this, but purpose-built education compliance video generation has near-term value."
+        },
+        "financial": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "Donor impact videos and grant reporting videos are low-frequency, high-sensitivity outputs where AI-generated content risks undermining donor trust — not a meaningful fit."
+        },
+        "strategy-direction": {
+          "fit": 0.28,
+          "specificity": "low",
+          "reasoning": "Strategy cascade videos for school leaders and Acasus client briefings are useful for internal communication but are a polish problem, not a strategic capability gap."
+        },
+        "governance-leadership": {
+          "fit": 0.30,
+          "specificity": "low",
+          "reasoning": "Annual report videos and board communication content are low-frequency and too trust-sensitive for AI generation in Catholic school governance and Qatar Foundation stakeholder contexts."
+        }
+      }
+    },
+    "generation-synthetic-data": {
+      "label": "Synthetic Data Generation",
+      "domains": {
+        "growth-market": {
+          "fit": 0.32,
+          "specificity": "high",
+          "reasoning": "Simulating student enrollment demand curves or market entry scenarios for PHINMA geographic expansion is technically novel, but these organizations lack the data science capacity to operationalize synthetic data for growth modeling."
+        },
+        "operations-delivery": {
+          "fit": 0.55,
+          "specificity": "high",
+          "reasoning": "Generating synthetic student records for testing SIS platforms (Kinetic), simulating class scheduling edge cases, and load-testing attendance systems requires purpose-built education data schemas that no incumbent tool provides."
+        },
+        "product-service": {
+          "fit": 0.58,
+          "specificity": "high",
+          "reasoning": "Synthetic student behavior data for testing Kinetic's accommodation SaaS and iPeople's learning platform — QA, ML feature development, and product analytics — addresses real gaps without risking real student PII."
+        },
+        "talent-people": {
+          "fit": 0.48,
+          "specificity": "high",
+          "reasoning": "Anonymized teacher performance and workforce datasets for HR analytics, pay equity auditing, and educator retention modeling protect privacy under Australian and Philippine data laws while enabling people strategy analysis CSPD and PHINMA cannot do on live data."
+        },
+        "risk-compliance": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Synthetic student PII-free datasets for Privacy Act/FERPA compliance testing, child safeguarding audit simulations, and government reporting dry-runs are high-value and legally defensible — a genuinely purpose-built need across all school operators and Kinetic's SaaS."
+        },
+        "financial": {
+          "fit": 0.60,
+          "specificity": "high",
+          "reasoning": "Synthetic tuition revenue scenarios, grant funding stress-tests, and cash flow simulations for Rising Academies' grant-dependent model and PHINMA's multi-campus expansion planning require purpose-built financial modeling that no education finance platform provides."
+        },
+        "strategy-direction": {
+          "fit": 0.50,
+          "specificity": "high",
+          "reasoning": "Simulating geographic expansion outcomes, student demand under different fee structures, and competitive school entry scenarios for Acasus consulting and PHINMA growth planning is genuinely novel — no strategy tool in the education sector does this."
+        },
+        "governance-leadership": {
+          "fit": 0.28,
+          "specificity": "mid",
+          "reasoning": "Synthetic case studies for school board governance training and anonymized decision scenarios for leadership development have niche value — primarily relevant to WISE's education community programming and Acasus capacity-building work."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1319 @@
+{
+  "id": "root",
+  "label": "Leadership Problem Typology",
+  "description": "Reusable taxonomy of problems that affect organizational outcomes, organized by functional business domain. Step 1 of a methodology: problem typology × capability mapping → opportunity identification. An AI agent uses this to pre-analyze organizations before human conversations. INCLUDES: problems at ANY organizational level that affect leadership-visible outcomes — whether experienced directly by the board or surfaced through metrics, reports, or systemic patterns. EXCLUDES: problems fully contained within a single team that don't affect org-level outcomes or metrics. Purely personal problems of individual leaders. External macro forces (recession, pandemic) unless they manifest as an org-specific challenge. Solutions, capabilities, opportunities (separate pipeline stages). ROUTING RULE: each child is a functional domain that owns a class of problems. A problem routes to the domain where the organizational pain is felt most acutely.",
+  "children": [
+    {
+      "id": "growth-market",
+      "label": "Growth & Market",
+      "description": "Problems related to growing the organization's reach, revenue, or impact. INCLUDES: customer/beneficiary acquisition, retention and churn, market expansion (geographic or segment), new revenue/funding streams, demand generation, competitive win rates, enrollment/adoption growth. EXCLUDES: pricing and margin (Financial), product quality issues causing churn (Product), brand/reputation (External Relationships). ROUTING: route here when the core pain is 'we need MORE' — more customers, more markets, more revenue, more reach.",
+      "children": [
+        {
+          "id": "acquisition",
+          "label": "Acquisition & Demand",
+          "description": "Difficulty attracting new customers, users, beneficiaries, or participants. INCLUDES: low lead generation, poor conversion rates, weak market awareness, inability to reach target segments, enrollment decline. EXCLUDES: losing existing customers (Retention), entering new geographies (Market Expansion).",
+          "children": [
+            {
+              "id": "acquisition-awareness",
+              "label": "Market Awareness & Reach",
+              "description": "INCLUDES: low brand recognition, inability to reach target audience, weak messaging penetration, poor channel visibility, failure to surface in discovery contexts (search, referral, word-of-mouth), insufficient top-of-funnel volume. EXCLUDES: prospects aware but not converting (Conversion Effectiveness), content/messaging quality problems once reached (Engagement Quality).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "acquisition-engagement",
+              "label": "Engagement Quality",
+              "description": "INCLUDES: prospects reached but not meaningfully engaged, poor content resonance, misaligned messaging to audience needs, low click-through or inquiry rates, weak value proposition communication, failure to generate interest after initial contact. EXCLUDES: never reaching the prospect at all (Market Awareness & Reach), prospect engaged but failing to convert at decision point (Conversion Effectiveness).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "acquisition-conversion",
+              "label": "Conversion Effectiveness",
+              "description": "INCLUDES: interested prospects who fail to complete signup/purchase/enrollment, high drop-off at decision points, friction in onboarding or application processes, poor trial-to-paid conversion, inability to close deals, long or stalled decision cycles. EXCLUDES: failure to generate interested prospects (Market Awareness & Reach, Engagement Quality), segment-level mismatch where wrong prospects enter the funnel (Segment Targeting).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "acquisition-targeting",
+              "label": "Segment Targeting",
+              "description": "INCLUDES: inability to identify high-value segments, attracting wrong-fit prospects, poor segmentation models, misaligned ideal customer/beneficiary profile, wasted acquisition effort on low-yield populations, demographic or psychographic blind spots. EXCLUDES: correctly targeted prospects who aren't reached (Market Awareness & Reach), correctly targeted and reached prospects who don't convert (Conversion Effectiveness).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "retention",
+          "label": "Retention & Churn",
+          "description": "Difficulty keeping existing customers, users, or beneficiaries engaged. INCLUDES: high churn rates, declining renewal/re-enrollment, low engagement, customer/beneficiary satisfaction decline, attrition patterns. EXCLUDES: product quality problems causing churn (route to Product), pricing causing churn (route to Financial).",
+          "children": [
+            {
+              "id": "retention-onboarding",
+              "label": "Early-Stage Attrition",
+              "description": "INCLUDES: drop-off during onboarding or first-use period, failure to reach activation milestones, poor first impressions after acquisition, early disengagement before value realization, new-user/new-member churn within initial period. EXCLUDES: long-tenured users disengaging over time (Ongoing Engagement Decay), users leaving at a specific renewal or re-commitment decision point (Renewal & Re-commitment Failure).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "retention-engagement-decay",
+              "label": "Ongoing Engagement Decay",
+              "description": "INCLUDES: gradual decline in usage frequency, decreasing depth of interaction, passive users who remain enrolled but disengage, declining participation rates, loss of habitual use patterns, growing indifference among established users/members. EXCLUDES: churn during the initial onboarding window (Early-Stage Attrition), explicit decision not to renew at a commitment boundary (Renewal & Re-commitment Failure), satisfaction decline caused by product/service quality (route to Product).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "retention-renewal",
+              "label": "Renewal & Re-commitment Failure",
+              "description": "INCLUDES: failure to renew contracts, subscriptions, memberships, or enrollments at decision boundaries; declining re-enrollment rates; lapsed renewals; failure to convert free/trial users at commitment gates; end-of-term attrition spikes. EXCLUDES: gradual disengagement between renewal points (Ongoing Engagement Decay), churn before any renewal point is reached (Early-Stage Attrition).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "retention-satisfaction",
+              "label": "Relationship & Satisfaction Erosion",
+              "description": "INCLUDES: declining satisfaction scores, deteriorating trust or loyalty, poor service recovery, unresolved complaints, feeling undervalued, negative sentiment trends, weakening emotional connection to the organization. EXCLUDES: satisfaction problems caused by core product/service defects (route to Product), satisfaction problems caused by pricing (route to Financial), behavioral disengagement metrics without expressed dissatisfaction (Ongoing Engagement Decay).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "market-expansion",
+          "label": "Market Expansion",
+          "description": "Difficulty entering new markets, segments, or geographies. INCLUDES: geographic expansion barriers, new segment identification, channel development, international/cross-regional growth, partnerships for reach. EXCLUDES: competitive positioning strategy (Strategy), M&A as growth mechanism (Strategy).",
+          "children": [
+            {
+              "id": "market-expansion-geographic",
+              "label": "Geographic & Regional Entry",
+              "description": "INCLUDES: barriers to entering new cities, regions, or countries; regulatory differences across jurisdictions; localization requirements; logistical and distribution challenges in new territories; cultural adaptation for geographic markets. EXCLUDES: reaching new demographic or psychographic segments within an existing geography (Segment Discovery), building new distribution partnerships (Channel Development).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "market-expansion-segment",
+              "label": "Segment Discovery & Entry",
+              "description": "INCLUDES: identifying underserved or adjacent customer/beneficiary segments, adapting value proposition for new populations, crossing demographic or psychographic boundaries, entering new verticals or use-case domains, serving new stakeholder types within existing geographies. EXCLUDES: physically reaching new territories (Geographic & Regional Entry), building distribution infrastructure for new segments (Channel Development).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "market-expansion-channel",
+              "label": "Channel Development",
+              "description": "INCLUDES: building new distribution or delivery channels, partner/reseller/affiliate network creation, platform or marketplace entry, indirect go-to-market development, channel conflict management when adding new routes. EXCLUDES: identifying which segments to serve (Segment Discovery & Entry), navigating jurisdiction-specific regulatory barriers (Geographic & Regional Entry), strategic partnership decisions at the corporate level (route to Strategy).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "market-expansion-adaptation",
+              "label": "Offer Adaptation & Fit",
+              "description": "INCLUDES: modifying products, services, or programs to fit new market requirements; achieving product-market fit in expansion contexts; overcoming adoption barriers in unfamiliar markets; adjusting delivery models for new contexts; validating demand before scaling in new markets. EXCLUDES: core product development or redesign (route to Product), choosing which markets to enter (Geographic & Regional Entry, Segment Discovery), M&A as an entry mechanism (route to Strategy).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "revenue-diversification",
+          "label": "Revenue & Funding Diversification",
+          "description": "Over-reliance on a single revenue/funding source or model. INCLUDES: concentration risk in revenue streams, need for new business models, grant dependency, donor fatigue, monetization challenges, funding sustainability. EXCLUDES: cost management (Financial), pricing optimization (Financial).",
+          "children": [
+            {
+              "id": "revenue-diversification-concentration",
+              "label": "Source Concentration Risk",
+              "description": "INCLUDES: over-dependence on a single client, funder, grant, or contract; revenue fragility from top-heavy customer/donor base; single-point-of-failure funding relationships; inability to reduce exposure to dominant revenue sources; latent factor concentration where apparently diverse sources are correlated to a single underlying driver (e.g., all sources GDP-sensitive, all donors from one industry); illusory diversification masking systemic exposure. EXCLUDES: need to create entirely new revenue models (New Model Development), challenges in managing multiple existing streams (Portfolio Balance & Management).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "revenue-diversification-new-models",
+              "label": "New Model Development",
+              "description": "INCLUDES: inability to develop new business models, monetization strategies, or funding mechanisms; failed experiments with alternative revenue approaches; difficulty transitioning from one model to another (e.g., grant-funded to earned-revenue, one-time to recurring); lack of capability to design and test new income streams. EXCLUDES: existing revenue sources that are too concentrated (Source Concentration Risk), sustaining and balancing streams already in operation (Portfolio Balance & Management).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "revenue-diversification-sustainability",
+              "label": "Funding Sustainability & Continuity",
+              "description": "INCLUDES: grant cycles creating funding gaps, donor fatigue, declining renewal rates on funding commitments, time-limited funding without succession plans, inability to secure multi-year commitments, erosion of recurring revenue reliability. EXCLUDES: creating fundamentally new funding models (New Model Development), dependence on a single source (Source Concentration Risk), cost-side financial management (route to Financial).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            },
+            {
+              "id": "revenue-diversification-portfolio",
+              "label": "Portfolio Balance & Management",
+              "description": "INCLUDES: difficulty managing multiple revenue/funding streams simultaneously, misallocated effort across streams, cannibalization between offerings, inability to scale promising streams while sunsetting underperformers, poor visibility into stream-level performance, conflicting incentives across revenue sources. EXCLUDES: having too few streams to manage (Source Concentration Risk, New Model Development), pricing decisions within a single stream (route to Financial).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "operations-delivery",
+      "label": "Operations & Delivery",
+      "description": "Problems related to how the organization executes and delivers its core function. INCLUDES: process efficiency, supply chain, service delivery quality, capacity constraints, technology infrastructure, systems integration, workflow bottlenecks, quality assurance. EXCLUDES: what the product/service IS (Product), people issues (Talent), cost of operations as a financial concern (Financial). ROUTING: route here when the core pain is 'we can't deliver effectively' — broken processes, capacity limits, infrastructure failures.",
+      "children": [
+        {
+          "id": "process-efficiency",
+          "label": "Process Efficiency",
+          "description": "Workflows and processes are slow, wasteful, or error-prone. INCLUDES: manual processes that should be automated, redundant steps, handoff failures between teams, inconsistent process execution, throughput bottlenecks. EXCLUDES: technology platform issues (Technology Infrastructure), people-driven inefficiency from skill gaps (Talent).",
+          "children": [
+            {
+              "id": "process-efficiency-automation-gaps",
+              "label": "Automation Gaps",
+              "description": "INCLUDES: manual tasks that could be automated, repetitive data entry, human-dependent handoffs where triggers could be systematic, lack of workflow tooling for known repeatable processes. EXCLUDES: technology platform failures (Technology Infrastructure), process steps that genuinely require human judgment."
+            },
+            {
+              "id": "process-efficiency-redundant-steps",
+              "label": "Redundant & Unnecessary Steps",
+              "description": "INCLUDES: duplicate approvals, repeated data capture across stages, steps that exist for historical reasons but add no value, over-engineered checkpoints, unnecessary serialization of parallelizable work. EXCLUDES: steps that are slow but necessary (Throughput Bottlenecks), compliance-mandated steps that feel redundant but are required."
+            },
+            {
+              "id": "process-efficiency-handoff-failures",
+              "label": "Handoff & Integration Failures",
+              "description": "INCLUDES: information loss between teams or stages, unclear ownership at transition points, mismatched inputs/outputs between upstream and downstream steps, delays caused by waiting for another team's action, lack of shared visibility across handoff boundaries. EXCLUDES: interpersonal conflict between teams (covered under Culture/Alignment), system integration failures (Technology Infrastructure)."
+            },
+            {
+              "id": "process-efficiency-execution-variance",
+              "label": "Execution Variance",
+              "description": "INCLUDES: same process performed differently by different people or shifts, undocumented tribal knowledge, lack of standard operating procedures, inconsistent interpretation of process rules, deviation from defined workflows. EXCLUDES: quality variance in outputs (Quality & Consistency), skill-based performance differences (Talent)."
+            },
+            {
+              "id": "process-efficiency-throughput-bottlenecks",
+              "label": "Throughput Bottlenecks",
+              "description": "INCLUDES: single points of constraint that limit end-to-end flow, batch-processing delays, queue buildup at specific stages, sequencing dependencies that block parallel progress, approval bottlenecks from limited authorized personnel. EXCLUDES: capacity limits from insufficient resources (Capacity & Scaling), slow steps caused by outdated technology (Technology Infrastructure)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "technology-infrastructure",
+          "label": "Technology & Infrastructure",
+          "description": "The organization's technology systems are inadequate, outdated, or poorly integrated. INCLUDES: legacy systems, poor systems integration, data silos, infrastructure reliability, security vulnerabilities at the infrastructure level, lack of digital tools. EXCLUDES: product technology (Product), cybersecurity as a risk concern (Risk & Compliance).",
+          "children": [
+            {
+              "id": "technology-infrastructure-legacy-systems",
+              "label": "Legacy Systems & Technical Debt",
+              "description": "INCLUDES: outdated platforms that lack vendor support, systems built on deprecated technologies, accumulated workarounds and patches that increase fragility, inability to extend or modify existing systems without disproportionate effort. EXCLUDES: systems that are old but functional and well-integrated (not a problem), product technology choices (Product)."
+            },
+            {
+              "id": "technology-infrastructure-integration-silos",
+              "label": "Integration & Data Silos",
+              "description": "INCLUDES: systems that don't share data, manual re-keying between platforms, lack of APIs or middleware, inconsistent data definitions across systems, inability to get a unified view across operational data sources. EXCLUDES: organizational information-hoarding behavior (Culture/Alignment), process-level handoff failures that don't involve systems (Process Efficiency)."
+            },
+            {
+              "id": "technology-infrastructure-reliability",
+              "label": "Reliability & Performance",
+              "description": "INCLUDES: frequent system outages or downtime, slow response times that impede operations, inadequate disaster recovery, insufficient redundancy, infrastructure that degrades under normal load. EXCLUDES: capacity scaling of the business itself (Capacity & Scaling), security breaches that cause downtime (Infrastructure Security Gaps)."
+            },
+            {
+              "id": "technology-infrastructure-security-gaps",
+              "label": "Infrastructure Security Gaps",
+              "description": "INCLUDES: unpatched systems, weak access controls at the infrastructure level, lack of encryption for data at rest or in transit, insufficient network segmentation, missing monitoring and intrusion detection on core infrastructure. EXCLUDES: cybersecurity as an enterprise risk management concern (Risk & Compliance), application-level security in products (Product)."
+            },
+            {
+              "id": "technology-infrastructure-tooling-gaps",
+              "label": "Digital Tooling Gaps",
+              "description": "INCLUDES: absence of tools that the operation needs to function effectively, reliance on spreadsheets or email for structured workflows, lack of mobile or field-accessible systems, missing analytics or reporting platforms for operational data. EXCLUDES: automation of existing processes (Process Efficiency), product features or capabilities (Product)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "capacity-scaling",
+          "label": "Capacity & Scaling",
+          "description": "The organization cannot meet current or growing demand with existing resources. INCLUDES: physical capacity limits, inability to scale service delivery, resource allocation constraints, geographic coverage gaps in operations, supply chain limitations. EXCLUDES: hiring to scale (Talent), capital to scale (Financial).",
+          "children": [
+            {
+              "id": "capacity-scaling-physical-limits",
+              "label": "Physical & Facility Limits",
+              "description": "INCLUDES: insufficient floor space, equipment at maximum utilization, facility constraints that cap output, inability to add shifts without new premises, storage or warehousing limits. EXCLUDES: technology infrastructure capacity (Technology Infrastructure), staffing shortages (Talent)."
+            },
+            {
+              "id": "capacity-scaling-service-scalability",
+              "label": "Service Delivery Scalability",
+              "description": "INCLUDES: delivery model that doesn't scale linearly with demand, bespoke processes that resist standardization for growth, inability to onboard new clients without proportional effort, service quality that degrades as volume increases. EXCLUDES: product scalability or architecture (Product), process inefficiency at current scale (Process Efficiency)."
+            },
+            {
+              "id": "capacity-scaling-resource-allocation",
+              "label": "Resource Allocation Constraints",
+              "description": "INCLUDES: misallocation of existing resources across priorities, inability to shift capacity between business lines or projects, rigid resource commitments that prevent redeployment, contention for shared resources across teams. EXCLUDES: financial budget constraints (Financial), talent availability or hiring (Talent)."
+            },
+            {
+              "id": "capacity-scaling-geographic-coverage",
+              "label": "Geographic Coverage Gaps",
+              "description": "INCLUDES: inability to serve certain regions or markets operationally, logistics and distribution reach limitations, lack of local operational presence where needed, time-zone coverage gaps in service operations. EXCLUDES: market strategy decisions about where to compete (Strategy), hiring in new geographies (Talent)."
+            },
+            {
+              "id": "capacity-scaling-supply-chain",
+              "label": "Supply Chain Limitations",
+              "description": "INCLUDES: supplier capacity constraints, single-source dependencies, lead time volatility, inability to procure materials or inputs at the rate demanded, inventory management failures that create artificial shortages. EXCLUDES: supplier relationship management as a strategic concern (Strategy), cost of inputs (Financial)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "quality-consistency",
+          "label": "Quality & Consistency",
+          "description": "Delivered output varies unacceptably in quality across locations, teams, or time. INCLUDES: inconsistent service delivery, quality control failures, variance across sites/branches/franchises, outcome measurement gaps, lack of standards or standards not enforced. EXCLUDES: product design quality (Product).",
+          "children": [
+            {
+              "id": "quality-consistency-standards-enforcement",
+              "label": "Standards Definition & Enforcement",
+              "description": "INCLUDES: absence of documented quality standards, standards that exist but are not enforced, lack of accountability mechanisms for non-compliance, ambiguous or conflicting standards across the organization. EXCLUDES: regulatory compliance standards (Risk & Compliance), process documentation for how work is done (Process Efficiency)."
+            },
+            {
+              "id": "quality-consistency-control-mechanisms",
+              "label": "Quality Control Mechanisms",
+              "description": "INCLUDES: insufficient inspection or review gates, lack of statistical process control, reactive rather than preventive quality checks, inadequate testing or sampling regimes, missing feedback loops from defects back to root causes. EXCLUDES: outcome measurement and tracking (Outcome Measurement Gaps), product design validation (Product)."
+            },
+            {
+              "id": "quality-consistency-site-variance",
+              "label": "Cross-Site & Cross-Team Variance",
+              "description": "INCLUDES: different locations producing materially different quality levels, franchise or branch inconsistency, shift-to-shift output variation, regional interpretation differences in how standards are applied. EXCLUDES: intentional local adaptation to market needs (Strategy), variance caused by different equipment or tools (Technology Infrastructure)."
+            },
+            {
+              "id": "quality-consistency-outcome-measurement",
+              "label": "Outcome Measurement Gaps",
+              "description": "INCLUDES: lack of defined quality metrics, inability to measure delivered quality objectively, missing baselines for comparison, absence of customer-outcome tracking, lag between delivery and quality signal. EXCLUDES: business performance metrics and KPIs (Strategy/Financial), data infrastructure to capture metrics (Technology Infrastructure)."
+            },
+            {
+              "id": "quality-consistency-culture-ownership",
+              "label": "Quality Culture & Ownership Gaps",
+              "description": "INCLUDES: compliance theater where standards are formally satisfied but substantively hollow, metric gaming that optimizes measured indicators while degrading actual quality, diffused quality ownership where no role or team treats quality as their primary accountability, cultural tolerance of \"good enough\" that erodes standards over time, disconnect between quality metrics and actual user/beneficiary outcomes. EXCLUDES: absence of standards themselves (Standards Definition & Enforcement), absence of inspection mechanisms (Quality Control Mechanisms), measurable variance across sites (Cross-Site & Cross-Team Variance), inability to define or capture quality metrics (Outcome Measurement Gaps).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "product-service",
+      "label": "Product & Service",
+      "description": "Problems related to WHAT the organization offers — the design, quality, and evolution of its core product or service. INCLUDES: product-market fit, differentiation, user/beneficiary experience, technical debt, platform evolution, innovation pipeline, feature/service gaps, curriculum or program design (for education orgs). EXCLUDES: how it's delivered (Operations), how it's sold (Growth), how it's funded (Financial). ROUTING: route here when the core pain is 'what we offer isn't good enough or isn't evolving' — stale products, poor UX, undifferentiated offering.",
+      "children": [
+        {
+          "id": "product-market-fit",
+          "label": "Product-Market Fit",
+          "description": "The offering's inherent design or concept doesn't meet the needs of its target market. INCLUDES: misalignment between product/service concept and user needs, low adoption of core features, negative feedback on the relevance of what's offered (not dissatisfaction caused by poor UX — see User Experience), declining satisfaction with the offering itself, offerings that worked historically but no longer resonate. EXCLUDES: awareness/reach problems (Growth), delivery quality (Operations), UX-caused dissatisfaction (User & Beneficiary Experience).",
+          "children": [
+            {
+              "id": "product-market-fit-need-misread",
+              "label": "Need Misread",
+              "description": "The offering was designed around an incorrect or incomplete understanding of what the target market actually needs. INCLUDES: solving the wrong problem, building for assumed rather than validated needs, misinterpreting user research, confusing stated preferences with actual behavior, addressing symptoms rather than root causes. EXCLUDES: needs that were correctly identified but have since shifted (Evolving Needs), offerings that meet needs but are hard to use (User Experience)."
+            },
+            {
+              "id": "product-market-fit-segment-mismatch",
+              "label": "Segment Mismatch",
+              "description": "The offering targets the wrong audience or tries to serve too many segments simultaneously. INCLUDES: building for a segment that doesn't exist at viable scale, targeting early adopters when the product suits mainstream users (or vice versa), attempting to be everything to everyone, misidentified buyer vs. user personas, geographic or demographic targeting errors. EXCLUDES: inability to reach the right segment (Growth), pricing misaligned to segment willingness-to-pay (Financial)."
+            },
+            {
+              "id": "product-market-fit-evolving-needs",
+              "label": "Evolving Needs Drift",
+              "description": "The offering once fit its market but user needs have shifted and the product hasn't adapted. INCLUDES: market maturation changing expectations, cultural or behavioral shifts reducing relevance, regulatory changes altering what users need, adjacent solutions raising the baseline, declining satisfaction despite unchanged product quality. EXCLUDES: competitive pressure from better alternatives (Differentiation), failure to innovate the offering itself (Product Evolution)."
+            },
+            {
+              "id": "product-market-fit-value-gap",
+              "label": "Core Value Gap",
+              "description": "The offering addresses a real need but delivers insufficient magnitude of value to motivate adoption or retention. INCLUDES: incremental improvement over status quo too small to switch, value delivered doesn't justify effort to adopt, 'nice to have' rather than 'must have' positioning, solving a real problem but not enough of it, partial solutions that leave critical jobs-to-be-done unfinished. EXCLUDES: value that exists but is poorly communicated (Differentiation), value undermined by poor delivery (Operations)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "differentiation",
+          "label": "Differentiation & Positioning",
+          "description": "The offering is not distinct enough from alternatives. INCLUDES: commoditization, unclear value proposition, inability to articulate what's different, competitive convergence, 'me too' offering. EXCLUDES: competitive strategy at the org level (Strategy), pricing-based competition (Financial).",
+          "children": [
+            {
+              "id": "differentiation-value-prop-clarity",
+              "label": "Value Proposition Clarity",
+              "description": "The offering may be distinct but the organization cannot clearly articulate what makes it different or why it matters. INCLUDES: unclear or jargon-heavy positioning statements, inability to explain differentiation in simple terms, inconsistent messaging about what the offering is for, value proposition that changes depending on who describes it, confusion between features and benefits. EXCLUDES: lack of actual differentiation to articulate (Commodity Convergence), messaging distribution problems (Growth)."
+            },
+            {
+              "id": "differentiation-commodity-convergence",
+              "label": "Commodity Convergence",
+              "description": "The offering has become functionally indistinguishable from alternatives due to market forces. INCLUDES: feature parity across competitors, industry standardization eliminating meaningful differences, fast-follower dynamics eroding first-mover advantages, open-source or commoditized technology leveling the field, buyers treating the category as interchangeable. EXCLUDES: pricing pressure from commoditization (Financial), strategic failure to invest in differentiation (Strategy)."
+            },
+            {
+              "id": "differentiation-wrong-axis",
+              "label": "Wrong Differentiation Axis",
+              "description": "The offering is distinct, but on dimensions that don't matter to the target market. INCLUDES: differentiating on technical sophistication when buyers want simplicity, emphasizing features users don't value, investing in novelty when reliability is the buying criterion, differentiation that impresses peers but not customers, distinguishing on attributes the market treats as table stakes. EXCLUDES: misunderstanding what the market needs entirely (Product-Market Fit), failure to innovate on any axis (Product Evolution)."
+            },
+            {
+              "id": "differentiation-defensibility",
+              "label": "Differentiation Defensibility",
+              "description": "The offering has a distinct position today but it is easily replicable or eroding. INCLUDES: differentiation based on easily copied features, lack of structural moats (network effects, switching costs, proprietary data), temporary advantages from timing rather than substance, differentiation dependent on a single person or partnership, advantages that shrink as competitors invest. EXCLUDES: organizational-level competitive strategy (Strategy), intellectual property legal protection (Legal/Compliance)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "product-evolution",
+          "label": "Product Evolution & Innovation",
+          "description": "The offering is stagnating or not keeping pace with changing needs. INCLUDES: technical debt, platform modernization needs, innovation pipeline gaps, inability to iterate, slow product development cycles, curriculum/program staleness. EXCLUDES: R&D funding (Financial), technology infrastructure (Operations).",
+          "children": [
+            {
+              "id": "product-evolution-iteration-velocity",
+              "label": "Iteration Velocity",
+              "description": "The organization cannot ship improvements fast enough to keep pace with market expectations. INCLUDES: slow release cycles, lengthy approval or review processes for changes, inability to run experiments quickly, bottlenecks between identifying needed changes and deploying them, development process overhead that delays updates. EXCLUDES: lack of ideas about what to build (Innovation Pipeline), technical barriers to change (Technical Debt Drag), insufficient development staffing or budget (Financial)."
+            },
+            {
+              "id": "product-evolution-innovation-pipeline",
+              "label": "Innovation Pipeline",
+              "description": "The organization lacks a systematic flow of new ideas, concepts, or capabilities for the offering. INCLUDES: no structured process for generating or evaluating new concepts, over-reliance on incremental improvement vs. step-change innovation, disconnection between market signals and product roadmap, absence of experimentation culture, leadership not allocating attention to future-state offerings. EXCLUDES: having ideas but being unable to execute them (Iteration Velocity), R&D investment levels (Financial)."
+            },
+            {
+              "id": "product-evolution-technical-debt-drag",
+              "label": "Technical Debt Drag",
+              "description": "Accumulated shortcuts, outdated architectures, or legacy constraints slow or block evolution of the offering. INCLUDES: brittle systems that break when modified, outdated platforms that limit new capabilities, accumulated workarounds that increase change cost, dependencies on deprecated tools or frameworks, architecture that doesn't support current requirements. EXCLUDES: infrastructure and hosting concerns (Operations), lack of desire or direction to evolve (Innovation Pipeline)."
+            },
+            {
+              "id": "product-evolution-relevance-decay",
+              "label": "Relevance Decay",
+              "description": "The offering's content, methodology, or approach has become outdated relative to current practice or knowledge. INCLUDES: curricula based on superseded frameworks, methodologies that no longer reflect best practice, content referencing obsolete tools or standards, approaches that don't incorporate recent evidence or developments, stale case studies or examples. EXCLUDES: user needs shifting to a different problem entirely (Product-Market Fit), technological platform aging (Technical Debt Drag)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "user-experience",
+          "label": "User & Beneficiary Experience",
+          "description": "The experience of using the product/service is poor. INCLUDES: usability problems, accessibility gaps, confusing interfaces (digital or physical), poor onboarding, high effort-to-value ratio for users, degrading or trust-eroding emotional experience. EXCLUDES: service delivery inconsistency (Operations), customer support issues (Operations).",
+          "children": [
+            {
+              "id": "user-experience-usability",
+              "label": "Usability & Interaction Design",
+              "description": "Users struggle to accomplish their goals due to confusing or inefficient interaction patterns. INCLUDES: unintuitive navigation, inconsistent interface patterns, excessive steps to complete tasks, unclear labeling or terminology, error-prone workflows, lack of feedback on user actions. EXCLUDES: inability to access the offering at all (Accessibility), difficulty getting started for the first time (Onboarding Friction)."
+            },
+            {
+              "id": "user-experience-onboarding",
+              "label": "Onboarding Friction",
+              "description": "New users face excessive barriers to initial adoption and first value realization. INCLUDES: steep learning curves, unclear getting-started paths, time-to-first-value too long, insufficient guidance for new users, overwhelming initial complexity, setup or configuration burden. EXCLUDES: ongoing usability problems for experienced users (Usability), product not meeting needs once learned (Product-Market Fit)."
+            },
+            {
+              "id": "user-experience-accessibility",
+              "label": "Accessibility & Inclusion",
+              "description": "Segments of the intended user base cannot effectively access or use the offering due to design exclusions. INCLUDES: barriers for users with disabilities, language or literacy assumptions, device or connectivity requirements that exclude users, cultural assumptions embedded in design, age-related access barriers, non-compliance with accessibility standards. EXCLUDES: targeting the wrong segment entirely (Product-Market Fit), physical delivery or availability barriers (Operations)."
+            },
+            {
+              "id": "user-experience-effort-value",
+              "label": "Effort-to-Value Ratio",
+              "description": "The ongoing cognitive, temporal, or procedural cost of using the offering is disproportionate to the value received. INCLUDES: excessive manual input required, information overload, unnecessary complexity for simple tasks, requiring users to do work the system should handle, repetitive actions without automation, mental load exceeding the benefit. EXCLUDES: initial setup effort (Onboarding Friction), interface confusion (Usability), the offering not solving the right problem (Product-Market Fit)."
+            },
+            {
+              "id": "user-experience-emotional-trust",
+              "label": "Emotional & Trust Experience",
+              "description": "INCLUDES: interactions that feel degrading, dismissive, or disrespectful; lack of psychological safety in using the service; tone and language that erode dignity; trust-breaking patterns (hidden fees, dark patterns, bait-and-switch); anxiety-inducing uncertainty about outcomes or processes; experiences that are functionally correct but emotionally harmful; failure to convey care, competence, or respect through design. EXCLUDES: inability to complete tasks (Usability & Interaction Design), barriers to initial adoption (Onboarding Friction), inability to access the offering (Accessibility & Inclusion), disproportionate effort for value received (Effort-to-Value Ratio).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "talent-people",
+      "label": "Talent & People",
+      "description": "Problems related to the organization's workforce — getting, keeping, developing, and organizing people. INCLUDES: hiring/recruitment, staff retention, skills gaps, leadership pipeline, workforce planning, employee engagement, organizational culture, team effectiveness. EXCLUDES: org-level strategy about structure (Strategy), labor cost as a financial concern (Financial). ROUTING: route here when the core pain is about PEOPLE — 'we can't find them, keep them, or develop them'.",
+      "children": [
+        {
+          "id": "hiring-recruitment",
+          "label": "Hiring & Recruitment",
+          "description": "Difficulty attracting and hiring the right people. INCLUDES: talent scarcity in key roles, employer brand weakness, slow hiring processes, geographic constraints on talent pool, inability to compete on compensation, difficulty sourcing specialized skills. EXCLUDES: retaining people once hired (Retention & Engagement).",
+          "children": [
+            {
+              "id": "hiring-recruitment-sourcing-reach",
+              "label": "Sourcing & Reach",
+              "description": "INCLUDES: inability to find qualified candidates, limited talent pool visibility, over-reliance on single sourcing channels, weak referral networks, geographic or remote-work constraints narrowing the funnel, difficulty reaching passive candidates. EXCLUDES: evaluating candidates once found (Selection & Assessment), compensation competitiveness (Offer Competitiveness)."
+            },
+            {
+              "id": "hiring-recruitment-employer-brand",
+              "label": "Employer Brand & Attraction",
+              "description": "INCLUDES: weak or unclear employer value proposition, negative reputation in talent market, inability to articulate why candidates should join, poor candidate experience during outreach, lack of visibility at talent events or platforms, misalignment between external messaging and internal reality. EXCLUDES: compensation and benefits packaging (Offer Competitiveness), speed of hiring process (Hiring Process Efficiency)."
+            },
+            {
+              "id": "hiring-recruitment-selection-assessment",
+              "label": "Selection & Assessment",
+              "description": "INCLUDES: poor interview processes, inability to accurately evaluate candidate fit, inconsistent hiring criteria, bias in selection, over-indexing on credentials vs capability, lack of structured assessment methods, mis-hires due to evaluation failures. EXCLUDES: generating candidate flow (Sourcing & Reach), making competitive offers (Offer Competitiveness)."
+            },
+            {
+              "id": "hiring-recruitment-offer-competitiveness",
+              "label": "Offer Competitiveness",
+              "description": "INCLUDES: inability to compete on total compensation, inflexible benefits or working arrangements, slow approval processes for offers, misalignment between candidate expectations and what the organization can provide, losing preferred candidates to competing offers. EXCLUDES: whether candidates know about the organization (Employer Brand), evaluating who to make offers to (Selection & Assessment)."
+            },
+            {
+              "id": "hiring-recruitment-process-efficiency",
+              "label": "Hiring Process Efficiency",
+              "description": "INCLUDES: excessively slow time-to-hire, too many interview rounds, poor coordination between hiring managers and HR, candidates dropping out due to process friction, lack of hiring infrastructure or tooling, bottlenecks in approvals or scheduling. EXCLUDES: quality of assessment decisions (Selection & Assessment), attractiveness of the offer itself (Offer Competitiveness)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "retention-engagement",
+          "label": "Retention & Engagement",
+          "description": "Difficulty keeping staff engaged and preventing turnover. INCLUDES: high attrition, low morale, burnout, poor employee satisfaction, lack of career progression, disengagement, quiet quitting. EXCLUDES: initial hiring (Hiring), culture as a systemic issue (Culture & Organization).",
+          "children": [
+            {
+              "id": "retention-engagement-career-growth",
+              "label": "Career Growth & Progression",
+              "description": "INCLUDES: lack of clear advancement paths, promotion bottlenecks, insufficient stretch assignments, employees feeling stuck or plateaued, no visible internal mobility, opaque criteria for advancement. EXCLUDES: day-to-day job satisfaction (Work Experience & Satisfaction), formal training programs (Skills & Development)."
+            },
+            {
+              "id": "retention-engagement-work-experience",
+              "label": "Work Experience & Satisfaction",
+              "description": "INCLUDES: poor day-to-day work conditions, excessive workload, burnout, lack of autonomy, micromanagement, inadequate tools or resources, work-life imbalance, feeling undervalued in daily interactions. EXCLUDES: compensation dissatisfaction (Reward & Recognition), long-term career trajectory concerns (Career Growth & Progression)."
+            },
+            {
+              "id": "retention-engagement-reward-recognition",
+              "label": "Reward & Recognition",
+              "description": "INCLUDES: below-market compensation, inequitable pay practices, lack of non-monetary recognition, feeling that contributions go unnoticed, misalignment between performance and reward, benefits that don't meet workforce needs. EXCLUDES: career advancement opportunities (Career Growth & Progression), quality of management relationship (Manager Relationship)."
+            },
+            {
+              "id": "retention-engagement-manager-relationship",
+              "label": "Manager Relationship",
+              "description": "INCLUDES: poor direct-manager quality, lack of trust between employee and supervisor, infrequent or unhelpful feedback, managers who fail to advocate for their people, absent or disengaged leadership at team level. EXCLUDES: systemic cultural problems (Culture & Organization), organization-wide recognition practices (Reward & Recognition)."
+            },
+            {
+              "id": "retention-engagement-belonging-purpose",
+              "label": "Belonging & Purpose",
+              "description": "INCLUDES: lack of connection to organizational mission, feeling like an outsider or misfit, weak team cohesion, absence of psychological safety, disengagement from the 'why' behind the work, quiet quitting driven by meaning deficit. EXCLUDES: culture as a structural/systemic issue (Culture & Organization), dissatisfaction with tangible conditions (Work Experience & Satisfaction)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "skills-development",
+          "label": "Skills & Development",
+          "description": "The workforce lacks capabilities needed for current or future needs. INCLUDES: skills gaps, inadequate training programs, leadership development pipeline, professional development investment, upskilling for technology adoption, succession planning gaps, workforce planning, build-vs-buy capability decisions, headcount forecasting, talent modeling. EXCLUDES: hiring for new skills externally (Hiring).",
+          "children": [
+            {
+              "id": "skills-development-gap-identification",
+              "label": "Skills Gap Identification & Workforce Planning",
+              "description": "INCLUDES: inability to map current vs needed capabilities, lack of skills inventory, poor forecasting of future skill requirements, no systematic workforce planning process, unclear build-vs-buy capability decisions, failure to connect business strategy to talent requirements. EXCLUDES: delivering training once gaps are identified (Learning & Training Delivery), leadership-specific pipeline issues (Leadership Pipeline)."
+            },
+            {
+              "id": "skills-development-learning-delivery",
+              "label": "Learning & Training Delivery",
+              "description": "INCLUDES: inadequate training programs, ineffective learning formats, insufficient investment in professional development, low training completion or application rates, lack of on-the-job learning opportunities, poor knowledge transfer mechanisms, upskilling programs that don't stick. EXCLUDES: knowing what skills are needed (Gap Identification), succession and leadership development (Leadership Pipeline)."
+            },
+            {
+              "id": "skills-development-leadership-pipeline",
+              "label": "Leadership Pipeline & Succession",
+              "description": "INCLUDES: thin bench of future leaders, no structured succession planning, over-reliance on external hires for leadership roles, high-potential employees leaving before reaching leadership, failure to develop management capabilities in technical experts. EXCLUDES: general workforce skill gaps (Gap Identification), broad training program quality (Learning & Training Delivery), frontline technology adoption (Technology & Digital Upskilling)."
+            },
+            {
+              "id": "skills-development-technology-upskilling",
+              "label": "Technology & Digital Upskilling",
+              "description": "INCLUDES: workforce unable to adopt new tools or platforms, digital literacy gaps, resistance to technology-driven process changes, AI and automation readiness shortfalls, inability to leverage data or analytics at operational level. EXCLUDES: whether the right technology was chosen (Strategy), general professional development (Learning & Training Delivery), identifying which digital skills are needed (Gap Identification)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "culture-organization",
+          "label": "Culture & Organization",
+          "description": "The organization's culture, structure, or ways of working are misaligned with its goals. INCLUDES: toxic or stagnant culture, resistance to change, siloed departments, poor collaboration, organizational design problems, values-practice gaps, change management failures. EXCLUDES: individual engagement (Retention & Engagement), strategic direction (Strategy).",
+          "children": [
+            {
+              "id": "culture-organization-values-alignment",
+              "label": "Values & Behavioral Alignment",
+              "description": "INCLUDES: gap between stated values and actual behavior, leadership not modeling espoused values, tolerance of conduct that contradicts cultural aspirations, toxic behavioral norms, trust deficit between levels. EXCLUDES: how the org chart is drawn (Structural Design), ability to execute specific changes (Change Capacity)."
+            },
+            {
+              "id": "culture-organization-structural-design",
+              "label": "Structural & Organizational Design",
+              "description": "INCLUDES: siloed departments, unclear roles and decision rights, reporting structures that impede collaboration, over-centralization or under-centralization, spans of control that are too wide or narrow, matrix confusion, organizational complexity disproportionate to scale. EXCLUDES: behavioral norms and values (Values & Behavioral Alignment), cross-functional collaboration habits (Collaboration & Communication)."
+            },
+            {
+              "id": "culture-organization-collaboration-communication",
+              "label": "Collaboration & Communication",
+              "description": "INCLUDES: poor information flow between teams, lack of cross-functional coordination, meeting-heavy but decision-light culture, knowledge hoarding, ineffective internal communication channels, teams working at cross-purposes despite aligned goals. EXCLUDES: formal reporting structures (Structural Design), resistance to new initiatives (Change Capacity)."
+            },
+            {
+              "id": "culture-organization-change-capacity",
+              "label": "Change Capacity & Adaptability",
+              "description": "INCLUDES: resistance to change, change fatigue, failed transformation initiatives, inability to sustain new ways of working, lack of change management capability, learned helplessness from past failed changes, cultural inertia. EXCLUDES: what strategic changes to pursue (Strategy), values and norms independent of any specific change (Values & Behavioral Alignment)."
+            },
+            {
+              "id": "culture-organization-inclusion-equity",
+              "label": "Inclusion & Equity",
+              "description": "INCLUDES: systemic barriers to participation for underrepresented groups, inequitable access to opportunity or sponsorship, homogeneous leadership, lack of diverse perspectives in decision-making, policies or norms that inadvertently exclude. EXCLUDES: individual sense of belonging (Retention & Engagement — Belonging & Purpose), external employer brand perception (Hiring — Employer Brand)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "risk-compliance",
+      "label": "Risk & Compliance",
+      "description": "Problems related to downside protection — regulatory, legal, security, and reputational threats. INCLUDES: regulatory compliance gaps, legal exposure, data privacy, cybersecurity threats, reputational risk, safeguarding obligations, accreditation requirements, audit failures. EXCLUDES: financial risk from market conditions (Financial), operational risk from process failure (Operations). ROUTING: route here when the core pain is 'we're exposed to something that could hurt us' — regulatory, legal, security, or reputational threats.",
+      "children": [
+        {
+          "id": "regulatory-compliance",
+          "label": "Regulatory & Accreditation",
+          "description": "The organization is failing to meet or struggling to keep up with regulatory or accreditation requirements. INCLUDES: compliance gaps, changing regulations, accreditation at risk, reporting obligations, sector-specific regulatory burden (e.g. education standards, healthcare compliance, financial regulation). EXCLUDES: legal disputes (Legal Exposure), data-specific regulation (Data & Privacy).",
+          "children": [
+            {
+              "id": "regulatory-compliance-gap-remediation",
+              "label": "Compliance Gap Remediation",
+              "description": "The organization has identified or been cited for specific compliance gaps that require corrective action. INCLUDES: audit findings, non-conformance notices, corrective action plans, remediation timelines, failed inspections, outstanding compliance deficiencies. EXCLUDES: proactive monitoring of regulatory change (Regulatory Change Adaptation), accreditation renewal processes (Accreditation & Standards Maintenance)."
+            },
+            {
+              "id": "regulatory-compliance-change-adaptation",
+              "label": "Regulatory Change Adaptation",
+              "description": "The organization is struggling to track, interpret, or adapt to new or evolving regulations. INCLUDES: horizon scanning failures, late awareness of regulatory changes, inadequate impact assessment of new rules, transition planning gaps, regulatory intelligence shortfalls. EXCLUDES: remediating already-known gaps (Compliance Gap Remediation), reporting mechanics (Compliance Reporting & Obligations)."
+            },
+            {
+              "id": "regulatory-compliance-accreditation-maintenance",
+              "label": "Accreditation & Standards Maintenance",
+              "description": "The organization risks losing or failing to renew required accreditations, certifications, or quality standards. INCLUDES: accreditation renewal at risk, lapsed certifications, standards body requirements, quality framework adherence, self-assessment and evidence preparation failures. EXCLUDES: compliance with statutory regulations (Compliance Gap Remediation, Regulatory Change Adaptation), reporting to regulators (Compliance Reporting & Obligations)."
+            },
+            {
+              "id": "regulatory-compliance-reporting-obligations",
+              "label": "Compliance Reporting & Obligations",
+              "description": "The organization is failing to meet mandatory reporting, disclosure, or filing obligations to regulators. INCLUDES: late filings, inaccurate regulatory reports, missing mandatory disclosures, record-keeping deficiencies, audit trail gaps, statutory reporting failures. EXCLUDES: the substantive compliance issues being reported on (Compliance Gap Remediation), accreditation evidence (Accreditation & Standards Maintenance)."
+            },
+            {
+              "id": "regulatory-compliance-capacity-burden",
+              "label": "Compliance Capacity & Burden",
+              "description": "The organization lacks sufficient resources, expertise, or systems to manage its regulatory burden. INCLUDES: understaffed compliance function, lack of regulatory expertise, compliance tool/system inadequacy, cost of compliance outpacing budget, over-reliance on key individuals for compliance knowledge. EXCLUDES: specific gap remediation (Compliance Gap Remediation), the content of regulations themselves (Regulatory Change Adaptation)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "legal-exposure",
+          "label": "Legal Exposure",
+          "description": "The organization faces legal risks or active disputes. INCLUDES: litigation, contractual disputes, IP issues, employment law exposure, liability concerns, governance failures with legal consequences. EXCLUDES: regulatory compliance (Regulatory & Accreditation).",
+          "children": [
+            {
+              "id": "legal-exposure-litigation-disputes",
+              "label": "Litigation & Active Disputes",
+              "description": "The organization is involved in or facing imminent litigation or formal dispute proceedings. INCLUDES: lawsuits filed or threatened, arbitration, mediation processes, class actions, regulatory enforcement actions with legal proceedings, settlement negotiations. EXCLUDES: contractual disagreements not yet in dispute (Contractual & Commercial Risk), potential future liability not yet crystallized (Liability & Insurance Exposure)."
+            },
+            {
+              "id": "legal-exposure-contractual-commercial",
+              "label": "Contractual & Commercial Risk",
+              "description": "The organization faces legal risk from poorly managed contracts or commercial arrangements. INCLUDES: unfavorable contract terms, inadequate contract review, vendor/supplier agreement gaps, ambiguous scope or SLA provisions, contract renewal risks, breach-of-contract exposure. EXCLUDES: disputes already escalated to litigation (Litigation & Active Disputes), IP-specific agreements (Intellectual Property Risk)."
+            },
+            {
+              "id": "legal-exposure-employment-law",
+              "label": "Employment Law Exposure",
+              "description": "The organization faces legal risk arising from its employment practices or workforce management. INCLUDES: wrongful termination claims, discrimination or harassment allegations, wage and hour violations, whistleblower retaliation, misclassification of workers, workplace safety legal obligations. EXCLUDES: general HR operational issues without legal dimension (People & Talent domain), disputes already in litigation (Litigation & Active Disputes)."
+            },
+            {
+              "id": "legal-exposure-intellectual-property",
+              "label": "Intellectual Property Risk",
+              "description": "The organization faces risk related to protection, infringement, or misuse of intellectual property. INCLUDES: patent/trademark/copyright infringement claims, trade secret protection failures, IP ownership disputes, licensing agreement violations, inadequate IP portfolio management. EXCLUDES: general commercial contract terms (Contractual & Commercial Risk), data ownership issues (Data & Privacy domain)."
+            },
+            {
+              "id": "legal-exposure-liability-insurance",
+              "label": "Liability & Insurance Exposure",
+              "description": "The organization has unmitigated liability risks or inadequate insurance coverage. INCLUDES: uninsured or underinsured risks, director and officer liability gaps, professional indemnity shortfalls, product/service liability, governance failures creating personal liability, inadequate risk transfer mechanisms. EXCLUDES: liabilities already in active proceedings (Litigation & Active Disputes), employment-specific liability (Employment Law Exposure)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "data-privacy-security",
+          "label": "Data, Privacy & Security",
+          "description": "The organization's data handling, privacy practices, or cybersecurity posture is inadequate. INCLUDES: data breaches, GDPR/privacy compliance, cybersecurity vulnerabilities, data governance gaps, third-party data risk, student/customer data protection. EXCLUDES: infrastructure security as an operational concern (Operations).",
+          "children": [
+            {
+              "id": "data-privacy-security-cyber-posture",
+              "label": "Cybersecurity Posture",
+              "description": "The organization's defenses against cyber threats are inadequate or untested. INCLUDES: vulnerability management gaps, insufficient threat detection, weak access controls, unpatched systems, lack of penetration testing, incident response plan deficiencies, social engineering susceptibility. EXCLUDES: privacy regulation compliance (Privacy & Consent Compliance), data quality or governance issues (Data Governance & Quality)."
+            },
+            {
+              "id": "data-privacy-security-privacy-compliance",
+              "label": "Privacy & Consent Compliance",
+              "description": "The organization is failing to meet privacy regulations or manage consent appropriately. INCLUDES: GDPR/privacy law non-compliance, inadequate consent mechanisms, data subject rights fulfillment failures, cross-border data transfer violations, privacy impact assessment gaps, privacy notice deficiencies. EXCLUDES: technical security controls (Cybersecurity Posture), data accuracy or lifecycle issues (Data Governance & Quality)."
+            },
+            {
+              "id": "data-privacy-security-governance-quality",
+              "label": "Data Governance & Quality",
+              "description": "The organization lacks adequate controls over data accuracy, classification, retention, and lifecycle management. INCLUDES: missing data classification schemes, inconsistent data quality, retention policy gaps, data lineage opacity, master data management failures, orphaned or redundant data stores. EXCLUDES: privacy-specific regulation (Privacy & Consent Compliance), cybersecurity controls (Cybersecurity Posture)."
+            },
+            {
+              "id": "data-privacy-security-third-party-risk",
+              "label": "Third-Party Data Risk",
+              "description": "The organization's data is exposed to risk through vendors, partners, or external service providers. INCLUDES: vendor security assessment gaps, data processing agreement deficiencies, supply chain data exposure, cloud provider risk, fourth-party (sub-processor) risk, inadequate third-party access controls. EXCLUDES: internal security controls (Cybersecurity Posture), internal data governance practices (Data Governance & Quality)."
+            },
+            {
+              "id": "data-privacy-security-breach-response",
+              "label": "Breach Preparedness & Response",
+              "description": "The organization is unprepared to detect, contain, and recover from data breaches or security incidents. INCLUDES: breach notification plan gaps, forensic investigation capability shortfalls, communication plan deficiencies, regulatory breach reporting readiness, post-incident review processes, business continuity for data loss scenarios. EXCLUDES: preventive security measures (Cybersecurity Posture), ongoing privacy program management (Privacy & Consent Compliance)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "reputation-safeguarding",
+          "label": "Reputation & Safeguarding",
+          "description": "The organization's reputation or duty of care is at risk. INCLUDES: safeguarding failures, public trust erosion, media/PR crises, ethical concerns, brand damage from incidents, stakeholder confidence loss. EXCLUDES: brand positioning as a growth concern (Growth), competitive positioning (Strategy).",
+          "children": [
+            {
+              "id": "reputation-safeguarding-duty-of-care",
+              "label": "Safeguarding & Duty of Care",
+              "description": "The organization is failing in its obligation to protect vulnerable individuals or ensure safe environments. INCLUDES: safeguarding policy failures, inadequate protection of minors or vulnerable persons, duty of care breaches, welfare incident mismanagement, mandatory reporting failures, inadequate safeguarding training. EXCLUDES: public perception of safeguarding failures (Public Trust & Media Exposure), ethical conduct issues not involving vulnerable persons (Ethical Conduct & Integrity)."
+            },
+            {
+              "id": "reputation-safeguarding-public-trust-media",
+              "label": "Public Trust & Media Exposure",
+              "description": "The organization faces erosion of public confidence or damaging media attention. INCLUDES: negative media coverage, social media crises, public trust decline, PR incident management failures, stakeholder confidence loss, crisis communication inadequacy, viral reputational events. EXCLUDES: the underlying conduct causing the crisis (Safeguarding & Duty of Care, Ethical Conduct & Integrity), brand strategy as a growth lever (Growth domain)."
+            },
+            {
+              "id": "reputation-safeguarding-ethical-conduct",
+              "label": "Ethical Conduct & Integrity",
+              "description": "The organization faces reputational risk from unethical behavior, conflicts of interest, or integrity failures. INCLUDES: fraud or corruption allegations, conflicts of interest, whistleblower complaints about conduct, breaches of professional codes, organizational culture enabling misconduct, lack of ethics governance. EXCLUDES: legal proceedings from misconduct (Legal Exposure domain), safeguarding-specific failures (Safeguarding & Duty of Care)."
+            },
+            {
+              "id": "reputation-safeguarding-stakeholder-confidence",
+              "label": "Stakeholder & Partner Confidence",
+              "description": "Key stakeholders, funders, or partners are losing confidence in the organization's reliability or governance. INCLUDES: funder/donor confidence erosion, board or governor concerns, partner relationship strain from governance issues, accreditor reputational concerns, investor sentiment decline, community relationship deterioration. EXCLUDES: general media/public perception (Public Trust & Media Exposure), contractual disputes with partners (Legal Exposure domain)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "financial",
+      "label": "Financial",
+      "description": "Problems related to the organization's financial health, sustainability, and resource allocation. INCLUDES: margin pressure, cost structure, capital allocation, cash flow, funding/fundraising, pricing, financial planning and visibility, debt management. EXCLUDES: revenue growth targets (Growth), operational cost from inefficiency (Operations). ROUTING: route here when the core pain is about MONEY — 'we don't have enough, it costs too much, or we're allocating it wrong'.",
+      "children": [
+        {
+          "id": "revenue-margin",
+          "label": "Revenue & Margin Pressure",
+          "description": "The organization's unit economics or overall margins are deteriorating. INCLUDES: declining margins, pricing pressure, cost-to-serve increasing, unsustainable cost structure, inability to raise prices, fee compression. EXCLUDES: revenue growth/volume (Growth), specific cost-cutting operational changes (Operations).",
+          "children": [
+            {
+              "id": "revenue-margin-pricing-power",
+              "label": "Pricing Power Erosion",
+              "description": "INCLUDES: inability to raise prices without losing volume, commoditization forcing price convergence, fee compression from market or regulatory pressure, race-to-bottom competitive pricing dynamics, customers extracting concessions due to switching leverage. EXCLUDES: cost structure problems that squeeze margins at current prices (Cost Structure Deterioration), revenue volume decline (Growth & Market)."
+            },
+            {
+              "id": "revenue-margin-cost-structure",
+              "label": "Cost Structure Deterioration",
+              "description": "INCLUDES: rising input costs (labor, materials, energy) that outpace revenue growth, cost-to-serve increasing without corresponding value increase, structural overhead bloat, unfavorable cost mix shifts (e.g., higher proportion of low-margin work), inability to achieve economies of scale despite growth. EXCLUDES: pricing inability to cover costs (Pricing Power Erosion), one-time cost reduction initiatives (Operations), capital expenditure decisions (Capital & Funding)."
+            },
+            {
+              "id": "revenue-margin-mix-shift",
+              "label": "Revenue Mix Degradation",
+              "description": "INCLUDES: shift toward lower-margin products/services/programs, decline in premium or high-value segments as a proportion of total revenue, customer migration from high-margin to low-margin offerings, inability to upsell or cross-sell higher-margin work, portfolio composition trending toward less profitable activities. EXCLUDES: overall revenue volume decline (Growth & Market), cost increases within existing mix (Cost Structure Deterioration)."
+            },
+            {
+              "id": "revenue-margin-value-capture",
+              "label": "Value Capture Failure",
+              "description": "INCLUDES: delivering value that isn't reflected in pricing (leaving money on the table), misalignment between pricing model and how customers derive value, unbilled scope creep, free-rider problems in service delivery, inability to monetize adjacencies or byproducts of core activities. EXCLUDES: inability to raise list prices in the market (Pricing Power Erosion), revenue diversification into new streams (Growth & Market)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "capital-funding",
+          "label": "Capital & Funding",
+          "description": "Challenges in obtaining, structuring, or deploying capital. INCLUDES: fundraising challenges, investor/donor relations, debt management, cash flow constraints, capital allocation decisions, inability to fund strategic initiatives, endowment/reserve management, asset-liability matching. EXCLUDES: revenue diversification (Growth), grant dependency as a growth concern (Growth), financial risk posture (Financial Risk & Controls).",
+          "children": [
+            {
+              "id": "capital-funding-access",
+              "label": "Capital Access & Terms",
+              "description": "INCLUDES: difficulty raising equity or debt, unfavorable financing terms, limited access to credit facilities, investor/donor reluctance, inability to attract the right class of capital (patient, growth, mission-aligned), over-reliance on a single capital source. EXCLUDES: how raised capital is deployed (Capital Allocation), managing existing debt obligations (Liquidity & Cash Flow), revenue stream concentration (Growth & Market)."
+            },
+            {
+              "id": "capital-funding-liquidity",
+              "label": "Liquidity & Cash Flow",
+              "description": "INCLUDES: cash flow timing mismatches (receivables vs payables), insufficient working capital, seasonal or cyclical cash crunches, inability to meet short-term obligations, restrictive debt covenants constraining operations, reserve/endowment drawdown pressure. EXCLUDES: long-term capital raising challenges (Capital Access & Terms), strategic investment decisions (Capital Allocation), revenue shortfalls causing cash issues (Growth & Market)."
+            },
+            {
+              "id": "capital-funding-allocation",
+              "label": "Capital Allocation",
+              "description": "INCLUDES: inability to prioritize competing investment needs, over-investment in legacy areas vs growth, peanut-butter spreading (too many initiatives funded too thinly), lack of framework for investment decisions, failure to fund strategic initiatives while over-funding incremental ones, sunk-cost-driven continued investment. EXCLUDES: sourcing of capital (Capital Access & Terms), day-to-day cash management (Liquidity & Cash Flow), strategic portfolio choices about which businesses to be in (Strategy)."
+            },
+            {
+              "id": "capital-funding-stakeholder-management",
+              "label": "Investor & Funder Relations",
+              "description": "INCLUDES: misaligned expectations between organization and capital providers, board/investor pressure for short-term returns vs long-term strategy, donor reporting burden, loss of funder confidence, managing multiple stakeholders with conflicting financial expectations, cap table or ownership structure friction. EXCLUDES: fundraising mechanics and terms (Capital Access & Terms), governance structure problems (Governance & Leadership), external reputation with broader stakeholders (External Relationships)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "financial-visibility",
+          "label": "Financial Visibility & Planning",
+          "description": "The organization lacks clear financial data or forecasting capability. INCLUDES: poor financial reporting, inability to forecast, lack of unit economics understanding, budgeting process failures, hidden costs, financial data silos. EXCLUDES: data infrastructure (Operations), strategic planning (Strategy).",
+          "children": [
+            {
+              "id": "financial-visibility-reporting",
+              "label": "Financial Reporting Gaps",
+              "description": "INCLUDES: delayed or inaccurate financial statements, inability to produce management reports at the needed granularity, financial data silos across departments or entities, lack of consolidated view, inconsistent chart of accounts or reporting definitions, manual spreadsheet-dependent reporting. EXCLUDES: forward-looking forecasting problems (Forecasting & Modeling), budgeting process failures (Budgeting & Resource Planning), data infrastructure technology (Operations)."
+            },
+            {
+              "id": "financial-visibility-forecasting",
+              "label": "Forecasting & Modeling",
+              "description": "INCLUDES: inability to produce reliable revenue or cost forecasts, lack of scenario planning capability, poor understanding of key financial drivers and sensitivities, surprise variances that leadership didn't anticipate, models that don't reflect actual business dynamics, inability to answer 'what if' questions financially. EXCLUDES: historical reporting accuracy (Financial Reporting Gaps), strategic planning decisions that use forecasts (Strategy), operational demand forecasting (Operations)."
+            },
+            {
+              "id": "financial-visibility-unit-economics",
+              "label": "Unit Economics Opacity",
+              "description": "INCLUDES: inability to determine profitability at the product/service/customer/program level, hidden cross-subsidies between business lines, lack of cost allocation methodology, not knowing which activities make or lose money, inability to connect operational metrics to financial outcomes. EXCLUDES: aggregate margin trends (Revenue & Margin Pressure), financial reporting at the entity level (Financial Reporting Gaps)."
+            },
+            {
+              "id": "financial-visibility-budgeting",
+              "label": "Budgeting & Resource Planning",
+              "description": "INCLUDES: budget process that produces unrealistic targets, disconnect between budget and strategy, budget cycles that are too slow to be useful, inability to reallocate mid-cycle, budgets that incentivize gaming or spend-it-or-lose-it behavior, lack of rolling forecast integration. EXCLUDES: capital allocation decisions for major investments (Capital & Funding), historical financial reporting (Financial Reporting Gaps), strategic planning process itself (Strategy)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "financial-risk-controls",
+          "label": "Financial Risk & Controls",
+          "description": "The organization's financial risk posture or financial control systems are inadequate. INCLUDES: concentration risk (revenue or counterparty), currency/FX exposure, hedging gaps, insurance adequacy, financial compliance (SOX, audit findings, revenue recognition), entity structure problems, tax optimization, financial controls and internal audit. EXCLUDES: operational risk from process failure (Operations), data/cybersecurity risk (Risk & Compliance), market-driven financial volatility (unless it reveals a hedging/risk-management gap).",
+          "children": [
+            {
+              "id": "financial-risk-controls-market-exposure",
+              "label": "Market & Concentration Exposure",
+              "description": "INCLUDES: currency/FX risk, interest rate exposure, commodity price sensitivity, geographic concentration of financial risk, customer/funder concentration risk, hedging gaps or inadequate hedging strategy, counterparty risk. EXCLUDES: revenue source diversification as a growth strategy (Growth & Market), operational risks from supply chain concentration (Operations)."
+            },
+            {
+              "id": "financial-risk-controls-compliance",
+              "label": "Financial Compliance & Audit",
+              "description": "INCLUDES: SOX compliance gaps, audit findings and material weaknesses, tax compliance failures, regulatory reporting deficiencies, entity structure creating compliance complexity, transfer pricing issues, failure to meet filing deadlines, accounting policy disputes. EXCLUDES: non-financial regulatory compliance (Risk & Compliance), internal control design problems that haven't surfaced as compliance issues (Internal Controls & Governance)."
+            },
+            {
+              "id": "financial-risk-controls-internal",
+              "label": "Internal Controls & Governance",
+              "description": "INCLUDES: inadequate segregation of duties, weak approval authorities, fraud risk from control gaps, lack of internal audit function or capacity, poor expense management controls, inadequate financial policy framework, override of existing controls by senior leaders. EXCLUDES: formal compliance failures already flagged (Financial Compliance & Audit), operational process controls (Operations), board-level governance structure (Governance & Leadership)."
+            },
+            {
+              "id": "financial-risk-controls-structural",
+              "label": "Financial Structure & Optimization",
+              "description": "INCLUDES: suboptimal entity/legal structure for tax efficiency, insurance inadequacy or gaps in coverage, inefficient capital structure (debt/equity mix), trapped cash in subsidiaries or jurisdictions, tax optimization opportunities not pursued, intercompany complexity creating unnecessary cost or risk. EXCLUDES: market-facing financial exposures (Market & Concentration Exposure), compliance violations from structure (Financial Compliance & Audit), strategic M&A structuring (Strategy)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "strategy-direction",
+      "label": "Strategy & Direction",
+      "description": "Problems related to the organization's strategic positioning, direction, and transformation agenda. INCLUDES: competitive positioning, strategic clarity, M&A integration, digital transformation, innovation strategy, business model evolution, mission drift, stakeholder alignment on direction. EXCLUDES: execution of strategy (Operations), funding for strategy (Financial), specific product decisions (Product). ROUTING: route here when the core pain is 'we don't know WHERE we're going or HOW to position ourselves' — direction, positioning, transformation.",
+      "children": [
+        {
+          "id": "strategic-clarity",
+          "label": "Strategic Clarity & Alignment",
+          "description": "The organization lacks a clear, shared strategic direction. INCLUDES: unclear priorities, leadership misalignment on direction, mission drift, strategy-execution gap, too many competing initiatives, inability to say no, board-management misalignment. EXCLUDES: competitive dynamics (Competitive Positioning).",
+          "children": [
+            {
+              "id": "strategic-clarity-priority-overload",
+              "label": "Priority Overload & Focus Failure",
+              "description": "INCLUDES: too many competing initiatives, inability to say no, resource dilution across priorities, lack of explicit trade-offs, strategic sprawl, initiative proliferation without sunset criteria. EXCLUDES: misalignment between leaders on what the priorities ARE (Strategic Misalignment), disconnect between chosen priorities and execution (Strategy-Execution Gap)."
+            },
+            {
+              "id": "strategic-clarity-leadership-misalignment",
+              "label": "Strategic Misalignment Among Leaders",
+              "description": "INCLUDES: leadership team disagreement on direction, board-management misalignment, conflicting visions across senior leaders, lack of shared mental model of strategy, different leaders communicating different priorities, unresolved strategic debates. EXCLUDES: agreeing on strategy but failing to execute it (Strategy-Execution Gap), having too many agreed-upon priorities (Priority Overload)."
+            },
+            {
+              "id": "strategic-clarity-execution-gap",
+              "label": "Strategy-Execution Gap",
+              "description": "INCLUDES: strategy exists but is not translated into operational plans, middle management cannot connect daily work to strategy, strategy documents gather dust, no cascading of goals, lack of strategic milestones or checkpoints, strategy review cadence absent. EXCLUDES: leaders disagreeing on what the strategy is (Strategic Misalignment), strategy being unclear because too many things are prioritized (Priority Overload), mission evolving away from original intent (Mission Drift)."
+            },
+            {
+              "id": "strategic-clarity-mission-drift",
+              "label": "Mission Drift & Identity Erosion",
+              "description": "INCLUDES: gradual departure from core mission, opportunistic expansion that dilutes purpose, loss of founding intent, scope creep at organizational level, inability to articulate what the organization stands for, strategic identity crisis. EXCLUDES: deliberate strategic pivots or transformations (Transformation & Change), leaders disagreeing on direction (Strategic Misalignment), taking on too many initiatives within a clear mission (Priority Overload)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "competitive-positioning",
+          "label": "Competitive Positioning",
+          "description": "The organization is losing ground to competitors or alternatives. INCLUDES: market share erosion, new entrant threats, substitute threats, inability to respond to competitive moves, unclear competitive advantage. EXCLUDES: product-level differentiation (Product), pricing competition (Financial).",
+          "children": [
+            {
+              "id": "competitive-positioning-advantage-erosion",
+              "label": "Competitive Advantage Erosion",
+              "description": "INCLUDES: commoditization of previously differentiated capabilities, declining barriers to entry in core space, competitors catching up on key strengths, unclear or outdated value proposition, failure to evolve the basis of competition. EXCLUDES: threats from entirely new entrants or substitutes (New Threat Response), failure to gather or act on competitive intelligence (Market Intelligence Gaps)."
+            },
+            {
+              "id": "competitive-positioning-new-threats",
+              "label": "New Threat Response",
+              "description": "INCLUDES: new entrant disruption, substitute products or services emerging, adjacent-market players expanding into core space, technology-driven displacement, non-traditional competitors, failure to recognize or respond to new competitive threats in time. EXCLUDES: erosion of existing advantages against known competitors (Competitive Advantage Erosion), poor understanding of market dynamics generally (Market Intelligence Gaps)."
+            },
+            {
+              "id": "competitive-positioning-market-intelligence",
+              "label": "Market Intelligence Gaps",
+              "description": "INCLUDES: insufficient competitive monitoring, lack of systematic market scanning, blind spots in competitor analysis, poor understanding of competitive dynamics, decisions made without competitive context, failure to benchmark against peers. EXCLUDES: knowing the threats but failing to respond (New Threat Response), knowing the landscape but losing differentiation anyway (Competitive Advantage Erosion), market positioning choices and strategy (Market Position Stagnation)."
+            },
+            {
+              "id": "competitive-positioning-market-stagnation",
+              "label": "Market Position Stagnation",
+              "description": "INCLUDES: market share erosion without clear cause, inability to enter new segments, stuck in unattractive market position, failure to move up or across value chain, trapped in shrinking niche, inability to reposition against shifting market structure. EXCLUDES: losing position due to specific new entrants or substitutes (New Threat Response), losing position due to eroding differentiation (Competitive Advantage Erosion), lack of market data (Market Intelligence Gaps)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "transformation",
+          "label": "Transformation & Change",
+          "description": "The organization needs fundamental change or strategic innovation but struggles to execute it. INCLUDES: digital transformation, business model transition, merger/acquisition integration, post-crisis recovery, organizational restructuring, technology adoption at strategic level, innovation strategy, R&D strategic direction, growth engine development. EXCLUDES: incremental process improvement (Operations), culture change (Talent), product-level feature decisions (Product).",
+          "children": [
+            {
+              "id": "transformation-business-model",
+              "label": "Business Model Transition",
+              "description": "INCLUDES: shifting revenue models, platform transitions, moving from product to service or vice versa, channel transformation, disintermediation response, fundamental value chain restructuring, monetization model change. EXCLUDES: technology adoption without business model change (Technology-Led Transformation), restructuring the organization without changing the business model (Structural Reorganization), recovery from a crisis event (Post-Crisis Recovery)."
+            },
+            {
+              "id": "transformation-technology",
+              "label": "Technology-Led Transformation",
+              "description": "INCLUDES: digital transformation at strategic level, AI/automation adoption as organizational capability shift, legacy system migration that changes how the organization operates, technology platform transitions, data-driven operating model adoption. EXCLUDES: business model changes that happen to involve technology (Business Model Transition), incremental technology upgrades or process automation (Operations), organizational restructuring (Structural Reorganization)."
+            },
+            {
+              "id": "transformation-structural",
+              "label": "Structural Reorganization",
+              "description": "INCLUDES: merger/acquisition integration, demerger/spin-off execution, organizational restructuring, consolidation of business units, geographic restructuring, moving from functional to divisional or matrix structure, post-acquisition operating model design. EXCLUDES: changing what the organization sells or how it makes money (Business Model Transition), technology-driven operating changes (Technology-Led Transformation), innovation strategy for new offerings (Innovation Strategy Failure)."
+            },
+            {
+              "id": "transformation-innovation-strategy",
+              "label": "Innovation Strategy Failure",
+              "description": "INCLUDES: inability to move from idea to scaled innovation, innovation theater without results, failure to allocate resources to new ventures, core business crowding out new growth, ambidexterity failure, inability to incubate and scale new strategic bets. EXCLUDES: product-level innovation decisions (Product), technology adoption for existing operations (Technology-Led Transformation), restructuring the organization (Structural Reorganization)."
+            },
+            {
+              "id": "transformation-post-crisis",
+              "label": "Post-Crisis Recovery",
+              "description": "INCLUDES: strategic rebuilding after existential threat, recovery from reputational crisis, turnaround from financial distress, rebuilding after leadership scandal, post-disruption strategic reset, regaining stakeholder confidence after major failure. EXCLUDES: ongoing incremental improvement (Operations), proactive transformation not triggered by crisis (Business Model Transition, Technology-Led Transformation), organizational restructuring as a standalone initiative (Structural Reorganization)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "partnerships-ecosystem",
+          "label": "Partnerships & Ecosystem",
+          "description": "The organization's external relationships and ecosystem positioning are inadequate. INCLUDES: partnership development, ecosystem strategy, stakeholder management, government/policy relationships, alliance failures, dependency on key partners, community engagement gaps. EXCLUDES: customer/beneficiary relationships (Growth), vendor management as operations (Operations).",
+          "children": [
+            {
+              "id": "partnerships-ecosystem-alliance-management",
+              "label": "Alliance & Partnership Management",
+              "description": "INCLUDES: partnership development and structuring, alliance governance failures, misaligned incentives between partners, partnership dependency risks, joint venture management, co-development relationship breakdowns, partner selection failures. EXCLUDES: relationships with regulators or government (Policy & Regulatory Relationships), broad ecosystem positioning strategy (Ecosystem Strategy), community or public stakeholder engagement (Community & Stakeholder Engagement)."
+            },
+            {
+              "id": "partnerships-ecosystem-ecosystem-strategy",
+              "label": "Ecosystem Strategy",
+              "description": "INCLUDES: platform ecosystem positioning, network effect strategy, ecosystem orchestration, value chain positioning decisions, build-vs-partner-vs-acquire choices at ecosystem level, ecosystem lock-in risks, failure to build or participate in relevant ecosystems. EXCLUDES: managing specific bilateral partnerships (Alliance & Partnership Management), government or regulatory relationships (Policy & Regulatory Relationships), community engagement (Community & Stakeholder Engagement)."
+            },
+            {
+              "id": "partnerships-ecosystem-policy-regulatory",
+              "label": "Policy & Regulatory Relationships",
+              "description": "INCLUDES: government affairs strategy, regulatory relationship management, policy advocacy, compliance-as-strategy failures, inability to influence regulatory environment, missed policy shifts, public-private partnership management, licensing and concession relationships. EXCLUDES: bilateral commercial partnerships (Alliance & Partnership Management), broad ecosystem positioning (Ecosystem Strategy), non-governmental community relationships (Community & Stakeholder Engagement)."
+            },
+            {
+              "id": "partnerships-ecosystem-community-stakeholder",
+              "label": "Community & Stakeholder Engagement",
+              "description": "INCLUDES: community engagement gaps, social license to operate failures, industry body participation, public trust deficits, NGO and advocacy group relationships, academic and research partnerships, failure to manage non-commercial stakeholder expectations. EXCLUDES: government and regulatory relationships (Policy & Regulatory Relationships), commercial partnership management (Alliance & Partnership Management), customer or beneficiary relationships (Growth domain)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "governance-leadership",
+      "label": "Governance & Leadership",
+      "description": "Problems related to how the organization is governed and led — the effectiveness of its decision-making structures and leadership capability. INCLUDES: board effectiveness, leadership capability, succession planning at executive level, decision-making speed, accountability structures, transparency, founder dependency, governance frameworks. EXCLUDES: workforce-level leadership development (Talent), strategic direction itself (Strategy). ROUTING: route here when the core pain is 'our leadership or governance structures aren't working' — not what decisions are made but HOW they're made and BY WHOM.",
+      "children": [
+        {
+          "id": "board-effectiveness",
+          "label": "Board & Governance Effectiveness",
+          "description": "The board or governing body is not functioning well. INCLUDES: board composition gaps, poor board-management relationship, governance framework inadequacy, lack of board expertise, insufficient oversight, rubber-stamping. EXCLUDES: regulatory governance requirements (Risk & Compliance).",
+          "children": [
+            {
+              "id": "board-effectiveness-composition",
+              "label": "Board Composition & Diversity Gaps",
+              "description": "The board lacks the right mix of skills, perspectives, or independence to govern effectively. INCLUDES: missing functional expertise (finance, technology, operations), lack of independent directors, insufficient diversity of thought or background, board members selected for loyalty rather than capability, stale tenure with no rotation, conflicts of interest among board members. EXCLUDES: board members who are capable but disengaged (Board Engagement & Dynamics), governance frameworks that are structurally flawed (Governance Framework & Structure)."
+            },
+            {
+              "id": "board-effectiveness-engagement",
+              "label": "Board Engagement & Dynamics",
+              "description": "Board members are not contributing effectively, or group dynamics undermine productive governance. INCLUDES: passive or disengaged directors, rubber-stamping without genuine scrutiny, dominant personalities suppressing dissent, poor meeting discipline, inadequate preparation by members, factionalism within the board, avoidance of difficult conversations. EXCLUDES: lack of relevant expertise (Board Composition & Diversity Gaps), structural problems in governance design (Governance Framework & Structure), dysfunctional board-management interface (Board-Management Relationship)."
+            },
+            {
+              "id": "board-effectiveness-management-relationship",
+              "label": "Board-Management Relationship",
+              "description": "The working relationship between the board and executive management is dysfunctional — either too close or too adversarial. INCLUDES: board micromanaging operations, board too deferential to management, information asymmetry exploited by management, unclear boundaries between governance and execution, CEO capturing the board, adversarial board-CEO dynamic, lack of constructive challenge. EXCLUDES: CEO's own leadership capability gaps (Executive Leadership Capability), board members' individual engagement levels (Board Engagement & Dynamics)."
+            },
+            {
+              "id": "board-effectiveness-governance-framework",
+              "label": "Governance Framework & Structure",
+              "description": "The formal governance architecture — charters, committees, policies, and processes — is inadequate or poorly designed. INCLUDES: missing or ineffective board committees, unclear terms of reference, inadequate delegation frameworks, no board evaluation process, poor succession planning for board roles, outdated governance documents, absence of decision escalation protocols. EXCLUDES: regulatory compliance requirements (Risk & Compliance), how individual board members behave within the framework (Board Engagement & Dynamics), board-management interface problems (Board-Management Relationship)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "leadership-capability",
+          "label": "Executive Leadership Capability",
+          "description": "The senior leadership team lacks the capability or cohesion needed. INCLUDES: CEO/founder limitations, leadership team skill gaps, executive team dysfunction, poor decision-making quality, leadership transition challenges, founder-to-professional-management transition. EXCLUDES: mid-level leadership (Talent), board-level governance (Board Effectiveness).",
+          "children": [
+            {
+              "id": "leadership-capability-ceo",
+              "label": "CEO & Top Leader Limitations",
+              "description": "The chief executive or top leader lacks the skills, judgment, or adaptability the organization's current situation demands. INCLUDES: CEO skill set mismatched to organizational stage, founder unable to scale beyond startup phase, leader's cognitive biases distorting strategy, inability to delegate, poor external representation, failure to evolve leadership style as context changes. EXCLUDES: dysfunction among the broader executive team (Executive Team Cohesion & Dynamics), skill gaps in specific functional leaders (Functional Leadership Gaps), leadership succession and transition challenges (Leadership Transition & Succession)."
+            },
+            {
+              "id": "leadership-capability-team-cohesion",
+              "label": "Executive Team Cohesion & Dynamics",
+              "description": "The senior leadership team does not function effectively as a collective — misaligned, siloed, or in conflict. INCLUDES: executive team infighting, empire-building across divisions, lack of shared priorities, inability to have productive conflict, passive-aggressive dynamics, executives undermining peers, absence of collective accountability, leadership team that is a collection of individuals rather than a team. EXCLUDES: individual CEO limitations (CEO & Top Leader Limitations), missing functional capabilities (Functional Leadership Gaps), planned leadership changes (Leadership Transition & Succession)."
+            },
+            {
+              "id": "leadership-capability-functional-gaps",
+              "label": "Functional Leadership Gaps",
+              "description": "Specific executive roles lack the expertise or judgment required for their functional domain. INCLUDES: CFO without experience at current organizational scale, CTO unable to evaluate emerging technology, CMO without relevant market expertise, leaders promoted beyond competence, functional leaders who are technically strong but strategically weak, missing executive roles that should exist given organizational complexity. EXCLUDES: CEO-specific limitations (CEO & Top Leader Limitations), interpersonal dynamics among executives (Executive Team Cohesion & Dynamics), mid-level management capability (Talent)."
+            },
+            {
+              "id": "leadership-capability-transition",
+              "label": "Leadership Transition & Succession",
+              "description": "The organization is navigating or failing to plan for changes in senior leadership. INCLUDES: founder-to-professional-management transition, CEO succession without a pipeline, abrupt leadership departures with no continuity, new leader onboarding failures, cultural disruption during leadership change, interim leadership vacuum, resistance to handing over control. EXCLUDES: board succession planning as a governance structure (Board Effectiveness), individual leader skill gaps outside transition context (CEO & Top Leader Limitations, Functional Leadership Gaps)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "decision-accountability",
+          "label": "Decision-Making & Accountability",
+          "description": "The organization's decision-making processes are slow, unclear, lack accountability, or produce poor-quality decisions. INCLUDES: unclear decision rights, consensus paralysis, lack of accountability structures, poor information flow to decision-makers, over-centralization or excessive delegation, poor judgment and decision quality. EXCLUDES: strategic direction decisions (Strategy), financial decisions specifically (Financial).",
+          "children": [
+            {
+              "id": "decision-accountability-rights-clarity",
+              "label": "Decision Rights & Authority Clarity",
+              "description": "It is unclear who has the authority to make which decisions, leading to confusion, duplication, or paralysis. INCLUDES: overlapping mandates across roles, no documented decision authority matrix, ambiguous escalation paths, decisions that fall between organizational boundaries, multiple people believing they own the same decision, no one willing to claim ownership of a decision. EXCLUDES: decisions that are clearly owned but poorly executed (Decision Process & Speed), accountability after a decision is made (Accountability & Follow-Through)."
+            },
+            {
+              "id": "decision-accountability-process-speed",
+              "label": "Decision Process & Speed",
+              "description": "Decisions take too long, involve too many people, or follow dysfunctional processes — even when authority is clear. INCLUDES: consensus paralysis, excessive committee layers, analysis paralysis, revisiting previously settled decisions, inability to decide under uncertainty, over-reliance on unanimous agreement, meeting-heavy decision culture that delays action. EXCLUDES: lack of clarity about who decides (Decision Rights & Authority Clarity), poor information reaching decision-makers (Decision Information Flow), failure to follow through after a decision is reached (Accountability & Follow-Through)."
+            },
+            {
+              "id": "decision-accountability-information-flow",
+              "label": "Decision Information Flow",
+              "description": "Decision-makers do not receive the right information at the right time to make sound decisions. INCLUDES: data not surfaced to decision-makers, filtered or politicized reporting, information overload without synthesis, lack of feedback loops on decision outcomes, decision-makers insulated from operational reality, delayed or stale information. EXCLUDES: deliberately opaque information sharing for power reasons (Power Concentration & Transparency), the decision process itself (Decision Process & Speed), who holds decision authority (Decision Rights & Authority Clarity)."
+            },
+            {
+              "id": "decision-accountability-follow-through",
+              "label": "Accountability & Follow-Through",
+              "description": "Decisions are made but not tracked, enforced, or owned — no one is held accountable for outcomes. INCLUDES: decisions made but never implemented, no tracking of decision outcomes, diffusion of responsibility, lack of consequences for missed commitments, no post-decision review, inability to distinguish decision failure from execution failure, culture of deniability. EXCLUDES: who has authority to decide (Decision Rights & Authority Clarity), the speed or process of reaching decisions (Decision Process & Speed)."
+            },
+            {
+              "id": "decision-accountability-quality-judgment",
+              "label": "Decision Quality & Judgment",
+              "description": "INCLUDES: systematically poor decisions despite clear authority, adequate information, and functional processes; cognitive biases distorting organizational choices (anchoring, groupthink, sunk cost fallacy); failure to weigh evidence appropriately; pattern of decisions that are timely and well-owned but wrong; inability to calibrate risk appetite to context; decisions that optimize for short-term metrics at the expense of long-term outcomes; lack of frameworks or heuristics for recurring decision types. EXCLUDES: unclear authority over who decides (Decision Rights & Authority Clarity), slow or dysfunctional decision processes (Decision Process & Speed), inadequate information reaching decision-makers (Decision Information Flow), failure to implement decisions once made (Accountability & Follow-Through).",
+              "children": [],
+              "status": "terminal",
+              "validation": {
+                "pass": true,
+                "issues": []
+              }
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        },
+        {
+          "id": "power-transparency",
+          "label": "Power Concentration & Transparency",
+          "description": "Power is concentrated in ways that undermine governance, or information flows are opaque. INCLUDES: founder entrenchment, dual-class share structures that disenfranchise the board, selective information sharing, organizational opacity, key-person dependency at executive level, informal power structures that bypass formal governance, lack of transparency to stakeholders. EXCLUDES: over-centralization of routine decisions (Decision-Making & Accountability), CEO capability limitations (Executive Leadership Capability), board composition problems (Board Effectiveness).",
+          "children": [
+            {
+              "id": "power-transparency-structural-entrenchment",
+              "label": "Structural Power Entrenchment",
+              "description": "Formal mechanisms entrench power in ways that resist accountability or challenge. INCLUDES: dual-class share structures, founder veto rights, constitutional or charter provisions that prevent removal, self-appointing board mechanisms, golden parachutes that discourage challenges, voting structures that concentrate control, legal or structural barriers to governance reform. EXCLUDES: informal influence that bypasses formal structures (Informal Power & Shadow Governance), information being withheld (Organizational Transparency & Information Asymmetry), over-reliance on specific individuals (Key-Person Executive Dependency)."
+            },
+            {
+              "id": "power-transparency-shadow-governance",
+              "label": "Informal Power & Shadow Governance",
+              "description": "Real decisions are made through informal channels that bypass formal governance structures. INCLUDES: inner circle making decisions before official meetings, back-channel influence by non-accountable advisors, family or personal relationships driving organizational outcomes, informal veto power held by individuals without formal authority, culture of pre-meetings that render official forums performative. EXCLUDES: formal structural mechanisms that entrench power (Structural Power Entrenchment), lack of transparency to external stakeholders (Organizational Transparency & Information Asymmetry), formal key-person dependencies (Key-Person Executive Dependency)."
+            },
+            {
+              "id": "power-transparency-key-person",
+              "label": "Key-Person Executive Dependency",
+              "description": "The organization is critically dependent on one or a few individuals at the executive level, creating fragility and power asymmetry. INCLUDES: single individual holding irreplaceable relationships or knowledge, organization unable to function without a specific leader, key-person risk used as leverage to avoid accountability, no succession depth for critical executive roles, institutional knowledge concentrated in one person. EXCLUDES: founder entrenchment through formal mechanisms (Structural Power Entrenchment), informal influence networks (Informal Power & Shadow Governance), mid-level key-person risk (Talent/Operations)."
+            },
+            {
+              "id": "power-transparency-information-asymmetry",
+              "label": "Organizational Transparency & Information Asymmetry",
+              "description": "Information is selectively shared or systematically opaque, undermining stakeholder oversight and trust. INCLUDES: selective disclosure to board or investors, lack of transparency to employees about organizational direction, hidden financial arrangements, opacity in executive compensation, stakeholders unable to assess organizational health, management controlling the narrative through information gatekeeping, asymmetric access to performance data. EXCLUDES: poor information flow to decision-makers as a process problem (Decision-Making & Accountability), structural mechanisms that entrench power (Structural Power Entrenchment), informal power channels (Informal Power & Shadow Governance)."
+            }
+          ],
+          "status": "expanded",
+          "validation": {
+            "pass": true,
+            "issues": []
+          }
+        }
+      ],
+      "status": "expanded",
+      "validation": {
+        "pass": true,
+        "issues": []
+      }
+    }
+  ],
+  "status": "expanded",
+  "meta": {
+    "purpose": "classificatory",
+    "axis": "by-functional-domain",
+    "domain": "Industry-agnostic. First application: education sector.",
+    "audience": "AI agent pre-analyzing organizations, then human reviewer before conversation",
+    "target_depth": 3,
+    "leaf_level": "Specific problem types recognizable in an org profile — concrete enough for an agent to match against observable signals, generic enough to apply across industries"
+  },
+  "validation": {
+    "pass": true,
+    "issues": []
+  }
+}

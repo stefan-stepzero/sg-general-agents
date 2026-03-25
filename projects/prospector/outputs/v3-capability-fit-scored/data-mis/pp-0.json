@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-sis-lms-admin-multi-sis-fragmentation-dup",
+  "pain_point_label": "Multi-SIS Fragmentation & Manual Reconciliation",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain is that 3-5 SIS instances have different schemas and require manual spreadsheet reconciliation. AI-assisted ETL/schema mapping directly addresses this — it can learn field-level mappings between disparate schemas, normalize inconsistent values (e.g., enrollment status codes, grade-level labels), and automate the transformation pipeline that staff currently do by hand. This is the highest-fit capability because the pain IS a schema mismatch and transformation problem.",
+      "opportunity_sketch": "An AI-assisted integration layer that ingests raw exports from each SIS, infers schema mappings, flags anomalies, and produces a unified canonical student record feed — reducing the weekly reconciliation from days to minutes with human review of exceptions only.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "After records are reconciled, a persistent problem is detecting silent divergence — a student record updated in one SIS but not cascading to the others. Anomaly detection on the unified record set can flag when a student's profile across campuses shows unexpected inconsistencies (e.g., enrollment status active in one system, graduated in another). This directly addresses the 'changes don't cascade' root pain.",
+      "opportunity_sketch": "A continuous cross-SIS consistency monitor that scores each student record for divergence across systems, surfaces high-risk discrepancies to a data administrator dashboard, and triggers reconciliation workflows before errors reach reporting deadlines.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reconciliation workflow is multi-step: extract from SIS A, extract from SIS B, compare fields, resolve conflicts, update spreadsheet, notify staff. This is exactly the kind of branching, multi-system workflow that task automation agents are designed for — replacing human spreadsheet orchestration with an autonomous pipeline that can handle conditional logic (e.g., 'if record differs on field X, route to campus registrar for approval'). The pain is not just data mismatch but the manual labor of the reconciliation process itself.",
+      "opportunity_sketch": "An autonomous reconciliation agent that runs nightly, pulls exports from all SIS instances, applies learned merge rules, escalates ambiguous conflicts to the right human reviewer via email/Teams, and writes the resolved records back — eliminating the 5-10 hours/week of manual spreadsheet work.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Student transfers between campuses often require extracting key attributes from unstructured documents (transfer forms, emails, PDF transcripts) and reconciling them against the receiving SIS. Entity extraction can parse these documents and pre-populate structured fields, reducing manual data entry during cross-campus transfers — one of the most error-prone steps in the described workflow.",
+      "opportunity_sketch": "An extraction layer that reads inbound transfer documents and emails, pulls student ID, enrollment dates, program codes, and prior grades, and maps them to the target SIS schema — cutting transfer processing time and reducing keying errors.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

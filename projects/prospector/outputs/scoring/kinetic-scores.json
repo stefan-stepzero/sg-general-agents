@@ -1,0 +1,304 @@
+{
+  "company_id": "kinetic",
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise value 'Technology / B2B SaaS' directly matches taxonomy enumeration with clear software-only business model evidence."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Highly specific 'EdTech / Higher Education Operations Software — PBSA tech' with 25+ year specialization and 85% UK university penetration as proof."
+    },
+    {
+      "property_id": "industry-vertical-value-chain-position",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Clear picks-and-shovels positioning with real estate property management analogy; slight inference on 'infrastructure layer' but well-aligned with taxonomy."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Well-reasoned 'Mature with consolidation dynamics' aligns with taxonomy INCLUDES (established players, incremental growth); APUC framework confirms market entrenchment."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise 'Recurring subscription (SaaS) with professional services secondary' directly matches taxonomy enumeration with multi-year contract evidence."
+    },
+    {
+      "property_id": "business-model-delivery-model",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Well-evidenced 'Managed software product with implementation/support services' aligns with taxonomy hybrid model; Customer Portal and customer experience references confirm."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Correctly assessed as 'Fixed-cost-heavy; high gross margin software' but confidence is medium (inferred from Volaris model, no public margin data)."
+    },
+    {
+      "property_id": "business-model-network-effects",
+      "coverage": 1.0,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.9,
+      "justification": "Exceptionally detailed analysis of multi-layered moat (switching costs, procurement lock-in, data network effects, community flywheel) with specific evidence; confidence medium-high (not independently verified)."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "coverage": 0.95,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.8075,
+      "justification": "Four critical dependencies clearly articulated (University IT, HE sector health, cloud infrastructure, Volaris capital) with strong contextual evidence; confidence medium (some inference on capital gating)."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.595,
+      "justification": "Specific estimate (~86 employees, Oct 2024) from third-party LeadIQ data with five-continent geographic breakdown; confidence low-medium (unverified external source)."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "coverage": 0.75,
+      "confidence_multiplier": 0.55,
+      "final_score": 0.4125,
+      "justification": "Revenue band '$10M-$100M ARR estimated' inferred from customer count (350+) and typical HE SaaS ACV; confidence low (no public financials, fully calculated)."
+    },
+    {
+      "property_id": "scale-resources-capitalization",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precisely documented 'Corporate-subsidiary / Volaris Group permanent-hold' with confirmed January 2015 acquisition and TSX:CSU parent structure."
+    },
+    {
+      "property_id": "scale-resources-asset-intensity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Unambiguously 'Asset-light (software company)' with no manufacturing or inventory; Companies House registration confirms pure software business."
+    },
+    {
+      "property_id": "scale-resources-financial-health",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.56,
+      "justification": "Assessment 'Profitable / stable; positive cash flow' inferred from Volaris permanent-hold model and four tuck-in acquisitions; confidence low-medium (no public financials)."
+    },
+    {
+      "property_id": "scale-resources-company-age",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precisely documented founding year 1998 with Companies House registration history and co-founder names (Wildsmith, Ashley); '25+ years' claim verified."
+    },
+    {
+      "property_id": "scale-resources-customer-base-scale",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.0,
+      "final_score": 0.0,
+      "justification": "Property marked null in manifest; no profile_fill provided despite 350+ customers and 700,000+ managed beds being mentioned in other properties."
+    },
+    {
+      "property_id": "growth-phase-scaling",
+      "coverage": 0.9,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.81,
+      "justification": "Well-articulated 'Mature/Optimization with deliberate inorganic growth layer' supported by 85% UK market saturation and strategic acquisition pattern; confidence high."
+    },
+    {
+      "property_id": "market-position-customer-segment",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precisely identified 'Enterprise and mid-market — HEIs and PBSA operators' with formal procurement (APUC) and complex multi-stakeholder decision signals."
+    },
+    {
+      "property_id": "market-position-competitive-stance",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Market leader in UK/Europe (85% university penetration, #1 APUC ranking) and strong global challenger (vs. StarRez dominance) clearly evidenced."
+    },
+    {
+      "property_id": "market-position-gtm-motion",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Primary GTM clearly 'Sales-led (direct enterprise) + procurement-framework-led + partner/channel' with Book a Demo CTA and APUC ranking evidence."
+    },
+    {
+      "property_id": "market-position-customer-concentration",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Assessed as 'Diversified — no single customer dominant' based on 350+ global customer base; confidence medium (no explicit concentration metrics provided)."
+    },
+    {
+      "property_id": "market-position-pricing-position",
+      "coverage": 0.75,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.6375,
+      "justification": "Positioned as 'Mid-market to premium' supported by market leadership and '38% more revenue' ROI claim; confidence medium (no actual price points disclosed)."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precisely identified 'Professional management (external CEO appointed by corporate parent)' with Barry Anns appointment and founder exit timeline confirmed."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.595,
+      "justification": "Identified as 'Functional silos with divisional product lines' based on four product verticals and dual-office UK structure; confidence medium (org chart not explicitly confirmed)."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "coverage": 0.95,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.855,
+      "justification": "Detailed 'Hybrid multi-office (Milton Keynes + Ludlow) with fully remote North America' with confirmed office addresses and working patterns; confidence high."
+    },
+    {
+      "property_id": "org-structure-talent-profile",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.56,
+      "justification": "Assessed as 'Engineering/product-heavy with growing commercial emphasis' based on acquisition strategy and CEO background; confidence medium (limited direct composition data)."
+    },
+    {
+      "property_id": "tech-maturity-stack-generation",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.56,
+      "justification": "Characterized as 'Transitional (25-year-old core modernising; new layers cloud-native)' from legacy platform age and KxEngage mobile addition; confidence medium (no architecture documentation)."
+    },
+    {
+      "property_id": "tech-maturity-engineering-practices",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.55,
+      "final_score": 0.385,
+      "justification": "Assessed as 'Intermediate (CI/CD and product iteration evident)' from multiple product releases and Ideas Forum; confidence low (no public engineering blog or OSS signals)."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.55,
+      "final_score": 0.385,
+      "justification": "Estimated 'Basic to intermediate (BI and reporting; AI-readiness building)' from 700k+ beds benchmarking claim and Innovation Acceleration hiring; confidence low (no ML production evidence)."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Positioned as 'Intermediate to advanced (enterprise-grade for HE compliance)' supported by public Security page and GDPR/APUC framework requirements; confidence medium (certifications not confirmed)."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Accurately classified as 'Moderate' with GDPR, APUC public procurement, and JISC/NCSC frameworks; aligns precisely with taxonomy INCLUDES (data privacy, no heavy financial/healthcare regs)."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Clearly documented as 'Regional-to-global (UK/Europe primary; 20+ countries)' with verified UK dominance and international expansion evidence."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Assessed as 'Moderately recession-resistant with HE-sector-specific exposure' with reasonable logic; confidence medium (sector vulnerability not quantified)."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precisely identified 'Parent-company governed (Volaris/Constellation TSX:CSU)' with documented ownership structure and Constellation quarterly reporting flows."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Characterized as 'Pragmatic with fast-follower AI ambition' from Innovation Acceleration team and HeyHub acquisition; confidence medium (cultural posture not independently verified)."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "coverage": 0.95,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.855,
+      "justification": "Clearly positioned as 'Trust/reliability-first with community-building' well-supported by 25-year track record, Kinetic Live conference, Ideas Forum, and APUC ranking."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.0,
+      "final_score": 0.0,
+      "justification": "Property marked null in manifest; no public mission or values statement was assessed."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "coverage": 0.75,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.525,
+      "justification": "Assessed as 'Stable/reliable in niche; limited broader recognition' from graduate program and Volaris stability; confidence medium (limited Glassdoor footprint, minimal brand visibility outside HE)."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": 0.9375,
+    "business-model": 0.863,
+    "scale-resources": 0.640,
+    "growth-phase": 0.81,
+    "market-position": 0.867,
+    "org-structure": 0.674,
+    "tech-maturity": 0.518,
+    "operating-environment": 0.925,
+    "culture-brand": 0.63
+  },
+  "overall_score": 0.745,
+  "summary": {
+    "total_properties": 38,
+    "properties_with_substantive_data": 36,
+    "properties_null": 2,
+    "high_confidence_count": 17,
+    "medium_high_confidence_count": 8,
+    "medium_confidence_count": 6,
+    "low_medium_confidence_count": 3,
+    "low_confidence_count": 4,
+    "strongest_dimensions": [
+      "operating-environment (0.925)",
+      "industry-vertical (0.9375)",
+      "market-position (0.867)"
+    ],
+    "weakest_dimensions": [
+      "tech-maturity (0.518)",
+      "culture-brand (0.63)",
+      "org-structure (0.674)"
+    ],
+    "assessment_notes": "Coverage reflects alignment precision with taxonomy definitions (1.0=exact enumerated match, 0.0=null/missing). Confidence multiplier reflects evidence robustness (1.0=primary/documented source, 0.55=heavily inferred). Dimension scores are unweighted averages of child properties. Overall score is mean of all 38 property final_scores. Re-evaluation corrects prior assessment: business-model and scale-resources properties were previously marked null but contain substantive manifest data."
+  }
+}

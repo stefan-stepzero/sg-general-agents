@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "data-mis-reporting-analytics-missing-operational-dashboards-dup",
+  "pain_point_label": "Missing Real-Time Operational Dashboards",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Principals and deans need narrative context around KPI movements, not just raw numbers. LLMs can auto-generate written commentary (e.g., 'Enrollment in the nursing program dropped 12% this quarter — here is what the data suggests') that turns dashboard metrics into actionable board-ready summaries. This addresses the gut-feel decision-making by giving leaders prose explanations grounded in live data.",
+      "opportunity_sketch": "An automated weekly narrative generator that pulls KPI deltas from the data warehouse and produces plain-English summaries for each campus principal, formatted as a board brief or operational memo.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The pain point explicitly names data quality issues and underutilized BI tools as root causes — the dashboards don't exist partly because source data is messy, inconsistent, or spread across incompatible schemas. AI-assisted ETL can normalize enrollment records, cost-centre codes, and HR data across campuses into a clean, unified schema that BI tools can actually consume. This directly unblocks dashboard deployment.",
+      "opportunity_sketch": "An AI-assisted data pipeline that ingests campus SIS, HRIS, and finance exports, maps them to a standardized schema, flags quality anomalies, and loads a clean operational data mart — enabling BI dashboards to go live without manual data wrangling.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The pain point specifically calls out HR not seeing attrition risk until exit interviews — a classic propensity modeling use case. Staff features (tenure, absence patterns, performance scores, role changes) can predict who is likely to leave 60–90 days before resignation. Similarly, student-level features can predict dropout risk, feeding a real-time risk flag into the operational dashboard rather than waiting for semester-end statistics.",
+      "opportunity_sketch": "A churn/attrition propensity model embedded in the HR and student dashboards that surfaces a ranked list of at-risk employees and students weekly, giving principals a forward-looking signal rather than lagging exit-interview data.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Without real-time dashboards, unusual KPI movements go unnoticed until reports are run weekly or monthly. An anomaly detection layer on top of operational data streams can proactively alert principals when enrollment drops sharply, cost-per-student spikes, or failure rates in a course exceed historical norms — closing the gap between 'live data' and 'gut feel' decisions even before a full BI rollout.",
+      "opportunity_sketch": "An always-on anomaly monitor that watches enrollment, cost, attendance, and HR metrics across campuses and pushes alert notifications to relevant department heads when values deviate beyond configurable thresholds — no BI tool required.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The operational reporting gap is partly a workflow problem: data sits in disconnected systems (SIS, HRIS, finance) and no one has automated the extract-aggregate-distribute loop. A task automation agent can orchestrate data pulls from multiple systems, run aggregations, populate a reporting template, and email or post KPI summaries to the right stakeholders on a schedule — without requiring a full BI platform deployment.",
+      "opportunity_sketch": "A scheduled automation agent that collects data from campus SIS and HR systems each morning, computes standard KPIs (enrollment by program, graduation rate, attrition), and distributes formatted KPI digests to principals and deans — bridging the gap while a full BI platform is being deployed.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

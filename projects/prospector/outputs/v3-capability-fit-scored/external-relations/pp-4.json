@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-alumni-tracking-accountability-gap-dup",
+  "pain_point_label": "No Accountability for Outcome Claims",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The verification gap is fundamentally a broken workflow: alumni self-report, nobody follows up, employers are never contacted. A task automation agent can orchestrate the multi-step process — triggering employer outreach emails at set intervals post-graduation, logging responses, escalating non-responses, and updating a verification status record — closing the loop that currently never closes. This is exactly the 'multi-step approval/confirmation workflow' use case the capability is built for.",
+      "opportunity_sketch": "An agent that fires at 90-days post-graduation: sends employer verification requests, tracks responses, flags unverified claims as 'unsubstantiated' in the outcomes database, and compiles accreditation-ready substantiation reports on demand.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "A research agent can autonomously cross-check alumni self-reported data against public sources — LinkedIn profiles, company websites, professional registries — without requiring employer cooperation. This provides a scalable spot-check mechanism that doesn't depend on alumni or employer responsiveness, giving accreditation bodies independently gathered corroboration. For a 500-staff operator graduating hundreds of students annually, manual spot-checks are infeasible; autonomous research agents make it tractable.",
+      "opportunity_sketch": "A research agent that samples a random cohort of alumni claims each quarter, searches public professional profiles, and produces a corroboration confidence report flagging discrepancies — ready for accreditation submissions as third-party-style evidence.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Self-reported alumni salary and role claims follow predictable distributions for a given program type — statistical outliers are likely misrepresentations or errors. Anomaly detection can flag claims that deviate significantly from cohort norms (e.g., reported salary 3x the cohort median, claimed title implausible for a recent graduate) for targeted manual verification, making the spot-check process systematic rather than arbitrary.",
+      "opportunity_sketch": "A model trained on historical verified outcomes that scores each new self-report for plausibility, routing high-anomaly cases to a human reviewer before claims are accepted into the official outcomes database.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Two distinct generation needs exist here: (1) drafting personalized employer verification outreach emails at scale, calibrated by industry and relationship type, and (2) generating accreditation-ready outcome substantiation narratives that weave verified data points into compliant report language. Both require producing professional prose from structured data inputs — a core text generation task.",
+      "opportunity_sketch": "A text generation layer that takes a structured verification dataset and produces accreditation submission narratives, and separately generates batched employer outreach emails personalized to company type and program — reducing staff time from hours to minutes per accreditation cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Alumni outcome data arrives in incompatible formats: survey form responses, email replies from employers, LinkedIn exports, phone interview notes. Before any verification or reporting can happen, this fragmented data must be normalized into a unified schema (graduate ID, reported role, reported salary, verification status, source, date). Data transformation AI handles the messy ETL that makes systematic accountability possible in the first place.",
+      "opportunity_sketch": "A transformation pipeline that ingests alumni survey exports, employer email replies, and LinkedIn data extracts — mapping each to a canonical verification schema — feeding a central outcomes database that can be queried for accreditation reports.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-multi",
+      "capability_label": "Multi-Agent Systems",
+      "match_rationale": "Full outcome verification is inherently a multi-stage pipeline requiring specialized agents working in sequence: a research agent gathers public profile data, an anomaly detection agent flags suspicious claims, a generation agent drafts employer outreach, and a transformation agent normalizes responses into the outcomes database. No single agent capability handles the end-to-end flow; orchestrating them as a multi-agent system delivers a complete accountability infrastructure.",
+      "opportunity_sketch": "An orchestrated pipeline — research → anomaly flag → outreach generation → response normalization → report generation — that runs each graduating cohort through a systematic verification lifecycle, producing accreditation-ready substantiation as a by-product.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

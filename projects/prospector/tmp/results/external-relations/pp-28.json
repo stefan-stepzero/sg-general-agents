@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-donor-philanthropic-no-stewardship-dup",
+  "pain_point_label": "Poor Donor Stewardship and Impact Reporting",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Donor stewardship is fundamentally a communication problem — the institution fails to produce thank-you letters, impact narratives, and annual reports that make donors feel valued. AI text generation can draft personalized thank-you correspondence, impact stories tied to specific gifts, and templated annual impact reports at scale, eliminating the bottleneck of staff bandwidth. For a multi-site operator with hundreds of donors across campuses, personalizing these communications manually is impractical without AI.",
+      "opportunity_sketch": "A system that pulls gift data from the CRM and auto-drafts personalized thank-you letters and semi-annual impact updates per donor, requiring only a brief review before sending. Could also generate the narrative sections of an annual impact report from structured program outcome data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a stewardship tracking mechanism means tasks like scheduling leadership thank-you calls, sending impact updates at predetermined intervals, and logging stewardship touchpoints simply fall through the cracks. A task automation agent could orchestrate the stewardship workflow end-to-end: trigger drafting at gift receipt, schedule follow-ups, route approval to leadership, and log completion — replacing the missing process entirely. This directly addresses the 'no mechanism to track stewardship tasks' aspect of the pain point.",
+      "opportunity_sketch": "An automated stewardship pipeline that triggers on gift entry in the donor database: generates a draft communication, routes it to the appropriate campus leader for approval, schedules a 6-month impact check-in, and maintains a stewardship activity log per donor record.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Impact reporting requires distilling program outcomes, student achievements, and financial use-of-funds data into concise donor-facing narratives. Staff at multi-site operators lack time to synthesize reports from multiple program teams, so gifts go unacknowledged. Summarization AI can condense internal program reports, assessment data, and operational updates into brief, donor-readable impact statements, making impact reporting feasible without dedicated development staff.",
+      "opportunity_sketch": "A tool that ingests semester program reports and student outcome data from each campus and generates a one-page impact summary per gift category (e.g., scholarship fund, facility improvement), ready for inclusion in donor communications or an annual report.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Donors who feel under-stewarded are at high risk of lapsing; propensity modeling can identify which donors are most likely to give again (or churn) based on their gift history, engagement signals, and stewardship touchpoint data. For a 500+ staff operator managing a donor file of varying sizes, prioritizing stewardship effort toward high-propensity re-givers maximizes fundraising ROI and surfaces at-risk major donor relationships before they go cold.",
+      "opportunity_sketch": "A donor retention score that flags individuals with high re-gift propensity and low recent stewardship activity, generating a prioritized outreach list for development staff each quarter — ensuring finite stewardship capacity is directed where it matters most.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

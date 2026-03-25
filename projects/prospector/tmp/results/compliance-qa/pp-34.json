@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-policy-data-privacy-access-controls-and-audit-trails-dup",
+  "pain_point_label": "Data Access Controls and Audit Trail Deficiency",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Even without formal RBAC in place, an anomaly detection model trained on SIS access logs can flag deviations from normal access patterns — e.g., an accounting clerk suddenly pulling health records, or a campus admin bulk-exporting student data from a different site. This directly addresses the audit trail gap by surfacing suspicious access retroactively and prospectively. For a multi-campus operator with hundreds of staff, behavioral baselines per role and campus are feasible to establish from existing log data.",
+      "opportunity_sketch": "An access anomaly monitor that ingests SIS login and query logs, builds per-role behavioral baselines, and alerts compliance officers when access deviates from expected patterns — providing immediate audit evidence without requiring a full RBAC overhaul first.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "A risk scoring model can assess each staff role's current access configuration against a compliance risk rubric — factoring in data sensitivity categories accessed, cross-campus reach, frequency, and role necessity. This gives compliance leadership a ranked exposure map rather than a manual audit, directly quantifying the severity of the access control gap before a DPA investigation forces the issue. Education operators under DPA scrutiny need defensible evidence of proactive risk assessment.",
+      "opportunity_sketch": "A data access risk scorecard that evaluates every SIS user role against sensitivity and necessity criteria, producing a prioritized remediation queue for the compliance officer to address the highest-risk access patterns first.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Designing a valid RBAC schema for a multi-site operator is a hard constraint satisfaction problem: each role must satisfy need-to-know constraints (only access data for students they directly serve), campus boundary constraints (staff cannot cross-campus unless explicitly authorized), and data category constraints (HR vs academic vs financial separation). AI-assisted constraint solving can generate a valid RBAC configuration from a declarative policy spec, avoiding the manual trial-and-error that causes retroactive access control failures.",
+      "opportunity_sketch": "An RBAC configuration assistant where administrators define role definitions and data sensitivity rules in plain language, and the system generates a valid permission matrix satisfying all constraints — with conflict explanations for any rules that cannot be simultaneously satisfied.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "During a DPA audit or breach investigation, compliance officers need to reconstruct specific access events quickly — who viewed a student's financial record, which admin exported a class roster, when a health record was last accessed. A RAG system over indexed audit logs and access records enables natural-language queries against this corpus, dramatically reducing investigation time. This is especially valuable when operators must implement controls retroactively while already under regulatory scrutiny and pressed for answers.",
+      "opportunity_sketch": "A compliance investigation assistant that indexes all available SIS audit logs and access records, allowing compliance officers and legal teams to ask questions like 'Show all access to Year 10 health records in the last 90 days' and receive cited, traceable answers.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Maintaining access controls in a 500+ staff, multi-campus operator is an ongoing workflow problem: new staff are onboarded, roles change, leavers must be deprovisioned, and periodic access reviews are required by DPA frameworks. A task automation agent can orchestrate this lifecycle — scanning SIS user tables for role changes, generating access review requests to line managers, auto-flagging accounts with excessive permissions, and producing a monthly access certification report. This converts a reactive, manual compliance burden into a continuous automated process.",
+      "opportunity_sketch": "An access lifecycle automation agent that monitors SIS user tables, triggers manager review workflows when roles change or certifications expire, and generates monthly compliance reports confirming that access rights remain appropriate — creating the audit trail the operator currently lacks.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

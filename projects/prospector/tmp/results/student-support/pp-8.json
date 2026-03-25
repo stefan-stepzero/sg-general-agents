@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "student-support-child-protection-safeguarding-vetting-onboarding-gaps-dup",
+  "pain_point_label": "Weak Pre-Employment Vetting & Supervision of High-Risk Roles",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Background check documents, reference letters, police clearance certificates, and employment history records are unstructured text. NER and entity extraction can systematically pull out names, dates, institutions, case numbers, and allegations from these documents to populate a structured vetting record — closing the gap where manual review misses critical details buried in dense documents.",
+      "opportunity_sketch": "An extraction pipeline that ingests candidate documents (reference letters, prior employment records, court documents) and outputs structured profiles flagging names, dates, institutions, and any extracted adverse mentions for human review.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Reference letters, prior employer statements, social media content, and any written materials submitted by or about candidates can be classified for risk signals — e.g., detecting evasive language, flagging mentions of disciplinary actions, or scoring the tone of references. This addresses the gap where qualitative text is not systematically screened.",
+      "opportunity_sketch": "A classifier that scores incoming reference letters and written submissions for red-flag language patterns (vague dismissals, missing detail on departure reasons, over-formal distancing language), routing high-risk profiles for deeper manual review.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Staff behavior patterns — access logs, scheduling anomalies, unusual one-on-one session frequencies, after-hours presence with specific student groups — can be modeled as behavioral baselines. Deviations from normal patterns (e.g., a music teacher consistently extending private sessions past school hours) surface as anomalies warranting supervisor review, directly addressing the unsupervised-access risk.",
+      "opportunity_sketch": "A behavioral anomaly detection layer over facility access logs, scheduling systems, and session records that flags staff whose interaction patterns with vulnerable students deviate significantly from peer baselines — generating weekly review queues for safeguarding officers.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "A risk scoring model can aggregate multiple signals — role type (one-to-one, unsupervised access), vetting completeness, prior incident flags, tenure, and behavioral indicators — into a composite safeguarding risk score per staff member. This directly addresses the structural gap where no systematic risk stratification exists across roles and access levels.",
+      "opportunity_sketch": "A risk scoring dashboard that assigns each staff member a safeguarding risk tier based on role proximity to vulnerable students, vetting completeness, and behavioral signals — enabling the operator to prioritize supervision and re-vetting resources across 500+ staff.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pre-employment vetting process involves multiple sequential steps: triggering background check requests to third-party agencies, chasing outstanding references, cross-checking credentials with issuing bodies, and logging results into HR systems. An automation agent can orchestrate this multi-step workflow across systems, eliminating the manual follow-up gaps that allow incomplete vetting to slip through.",
+      "opportunity_sketch": "A vetting automation agent that, upon a new hire record being created, automatically dispatches background check requests, tracks response status, escalates overdue checks, and blocks role activation until all required clearances are confirmed — replacing ad-hoc manual chasing.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Safeguarding policies, role-specific supervision protocols, chaperone requirement documentation, and incident reporting templates need to be authored and kept current across multiple campuses. AI text generation can produce consistently structured policy documents, onboarding briefings, and supervision guidelines tailored to specific high-risk role types.",
+      "opportunity_sketch": "A policy generation tool that produces role-specific safeguarding protocols (e.g., counselor conduct guidelines, music teacher session rules) from a master template, customized per campus and regulatory jurisdiction, reducing the gap between policy intent and documented procedure.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

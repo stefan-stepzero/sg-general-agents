@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "payroll-statutory-deduction-accuracy",
+  "pain_point_label": "Statutory Deduction Errors & Late Remittance",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Statutory deduction processing is a structured, rules-based multi-step workflow: retrieve payroll data, apply current SSS/PhilHealth/Pag-IBIG/BIR rate tables, compute per-employee deductions, validate against ceilings, generate remittance schedules, and flag exceptions. A task automation agent can own this end-to-end pipeline, replacing fragmented manual steps that introduce errors and missed deadlines. For a 500+ staff multi-site operator, the agent can run per payroll cycle and surface discrepancies before remittance is due.",
+      "opportunity_sketch": "An autonomous payroll compliance agent that ingests each pay run, applies the latest government rate tables, computes deductions per employee, validates totals against contribution ceilings, and generates a pre-remittance validation report with deadline alerts — all without manual intervention.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Over-withholding and under-withholding show up as statistical deviations from expected deduction amounts given an employee's compensation bracket — exactly the pattern anomaly detection is built for. By training on historical payroll data and known contribution schedules, the model can flag employees whose deductions fall outside expected ranges each cycle, catching computation errors before they are remitted. This directly addresses the incorrect deductions pain without requiring the operator to rebuild their payroll system.",
+      "opportunity_sketch": "A deduction anomaly detector that scores each employee's statutory deductions each payroll run and surfaces outliers (e.g., BIR withholding suddenly 40% lower than prior months for the same salary) for finance team review before remittance.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Non-compliance risk is not uniform: campuses with high staff turnover, recent salary restructuring, or proximity to rate change effective dates carry higher deduction error probability. A risk scoring model can assess each pay cycle and each site against factors correlated with errors and missed deadlines, letting the finance team prioritize review effort. This shifts the operator from reactive penalty-response to proactive compliance risk management, which is highly visible to leadership.",
+      "opportunity_sketch": "A per-cycle compliance risk dashboard that scores each campus's payroll run on likelihood of deduction error or late remittance, using features like recent staff changes, rate change proximity, and historical error rate — enabling targeted CFO-level oversight.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.15
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Audit trail reconstruction is hard because payroll data often exists across disparate formats — spreadsheets, HRIS exports, bank records, and government portal confirmations — with inconsistent schemas. Data transformation AI can map and normalize these semi-structured sources into a unified compliance record per employee per period, making audit preparation tractable. For a multi-site education operator with 500+ staff, this directly addresses the difficult-to-reconstruct pain at audit time.",
+      "opportunity_sketch": "An ETL pipeline with AI-assisted schema mapping that consolidates payroll registers, deduction computations, and remittance receipts into a structured audit ledger, queryable by employee, period, agency, and site.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Payroll staff and HR officers regularly need to look up current contribution rates, ceiling thresholds, and remittance deadlines across SSS, PhilHealth, Pag-IBIG, and BIR — information that changes periodically and is scattered across government circulars. A conversational agent grounded in an up-to-date regulatory knowledge base can answer these questions instantly and accurately, reducing the reliance on staff memory or outdated reference documents that contribute to computation errors.",
+      "opportunity_sketch": "A payroll compliance Q&A assistant (chatbot or Slack bot) that answers questions like What is the current SSS employer share for a salary of P25,000? or When is the PhilHealth remittance deadline for December? using real-time regulatory data.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "payroll-supplementary-item-backlog",
+  "pain_point_label": "Supplementary Payroll Item Backlog & Delays",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a manual, multi-step workflow: overtime/bonus claims arrive, get calculated, routed for approval, then disbursed and documented. Each of these steps is a discrete action with branching logic (approval granted vs. rejected, exit pay vs. bonus), making it a textbook task automation target. Education operators with 500+ staff will have dozens of these claims per pay cycle, and the repetition justifies an automated agent pipeline.",
+      "opportunity_sketch": "An agent that ingests supplementary pay claims (from timesheets, HR submissions, or email), validates inputs against policy rules, routes to the correct approver, tracks status centrally, and triggers disbursement documentation — reducing manual touchpoints from ~8 to ~2 per claim.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Supplementary payroll items typically arrive in heterogeneous formats — spreadsheet submissions, HR system exports, manager emails, or paper timesheets scanned to PDF. Normalizing these semi-structured inputs into a canonical schema (employee ID, claim type, amount, period, approver) is a prerequisite for any downstream automation or tracking. This capability directly addresses the 'no single source of truth' sub-pain.",
+      "opportunity_sketch": "A transformation layer that ingests claim data from multiple input channels and maps them to a standardized payroll item schema, enabling a unified status dashboard and eliminating the reconciliation step that currently causes backlogs.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "When claims arrive as unstructured text (manager emails, resignation letters triggering final pay, bonus justification memos), extracting the relevant structured attributes — employee name, claim type, amount, dates, approval chain — is a direct fit. This removes the manual data-entry step that contributes to backlog accumulation.",
+      "opportunity_sketch": "An extraction layer that parses incoming payroll claim emails or documents and pre-populates structured claim records, cutting claim entry time from minutes to seconds and reducing transcription errors.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Final pay delays cause 'staff relations friction' — the operator must communicate delays, explain calculations, and document decisions to departing staff. Drafting these communications (final pay breakdowns, delay notices, bonus award letters) is repetitive and time-consuming for HR teams. AI text generation can produce compliant, personalized letters from structured payroll data with minimal human editing.",
+      "opportunity_sketch": "Auto-generated final pay explanation letters and delay notifications, produced from structured payroll records and reviewed by HR before sending — reducing drafting time and ensuring consistent, professional communication to departing employees.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incoming supplementary pay requests often need triage: is this an overtime claim, a bonus nomination, an allowance adjustment, or a final pay trigger? Misclassification at intake routes claims to the wrong approver and adds delay. Text classification on submission text or email subject lines can auto-route claims to the correct workflow branch, reducing the manual triage step.",
+      "opportunity_sketch": "An intake classifier that reads claim submission text and tags it with the correct claim type and routing path, automatically assigning it to the right approver queue and reducing misrouting-related delays.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Education operators have layered policy documents governing overtime eligibility, bonus criteria, allowance rates, and final pay entitlements — often across enterprise agreements, government funding agreements, and internal HR policies. HR staff and managers currently must manually cross-reference these to answer 'is this claim valid?' RAG over the policy corpus can answer entitlement questions grounded in the actual documents, reducing approval bottlenecks caused by policy uncertainty.",
+      "opportunity_sketch": "A policy Q&A assistant where approvers ask 'Is an employee on contract type X entitled to this overtime rate?' and receive a cited, grounded answer from the enterprise agreement and HR policy documents — eliminating the manual policy lookup step in the approval workflow.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

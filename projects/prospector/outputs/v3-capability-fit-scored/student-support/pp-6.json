@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-child-protection-safeguarding-reporting-threshold-confusion-dup",
+  "pain_point_label": "Unclear Reporting Thresholds & Victim Retaliation Fears",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The pain point is partly driven by absence of clear, written reporting definitions and whistleblower safeguard documentation. Text generation can produce scenario-based reporting threshold guides, anonymised case vignettes, and confidential reporting policy templates tailored to local regulatory frameworks — filling the guidance vacuum staff currently face.",
+      "opportunity_sketch": "An AI-assisted policy authoring tool that generates plain-language reporting threshold guides and whistleblower protection FAQs, customised per jurisdiction and site, reducing the ambiguity that causes both under- and over-reporting.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Staff incident descriptions submitted via text (emails, welfare logs, free-text forms) can be classified against a taxonomy of reportable vs. non-reportable categories, giving staff an instant threshold signal and reducing the paralysis of individual judgment. This directly addresses the under/over-reporting bifurcation described in the pain point.",
+      "opportunity_sketch": "A real-time incident triage tool where staff type a brief description of a concern and receive an AI-generated classification — 'likely reportable / borderline / not reportable' — with cited policy rationale, removing the burden of solo judgment.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "A RAG system grounded in the operator's safeguarding policies, local authority guidance, and child protection legislation can answer staff questions like 'Is physical punishment at home reportable?' with citations — providing authoritative, policy-backed answers rather than relying on memory or supervisory availability. This directly combats the guidance vacuum that causes reporting paralysis.",
+      "opportunity_sketch": "A confidential safeguarding Q&A assistant for staff that retrieves relevant policy sections and statutory guidance, then synthesises a clear answer with source references — accessible 24/7 without requiring a manager's sign-off before raising a concern.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A multi-turn conversational agent can walk a staff member through a structured safeguarding decision tree — asking clarifying questions about what was observed, who was involved, and contextual factors — before arriving at a threshold determination and recommended next step. This mirrors the guided professional judgment a trained DSL would provide, without requiring immediate human availability.",
+      "opportunity_sketch": "A confidential 'Reporting Advisor' chatbot embedded in the school's intranet that guides staff through an evidence-based decision process, concludes with a threshold recommendation, and optionally submits an anonymised concern record — reducing both under-reporting due to uncertainty and over-reporting due to anxiety.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

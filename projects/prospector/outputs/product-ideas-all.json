@@ -1,0 +1,1620 @@
+{
+  "generated": "2026-03-11T12:06:49.250Z",
+  "total_ideas": 81,
+  "cells_processed": 20,
+  "tier_breakdown": {
+    "standalone": 5,
+    "module": 33,
+    "feature": 43
+  },
+  "confidence_breakdown": {
+    "high": 45,
+    "medium": 36,
+    "low": 0
+  },
+  "ideas": [
+    {
+      "name": "Teacher Appraisal Digest",
+      "one_liner": "AI-summarized teaching performance reviews with curriculum-aligned teaching standards mapping for principals across multi-site networks.",
+      "problem": "Principals and HR teams at CSPD and PHINMA managing hundreds of educators spend 40+ hours per cycle reading and synthesizing performance reviews, 360-degree feedback, and observation notes spread across email, Google Docs, and fragmented HRIS systems. They lack tools that understand NSW NESA teaching standards or CHED faculty competencies required for annual appraisal cycles.",
+      "ai_technique": "Summarization & Condensation with domain-specific prompt engineering",
+      "how_it_works": "Connects to TechOne HRIS, Outlook email, and Google Drive. Extracts review documents, student/peer feedback, and observation notes. Generates 2-page summaries keyed to NESA Professional Teaching Standards (NSW context) or CHED faculty competency framework (HE context), highlighting performance gaps, development needs, and promotion readiness signals.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Principal or Head of HR managing 50-500 educators across distributed campuses",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-01",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Skills & Development",
+      "_cellHeat": 57,
+      "_cellOppScore": 45
+    },
+    {
+      "name": "Staff Data Integration Hub",
+      "one_liner": "Unified staff records reconciling payroll, teaching registration, appraisal tracking, and professional development history across fragmented systems.",
+      "problem": "Education organisations run 4-5 disconnected systems: national payroll (ATO integration), HRIS, state teaching registration databases (NESA, QTSB), appraisal spreadsheets, and PD tracking. HR teams manually cross-reference records to answer basic questions like 'which teachers need PD renewal' or 'who is eligible for promotion.' Data silos make workforce analytics impossible at CSPD and PHINMA.",
+      "ai_technique": "Data Transformation & Structuring with education schema normalization",
+      "how_it_works": "Ingests exports from TechOne (payroll/HRIS), state teaching registration APIs (NESA/QTSB), and local tracking sheets. Normalizes employment type (permanent/contract/relief), teaching area, registration status, PD hours completed, and contract end dates into a single schema. Flags mismatches (e.g., expired registration) and surfaces actionable insights via API for downstream HR tools.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "ipeople"
+      ],
+      "buyer_persona": "Chief People Officer or IT Manager responsible for HR data integrity",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-01",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Skills & Development",
+      "_cellHeat": 57,
+      "_cellOppScore": 45
+    },
+    {
+      "name": "Teacher Attrition Risk Forecast",
+      "one_liner": "Predicts teacher resignation risk 6-12 months ahead using enrollment, salary, location, and performance signals to enable proactive retention.",
+      "problem": "Rising Academies and PHINMA face unpredictable teacher churn driven by salary, remote postings, family circumstances, and subject scarcity. They cannot forecast hiring needs or plan relief-staff pools. Attrition costs 6-12 months of recruitment and onboarding per educator, compounded across multi-site networks.",
+      "ai_technique": "Time Series Forecasting with education-specific feature engineering",
+      "how_it_works": "Trains on historical attrition data from TechOne/HRIS, incorporating features: salary relative to market, contract length, days-to-certification-expiry, enrollment volatility at assigned school, tenure, remote posting hardship flag, subject scarcity (e.g., STEM premium). Outputs risk scores (low/medium/high) for each educator 6-12 months forward, enabling HR to trigger stay interviews or counter-offers.",
+      "target_companies": [
+        "rising",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Head of HR or Talent Operations managing hiring pipelines for 200+ educators",
+      "tier": "standalone",
+      "confidence": "high",
+      "_cell": "cell-01",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Skills & Development",
+      "_cellHeat": 57,
+      "_cellOppScore": 45
+    },
+    {
+      "name": "Professional Development Scheduler",
+      "one_liner": "AI-optimized PD scheduling across distributed school networks respecting teacher availability, certification requirements, and award conditions.",
+      "problem": "Rising Academies and School for Life operate 80+ campuses with 500+ educators needing compliance PD (child safety, curriculum updates, mandatory training). Manual scheduling creates conflicts, leaves compliance gaps, and requires administrators to work around award conditions (e.g., PD cannot exceed 20 days/year in NSW Catholic schools).",
+      "ai_technique": "Resource Allocation & Scheduling with constraint satisfaction",
+      "how_it_works": "Ingests educator availability, required certifications (CHED accreditation renewals, NESA PD points), award contract constraints (day limits, release-time entitlements), and campus-level delivery calendar. Generates optimal PD schedules minimizing disruption, ensuring all staff complete mandatory training, and respecting work-life balance. Integrates with calendar systems (Outlook, Google Calendar) for automated notifications.",
+      "target_companies": [
+        "rising",
+        "school-for-life",
+        "cspd"
+      ],
+      "buyer_persona": "Professional Development Coordinator or HR Manager at multi-site operator",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-01",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Skills & Development",
+      "_cellHeat": 57,
+      "_cellOppScore": 45
+    },
+    {
+      "name": "Enrollment Intent Classifier",
+      "one_liner": "Real-time classification of student/parent inquiry intent and dropout risk from SMS, WhatsApp, email, and web forms to optimize outreach.",
+      "problem": "Rising Academies and iPeople operate in price-sensitive African and Southeast Asian markets where inquiry-to-enrollment conversion rates are 5-15% and student dropout is 20-30% in year 1. They manually triage hundreds of inbound inquiries via SMS, WhatsApp, and email to gauge intent, but lack signals for immediate outreach (e.g., 'parent cost-sensitive, likely to drop', 'high intent but needs scholarship clarification').",
+      "ai_technique": "Text Classification with education-specific intent taxonomy",
+      "how_it_works": "Ingests SMS/WhatsApp messages, emails, and web form submissions. Classifies intent: program-inquiry, scholarship-question, fee-payment, enrollment-confirmation, dropout-risk. For dropout-risk flags, extracts signals (e.g., 'cannot afford fees', 'family relocation', 'poor grades'). Triggers automated outreach workflows: scholarship counters for cost-sensitive, support calls for dropout-risk, program recommendations for low-intent leads.",
+      "target_companies": [
+        "rising",
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Enrollment Manager or Student Success Officer at multi-campus or international institution",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-02",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Revenue & Funding Diversification",
+      "_cellHeat": 57,
+      "_cellOppScore": 41
+    },
+    {
+      "name": "Cohort Retention Predictor",
+      "one_liner": "Forecasts multi-year enrollment cohort retention (completion rates) to predict revenue sustainability and intervention opportunities.",
+      "problem": "PHINMA (affordable HE) and iPeople (STEM HE) struggle to forecast completion rates across 4-year degree programs, making revenue forecasting opaque. Student dropout occurs after semester 2-3 when financial/academic hardship emerges. They need 6-month ahead visibility into cohort risk to allocate tutoring, mentoring, or scholarship interventions.",
+      "ai_technique": "Time Series Forecasting with academic progression patterns",
+      "how_it_works": "Trains on cohort enrollment history, academic performance (GPA per semester), financial status (fee payment timeliness), and demographic profile (first-gen status, family income proxy). Forecasts semester-by-semester retention probability to program completion. Flags at-risk students by semester 1, enabling academic support interventions (tutoring, mentoring) before dropout decision.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "acasus"
+      ],
+      "buyer_persona": "Registrar or Student Success Officer in multi-year degree programs",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-02",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Revenue & Funding Diversification",
+      "_cellHeat": 57,
+      "_cellOppScore": 41
+    },
+    {
+      "name": "Student Enrollment Propensity Scorer",
+      "one_liner": "Scores application propensity using academic record, demographics, and family income proxies to optimize recruitment spend and targeted outreach.",
+      "problem": "PHINMA (affordable HE) receives 20,000+ annual applications and has low marketing ROI because they cannot distinguish high-propensity applicants (likely to enroll, likely to afford tuition) from low-propensity (price-shopping, insufficient qualification). Rising Academies faces similar challenges in West Africa where household income proxies are hard to validate. Manual review consumes HR time without predictive accuracy.",
+      "ai_technique": "Structured Data Classification with enrollment decision modeling",
+      "how_it_works": "Ingests application data: academic qualifications, prior schooling, family background (parent education, occupation proxies), geographic location (urban/rural, distance-to-campus), and inquiry source. Trains on historical enrollment outcomes (enrolled vs. not, stayed through semester 2+). Scores new applicants 0-100 for 'likely to enroll and afford'. Enables targeted marketing (high-propensity: heavy outreach; medium: scholarship focus; low: auto-reply).",
+      "target_companies": [
+        "phinma",
+        "rising",
+        "ipeople"
+      ],
+      "buyer_persona": "Director of Admissions or Marketing Manager at HE institution",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-02",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Revenue & Funding Diversification",
+      "_cellHeat": 57,
+      "_cellOppScore": 41
+    },
+    {
+      "name": "Tuition Price Elasticity Model",
+      "one_liner": "Quantifies demand sensitivity to tuition fees and scholarship offers, optimizing program pricing and scholarship allocation for revenue growth.",
+      "problem": "PHINMA and iPeople introduce new affordable HE programs but lack data-driven pricing strategy. They guess at tuition and scholarship levels, leading to either revenue loss (too-low pricing) or enrollment loss (too-high). They cannot measure impact of scholarship offers on propensity, making scholarship budgets non-strategic.",
+      "ai_technique": "Regression & Quantitative Estimation with pricing elasticity modeling",
+      "how_it_works": "Analyzes historical enrollment data: tuition levels, scholarship offer types (partial waiver, payment plan, merit scholarship), and enrollment outcomes by cohort and program. Fits regression model estimating demand elasticity: 'a 5% increase in tuition leads to X% enrollment drop.' Also models scholarship impact: 'scholarship offer increases enrollment propensity by Y%'. Outputs pricing recommendations: optimal tuition and scholarship mix for target enrollment/revenue.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "acasus"
+      ],
+      "buyer_persona": "Chief Financial Officer or VP of Strategic Planning in HE institution",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-02",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Revenue & Funding Diversification",
+      "_cellHeat": 57,
+      "_cellOppScore": 41
+    },
+    {
+      "name": "Cross-Campus Variance Scanner",
+      "one_liner": "Identifies organizational inconsistencies across distributed school networks (teaching standards, classroom management, curriculum fidelity) to drive cultural alignment.",
+      "problem": "CSPD manages 80+ Catholic schools with varying teaching quality, pastoral approaches, and curriculum adherence. Principals operate as fiefdoms with limited oversight from the network office. Without visibility into cross-site variance, network leaders cannot enforce quality standards or share best practices. Annual inspections are expensive and episodic; they need continuous measurement.",
+      "ai_technique": "Summarization & Condensation with structured comparison analysis",
+      "how_it_works": "Ingests classroom observation reports (NESA-aligned teaching standard assessments), student feedback surveys, and curriculum fidelity audits from TechOne. Summarizes findings per school and compares across network: 'School A: 78% NESA standard 1 compliance vs network avg 82%', 'School C principals report weak pastoral care implementation.' Flags outliers (positive and negative) and surfaces peer-learning opportunities (e.g., 'School X excels in Indigenous curriculum integration').",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Network Director or Chief Academic Officer overseeing 40+ school sites",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-03",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Culture & Organization",
+      "_cellHeat": 50,
+      "_cellOppScore": 39
+    },
+    {
+      "name": "Teacher Development Portfolio Engine",
+      "one_liner": "Transforms scattered PD records, observation notes, and feedback into structured learning portfolios aligned to career progression pathways.",
+      "problem": "ipeople, CSPD, and PHINMA lack integrated systems to track teacher development over time. A teacher's PD (courses, hours, certifications), observation scores (NESA standards progress), and peer feedback exist in spreadsheets and email. When a principal evaluates promotion eligibility, they manually reconstruct a narrative. Teachers have no visibility into 'what am I missing to advance to senior teacher or master teacher?'",
+      "ai_technique": "Data Transformation & Structuring with career-progression schema",
+      "how_it_works": "Ingests PD transcripts (Moodle, Coursera, in-house), observation reports, and 360 feedback from disparate systems. Normalizes into structured portfolio: PD hours per domain (pedagogy, subject knowledge, ICT), NESA standard mastery level, peer feedback themes, and classroom impact metrics (student outcomes, parent satisfaction). Maps against senior teacher and master teacher advancement criteria (CHED, NESA). Generates personalized development plans: 'complete 20 ICT hours and 1 peer-mentoring role to become senior teacher.'",
+      "target_companies": [
+        "cspd",
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Head of Teacher Development or Professional Learning Communities Manager",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-03",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Culture & Organization",
+      "_cellHeat": 50,
+      "_cellOppScore": 39
+    },
+    {
+      "name": "Organizational Health Monitor",
+      "one_liner": "Aggregates staff engagement, turnover, and capability signals into quarterly health scorecards for network leadership.",
+      "problem": "Network leaders (Kinetic, CSPD, PHINMA) lack real-time visibility into organizational health across 40+ distributed teams. They know about crises after the fact (e.g., principal resignation, recruitment failure). They cannot measure culture change or identify early signs of disengagement. Quarterly surveys are slow and unreliable.",
+      "ai_technique": "Summarization & Condensation with health metric aggregation",
+      "how_it_works": "Consolidates data from HRIS (turnover, tenure), engagement surveys (pulse surveys via email/Slack), performance reviews, and exit interview notes. Generates quarterly health scorecard per campus: engagement score (0-100), estimated attrition risk (%), capability maturity (are teachers meeting standards?), and culture themes (e.g., 'high morale but concerns about workload'). Flags red zones (e.g., 'HR manager turnover at 3 campuses suggests systemic issue'). Enables network leaders to intervene before problems cascade.",
+      "target_companies": [
+        "kinetic",
+        "cspd",
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Chief People Officer or Network Director managing 40+ distributed campuses",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-03",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Culture & Organization",
+      "_cellHeat": 50,
+      "_cellOppScore": 39
+    },
+    {
+      "name": "Regulatory Compliance Status Tracker",
+      "one_liner": "Aggregates teaching registration status, child safety clearances, and mandatory training completion to flag compliance risks proactively.",
+      "problem": "Education organisations face heavy regulatory burden: teachers must maintain current registration (NESA, QTSB, CHED), complete child safety training annually, and update certifications. Compliance failures create liability (unregistered teacher on payroll) and operational disruption (classes cancelled when teacher falls out of compliance). Manual tracking via spreadsheets creates gaps at scale.",
+      "ai_technique": "Data Transformation & Structuring with compliance schema and alert logic",
+      "how_it_works": "Ingests HRIS records and integrates with state teaching registration APIs (NESA, QTSB, CHED) to verify current status. Tracks mandatory training completion (child safety, CPR, curriculum updates) from Learning Management System (TechOne compliance module, Coursera). Generates compliance dashboards: '95 of 100 teachers current; 3 expiring in 30 days; 2 non-compliant (action required).' Triggers automated alerts and remediation workflows (e.g., 'enroll in child safety refresher course by June 1').",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Compliance Officer or Head of HR responsible for regulatory adherence",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-03",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Culture & Organization",
+      "_cellHeat": 50,
+      "_cellOppScore": 39
+    },
+    {
+      "name": "Teacher Resume Parser & Matcher",
+      "one_liner": "Extracts teaching qualifications, certification, and subject specialty from unstructured CVs to automatically match candidates against open roles and qualification requirements.",
+      "problem": "CSPD, PHINMA, and School for Life post 200+ educator positions across distributed campuses annually. Recruiting teams manually review CVs to extract qualification details (degree type, subject, certification status, teaching experience). They miss qualified candidates and waste time contacting unqualified applicants. Manual extraction creates compliance risk if teaching registration is not properly verified.",
+      "ai_technique": "Structured Data Classification with resume parsing",
+      "how_it_works": "Ingests CV uploads and email attachments. Extracts: degree type and major (B.Ed, B.Sc with teaching diploma), subject specialization (STEM, languages, humanities), teaching experience (years, grade levels), state registration status (NESA, QTSB, CHED), and certifications (International Baccalaureate, Cambridge, special education). Matches against open role specifications (e.g., 'need STEM teacher, NESA-registered, 3+ years experience'). Auto-flags candidates who meet criteria and routes to hiring manager; auto-rejects obvious mismatches.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Recruiting Manager or HR Specialist responsible for educator hiring",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-04",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Hiring & Recruitment",
+      "_cellHeat": 49,
+      "_cellOppScore": 38
+    },
+    {
+      "name": "Predictive Hiring Pipeline Forecast",
+      "one_liner": "Forecasts teacher hiring needs 6-12 months ahead based on enrollment trends, attrition risk, and budget cycles to optimize recruitment lead time.",
+      "problem": "Rising Academies and PHINMA face unpredictable hiring demand: enrollment spikes require rapid hiring (but teacher recruitment takes 4-6 months), attrition creates mid-cycle openings (but recruitment budgets are fixed annually), and geographic expansion opens new roles. They lack visibility into future staffing needs, leading to unfilled positions or rushed, suboptimal hires.",
+      "ai_technique": "Time Series Forecasting with education staffing model",
+      "how_it_works": "Trains on historical data: enrollment by program and campus, teacher-to-student ratios, attrition rates by role and location, and hiring pipeline duration. Forecasts staffing needs by role (primary, secondary, STEM, leadership) and campus 6-12 months forward. Factors in known events (campus expansion, program launch, known retirements). Outputs hiring plan: 'need 15 primary teachers by August, 5 STEM by October, 3 principals by next July.' Enables HR to source candidates in advance, negotiate recruitment timelines, and avoid crisis hiring.",
+      "target_companies": [
+        "rising",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Head of HR or Talent Planning Manager at multi-site education organization",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-04",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Hiring & Recruitment",
+      "_cellHeat": 49,
+      "_cellOppScore": 38
+    },
+    {
+      "name": "Teacher Interview Scoring Assistant",
+      "one_liner": "Summarizes candidate interview performance against teaching-specific competency rubrics (pedagogical approach, subject mastery, pastoral skill) to standardize hiring decisions.",
+      "problem": "Recruiting teams at CSPD and School for Life conduct 10-20 teacher interviews per open position but lack standardized evaluation rubrics. Interview notes are unstructured (email summaries, handwritten notes), making it hard to compare candidates objectively. Hiring committees debate candidate fit without structured evidence, and they sometimes hire suboptimal candidates or miss strong fits.",
+      "ai_technique": "Summarization & Condensation with competency rubric alignment",
+      "how_it_works": "Ingests unstructured interview notes (from email, recorded transcripts, or form submissions). Generates structured scoring summary against education competencies: 'Pedagogical Approach (4/5): candidate articulated inquiry-based learning philosophy, strong example given'; 'Subject Mastery (3/5): solid content knowledge but limited depth in modern curriculum context'; 'Pastoral/Classroom Management (4/5): calm under pressure, inclusive language noted'. Also flags red flags (e.g., 'showed limited awareness of NESA standards', 'poor cultural fit signals'). Enables hiring committee to compare candidates on common rubric.",
+      "target_companies": [
+        "cspd",
+        "school-for-life",
+        "phinma"
+      ],
+      "buyer_persona": "Recruiting Manager or Principal involved in teacher hiring panel",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-04",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Hiring & Recruitment",
+      "_cellHeat": 49,
+      "_cellOppScore": 38
+    },
+    {
+      "name": "Teacher Onboarding Curriculum Builder",
+      "one_liner": "Generates customized onboarding programs based on teacher experience level, subject area, and campus context (enrollment stage, accreditation status).",
+      "problem": "New teachers at multi-site networks (Rising Academies, PHINMA, School for Life) receive ad-hoc onboarding: IT setup, building tour, syllabus overview. But onboarding is inconsistent across campuses and does not account for teacher experience (experienced hire needs different support than graduate). This leads to higher early attrition and longer time-to-productivity.",
+      "ai_technique": "Data Transformation & Structuring with personalization logic",
+      "how_it_works": "Ingests new teacher profile (years of experience, subject, prior school context, role), campus context (school maturity, curriculum stage, accreditation status, enrollment trend), and onboarding template library. Generates personalized onboarding plan: experienced external hire gets 2-week program (systems, culture, curriculum); graduate teacher gets 8-week program (teaching philosophy, peer mentoring, professional development roadmap). Includes milestones (e.g., 'deliver first observed lesson by week 3', 'meet with curriculum lead by week 2'), resources (curriculum guides, NESA standard mapping, parent communication templates), and mentorship assignment. Tracks progress and flags at-risk new hires.",
+      "target_companies": [
+        "rising",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Onboarding Coordinator or Head of New Teacher Support",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-04",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Hiring & Recruitment",
+      "_cellHeat": 49,
+      "_cellOppScore": 38
+    },
+    {
+      "name": "Inquiry Intent Classifier",
+      "one_liner": "AI system that classifies prospective student and parent inquiries by enrollment intent and risk, automating lead prioritization for K-12 and HE operators.",
+      "problem": "Rising Academies and iPeople acquire students in price-sensitive African and Asian markets where thousands of inquiries arrive via SMS, WhatsApp, and email. Current admissions staff manually triage these, leading to slow response times and missed conversions. Student dropout-risk signals embedded in early inquiries go undetected.",
+      "ai_technique": "Text Classification (SMS/email/WhatsApp intent detection)",
+      "how_it_works": "Ingest incoming student and parent inquiries into a classifier trained on education-specific intent signals (scholarship enquiries, geographic constraints, cost concerns, prior qualifications). Flag high-intent prospects for immediate follow-up and retention-at-risk students for intervention. Output: automated lead scoring and routing to admissions staff.",
+      "target_companies": [
+        "rising",
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Director of Admissions or Enrollment Manager",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-05",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Market Expansion",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Enrollment Funnel Forecaster",
+      "one_liner": "Predicts cohort-level enrollment conversion from inquiry through application to matriculation, accounting for academic calendar seasonality and program-specific dropout patterns.",
+      "problem": "iPeople and PHINMA manage enrollment cycles where inquiry, application, and enrollment stages follow predictable but institution-specific patterns. Current forecasting relies on spreadsheets or basic CRM reports, missing education-sector nuances like exam result release dates, government scholarship allocation timelines, and program-specific completion rates.",
+      "ai_technique": "Time Series Forecasting (academic-cycle-aware)",
+      "how_it_works": "Ingest 2-3 years of enrollment history by program, academic term, and stage (inquiry→application→enrollment→retention). Apply seasonal decomposition and education-specific calendar events (exam dates, government funding announcements, school holidays). Output: enrollment forecast by cohort and program with confidence intervals, enabling enrollment managers to adjust recruitment spend and tuition planning.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Chief Enrollment Officer or Registrar",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-05",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Market Expansion",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Student Propensity Engine",
+      "one_liner": "Classifies applicant likelihood to enroll using structured admission data (test scores, family income proxy, prior school, program choice) to guide targeted recruitment.",
+      "problem": "PHINMA's affordable HE segment and iPeople's STEM recruitment process thousands of applications annually. Admissions staff lack systematic tools to predict who will actually enroll, leading to over-recruiting some programs and under-recruiting others. Rising Academies in West Africa need to identify enrollment-likely households from demographic data to optimize community outreach.",
+      "ai_technique": "Structured Data Classification + Propensity Scoring",
+      "how_it_works": "Build classifier on historical applicant features (GPA, family income, prior school type, distance to campus, program choice, test score) predictive of enrollment. Score new applicants and segment by enrollment propensity quintile. Enable admissions teams to customize outreach (intensive for low-propensity, retention-focused for high-propensity). For Rising Academies, apply to household demographic data to identify neighborhood enrollment potential.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "rising"
+      ],
+      "buyer_persona": "Admissions Manager or Enrollment Strategy Lead",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-05",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Market Expansion",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Recruitment ROI Analyzer",
+      "one_liner": "Estimates the causal impact of recruitment channels (ad spend, scholarship tier, school partnerships) on enrollment yield and tuition elasticity.",
+      "problem": "iPeople and PHINMA allocate recruitment budgets across channels (online ads, school partnerships, government scholarship programs) without clear ROI visibility. Marketing spend decisions are reactive rather than optimized. Tuition pricing for new programs lacks data-driven guidance on price elasticity in target markets.",
+      "ai_technique": "Regression & Quantitative Estimation (causal inference on channel contribution)",
+      "how_it_works": "Analyze enrollment data by cohort, recruitment channel, scholarship offer level, and tuition price. Apply causal inference (e.g., difference-in-differences or propensity score matching) to isolate each channel's incremental impact on conversion. Estimate price elasticity curves for different program tiers. Output: recruitment budget recommendation by channel, scenario analysis for new program pricing, and ROI per rupee/peso spent.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "kinetic"
+      ],
+      "buyer_persona": "Chief Marketing Officer or CFO",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-05",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Market Expansion",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Appraisal Digest Engine",
+      "one_liner": "Automatically condenses teacher performance reviews, 360-degree feedback, and professional development portfolios into executive appraisal summaries for principals and HR teams.",
+      "problem": "CSPD and PHINMA manage hundreds of educators across multiple campuses. Annual appraisal cycles involve consolidating narrative reviews from line managers, peer feedback, and self-assessments into appraisal documents. Principals spend days manually summarizing these; education-specific context like teaching standards alignment and pastoral observation is lost in generic HRIS summaries.",
+      "ai_technique": "Summarization & Condensation (education-context-aware)",
+      "how_it_works": "Ingest teacher appraisal documents (manager review, 360 feedback, PD portfolio, certification status) and automatically generate 1-2 page executive summary. Use education-specific ontology (NESA teaching standards, pastoral care metrics, curriculum alignment) to retain domain context. Output: standardized appraisal digest ready for principal sign-off, reducing appraisal processing time from days to hours per teacher.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "acasus"
+      ],
+      "buyer_persona": "Principal or Head of HR",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-06",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Retention & Engagement",
+      "_cellHeat": 48,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Workforce Data Unifier",
+      "one_liner": "Integrates fragmented education HR systems (payroll, HRIS, teaching registration, appraisal tracking) into a normalized unified schema for workforce analytics.",
+      "problem": "CSPD, PHINMA, and other multi-site operators run payroll on one system, HRIS on another, national teacher registration in a third, and appraisal tracking in spreadsheets. No system knows the complete picture of a teacher's registration status, teaching area, professional learning hours, or compensation. Standard HR integration platforms ignore education-specific schemas.",
+      "ai_technique": "Data Transformation & Structuring (education HR schema mapping)",
+      "how_it_works": "Map source systems (payroll, national registration databases, HRIS) to a canonical education HR schema capturing registration status, teaching subject/area, contract type, PD hours, and compensation. Build ETL pipelines with education-specific transformations (recognition of vocational vs. academic subjects, handling of multi-site contract splits). Output: unified staff database enabling cross-system workforce analytics without point-to-point integrations.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "ipeople"
+      ],
+      "buyer_persona": "Director of IT or Head of HR",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-06",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Retention & Engagement",
+      "_cellHeat": 48,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Teacher Attrition Forecaster",
+      "one_liner": "Predicts individual and cohort-level teacher attrition and hiring pipeline needs based on seasonal patterns, contract milestones, and certification renewal cycles.",
+      "problem": "Rising Academies and PHINMA face severe teacher retention pressure (52 heat in Talent domain). Seasonal enrollment cycles drive staffing needs that vary by school and grade level. Certification renewal dates and contract milestones are scattered across systems. Legacy HRIS cannot forecast hiring pipeline needs or anticipate attrition surges before they impact classes.",
+      "ai_technique": "Time Series Forecasting (school-calendar-aware, contract-aware)",
+      "how_it_works": "Ingest teacher roster data by contract type, subject area, tenure, and certification expiry. Model attrition as seasonal (e.g., end-of-year departures) and event-driven (contract renewals, certification lapses). Forecast hiring need for next 2-3 academic terms by grade and subject. Output: monthly hiring plan, attrition risk alerts by individual teacher (contract expiry, certification lapse), and recruitment lead-time recommendations.",
+      "target_companies": [
+        "rising",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Chief People Officer or Talent Manager",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-06",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Retention & Engagement",
+      "_cellHeat": 48,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Professional Development Scheduler",
+      "one_liner": "Optimizes PD budget allocation and training schedule across distributed school networks, respecting award conditions and certification requirements.",
+      "problem": "Rising Academies and School for Life operate 50+ distributed campuses where coordinating professional development is manual and error-prone. Teachers have mandatory PD hours, accreditation programs have staff certification requirements, and relief teacher pools must cover classes during training. Current spreadsheet-based scheduling creates conflicts and misses cost-saving consolidation opportunities.",
+      "ai_technique": "Resource Allocation & Scheduling (constraint-aware)",
+      "how_it_works": "Model PD budget, teacher availability by site, award compliance rules (e.g., minimum PD days per year), and program certification requirements. Solve constraint satisfaction problem: allocate courses to dates/sites to maximize attendance, minimize relief cover costs, and ensure certification compliance. Output: annual PD schedule by campus, budget allocation recommendation, and substitution plan for school coverage.",
+      "target_companies": [
+        "rising",
+        "school-for-life",
+        "cspd"
+      ],
+      "buyer_persona": "Director of Professional Learning or Operations Manager",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-06",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Retention & Engagement",
+      "_cellHeat": 48,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Teacher Risk Intervention Queue",
+      "one_liner": "Scores individual teachers on flight risk, performance risk, and certification lapse risk to prioritize HR intervention.",
+      "problem": "PHINMA's distributed workforce (1000+ teachers) faces high attrition. HR teams lack systematic tools to identify at-risk teachers before they resign. High performers in remote postings, teachers whose certifications are about to lapse, and those in roles with high subject-scarcity premium are all critical to retain but are identified only reactively.",
+      "ai_technique": "Risk Scoring & Assessment (education-specific factors)",
+      "how_it_works": "Build risk model combining: (a) flight risk factors (tenure, age, remote posting, prior attrition cohort); (b) performance risk (appraisal scores, student feedback, absence patterns); (c) compliance risk (certification expiry, registration renewal). Score each teacher monthly and flag top-risk cohorts for intervention (1-on-1 discussion, role adjustment, professional development). Output: ranked intervention queue for HR, cohort-level retention insights.",
+      "target_companies": [
+        "phinma",
+        "rising",
+        "cspd"
+      ],
+      "buyer_persona": "Head of HR or Talent Development Manager",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-06",
+      "_cellDomain": "Talent & People",
+      "_cellSubCategory": "Retention & Engagement",
+      "_cellHeat": 48,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Grant Compliance Assistant",
+      "one_liner": "AI-powered Q&A over voluminous grant agreements, donor policies, and audit reports to instantly answer compliance and reporting questions.",
+      "problem": "PHINMA (government-linked affordable HE), Acasus (development consulting), and Rising Academies manage complex funding streams with conflicting grant conditions, donor reporting requirements, and government funding rules. Finance teams spend hours searching through fragmented policy documents (funding agreements, budget circulars, audit requirements) to answer compliance questions. Knowledge of grant conditions is concentrated in few staff.",
+      "ai_technique": "Retrieval-Augmented Generation (grant-document-aware)",
+      "how_it_works": "Upload all institutional funding documents (grant agreements, donor policies, government funding circulars, audit reports, budget policies) to a searchable knowledge base. Use RAG to answer CFO and finance team queries: 'Can we use this government grant for staff training?' 'What are the reporting deadlines for the World Bank loan?' 'Are there restrictions on campus capex for this donor?' Output: cited answers to grant questions with document references, reducing manual policy research.",
+      "target_companies": [
+        "phinma",
+        "acasus",
+        "rising"
+      ],
+      "buyer_persona": "CFO or Grants Manager",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-07",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Visibility & Planning",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Budget Variance Synthesizer",
+      "one_liner": "Automatically summarizes monthly budget variance reports and funder acquittals, highlighting variances by program and cost center for executive review.",
+      "problem": "PHINMA, Acasus, and Rising Academies produce detailed monthly variance reports (actuals vs. budget) across multiple cost centers and funding sources. Finance managers manually synthesize these into executive summaries for CFO and board review. With multi-campus operations and complex cost allocations, synthesis is time-consuming and inconsistent.",
+      "ai_technique": "Summarization & Condensation (variance-specific)",
+      "how_it_works": "Ingest monthly variance reports (budget vs. actual by program, department, funding source). Automatically identify material variances (>10% or >threshold amount) and summarize reasons. Generate 1-page executive summary for CFO highlighting top variances by program and cost center, with explanation. Output: variance digest in standardized format, searchable by program or funder.",
+      "target_companies": [
+        "phinma",
+        "acasus",
+        "ipeople"
+      ],
+      "buyer_persona": "CFO or Finance Director",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-07",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Visibility & Planning",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Fee Default Risk Predictor",
+      "one_liner": "Identifies students at risk of fee default before dropout, enabling targeted financial aid intervention.",
+      "problem": "PHINMA (affordable HE) and iPeople serve lower-income first-generation students. Fee default is a leading indicator of dropout risk. Currently, institutions discover default only when students stop attending. Early intervention (scholarship adjustment, payment plan, emergency aid) could prevent dropout but requires early warning.",
+      "ai_technique": "Propensity & Behavioral Modeling (education-constrained)",
+      "how_it_works": "Build model on historical student data: enrollment, course performance, prior financial aid history, fee payment patterns, family income proxy. Score students monthly for default risk and segment for intervention. Unlike credit risk scoring, education context requires constraints: cannot cut off service even for high risk; must balance access mission with financial sustainability. Output: default-risk cohort for proactive contact, intervention recommendation (payment plan vs. aid increase).",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "rising"
+      ],
+      "buyer_persona": "Chief Student Services Officer or Registrar",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-07",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Visibility & Planning",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Campus Capital Planner",
+      "one_liner": "Optimizes capital expenditure allocation across campuses under government funding constraints and facility utilization targets.",
+      "problem": "PHINMA, iPeople, and CSPD operate multi-campus networks where government funding rules restrict capex use (e.g., only approved categories eligible), enrollment varies by campus, and facility utilization drives funding justification. Finance teams manually allocate budgets across campuses without systematic optimization for utilization or funding rule compliance.",
+      "ai_technique": "Resource Allocation & Scheduling (constraint-aware capex optimization)",
+      "how_it_works": "Model capex budget by funding source, government funding rules (restricted vs. unrestricted categories), campus enrollment and utilization targets, and maintenance backlogs. Optimize allocation to maximize facility utilization (to justify funding), comply with government rules, and address maintenance priorities. Output: recommended capex allocation by campus and category, utilization forecast post-investment, budget variance risk.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "cspd"
+      ],
+      "buyer_persona": "CFO or Director of Facilities",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-07",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Visibility & Planning",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Multi-Source Budget Configuration Engine",
+      "one_liner": "Solves budget allocation under conflicting constraints (government rules, donor conditions, cross-subsidy targets, program viability thresholds).",
+      "problem": "PHINMA and Acasus-supported institutions operate under multiple simultaneous funding constraints: government grants with restricted/unrestricted categories, donor conditions with earmarking, internal cross-subsidy targets (e.g., affordable programs subsidized by premium ones), and program minimum viability thresholds. Manual budget configuration leads to errors and missed opportunities.",
+      "ai_technique": "Constraint Satisfaction & Configuration (multi-objective optimization)",
+      "how_it_works": "Model all funding constraints (government rules, donor conditions, cross-subsidy targets, program viability). Use constraint solver to find feasible budget allocations. Provide scenario analysis: 'What if we reduce capex budget by 10%?' 'Can we maintain affordable program subsidy and still hit contingency reserve target?' Output: recommended budget allocation by program and cost center, feasibility summary, constraint trade-off analysis.",
+      "target_companies": [
+        "phinma",
+        "acasus",
+        "school-for-life"
+      ],
+      "buyer_persona": "CFO or Board Finance Committee Chair",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-07",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Visibility & Planning",
+      "_cellHeat": 51,
+      "_cellOppScore": 37
+    },
+    {
+      "name": "Funder Requirement Navigator",
+      "one_liner": "Interactive Q&A assistant over funding agreements and donor policy documents to guide capital project planning and compliance.",
+      "problem": "Acasus, Rising Academies, and School for Life pursue capital projects (building expansion, equipment purchase) funded by multilateral donors or government grants. Each funder has unique eligibility rules, procurement requirements, and reporting timelines scattered across lengthy agreements. Project teams waste time searching documents to determine if a project is eligible or compliant.",
+      "ai_technique": "Retrieval-Augmented Generation (funder-requirement-specific)",
+      "how_it_works": "Ingest funder agreements (World Bank, African Development Bank, government grants) with eligibility criteria, procurement rules, approval timelines, and reporting requirements. Enable project managers to query: 'Is solar panel installation eligible under this grant?' 'What is the procurement timeline for equipment >$50k?' Use RAG to return cited answers from funder documents. Output: funder requirement checklist for project planning, approval timeline roadmap.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Project Manager or Director of Planning",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-08",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Capital & Funding",
+      "_cellHeat": 49,
+      "_cellOppScore": 35
+    },
+    {
+      "name": "Funder Acquittal Synthesizer",
+      "one_liner": "Summarizes funder acquittal reports and audit findings into executive briefs highlighting compliance gaps and remediation needs.",
+      "problem": "Acasus (development consulting), Rising Academies, and School for Life submit financial and technical reports to funders and undergo regular audits. Audit reports identify compliance findings and remediation actions scattered across lengthy documents. Leadership struggles to understand audit impact and required follow-up without reading full reports.",
+      "ai_technique": "Summarization & Condensation (audit-compliance-focused)",
+      "how_it_works": "Ingest funder acquittal reports, audit findings, and management responses. Automatically extract compliance findings, risk ratings (critical, major, minor), and required remediation actions. Generate 2-page executive brief for CFO and Board highlighting top findings, remediation timeline, and resource implications. Output: audit issue tracker with due dates and responsible parties.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "CFO or Audit Committee Chair",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-08",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Capital & Funding",
+      "_cellHeat": 49,
+      "_cellOppScore": 35
+    },
+    {
+      "name": "Capital Fundraising Pipeline",
+      "one_liner": "Tracks fundraising progress by initiative, maps funding gaps to funder eligibility, and recommends next-best funder prospects.",
+      "problem": "Rising Academies and School for Life pursue expansion capital through diverse funder relationships (government grants, multilateral development banks, philanthropic trusts). Without systematic tracking, funding gap analysis is ad-hoc. Team doesn't know whether a shortfall can be filled by an existing funder relationship or requires new prospect development.",
+      "ai_technique": "Structured Data Classification + Recommendation Systems",
+      "how_it_works": "Model capital projects (expansion, equipment, infrastructure) with funding requirements and progress. Track funder eligibility by project type and geography. As funding gaps emerge, recommend best-fit funders based on: (a) prior relationship strength; (b) funder's strategic fit (focus country, sector, instrument); (c) project eligibility. Output: funding roadmap by project, funder engagement priorities, gap-filling recommendation.",
+      "target_companies": [
+        "rising",
+        "school-for-life",
+        "acasus"
+      ],
+      "buyer_persona": "Chief Development Officer or Fundraising Manager",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-08",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Capital & Funding",
+      "_cellHeat": 49,
+      "_cellOppScore": 35
+    },
+    {
+      "name": "Capital Project Risk Monitor",
+      "one_liner": "Flags risks (cost overruns, timeline slippage, funder compliance violations) in active capital projects before they escalate.",
+      "problem": "Acasus-supported institutions and Rising Academies run concurrent capital projects with tight funder timelines and budgets. Cost and schedule overruns are common but discovered too late for remediation. Compliance violations (e.g., procurement rule breach) can trigger funder sanctions or fund claw-back.",
+      "ai_technique": "Time Series Forecasting + Risk Scoring (project-specific)",
+      "how_it_works": "Ingest capital project data: budget, schedule, spend-to-date, procurement status, funder milestone dates. Track cost burn rate and schedule progress against baseline. Flag early warning indicators: (a) spend trajectory exceeding 110% of budgeted pace; (b) schedule slip >4 weeks; (c) procurement delays >2 months. Score compliance risk (funder requirements vs. actual practice). Output: project health dashboard with risk alerts, remediation recommendation.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Chief Operations Officer or Project Director",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-08",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Capital & Funding",
+      "_cellHeat": 49,
+      "_cellOppScore": 35
+    },
+    {
+      "name": "Audit Trail Anomaly Detector",
+      "one_liner": "Flags unusual financial transactions and control exceptions in TechOne/NESA ledgers before period-end close.",
+      "problem": "Finance directors at PHINMA and Rising Academies manually review thousands of journal entries during quarterly closes to spot unauthorized transfers, misclassified grant spend, or fee-waiver anomalies across campuses. Education orgs cannot simply auto-reject transactions like retail banks — they must preserve audit trails and balance mission-driven discretion (scholarship approvals, donor restrictions). Current ERP controls are rigid and generate false positives.",
+      "ai_technique": "Anomaly detection (unsupervised learning on historical transaction patterns)",
+      "how_it_works": "Model learns normal transaction patterns per campus/cost-center (e.g., typical faculty salary ranges, grant draw-down rhythms, utility spend seasonality). Flags outliers with explainability: 'This transfer exceeds historical peer average by 3 standard deviations' or 'Grant spend rate 20% ahead of drawdown schedule.' User approves/rejects with single click, feeding back into model.",
+      "target_companies": [
+        "phinma",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Finance Controller / CFO",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-09",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Risk & Controls",
+      "_cellHeat": 47,
+      "_cellOppScore": 34
+    },
+    {
+      "name": "Compliance Document Classifier",
+      "one_liner": "Auto-routes financial documents (invoices, grant reports, payroll records) to correct compliance bucket (restricted spend, audit-ready, archivable).",
+      "problem": "Education organizations managing government grants, donor funds, and restricted endowments face overlapping compliance rules. A single invoice may be audit-relevant under government funding rules, donor restrictions, and institutional policies. Staff manually tag documents, leading to misclassification and compliance risk. PHINMA's multi-campus structure and Rising's government funding add complexity.",
+      "ai_technique": "Multi-label text classification on policy-document pairs",
+      "how_it_works": "Train classifier on samples of correctly classified documents tagged with compliance categories (e.g., 'government-auditable', 'restricted-donor-spend', 'salary-freeze-exempt'). Model learns patterns in invoice text, cost-center, requestor role, fund source. Routes new documents with confidence scores. Finance team reviews low-confidence buckets; high-confidence route automatically.",
+      "target_companies": [
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Compliance Officer / Internal Audit Manager",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-09",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Risk & Controls",
+      "_cellHeat": 47,
+      "_cellOppScore": 34
+    },
+    {
+      "name": "Budget Variance Explainer",
+      "one_liner": "Summarizes variance explanations from department heads into cohesive finance board narratives.",
+      "problem": "Each school or department fills out budget variance forms ('Why did utility spend spike 15%? Why is recruitment behind?'). Finance rolls these up into board packs, but summaries are repetitive, verbose, or contradictory. Controllers spend hours rewriting narratives. Risk of inconsistent messaging to boards and funders.",
+      "ai_technique": "Abstractive summarization with entity preservation",
+      "how_it_works": "Aggregate variance explanations by category (utilities, payroll, program spend, etc.). Identify common themes and outliers. Generate concise summary preserving key variance drivers, quantified impacts, and remediation plans. Highlight consensus vs. conflicting explanations across campuses. Finance team edits output before board submission.",
+      "target_companies": [
+        "phinma",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Finance Director / Chief Accountant",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-09",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Risk & Controls",
+      "_cellHeat": 47,
+      "_cellOppScore": 34
+    },
+    {
+      "name": "Control Efficacy Auditor",
+      "one_liner": "Tests whether designed financial controls (approval limits, segregation of duties) are actually working across distributed campuses.",
+      "problem": "Large education networks like PHINMA design control matrices (e.g., 'transfers >$10K require two signatories') but decentralized campuses run different systems and practices. Internal audit teams cannot scale manual testing. Growing compliance burden (government funding, accreditation) demands evidence that controls are not just documented but enforced.",
+      "ai_technique": "Rule-based logic + statistical testing on transaction logs",
+      "how_it_works": "Encode control rules into executable queries on TechOne/financial system logs. Auto-scan all transactions to detect violations (single signatory on >$10K transfers, same person approving and processing, etc.). Generate violations report with campus, transaction, user, and remediation. Finance runs quarterly to certify control environment.",
+      "target_companies": [
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Internal Audit Director",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-09",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Financial Risk & Controls",
+      "_cellHeat": 47,
+      "_cellOppScore": 34
+    },
+    {
+      "name": "Inquiry Intent Classifier",
+      "one_liner": "Classifies inbound SMS, WhatsApp, and email inquiries from prospective students into intent buckets (admission interest, fee query, accommodation need, complaint).",
+      "problem": "Rising Academies and iPeople manage thousands of inbound messages across channels in price-sensitive markets where rapid response drives conversion. Staff manually read messages to route to correct team (admissions, finance, housing, support). Slow triage means lost leads and poor student experience. Generic CRM tools don't understand education-specific intent signals (e.g., 'scholarship kya hai' = fee assistance inquiry).",
+      "ai_technique": "Text classification (intent detection) with multilingual support",
+      "how_it_works": "Train on samples of tagged messages in English, Tagalog, Swahili (language-dependent per geography). Classify into education-specific buckets: enrollment-process, fee-assistance, accommodation, program-mismatch, complaint, duplicate. Route auto-tagged high-confidence messages to correct queue; flag low-confidence for human review. Measure conversion uplift by intent class.",
+      "target_companies": [
+        "rising",
+        "ipeople"
+      ],
+      "buyer_persona": "Admissions Director / Student Services Manager",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-10",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Retention & Churn",
+      "_cellHeat": 39,
+      "_cellOppScore": 28
+    },
+    {
+      "name": "Dropout Risk Forecaster",
+      "one_liner": "Predicts student dropout risk at key lifecycle moments (post-admission, mid-semester, before renewal) and recommends intervention.",
+      "problem": "iPeople and Rising face high student churn in price-sensitive segments where family financial stress or program mismatch drive dropout. Identifying at-risk students early enough for intervention (fee relief, counseling, curriculum adjustment) is critical to retention and revenue. Manual flags based on single factors miss multi-factor risk patterns. Multi-year cohort tracking is tedious.",
+      "ai_technique": "Time-series classification (logistic regression + survival analysis)",
+      "how_it_works": "Feature engineering on student data: enrollment demographics, course performance, SMS engagement patterns, payment history (late payments, partial payments), inferred financial stress proxies. Train on historical cohorts with known dropout labels and timing. Score all enrolled students. Dashboard shows high-risk cohorts and timing windows (e.g., 'Finance students at risk of dropout 2 weeks post-payment deadline'). Suggest interventions per risk profile.",
+      "target_companies": [
+        "ipeople",
+        "rising"
+      ],
+      "buyer_persona": "Student Retention Manager / Academic Dean",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-10",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Retention & Churn",
+      "_cellHeat": 39,
+      "_cellOppScore": 28
+    },
+    {
+      "name": "Cohort Conversion Funnel Forecaster",
+      "one_liner": "Forecasts conversion through inquiry → application → enrollment stages for specific academic programs and cohorts.",
+      "problem": "PHINMA and iPeople plan hiring, curriculum capacity, and marketing spend based on enrollment forecasts, but funnel conversion rates vary by program, season, and geography. Enrollment managers rely on historical averages that miss year-on-year trend and leading-indicator signals (inquiry volume, application quality, competitor moves). Forecast misses lead to over-hiring or program under-utilization.",
+      "ai_technique": "Time-series forecasting (seasonal ARIMA + exogenous drivers)",
+      "how_it_works": "Model inquiry-to-application and application-to-enrollment conversion by program and time window, accounting for seasonality (intake cycles), day-of-week effects, and exogenous drivers (marketing spend, competitor tuition changes, inferred economic indicators). Forecast next quarter's expected enrollments with confidence intervals. Flag programs with declining conversion. Compare vs. capacity to flag over/under-hiring risk.",
+      "target_companies": [
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Enrollment Manager / VP of Admissions",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-10",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Retention & Churn",
+      "_cellHeat": 39,
+      "_cellOppScore": 28
+    },
+    {
+      "name": "Student Engagement Summarizer",
+      "one_liner": "Synthesizes multi-channel student engagement signals (portal login, LMS activity, SMS opens, event attendance) into simple risk flags.",
+      "problem": "Education organizations track student engagement across disconnected systems (LMS, mobile app, event ticketing, SMS), but lack unified view. Instructors and support staff manually piece together signals ('I haven't seen her log into LMS; does she attend events?'). Early warning of disengagement is available but scattered, leading to missed intervention timing.",
+      "ai_technique": "Data aggregation + rule-based risk scoring",
+      "how_it_works": "Pipe engagement signals from LMS, mobile app, email, SMS, and event system into unified student timeline. Define engagement profile for each program (e.g., 'STEM students should log in 3x/week, attend lab 1x/week'). Flag deviation from profile as 'warning' or 'critical.' Summarize flags in student card for advisor: 'Low LMS activity past 2 weeks but strong event attendance — may indicate content delivery issue.' Link to targeted support offerings.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Student Success Coach / Academic Advisor",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-10",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Retention & Churn",
+      "_cellHeat": 39,
+      "_cellOppScore": 28
+    },
+    {
+      "name": "Program Margin Optimizer",
+      "one_liner": "Identifies cost-reduction and revenue-per-student opportunities by program cohort and delivery modality.",
+      "problem": "Rising Academies faces margin pressure from donor dependency and must scale without proportional cost growth. Each program has different cost structure (blended learning cheaper per student than residential), enrollment risk, and revenue potential. Finance lacks visibility into program-level profitability and lever analysis. Decision-making defaults to across-the-board cuts, risking program quality and differentiation.",
+      "ai_technique": "Regression analysis (cost-driver decomposition) + sensitivity analysis",
+      "how_it_works": "Break down program costs into drivers: faculty salary, facilities (per seat), technology/platform, student support, overhead allocation. Regression across programs and cohorts to identify cost outliers ('Why is Kinshasa program 20% more expensive per student than Lagos?'). Predict margin impact of enrollment changes, fee adjustments, and delivery shifts (more blended, less residential). Generate 'cost lever' analysis: 'Moving 200 students to blended would improve margin by 12%.' Finance team uses for scenario planning.",
+      "target_companies": [
+        "rising"
+      ],
+      "buyer_persona": "CFO / Program Director",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-11",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Revenue & Margin Pressure",
+      "_cellHeat": 37,
+      "_cellOppScore": 27
+    },
+    {
+      "name": "Student Fee Default Predictor",
+      "one_liner": "Flags high-risk-of-default students before enrollment, enabling proactive financial aid and payment-plan negotiation.",
+      "problem": "Rising and affordable HE operators cannot enforce harsh collection practices (incompatible with access mission) but default rates erode margins. Identifying students likely to miss payments before enrollment allows targeted intervention: flexible payment plans, micro-scholarships, bridge programs. Current approaches rely on crude credit scoring or zip-code proxies; education context adds signals (first-gen status, employer stability, family business model).",
+      "ai_technique": "Propensity modeling (logistic regression + feature engineering)",
+      "how_it_works": "Feature engineering on applicant/student data: employment sector stability (informal vs. salaried), family size vs. household income proxy, past payment patterns, program choice (vocational vs. degree — different student profiles), cohort demographics (mature vs. direct-from-secondary). Train on historical cohorts with payment outcomes. Score applicants pre-enrollment. At-risk students offered payment plans, bridge funding, or support navigation to formal employment. Measure default rate lift.",
+      "target_companies": [
+        "rising"
+      ],
+      "buyer_persona": "Financial Aid Director / Chief Enrollment Officer",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-11",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Revenue & Margin Pressure",
+      "_cellHeat": 37,
+      "_cellOppScore": 27
+    },
+    {
+      "name": "Tuition Elasticity Analyzer",
+      "one_liner": "Quantifies demand elasticity by program and geography to optimize fee-setting under financial sustainability constraints.",
+      "problem": "Rising Academies and PHINMA operate in markets where tuition pricing affects access (core mission) and margin (survival). Fee increases drive enrollment loss; fee cuts increase enrollment but reduce per-student revenue. Organizations lack data-driven analysis of price-demand tradeoffs per program and cohort. Pricing decisions default to competitor benchmarking or institutional 'feel.'",
+      "ai_technique": "Econometric regression (demand elasticity estimation)",
+      "how_it_works": "Analyze historical enrollment and fee changes by program and geography. Estimate price elasticity (% enrollment change per 1% fee change). Model heterogeneity: STEM programs less elastic than humanities; urban markets more elastic than rural. Estimate revenue and margin impact of proposed fee changes. Run scenario analysis: 'If we raise STEM fees 5%, lose 3% enrollment but gain 2% margin. If we cut humanities 10%, gain 8% enrollment but lose 6% margin.' Summarize tradeoff for board decision.",
+      "target_companies": [
+        "rising"
+      ],
+      "buyer_persona": "CFO / VP of Finance",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-11",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Revenue & Margin Pressure",
+      "_cellHeat": 37,
+      "_cellOppScore": 27
+    },
+    {
+      "name": "Cost-Center Efficiency Benchmarker",
+      "one_liner": "Identifies cost-center outliers (administration, student services, facilities) and flags efficiency improvement opportunities vs. peers.",
+      "problem": "Multi-campus education networks like Rising lack visibility into which cost centers are efficient and which are cost-bloated. Comparing a Kinshasa campus support team to Lagos peer is manual and incomplete. Efficiency improvements are ad-hoc rather than systematic. Sustainability pressures demand accountability and transparency.",
+      "ai_technique": "Data envelopment analysis (DEA) / benchmarking",
+      "how_it_works": "Collect cost-center spend by campus: admin headcount and salary, support staff, facilities maintenance, technology. Normalize by campus size (students), revenue, and complexity (program count). Identify outlier high-cost-per-student centers. Flag for investigation: 'Kinshasa admin spending 18% of revenue vs. 12% peer average — investigate staffing ratios, procurement prices, or policy differences.' Facilitate peer-learning and cost benchmarking across campuses.",
+      "target_companies": [
+        "rising"
+      ],
+      "buyer_persona": "CFO / VP of Operations",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-11",
+      "_cellDomain": "Financial",
+      "_cellSubCategory": "Revenue & Margin Pressure",
+      "_cellHeat": 37,
+      "_cellOppScore": 27
+    },
+    {
+      "name": "Strategic Intelligence Digest",
+      "one_liner": "Auto-synthesizes policy briefs, sector research, and program evaluations into monthly strategic briefings for leadership.",
+      "problem": "Acasus, WISE, and education development consultancies depend on sector intelligence (policy trends, LMIC education outcomes data, donor priorities, competitor moves) to inform strategy and proposals. Leadership teams cannot read hundreds of research papers and policy documents monthly. Manual synthesis is time-intensive and inconsistent. Organizations risk missing critical market signals or blind-spotting strategy decisions.",
+      "ai_technique": "Multi-document abstractive summarization + semantic topic clustering",
+      "how_it_works": "Monitor feeds: government education white papers, international development reports (World Bank, UNESCO), sector publications (EdTech innovation reports), internal program evaluations. Monthly, batch new documents. Extract themes (e.g., 'EdTech adoption in Sub-Saharan Africa,' 'Government funding constraints'), surface contradictions (e.g., two reports with opposite conclusions on blended learning impact). Generate 2-page strategic brief synthesizing themes with source cites. Leadership reviews, edits, circulates. Measure decision impact by tracking cited insights.",
+      "target_companies": [
+        "acasus",
+        "wise"
+      ],
+      "buyer_persona": "Executive Director / Chief Strategy Officer",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-12",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Transformation & Change",
+      "_cellHeat": 52,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Pilot Experiment Designer",
+      "one_liner": "Structures program pilot design (counterfactual, control selection, learning outcome metrics, duration) based on education intervention best practices.",
+      "problem": "Pilot-before-scale is standard for education development organizations (Acasus, Rising, School for Life) but pilot design is ad-hoc. Teams struggle to define credible counterfactuals, select comparable controls, design learning outcome measures that reflect lags (learning effects take 6-12 months), and set sample sizes. Weak pilot design leads to inconclusive results and wasted funding. Rigorous RCT design is expensive and slow.",
+      "ai_technique": "Decision tree + evidence synthesis from RCT literature",
+      "how_it_works": "Interviewing mode: walk practitioner through intervention type (curriculum change, teacher training, management practice, tech deployment), target student population, geographic context, existing baseline data. System recommends: sample size (power calculation), control design (matched school, waitlist, geographic phase-in), outcome metrics (aligned to intervention logic model), measurement timeline (accounting for learning lag), and credibility checks (threat to internal validity). Output structured pilot protocol. Practitioner refines; system flags high-risk design choices.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Program Manager / Monitoring & Evaluation Lead",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-12",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Transformation & Change",
+      "_cellHeat": 52,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Market Sizing Estimator",
+      "one_liner": "Estimates addressable student population by geography and demographic segment to size new program or geographic expansion opportunity.",
+      "problem": "PHINMA, iPeople, and Acasus plan expansions (new campus, new program, new country) but lack rigorous market-sizing analysis. Decisions default to consultant reports or competitor observation. Missing systematic use of census data, demographic trends, economic indicators, and education stage-gating (e.g., 'secondary completion rate limits HE addressable market'). Risk of oversizing/undersizing capacity and investment.",
+      "ai_technique": "Regression with demographic and economic predictors",
+      "how_it_works": "Define target student profile (age range, income level, prior education). For proposed geography, pull census data (age distribution, income distribution, education completion rates), economic indicators (unemployment, wage growth), infrastructure data (internet access, transport). Train regression on comparable existing markets where organization has enrollment data. Estimate addressable population for proposed market. Sensitivity analysis: 'If unemployment rises 2%, addressable market drops 8%.' Validate against competitor presence and local surveys.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "acasus"
+      ],
+      "buyer_persona": "VP of Strategy / COO",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-12",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Transformation & Change",
+      "_cellHeat": 52,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Regulatory Change Impact Assessor",
+      "one_liner": "Extracts and assesses impact of government education policy changes (accreditation rules, funding models, qualification requirements) on institution strategy.",
+      "problem": "iPeople, Kinetic, and PHINMA operate in heavily regulated sectors (CHED, DepEd, higher-ed accreditation bodies). Policy changes (tuition regulation, mandatory curriculum elements, accreditor standards) require rapid strategic response. Organizations miss signals buried in white papers or don't assess impact until implementation deadline. Competitive advantage goes to early adapters with systematic policy monitoring.",
+      "ai_technique": "Entity extraction + impact logic modeling",
+      "how_it_works": "Monitor government/regulator policy releases (CHED circulars, DepEd memoranda, NESA announcements). Extract new rules, deadlines, requirements. Classify by institution impact: 'This accreditation standard requires X infrastructure investment; affects Y programs; deadline is Z months.' Link to institution's current compliance posture (do we already meet this? where are gaps?). Generate impact brief: 'New DepEd curriculum requirements add 120 contact hours per program; current allocation allows 30 hours buffer. Recommend curriculum audit and potential program restructuring.' Flag compliance risk by timeline.",
+      "target_companies": [
+        "ipeople",
+        "kinetic",
+        "phinma"
+      ],
+      "buyer_persona": "Chief Academic Officer / VP of Compliance",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-12",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Transformation & Change",
+      "_cellHeat": 52,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Partnership Opportunity Matcher",
+      "one_liner": "Identifies strategic partnership opportunities (curriculum partnerships, tech integrations, campus networks) by analyzing sector landscape and institution gaps.",
+      "problem": "Education organizations (iPeople, PHINMA, School for Life) pursue partnerships for curriculum credibility (e.g., industry affiliations, international university links), technology scaling (LMS, admission systems), or geographic expansion (franchise, shared services). Partner discovery is network-driven ('We know someone who knows someone'). Organizations miss complementary capabilities and geographies. Due diligence is manual and time-intensive.",
+      "ai_technique": "Semantic similarity matching + market gap analysis",
+      "how_it_works": "Index universe of potential partners: edtech vendors, international universities, training organizations, employers in key verticals. Profile each: capabilities, geographies, target segments, pricing models, performance data. Profile institution: programs, geographies, tech stack, strategic gaps. Run similarity search: 'You need LMS replacement; Coursera and Moodle Workplace both match your segment and budget.' Assess mutual fit: 'Potential partner serves 15 countries including 3 that you're expanding to; track record with similar institutions.' Generate 'partnership pipeline' with pre-scored opportunity and due-diligence checklist. Partnership team executes.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "VP of Strategy / Academic Partnerships Director",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-12",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Transformation & Change",
+      "_cellHeat": 52,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Strategy Brief Generator",
+      "one_liner": "Distils education policy documents and sector research into 2-page strategic briefings for leadership and boards.",
+      "problem": "iPeople, PHINMA, and School for Life spend 20+ hours monthly synthesizing international education research, LMIC policy landscapes, and CHED/DepEd regulatory changes into board-ready materials. Generic AI summarizers lose crucial nuance in education development contexts, requiring manual rework by strategy staff.",
+      "ai_technique": "Hierarchical summarization with education domain vocabulary (accreditation frameworks, education development metrics, regulatory compliance pathways)",
+      "how_it_works": "User uploads policy briefs, sector reports, or program evaluation documents. System identifies policy themes, regulatory implications, and strategic precedents using education-specific entity tagging (school types, funding mechanisms, accreditation bodies), then generates a structured brief with sections for market context, risk factors, and strategic options tailored to the organization's operating environment.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Chief Strategy Officer, Program Director",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-13",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Partnerships & Ecosystem",
+      "_cellHeat": 51,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Precedent Search Assistant",
+      "one_liner": "Semantic search over internal program evaluations, pilot reports, and OKR histories to surface relevant past decisions and outcomes.",
+      "problem": "Kinetic and iPeople manage multiple geographic and program expansions, but program pilots and evaluation reports are scattered across shared drives. Strategy leaders waste time recreating analysis or missing precedent lessons because search is keyword-based, not semantic.",
+      "ai_technique": "Dense vector embeddings of education program reports with multi-lingual support for LMIC contexts",
+      "how_it_works": "System ingests PDFs of program evaluations, feasibility studies, and board papers. When a strategy leader searches ('What happened when we expanded to a new region?'), the system returns semantically similar past pilots, their outcomes, and enabling factors—ranked by relevance to the current question. Integrates with Google Drive or SharePoint.",
+      "target_companies": [
+        "kinetic",
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Strategy Manager, M&A Lead",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-13",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Partnerships & Ecosystem",
+      "_cellHeat": 51,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Pilot Design Framework Assistant",
+      "one_liner": "Guides education leaders through structured experiment design for program pilots, with sample size calculators and bias-control templates.",
+      "problem": "Rising Academies and School for Life operate on a 'pilot-before-scale' model, but lack in-house measurement experts. Pilot designs often conflate implementation fidelity issues with outcome failures, and selection bias is not controlled, making it hard to distinguish whether a program works or scale strategy is flawed.",
+      "ai_technique": "Education-specific experiment design patterns with learning outcome lag accounting and multi-site randomization guidance",
+      "how_it_works": "User describes the program, student population, and key outcomes. System generates a pilot design template including: comparison group definition (with guidance on ethical alternatives to RCTs), sample size calculator adjusted for education attrition and learning lag cycles, pre/post measurement timing aligned to school calendars, and bias checklist (selection bias, Hawthorne effects common in school pilots, implementation variance).",
+      "target_companies": [
+        "school-for-life",
+        "rising",
+        "acasus"
+      ],
+      "buyer_persona": "Program Director, Monitoring & Evaluation Lead",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-13",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Partnerships & Ecosystem",
+      "_cellHeat": 51,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "Market Sizing Model Generator",
+      "one_liner": "Estimates addressable student population for new regions/programs using demographic data and education-sector benchmarks.",
+      "problem": "PHINMA, iPeople, and Acasus do market sizing for new campus locations or program launches but lack consistent methodology. External consultants are expensive; internal models often miss sector-specific variables (government subsidy eligibility, competing school capacity, parent income sensitivity to tuition increases).",
+      "ai_technique": "Regression models on comparable education markets with demographic and economic feature engineering",
+      "how_it_works": "User inputs location (region/district), program type (STEM HE, affordable K-12, vocational), and target student profile. System pulls demographic indicators (population, median income, school-age cohort size) and constructs regression model against comparable markets in database (historical campuses or peer institutions). Returns addressable market estimate with confidence intervals and sensitivity analysis on key drivers (subsidy changes, competitor entry, parent affordability).",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "acasus"
+      ],
+      "buyer_persona": "CFO, Campus Director",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-13",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Partnerships & Ecosystem",
+      "_cellHeat": 51,
+      "_cellOppScore": 26
+    },
+    {
+      "name": "OKR Synthesis Dashboard",
+      "one_liner": "Aggregates quarterly OKR updates from multiple campuses into a unified strategic alignment dashboard with variance analysis.",
+      "problem": "Kinetic (distributed student housing network) and iPeople (multi-campus higher ed) struggle to maintain strategic coherence as they scale. Campus leaders set local OKRs but senior leadership can't easily see where local priorities diverge from strategy or spot cross-campus conflicts. Quarterly reviews require manual aggregation of spreadsheets.",
+      "ai_technique": "Semantic clustering of organizational objectives with goal decomposition and dependency mapping",
+      "how_it_works": "Each campus submits quarterly OKR updates via a form or document. System extracts objectives, key results, and progress notes using NLP; clusters similar goals across campuses (e.g., 'improve student retention' at Campus A, 'reduce dropout rate' at Campus B); identifies misalignment (conflicting resource allocation) and dependencies ('Campus A's enrollment growth depends on Campus B's housing capacity'). Dashboard shows strategic alignment heat map and recommends OKR refinements for leadership discussion.",
+      "target_companies": [
+        "kinetic",
+        "ipeople",
+        "wise"
+      ],
+      "buyer_persona": "Chief Strategy Officer, Regional VP",
+      "tier": "standalone",
+      "confidence": "medium",
+      "_cell": "cell-14",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Strategic Clarity & Alignment",
+      "_cellHeat": 49,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Strategic Context Retrieval for Board Packs",
+      "one_liner": "Retrieves relevant historical decisions, policy context, and sector trends to automatically populate strategic briefing sections in board papers.",
+      "problem": "WISE, iPeople, and Kinetic boards meet quarterly with dense agendas. Board secretaries spend hours researching policy context, competitive moves, or historical precedent for each agenda item. Information is siloed—stored in emails, past minutes, or closed reports—making it hard to craft evidence-based papers quickly.",
+      "ai_technique": "Semantic search with document ranking by recency and organizational relevance",
+      "how_it_works": "User specifies the board agenda item ('Approve new Egypt campus expansion'). System searches internal documents (board minutes, strategy papers, program reports), sector databases (CHED guidelines, Egyptian education policy updates), and external sources for relevant context. Returns: comparable expansion precedents from organization history, policy changes in target country, competitive activity, and success factors identified in past evaluations. Content is pre-formatted for board paper inclusion.",
+      "target_companies": [
+        "wise",
+        "ipeople",
+        "kinetic"
+      ],
+      "buyer_persona": "Board Secretary, Chief Strategy Officer",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-14",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Strategic Clarity & Alignment",
+      "_cellHeat": 49,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Strategic Pivot Readiness Assessment",
+      "one_liner": "Analyzes current strategy, market trends, and internal capabilities to surface when a strategic pivot is needed and what blockers exist.",
+      "problem": "Kinetic, iPeople, and WISE face regulatory change (DepEd rules, CHED licensing shifts, Qatar education reform) that can invalidate their strategic assumptions. Leaders rarely have a systematic way to spot when accumulated evidence suggests strategy needs revising. Decisions are reactive rather than proactive.",
+      "ai_technique": "Multi-factor trend analysis combining internal performance data, regulatory monitoring, and competitor activity",
+      "how_it_works": "System ingests: quarterly performance dashboards (enrollment, retention, margin trends), regulatory alerts (CHED circulars, DepEd orders, policy monitoring feeds), and internal strategy documents. Continuously monitors for early warning signals (e.g., declining market share in a key segment, new competitor entry, major regulatory change). When threshold combinations are met, generates a 'Pivot Readiness Report' with: evidence for strategic shift, internal capabilities gaps that would block pivot, and recommended next steps (feasibility studies, board discussion topics).",
+      "target_companies": [
+        "kinetic",
+        "ipeople",
+        "wise"
+      ],
+      "buyer_persona": "Chief Strategy Officer, CEO",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-14",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Strategic Clarity & Alignment",
+      "_cellHeat": 49,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Competitive Intelligence Digest",
+      "one_liner": "Weekly digest of competitor moves, policy changes, and sector trends extracted from news, government publications, and industry reports.",
+      "problem": "Strategy teams at Acasus, WISE, and iPeople rely on manual news monitoring to track competitors and regulatory changes. Information is fragmented (email alerts, LinkedIn, government circulars) and often arrives too late to inform quarterly planning.",
+      "ai_technique": "Multi-source entity extraction and classification with education sector vocabulary",
+      "how_it_works": "System monitors government publications (CHED, DepEd, Qatar education authority), education news (EdSurge, The Economist education reports), and competitor websites. Weekly digest auto-generates sections: Regulatory Changes (CHED accreditation updates, government funding policy), Competitor Activity (new campus launches, program launches, acquisitions), and Sector Trends (demographic shifts, employment outcomes data, funding environment). Articles are ranked by relevance to organization's markets and auto-categorized (threat, opportunity, FYI).",
+      "target_companies": [
+        "acasus",
+        "wise",
+        "ipeople"
+      ],
+      "buyer_persona": "Chief Strategy Officer, Market Research Lead",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-14",
+      "_cellDomain": "Strategy & Direction",
+      "_cellSubCategory": "Strategic Clarity & Alignment",
+      "_cellHeat": 49,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Board Paper Generator with Governance Templates",
+      "one_liner": "Auto-generates board papers with education-specific compliance sections for Catholic governance, CHED accreditation, and government funding obligations.",
+      "problem": "CSPD, Kinetic, and PHINMA board secretaries spend 40+ hours per quarter on board papers, repeatedly building sections on governance compliance, accreditation status, and fiduciary obligations. Template libraries exist but don't account for Australia's Catholic school governance structures or CHED's specific disclosure requirements.",
+      "ai_technique": "Education governance document templates with smart field population from compliance dashboards",
+      "how_it_works": "User selects organization type (Catholic K-12, Philippines HE, international school) and agenda items. System generates a board paper template with pre-built sections: governance compliance checklist (education regulator-specific: NESA for NSW, CHED for Philippines), risk register aligned to education audit frameworks, accreditation status summary (pulling from live accreditation dashboard), and fiduciary obligations tracker. User fills in substantive content; system handles formatting, compliance language, and cross-references to prior board decisions.",
+      "target_companies": [
+        "cspd",
+        "kinetic",
+        "phinma"
+      ],
+      "buyer_persona": "Board Secretary, Governance Officer",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-15",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Power Concentration & Transparency",
+      "_cellHeat": 56,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Accreditation Evidence Aggregator",
+      "one_liner": "Collects and structures scattered accreditation evidence (AITSL portfolios, CHED self-study data, audit reports) into a unified accreditation dashboard.",
+      "problem": "PHINMA, CSPD, and Kinetic must maintain continuous accreditation compliance across multiple regulatory bodies (CHED, NESA, ABET). Evidence is scattered across systems (TechOne for attendance, FACES for student outcomes, faculty portfolios in Google Drive). When accreditation bodies request evidence, teams spend weeks compiling and reformatting.",
+      "ai_technique": "Data transformation and structuring with education regulatory vocabulary (AITSL standards, CHED maturity levels, NESA outcomes framework)",
+      "how_it_works": "System connects to institutional data sources (SIS, HR systems, LMS, document repositories) and extracts accreditation-relevant data: student achievement trends, faculty qualifications (AITSL rankings), program curriculum alignment, and governance records. Structures data into accreditation-body-specific formats. When a regulator requests evidence (e.g., CHED's Self-Evaluation Report template), system auto-generates filled sections with current data, flags gaps where evidence is missing, and routes for leadership verification before submission.",
+      "target_companies": [
+        "phinma",
+        "cspd",
+        "kinetic"
+      ],
+      "buyer_persona": "Accreditation Officer, Quality Assurance Manager",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-15",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Power Concentration & Transparency",
+      "_cellHeat": 56,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Governance Anomaly Monitor",
+      "one_liner": "Flags unusual patterns in board decisions, procurement approvals, and audit findings to surface governance integrity risks.",
+      "problem": "PHINMA (publicly listed with ASX-equivalent obligations) and WISE (Qatar Foundation accountability) face complex governance requirements. Detecting red flags—unusual procurement patterns, delayed audit finding resolutions, board decision timing anomalies—is done ad hoc by audit committees, missing emerging risks.",
+      "ai_technique": "Time-series anomaly detection on governance event data with education sector baseline patterns",
+      "how_it_works": "System ingests: board decision logs (from board management software), procurement records (from ERP), and audit finding status (from audit management tool). Learns normal patterns: typical board approval timelines, procurement review cycles, audit follow-up timelines. Flags deviations: procurement exceptions approvals accelerating, audit findings stalling, board decisions on sensitive topics clustering unusually. Monthly alerts to board audit committee with: flagged items, context (e.g., 'This procurement exception rate is 3x historical norm'), and recommended review steps.",
+      "target_companies": [
+        "phinma",
+        "wise",
+        "kinetic"
+      ],
+      "buyer_persona": "Audit Committee Chair, Chief Compliance Officer",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-15",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Power Concentration & Transparency",
+      "_cellHeat": 56,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Board Communication Workbench",
+      "one_liner": "Unified interface to draft, circulate, and archive trustee/stakeholder communications with compliance checks and audit trail.",
+      "problem": "School for Life, Acasus, and WISE must maintain clear communication with multiple governance bodies (boards, diocesan authorities, government funders). Communications are scattered across email and shared drives. Compliance history is hard to audit, and key stakeholder decisions are not consistently documented.",
+      "ai_technique": "Document classification with compliance flag detection and role-based access control",
+      "how_it_works": "User opens the workbench to draft communication (board memo, trustee letter, government compliance report). System auto-classifies content, checks for compliance risks (flagging if communication discloses sensitive accreditation status without board approval), routes for necessary approvals, and archives with full audit trail. Integrates with board management software for distribution. Maintains searchable archive for governance audits.",
+      "target_companies": [
+        "school-for-life",
+        "acasus",
+        "wise"
+      ],
+      "buyer_persona": "Board Secretary, Governance Officer, CEO",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-15",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Power Concentration & Transparency",
+      "_cellHeat": 56,
+      "_cellOppScore": 25
+    },
+    {
+      "name": "Executive Briefing Brief Builder",
+      "one_liner": "Generates executive briefings from board packs, strategic documents, and sector reports tailored for succession leaders or new executives.",
+      "problem": "WISE, Acasus, School for Life, and PHINMA face key-person executive dependency. When new CEOs or strategy leaders onboard, they spend months synthesizing institutional history, governance constraints, and strategic context. Institutional knowledge is scattered and not structured for new leaders.",
+      "ai_technique": "Hierarchical summarization with organization-specific context tagging (governance structures, key relationships, historical precedents)",
+      "how_it_works": "System ingests 5 years of board papers, strategy documents, and program evaluations. When a new executive joins, they receive a personalized briefing that covers: organizational governance structure (diagram of board roles, Catholic diocesan relationships for CSPD, funding sources and key dependencies), strategic priorities and historical precedent (why prior pivots succeeded or failed), and key stakeholder relationships (government partners, accreditation bodies, major donors). Briefing is auto-generated but can be customized by departing executive or board chair to highlight specific context.",
+      "target_companies": [
+        "wise",
+        "acasus",
+        "school-for-life"
+      ],
+      "buyer_persona": "CEO, Chief Strategy Officer, Board Chair",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-16",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Executive Leadership Capability",
+      "_cellHeat": 53,
+      "_cellOppScore": 24
+    },
+    {
+      "name": "Leadership Dashboard with Governance Oversight",
+      "one_liner": "Unified executive dashboard displaying accreditation status, board decision timelines, regulatory compliance, and strategic KPIs in one view.",
+      "problem": "PHINMA, WISE, and Kinetic executive teams lack a single view of organizational health across governance (accreditation, compliance), financial (subsidy dependency, margin trends), and strategic (OKR progress, campus expansion) dimensions. Leadership spends time stitching data from multiple systems rather than on decision-making.",
+      "ai_technique": "Multi-source data integration with education-specific KPI tagging (CHED compliance status, AITSL faculty proficiency levels, student achievement trends)",
+      "how_it_works": "System connects to institutional data sources (SIS, HR, ERP, accreditation dashboards, board management software) and creates a single executive view with sections: Governance & Compliance (accreditation status from CHED, audit findings pipeline, board decision approval rates), Financial Health (tuition revenue trends, subsidy dependency, capital projects status), and Strategic Execution (campus expansion milestones, enrollment forecasts vs. targets, program launch progress). Each section is drillable; clicking on 'CHED accreditation at risk' surfaces underlying evidence and recommended actions.",
+      "target_companies": [
+        "phinma",
+        "wise",
+        "kinetic"
+      ],
+      "buyer_persona": "CEO, CFO, Chief Operating Officer",
+      "tier": "standalone",
+      "confidence": "high",
+      "_cell": "cell-16",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Executive Leadership Capability",
+      "_cellHeat": 53,
+      "_cellOppScore": 24
+    },
+    {
+      "name": "Succession Readiness Planner",
+      "one_liner": "Identifies executive capability gaps and creates personalized development plans to prepare internal candidates for key leadership roles.",
+      "problem": "Acasus, School for Life, and WISE face succession risk as founder/long-serving CEOs consider transitions. Identifying and developing internal successors is ad hoc. There is no systematic way to assess capability gaps (strategic thinking, governance acumen, cross-functional leadership) or track development progress.",
+      "ai_technique": "Competency assessment combining structured feedback data, role-specific capability frameworks, and education-sector leadership benchmarks",
+      "how_it_works": "System ingests: 360-degree feedback on leadership candidates, historical board decisions they've influenced (if applicable), and education-sector executive competency frameworks (developed for K-12 principals and university presidents). Generates: capability assessment comparing candidate to CEO/COO role requirements, identifies gaps (e.g., 'lacks board-level strategic communication experience'), and auto-generates a 12-month development plan (board committee rotations, executive coaching on education governance, mentorship from external education leaders). Progress is tracked quarterly and tied to succession timeline.",
+      "target_companies": [
+        "acasus",
+        "school-for-life",
+        "wise"
+      ],
+      "buyer_persona": "Board Chair, CEO, Chief Human Resources Officer",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-16",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Executive Leadership Capability",
+      "_cellHeat": 53,
+      "_cellOppScore": 24
+    },
+    {
+      "name": "Executive Decision Record Assistant",
+      "one_liner": "Structures executive decisions (strategic pivots, major investments, governance changes) with clear rationales, alternatives considered, and assumptions for future audit and learning.",
+      "problem": "Kinetic, PHINMA, and WISE leaders make major decisions (campus launches, program exits, accreditation strategy changes) but rarely document why. 2-3 years later, when a decision's assumptions prove wrong, teams can't understand the original logic, repeating analysis or reversing good decisions under new leadership.",
+      "ai_technique": "Decision documentation templates with multi-factor reasoning capture and assumption tracking",
+      "how_it_works": "When an executive decision is made, the process starts a decision record: name ('Launch STEM campus in Region X'), description, decision date, alternatives considered (with why each was rejected), key assumptions (government subsidy unchanged, enrollment demand of 500 students/year), success metrics, and review dates. System stores this and flagged assumptions are monitored—if government funding policy changes, system auto-alerts that a key assumption of campus launch decision has shifted, triggering leadership review. Useful for both institutional learning and for new leaders inheriting a prior team's decisions.",
+      "target_companies": [
+        "kinetic",
+        "phinma",
+        "wise"
+      ],
+      "buyer_persona": "CEO, Chief Strategy Officer, Board Chair",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-16",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Executive Leadership Capability",
+      "_cellHeat": 53,
+      "_cellOppScore": 24
+    },
+    {
+      "name": "Board Pack Generator",
+      "one_liner": "Automatically synthesises governance documents, accreditation evidence, and committee reports into structured board papers aligned with Catholic education and multi-stakeholder governance frameworks.",
+      "problem": "Boards at CSPD (Catholic schools) and PHINMA (multicampus) spend weeks manually compiling board papers from fragmented governance sources—accreditation reports, committee minutes, policy updates, financial summaries—each requiring distinct formatting for diocesan approval, government compliance, and international funder expectations (WISE, Rising Academies). Off-the-shelf board software doesn't handle education-specific regulatory formats.",
+      "ai_technique": "Text generation with domain-aware templates",
+      "how_it_works": "Ingests scanned/text accreditation evidence (CHED matrices, AITSL standards compliance), committee reports, and operational dashboards. Generates board-ready summaries with appropriate sections for policy approval, fiduciary accountability, and stakeholder communication—sensitive to governance structure (Catholic trustee boards vs. foundation-backed vs. publicly traded).",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "school-for-life",
+        "wise"
+      ],
+      "buyer_persona": "Board Secretary / Principal / Governance Officer",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-17",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Decision-Making & Accountability",
+      "_cellHeat": 51,
+      "_cellOppScore": 23
+    },
+    {
+      "name": "Governance Classifier",
+      "one_liner": "Routes board submissions, policy approvals, and audit findings to appropriate oversight bodies based on compliance type and escalation thresholds.",
+      "problem": "Multi-stakeholder governance at PHINMA, WISE, Rising Academies, and School for Life requires routing documents to the right oversight body—diocesan structures (CSPD), government regulators (CHED for Philippines, NESA for Australian schools), accreditation boards, and investor/funder committees. Manual classification creates delays and compliance risks.",
+      "ai_technique": "Text classification with multi-label hierarchical routing",
+      "how_it_works": "Classifies incoming governance documents (board submissions, audit reports, policy change notices) by regulatory type (Catholic governance, government compliance, accreditation evidence, financial reporting) and urgency. Routes to board committee, compliance officer, accreditation liaison, or external regulator queue with escalation flags for anomalies.",
+      "target_companies": [
+        "phinma",
+        "cspd",
+        "wise",
+        "school-for-life",
+        "ipeople"
+      ],
+      "buyer_persona": "Governance Officer / Compliance Manager / Board Secretary",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-17",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Decision-Making & Accountability",
+      "_cellHeat": 51,
+      "_cellOppScore": 23
+    },
+    {
+      "name": "Governance Anomaly Detector",
+      "one_liner": "Flags unusual patterns in board decision timelines, audit finding resolution rates, and procurement approvals to surface governance integrity risks.",
+      "problem": "PHINMA (publicly traded, ASX-equivalent governance obligations) and WISE (Qatar Foundation accountability) face reputational and regulatory risk if governance processes drift—board decisions delayed unexpectedly, audit findings not resolved, procurement approvals bunched or inconsistent. Current board management software doesn't provide education-specific anomaly detection.",
+      "ai_technique": "Anomaly detection on board management system event logs and timelines",
+      "how_it_works": "Ingests board decision records, committee meeting dates, audit report timelines, and procurement approval logs. Detects anomalies: policy approval cycles that lengthen unexpectedly, audit findings that stall, spending authorisation patterns that deviate from normal, board member absenteeism spikes. Surfaces integrity risks and governance health trends.",
+      "target_companies": [
+        "phinma",
+        "wise"
+      ],
+      "buyer_persona": "Audit Committee Chair / Chief Governance Officer",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-17",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Decision-Making & Accountability",
+      "_cellHeat": 51,
+      "_cellOppScore": 23
+    },
+    {
+      "name": "Governance Evidence Dashboard",
+      "one_liner": "Transforms accreditation reports, policy documents, and committee records into a unified governance dashboard indexed by regulatory requirement.",
+      "problem": "Education governance involves multiple concurrent regulatory regimes—Catholic diocesan oversight (CSPD), government accreditation (CHED, NESA), international funders (WISE), and ASX-equivalent obligations (PHINMA). Leadership currently assembles evidence manually across systems, missing cross-regulator alignment and audit trails.",
+      "ai_technique": "Data transformation and structuring with education-specific taxonomy mapping",
+      "how_it_works": "Extracts governance requirements from CHED accreditation matrices, AITSL teaching standards, diocesan policy expectations, and funder reporting templates. Maps evidence from board papers, committee reports, and policy documents to each requirement. Displays as a live dashboard showing compliance status, evidence location, and audit trails.",
+      "target_companies": [
+        "phinma",
+        "school-for-life",
+        "cspd"
+      ],
+      "buyer_persona": "Principal / Rector / Accreditation Lead",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-17",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Decision-Making & Accountability",
+      "_cellHeat": 51,
+      "_cellOppScore": 23
+    },
+    {
+      "name": "Inquiry Intent Classifier",
+      "one_liner": "Classifies parent/student inquiries from SMS, WhatsApp, and email by enrollment intent, program preference, and dropout risk to route warm leads to enrollment counsellors.",
+      "problem": "Rising Academies and iPeople operate in price-sensitive markets (West Africa, Philippines) where inquiry volume is high but conversion tracking is manual. Distinguishing genuine enrollment interest from casual inquiries, and identifying at-risk applicants during the funnel, requires reading unstructured messages. Current CRM systems lack education-specific signal parsing.",
+      "ai_technique": "Text classification on messaging data with education intent vocabulary",
+      "how_it_works": "Ingests incoming SMS/WhatsApp/email inquiries to admissions. Classifies by intent (admission inquiry, financial aid question, program info, complaint), program interest (STEM, commerce, vocational), family income signal (payment plan question, scholarship eligibility), and risk (deadline approaching, competitor mentioned, payment concern). Assigns confidence score and routes to appropriate counsellor queue.",
+      "target_companies": [
+        "rising",
+        "ipeople"
+      ],
+      "buyer_persona": "Admissions Manager / Enrollment Counsellor",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-18",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Acquisition & Demand",
+      "_cellHeat": 28,
+      "_cellOppScore": 20
+    },
+    {
+      "name": "Enrollment Funnel Forecaster",
+      "one_liner": "Forecasts semester cohort enrollment based on inquiry patterns, application pipeline, and prior-year academic calendar seasonality.",
+      "problem": "iPeople and PHINMA operate on predictable academic calendars (enrollment surges before semester, drops after exam periods) but lack tools to forecast cohort sizes and conversion rates by program. Budget planning, instructor hiring, and facility allocation depend on accurate enrollment forecasting, yet CRM systems only report backward-looking metrics.",
+      "ai_technique": "Time series forecasting with academic calendar features",
+      "how_it_works": "Ingests historical enrollment data, inquiry-to-enrollment conversion timelines, and academic calendar events (application deadlines, exam schedules, scholarship release dates). Builds per-program cohort forecasts for next 2-3 semesters. Flags downside scenarios (low inquiry, high dropout risk) and recommends recruitment intensity adjustments.",
+      "target_companies": [
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Admissions Director / Academic Program Head",
+      "tier": "standalone",
+      "confidence": "medium",
+      "_cell": "cell-18",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Acquisition & Demand",
+      "_cellHeat": 28,
+      "_cellOppScore": 20
+    },
+    {
+      "name": "Student Propensity Scorer",
+      "one_liner": "Predicts which applicants and households are most likely to enroll using structured data—prior education, family income proxies, program fit—to prioritise outreach.",
+      "problem": "PHINMA (affordable HE, high applicant volume) and Rising Academies (household-targeting in West Africa) currently contact all applicants equally despite high variation in conversion likelihood. Targeting high-propensity households with scholarship and payment plan offers would improve yield and reduce acquisition cost, but requires education-specific enrollment signals not available in generic lead-scoring tools.",
+      "ai_technique": "Supervised classification on enrollment and demographic data",
+      "how_it_works": "Builds propensity model from historical applicant data: family income proxy (location, parent education, prior school type), academic readiness (prior exam scores, subject choices), fit signal (program choice match to prior strengths), and demographic seasonality (cohort age, geographic access to campus). Scores new applicants 0-100. Feeds into targeted outreach campaigns.",
+      "target_companies": [
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Enrollment Analyst / Marketing Manager",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-18",
+      "_cellDomain": "Growth & Market",
+      "_cellSubCategory": "Acquisition & Demand",
+      "_cellHeat": 28,
+      "_cellOppScore": 20
+    },
+    {
+      "name": "Board Meeting Transcript & Index",
+      "one_liner": "Transcribes board and committee meetings, then indexes by governance topic (accreditation, financial risk, staffing) to create searchable governance archives.",
+      "problem": "PHINMA and School for Life hold regular board and accreditation meetings that must be archived for governance compliance and institutional memory, but transcription is manual and searches across multiple meeting recordings are time-consuming. Board management software used at these organisations does not provide education-specific parsing (e.g., accreditation terminology, policy approval language).",
+      "ai_technique": "Speech-to-text transcription with governance entity tagging",
+      "how_it_works": "Automatically transcribes recorded board meetings, committee sessions, and accreditation hearings. Tags entities (policy names, accreditation standards referenced, financial metrics, decision outcomes). Indexes by topic for later search—e.g., 'all accreditation evidence discussed in 2024' or 'board decisions on staffing policy.' Exports governance audit trail with decision date and approver.",
+      "target_companies": [
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Board Secretary / Governance Officer",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-19",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Board & Governance Effectiveness",
+      "_cellHeat": 45,
+      "_cellOppScore": 20
+    },
+    {
+      "name": "Accreditation Evidence Map",
+      "one_liner": "Transforms accreditation reports and policy documents into a navigable evidence map showing compliance gaps and required actions by accreditation standard.",
+      "problem": "PHINMA (CHED-accredited HE) and School for Life (government oversight) undergo periodic accreditation reviews requiring comprehensive evidence submission. Compiling evidence across committee reports, policy documents, and operational dashboards to match accreditation matrices is labour-intensive and error-prone. Leadership lacks a live view of evidence location and compliance status.",
+      "ai_technique": "Document extraction and hierarchical data structuring against accreditation taxonomy",
+      "how_it_works": "Extracts key evidence types from governance documents, strategic plans, and operational reports. Maps to CHED accreditation matrices (or equivalent government standards) showing which evidence supports each requirement. Highlights gaps where evidence is missing or incomplete. Surfaces deadlines for evidence updates before next accreditation cycle.",
+      "target_companies": [
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Accreditation Lead / Principal",
+      "tier": "module",
+      "confidence": "high",
+      "_cell": "cell-19",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Board & Governance Effectiveness",
+      "_cellHeat": 45,
+      "_cellOppScore": 20
+    },
+    {
+      "name": "Governance Document Classifier",
+      "one_liner": "Automatically categorises board submissions, committee reports, and stakeholder correspondence by compliance type and escalation level.",
+      "problem": "Governance documents at PHINMA and School for Life arrive from multiple sources—board members, committee chairs, accreditation bodies, government regulators—each requiring different handling and approval workflows. Manual classification delays processing and creates compliance risk.",
+      "ai_technique": "Text classification with multi-label governance taxonomy",
+      "how_it_works": "Classifies incoming documents by type (policy change, accreditation evidence, financial report, complaint, audit finding), regulatory domain (government, accreditation, internal governance), and urgency flag. Routes to appropriate board committee or compliance queue. Tracks routing and approval timelines to surface governance delays.",
+      "target_companies": [
+        "phinma",
+        "school-for-life"
+      ],
+      "buyer_persona": "Governance Officer / Board Secretary",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-19",
+      "_cellDomain": "Governance & Leadership",
+      "_cellSubCategory": "Board & Governance Effectiveness",
+      "_cellHeat": 45,
+      "_cellOppScore": 20
+    },
+    {
+      "name": "Campus Operations Risk Triage",
+      "one_liner": "Ranks school/campus sites by operational risk—staffing gaps, maintenance backlogs, resource shortfalls, delivery KPI deviations—to allocate central support.",
+      "problem": "Rising Academies (400+ schools across West Africa) and PHINMA (distributed Philippines campuses) lack visibility into which sites need urgent central support. Current dashboards report individual metrics (staff turnover, maintenance requests) but don't synthesise risk across operational domains. Central teams cannot triage limited oversight capacity effectively.",
+      "ai_technique": "Multi-factor risk scoring with site-level aggregation",
+      "how_it_works": "Ingests staffing data (teacher vacancies, substitute usage, turnover rate), maintenance system tickets (unresolved requests, backlogs), resource allocation (per-student spend variance), and operational KPIs (student learning outcomes, attendance rates, facility utilisation). Scores each campus/site on composite operational risk. Flags sites with multiple stressors. Recommends central intervention priority.",
+      "target_companies": [
+        "rising",
+        "phinma"
+      ],
+      "buyer_persona": "Regional Director / Head of Operations",
+      "tier": "standalone",
+      "confidence": "high",
+      "_cell": "cell-20",
+      "_cellDomain": "Operations & Delivery",
+      "_cellSubCategory": "Technology & Infrastructure",
+      "_cellHeat": 52,
+      "_cellOppScore": 19
+    },
+    {
+      "name": "Student Support Case Triager",
+      "one_liner": "Classifies student welfare and support requests by priority and resolution type—counselling, financial aid, academic intervention, discipline—to route cases efficiently.",
+      "problem": "Multi-site operators (CSPD, PHINMA, Rising Academies, Kinetic residential settings) handle high volumes of student support requests—welfare concerns, financial aid inquiries, academic performance alerts, discipline matters—through email and informal reporting. Manual triage is error-prone; urgent cases risk being missed amid volume.",
+      "ai_technique": "Multi-class text classification with priority scoring",
+      "how_it_works": "Classifies incoming student support requests (email, form submissions, counsellor notes) by type (mental health, financial hardship, academic struggle, behavioral issue) and urgency (immediate safety concern, time-bound deadline, routine request). Routes to appropriate team—counselling, finance, academic advisor, discipline committee. Escalates welfare flags automatically.",
+      "target_companies": [
+        "cspd",
+        "phinma",
+        "kinetic",
+        "school-for-life"
+      ],
+      "buyer_persona": "Student Support Coordinator / Dean of Students",
+      "tier": "feature",
+      "confidence": "high",
+      "_cell": "cell-20",
+      "_cellDomain": "Operations & Delivery",
+      "_cellSubCategory": "Technology & Infrastructure",
+      "_cellHeat": 52,
+      "_cellOppScore": 19
+    },
+    {
+      "name": "Resource Requirements Estimator",
+      "one_liner": "Forecasts teacher hours, facility capacity, and material costs per student cohort across sites to enable accurate operational planning.",
+      "problem": "Rising Academies and PHINMA scaling across new geographic markets and CSPD managing variance across 80 schools lack data-driven models for resource planning. Current practice relies on manual estimation, leading to understaffing, overcapacity, or excess spending. Education cost drivers (teacher-student ratio minimums, facility standards, regulatory staffing levels) differ from general business models.",
+      "ai_technique": "Regression estimation with education-specific cost drivers",
+      "how_it_works": "Builds regression models from historical operational data linking enrollment size, program mix, delivery mode (residential, commute), and site characteristics (urban/rural, existing infrastructure) to required teacher FTE, facility square footage, and material budget. Predicts resource requirements for new cohorts or expansion to new sites. Identifies cost outliers and efficiency opportunities.",
+      "target_companies": [
+        "rising",
+        "phinma",
+        "cspd"
+      ],
+      "buyer_persona": "Director of Operations / CFO",
+      "tier": "module",
+      "confidence": "medium",
+      "_cell": "cell-20",
+      "_cellDomain": "Operations & Delivery",
+      "_cellSubCategory": "Technology & Infrastructure",
+      "_cellHeat": 52,
+      "_cellOppScore": 19
+    },
+    {
+      "name": "Operational Handover Summariser",
+      "one_liner": "Automatically summarises shift handover notes, student welfare case updates, and maintenance logs to reduce coordinator documentation burden.",
+      "problem": "Multi-site operators with residential settings (Kinetic) and distributed school networks (CSPD, Rising Academies) generate daily shift handover notes, student welfare updates, and maintenance reports that must be read and acted upon by next-shift/day staff. Manual reading is time-consuming; critical information can be buried in narrative text.",
+      "ai_technique": "Text summarisation with education-specific entity tagging",
+      "how_it_works": "Ingests shift notes, welfare case summaries, and maintenance tickets. Automatically extracts key facts—students of concern, outstanding actions, safety incidents, repair status—and generates concise handover summary. Tags behaviour incident terminology and welfare frameworks relevant to education safeguarding. Highlights items requiring escalation.",
+      "target_companies": [
+        "kinetic",
+        "cspd",
+        "school-for-life"
+      ],
+      "buyer_persona": "Residential Coordinator / School Operations Manager",
+      "tier": "feature",
+      "confidence": "medium",
+      "_cell": "cell-20",
+      "_cellDomain": "Operations & Delivery",
+      "_cellSubCategory": "Technology & Infrastructure",
+      "_cellHeat": 52,
+      "_cellOppScore": 19
+    }
+  ]
+}

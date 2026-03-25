@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-deployment-scheduling-payroll-admin-overhead-dup",
+  "pain_point_label": "Payroll Admin Overhead & Multi-Campus Compliance",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Many campuses still use paper timesheets or scanned spreadsheet printouts. OCR and form-field extraction can convert these into structured digital records, eliminating the manual re-keying step that drives the 2-3 day reconciliation cycle. For a multi-site operator with fragmented legacy systems, this is often the unavoidable first step before any downstream automation is possible.",
+      "opportunity_sketch": "A document ingestion pipeline that scans uploaded timesheet images or PDFs, extracts employee ID, hours, dates, and shift codes, and outputs a normalized CSV or JSON payload ready for payroll processing — removing manual data entry across all campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core technical problem is that campuses have inconsistent schema definitions — 'full day', late allowance thresholds, and pay period calendars differ per site. AI-assisted data transformation can map each campus's local timesheet format and shift taxonomy to a canonical master schema, resolving definitional mismatches before payroll runs. This directly addresses the normalization overhead that causes 2-3 day reconciliation cycles.",
+      "opportunity_sketch": "A schema normalization layer that ingests raw time and attendance exports from each campus (regardless of format or field naming), applies campus-specific mapping rules, and outputs a unified payroll-ready dataset — reducing reconciliation from days to minutes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Recurring leave accrual disputes and compliance discrepancies are often triggered by edge-case entries — unusual overtime patterns, duplicate clock-ins, or leave codes applied inconsistently across campuses. Anomaly detection on the normalized time-and-attendance data can flag these outliers before payroll is finalized, shifting from reactive dispute resolution to proactive exception handling.",
+      "opportunity_sketch": "An anomaly scoring module that runs over each pay cycle's time records and surfaces flagged rows (e.g., duplicate entries, out-of-range hours, leave codes inconsistent with campus policy) for HR review before payroll is submitted — reducing dispute volume and DepEd compliance risk.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full payroll reconciliation workflow spans multiple steps: ingesting data from each campus, normalizing formats, applying policy rules (shift definitions, leave accruals), flagging exceptions, and generating DepEd-compliant reports. A task automation agent can orchestrate this multi-step pipeline end-to-end, including routing exceptions to the right approver and triggering downstream actions — replacing the current manual 2-3 day process.",
+      "opportunity_sketch": "An end-to-end payroll reconciliation agent that ingests campus timesheet exports, applies normalization and policy rules, runs anomaly detection, generates exception reports for HR sign-off, and produces DepEd compliance summaries — compressing the pay cycle close from days to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "DepEd compliance reporting requires narrative summaries of workforce data each period. Generating these structured compliance reports and internal HR communications (e.g., leave dispute resolution letters, pay discrepancy notifications) from structured payroll data is a well-scoped text generation task that reduces manual drafting burden on HR staff.",
+      "opportunity_sketch": "Automated generation of DepEd-format compliance reports and campus-facing HR communications from finalized payroll data, parameterized per campus and pay period — saving HR staff hours of templated writing each cycle.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

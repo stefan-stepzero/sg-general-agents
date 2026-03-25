@@ -1,0 +1,71 @@
+{
+  "pain_point_id": "data-mis-data-governance-access-control-sprawl-dup",
+  "pain_point_label": "Access Control & PII Protection Sprawl",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "System logs are not being reviewed for unauthorized access — a direct application for anomaly detection. AI can continuously monitor access logs and flag deviations from normal behavior: a campus admin querying student records across all campuses, a finance user downloading bulk payroll exports, or a teacher account accessing financial modules. Education operators generate dense, repetitive access logs that are impractical to review manually, making AI-driven anomaly scoring the only scalable path to coverage.",
+      "opportunity_sketch": "A continuous log-monitoring layer that ingests SIS/ERP/LMS access events and scores each session against per-role, per-campus behavioral baselines — surfacing alerts for compliance review when anomalous access patterns are detected.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Two specific sub-problems are workflow automation problems: departed staff retaining access for weeks, and the absence of any periodic RBAC review cycle. An automation agent can integrate with HR systems (to detect terminations/role changes) and identity providers (to trigger deprovisioning requests or flag stale accounts), removing the manual lag that creates compliance exposure. This is a well-bounded multi-step workflow — detect change event → lookup active accounts → raise deprovisioning ticket → confirm completion — that fits task automation precisely.",
+      "opportunity_sketch": "An agent that listens to HR system events (offboarding, role changes, campus transfers), cross-references active directory/SSO accounts, and automatically raises deprovisioning or access-review tickets in the IT ticketing system — with escalation if not actioned within a configurable SLA.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-synthetic-data",
+      "capability_label": "Synthetic Data Generation",
+      "match_rationale": "No PII masking in non-prod environments is a direct synthetic data problem. Developers and testers need realistic student, payroll, and enrollment records to build and QA the SIS/ERP, but using real records in non-prod creates a compliance breach. AI-driven synthetic data generation produces statistically realistic tabular datasets (student demographics, enrollment histories, payroll records) that preserve schema and distributional properties without containing real PII — eliminating the need to copy production data into test environments.",
+      "opportunity_sketch": "A synthetic data pipeline that ingests the production schema and a sample of real records (temporarily, under strict controls), learns distributions, and generates unlimited realistic test datasets — delivered as CSV/database snapshots for dev, QA, and UAT environments.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 3
+}

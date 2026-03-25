@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-multi-channel-reconciliation",
+  "pain_point_label": "Multi-Channel Payment Reconciliation & Bank Matching",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Bank deposit slips, handwritten cash count sheets, scanned gateway reconciliation files, and government voucher PDFs are all non-digital or semi-digital inputs that must first be digitized before they can be matched. OCR and form-field extraction can convert these physical and scanned documents into structured records (amount, date, partial reference) automatically, eliminating manual re-keying. For a campus receiving PHP 150k in daily cash with handwritten deposit slips, this is the foundational digitization step that enables downstream automation.",
+      "opportunity_sketch": "An OCR pipeline that ingests scanned deposit slips, bank-printed transaction reports, and government subsidy vouchers and outputs structured rows (date, amount, reference, channel) ready for ledger import — replacing manual data entry by tellers and finance staff.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.55
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Online payment gateways export reconciliation files with proprietary transaction IDs that do not map directly to student enrollment codes, and government subsidies arrive as lump-sum transfers with no per-student breakdown. AI-assisted schema mapping and format normalization can parse these semi-structured files and translate them into a canonical ledger schema, resolving the mismatch between gateway transaction IDs and student invoice references. This directly attacks the month-end PHP 50k discrepancy caused by unmatched gateway and subsidy records.",
+      "opportunity_sketch": "A transformation layer that ingests gateway CSV/JSON exports and government subsidy files, normalizes them to a standard payment schema, and fuzzy-maps transaction IDs to student invoice records — surfacing unmatched rows for human review rather than burying them until month-end.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The month-end AR-to-bank discrepancy (PHP 2M vs PHP 1.95M) is fundamentally an anomaly detection problem: duplicate receipts, lost transfers, and split deposits are patterns that deviate from the expected one-invoice-one-payment norm. An anomaly detection model trained on historical payment patterns can flag suspicious records in real time — e.g., a deposit amount that matches no open invoice, a transfer reference used twice, or a cash deposit that arrives three days after the expected window. This shifts reconciliation from a monthly forensic exercise to a continuous exception queue.",
+      "opportunity_sketch": "A reconciliation anomaly engine that scores each incoming payment record for match confidence and flags outliers (duplicate amounts, mismatched reference patterns, timing gaps) into a daily exception report reviewed by one finance staff member rather than a week-long team effort at month-end.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.3
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full reconciliation workflow is a multi-step process: ingest payment records from multiple channels → normalize formats → attempt exact match → attempt fuzzy match on reference codes → escalate unmatched items → post matched items to ledger → generate daily reconciliation report. This is precisely the branching, multi-tool, error-handling workflow that a task automation agent is designed for, going well beyond what a single extraction or classification step can achieve. A human finance officer currently executes all these steps manually across 3-5 days; an agent can execute them continuously.",
+      "opportunity_sketch": "An end-to-end payment reconciliation agent that runs nightly: pulls bank statement data, gateway exports, and AR ledger; attempts rule-then-AI matching; posts confirmed matches; and emails a structured exceptions report to the finance manager each morning — compressing month-end close from 5 days to same-day.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.3
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Bank transfer references are unstructured text strings that may contain a student ID, a name fragment, a shorthand course code, or an arbitrary message typed by the payer. Entity extraction (NER) can parse these free-text reference fields to identify the most likely student identifier, amount, and intent — enabling probabilistic matching even when the reference is vague or misspelled. This directly addresses the teller pain point of manually searching invoices for a student who typed only their ID in the reference field.",
+      "opportunity_sketch": "An entity extraction model applied to incoming bank transfer reference strings that identifies candidate student IDs, names, or enrollment codes and returns a ranked list of probable invoice matches for teller confirmation — reducing manual search time per transaction from minutes to seconds.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

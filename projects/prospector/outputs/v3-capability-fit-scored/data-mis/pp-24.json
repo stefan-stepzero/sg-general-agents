@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "data-mis-it-operations-helpdesk-vendor-management-overhead-dup",
+  "pain_point_label": "Vendor Management & License Tracking Overhead",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Vendor contracts, renewal dates, SLA terms, license counts, and pricing tiers are buried across email threads, PDF agreements, and spreadsheets. Entity extraction can pull out contract dates, vendor names, license quantities, renewal deadlines, and SLA commitments into structured records automatically. For a multi-site operator managing 5-10 vendor agreements per campus, this removes the manual data-entry bottleneck that causes missed renewals and inaccurate license counts.",
+      "opportunity_sketch": "Ingest all vendor contracts and email confirmations; extract key-value pairs (renewal date, license count, SLA response time, cost per seat) into a centralized vendor register that auto-populates a dashboard and flags upcoming deadlines.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Many vendor contracts and license certificates exist as scanned PDFs or image-based documents, particularly legacy agreements and government procurement paperwork common in education. Media parsing (OCR + form extraction) is the necessary first step to digitize these before downstream entity extraction can identify renewal dates and license terms. Without this step, paper-tracked renewals remain invisible to any automated system.",
+      "opportunity_sketch": "OCR pipeline that ingests scanned vendor contracts and license certificates, converts them to structured text, and feeds the entity extraction stage — eliminating paper-based tracking as a failure point.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Vendor SLA disputes require staff to trawl through lengthy contract documents to find the relevant clause and establish what was agreed. Summarization can condense each vendor contract to a one-page brief covering key obligations, penalties, escalation paths, and renewal terms, making SLA disputes faster to resolve and renewal negotiations better informed. Multi-site operators benefit especially because the same vendor may have different agreements per campus.",
+      "opportunity_sketch": "Auto-generate a concise contract brief for each vendor relationship highlighting SLA commitments, renewal terms, and penalty clauses — surfaced on demand when raising a support ticket or preparing a renewal negotiation.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Vendor management overhead is fundamentally a multi-step workflow problem: monitor renewal calendars, verify license counts against active users, generate renewal reminders, draft vendor escalation emails, and update the contract register. A task automation agent can own this entire cycle — pulling usage data from SIS/LMS, comparing against licensed seats, flagging discrepancies, and drafting renewal or renegotiation communications without manual intervention. This directly addresses the missed deadlines and over/under-licensing described in the pain point.",
+      "opportunity_sketch": "An autonomous vendor lifecycle agent that runs weekly: reconciles active user counts against licensed seats per vendor, flags renewals within 60/30/14 days, drafts reminder and escalation emails for IT manager review, and logs all actions to the vendor register.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When vendor support tickets go unanswered within SLA windows, IT staff need to escalate formally — drafting SLA breach notices, escalation emails, and vendor review summaries. Text generation can produce these documents from structured data (ticket ID, elapsed time, SLA terms, business impact) in seconds, replacing a task that often gets deprioritized. For renewal negotiations, it can draft RFP-style comparison briefs or multi-campus discount requests grounded in actual usage data.",
+      "opportunity_sketch": "Generate SLA breach escalation letters, renewal negotiation briefs, and multi-campus volume discount requests from structured vendor and usage data — reducing the drafting burden on stretched IT coordinators.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "License over-payment often stems from ghost accounts — departed staff or inactive students still counted against license totals across SIS, LMS, and email platforms. Anomaly detection can flag accounts that haven't been accessed in 60+ days, users appearing in license records but not in HR data, or spend patterns inconsistent with headcount changes. For a 500+ staff multi-site operator, manual audits of this are quarterly at best; automated anomaly detection makes it continuous.",
+      "opportunity_sketch": "Continuously cross-reference active directory, HR roster, and vendor license invoices to surface ghost accounts and billing anomalies — producing a monthly reconciliation report with estimated overpayment amounts per vendor.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-project-change-incident-recovery-preparedness-dup",
+  "pain_point_label": "Incident Recovery & Business Continuity Gaps",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Education operators lack documented disaster recovery plans entirely. AI text generation can draft comprehensive DR plans, runbooks, and RTO/RPO policy documents tailored to the operator's systems (SIS, finance) and regulatory context — something that requires significant writing effort but follows well-established templates. For a 500+ staff operator with no documentation baseline, generating a full DR policy suite from an intake interview is directly addressable.",
+      "opportunity_sketch": "A DR Plan Generator that takes an operator's system inventory and compliance requirements as input and outputs a complete, audit-ready disaster recovery plan, incident response runbook, and business continuity policy — reducing a 6-month consulting engagement to days.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The pain point explicitly surfaces insurance coverage questions and regulatory audit flags — both risk-assessment contexts. AI risk scoring can quantify the operator's current business continuity exposure across dimensions (backup recency, single-site concentration, MTTR unknowns) and produce a risk score that maps to insurer and auditor frameworks. Leadership is currently unaware of exposures, making risk quantification the primary unmet need.",
+      "opportunity_sketch": "A Business Continuity Risk Scorer that ingests infrastructure inventory, backup logs, and system criticality ratings to output a scored risk profile — with gap analysis against ISO 22301 or NIST SP 800-34 — that satisfies insurance underwriters and regulatory auditors.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Recovery readiness is not just documentation — it requires ongoing multi-step workflows: backup verification checks, recovery test scheduling, compliance evidence collection, and gap-remediation tracking across multiple campuses. A task automation agent can orchestrate these recurring processes (e.g., weekly backup integrity checks, automated DR test scheduling, evidence packaging for audits) that no single human currently owns across the distributed operator. This directly addresses the 'procedures not tested' and 'MTTR unknown' dimensions of the pain.",
+      "opportunity_sketch": "A DR Readiness Automation Agent that runs scheduled backup validation checks across all campuses, triggers recovery test drills on a defined cadence, collects test results, and assembles compliance evidence packages — maintaining a live readiness dashboard without manual coordination.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The operator has no visibility into backup failures, replication lag, or infrastructure degradation until a disaster occurs. Anomaly detection applied to backup job logs, storage utilization trends, and system health telemetry can surface deviations from expected behavior — a missed backup window, unusual storage growth, or replication failure — before they become recovery incidents. This is a proactive early-warning capability that directly reduces MTTR by catching failures earlier.",
+      "opportunity_sketch": "A Backup & Infrastructure Anomaly Monitor that continuously analyzes backup completion logs and system health metrics across all campuses, flagging anomalies in real time and routing alerts to IT staff — turning unknown exposures into visible, actionable signals.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

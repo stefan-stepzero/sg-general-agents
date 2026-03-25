@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-workforce-planning-retention-engagement-decline-undetected-dup",
+  "pain_point_label": "Engagement Decline Undetected Until Exit",
+  "matches": [
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Employee attrition prediction is a canonical propensity modeling task: given individual-level features (tenure, absenteeism, workload metrics, performance scores, pay band vs. market), the model outputs a churn probability per staff member. For a 500-staff multi-site operator, this converts the 'reactive HR scrambling' problem into a ranked watchlist that managers can act on before resignation letters arrive. The capability directly addresses the core pain mechanism — disengagement goes undetected because no signal is aggregated — by surfacing latent risk from data the org already holds.",
+      "opportunity_sketch": "An attrition risk dashboard that scores every employee monthly using structured HR and operational data, flags high-risk individuals, and prompts a proactive retention conversation workflow for line managers.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Sentiment analysis and intent classification applied to open-text pulse survey responses, performance review comments, or anonymised internal communication can convert qualitative staff voice into structured engagement signals at scale. Multi-site education operators collect scattered text feedback (manager notes, grievance logs, appraisal comments) that currently goes unanalysed; classifying this text for sentiment, frustration themes (pay, workload, respect, autonomy), and urgency creates the early warning layer the org currently lacks.",
+      "opportunity_sketch": "A lightweight pulse survey tool where open-text responses are automatically classified by sentiment and theme (workload, pay, management quality), aggregated by site and team, and surfaced as a weekly engagement heatmap for HR.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Exit interview transcripts and long-form feedback contain rich signals about why staff leave, but HR teams at multi-site operators rarely have capacity to read and synthesise dozens of transcripts per quarter. Automated summarisation extracts recurring themes (e.g. 'workload inequity across sites', 'lack of promotion clarity') and produces site-level and role-level summaries that can inform targeted interventions — turning reactive post-departure data into forward-looking policy evidence.",
+      "opportunity_sketch": "Automated exit interview synthesis that clusters departure reasons by site, role type, and tenure band, generating a quarterly retention briefing with specific, evidence-backed recommendations for leadership.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "HR systems for a 500-staff operator hold structured signals of disengagement — increased sick days, declining utilisation, missed training completions, reduced extra-curricular participation — that can be combined into a multi-feature engagement risk classifier. This goes beyond propensity modeling (which outputs a probability) by categorising staff into actionable engagement segments (highly engaged, at risk, actively disengaged) that map directly to differentiated HR interventions.",
+      "opportunity_sketch": "A segmentation model that classifies all staff into engagement tiers each month from structured HR data alone, enabling HR to prioritise outreach and tailor retention actions by cohort rather than treating all staff the same.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A conversational pulse check agent replaces the anecdotal 'how's the team?' question with a structured, low-friction multi-turn dialogue that staff complete asynchronously via a messaging channel (Teams, WhatsApp, or internal portal). Multi-turn dialogue allows the agent to probe follow-up questions when a response signals concern — capturing richer engagement data than a static survey form while reducing the burden on managers who currently carry all informal sensing.",
+      "opportunity_sketch": "A biweekly check-in bot sent to each staff member that asks 3-5 dynamic questions, adapts follow-ups based on responses, and feeds structured sentiment scores into a central HR dashboard without requiring manager mediation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The retention response workflow — detect a signal, escalate to the right manager, schedule a retention conversation, log the outcome, follow up — is a multi-step process that currently never starts because no signal exists. Once signals are generated (via propensity scoring or pulse surveys), an automation agent can orchestrate the end-to-end retention workflow: routing alerts to line managers, populating a conversation guide, logging outcomes in the HRIS, and scheduling follow-up reminders, closing the loop that currently breaks at detection.",
+      "opportunity_sketch": "An automated retention workflow that triggers when an employee crosses an engagement-risk threshold: notifies the manager, generates a personalised conversation guide, and tracks whether a check-in occurred within 5 business days.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

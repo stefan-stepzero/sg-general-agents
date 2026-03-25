@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-performance-evaluation-low-feedback-frequency-dup",
+  "pain_point_label": "Infrequent & Delayed Feedback Cycles",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a feedback culture is partly a logistics and effort problem — writing individualized, meaningful feedback is time-consuming for department heads managing 20+ teachers. AI text generation can draft personalized, behaviour-specific feedback from structured observation notes or rubric inputs, dramatically lowering the cost of giving frequent written feedback. For a multi-site education operator, this means principals can generate draft feedback in seconds rather than spending hours composing it.",
+      "opportunity_sketch": "A feedback drafting tool where a principal enters key observations (e.g., 'missed curriculum pacing benchmarks twice this term, strong parent engagement') and AI generates a full narrative feedback document ready for review and send — enabling monthly rather than annual written feedback.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "High-performer attrition is a named pain — the org loses good teachers partly because they lack career clarity and feel unseen. A propensity model trained on HR signals (tenure, salary band, absence patterns, promotion history, last review date) can predict which teachers are at elevated attrition risk right now, allowing proactive intervention before they resign. This directly addresses the 'high attrition of high performers' mechanism in the pain point.",
+      "opportunity_sketch": "An attrition risk dashboard scoring each staff member monthly, flagging high-performers with elevated flight risk so HR or line managers can initiate a check-in, career conversation, or development offer before resignation.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "When feedback does arrive — from classroom observations, student surveys, peer reviews, or parent comments — it is typically unstructured text. Classifying this incoming text by theme (curriculum delivery, classroom management, parent communication, professionalism) and sentiment enables the org to systematically surface patterns across sites and identify low performers earlier than waiting for the annual cycle. This turns ad-hoc qualitative signals into structured early-warning data.",
+      "opportunity_sketch": "An automated tagging layer applied to observation logs and survey responses that categorises feedback by competency domain and flags negative sentiment clusters, giving HR a real-time view of performance signals without waiting for the formal appraisal.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A lightweight conversational agent can act as a continuous check-in interface for teachers — prompting them weekly with structured reflection questions and capturing responses. This creates a low-friction feedback loop that replaces the cultural barrier of 'feedback requires a formal meeting,' giving teachers a channel to self-report progress and surface concerns between annual reviews. For a multi-site operator, this scales across campuses without requiring additional headcount.",
+      "opportunity_sketch": "A staff-facing chat agent that sends weekly 2-question check-ins to teachers ('What went well this week? What support do you need?'), logs responses, and surfaces summaries to line managers — creating a continuous feedback signal with zero scheduling overhead.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

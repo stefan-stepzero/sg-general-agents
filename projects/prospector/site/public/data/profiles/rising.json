@@ -1,0 +1,330 @@
+{
+  "entity": "Rising Academies",
+  "profile_date": "2026-03-11",
+  "known_contact": {
+    "name": "Paul Skidmore",
+    "title": "Co-founder, Executive Chairman (formerly CEO until 2024)",
+    "note": "Paul stepped back from CEO role in 2024; current CEO is Stephanie Dobrowolski (co-founder). Paul remains active as Executive Chairman and public thought leader."
+  },
+  "executive_summary": "Rising Academies is a mission-driven, B-Corp certified education social enterprise operating in Sub-Saharan Africa — one of the most rigorously evidence-led operators in its market. Founded in Sierra Leone during the 2014 Ebola crisis, it has scaled to 900+ schools and 270,000–300,000 students across Sierra Leone, Liberia, Ghana, and Rwanda through a hybrid model: owned affordable private schools plus government partnership programs. In 2024–2025, the organization hit three major milestones in rapid succession: closing a $4.25M Series A led by Klett Group, completing a smooth co-founder CEO transition, and formalizing an Anthropic partnership to power its AI products Rori (student math tutor) and Tari (teacher AI assistant), both delivered via WhatsApp at ~$5/student/year. The company is in active scaling mode with government-pays contracts (Rwanda MINEDUC, Liberia) providing durable proof of financial sustainability beyond donor grants, and the Rori AI product targeting 1M+ users by 2027.",
+  "dimensions": {
+    "industry_vertical": {
+      "primary_sector": {
+        "value": "Education",
+        "evidence": "Rising Academies operates affordable private schools and delivers government education programs (RisingFaster) and AI tutoring products (Rori, Tari) entirely within the K-12 education sector across Sub-Saharan Africa.",
+        "confidence": "high"
+      },
+      "vertical_niche": {
+        "value": "EdTech + Low-cost private school management (K-12, Sub-Saharan Africa)",
+        "evidence": "The company sits at the intersection of two niches: (1) affordable/low-cost private school management in West/East Africa (900+ schools, Sierra Leone, Ghana); and (2) Africa EdTech — specifically WhatsApp-native AI tutoring (Rori) and teacher support (Tari) for low-bandwidth environments. The Africa EdTech market was ~$7.3B in 2025, growing at 11–19% CAGR.",
+        "confidence": "high"
+      },
+      "value_chain_position": {
+        "value": "End-service provider (direct delivery) + Platform/infrastructure layer (Rori/Tari AI products)",
+        "evidence": "Rising operates two distinct value chain positions simultaneously: as a direct school operator (downstream, end-service) and as a technology product provider licensing programs to governments and schools (platform layer). The RisingFaster curriculum is sold B2G; Rori/Tari are becoming standalone products.",
+        "confidence": "high"
+      },
+      "industry_maturity": {
+        "value": "Growth — expanding TAM, many entrants, structural tailwinds",
+        "evidence": "Africa EdTech market projected to grow from $7.3B (2025) to $19.2B by 2034. WhatsApp-native, low-bandwidth EdTech is an emerging sub-category with few rigorous players. Government PPP education models in Sub-Saharan Africa are still maturing. High structural demand from 500M+ smartphone users and chronic public school underperformance.",
+        "confidence": "high"
+      }
+    },
+    "business_model": {
+      "revenue_model": {
+        "value": "Hybrid: B2G contracts (government partnership fees) + tuition fees (private schools) + philanthropic grants (R&D) + emerging SaaS licensing (Rori AI)",
+        "evidence": "Four distinct revenue streams: (1) tuition from private schools in Sierra Leone and Ghana; (2) government partnership contracts — Liberia and Rwanda MINEDUC pay Rising to manage/support government schools; (3) philanthropic grants (LEVI/Gates-funded Rori RCT); (4) Rori AI product licensing under development as standalone SaaS. The Rwanda contract scaling to 120 schools / 60,000 students signals B2G revenue is real and growing.",
+        "confidence": "high"
+      },
+      "delivery_model": {
+        "value": "Managed service (curriculum + coaching) + software product (WhatsApp AI bots)",
+        "evidence": "RisingFaster is teacher-delivered structured curriculum with coaching — a managed service model. Rori and Tari are software products delivered via WhatsApp, requiring no laptops or high-speed internet. The dual delivery model reflects the company's transition from pure operator toward product/tech company.",
+        "confidence": "high"
+      },
+      "cost_structure": {
+        "value": "Mixed: variable-heavy for school operations; increasingly fixed-heavy for AI product R&D",
+        "evidence": "School operations scale with headcount and geography — variable costs dominate (teacher salaries, materials, coaching). AI product development (Rori, Tari) has high fixed R&D costs (CTO hire, Anthropic API, research partnerships) but very low marginal delivery costs (~$5/student/year at scale). Gross margin profile improving as AI products scale.",
+        "confidence": "medium"
+      },
+      "network_effects": {
+        "value": "Data network effects (Rori/Tari improve with more users) + institutional moat (government relationships, B Corp, Anthropic endorsement, published RCT evidence base)",
+        "evidence": "Four distinct moat layers: (1) Data network effect — Rori's AI tutoring improves with each student interaction, creating a compounding accuracy advantage over new entrants; (2) Government relationship moat — Rwanda MINEDUC, Liberia, Sierra Leone, and Ghana MoUs involve multi-year institutional trust and curriculum integration; switching cost to a competitor is high for a Ministry of Education; (3) Evidence-base moat — published peer-reviewed RCT (arXiv:2402.09809, 0.36 SD effect size) is costly to replicate and functions as a trust signal in procurement; (4) Anthropic partnership moat — formal agreement with frontier AI lab gives exclusive co-development advantage and brand association. B Corp certification adds a secondary trust signal in impact investor/NGO procurement. Content library scaling across 900+ schools creates further curriculum lock-in.",
+        "confidence": "medium"
+      },
+      "key_dependencies": {
+        "value": "Anthropic/Claude API (AI core), WhatsApp distribution, government partnership renewals (B2G revenue), donor/impact investor funding pipeline, West Africa teacher workforce, connectivity infrastructure",
+        "evidence": "Six key operational dependencies: (1) Anthropic/Claude API — ~95% of Tari interactions and Rori AI powered by Claude; outage or pricing change is a single-point risk; (2) WhatsApp — the sole delivery channel for Rori and Tari; Meta policy changes could strand the product; (3) Government contract renewals — Rwanda MINEDUC, Liberia, Sierra Leone, Ghana MoUs are the B2G revenue backbone; non-renewal of any single country contract is material; (4) Philanthropic/impact investor funding — LEVI, Gates, Mulago, Klett Group, UBS Optimus fund R&D and working capital; this pipeline must be maintained until B2G revenue achieves sustainability; (5) West Africa teacher and coach pipeline — the RisingFaster managed service depends on recruiting, training, and retaining school coaches and country-level staff in markets with constrained talent supply; (6) Basic connectivity infrastructure — Rori/Tari require 2G/3G mobile data access; infrastructure gaps in rural Sierra Leone and Liberia constrain product reach.",
+        "confidence": "high"
+      }
+    },
+    "scale_resources": {
+      "headcount": {
+        "value": "501–1,000 employees (LinkedIn self-reported)",
+        "evidence": "LinkedIn company profile for Rising Academy Network lists company size as 501–1,000 employees. This is consistent with operating 900+ schools across 4 countries: core HQ/management team (C-suite CEO, CTO, COO, CSO + country directors) plus field staff (school managers, coaches, curriculum specialists). Teachers in partner government schools may not be on Rising's payroll directly. Categorized as mid-size NGO/social enterprise.",
+        "confidence": "medium"
+      },
+      "revenue_band": {
+        "value": "Early growth ($1M–$10M estimated; unconfirmed)",
+        "evidence": "No revenue figures publicly disclosed. Signals: $4.25M Series A with intent to 'double student reach'; Rori at $5/student/year with 40,000–150,000 users implies $200K–$750K from AI product alone; government contracts in Rwanda and Liberia add meaningful B2G revenue. Total likely $2M–$8M range, but unconfirmed.",
+        "confidence": "low"
+      },
+      "capitalization": {
+        "value": "Series A ($4.25M equity, 2024) + prior grants + philanthropic capital. Total cumulative funding estimated $6–10M+.",
+        "evidence": "Series A closed 2024, led by Klett Group (Europe's largest education company), co-investors: UBS Optimus Foundation, King Philanthropies, Dovetail Impact Foundation, Solon Capital Holdings. Pre-Series A investors included FINCA Ventures, Mulago Foundation (surge grant ~$1M over 2 years), Dovetail, King Philanthropies. LEVI/Gates grant funding for Rori RCT. Total equity + grants likely $6–10M+ but not publicly confirmed.",
+        "confidence": "medium"
+      },
+      "asset_intensity": {
+        "value": "Asset-medium: school facilities (leased/managed), software (AI products), teacher training infrastructure",
+        "evidence": "Rising operates physical schools but likely leases rather than owns facilities — typical for affordable school operators in West Africa. AI products (Rori/Tari) are asset-light software. Curriculum materials, teacher training programs, and field coaching networks represent meaningful non-capital assets. Not capital-heavy like manufacturing.",
+        "confidence": "medium"
+      },
+      "financial_health": {
+        "value": "Grant/equity-subsidised but trending toward earned revenue sustainability; estimated $2–8M total budget; not yet profitable",
+        "evidence": "No financial statements publicly available. Key signals: (1) $4.25M Series A closed 2024 (Klett Group + co-investors) explicitly to 'double student reach' — suggests pre-profitability fundraising; (2) Revenue estimated $2–8M total (tuition from ~10 Sierra Leone private schools + government contract fees from Rwanda/Liberia + growing Rori licensing at ~$5/student/year); (3) Philanthropic grants (LEVI, Gates, Mulago surge grant ~$1M) historically subsidise R&D; (4) Rwanda MINEDUC contract scaling to 120 schools and Liberia government-pays model are the path to earned-revenue sufficiency; (5) Rori targeting 1M users by 2027 at $5/student/year = ~$5M ARR potential — would materially shift revenue mix; (6) LinkedIn-reported 501–1,000 employees implies significant payroll burn. Assessment: subsidised social enterprise in transition toward earned-revenue model, currently loss-making but with credible B2G + AI product pathway to break-even.",
+        "confidence": "low"
+      },
+      "company_age": {
+        "value": "Established (8–20 years) — founded 2014, ~12 years old",
+        "evidence": "Co-founders Skidmore and Dobrowolski started Rising in Sierra Leone in 2014 during the Ebola crisis. 12 years of operating history in a difficult environment. Skidmore's 2024 message references '10 years as CEO' confirming 2014 founding.",
+        "confidence": "high"
+      },
+      "customer_user_base_scale": {
+        "value": "Massive (100K+) — 300,000+ students across 900+ schools; 150,000+ Rori AI users; 4 national government partnerships",
+        "evidence": "Confirmed from multiple sources: (1) 900+ schools across Sierra Leone, Ghana, Liberia, Rwanda; (2) 270,000–300,000 students in school network (website, Anthropic case study); (3) 150,000+ students reached via Rori AI tutor per Anthropic partnership announcement; (4) RisingFaster curriculum in 750+ schools reaching 250,000+ students; (5) Rwanda MINEDUC expanding to 120 schools / 60,000 students. Rori targeting 1M+ users by 2027.",
+        "confidence": "high"
+      }
+    },
+    "growth_phase": {
+      "value": "Scaling — PMF achieved, now executing geographic and product expansion",
+      "evidence": "Multiple scaling signals: school count growing 700 → 900+ within a year; Rwanda MINEDUC expanding from pilot to 120 schools; Rori targeting 1M users by 2027; Series A explicitly to 'double student reach'; new CEO appointment signals organizational professionalization for scale; CTO hired to lead tech product build-out. Not pre-PMF (government contracts and published efficacy confirm PMF). Not optimization (too much active expansion underway).",
+      "confidence": "high"
+    },
+    "market_position": {
+      "customer_segment": {
+        "value": "Primary: Sub-Saharan African governments (Ministries of Education) seeking measurable school quality improvement at low per-pupil cost. Secondary: low-income families in West Africa choosing affordable private schools. Tertiary: impact investors and philanthropic funders.",
+        "evidence": "Three tiered segments with distinct needs and buying behaviours: (1) Government/B2G — Rwanda MINEDUC, Liberia Ministry of Education, Sierra Leone, Ghana: these are procurement buyers seeking proven, affordable, scalable curriculum and coaching programs; buying criteria are evidence base, government alignment, and per-student cost; contract values are largest and most strategic; (2) Consumer/B2C — families in Sierra Leone and Ghana choosing Rising's ~10 affordable private schools over free government schools because of quality; price-sensitive but willing to pay a premium for demonstrably better outcomes; (3) Impact investors/philanthropic — LEVI, Gates Foundation, Mulago, Klett Group, Anthropic: fund R&D and expansion; buying criteria are impact evidence and mission alignment. The government segment is the primary growth lever: each new Ministry MoU can scale 50–200 schools immediately vs. individual family acquisition.",
+        "confidence": "high"
+      },
+      "competitive_stance": {
+        "value": "Niche specialist — defensible segment in evidence-based affordable education, Sub-Saharan Africa",
+        "evidence": "Rising is not competing head-to-head with global EdTech giants. Its differentiation is: (1) operating at school level with on-the-ground curriculum delivery; (2) WhatsApp-native AI (Rori/Tari) working in low-bandwidth environments; (3) published RCT evidence base (arXiv:2402.09809) that most competitors lack; (4) government partnership model that creates institutional relationships as moat. Bridge International Academies operates at larger scale but with significant controversy — Rising's evidence-rigour differentiates.",
+        "confidence": "high"
+      },
+      "gtm_motion": {
+        "value": "Relationship/partner-led (B2G government sales) + product-led (Rori AI, WhatsApp distribution)",
+        "evidence": "Government contracts are won through direct relationship and MoU negotiation (Rwanda, Liberia, Sierra Leone, Ghana) — sales cycle is policy-driven, not SaaS self-serve. Rori growth is partly product-led via WhatsApp virality and teacher referral. Anthropic partnership provides new B2B/B2G distribution channel credibility.",
+        "confidence": "high"
+      },
+      "customer_concentration": {
+        "value": "Moderately concentrated — 3–4 government contracts likely represent majority of B2G revenue",
+        "evidence": "Rwanda MINEDUC (120 schools), Liberia government, Sierra Leone, Ghana are the anchor B2G relationships. Private school tuition is distributed across many families. If B2G is the dominant revenue stream, concentration risk exists around 3–4 government contracts. Rwanda MoU expansion is both a concentration signal and a positive revenue signal.",
+        "confidence": "medium"
+      },
+      "pricing_position": {
+        "value": "Value / low-cost — designed for affordability at scale in low-income markets",
+        "evidence": "Rori at ~$5/student/year is explicitly designed for affordability. RisingFaster 'as low as $5/student/year at government scale.' Private school tuition is 'affordable' by design (B Corp mission). Liberia program 'increased learning 60% without raising costs for government.' This is structurally a value/low-cost positioning, not a premium play.",
+        "confidence": "high"
+      }
+    },
+    "org_structure": {
+      "leadership_model": {
+        "value": "Co-founder team transitioning to professional co-founder CEO",
+        "evidence": "Paul Skidmore (co-founder) served as CEO for 10 years, transitioned to Executive Chairman in 2024. Stephanie Dobrowolski (co-founder, operational from day one) appointed CEO. First CTO (Shabnam Aggarwal) hired to professionalize tech function. COO (Zaheera Soomar) and CSO (George Cowell) also in place. Founder values and mission preserved; professional management layer now assembled.",
+        "confidence": "high"
+      },
+      "org_shape": {
+        "value": "Functional / hub-and-spoke — central leadership team with country operations",
+        "evidence": "Four country operations (Sierra Leone, Ghana, Liberia, Rwanda) plus a central product/tech function (Rori/Tari). C-suite is likely centralized (CEO, CTO, COO, CSO); field operations are distributed by country. This is consistent with hub-and-spoke model for multi-country Africa operators.",
+        "confidence": "medium"
+      },
+      "workforce_model": {
+        "value": "Multi-office / distributed — country operations with field-based delivery teams",
+        "evidence": "Rising operates across Sierra Leone, Ghana, Liberia, and Rwanda — all requiring in-country presence for school management, teacher coaching, and government relationships. HQ likely Sierra Leone (founding context) or UK (Skidmore relocated). Tari/Rori development likely involves remote tech team.",
+        "confidence": "medium"
+      },
+      "talent_profile": {
+        "value": "Operations-heavy (field education delivery) + domain-expert-heavy (education research, AI/ML)",
+        "evidence": "The majority of workforce is in school operations (teachers, coaches, country managers). Leadership layer has domain experts: Skidmore (policy/governance background, Princeton MPA, AGI), Dobrowolski (social researcher), Aggarwal (AI/EdTech founder, Dimagi), LEVI research partnerships. The combination of field operations + rigorous research is unusual.",
+        "confidence": "medium"
+      }
+    },
+    "tech_maturity": {
+      "stack_generation": {
+        "value": "AI-native (MERN stack + Elixir for chatbot, LLM integration via Claude API for Rori); conventional for school operations",
+        "evidence": "Rori and Tari built on Claude (Anthropic), delivered via WhatsApp API. LinkedIn tech team research confirms MERN stack (MongoDB, Express, React, Node.js) plus Elixir for chatbot backend, with deep LLM integration via Claude API powering Rori. School management (RisingFaster) uses conventional pedagogy and tools. Deliberately AI-native for tech products: WhatsApp chosen to bypass infrastructure gaps.",
+        "confidence": "high"
+      },
+      "engineering_practices": {
+        "value": "Intermediate to advanced — CTO Shabnam Aggarwal (ex-KleverKid founder), Owen Henkel (Product Manager/AI Lead), Raoul de Villiers (Product Owner); 12-18 person team, actively hiring Senior Engineers",
+        "evidence": "LinkedIn research identifies structured engineering leadership: CTO Shabnam Aggarwal (ex-KleverKid founder, ex-Dimagi), Owen Henkel (Product Manager/AI Lead), Raoul de Villiers (Product Owner). Team estimated at 12-18 people with active Senior Engineer hiring. Published arXiv research implies systematic experimentation. Anthropic partnership implies production-grade API integration. RCT methodology implies A/B testing discipline. Maturing engineering org beyond startup-grade.",
+        "confidence": "high"
+      },
+      "data_infrastructure": {
+        "value": "ML/NLP in production with structured research data pipelines; LEVI cohort member",
+        "evidence": "Rori has published RCT evidence (arXiv:2402.09809, 0.36-0.37 SD effect sizes) implying structured data collection, analysis pipelines, and ML feedback loops. 18-month FasterMath evaluation (0.22 SD) implies longitudinal data infrastructure. LinkedIn confirms ML/NLP in production (Rori AI tutor, Tari teacher assistant). LEVI cohort membership confirms participation in rigorous education research infrastructure. Production AI with feedback loops confirmed.",
+        "confidence": "high"
+      },
+      "security_posture": {
+        "value": "Intermediate — Keeping Children Safe membership signals child data safeguarding practices",
+        "evidence": "Joined Keeping Children Safe (KCS) global network in November 2024 — 900+ schools, 250,000+ students. This signals formal safeguarding standards, which imply some data governance and security practices around child data. B Corp certification also requires governance standards. Likely intermediate (access controls, child data policies) but not enterprise-grade SOC2.",
+        "confidence": "medium"
+      }
+    },
+    "operating_environment": {
+      "regulatory_burden": {
+        "value": "Moderate-to-heavy — multi-jurisdiction education regulation + child safeguarding + AI data governance",
+        "evidence": "Operating schools across 4 Sub-Saharan African countries each with their own education regulatory frameworks, Ministry of Education oversight, and school licensing requirements. KCS membership signals compliance with international child safeguarding standards. AI product (Rori/Tari) involves child data and WhatsApp delivery — additional data governance considerations. B Corp certification imposes governance obligations. Not as heavy as healthcare/financial services but significantly more complex than typical SaaS.",
+        "confidence": "medium"
+      },
+      "geographic_scope": {
+        "value": "Regional — Sub-Saharan Africa (4 countries: Sierra Leone, Ghana, Liberia, Rwanda)",
+        "evidence": "Operations confirmed in Sierra Leone (founding base), Ghana, Liberia (government partnership since early years), Rwanda (MINEDUC MoU 2024). Anthropic partnership references Nigeria and Kenya as new expansion markets. Leadership partially UK-based (Skidmore relocated). Genuinely multi-country regional operations, not just multi-market sales.",
+        "confidence": "high"
+      },
+      "macro_sensitivity": {
+        "value": "Moderate — donor/government budget cycles; forex exposure; partially recession-resistant (essential education)",
+        "evidence": "Education is relatively recession-resistant, but Rising's funding mix includes philanthropic grants (sensitive to donor sentiment) and government contracts (sensitive to budget cycles of low-income countries). Rwanda and Liberia are heavily aid-dependent economies. Currency risk across 4 different African currencies plus USD-denominated grant funding. Mitigated by mission-driven donor base and government partnership stickiness.",
+        "confidence": "medium"
+      },
+      "governance_obligations": {
+        "value": "B Corp certified + VC-backed (Series A) + social enterprise mission constraints",
+        "evidence": "Certified B Corp — imposes legal/governance obligations to balance profit and purpose, third-party verification. Series A from Klett Group imposes investor board governance (likely board seats). Social enterprise mission (affordable quality education in Sub-Saharan Africa) constrains commercial pivots. Also: LEVI/Gates grant terms, KCS membership standards.",
+        "confidence": "high"
+      }
+    },
+    "culture_brand": {
+      "innovation_posture": {
+        "value": "Pragmatic-to-bleeding-edge — evidence-driven experimentation with early AI adoption",
+        "evidence": "Rising is unusually rigorous for its sector: published RCTs, iterative curriculum improvement, A/B tested interventions. The Rori WhatsApp architecture was a deliberate 'conventional EdTech reaches <5% of our students' insight — evidence-driven leap. Anthropic partnership (July 2025) places them among early AI-in-education adopters globally, not just in Africa. Skidmore's public writing ('The Learning Crisis is Dead') signals intellectual willingness to challenge orthodoxy. Best described as pragmatic with bleeding-edge AI moves.",
+        "confidence": "high"
+      },
+      "brand_positioning": {
+        "value": "Thought-leader / mission-driven — evidence-rigour and educational impact as brand identity",
+        "evidence": "Skidmore publishes on Medium and Institute for Global Change; Rising publishes impact evidence and research partnerships actively. Anthropic case study on claude.com is high-profile brand endorsement. World's Best School Prizes finalist, MIT Solve winner, HUNDRED innovation recognition. The brand narrative is consistently 'evidence-based, mission-aligned, radically effective' rather than 'disruption' or pure commercial framing.",
+        "confidence": "high"
+      },
+      "public_values": {
+        "value": "Mission-driven — mission explicitly constrains commercial decisions",
+        "evidence": "B Corp certification is structural commitment. Founding mission (quality education in fragile/low-income contexts in Sub-Saharan Africa) has remained consistent since 2014 Ebola founding context. Skidmore's CEO transition letter frames the transition in mission terms. The Anthropic partnership is framed as 'AI for impact' not commercial AI. Revenue model (affordable tuition, $5/student AI) is mission-constrained.",
+        "confidence": "high"
+      },
+      "employer_brand": {
+        "value": "Strong-in-niche — attracts mission-aligned talent in international development + EdTech",
+        "evidence": "10-year founder tenure with co-founder still operational (high retention signal at top). CTO hire (Aggarwal) from VC-backed EdTech founder background — attracted serious tech talent. Mulago Rainer Arnhold Fellow designation elevates Skidmore's (and by extension Rising's) standing in impact investing/international development talent community. Likely attracts high-quality mission-aligned talent; less likely to attract purely commercially-motivated engineers.",
+        "confidence": "medium"
+      }
+    }
+  },
+  "gaps": [
+    "Headcount confirmed as 501–1,000 via LinkedIn; breakdown between core staff vs. teacher workforce not available",
+    "Revenue figures, margins, and path-to-profitability not disclosed — revenue band is estimated at $2–8M",
+    "Total cumulative funding unclear — only $4.25M Series A equity confirmed; pre-Series A grants and equity not quantified",
+    "Valuation not publicly disclosed (PitchBook profile exists but behind paywall)",
+    "Tari (teacher AI) current user scale not confirmed — launched July 2025 per Anthropic partnership",
+    "Nigeria and Kenya market entry details sparse — referenced in Anthropic case study but no operational detail",
+    "COO (Zaheera Soomar) and CSO (George Cowell) backgrounds not publicly detailed",
+    "Rori 2025/26 large RCT results not yet available",
+    "Details of Liberia government contract structure and terms not public",
+    "No independent negative coverage of Rising found — potential blind spots in reputational risk assessment",
+    "Paul Skidmore contact note: he has transitioned from CEO to Executive Chairman; Stephanie Dobrowolski is now the primary day-to-day leader"
+  ],
+  "data_quality_score": {
+    "overall": 0.79,
+    "passing_threshold": 0.7,
+    "method": "semantic-rubric-haiku",
+    "dimensions": {
+      "industry-vertical": 0.92,
+      "business-model": 0.68,
+      "strategy": 0.86,
+      "scale-resources": 0.53,
+      "growth-phase": 0.95,
+      "market-position": 0.5,
+      "org-structure": 0.81,
+      "tech-maturity": 0.63,
+      "operating-environment": 0.88,
+      "culture-brand": 0.87,
+      "product": 0.93
+    },
+    "strong_dimensions": {
+      "industry-vertical": {
+        "label": "Industry & Vertical",
+        "score": 0.92
+      },
+      "strategy": {
+        "label": "strategy",
+        "score": 0.86
+      },
+      "growth-phase": {
+        "label": "Growth Phase",
+        "score": 0.95
+      },
+      "org-structure": {
+        "label": "Org Structure",
+        "score": 0.81
+      },
+      "operating-environment": {
+        "label": "Operating Environment",
+        "score": 0.88
+      },
+      "culture-brand": {
+        "label": "Culture & Brand",
+        "score": 0.87
+      },
+      "product": {
+        "label": "product",
+        "score": 0.93
+      }
+    },
+    "weak_dimensions": {
+      "business-model": {
+        "label": "Business Model",
+        "score": 0.68,
+        "research_questions": [
+          "What is Rising Academies's revenue mix — is it project-based, retainer, subscription, or blended?",
+          "What structural moats or switching costs does Rising Academies have beyond brand/relationships?",
+          "What are Rising Academies's critical operational dependencies — platform, talent pipeline, regulatory, or funding?"
+        ]
+      },
+      "scale-resources": {
+        "label": "Scale & Resources",
+        "score": 0.53,
+        "research_questions": [
+          "What is Rising Academies's current headcount and how has it changed in the last 12 months?",
+          "What is Rising Academies's approximate annual revenue or budget, and is it growing or flat?",
+          "What is Rising Academies's financial health — profitable, break-even, grant-dependent, or burning runway?"
+        ]
+      },
+      "market-position": {
+        "label": "Market Position",
+        "score": 0.5,
+        "research_questions": [
+          "Who are Rising Academies's target buyers and what does their buying process look like?",
+          "How concentrated is Rising Academies's revenue — top 5 clients as % of total?",
+          "Where does Rising Academies sit on the price-value spectrum vs. alternatives?"
+        ]
+      },
+      "tech-maturity": {
+        "label": "Tech Maturity",
+        "score": 0.63,
+        "research_questions": [
+          "What core technology does Rising Academies use internally — custom-built, off-the-shelf, or minimal?",
+          "Does Rising Academies have engineering/product teams, or is tech outsourced/minimal?",
+          "What data infrastructure exists — spreadsheets, BI dashboards, data warehouse, or ML-ready pipelines?"
+        ]
+      }
+    },
+    "total_properties_scored": 39
+  },
+  "sources": {
+    "site_scan": "https://www.risingacademies.com (7 pages scanned, 2026-03-11)",
+    "web_research": "25+ sources including risingacademies.com/risingnews, africabusinesscommunities.com, claude.com/customers/rising-academies, rori.ai, arxiv.org/abs/2402.09809, mulagofoundation.org, learning-engineering-virtual-institute.org, linkedin.com/company/rising-academy-network (headcount: 501–1,000)",
+    "key_primary_sources": [
+      "https://www.risingacademies.com/risingnews/rising-partners-with-anthropic-to-power-ai-for-impact",
+      "https://africabusinesscommunities.com/finance/rising-academies-to-close-series-a-investment-of-425m-led-by-klett-kita-and-schule-gmbh/",
+      "https://www.risingacademies.com/risingnews/a-message-from-our-founders",
+      "https://www.risingacademies.com/risingnews/rising-and-mineduc-rwanda-sign-a-new-mou-to-extend-the-risingfaster-remedial-program-to-more-schools",
+      "https://arxiv.org/abs/2402.09809",
+      "https://claude.com/customers/rising-academies"
+    ]
+  }
+}

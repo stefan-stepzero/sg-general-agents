@@ -1,0 +1,231 @@
+{
+  "category": "extraction",
+  "category_label": "Extraction & Structuring",
+  "capabilities": {
+    "extraction-media-parsing": {
+      "label": "Media Parsing & Transcription",
+      "domains": {
+        "talent-people": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "Education sector is workforce-heavy with teacher observations, coaching sessions, professional development videos, and interview recordings. Transcribing classroom walkthroughs and CPD sessions enables coaching analytics and quality assurance at scale — a workflow that HRIS and video tools do not handle with education-specific fidelity. Rising Academies and CSPD in particular rely on in-person observation cycles that generate hours of audio/video with no structured capture today."
+        },
+        "governance-leadership": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Board and committee meetings, accreditation hearings, and stakeholder consultations generate recorded content that must be archived and referenced. Transcription creates searchable governance records, though the downstream value is in analysis rather than transcription itself. Board-management software used by WISE and PHINMA does not provide education-specific parsing."
+        },
+        "operations-delivery": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Education operations span timetabling, enrolment processing, and student welfare records — many still paper-based or scanned, especially at Rising Academies (West Africa) and iPeople (Philippines). OCR and form-parsing of student records, attendance sheets, and government reporting forms is a genuine unmet need at these tech-maturity levels. No ERP serving low-resource education markets handles this adequately."
+        },
+        "risk-compliance": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "Child safety obligations (mandatory reporting, safeguarding logs), government funding compliance, and accreditation evidence require structured capture from diverse media including incident recordings, inspection reports, and scanned compliance documents. CSPD and School for Life face Australian regulatory requirements; PHINMA and iPeople face CHED/DepEd documentation mandates. Parsing this content into auditable records is a specialized, high-stakes need."
+        },
+        "financial": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Parsing scanned receipts, grant acquittals, and government subsidy claims is relevant for education organisations handling public funding, but the volumes and document complexity are modest compared to enterprise finance. Value appears where government reporting requires extracting from legacy or non-digital formats."
+        },
+        "strategy-direction": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Transcribing leadership retreats or strategy sessions has marginal value for education organisations at this scale; strategic inputs are more usefully captured via structured templates than media parsing."
+        },
+        "growth-market": {
+          "fit": 0.52,
+          "specificity": "mid",
+          "reasoning": "Parsing recorded stakeholder consultations, community focus groups, and parent engagement sessions can surface demand signals for PHINMA and Rising Academies expanding into new markets. Useful but not a primary growth lever at this sector maturity."
+        },
+        "product-service": {
+          "fit": 0.65,
+          "specificity": "high",
+          "reasoning": "EdTech organisations like Kinetic (student accommodation SaaS) and iPeople can extract product feedback from recorded user sessions, support calls, and student orientation recordings. Education-specific user language and learning workflows require domain-calibrated parsing beyond what generic UX research tools offer."
+        }
+      }
+    },
+    "extraction-entity": {
+      "label": "Entity & Attribute Extraction",
+      "domains": {
+        "talent-people": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Teacher qualification tracking, skills extraction from CVs and professional portfolios, and credential verification against national teaching registration bodies (AITSL in Australia, PRC in Philippines) require NER tuned to education ontologies. At CSPD and PHINMA scale (hundreds to thousands of staff), manual credential management is a major compliance and talent risk. No standard HRIS extracts from diverse education qualification documents with the specificity needed."
+        },
+        "governance-leadership": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Extracting commitments, action items, policy references, and accountability assignments from board minutes, accreditation reports, and government policy documents enables governance tracking. Education boards at WISE and CSPD reference complex multi-party obligations; entity extraction from governance documents is a clear gap in current board tools."
+        },
+        "operations-delivery": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Student enrolment data, timetabling entities, facility allocation, and supplier contracts contain structured information locked in forms and documents. Extracting student attributes, course codes, and compliance flags from intake forms and government reporting templates is a high-volume, error-prone manual process across Rising Academies and PHINMA's distributed campuses."
+        },
+        "risk-compliance": {
+          "fit": 0.90,
+          "specificity": "high",
+          "reasoning": "Child safety incident reports, accreditation evidence, government funding agreements, and regulatory correspondence contain critical named entities (students, staff, incidents, obligations, dates, thresholds) that must be extracted and tracked. Education regulation in Australia, Philippines, and West Africa each carry distinct obligation structures that no generic compliance tool models. This is the highest-fit cell in this capability."
+        },
+        "financial": {
+          "fit": 0.70,
+          "specificity": "high",
+          "reasoning": "Government grant agreements, donor funding terms, and student fee schedules contain structured financial entities (amounts, conditions, reporting milestones) that must be monitored. Education organisations like PHINMA and Acasus managing public or donor funding need obligation extraction from non-standard contract formats that accounting SaaS does not parse."
+        },
+        "strategy-direction": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Extracting competitive signals, policy developments, and sector trends from government white papers, international development reports, and EdTech industry publications supports strategy teams at Acasus and WISE. Useful but the extraction task is relatively straightforward compared to the synthesis challenge."
+        },
+        "growth-market": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Extracting school system attributes, enrolment demographics, and funding signals from government data and tender documents can sharpen market targeting for Rising Academies and Acasus. Moderately differentiated — standard competitive intelligence tools do not cover LMIC education markets well."
+        },
+        "product-service": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Extracting feature requests, pain points, and learning outcome signals from teacher and student feedback at Kinetic and iPeople requires education-domain NER. Moderately differentiated from generic product analytics — education workflows and terminology require domain tuning."
+        }
+      }
+    },
+    "extraction-summarization": {
+      "label": "Summarization & Condensation",
+      "domains": {
+        "talent-people": {
+          "fit": 0.78,
+          "specificity": "mid",
+          "reasoning": "Summarising teacher performance reviews, professional development portfolios, and 360-degree feedback at scale reduces administrative load for principals and HR teams across distributed campuses. CSPD and PHINMA managing hundreds of educators face real bottlenecks in appraisal cycles. While HRIS copilots are emerging, they lack education-specific appraisal context (teaching standards, curriculum alignment, pastoral observation)."
+        },
+        "governance-leadership": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Condensing accreditation self-study reports, government policy submissions, board governance packs, and multi-stakeholder education reviews into decision-ready briefs is a critical leadership need. Education governance involves high document volume, complex regulatory language, and multi-audience reporting. WISE preparing summit reports, PHINMA handling CHED accreditation cycles, and CSPD managing ACARA compliance all face this acutely. Board tools do not provide education-domain summarisation."
+        },
+        "operations-delivery": {
+          "fit": 0.70,
+          "specificity": "mid",
+          "reasoning": "Condensing student welfare case notes, shift handover summaries in residential settings (Kinetic), and operational reports across distributed school networks reduces coordinator workload. Education-specific language (behaviour incident terminology, welfare frameworks) benefits from domain-aware summarisation over generic tools."
+        },
+        "risk-compliance": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Summarising mandatory reporting obligations, child safety policy updates, accreditation findings, and government audit outcomes into actionable briefs is a high-value, recurring need. Education compliance documents are lengthy and jurisdiction-specific (Australian child safety standards, CHED regulations, Sierra Leone education ministry requirements). Generic AI summarisers produce outputs that miss domain-critical nuances."
+        },
+        "financial": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Summarising grant reports, budget variance analyses, and funder acquittals is useful for education organisations managing complex funding streams (PHINMA, Acasus, Rising Academies), but the summarisation task is relatively generic once documents are structured."
+        },
+        "strategy-direction": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Distilling international education research, LMIC policy landscapes, and sector intelligence into strategic briefs is directly valuable for Acasus and WISE, whose positioning depends on deep sector knowledge. Synthesis depth required exceeds what general AI summarisers reliably produce for development sector contexts."
+        },
+        "growth-market": {
+          "fit": 0.58,
+          "specificity": "low",
+          "reasoning": "Summarising market entry analyses, competitor school profiles, and community needs assessments is useful for Rising Academies and PHINMA's expansion decisions, but this is a commodity summarisation task without strong sector-specific differentiation."
+        },
+        "product-service": {
+          "fit": 0.68,
+          "specificity": "mid",
+          "reasoning": "Condensing user research, student feedback surveys, and learning outcome reports at Kinetic and iPeople provides product teams with thematic synthesis. Education product feedback (pedagogy language, LMS terminology) benefits from domain awareness but the core task is achievable with general-purpose AI."
+        }
+      }
+    },
+    "extraction-knowledge": {
+      "label": "Knowledge & Relationship Extraction",
+      "domains": {
+        "talent-people": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Mapping teacher expertise networks, professional learning communities, and skill adjacencies across large multi-campus education organisations enables targeted professional development and succession planning. At CSPD and PHINMA, identifying which educators hold rare specialist skills (STEM, special needs, bilingual) requires extracting from heterogeneous HR, observation, and curriculum documents. No people analytics tool builds this graph for education contexts."
+        },
+        "governance-leadership": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "Extracting decision provenance, policy dependency chains, and accountability relationships from accreditation histories, board resolution archives, and regulatory correspondence enables education leaders to navigate complex multi-stakeholder governance. WISE managing global summit stakeholders and CSPD operating under Catholic Education Commission governance structures face layered relationship networks no current board tool maps."
+        },
+        "operations-delivery": {
+          "fit": 0.68,
+          "specificity": "high",
+          "reasoning": "Extracting causal relationships between timetabling constraints, student support needs, staffing availability, and facility capacity creates an operational knowledge graph that enables better resource allocation across distributed campus networks. Relevant for Rising Academies (multi-country) and PHINMA (multi-campus Philippines), where coordination complexity is high and tooling is limited."
+        },
+        "risk-compliance": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Education compliance involves nested obligation networks — child safety frameworks reference mandatory reporting procedures which reference staff training requirements which reference employment conditions. Extracting these dependency chains from government legislation, accreditation standards (TEQSA, CHED, ACARA), and organisational policy creates a compliance knowledge graph that no GRC tool builds for the education sector. Critical for CSPD, iPeople, and School for Life."
+        },
+        "financial": {
+          "fit": 0.65,
+          "specificity": "high",
+          "reasoning": "Mapping relationships between funding sources, grant conditions, program expenditures, and reporting obligations helps education organisations (PHINMA, Acasus, Rising Academies) managing multi-funder portfolios understand cross-constraint dependencies. Useful but secondary to the compliance and governance relationship extraction needs."
+        },
+        "strategy-direction": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Building a knowledge graph of LMIC education ecosystem actors, policy levers, donor relationships, and competitive dynamics from research literature and development sector intelligence is a core capability for Acasus and WISE. The international development education space is not served by commercial competitive intelligence platforms, making purpose-built knowledge extraction highly differentiated."
+        },
+        "growth-market": {
+          "fit": 0.65,
+          "specificity": "high",
+          "reasoning": "Extracting school network relationships, government procurement patterns, and community influence structures from public documents and tender data supports market entry for Rising Academies and PHINMA. LMIC education markets are poorly indexed by standard intelligence tools, giving purpose-built extraction meaningful differentiation."
+        },
+        "product-service": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Mapping relationships between learning outcomes, curriculum standards, product features, and student performance data creates a pedagogical knowledge graph valuable for iPeople and Kinetic's product development. Moderately specialised — education ontology (Bloom's taxonomy, curriculum frameworks) requires domain knowledge to build correctly."
+        }
+      }
+    },
+    "extraction-transformation": {
+      "label": "Data Transformation & Structuring",
+      "domains": {
+        "talent-people": {
+          "fit": 0.72,
+          "specificity": "mid",
+          "reasoning": "Education organisations typically run fragmented HR systems — national payroll, HRIS, teaching registration databases, and spreadsheet-based appraisal tracking rarely integrate. Transforming and normalising staff data across these systems for workforce analytics is a real pain at CSPD and PHINMA, and standard HR integration platforms do not cover education-specific schemas (registration status, teaching area, professional learning hours)."
+        },
+        "governance-leadership": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Transforming governance documents, committee reports, and accreditation evidence into unified dashboards for leadership supports oversight but is partially addressable with existing BI tools. Differentiation comes when transforming education-specific regulatory formats (AITSL standards, CHED accreditation matrices) that generic BI connectors do not handle."
+        },
+        "operations-delivery": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Education operations generate heterogeneous data: student management systems, timetabling tools, government reporting formats, attendance registers (often paper in LMICs), and welfare tracking systems rarely share schemas. Transforming these into unified operational views is a persistent, high-ROI problem across Rising Academies, PHINMA, and CSPD. No education ERP or iPaaS adequately bridges legacy SIS formats with modern analytics layers in these markets."
+        },
+        "risk-compliance": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Education compliance reporting requires mapping institutional data to government-mandated schemas that differ by jurisdiction and change with policy cycles (ACARA NAPLAN reporting, CHED HEDCOR, Sierra Leone EMIS). Transforming operational data into compliant reporting formats requires purpose-built domain logic that no general ETL tool encodes. Annual compliance cycles make this a recurring high-value transformation task."
+        },
+        "financial": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Education organisations managing government subsidies, donor grants, and fee income across multiple programs and campuses face complex fund accounting and reporting requirements. Transforming multi-source financial data into funder-specific reporting formats (AusAID, World Bank, USAID templates) requires domain-specific transformation logic well beyond what standard accounting SaaS provides."
+        },
+        "strategy-direction": {
+          "fit": 0.48,
+          "specificity": "low",
+          "reasoning": "Structuring market intelligence and research data for strategic consumption is a generic task; education-sector context adds limited transformation complexity. Analysts at Acasus and WISE are well-equipped to handle this with existing tools."
+        },
+        "growth-market": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Transforming government education statistics, demographic data, and school census information into market sizing models supports expansion planning for Rising Academies and PHINMA. LMIC data is often in non-standard government formats that require cleaning and restructuring, creating moderate differentiation."
+        },
+        "product-service": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Structuring learning outcome data, LMS telemetry, and student assessment records into analytics-ready formats is a real product engineering challenge at iPeople and Kinetic. Education data standards (IMS Global, xAPI) add specificity but increasingly have tooling support, limiting differentiation."
+        }
+      }
+    }
+  }
+}

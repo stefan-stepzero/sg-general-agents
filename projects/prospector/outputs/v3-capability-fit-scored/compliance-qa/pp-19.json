@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-internal-audit-audit-responsibility-diffusion-dup",
+  "pain_point_label": "Audit Responsibility Diffused Across Roles",
+  "matches": [
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core pain is that audit findings from different functions (finance, HR, academic, facilities) sit in isolation with no mechanism to surface cross-domain causal relationships. Knowledge extraction can parse audit reports from each silo and construct a relationship graph linking findings to campuses, root causes, and governance indicators — the exact cross-functional synthesis that is currently missing. For a multi-site operator, this directly addresses the 'same campus, different symptoms' blind spot described in the pain point.",
+      "opportunity_sketch": "An AI layer ingests structured and unstructured audit reports from all functional heads, extracts fact triples (campus → finding → category), and surfaces co-occurring governance signals across domains — e.g. flagging that Campus X appears in both financial irregularity and enrollment inflation findings within the same cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Audit findings from four separate functional heads produce voluminous, domain-specific reports that no single executive currently reads holistically. Multi-document summarization can condense findings across all domains into a unified governance summary per campus, making cross-functional patterns visible to leadership without requiring a dedicated audit coordinator role. This directly reduces the coordination gap described without requiring org restructuring.",
+      "opportunity_sketch": "After each audit cycle, AI synthesizes all functional audit reports into a per-campus governance brief — highlighting campuses with findings across multiple domains and flagging potential systemic control weaknesses for board or CEO review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain point describes a pattern where a single campus accumulates abnormal signals across financial, academic, and HR domains simultaneously — a governance anomaly that no single auditor is positioned to detect. Anomaly detection applied to structured audit data (finding counts, severity scores, repeat findings) can flag campuses whose cross-domain audit profile deviates from the network norm, surfacing systemic control gaps before they escalate. This is technically feasible with the structured data a 500+ staff operator already collects.",
+      "opportunity_sketch": "A cross-domain anomaly model scores each campus each audit cycle against network baselines across financial, academic, HR, and safety dimensions — automatically escalating campuses whose multi-dimensional deviation exceeds threshold to a compliance lead or executive.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The absence of cross-functional audit synthesis means compliance risk accumulates silently at the campus level — exactly the adverse outcome that risk scoring is designed to quantify and surface. By aggregating signals across all audit domains (financial irregularities, enrollment anomalies, HR record gaps, safety findings), a risk model can produce a campus-level governance risk score that gives leadership a consolidated view of where systemic control failures are most likely. This converts distributed audit noise into a prioritized risk register.",
+      "opportunity_sketch": "A campus governance risk score is computed each quarter by combining findings across all four audit functions — weighted by recurrence, severity, and cross-domain co-occurrence — producing a ranked watchlist that the CEO or board can act on without waiting for an integrated audit function to be built.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The coordination gap exists partly because there is no workflow that routes findings across functional owners after each audit cycle. A task automation agent can implement the cross-functional audit synthesis process as a workflow: ingest findings from each domain, tag them by campus, trigger cross-campus pattern analysis, and route a unified summary to the appropriate executive — without requiring a new headcount or org restructure. This is the process automation layer that makes the other AI capabilities actionable.",
+      "opportunity_sketch": "An audit coordination agent runs post-cycle: it collects findings from each functional audit system (or email/document submissions), classifies and tags them, runs cross-domain clustering, and produces a governance summary routed to the VP or CFO — closing the coordination loop that currently doesn't exist.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "After cross-domain audit signals are identified, there is a concrete need to generate cross-functional audit narratives and governance reports for board or accreditation body consumption — a task no individual functional auditor currently performs. Text generation can produce these synthesized reports from structured finding data, translating multi-domain audit inputs into board-ready governance narratives that contextualize systemic risk.",
+      "opportunity_sketch": "AI drafts a quarterly cross-campus governance narrative for the CEO/board by synthesizing structured findings from all four audit functions into a plain-language risk summary with campus-level callouts and recommended escalations.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

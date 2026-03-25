@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-supplier-contract-enforcement",
+  "pain_point_label": "Supplier Contract Enforcement & Preferred Vendor List Drift",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full enforcement workflow — receive invoice, extract fields, check vendor against approved list, compare prices to contracted rates, check payment terms, route exception for approval, log outcome — is a multi-step process that currently falls apart because it requires consistent human action across every campus. A task automation agent can execute this entire workflow autonomously: it ingests invoices, runs the checks, sends structured exception alerts to procurement, and updates a compliance log, removing the dependency on finance staff authority or willingness to escalate. This addresses relationship fatigue and authority gaps directly.",
+      "opportunity_sketch": "An invoice intake agent processes all supplier invoices across campuses: approved vendors at contracted prices clear automatically; unapproved vendors or price-deviant invoices trigger a structured exception workflow requiring central procurement sign-off before payment is released.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.25
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Invoice prices that deviate from contracted preferred-vendor rates are a textbook anomaly detection problem: the AI compares each incoming invoice unit price and payment terms against the approved vendor list and flags deviations above a threshold before payment is processed. This directly targets the core pain — the center budgets at PHP X but pays PHP X+20% because nobody catches the informal price change at the invoice stage. For a 500+ staff operator processing dozens of campus invoices monthly, automated flagging is far more reliable than manual finance-staff review.",
+      "opportunity_sketch": "An anomaly-detection layer sits between invoice receipt and payment approval: invoices from unapproved vendors or at prices more than N% above contracted rates are auto-flagged, routed to central procurement for exception approval, and blocked from straight-through payment.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Suppliers can be risk-scored on dimensions like price-deviation history, unapproved-use frequency, payment term violations, and delivery complaint volume, giving procurement a quantified view of which vendor relationships pose the highest risk to cost and compliance posture. This transforms the audit finding that preferred vendor list prices are no longer accurate from a periodic shock into a continuously monitored risk indicator that leadership can act on proactively.",
+      "opportunity_sketch": "A supplier risk dashboard ranks all active vendors by a composite compliance risk score updated monthly; high-risk vendors trigger contract renegotiation prompts or removal from the preferred list, while new vendors are scored before being added.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Supplier invoices contain vendor name, unit prices, quantities, payment terms, and due dates — all key-value pairs that must be extracted before any comparison to the preferred vendor list can happen. Without reliable extraction, manual keying introduces errors and delays, undermining any downstream enforcement. This is the foundational digitization step that makes price-variance checking and contract-term verification technically feasible.",
+      "opportunity_sketch": "An extraction pipeline reads incoming supplier invoices, pulls vendor ID, line-item prices, quantities, and payment terms into structured records, then feeds them into a matching engine that checks each field against the preferred vendor list and contract master.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once invoice data is extracted, each transaction can be classified across multiple compliance dimensions: vendor status (approved / unapproved / expired approval), price compliance (within tolerance / minor deviation / major deviation), and payment terms compliance (matching contract / non-standard). This triaging logic applied to structured invoice records enables the procurement team to prioritize which exceptions need immediate human intervention versus which are minor and can be batch-reviewed.",
+      "opportunity_sketch": "A classification model labels every extracted invoice as compliant, price-exception, unapproved-vendor, or terms-mismatch, producing a daily exception dashboard that central procurement reviews rather than auditing raw invoices line by line.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Penalty clauses, delivery SLAs, and price escalation terms buried in multi-page supplier contracts are never referenced at invoice time because finance staff lack the time or authority to locate them. AI summarization can distill each contract into a structured enforcement cheat sheet — contracted price, payment terms, penalty triggers, and escalation contact — making it practical for campus and finance staff to know what they are entitled to enforce.",
+      "opportunity_sketch": "Each supplier contract is summarized into a structured enforcement card covering price, terms, SLAs, and penalties, attached to the vendor record; when an invoice exception is flagged, the card is surfaced alongside the exception so the approver knows exactly what the contract says.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Many campus-level supplier invoices and purchase receipts exist as scanned images or photographed paper documents, not clean digital files — OCR and form extraction convert these into machine-readable data before any price or vendor validation can occur. This is particularly relevant for informal regional suppliers such as the de facto uniform vendor who do not issue structured electronic invoices. Without this step, a significant portion of transactions remain invisible to central procurement.",
+      "opportunity_sketch": "Campus staff photograph or scan supplier documents into a shared inbox; the media-parsing layer extracts all structured fields and routes the structured record to the vendor validation and price-anomaly checks automatically.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 2,
+      "composite_score": 2.75
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

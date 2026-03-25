@@ -1,0 +1,117 @@
+{
+  "pain_point_id": "workforce-management-performance-evaluation-promotion-bottleneck-dup",
+  "pain_point_label": "Opaque Promotion & Career Advancement Pathway",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core problem is that promotion and advancement criteria are undocumented or inconsistently communicated. AI text generation can draft clear, structured career pathway frameworks, job band descriptions, and advancement criteria documents tailored to DepEd step increase integration. For a multi-site operator, this means generating consistent, professional HR policy language that distinguishes institutional raises from government step increments — content that HR teams struggle to write themselves.",
+      "opportunity_sketch": "An AI-assisted career pathway document generator that produces role-level advancement criteria, timeline expectations, and salary band narratives for each position type — output that principals and HR can review, approve, and distribute.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "generation-synthetic-data",
+      "capability_label": "Synthetic Data Generation",
+      "match_rationale": "No match — the pain is about unclear criteria and poor communication, not a data scarcity problem requiring synthetic datasets.",
+      "opportunity_sketch": "",
+      "pain_salience": 1,
+      "adoption_likelihood": 1,
+      "build_complexity": 1,
+      "composite_score": 0.8
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Multi-site operators often have scattered HR policies, DepEd memos, DOLE regulations, and institutional guidelines spread across documents. Summarization can condense these into staff-facing career pathway summaries, reducing the cognitive burden on HR to manually synthesize policy inputs before communicating advancement criteria.",
+      "opportunity_sketch": "A tool that ingests DepEd circulars, school board resolutions, and HR manuals and outputs a plain-language career advancement guide per role — updated automatically when policies change.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Staff records contain performance ratings, tenure, certifications, and role history — structured data that can be used to classify employees into advancement readiness tiers. This directly addresses the 'deserving staff stall while poor performers drift' problem by making eligibility determination data-driven rather than principal-discretionary.",
+      "opportunity_sketch": "An advancement readiness classifier that ingests employee performance records and outputs a tier label (e.g., Ready Now / Ready in 12 months / Development Needed) with the key factors driving each classification.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Brain drain of ambitious mid-career teachers is explicitly named as a pain. Propensity modeling on employee features — tenure, performance trajectory, salary relative to band, promotion wait time, external job market signals — can predict which staff are at highest attrition risk before they resign. This gives operators a window to intervene with advancement offers or retention actions.",
+      "opportunity_sketch": "An attrition risk model that scores each teacher and staff member monthly, flagging those with high flight risk so principals and HR can prioritize retention conversations and advancement reviews.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Succession planning — identifying who is eligible and ready to fill leadership gaps — is fundamentally a constraint satisfaction problem: candidate qualifications, role requirements, campus needs, budget limits, and DepEd certification requirements must all be satisfied simultaneously. AI constraint optimization can generate valid succession configurations across multiple campuses that human planners would miss or spend weeks resolving.",
+      "opportunity_sketch": "A succession planning tool that takes current role vacancies, candidate profiles, and institutional constraints and generates a ranked set of valid internal promotion configurations — with explanations of why each candidate does or doesn't meet each constraint.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff uncertainty about career trajectory is best addressed through an always-available resource they can query directly. A conversational agent trained on the institution's HR policies, DepEd regulations, and advancement criteria can answer individual questions like 'When am I eligible for a salary grade increase?' or 'What do I need to qualify for department head?' — reducing the burden on HR and principals who currently field these questions ad hoc.",
+      "opportunity_sketch": "An HR policy chatbot accessible via web or messaging app that answers staff questions about promotion timelines, salary increment rules, and leadership pathway requirements — grounded in the institution's actual documents.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "The distinction between DepEd step increases and institutional raises is a document-grounded knowledge problem — staff and even HR staff frequently conflate the two because the source policies are buried in separate documents. A RAG system over the institution's HR policy corpus and DepEd circulars enables precise, citation-backed answers to advancement questions, reducing misinformation and the cost of repeated manual HR lookups.",
+      "opportunity_sketch": "A policy Q&A system that retrieves the exact relevant clauses from DepEd memos and institutional HR documents to answer advancement and salary questions — with citations so staff can verify the answer themselves.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

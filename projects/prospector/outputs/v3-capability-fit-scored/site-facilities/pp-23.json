@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-campus-it-infrastructure-server-room-security-access-control-and-environmental-monitoring-dup",
+  "pain_point_label": "Server Room Security, Access Control, and Environmental Monitoring Are Weak or Absent",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Server room environmental sensors (temperature, humidity, power draw) and access logs generate time-series data that AI anomaly detection can monitor continuously, flagging deviations before equipment failure occurs. Multi-campus operators can establish a shared baseline and detect when a specific campus deviates — e.g., temperature creep at 2am, unusual access at off-hours — without needing staff to manually review logs.",
+      "opportunity_sketch": "A real-time monitoring layer that ingests sensor feeds and access control logs across all campuses, raising alerts when environmental thresholds drift or access patterns fall outside normal envelopes — reducing overheating incidents and unauthorized entry detection lag.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Each campus server room can be profiled against a set of security and environmental risk factors (cooling adequacy, access control type, documentation completeness, backup power presence) and scored for infrastructure risk. For a multi-site operator, this directly supports prioritizing remediation spend and satisfying auditor requirements around data protection controls.",
+      "opportunity_sketch": "A campus infrastructure risk scorecard tool that ingests facility audit responses and configuration data, outputs a per-site risk score, and flags the highest-risk campuses for priority remediation — usable in board-level and regulator-facing reporting.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of documented standard procedures (server room SOPs, equipment inventory templates, incident response runbooks) is a core part of this pain point. Text generation can produce standardized server room policy documents, access control procedures, and equipment documentation templates tailored to multi-campus education operators — addressing the procedural gap rapidly.",
+      "opportunity_sketch": "An AI-assisted policy and documentation generator that produces server room SOPs, access control policies, and equipment inventory templates from a short campus profile — accelerating the creation of the missing procedural infrastructure across all sites.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Server room asset documentation — serial numbers, configurations, warranty expiry, cable maps — is currently missing or scattered. A task automation agent can ingest photos, invoices, and partial records from multiple campuses, cross-reference vendor databases, and produce a structured equipment register automatically. This directly addresses the troubleshooting and audit gaps described in the pain point.",
+      "opportunity_sketch": "A multi-campus IT asset documentation agent that accepts uploaded photos of equipment, scans visible serial numbers and labels via OCR, queries vendor APIs for warranty and configuration data, and outputs a structured asset register per campus — eliminating the undocumented server room problem.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

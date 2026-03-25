@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "student-support-child-protection-safeguarding-staff-training-gaps-dup",
+  "pain_point_label": "Inconsistent Mandatory Abuse Recognition & Reporting Training",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-campus operators lack standardized training materials covering RA 7610 and RA 9262 obligations. AI can generate role-tailored training modules (teacher vs. canteen worker vs. admin), scenario-based vignettes for abuse recognition, and localized reporting chain documents for each campus. This directly addresses the inconsistency by producing uniform, legally-grounded content that can be deployed across all sites.",
+      "opportunity_sketch": "An AI-assisted content authoring tool that generates campus-specific training decks, scenario cards, and mandatory reporting checklists aligned to Philippine child protection law — updated annually and role-differentiated.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff across campuses have uneven knowledge of abuse indicators and reporting obligations. A conversational agent can deliver interactive, self-paced training via Q&A — testing recognition of abuse signs, walking through the mandatory reporting chain step-by-step, and answering law-specific questions (RA 7610, RA 9262) in Filipino or English. Unlike static workshops, it is always available and tracks completion per staff member.",
+      "opportunity_sketch": "A chatbot-style training agent embedded in the school's existing LMS or messaging platform, guiding each staff member through scenario-based abuse recognition training and confirming their understanding of reporting duties before logging completion.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The root cause is the absence of a centralized training mandate and accountability mechanism — no one tracks which campuses have completed training or when it lapses. A task automation agent can orchestrate the entire training compliance workflow: sending scheduled reminders, enrolling new hires automatically, collecting completion confirmations, escalating non-compliant campuses to HR, and generating audit-ready reports for regulatory review.",
+      "opportunity_sketch": "An automated compliance pipeline that tracks each staff member's training status across all campuses, triggers reminders at defined intervals, escalates overdue cases to campus heads, and produces a consolidated compliance dashboard for the operator's HR or compliance officer.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff who encounter a potential abuse situation need immediate, authoritative guidance on what indicators matter and exactly how to report — but policy documents are long, scattered, and rarely read. A RAG system over the operator's safeguarding policies, RA 7610/RA 9262 text, and DepEd guidelines lets any staff member ask natural language questions and receive grounded, citation-backed answers in real time, reducing errors in the reporting chain.",
+      "opportunity_sketch": "A 'safeguarding assistant' that staff can query via mobile or desktop — 'What are the signs of emotional abuse I should report?' or 'Who do I call first if I suspect neglect?' — with answers grounded in the operator's own policies and Philippine law.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The operator faces uneven legal exposure across campuses — some sites have had no training in years while others are current. A risk scoring model can ingest training completion dates, campus size, staff turnover rate, and incident history to produce a campus-level safeguarding compliance risk score, enabling the compliance team to prioritize intervention at highest-risk sites before an incident occurs.",
+      "opportunity_sketch": "A campus risk dashboard that scores each site's safeguarding readiness quarterly, flagging campuses where training lapse duration, high staff turnover, or prior incident patterns create elevated legal and child-safety risk — directing limited compliance resources to where they matter most.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Scheduling mandatory training across 500+ staff on multiple campuses is logistically complex — workshops must be timed around school calendars, substitute coverage, and trainer availability. AI scheduling can optimize who gets trained when, ensuring no campus exceeds its allowed training-free window while minimizing classroom disruption and travel costs for itinerant trainers.",
+      "opportunity_sketch": "An AI scheduling tool that generates a multi-campus annual training calendar for safeguarding workshops, balancing trainer capacity, staff availability, and compliance deadlines — with automatic rescheduling when sessions are missed.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

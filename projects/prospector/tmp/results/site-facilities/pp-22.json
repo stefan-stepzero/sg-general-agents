@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-campus-it-infrastructure-coordination-between-central-it-and-campus-level-operations-is-poor-dup",
+  "pain_point_label": "Coordination Between Central IT and Campus-Level IT Operations Lacks Clear Roles and Authority",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Campus IT staff and site managers often don't know who to contact or how to classify an issue — a conversational agent can triage incoming IT problems, ask clarifying questions, determine whether the issue is central or campus-owned, and route the ticket to the correct team. This directly addresses the 'finger-pointing' dynamic by removing the ambiguity from the first point of contact. For a 500+ staff multi-campus operator, a consistent intake process is feasible via a Teams/Slack bot or web widget.",
+      "opportunity_sketch": "An IT helpdesk bot that asks structured intake questions (location, system type, symptom) and automatically routes to central IT, campus IT, or a shared queue — with ownership clearly logged. Reduces time-to-resolution by eliminating the 'whose problem is this?' back-and-forth.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pain point describes multiple broken workflows: procurement approvals bypassing central IT, deferred maintenance decisions, and uncoordinated infrastructure projects. A task automation agent can enforce process gates — for example, requiring a central IT compatibility check before campus equipment orders are processed, or auto-escalating unresolved tickets past a defined SLA. This targets the structural coordination failure, not just the symptom.",
+      "opportunity_sketch": "An automated workflow that intercepts campus IT procurement requests, checks proposed devices against an approved hardware catalogue, and either approves or routes to central IT for sign-off — with full audit trail. A parallel workflow escalates open tickets to central IT leadership when response SLAs are breached.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incoming IT support requests submitted via email or ticketing systems are often ambiguous about scope and ownership. A text classifier can automatically tag each ticket with: responsibility owner (central vs campus), issue category (network, device, software, security), and priority — replacing the manual triage that currently causes delays. This is a low-risk, high-frequency use case with clear training data available from historical tickets.",
+      "opportunity_sketch": "A classifier layer added to the existing helpdesk or email intake that auto-labels every IT request with owner, category, and urgency before any human sees it — enabling SLA clocks to start immediately and routing to the correct queue without manual review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Campus IT staff and site managers lack access to consistent documentation — policies, RACI matrices, approved vendor lists, infrastructure diagrams, and escalation procedures are either nonexistent or scattered. A RAG system over an IT knowledge base gives campus staff instant, grounded answers to 'who owns this?' or 'what's the approved process for X?' questions, reducing reliance on knowing the right person to call. This directly addresses the training and documentation inconsistency problem across campuses.",
+      "opportunity_sketch": "An internal IT knowledge assistant where campus staff ask questions like 'who do I contact for a network outage at [campus]?' or 'what's the approved laptop model?' and receive cited answers drawn from policies, RACI docs, and vendor catalogues — replacing institutional knowledge locked in individual heads.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "When central IT lacks visibility into campus-level infrastructure health, problems go undetected until they cause outages. Anomaly detection on network telemetry, device health signals, or helpdesk ticket volume can surface emerging issues at a campus before they escalate — giving central IT a proactive signal rather than waiting for a campus report. This addresses the 'no standardized reporting' gap identified in the pain description.",
+      "opportunity_sketch": "A monitoring layer that ingests network logs and endpoint telemetry from all campuses and flags abnormal patterns (unusual ticket spike at a campus, network latency anomaly, device failure cluster) to central IT — providing the visibility that informal reporting currently fails to deliver.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 9.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

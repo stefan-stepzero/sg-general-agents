@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "site-facilities-campus-it-infrastructure-physical-device-inventory-and-hardware-lifecycle-management-is-ad-hoc-dup",
+  "pain_point_label": "Physical Device Inventory and Hardware Lifecycle Management Are Ad-Hoc and Untracked",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Education operators often have device records scattered across purchase invoices, delivery notes, warranty cards, and printed asset tags — all in non-digital formats. Media parsing can OCR these documents and extract structured device records (serial number, model, purchase date, campus location) at ingestion time, bootstrapping a central inventory from existing paper trails without manual re-entry. This directly addresses the root cause: no reliable starting inventory.",
+      "opportunity_sketch": "A document ingestion pipeline that accepts scanned purchase orders, warranty documents, and delivery receipts, OCRs them, and outputs structured device records into a central asset register. Operators could bulk-process years of historical procurement documents to establish baseline inventory in days rather than weeks.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Multi-site education operators typically have partial device records spread across spreadsheets, email threads, help desk tickets, and vendor portals — each with inconsistent schemas (different column names, date formats, campus identifiers). AI-assisted schema mapping and data cleaning can normalize these fragmented sources into a unified asset register, making the inventory consolidation problem tractable without a full system replacement. This addresses the 'no centralized system' root cause by bridging existing disparate records.",
+      "opportunity_sketch": "A consolidation tool that ingests spreadsheets and CSV exports from various campus coordinators, maps them to a canonical device schema (device_id, type, campus, assigned_user, purchase_date, condition), deduplicates records, and flags ambiguities for human review — producing a clean master inventory as a starting point.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Once an asset register exists, historical failure rates and age data for device cohorts form a time series that can forecast when specific devices or device categories will require replacement. Education operators buying devices in bulk cohorts (e.g., a laptop refresh every 3-4 years) accumulate predictable degradation curves. Forecasting end-of-life dates allows proactive procurement planning — directly addressing the 'aging equipment causes instructional disruption before replacement' manifestation.",
+      "opportunity_sketch": "A lifecycle forecasting module that ingests device purchase dates, repair history, and manufacturer end-of-support dates to project replacement needs by campus and quarter, enabling IT to build a rolling 12-18 month hardware budget with specific device counts and specifications rather than reactive emergency purchasing.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Devices can be scored on composite risk profiles combining age, repair frequency, campus security posture, and device classification (high-value vs. commodity) to surface devices most likely to cause instructional disruption, security incidents, or compliance failures before they do. This directly addresses the pain of high-value equipment going untracked and data security risks from unwiped retired devices — both are adverse outcomes that risk scoring can prioritize for human action.",
+      "opportunity_sketch": "A device risk dashboard that scores each asset on a 1-10 risk scale factoring in age-relative-to-expected-lifespan, days since last verified location check-in, repair ticket frequency, and data sensitivity classification — surfacing the top 20 highest-risk devices per campus for weekly IT review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Anomaly detection can identify devices that deviate from expected usage or location patterns — a high-value device not checked in from its assigned campus for an unusual period, a device generating abnormal repair ticket volume relative to its cohort, or a device appearing in procurement records with no corresponding deployment record. These signals directly address the 'high-value device lost or stolen and organization doesn't notice for weeks' manifestation and the 'redundant procurement' problem.",
+      "opportunity_sketch": "An asset anomaly monitor that flags devices whose status signals (location pings, login activity, help desk mentions) fall outside normal patterns for their device class and campus — generating automatic alerts to IT coordinators for any device that has been 'silent' beyond a configurable threshold.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full lifecycle management workflow — from procurement request through assignment, periodic audits, repair ticketing, and retirement/wipe confirmation — involves multiple systems (procurement, help desk, HR for staff assignment, finance for depreciation) and currently requires manual coordination across campus IT staff. A task automation agent can orchestrate cross-system workflows: auto-creating asset records on PO approval, sending audit reminder sequences to campus coordinators, triggering wipe procedures when a retirement is logged, and updating depreciation records. This addresses the systemic lack of process, not just data.",
+      "opportunity_sketch": "An IT asset lifecycle automation agent that integrates with existing procurement and help desk systems to automate the handoff points: new device arrival → auto-create record → assignment notification → periodic audit ping → end-of-life alert → wipe confirmation workflow. Reduces IT coordinator time on administrative tracking while ensuring process compliance across all campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "IT support staff troubleshooting device issues currently lack quick access to device specifications, warranty status, repair history, and known issues for specific hardware models — forcing them to search vendor websites or recall information from memory. A RAG system over a corpus of device manuals, warranty terms, repair logs, and vendor documentation would let IT staff query in natural language ('What RAM is in the Dell Latitude 5420 assigned to Room 12B, and is it still under warranty?') and get grounded answers, directly addressing the 'IT staff do not know device specifications during troubleshooting' manifestation.",
+      "opportunity_sketch": "A device knowledge assistant that indexes the asset register alongside device manuals, repair tickets, and warranty documents, enabling IT staff to ask natural language questions about specific devices or device classes and receive cited answers — reducing troubleshooting time and improving first-call resolution rates.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

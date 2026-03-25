@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "enrollment-admissions-marketing-outreach-budget-allocation-dup",
+  "pain_point_label": "Inefficient Budget Allocation Across Campuses",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Enrollment pressure varies seasonally and year-over-year by campus. Forecasting enrollment demand per site — using historical intake data, inquiry volumes, and local demographic trends — gives finance and marketing teams the forward-looking signal needed to justify shifting budget toward underperforming or high-opportunity campuses before the enrollment window closes.",
+      "opportunity_sketch": "A per-campus enrollment demand forecast model that produces 3-6 month forward projections, surfacing which sites are trending below target so budget can be proactively reallocated rather than reactively adjusted.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-regression",
+      "capability_label": "Regression & Quantitative Estimation",
+      "match_rationale": "The core dysfunction is equal budget distribution without ROI measurement. A regression model trained on spend levels, campaign types, site characteristics, and resulting enrollment outcomes can estimate marginal ROI per dollar spent at each campus — turning a political equal-split decision into an evidence-based allocation.",
+      "opportunity_sketch": "A budget-ROI estimation model that takes site attributes, historical spend, and enrollment outcomes as inputs and outputs expected enrollments per $X incremental spend per campus — enabling a data-driven reallocation recommendation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "This is the most direct capability match: the pain point is explicitly about allocating a finite marketing budget across campuses under enrollment-pressure constraints. AI-driven resource allocation can optimize spend distribution across sites, factoring in enrollment targets, campaign performance data, local competitive dynamics, and mid-year reallocation triggers — replacing the equal-split default with a constrained optimization model.",
+      "opportunity_sketch": "A marketing budget allocation engine that ingests per-campus enrollment targets, current pacing, and campaign ROI signals, then outputs an optimized spend distribution with reallocation recommendations on a monthly cadence.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-experiment",
+      "capability_label": "Experiment Design & Optimization",
+      "match_rationale": "Multi-site operators have a natural A/B testing environment: different campuses can trial different campaign types and spend levels simultaneously. A multi-armed bandit or Bayesian optimization layer would systematically explore which channel/budget combinations perform best per site type and auto-shift allocation toward winners — addressing both the ROI measurement gap and the inability to rapidly reallocate.",
+      "opportunity_sketch": "A continuous budget experimentation platform that treats each campus as a test arm, tracks enrollment conversion per channel, and adaptively shifts spend toward highest-performing combinations — learning the optimal allocation policy over time.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once allocation decisions are made, the operational friction is communicating rationale to campus directors who feel excluded from centralized funding decisions. AI text generation can auto-produce per-campus budget narrative reports explaining why their allocation changed, grounded in enrollment data and competitive context — reducing political friction without requiring central staff to manually write 10+ site-specific briefings.",
+      "opportunity_sketch": "Auto-generated monthly budget narrative reports for each campus director, summarizing their allocation, the data behind it, and recommended local actions — reducing central team effort while increasing site buy-in.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The 'limited data on local competitive dynamics' aspect of the pain point requires ongoing intelligence gathering — which competitors are opening nearby, what local events affect intake cycles, whether a regional employer is expanding or contracting. A research agent can continuously monitor these signals per campus and surface them to inform budget decisions, which no static dashboard can provide.",
+      "opportunity_sketch": "A per-campus competitive intelligence agent that monitors local competitor activity, demographic news, and enrollment-relevant events, delivering a monthly briefing that feeds into the budget reallocation decision.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

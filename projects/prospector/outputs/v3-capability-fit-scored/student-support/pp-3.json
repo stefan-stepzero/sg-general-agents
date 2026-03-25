@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-pastoral-counseling-counselor-preparation-burnout-dup",
+  "pain_point_label": "Inadequate Counselor Training & High Burnout",
+  "matches": [
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A conversational agent can serve as an always-available clinical supervision proxy — counselors submit case notes or describe a situation and receive trauma-informed, culturally humble guidance drawn from best-practice frameworks. This directly addresses the absence of clinical oversight and the isolation felt by part-time seconded teachers who have no peer or supervisor to debrief with. Multi-turn dialogue allows iterative reflection rather than one-shot advice.",
+      "opportunity_sketch": "A private AI clinical companion where counselors log difficult cases, receive supervision-style reflective prompts and psychoeducation resources, and track their own wellbeing — reducing emotional burden accumulation between formal supervision sessions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Counselors with minimal mental health training need rapid access to grounded, authoritative guidance — trauma-informed practice protocols, cultural humility frameworks, safeguarding procedures, and crisis escalation pathways. RAG over a curated corpus of clinical resources answers specific case questions with citations, replacing the need for expensive ongoing training programs and giving under-skilled staff just-in-time support. This directly combats the 'minimal training' cause of burnout and poor outcomes.",
+      "opportunity_sketch": "An 'Ask a Clinical Resource' tool embedded in the counselor's workflow: they describe a student situation and receive grounded responses citing trauma-informed practice guidelines, cultural context notes, and referral pathways specific to their jurisdiction.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A large portion of counselor administrative burden — case summaries, referral letters, handover notes for replacement counselors, parent communication drafts — can be auto-drafted from structured inputs. Reducing paperwork directly addresses one of the compounding stressors that accelerates burnout and consumes time that should go to supervision and recovery. It also solves the 'replacement counselors restart from zero' problem by generating structured handover documentation.",
+      "opportunity_sketch": "A case documentation assistant that turns brief counselor voice/text notes into structured session records, handover summaries, and referral letters — cutting administrative time by 50%+ and creating institutional memory that persists after counselor turnover.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Counselor attrition is predictable from observable signals: caseload volume, incident frequency, time since last leave, support ticket patterns, and engagement with PD resources. A propensity model can flag counselors at elevated burnout/exit risk before they resign, enabling targeted intervention by school leadership. This converts the reactive 'revolving door' problem into a proactive retention workflow — the single most direct AI intervention on the structural turnover cause.",
+      "opportunity_sketch": "A staff wellbeing risk model that scores each counselor monthly on burnout/attrition likelihood, surfacing to HR/principals a ranked watchlist with recommended interventions (workload reduction, peer pairing, external supervision referral).",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Counselor onboarding and professional development workflows — enrolling new counselors in training modules, sending check-in surveys, scheduling supervision sessions, routing case escalations to the right pastoral lead — are currently ad hoc and person-dependent. Automating this workflow means replacement counselors do not restart from zero: the system triggers structured onboarding, surfaces predecessor case histories (appropriately redacted), and initiates supervision matching automatically.",
+      "opportunity_sketch": "An automated counselor onboarding and ongoing support workflow: new counselors are routed through a structured 90-day induction, receive periodic wellbeing check-ins, and are automatically escalated to leadership if engagement signals indicate distress — reducing the human overhead of pastoral staff management.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

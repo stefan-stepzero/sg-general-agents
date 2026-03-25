@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-govt-funding-timing",
+  "pain_point_label": "Government Funding Tranche Misalignment with Operating Cycle",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The core pain is unpredictable cash shortfalls between government funding tranches — exactly what time series forecasting addresses. A model trained on historical tranche receipt dates, operating expenditure patterns, and seasonal salary cycles could project site-level cash positions 4-12 weeks out. Multi-site operators have enough historical payroll and utility data to train reliable models even without sophisticated ERP integrations.",
+      "opportunity_sketch": "A network-wide cash flow forecasting tool that ingests payroll schedules, known fixed costs, and probabilistic tranche receipt windows per site, surfacing which sites will hit a liquidity threshold before the next tranche and by how much — replacing the current reactive emergency loan process.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Each site's exposure to a cash shortfall before the next tranche is an adverse outcome with quantifiable probability — a classic risk scoring problem. Inputs include days-until-next-tranche, current balance, fixed cost run-rate, and any government delay history. The output is a per-site liquidity risk score that the central finance team can monitor on a dashboard, triggering pre-emptive action rather than reactive emergency transfers.",
+      "opportunity_sketch": "A per-site liquidity risk score updated daily or weekly, flagging sites with high shortfall probability in the upcoming 30/60-day window so central finance can pre-position funds or arrange low-cost bridging before the crisis hits.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The inter-site cash transfer problem is fundamentally a constrained resource allocation problem: finite central liquidity must be optimally distributed across sites with different shortfall timings, costs, and tranche receipt dates. AI optimization can determine the minimum-cost allocation of internal bridge funds across the network — replacing ad-hoc emergency transfers with a structured allocation plan that minimizes external borrowing.",
+      "opportunity_sketch": "An allocation engine that takes the network's consolidated cash position and per-site projected shortfalls as inputs and outputs an optimal internal transfer schedule — minimizing the need for external borrowing while ensuring all sites meet payroll and supplier obligations on time.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Finance teams at multi-site operators must repeatedly explain cash shortfall situations to boards, auditors, and government funding bodies — a high-effort narrative task that is structurally identical each cycle. LLM-based report generation can convert structured cash flow data and variance analysis into board-ready narratives and funding body communications, reducing the manual reporting burden and improving governance clarity.",
+      "opportunity_sketch": "An automated monthly liquidity narrative generator that takes structured cash position data per site and produces a board pack insert and/or government liaison letter explaining current cash position, expected tranche timing, and any bridging arrangements in place.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The current manual workflow — sites submit emergency requests, central finance reviews, approves inter-site transfer, notifies accounting — is a multi-step approval and data-entry workflow with clear decision rules that AI task automation can execute. Automating the triage, approval-routing, and ERP entry for inter-site liquidity transfers would reduce the administrative load and eliminate delays caused by manual handoffs.",
+      "opportunity_sketch": "An AI agent that monitors site cash thresholds, automatically drafts an inter-site transfer request when a site falls below a configurable buffer, routes it to the appropriate approver with supporting data, and posts the approved transfer to the accounting system — end-to-end without manual intervention for routine cases.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

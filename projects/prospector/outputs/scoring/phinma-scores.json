@@ -1,0 +1,449 @@
+{
+  "company_id": "phinma",
+  "property_scores": [
+    {
+      "taxonomy_id": "industry-vertical-primary-sector",
+      "label": "Primary Sector",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: education is the exact category. Revenue entirely from education services. Explicit evidence."
+    },
+    {
+      "taxonomy_id": "industry-vertical-niche",
+      "label": "Vertical Niche",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: affordable private HE for underserved markets is explicitly stated. Provincial footprint, first-gen focus, board exam specialization all evidence-backed."
+    },
+    {
+      "taxonomy_id": "industry-vertical-value-chain-position",
+      "label": "Value Chain Position",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: downstream end-service-provider (direct delivery to students). Teaching hospital is also end-service. No upstream licensing/platform play."
+    },
+    {
+      "taxonomy_id": "industry-vertical-market-maturity",
+      "label": "Industry Maturity",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: growth phase with specific data (20.23% CAGR, $154M→$847M by 2034). Tailwinds identified. Regional expansion confirms growth not maturity."
+    },
+    {
+      "taxonomy_id": "business-model-revenue-model",
+      "label": "Revenue Model",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: recurring tuition (quasi-subscription per year). 89% retention supports recurrence claim. Hospital services as secondary stream noted."
+    },
+    {
+      "taxonomy_id": "business-model-delivery-model",
+      "label": "Delivery Model",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: physical in-person delivery + early digital augmentation (Learning App). No online-only programs. Active Learning methodology requires campus presence."
+    },
+    {
+      "taxonomy_id": "business-model-cost-structure",
+      "label": "Cost Structure",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: fixed-cost-heavy (faculty, facilities) + moderate capex (recent building acquisitions). 'Bare-bones' philosophy supports cost control claim. 23% net margin confirms disciplined execution."
+    },
+    {
+      "taxonomy_id": "business-model-network-effects",
+      "label": "Moat & Network Effects",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "rationale": "No profile_fill provided. Property is missing entirely."
+    },
+    {
+      "taxonomy_id": "business-model-key-dependencies",
+      "label": "Key Operational Dependencies",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "rationale": "No profile_fill provided. Property is missing entirely."
+    },
+    {
+      "taxonomy_id": "scale-resources-headcount",
+      "label": "Headcount Band",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "rationale": "No profile_fill provided. Property is missing entirely."
+    },
+    {
+      "taxonomy_id": "scale-resources-revenue-band",
+      "label": "Revenue Band",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: enterprise ($100M+) at ~$116M USD annually. FY2024-25 data provided with YoY growth trajectory."
+    },
+    {
+      "taxonomy_id": "scale-resources-capitalization",
+      "label": "Capitalization & Runway",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: PE-backed (late-stage) with KKR + Kaizenvest. IPO optionality stated but deferred 3+ years. Clear runway and capital position."
+    },
+    {
+      "taxonomy_id": "scale-resources-asset-intensity",
+      "label": "Asset Intensity",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: asset-heavy (13 physical campuses, hospital, recent major acquisitions). Clear capex pipeline (San Pablo, Roxas, Bacolod, Butuan)."
+    },
+    {
+      "taxonomy_id": "scale-resources-financial-health",
+      "label": "Financial Health",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: profitable and accelerating. +14% YoY revenue, +8% YoY net income. Record enrollment at 177,851. 23% net margin. Strong cash generation."
+    },
+    {
+      "taxonomy_id": "scale-resources-company-age",
+      "label": "Company Age",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: established (8-20 years) — 22 years in education operations. Clear institutional history and brand equity."
+    },
+    {
+      "taxonomy_id": "scale-resources-customer-base-scale",
+      "label": "Customer / User Base Scale",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: massive (100K+) at 177,851 enrolled students. Record enrollment with YoY growth. Multiple geographic distribution."
+    },
+    {
+      "taxonomy_id": "growth-phase-scaling",
+      "label": "Scaling",
+      "coverage": 0.2,
+      "confidence": "not stated",
+      "confidence_multiplier": 0.7,
+      "final_score": 0.14,
+      "rationale": "Profile_fill is null but is_selected_phase=true suggests company is in scaling phase. No evidence/confidence provided. Weak placeholder."
+    },
+    {
+      "taxonomy_id": "market-position-customer-segment",
+      "label": "Target Customer Segment",
+      "coverage": 0.0,
+      "confidence": null,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "rationale": "No profile_fill provided. Property is missing entirely."
+    },
+    {
+      "taxonomy_id": "market-position-competitive-stance",
+      "label": "Competitive Stance",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: market leader in affordable Philippine private HE. Self-described as largest in SE Asia by enrollment. 20-year head start in acquisition-turnaround model."
+    },
+    {
+      "taxonomy_id": "market-position-gtm-motion",
+      "label": "Go-to-Market Motion",
+      "coverage": 0.9,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "rationale": "Clear match: reputation/word-of-mouth + community-led (board exam rankings, scholarship programs, Facebook local engagement, student success stories). No paid digital advertising visible; slight generic in 'reputation' label itself."
+    },
+    {
+      "taxonomy_id": "market-position-customer-concentration",
+      "label": "Customer Concentration",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: diversified (177,851 individual student customers). No single customer material. Government subsidies distributed across enrolled base."
+    },
+    {
+      "taxonomy_id": "market-position-pricing-position",
+      "label": "Pricing Position",
+      "coverage": 0.9,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "rationale": "Clear match: value/low-cost positioning with Hawak Kamay scholarship (5,500 PHP ~$100 USD) and 'bare-bones' philosophy. Full tuition range across all programs not detailed; slight gap in comprehensiveness."
+    },
+    {
+      "taxonomy_id": "org-structure-leadership",
+      "label": "Leadership Model",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: founder-era CEO (Chito Salazar) with dual-hat authority. Founding architect of education network with unusual power across education + parent corp."
+    },
+    {
+      "taxonomy_id": "org-structure-shape",
+      "label": "Organizational Shape",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: hub-and-spoke topology. Central HQ + semi-autonomous campuses retaining local identity. Shared curriculum and financial oversight. Clear reporting structure evident."
+    },
+    {
+      "taxonomy_id": "org-structure-workforce-model",
+      "label": "Workforce Model",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: multi-site co-located (campus-based). Faculty and staff physically based at institutions. Central HQ in Makati. No remote-first culture."
+    },
+    {
+      "taxonomy_id": "org-structure-talent-profile",
+      "label": "Talent Profile",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: domain-expert-heavy (educators, healthcare professionals, board-exam specialists). Active Learning requires trained instructors. Faculty development is core investment."
+    },
+    {
+      "taxonomy_id": "tech-maturity-stack-generation",
+      "label": "Stack Generation",
+      "coverage": 1.0,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.85,
+      "rationale": "Precise identification: transitional stack with Mastersoft ERP Solutions (package ID com.iitms.phinma), Lenovo DaaS, no cloud-native architecture. Evidence is specific and well-documented; medium confidence reflects architecture age, not coverage."
+    },
+    {
+      "taxonomy_id": "tech-maturity-engineering-practices",
+      "label": "Engineering Practices",
+      "coverage": 1.0,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.85,
+      "rationale": "Clear vendor-managed model: PHINMA Learning App built by Mastersoft (not internal), Lenovo manages devices, no internal engineering team visible. Evidence is precise; medium confidence reflects outsourced nature, not coverage."
+    },
+    {
+      "taxonomy_id": "tech-maturity-data-infrastructure",
+      "label": "Data Infrastructure",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "rationale": "Clear scope: ERP-native reporting (Mastersoft SIS, sis.phinma.edu.ph, pensms.phinma.edu.ph, Google Analytics). Metrics tracked precisely (89% retention, board exam topnotchers) but no data warehouse, BI tools, or ML infrastructure visible. Reasonable but not advanced."
+    },
+    {
+      "taxonomy_id": "tech-maturity-security-posture",
+      "label": "Security Posture",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "rationale": "Clear baseline: basic-to-intermediate (Privacy Policy, HTTPS, Data Privacy Act compliance mandated, Lenovo managed endpoint security, healthcare data subject to DOH). No SOC2/ISO27001 certifications visible. Compliance-driven, not competitive advantage."
+    },
+    {
+      "taxonomy_id": "operating-environment-regulatory-burden",
+      "label": "Regulatory Burden",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: heavy regulatory burden. CHED accreditation, PRC licensing (healthcare), separate Indonesia DIKTI framework, Data Privacy Act, DOH hospital regs. Multiple jurisdictions and domains."
+    },
+    {
+      "taxonomy_id": "operating-environment-geographic-scope",
+      "label": "Geographic Scope",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: regional (Philippines + Indonesia). 11 PH institutions + 2 Indonesia institutions. Stated 5-country expansion target over 5 years (additional ASEAN). Clear multi-jurisdiction operations."
+    },
+    {
+      "taxonomy_id": "operating-environment-macro-sensitivity",
+      "label": "Macroeconomic Sensitivity",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "rationale": "Clear with some gaps: recession-resistant (inelastic demand for affordable education + government subsidies) but with FX exposure (IDR vs PHP/USD). Macro framework clear but specific sensitivity metrics limited."
+    },
+    {
+      "taxonomy_id": "operating-environment-governance-obligations",
+      "label": "Governance Obligations",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: PE-backed with public parent (PSE: PHN). SEC reporting via PHINMA Corp + KKR's UN SDG alignment requirements. Clear governance constraints beyond normal commercial logic."
+    },
+    {
+      "taxonomy_id": "culture-brand-innovation-posture",
+      "label": "Innovation Posture",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "rationale": "Clear with some gaps: pragmatic (ROI-driven, evidence-based). 'Bare-bones' ethos is conservative, not experimental. Learning App and AI tablet donation show adoption readiness but not bleeding-edge culture. KKR mandate may shift posture."
+    },
+    {
+      "taxonomy_id": "culture-brand-brand-positioning",
+      "label": "Brand Positioning & Tone",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: mission/community-driven. 'Making lives better through education' is core positioning. Student transformation stories, SDG framing, community bayanihan campaigns. Mission structurally constrains pricing and location decisions."
+    },
+    {
+      "taxonomy_id": "culture-brand-public-values",
+      "label": "Public Values & Mission",
+      "coverage": 1.0,
+      "confidence": "high",
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "rationale": "Precise match: mission-driven (mission constrains commercial decisions). Turns down urban markets for underserved provinces. Core values prominently published. Executive home visits cultural practice. KKR chosen for SDG 4 alignment."
+    },
+    {
+      "taxonomy_id": "culture-brand-employer-brand",
+      "label": "Employer Brand & Talent Signal",
+      "coverage": 0.8,
+      "confidence": "medium",
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "rationale": "Clear with some gaps: stable/mission-attractive in niche. Glassdoor 3.4/5, 53% recommend, strong culture (4.0/5) + mission alignment attraction. Trade-offs: entry-level salaries below market, work-life balance gaps. Medium confidence reflects limited public data on employer brand depth."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": {
+      "properties": [
+        "industry-vertical-primary-sector",
+        "industry-vertical-niche",
+        "industry-vertical-value-chain-position",
+        "industry-vertical-market-maturity"
+      ],
+      "average": 1.0,
+      "coverage": "Complete"
+    },
+    "business-model": {
+      "properties": [
+        "business-model-revenue-model",
+        "business-model-delivery-model",
+        "business-model-cost-structure",
+        "business-model-network-effects",
+        "business-model-key-dependencies"
+      ],
+      "average": 0.6,
+      "coverage": "Incomplete (3/5 populated)"
+    },
+    "scale-resources": {
+      "properties": [
+        "scale-resources-headcount",
+        "scale-resources-revenue-band",
+        "scale-resources-capitalization",
+        "scale-resources-asset-intensity",
+        "scale-resources-financial-health",
+        "scale-resources-company-age",
+        "scale-resources-customer-base-scale"
+      ],
+      "average": 0.857,
+      "coverage": "Substantially complete (6/7 populated)"
+    },
+    "growth-phase": {
+      "properties": [
+        "growth-phase-scaling"
+      ],
+      "average": 0.14,
+      "coverage": "Incomplete (sparse)"
+    },
+    "market-position": {
+      "properties": [
+        "market-position-customer-segment",
+        "market-position-competitive-stance",
+        "market-position-gtm-motion",
+        "market-position-customer-concentration",
+        "market-position-pricing-position"
+      ],
+      "average": 0.84,
+      "coverage": "Substantially complete (4/5 populated, 2 adjusted)"
+    },
+    "org-structure": {
+      "properties": [
+        "org-structure-leadership",
+        "org-structure-shape",
+        "org-structure-workforce-model",
+        "org-structure-talent-profile"
+      ],
+      "average": 1.0,
+      "coverage": "Complete"
+    },
+    "tech-maturity": {
+      "properties": [
+        "tech-maturity-stack-generation",
+        "tech-maturity-engineering-practices",
+        "tech-maturity-data-infrastructure",
+        "tech-maturity-security-posture"
+      ],
+      "average": 0.77,
+      "coverage": "Substantially populated with medium confidence"
+    },
+    "operating-environment": {
+      "properties": [
+        "operating-environment-regulatory-burden",
+        "operating-environment-geographic-scope",
+        "operating-environment-macro-sensitivity",
+        "operating-environment-governance-obligations"
+      ],
+      "average": 0.92,
+      "coverage": "Complete"
+    },
+    "culture-brand": {
+      "properties": [
+        "culture-brand-innovation-posture",
+        "culture-brand-brand-positioning",
+        "culture-brand-public-values",
+        "culture-brand-employer-brand"
+      ],
+      "average": 0.885,
+      "coverage": "Complete"
+    }
+  },
+  "overall_score": 0.82,
+  "summary": {
+    "total_properties": 38,
+    "populated_properties": 32,
+    "empty_properties": 6,
+    "completeness_pct": 84.2,
+    "scoring_notes": "Overall score 0.82 reflects strong coverage across strategic dimensions with precise, evidence-backed assessments. Strengths: industry clarity (1.0), org structure (1.0), culture/values (0.89), operating environment (0.92). Improvements: business-model completeness (2/5 missing), tech-maturity more precise (0.77, vendor-managed model well-documented), market-position comprehensive (0.84). Growth-phase remains sparse (0.14 placeholder). Profile demonstrates mature, mission-driven education operator with clear market position but limited technical modernization."
+  }
+}

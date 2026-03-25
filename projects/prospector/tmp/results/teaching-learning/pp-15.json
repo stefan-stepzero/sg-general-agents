@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-examination-administration-exam-logistics-dup",
+  "pain_point_label": "Complex Multi-Site Exam Logistics & Scheduling",
+  "matches": [
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Exam timetabling across 10-15 campuses is a classic constraint satisfaction problem: room capacities, proctor availability, student cohort clashes, exam window limits, and inter-campus paper distribution timelines must all be satisfied simultaneously. Existing manual spreadsheet approaches break down at this scale, and cascading last-minute changes require rapid re-solving across all constraints. This is precisely the domain where constraint solvers with AI-assisted configuration yield dramatic operational improvements.",
+      "opportunity_sketch": "An AI-driven timetabling tool that ingests room capacities, staff availability, student enrolments, and exam windows per campus, then generates conflict-free schedules and propagates last-minute changes automatically across all sites.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Proctor assignment and room allocation across 10-15 campuses require optimally matching limited staff (proctors) and rooms to time slots under capacity and availability constraints. The pain of staff overtime and last-minute gaps is a direct resource allocation failure. AI scheduling tools can balance proctor workloads, flag under-resourced sessions, and suggest reallocation when changes occur.",
+      "opportunity_sketch": "An automated proctor and room scheduling module that allocates staff and spaces across campuses, flags overtime risks, and re-optimises assignments when exam windows shift.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end exam logistics workflow — generating timetables, notifying campus coordinators, tracking paper distribution, sending confirmation requests, and logging changes — is a multi-step, multi-system process that currently relies on manual email chains and phone calls. A task automation agent can orchestrate these steps across the organisation's systems, reducing coordinator overhead and ensuring no site is missed when changes cascade.",
+      "opportunity_sketch": "An agentic workflow that, triggered by a timetable change, automatically notifies affected campus coordinators, updates the central exam calendar, re-assigns impacted proctors, and logs the change trail — without manual follow-up.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Exam administration generates significant communication overhead — briefing packs for proctors, change notifications to campuses, secure handling instructions, and last-minute memos. At 10-15 campuses this volume is non-trivial, and inconsistent communications create compliance risk. LLM text generation can draft standardised, context-specific communications rapidly from structured exam data.",
+      "opportunity_sketch": "An automated communication generator that produces proctor briefings, campus notification emails, and change advisories from the exam schedule data, ensuring consistency and reducing coordinator drafting time.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

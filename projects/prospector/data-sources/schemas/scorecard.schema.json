@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "scorecard.schema.json",
+  "title": "Scorecard",
+  "description": "Strategic scorecard — fetched at /data/profiles/{org}-scorecard.json",
+  "type": "object",
+  "required": ["title", "subtitle", "as_of", "categories"],
+  "properties": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "as_of": { "type": "string", "description": "ISO date string (YYYY-MM-DD). NOTE: field was previously 'profile_date' — must be 'as_of'" },
+    "categories": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/ScorecardCategory" }
+    }
+  },
+  "definitions": {
+    "ScorecardCategory": {
+      "type": "object",
+      "required": ["id", "label", "icon", "metrics"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "icon": { "type": "string" },
+        "metrics": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ScorecardMetric" }
+        }
+      }
+    },
+    "ScorecardMetric": {
+      "type": "object",
+      "required": ["label", "value", "target", "status", "note"],
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "string", "description": "Observed measurement. NOTE: field was previously 'observed' — must be 'value'" },
+        "target": { "type": "string", "description": "Benchmark / target. NOTE: field was previously 'benchmark' — must be 'target'" },
+        "status": {
+          "type": "string",
+          "enum": ["strong", "on-track", "watch", "gap", "at-risk"]
+        },
+        "note": { "type": "string", "description": "Detail / explanation. NOTE: field was previously 'detail' — must be 'note'" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

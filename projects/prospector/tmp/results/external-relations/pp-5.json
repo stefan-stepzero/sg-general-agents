@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-alumni-engagement-no-alumni-officer-dup",
+  "pain_point_label": "Lack of Dedicated Alumni Management Structure",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a dedicated alumni officer means no one is consistently producing outreach copy — newsletters, event invitations, thank-you notes, annual engagement emails. AI text generation directly substitutes for this missing writing function, enabling any staff member in admissions or development to trigger professional alumni communications without specialist skills. This is a compensatory capability: it doesn't replace the strategic role but eliminates the most time-consuming tactical output.",
+      "opportunity_sketch": "A templated alumni communications tool that generates personalized outreach emails, event invitations, and donor acknowledgments from minimal inputs (alumni name, graduation year, program, trigger event), deployable via the school's existing email platform.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Alumni data is currently fragmented across admissions, development, and student affairs systems with no unified record. Before any outreach or engagement strategy can function, this scattered data must be consolidated into a coherent alumni CRM schema. AI-assisted ETL can map inconsistent field names, normalize contact formats, deduplicate records across systems, and flag missing data — a task that would otherwise require significant manual staff time or expensive CRM consultants.",
+      "opportunity_sketch": "A one-time (then periodic) data consolidation pipeline that ingests exports from the school's SIS, donor management, and student affairs platforms and outputs a clean, unified alumni contact database ready for a lightweight CRM or email tool.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Without an alumni officer, no one is prioritizing which alumni to engage — staff reach out opportunistically or not at all. A propensity model trained on engagement signals (event attendance, email opens, donation history, years since graduation, career stage) can score each alumnus's likelihood to donate, refer students, or participate in events, enabling the stretched team to focus limited outreach effort on highest-return contacts. This directly compensates for the missing strategic prioritization function.",
+      "opportunity_sketch": "An alumni engagement scoring model that ranks the alumni database monthly by donation propensity, referral likelihood, and event participation probability, surfaced as a prioritized outreach list for whichever staff member holds the alumni brief.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "With alumni data scattered and no single owner, staff cannot easily answer questions like 'which alumni work in healthcare in our city?' or 'who donated in the last two years and hasn't been thanked?' A RAG system over the consolidated alumni database lets any staff member query alumni records in natural language and get synthesized answers with cited records — effectively giving a non-specialist access to institutional alumni knowledge that currently lives in no one's head.",
+      "opportunity_sketch": "An internal alumni knowledge assistant that lets admissions, development, or student affairs staff query the unified alumni database in plain language to find relevant contacts for partnerships, career day speakers, mentors, or donation campaigns.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core of this pain point is that alumni tasks are scattered and fall through the cracks because no one owns the workflow end-to-end. A task automation agent can execute the recurring procedural work of an alumni officer: triggering anniversary emails on graduation milestones, sequencing a donor re-engagement workflow, updating contact records when emails bounce, and generating a monthly engagement summary report. This is the highest-value AI intervention because it directly replaces the missing operational role rather than augmenting a human who doesn't exist.",
+      "opportunity_sketch": "An alumni engagement automation agent that runs on a weekly cadence: checks for graduation anniversaries and career milestones, generates and queues personalized outreach, flags lapsed donors for human review, and produces a one-page engagement summary for the staff member nominally responsible for alumni.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Alumni who want to update their contact details, inquire about events, or connect with the school currently have no clear point of contact — the alumni 'office' is a folder in someone's email. A conversational agent deployed on the school's website or via WhatsApp/email can handle inbound alumni inquiries 24/7, capture updated contact information, route specific requests to the right staff member, and collect engagement preferences — all without requiring a dedicated alumni officer to field queries.",
+      "opportunity_sketch": "An alumni self-service chatbot on the school website that handles contact updates, event interest capture, mentorship sign-ups, and general inquiries, routing complex or donation-related conversations to the appropriate staff member with a summary of the interaction.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "teaching-learning-assessment-grading-data-visibility-reporting-dup",
+  "pain_point_label": "Poor Data Visibility & Timely Reporting to Parents",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site operators manually compile report cards narrative sections, and staff write repetitive parent communication across campuses with inconsistent tone and content. Text generation can auto-draft personalised report card narratives from structured grade data and produce standardised-yet-personalised parent communications at scale.",
+      "opportunity_sketch": "An LLM pipeline that ingests a student's grade records, attendance, and teacher notes and outputs a ready-to-review narrative report card section; a second channel generates templated parent email/SMS updates triggered by grade events.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Grades and progress data are stored in inconsistent formats across campus-level student information systems, spreadsheets, and LMS exports, making consolidation slow and error-prone. AI-assisted schema mapping and normalisation can pull these heterogeneous inputs into a unified progress data model without manual re-entry.",
+      "opportunity_sketch": "An ETL layer that ingests grade exports from each campus's SIS/LMS (varying schemas, CSV/XML/JSON), normalises them to a canonical student-progress schema, and feeds a centralised reporting dashboard automatically.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "An early-warning system for at-risk learners requires classifying students into risk tiers based on structured feature vectors — grades, attendance, assessment streaks, submission rates — before any intervention can be triggered. This is a classic tabular classification task on student records.",
+      "opportunity_sketch": "A weekly-run model trained on historical student outcome data that scores each student into Low / Medium / High risk tiers, surfacing the at-risk cohort to teachers and counsellors before parents escalate.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Beyond binary risk flags, operators need to predict which individual students are likely to fall behind or disengage before it is visible in grades — enabling proactive parent outreach rather than reactive inquiry-handling. Propensity models on per-student behavioural signals (LMS logins, submission latency, quiz attempts) can generate these individual-level likelihood scores.",
+      "opportunity_sketch": "A propensity model that scores each student weekly on likelihood of grade deterioration in the next 30 days, triggering automated early-warning notifications to teachers and personalised parent portal alerts before grades decline.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Report card compilation, grade portal publishing, and parent inquiry triage each involve multi-step workflows spanning the SIS, LMS, communication tools, and parent portal — exactly the kind of multi-system orchestration a task automation agent handles. Automating these end-to-end removes the manual bottleneck that causes delays and inconsistency across campuses.",
+      "opportunity_sketch": "An automation agent that, at the end of each grading period, pulls finalised grades from each campus SIS, assembles report card documents, posts them to the parent portal, sends personalised parent notifications, and logs completion — with human sign-off before send.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A large share of parent inquiries about grades and progress are repetitive and could be answered instantly from existing portal data. A conversational agent deployed on the parent portal can handle common queries (current grades, missing assignments, upcoming assessments) 24/7, reducing the administrative burden of escalating inquiries across campuses.",
+      "opportunity_sketch": "A parent-facing chatbot embedded in the portal that answers natural-language questions about a child's grades, progress, and teacher comments by retrieving live data from the SIS, escalating to human staff only for policy or sensitive matters.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

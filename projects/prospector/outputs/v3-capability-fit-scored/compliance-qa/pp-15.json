@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "compliance-qa-teacher-registration-cpd-tdms-data-sync-errors-dup",
+  "pain_point_label": "TDMS Enrollment Data Sync and Reconciliation Errors",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core problem is that teacher records exist in multiple systems (SIS, payroll, TDMS) with mismatched schemas, inconsistent field formats, and typo variations — exactly the data cleaning, normalization, and schema mapping problem this capability addresses. AI-assisted ETL can standardize name spellings, normalize date formats, and map qualification fields across systems to produce a canonical reconciled dataset. This is technically feasible with the structured exports these systems already generate.",
+      "opportunity_sketch": "A reconciliation pipeline that ingests periodic exports from SIS, payroll, and TDMS, normalizes field values using AI-assisted fuzzy matching and format standardization, and outputs a diff report flagging records that diverge — ready for human review before DepEd audit.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "After normalization, the task of identifying which teacher records deviate from expected alignment across systems is a classic anomaly detection problem — the 'normal' pattern is that TDMS, SIS, and payroll agree on name, birth date, license number, and qualification date. AI anomaly detection can surface records where one system's values fall outside expected ranges or diverge from the consensus of the other systems, flagging them before auditors do. This directly targets the audit-finding mechanism.",
+      "opportunity_sketch": "A discrepancy detection model trained on historical reconciled records that scores each teacher record on its cross-system consistency, surfacing high-risk mismatches (missing TDMS entries, date outliers, name mismatches) in a prioritized exception report for the registrar's team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Resolving TDMS discrepancies involves a multi-step workflow: detect the mismatch, gather supporting documentation (employment contract, PRC license), draft a DepEd correction ticket, route for admin signature, and track ticket status. An automation agent can orchestrate these steps end-to-end, reducing the manual burden that causes resolution to take weeks. The multi-system orchestration — pulling from SIS, generating the ticket, updating an internal tracker — fits the task automation pattern directly.",
+      "opportunity_sketch": "An agent that monitors reconciliation diff reports, auto-drafts DepEd TDMS correction tickets pre-populated with the correct values and supporting data, routes them through an internal approval workflow, and tracks resolution status — cutting the average correction cycle from weeks to days.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Teacher records often arrive as semi-structured or unstructured inputs — scanned contracts, PDF credential submissions, or inconsistently formatted spreadsheet exports. Extracting standardized entity values (full name as spelled on PRC license, license number, birth date, qualification date) from these source documents enables reliable comparison against TDMS entries. This is the upstream digitization step that makes cross-system reconciliation possible.",
+      "opportunity_sketch": "An entity extraction layer that parses uploaded teacher credential documents and employment contracts to auto-populate structured fields in the SIS, ensuring the institution's own records are accurate and consistently formatted before attempting TDMS reconciliation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

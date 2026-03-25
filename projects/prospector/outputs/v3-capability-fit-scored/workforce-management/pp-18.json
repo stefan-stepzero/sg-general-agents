@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-professional-development-specialist-access-gaps-dup",
+  "pain_point_label": "Unequal Access to Specialized Development",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Branch teachers in niche areas (Special Ed, GT, STEM) lack access to domain-specific onboarding materials and training content. AI text generation can produce tailored professional development curricula, specialist onboarding guides, and role-specific training modules at scale — replacing the HQ-centric model where only in-person cohorts receive this content. This directly addresses the 'no online specialist resources' gap.",
+      "opportunity_sketch": "A content generation system that produces campus-ready PD modules for specialist roles — e.g., a 10-part Special Ed induction curriculum or STEM instructional method guides — deployable to any branch without HQ involvement.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Branch staff have no access to specialist expertise or knowledge repositories. A RAG system over curated specialist PD content (pedagogy docs, frameworks, research) lets any teacher at any campus query domain-specific knowledge and receive grounded, cited guidance — effectively distributing HQ specialist knowledge to branches on demand. This is the core technical fix for 'no online specialist resources' and addresses quality variance.",
+      "opportunity_sketch": "A specialist knowledge assistant where a branch Special Ed teacher can ask 'How do I implement a behavior support plan for a non-verbal student?' and receive answers grounded in the organization's approved frameworks and external research — available 24/7 from any campus.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "New specialist teachers need ongoing, adaptive domain coaching — not just static modules. A conversational AI tutor can guide a new STEM or GT teacher through instructional methods, answer follow-up questions, and adapt to their specific classroom challenges over time. This directly replaces the mentorship and coaching that only HQ-proximate staff currently receive from senior specialists.",
+      "opportunity_sketch": "An AI coaching agent for specialist role onboarding — a new Gifted & Talented teacher at a rural branch works through an interactive dialogue-based orientation covering GT identification methods, differentiated instruction, and IEP documentation, with follow-up Q&A between formal PD sessions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "Without a recommendation layer, branch teachers don't know what specialist PD resources exist or which are most relevant to their role and development stage. A recommendation engine can proactively surface the most relevant PD content to each teacher based on their role, campus context, and learning history — closing the equity gap where only HQ staff have a curator (their nearby specialist colleagues) guiding their development.",
+      "opportunity_sketch": "A personalized PD recommendation feed inside the LMS that surfaces specialist articles, micro-courses, and peer case studies to each teacher based on their subject area, certification gaps, and recent lesson plans — replacing the informal HQ hallway knowledge transfer with an algorithmic equity lever.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The 'weak specialist pipeline' problem means the org fails to identify and develop potential specialist teachers before roles go unfilled. A propensity model can score current teachers on likelihood to succeed in specialist roles (based on credentials, PD completion, student outcomes, tenure) — enabling proactive pipeline investment at branches rather than reactive HQ-led recruitment. This targets the 'specialist roles unfilled because pipeline is weak' mechanism.",
+      "opportunity_sketch": "A talent pipeline model that flags branch teachers with high specialist potential 12-18 months before predicted role openings — enabling targeted scholarship, mentorship, or PD investment so vacancies are filled from within rather than left unfilled.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

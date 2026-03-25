@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-policy-data-privacy-data-retention-and-disposal-protocols-dup",
+  "pain_point_label": "Data Retention and Disposal Protocols",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core compliance gap is the absence of documented data retention schedules and policies. Text generation can draft these policies — data retention schedules, disposal protocols, DepEd/DPA-aligned policy templates — from structured inputs about data categories, regulatory requirements, and retention periods. This directly closes the documentation gap auditors are checking for.",
+      "opportunity_sketch": "An AI tool that takes a school's data inventory (what personal data they hold, which systems, which departments) and auto-generates a DPA-compliant data retention schedule and disposal policy document, ready for legal review and board sign-off.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Before building a retention schedule, operators must first know what personal data they actually hold across systems, forms, and files. Entity extraction can scan unstructured documents — enrollment forms, HR contracts, health records — to identify what personal data fields exist, which data subjects they relate to, and where they live. This populates the data inventory that retention schedules depend on.",
+      "opportunity_sketch": "An extraction pipeline that ingests scanned or digital forms and contracts across the school's systems and outputs a structured personal data inventory (data subject category, data elements, location, approximate date ranges), which feeds directly into retention schedule generation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Once a data inventory exists, records and documents need to be classified by retention category — e.g., 'retain 5 years post-graduation', 'dispose immediately upon request', 'permanent academic record'. Text classification can assign these retention labels automatically to documents or record types based on their content and regulatory rules, enabling systematic application of the retention schedule across large, heterogeneous document stores.",
+      "opportunity_sketch": "A classification layer that ingests document metadata and content snippets and tags each record with its applicable retention class and disposal deadline, surfacing items overdue for disposal and flagging ambiguous cases for human review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Data retention compliance is not a one-time policy document — it requires ongoing execution: identifying records past their retention deadline across multiple systems, generating disposal notices, routing approvals, logging disposal actions for audit trail. A task automation agent can orchestrate this multi-step workflow end-to-end, connecting to school information systems, applying the retention schedule, and producing audit-ready disposal records without manual intervention.",
+      "opportunity_sketch": "An automated retention agent that runs monthly, queries the SIS and HR systems for records past their retention period, generates a disposal batch for review, routes it for sign-off, and logs confirmed disposals into an audit-ready compliance register — all without manual data pulls.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all data retention gaps carry equal DPA violation risk. Risk scoring can assess each data category held beyond its expected period — factoring in data sensitivity (student health records vs. mailing lists), volume, time overdue, and breach history — to prioritize which retention failures the operator must address first. This is directly actionable when audit pressure arrives.",
+      "opportunity_sketch": "A risk dashboard that scores each data category by DPA violation exposure, surfacing the highest-risk holdings (e.g., 2015 enrollment records with PII still in an unencrypted spreadsheet) and recommending immediate remediation steps.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Compliance officers and school admins need to answer specific questions about retention obligations without reading full legal texts: 'How long must we keep health records for a student who transferred out?', 'What does the DPA say about disposing of CCTV footage?' RAG over DPA regulations, DepEd orders, and the school's own policies provides grounded, citation-backed answers specific to Philippine education compliance context.",
+      "opportunity_sketch": "A compliance Q&A assistant trained on DPA IRR, NPC advisories, DepEd orders, and the school's own data governance policies — allowing staff to ask plain-language questions and get cited answers, reducing reliance on external legal counsel for routine retention queries.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

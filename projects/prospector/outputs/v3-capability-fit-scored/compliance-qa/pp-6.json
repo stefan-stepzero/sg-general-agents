@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-accreditation-fragmented-evidence-collection-dup",
+  "pain_point_label": "Fragmented Evidence Collection Across Campuses",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Evidence files are scattered across departments in mixed formats — scanned faculty transcripts in HR, PDFs of governance minutes, facility audit photos, printed curriculum maps. OCR and form-field extraction converts these non-digital or image-based artifacts into machine-readable text, which is the prerequisite digitization step before any unified repository can be built. Without this, accreditation teams manually re-key or manually sort artifacts that already exist but are locked in non-searchable formats.",
+      "opportunity_sketch": "An ingestion pipeline that accepts uploads from any campus department (HR, finance, IT, academic), runs OCR/form extraction on scanned documents and PDFs, and outputs structured metadata (document type, date, campus, relevant accreditation category) for indexing. This alone could eliminate dozens of hours of manual file prep per accreditation cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once documents are digitized, the accreditation team needs to know what each file contains — which faculty member, which campus, which program, which accreditation standard it supports. Named entity recognition extracts faculty names, program codes, dates, campus identifiers, and accreditor-specific metadata from text, enabling automated tagging and routing to the correct evidence folder without manual review. This directly attacks the 'no naming convention' pain and the manual hours spent organizing files.",
+      "opportunity_sketch": "An auto-tagging layer that reads ingested documents and extracts key attributes (faculty name, qualification type, campus, program, accreditation standard reference), then writes metadata to a central evidence registry so files are self-organizing and searchable without human curation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each department exports data in its own schema — HR has faculty records in an HRIS, IT has enrollment data in a student information system, finance has facility records in a separate ERP. Normalizing these heterogeneous structured sources into a unified accreditation evidence schema (mapping field names, standardizing date formats, reconciling campus codes) is a classic ETL-with-AI-mapping problem. The pain is not that data doesn't exist but that it lives in incompatible formats across silos.",
+      "opportunity_sketch": "A schema-mapping service that ingests data exports from HR, IT, and finance systems and normalizes them into a unified accreditation evidence data model, automatically resolving naming discrepancies and flagging gaps (e.g., faculty records missing qualification documentation) ahead of submission deadlines.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-semantic",
+      "capability_label": "Semantic Search",
+      "match_rationale": "After evidence is digitized and tagged, the accreditation team still spends time locating the right document for a given standard criterion — because file names and folder structures don't map cleanly to accreditor rubric language. Semantic search over a unified evidence repository allows staff to query by accreditor language ('show me evidence of faculty development activities for Standard III.A') and surface relevant documents regardless of how they were named or stored, collapsing the 100+ hour hunt into minutes.",
+      "opportunity_sketch": "A search interface over the centralized evidence repository where accreditation coordinators can paste a standard criterion verbatim and receive a ranked list of documents with relevance explanations, dramatically cutting evidence-assembly time per submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core workflow — identify what evidence is needed for an upcoming accreditation, locate files across departments, copy and rename them into submission folder structure, flag missing categories, send reminders to responsible departments — is a multi-step, multi-system orchestration task. A task automation agent can execute this end-to-end: read the accreditation checklist, query each department system or shared drive, assemble the evidence package, and produce a gap report, replacing 100+ hours of manual coordination with a supervised automated run.",
+      "opportunity_sketch": "An accreditation preparation agent that, when triggered ahead of a submission deadline, autonomously maps required evidence categories to available files across campus systems, assembles a structured submission folder, and generates a gap report listing missing evidence with responsible parties — reducing accreditation prep from weeks to days.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

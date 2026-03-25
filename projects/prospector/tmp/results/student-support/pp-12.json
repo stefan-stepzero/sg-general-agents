@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "student-support-sen-sped-accommodation-resource-teacher-bottleneck-dup",
+  "pain_point_label": "Resource Teacher Overload & Geographic Maldistribution",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "IEP writing is one of the most time-consuming tasks for resource teachers — a single IEP can take 4-6 hours of drafting, referencing prior assessments, legal language, and individualized goals. LLM-based IEP drafting tools can generate structured first-draft IEPs from assessment notes and student history, freeing the resource teacher to review and finalize rather than write from scratch. This directly attacks the overload mechanism by compressing the highest-volume administrative task.",
+      "opportunity_sketch": "An AI-assisted IEP drafting tool where the resource teacher inputs assessment findings and student context; the system generates a compliant, structured IEP draft with goals, accommodations, and progress measures for human review and sign-off.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Resource teachers spend significant time reviewing cumulative student files — prior assessments, teacher observations, medical notes, and parent communications — before each IEP meeting or referral. AI summarization can condense multi-year student records into structured briefings, reducing pre-meeting prep time from hours to minutes. This directly addresses the overload problem by eliminating low-value reading work that currently consumes limited specialist capacity.",
+      "opportunity_sketch": "A student file summarizer that ingests uploaded PDFs and case notes and produces a structured one-page brief covering learning history, prior accommodations, key observations, and flagged concerns — ready for the resource teacher before any meeting.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A significant share of resource teacher time is consumed by parent liaison — answering repetitive questions about IEP status, accommodation implementation, and assessment timelines. A multi-turn conversational agent can handle inbound parent inquiries, explain accommodation plans in plain language, and escalate complex issues to the resource teacher, reducing the communication burden without removing the human from high-stakes conversations. This is particularly high-value when the resource teacher is absent or the campus has no on-site specialist.",
+      "opportunity_sketch": "A parent-facing AI assistant embedded in the school portal that answers questions about special education processes, IEP status, and accommodation rights, with automatic escalation to the resource teacher for sensitive or novel situations.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The resource teacher referral and intake workflow — collecting teacher observations, routing referral forms, scheduling assessments, notifying parents, and updating records across systems — is a multi-step administrative process that consumes specialist time without requiring specialist judgment. An automation agent can handle the coordination and documentation pipeline end-to-end, ensuring rural campus students enter the queue without waiting for a resource teacher to manually process paperwork. This directly reduces the bottleneck at the intake stage.",
+      "opportunity_sketch": "An automated referral pipeline that accepts teacher-submitted concern forms, routes them through a standardized intake workflow, schedules assessment slots, sends parent notifications, and updates the student record — with the resource teacher only engaged at clinical decision points.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 1-2 resource teachers covering multiple campuses, scheduling assessment visits to rural sites is a chronic coordination problem — students wait weeks because there is no systematic prioritization of who needs the specialist most urgently. An AI scheduling system can optimally allocate limited resource teacher time across campuses based on referral urgency, student wait time, and travel constraints, reducing inequitable wait times. This addresses the geographic maldistribution problem directly by making rationing explicit and data-driven.",
+      "opportunity_sketch": "A resource teacher scheduling tool that ingests referral queues across all campuses, scores each student by wait time and urgency indicators, and generates an optimized weekly itinerary that maximizes coverage and prioritizes highest-need students at rural sites.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Resource teachers and classroom teachers at campuses without on-site support frequently need to answer practical questions: what accommodations are appropriate for a student with a given profile, what does the relevant regulation require, how should this behavioral situation be handled under the IEP. A RAG system over the organization's policies, IEP templates, special education regulations, and evidence-based practice documents can provide grounded, cited answers instantly — reducing reliance on the resource teacher for knowledge lookups that do not require clinical judgment.",
+      "opportunity_sketch": "An internal knowledge assistant for staff that answers special-education questions grounded in the organization's own policy library, IEP templates, and regulatory documents, with source citations — available to classroom teachers at campuses with no on-site resource teacher.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "A key driver of resource teacher overload is late identification — students who were not flagged early accumulate unmet needs and require more intensive intervention later. A propensity model trained on attendance, grades, behavioral records, and teacher observations can identify students likely to need a special education referral before the referral is formally submitted, allowing proactive scheduling and earlier intervention. This reduces crisis-driven demand on the resource teacher by shifting the load earlier in the pipeline when interventions are cheaper.",
+      "opportunity_sketch": "An early-identification model that flags students at elevated risk of needing special education assessment based on existing student data, surfaced to classroom teachers and campus coordinators as a prioritized watch list — allowing the resource teacher to plan proactively rather than react to escalations.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

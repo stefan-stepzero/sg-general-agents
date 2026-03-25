@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-multi-campus-billing-logic",
+  "pain_point_label": "Multi-Campus Fee Structure Complexity & Billing Errors",
+  "matches": [
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "The multi-campus fee problem is fundamentally a constraint satisfaction problem: given a student's enrollment profile (campus, term, sibling status, government voucher eligibility, mid-term transfer), the system must find the valid fee configuration that satisfies all applicable rules simultaneously. Each campus has hard constraints (tuition rate, misc fees) and soft constraints (sibling discounts, transfer proration rules, voucher offsets) that must all be applied correctly without manual spreadsheet lookup.",
+      "opportunity_sketch": "A constraint-based billing configuration engine that encodes all campus fee rules centrally — given a student record, it outputs the correct invoice by resolving competing rules (e.g., transferred student + sibling discount + government voucher) without manual calculation. Billing staff submit student profiles; the system emits a validated, rule-compliant invoice.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Billing errors in this context arise from multi-step manual workflows: pulling the right fee schedule, applying the correct discount, adjusting for transfers, reconciling government vouchers, then generating the invoice. An agentic pipeline can automate the entire sequence — reading the student record from SIS, fetching the correct campus fee table, computing prorations for mid-term transfers, applying eligibility rules for vouchers, and generating a validated invoice — with human review only on exceptions.",
+      "opportunity_sketch": "An invoice automation agent that triggers on enrollment events (new enrollment, transfer, withdrawal) and produces a draft invoice with all rules applied, flagging edge cases (e.g., sibling on different campus, partial-term transfer) for human review rather than silently passing them through to billing staff.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4.1
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Billing errors currently surface only at end-of-term reconciliation or audit — by which point apologies, retroactive adjustments, and family disputes are already underway. An anomaly detection layer applied to generated invoices can flag statistical outliers in real time: an invoice for Campus A that uses Campus B's fee rate, a sibling discount applied when no sibling record exists, a government voucher amount inconsistent with campus eligibility rules. This shifts error discovery from post-hoc to pre-dispatch.",
+      "opportunity_sketch": "A billing QA model trained on historical correct invoices that scores each new invoice for anomalies before it is sent to families — surfacing mismatches like wrong campus rate, missing sibling discount, or incorrect voucher amount so billing staff can correct them before they become disputes.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each campus currently maintains its own fee schedule in disparate spreadsheet templates with inconsistent schemas (different column names, formats, and rule encoding). Before any automated billing logic can work, these semi-structured campus fee tables must be normalized into a single canonical schema. AI-assisted ETL can map each campus's spreadsheet format to a unified fee structure, handling naming inconsistencies, missing fields, and implicit rules encoded in spreadsheet formulas.",
+      "opportunity_sketch": "A one-time (and recurring) data transformation pipeline that ingests each campus administrator's Excel fee template and outputs a standardized JSON/database record of that campus's fee rules — enabling the constraint engine and anomaly detector to operate on a single source of truth rather than 15 separate spreadsheets.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

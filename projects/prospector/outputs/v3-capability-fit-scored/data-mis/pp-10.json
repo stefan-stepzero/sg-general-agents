@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "data-mis-reporting-analytics-manual-report-assembly-dup",
+  "pain_point_label": "Manual Report Assembly & End-of-Period Crunch",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain is mapping data from SIS, LMS, and finance systems into a unified schema — exactly what AI-assisted ETL and schema mapping addresses. Current manual consolidation in Excel is the textbook use case: semi-structured inputs from multiple systems need reshaping and normalization into a target reporting structure. Cross-system reconciliation (billed vs. enrolled) is a direct schema-mapping and data-cleaning problem.",
+      "opportunity_sketch": "An AI-assisted ETL layer that automatically maps exported CSVs/reports from each system to a canonical schema, flags reconciliation mismatches, and outputs a unified report-ready dataset — eliminating the 5-7 day manual consolidation effort.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Late discovery of discrepancies is explicitly named as a pain — billed vs. enrolled mismatches, unexpected drops in enrollment, and outlier campus performance are all anomaly-detection problems in structured data. An anomaly model trained on historical cross-system data can surface these discrepancies in near-real-time rather than at month-end reconciliation.",
+      "opportunity_sketch": "An automated anomaly detection layer that continuously monitors SIS/finance data streams for enrollment-billing mismatches, unusual drop rates, or financial outliers — alerting principals and ops teams days or weeks before end-of-period crunch.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end reporting workflow — export from SIS, export from LMS, export from finance, consolidate, reconcile, format — is a multi-step, multi-system process with defined branching logic (flag mismatches, escalate to finance, regenerate after corrections). This is a canonical task automation agent use case. The 5-7 day manual cycle maps directly to a workflow that an AI agent could execute autonomously on a scheduled trigger.",
+      "opportunity_sketch": "A scheduled reporting agent that pulls exports from connected systems, runs reconciliation checks, assembles the consolidated report, flags exceptions for human review, and delivers a draft report to principals within hours of period close — compressing 5-7 days to same-day.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Campus principals currently wait 2-3 weeks to receive performance narratives. Once the data is consolidated, an LLM can automatically generate the written board narrative, principal summary, and period commentary from structured inputs — turning raw enrollment and performance tables into readable management reports. This is a high-value, low-risk layer on top of the data assembly pipeline.",
+      "opportunity_sketch": "After data consolidation, an LLM generates a plain-language monthly summary for each campus principal (enrollment trends, drop rate commentary, academic performance highlights) — delivered automatically within 24 hours of period close rather than 2-3 weeks.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The pain point explicitly names the absence of historical trend analysis and the inability to see enrollment or drop-rate trends in a timely way. Time series forecasting directly addresses this — modeling enrollment trajectories, projected drop rates, and academic performance trends across periods, enabling forward-looking visibility rather than backward-looking reconciliation.",
+      "opportunity_sketch": "A forecasting module that ingests historical SIS/LMS data to project end-of-term enrollment, expected drop rates, and academic performance by campus — giving principals 4-6 week forward visibility instead of 2-3 week lag reports.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

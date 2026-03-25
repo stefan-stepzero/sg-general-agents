@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "data-mis-project-change-change-management-absent-dup",
+  "pain_point_label": "Change Management & User Adoption Failures",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Change management failures are partly caused by absent communication — no training materials, no rollout narratives, no user-facing guidance. Text generation can produce role-specific onboarding content, FAQ documents, and adoption communications that change managers typically skip or produce poorly. For multi-site education operators with diverse staff (teachers, admin, support), tailored messaging per role is critical and time-consuming to write manually.",
+      "opportunity_sketch": "An AI-assisted change communication tool that generates training guides, system launch emails, FAQ pages, and staff-specific walkthroughs from a system spec — reducing the documentation burden that derails rollouts.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Adoption metrics are not tracked in this pain point — projects are declared 'complete' at 40% utilization. Structured data classification can segment staff or site-level adoption patterns from system login logs, feature usage records, and activity data, labelling users as 'active', 'partial', or 'resistant'. This gives leaders an evidence base to intervene before projects stall, which is currently absent.",
+      "opportunity_sketch": "A post-launch adoption health classifier that ingests system usage telemetry and staff records to segment campuses and roles by adoption tier, triggering targeted follow-up interventions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Staff reversion to old systems is a behavioral outcome that can be predicted from early adoption signals — login frequency, feature usage rate, help desk tickets, and tenure. A propensity model trained on historical rollout data can score individual staff likelihood of disengaging, allowing targeted training before full reversion occurs. Multi-site operators often have past rollout data that makes this trainable.",
+      "opportunity_sketch": "An employee adoption risk scorer that flags staff with high reversion propensity during the first 90 days post-launch, enabling proactive check-ins from change leads or training refreshers.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Parallel running of old and new systems for 6+ months is driven by incomplete migration and unresolved dependencies — staff keep old systems alive because the transition plan is never fully executed. A task automation agent can orchestrate the migration checklist: tracking outstanding data migration steps, sending reminders, flagging blockers, and escalating stalled items without requiring a dedicated project manager. This directly compresses parallel-running duration.",
+      "opportunity_sketch": "A system migration orchestration agent that tracks rollout tasks across campuses, auto-escalates blocked steps, and produces weekly completion dashboards — replacing the absent change management function with automated oversight.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "User resistance is highest when staff feel unsupported after go-live. A conversational agent embedded in the new system can answer 'how do I do X in the new system?' questions in context, reducing reliance on IT helpdesk and lowering the perceived cost of switching. Education operators with non-technical staff (teachers, office admins) benefit disproportionately from always-available in-system guidance.",
+      "opportunity_sketch": "An in-system onboarding assistant that answers staff questions about the new platform in natural language, surfacing relevant help articles and walkthroughs — replacing the training sessions that never happened.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Leadership in this pain point lacks visibility into why adoption failed — they blame IT, IT blames users, and no one has synthesized the evidence. A research agent can autonomously gather adoption data from multiple sources (help desk logs, usage reports, staff survey data, project documentation) and produce a structured root-cause analysis, giving leadership an objective diagnosis rather than anecdote-driven blame cycles.",
+      "opportunity_sketch": "A post-mortem research agent that ingests project documentation, usage logs, and staff feedback to produce a structured adoption failure report with root causes and recommended interventions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

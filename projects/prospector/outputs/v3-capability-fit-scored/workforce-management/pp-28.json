@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-workforce-planning-retention-branch-principal-burnout-dup",
+  "pain_point_label": "Branch Principal Burnout & Leadership Vacuum",
+  "matches": [
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Principal burnout and impending departure follow observable behavioral patterns — reduced meeting attendance, declining performance review scores, increased leave requests, conflict escalations — that can be modeled at the individual level. A propensity model trained on historical principal and teacher attrition data can surface early-warning scores before a principal actively resigns. For a 500+ staff operator running 4-5 campuses per Regional VP, this directly addresses the 'leadership churn cascades' mechanism by enabling proactive intervention.",
+      "opportunity_sketch": "A burnout/attrition propensity dashboard for Regional VPs that scores each principal weekly based on HR system signals (leave, incident reports, review cadence), flagging those above a risk threshold for targeted check-ins or workload relief.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A significant share of principal overload is administrative text work: staff communications, performance documentation, parent notices, HR correspondence, and compliance reports. AI text generation can draft these on behalf of the principal from structured inputs, directly reducing the workload contribution to burnout. This is technically trivial to deploy and requires no custom model — only prompt configuration aligned to school policy language.",
+      "opportunity_sketch": "An AI writing assistant embedded in the school's admin portal that drafts routine HR letters, incident summaries, parent communications, and end-of-term reports from form inputs, freeing 3-5 hours per week per principal.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Principal overload is not just about drafting text — it involves multi-step administrative workflows: tracking staff leave requests, chasing compliance submissions, routing HR issues, and escalating incidents. A task automation agent can autonomously execute these workflows across the operator's systems (HRIS, LMS, email), reducing the cognitive overhead that accumulates into burnout. This directly targets the 'teaching + admin + HR' triple burden described in the pain point.",
+      "opportunity_sketch": "An autonomous admin agent that monitors inbound HR requests, routes them to the correct process (leave approval, incident log, compliance checklist), sends follow-up reminders, and surfaces a daily briefing to the principal — cutting administrative context-switching by an estimated 40-60%.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "The absence of a succession plan is partly a combinatorial problem: identifying which staff members satisfy the multi-dimensional constraints of a principal role (qualifications, seniority, performance history, willingness, availability) across multiple campuses simultaneously. Constraint satisfaction can map internal talent to succession slots, accounting for hard constraints (certifications, tenure) and soft constraints (cultural fit scores, cross-campus preferences). This is feasible with HR system data a 500+ staff operator already holds.",
+      "opportunity_sketch": "A succession planning module that ingests staff profiles and principal role requirements, then generates a ranked shortlist of internal candidates per campus who satisfy succession constraints — giving Regional VPs a ready-made pipeline instead of reactive external recruitment.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Regional VPs stretched across 4-5 campuses cannot provide the day-to-day mentoring principals need. A conversational AI agent can serve as an always-available coaching and guidance resource for principals facing specific HR, staffing, or leadership challenges — surfacing policy guidance, decision frameworks, and escalation paths in natural dialogue. This directly addresses the 'cannot mentor principals' constraint without requiring VP bandwidth.",
+      "opportunity_sketch": "A principal support chatbot trained on the operator's HR policies, leadership frameworks, and past incident resolutions that principals can consult 24/7 for HR decisions, conflict guidance, and performance conversation scripts — acting as a first-line mentor surrogate.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Principals lacking dedicated HR support must navigate a fragmented landscape of policies, employment law obligations, incident procedures, and government funding requirements. RAG over the operator's policy corpus and HR documentation gives principals instant, cited answers to 'what do I do when…' questions, reducing the decision-paralysis and policy-search overhead that compounds workload stress. This is one of the highest-adoption AI patterns in education administration due to low perceived risk.",
+      "opportunity_sketch": "A policy Q&A system where principals ask questions like 'What's our process for managing underperforming staff on a government contract?' and receive a grounded, cited response drawn from the operator's HR manual, employment agreements, and regulatory guidelines.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

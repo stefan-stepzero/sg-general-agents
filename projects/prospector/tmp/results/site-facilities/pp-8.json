@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "site-facilities-safety-security-incident-reporting-and-escalation-lacks-systemic-protocol-dup",
+  "pain_point_label": "Incident Reporting, Documentation, and Escalation Lack Systemic Protocol and Visibility",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When an incident is verbally reported or described informally, AI text generation can draft a structured, standardised incident report from a brief verbal or written description — capturing required fields (who, what, where, severity, witnesses) and producing a version suitable for the central register. For education operators, this removes the friction of form-filling that causes staff to skip formal reporting, and can auto-draft the official communication to parents or regulators following a serious incident.",
+      "opportunity_sketch": "A staff member submits a short free-text or voice note describing an incident; AI generates a complete, policy-compliant incident report draft and a parent-facing notification template, ready for site manager sign-off before filing.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Incidents currently arrive as fragmented, inconsistently formatted inputs — text messages, handwritten notes, emails, verbal reports typed up ad hoc. AI-assisted data transformation can normalise these semi-structured inputs into a consistent schema (incident type, location, severity tier, date/time, persons involved, actions taken) that feeds a central register. This directly resolves the 'no central incident register' mechanism without requiring staff to change how they initially report.",
+      "opportunity_sketch": "An ingestion layer accepts incident reports in any format (email, form, SMS forward, scanned note) and maps each to a canonical structured record, populating the central incident register automatically with normalized, queryable data.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Once an incident description is submitted, AI text classification can automatically assign severity tier, incident category (theft, trespass, injury, near-miss, environmental hazard), and regulatory escalation flag — replacing the current absence of any severity determination process. For education operators, this is critical because misclassified severity is the root cause of both under-escalation to leadership and failure to notify regulators within required timeframes.",
+      "opportunity_sketch": "Each submitted incident report is automatically classified by type and severity (low/medium/high/critical), with high-severity and regulatory-trigger incidents routed immediately to a designated escalation workflow and leadership notification.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "With a populated central incident register, anomaly detection can surface patterns that human reviewers miss — recurring break-ins at one campus, a spike in near-miss events in a particular facility, or an unusually high rate of unreported follow-ups. This directly addresses the pain point that 'patterns of incidents cannot be identified if incidents are not systematised,' turning the register from a passive archive into an active risk-intelligence tool.",
+      "opportunity_sketch": "A pattern detection layer continuously monitors the incident register and alerts operations leadership when incident frequency, type concentration, or escalation gaps at any campus deviate significantly from network-wide norms.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Historical incident data — once systematised — can feed a risk scoring model that estimates the probability of a serious adverse event at each campus based on prior incident frequency, unresolved hazards, and facility characteristics. Education operators face regulatory and insurance pressure to demonstrate active risk management; a per-campus risk score gives leadership a defensible, evidence-based record of due diligence that is directly referenced in the pain point.",
+      "opportunity_sketch": "Each campus receives a rolling safety risk score derived from incident history, near-miss rates, and open remediation items, surfaced in a leadership dashboard used for board reporting and insurer submissions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "When leadership, auditors, or insurers need to reconstruct events, a RAG system over the incident register and supporting documents enables natural-language queries ('show all trespass incidents at Campus B in the last 18 months with no police report filed') and generates synthesised, citation-backed summaries. This directly addresses the pain of being unable to produce a credible account to inspectors or a comprehensive incident register on demand.",
+      "opportunity_sketch": "An internal audit assistant lets compliance officers and site managers query the incident register in plain English and receive synthesised summaries with source citations, suitable for regulator submissions or insurance claim documentation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end incident reporting and escalation workflow — intake, classification, severity routing, notification, regulatory filing checklist, register update — is a multi-step process with branching logic (severity tier determines who is notified and in what timeframe) that currently has no system enforcing it. A task automation agent can own the entire workflow: receiving a report, classifying it, triggering the appropriate escalation path, sending notifications, and confirming register closure. This is precisely the 'systemic protocol' that is absent.",
+      "opportunity_sketch": "An incident workflow agent receives reports via a simple intake form or chat interface, classifies severity, dispatches notifications to the correct stakeholders (site manager, CEO, regulator checklist) based on incident type, and closes the loop by confirming all required actions are completed before archiving the record.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

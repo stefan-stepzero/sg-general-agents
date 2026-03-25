@@ -1,0 +1,269 @@
+{
+  "company_id": "ipeople",
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise match to Education taxonomy value with strong institutional evidence (PSE listing, website self-description, 100+ year university history)."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "coverage": 0.8,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.8,
+      "justification": "Clear vertical niche identified (STEM/engineering education, AI curriculum specialization) with supporting evidence, though broader than a single niche."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Market explicitly positioned at growth/consolidation phase with quantified TAM expansion (USD 154M to 847M by 2034) and regulatory consolidation drivers."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.63,
+      "justification": "Tuition and enrollment-based model is implied but evidence is generic; no granular breakdown of revenue streams (research, partnerships, ancillary) provided."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Fixed-cost-heavy asset-intensive structure is precisely articulated with specific evidence (facilities, faculty, accreditation, capex commitments)."
+    },
+    {
+      "property_id": "business-model-network-effects",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "No profile_fill provided; moat analysis omitted entirely from manifest."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "No profile_fill provided; dependencies on accreditation bodies, government regulation, and faculty labor market not assessed."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Exact headcount (1,895) from PSE filings with YoY growth tracking; precise match to Mid-Enterprise taxonomy band."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Revenue precisely quantified (PHP 5.32B FY2024 ≈ USD 95M) with YoY growth and TTM confirmation; exact Enterprise band match."
+    },
+    {
+      "property_id": "scale-resources-capitalization",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Public company status, majority ownership structure, and P22B capex plan are clearly documented; minor gap on specific share structure details."
+    },
+    {
+      "property_id": "scale-resources-asset-intensity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Asset-heavy classification precisely supported with multi-campus infrastructure, expansion projects, and capex commitments across 4+ regions."
+    },
+    {
+      "property_id": "scale-resources-financial-health",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Profitable with strong growth (revenue +18%, earnings +31%), positive cash flow, conservative leverage; evidence comprehensive except minor ROIC context missing."
+    },
+    {
+      "property_id": "scale-resources-company-age",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Legacy status indisputable (Mapúa founded 1925, centennial celebrated; iPeople holding for decades) with institutional continuity evidence."
+    },
+    {
+      "property_id": "scale-resources-customer-base-scale",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise customer count (74,000 enrolled students) with YoY growth rate (10%) and geographic/institutional disaggregation; unambiguous Large band."
+    },
+    {
+      "property_id": "growth-phase-scaling",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.595,
+      "justification": "Growth phase is marked with empty placeholder object ({}); 10% YoY enrollment growth and facility expansion confirm scaling, but assessment is skeletal."
+    },
+    {
+      "property_id": "market-position-customer-segment",
+      "coverage": 0.0,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.0,
+      "justification": "No profile_fill provided; student/consumer customer segment is implicit but not explicitly profiled."
+    },
+    {
+      "property_id": "market-position-competitive-stance",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Market leader position in STEM private HE is strongly evidenced (ABET, QS ranking, first-mover initiatives); rollup strategy context adds depth."
+    },
+    {
+      "property_id": "market-position-gtm-motion",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Brand/reputation-led motion is clear with supporting evidence (no outbound sales, partnership distribution), but GTM assessment is limited to inbound patterns."
+    },
+    {
+      "property_id": "market-position-customer-concentration",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Highly diversified revenue across 74,000 individual student accounts is precisely articulated; no concentration risk detected."
+    },
+    {
+      "property_id": "market-position-pricing-position",
+      "coverage": 0.9,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.765,
+      "justification": "Dual-tier pricing (Mapúa premium + NTC/APEC affordable) is clearly described; evidence relies on positioning statements rather than absolute price data."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Dual professional management structure (Dr. Reynaldo Vea + Fred Ayala) representing conglomerate shareholders is well-documented; succession/personal depth limited."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Divisional holding company structure with semi-autonomous subsidiaries is precisely outlined; hub-and-spoke model confirmed with institutional subsidiaries identified."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Multi-site co-located model is explicitly stated and inherent to education delivery; campus presence across 4+ regions clearly documented."
+    },
+    {
+      "property_id": "org-structure-talent-profile",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Domain-expert-heavy (faculty) and operations-heavy (administration) composition is articulated; tech talent capability gap identified but not quantified."
+    },
+    {
+      "property_id": "tech-maturity-stack-generation",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Transitional architecture is detailed with specific platform names (Moodle, Blackboard, CARDINAL, Coursera integration); overall assessment confident but future direction unclear."
+    },
+    {
+      "property_id": "tech-maturity-engineering-practices",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Minimal-to-basic practices appropriately assessed for a non-tech company; IT as operational support is clear, but internal development maturity not detailed."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "coverage": 0.75,
+      "confidence_multiplier": 0.55,
+      "final_score": 0.4125,
+      "justification": "Basic-to-intermediate data maturity identified with CARDINAL RFID and Coursera analytics, but data warehouse/BI platform status unknown; confidence low."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "coverage": 0.7,
+      "confidence_multiplier": 0.55,
+      "final_score": 0.385,
+      "justification": "Basic-to-intermediate security posture inferred from regulatory requirements (Data Privacy Act, QM certification) but no direct evidence of SOC2/ISO27001 or incident response maturity."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Heavy regulatory burden is precisely characterized with four distinct regulators (CHED, DepEd, PSE/SEC, ABET, NPC) and active compliance context."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Single-country national scope is unambiguous (Philippines only, 4+ regions) with international partnership reach clearly delineated as non-operational."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Recession-resistant classification is justified with demographic and essential-service arguments; forex exposure identified but not quantified."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "coverage": 0.95,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.95,
+      "justification": "Public company and dual conglomerate ownership structure is thoroughly documented; governance complexity articulated; minority shareholder protections noted."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "coverage": 0.85,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.85,
+      "justification": "Fast-follower-to-bleeding-edge positioning (relative to Philippine HE) is supported with first-mover examples (BS AI, ABET, QM certification); institutional constraints acknowledged."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Dual brand personality (thought-leader Mapúa + mission-driven affordable segment) is clearly articulated with specific positioning evidence from website and messaging."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "coverage": 0.9,
+      "confidence_multiplier": 1.0,
+      "final_score": 0.9,
+      "justification": "Values-prominent classification is well-supported with public statements, sustainability commitment evidence, and actual 54% affordable enrollment alignment."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "coverage": 0.85,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.7225,
+      "justification": "Strong-in-niche employer assessment supported by Ayala/Yuchengco pedigree and education sector reputation; tech talent gap noted but confidence moderated by limited Glassdoor/survey data."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": 0.9,
+    "business-model": 0.575,
+    "scale-resources": 0.943,
+    "growth-phase": 0.595,
+    "market-position": 0.814,
+    "org-structure": 0.938,
+    "tech-maturity": 0.599,
+    "operating-environment": 0.899,
+    "culture-brand": 0.819
+  },
+  "overall_score": 0.795
+}

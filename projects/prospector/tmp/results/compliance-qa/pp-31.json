@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-policy-data-privacy-staff-policy-awareness-training-dup",
+  "pain_point_label": "Staff Policy Awareness and Training Compliance",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is that policy acknowledgment and training completion are untracked, leaving operators with no audit trail when challenged. A task automation agent can orchestrate the full workflow: push policy updates to staff, require acknowledgment, log completions per person per policy, and send escalating reminders to non-completers — all without manual HR coordination. This directly addresses the 'no record of who has been trained' gap that creates legal/HR risk.",
+      "opportunity_sketch": "An automated compliance pipeline that distributes new or updated policies to relevant staff groups, tracks read-and-acknowledge clicks per employee, logs timestamped completion records, and surfaces a real-time compliance dashboard — producing auditable evidence when disciplinary decisions are challenged.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Policies written by headquarters are often dense, legalistic, and campus-staff-unfriendly — a primary reason staff don't read or retain them. AI text generation can automatically produce plain-language summaries, scenario-based explainers, and role-specific highlights from each policy document, making policies consumable and reducing the 'I didn't understand it' defense. This directly attacks the reactive learning pattern by making policy content engaging before a discipline case occurs.",
+      "opportunity_sketch": "For every policy document, auto-generate a 1-page staff brief with plain-language summary, 3 concrete scenarios, and a quick-check FAQ — delivered at onboarding and each policy update, with role-targeted variants for teachers vs. administrators.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff currently search reactively for policies only when a discipline case arises, which is too late. A conversational agent trained on the full policy corpus gives staff instant, contextualized answers to 'what does policy say about X?' queries at any time, building familiarity through use rather than mandatory reading. Repeated interactions create implicit training logs — the system knows which staff engaged with which policy topics.",
+      "opportunity_sketch": "A staff-facing policy assistant embedded in the school intranet or messaging platform where staff can ask natural-language questions about discipline, attendance, or data privacy policies and receive cited, accurate answers — with interaction logs serving as a soft proxy for awareness.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "When a parent challenges a discipline decision, the operator needs to quickly locate the exact policy clause, verify it was in force at the time, and produce a coherent response — currently a slow manual search. RAG over the policy corpus lets HR or principals instantly retrieve the precise policy text and generate a grounded, citation-backed response, reducing legal exposure response time. It also supports staff training scenarios by answering 'what should I do if…' with policy-grounded answers.",
+      "opportunity_sketch": "A RAG-powered policy Q&A tool for HR and campus administrators that retrieves exact policy clauses and generates ready-to-use response language for parent complaints or regulatory inquiries, with citations to policy version and effective date.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all campuses or staff roles carry equal compliance risk — schools with high staff turnover, recent policy updates, or upcoming audits face disproportionate exposure. A risk scoring model using training completion rates, policy update recency, staff tenure, and historical compliance incidents can flag which campuses and staff cohorts are highest risk, letting headquarters prioritize outreach rather than applying uniform pressure across 500+ staff.",
+      "opportunity_sketch": "A compliance risk dashboard that scores each campus and staff role against policy currency and training completion rates, surfacing a ranked 'risk list' for the compliance team to action before an audit or parent complaint materializes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incoming parent complaints, staff incident reports, and discipline records can be classified by AI to detect patterns of inconsistent policy application across campuses — the precise legal risk the operator faces. By tagging each incident by policy area and outcome, the system can surface 'Campus A applies policy X far more strictly than Campus B', giving headquarters actionable evidence of inconsistency before it becomes a legal claim.",
+      "opportunity_sketch": "An automated incident classifier that tags discipline and complaint records by policy area, severity, and outcome, then surfaces cross-campus consistency reports showing where staff are diverging in policy interpretation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

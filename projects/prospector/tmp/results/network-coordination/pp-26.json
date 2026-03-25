@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-brand-identity-value-proposition-drift-dup",
+  "pain_point_label": "Value Proposition & Positioning Drift Across Campuses",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Value proposition drift is fundamentally a messaging problem — each campus has drifted into its own narrative because there is no authoritative, centrally generated brand voice. AI text generation can produce a canonical network-level positioning framework (employer narrative, family-facing value prop, campus-specific variants that stay within brand guardrails) that HQ can distribute and mandate. This directly addresses the mixed-messaging mechanism by providing consistent, high-quality copy that campus teams are more likely to adopt than a blank template.",
+      "opportunity_sketch": "A brand-voice generator that takes network positioning inputs and outputs campus-ready marketing copy — admissions pages, employer pitch decks, family FAQs — all locked to a consistent network narrative while allowing campus-level customization within defined parameters.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Before fixing the drift, leadership needs to understand its scope — what each campus is actually saying about itself across websites, brochures, and social channels. Summarization can ingest all campus-level marketing content and produce a side-by-side condensed comparison of how each campus positions itself, making the divergence concrete and evidence-based for leadership rather than anecdotal. This grounds the governance conversation in facts.",
+      "opportunity_sketch": "An audit tool that ingests all campus marketing materials and produces a structured brand-positioning summary per campus, with a network-level divergence report that highlights gaps relative to the intended network value proposition.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Ongoing monitoring of brand compliance requires classifying new content (emails, web copy, social posts, job ads) against approved positioning categories. Text classification can flag content that uses off-brand positioning claims — e.g., a campus marketing itself as a 'cost leader' when the network positioning is 'career outcomes' — enabling a lightweight compliance workflow without requiring manual review of every piece of content.",
+      "opportunity_sketch": "A brand-compliance classifier integrated into content approval workflows that scores new marketing copy against the network's approved positioning dimensions and flags outliers for review before publication.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Employer relations and admissions staff at each campus often drift in messaging because they lack easy access to authoritative network positioning language at the moment they need it — writing a pitch email, answering a parent's question, preparing for a fair. A RAG system grounded in the canonical brand and positioning documents gives staff instant, accurate, on-brand answers and copy, reducing the improvisation that causes drift.",
+      "opportunity_sketch": "An internal brand assistant where admissions and employer relations staff ask questions like 'How should I describe our network to a large employer?' and receive generated responses grounded in the approved positioning framework, with citations to the source materials.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Positioning drift often persists because leadership lacks a clear, continuously updated picture of how competitors and peer networks are positioning themselves — making it hard to articulate a crisp, differentiated network value proposition. A research agent can autonomously gather competitor positioning, employer expectations, and family decision criteria from multiple web sources and synthesize findings into a strategic positioning brief that informs the network-level narrative.",
+      "opportunity_sketch": "A competitive positioning intelligence agent that periodically researches how peer education networks and direct competitors describe themselves to employers and families, and surfaces gaps and differentiation opportunities for the network's marketing and strategy team.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

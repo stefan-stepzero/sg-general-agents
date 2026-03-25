@@ -1,0 +1,328 @@
+[
+  {
+    "name": "Audit Trail Anomaly Detector",
+    "one_liner": "Flags unusual financial transactions and control exceptions in TechOne/NESA ledgers before period-end close.",
+    "problem": "Finance directors at PHINMA and Rising Academies manually review thousands of journal entries during quarterly closes to spot unauthorized transfers, misclassified grant spend, or fee-waiver anomalies across campuses. Education orgs cannot simply auto-reject transactions like retail banks — they must preserve audit trails and balance mission-driven discretion (scholarship approvals, donor restrictions). Current ERP controls are rigid and generate false positives.",
+    "ai_technique": "Anomaly detection (unsupervised learning on historical transaction patterns)",
+    "how_it_works": "Model learns normal transaction patterns per campus/cost-center (e.g., typical faculty salary ranges, grant draw-down rhythms, utility spend seasonality). Flags outliers with explainability: 'This transfer exceeds historical peer average by 3 standard deviations' or 'Grant spend rate 20% ahead of drawdown schedule.' User approves/rejects with single click, feeding back into model.",
+    "target_companies": [
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "buyer_persona": "Finance Controller / CFO",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-09",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Financial Risk & Controls",
+    "_cellHeat": 47,
+    "_cellOppScore": 34
+  },
+  {
+    "name": "Compliance Document Classifier",
+    "one_liner": "Auto-routes financial documents (invoices, grant reports, payroll records) to correct compliance bucket (restricted spend, audit-ready, archivable).",
+    "problem": "Education organizations managing government grants, donor funds, and restricted endowments face overlapping compliance rules. A single invoice may be audit-relevant under government funding rules, donor restrictions, and institutional policies. Staff manually tag documents, leading to misclassification and compliance risk. PHINMA's multi-campus structure and Rising's government funding add complexity.",
+    "ai_technique": "Multi-label text classification on policy-document pairs",
+    "how_it_works": "Train classifier on samples of correctly classified documents tagged with compliance categories (e.g., 'government-auditable', 'restricted-donor-spend', 'salary-freeze-exempt'). Model learns patterns in invoice text, cost-center, requestor role, fund source. Routes new documents with confidence scores. Finance team reviews low-confidence buckets; high-confidence route automatically.",
+    "target_companies": [
+      "phinma",
+      "rising"
+    ],
+    "buyer_persona": "Compliance Officer / Internal Audit Manager",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-09",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Financial Risk & Controls",
+    "_cellHeat": 47,
+    "_cellOppScore": 34
+  },
+  {
+    "name": "Budget Variance Explainer",
+    "one_liner": "Summarizes variance explanations from department heads into cohesive finance board narratives.",
+    "problem": "Each school or department fills out budget variance forms ('Why did utility spend spike 15%? Why is recruitment behind?'). Finance rolls these up into board packs, but summaries are repetitive, verbose, or contradictory. Controllers spend hours rewriting narratives. Risk of inconsistent messaging to boards and funders.",
+    "ai_technique": "Abstractive summarization with entity preservation",
+    "how_it_works": "Aggregate variance explanations by category (utilities, payroll, program spend, etc.). Identify common themes and outliers. Generate concise summary preserving key variance drivers, quantified impacts, and remediation plans. Highlight consensus vs. conflicting explanations across campuses. Finance team edits output before board submission.",
+    "target_companies": [
+      "phinma",
+      "rising",
+      "school-for-life"
+    ],
+    "buyer_persona": "Finance Director / Chief Accountant",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-09",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Financial Risk & Controls",
+    "_cellHeat": 47,
+    "_cellOppScore": 34
+  },
+  {
+    "name": "Control Efficacy Auditor",
+    "one_liner": "Tests whether designed financial controls (approval limits, segregation of duties) are actually working across distributed campuses.",
+    "problem": "Large education networks like PHINMA design control matrices (e.g., 'transfers >$10K require two signatories') but decentralized campuses run different systems and practices. Internal audit teams cannot scale manual testing. Growing compliance burden (government funding, accreditation) demands evidence that controls are not just documented but enforced.",
+    "ai_technique": "Rule-based logic + statistical testing on transaction logs",
+    "how_it_works": "Encode control rules into executable queries on TechOne/financial system logs. Auto-scan all transactions to detect violations (single signatory on >$10K transfers, same person approving and processing, etc.). Generate violations report with campus, transaction, user, and remediation. Finance runs quarterly to certify control environment.",
+    "target_companies": [
+      "phinma",
+      "rising"
+    ],
+    "buyer_persona": "Internal Audit Director",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-09",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Financial Risk & Controls",
+    "_cellHeat": 47,
+    "_cellOppScore": 34
+  },
+  {
+    "name": "Inquiry Intent Classifier",
+    "one_liner": "Classifies inbound SMS, WhatsApp, and email inquiries from prospective students into intent buckets (admission interest, fee query, accommodation need, complaint).",
+    "problem": "Rising Academies and iPeople manage thousands of inbound messages across channels in price-sensitive markets where rapid response drives conversion. Staff manually read messages to route to correct team (admissions, finance, housing, support). Slow triage means lost leads and poor student experience. Generic CRM tools don't understand education-specific intent signals (e.g., 'scholarship kya hai' = fee assistance inquiry).",
+    "ai_technique": "Text classification (intent detection) with multilingual support",
+    "how_it_works": "Train on samples of tagged messages in English, Tagalog, Swahili (language-dependent per geography). Classify into education-specific buckets: enrollment-process, fee-assistance, accommodation, program-mismatch, complaint, duplicate. Route auto-tagged high-confidence messages to correct queue; flag low-confidence for human review. Measure conversion uplift by intent class.",
+    "target_companies": [
+      "rising",
+      "ipeople"
+    ],
+    "buyer_persona": "Admissions Director / Student Services Manager",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-10",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Retention & Churn",
+    "_cellHeat": 39,
+    "_cellOppScore": 28
+  },
+  {
+    "name": "Dropout Risk Forecaster",
+    "one_liner": "Predicts student dropout risk at key lifecycle moments (post-admission, mid-semester, before renewal) and recommends intervention.",
+    "problem": "iPeople and Rising face high student churn in price-sensitive segments where family financial stress or program mismatch drive dropout. Identifying at-risk students early enough for intervention (fee relief, counseling, curriculum adjustment) is critical to retention and revenue. Manual flags based on single factors miss multi-factor risk patterns. Multi-year cohort tracking is tedious.",
+    "ai_technique": "Time-series classification (logistic regression + survival analysis)",
+    "how_it_works": "Feature engineering on student data: enrollment demographics, course performance, SMS engagement patterns, payment history (late payments, partial payments), inferred financial stress proxies. Train on historical cohorts with known dropout labels and timing. Score all enrolled students. Dashboard shows high-risk cohorts and timing windows (e.g., 'Finance students at risk of dropout 2 weeks post-payment deadline'). Suggest interventions per risk profile.",
+    "target_companies": [
+      "ipeople",
+      "rising"
+    ],
+    "buyer_persona": "Student Retention Manager / Academic Dean",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-10",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Retention & Churn",
+    "_cellHeat": 39,
+    "_cellOppScore": 28
+  },
+  {
+    "name": "Cohort Conversion Funnel Forecaster",
+    "one_liner": "Forecasts conversion through inquiry → application → enrollment stages for specific academic programs and cohorts.",
+    "problem": "PHINMA and iPeople plan hiring, curriculum capacity, and marketing spend based on enrollment forecasts, but funnel conversion rates vary by program, season, and geography. Enrollment managers rely on historical averages that miss year-on-year trend and leading-indicator signals (inquiry volume, application quality, competitor moves). Forecast misses lead to over-hiring or program under-utilization.",
+    "ai_technique": "Time-series forecasting (seasonal ARIMA + exogenous drivers)",
+    "how_it_works": "Model inquiry-to-application and application-to-enrollment conversion by program and time window, accounting for seasonality (intake cycles), day-of-week effects, and exogenous drivers (marketing spend, competitor tuition changes, inferred economic indicators). Forecast next quarter's expected enrollments with confidence intervals. Flag programs with declining conversion. Compare vs. capacity to flag over/under-hiring risk.",
+    "target_companies": [
+      "ipeople",
+      "phinma"
+    ],
+    "buyer_persona": "Enrollment Manager / VP of Admissions",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-10",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Retention & Churn",
+    "_cellHeat": 39,
+    "_cellOppScore": 28
+  },
+  {
+    "name": "Student Engagement Summarizer",
+    "one_liner": "Synthesizes multi-channel student engagement signals (portal login, LMS activity, SMS opens, event attendance) into simple risk flags.",
+    "problem": "Education organizations track student engagement across disconnected systems (LMS, mobile app, event ticketing, SMS), but lack unified view. Instructors and support staff manually piece together signals ('I haven't seen her log into LMS; does she attend events?'). Early warning of disengagement is available but scattered, leading to missed intervention timing.",
+    "ai_technique": "Data aggregation + rule-based risk scoring",
+    "how_it_works": "Pipe engagement signals from LMS, mobile app, email, SMS, and event system into unified student timeline. Define engagement profile for each program (e.g., 'STEM students should log in 3x/week, attend lab 1x/week'). Flag deviation from profile as 'warning' or 'critical.' Summarize flags in student card for advisor: 'Low LMS activity past 2 weeks but strong event attendance — may indicate content delivery issue.' Link to targeted support offerings.",
+    "target_companies": [
+      "ipeople",
+      "phinma",
+      "rising"
+    ],
+    "buyer_persona": "Student Success Coach / Academic Advisor",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-10",
+    "_cellDomain": "Growth & Market",
+    "_cellSubCategory": "Retention & Churn",
+    "_cellHeat": 39,
+    "_cellOppScore": 28
+  },
+  {
+    "name": "Program Margin Optimizer",
+    "one_liner": "Identifies cost-reduction and revenue-per-student opportunities by program cohort and delivery modality.",
+    "problem": "Rising Academies faces margin pressure from donor dependency and must scale without proportional cost growth. Each program has different cost structure (blended learning cheaper per student than residential), enrollment risk, and revenue potential. Finance lacks visibility into program-level profitability and lever analysis. Decision-making defaults to across-the-board cuts, risking program quality and differentiation.",
+    "ai_technique": "Regression analysis (cost-driver decomposition) + sensitivity analysis",
+    "how_it_works": "Break down program costs into drivers: faculty salary, facilities (per seat), technology/platform, student support, overhead allocation. Regression across programs and cohorts to identify cost outliers ('Why is Kinshasa program 20% more expensive per student than Lagos?'). Predict margin impact of enrollment changes, fee adjustments, and delivery shifts (more blended, less residential). Generate 'cost lever' analysis: 'Moving 200 students to blended would improve margin by 12%.' Finance team uses for scenario planning.",
+    "target_companies": [
+      "rising"
+    ],
+    "buyer_persona": "CFO / Program Director",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-11",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Revenue & Margin Pressure",
+    "_cellHeat": 37,
+    "_cellOppScore": 27
+  },
+  {
+    "name": "Student Fee Default Predictor",
+    "one_liner": "Flags high-risk-of-default students before enrollment, enabling proactive financial aid and payment-plan negotiation.",
+    "problem": "Rising and affordable HE operators cannot enforce harsh collection practices (incompatible with access mission) but default rates erode margins. Identifying students likely to miss payments before enrollment allows targeted intervention: flexible payment plans, micro-scholarships, bridge programs. Current approaches rely on crude credit scoring or zip-code proxies; education context adds signals (first-gen status, employer stability, family business model).",
+    "ai_technique": "Propensity modeling (logistic regression + feature engineering)",
+    "how_it_works": "Feature engineering on applicant/student data: employment sector stability (informal vs. salaried), family size vs. household income proxy, past payment patterns, program choice (vocational vs. degree — different student profiles), cohort demographics (mature vs. direct-from-secondary). Train on historical cohorts with payment outcomes. Score applicants pre-enrollment. At-risk students offered payment plans, bridge funding, or support navigation to formal employment. Measure default rate lift.",
+    "target_companies": [
+      "rising"
+    ],
+    "buyer_persona": "Financial Aid Director / Chief Enrollment Officer",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-11",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Revenue & Margin Pressure",
+    "_cellHeat": 37,
+    "_cellOppScore": 27
+  },
+  {
+    "name": "Tuition Elasticity Analyzer",
+    "one_liner": "Quantifies demand elasticity by program and geography to optimize fee-setting under financial sustainability constraints.",
+    "problem": "Rising Academies and PHINMA operate in markets where tuition pricing affects access (core mission) and margin (survival). Fee increases drive enrollment loss; fee cuts increase enrollment but reduce per-student revenue. Organizations lack data-driven analysis of price-demand tradeoffs per program and cohort. Pricing decisions default to competitor benchmarking or institutional 'feel.'",
+    "ai_technique": "Econometric regression (demand elasticity estimation)",
+    "how_it_works": "Analyze historical enrollment and fee changes by program and geography. Estimate price elasticity (% enrollment change per 1% fee change). Model heterogeneity: STEM programs less elastic than humanities; urban markets more elastic than rural. Estimate revenue and margin impact of proposed fee changes. Run scenario analysis: 'If we raise STEM fees 5%, lose 3% enrollment but gain 2% margin. If we cut humanities 10%, gain 8% enrollment but lose 6% margin.' Summarize tradeoff for board decision.",
+    "target_companies": [
+      "rising"
+    ],
+    "buyer_persona": "CFO / VP of Finance",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-11",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Revenue & Margin Pressure",
+    "_cellHeat": 37,
+    "_cellOppScore": 27
+  },
+  {
+    "name": "Cost-Center Efficiency Benchmarker",
+    "one_liner": "Identifies cost-center outliers (administration, student services, facilities) and flags efficiency improvement opportunities vs. peers.",
+    "problem": "Multi-campus education networks like Rising lack visibility into which cost centers are efficient and which are cost-bloated. Comparing a Kinshasa campus support team to Lagos peer is manual and incomplete. Efficiency improvements are ad-hoc rather than systematic. Sustainability pressures demand accountability and transparency.",
+    "ai_technique": "Data envelopment analysis (DEA) / benchmarking",
+    "how_it_works": "Collect cost-center spend by campus: admin headcount and salary, support staff, facilities maintenance, technology. Normalize by campus size (students), revenue, and complexity (program count). Identify outlier high-cost-per-student centers. Flag for investigation: 'Kinshasa admin spending 18% of revenue vs. 12% peer average — investigate staffing ratios, procurement prices, or policy differences.' Facilitate peer-learning and cost benchmarking across campuses.",
+    "target_companies": [
+      "rising"
+    ],
+    "buyer_persona": "CFO / VP of Operations",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-11",
+    "_cellDomain": "Financial",
+    "_cellSubCategory": "Revenue & Margin Pressure",
+    "_cellHeat": 37,
+    "_cellOppScore": 27
+  },
+  {
+    "name": "Strategic Intelligence Digest",
+    "one_liner": "Auto-synthesizes policy briefs, sector research, and program evaluations into monthly strategic briefings for leadership.",
+    "problem": "Acasus, WISE, and education development consultancies depend on sector intelligence (policy trends, LMIC education outcomes data, donor priorities, competitor moves) to inform strategy and proposals. Leadership teams cannot read hundreds of research papers and policy documents monthly. Manual synthesis is time-intensive and inconsistent. Organizations risk missing critical market signals or blind-spotting strategy decisions.",
+    "ai_technique": "Multi-document abstractive summarization + semantic topic clustering",
+    "how_it_works": "Monitor feeds: government education white papers, international development reports (World Bank, UNESCO), sector publications (EdTech innovation reports), internal program evaluations. Monthly, batch new documents. Extract themes (e.g., 'EdTech adoption in Sub-Saharan Africa,' 'Government funding constraints'), surface contradictions (e.g., two reports with opposite conclusions on blended learning impact). Generate 2-page strategic brief synthesizing themes with source cites. Leadership reviews, edits, circulates. Measure decision impact by tracking cited insights.",
+    "target_companies": [
+      "acasus",
+      "wise"
+    ],
+    "buyer_persona": "Executive Director / Chief Strategy Officer",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-12",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Transformation & Change",
+    "_cellHeat": 52,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Pilot Experiment Designer",
+    "one_liner": "Structures program pilot design (counterfactual, control selection, learning outcome metrics, duration) based on education intervention best practices.",
+    "problem": "Pilot-before-scale is standard for education development organizations (Acasus, Rising, School for Life) but pilot design is ad-hoc. Teams struggle to define credible counterfactuals, select comparable controls, design learning outcome measures that reflect lags (learning effects take 6-12 months), and set sample sizes. Weak pilot design leads to inconclusive results and wasted funding. Rigorous RCT design is expensive and slow.",
+    "ai_technique": "Decision tree + evidence synthesis from RCT literature",
+    "how_it_works": "Interviewing mode: walk practitioner through intervention type (curriculum change, teacher training, management practice, tech deployment), target student population, geographic context, existing baseline data. System recommends: sample size (power calculation), control design (matched school, waitlist, geographic phase-in), outcome metrics (aligned to intervention logic model), measurement timeline (accounting for learning lag), and credibility checks (threat to internal validity). Output structured pilot protocol. Practitioner refines; system flags high-risk design choices.",
+    "target_companies": [
+      "acasus",
+      "rising",
+      "school-for-life"
+    ],
+    "buyer_persona": "Program Manager / Monitoring & Evaluation Lead",
+    "tier": "module",
+    "confidence": "high",
+    "_cell": "cell-12",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Transformation & Change",
+    "_cellHeat": 52,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Market Sizing Estimator",
+    "one_liner": "Estimates addressable student population by geography and demographic segment to size new program or geographic expansion opportunity.",
+    "problem": "PHINMA, iPeople, and Acasus plan expansions (new campus, new program, new country) but lack rigorous market-sizing analysis. Decisions default to consultant reports or competitor observation. Missing systematic use of census data, demographic trends, economic indicators, and education stage-gating (e.g., 'secondary completion rate limits HE addressable market'). Risk of oversizing/undersizing capacity and investment.",
+    "ai_technique": "Regression with demographic and economic predictors",
+    "how_it_works": "Define target student profile (age range, income level, prior education). For proposed geography, pull census data (age distribution, income distribution, education completion rates), economic indicators (unemployment, wage growth), infrastructure data (internet access, transport). Train regression on comparable existing markets where organization has enrollment data. Estimate addressable population for proposed market. Sensitivity analysis: 'If unemployment rises 2%, addressable market drops 8%.' Validate against competitor presence and local surveys.",
+    "target_companies": [
+      "phinma",
+      "ipeople",
+      "acasus"
+    ],
+    "buyer_persona": "VP of Strategy / COO",
+    "tier": "feature",
+    "confidence": "high",
+    "_cell": "cell-12",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Transformation & Change",
+    "_cellHeat": 52,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Regulatory Change Impact Assessor",
+    "one_liner": "Extracts and assesses impact of government education policy changes (accreditation rules, funding models, qualification requirements) on institution strategy.",
+    "problem": "iPeople, Kinetic, and PHINMA operate in heavily regulated sectors (CHED, DepEd, higher-ed accreditation bodies). Policy changes (tuition regulation, mandatory curriculum elements, accreditor standards) require rapid strategic response. Organizations miss signals buried in white papers or don't assess impact until implementation deadline. Competitive advantage goes to early adapters with systematic policy monitoring.",
+    "ai_technique": "Entity extraction + impact logic modeling",
+    "how_it_works": "Monitor government/regulator policy releases (CHED circulars, DepEd memoranda, NESA announcements). Extract new rules, deadlines, requirements. Classify by institution impact: 'This accreditation standard requires X infrastructure investment; affects Y programs; deadline is Z months.' Link to institution's current compliance posture (do we already meet this? where are gaps?). Generate impact brief: 'New DepEd curriculum requirements add 120 contact hours per program; current allocation allows 30 hours buffer. Recommend curriculum audit and potential program restructuring.' Flag compliance risk by timeline.",
+    "target_companies": [
+      "ipeople",
+      "kinetic",
+      "phinma"
+    ],
+    "buyer_persona": "Chief Academic Officer / VP of Compliance",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-12",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Transformation & Change",
+    "_cellHeat": 52,
+    "_cellOppScore": 26
+  },
+  {
+    "name": "Partnership Opportunity Matcher",
+    "one_liner": "Identifies strategic partnership opportunities (curriculum partnerships, tech integrations, campus networks) by analyzing sector landscape and institution gaps.",
+    "problem": "Education organizations (iPeople, PHINMA, School for Life) pursue partnerships for curriculum credibility (e.g., industry affiliations, international university links), technology scaling (LMS, admission systems), or geographic expansion (franchise, shared services). Partner discovery is network-driven ('We know someone who knows someone'). Organizations miss complementary capabilities and geographies. Due diligence is manual and time-intensive.",
+    "ai_technique": "Semantic similarity matching + market gap analysis",
+    "how_it_works": "Index universe of potential partners: edtech vendors, international universities, training organizations, employers in key verticals. Profile each: capabilities, geographies, target segments, pricing models, performance data. Profile institution: programs, geographies, tech stack, strategic gaps. Run similarity search: 'You need LMS replacement; Coursera and Moodle Workplace both match your segment and budget.' Assess mutual fit: 'Potential partner serves 15 countries including 3 that you're expanding to; track record with similar institutions.' Generate 'partnership pipeline' with pre-scored opportunity and due-diligence checklist. Partnership team executes.",
+    "target_companies": [
+      "ipeople",
+      "phinma",
+      "school-for-life"
+    ],
+    "buyer_persona": "VP of Strategy / Academic Partnerships Director",
+    "tier": "feature",
+    "confidence": "medium",
+    "_cell": "cell-12",
+    "_cellDomain": "Strategy & Direction",
+    "_cellSubCategory": "Transformation & Change",
+    "_cellHeat": 52,
+    "_cellOppScore": 26
+  }
+]

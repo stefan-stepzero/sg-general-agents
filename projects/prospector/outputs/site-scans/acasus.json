@@ -1,0 +1,91 @@
+{
+  "url": "https://www.acasus.com",
+  "scan_date": "2026-03-11",
+  "pages_visited": [
+    "https://www.acasus.com",
+    "https://www.acasus.com/about",
+    "https://www.acasus.com/impact/management-leadership",
+    "https://www.acasus.com/impact/tech-implementation/deployment-of-software-solutions",
+    "https://www.acasus.com/impact",
+    "https://www.acasus.com/careers",
+    "https://www.acasus.com/contact",
+    "https://www.acasus.com/contact"
+  ],
+  "pages_not_found": [
+    "pricing — no nav link found",
+    "partners — no nav link found"
+  ],
+  "content": {
+    "homepage": {
+      "type": "homepage",
+      "url": "https://www.acasus.com/",
+      "title": "Acasus",
+      "description": "We believe expertise alone cannot change the world, that it also takes courage. The courage to be on the ground, wherever we are needed.",
+      "content": "HomeImpact Change StrategyManagement & LeadershipTech & ImplementationEducation & HealthJoinAbout Menu  Close ImpactChange StrategyStrategic Plan DevelopmentStakeholder Engagement & CommunicationImplementation ManagementStrategic Development & ImplementationManagement & LeadershipLeadership DevelopmentStakeholder Capacity BuildingDelivery of Management InterventionsPolitical AdvocacyTech & ImplementationDevelopment of Data Systems to Deliver ChangeData-Driven ImplementationDeployment of Software SolutionsPioneering Systems DesignEducation & HealthEducation Transformation ReformHealth System ReformPedagogical DevelopmentVaccine DeliveryDemand Generation & CommunitiesJoinAboutWe believe expertise alone cannot change the world, that it also takes courage. The courage to be on the ground, wherever we are needed. Articles Hidden in Plain Sight: Reaching \"Zero-Dose\" Children in the DRCRoutine immunisation alone is not enough. Even where services exist, children are still consistently missed.NEXT ARTICLEWhy Delivery Thrives in Some Contexts and Not in OthersWhy Delivery Thrives in Some Contexts and Not in OthersDelivery has improved the lives of millions in some countries, and been forgettable in others. What makes the difference?NEXT ARTICLEHidden in Plain Sight: Reaching \"Zero-Dose\" Children in the DRCHidden in Plain Sight: Reaching \"Zero-Dose\" Children in the DRCRoutine immunisation alone is not enough. Even where services exist, children are still consistently missed.NEXT ARTICLEWhy Delivery Thrives in Some Contexts and Not in OthersWhy Delivery Thrives in Some Contexts and Not in OthersDelivery has improved the lives of millions in some countries, and been forgettable in others. What makes the difference?NEXT ARTICLEHidden in Plain Sight: Reaching \"Zero-Dose\" Children in the DRCHidden in Plain Sight: Reaching \"Zero-Dose\" Children in the DRCRoutine immunisation alone is not enough. Even where services exist, children are still consistently missed.NEXT ARTICLEWhy Delivery Thrives in Some Contexts and Not in Others Articles  Articles  Brave Change  It takes more than expertise to deliver impact for citizens. It takes courage. The courage to be on the ground, wherever we’re needed, whatever the risk.  About Acasus  Articles  View more articles in Acasus Impact Show all  Browse Acasus Impact Change StrategyStrategic Plan DevelopmentStakeholder Engagement & CommunicationImplementation ManagementStrategic Development & ImplementationManagement & LeadershipLeadership DevelopmentStakeholder Capacity BuildingDelivery of Management InterventionsPolitical AdvocacyTech & ImplementationDevelopment of Data Systems to Deliver ChangeData-Driven ImplementationDeployment of Software SolutionsPioneering Systems DesignEducation & HealthEducation Transformation ReformHealth System ReformPedagogical DevelopmentVaccine DeliveryDemand Generation & Communities Latest Podcasts  View all Acasus podcasts on Spotify Dr. Farhana Zareef  Interview with our Project Manager, Bárbara Grossi Hamdan  Interview with our Project Director for Pakistan, Hunain Mandvia  View all Acasus podcasts on Spotify Join the world's leading impact-consultancy  We look for people who are excited to be part of a team at the forefront of the global challenge to improve the life of millions.  Careers at Acasus  Articles  Articles  Be first to know what's working  Get practical insights from the world’s most ambitious reforms. SubmitHomeImpactJoinAboutSearch JobsContact & ImpressumPrivacy PolicyCookie Policy © 2026 Acasus",
+      "scraped": true
+    },
+    "about": {
+      "type": "about",
+      "url": "https://www.acasus.com/about",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da75727cd931874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    },
+    "leadership": {
+      "type": "leadership",
+      "url": "https://www.acasus.com/impact/management-leadership",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da75734be911874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    },
+    "products": {
+      "type": "products",
+      "url": "https://www.acasus.com/impact/tech-implementation/deployment-of-software-solutions",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da757418fa21874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    },
+    "customers": {
+      "type": "customers",
+      "url": "https://www.acasus.com/impact",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da7574e487d1874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    },
+    "careers": {
+      "type": "careers",
+      "url": "https://www.acasus.com/careers",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da7575af9141874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    },
+    "job_listings": [],
+    "blog": {
+      "type": "blog",
+      "url": "https://www.acasus.com/contact",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da75767ab0e1874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    },
+    "blog_posts": [],
+    "contact": {
+      "type": "contact",
+      "url": "https://www.acasus.com/contact",
+      "title": "Just a moment...",
+      "description": null,
+      "content": "www.acasus.comPerforming security verificationThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.Verification successful. Waiting for www.acasus.com to respond\nRay ID: 9da757746c741874Performance and Security by CloudflarePrivacy",
+      "scraped": true
+    }
+  },
+  "meta": {
+    "site_architecture": "unknown",
+    "tech_signals": [],
+    "total_pages_scanned": 8
+  }
+}

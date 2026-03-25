@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-alumni-tracking-outcome-opacity-dup",
+  "pain_point_label": "Outcome Tracking Blind Spots",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Alumni outcome data is scattered across email replies, LinkedIn, third-party job boards, and ad-hoc staff notes — none of it flows into a structured record automatically. A task automation agent can run a periodic pipeline: query alumni contact lists, send templated check-in requests, parse responses, classify employment status, and write structured records back to a CRM or spreadsheet — without manual coordination. This directly attacks the 'no structured mechanism' core of the pain point.",
+      "opportunity_sketch": "An automated quarterly alumni pulse workflow: agent sends check-in emails, parses replies and LinkedIn data, classifies outcomes (employed/further study/abroad/self-employed), and populates a standardised outcome registry — requiring human review only for ambiguous cases.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "When alumni do respond — via email, LinkedIn messages, or form submissions — their outcome data is expressed in free-form prose ('I started at Deloitte in January as an analyst'). Entity extraction can pull structured fields (employer name, job title, sector, start date, employment type) from that text, enabling automated population of an outcome database without manual data entry. This directly addresses the absence of structured employment-status and timeline tracking.",
+      "opportunity_sketch": "An extraction layer sitting on top of alumni communications: incoming emails and form responses are parsed to extract employer, role, sector, salary band (if disclosed), and start date, which are then written to a central outcomes table.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Education operators often have partial outcome data trapped in inconsistent formats — spreadsheets from different campuses, exported lists from student information systems, CSV dumps from partner employers — each with different column names, status labels, and date formats. Data transformation normalises these semi-structured inputs into a unified outcome schema, making aggregated reporting possible for the first time without a full data-engineering project.",
+      "opportunity_sketch": "A schema-mapping pipeline that ingests outcome data exports from each campus, standardises employment-status categories and date fields, deduplicates alumni records, and outputs a clean master outcomes dataset ready for reporting.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Outcome descriptions collected from alumni (job titles, employer descriptions, free-text survey responses) need to be mapped onto consistent categories: employment status, industry sector, and whether the outcome is aspirational vs actual. Text classification automates this categorisation at scale, removing the human bottleneck of manually coding each response and enabling consistent cross-cohort comparison.",
+      "opportunity_sketch": "A classification model trained on education-sector outcome taxonomies that assigns each alumni response a standardised status (Employed Full-Time / Part-Time / Self-Employed / Further Study / Abroad / Unknown) and sector label (Healthcare / Finance / Technology / etc.), with a confidence flag for low-certainty cases requiring human review.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "For alumni who do not respond to direct outreach, publicly available signals (LinkedIn profiles, company websites, professional registries) carry employment and sector data. A research agent can autonomously search these sources for a list of alumni, synthesise findings into structured outcome records, and flag cases where no public data is found — dramatically expanding outcome coverage beyond the self-reporting population without proportional staff effort.",
+      "opportunity_sketch": "A background research agent that, given a cohort list, searches LinkedIn and professional directories for each graduate, extracts current employer, role, and sector, and returns a structured outcome record — covering alumni who never respond to surveys.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once outcome data is collected and structured, leadership needs it translated into narrative reports for boards, accreditation bodies, and marketing materials. Text generation can produce outcome summary narratives — comparing cohorts, contextualising placement rates against sector benchmarks, and distinguishing aspirational from actual outcomes — at a frequency and granularity that manual report writing cannot sustain.",
+      "opportunity_sketch": "An automated outcomes reporting tool that takes structured outcome data as input and generates a board-ready narrative summary each term: placement rates by campus, sector distribution, time-to-first-job trends, and a clear aspirational vs actual distinction.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

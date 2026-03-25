@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-enrollment-volatility",
+  "pain_point_label": "Enrollment Forecast Decay & Cascading Revisions",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Enrollment numbers are inherently time-ordered data — historical enrollment per campus, per term, per year. A time series model trained on multi-year enrollment actuals (plus leading indicators like inquiries, applications, deposits) would produce more accurate headcount forecasts than principal estimates, directly reducing the +/-10-15% drift that triggers cascading revisions. Multi-site operators accumulate enough cross-campus historical data to make these models meaningful without exotic infrastructure.",
+      "opportunity_sketch": "A rolling enrollment forecast engine that ingests application pipeline, historical intake rates, and seasonal patterns to produce probabilistic headcount ranges by campus and term — replacing or calibrating principal-submitted estimates before budget lock.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The downstream pain of enrollment drift is primarily a staffing allocation problem: teacher-to-class ratios and support staff counts must be re-optimized 3-4 times per term as headcount shifts. An AI scheduler that continuously re-optimizes staff deployment to updated enrollment bands — respecting contract hours, role constraints, and campus caps — would compress the time and manual effort of each reforecast cycle. This directly addresses the 'serial reforecasting colliding with recruitment/deployment cycles' manifestation.",
+      "opportunity_sketch": "A staff reallocation engine that accepts revised enrollment projections and produces updated deployment plans across campuses, surfacing only the delta changes (net new hires needed, role transfers, hours adjustments) rather than requiring a full manual rebuild each cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A recurring pain is that finance cannot confidently explain tuition variance to the board or set contingency reserves — meaning narrative explanation of financial deviation is manual, slow, and inconsistent. LLM-based report generation can take structured variance data (forecast vs. actual enrollment, resulting revenue gap, restaffing actions taken) and produce board-ready variance narratives automatically after each reforecast cycle. This is a high-trust, low-risk use case since the AI is packaging known numbers into prose, not making new predictions.",
+      "opportunity_sketch": "An automated board narrative generator that takes the delta between enrollment forecast versions and produces a structured variance explanation — covering tuition revenue impact, staffing cost adjustments, and updated contingency reserve rationale — ready for CFO review before board submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "prediction-regression",
+      "capability_label": "Regression & Quantitative Estimation",
+      "match_rationale": "Per-student unit economics becoming unreliable mid-year is a direct consequence of enrollment drift compounded by fixed-cost staffing decisions. A regression model estimating per-student cost and contribution margin as a function of enrollment band, campus size, and staff configuration would allow finance to maintain credible unit economics across a range of enrollment scenarios — not just the point forecast. This addresses the 'finance cannot set contingency reserves' problem with scenario-aware cost estimates rather than single-point projections.",
+      "opportunity_sketch": "A per-student cost estimation model that takes enrollment range inputs and outputs expected cost-per-student and margin bands by campus, enabling finance to present the board with scenario ranges rather than brittle single-point unit economics.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Each reforecast cycle involves a multi-step workflow: collect updated principal headcount submissions, update revenue model, propagate changes to staffing budget, recalculate per-student allocations, and surface delta summaries for finance review. Currently this chain is manual and error-prone across 3-4 cycles per term. A task automation agent could orchestrate this end-to-end pipeline — pulling data from SIS and budget systems, running updated calculations, and packaging outputs — reducing cycle time from days to hours.",
+      "opportunity_sketch": "A reforecast pipeline agent that, triggered by a new headcount submission, automatically pulls actuals from the SIS, reruns revenue and staffing models, and delivers a structured delta report to the finance team — cutting manual reforecast effort by 70-80%.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

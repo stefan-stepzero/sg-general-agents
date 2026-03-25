@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-sen-sped-accommodation-inclusive-classroom-culture-gap-dup",
+  "pain_point_label": "Lack of Inclusive Classroom Culture & Peer Support Systems",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core deficit here is absence of structured teacher mindset training materials, peer inclusion program guides, and inclusive pedagogy professional development content. Text generation can produce tailored training modules, lesson plan templates that embed inclusive practices, peer buddy program scripts, and classroom culture guides — addressing the content gap directly. For a multi-site operator, generating site-specific adaptations of a master inclusive education framework is exactly what LLM text generation does well.",
+      "opportunity_sketch": "An AI content engine that generates inclusive pedagogy PD modules, peer buddy training scripts, and classroom culture toolkits — customized per year level or campus — so schools can roll out structured inclusion programs without hiring specialist consultants.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Teachers need low-friction, on-demand coaching on inclusive classroom strategies — not a two-day workshop. A conversational agent can guide a mainstream teacher through 'how do I seat and include a student with autism during group work?' in real time, drawing on inclusive education frameworks (SEA, UDL). This directly attacks the teacher mindset and capability gap without requiring a human specialist to be available at every campus.",
+      "opportunity_sketch": "An always-on inclusive education coaching chatbot for teachers: they describe a student situation and receive concrete, evidence-based strategies for peer integration, adapted instruction, and anti-bullying micro-interventions — deployed via the existing school intranet or LMS.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Student welfare incident reports, teacher observation logs, and pastoral notes often contain early signals of social isolation and bullying — but no one systematically reads them for SEN students. Text classification can flag incident reports or welfare notes that contain isolation/bullying indicators specific to students with disabilities, routing them to pastoral staff before disengagement becomes entrenched. This directly addresses the 'students internalize shame and disengage' trajectory.",
+      "opportunity_sketch": "An automated triage layer on welfare and incident reporting systems that classifies notes for SEN-related social exclusion signals and escalates flagged cases to the inclusion coordinator — turning reactive pastoral care into proactive intervention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Students with disabilities who are socially isolated follow a recognizable disengagement trajectory — declining attendance, reduced participation, deteriorating academic results — before formal withdrawal. A propensity model trained on engagement, attendance, and welfare data can score each SEN student's disengagement risk and trigger early intervention. For a 500+ staff multi-site operator with existing SIS data, this is technically feasible within 6-12 months.",
+      "opportunity_sketch": "A disengagement risk model that scores SEN students weekly using SIS and welfare data, surfacing the highest-risk students to pastoral staff with suggested peer support or inclusion interventions — turning chronic reactive escalation into structured early action.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

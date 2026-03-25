@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-allocation-contention",
+  "pain_point_label": "Opaque Shared Cost Allocation & Principal Accountability",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Allocation disputes are partly a communication failure — principals do not understand what they are being charged for or why. AI can generate plain-language explanations of each allocated cost line, the driver logic, and how it compares to peer sites, turning opaque spreadsheet rows into readable narratives that reduce friction. This directly addresses the lack of visibility into cost components pain mechanism.",
+      "opportunity_sketch": "A monthly allocation report that auto-generates per-site narrative summaries — Your IT allocation increased 12% this period due to a software license renewal shared across 8 sites; your share was calculated by headcount — distributed to principals alongside the numbers.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Shared cost allocation data typically lives across multiple systems — payroll, GL, property management, HR — in inconsistent formats and codes. AI-assisted ETL can normalize these into a unified allocation model with consistent driver definitions, eliminating the ad-hoc allocation driver problem at its source and making the allocation methodology auditable and repeatable.",
+      "opportunity_sketch": "An automated pipeline that ingests GL exports, payroll runs, and headcount snapshots from multiple source systems and maps them into a standardized allocation schema, with driver calculations applied consistently each period without manual intervention.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Post-close allocation disputes often arise from variance spikes that no one flagged before the report was distributed. Anomaly detection on allocation amounts period-over-period can surface unexpected swings in shared cost burdens before principals see the report, allowing finance to proactively investigate and explain rather than defend. This addresses the post-close disputes over variances manifestation directly.",
+      "opportunity_sketch": "An automated variance monitor that flags any site allocation category where the period-over-period change exceeds a threshold, generating a pre-close alert to the finance team with the likely driver — enabling proactive explanation rather than reactive dispute.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Principals challenging allocations ask the same questions repeatedly — why is my IT charge higher than last year, what does the central leadership salary pool include — that finance must answer manually each cycle. A RAG system over the allocation methodology documentation, GL chart-of-accounts, and historical allocation reports lets principals self-serve answers grounded in actual policy, reducing finance team burden and defusing political pressure through transparency.",
+      "opportunity_sketch": "An internal Q&A tool where principals type allocation questions in plain English and receive citation-backed answers drawn from the allocation policy documents, GL mappings, and prior-period reports — reducing ad-hoc email queries to finance during planning season.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "The choice of allocation driver (headcount vs. revenue vs. FTE vs. floor area) is currently ad-hoc and contested. Constraint satisfaction can model the allocation methodology design as a configuration problem — satisfying hard constraints (total costs must balance, no site allocated below zero) and soft constraints (minimize year-over-year volatility, align with site-level cost causality) — to recommend a defensible, stable driver mix that finance and principals can agree on in advance rather than dispute after the fact.",
+      "opportunity_sketch": "A one-time (then annually refreshed) allocation methodology optimizer that tests combinations of drivers against historical data, scores each on stability, causality, and equity, and recommends the configuration that minimizes principal disputes while keeping costs fully absorbed.",
+      "impact": 4,
+      "feasibility": 2,
+      "visibility": 4,
+      "composite_score": 3.5
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Finance teams field repeated, time-consuming questions from principals during budget planning and post-close — questions that are answerable from structured data but require a human to retrieve and explain them. A conversational agent with access to the allocation model, GL, and methodology docs can handle the bulk of these interactions, freeing finance staff from the political friction while giving principals immediate, consistent, auditable answers.",
+      "opportunity_sketch": "A principal-facing finance chatbot integrated into the existing reporting portal that answers allocation questions conversationally — How was my central admin charge calculated this month? — drawing on live GL data and methodology documentation, with a handoff path to a human finance analyst for genuine disputes.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-remediation-intervention-root-cause-diagnosis-dup",
+  "pain_point_label": "Interventions Address Symptoms, Not Root Causes",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Student performance data (assessment scores, attendance, prior grades, demographic flags) can be fed into a structured classifier to identify likely root cause categories — prerequisite gaps, language barrier, learning disability indicators, or engagement issues — rather than defaulting to 'more practice.' This directly attacks the failure mode of treating all struggling students identically. Multi-site operators have LMS and SIS data already; the feature vectors exist.",
+      "opportunity_sketch": "A root-cause triage classifier that, given a student's academic profile and performance pattern, outputs a ranked list of likely struggle drivers (prerequisite gap, ELL barrier, attention/processing issue, motivation) to guide which intervention stream to assign.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A diagnostic tutoring agent that engages the student in a structured multi-turn dialogue — probing prior knowledge, asking targeted questions about prerequisites, and dynamically adjusting based on responses — can surface root causes that a static assessment never captures. This replicates what a skilled interventionist does: ask 'why don't you understand X?' rather than repeating X. For ELL students, a conversational agent can also detect language comprehension vs. content comprehension failures.",
+      "opportunity_sketch": "An AI diagnostic tutor deployed before or instead of standard remediation sessions that identifies whether the student's struggle is a content gap, prerequisite gap, language barrier, or processing issue, and routes them to the appropriate intervention track.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Propensity models can predict which specific intervention type a given student is most likely to respond to — based on historical outcomes for similar students with similar profiles. This breaks the 'more of the same' cycle by surfacing that students with certain patterns responded better to prerequisite bridging than to content repetition. The model operationalizes what experienced teachers know intuitively but cannot scale.",
+      "opportunity_sketch": "An intervention-matching model that scores each struggling student's likelihood of responding to each available intervention type (reteach, prerequisite bridging, ELL support, specialist referral) and recommends the highest-propensity option.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "An automated diagnostic workflow agent can pull assessment results, cross-reference prerequisite skill maps, flag missing foundational skills, check ELL status from enrollment records, and produce a root-cause hypothesis report — all before a teacher manually reviews a struggling student's case. This turns a labor-intensive investigation into a consistent, scalable process run at scale across 500+ staff and multiple sites.",
+      "opportunity_sketch": "A student support pipeline agent that triggers on below-threshold assessment scores, automatically gathers and synthesizes prerequisite performance, ELL flags, and prior intervention history into a structured root-cause brief for the teacher or intervention coordinator.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

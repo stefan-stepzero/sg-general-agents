@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-industry-employer-value-prop-undefined-dup",
+  "pain_point_label": "Unclear Value Proposition to Employers",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core pain is an inability to articulate why employers should partner — this is precisely a copywriting and proposition-packaging problem. AI can draft tiered employer partnership offer documents, guest lecture program briefs, and recruitment channel explainers that turn an ad-hoc negotiation stance into polished, differentiated collateral. Multi-site operators often lack dedicated marketing staff for B2B employer engagement, making AI drafting a direct substitute.",
+      "opportunity_sketch": "An AI-powered employer partnership pack generator that takes a school's programme mix and intake data as input and outputs a ready-to-send PDF with packaged offerings (graduate pipeline stats, facility hire options, co-branding opportunities) tailored to the employer's sector.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Employer conversations, past MOU documents, and ad-hoc email threads contain implicit partnership value that has never been codified. Summarization tools can distil these scattered interactions into a concise articulation of what has actually worked, giving partnership managers a factual basis for building a repeatable value proposition rather than starting from scratch each negotiation.",
+      "opportunity_sketch": "An email/document ingestion tool that reads historical employer correspondence and summarizes the recurring themes employers valued — creating a living 'why they partner with us' brief that the business development team can refine into formal offerings.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Each employer inquiry currently triggers an ad-hoc negotiation cycle — intake email, internal discussion, custom proposal, back-and-forth. A task automation agent can intercept inbound employer enquiries, classify intent (talent pipeline vs. CSR vs. event hosting), retrieve the relevant packaged offering template, and generate a first-draft response for staff review. This converts an irregular, high-effort process into a consistent workflow without requiring the org to pre-solve the strategic question of what their value prop is.",
+      "opportunity_sketch": "An employer enquiry triage and response agent that classifies inbound employer messages, matches them to one of 3-5 defined engagement tiers, and drafts a structured response with clear next steps — reducing average response time from days to hours and surfacing gaps in the offering catalogue.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The organization cannot articulate its value proposition partly because it has not researched what comparable institutions offer or what employers in its key sectors actually want. A research agent can autonomously gather employer partnership models from competitor schools, industry bodies, and published employer surveys, synthesizing a market map of standard packaging tiers — giving the partnerships team an evidence base to design their own offering rather than operating in a vacuum.",
+      "opportunity_sketch": "A competitive intelligence agent that scrapes and synthesizes employer engagement models from 10-20 comparable education operators, producing a structured report of offering tiers, price signals, and engagement mechanisms that the school can use to benchmark and design its own employer value proposition.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

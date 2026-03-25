@@ -1,0 +1,1111 @@
+{
+  "company_id": "kinetic",
+  "company_name": "Kinetic Software",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.33,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "85% UK university penetration and APUC #1 procurement framework ranking mean Kinetic is already at saturation awareness in its primary market; problem is theoretically possible only in international expansion contexts where Kinetic has ~215 of 350+ customers outside UK."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No profile evidence of prospect engagement failures; at 85% UK saturation organic domestic pipeline is minimal, but the CUBO partnership, Kinetic Live conference, and 'Book a Demo' CTA suggest functioning engagement mechanisms — generic plausibility only given international expansion context."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Enterprise HE sales involve complex multi-stakeholder procurement (APUC framework, formal tenders internationally) and long decision cycles; one weak signal: new CEO Barry Anns hired for commercial background suggests conversion capability gap may have existed, scoring 0.4 for one weak signal."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "International expansion to 20+ countries + private PBSA sector growth as explicit growth vectors, combined with mature/optimization phase and new CEO with commercial mandate, strongly suggests the company is actively navigating how to identify high-value international segments — pattern convergence scores 0.5."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.25,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Multi-year enterprise contracts, high switching costs, and 25+ years of institutional embedding make early-stage attrition structurally unlikely; no profile evidence of onboarding failures."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mature installed base with 85% UK penetration means the risk of long-tenured customers disengaging is plausible; the Ideas Forum and Kinetic Live conference are retention mechanisms suggesting awareness of this risk, but no direct evidence of decay."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "UK HE sector demand volatility and affordability pressures (explicitly flagged at Kinetic Live 2026) create indirect risk of contract non-renewal at customer institutions facing budget pressure; multi-year contracts and switching costs are protective, scoring generic plausibility."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Self-reported eNPS of 46/50 and emphasis on 'unwavering support' in brand positioning, combined with 25-year customer tenure patterns, provide no evidence of satisfaction erosion; theoretically possible but unlikely."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.68,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states international expansion is an active growth vector (20+ countries, North America explicitly cited at Kinetic Live 2026 as a growing market), Bullet Solutions acquisition described as expanding 'global HE footprint', and Barry Anns hired to drive commercial expansion — direct evidence of active geographic entry challenges."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile confirms private PBSA sector growth as an explicit expansion vector beyond traditional university customers, HeyHub acquisition targets student engagement adjacency, and Bullet Solutions adds new HE segments — 3+ converging indicators of active segment expansion challenges."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Barry Anns has partnership development background, CUBO partnership exists but is nascent, and international expansion creates need for new channel mechanisms; no direct evidence of channel development failure but growth stage + CEO background pattern strongly suggests this is likely."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "International expansion into 20+ countries with StarRez dominant in North America/Australia means Kinetic must adapt offerings to new market requirements; profile notes Kinetic is 'strong challenger internationally' rather than dominant, implying fit adaptation challenges — strong circumstantial evidence."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.45,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly identifies 85% revenue concentration in UK higher education sector with direct exposure to UK HE sector health, 'demand volatility and affordability pressures' flagged at Kinetic Live 2026, and Volaris capital allocation dependency — strong circumstantial evidence of latent sector concentration risk."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Kinetic operates a well-established recurring SaaS model under Volaris's permanent-hold framework that prioritizes ROIC over model experimentation; new model development is generically plausible for mature SaaS but nothing in the profile specifically suggests this as a pain point."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Kinetic's recurring SaaS model with stable ARR and Volaris permanent-hold parent ownership makes funding sustainability structurally unlikely as a problem; no evidence of grant dependency, donor fatigue, or funding gaps."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Multiple product lines (KxStudent, KxConferencing, KxCatering, KxEngage) plus three tuck-in acquisitions (Occam 2018, HeyHub 2024, Bullet Solutions 2024) create a multi-stream portfolio that likely requires active management; growth/optimization phase + acquisition activity pattern makes this likely."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.43,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.42,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "86-person company serving 350+ enterprise customers at scale implies lean operations requiring automation; AI exploration hiring (Innovation Acceleration team) and 'transitional' tech stack suggest automation gaps exist — converging signals from company size + tech maturity + AI ambition strongly suggest this."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "25-year-old company with legacy platform and functional silos creates generic plausibility for redundant steps, but no direct profile evidence; 0.3 for organisational age and silo structure signal only."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dual-office UK model (Milton Keynes Mon/Wed, Ludlow Tue/Thu), functional silo structure, and multi-continent distribution with North America fully remote create multiple handoff boundaries; Glassdoor notes 'cultural differences between offices' — converging structural signals make handoff failures likely."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-office, multi-continent, 20+ country operational footprint creates plausible execution variance risk; one weak signal: dual-office UK model with different in-office days per location suggests distinct team cultures that may execute differently."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "At 86 employees serving 350+ enterprise customers including 700,000+ beds, throughput pressure is plausible; no direct evidence but lean headcount-to-customer ratio creates generic plausibility with one weak signal from size constraint."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.54,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly describes Kinetic as 'transitional (25-year-old core platform modernising; new cloud-native layers being added)' with core software dating to 1998 and active legacy modernisation underway — strong circumstantial evidence of legacy technical debt as an operational constraint."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Three tuck-in acquisitions (Occam 2018, HeyHub 2024, Bullet Solutions 2024) each bringing separate codebases, combined with 25-year-old legacy platform and multiple product modules — integration and data silo risk is very likely given acquisition pattern and transitional stack."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Managing 700,000+ beds and 180M bed-nights/year on a transitional stack creates plausible reliability risk; dedicated Security page signals enterprise-grade SLAs, but legacy platform modernisation introduces deployment risk — one weak signal from transitional stack."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes intermediate-to-advanced security posture with a dedicated Security page and likely Cyber Essentials certification; generic plausibility exists given transitional stack but no direct evidence of gaps."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Basic-to-intermediate data infrastructure (profile's own assessment), AI exploration phase still pre-production, and Volaris financial discipline model constraining R&D investment — converging factors make operational tooling gaps likely for an 86-person company managing enterprise scale."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.34,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "Asset-light software company with no manufacturing or physical inventory; physical facility limits are structurally inapplicable to Kinetic's business model."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "86 employees serving 350+ enterprise customers internationally with significant implementation/onboarding requirements; profile notes delivery model involves 'significant implementation, onboarding, and ongoing support' — lean headcount + bespoke implementation per enterprise customer creates very likely service scalability constraint."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneously managing UK base optimization, international expansion, AI development, and tuck-in acquisition integration with 86 people under Volaris capital discipline — convergence of multiple competing priorities at lean scale makes resource allocation constraint very likely."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms North America team is fully remote, 20+ countries served, and international expansion is an active priority — operational geographic coverage gaps in support/implementation are very likely given lean headcount and international ambition without local presence in most markets."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.0,
+              "rubric_level": "na",
+              "reasoning": "Structurally impossible: Kinetic is a software company with no physical supply chain; asset-light model has no manufacturing inputs, materials, or inventory."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.38,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-office, multi-continent delivery with functional silos and Glassdoor notes of 'cultural differences between offices' creates one weak signal for standards enforcement challenges across distributed teams."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Ideas Forum and Customer Portal indicate structured feedback loops; engineering practices rated 'intermediate' with no public engineering blog — one weak signal from intermediate maturity rating but no direct evidence of quality control failures."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dual UK offices (Milton Keynes vs Ludlow with distinct in-office days), fully remote North America team, and Glassdoor-noted cultural differences between offices — convergence of structural and cultural signals makes cross-site variance likely."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Data infrastructure rated 'basic to intermediate' and no public NPS/CSAT/churn data found; eNPS of 46/50 is self-reported — one weak signal from limited external quality measurement visibility."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Values explicitly include collaboration and innovation with a Green Team and active community; no evidence of quality culture gaps, generic plausibility only for any mature enterprise software company."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.48,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.28,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "85% UK university penetration over 25 years is direct evidence that Kinetic has correctly read its market; need misread is extremely unlikely given demonstrated market validation."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Internationally, Kinetic faces StarRez's dominance in North America/Australia — plausible that UK-centric product assumptions create segment mismatch in international markets, but no direct evidence; generic plausibility for expansion context."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI exploration phase, HeyHub mobile acquisition, and Kinetic Live 2026 discussions of sector challenges (demand volatility, affordability) converge to suggest Kinetic is actively responding to evolving customer needs — pattern strongly suggests this problem exists in nascent form."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "The '38% more revenue for Kinetic users vs non-Kinetic users' ROI claim and 85% penetration rate both directly evidence strong value delivery; value gap is extremely unlikely in core UK market."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.38,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Strong existing brand positioning ('85% of UK universities', APUC #1, '38% more revenue') provides clear domestic differentiation signals; generic plausibility only for international markets where Kinetic is less established."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Two-player market (Kinetic UK-centric, StarRez US-centric) in a mature niche with 25+ years of entrenchment — one weak signal that as both players modernize with AI and cloud features, functional differentiation may narrow over time."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes Kinetic's innovation posture is 'pragmatic with fast-follower AI ambition' in a conservative HE sector; one weak signal that differentiating on innovation/AI may not resonate with procurement-driven HE buyers who prioritize reliability."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-layered moat (switching costs, APUC framework, community flywheel) is explicitly noted but profile also flags that StarRez is dominant in adjacent geographies — one weak signal from geographic exposure of differentiation."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.6,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Volaris permanent-hold model imposes financial discipline over R&D investment, ~8-15 engineers serving multi-product suite, and legacy platform modernisation underway — convergence of Volaris ROIC constraints + lean engineering team + transitional stack makes slow iteration velocity very likely."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "AI exploration is in early/pre-production phase with only an Innovation Acceleration Graduate Engineer role identified; HeyHub acquisition is buy-not-build signal suggesting internal innovation pipeline is insufficient; convergence strongly suggests this problem exists."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly describes 25-year-old core platform in active modernisation with 'new cloud-native layers being added alongside legacy core' — this is the definition of technical debt drag on product evolution; strong circumstantial evidence from profile's own characterization."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI exploration at Kinetic Live 2026 and Innovation Acceleration team formation suggest Kinetic is responding to relevance pressure from AI-era expectations; pattern of fast-follower posture rather than market-shaping strongly suggests existing product faces relevance pressure."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.44,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "25-year-old core platform in a transitional modernisation phase strongly suggests legacy UX patterns that haven't kept pace with modern UI expectations; no direct evidence but enterprise legacy SaaS modernisation pattern makes poor usability in core product likely."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'complex HE operations systems imply significant implementation, onboarding, and ongoing support' — the delivery model itself signals high onboarding burden; converging signals from enterprise complexity + legacy platform + managed SaaS delivery model."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "UK HE sector is subject to WCAG accessibility requirements for institutional software; legacy platform on 25-year-old codebase creates plausible accessibility gap risk; one weak signal from legacy age and HE regulatory context."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Ideas Forum and Customer Portal existence suggest Kinetic is aware of and managing user effort concerns; however transitional stack and enterprise complexity — combined with 25-year legacy — make high effort-to-value likely for end users; converging signals."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Brand positioning emphasises 'trust/reliability-first' and 'unwavering support'; eNPS of 46/50 (employee proxy) suggests care-oriented culture; no evidence of trust-eroding patterns, generic plausibility only."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.46,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "86-person company in a niche vertical market (HE operations software) hiring for scarce AI talent — profile notes 'talent-market-dependent' as a key dependency; company based in Milton Keynes and Ludlow (not major tech hubs) further constrains talent pool; pattern convergence makes sourcing likely difficult."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly notes 'stable/reliable in niche; limited broader recognition' and Glassdoor has only ~8 reviews, Volaris ownership 'may create perception of constrained upside for equity-motivated talent' — multiple signals converge to make employer brand weakness likely for tech talent attraction."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No profile signals of selection failure; generic plausibility for an 86-person company without dedicated HR/talent infrastructure."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Volaris permanent-hold model optimizes for ROIC not talent retention through equity; Milton Keynes/Ludlow locations vs London tech market pay scales; Innovation Acceleration Graduate at £30k-£40k signals constrained comp bands — converging signals make offer competitiveness for AI/engineering talent very likely an issue."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "86-person company with no publicly visible HR/talent function; one weak signal that lean internal HR capacity at this size creates process friction in hiring, but no direct evidence."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.38,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "86-person company with Volaris permanent-hold governance (no IPO, no equity upside) and Milton Keynes/Ludlow locations — flat org at this size limits career progression opportunities; Glassdoor signal of limited reviews combined with Volaris constraint pattern makes this likely."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Self-reported eNPS of 46/50 and 'values-driven organisation' framing from Barry Anns suggest positive work experience; however Glassdoor data is sparse (8 reviews) so only one weak signal of potential burnout risk at lean headcount serving large customer base."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris permanent-hold model creates constrained equity participation; Milton Keynes/Ludlow vs London pay market gaps create plausible reward competitiveness gap for tech talent — one weak signal from Volaris model constraint."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No Glassdoor signals of manager quality issues; new CEO with 'values-driven' framing suggests intentional culture management; generic plausibility only."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Explicit values (Innovation, Collaboration, Sustainability), Green Team, DEI awards at Kinetic Live, and mission around 'thriving HE environments' provide strong belonging signals; generic plausibility only for any distributed multi-office team."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.55,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI transformation agenda + international expansion + acquisition integration simultaneously at 86 employees — without a CTO or VP Engineering found publicly, formal skills gap mapping and workforce planning capacity is uncertain; converging signals make this likely."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Innovation Acceleration Graduate Engineer programme signals some structured L&D investment; at 86 employees no formal L&D function is likely — one weak signal from lean org size."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Founders stepped back ~2020, Barry Anns is externally recruited, no CTO/VP Engineering found publicly, and Luke Warren's status is unknown — multiple signals of thin internal leadership pipeline and reliance on external executive recruitment strongly suggest this problem exists."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "AI exploration phase pre-production with a single Innovation Acceleration Graduate Engineer role, Volaris group-level 'Redefining Vertical Market Software in the AI Era' mandate, and data infrastructure rated 'basic to intermediate' — convergence of AI ambition + current capability gap makes digital upskilling challenge very likely."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.5,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Explicit institutionalised values with Green Team, DEI awards, and Barry Anns' 'values-driven organisation' framing suggest active values management; generic plausibility only for any org in leadership transition."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly describes 'functional silos with divisional product lines across two UK offices and distributed international layer' with Glassdoor-noted cultural differences between offices — direct characterisation of siloed structure makes this very likely an active constraint."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Milton Keynes Mon/Wed, Ludlow Tue/Thu, North America fully remote with distinct scheduling — structural fragmentation of the workforce across offices and time zones with noted cultural differences between offices makes cross-team collaboration challenges very likely."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous change initiatives: new CEO (mid-2024), AI transformation, three acquisitions (HeyHub + Bullet Solutions 2024), international expansion push — convergence of high change load on an 86-person stable legacy org makes change capacity constraints very likely."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Kinetic Live 2026 featured DEI awards ('Woman of the Year 2025') and Barry Anns' values-driven framing explicitly covers diversity; active inclusion programme signals awareness but not evidence of a problem."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.42,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.4,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No audit findings, regulatory citations, or compliance failures found; APUC #1 framework ranking requires demonstrable compliance — generic plausibility only."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "International expansion to 20+ countries with varying GDPR-equivalent regimes, HE sector regulatory complexity, and AI exploration creating new data processing obligations — convergence of international scope + AI development + HE sector regulation makes regulatory change adaptation likely."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "APUC framework ranking requires ongoing standards demonstration; HE sector procurement requires certifications — one weak signal that maintaining multi-jurisdictional certifications in 20+ countries creates administrative burden."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Constellation Software / Volaris parent creates reporting obligations up the chain; 20+ country operations create multi-jurisdictional filing requirements — one weak signal from corporate structure complexity."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "86-person company operating in 20+ countries with GDPR obligations, HE sector compliance, APUC framework requirements, and Constellation corporate governance — lean headcount managing a moderately complex compliance environment makes capacity burden likely."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.3,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No litigation signals found; stable long-term enterprise customer relationships with multi-year contracts and 85% incumbent status make active disputes unlikely."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "International expansion contracts in 20+ jurisdictions, tuck-in acquisition commercial arrangements, and Volaris intercompany agreements create contractual complexity — one weak signal from multi-entity, multi-jurisdiction commercial structure."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "UK + North America + 5-continent distributed workforce creates multi-jurisdiction employment law exposure; no specific signals of disputes or violations — generic plausibility for multi-country employer."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Software IP in a two-player niche market; no evidence of infringement claims or IP disputes; generic plausibility for software company."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Managing 700,000+ student bed-spaces creates professional indemnity and liability exposure; no evidence of gaps — generic plausibility for enterprise SaaS in high-consequence operational domain."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.52,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes intermediate-to-advanced security posture with dedicated Security page and likely Cyber Essentials certification; transitional legacy platform creates some vulnerability surface — one weak signal from 25-year-old codebase undergoing modernisation."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "GDPR compliance for 700,000+ student records across 20+ countries including non-EU jurisdictions, combined with AI data processing ambitions introducing new consent obligations — convergence of data volume + international scope + AI development strongly suggests active privacy compliance management challenge."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Data infrastructure rated 'basic to intermediate' explicitly, three acquired codebases (Occam, HeyHub, Bullet Solutions) each with separate data stores, and bed-space count discrepancy between Kinetic entities (700k vs 425k) directly evidences data quality gaps — profile data itself shows data governance weaknesses."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Cloud hosting dependency (likely AWS/Azure), multiple acquired entities, university IT integration dependencies, and 20+ country operations with local providers — convergence of infrastructure dependencies + acquisition integration + multi-country scope makes third-party data risk management likely."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No breach history signals found; 86-person company managing high-consequence student data at scale — one weak signal from lean security team capacity at enterprise data volume."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.28,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Student accommodation management for 700,000+ students creates real duty-of-care context; as a software provider (not direct accommodation operator) Kinetic's direct safeguarding obligations are limited — generic plausibility for HE sector adjacency."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "25-year track record, 85% university penetration, APUC #1 status, and trust-first brand positioning all signal strong institutional reputation; no negative media signals found — unlikely."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Constellation/Volaris parent governance, 'values-driven organisation' framing, and no public misconduct signals — ethical conduct issues are extremely unlikely."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris capital allocation control and Barry Anns' undisclosed mandate creates information asymmetry with customers about Kinetic's strategic direction — one weak signal that uncertainty about new CEO's strategy could create stakeholder confidence concerns."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.43,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.4,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "UK HE sector demand volatility and affordability pressures (flagged at Kinetic Live 2026) may limit price increase ability in a cost-pressured customer base — one weak signal from sector macro context, though incumbent APUC position is protective."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-continent operations, AI investment, acquisition integration costs, and scarce engineering talent market — one weak signal from cost pressures on a profitable but Volaris-disciplined business."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Moving into international markets (where Kinetic is a challenger, not leader) and private PBSA sector (more price-sensitive than public HE) could shift revenue toward lower-margin segments — one weak signal from strategic direction."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes '38% more revenue for Kinetic users' ROI claim but no per-module pricing visibility, 700,000+ beds data asset not explicitly monetized, and AI potential unrealised — pattern of value delivery exceeding capture is likely given data moat not yet reflected in pricing."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.45,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Volaris/Constellation parent provides permanent capital access for tuck-in acquisitions; Kinetic is a self-sustaining profitable subsidiary — independent capital access constraints are structurally inapplicable."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Recurring SaaS model with multi-year contracts and Volaris ROIC focus implies strong recurring cash flow; liquidity issues are extremely unlikely for a profitable permanent-hold subsidiary."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "All capital allocation decisions for tuck-in acquisitions gated through Volaris — profile explicitly states 'growth strategy is gated by parent capital decisions' and Barry Anns' mandate from Volaris is unknown; direct evidence that capital allocation constraint is a structural governance challenge."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Managing expectations between Barry Anns' commercial growth ambitions and Volaris's ROIC-first permanent-hold model creates structural tension — convergence of new growth-oriented CEO + ROIC-focused parent + undisclosed mandate makes investor/parent relations tension likely."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.43,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris does not disclose subsidiary financials publicly; internal reporting to Volaris parent is presumably required — one weak signal that multi-entity structure (Kinetic Software Ltd, Kinetic Solutions Ltd, North America entity) may create consolidation complexity."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "International expansion into new geographies and AI product development create forecasting uncertainty beyond the stable UK base — one weak signal from growth complexity overlaid on previously stable recurring revenue base."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Multiple product modules (KxStudent, KxConferencing, KxCatering, KxEngage), three acquired product lines, and unknown pricing structure — convergence of portfolio complexity + data infrastructure gaps + no public unit economics disclosure makes unit economics opacity likely at the business line level."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris ROIC framework imposes budget discipline top-down; competing priorities (AI, international expansion, acquisition integration) strain a fixed budget envelope — one weak signal from prioritisation pressure under parent-imposed constraints."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.43,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "85% UK HE revenue concentration, GBP-denominated revenue base with international ambitions, and explicit profile flagging of 'key dependency: Regulation-adjacent (HE sector funding/demand)' — convergence of sector concentration + currency exposure + HE macro risk makes market exposure risk very likely."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Constellation CSU subsidiary with established financial reporting requirements; no audit findings signals; generic plausibility for multi-entity corporate structure."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris imposes financial discipline and governance frameworks as parent; no evidence of control weaknesses; generic plausibility for 86-person subsidiary."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Kinetic Software Ltd (16495341) vs Kinetic Solutions Ltd (03169474) entity relationship 'not fully clarified — possible restructure post-Volaris acquisition' per profile gaps; multi-entity structure plus 20+ country operations creates plausible tax/structure optimization complexity — profile itself flags this as unresolved."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.53,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.53,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Simultaneous agenda: AI transformation, international expansion, private PBSA growth, integration of two 2024 acquisitions (HeyHub + Bullet Solutions), and new CEO establishing commercial vision — 4+ major strategic initiatives running concurrently at 86 people under Volaris resource discipline; strong circumstantial evidence."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Barry Anns' commercial growth mandate vs Volaris ROIC-first permanent-hold model creates structural tension between CEO ambition and parent governance; profile explicitly notes 'Barry Anns' exact mandate from Volaris not publicly stated' — convergence makes leadership misalignment likely."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI exploration 'in early phase — not yet shipped features to market' despite conference discussions; international expansion active for years but North America challenging — pattern of articulated strategy without commensurate execution progress makes strategy-execution gap likely."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Tuck-in acquisitions (timetabling from Bullet Solutions, mobile engagement from HeyHub) expanding beyond core accommodation management into adjacent domains — one weak signal of potential scope expansion beyond founding identity, though still within HE operations umbrella."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.48,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "StarRez (1,400 customers, 3M+ beds globally) is actively growing and Kinetic is seeking to compete internationally — one weak signal that Kinetic's UK-centric advantages do not translate to international markets, risking erosion of growth trajectory."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI-era disruption potential in HE operations software, Volaris group-level acknowledgment of 'Redefining Vertical Market Software in the AI Era', and Kinetic's pre-production AI status — convergence of AI disruption risk + Kinetic's fast-follower posture makes new threat response a likely active challenge."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 85% UK penetration but limited international competitive intelligence signals; no public evidence of systematic competitive monitoring — one weak signal from niche market and limited public strategy disclosure."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Core UK market saturated at 85% penetration with no organic growth headroom domestically; international markets where StarRez is dominant; profile explicitly describes 'mature/optimization with deliberate inorganic growth layer' — position stagnation in core market is very likely the defining strategic tension."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.57,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Kinetic has a well-established recurring SaaS model with no signals of fundamental model change; Volaris permanent-hold model actively discourages model experimentation; generic plausibility only."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly describes active modernisation of 25-year-old core platform, AI exploration hiring, Innovation Acceleration team formation, HeyHub acquisition as buy-vs-build for modern mobile capabilities, and Volaris group-level AI transformation agenda — direct and converging evidence of technology-led transformation as a live challenge."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Two 2024 acquisitions (HeyHub + Bullet Solutions) requiring integration, unresolved entity relationship between Kinetic Software Ltd and Kinetic Solutions Ltd, and new CEO establishing commercial structure — convergence of acquisition activity + entity restructure signals + leadership change makes structural reorganization very likely in progress."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "AI exploration phase pre-production after years of discussion, buy-not-build pattern for mobile (HeyHub) and timetabling (Bullet Solutions) rather than internal innovation, and 'pragmatic fast-follower' posture — convergence strongly suggests internal innovation capability is insufficient to match strategic ambition."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "No crisis signals found; Kinetic shows stable profitable growth trajectory under Volaris; post-crisis recovery is extremely unlikely."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.53,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Barry Anns has explicit partnership development background; CUBO partnership is highlighted; international expansion requires partner relationships; convergence of new CEO mandate + international growth vector + partner-led GTM element makes alliance management a likely active area."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "APUC procurement framework (lock-in mechanism), CUBO community partnership, Kinetic Live conference (community flywheel), AI era requiring technology partner integrations — convergence of maturing ecosystem position + AI era tech partner needs + international expansion makes ecosystem strategy a very likely active challenge."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "APUC framework positioning is a critical GTM lever requiring active relationship maintenance; UK HE sector policy volatility (demand/affordability mentioned at Kinetic Live 2026) creates need for policy relationship management — convergence makes this likely."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Kinetic Live conference, Ideas Forum, CUBO partnership, and 'Best PBSA Leader 2025' awards all signal active community engagement investment — this is a strength, but at 86 employees managing a 350+ institution community flywheel creates resourcing challenges for sustained engagement."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.47,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.4,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Kinetic operates as a wholly-owned Volaris subsidiary with no independent board — governance is entirely parent-controlled; one weak signal that Kinetic lacks board-level independent expertise in AI/technology or HE sector at the subsidiary level."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris subsidiary model means 'board' is effectively Volaris oversight — engagement dynamic is parent-subsidiary not traditional board governance; generic plausibility only for any corporate subsidiary."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Barry Anns' mandate from Volaris is explicitly 'not publicly stated' — structural information asymmetry between CEO's commercial ambitions and parent's ROIC requirements creates likely board-management tension in the Volaris-Kinetic relationship."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Constellation/Volaris governance frameworks flow down to subsidiaries; unresolved entity structure (Kinetic Software Ltd vs Kinetic Solutions Ltd) flagged in profile — one weak signal of governance framework clarity gap at entity level."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.5,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Barry Anns is new (mid-2024) with commercial/CRO background but managing a product-engineering company through AI transformation and international expansion — one weak signal that commercial background may create capability gaps in technical product leadership required for AI era."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "New CEO (mid-2024) with undisclosed mandate, previous CEO/leadership unknown, Luke Warren's status unknown, no CTO/VP Engineering found publicly — leadership team composition is opaque and mid-transition; convergence of leadership change + unclear team structure makes cohesion challenges likely."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "No CTO or VP Engineering found publicly despite active platform modernisation and AI transformation agenda; commercial-heavy new CEO suggests potential product/engineering leadership gap; profile explicitly notes absence of these roles as a data gap — convergence makes functional leadership gaps very likely."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Founders stepped back ~2020, Barry Anns is the second external CEO post-Volaris, Luke Warren's status unknown, and Kinetic is mid-way through leadership transition — profile directly describes recurring leadership succession pattern; convergence of recent CEO appointment + unknown team composition + no succession signals makes this very likely."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.47,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Volaris parent controls capital allocation, strategic acquisitions, and financial targets while Barry Anns leads operations — the boundary between Volaris-level and Kinetic-level decision authority is structurally ambiguous; convergence of parent-subsidiary governance + new CEO + undisclosed mandate makes decision rights clarity likely an active issue."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Acquisition decisions require Volaris approval (creating multi-tier approval layering), functional silo structure in dual-office UK, and distributed international team — convergence of parent approval dependencies + silo structure + distributed workforce makes decision speed a likely constraint."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Volaris subsidiary information asymmetry (public financials not disclosed), distributed workforce, and data infrastructure rated 'basic to intermediate' — one weak signal that decision-relevant data is not flowing cleanly through the organisation."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "AI features 'not yet shipped to market' despite years of discussion at Kinetic Live conference — one weak signal of follow-through gap between stated strategic priorities and executed outcomes."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "25-year incumbent with strong market position and stable profitable operations suggests reasonable decision quality historically; new CEO in transition period introduces uncertainty — generic plausibility with one weak signal from leadership transition context."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.5,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Volaris permanent-hold ownership with no exit mechanism and Constellation Software dual-class governance structure at parent level creates structural power concentration above Kinetic — profile explicitly states 'capital allocation and M&A decisions gated through Volaris' with no independent board; convergence makes structural entrenchment very likely as a governance constraint."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Professional management under Volaris framework with two prior CEO successions suggests formal governance is functional; no signals of informal power channels — generic plausibility only."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Barry Anns as new CEO holding the Volaris relationship and commercial mandate; no CTO identified creating technical key-person risk; unknown leadership team composition — convergence of single CEO relationship with parent + technical leadership vacancy makes key-person risk likely."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Volaris does not disclose subsidiary financials, Barry Anns' mandate is unknown, entity restructure details unclear, and leadership team composition is opaque — multiple profile gaps directly reflect information asymmetry; profile itself identifies this as a systemic data gap."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "market-expansion-geographic",
+      "transformation-technology",
+      "strategic-clarity-priority-overload",
+      "product-evolution-technical-debt-drag",
+      "capital-funding-allocation"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 0,
+      "high": 9,
+      "medium": 47,
+      "low": 18,
+      "na": 2
+    }
+  }
+}

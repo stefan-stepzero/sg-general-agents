@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-internal-audit-management-response-and-rollout-dup",
+  "pain_point_label": "Management Response Delays and Uneven Rollout of Controls",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core failure is a workflow gap: approved corrective actions have no automated follow-through mechanism across campuses. A task automation agent can own the entire post-approval lifecycle — assigning action items to campus principals, sending staged reminders, collecting status updates, escalating overdue items to the COO, and logging completion evidence. This directly replaces the informal HQ-to-campus email chain that currently fails. Education operators at this scale (~500 staff, 10-15 sites) have the basic SaaS infrastructure (email, cloud docs) needed to deploy this within months.",
+      "opportunity_sketch": "An AI-powered corrective action tracking agent that, upon audit approval, automatically creates campus-specific implementation tasks, pings campus leads on a defined cadence, flags non-responders for escalation, and produces a live rollout dashboard for the compliance team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Uneven rollout produces a measurable signal: some campuses consistently lag on implementing controls. A risk scoring model trained on campus-level implementation history, prior audit findings, staff turnover, and financial transaction patterns can predict which sites are highest-risk for continued non-compliance on any given directive. This shifts the compliance team from reactive investigation to proactive intervention, directly reducing control risk exposure. The data (audit logs, campus financials, HR records) exists in a 500+-staff operator's systems.",
+      "opportunity_sketch": "A campus-level compliance risk score updated after each audit cycle, surfaced in the COO dashboard, that predicts implementation lag probability and flags high-risk sites before the next audit window.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Beyond aggregate risk scoring, propensity modeling can estimate the probability that a specific campus will implement a specific corrective action on time, given that campus's past behavior profile, the type of control (financial vs. HR vs. operational), and the principal's tenure. This finer-grained prediction allows the compliance team to allocate limited support resources to the sites most likely to drag — not just the historically worst performers. The distinction from risk scoring is the entity-level, action-specific probability output.",
+      "opportunity_sketch": "A propensity model that, when a new corrective action is issued, scores each campus on its likelihood of timely adoption and automatically routes the bottom quartile to a high-touch implementation support track.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A recurring reason for implementation lag is that HQ-issued policy directives are written in generic, legalistic language that campus operations staff find hard to act on. AI text generation can automatically produce campus-specific implementation playbooks from approved audit findings — translating the policy into step-by-step operational instructions tailored to each site's context (size, role structure, prior gaps). Reducing the cognitive friction of interpretation accelerates adoption without requiring culture change. This is a low-risk, easily trusted use of LLMs that education operators can deploy quickly.",
+      "opportunity_sketch": "Auto-generated per-campus implementation guides for each approved corrective action, written in plain operational language, with role-specific checklists for principals, finance officers, and department heads.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "The pain point explicitly flags that compliance is treated as a headquarters directive rather than integrated into campus operations. A conversational agent embedded in the tools campus managers already use (Teams, email, SMS) can serve as an always-available compliance assistant — answering policy questions, logging implementation milestones, capturing blockers, and nudging laggards through natural dialogue. This changes the interface from top-down mandates to interactive support, which addresses the ownership and engagement gap at the campus level.",
+      "opportunity_sketch": "A compliance assistant bot that campus principals interact with conversationally to report progress on open corrective actions, get policy clarification, and receive personalized reminders — reducing the burden on HQ compliance staff while maintaining accountability.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

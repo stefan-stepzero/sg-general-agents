@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-cleaning-grounds-waste-disposal-and-recycling-compliance-is-ad-hoc-dup",
+  "pain_point_label": "Waste Disposal and Recycling Compliance Remain Ad-Hoc and Unmonitored",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site education operators need regulatory documentation they cannot currently produce on demand — waste disposal contracts, segregation policies, disposal certificates, and compliance reports. Text generation can produce compliant policy documents, staff awareness materials, and pre-formatted compliance reports that meet Philippine waste management regulatory requirements. This directly addresses the 'cannot readily produce documentation' failure mode described.",
+      "opportunity_sketch": "A compliance document generator that takes campus-specific inputs (waste types, contracted haulers, disposal schedules) and produces ready-to-submit regulatory filings, staff awareness notices, and inspection-ready documentation packages.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Waste compliance data across campuses exists in disparate semi-structured forms — vendor invoices, pickup logs, ad-hoc spreadsheets, scanned certificates. Transforming these into a normalized compliance ledger (waste type, volume, date, hauler license number, disposal method) would directly enable audit readiness and cross-campus cost comparison. This addresses the 'inconsistent practices and costs' symptom and the inability to produce disposal records on demand.",
+      "opportunity_sketch": "An ETL pipeline that ingests waste-related vendor invoices, pickup receipts, and campus logs and maps them to a standardized compliance schema — producing a unified waste registry ready for regulatory inspection or internal audit.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Waste collection costs vary inconsistently across campuses, which the pain point flags as a symptom of inefficiency or non-compliance. Anomaly detection on structured waste disposal cost and volume data can flag campuses where costs are outliers, pickup frequencies deviate from norms, or hazardous waste volumes are inconsistent with lab activity — surfacing compliance and efficiency problems before they become regulatory incidents.",
+      "opportunity_sketch": "A monitoring layer over campus waste cost and volume data that flags statistical anomalies — e.g. a campus with high lab activity but no hazardous waste disposal records, or a campus paying 3x the per-pickup rate of comparable sites.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The compliance workflow — collecting disposal certificates from licensed haulers, logging them against campus waste records, checking for gaps, and generating periodic compliance summaries — is a multi-step document processing and tracking workflow currently done ad hoc or not at all. A task automation agent could autonomously manage the compliance evidence chain: chase missing certificates, reconcile with scheduled pickup records, and flag overdue documentation. This directly addresses the regulatory inspection failure mode.",
+      "opportunity_sketch": "A compliance operations agent that tracks waste disposal events across campuses, automatically requests certificates from haulers via email, reconciles received documents against a compliance calendar, and generates a monthly gap report for the facilities manager.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

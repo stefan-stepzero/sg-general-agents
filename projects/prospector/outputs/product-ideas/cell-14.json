@@ -1,0 +1,46 @@
+[
+  {
+    "name": "OKR Synthesis Dashboard",
+    "one_liner": "Aggregates quarterly OKR updates from multiple campuses into a unified strategic alignment dashboard with variance analysis.",
+    "problem": "Kinetic (distributed student housing network) and iPeople (multi-campus higher ed) struggle to maintain strategic coherence as they scale. Campus leaders set local OKRs but senior leadership can't easily see where local priorities diverge from strategy or spot cross-campus conflicts. Quarterly reviews require manual aggregation of spreadsheets.",
+    "ai_technique": "Semantic clustering of organizational objectives with goal decomposition and dependency mapping",
+    "how_it_works": "Each campus submits quarterly OKR updates via a form or document. System extracts objectives, key results, and progress notes using NLP; clusters similar goals across campuses (e.g., 'improve student retention' at Campus A, 'reduce dropout rate' at Campus B); identifies misalignment (conflicting resource allocation) and dependencies ('Campus A's enrollment growth depends on Campus B's housing capacity'). Dashboard shows strategic alignment heat map and recommends OKR refinements for leadership discussion.",
+    "target_companies": ["kinetic", "ipeople", "wise"],
+    "buyer_persona": "Chief Strategy Officer, Regional VP",
+    "tier": "standalone",
+    "confidence": "medium"
+  },
+  {
+    "name": "Strategic Context Retrieval for Board Packs",
+    "one_liner": "Retrieves relevant historical decisions, policy context, and sector trends to automatically populate strategic briefing sections in board papers.",
+    "problem": "WISE, iPeople, and Kinetic boards meet quarterly with dense agendas. Board secretaries spend hours researching policy context, competitive moves, or historical precedent for each agenda item. Information is siloed—stored in emails, past minutes, or closed reports—making it hard to craft evidence-based papers quickly.",
+    "ai_technique": "Semantic search with document ranking by recency and organizational relevance",
+    "how_it_works": "User specifies the board agenda item ('Approve new Egypt campus expansion'). System searches internal documents (board minutes, strategy papers, program reports), sector databases (CHED guidelines, Egyptian education policy updates), and external sources for relevant context. Returns: comparable expansion precedents from organization history, policy changes in target country, competitive activity, and success factors identified in past evaluations. Content is pre-formatted for board paper inclusion.",
+    "target_companies": ["wise", "ipeople", "kinetic"],
+    "buyer_persona": "Board Secretary, Chief Strategy Officer",
+    "tier": "feature",
+    "confidence": "high"
+  },
+  {
+    "name": "Strategic Pivot Readiness Assessment",
+    "one_liner": "Analyzes current strategy, market trends, and internal capabilities to surface when a strategic pivot is needed and what blockers exist.",
+    "problem": "Kinetic, iPeople, and WISE face regulatory change (DepEd rules, CHED licensing shifts, Qatar education reform) that can invalidate their strategic assumptions. Leaders rarely have a systematic way to spot when accumulated evidence suggests strategy needs revising. Decisions are reactive rather than proactive.",
+    "ai_technique": "Multi-factor trend analysis combining internal performance data, regulatory monitoring, and competitor activity",
+    "how_it_works": "System ingests: quarterly performance dashboards (enrollment, retention, margin trends), regulatory alerts (CHED circulars, DepEd orders, policy monitoring feeds), and internal strategy documents. Continuously monitors for early warning signals (e.g., declining market share in a key segment, new competitor entry, major regulatory change). When threshold combinations are met, generates a 'Pivot Readiness Report' with: evidence for strategic shift, internal capabilities gaps that would block pivot, and recommended next steps (feasibility studies, board discussion topics).",
+    "target_companies": ["kinetic", "ipeople", "wise"],
+    "buyer_persona": "Chief Strategy Officer, CEO",
+    "tier": "module",
+    "confidence": "medium"
+  },
+  {
+    "name": "Competitive Intelligence Digest",
+    "one_liner": "Weekly digest of competitor moves, policy changes, and sector trends extracted from news, government publications, and industry reports.",
+    "problem": "Strategy teams at Acasus, WISE, and iPeople rely on manual news monitoring to track competitors and regulatory changes. Information is fragmented (email alerts, LinkedIn, government circulars) and often arrives too late to inform quarterly planning.",
+    "ai_technique": "Multi-source entity extraction and classification with education sector vocabulary",
+    "how_it_works": "System monitors government publications (CHED, DepEd, Qatar education authority), education news (EdSurge, The Economist education reports), and competitor websites. Weekly digest auto-generates sections: Regulatory Changes (CHED accreditation updates, government funding policy), Competitor Activity (new campus launches, program launches, acquisitions), and Sector Trends (demographic shifts, employment outcomes data, funding environment). Articles are ranked by relevance to organization's markets and auto-categorized (threat, opportunity, FYI).",
+    "target_companies": ["acasus", "wise", "ipeople"],
+    "buyer_persona": "Chief Strategy Officer, Market Research Lead",
+    "tier": "feature",
+    "confidence": "high"
+  }
+]

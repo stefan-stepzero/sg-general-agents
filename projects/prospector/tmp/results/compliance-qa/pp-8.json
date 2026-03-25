@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-accreditation-faculty-credential-compliance-dup",
+  "pain_point_label": "Faculty Credential Compliance Across Levels",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core pain is that non-compliant faculty profiles go undetected until an audit reveals them — exactly the 'deviation from expected norm' pattern anomaly detection is built for. An AI system can continuously compare each faculty member's credential state (degree held, PRC certification status, continuing education credits, expiry dates) against the required baseline for their role and flag records that fall outside compliance thresholds. This is more powerful than rule-based alerts because it can detect partial, ambiguous, or edge-case non-compliance (e.g., a credential that technically exists but is expired or for a different field).",
+      "opportunity_sketch": "A credential compliance monitor that ingests HR and credential records, continuously scores each faculty profile against role-specific requirements, and surfaces anomalous or at-risk records to a compliance officer dashboard — well before an accreditation audit window.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "A significant part of the manual burden is that degree certificates, PRC ID cards, and continuing education documents exist as scanned images or PDFs uploaded by staff. Without automated parsing, HR must manually open each file, read it, and key the relevant data into a tracker. OCR and form-field extraction can digitize degree names, issuing institutions, dates awarded, and PRC registration numbers directly from uploaded credential documents.",
+      "opportunity_sketch": "An automated credential ingestion pipeline where faculty upload scanned diplomas and PRC cards, and the system extracts key fields (degree level, specialization, issuing institution, expiry date) into structured records that feed directly into the compliance tracking system.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once credential documents are digitized (via media parsing), entity extraction identifies the specific structured attributes needed for compliance checks: degree type (Bachelor's/Master's/Doctorate), field of study, issuing institution, date conferred, PRC license number, and expiry date. These discrete attribute-value pairs must be extracted accurately to populate a compliance database across 200-400 faculty records.",
+      "opportunity_sketch": "An extraction layer that takes OCR output from credential documents and structures it into normalized fields — degree_level, specialization, institution, confer_date, prc_license_number, prc_expiry — ready for automated compliance rule matching against each faculty member's assigned role.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Beyond detecting current non-compliance, accreditation risk is forward-looking: PRC licenses expire on known dates, continuing education credits must be renewed on cycles, and staff turnover creates gaps in credential records. A risk scoring model can assign each faculty member a compliance risk score based on time-to-expiry, record completeness, and historical renewal behavior, allowing proactive outreach months before an audit or expiry event.",
+      "opportunity_sketch": "A faculty compliance risk dashboard that scores each of 200-400 staff on credential currency and completeness, ranks the highest-risk individuals, and triggers automated renewal reminders — reducing audit-time surprises from the current 5-15% non-compliance rate.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end credential compliance workflow — ingesting uploaded documents, extracting credential fields, matching against role requirements, flagging gaps, sending renewal reminders, and updating compliance records — is a multi-step process currently performed manually across HR and department heads at each campus. A task automation agent can orchestrate this entire pipeline: document intake → OCR → extraction → rule evaluation → notification → escalation, with human review only at flagged exception points.",
+      "opportunity_sketch": "An autonomous credential compliance agent that monitors the HR system for new hires, upcoming expiries, and incomplete records across all campuses, routes exceptions to the responsible HR officer, and generates a pre-audit compliance summary report — reducing manual tracking effort by the majority of the current workload.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When non-compliance is detected — either before or during an accreditation audit — the institution must produce corrective action narratives, formal responses to accreditors, and internal memos for faculty remediation. Drafting these compliance communications is repetitive and time-sensitive, particularly when 5-15% of profiles need individual explanations during an audit window.",
+      "opportunity_sketch": "A compliance communication generator that takes structured non-compliance records and produces draft corrective action plans, accreditor response letters, and faculty notification emails, reducing the documentation burden during high-pressure audit periods.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

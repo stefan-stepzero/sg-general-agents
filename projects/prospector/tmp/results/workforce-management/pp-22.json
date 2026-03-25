@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-compensation-benefits-leave-accrual-opacity-dup",
+  "pain_point_label": "Leave Accrual & Utilization Opacity",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The root confusion stems from DepEd rules and institutional policy never being reconciled into a single plain-language document. AI text generation can synthesize the regulatory source text, institutional HR policies, and carry-over rules into a clear, authoritative leave policy handbook that staff can actually understand. This directly addresses the 'no clear statement of accrual' and 'carry-over rules unclear' pain mechanisms.",
+      "opportunity_sketch": "A leave policy document generator that ingests DepEd circulars plus the school's internal HR manual and outputs a unified, plain-language leave guide covering VL, SL, BL, EL — with worked examples of accrual math, carry-over tables, and separation payout rules.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Principals currently track leave on paper or spreadsheets with inconsistent schemas and mixed DepEd/institutional leave type codes. AI-assisted data transformation can normalize these disparate inputs — cleaning leave type labels, mapping fiscal vs. calendar year entries, standardizing principal-level spreadsheets — into a single structured ledger schema. This directly attacks the 'no centralized leave ledger' and 'untracked liabilities' mechanisms.",
+      "opportunity_sketch": "A one-time (and recurring) ETL pipeline that accepts principal spreadsheets and paper-digitized records, maps them to a canonical leave schema (leave type, period, balance, carry-over flag), and populates a central leave ledger — surfacing liability totals immediately.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Teachers and principals repeatedly ask the same leave-rule questions — 'how many SL days do I have left?', 'can I carry over VL to next year?', 'what happens to my unused EL on resignation?' — and get inconsistent answers from HR. A RAG system grounded in DepEd circulars and the school's own policy documents can answer these questions accurately and consistently, reducing grievances and HR burden. This directly addresses staff frustration and dispute frequency.",
+      "opportunity_sketch": "An HR knowledge assistant (web or messaging app) where teachers query their leave entitlements, carry-over rules, and separation payouts; the system retrieves the relevant DepEd/institutional policy passages and synthesizes a cited, accurate answer.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The leave lifecycle — application → principal approval → HR recording → balance update → carry-over calculation at year-end → separation payout computation — is a multi-step workflow currently done manually across paper, spreadsheets, and email. A task automation agent can orchestrate this entire workflow: ingest leave requests, apply accrual rules, update the ledger, flag carry-over decisions, and compute separation liabilities automatically. This attacks the untracked liability risk and the manual principal burden simultaneously.",
+      "opportunity_sketch": "An automated leave management pipeline: teacher submits request → agent validates against entitlement rules → principal approves via simple UI → ledger updates → year-end carry-over agent runs rule-based cutoff → separation trigger fires payout calculation for finance.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Untracked leave obligations represent a financial liability risk that surfaces acutely at separation or audit. A risk scoring model can estimate total leave liability exposure per site and flag schools where principal-tracked balances are likely materially understated — e.g., based on headcount, tenure distribution, and historical leave utilization patterns. This converts an opaque liability into a quantified, prioritized risk register for finance and HR leadership.",
+      "opportunity_sketch": "A leave liability risk model that scores each campus on estimated undeclared leave obligation based on staff tenure and leave-type mix, helping the CFO triage which sites need urgent ledger reconciliation before the next separation cycle.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

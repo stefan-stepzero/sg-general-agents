@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Generate indicators.json for the Next Steps page."""
+import json
+
+indicators = {
+    "acasus": {
+        "name": "Acasus",
+        "external_indicators": [
+            {"category": "Funding Environment", "indicator": "Global ODA (Official Development Assistance) flows", "value": "Declining", "signal": "negative", "detail": "US foreign aid contraction directly threatens LMIC consulting demand. USAID priority geographies overlap with Acasus footprint (Pakistan, Afghanistan, sub-Saharan Africa)."},
+            {"category": "Funding Environment", "indicator": "UK FCDO education/health budget", "value": "Flat / under pressure", "signal": "neutral", "detail": "UK aid budget frozen at 0.5% GNI (down from 0.7%). FCDO is a likely Acasus funder given UK registration and LMIC focus."},
+            {"category": "Talent Market", "indicator": "Development sector specialist availability", "value": "Scarce", "signal": "negative", "detail": "Requires rare combination: field experience in LMICs + data/analytics skills + consulting pedigree. 22% headcount growth YoY signals hiring pressure."},
+            {"category": "Competition", "indicator": "Big 4 / MBB entry into impact consulting", "value": "Increasing", "signal": "negative", "detail": "McKinsey, BCG, Deloitte all expanding social impact practices. Compete for same government and multilateral contracts."},
+            {"category": "Market Sizing", "indicator": "Global education consulting market", "value": "$45.5B by 2031", "signal": "positive", "detail": "Growing market overall, though Acasus LMIC niche is a small slice dependent on donor funding cycles."},
+            {"category": "Technology", "indicator": "AI readiness for data-driven reform delivery", "value": "High potential", "signal": "positive", "detail": "Budapest data engineering team (24 people) with AWS, Tableau, ETL pipelines. Positioned to absorb AI tooling for government analytics."}
+        ],
+        "internal_indicators": [
+            {"category": "Leadership", "indicator": "CEO transition risk", "value": "Active", "signal": "watch", "detail": "Founder Fenton Whelan stepped to Chair in 2025. New CEO Jonny Barty (internal promote) still establishing. Transition during growth phase adds execution risk."},
+            {"category": "Revenue", "indicator": "Customer concentration", "value": "Undisclosed but likely moderate", "signal": "watch", "detail": "Aid-funded consulting = lumpy contracts. Loss of 1-2 major government programs could materially impact $35M revenue base."},
+            {"category": "People", "indicator": "Glassdoor work-life balance", "value": "2.7 / 5.0", "signal": "negative", "detail": "Below average. Field deployment in conflict/post-conflict zones drives burnout risk. Could affect retention of scarce talent."},
+            {"category": "Growth", "indicator": "Headcount growth rate", "value": "+22% YoY", "signal": "positive", "detail": "Strong growth signal. Expanding from ~217 to ~265 staff in 12 months. Confirms pipeline health."}
+        ]
+    },
+    "cspd": {
+        "name": "Catholic Schools Parramatta Diocese",
+        "external_indicators": [
+            {"category": "Benchmark Data", "indicator": "ACARA \u2014 NAPLAN school performance", "value": "Rising outcomes", "signal": "positive", "detail": "ACARA publishes per-school NAPLAN results on MySchool. CSPD schools show rising academic outcomes \u2014 critical for Uplift evidence-based teaching framework validation."},
+            {"category": "Benchmark Data", "indicator": "ACARA \u2014 student-to-teacher ratios", "value": "~15:1 national avg (Catholic sector)", "signal": "neutral", "detail": "ACARA MySchool data shows Catholic systemic schools average 14-16 students per teacher. CSPD 43,000 students / ~4,500 staff suggests ~9.5:1 total staff ratio but teaching ratio will be higher."},
+            {"category": "Benchmark Data", "indicator": "ACARA \u2014 ICSEA distribution", "value": "Mixed SES catchment", "signal": "neutral", "detail": "Index of Community Socio-Educational Advantage scores vary across CSPD 80 schools. Western Sydney includes growth corridors and lower-SES areas. Shapes funding allocations."},
+            {"category": "Funding", "indicator": "Commonwealth + NSW recurrent funding per student", "value": "$12,000-14,000/yr (Catholic sector avg)", "signal": "positive", "detail": "Government funds ~75% of Catholic school operating costs. Needs-based funding model (Gonski 2.0) via CSNSW. Stable but politically sensitive."},
+            {"category": "Demographic", "indicator": "Western Sydney population growth", "value": "+2.1% p.a.", "signal": "positive", "detail": "One of Australia fastest-growing corridors. Drives enrolment demand but also capex pressure for new school builds and expansions."},
+            {"category": "Regulatory", "indicator": "NESA registration & child safety compliance", "value": "Increasing burden", "signal": "negative", "detail": "NSW Education Standards Authority requirements tightening post-Royal Commission. Mandatory reporting, Working With Children checks, data governance obligations all increasing."},
+            {"category": "Competition", "indicator": "Independent school sector fee premium", "value": "$15K-30K/yr vs CSPD ~$2-4K", "signal": "positive", "detail": "CSPD mid-market pricing is a structural advantage as cost-of-living pressures push families from independent to Catholic system."}
+        ],
+        "internal_indicators": [
+            {"category": "Transformation", "indicator": "Uplift framework rollout", "value": "Launched 2025", "signal": "watch", "detail": "System-wide evidence-based teaching initiative. Success depends on teacher adoption, data infrastructure, and coaching capacity across 80 schools."},
+            {"category": "Leadership", "indicator": "EGM Learning Outcomes hire", "value": "Patrick Ellis (Dec 2025)", "signal": "positive", "detail": "Hired from analogous role at CECG. Signals investment in learning outcomes technology and data infrastructure as 2026 priority."},
+            {"category": "Technology", "indicator": "Data maturity for instructional improvement", "value": "Early stage", "signal": "watch", "detail": "Explicit leadership appetite for data-driven improvement but current systems likely fragmented across 80 schools. Integration challenge."},
+            {"category": "People", "indicator": "Teacher supply pipeline (NSW)", "value": "Structural shortage", "signal": "negative", "detail": "Australia-wide teacher shortage acute in Western Sydney. Affects class sizes, specialist subject availability, and staff wellbeing."}
+        ]
+    },
+    "ipeople": {
+        "name": "iPeople Inc",
+        "external_indicators": [
+            {"category": "Market", "indicator": "Philippine HE market size", "value": "$154M (2025) \u2192 $847M (2034)", "signal": "positive", "detail": "20.23% CAGR. Young population (median age ~25), underserved provincial demand, government subsidies driving growth."},
+            {"category": "Regulatory", "indicator": "CHED accreditation requirements", "value": "Mandatory & tightening", "signal": "neutral", "detail": "Commission on Higher Education controls degree-granting authority, program approval, and tuition increase caps. Compliance cost but also barrier to entry."},
+            {"category": "Competition", "indicator": "PHINMA Education enrollment", "value": "177,851 students", "signal": "watch", "detail": "Direct competitor in Philippine affordable HE. iPeople 74,000 enrollment is less than half PHINMA. Differentiated by STEM focus and Mapua brand."},
+            {"category": "Financial", "indicator": "PSE:IPO stock performance", "value": "Publicly traded", "signal": "neutral", "detail": "Listed on Philippine Stock Exchange. Revenue PHP 5.32B FY2024 (~$95M). Public market accountability drives governance discipline."},
+            {"category": "Demographic", "indicator": "Philippine youth population (15-24)", "value": "~20M", "signal": "positive", "detail": "Large addressable market for tertiary education. Population growth + rising middle class = sustained enrollment demand."},
+            {"category": "Technology", "indicator": "Board exam pass rates as quality signal", "value": "Strong across STEM programs", "signal": "positive", "detail": "Mapua University is top engineering school. Pass rates are the primary quality benchmark in Philippine HE market."}
+        ],
+        "internal_indicators": [
+            {"category": "Revenue", "indicator": "Net margin pressure", "value": "2-3.6% net margin", "signal": "negative", "detail": "Thin margins on PHP 5.32B revenue. PHP 351M net income leaves little buffer for investment in technology or expansion."},
+            {"category": "Growth", "indicator": "Enrollment growth rate", "value": "+10% YoY", "signal": "positive", "detail": "74,000 students growing at 10% annually. Pipeline from K-12 programs feeds into HE institutions."},
+            {"category": "Structure", "indicator": "Dual-parent ownership complexity", "value": "Yuchengco + Ayala", "signal": "watch", "detail": "Joint ownership by two large conglomerates. Strategic alignment risk if parent priorities diverge."}
+        ]
+    },
+    "kinetic": {
+        "name": "Kinetic Software",
+        "external_indicators": [
+            {"category": "Market", "indicator": "UK university accommodation market", "value": "85% penetration", "signal": "positive", "detail": "Dominant position in UK HE operations software. 350+ institutional clients. Near-saturation means growth must come from ARPU or geography."},
+            {"category": "Market", "indicator": "UK purpose-built student accommodation (PBSA) pipeline", "value": "Growing", "signal": "positive", "detail": "180M+ bed-nights/year managed. UK PBSA is a 50B+ GBP asset class with institutional investment driving professionalization and software demand."},
+            {"category": "Competition", "indicator": "US/global property management software entry", "value": "Increasing", "signal": "negative", "detail": "Generic PropTech platforms (Yardi, RealPage) could move into education vertical. Kinetic moat is domain expertise but faces platform scale disadvantage."},
+            {"category": "Regulatory", "indicator": "UK student welfare & safeguarding requirements", "value": "Tightening", "signal": "neutral", "detail": "OfS (Office for Students) increasing scrutiny on student welfare, accommodation standards, and data handling. Creates compliance demand that benefits Kinetic."},
+            {"category": "Technology", "indicator": "SaaS transition / cloud migration in UK HE", "value": "Accelerating", "signal": "positive", "detail": "Universities moving from on-prem to cloud. Kinetic SaaS model aligns with institutional procurement trends."}
+        ],
+        "internal_indicators": [
+            {"category": "Scale", "indicator": "Team size vs ambition", "value": "~86 employees", "signal": "watch", "detail": "Small team for dominant market position. Capacity constraints on product development, support, and international expansion."},
+            {"category": "Growth", "indicator": "Geographic expansion beyond UK", "value": "Early stage", "signal": "watch", "detail": "85% UK penetration means growth requires international markets. Different regulatory and market dynamics in each country."},
+            {"category": "Revenue", "indicator": "ARPU expansion opportunity", "value": "Multi-product (accommodation + conferencing + catering + engagement)", "signal": "positive", "detail": "Cross-sell across product lines within existing customer base. Student engagement module is newest growth vector."}
+        ]
+    },
+    "phinma": {
+        "name": "PHINMA Education",
+        "external_indicators": [
+            {"category": "Market", "indicator": "Philippine HE market CAGR", "value": "20.23% (2025-2034)", "signal": "positive", "detail": "$154M in 2025 projected to $847M by 2034. Provincial markets remain significantly underpenetrated."},
+            {"category": "Regulatory", "indicator": "CHED accreditation \u2014 PACUCOA Level III", "value": "Highest tier achieved", "signal": "positive", "detail": "PACUCOA Level III is the highest accreditation level. Creates structural barrier for competitors and validates quality positioning."},
+            {"category": "Regulatory", "indicator": "Free HE Act / UAQTEA tuition subsidies", "value": "Active \u2014 material revenue floor", "signal": "positive", "detail": "Government subsidy covers tuition for students at accredited institutions. Policy reversal would directly impact affordability for PHINMA target market."},
+            {"category": "Benchmark", "indicator": "Nursing board exam pass rate (national)", "value": "#1 \u2014 99.16% (UPang)", "signal": "positive", "detail": "PHINMA University of Pangasinan ranked #1 nursing school nationally. 9 of Top 10 passers. Self-reinforcing brand flywheel."},
+            {"category": "Benchmark", "indicator": "Criminology board exam pass rate", "value": "#1 \u2014 92.80% (Araullo)", "signal": "positive", "detail": "PHINMA Araullo University named Top 1 performing school nationwide for August 2025 Criminology Licensure Exam."},
+            {"category": "Benchmark", "indicator": "Student-to-faculty ratio", "value": "Est. 35-50:1", "signal": "watch", "detail": "177,851 students across 3,500-5,000 FTE (not all teaching). Bare-bones philosophy suggests lean staffing. Faculty quality critical for board exam results."},
+            {"category": "Capital", "indicator": "KKR + Kaizenvest PE investment", "value": "P4.5B ($80M) closed", "signal": "positive", "detail": "KKR Global Impact Fund II. Digital transformation is explicit partnership mandate. Validates growth thesis and funds acquisition pipeline."},
+            {"category": "Demographic", "indicator": "Student retention rate", "value": "89%", "signal": "positive", "detail": "High for affordable segment. Quasi-subscription revenue model depends on retention. Each point of retention = ~1,780 students."},
+            {"category": "Expansion", "indicator": "Indonesia student target", "value": "50,000 in 5yr / 400,000 in 10-15yr", "signal": "watch", "detail": "Ambitious Indonesia expansion via Horizon University (Karawang) and Kalbis University (Jakarta). JV structure adds complexity."}
+        ],
+        "internal_indicators": [
+            {"category": "Financial", "indicator": "Revenue and net income", "value": "P6.5B rev / P1.5B NI (~23% margin)", "signal": "positive", "detail": "Strong profitability for education sector. 14% YoY revenue growth. Disciplined cost control."},
+            {"category": "Technology", "indicator": "Digital maturity", "value": "Early stage", "signal": "watch", "detail": "Proprietary PHINMA Ed Learning App deployed but basic (scheduling, attendance, grades). CIO in place. KKR mandate includes digital transformation."},
+            {"category": "People", "indicator": "Licensed faculty pipeline (Nursing, CrimJ)", "value": "Structural shortage", "signal": "negative", "detail": "Provincial markets have scarce licensed healthcare educators. Board exam performance depends on faculty quality \u2014 critical constraint for growth."}
+        ]
+    },
+    "rising": {
+        "name": "Rising Academies",
+        "external_indicators": [
+            {"category": "Market", "indicator": "Sub-Saharan Africa education market", "value": "$7.3B (2025) \u2192 $19.2B (2034)", "signal": "positive", "detail": "11-19% CAGR. 250M+ out-of-school children globally, concentrated in SSA. Massive unmet demand."},
+            {"category": "Funding", "indicator": "Impact investing in African education", "value": "Growing", "signal": "positive", "detail": "Series A $4.25M (2024) from impact investors. Total cumulative $6-10M+. Sector attracting serious development capital."},
+            {"category": "Technology", "indicator": "WhatsApp penetration in target markets", "value": ">90% of smartphone users", "signal": "positive", "detail": "Rori AI tutor delivered via WhatsApp reaches 150,000+ users. Zero app-install friction. WhatsApp is the platform in West Africa."},
+            {"category": "Regulatory", "indicator": "Government education procurement (SSA)", "value": "4 national partnerships", "signal": "positive", "detail": "Sierra Leone, Liberia, Ghana, Rwanda. Government contracts provide scale but add political risk and payment delays."},
+            {"category": "Competition", "indicator": "Bridge International Academies controversy", "value": "Cautionary signal", "signal": "watch", "detail": "Low-cost private school chains face political backlash in some African markets. Rising B-Corp / evidence-led positioning differentiates but sector risk exists."},
+            {"category": "Benchmark", "indicator": "Student learning outcome gains", "value": "RCT-validated improvements", "signal": "positive", "detail": "One of few SSA operators with rigorous evidence base. Learning gains validated through randomized controlled trials. Critical for donor/government credibility."}
+        ],
+        "internal_indicators": [
+            {"category": "Financial", "indicator": "Revenue sustainability", "value": "Grant-subsidised, not yet profitable", "signal": "negative", "detail": "Estimated $2-8M total budget. Trending toward earned revenue but still dependent on grants and philanthropic capital."},
+            {"category": "Scale", "indicator": "Operations across 900+ schools", "value": "Rapid expansion", "signal": "watch", "detail": "300,000+ students. Growth outpacing infrastructure. Quality consistency across 900 sites in 4 countries is the central operational challenge."},
+            {"category": "Technology", "indicator": "Rori + Tari AI platform maturity", "value": "Early but differentiated", "signal": "positive", "detail": "WhatsApp-native AI tutoring is a genuine product differentiator. 150,000+ users. Question is whether it can drive earned revenue."}
+        ]
+    },
+    "school-for-life": {
+        "name": "School for Life Foundation",
+        "external_indicators": [
+            {"category": "Funding", "indicator": "Australian philanthropic giving trends", "value": "Flat / competitive", "signal": "neutral", "detail": "Australian charitable giving is stable but competition for donor dollars is intense. Cost-of-living pressures may reduce discretionary giving."},
+            {"category": "Funding", "indicator": "Gala Ball revenue dependency", "value": "Dominant channel", "signal": "negative", "detail": "Annual Gala Ball is the primary fundraising event. Single-event concentration creates significant revenue volatility risk."},
+            {"category": "Regulatory", "indicator": "Uganda education policy stability", "value": "Moderate risk", "signal": "watch", "detail": "Operates 10 schools in rural Uganda. Education policy changes, land tenure, and foreign NGO regulations are ongoing risks."},
+            {"category": "Benchmark", "indicator": "Uganda student-to-teacher ratio (national)", "value": "~50:1 (government schools)", "signal": "positive", "detail": "SFL model provides dramatically better ratios. 4,500 students across 250 staff = ~18:1 total ratio. Strong differentiation from government alternative."},
+            {"category": "Demographic", "indicator": "Uganda youth population growth", "value": "~3.2% p.a.", "signal": "positive", "detail": "One of the world youngest populations (median age ~16). Sustained demand for education. Question is funding capacity to serve it."},
+            {"category": "FX", "indicator": "AUD/UGX exchange rate risk", "value": "Material exposure", "signal": "negative", "detail": "Revenue raised in AUD, costs incurred in UGX. Currency movements directly affect purchasing power and operational budget."}
+        ],
+        "internal_indicators": [
+            {"category": "Scale", "indicator": "School network size", "value": "10 schools, 4,500 students", "signal": "neutral", "detail": "Small but deep. Holistic model (primary + secondary + vocational) over 17 years. Growth constrained by fundraising capacity."},
+            {"category": "People", "indicator": "Dual-geography staffing", "value": "250 Uganda + ~30 Australia", "signal": "watch", "detail": "Management span across two continents with very different operating contexts. Coordination overhead for a small org."},
+            {"category": "Revenue", "indicator": "Revenue diversification", "value": "Low \u2014 concentrated in events + major donors", "signal": "negative", "detail": "Estimated $2-5M annual. Gala Ball + small number of major donors = moderate concentration risk. Limited recurring/institutional funding."}
+        ]
+    },
+    "wise": {
+        "name": "WISE",
+        "external_indicators": [
+            {"category": "Funding", "indicator": "Qatar Foundation endowment backing", "value": "~$405M/yr total QF spend", "signal": "positive", "detail": "QF is state-backed, funded by hydrocarbon endowment. Provides operational stability but creates single-funder dependency."},
+            {"category": "Geopolitical", "indicator": "Qatar soft power positioning", "value": "Active investment", "signal": "positive", "detail": "WISE is part of Qatar knowledge economy and soft power strategy. Continued relevance depends on Qatar strategic priorities for global education influence."},
+            {"category": "Competition", "indicator": "Global education convenings landscape", "value": "Crowded", "signal": "negative", "detail": "UNESCO, World Bank, OECD, ASU+GSV, HundrED all compete for education innovation mindshare. WISE differentiates on policy + Global South focus."},
+            {"category": "Market", "indicator": "WISE Prize for Education visibility", "value": "$500K + prestige", "signal": "positive", "detail": "Called Nobel Prize for Education. Key brand asset. 12,000+ cumulative summit attendees. 35,000+ community members."},
+            {"category": "Technology", "indicator": "AI in education policy discourse", "value": "Rapidly growing", "signal": "positive", "detail": "AI in education is the dominant theme in global education policy. WISE positioned to convene this conversation but needs to lead, not follow."}
+        ],
+        "internal_indicators": [
+            {"category": "Revenue", "indicator": "Single-funder dependency", "value": "Qatar Foundation \u2248 100%", "signal": "negative", "detail": "Operational funding entirely from QF. Zero earned revenue diversification. Strategic alignment with QF leadership is existential."},
+            {"category": "Scale", "indicator": "Team size", "value": "~36 FTE", "signal": "watch", "detail": "Very small team for global ambition. Limits capacity for year-round programming, research output, and community engagement."},
+            {"category": "Impact", "indicator": "Impact measurement maturity", "value": "Limited", "signal": "watch", "detail": "Convening impact is hard to measure. ROI narrative to QF depends on soft metrics (attendees, media mentions, community size) rather than hard outcomes."}
+        ]
+    }
+}
+
+out_path = "P:/Projects2/sg-general-agents/projects/prospector/site/public/data/companies/indicators.json"
+with open(out_path, "w") as f:
+    json.dump(indicators, f, indent=2)
+print(f"Wrote {out_path}")

@@ -1,0 +1,55 @@
+{
+  "cell": {
+    "cellNum": 3,
+    "subCategory": "Culture & Organization",
+    "domain": "Talent & People",
+    "heat": 50,
+    "oppScore": 39
+  },
+  "ideas": [
+    {
+      "name": "Cross-Campus Variance Scanner",
+      "one_liner": "Identifies organizational inconsistencies across distributed school networks (teaching standards, classroom management, curriculum fidelity) to drive cultural alignment.",
+      "problem": "CSPD manages 80+ Catholic schools with varying teaching quality, pastoral approaches, and curriculum adherence. Principals operate as fiefdoms with limited oversight from the network office. Without visibility into cross-site variance, network leaders cannot enforce quality standards or share best practices. Annual inspections are expensive and episodic; they need continuous measurement.",
+      "ai_technique": "Summarization & Condensation with structured comparison analysis",
+      "how_it_works": "Ingests classroom observation reports (NESA-aligned teaching standard assessments), student feedback surveys, and curriculum fidelity audits from TechOne. Summarizes findings per school and compares across network: 'School A: 78% NESA standard 1 compliance vs network avg 82%', 'School C principals report weak pastoral care implementation.' Flags outliers (positive and negative) and surfaces peer-learning opportunities (e.g., 'School X excels in Indigenous curriculum integration').",
+      "target_companies": ["cspd", "phinma", "school-for-life"],
+      "buyer_persona": "Network Director or Chief Academic Officer overseeing 40+ school sites",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Teacher Development Portfolio Engine",
+      "one_liner": "Transforms scattered PD records, observation notes, and feedback into structured learning portfolios aligned to career progression pathways.",
+      "problem": "ipeople, CSPD, and PHINMA lack integrated systems to track teacher development over time. A teacher's PD (courses, hours, certifications), observation scores (NESA standards progress), and peer feedback exist in spreadsheets and email. When a principal evaluates promotion eligibility, they manually reconstruct a narrative. Teachers have no visibility into 'what am I missing to advance to senior teacher or master teacher?'",
+      "ai_technique": "Data Transformation & Structuring with career-progression schema",
+      "how_it_works": "Ingests PD transcripts (Moodle, Coursera, in-house), observation reports, and 360 feedback from disparate systems. Normalizes into structured portfolio: PD hours per domain (pedagogy, subject knowledge, ICT), NESA standard mastery level, peer feedback themes, and classroom impact metrics (student outcomes, parent satisfaction). Maps against senior teacher and master teacher advancement criteria (CHED, NESA). Generates personalized development plans: 'complete 20 ICT hours and 1 peer-mentoring role to become senior teacher.'",
+      "target_companies": ["cspd", "ipeople", "phinma"],
+      "buyer_persona": "Head of Teacher Development or Professional Learning Communities Manager",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Organizational Health Monitor",
+      "one_liner": "Aggregates staff engagement, turnover, and capability signals into quarterly health scorecards for network leadership.",
+      "problem": "Network leaders (Kinetic, CSPD, PHINMA) lack real-time visibility into organizational health across 40+ distributed teams. They know about crises after the fact (e.g., principal resignation, recruitment failure). They cannot measure culture change or identify early signs of disengagement. Quarterly surveys are slow and unreliable.",
+      "ai_technique": "Summarization & Condensation with health metric aggregation",
+      "how_it_works": "Consolidates data from HRIS (turnover, tenure), engagement surveys (pulse surveys via email/Slack), performance reviews, and exit interview notes. Generates quarterly health scorecard per campus: engagement score (0-100), estimated attrition risk (%), capability maturity (are teachers meeting standards?), and culture themes (e.g., 'high morale but concerns about workload'). Flags red zones (e.g., 'HR manager turnover at 3 campuses suggests systemic issue'). Enables network leaders to intervene before problems cascade.",
+      "target_companies": ["kinetic", "cspd", "phinma", "rising"],
+      "buyer_persona": "Chief People Officer or Network Director managing 40+ distributed campuses",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Regulatory Compliance Status Tracker",
+      "one_liner": "Aggregates teaching registration status, child safety clearances, and mandatory training completion to flag compliance risks proactively.",
+      "problem": "Education organisations face heavy regulatory burden: teachers must maintain current registration (NESA, QTSB, CHED), complete child safety training annually, and update certifications. Compliance failures create liability (unregistered teacher on payroll) and operational disruption (classes cancelled when teacher falls out of compliance). Manual tracking via spreadsheets creates gaps at scale.",
+      "ai_technique": "Data Transformation & Structuring with compliance schema and alert logic",
+      "how_it_works": "Ingests HRIS records and integrates with state teaching registration APIs (NESA, QTSB, CHED) to verify current status. Tracks mandatory training completion (child safety, CPR, curriculum updates) from Learning Management System (TechOne compliance module, Coursera). Generates compliance dashboards: '95 of 100 teachers current; 3 expiring in 30 days; 2 non-compliant (action required).' Triggers automated alerts and remediation workflows (e.g., 'enroll in child safety refresher course by June 1').",
+      "target_companies": ["cspd", "phinma", "rising"],
+      "buyer_persona": "Compliance Officer or Head of HR responsible for regulatory adherence",
+      "tier": "feature",
+      "confidence": "high"
+    }
+  ]
+}

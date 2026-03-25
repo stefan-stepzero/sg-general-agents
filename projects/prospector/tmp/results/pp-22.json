@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "payroll-statutory-deduction-accuracy",
+  "pain_point_label": "Statutory Deduction Errors & Late Remittance",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end payroll statutory deduction workflow — pulling employee records, applying current SSS/PhilHealth/Pag-IBIG/BIR rate tables, computing per-employee withholding, generating remittance files, and submitting to agency portals — is a multi-step, multi-system process that maps precisely to task automation. For a 500+ staff education operator running payroll across multiple campuses, manual handoffs between HRIS, accounting, and government portals are the primary error and latency source. An AI agent can orchestrate this end-to-end, with rules for ceiling checks and rate-change triggers, far exceeding what rule-based RPA alone can handle when rate schedules change.",
+      "opportunity_sketch": "An automation agent that ingests payroll run data, cross-references current statutory rate tables, computes deductions per employee per agency, flags anomalies for human review, generates remittance reports, and queues submissions to SSS/PhilHealth/Pag-IBIG/BIR portals on schedule — with an audit trail at each step.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Over-withholding and under-withholding errors follow a detectable statistical pattern relative to an employee's salary band, employment type, and prior months — making them strong candidates for anomaly detection before payroll is finalized. For a multi-site operator with 500+ staff across campuses and contract types (full-time, part-time, project-based), edge cases that deviate from expected deduction amounts are precisely the errors that slip through manual review. A model trained on historical payroll records can flag deduction outliers before submission, catching errors that would otherwise incur penalties.",
+      "opportunity_sketch": "A pre-submission payroll validation layer that scores each employee's computed deductions against expected ranges, surfacing outliers (e.g., BIR withholding suddenly 0 for a regular employee, or Pag-IBIG exceeding ceiling) as a prioritized exception queue for the payroll officer to resolve.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Government agency remittance requirements (SSS R-3, PhilHealth RF-1, Pag-IBIG MCRF, BIR 1601-C) each demand specific file formats and schemas that differ from how payroll data is stored in school HRIS or accounting systems. AI-assisted schema mapping and format normalization can automatically transform payroll run output into each agency's required submission format, eliminating the manual export-reformat-reupload cycle that is a primary source of both errors and deadline misses.",
+      "opportunity_sketch": "A transformation pipeline that takes a standardized payroll run export and produces correctly structured, agency-specific remittance files ready for upload — with field-level validation against current BIR/SSS/PhilHealth/Pag-IBIG schemas and flagging of missing or out-of-range values.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Reconstructing audit trails after the fact — and producing compliance documentation (explanation letters to BIR, penalty dispute narratives, regulatory correspondence) — is a significant secondary pain for education operators who have received notices or are under audit. LLM-based generation can draft agency-specific response letters and internal compliance memos from structured payroll data, reducing the legal and HR staff burden when remittance errors have already occurred.",
+      "opportunity_sketch": "An AI drafting assistant that generates BIR or SSS correspondence (e.g., penalty abatement requests, amended return cover letters) from structured payroll and payment data, ready for review and signature by the finance officer.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Late remittance risk is driven by a combination of factors — payroll run timing, number of campuses, headcount changes, rate-change periods, and finance team capacity — that can be modeled to predict which payroll cycles are at elevated risk of missing statutory deadlines. For a multi-site operator, this allows proactive intervention (early alerts, temporary staff, escalation) rather than reactive penalty management. Compliance risk scoring also supports internal audit prioritization across campuses.",
+      "opportunity_sketch": "A risk scoring model that, prior to each payroll cycle, estimates the probability of late remittance or deduction error based on cycle complexity, recent staff changes, upcoming rate-change events, and historical error patterns — triggering early warnings to finance leadership.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

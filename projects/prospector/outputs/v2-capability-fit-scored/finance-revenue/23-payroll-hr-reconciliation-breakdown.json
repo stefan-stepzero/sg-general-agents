@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "payroll-hr-reconciliation-breakdown",
+  "pain_point_label": "Payroll-to-HR Reconciliation Breakdown",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Mismatches between HR status and payroll ledger only surface after payroll is processed. Anomaly detection flags deviations before they propagate.",
+      "opportunity_sketch": "A pre-payroll-run anomaly scanner that flags records where HR status and payroll status diverge.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reconciliation workflow is a classic multi-step business workflow with multi-system orchestration.",
+      "opportunity_sketch": "An agent that runs on a pre-payroll schedule, pulls HR change events, maps them against the payroll ledger, and flags unreconciled records.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "HR and payroll systems use different schemas and identifiers requiring manual mapping.",
+      "opportunity_sketch": "A transformation layer continuously mapping HR master data exports to the payroll system schema.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Generating exception notifications and reconciliation summary reports reduces the documentation burden.",
+      "opportunity_sketch": "Auto-generated exception memos and reconciliation summary reports for each payroll cycle.",
+      "pain_salience": 2,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 40
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

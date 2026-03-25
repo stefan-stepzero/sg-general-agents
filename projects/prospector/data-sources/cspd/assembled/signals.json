@@ -1,0 +1,379 @@
+{
+  "name": "Catholic Schools Parramatta Diocese",
+  "assembled_date": "2026-03-25",
+  "external_indicators": [
+    {
+      "category": "demographic",
+      "indicator": "Western Sydney population-driven enrolment growth",
+      "value": "49,577 students in 2025, up from 43,979 in 2008 (+12.7% over 17 years, CAGR 0.71%). Accelerating post-2021: 2.5% growth in 2022, 1.8% in 2024, 1.3% in 2025.",
+      "signal": "positive",
+      "detail": "ACARA data shows a clear growth acceleration from 2021 onwards after a flat/declining period 2015-2019. Westmead Catholic Community turning away 500+ enrolment applicants annually (web-research.json) confirms excess demand. Western Sydney population growth is the structural driver — diocese covers a high-growth corridor from Parramatta to Blue Mountains.",
+      "source": "acara-trends.json (system summary); web-research.json (Westmead enrolment demand)"
+    },
+    {
+      "category": "demographic",
+      "indicator": "Unmet enrolment demand in Westmead precinct",
+      "value": "500+ applicants turned away annually at Westmead Catholic schools",
+      "signal": "positive",
+      "detail": "Structural excess demand in the Westmead corridor demonstrates market strength. The merger of Sacred Heart Primary and Mother Teresa Primary into a new four-stream K-6 campus at 2 Darcy Road (opening Term 3, 2026) is a direct capacity response. An early learning centre is also planned for 2027 on the same site.",
+      "source": "web-research.json (new_schools: Sacred Heart Primary Westmead)"
+    },
+    {
+      "category": "demographic",
+      "indicator": "LBOTE student proportion across NSW Catholic schools",
+      "value": "36% of NSW Catholic school students are Language Background Other Than English (LBOTE)",
+      "signal": "watch",
+      "detail": "Western Sydney has significantly higher LBOTE concentrations than the NSW average. This creates both opportunity (community trust in Catholic schools as inclusive institutions) and complexity (differentiated support demands, EAL/D resourcing, interpreter services). No CSPD-specific LBOTE breakdown available in source files.",
+      "source": "csnsw-annual-report-2024.pdf p.13-16 (via annual-report-extract.json)"
+    },
+    {
+      "category": "workforce",
+      "indicator": "NSW teacher shortage — systemic sector-wide headwind",
+      "value": "Teacher recruitment and retention named as central theme at Sydney Morning Herald Schools Summit 2024. Inter-Diocesan Teacher Workforce Working Group met five times in 2024.",
+      "signal": "negative",
+      "detail": "The teacher shortage is not CSPD-specific — it is a NSW-wide and national structural issue. CSNSW's 2024 annual report identifies teacher workforce sustainability as a sector challenge. CSPD's response includes a Teacher Scholarship Program (102 inaugural recipients in 2024, $5,000/year tuition + laptop) targeting Year 12 students for the teaching pipeline. This is a proactive but long-horizon solution — supply relief is 4-6 years away from scholarship recipients entering classrooms.",
+      "source": "csnsw-annual-report-2024.pdf p.30 & p.73 (via annual-report-extract.json); cspd-annual-report-2023.pdf p.26 (via annual-report-extract.json)"
+    },
+    {
+      "category": "workforce",
+      "indicator": "Religious Education accreditation requirement adds hiring friction",
+      "value": "Primary classroom and RE secondary teachers must hold RE accreditation (undergraduate 6 units or postgraduate 4 units) in addition to standard NESA accreditation and WWCC",
+      "signal": "negative",
+      "detail": "The dual-accreditation requirement for Catholic school teachers narrows the eligible candidate pool relative to public and independent school competitors, amplifying the NSW-wide teacher shortage. In a tight market, candidates with RE accreditation command a premium or may choose more accessible pathways.",
+      "source": "web-research.json (regulatory: NESA Teacher Accreditation)"
+    },
+    {
+      "category": "funding",
+      "indicator": "Gonski needs-based funding certainty to 2029",
+      "value": "NSW Catholic Schools System received approximately $3.65 billion in recurrent government funding (Commonwealth + State) in 2024. New Needs-Based Funding Distribution Model 2024-2029 approved July 2023, implemented January 2024.",
+      "signal": "positive",
+      "detail": "The five-year funding arrangement provides planning certainty through 2029, supporting CSPD's five-year strategic plan. Commonwealth recurrent grants are the dominant revenue source for CSPD at 63.8% of total operating revenue ($546.8m of $857.2m in 2023). Loadings add approximately 24% on top of base funding.",
+      "source": "web-research.json (funding); annual-report-extract.json (cspd financial_summary_2023); csnsw-annual-report-2024.pdf p.52-54"
+    },
+    {
+      "category": "funding",
+      "indicator": "Better and Fairer Schools Agreement (2025-2035) unresolved",
+      "value": "NSW Government had not concluded negotiations with Commonwealth at end of 2024. NSRA extended a further year for NSW. Negotiations continuing in 2025.",
+      "signal": "watch",
+      "detail": "The unresolved BFSA creates medium-term funding uncertainty for the period after the current 2024-2029 arrangement. CSNSW launched 'Keep School Funding Fair' campaign in December 2024, citing research showing lack of public understanding leaves the non-government funding model vulnerable ahead of elections. Any renegotiation that reduces Catholic school funding relativities would materially impact CSPD given its 80%+ government revenue dependency.",
+      "source": "csnsw-annual-report-2024.pdf p.57 & p.27 (via annual-report-extract.json)"
+    },
+    {
+      "category": "funding",
+      "indicator": "Online assessment cost-recovery transition from July 2025",
+      "value": "NSW Department of Education will shift access to online assessments (including Year 1 Phonics Screening Check) to cost-recovery from July 2025 for non-government schools",
+      "signal": "negative",
+      "detail": "Creates a new per-assessment cost burden that did not previously exist. For a system the size of CSPD (49,577 students), this could be material. CSNSW is actively advocating for equitable access. Affects CSPD's ability to participate in voluntary diagnostic assessments that support curriculum reform implementation.",
+      "source": "csnsw-annual-report-2024.pdf p.60 (via annual-report-extract.json)"
+    },
+    {
+      "category": "regulatory",
+      "indicator": "NSW-wide mobile phone ban in schools",
+      "value": "Australia's under-16 social media ban enacted December 2025. NSW government direction aligning with this trend. CSPD enacted system-wide ban from start of 2026.",
+      "signal": "neutral",
+      "detail": "The regulatory environment has shifted firmly toward school phone restrictions. CSPD's early adoption (announced November 2025, effective January 2026) positions it ahead of the curve. Most CSPD schools already had informal restrictions. The policy aligns with CSPD's 'domed' AI/device approach. Neutral externally because the requirement is sector-wide — not a competitive differentiator.",
+      "source": "web-research.json (regulatory: NSW-wide mobile phone restrictions; initiatives: Mobile Phone Ban)"
+    },
+    {
+      "category": "regulatory",
+      "indicator": "NSW Curriculum Reform — mandatory explicit teaching rollout 2020-2027",
+      "value": "First comprehensive NSW curriculum reform in three decades. Schools implementing revised syllabuses K-6, 7-10, and 11-12 simultaneously. Implementation period 2020-2027.",
+      "signal": "watch",
+      "detail": "Scale and simultaneity of reform creates significant professional development and compliance burden. CSPD's Uplift framework (launched August 2025) is explicitly aligned to the NSW explicit teaching mandate — this is a strategic bet that the reform direction is durable. If the reform stalls or reverses, CSPD's pedagogical investment may face headwinds. Risk of uneven implementation quality across 89 schools.",
+      "source": "csnsw-annual-report-2024.pdf p.59 & p.72 (via annual-report-extract.json); web-research.json (regulatory: NSW Curriculum Reform)"
+    },
+    {
+      "category": "regulatory",
+      "indicator": "Post-Royal Commission child safeguarding obligations",
+      "value": "Rising complexity: notable increase in support requests for student violence, self-harm, and problematic sexualised behaviour. CSNSW also managing historical abuse claims.",
+      "signal": "negative",
+      "detail": "The Royal Commission into Institutional Responses to Child Sexual Abuse created enduring compliance obligations for Catholic schools. CSNSW data shows rising frequency and complexity of child protection cases in 2024. CSPD established a Wellbeing Directorate (2022) with 140+ specialist teachers, social workers and psychologists — indicating structural investment in this area. Liability exposure from historical claims remains a reputational and financial risk.",
+      "source": "csnsw-annual-report-2024.pdf p.63-64 (via annual-report-extract.json); cspd-annual-report-2023.pdf p.33-35 (via annual-report-extract.json)"
+    },
+    {
+      "category": "regulatory",
+      "indicator": "Violent extremism threat escalation in education sector",
+      "value": "ASIO escalated national terrorism threat level from 'possible' to 'probable' in August 2024. Substantial increase in reported incidents across education sector. CSNSW secured $2.8m NSW Government CVE funding through 2028.",
+      "signal": "watch",
+      "detail": "As a visibly Catholic institution in a diverse, multicultural Western Sydney community, CSPD has non-trivial exposure to extremism-adjacent risks. CSNSW funding to end of 2028 provides resourcing but the threat level elevation suggests sustained vigilance requirements with ongoing operational cost.",
+      "source": "csnsw-annual-report-2024.pdf p.33 (via annual-report-extract.json)"
+    },
+    {
+      "category": "market",
+      "indicator": "NSW public school building program — competitive pressure",
+      "value": "NSW Government infrastructure investment in public schools is accelerating alongside population growth in Western Sydney. No specific spend figures available in source files.",
+      "signal": "watch",
+      "detail": "Evidence is indirect: CSPD's 10-Year Capital Framework explicitly identifies 'growth' and 'rising enrolment' as investment drivers, and the Westmead demand overflow indicates Catholic schools are already capacity-constrained. A well-resourced public school building program in the same growth corridors (Schofields, Jordan Springs, Box Hill) could absorb new residents before CSPD can expand capacity. Data on specific NSW public school builds in the diocese was not available in source files.",
+      "source": "annual-report-extract.json (cspd 10-Year Capital Framework); web-research.json (Westmead demand)"
+    },
+    {
+      "category": "market",
+      "indicator": "NAPLAN reforms — shift from grades to proficiency levels",
+      "value": "NAPLAN proficiency standards framework already in use at CSPD. 2023 NAPLAN data drove CSPD strategy: shifting students from 'Strong' to 'Exceeding', particularly in Numeracy.",
+      "signal": "watch",
+      "detail": "NAPLAN reform to proficiency reporting raises public visibility of performance gaps. CSPD's 2023 annual report explicitly acknowledges a numeracy ceiling (insufficient students reaching 'Exceeding'). This is now an externally visible indicator. Schools with lower proficiency concentrations may face reputational headwinds if media coverage highlights Catholic school aggregate performance vs public or selective school benchmarks.",
+      "source": "cspd-annual-report-2023.pdf p.22 (via annual-report-extract.json)"
+    },
+    {
+      "category": "technology",
+      "indicator": "AI governance in schools — 'domed' access model",
+      "value": "CSPD policy: students access only CSPD-approved AI platforms. Open generative AI (e.g. ChatGPT) is blocked system-wide.",
+      "signal": "neutral",
+      "detail": "The 'domed' approach is a defensible governance posture given safeguarding obligations and the age of the student cohort. However, as AI tools become more deeply embedded in tertiary and vocational education, a highly restrictive school-level approach may disadvantage students' AI literacy development. The June 2025 LIFTED Student Leaders Forum explicitly addressed AI — suggesting CSPD is aware of this tension. Balance between protection and preparation is an evolving challenge.",
+      "source": "web-research.json (technology: CSPD AI policy; initiatives: LIFTED Forum)"
+    }
+  ],
+  "internal_indicators": [
+    {
+      "category": "leadership",
+      "indicator": "Patrick Ellis hire — EGM Learning Outcomes",
+      "value": "Confirmed as EGM Learning Outcomes, role recruited via ANZUK Executive with deadline September 12, 2025. Previously Education Lead at Catholic Education Canberra-Goulburn (CECG).",
+      "signal": "positive",
+      "detail": "Ellis's LinkedIn post references 'high quality, evidence based teaching and learning #Uplift' — directly associating the new hire with the Uplift framework. His 20 years across Parramatta, Wilcannia-Forbes, and Canberra-Goulburn provides system-level literacy and Catholic education network depth. Returning to Parramatta after CECG experience brings cross-system benchmarking capability. This is a senior appointment aligned to CSPD's primary strategic bet on evidence-based teaching.",
+      "source": "web-research.json (leadership: Patrick Ellis)"
+    },
+    {
+      "category": "strategy",
+      "indicator": "Uplift framework launch",
+      "value": "System-wide teaching and learning framework launched August 2025. Covers all 80 schools, 43,000+ students. Endorsed by AERO CEO Dr Jenny Donovan at 2025 Ann D Clark Lecture.",
+      "signal": "positive",
+      "detail": "Uplift operationalises explicit instruction, formative assessment, and structured literacy — methodologies with strong AERO/NESA backing. External endorsement from AERO's inaugural CEO gives the framework credibility. The framework explicitly moves away from open-plan classroom designs, which signals a clear pedagogical stance. Implementation consistency across 89 schools is the execution risk. No independent outcome data yet available — framework is too new.",
+      "source": "web-research.json (initiatives: Uplift); annual-report-extract.json (uplift_details note on timing)"
+    },
+    {
+      "category": "strategy",
+      "indicator": "Five-year strategic plan 2024-2029 — six pillars",
+      "value": "Announced October 4, 2024. Six pillars: Mission, People, Quality, Relevance, Sustainability, Trust.",
+      "signal": "positive",
+      "detail": "Strategy was developed through consultation with 80 school principals, staff, and families. Jack de Groot described it as 'detailed, earnest and ambitious.' The 2023 annual report noted the need for an 'organisation-wide strategy' to be crystallised in 2024 — this plan fulfils that commitment. The Sustainability pillar explicitly addresses financial stewardship and scalable systems, which is relevant given the 2023 operating deficit.",
+      "source": "web-research.json (initiatives: Five-Year Strategic Plan); annual-report-extract.json (raw_quotes p.4)"
+    },
+    {
+      "category": "operations",
+      "indicator": "Westmead primary campus opening Term 3 2026",
+      "value": "New three-storey K-6 campus at 2 Darcy Road, Westmead. Merger of two existing primary schools. Four-stream capacity. Term 3, 2026 opening.",
+      "signal": "positive",
+      "detail": "Directly addresses documented unmet demand (500+ annual applicants turned away). The consolidated four-stream school replaces two under-capacity schools and is co-located with Catherine McAuley Westmead and Parramatta Marist High School, creating a K-12 precinct. Ambrose Early Learning Centre planned for 2027 on the same site extends the pipeline. Execution risk: construction and transition management across two merging school communities.",
+      "source": "web-research.json (new_schools: Sacred Heart Primary Westmead)"
+    },
+    {
+      "category": "operations",
+      "indicator": "Canvas LMS system-wide rollout",
+      "value": "Canvas (Instructure) deployed across all CSPD schools. Accessible any device. Features: grading, announcements, discussions, parent visibility. Dedicated CSPD Canvas support team.",
+      "signal": "positive",
+      "detail": "A standardised LMS across 89 schools enables consistent data capture, reduces per-school IT overhead, and creates a platform for system-wide professional learning (Canvas Catalog). Parental visibility feature supports the community engagement pillar of the strategic plan. The existence of a legacy system (Classm8 referenced alongside Canvas) suggests a transition period with dual-platform risk.",
+      "source": "web-research.json (technology: Canvas; initiatives: Canvas LMS)"
+    },
+    {
+      "category": "operations",
+      "indicator": "EA 2025 approved — 99% employee vote",
+      "value": "NSW and ACT Catholic Systemic Schools Enterprise Agreement 2025. Approved by 99% of CSPD employees (vote closed October 31, 2025). Teacher pay: 3% from Oct 2024, 3% Oct 2025, 3% Oct 2026. General Employees: 4% from Jul 2024, 3% from Jul 2025, 3% from Jul 2026.",
+      "signal": "positive",
+      "detail": "99% approval is an unusually strong mandate — signals strong workforce relations and union-management alignment. The EA includes improved parental leave, superannuation, three days ceremonial leave for Aboriginal and Torres Strait Islander employees, and a CPI adjustment clause if inflation exceeds 4.5% in 2026. The three-year certainty aids workforce planning but increases known salary cost commitments against an already operating-deficit background (2023: -$20.6m).",
+      "source": "web-research.json (funding: EA 2025); annual-report-extract.json (financial_summary_2023)"
+    },
+    {
+      "category": "finance",
+      "indicator": "Operating deficit 2023",
+      "value": "-$20.6m deficit from operations before capital (total operating revenue $857.2m vs expenditure $877.9m). Salaries and wages = $628.4m (71.6% of expenditure). Capital outflows $85.9m.",
+      "signal": "watch",
+      "detail": "The operating deficit is structural — salary costs dominate and are now locked in at +3% annually under the EA 2025. Capital expenditure ($85.9m in 2023) is funded partly by the Diocesan School Building Fund ($23.1m net) and capital grants ($12.2m), but net capital outflows ($85.9m) far exceed capital revenue ($36.2m). Revenue composition is 80.7% government-sourced (Commonwealth + State) making CSPD highly sensitive to funding policy shifts. The 2024-2029 FDM provides certainty but the structural deficit requires the Sustainability pillar of the strategic plan to deliver material efficiency gains.",
+      "source": "annual-report-extract.json (cspd financial_summary_2023 p.44-45)"
+    },
+    {
+      "category": "operations",
+      "indicator": "Employee engagement score",
+      "value": "69% employee engagement score in 2023. Survey response rate: 53%.",
+      "signal": "watch",
+      "detail": "A 69% engagement score with only 53% response rate leaves meaningful uncertainty — non-respondents may skew negative. Staff feedback themes identified in the 2023 annual report: need for greater System Leader visibility, better communication, work-life balance, and wellbeing. The EA 2025 99% approval and multiple wellbeing initiatives since 2023 may have improved this, but no more recent data is available in source files.",
+      "source": "annual-report-extract.json (cspd system_stats p.38)"
+    },
+    {
+      "category": "operations",
+      "indicator": "Mobile phone ban system-wide rollout",
+      "value": "Ban effective January 2026 across all 80 schools. Most schools had informal restrictions already. Exceptions for medical necessity.",
+      "signal": "positive",
+      "detail": "Proactive policy alignment with the Australian social media ban (under-16s) and NSW government direction. Reduces in-class distraction consistent with Uplift framework's evidence-based teaching focus. Announces a clear, consistent position that differentiates CSPD from less decisive competitors. Low implementation friction as most schools already had informal norms.",
+      "source": "web-research.json (initiatives: Mobile Phone Ban; regulatory: NSW-wide mobile phone restrictions)"
+    },
+    {
+      "category": "governance",
+      "indicator": "New governance model — company limited by guarantee",
+      "value": "CSPD became an incorporated company limited by guarantee from 1 January 2023. New Board replacing Diocesan Schools Council. Three Board committees: Audit and Risk; Mission, Learning and People; Infrastructure and Property.",
+      "signal": "positive",
+      "detail": "Corporate governance model provides clearer accountability structures, cleaner financial reporting obligations, and greater operational independence from the Diocese compared to the previous Diocesan Schools Council structure. Board composition includes commercial, legal, financial, and educational expertise. The change was completed in 2023 — the organisation is now operating within the new model and the 2024-2029 strategy reflects the new governance regime.",
+      "source": "annual-report-extract.json (cspd strategic_priorities: New governance model p.3 & p.12)"
+    }
+  ],
+  "external_risks": [
+    {
+      "id": "ext-risk-1",
+      "label": "Government funding policy shift post-2029",
+      "score": 0.65,
+      "level": "high",
+      "reasoning": "80.7% of CSPD operating revenue (2023) is government-sourced (63.8% Commonwealth, 16.9% State). The Better and Fairer Schools Agreement for 2025-2035 remained unresolved at end of 2024, with NSW being the holdout jurisdiction. CSNSW launched a 'Keep School Funding Fair' campaign citing public misunderstanding of the non-government funding model — indicating the sector itself perceives political vulnerability. Any federal or state government that shifts the funding formula would have outsized impact on CSPD relative to more fee-dependent independent schools. Score reflects high impact but partially mitigated by the 2024-2029 FDM already locked in.",
+      "domain": "funding",
+      "sub": "government recurrent grants"
+    },
+    {
+      "id": "ext-risk-2",
+      "label": "NSW teacher shortage deepening",
+      "score": 0.60,
+      "level": "high",
+      "reasoning": "Structural teacher shortage is evidenced by: Inter-Diocesan Workforce Working Group meeting frequency (5 times in 2024), naming at SMH Schools Summit, and CSPD's own pipeline-building response (Teacher Scholarship Program, 102 recipients). RE accreditation requirement further narrows CSPD's eligible candidate pool versus public and independent schools. CSPD hired 190 new teachers in 2023 — at this scale, even a modest deterioration in supply creates significant class coverage risk. Score reflects systemic severity with limited near-term mitigation available.",
+      "domain": "workforce",
+      "sub": "teacher supply pipeline"
+    },
+    {
+      "id": "ext-risk-3",
+      "label": "NSW public school infrastructure expansion in growth corridors",
+      "score": 0.45,
+      "level": "medium",
+      "reasoning": "Western Sydney population growth generates demand for all school sectors simultaneously. If NSW Government fast-tracks public school builds in high-growth suburbs where CSPD is capacity-constrained (e.g. Schofields, Jordan Springs, Box Hill), Catholic school market share could erode before CSPD's 10-Year Capital Framework delivers new capacity. Evidence is indirect — the Westmead demand overflow (500+ annual rejections) and capital grant activity in Schofields confirm growth pressure. No direct evidence of specific public builds competing with CSPD in source files; score is medium accordingly.",
+      "domain": "market",
+      "sub": "competitive capacity — public sector"
+    },
+    {
+      "id": "ext-risk-4",
+      "label": "Child safeguarding liability — historical and emerging",
+      "score": 0.55,
+      "level": "medium",
+      "reasoning": "CSNSW data shows a notable increase in support requests for student violence, self-harm, and problematic sexualised behaviour in 2024. CSNSW is also managing historical abuse claims. For a Catholic system, post-Royal Commission scrutiny is structurally elevated and reputational risk from any individual school incident cascades to the whole system. CSPD's Wellbeing Directorate investment (140+ specialists) is a mitigant but does not eliminate liability exposure. The EA 2025 also introduced enhanced obligations on staff. Score reflects ongoing probability in a sector with elevated regulatory scrutiny.",
+      "domain": "regulatory",
+      "sub": "child protection and safeguarding"
+    },
+    {
+      "id": "ext-risk-5",
+      "label": "Online assessment cost-recovery transition",
+      "score": 0.35,
+      "level": "low",
+      "reasoning": "From July 2025, access to NSW DoE online assessments shifts to cost-recovery for non-government schools. For CSPD's scale this creates new direct costs. However, CSNSW is actively advocating for equitable access and this is a sector-wide issue (not CSPD-specific). The financial impact depends on utilisation rates across 89 schools. CSNSW has a track record of negotiating favourable terms. Score is low-medium; elevated only because the change directly intersects with CSPD's curriculum reform implementation priority.",
+      "domain": "regulatory",
+      "sub": "assessment access equity"
+    },
+    {
+      "id": "ext-risk-6",
+      "label": "Inflation exceeding EA cost-of-living trigger in 2026",
+      "score": 0.30,
+      "level": "low",
+      "reasoning": "The EA 2025 contains a cost-of-living adjustment clause if inflation exceeds 4.5% in 2026. If triggered, salary costs would increase beyond the planned 3% annual increment, further widening the operating deficit. Current Australian inflation trajectory (as of early 2026) does not strongly indicate a breach of 4.5%, but the clause creates a contingent liability that must be monitored. Score reflects low probability but meaningful financial impact given the existing deficit position.",
+      "domain": "funding",
+      "sub": "salary cost escalation"
+    },
+    {
+      "id": "ext-risk-7",
+      "label": "NAPLAN proficiency visibility creating reputational pressure",
+      "score": 0.40,
+      "level": "medium",
+      "reasoning": "CSPD's 2023 annual report explicitly acknowledges a numeracy gap (insufficient students at 'Exceeding' level). Under the NAPLAN proficiency reporting framework, this is now publicly visible. Media coverage that aggregates Catholic systemic school performance versus selective or independent school benchmarks could create community-level perception challenges in Western Sydney, where families increasingly have strong aspirations for academic outcomes. Parramatta Marist's 44th state ranking in HSC 2025 shows ceiling performance is possible — but system-wide proficiency uplift is a multi-year challenge.",
+      "domain": "market",
+      "sub": "academic reputation and school choice"
+    }
+  ],
+  "internal_risks": [
+    {
+      "id": "int-risk-1",
+      "label": "Structural operating deficit with rising committed salary costs",
+      "score": 0.70,
+      "level": "high",
+      "reasoning": "2023 operating deficit of -$20.6m is structural: salaries ($628.4m, 71.6% of expenditure) are the dominant cost driver and are now locked in at +3% annually (teachers) and +3-4% (general staff) under the EA 2025. Capital expenditure ($85.9m in 2023) also significantly exceeds capital revenue ($36.2m). The Westmead campus and other 10-Year Capital Framework projects will sustain high capital outflows through 2026-2027. Revenue growth depends on enrolment growth (constrained by capacity) and government funding (5-year certainty but no real uplift). The Sustainability pillar of the 2024-2029 strategy must deliver meaningful efficiency gains to avoid deficit accumulation.",
+      "domain": "finance",
+      "sub": "operating deficit and cost structure"
+    },
+    {
+      "id": "int-risk-2",
+      "label": "Uplift framework implementation consistency across 89 schools",
+      "score": 0.55,
+      "level": "medium",
+      "reasoning": "Launching a system-wide pedagogical framework across 89 schools with 3,760 teaching staff is a significant change management challenge. The Uplift framework was launched August 2025 — too recent for outcome data to be available. Patrick Ellis's hire as EGM Learning Outcomes signals CSPD recognises this execution risk. Quality of implementation will vary across schools depending on principal capability, staff engagement, and available professional development time. The 2023 employee engagement score (69%) and staff communication gaps noted in that report suggest the organisation has had prior challenges with system-wide change adoption.",
+      "domain": "strategy",
+      "sub": "pedagogical reform execution"
+    },
+    {
+      "id": "int-risk-3",
+      "label": "Revenue concentration — 80% government-sourced",
+      "score": 0.60,
+      "level": "high",
+      "reasoning": "Commonwealth recurrent grants alone represent 63.8% of operating revenue. Parent fees contribute only 14.6% ($125.5m). This concentration makes CSPD highly sensitive to any federal funding policy change. The BFSA negotiation uncertainty (see ext-risk-1) compounds this. CSPD's fee-waiver commitment for Aboriginal and Torres Strait Islander families (from 2026) adds a modest incremental revenue reduction. Unlike independent schools that can absorb government funding changes through fee adjustments, CSPD's systemic Catholic school model limits fee flexibility.",
+      "domain": "finance",
+      "sub": "revenue diversification"
+    },
+    {
+      "id": "int-risk-4",
+      "label": "Westmead merger transition — two-school community consolidation",
+      "score": 0.40,
+      "level": "medium",
+      "reasoning": "Merging Sacred Heart Primary (Ralph Street) and Mother Teresa Primary into a single campus involves consolidating two distinct school communities, parent bodies, staff cultures, and traditions. Community-facing transitions at this scale carry relationship risk — parent dissatisfaction, staff displacement anxiety, or loss of local parish identity. The new campus opens Term 3, 2026 with Julianne Regan appointed as principal. No evidence in source files of community opposition or staff issues; risk is inherent to the merger structure rather than evidenced.",
+      "domain": "operations",
+      "sub": "school merger and community transition"
+    },
+    {
+      "id": "int-risk-5",
+      "label": "Staff engagement below sector norms",
+      "score": 0.45,
+      "level": "medium",
+      "reasoning": "2023 employee engagement score of 69% with a 53% response rate is below what would be expected for a mission-driven organisation. The low response rate creates interpretation risk — non-respondents may be systematically more disengaged. Staff feedback themes (leadership visibility, communication gaps, work-life balance) suggest systemic issues rather than isolated concerns. The EA 2025's 99% approval and multiple subsequent wellbeing initiatives are positive signals, but the most recent engagement data available is 2023. If the score has not improved materially, it creates retention risk compounding the external teacher shortage.",
+      "domain": "operations",
+      "sub": "workforce engagement and retention"
+    },
+    {
+      "id": "int-risk-6",
+      "label": "Dual LMS period during Canvas transition",
+      "score": 0.25,
+      "level": "low",
+      "reasoning": "Classm8 is referenced alongside Canvas in source materials, suggesting a transition period where both platforms may be in use across different schools. Dual-platform periods create staff training burden, data fragmentation, inconsistent parent experience, and support overhead. Risk is low because Canvas deployment appears substantially complete (described as 'system-wide' in web-research.json), but the Classm8 reference suggests the transition may not be fully resolved.",
+      "domain": "operations",
+      "sub": "technology platform transition"
+    }
+  ],
+  "news_items": [
+    {
+      "headline": "Detailed, earnest and ambitious: Catholic Schools announces new strategy",
+      "date": "2024-10-03",
+      "summary": "CSPD launched its 2024-2029 five-year strategic plan at Rooty Hill, with all 80 school principals attending. CEO Jack de Groot described the plan as 'detailed, earnest and ambitious.' Six strategic pillars: Mission, People, Quality, Relevance, Sustainability, Trust.",
+      "source": "https://catholicoutlook.org/detailed-earnest-and-ambitious-catholic-schools-announces-new-strategy/"
+    },
+    {
+      "headline": "Parramatta schools announce new five-year strategy",
+      "date": "2024-10-04",
+      "summary": "CathNews coverage of the October 2024 strategy launch. Strategy aims for excellence, inclusivity, and Catholic tradition across 80 Western Sydney and Blue Mountains schools.",
+      "source": "https://cathnews.com/2024/10/04/parramatta-schools-announce-new-five-year-strategy/"
+    },
+    {
+      "headline": "CSPD Launches Innovate Reconciliation Action Plan 2025-2027",
+      "date": "2025-07-23",
+      "summary": "CSPD launched its second Reconciliation Action Plan (Innovate level) at The Colebee Centre, Doonside. Artwork created by Amy Allerton in collaboration with 90 First Nations students and staff. Includes free school fees for Aboriginal and Torres Strait Islander families from 2026.",
+      "source": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/08/12/04/18/cspd-launches-innovate-reconciliation-action-plan-2025-2027"
+    },
+    {
+      "headline": "The move to evidence-based teaching in our Catholic schools: Annual Ann D Clark Lecture inspires teachers",
+      "date": "2025-08-01",
+      "summary": "2025 Ann D Clark Lecture in Penrith. AERO CEO Dr Jenny Donovan endorsed CSPD's Uplift framework. Head of Primary Learning Lisa Crampton announced the new Effective Learning and Teaching Model. Explicit instruction and structured literacy are central to both.",
+      "source": "https://catholicoutlook.org/the-move-to-evidence-based-teaching-in-our-catholic-schools-annual-ann-d-clark-lecture-inspires-teachers/"
+    },
+    {
+      "headline": "Western Sydney Catholic Schools and St Vincent de Paul Society NSW serving our communities",
+      "date": "2025-09-18",
+      "summary": "CSPD became the first school-based education provider in NSW to formalise a partnership with St Vincent de Paul Society NSW. Partnership covers Vinnies Van volunteering, Mini Vinnies, Winter and Christmas appeals, School Sleepouts, and a service medallion for secondary students.",
+      "source": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/09/18/23/26/western-sydney-catholic-schools-and-st-vincent-de-paul-society-nsw-serving-our-communities"
+    },
+    {
+      "headline": "Catholic systemic schools EA: 99% YES vote at CSPD",
+      "date": "2025-10-31",
+      "summary": "IEU reports 98% average approval across nine NSW/ACT Catholic dioceses for new enterprise agreement. CSPD achieved 99% approval. Pay rises of 3% annually 2024-2026 for teachers. Enhanced parental leave, superannuation, and ceremonial leave for Aboriginal and Torres Strait Islander employees.",
+      "source": "https://www.ieu.asn.au/catholic-systemic-vote-for-new-eas/"
+    },
+    {
+      "headline": "Western Sydney Catholic Schools hold the phone",
+      "date": "2025-11-18",
+      "summary": "CSPD announces system-wide mobile phone ban effective January 2026 across all 80 schools, aligned with Australia's social media ban for under-16s (December 2025). CEO Jack de Groot: 'Consistent restrictions with clear parameters are necessary to support both students and staff.'",
+      "source": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/11/18/00/22/western-sydney-catholic-schools-hold-the-phone"
+    },
+    {
+      "headline": "Four Western Sydney Catholic School students top the state in HSC",
+      "date": "2025-12-17",
+      "summary": "Four CSPD students achieved HSC First-in-Course results. 20 NSW All Rounders system-wide. Parramatta Marist ranked 44th in NSW (29.3% Band 6) — highest-ranked Catholic systemic school in the state.",
+      "source": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/12/17/01/59/four-western-sydney-catholic-school-students-top-the-state-in-hsc"
+    }
+  ]
+}

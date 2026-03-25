@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-brand-identity-marketing-duplication-dup",
+  "pain_point_label": "Marketing & Recruitment Effort Duplication",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Each campus currently produces its own ad copy, emails, and recruitment content from scratch, creating redundant effort and inconsistent messaging. A centralized AI text generation layer can produce brand-aligned, modular content templates that any campus can adapt with local details — eliminating duplicated copywriting while maintaining network voice. This directly reduces the labor cost of running parallel content operations across sites.",
+      "opportunity_sketch": "A shared content generation platform where network marketing team defines brand guidelines and campaign briefs, and AI produces campus-ready copy variants (email, web, social) that individual campuses can localize — replacing their independent production pipelines.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-image",
+      "capability_label": "Image & Visual Generation",
+      "match_rationale": "Campuses independently commission or create design assets (banners, flyers, social graphics), leading to redundant design spend and brand inconsistency. AI image generation can produce on-brand visual assets from centrally managed style templates, so campuses get campaign-ready visuals without separate design retainers. This eliminates a significant category of duplicated vendor spend.",
+      "opportunity_sketch": "A self-service design portal backed by image generation models fine-tuned on the network's brand assets, enabling any campus to generate compliant marketing visuals on demand without independent agency or freelancer relationships.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Before consolidation can happen, the network needs to audit what campaigns currently exist across campuses to identify overlap. Text classification can automatically categorize and deduplicate campaign briefs, messaging themes, and target audience segments across campus submissions — surfacing where multiple campuses are targeting the same families with nearly identical messaging. This provides the diagnostic layer needed to rationalize the portfolio.",
+      "opportunity_sketch": "An automated campaign audit tool that ingests all campus marketing briefs and classifies them by audience segment, message theme, and channel — producing an overlap map that network leadership uses to consolidate budgets and assign campaign ownership.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core inefficiency is that marketing budgets and staff effort are fragmented across campuses without coordination, resulting in wasteful overlap and unrealized network scale. Resource allocation AI can optimize how a consolidated marketing budget is distributed across campuses, channels, and timing — maximizing reach while eliminating overlapping media buys targeting the same catchment areas. This turns a governance problem into a quantifiable optimization problem.",
+      "opportunity_sketch": "A network-level marketing budget optimizer that takes enrollment targets, geographic catchment areas, and channel performance data per campus and outputs an allocation plan that eliminates geographic overlap in paid media while maintaining adequate local reach for each site.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The duplication problem is partly operational: campuses independently execute the same workflow (brief → design → publish → report) because there is no shared infrastructure. A task automation agent can orchestrate a centralized campaign workflow — ingesting a network-level brief, generating and routing content variants to each campus, managing approvals, and publishing to campus channels — replacing n parallel workflows with one coordinated pipeline. This is the infrastructure play that makes economies of scale real.",
+      "opportunity_sketch": "A campaign orchestration agent that a network marketing manager triggers with a single brief; the agent generates campus-specific content variants, routes them for local approval, schedules publishing across all campus channels, and aggregates performance reporting — collapsing what currently runs as 5-15 independent campus workflows into one.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

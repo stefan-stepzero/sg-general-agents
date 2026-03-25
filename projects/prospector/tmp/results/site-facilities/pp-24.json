@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "site-facilities-asset-inventory-asset-register-maintenance-and-reconciliation-is-manual-and-outdated-dup",
+  "pain_point_label": "Asset Register Maintenance and Reconciliation Are Manual, Outdated, and Frequently Inaccurate",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Asset registers and purchase records are often stored as PDFs, scanned invoices, delivery notes, or printed stocktake sheets. Media parsing can digitize these documents — extracting asset descriptions, serial numbers, purchase dates, and values — feeding them into a central register without manual rekeying. For a 500+ staff multi-campus operator, this directly addresses the data entry bottleneck that causes the register to fall out of date.",
+      "opportunity_sketch": "An intake pipeline that scans delivery notes, warranty cards, and purchase orders via OCR, extracting asset attributes (item, quantity, location, cost) and staging them for register entry or auto-ingestion into a CMMS or spreadsheet.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once purchase documents, maintenance logs, or audit reports are digitized, entity extraction can pull structured asset attributes — make, model, serial number, location, assigned campus, purchase date — and populate or reconcile against the asset register. This directly tackles the failure mode where asset movements and disposals are recorded in emails or maintenance tickets but never reflected in the central register.",
+      "opportunity_sketch": "A processing layer that reads maintenance work orders, disposal emails, and campus transfer records to extract asset identifiers and update the register automatically, reducing the gap between physical reality and recorded data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Multi-campus operators typically have multiple spreadsheets with inconsistent column naming, date formats, and asset categorization across campuses. Data transformation AI can normalize and merge these heterogeneous registers into a single canonical schema — mapping 'Lab Projector', 'projector (lab)', and 'Proj-Lab' to a single standard asset type — which is the prerequisite for any meaningful reconciliation. This addresses the root structural cause of register inaccuracy.",
+      "opportunity_sketch": "A one-time (and ongoing) normalization pipeline that ingests per-campus spreadsheets, maps them to a master schema, deduplicates entries, and flags conflicts for human review before consolidating into a unified asset register.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-visual",
+      "capability_label": "Image & Video Classification",
+      "match_rationale": "Physical stocktakes are infrequent and labor-intensive because verifying assets manually requires staff time across every campus. Visual classification enables a lightweight audit workflow where staff photograph equipment rooms or storage areas with a phone, and AI identifies and counts assets by type — projectors, lab instruments, furniture — without requiring item-by-item manual recording. This directly reduces the cost of reconciliation, making more frequent audits feasible.",
+      "opportunity_sketch": "A mobile app or workflow where campus staff walk through a room photographing equipment; AI classifies and counts asset types and compares totals against the register, surfacing discrepancies as a reconciliation report for review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "An asset register that is never reconciled accumulates systematic anomalies: assets that appear in the register but have been disposed of, assets that exist physically but were never registered, assets that show as on one campus but are physically elsewhere. Anomaly detection applied to asset data patterns — unusual depreciation rates, assets with no maintenance or usage records for years, duplicate serial numbers across campuses — can proactively flag register integrity issues between full stocktakes.",
+      "opportunity_sketch": "A monitoring layer over the asset register that scores each asset record for 'staleness' and inconsistency signals (e.g., no location update in 3+ years, depreciation value at zero but no disposal record), generating a prioritized list for targeted reconciliation rather than a full stocktake.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-semantic",
+      "capability_label": "Semantic Search",
+      "match_rationale": "A key manifestation of this pain point is that staff cannot answer 'do we have a spare projector somewhere in the network?' — leading to unnecessary purchases. Semantic search over a cleaned asset register allows staff to query in natural language ('projector', 'ceiling-mount projector', 'BenQ projector') and find matching assets across all campuses, including items in storage or temporarily unassigned. This directly addresses the unnecessary-purchase failure mode.",
+      "opportunity_sketch": "An internal asset search interface where staff type a plain-language description of equipment needed, and the system returns matching assets from across all campuses with their location and status — enabling cross-campus borrowing before new procurement.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core of the pain is that asset register updates require manual steps that no one prioritizes: receiving a delivery, recording a transfer, logging a disposal. A task automation agent can watch for triggering events — a purchase order approved, a maintenance ticket marked 'disposed', a transfer request completed — and automatically update the asset register, request confirmation from the responsible campus coordinator, and flag unresolved discrepancies. This closes the loop on the systematic failure to update the register.",
+      "opportunity_sketch": "An automation layer connected to email, procurement, and maintenance systems that listens for asset lifecycle events and triggers register updates, routing exceptions to a coordinator for confirmation rather than requiring staff to remember to update the register manually.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

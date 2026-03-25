@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "data-mis-reporting-analytics-outcome-tracking-absent-dup",
+  "pain_point_label": "Student Outcome Tracking & Learning Analytics Absent",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Formative assessment data trapped in LMS exports, paper scan results, and disparate grade books must be normalized into a unified schema before any analysis is possible. This operator lacks the data engineering capacity to perform this manually across 500+ staff and multiple campuses. AI-assisted ETL mapping can handle heterogeneous LMS exports (Moodle, Canvas, proprietary) and produce a clean, analysis-ready dataset.",
+      "opportunity_sketch": "A pipeline that ingests raw LMS gradebook exports and structured survey CSVs, maps them to a canonical student-outcome schema, and loads them into a central store — ready for accreditation reporting or further analytics.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "A significant portion of formative assessment data sits on paper — handwritten rubrics, printed exam sheets, and physical feedback forms. OCR and form-field extraction can digitize this content at scale, converting it into structured records that feed outcome tracking systems. Without this digitization step, paper-based records are permanently invisible to any analytics layer.",
+      "opportunity_sketch": "A document-scanning pipeline with AI-driven handwriting recognition and rubric field extraction that converts physical assessment records into structured rows in the student outcome database.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Once outcome data is structured, the operator's core question — 'which students are at risk of not meeting industry-ready competencies?' — is a propensity modeling problem. Individual student feature vectors (attendance, assessment scores, engagement signals) can predict likelihood of failing to reach graduate threshold, enabling early intervention before accreditation evidence gaps accumulate.",
+      "opportunity_sketch": "An at-risk early-warning model that scores each enrolled student weekly on probability of failing to meet graduate competency standards, surfaced to campus coordinators via a dashboard with recommended interventions.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Employer feedback surveys and graduate employment records can be classified by AI into competency categories and readiness tiers, answering 'Are graduates meeting industry-ready competencies?' at scale. This converts sparse, unstructured feedback signals into accreditation-ready evidence tables without requiring an institutional research team to code responses manually.",
+      "opportunity_sketch": "A classification layer that ingests employer feedback forms and graduate employment surveys and automatically tags each response against the institution's competency framework, producing aggregated outcome reports per cohort and course.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Accreditation bodies require outcome evidence in narrative form — self-assessment reports, continuous improvement plans, and program review documents. With structured outcome data available, LLMs can auto-draft these required narrative sections grounded in the operator's own data, dramatically reducing the time institutional research staff (minimal as they are) spend on compliance documentation.",
+      "opportunity_sketch": "An accreditation report generator that accepts structured outcome metrics and auto-drafts the required narrative sections (e.g., ASQA self-assessment, TEQSA program review), ready for human review and submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff and campus heads routinely need to answer one-off questions about outcomes — 'What was the pass rate for Certificate III in Hospitality at the Brisbane campus last year?' — but lack a reporting team to query the data warehouse. A RAG system over structured outcome data lets non-technical administrators ask natural-language questions and receive grounded, cited answers directly from the institution's own records.",
+      "opportunity_sketch": "A natural-language analytics assistant connected to the institution's outcome data store, allowing campus principals and course coordinators to ask ad-hoc questions about graduate performance, pass rates, and employer feedback without SQL skills.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Collecting post-graduation outcome data (job placement surveys, employer feedback forms, further-study enrollment confirmations) is a multi-step process involving email outreach, form submission, reminder sequencing, and data entry — currently done inconsistently or not at all. A task automation agent can orchestrate the full graduate follow-up workflow end-to-end: send, chase, extract responses, and log structured records without manual coordination.",
+      "opportunity_sketch": "An automated graduate-tracking agent that runs quarterly, sends personalised employment survey emails to cohort graduates, follows up non-responders, parses replies, and writes structured outcome records to the central database — requiring zero staff effort per cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

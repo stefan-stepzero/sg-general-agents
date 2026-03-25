@@ -1,0 +1,1111 @@
+{
+  "company_id": "ipeople",
+  "company_name": "iPeople Inc",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.38,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.3,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Enrollment grew 10% YoY to 74K students and Mapúa holds first-mover brand/ABET positions, suggesting awareness is not the acute pain point; generic plausibility exists for affordable-segment NTC/APEC brands in competitive provincial markets but no profile evidence of an awareness deficit."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile describes a reputation-pull model with strong inbound demand evidenced by 10% enrollment growth; no evidence of prospect engagement conversion problems, making this unlikely given current growth trajectory."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of conversion friction in the profile; 10% enrollment growth and strong brand position suggest funnel health, though multi-campus online enrollment systems (Cardinal EDGE) could harbor application-stage drop-off not directly evidenced."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Dual-tier positioning (premium Mapúa + affordable NTC/APEC) creates genuine segmentation complexity; the APEC/NTC merger and brand consolidation question (profile gap: 'APEC brand fate post-merger unclear') signals one weak signal that targeting clarity is under active review."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.45,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Philippine higher education has structurally elevated first-year attrition rates (~20-30% sector norm); at 74K students across 7 institutions including a recently merged NTC/APEC entity, early dropout risk converges from growth phase + post-merger integration + multi-platform LMS environment (Moodle, Blackboard, Coursera), making this likely without direct evidence."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Coursera integration expanding from 15K to 45K students introduces a risk of passive enrollment without genuine engagement; one weak signal, but no direct evidence of engagement decay in the profile."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Re-enrollment for multi-year degree programs is structurally more stable than subscription models, but the affordable segment (54% of 74K students) is financially sensitive to tuition changes and scholarship availability (UNIFAST TES contribution unquantified per profile gaps)."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-campus expansion and post-merger integration at NTC/APEC (October 2025) create generic plausibility for satisfaction variance without direct evidence of deterioration; growing institution size at 39:1 student-to-employee ratio risks impersonal service."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.55,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly describes active geographic expansion with strong circumstantial evidence: new campus buildings in Cabuyao/Laguna and Mindanao underway, NTC expansion to Bulacan approved, multi-region regulatory navigation (CHED, DepEd) — 3+ converging indicators of geographic entry challenges being actively navigated."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "The Mapúa School of Medicine launched December 2024 and the BS AI Engineering program signal deliberate segment entry into new program categories; convergence of growth phase + diversification strategy makes segment entry friction very likely as a lived experience."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "MMDC (Mapúa Malayan Digital College) represents the online channel in development; Coursera partnership adds a digital distribution layer, providing one weak signal, but no evidence of channel development being a pain point vs a strength."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Expanding into Mindanao (different socioeconomic context from Metro Manila) and merging APEC affordable K-12 into NTC teacher education model requires offer adaptation; scaling phase + regional diversity convergence makes this likely without direct evidence of failure."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.38,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Revenue model is tuition-based recurring (PHP 5.32B), with UNIFAST TES government subsidy as an unquantified but 'meaningful indirect revenue source' per profile — government scholarship policy risk converges with tuition concentration to make this very likely a lived concern for leadership."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Coursera partnership and MMDC digital college suggest experimentation with new delivery models; one weak signal that new monetization is being explored, but no evidence this is a painful gap vs an active development."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'PHP 67B allocated for UNIFAST 2026' and 'policy changes or budget cuts would impact enrollment affordability' — one weak signal of dependency on government scholarship continuity that represents a real sustainability concern."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-institution portfolio (Mapúa premium, NTC teacher ed, UNC regional, MMDC digital) with no disclosed segment P&L creates generic plausibility for portfolio management challenges; profile explicitly notes 'revenue breakdown by institution not available' as a gap."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.54,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.52,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms 'no CTO at holding company level,' outsourced-first tech approach, and a transitional stack (Moodle + Blackboard + Coursera + custom in-house apps) — convergence of minimal engineering org + multi-system environment + scaling across 7 institutions makes automation gaps very likely."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Divisional holding structure with semi-autonomous institutional subsidiaries and an October 2025 merger integration underway strongly suggests redundant administrative processes across the Mapúa, NTC, and UNC subsidiaries — likely without direct evidence."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke org model (iPeople HQ + 7 semi-autonomous institutions) with no unified SIS vendor identified creates strong convergent pattern for cross-institution handoff failures in student records, admissions, and finance."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-campus operation across Metro Manila, Laguna, Mindanao, and Naga with different LMS platforms (Moodle at Mapúa, Blackboard at MMCL) and recently merged institutions creates very likely process execution variance; different academic calendars, standards bodies (ABET vs. standard CHED), and admin systems compound this."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Enrollment growth of 10% YoY and P22B capex plan expansion suggest the organization is managing demand growth reasonably, but dual-principal leadership structure (Vea + Ayala) requiring alignment for strategic decisions provides one weak signal of approval bottlenecks."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.6,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies 'mix of custom in-house apps, Moodle, Blackboard Learn, and modern EdTech integrations' — a transitional stack description with explicitly identified legacy-modern coexistence; Mapúa's 100-year institutional age makes legacy administrative systems very likely."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly identifies fragmented tech: Moodle (Mapúa), Blackboard (MMCL), CARDINAL Plus, custom admissions portal, WordPress corporate site, Coursera API — no unified SIS vendor identified ('core SIS vendor unknown' per profile gaps); 3+ converging indicators of data silo reality."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'homepage of ipeople.com.ph timed out during site scan' — one weak signal; online enrollment systems handling 74K students create load risk but no direct evidence of operational reliability failures."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile assesses security posture as 'basic to intermediate' with 'no evidence of SOC2, ISO27001, penetration testing programs' and low-confidence security assessment; handling 74K student records under Philippine Data Privacy Act with minimal security evidence makes gaps likely."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "No centralized data warehouse or BI platform identified; 'data maturity is operational, not analytically advanced' per profile; 7+ institutions on disparate platforms creates very likely analytics and reporting tooling gaps for holding company oversight."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.54,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states active groundbreaking for new buildings in Cabuyao/Laguna and Mindanao, NTC Bulacan expansion approved, P22B capex plan — this pattern of concurrent multi-site construction is direct evidence of physical capacity limits being actively addressed."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Enrollment growing 10% YoY with 39:1 student-to-employee ratio and AI curriculum push (BS AI Engineering, Coursera GenAI) that requires new faculty capabilities — convergent factors make service delivery scalability a very likely pain point in scaling phase."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous expansion in 4+ geographies, AI curriculum integration, APEC/NTC merger integration, and Medical School launch represent resource competition; scaling phase + multiple concurrent initiatives makes allocation friction likely."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "National rollout strategy is explicit but coverage remains concentrated in Metro Manila with Laguna, Mindanao, and Naga expansions in progress — profile describes approved-but-not-yet-operational Bulacan and Mindanao campuses as convergent evidence of coverage gaps being navigated."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Education institutions have minimal traditional supply chain exposure; key dependencies are faculty talent and technology platforms (Coursera, Alibaba Cloud), not physical supply chains — structurally unlikely given the service delivery model."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.5,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "ABET accreditation enforces rigorous standards at Mapúa but NTC, UNC, and MMDC operate under different accreditation frameworks; post-merger integration of APEC affordable schools into NTC creates very likely standards harmonization challenges across the portfolio."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-institution holding structure with semi-autonomous subsidiaries and no unified quality management system identified in profile; ABET provides rigorous control for Mapúa specifically but the broader portfolio quality control architecture is not described."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile describes materially different institutions: ABET-accredited Mapúa engineering school, affordable K-12 NTC/APEC schools, regional UNC university, digital-only MMDC — different accreditation frameworks, student demographics, and delivery models across 4+ geographic regions make cross-site variance a near-certain reality with direct evidence of structural divergence."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'data maturity is operational, not analytically advanced' with no centralized BI platform; holding company-level student outcome tracking across 74K students from 7 institutions on disparate SIS/LMS systems makes outcome measurement gaps likely."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "ABET and QM certifications at flagship suggest strong quality culture at Mapúa specifically; affordable segment NTC/APEC merger integration creates one weak signal of quality ownership dilution, but overall institutional reputation supports quality commitment."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.42,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.3,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Strong market validation — ABET accreditation, 10% enrollment growth, QS top-100 in SEA, first BS AI Engineering program — provides direct counter-evidence to need misread; extremely unlikely given the evidence of market alignment."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Dual-tier strategy (premium Mapúa + affordable NTC/APEC) is deliberately bifurcated; generic plausibility exists that the affordable segment post-APEC merger may experience some mismatch as APEC K-12 integrates into NTC teacher ed branding, but no direct evidence."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Rapid AI skills demand in Philippine labor market creates one weak signal — iPeople is actively responding (BS AI Engineering, Coursera GenAI) but the pace of labor market change means curriculum-market alignment requires ongoing calibration."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "ABET accreditation, strong licensure exam pass rates, and QS/THE rankings provide third-party validation of value delivery; enrollment growth of 10% YoY contradicts a core value gap hypothesis."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.35,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mapúa's value proposition (ABET + AI-forward + QS rankings) is clear; the dual-brand portfolio (premium Mapúa vs. affordable NTC/APEC) creates generic complexity but no evidence of messaging confusion in the profile."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Philippine HEI market has 1,714 competitors; affordable segment competes in a fragmented market where differentiation is harder to sustain — one weak signal for NTC/APEC tier, though Mapúa's ABET moat is strong and not commoditizable."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "ABET accreditation, AI curriculum, and ASU partnership are all axes that demonstrably matter to Philippine STEM students and employers; differentiation on axes that don't matter is unsupported by evidence."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Coursera and Alibaba Cloud partnerships are 'contractual dependencies, not just relationships' per profile — loss of these would erode a key differentiation plank; ABET accreditation is robust but profile notes partner dependency as a key risk."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.48,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Accreditation cycles (ABET, CHED program recognition) impose structural constraints on curriculum change velocity — a new program requires CHED approval which typically takes 1-2 years; this is a sector-structural factor that makes slow curriculum iteration very likely."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile shows active innovation (BS AI Engineering, Medical School launch, Coursera GenAI) — innovation pipeline appears healthy based on recent launches, making this a low-priority problem; generic plausibility exists for NTC/APEC affordable tier which has less innovation velocity."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Transitional tech stack with legacy Moodle, Blackboard, and custom in-house apps for a 100-year-old institution with no CTO at holding level — convergent factors make technical debt drag on curriculum delivery innovation likely without direct evidence of blockage."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "AI is transforming STEM education faster than traditional CHED accreditation cycles — the profile explicitly notes EDCOM 2 reforms actively reshaping requirements; at 7+ institutions including a 100-year-old engineering school, curriculum relevance decay in non-AI programs is very likely given the pace of AI disruption in engineering education."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.46,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multiple platforms (CARDINAL Plus RFID, Cardinal EDGE admissions, Moodle, Blackboard, Coursera, MapúaX) create fragmented student-facing experience with one weak signal of usability challenges across disparate systems."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Online enrollment via Manila Insight/MMDC and physical application to 7 institutions with different platforms (Blackboard at MMCL, Moodle at Mapúa, custom admissions portal) create convergent factors for onboarding friction — likely given the platform fragmentation and student volume."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "54% affordable-segment enrollment (NTC/APEC) means many students have connectivity and device constraints — Coursera-powered content for 45K students requires internet access that is not universal in Philippines regions like Mindanao and Bicol; convergent evidence makes digital accessibility a likely issue."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Philippine university administrative processes are typically paper-heavy; profile notes online enrollment as a relatively recent adoption — one weak signal that effort-to-value ratio for administrative interactions could be high, but no specific evidence."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-institution merger (APEC into NTC, Oct 2025) creates generic plausibility for students at merged schools experiencing trust erosion during brand and process transitions, but no direct evidence of trust-damaging experiences in the profile."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.54,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.48,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Mapúa's AI-forward ambitions require AI/tech faculty talent that is globally scarce; profile notes 'tech talent is an emerging gap given AI curriculum push' — convergence of specialized faculty demand + Philippine tech talent competition with industry makes sourcing very likely a pain point."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Ayala Group affiliation is a 'significant employer brand amplifier' and Mapúa's century-old reputation attracts faculty, but profile directly states 'not a top employer for tech talent — that is an emerging gap'; one direct signal but scoped to tech talent only."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "ABET accreditation requires qualified faculty assessment — faculty hiring is likely systematic for engineering; generic plausibility for selection gaps at NTC/APEC affordable tier where hiring volume and speed are higher, but no specific evidence."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 39:1 student-to-employee ratio suggesting reliance on adjunct/part-time faculty; competing with Philippine tech industry for AI/data science faculty at university salaries in a market where tech companies pay 3-5x academic salaries makes offer competitiveness very likely to be a problem for the AI curriculum ambitions."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Dual-principal leadership structure and divisional holding with semi-autonomous institutional presidents creates one weak signal of approval coordination complexity for senior faculty hires, but no direct evidence of hiring process dysfunction."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.5,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Academic career ladders in Philippine HEIs are typically rigid and slow; holding company structure with 7 semi-autonomous institutions creates limited internal mobility pathways — convergent factors make career growth friction likely for non-faculty administrative staff."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Rapid 10% enrollment growth with only 2.54% headcount growth (+47 employees) and major concurrent initiatives (merger, 4-geography expansion, AI curriculum) suggests increasing workload per employee — convergent signals of workload pressure making work experience satisfaction likely to be strained."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Philippine public/semi-public HEI salaries are generally below private sector equivalents; with AI curriculum requiring tech-adjacent faculty who command market premiums, compensation competitiveness is a likely ongoing tension, though Ayala brand partially compensates."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-campus with semi-autonomous institutions and rapid expansion — generic plausibility for manager relationship quality variance across sites, but no specific evidence of manager relationship problems in the profile."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission-driven framing ('partner in nation-building') and education sector employment tend to attract purpose-motivated staff; but APEC/NTC merger integration may disrupt belonging for absorbed employees — one weak signal during transition."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.6,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "No CTO or CHRO visible at holding company level; AI curriculum expansion requires new faculty profiles (AI/ML engineers with PhDs) that differ dramatically from traditional engineering faculty — convergent factors make systematic skills gap identification very likely to be inadequate given org's limited corporate function."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Irony of being an education company — professional development for own staff is generically plausible but not evidenced; Ayala Group affiliation may provide corporate learning programs; no specific evidence of internal training deficiency."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Fred Ayala serves dual roles (iPeople President/COO + NTC President/CEO), suggesting leadership pipeline thinness — the dual-role concentration of a key executive across holding company and operating entity is a direct signal of pipeline stress in specific leadership roles."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states faculty must adopt Coursera-powered AI tools (expanding from 15K to 45K students), Alibaba Cloud integrations, and new AI curriculum delivery — with 1,895 employees across traditional academic roles and 'no CTO at holding company level,' technology upskilling for faculty and admin is a near-certain active challenge with 3+ converging indicators."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.56,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes values-prominent culture ('integrity, responsibility, innovation') with stated mission-to-action alignment (54% affordable enrollment matches accessibility mission); no evidence of values-behavior gap in the profile."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Divisional holding structure with 7 semi-autonomous institutions, dual-principal leadership (Vea + Ayala), Fred Ayala serving dual CEO roles, and P22B conglomerate capex — convergent factors of structural complexity at a scaling holding company make organizational design tension very likely."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-campus across 4 Philippine regions with different tech stacks, semi-autonomous institutional leadership, and no evident unified communication platform — convergence of geographic dispersion + divisional isolation + minimal corporate functions makes cross-institution collaboration friction very likely."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Concurrent changes include: APEC/NTC merger (Oct 2025), AI curriculum rollout across 45K students, 4-geography physical expansion, Medical School launch, Coursera scale-up from 15K to 45K — 5+ simultaneous major change initiatives at a 100-year-old institution with traditional academic culture is strong circumstantial evidence of change capacity strain."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "54% affordable segment enrollment signals commitment to access equity at the student level, but faculty gender diversity and leadership diversity in Philippine HEIs is a sector-generic concern; no specific evidence of inclusion gaps in the organizational profile."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.57,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.66,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "No specific compliance gaps cited in the profile, but operating under 5 simultaneous regulators (CHED, DepEd, PSE/SEC, ABET, NPC) across 7 institutions in a scaling phase makes the probability of some remediation activity likely — convergent regulatory complexity without direct evidence of citations."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'EDCOM 2 reforms and CHED program reviews are actively reshaping regulatory requirements' and PCC regulated the Ayala stake increase — this is direct evidence of regulatory change creating active adaptation challenges, with CHED, DepEd, and PSE governance requirements simultaneously evolving."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile identifies ABET accreditation as a structural dependency ('losing it would be catastrophic') and describes it as ongoing with continuous requirements; ABET involves rigorous periodic reviews, and with AI curriculum expansion changing program delivery, maintaining ABET compliance during curriculum transformation is a high-stakes active challenge."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "PSE listing requires SEC quarterly disclosures, PSE governance compliance, and annual reports; multiple CHED program recognitions require annual reporting; multi-regulator reporting at scale (7 institutions + PSE + NPC) with no evident centralized compliance function makes this very likely resource-intensive."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly rates regulatory burden as 'Heavy — multi-regulator: CHED, DepEd, PSE/SEC, ABET, NPC' and notes compliance as a 'key dependency' — with 1,895 total employees managing 7 institutions, the ratio of compliance staff to regulatory obligation surface area is a strong circumstantial signal of compliance capacity strain."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.34,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No litigation mentioned in the profile; PSE-listed conglomerate-backed institutions tend to settle proactively; unlikely without any evidence."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Coursera, ASU, and Alibaba Cloud partnerships are 'integral to AI curriculum differentiation — contractual dependencies, not just relationships' per profile; plus P22B capex commitments across multiple construction projects — convergent contract exposure from partner-dependent strategy makes this a likely area of active management."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "APEC/NTC merger integration (Oct 2025) involving workforce consolidation creates generic plausibility for employment law exposure during restructuring; one weak signal but no direct evidence of claims or violations."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "AI curriculum content co-developed with Coursera and Alibaba Cloud creates IP ownership questions around curriculum materials; generic plausibility but no evidence of active IP disputes."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Operating physical campuses with laboratories creates premises liability exposure; Medical School launch (Dec 2024) adds clinical liability dimensions; generically plausible for a multi-campus education operator but no specific evidence in profile."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.6,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile rates security posture as 'basic to intermediate' with 'no evidence of SOC2, ISO27001, penetration testing programs or dedicated security engineering' — this is a direct weak-evidence assessment of cybersecurity adequacy gaps in an organization holding data for 74K students."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Philippine Data Privacy Act (RA 10173) requires NPC registration and DPO for 74K student records; profile states 'data security/privacy compliance program maturity unknown — no evidence of NPC audit status' as a direct profile gap, making compliance adequacy very likely uncertain."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Fragmented SIS/LMS across 7 institutions (unknown core SIS vendor per profile gaps), multiple data systems (CARDINAL Plus, Moodle, Blackboard, Coursera), and no centralized data warehouse make data governance and quality inconsistencies very likely."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Coursera receives learning analytics data for 45K students; Alibaba Cloud hosts AI curriculum infrastructure; student data flows to a US-based LMS company (Coursera) and Chinese cloud provider (Alibaba) — cross-border data transfer under Philippine DPA creates very likely third-party data risk without evidence of DPAs or assessments."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "No incident response evidence in profile; 'basic to intermediate' security posture assessment and no evidence of formal breach notification planning makes preparedness gaps likely given Philippine NPC mandatory breach notification requirements for 74K student records."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.38,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Operating K-12 schools (NTC/APEC) with minors under DepEd regulation creates mandatory safeguarding obligations; affordable-segment school populations include more vulnerable students — generically plausible given the K-12 footprint but no evidence of failures."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "PSE-listed company with Ayala and Yuchengco backers has high media visibility; no negative media coverage mentioned in profile; strong third-party validation (ABET, QS) supports trust; generic exposure risk for a large publicly-traded institution."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Conglomerate governance with dual controlling shareholders (Yuchengco + Ayala) has incentive for institutional reputation protection; no evidence of ethical conduct issues in the profile; generic plausibility only."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "PSE minority shareholders, CHED/DepEd regulators, ASU/Coursera/Alibaba partners, and both controlling conglomerate shareholders must all be managed simultaneously; dual-principal governance with potentially divergent Yuchengco/Ayala strategic priorities creates a convergent pattern of stakeholder alignment challenges very likely to require active management."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.4,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.35,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "CHED regulates tuition increases in the Philippines, limiting pricing power for private HEIs; one weak signal that regulatory tuition constraints combined with UNIFAST TES government subsidies (which effectively set affordability thresholds) constrain pricing freedom."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Fixed-cost-heavy asset-intensive model with P22B capex plan and active physical expansion across 4 regions; EBITDA margin of 28.68% is healthy but the capex cycle and multi-site expansion create convergent cost structure pressure likely to require management."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "54% affordable-segment enrollment could trend higher as NTC/APEC merger integrates more affordable students; however, premium Mapúa enrollment growing with strong brand suggests no evidence of mix degradation toward lower-margin programs."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "ABET accreditation and international rankings create premium value that may not be fully priced relative to Ateneo/DLSU competitors; generic plausibility but profile notes pricing position is 'mid-market premium' relative to top-tier schools by design."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.35,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Conglomerate-backed PSE-listed company with P22B parent capex commitment and strong earnings growth (31% YoY) — capital access is structurally strong; this problem is extremely unlikely given the Ayala/Yuchengco backing and PSE listing."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Tuition-based recurring revenue with semester-start collection creates cash flow cyclicality; 28-31% dividend payout with strong retained earnings signals no liquidity stress; generic semester-cycle cash management is plausible but not a problem."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous capital commitments across: Laguna campus build, Mindanao expansion, Bulacan NTC campus, Medical School launch, AI curriculum tech investment, and APEC/NTC merger integration — convergence of competing capital needs at a scaling holding company without disclosed capital allocation framework makes prioritization friction very likely."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "PSE minority shareholders, dual controlling shareholders (Yuchengco + Ayala) with potentially different return horizons, and PCC oversight of ownership changes create a structural stakeholder management challenge; the PE ratio of ~6x suggests market discount that management needs to explain to investors."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.53,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies 'revenue breakdown by institution not available (Mapúa vs NTC vs UNC vs MMCL etc.)' and 'Annual Report PDF (2024) not directly accessible — detailed capex, debt, and segment P&L unavailable' as explicit gaps — these gaps in external visibility suggest internal segment reporting may also be limited."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Tuition-based recurring revenue with strong historical growth provides relatively predictable base; however, P22B capex plan forecasting across multiple concurrent projects and UNIFAST TES subsidy exposure create forecasting complexity; one weak signal."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states 'revenue breakdown by institution not available' and 'UNIFAST TES revenue contribution as % of total tuition unknown'; with 7 institutions spanning premium (Mapúa) to affordable (NTC/APEC) models and no disclosed unit economics, the holding company likely lacks or doesn't publish institution-level P&L — direct evidence of unit economics opacity."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-institution scaling with 7 semi-autonomous subsidiaries requiring coordinated budgeting with P22B conglomerate capex plan — convergent complexity of divisional budgeting without central finance infrastructure evidence makes this likely to require active management."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.38,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Coursera and ASU partnerships 'likely priced in USD — PHP depreciation increases partnership costs' per profile; forex exposure on USD-denominated technology partnerships in a peso-revenue business creates a convergent FX risk that is explicitly identified."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "PSE listing requires SEC filings and audit compliance; 'NTC post-merger first combined financials not yet available' per profile gaps suggests merger accounting complexity; one weak signal of consolidation-driven financial compliance complexity."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-entity structure with 7 semi-autonomous institutions and no disclosed internal audit function creates generic plausibility for internal control adequacy questions; but conglomerate backing (Ayala/Yuchengco governance standards) provides some institutional discipline."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "PSE-listed company with Ayala and Yuchengco legal and tax advisors — sophisticated conglomerate shareholders are highly unlikely to leave structural optimization uncaptured; ROE of 6.49% and ROIC of 4.48% are modest but asset-heavy nature explains this without structural inefficiency."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.5,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile lists 7 simultaneous strategic priorities: geographic expansion (Laguna, Mindanao, Bulacan), APEC/NTC merger integration, Medical School launch, AI curriculum scale-up (15K to 45K on Coursera), BS AI Engineering rollout, ASU partnership, Alibaba Cloud integration — 3+ converging indicators of initiative proliferation creating resource dilution risk in a 1,895-employee organization."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dual-principal leadership structure (Yuchengco Chairman/CEO Dr. Vea + Ayala President/COO Fred Ayala) with potentially divergent conglomerate strategic agendas — convergent factors of dual controlling shareholders and professional management representing different institutional interests make leadership alignment a very likely active management challenge."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Holding company overseeing 7 semi-autonomous institutions with no unified corporate functions visible in profile — translating iPeople holding-level strategy into institution-level execution across Mapúa, NTC, UNC, MMCL, MMCM, and MMDC with independent institutional presidents is a convergent execution gap risk."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission is relatively clear ('quality and accessible education across all segments') and the dual-tier strategy (premium + affordable) is deliberately maintained; Medical School launch represents an extension but no evidence of incoherent mission drift."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.38,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mapúa's ABET accreditation and QS ranking moats are durable but other Philippine universities are pursuing similar AI partnerships; one weak signal that fast-follower dynamics could erode first-mover AI positioning over 3-5 years."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI-native online education platforms (Coursera's own credential programs, international degree providers, Philippine edtech startups) represent substitute threats to traditional degree programs; iPeople is responding actively (MMDC, Coursera partnership) but the convergent threat from digital-native competitors makes this a real, likely concern."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'competitive positioning vs other Philippine education groups not directly researched' as a gap — if external research couldn't find evidence of competitive benchmarking, weak internal competitive intelligence is plausible but not confirmed."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "10% enrollment growth, QS top-100, first BS AI Engineering in PH, #2 in Asia on Coursera GenAI — these are market-leading advancing positions, not stagnation; this problem is extremely unlikely given the growth evidence."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.56,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "MMDC digital college represents a business model experiment (online-only delivery) alongside the traditional campus model; Coursera credit integration (20-30% of credits) blurs traditional delivery boundaries — one weak signal of business model transition underway but not yet causing pain."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly describes AI-forward positioning as a strategic priority: BS AI Engineering (first in PH), Coursera GenAI expansion from 15K to 45K, Alibaba Cloud integration — with 'no CTO at holding company level' and a 'transitional' tech stack, executing a technology-led transformation at this scale without technology leadership at the top is a high-confidence active challenge."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly documents: APEC Schools merged into NTC (October 2025), creating 24K+ student combined entity; Ayala deepened stake to 36.3% in Aug 2025; this is direct evidence of active structural reorganization with M&A integration challenges actively being navigated."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Innovation record is strong (first BS AI Engineering, first QM-certified PH institution, Medical School launch) suggesting innovation strategy is working; but 100-year institutional culture with academic tenure and CHED accreditation cycles creates structural constraints on bolder innovation — one weak signal."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No evidence of crisis — strong financial performance, accelerating growth, and positive stakeholder relationships make post-crisis recovery structurally inapplicable to the current context."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.53,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies Coursera, ASU, and Alibaba Cloud as 'integral contractual dependencies'; managing multiple critical vendor-partner relationships with international technology companies from a Philippine education holding company with no CTO creates convergent alliance management complexity — very likely to require active senior attention."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Ayala and Yuchengco conglomerate ecosystems provide some natural positioning advantage; ASU partnership enables international ecosystem reach — iPeople is clearly ecosystem-engaged, but strategic ecosystem positioning beyond current bilateral partnerships is not evidenced."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Active regulatory relationships with CHED (EDCOM 2 reforms), DepEd, PSE, and ABET create ongoing policy management requirements; 'EDCOM 2 reforms actively reshaping regulatory requirements' per profile — very likely to require ongoing government affairs investment as a scaling PSE-listed education operator."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Expanding into new geographic communities (Mindanao, Bulacan) with multi-campus presence requires community social license; Mapúa centennial and 'partner in nation-building' mission provide engagement platform, but geographic expansion brings new community stakeholders requiring active engagement."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.52,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.45,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Dual-conglomerate board (Yuchengco + Ayala nominees) likely has strong financial and business expertise but may lack independent technology or AI governance expertise — one weak signal given the AI-forward strategic agenda, but conglomerate governance typically ensures capable board composition."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Dual controlling shareholders create structural incentive for substantive board engagement (each family protects its investment); no evidence of rubber-stamping or poor board dynamics; generic plausibility only for a large multi-institution holding company."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dr. Vea (Yuchengco) as Chairman/CEO with Fred Ayala (Ayala) as President/COO means the two principals represent board-side interests directly in management — this blurs board-management boundaries and creates convergent risk of information asymmetry or principal-agent tension, making board-management relationship complexity likely."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "PSE listing mandates formal governance framework compliance; PCC oversight demonstrated in stake increase approval; adequate institutional governance is likely given public listing requirements, but rapid M&A activity (APEC merger, stake increase) may stress governance documentation."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.48,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Fred Ayala (Harvard MBA, Ayala MD, ASU Global Fellow) is described as sophisticated and internationally oriented; Dr. Vea as Chairman/CEO brings academic/institutional experience; no evidence of leadership capability gaps in the profile — generic plausibility for scale transition challenges."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dual-principal structure where Chairman/CEO (Vea, Yuchengco) and President/COO (Ayala, Ayala Corp) represent competing conglomerate shareholders — structural incentive for occasional misalignment exists; convergent factors of dual-principal governance at a scaling organization make executive cohesion challenges likely without direct evidence."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states 'no CTO at holding company level' while executing AI-forward transformation; 'Director of IT at campus level only'; pursuing BS AI Engineering, Coursera GenAI for 45K students, Alibaba Cloud integration without technology executive leadership is direct evidence of a functional leadership gap in the most strategically critical area."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Fred Ayala serving dual roles (iPeople President/COO + NTC President/CEO) represents a concentration of key leadership; Ayala deepened stake in Aug 2025 suggesting long-term commitment, but succession depth for the dual-role executive is a convergent concern for an organization this size."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.56,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Holding company + 7 semi-autonomous institutional subsidiaries with their own institutional presidents + dual-principal holding leadership (Vea + Ayala) creates a multi-layer decision architecture — convergent factors of holding vs. subsidiary mandate overlap make decision rights clarity likely to be an active pain point."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "PSE board governance requirements, dual conglomerate shareholder alignment needed for strategic moves (PCC review took time for Ayala stake increase), plus institutional CHED/ABET processes create structural multi-layer approval requirements — very likely slower decision cycles than the growth ambitions require."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-institution divisional structure with no unified data platform and 'data maturity operational, not analytically advanced' — holding company leadership likely receives institutional-level aggregates rather than real-time operational visibility, making information flow to decision-makers very likely suboptimal."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Semi-autonomous institutional subsidiaries with own boards/presidents create accountability diffusion; convergent risk that holding-level decisions don't cascade clearly into institutional execution, but conglomerate governance discipline likely mitigates this partially."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "ABET accreditation, QS top-100, enrollment growth, and successful international partnership track record suggest sound strategic decision-making; no evidence of systematically poor judgment; generic plausibility only for speed-vs-quality tradeoffs in a scaling environment."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.58,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dual controlling shareholders (Yuchengco majority + Ayala 36.3%) create a structural concentration of power that PSE minority shareholders cannot easily challenge; PCC oversight demonstrated; this is a sector-normal conglomerate governance structure but still represents convergent power concentration."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Philippine conglomerate JV governance structures typically involve informal pre-meetings between controlling family groups before formal board sessions — the Yuchengco/Ayala joint ownership structure makes back-channel governance between the two conglomerates very likely, even if not dysfunctional."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Fred Ayala holds irreplaceable relationship capital: ASU Global Fellow, Ayala Group Managing Director, Harvard MBA, architect of the Coursera/ASU/Alibaba partnership strategy — profile describes him as 'the right person for partnerships, strategic initiatives, and external relationships'; if he departed, the partnership ecosystem would be at direct risk. Direct evidence of key-person dependency."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes no pricing disclosure, no institution-level P&L, no detailed capex breakdown despite PSE listing; 'Annual Report PDF not directly accessible' suggests selective disclosure practices — convergent factors of limited external transparency from an ostensibly public company."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "regulatory-compliance-change-adaptation",
+      "transformation-structural",
+      "technology-infrastructure-integration-silos",
+      "strategic-clarity-priority-overload",
+      "transformation-technology"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 0,
+      "high": 15,
+      "medium": 60,
+      "low": 10,
+      "na": 0
+    }
+  }
+}

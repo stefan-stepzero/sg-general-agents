@@ -1,0 +1,480 @@
+<div class="analysis-section" id="cross-company-opportunities">
+
+  <h2 style="font-size:22px; font-weight:700; margin-bottom:6px; letter-spacing:-0.02em;">Cross-Company Product Opportunities</h2>
+  <div class="section-note" style="font-size:13px; margin-bottom:24px;">
+    Six product concepts derived directly from the cross-analysis data. Ranked by salience-weighted opportunity score.
+    All six target problem sub-categories with heat ≥ 50 across five or more companies.
+    These organisations sit on transitional tech stacks — no ML engineering teams, limited data infrastructure.
+    Products must be deployable as managed services or low-integration SaaS, not self-hosted ML pipelines.
+  </div>
+
+  <!-- PRODUCT 1 -->
+  <div class="card" style="margin-bottom:24px; border-left:3px solid #f59e0b;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#f59e0b; margin-bottom:4px;">Opportunity #1 — Talent &amp; People · Skills &amp; Development</div>
+        <div class="card-title" style="font-size:19px; letter-spacing:-0.02em;">Staffroom</div>
+        <div style="font-size:13px; color:var(--text-muted); margin-top:2px;">AI-powered educator performance and professional development intelligence for multi-site school networks</div>
+      </div>
+      <div style="text-align:right; flex-shrink:0; margin-left:20px;">
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:2px;">Opp. Score</div>
+        <span class="heatmap-cell hm-hot" style="width:auto; padding:0 10px; font-size:14px;">45</span>
+      </div>
+    </div>
+
+    <p class="section-note" style="font-size:13px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+      Multi-site school operators are drowning in educator appraisal cycles they cannot process at scale.
+      Catholic Schools Parramatta Diocese manages 3,500–5,000 staff across 80+ campuses through spreadsheet-based appraisal tracking that does not connect to NESA registration databases or professional learning records.
+      PHINMA runs 74,000 students across distributed Philippine campuses with no holding-company HR analytics layer — its Director of IT has no CTO peer to drive integration.
+      The problem is not that these organisations lack ambition; it is that education-specific HR schemas (teaching area, accreditation status, professional learning hours, pastoral observation notes) are invisible to generic HRIS copilots.
+      Staffroom ingests fragmented HR exports, appraisal documents, and registration data, normalises them against national teaching standards (AITSL, DepEd, CHED), and surfaces a ranked principal dashboard: who needs a development conversation, who is a flight risk, whose certification lapses in the next 90 days.
+    </p>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Companies — Pain Point Score</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip hot">CSPD 68</span>
+        <span class="cluster-chip hot">PHINMA 63</span>
+        <span class="cluster-chip hot">School for Life 60</span>
+        <span class="cluster-chip warm">iPeople 60</span>
+        <span class="cluster-chip warm">Rising Academies 55</span>
+        <span class="cluster-chip warm">Kinetic 55</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">AI Capabilities Combined</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip warm">Summarization &amp; Condensation 78</span>
+        <span class="cluster-chip warm">Data Transformation &amp; Structuring 72</span>
+        <span class="cluster-chip warm">Time Series Forecasting 72</span>
+        <span class="cluster-chip warm">Risk Scoring &amp; Assessment 70</span>
+        <span class="cluster-chip warm">Resource Allocation &amp; Scheduling 72</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">The Moat</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        Salesforce HR Cloud and Workday do not encode AITSL graduate-to-proficient-to-highly-accomplished teaching standards, DepEd RPMS appraisal matrices, or the concept of a teaching area scarcity premium.
+        They also require a full IT integration project that a 15-person school IT team cannot execute.
+        The moat here is <em>schema depth</em> (education-specific ontology built in) and <em>deployment model</em> (CSV upload or lightweight API connector to TechOne/FACES/Coursera, not a months-long ERP integration).
+        The second moat is corpus: each customer's appraisal data trains institution-specific risk signals that improve over time and cannot be replicated by a competitor starting fresh.
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Entry Path</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        <strong>Phase 1 — Consulting engagement (4–6 weeks, $25–40K):</strong> Map HR data sources, appraisal process, and registration databases at one site. Deliver a static risk dashboard as a proof of concept using exported data.<br>
+        <strong>Phase 2 — Pilot (3 months, $8–12K/month retainer):</strong> Deploy live-connected Staffroom for 1–2 regions (e.g. CSPD's Blacktown corridor or PHINMA Mapúa Manila). Instrument principal usage, measure appraisal cycle time reduction.<br>
+        <strong>Phase 3 — Product ($3–6K/month per network):</strong> Self-service SaaS with standard connectors to TechOne, HRIS exports, and NESA/DepEd APIs. Expansion within network requires no additional sales motion.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="card" style="margin-bottom:24px; border-left:3px solid #f59e0b;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#f59e0b; margin-bottom:4px;">Opportunity #2 — Growth &amp; Market · Revenue &amp; Funding Diversification + Market Expansion</div>
+        <div class="card-title" style="font-size:19px; letter-spacing:-0.02em;">Enrolflow</div>
+        <div style="font-size:13px; color:var(--text-muted); margin-top:2px;">Enrollment intelligence platform — from inquiry signal to cohort yield forecast — built for education organisations in price-sensitive markets</div>
+      </div>
+      <div style="text-align:right; flex-shrink:0; margin-left:20px;">
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:2px;">Opp. Score</div>
+        <span class="heatmap-cell hm-hot" style="width:auto; padding:0 10px; font-size:14px;">41</span>
+      </div>
+    </div>
+
+    <p class="section-note" style="font-size:13px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+      Revenue diversification (heat 57, 5 companies) and market expansion (heat 51, 5 companies) share a common root cause: these organisations cannot predict which students will convert, re-enrol, or drop out before it happens.
+      Rising Academies operates 400+ low-fee private schools in West Africa where the conversion decision happens via SMS and community word-of-mouth, not a CRM funnel.
+      School for Life and WISE both score 78 and 70 respectively on revenue diversification — their funding models are aid-dependent and they need to demonstrate cohort retention to unlock the next grant tranche.
+      iPeople's STEM programs in the Philippines compete against Mapúa (now PHINMA) and ASU partnerships; their acquisition funnel is driven by academic-cycle timing that generic marketing tools do not understand.
+      Enrolflow classifies inquiry signals from SMS, email, and WhatsApp by intent and dropout risk, forecasts cohort yield through the academic calendar, and surfaces intervention queues for admissions staff — no data science team required.
+    </p>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Companies — Pain Point Score</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip hot">School for Life 78</span>
+        <span class="cluster-chip hot">WISE 70</span>
+        <span class="cluster-chip hot">Rising Academies 68</span>
+        <span class="cluster-chip warm">Acasus 63</span>
+        <span class="cluster-chip warm">PHINMA 53</span>
+        <span class="cluster-chip warm">Kinetic 45</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">AI Capabilities Combined</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip warm">Text Classification 72</span>
+        <span class="cluster-chip warm">Time Series Forecasting 70</span>
+        <span class="cluster-chip warm">Structured Data Classification 68</span>
+        <span class="cluster-chip warm">Regression &amp; Quantitative Estimation 68</span>
+        <span class="cluster-chip warm">Recommendation Systems 68</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">The Moat</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        HubSpot and Salesforce Education Cloud model a standard SaaS sales funnel — not the West African school enrollment decision, which involves parental income proxies, school-year periodicity, government subsidy eligibility (RA 10931 in the Philippines), and community-level outreach signals.
+        The dropout-risk classifier must be trained on education-specific behavioural patterns (fee payment gaps, attendance dips before re-enrolment windows), not e-commerce churn.
+        The data network effect is significant: cross-institution signal aggregation (opt-in, anonymised) improves forecast accuracy for any individual operator, creating a compounding advantage that a first-mover can sustain.
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Entry Path</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        <strong>Phase 1 — Consulting engagement (6–8 weeks, $30–50K):</strong> Audit enrollment data pipeline at Rising Academies or PHINMA. Build a cohort yield regression on historical data; present findings to admissions leadership.<br>
+        <strong>Phase 2 — Pilot (4 months, $10–15K/month):</strong> Deploy real-time classifier on one intake cycle. Measure actual vs. forecast yield and intervention conversion rate.<br>
+        <strong>Phase 3 — Product ($4–8K/month per institution):</strong> Multi-channel inbox connector (WhatsApp Business API, email, SMS gateway) with academic-calendar-aware forecasting engine. LMIC pricing tier at $1–2K/month for organisations in Sub-Saharan Africa.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="card" style="margin-bottom:24px; border-left:3px solid #d4a44a;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d4a44a; margin-bottom:4px;">Opportunity #3 — Financial · Financial Visibility &amp; Planning</div>
+        <div class="card-title" style="font-size:19px; letter-spacing:-0.02em;">GrantLens</div>
+        <div style="font-size:13px; color:var(--text-muted); margin-top:2px;">Grant compliance and multi-source funding intelligence for education organisations navigating complex government and donor reporting</div>
+      </div>
+      <div style="text-align:right; flex-shrink:0; margin-left:20px;">
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:2px;">Opp. Score</div>
+        <span class="heatmap-cell hm-warm" style="width:auto; padding:0 10px; font-size:14px;">37</span>
+      </div>
+    </div>
+
+    <p class="section-note" style="font-size:13px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+      Financial visibility (heat 51, 5 companies) is the third-ranked opportunity by score, but it is particularly acute for the development-sector and government-funded organisations in this cohort.
+      Acasus operates across 20+ countries advising governments on education reform — its CFO must track grant conditions, restricted vs. unrestricted budget pools, and donor acquittal timelines across dozens of concurrent engagements.
+      School for Life (heat 63 on financial visibility) and Rising Academies (55) depend almost entirely on donor and impact-investor funding; fee default propensity modeling and grant compliance tracking are survival-level requirements, not optimisation plays.
+      PHINMA navigates RA 10931 government tuition subsidies, CHED funding rules, PSE disclosure obligations, and donor grant conditions simultaneously — today this is a manual document-review exercise.
+      GrantLens is a RAG-over-funding-agreements layer: ingest grant agreements, government funding determination letters, audit findings, and donor reporting templates; allow finance staff to query compliance obligations in plain language with cited source passages; and alert on upcoming reporting deadlines and budget utilisation thresholds.
+    </p>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Companies — Pain Point Score</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip hot">School for Life 63</span>
+        <span class="cluster-chip warm">PHINMA 55</span>
+        <span class="cluster-chip warm">Rising Academies 55</span>
+        <span class="cluster-chip warm">Acasus 53</span>
+        <span class="cluster-chip warm">iPeople 53</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">AI Capabilities Combined</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip warm">Retrieval-Augmented Generation 72</span>
+        <span class="cluster-chip warm">Summarization &amp; Condensation 62</span>
+        <span class="cluster-chip warm">Propensity &amp; Behavioral Modeling 62</span>
+        <span class="cluster-chip warm">Constraint Satisfaction &amp; Configuration 62</span>
+        <span class="cluster-chip warm">Resource Allocation &amp; Scheduling 62</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">The Moat</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        Generic document Q&amp;A tools (Notion AI, Microsoft Copilot) have no concept of Commonwealth recurrent grants, CHED-mandated program funding floors, or donor reporting acquittal schedules.
+        The value is not in the RAG technology — it is in the <em>document taxonomy</em> (knowing that a "Programme Memorandum" from DFAT and an "Annual Grant Determination" from the NSW Department of Education are structurally equivalent funding instruments) and the <em>compliance ontology</em> (knowing which clauses trigger reporting obligations vs. spending restrictions).
+        This is a domain knowledge moat that takes two to three client engagements to build and cannot be replicated by a general-purpose tool without similar investment.
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Entry Path</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        <strong>Phase 1 — Consulting engagement (3–4 weeks, $15–25K):</strong> Audit funding instrument portfolio at School for Life or Acasus. Manually tag compliance obligations and build initial ontology. Deliver a structured compliance calendar as the artefact.<br>
+        <strong>Phase 2 — Pilot (3 months, $6–10K/month):</strong> Deploy GrantLens over the live document corpus. Finance staff test Q&amp;A queries; measure time-to-answer vs. baseline manual review.<br>
+        <strong>Phase 3 — Product ($2–4K/month per organisation):</strong> Lightweight web application — document upload or Google Drive connector, compliance Q&amp;A interface, deadline alert digest. No ML infrastructure required on client side.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="card" style="margin-bottom:24px; border-left:3px solid #d4a44a;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d4a44a; margin-bottom:4px;">Opportunity #4 — Operations &amp; Delivery · Technology &amp; Infrastructure</div>
+        <div class="card-title" style="font-size:19px; letter-spacing:-0.02em;">SiteIQ</div>
+        <div style="font-size:13px; color:var(--text-muted); margin-top:2px;">Multi-site operational risk triage for distributed school and campus networks — prioritise central support where it matters most</div>
+      </div>
+      <div style="text-align:right; flex-shrink:0; margin-left:20px;">
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:2px;">Opp. Score</div>
+        <span class="heatmap-cell hm-warm" style="width:auto; padding:0 10px; font-size:14px;">19</span>
+      </div>
+    </div>
+
+    <p class="section-note" style="font-size:13px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+      Technology and infrastructure (heat 52, 5 companies) ranks lower by salience-weighted score because operational problems feel solvable through management effort — but for organisations running 80–400+ sites, that assumption breaks down.
+      Rising Academies cannot fly a central support officer to 400 schools in Sierra Leone, Liberia, and Rwanda to assess which ones need urgent intervention; it needs a ranked risk list.
+      PHINMA (heat 62 on operations) runs distributed campuses from Manila to Cagayan de Oro with a campus-level Director of IT and no holding-company operations analytics.
+      CSPD manages 80+ schools across Western Sydney through a hub-and-spoke model where the central system office is the only oversight layer — and it is currently blind to which schools are heading toward a staffing or welfare incident.
+      SiteIQ aggregates operational signals (attendance data, staff absence rates, maintenance ticket volumes, resource utilisation) from each site, applies a composite risk score, and surfaces a weekly ranked list of sites needing central support. The input is CSV exports or lightweight LMS/SIS API connections — not a custom data warehouse build.
+    </p>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Companies — Pain Point Score</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip hot">PHINMA 62</span>
+        <span class="cluster-chip warm">iPeople 60</span>
+        <span class="cluster-chip warm">School for Life 58</span>
+        <span class="cluster-chip warm">Kinetic 54</span>
+        <span class="cluster-chip warm">CSPD 52</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">AI Capabilities Combined</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip warm">Risk Scoring &amp; Assessment 74</span>
+        <span class="cluster-chip warm">Structured Data Classification 72</span>
+        <span class="cluster-chip warm">Regression &amp; Quantitative Estimation 72</span>
+        <span class="cluster-chip warm">Summarization &amp; Condensation 70</span>
+        <span class="cluster-chip warm">Text Classification 70</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">The Moat</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        Microsoft Power BI and generic BI dashboards can display site-level metrics but cannot rank sites by composite risk or recommend the next action.
+        The moat is the <em>education-specific risk model</em>: the weighting between a staffing gap, a welfare incident backlog, and a resource shortfall is not obvious without domain knowledge — and the model must account for school-year periodicity (term 4 pressure is categorically different from term 1).
+        The secondary moat is deployment model: LMIC school networks cannot run a cloud data warehouse. SiteIQ must work off periodic exports and produce actionable output within minutes, not after a BI engineer configures a pipeline.
+        Honest limitation: Rising Academies' 400-school network in West Africa may lack the structured data collection infrastructure to feed the model reliably — this is better suited to PHINMA and CSPD as initial customers.
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Entry Path</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        <strong>Phase 1 — Consulting engagement (4–6 weeks, $20–35K):</strong> Identify available operational data sources at PHINMA or CSPD. Define the risk signal taxonomy. Deliver a manual risk-ranked site list as a proof of concept using one term's data.<br>
+        <strong>Phase 2 — Pilot (3 months, $8–12K/month):</strong> Automate ingestion from available sources (SIS exports, Google Classroom, TechOne). Weekly risk digest delivered to central operations team by email.<br>
+        <strong>Phase 3 — Product ($2–5K/month per network):</strong> Web dashboard with configurable risk weights and alert thresholds. No installation required — CSV upload or lightweight API.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRODUCT 5 -->
+  <div class="card" style="margin-bottom:24px; border-left:3px solid #d4a44a;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d4a44a; margin-bottom:4px;">Opportunity #5 — Strategy &amp; Direction · Transformation &amp; Change + Partnerships &amp; Ecosystem</div>
+        <div class="card-title" style="font-size:19px; letter-spacing:-0.02em;">SectorPulse</div>
+        <div style="font-size:13px; color:var(--text-muted); margin-top:2px;">Sector intelligence and evidence synthesis engine for education leaders — turning policy documents, research, and sector reports into cited strategic briefs</div>
+      </div>
+      <div style="text-align:right; flex-shrink:0; margin-left:20px;">
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:2px;">Opp. Score</div>
+        <span class="heatmap-cell hm-warm" style="width:auto; padding:0 10px; font-size:14px;">26</span>
+      </div>
+    </div>
+
+    <p class="section-note" style="font-size:13px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+      Transformation (heat 52, 6 companies) and partnerships (heat 51, 5 companies) score lower on opportunity because they are high-salience but hard to address with AI directly — leaders acknowledge the problems but prefer human consultants.
+      However, the underlying information problem is tractable: every organisation in this cohort needs to synthesise across program evaluations, government policy white papers, international development reports, and sector intelligence to make strategy decisions — and none of them has a dedicated research function to do it.
+      WISE (score 62 on transformation) is the Qatar Foundation's education convening platform; its staff synthesise OECD reports, UNESCO research, and EdTech market analysis for summit programming.
+      Acasus advises governments in 20+ countries and competes on depth of sector knowledge — its consultants spend significant time reading and cross-referencing policy documents that AI could surface faster.
+      SectorPulse is a RAG-over-sector-corpus tool: ingest curated education research feeds (OECD Education at a Glance, World Bank EdStats, DFAT research series, USAID evaluations), allow leadership teams to ask cross-document strategy questions, and receive cited multi-source briefs rather than single-document summaries.
+    </p>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Companies — Pain Point Score</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip hot">WISE 62</span>
+        <span class="cluster-chip warm">iPeople 56</span>
+        <span class="cluster-chip warm">Kinetic 57</span>
+        <span class="cluster-chip warm">PHINMA 52</span>
+        <span class="cluster-chip warm">Rising Academies 52</span>
+        <span class="cluster-chip warm">School for Life 54</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">AI Capabilities Combined</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip warm">Summarization &amp; Condensation 72</span>
+        <span class="cluster-chip warm">Semantic Search 65</span>
+        <span class="cluster-chip warm">Experiment Design &amp; Optimization 65</span>
+        <span class="cluster-chip warm">Entity &amp; Attribute Extraction 58</span>
+        <span class="cluster-chip warm">Regression &amp; Quantitative Estimation 62</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">The Moat</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        Perplexity, ChatGPT web browsing, and generic research tools produce plausible-sounding summaries without citations and without awareness of the LMIC education policy landscape.
+        The moat is <em>corpus curation</em> (knowing which sources are authoritative for Sub-Saharan Africa school quality vs. South-East Asian higher education reform vs. Australian school governance) and <em>question taxonomy</em> (pre-built query templates for common strategy questions: "What evidence exists for low-cost private school quality improvement?" "What partnerships have peer institutions made with Coursera/Alibaba Cloud?").
+        This is a consultancy-delivered product: the corpus is the asset, and it grows in value with each client engagement that surfaces new document sources.
+        Honest limitation: Acasus already has staff who do this work; the sell is time compression and consistency, not new capability. WISE is the stronger initial customer — programming staff, not research staff.
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Entry Path</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        <strong>Phase 1 — Consulting engagement (2–3 weeks, $10–20K):</strong> Identify WISE's or Acasus's top 20 recurring research questions. Build a curated corpus from public sources. Deliver three example cited briefs as a proof of concept.<br>
+        <strong>Phase 2 — Pilot (2 months, $5–8K/month):</strong> Provide SectorPulse as a shared Slack or web interface. Measure query volume and time-saved per research brief.<br>
+        <strong>Phase 3 — Product ($1.5–3K/month per organisation + corpus licensing fee):</strong> Subscription access to the curated corpus with custom document upload. WISE as reference customer enables positioning for other education convening bodies (Brookings, T4 Education).
+      </p>
+    </div>
+  </div>
+
+  <!-- PRODUCT 6 -->
+  <div class="card" style="margin-bottom:24px; border-left:3px solid #9a8a60;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#9a8a60; margin-bottom:4px;">Opportunity #6 — Governance &amp; Leadership · Power Concentration &amp; Transparency + Executive Leadership Capability</div>
+        <div class="card-title" style="font-size:19px; letter-spacing:-0.02em;">BoardBrief</div>
+        <div style="font-size:13px; color:var(--text-muted); margin-top:2px;">Governance intelligence layer for education boards — turning voluminous committee papers, accreditation evidence, and audit findings into structured executive intelligence</div>
+      </div>
+      <div style="text-align:right; flex-shrink:0; margin-left:20px;">
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:2px;">Opp. Score</div>
+        <span class="heatmap-cell hm-warm" style="width:auto; padding:0 10px; font-size:14px;">25</span>
+      </div>
+    </div>
+
+    <p class="section-note" style="font-size:13px; color:var(--text); line-height:1.7; margin-bottom:16px;">
+      Governance is a joint top heat domain at 52, with power concentration and transparency (heat 56, 6 companies) being the highest-scoring sub-category in the domain.
+      However, the salience weight is 0.7 — governance problems are real but leaders are less likely to frame them as AI-solvable, which suppresses the opportunity score (25 vs. 45 for Staffroom).
+      The underlying structural problem is genuine: PHINMA must satisfy Yuchengco Group, Ayala Corporation, PSE listing obligations, CHED, DepEd, NPC, and ABET simultaneously, generating committee papers that no individual board member can process in full.
+      CSPD operates under Catholic diocesan governance structures with dual accountability to the Bishop of Parramatta and Commonwealth government funding bodies.
+      School for Life (score 68) and Acasus (score 64) operate under impact investor and philanthropic governance where evidence of outcomes is a contractual obligation, not a preference.
+      BoardBrief ingests board packs, committee reports, accreditation evidence matrices, and audit findings — and produces structured governance intelligence: a compliance status dashboard, a decision-by-decision accountability log, and anomaly flags when approval timelines or expenditure authorisation patterns deviate from policy norms.
+    </p>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Companies — Pain Point Score</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip hot">School for Life 68</span>
+        <span class="cluster-chip hot">Acasus 64</span>
+        <span class="cluster-chip warm">PHINMA 60</span>
+        <span class="cluster-chip warm">WISE 60</span>
+        <span class="cluster-chip warm">iPeople 58</span>
+        <span class="cluster-chip warm">Kinetic 50</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">AI Capabilities Combined</div>
+      <div class="cluster-companies">
+        <span class="cluster-chip warm">Text Generation 65</span>
+        <span class="cluster-chip warm">Data Transformation &amp; Structuring 62</span>
+        <span class="cluster-chip warm">Text Classification 60</span>
+        <span class="cluster-chip warm">Media Parsing &amp; Transcription 55</span>
+        <span class="cluster-chip warm">Anomaly &amp; Fraud Detection 55</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">The Moat</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        Board management platforms (Diligent, BoardPad) manage document distribution but do not classify governance obligations, detect anomalies, or produce compliance status summaries.
+        The moat is <em>regulatory vocabulary</em>: understanding that AITSL teacher standards, CHED accreditation matrices, Catholic diocesan governance norms, and PSE listing rules are distinct regulatory vocabularies requiring distinct compliance logic.
+        This is not a product Salesforce or Google will build — the market (education boards globally) is too fragmented and the vocabulary too domain-specific to attract a general platform player.
+        Honest limitation: this is the hardest sell. Education boards are conservative buyers. The entry point must be framed as a compliance risk reduction tool, not an AI product. Expect an 18–24 month sales cycle to product adoption.
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); margin-bottom:6px;">Entry Path</div>
+      <p style="font-size:13px; color:var(--text); line-height:1.7;">
+        <strong>Phase 1 — Consulting engagement (4–6 weeks, $20–35K):</strong> Governance audit at School for Life or PHINMA. Map the multi-regulator compliance calendar. Deliver a structured compliance status report as the artefact — sell the output, not the tool.<br>
+        <strong>Phase 2 — Pilot (4 months, $8–12K/month retainer):</strong> Ingest one year of board packs. Build accountability log and anomaly baseline. Present to CFO and Company Secretary as a compliance efficiency tool, not as AI.<br>
+        <strong>Phase 3 — Product ($3–6K/month per board):</strong> Board pack upload interface, structured compliance dashboard, monthly anomaly digest. Positioned as governance documentation software, not AI analytics.
+      </p>
+    </div>
+  </div>
+
+  <!-- Summary table -->
+  <div class="analysis-section" style="margin-top:32px;">
+    <h3>Opportunity Summary</h3>
+    <div class="section-note">Ranked by salience-weighted opportunity score from the cross-analysis. Score incorporates problem heat, hot company count, and AI capability fit — adjusted for how front-of-mind the domain is for a typical education leader.</div>
+    <div class="scroll-table-wrapper" style="margin-top:12px;">
+      <table style="width:100%; border-collapse:collapse; font-size:13px;">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border);">
+            <th style="text-align:left; padding:10px 12px; color:var(--text-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;">Product</th>
+            <th style="text-align:left; padding:10px 12px; color:var(--text-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;">Problem Domain</th>
+            <th style="text-align:center; padding:10px 12px; color:var(--text-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;">Heat</th>
+            <th style="text-align:center; padding:10px 12px; color:var(--text-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;">Hot Cos</th>
+            <th style="text-align:center; padding:10px 12px; color:var(--text-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;">Score</th>
+            <th style="text-align:left; padding:10px 12px; color:var(--text-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.04em;">Entry Point</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 12px; font-weight:600;">Staffroom</td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Talent — Skills &amp; Development</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-hot" style="width:auto; padding:0 8px;">57</span></td>
+            <td style="padding:10px 12px; text-align:center; color:var(--text-muted);">6</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-hot" style="width:auto; padding:0 8px;">45</span></td>
+            <td style="padding:10px 12px; color:var(--text-muted);">CSPD or PHINMA; $25–40K audit</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 12px; font-weight:600;">Enrolflow</td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Growth — Revenue &amp; Enrollment</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-hot" style="width:auto; padding:0 8px;">57</span></td>
+            <td style="padding:10px 12px; text-align:center; color:var(--text-muted);">5</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-hot" style="width:auto; padding:0 8px;">41</span></td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Rising Academies or PHINMA; $30–50K audit</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 12px; font-weight:600;">GrantLens</td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Financial — Visibility &amp; Planning</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">51</span></td>
+            <td style="padding:10px 12px; text-align:center; color:var(--text-muted);">5</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">37</span></td>
+            <td style="padding:10px 12px; color:var(--text-muted);">School for Life or Acasus; $15–25K audit</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 12px; font-weight:600;">SiteIQ</td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Operations — Technology &amp; Infrastructure</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">52</span></td>
+            <td style="padding:10px 12px; text-align:center; color:var(--text-muted);">5</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">19</span></td>
+            <td style="padding:10px 12px; color:var(--text-muted);">PHINMA or CSPD; $20–35K audit</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:10px 12px; font-weight:600;">SectorPulse</td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Strategy — Transformation &amp; Partnerships</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">52</span></td>
+            <td style="padding:10px 12px; text-align:center; color:var(--text-muted);">6</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">26</span></td>
+            <td style="padding:10px 12px; color:var(--text-muted);">WISE or Acasus; $10–20K audit</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px; font-weight:600;">BoardBrief</td>
+            <td style="padding:10px 12px; color:var(--text-muted);">Governance — Power &amp; Transparency</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">56</span></td>
+            <td style="padding:10px 12px; text-align:center; color:var(--text-muted);">6</td>
+            <td style="padding:10px 12px; text-align:center;"><span class="heatmap-cell hm-warm" style="width:auto; padding:0 8px;">25</span></td>
+            <td style="padding:10px 12px; color:var(--text-muted);">School for Life or PHINMA; $20–35K audit</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Methodology note -->
+  <div class="analysis-section" style="margin-top:16px;">
+    <div class="section-note" style="font-size:12px; border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; background:var(--surface);">
+      <strong style="color:var(--text);">Data sources and limitations.</strong>
+      Opportunity scores are derived from the cross-analysis JSON: problem heat (cross-company average of sub-category scores), hot company count (companies where sub-category score &ge; 50), salience weight (domain-level attention weight reflecting how front-of-mind problems are for education leaders), and best AI capability fit (0–100 scale).
+      All perCompany scores shown are from the raw data; "hot" chips represent scores &ge; 60, "warm" chips represent 45–59.
+      The composite profile confirms that 6 of 8 companies sit on transitional tech stacks — none has in-house ML engineering capability.
+      All six products are designed to operate without a client-side data infrastructure investment: document upload, CSV export, or lightweight API connector is the maximum integration requirement.
+      Revenue estimates are indicative only and assume a consulting-first go-to-market in geographies where the consultancy has existing relationships.
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,558 @@
+{
+  "company_id": "ipeople",
+  "company_name": "iPeople Inc",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Education",
+        "evidence": "iPeople is a pure-play education holding company operating universities, colleges, K-12 schools, and a digital college across the Philippines. Website self-description: 'drives investments in the education sector.' PSE-listed under education sector.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Higher Education (STEM/Tech-focused) + K-12 Private Education + EdTech/Blended Learning",
+        "evidence": "Core asset Mapúa University is the Philippines' premier engineering and technology university (ABET-accredited). Portfolio spans: undergraduate STEM university (Mapúa), blended/digital college (MMDC), affordable K-12 (NTC/APEC merged), teacher education (NTC), regional university (UNC). Coursera AI partnership and BS AI Engineering program confirm edtech orientation.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "End-service provider / direct education delivery",
+        "evidence": "iPeople owns and operates the institutions directly — it is the school, not a curriculum supplier, platform vendor, or distributor. Students pay tuition directly to iPeople-owned schools. Mapúa Malayan Digital College and Coursera partnership add a platform-augmented layer but delivery remains institutional.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Growth — accelerating consolidation phase",
+        "evidence": "Philippine higher education market: USD 154M in 2025, projected USD 847M by 2034 (CAGR ~20%). 1,714 private HEIs competing — fragmented market ripe for consolidation. Government quality-raising reforms (EDCOM 2, CHED) are squeezing weaker operators and favoring institutionally capable groups like iPeople. Industry is growing but not yet mature — TAM expansion driven by demographics, rising STEM demand, and digital learning adoption.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Tuition-based recurring revenue (per-semester enrollment fees) with supplemental ancillary income",
+        "evidence": "Education companies in the Philippines generate revenue through tuition and fees charged per semester/year. iPeople FY2024 revenue PHP 5.32B derived from 74,000 enrolled students across 7+ institutions. No pricing page or publicly disclosed breakdown, but the model is structurally recurring — students re-enroll annually over multi-year programs (4-6 years for degrees). Dividend yield of 2-3.6% and 28-31% payout ratio confirm stable, recurring cash generation.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Physical campus delivery (multi-site) with blended/online augmentation",
+        "evidence": "Primary delivery is in-person campus instruction at multiple physical campuses: Mapúa Manila (flagship), MMCL (Laguna), MMCM (Mindanao), NTC campuses, UNC (Naga). Mapúa Malayan Digital College (MMDC) is the online/blended vehicle. Coursera partnership supplements classroom instruction with digital AI-powered content — students earn 20-30% of credits through Coursera.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Fixed-cost-heavy; asset-intensive (facilities, faculty, accreditation infrastructure)",
+        "evidence": "Universities are structurally fixed-cost-heavy: campus buildings, faculty salaries, laboratory equipment, accreditation compliance. New building groundbreaking in Cabuyao/Laguna and Mindanao expansion confirm ongoing capex. House of Investments disclosed P22B capex plan through 2026. EBITDA margin of 28.68% is healthy but reflects the fixed-cost infrastructure base. Enrollment growth (10% YoY) drives operating leverage.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Mid-Enterprise (1,001–2,500) — confirmed 1,895 employees as of December 31, 2024",
+        "evidence": "iPeople Inc disclosed 1,895 employees as of December 31, 2024, per PSE/SEC filings and StockAnalysis data. This represents a 2.54% YoY increase (+47 employees) from 2023. Headcount covers faculty and administrative staff across all group institutions (Mapúa, NTC, UNC, MMCL, MMCM, MMDC). The 74,000-student base at roughly 39:1 student-to-employee ratio reflects reliance on part-time/adjunct faculty supplementing full-time staff.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Enterprise ($100M+) — PHP 5.32B FY2024 (~USD 95M at ~56 PHP/USD)",
+        "evidence": "FY2024 revenue: PHP 5.32 billion (+18.49% YoY). TTM revenue: PHP 5.97 billion (~USD 107M). Earnings: PHP 844M FY2024, PHP 1.04B TTM. All data from stockanalysis.com statistics confirmed by multiple Philippine business media.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Publicly traded on PSE (Philippine Stock Exchange); conglomerate-backed",
+        "evidence": "PSE:IPO listed company. Market cap PHP 6.13B as of Dec 2025. Majority owned by House of Investments (Yuchengco Group) and Ayala Corporation (36.3%). No VC or PE dependency — funded through public markets, retained earnings, and parent conglomerate capital. P22B capex plan disclosed through 2026 from House of Investments. No immediate funding/runway risk.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Asset-heavy (multi-campus physical infrastructure across 4+ Philippine regions)",
+        "evidence": "Owns and operates multiple physical campuses: Manila (flagship), Laguna, Mindanao, Naga (UNC), NTC campuses. New building groundbreaking in Cabuyao, Laguna. Planned Mindanao expansion. NTC expansion to Bulacan approved. Laboratory equipment required for ABET-accredited engineering programs. P22B parent capex plan signals sustained infrastructure investment.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Profitable, accelerating growth, positive cash flow, conservative leverage",
+        "evidence": "FY2024: revenue +18%, earnings +31%, EBITDA margin 28.68%. TTM earnings PHP 1.04B. Dividend yield 2-3.66%, payout ratio 28-31% (implies significant retained earnings). PE ratio ~6x suggests market discount vs growth rate. ROE 6.49%, ROIC 4.48% (moderate — reflects asset-heavy base). No signs of leverage distress. Stock +3.17% over 52 weeks — stable, not distressed.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Legacy (20+ years as iPeople; Mapúa University 100+ years)",
+        "evidence": "Mapúa University founded 1925 — celebrated centennial January 2025. iPeople Inc as the holding company has operated under various forms for decades; AC Education merger completed May 2, 2019. National Teachers College and University of Nueva Caceres are also multi-decade institutions. The holding entity structure is relatively newer but the underlying institutions are legacy.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Large (74,000 enrolled students, 2024-25), growing 10% YoY",
+        "evidence": "74,000 total students for AY2024-25 confirmed by multiple sources. +10% YoY growth. NTC post-merger: 24,000+ students (K-12, college, grad). Mapúa group (flagship + MMCL + MMCM + MMDC): estimated 40,000+. UNC: regional footprint. Coursera partnership serves 45,000 students annually (overlapping with enrolled base). 54% of enrollment from affordable segment.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {},
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": null
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Market leader in STEM private HE (Philippines); niche specialist with rollup growth strategy",
+        "evidence": "Mapúa: ABET-accredited (first in SEA), QS top-100 in Southeast Asia, CHED Centers of Excellence in Engineering and IT. First BS AI Engineering in Philippines. Ranked #2 in Asia among Coursera Campus partners for GenAI enrollments. These are market-leading, not challenger, positions in the STEM/engineering segment. In affordable education (NTC/APEC), more of a volume player competing on accessibility. Overall: dominant in its chosen STEM niche, consolidating the affordable tier.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Brand/reputation-led (inbound) supplemented by academic partnership distribution",
+        "evidence": "No evidence of outbound sales team or traditional marketing push. Education is primarily reputation-led — students seek out Mapúa for the ABET brand and engineering track record. International partnerships (ASU, Coursera) generate press coverage and third-party credibility that drive enrollment demand. Website has no pricing page, consistent with reputation-pull rather than offer-push. No affiliate or channel partners for student acquisition.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Highly diversified — 74,000 individual student accounts, no material concentration",
+        "evidence": "74,000 enrolled students across 7+ institutions and 4+ geographic regions. No single student represents meaningful revenue concentration. Government scholarship programs (if any) could represent bundled revenue but no evidence of material government contract dependency. Classic consumer education revenue distribution.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Dual-tier: mid-market premium (Mapúa) + value/affordable (NTC/APEC segment)",
+        "evidence": "Mapúa University is positioned as premium quality at a relative mid-market price point vs. Ateneo/DLSU (the top-tier premium universities). APEC Schools (now NTC) explicitly targeted affordable K-12. 54% of enrollment from the affordable segment. The 'premium-affordable' intersection is iPeople's stated positioning — quality accreditations at accessible price points vs. pure elite pricing.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Dual-principal professional management (Yuchengco Chairman/CEO + Ayala President/COO) under conglomerate board oversight",
+        "evidence": "Dr. Reynaldo Vea (Yuchengco side): Chairman & CEO since Feb 2022. Fred Ayala (Ayala Group side): President, COO & Director since Feb 2022. Classic Philippine conglomerate JV governance structure. Neither is a founder in the startup sense — both are professional managers representing institutional shareholders. Board-driven at the macro level (HI + Ayala Corp as controlling shareholders); operationally run by professional executives.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Divisional (holding company with semi-autonomous institutional subsidiaries)",
+        "evidence": "iPeople Inc is the listed holding entity. Each institution (Mapúa University via Malayan Education System Inc, NTC, UNC, MMCL, MMCM, MMDC) operates as a subsidiary or affiliate with its own board/president. Fred Ayala also serves as President & CEO of NTC directly — suggests some operational consolidation at the top. Hub-and-spoke: iPeople HQ + institution subsidiaries.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Multi-site co-located (campus-based faculty and staff across 4+ Philippine regions)",
+        "evidence": "Education is inherently location-bound. Campuses in Metro Manila, Laguna, Mindanao, and Naga (Bicol). Faculty and administrative staff are campus-resident. No evidence of remote-first or distributed work model — the physical campus IS the product. Careers page emphasizes in-person community and collaboration culture.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Domain-expert-heavy (faculty: engineers, educators, researchers) + operations-heavy (campus administration)",
+        "evidence": "ABET accreditation requires qualified engineering faculty with industry experience and/or graduate degrees. Mapúa's engineering focus means significant PhD/MS faculty. NTC's teacher education focus requires licensed professional teachers. Administrative operations at scale (registrar, finance, student services, facilities) across 7+ institutions. Tech talent is an emerging priority given AI curriculum push but not yet the dominant profile.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Transitional — mix of custom in-house applications, Moodle LMS, Blackboard Learn, and modern EdTech integrations (Coursera, Alibaba Cloud)",
+        "evidence": "Confirmed platform components: (1) Moodle LMS for online/blended learning at Mapúa; (2) Blackboard Learn at Mapúa Malayan Colleges Laguna (MMCL); (3) Custom admissions portal (admissions.mapua.edu.ph) with Cardinal EDGE online assessment system; (4) CARDINAL Plus RFID card system (campus ID + library + student data); (5) Mapúa-branded digital toolkit including Ally (accessibility), EAC Visual Data, Engage, and MapúaX tools; (6) Coursera API integration serving 45K students for credit-bearing courses; (7) Corporate site on WordPress. In-house application suite migrated/maintained internally. MMDC (digital college) has a more modern cloud-native stack. Overall: transitional — proven enterprise LMS layer atop aging SIS foundations, augmented by modern EdTech partnerships.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Minimal to basic (non-tech company — IT is operational support; some in-house development of student-facing tools)",
+        "evidence": "iPeople is an education holding company, not a technology company. Has an internal IT function building and maintaining in-house applications (admissions portal, CARDINAL Plus, MapúaX suite). Facebook advisory reference to 'all Mapúa in-house applications for Intramuros and [campuses]' confirms internal development/maintenance capability. Sophisticated consumer of EdTech (Coursera, Blackboard, Alibaba Cloud) but not a software product builder. No evidence of CI/CD, DevOps practices, or formal engineering org.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic to intermediate (operational enrollment/financial data; emerging learning analytics via Coursera; RFID-based attendance/student data capture)",
+        "evidence": "CARDINAL Plus RFID system captures student logs, grades, guidance records, and schedules — implies structured operational data at the campus level. PSE-listed quarterly reporting requires consolidated financial data systems. Coursera partnership provides learning analytics dashboards. No evidence of a centralized data warehouse, BI platform, or ML-in-production beyond Coursera-provided analytics. 74K student enrollment across 7+ institutions requires enterprise-grade SIS (vendor unknown). Data maturity is operational — not analytically advanced.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic to intermediate (assumed — regulated Philippine HEI with student data obligations under Data Privacy Act)",
+        "evidence": "Philippine Data Privacy Act (RA 10173) applies — NPC registration and data protection officer required for student personal data across 74K enrollees. Quality Matters (QM) certification for online courses implies some standards for digital delivery integrity. No public evidence of SOC2, ISO27001, penetration testing programs, or dedicated security engineering. WordPress corporate site and Moodle LMS have standard security update cadences. Online enrollment system and Cardinal EDGE handle admissions assessment data — basic web security hygiene assumed.",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Heavy — multi-regulator: CHED (higher ed), DepEd (K-12), PSE/SEC (listed company), ABET (international), NPC (data privacy)",
+        "evidence": "All Philippine HEIs require CHED program recognition and institutional accreditation. K-12 schools (NTC/APEC) are DepEd-regulated. ABET accreditation involves rigorous ongoing US-based engineering curriculum standards. PSE listing requires SEC filings, quarterly disclosures, PSE governance compliance. EDCOM 2 reforms and CHED program reviews are actively reshaping regulatory requirements. Philippine Competitions Commission (PCC) reviewed and cleared the Ayala stake increase — M&A is also regulated.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Single-country national (Philippines) with international partnership reach",
+        "evidence": "All physical campuses are in the Philippines: Metro Manila, Laguna, Mindanao, Naga (Bicol), with NTC expansion to Bulacan. Revenue is domestic. International partnerships (ASU, Coursera) are content/curriculum partnerships, not operational geographic expansion. No campuses outside the Philippines. ASU partnership enables international enrollment as a pathway, but operational footprint is national.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Recession-resistant with mild demographic sensitivity; partially forex-exposed on curriculum partnerships",
+        "evidence": "Education is a basic service — enrollment tends to be recession-resistant in the Philippines (rising demand as economic stress drives upskilling). Philippine youth bulge supports sustained demand. However, premium education is somewhat income-sensitive; affordable segment (54%) provides recession hedge. Forex exposure: Coursera and ASU partnerships likely priced in USD — PHP depreciation increases partnership costs. Physical expansion capex is peso-denominated.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Publicly traded (PSE) + conglomerate-controlled (dual controlling shareholders: Yuchengco Group + Ayala Corp)",
+        "evidence": "PSE:IPO listing imposes SEC reporting, quarterly disclosures, PSE corporate governance requirements, and minority shareholder protections. House of Investments (Yuchengco) holds majority control; Ayala Corp holds 36.3%. Dual controlling shareholders create a governance structure where major decisions require alignment between two Philippine conglomerate families — adding governance complexity and deliberateness to strategic moves. PCC oversight of ownership changes was demonstrated in the Aug 2025 stake increase.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Fast-follower to bleeding-edge (relative to Philippine HE peer set); pragmatic on institutional change",
+        "evidence": "Within the Philippine higher education context, iPeople/Mapúa is clearly at the innovation frontier: first BS AI Engineering in PH, #2 in Asia for GenAI enrollments on Coursera, first QM-certified institution in PH, first ABET-accredited in SEA. These are genuine first-mover positions. However, the pace of change in a 100-year-old university system is inherently bounded by accreditation cycles, faculty tenure, and regulatory approval timelines. Innovation posture is high relative to Philippine HE but bounded by institutional constraints.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Thought-leader / visionary (Mapúa flagship) + mission-driven / accessible (affordable segment brands)",
+        "evidence": "Mapúa: positions as the Philippines' engineering excellence and AI-forward university. Centennial messaging, ASU partnership, ABET accreditation all reinforce 'world-class Philippine engineering.' Website describes sustainability mission as 'partner in nation-building.' Careers page: 'values-driven community united by a passion to make a meaningful impact.' Affordable segment (NTC/APEC) brand positions on accessibility and teacher education mission. Dual brand personality — prestige + mission.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Values-prominent (mission-driven with nation-building rhetoric; sustainability commitments; dual social mission of excellence + accessibility)",
+        "evidence": "Website sustainability page: 'partner in nation-building particularly in providing quality and accessible education across all segments of society.' Careers page emphasizes 'integrity, responsibility, and innovation.' Sustainability engage page frames education as collective social responsibility. 54% affordable enrollment aligns stated accessibility mission with actual enrollment mix. Yuchengco Group has a history of social mission framing in its education investments (RCBC, House of Investments).",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Strong-in-niche (attractive employer for Filipino educators and education professionals; Ayala/Yuchengco conglomerate pedigree is a talent draw)",
+        "evidence": "Careers page active with open roles. 'Values-driven community' and 'meaningful impact' language targets mission-motivated professionals. Ayala Group affiliation is a significant employer brand amplifier in the Philippines — Ayala is consistently rated a top employer. Mapúa's century-old reputation and international accreditations attract quality faculty. However, not a top employer for tech talent — that is an emerging gap given AI curriculum ambitions.",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

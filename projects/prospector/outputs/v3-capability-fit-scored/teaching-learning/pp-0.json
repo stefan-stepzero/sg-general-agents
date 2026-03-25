@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-curriculum-implementation-curriculum-alignment-drift-dup",
+  "pain_point_label": "Curriculum Misalignment Across Campuses",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Curriculum misalignment is fundamentally a deviation-from-norm problem: the approved curriculum is the baseline, and campus-level delivery diverges from it. AI can ingest lesson logs, pacing records, or content submissions and flag campuses or instructors whose delivery patterns deviate significantly from the standard. This directly addresses the pain mechanism — not categorizing known variants but detecting unexpected drift.",
+      "opportunity_sketch": "A monitoring system that ingests weekly pacing reports and lesson-plan submissions across campuses, scores each against the approved curriculum baseline, and surfaces outliers for academic supervisors to investigate.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Lesson plans, instructional materials, and pacing guides submitted by instructors across campuses are text documents that can be classified against alignment dimensions — DepEd/TESDA standard coverage, approved topic sequence, restricted vs. permitted content. Classification gives a fast, scalable way to flag non-compliant documents before delivery happens, directly preventing drift rather than diagnosing it after the fact.",
+      "opportunity_sketch": "An automated lesson-plan review tool where instructors upload their plans and the system classifies each unit against the approved curriculum framework, returning a compliance score and flagged deviations for coordinator review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Academic coordinators managing multiple campuses cannot read every lesson plan and pacing guide in full. Summarization can condense each campus's weekly or unit-level delivery reports into structured highlights — topics covered, pacing vs. schedule, notable deviations — enabling a single coordinator to monitor alignment across 10+ campuses efficiently.",
+      "opportunity_sketch": "A weekly digest tool that pulls pacing guide submissions from all campuses and generates a one-page summary per campus showing coverage status, pacing variance, and any flagged topics not yet delivered.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Instructors deviating from approved content often do so because they cannot easily locate the authoritative version of a curriculum document, pacing guide, or DepEd/TESDA standard. A RAG system over the operator's curriculum corpus gives every instructor a grounded, citation-backed answer to 'what should I teach this week and how?' — reducing accidental drift caused by document sprawl and version confusion.",
+      "opportunity_sketch": "An internal curriculum assistant where teachers query their subject, grade level, and week number and receive the approved learning objectives, activities, and standards citations drawn directly from the operator's authoritative curriculum documents.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Curriculum alignment enforcement involves a recurring multi-step workflow: collect submissions from campuses, compare against the master curriculum, generate deviation reports, route issues to the relevant campus coordinator, and track resolution. An automation agent can own this pipeline end-to-end, removing the manual coordination overhead that currently causes misalignment to go undetected for weeks or months.",
+      "opportunity_sketch": "A curriculum compliance agent that runs weekly, ingests pacing and lesson-plan data from all campuses via a shared form or LMS, generates per-campus alignment reports, and automatically routes flagged deviations to the responsible academic coordinator with a resolution deadline.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

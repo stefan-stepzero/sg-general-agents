@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "external-relations-alumni-engagement-minimal-touchpoints-dup",
+  "pain_point_label": "Minimal Engagement Touchpoints Beyond Annual Reunion",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a newsletter cadence and professional development communications is fundamentally a content creation bottleneck. A multi-site operator with limited external relations staff cannot sustain consistent, campus-specific alumni communications without AI-assisted drafting. Text generation directly eliminates the content gap that keeps engagement dormant between annual events.",
+      "opportunity_sketch": "An AI-assisted alumni comms tool that drafts monthly newsletters per campus, personalised outreach emails for speaker invitations, and event announcement copy — reviewed and sent by a single coordinator across all campuses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The ad-hoc, sporadic nature of alumni speaker requests reflects a workflow that has never been systematised — there is no repeatable process for identifying relevant alumni, drafting invitations, following up, and scheduling. A task automation agent can own the full cycle from trigger (upcoming event) to confirmed speaker, removing the manual overhead that causes the process to break down.",
+      "opportunity_sketch": "An agent that, given an upcoming event brief, queries an alumni database, drafts personalised speaker invitations, sends follow-up reminders at set intervals, and updates the engagement record — with a human approving only the final confirmation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "The operator has no mechanism to proactively match alumni to relevant engagement opportunities — career panels, guest lectures, mentoring — based on their professional profile or interests. A recommendation engine would surface the right alumni for the right touchpoint without requiring staff to manually sift records, directly addressing why engagement stays minimal and ad-hoc.",
+      "opportunity_sketch": "A recommendation layer on top of the alumni CRM that suggests which alumni to invite to each specific event or webinar topic, ranked by professional relevance and past engagement history, presented as a shortlist for staff to act on.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 9.6
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Alumni who have no ongoing relationship with their former institution will not fill out a form or attend a webinar they heard about once. A conversational agent (e.g. a LinkedIn-style or email-embedded chatbot) can maintain a low-friction, ongoing dialogue with alumni — asking about career milestones, offering relevant resources, and surfacing engagement opportunities — turning passive contacts into active participants.",
+      "opportunity_sketch": "An always-on alumni engagement bot accessible via the school website or email link that asks about current roles, flags relevant career webinars or mentoring requests, and logs interactions back to the CRM — requiring no scheduling effort from staff.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

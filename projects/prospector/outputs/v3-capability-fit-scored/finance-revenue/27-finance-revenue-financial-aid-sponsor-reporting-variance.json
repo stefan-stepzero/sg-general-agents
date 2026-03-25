@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-sponsor-reporting-variance",
+  "pain_point_label": "Sponsor reporting & compliance variance",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core pain is that ledger data doesn't map cleanly to sponsor-mandated schemas — 'beneficiary outcome' vs 'posted amount' is a schema mismatch problem. AI-assisted ETL mapping can learn field-to-field correspondences across multiple sponsor formats, normalize data from the finance system, and produce sponsor-ready outputs without manual pivot-table work. This directly targets the 25-40 hrs/month extraction and reconciliation effort.",
+      "opportunity_sketch": "A schema-mapping engine that ingests the ledger export and, per configured sponsor template, transforms and populates sponsor-required fields — including derived fields (e.g. inferring 'beneficiary outcome' from enrollment status + disbursement record). One-time configuration per sponsor, reusable each submission cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Sponsor reports often require narrative sections — aid utilization summaries, student outcome descriptions, compliance attestations — not just tabular data. Finance staff must write these from scratch each cycle for each sponsor, adapting tone and format to each body's expectations. LLM-based generation can draft these narrative sections from structured inputs (disbursement totals, headcount, pass rates), cutting authoring time significantly.",
+      "opportunity_sketch": "A report narrative generator that takes structured data fields (disbursement amounts, beneficiary counts, outcome metrics) and a sponsor-specific template prompt, then produces the prose sections of the compliance report — ready for staff review and sign-off.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end sponsor reporting workflow is a multi-step process: extract data from ledger, map to sponsor schema, populate derived fields, generate narrative sections, validate completeness, package report, and track submission against a calendar. This is exactly the kind of branching, multi-system workflow an automation agent handles — with decisions at each step (e.g. flag missing fields, route to reviewer) rather than a single extraction or generation step.",
+      "opportunity_sketch": "An agentic reporting pipeline that, triggered by the sponsor calendar, pulls ledger data, applies the sponsor's schema mapping, generates narrative sections, runs pre-submission validation checks, and delivers a packaged draft to the responsible finance officer — reducing the submission window crunch from days to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Each sponsor has a distinct combination of required fields, acceptable value formats, calculation methods, and submission deadlines — a configuration space with hard constraints. A constraint-satisfaction approach can manage the multi-sponsor reporting calendar, flag conflicts (e.g. two sponsors requiring the same underlying data field computed differently), and ensure no submission window is missed across all sponsor types simultaneously.",
+      "opportunity_sketch": "A sponsor compliance configurator that models each sponsor's requirements as a constraint set, validates that the current data state satisfies all mandatory fields before submission, and surfaces unresolved conflicts or missing mappings — functioning as a pre-submission validation layer.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

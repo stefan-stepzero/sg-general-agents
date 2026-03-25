@@ -1,0 +1,86 @@
+{
+  "cell": {
+    "cellNum": 7,
+    "subCategory": "Financial Visibility & Planning",
+    "domain": "Financial",
+    "heat": 51,
+    "oppScore": 37
+  },
+  "ideas": [
+    {
+      "name": "Grant Compliance Assistant",
+      "one_liner": "AI-powered Q&A over voluminous grant agreements, donor policies, and audit reports to instantly answer compliance and reporting questions.",
+      "problem": "PHINMA (government-linked affordable HE), Acasus (development consulting), and Rising Academies manage complex funding streams with conflicting grant conditions, donor reporting requirements, and government funding rules. Finance teams spend hours searching through fragmented policy documents (funding agreements, budget circulars, audit requirements) to answer compliance questions. Knowledge of grant conditions is concentrated in few staff.",
+      "ai_technique": "Retrieval-Augmented Generation (grant-document-aware)",
+      "how_it_works": "Upload all institutional funding documents (grant agreements, donor policies, government funding circulars, audit reports, budget policies) to a searchable knowledge base. Use RAG to answer CFO and finance team queries: 'Can we use this government grant for staff training?' 'What are the reporting deadlines for the World Bank loan?' 'Are there restrictions on campus capex for this donor?' Output: cited answers to grant questions with document references, reducing manual policy research.",
+      "target_companies": [
+        "phinma",
+        "acasus",
+        "rising"
+      ],
+      "buyer_persona": "CFO or Grants Manager",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Budget Variance Synthesizer",
+      "one_liner": "Automatically summarizes monthly budget variance reports and funder acquittals, highlighting variances by program and cost center for executive review.",
+      "problem": "PHINMA, Acasus, and Rising Academies produce detailed monthly variance reports (actuals vs. budget) across multiple cost centers and funding sources. Finance managers manually synthesize these into executive summaries for CFO and board review. With multi-campus operations and complex cost allocations, synthesis is time-consuming and inconsistent.",
+      "ai_technique": "Summarization & Condensation (variance-specific)",
+      "how_it_works": "Ingest monthly variance reports (budget vs. actual by program, department, funding source). Automatically identify material variances (>10% or >threshold amount) and summarize reasons. Generate 1-page executive summary for CFO highlighting top variances by program and cost center, with explanation. Output: variance digest in standardized format, searchable by program or funder.",
+      "target_companies": [
+        "phinma",
+        "acasus",
+        "ipeople"
+      ],
+      "buyer_persona": "CFO or Finance Director",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fee Default Risk Predictor",
+      "one_liner": "Identifies students at risk of fee default before dropout, enabling targeted financial aid intervention.",
+      "problem": "PHINMA (affordable HE) and iPeople serve lower-income first-generation students. Fee default is a leading indicator of dropout risk. Currently, institutions discover default only when students stop attending. Early intervention (scholarship adjustment, payment plan, emergency aid) could prevent dropout but requires early warning.",
+      "ai_technique": "Propensity & Behavioral Modeling (education-constrained)",
+      "how_it_works": "Build model on historical student data: enrollment, course performance, prior financial aid history, fee payment patterns, family income proxy. Score students monthly for default risk and segment for intervention. Unlike credit risk scoring, education context requires constraints: cannot cut off service even for high risk; must balance access mission with financial sustainability. Output: default-risk cohort for proactive contact, intervention recommendation (payment plan vs. aid increase).",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "rising"
+      ],
+      "buyer_persona": "Chief Student Services Officer or Registrar",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Campus Capital Planner",
+      "one_liner": "Optimizes capital expenditure allocation across campuses under government funding constraints and facility utilization targets.",
+      "problem": "PHINMA, iPeople, and CSPD operate multi-campus networks where government funding rules restrict capex use (e.g., only approved categories eligible), enrollment varies by campus, and facility utilization drives funding justification. Finance teams manually allocate budgets across campuses without systematic optimization for utilization or funding rule compliance.",
+      "ai_technique": "Resource Allocation & Scheduling (constraint-aware capex optimization)",
+      "how_it_works": "Model capex budget by funding source, government funding rules (restricted vs. unrestricted categories), campus enrollment and utilization targets, and maintenance backlogs. Optimize allocation to maximize facility utilization (to justify funding), comply with government rules, and address maintenance priorities. Output: recommended capex allocation by campus and category, utilization forecast post-investment, budget variance risk.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "cspd"
+      ],
+      "buyer_persona": "CFO or Director of Facilities",
+      "tier": "module",
+      "confidence": "medium"
+    },
+    {
+      "name": "Multi-Source Budget Configuration Engine",
+      "one_liner": "Solves budget allocation under conflicting constraints (government rules, donor conditions, cross-subsidy targets, program viability thresholds).",
+      "problem": "PHINMA and Acasus-supported institutions operate under multiple simultaneous funding constraints: government grants with restricted/unrestricted categories, donor conditions with earmarking, internal cross-subsidy targets (e.g., affordable programs subsidized by premium ones), and program minimum viability thresholds. Manual budget configuration leads to errors and missed opportunities.",
+      "ai_technique": "Constraint Satisfaction & Configuration (multi-objective optimization)",
+      "how_it_works": "Model all funding constraints (government rules, donor conditions, cross-subsidy targets, program viability). Use constraint solver to find feasible budget allocations. Provide scenario analysis: 'What if we reduce capex budget by 10%?' 'Can we maintain affordable program subsidy and still hit contingency reserve target?' Output: recommended budget allocation by program and cost center, feasibility summary, constraint trade-off analysis.",
+      "target_companies": [
+        "phinma",
+        "acasus",
+        "school-for-life"
+      ],
+      "buyer_persona": "CFO or Board Finance Committee Chair",
+      "tier": "module",
+      "confidence": "medium"
+    }
+  ]
+}

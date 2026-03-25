@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "data-mis-data-governance-compliance-audit-readiness-dup",
+  "pain_point_label": "Compliance Audit Readiness & Regulatory Reporting Gaps",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Audit reports require pulling data from multiple systems (SIS, HR, finance, curriculum platforms) that use different schemas and formats. AI-assisted ETL mapping can normalize, reconcile, and standardize these inputs into a unified audit-ready format. This directly addresses the 'scrambling to compile manual reports from multiple systems' and 'reconciliation discrepancies' pain mechanisms.",
+      "opportunity_sketch": "A data harmonization layer that ingests exports from disparate school systems, maps them to DepEd/CHED/BIR reporting schemas, flags discrepancies between reported and actual values, and produces a validated draft report — reducing manual reconciliation from days to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once underlying data is validated, regulatory submissions to DepEd, CHED, PRC, and BIR require narrative sections — accreditation self-studies, explanatory memos, compliance statements, and responses to audit findings. LLMs can generate these structured narratives from structured data inputs. Education operators consistently find narrative report writing to be a bottleneck distinct from the data problem itself.",
+      "opportunity_sketch": "An automated report narrative generator that takes structured compliance data (enrollment counts, curriculum mappings, faculty credentials) and produces formatted narrative sections conforming to specific accreditation or regulatory templates (e.g., ACSCU-AAI, CHED CMOs).",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "A core audit risk is discrepancies between reported figures and actual records — enrollment counts that differ across systems, faculty loads that don't match payroll, curriculum hours that don't add up. Anomaly detection over the school's data systems can proactively surface these mismatches before an auditor does. The 'reported vs. actual data reveals discrepancies' pain directly maps to this capability.",
+      "opportunity_sketch": "A pre-audit reconciliation scanner that runs across student records, payroll, curriculum logs, and financial data to flag statistical outliers and cross-system mismatches, producing a prioritized list of discrepancies for staff to resolve before a regulatory visit.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Audit readiness is a multi-step workflow: receiving the audit request, identifying required data across 3-5 systems, pulling and reconciling reports, formatting for the specific regulator, generating an audit trail, and routing for review. This end-to-end process is exactly what task automation agents are designed for — replacing the 'scrambling' with an orchestrated, repeatable workflow. The audit trail gap (who changed what, when) can also be addressed by logging agent actions.",
+      "opportunity_sketch": "A 'compliance ops' agent that, upon receiving an audit trigger, autonomously identifies required report templates for the relevant regulator (DepEd vs. CHED vs. BIR), pulls data from connected systems, runs reconciliation checks, and produces a compliance package with an agent-maintained change log — delivering a draft package to administrators within 24 hours rather than days.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff scrambling to prepare audit responses often need to locate specific policies, past submissions, accreditation reports, curriculum documents, and regulatory circulars stored across file servers, email archives, and Google Drive. A RAG system over the institution's document corpus lets staff query in natural language ('What did we submit for our last CHED accreditation on faculty qualifications?') and get cited answers, reducing preparation time and the risk of inconsistent responses.",
+      "opportunity_sketch": "An internal compliance knowledge base — a RAG system indexed over past audit submissions, regulatory issuances, internal policies, and curriculum documents — that staff can query to quickly locate evidence, check past positions, and ensure consistency across regulatory responses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Schools can receive multiple regulatory audits (DepEd, CHED, PRC, BIR) with different risk profiles and timelines. A risk scoring model can assess, based on historical compliance data, data quality indicators, and audit cycle history, which programs or campuses carry the highest compliance risk before an audit is triggered — enabling proactive remediation rather than reactive scrambling.",
+      "opportunity_sketch": "A compliance risk dashboard that scores each campus/program on audit exposure — factoring in data completeness, time since last audit, known data discrepancies, and regulatory signals — so leadership can prioritize compliance investments and remediation before an audit lands.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

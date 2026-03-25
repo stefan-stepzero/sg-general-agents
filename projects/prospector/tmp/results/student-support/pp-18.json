@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "student-support-conduct-discipline-trauma-informed-gap-dup",
+  "pain_point_label": "Absence of Trauma-Informed Discipline Practices",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Staff lack trauma-informed training and documented frameworks to guide behavioral responses. AI text generation can produce tailored training materials, scenario-based case studies, and de-escalation response guides calibrated to the operator's student population and existing discipline policies. This directly addresses the training gap without requiring clinical expertise in every school.",
+      "opportunity_sketch": "An AI-authored trauma-informed practice toolkit: staff scenario guides, incident response scripts, and parent communication templates — generated from a base framework and customized per campus context.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incident reports and discipline logs are written in natural language but are never analyzed at scale for trauma-linked behavioral patterns. Text classification can tag incident records with probable trigger categories (sensory, relational, environmental), ACE-related behavioral signals, and escalation risk — surfacing patterns that humans miss across hundreds of records. This creates the data layer needed to shift from punitive to supportive responses.",
+      "opportunity_sketch": "A real-time incident log classifier that flags reports containing trauma-indicator language and routes them for mental health review before a suspension decision is made.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Education operators accumulate structured student data — attendance records, prior suspensions, academic performance dips, nurse visits, and family risk flags — that correlate with ACE exposure and trauma responses. A structured classifier trained on these feature vectors can identify students at high risk of being misclassified as defiant rather than dysregulated, enabling proactive welfare referrals before a punitive cycle begins.",
+      "opportunity_sketch": "A student risk classifier that ingests existing SIS/MIS data and flags students whose behavioral profile matches trauma-response patterns, triggering a welfare check rather than a discipline file.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Students with ACEs follow recognizable behavioral trajectories — escalating minor incidents, worsening attendance, and teacher-flagged emotional dysregulation — before a suspension event. Propensity modeling on historical student records can predict which students are on a punitive escalation path, giving welfare coordinators a lead-time window to intervene with support rather than discipline.",
+      "opportunity_sketch": "An early-warning model that scores students weekly on suspension propensity using SIS behavioral and attendance data, surfacing the top cohort for counselor outreach before the next incident.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff facing a live behavioral incident need immediate, context-specific guidance — not a policy document. A conversational agent can walk a staff member through a trauma-informed response in real time: asking about the trigger context, the student's history, and recommending a de-escalation approach, effectively embedding trauma-informed logic into the incident moment. This addresses the training-gap mechanism directly where and when it matters.",
+      "opportunity_sketch": "A staff-facing incident support chatbot accessible via mobile: a staff member describes what a student is doing, and the agent guides them through a trauma-informed response and flags whether a mental health referral is warranted before any disciplinary action is logged.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Welfare coordinators and school leaders need to apply trauma-informed frameworks (PBIS, restorative justice, functional behavior assessment protocols) to specific student cases, but lack time to locate and adapt the right guidance. A RAG system grounded in the operator's own policies, student welfare records, and trauma-informed literature can generate case-specific recommendations at the point of a discipline decision, not after.",
+      "opportunity_sketch": "A welfare advisor tool: a coordinator inputs a student's incident summary and behavioral history; the system retrieves relevant policy, prior similar cases, and trauma-informed guidance and generates a recommended support plan with citations.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

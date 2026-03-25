@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "site-facilities-safety-security-security-personnel-rostering-compliance-and-training-gaps-dup",
+  "pain_point_label": "Security Personnel Rostering, Compliance, and Training Are Fragmented Across Sites",
+  "matches": [
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core operational failure here is the absence of a centralized rostering system — security staff are scheduled locally per campus, creating coverage gaps when guards call in sick and no visibility across sites. AI-driven staff scheduling can optimize coverage across all campuses simultaneously, account for licensing constraints (only rostering qualified staff), and automatically flag under-staffed periods during peak hours or events. This directly addresses the 'scrambled coverage' and 'rostering errors' manifestations.",
+      "opportunity_sketch": "A centralized AI scheduling tool that generates compliant rosters across all campuses, surfaces coverage gaps in real time, and automatically suggests substitutes from a qualified pool when absences occur.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Security rostering is a hard constraint-satisfaction problem: each shift must be filled by a staff member whose license is current, whose training is up to date, who hasn't exceeded shift-hour limits, and who is assigned to the right campus. AI constraint solvers handle these combinatorial requirements better than manual spreadsheets or basic scheduling tools, especially when constraints overlap (e.g. a guard licensed for one campus type but not another, or unavailability + expiring certification coinciding). This complements scheduling by handling the multi-constraint assignment logic.",
+      "opportunity_sketch": "A configuration engine that validates every roster against all licensing, training-currency, and contractual constraints before finalizing, rejecting invalid assignments and proposing compliant alternatives automatically.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Expired certifications going unnoticed and under-staffing during peak periods are anomalies relative to expected compliance and coverage norms. An anomaly detection layer over the roster and certification data can flag deviations — a campus that consistently runs below minimum headcount, a guard whose recertification date is overdue, or a pattern where a specific site is repeatedly under-covered on certain days. This converts the current 'we didn't notice' failure mode into a proactive alert.",
+      "opportunity_sketch": "An automated compliance monitor that continuously scans certification expiry dates and roster coverage levels, surfacing anomalies (e.g. expired license, coverage below policy threshold) as alerts to the central security manager.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The compliance and training tracking workflow — pulling certification records, checking expiry dates, sending renewal reminders, updating training logs after completions, and confirming roster compliance — is a multi-step administrative pipeline that currently requires manual effort across multiple systems per campus. A task automation agent can orchestrate this end-to-end: ingest training completion records, update certification status, trigger reminders at defined intervals, and flag non-compliant staff to HR automatically. This eliminates the manual tracking that leads to 'a guard's license has expired but the organization did not notice'.",
+      "opportunity_sketch": "An automated compliance pipeline agent that ingests training completion records from any source (LMS exports, email confirmations, manual uploads), updates a central certification register, and proactively triggers renewal workflows 30/60/90 days before expiry.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Inconsistent security training is partly a content problem — campuses use ad-hoc, locally-produced materials with no standardization. AI text generation can produce a standardized library of security procedure documents, emergency response protocols, de-escalation guides, and incident reporting templates tailored to an education operator context, ensuring every campus operates from the same playbook. This addresses the 'different campuses respond differently to similar security situations' manifestation.",
+      "opportunity_sketch": "AI-generated security operations manual and site-specific procedure cards for each campus, drafted from a master template and customized for campus-specific risks (e.g. student age range, facility layout, local emergency contacts).",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Security staff turnover creates gaps in institutional knowledge about campus-specific risks — what to do when the fire alarm triggers in Building C, how to handle a specific entry point, who to call for a specific contractor. A RAG system over security SOPs, incident reports, and campus-specific briefing documents allows security staff to query procedures in natural language and receive accurate, sourced answers. This mitigates the knowledge-loss problem without requiring institutional memory to reside in individual staff.",
+      "opportunity_sketch": "A security knowledge assistant where guards can ask 'what is the lockdown procedure for the east campus main entrance?' and receive an accurate, policy-grounded answer drawn from the operator's own SOPs and incident history.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

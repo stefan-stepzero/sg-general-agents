@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-pastoral-counseling-crisis-response-protocols-dup",
+  "pain_point_label": "Absent or Inconsistent Crisis Response Protocols",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core gap is the absence of a standardized crisis response playbook — a document artifact. Text generation can produce campus-by-campus protocol documents, step-by-step escalation checklists, and staff communication templates (parent notification letters, incident disclosures) that are consistent across all sites. This directly addresses the 'each campus reinvents the wheel' causal factor by generating a canonical, reusable playbook from a prompt-driven specification.",
+      "opportunity_sketch": "An AI-assisted protocol authoring tool that generates a full crisis response playbook (tiered escalation paths, role-specific checklists, notification templates) from a set of operator inputs — jurisdiction, campus structure, regulatory obligations — and exports it as a ready-to-distribute PDF and editable doc.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Inconsistent crisis response often starts with inconsistent triage: staff don't recognize the severity of a disclosure. A text classifier applied to written incident reports, pastoral notes, or even live chat logs can flag urgency level (low / moderate / high / immediate risk) and route the case to the correct protocol pathway. This directly closes the gap where 'some do nothing' by making severity assessment machine-assisted rather than left to individual staff judgment.",
+      "opportunity_sketch": "An AI triage layer embedded in the incident logging workflow — staff enter a brief description of the disclosure and the system returns a severity classification and the mandatory next-step protocol, ensuring no case falls through the cracks regardless of which campus it originates from.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pain point explicitly calls out 'no unified incident tracking or follow-up checklist' — a multi-step workflow problem. A task automation agent can orchestrate the full crisis response sequence: receive an incident trigger, generate a timestamped record, dispatch role-specific notifications (safeguarding lead, principal, external agency), schedule follow-up tasks, and close the loop with a resolution confirmation. This replaces the ad-hoc, campus-by-campus variation with a centrally enforced, auditable workflow.",
+      "opportunity_sketch": "A crisis response workflow agent integrated with the operator's communication stack (email, SMS, case management) that activates on incident submission, routes mandatory notifications according to protocol type, and maintains a live audit trail — eliminating the legal liability gap from undocumented or inconsistent responses.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff under stress during a crisis need instant, authoritative answers: 'What do I do when a student discloses family abuse?' A RAG system grounded in the operator's own policies, jurisdiction-specific mandatory reporting laws, and best-practice frameworks gives staff a single query interface to retrieve and synthesize the correct protocol in real time. This directly counters 'distributed decision-making without a centralized playbook' by making the playbook instantly queryable rather than buried in a shared drive.",
+      "opportunity_sketch": "A staff-facing crisis support assistant (web or mobile) where any staff member can describe a situation and receive a synthesized, cited response drawn from the operator's official protocols and relevant legal obligations — surfacing exactly the right escalation path within seconds of a disclosure.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A single-turn lookup (RAG) helps, but a crisis situation is rarely a single question — staff need guided, multi-turn support: 'The student just disclosed X, what now? I've notified the principal but the parent is calling, what do I say?' A conversational agent maintains state across the interaction, walks staff through the protocol step by step, and adapts based on what has already been done. This is directly suited to the high-stress, high-variability nature of a live crisis response.",
+      "opportunity_sketch": "An always-available AI crisis co-pilot for pastoral staff — a multi-turn assistant that guides them through an active incident from first disclosure to resolution, confirming completed steps, flagging mandatory reporting deadlines, and generating the incident documentation as the conversation progresses.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

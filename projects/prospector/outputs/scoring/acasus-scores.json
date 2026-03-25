@@ -1,0 +1,283 @@
+{
+  "company_id": "acasus",
+  "property_scores": [
+    {
+      "property_id": "industry-vertical-primary-sector",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Precise value ('Professional Services') with direct homepage evidence and clear rationale excluding other sector types."
+    },
+    {
+      "property_id": "industry-vertical-niche",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Highly specific niche (International Development Consulting — Public Sector Reform in LMICs) backed by service-line descriptions and case study geographies."
+    },
+    {
+      "property_id": "industry-vertical-value-chain-position",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Clear end-service-provider position confirmed by site quote and delivery model; no intermediaries."
+    },
+    {
+      "property_id": "industry-vertical-market-maturity",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Mature classification well-supported but medium confidence given US aid headwinds and growth projections cited in evidence."
+    },
+    {
+      "property_id": "business-model-revenue-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Project-based consulting fees clearly established; no pricing page, no SaaS, no subscription model visible."
+    },
+    {
+      "property_id": "business-model-delivery-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Human-delivered embedded consulting confirmed explicitly from site positioning and tagline."
+    },
+    {
+      "property_id": "business-model-cost-structure",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Variable-cost-heavy people-driven structure confirmed by 265-person global field delivery team."
+    },
+    {
+      "property_id": "business-model-network-effects",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Brand/trust moat and switching costs identified with reasonable evidence; moat depth is inferred from sector norms rather than directly measured."
+    },
+    {
+      "property_id": "business-model-key-dependencies",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Talent-market and aid-funding dependencies well-reasoned but specific funder mix (FCDO vs USAID) not confirmed."
+    },
+    {
+      "property_id": "scale-resources-headcount",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "230–265 estimate corroborated by multiple aggregators and CEO transition article; no primary disclosure available."
+    },
+    {
+      "property_id": "scale-resources-revenue-band",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "~$35M from LeadIQ/Tracxn is directionally consistent with headcount/billing-rate logic but no audited financials exist."
+    },
+    {
+      "property_id": "scale-resources-capitalization",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Bootstrapped/private partnership inferred from Swiss holding structure and no Crunchbase funding rounds; medium confidence."
+    },
+    {
+      "property_id": "scale-resources-asset-intensity",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Asset-light confirmed — services business, no manufacturing, fleet, or data centres identified."
+    },
+    {
+      "property_id": "scale-resources-financial-health",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.42,
+      "justification": "Appears healthy based on headcount growth signals but profitability unknown; low-medium confidence without financials."
+    },
+    {
+      "property_id": "scale-resources-company-age",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Founded 2013 confirmed precisely, placing company in established band (8–20 years) as of 2026."
+    },
+    {
+      "property_id": "scale-resources-customer-base-scale",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.51,
+      "justification": "Micro-to-small customer count inferred from government contract model and case studies; no count disclosed."
+    },
+    {
+      "property_id": "growth-phase-scaling",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.72,
+      "justification": "Scaling phase supported by 22% headcount growth, CEO transition mandate, and active job postings in 10+ countries; medium-high confidence."
+    },
+    {
+      "property_id": "market-position-customer-segment",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Government/public sector and multilateral organisations clearly evidenced from case studies and service line descriptions."
+    },
+    {
+      "property_id": "market-position-competitive-stance",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Niche specialist stance well-supported by positioning against Palladium/DAI; medium confidence from indirect competitive intelligence."
+    },
+    {
+      "property_id": "market-position-gtm-motion",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Relationship/reputation-led motion inferred from thought leadership and conference presence; no internal sales data available."
+    },
+    {
+      "property_id": "market-position-customer-concentration",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.51,
+      "justification": "Moderately concentrated inferred from 10+ concurrent country programs but no revenue breakdown published."
+    },
+    {
+      "property_id": "market-position-pricing-position",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.51,
+      "justification": "Premium/mid-market inferred from revenue-per-employee and sector billing-rate norms; no disclosed day rates."
+    },
+    {
+      "property_id": "org-structure-leadership",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Founder-to-professional-CEO transition precisely documented with named individuals, timeline, and mandate described."
+    },
+    {
+      "property_id": "org-structure-shape",
+      "coverage": 0.4,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.28,
+      "justification": "Hub-and-spoke inference is reasonable from service lines and Swiss HQ but exact org topology not publicly documented."
+    },
+    {
+      "property_id": "org-structure-workforce-model",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Globally distributed/field-deployed confirmed precisely — 6 continents, 80% local-talent policy stated."
+    },
+    {
+      "property_id": "org-structure-talent-profile",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Domain-expert-heavy profile confirmed from leadership backgrounds, careers copy, and podcast guest profiles."
+    },
+    {
+      "property_id": "tech-maturity-stack-generation",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.72,
+      "justification": "Tech-enabled consulting with genuine engineering function confirmed from Budapest hub, job postings, and RocketReach data; medium-high confidence."
+    },
+    {
+      "property_id": "tech-maturity-engineering-practices",
+      "coverage": 0.6,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.51,
+      "justification": "Client-delivery-focused engineering described with reasonable detail; no CI/CD or practice-level evidence available."
+    },
+    {
+      "property_id": "tech-maturity-data-infrastructure",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Structured ETL/BI on AWS/GCP confirmed from multiple tech-stack sources; internal data practices not directly observed."
+    },
+    {
+      "property_id": "tech-maturity-security-posture",
+      "coverage": 0.4,
+      "confidence_multiplier": 0.7,
+      "final_score": 0.28,
+      "justification": "Basic posture inferred from absence of certifications and professional-services profile; largely assumed with low-medium confidence."
+    },
+    {
+      "property_id": "operating-environment-regulatory-burden",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Moderate burden (Swiss law + international aid procurement) well-reasoned with clear structural evidence."
+    },
+    {
+      "property_id": "operating-environment-geographic-scope",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Global/multi-continent confirmed precisely — 6 continents, 10+ active country operations verified from job postings."
+    },
+    {
+      "property_id": "operating-environment-macro-sensitivity",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Aid-budget-dependent sensitivity well-reasoned; specific funder mix unconfirmed keeps this at medium confidence."
+    },
+    {
+      "property_id": "operating-environment-governance-obligations",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.85,
+      "final_score": 0.68,
+      "justification": "Private partnership with founder-retained chair confirmed from Swiss corporate structure; no external board obligations found."
+    },
+    {
+      "property_id": "culture-brand-innovation-posture",
+      "coverage": 1.0,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.90,
+      "justification": "Pragmatic/evidence-driven posture confirmed from WHO summit quote and site tagline; medium-high confidence."
+    },
+    {
+      "property_id": "culture-brand-brand-positioning",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Thought-leader/mission-driven challenger positioning precisely documented with specific content and conference appearances."
+    },
+    {
+      "property_id": "culture-brand-public-values",
+      "coverage": 1.0,
+      "confidence_multiplier": 1.0,
+      "final_score": 1.0,
+      "justification": "Mission-driven with values structurally embedded in talent policy (80% local staff) and careers framing."
+    },
+    {
+      "property_id": "culture-brand-employer-brand",
+      "coverage": 0.8,
+      "confidence_multiplier": 0.9,
+      "final_score": 0.72,
+      "justification": "Strong-in-niche with Glassdoor data (3.4/5, 69 reviews) giving a clear nuanced picture; medium-high confidence."
+    }
+  ],
+  "dimension_scores": {
+    "industry-vertical": 0.92,
+    "business-model": 0.87,
+    "scale-resources": 0.67,
+    "growth-phase": 0.72,
+    "market-position": 0.68,
+    "org-structure": 0.82,
+    "tech-maturity": 0.55,
+    "operating-environment": 0.76,
+    "culture-brand": 0.91
+  },
+  "overall_score": 0.76
+}

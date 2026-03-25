@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-professional-development-no-competency-mapping-dup",
+  "pain_point_label": "No Competency Mapping or Individual Development Plans",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Staff skill profiles — drawn from HR records, self-assessments, and observation data — are structured feature vectors that can be classified into competency tiers (e.g., 'foundational', 'developing', 'proficient') across STEM, ICT, and inclusive education domains. This directly addresses the lack of a baseline diagnostic tool by replacing subjective manager assessment with a data-driven segmentation. For a 500+ staff operator, this creates consistent, scalable competency banding across campuses.",
+      "opportunity_sketch": "A competency classification engine that ingests staff profile data (qualifications, years of experience, prior PD attendance, self-assessment responses) and assigns each staff member to skill-level tiers per competency domain, surfacing high-impact development gaps at the individual and cohort level.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "The core failure described — 'same workshop list pushed to all' — is precisely the problem recommendation systems are designed to solve. By modeling each staff member's competency profile, career goals, and prior PD history, a recommender can proactively surface high-relevance learning opportunities without staff needing to self-select. This directly addresses low workshop engagement and the mismatch between staff ambition and institutional need.",
+      "opportunity_sketch": "A personalized PD recommendation layer that maps each teacher's competency gaps and stated career goals to a curated queue of workshops, courses, and coaching sessions — replacing the blanket broadcast with an individualized development feed.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Mid-career teacher stagnation and disengagement from PD are behavioral outcomes that can be modeled as propensity scores. Features like tenure, competency gap size, prior PD completion rates, and role mobility signals can predict which staff are at risk of disengagement or attrition — enabling proactive intervention before talent is lost. This addresses the 'hard to justify hiring vs. upskilling' pain by quantifying individual development trajectories.",
+      "opportunity_sketch": "An employee development propensity model that flags staff at high risk of PD disengagement or attrition and identifies those most likely to benefit from targeted upskilling investment, supporting HR decisions on hiring vs. developing in-house talent.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Individual Development Plans (IDPs) require personalized written documentation — goals, development actions, timelines, and rationale — that is currently absent. LLM-based text generation can produce first-draft IDPs tailored to each staff member's competency profile, role requirements, and stated ambitions, reducing the admin burden on managers who currently lack time or tools to create bespoke plans. This directly closes the 'no personalized development plans' gap.",
+      "opportunity_sketch": "An IDP generation tool that takes a staff member's competency assessment results and career goal inputs and outputs a structured, personalized development plan document — ready for manager review, not manager authorship.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Competency self-assessment and goal-setting require multi-turn dialogue to be effective — a static form cannot surface the nuanced picture of staff skills and ambitions. A conversational agent can guide each staff member through a structured but adaptive diagnostic interview, capturing STEM proficiency, ICT fluency, and inclusive education capability in a way that feels supportive rather than bureaucratic, increasing honest engagement with the process.",
+      "opportunity_sketch": "A self-assessment chatbot that conducts a structured competency interview with each staff member, synthesizes responses into a skill profile, and feeds the output into the IDP generation and recommendation pipeline.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Building valid individual development plans requires satisfying multiple simultaneous constraints: available PD slots, staff timetables, competency gap priority, budget per head, and institutional need profiles. This is a configuration matching problem — finding the valid assignment of PD activities to staff members — that constraint satisfaction handles well. It directly addresses the mismatch between staff ambition and institutional need by optimizing for both simultaneously.",
+      "opportunity_sketch": "A PD planning configurator that generates a term-level development schedule for each staff member that satisfies their individual gap priorities, available time slots, budget constraints, and the school's strategic capability requirements.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

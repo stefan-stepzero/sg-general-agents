@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-decentralized-cash-control",
+  "pain_point_label": "Decentralized Cash Advances & Petty Cash Control",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Campus staff often hold physical receipts, handwritten cash advance forms, and supplier dockets that never get digitized until month-end reconciliation — if at all. OCR and document parsing can convert these physical artifacts into structured records at the point of transaction, dramatically shrinking the audit trail gap. For an emerging-market multi-site operator where many receipts are handwritten or printed in local languages, automated digitization is the prerequisite for any downstream control.",
+      "opportunity_sketch": "A mobile-first receipt capture flow where campus staff photograph receipts at point of purchase; the system extracts vendor, amount, date, and category and logs them immediately against the open cash advance — eliminating the pile-of-paper reconciliation at month end.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain point explicitly describes financial leakage, missing cash discovered only after staff rotation, and grey-area spending that accumulates over weeks. Anomaly detection over structured cash advance and petty cash records can flag patterns that indicate misuse — unusually high spend velocity at a campus, repeated round-number withdrawals, spend categories that drift from approved use, or reconciliation gaps that exceed expected variance. This is exactly the use case the capability is built for.",
+      "opportunity_sketch": "A continuous monitoring layer over the petty cash ledger that scores each campus's cash flow against its own historical baseline and peer campuses, surfacing outlier sites to the CFO weekly rather than waiting for month-end or staff-change discoveries.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.45
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reconciliation bottleneck — taking 2-4 weeks because it is a manual, multi-system, multi-site process — is a canonical task automation target. An agent can ingest digitized receipts, match them against issued cash advances, flag exceptions, chase missing documentation via messaging, and generate a reconciliation report without a finance officer manually collating spreadsheets from 15 campus coordinators. The multi-step branching (match, flag, chase, escalate) is precisely what task automation agents handle.",
+      "opportunity_sketch": "An automated month-end petty cash close process: the agent collects digitized receipts from all sites, attempts automated matching to open advances, drafts exception requests to campus coordinators for gaps, and delivers a consolidated reconciliation pack to the CFO — cutting the 2-4 week cycle to 2-3 days.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Once transactions are digitized, each cash spend line needs to be classified against an approved expense taxonomy — distinguishing approved items from semi-approved and grey-area items described in the pain point. A structured data classifier trained on the operator's own approved purchase categories and historical flagged items can auto-tag every transaction at ingestion and triage exceptions before they accumulate. This converts subjective judgement calls into a consistent, auditable classification layer.",
+      "opportunity_sketch": "Every captured receipt is auto-tagged as Approved / Requires-Review / Policy-Exception based on vendor type, amount, and category, with borderline transactions routed to a finance coordinator for same-day sign-off rather than discovered weeks later during reconciliation.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,329 @@
+{
+  "entity": "WISE - World Innovation Summit for Education",
+  "profile_date": "2026-03-11",
+  "sources": [
+    "site-scan: https://wise-qatar.org (2026-03-11)",
+    "web-research: news, leadership, financial, industry, technology, reputation synthesis (2026-03-11)",
+    "gap-fill: WebSearch — community scale (Gulf Times, Wikipedia), LinkedIn org roles, headcount band inference (2026-03-11)"
+  ],
+  "executive_summary": "WISE (World Innovation Summit for Education) is a global education innovation platform housed within Qatar Foundation, a state-backed non-profit funded by Qatar's hydrocarbon endowment. Established in 2009 and now in its 12th biennial summit cycle, WISE occupies a distinctive niche as a convening authority, prize grantor ($1M WISE Prize for Education), and research producer — operating at the intersection of global education policy, philanthropy, and innovation. As of December 2025, WISE is mid-transition under new CEO Dr. Asyia Kazmi (OBE, formerly Gates Foundation), who succeeded founding CEO Stavros Yiannouka after 13 years; this leadership shift signals an intent to move from convening and thought leadership toward demonstrable programme impact, particularly in AI-in-education and access for low-income learners. WISE's funding is sovereign-level and effectively unlimited within its mandate, but its operational scale is modest — a programmatic unit without disclosed headcount or independent financials, best understood as a well-resourced think tank-convener hybrid with biennial summit cadence as its primary public-facing product.",
+  "dimensions": {
+    "industry_vertical": {
+      "primary_sector": {
+        "value": "Education",
+        "evidence": "WISE's stated mission is advancing global education through innovation. All programming — the summit, prize, accelerator, research — targets the education sector. Housed within Qatar Foundation's education portfolio.",
+        "confidence": "high"
+      },
+      "vertical_niche": {
+        "value": "Global education innovation, policy, and philanthropy (think tank + convening platform); sub-verticals include EdTech, AI-in-education, and girls'/low-income learner access",
+        "evidence": "WISE 12 theme 'Humanity.io' centred on AI and human values in education. Prize winners include AI-powered learning tools (TUMO Path AI, Darsel maths chatbot) and Arabic child development (Iqrali.jo). IIE-WISE AI consortium spans 7 countries. New CEO Kazmi explicitly named Africa and girls' education as priorities. WISE is distinct from pure EdTech vendors — it does not sell software but convenes, funds, and researches.",
+        "confidence": "high"
+      },
+      "value_chain_position": {
+        "value": "Platform / infrastructure layer — convener, funder, and knowledge producer upstream of implementation",
+        "evidence": "WISE does not deliver education itself. It convenes stakeholders (governments, NGOs, academia, EdTech), funds innovators via prize and accelerator grants, and publishes research. Its value-chain role is to surface, legitimise, and accelerate innovations produced by others. Closest analogy: a foundation-plus-conference platform.",
+        "confidence": "high"
+      },
+      "industry_maturity": {
+        "value": "Growth — the global education innovation and EdTech convening market is expanding, with growing multilateral investment in AI-in-education",
+        "evidence": "WISE operates in a space that has seen significant growth: UNESCO, OECD, WEF, and major foundations are all scaling education innovation programmes. The biennial summit attracted 4,000+ attendees in 2025. AI-in-education is a rapidly expanding sub-theme. However WISE's specific niche (Gulf-state-backed global summit) is relatively mature within itself — 12 editions since 2009.",
+        "confidence": "medium"
+      }
+    },
+    "business_model": {
+      "revenue_model": {
+        "value": "Grant / endowment funded (no commercial revenue model) — funded as a programmatic unit of Qatar Foundation",
+        "evidence": "WISE has no disclosed independent revenue. Qatar Foundation is funded by Qatar's hydrocarbon endowment and state allocations. WISE operates as a cost centre within QF, not a revenue-generating entity. No membership fees, subscriptions, or ticket revenues are visible in public sources. The $1M prize is an expenditure, not revenue.",
+        "confidence": "high"
+      },
+      "delivery_model": {
+        "value": "Events + grants + research publishing (hybrid: biennial summit, competitive prize grants, and knowledge products)",
+        "evidence": "Primary delivery mechanisms: (1) WISE Summit — biennial in-person convening at Qatar National Convention Centre; (2) WISE Prize — $1M competitive grant to education innovators; (3) WISE Accelerator — MVP development grants ($125K per finalist); (4) Research publications (e.g., IIE-WISE AI consortium report); (5) Digital content via wise-qatar.org.",
+        "confidence": "high"
+      },
+      "cost_structure": {
+        "value": "Fixed-cost-heavy — event production, research programme staffing, prize administration, and HQ operations are largely fixed regardless of output volume",
+        "evidence": "The biennial summit at Qatar National Convention Centre with 4,000+ attendees, 200+ speakers is a large fixed production cost. Prize fund ($1M + $750K in MVP grants per cycle), IIE consortium, and a permanent staff team are recurring fixed costs. No variable COGS structure visible — this is not a manufacturing or service-delivery business.",
+        "confidence": "medium"
+      },
+      "moat_and_network_effects": {
+        "value": "Multi-layered institutional moat: (1) QF sovereign backing removes financial pressure competitors face; (2) Sheikha Moza's personal patronage (UNESCO Special Envoy) is structurally unreplicable; (3) 17-year brand equity as the 'Davos of education'; (4) growing laureate and alumni network (78 WISE Award winners, 6 Prize finalists per cycle) creates incumbent advantage for prize prestige; (5) convening flywheel — high-profile speakers attract senior attendees, reinforcing network value for all participants; (6) 35,000+ community member base and 150,000+ engaged followers create compounding network density",
+        "evidence": "Qatar Foundation is a state-backed entity with hydrocarbon endowment funding — no competitor can replicate this structural advantage without equivalent sovereign backing. Sheikha Moza is a globally respected UNESCO Special Envoy who personally presents the Prize; this patron role is non-transferable. The 17-year cumulative laureate network (78 WISE Award winners from 150+ countries, 4,900+ total prize/awards applications since 2009) creates a self-reinforcing prestige moat. The biennial summit at 4,000+ attendees with speakers including Nobel laureates creates a convening flywheel: the more prestigious the convening, the more prestigious speakers agree to attend, reinforcing the cycle. WISE community reported at 35,000+ diverse members and 150,000+ engaged followers (Wikipedia, Gulf Times). No credible peer organisation combines sovereign funding + royal patronage + 17-year brand + prize network.",
+        "confidence": "high"
+      },
+      "key_operational_dependencies": {
+        "value": "Five critical operational dependencies: (1) Qatar Foundation funding allocation — 100% of budget; (2) Sheikha Moza's active patronage — convening authority depends on her participation; (3) global education policy network — quality of speakers and participants; (4) summit logistics infrastructure — Qatar National Convention Centre + event production partnerships; (5) research and consortium partnerships (IIE, HundrED, university partners) for programmatic credibility",
+        "evidence": "(1) All operational funding flows from QF — no independent revenue diversification. (2) Sheikha Moza personally presents the WISE Prize; her absence would materially reduce the event's convening draw. (3) WISE's value to participants is access to senior education leaders — degradation of the network quality would reduce summit and prize value. (4) The biennial summit is a 4,000+ person international event at QNCC; complex logistics depend on Qatar's convention infrastructure and contracted event suppliers. (5) Research credibility depends on academic partnerships — the IIE-WISE consortium spans 7 countries; WISE's thought-leadership product depends on these external research partners.",
+        "confidence": "high"
+      }
+    },
+    "scale_resources": {
+      "headcount": {
+        "value": "Small (11-50, estimated ~36 FTE) — Crunchbase and RocketReach both indicate approximately 36 employees",
+        "evidence": "Crunchbase company profile for World Innovation Summit for Education (WISE) lists employee count in the 11-50 band; RocketReach org chart data corroborates approximately 36 employees. Named roles visible on LinkedIn include CEO (Dr. Asyia Kazmi), Director of Programs and Chief Curator (Dr. Ameena Abdul-Majeed Hussain — updated title per LinkedIn 2025), Administrative Coordinator (Rekha Zachariah). As a programmatic unit of Qatar Foundation operating year-round research, prize, accelerator, and biennial summit programmes, ~36 FTE is consistent with the functional scope. Exact figure not independently audited.",
+        "confidence": "medium"
+      },
+      "headcount_band": {
+        "value": "11–50 (estimated ~36 FTE core staff)",
+        "evidence": "Crunchbase lists WISE in the 11-50 employee band; RocketReach corroborates ~36 FTE. LinkedIn company page does not display a precise headcount figure publicly. Consistent with scope of a programmatic foundation unit running a biennial summit, prize programme, accelerator, and research consortium from Doha HQ. Additional event-period contractors not counted in core headcount.",
+        "confidence": "medium"
+      },
+      "revenue_band": {
+        "value": "Not applicable — grant-funded non-profit unit; no independent revenue",
+        "evidence": "WISE is a cost centre within Qatar Foundation. Operating budget is not publicly disclosed. Proxies: $1M prize fund disbursed biennially; $750K in finalist MVP grants per cycle; multi-country research consortium operational costs. Total annual operating budget likely in the $5-15M range (estimated), but this is speculative.",
+        "confidence": "low"
+      },
+      "capitalization": {
+        "value": "Sovereign / endowment-funded — effectively unlimited within mandate, no external fundraising required",
+        "evidence": "Qatar Foundation's broader education spend is ~$405M/yr for Education City campuses alone. QF has committed $6.7B+ to Education City since 2006. WISE is funded as a programmatic unit with effectively sovereign-level financial backing. No fundraising, no runway pressure, no VC or donor dependency.",
+        "confidence": "high"
+      },
+      "asset_intensity": {
+        "value": "Asset-light — WISE operates from Qatar Foundation facilities (Qatar National Convention Centre for the summit, QF campus for HQ) but owns no significant physical assets itself",
+        "evidence": "Summit held at QNCC (Qatar Foundation venue). No manufacturing, logistics, or significant capital equipment. Primary assets are intellectual (brand, prize alumni network, research publications) and human (staff expertise). Classic think tank / foundation asset profile.",
+        "confidence": "medium"
+      },
+      "financial_health": {
+        "value": "Structurally sustainable — sovereign endowment-funded with no commercial revenue pressure; financial health is a function of Qatar state/QF priorities, not market performance",
+        "evidence": "No revenue risk, no burn rate concerns, no debt. Financial risk is political (Qatar/QF priority shift) not operational. WISE's financial health is essentially as stable as Qatar's sovereign wealth position, which is very strong.",
+        "confidence": "high"
+      },
+      "company_age": {
+        "value": "Established (founded 2009 — 17 years old as of 2026)",
+        "evidence": "WISE was founded in 2009 as a Qatar Foundation initiative. WISE 12 ran in November 2025, consistent with biennial cadence since inception. 16+ years of continuous operation.",
+        "confidence": "high"
+      },
+      "customer_user_base_scale": {
+        "value": "Large — 35,000+ diverse community members, 150,000+ engaged followers, 12,000+ cumulative summit attendees across 12 editions, 4,000+ per biennial cycle",
+        "evidence": "WISE self-reports 35,000+ diverse community members and 150,000+ engaged followers (cited in Wikipedia and Gulf Times, 2025). WISE 12 (November 2025) attracted 4,000+ in-person attendees from 100+ countries, with 6,000+ registration applications. Cumulative across 12 summits: 12,000+ attendees from 150 countries. Prize/awards programme: 4,900+ total applications since 2009 from 150+ countries; 427 applicants in the 2024-25 WISE Prize cycle alone. 78 WISE Award-winning projects since inception. The actively engaged 'core' stakeholder group (annual prize/award applicants + summit attendees) is approximately 5,000–10,000 per biennial cycle.",
+        "confidence": "high"
+      },
+      "customer_base_scale": {
+        "value": "35,000+ community members; 150,000+ engaged followers; 4,000+ summit attendees per cycle; 12,000+ cumulative across all summits",
+        "evidence": "Self-reported community figures: 35,000+ diverse community members, 150,000+ engaged followers (Wikipedia/Gulf Times 2025). WISE 12: 4,000+ in-person attendees, 6,000+ registration applications. Cumulative across 12 summits: 12,000+ attendees from 150+ countries. Prize/awards: 4,900+ total applications since 2009. The network spans 200 countries.",
+        "confidence": "high"
+      }
+    },
+    "growth_phase": {
+      "value": "Mature / Optimization — with a strategic reinvention inflection under new CEO",
+      "evidence": "WISE is 17 years old with a well-established biennial summit format (12 editions), a stable prize programme, and proven convening authority. It is not scaling rapidly or searching for product-market fit. However, the December 2025 CEO transition (Kazmi succeeding Yiannouka) signals a deliberate strategic pivot: from thought leadership toward implementation impact, Africa focus, and AI-in-education programming. This is an optimization/reinvention phase, not scaling or decline.",
+      "confidence": "high"
+    },
+    "market_position": {
+      "target_customer_segment": {
+        "value": "Three distinct segments: (1) Primary — education policymakers and government officials (ministers of education, senior MoE officials, multilateral bodies such as UNESCO, OECD, World Bank); (2) Secondary — education innovators and social entrepreneurs (NGOs, EdTech founders, universities seeking prize/award recognition and funding); (3) Tertiary — education philanthropy (foundations, bilateral aid agencies, corporate CSR funders seeking deal flow and convening access)",
+        "evidence": "WISE 12 speakers confirmed the policymaker-heavy audience: Nobel laureate Abhijit Banerjee (economist), X Prize CEO, senior figures from multilateral institutions. Prize applicants are verified NGOs and social enterprises: TUMO (Armenia — national-scale youth coding), Iqrali.jo (Jordan — Arabic early childhood), Darsel (India — maths chatbot). IIE consortium partners are universities and bilateral education bodies. New CEO Asyia Kazmi's background (Gates Foundation Global Education Policy, UK government Ofsted/DfE/DFID, Girls' Education Challenge) reflects the target segment precisely — senior government and philanthropy decision-makers. WISE does not serve individual learners, parents, or SMBs. The convening value proposition is access to peer senior leaders and legitimation for education innovators seeking credibility.",
+        "confidence": "high"
+      },
+      "customer_segment": {
+        "value": "Three distinct segments: (1) Primary — education policymakers and government officials (ministers of education, senior MoE officials, multilateral bodies such as UNESCO, OECD, World Bank); (2) Secondary — education innovators and social entrepreneurs (NGOs, EdTech founders, universities seeking prize/award recognition and funding); (3) Tertiary — education philanthropy (foundations, bilateral aid agencies, corporate CSR funders seeking deal flow and convening access)",
+        "evidence": "See target_customer_segment above.",
+        "confidence": "high"
+      },
+      "competitive_stance": {
+        "value": "Niche specialist with category-leader positioning in Gulf-state-backed global education convening",
+        "evidence": "WISE occupies a distinctive niche: no direct competitor combines Gulf-state sovereign funding, Sheikha Moza patronage, a biennial summit with 4,000+ attendees, a $1M prize, and global south coverage. Closest peers are Brookings CUE (think tank, no prize/summit), HundrED (curation, Finnish, no prize), ASU GSV Summit (more commercial, US-centric), Jacobs Foundation (funder, no summit). WISE has a defensible but narrow niche.",
+        "confidence": "high"
+      },
+      "gtm_motion": {
+        "value": "Community/mission-driven — network and reputation-led engagement, no sales team or commercial GTM",
+        "evidence": "WISE does not sell. Engagement is driven by: (1) summit invitations to global leaders; (2) open prize applications; (3) research distribution; (4) partnerships (IIE, HundrED). The convening model is invitation + reputation. No evidence of outbound sales, paid acquisition, or channel partners in a commercial sense.",
+        "confidence": "high"
+      },
+      "customer_concentration": {
+        "value": "Single-funder dependent (Qatar Foundation = ~100% of operational funding) but diversified stakeholder base",
+        "evidence": "Funding is 100% concentrated in Qatar Foundation. However, WISE's stakeholder/audience base is highly diversified across geographies, institution types, and sectors — no single stakeholder relationship is existential beyond QF funding.",
+        "confidence": "high"
+      },
+      "pricing_position": {
+        "value": "Not applicable (grant-funded, no commercial pricing); operates on invitation/open-application model",
+        "evidence": "WISE does not charge customers. Summit attendance is by invitation or registration (no disclosed ticket price in public sources). Prize is a grant, not a fee. Research is published openly. The value exchange is access and legitimacy, not monetary.",
+        "confidence": "high"
+      }
+    },
+    "org_structure": {
+      "leadership_model": {
+        "value": "Professional management under patron-board governance — CEO-led organisation with Qatar Foundation as governing body and Sheikha Moza as patron",
+        "evidence": "WISE is led by a professional CEO (now Dr. Asyia Kazmi, OBE, as of Dec 2025). Governance sits within Qatar Foundation's board structure. Sheikha Moza is patron but not operationally involved. Yiannouka's 13-year tenure demonstrates stability in professional management model. No founder-led dynamic — WISE was created institutionally by QF.",
+        "confidence": "high"
+      },
+      "org_shape": {
+        "value": "Flat functional structure under CEO — 4-5 functional units: Programmes (prize + accelerator + awards + curation), Research, Summit/Events, Communications, and Operations/Administration; no geographic or divisional splits",
+        "evidence": "LinkedIn confirms named senior functional roles: CEO (Dr. Asyia Kazmi, from Dec 2025); Director of Programs and Chief Curator (Dr. Ameena Abdul-Majeed Hussain — title updated to include 'Chief Curator', per LinkedIn 2025, reflecting expanded curation remit for prize/awards); Administrative Coordinator (Rekha Zachariah — operations function). The four programme product lines (WISE Prize, WISE Awards, WISE Accelerator, WISE Research/publications) map directly to programme team responsibilities under a single Programmes director. At ~36 FTE in a Doha HQ, a matrix or divisional structure would be atypical — flat functional is standard for a foundation unit of this size. No geographic sub-offices; international operations (IIE consortium, global prize applicants) are managed from HQ with contracted support. Governance hierarchy: Qatar Foundation Board → WISE CEO → functional directors (~4-5) → programme managers → coordinators.",
+        "confidence": "medium"
+      },
+      "workforce_model": {
+        "value": "Co-located (Doha, Qatar) with global event operations",
+        "evidence": "HQ is at Qatar Foundation campus, Doha. Summit is held at Qatar National Convention Centre. No evidence of remote-first or distributed workforce. International research consortium (IIE) operates as a partner, not WISE staff. Likely small co-located core team with contracted global event support.",
+        "confidence": "medium"
+      },
+      "talent_profile": {
+        "value": "Domain-expert-heavy — education policy professionals, researchers, programme managers, and communications specialists; no significant engineering or sales function",
+        "evidence": "CEO profile (Kazmi: doctorate in education, 30 years in education policy, Gates Foundation, Ofsted, UCL) is representative of the talent profile WISE attracts. Prior CEO Yiannouka: McKinsey, LKY School of Public Policy. WISE is not a technology company — it runs on policy expertise, convening skills, and research capability. No evidence of engineering team.",
+        "confidence": "high"
+      }
+    },
+    "tech_maturity": {
+      "stack_generation": {
+        "value": "Minimal tech (WordPress site, non-tech organisation, platform-dependent on Qatar Foundation IT)",
+        "evidence": "WISE website (wise-qatar.org) is standard WordPress. No proprietary platforms, applications, or technology products. LinkedIn research confirms no CTO, VP of Technology, or Head of Technology found — tech likely handled at Qatar Foundation level. WISE researches and convenes around EdTech but does not build technology. Internal tooling likely standard cloud productivity suite provided by QF.",
+        "confidence": "medium"
+      },
+      "engineering_practices": {
+        "value": "Not applicable — no CTO/VP/Head of Tech found on LinkedIn; tech handled at Qatar Foundation level",
+        "evidence": "No engineering team, no software product, no CI/CD. LinkedIn research found no CTO, VP of Technology, Head of Technology, or any tech leadership within WISE. Technology infrastructure and support likely provided by Qatar Foundation IT as shared services. Web presence is managed content, not engineered product.",
+        "confidence": "high"
+      },
+      "data_infrastructure": {
+        "value": "Basic analytics (standard BI/CRM if any); likely relies on Qatar Foundation shared services",
+        "evidence": "No public evidence of sophisticated data infrastructure. LinkedIn found no technology leadership within WISE, suggesting data/analytics capability is minimal or provided by QF shared services. Research programme (IIE consortium) uses academic methods, not data engineering. Summit registration and prize applications likely use standard event/grant management platforms.",
+        "confidence": "low"
+      },
+      "security_posture": {
+        "value": "Basic to intermediate — standard for a small non-profit/foundation operating in public sector-adjacent space",
+        "evidence": "No evidence of advanced security posture or certifications. Operating within Qatar Foundation's broader IT infrastructure likely provides institutional-grade baseline security. No indication WISE handles sensitive personal data at scale.",
+        "confidence": "low"
+      }
+    },
+    "operating_environment": {
+      "regulatory_burden": {
+        "value": "Low to moderate — non-profit foundation operating in Qatar with global event and grant-making activities; primarily subject to QF governance, not heavy external regulation",
+        "evidence": "WISE is not a financial services, healthcare, or defence entity. As a Qatar Foundation unit, it operates under QF's governance framework and Qatari non-profit law. Cross-border grant-making (prize winners in Armenia, Jordan, etc.) may involve some international transfer regulations but this is not a dominant operational constraint.",
+        "confidence": "medium"
+      },
+      "geographic_scope": {
+        "value": "Global / multi-continent — operations headquartered in Qatar, but programming, partnerships, and prize recipients span all major world regions",
+        "evidence": "IIE-WISE consortium covers Qatar, Colombia, Ghana, India, Kazakhstan, Spain, USA. Prize winners from Armenia, Jordan, and other regions. Summit draws speakers and attendees from global education community. New CEO's stated priority includes Africa. Website available in Arabic and English.",
+        "confidence": "high"
+      },
+      "macro_sensitivity": {
+        "value": "Recession-resistant — sovereign endowment funded, insulated from commercial economic cycles; only meaningful macro risk is Qatar's geopolitical or fiscal position",
+        "evidence": "WISE is funded by Qatar Foundation's hydrocarbon endowment, not commercial revenues. Global recessions do not directly affect its operational budget. The only macroeconomic risk is a sustained collapse in Qatar's sovereign wealth (unlikely given current reserves) or a major geopolitical event affecting Qatar's international standing.",
+        "confidence": "high"
+      },
+      "governance_obligations": {
+        "value": "State-backed / government-owned — operates under Qatar Foundation governance as a programmatic unit of a state-affiliated non-profit; subject to QF board oversight and Qatar government policy alignment",
+        "evidence": "Qatar Foundation was founded by the Emir of Qatar (Hamad bin Khalifa Al Thani) and is chaired by Sheikha Moza. It is effectively a quasi-governmental institution. WISE's mandate, budget, and strategic direction are ultimately governed by QF board priorities, which are aligned with Qatar's national education and soft-power strategy.",
+        "confidence": "high"
+      }
+    },
+    "culture_brand": {
+      "innovation_posture": {
+        "value": "Pragmatic to fast-follower — WISE champions innovation but is itself an institutional convener, not an experimenter; adopts emerging themes (AI-in-education) when they reach credible institutional consensus",
+        "evidence": "WISE 12 theme 'Humanity.io' adopted AI as the central challenge but framed it values-led and cautiously ('technology must not outpace human learning') — aligned with UNESCO/OECD framing, not bleeding-edge. Prize selections include proven, scaled innovations (TUMO operates at national scale in Armenia). New CEO Kazmi (Gates Foundation, Ofsted) signals evidence-driven, implementation-oriented rather than experimentalist posture.",
+        "confidence": "high"
+      },
+      "brand_positioning": {
+        "value": "Thought-leader / visionary + mission-driven — WISE positions as the authoritative global platform for education innovation, with strong convening legitimacy and explicit human-values-in-education narrative",
+        "evidence": "WISE summit tagline, prize narrative, and CEO communications consistently frame WISE as the premier global convening space for education transformation. Coverage in FT, Euronews, Al-Fanar positions WISE as a credible institutional voice. The 'human-centred AI' framing at WISE 12 is a deliberate narrative leadership play in the global AI-in-education conversation.",
+        "confidence": "high"
+      },
+      "public_values": {
+        "value": "Mission-driven — equity-in-education, innovation, and human-centred learning are explicit values that guide prize criteria, speaker selection, and programming choices",
+        "evidence": "WISE Prize criteria explicitly favour innovations serving marginalised learners. WISE 12 warned against AI inequality if deployed without teacher training/governance. New CEO Kazmi's background (Girls' Education Challenge, Africa focus, low-income learner access) reflects and reinforces these values. Qatar Foundation's broader education-as-public-good mission underpins WISE's mandate.",
+        "confidence": "high"
+      },
+      "employer_brand": {
+        "value": "Strong in niche — attractive to global education policy professionals, researchers, and convening experts seeking prestige, mission alignment, and international exposure",
+        "evidence": "Two consecutive CEOs with elite credentials (Yiannouka: McKinsey + LKY School; Kazmi: Gates Foundation + UCL doctorate + OBE) suggest WISE attracts high-calibre leadership. Qatar Foundation affiliation provides institutional prestige. However WISE is small and specialised — employer brand is niche, not broad-market.",
+        "confidence": "medium"
+      }
+    }
+  },
+  "known_contacts": [
+    {
+      "name": "Dr. Asyia Kazmi, OBE",
+      "title": "CEO, WISE",
+      "tenure_start": "2025-12-01",
+      "status": "current",
+      "notes": "First woman to lead WISE. Gates Foundation background (Global Education Policy Lead). Doctorate from UCL, Masters from Imperial College. 30+ years in education across UK government (Ofsted, DfE, DFID), consulting (PwC, Girls' Education Challenge), and philanthropy. Stated priorities: AI-in-education, Africa, implementation impact."
+    },
+    {
+      "name": "Stavros N. Yiannouka",
+      "title": "Former CEO, WISE (2012-2025)",
+      "tenure_end": "2025-11-30",
+      "status": "former",
+      "notes": "Led WISE for 13 years from early-stage build-out through 12 summits. Prior: Executive Vice-Dean, LKY School of Public Policy; McKinsey & Company; corporate law (Gouldens, Mayer Brown). Currently NED at Blue Diagonal Capital (pre-existing role). WEF Agenda Contributor. Next full-time role not yet publicly confirmed."
+    },
+    {
+      "name": "Sheikha Moza bint Nasser",
+      "title": "Chairperson, Qatar Foundation (WISE patron)",
+      "status": "patron",
+      "notes": "Not operationally involved in WISE management. Presents the WISE Prize personally at each summit. UNESCO Special Envoy for Basic and Higher Education. WISE's most important reputational asset."
+    }
+  ],
+  "gaps": [
+    "WISE operating budget and annual staff headcount not publicly disclosed — financials consolidated within Qatar Foundation's non-public accounts.",
+    "Exact headcount is unknown; estimate of 20-50 FTE is speculative.",
+    "Stavros Yiannouka's next full-time role (if any) after November 2025 not yet confirmed in public sources.",
+    "No detail on WISE's internal technology stack or data infrastructure for operations.",
+    "WISE 13 dates and location not yet announced (expected 2027, biennial cadence).",
+    "Asyia Kazmi's specific programmatic changes post-December 2025 not yet detailed beyond broad statements.",
+    "No independent impact evaluation of WISE Prize alumni organisations available publicly.",
+    "Qatar Foundation's political/soft-power scrutiny (academic freedom, Gulf geopolitics) is a contextual risk not specifically evidenced in recent WISE coverage.",
+    "Summit attendance model (invitation vs open registration vs paid tickets) not clearly documented in public sources.",
+    "WISE Accelerator programme scope, budget, and current cohort details are limited in public sources."
+  ],
+  "data_quality_score": {
+    "overall": 0.86,
+    "passing_threshold": 0.7,
+    "method": "semantic-rubric-haiku",
+    "dimensions": {
+      "industry-vertical": 0.92,
+      "business-model": 0.89,
+      "scale-resources": 0.73,
+      "growth-phase": 1,
+      "market-position": 0.92,
+      "org-structure": 0.83,
+      "tech-maturity": 0.67,
+      "operating-environment": 0.95,
+      "culture-brand": 0.89
+    },
+    "strong_dimensions": {
+      "industry-vertical": {
+        "label": "Industry & Vertical",
+        "score": 0.92
+      },
+      "business-model": {
+        "label": "Business Model",
+        "score": 0.89
+      },
+      "scale-resources": {
+        "label": "Scale & Resources",
+        "score": 0.73
+      },
+      "growth-phase": {
+        "label": "Growth Phase",
+        "score": 1
+      },
+      "market-position": {
+        "label": "Market Position",
+        "score": 0.92
+      },
+      "org-structure": {
+        "label": "Org Structure",
+        "score": 0.83
+      },
+      "operating-environment": {
+        "label": "Operating Environment",
+        "score": 0.95
+      },
+      "culture-brand": {
+        "label": "Culture & Brand",
+        "score": 0.89
+      }
+    },
+    "weak_dimensions": {
+      "tech-maturity": {
+        "label": "Tech Maturity",
+        "score": 0.67,
+        "research_questions": [
+          "What core technology does WISE - World Innovation Summit for Education use internally — custom-built, off-the-shelf, or minimal?",
+          "Does WISE - World Innovation Summit for Education have engineering/product teams, or is tech outsourced/minimal?",
+          "What data infrastructure exists — spreadsheets, BI dashboards, data warehouse, or ML-ready pipelines?"
+        ]
+      }
+    },
+    "total_properties_scored": 38
+  }
+}

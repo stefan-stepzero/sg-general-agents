@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-reporting-lag",
+  "pain_point_label": "Actuals Reporting Lag & Real-Time Variance Blindness",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core of the lag problem is that site-level data arrives in inconsistent, semi-structured formats — payroll exports, procurement records, utility invoices — that require manual reconciliation before they can be consolidated. AI-assisted ETL mapping can automatically normalize and route these inputs into a central schema as they arrive, collapsing the 3-4 week site-level close to near-daily ingestion. For a multi-site operator, this directly attacks the late submissions and incomplete transaction records driver without requiring a full accounting system replacement.",
+      "opportunity_sketch": "An AI transformation layer sits between site-level systems (HRIS, accounts payable, utilities) and the consolidation ledger, auto-mapping and cleaning incoming data on a rolling basis so that actuals are always current rather than batch-submitted at month-end.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.7
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "When actuals are delayed, the operational gap can be bridged by AI-generated rolling forecasts that project month-to-date spend trajectories from available signals (payroll runs, purchase orders, utility meter reads). This directly addresses the inability to make mid-month discretionary spend decisions: a principal can see a forecast variance today rather than waiting for a confirmed variance six weeks later. For a multi-site education operator with repeating cost structures (staffing, utilities, supplies), historical patterns provide strong signal for intra-month forecasting.",
+      "opportunity_sketch": "A site-level rolling spend forecast updated weekly from available leading indicators, alerting principals and finance when projected actuals are trending more than X% over budget before month-end — enabling corrective action inside the same accounting period.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.3
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain description specifically calls out the inability to distinguish real trends from noise in weekly/daily performance data. Anomaly detection trained on historical spend patterns per site and cost category can flag genuine outliers (unexpected utility spike, staffing overage) as soon as transactions post — even before full-month actuals are reconciled — giving leadership early warning rather than a post-mortem. Repeating site cost structures in a multi-site education operator provide clean training signal for this approach.",
+      "opportunity_sketch": "An anomaly detection model monitors transaction feeds per site against seasonal and category baselines, surfacing alerts to site principals and the network finance team when a spend pattern deviates materially — days after the event rather than weeks.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The 3-4 week site close is driven by manual steps: chasing late submissions, reconciling payroll, matching purchase orders to invoices, requesting missing data from site administrators. A task automation agent can orchestrate these workflows — automatically detecting missing submissions, sending targeted reminders, pre-matching payroll exports to GL codes, and flagging reconciliation exceptions for human review rather than requiring an accountant to discover them. This compresses the close cycle without requiring new accounting infrastructure.",
+      "opportunity_sketch": "An automated close-cycle agent runs nightly across all sites: it checks which transactions remain unposted, sends templated follow-ups to site admins, auto-reconciles payroll exports against headcount records, and routes only genuine exceptions to the finance team — targeting a 10-12 day close rather than 3-4 weeks.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3.55
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Board reporting is explicitly called out as pain: prep is compressed into the last days before submission when new actuals arrive and cause rework. AI text generation can produce first-draft variance commentary, executive narrative, and board pack sections directly from structured financial data — so that when late actuals arrive, only the numbers need updating, not the entire narrative. For a multi-site operator with repeating monthly board cycles, templated narrative generation has high leverage.",
+      "opportunity_sketch": "A report generation tool ingests the latest consolidated actuals and produces formatted variance commentary, site-by-site narrative summaries, and board pack sections — reducing board prep from days of writing to hours of review and adjustment.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 3.65
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

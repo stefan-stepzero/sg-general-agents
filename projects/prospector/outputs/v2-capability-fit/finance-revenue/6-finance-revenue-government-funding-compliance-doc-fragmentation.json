@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-compliance-doc-fragmentation",
+  "pain_point_label": "Multi-Program Compliance Documentation Fragmentation",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step, recurring workflow: gather supporting docs from campus finance teams, validate completeness per program requirements, reformat to submission templates, and submit by deadline — repeated 12+ times per year across 4 programs. Task automation agents can orchestrate this end-to-end: triggering collection reminders, routing docs through validation checkpoints, flagging missing items, and populating submission forms across programs. This directly addresses the >40% time spent on format-converting and chasing missing docs.",
+      "opportunity_sketch": "An automated compliance pipeline that, for each program-cycle (e.g., DepEd ESC Q2), triggers campus finance teams to upload source documents, validates completeness against a program-specific checklist, reformats attachments to the required template, and surfaces a submission-ready package — replacing the current manual coordination loop.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The pain description explicitly notes that a missed deadline in one program cascades to another (DepEd rejecting a GASTPE claim due to stale status). A risk-scoring model tracking document completeness, days-to-deadline, campus submission lag history, and cross-program dependency chains could flag impending deadline misses before they occur — giving compliance staff a prioritized intervention list rather than discovering failures after submission rejection.",
+      "opportunity_sketch": "A compliance risk dashboard that scores each open submission cycle by probability of on-time completion, surfacing at-risk cycles with specific gap analysis (e.g., Campus 2 GASTPE Q3: beneficiary list missing, 4 days to deadline, historically 3-day lag) — enabling the CFO to redirect staff before a fund hold occurs.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.15
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each of the 4 programs (DepEd ESC, GASTPE, LGU grants, SUC subsidies) requires the same underlying financial data in incompatible formats — different column orders, label conventions, and aggregation levels. Compliance staff currently re-key or manually reformat the same payroll registers, receipt logs, and beneficiary lists into each program template. AI-assisted schema mapping can normalize source data from the operator internal records and emit program-specific outputs automatically.",
+      "opportunity_sketch": "A format-normalization layer that ingests campus-level payroll registers and receipt logs in whatever internal format they exist, then outputs DepEd-formatted teacher rosters, GASTPE liquidation templates, and LGU acquittal sheets — eliminating the manual reformatting that consumes the largest share of compliance staff time.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.6
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Government-issued supporting documents — receipts, LGU acknowledgment letters, official payroll printouts — often arrive as scanned PDFs or image files. Before any transformation or validation can occur, these must be digitized into machine-readable data. OCR and form-field extraction directly enables the upstream intake step for the automation pipeline, and reduces the manual data-entry burden when auditors request specific historical evidence such as a Q3 teacher attendance log.",
+      "opportunity_sketch": "An intake processor that accepts scanned receipts, payroll registers, and beneficiary lists via upload, extracts key fields (amounts, dates, names, program codes) into a structured record, and tags each document to its program and submission cycle — creating a searchable, audit-ready repository.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Compliance staff and CFOs frequently need answers to program-specific procedural questions — what supporting documents does GASTPE require for semi-annual liquidation, or what is the retention period for DepEd ESC audit files — currently answered by digging through program memoranda and prior-year submission records. A RAG system over indexed program guidelines and historical submissions would eliminate lookup time and reduce the risk of missing a changed requirement.",
+      "opportunity_sketch": "A compliance knowledge assistant that indexes DepEd, GASTPE, and LGU program circulars alongside prior-year submission packages, enabling compliance staff to ask plain-language questions and receive sourced, current answers — reducing time spent interpreting conflicting agency guidance.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

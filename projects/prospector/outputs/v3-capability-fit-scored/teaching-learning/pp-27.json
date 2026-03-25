@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-remediation-intervention-teacher-capacity-resource-dup",
+  "pain_point_label": "Insufficient Teacher Capacity & Resources for Remediation",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Teachers lack time and resources to create remedial materials for diverse student needs across campuses. AI text generation can produce differentiated worksheets, practice exercises, explanations at varied reading levels, and lesson plans on-demand — directly substituting for instructor time spent on content creation. This is immediately applicable without new infrastructure.",
+      "opportunity_sketch": "A remediation content generator where teachers input topic, grade level, and student difficulty profile to receive ready-to-use worksheets, explanations, and practice sets — reducing prep time by hours per week and enabling smaller campuses without dedicated remedial staff to access quality materials.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "With no dedicated remedial instructors at smaller campuses, students needing intervention have no one to turn to outside class time. A conversational AI tutor can provide on-demand, multi-turn remediation sessions — working through concepts, answering questions, and adapting explanations without consuming teacher time. This directly extends teacher capacity at resource-constrained sites.",
+      "opportunity_sketch": "An AI tutoring agent deployed per campus that students can access asynchronously for remediation in core subjects — the agent maintains session context, tracks where the student struggles, and provides targeted practice, effectively functioning as an always-available remedial instructor.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Remediation resources are often scattered across curriculum libraries, past lesson archives, and external materials — teachers at overloaded campuses cannot efficiently locate the right materials for each student's gap. RAG enables a single query interface that retrieves and synthesizes the most relevant existing resources grounded in the operator's own curriculum corpus.",
+      "opportunity_sketch": "A remediation resource finder where teachers describe a student's specific learning gap and receive synthesized, citation-backed guidance pulling from the operator's curriculum library, past remedial lesson plans, and approved external references — reducing the research burden on already-overloaded teachers.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Remedial needs are concentrated at a few campuses while staff capacity is spread across 15 sites — this is fundamentally a resource allocation mismatch. AI scheduling optimization can model staff availability, student remediation demand by campus, and travel/virtual delivery constraints to generate optimal assignment of remedial support across sites.",
+      "opportunity_sketch": "A cross-campus remediation scheduling tool that analyzes student intervention demand at each site against available teacher capacity (including part-time and virtual delivery windows) to produce an optimal weekly allocation plan, flagging under-served campuses and recommending staff sharing or rebalancing.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "When teacher capacity for remediation is scarce, targeting matters — not every at-risk student needs the same intensity of intervention. Propensity modeling on student performance data can identify which students are most likely to fall further behind without intervention, enabling the limited remedial capacity to be directed where it has the highest impact.",
+      "opportunity_sketch": "A student intervention prioritization model that scores each student's likelihood of academic failure without remediation, based on assessment history, attendance, and prior performance — giving overloaded teachers a ranked list of who needs intervention most urgently so scarce capacity is not wasted.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-conduct-discipline-bullying-response-capacity-dup",
+  "pain_point_label": "Weak Bullying Investigation & Prevention Infrastructure",
+  "matches": [
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Bullying reports arrive as written incident descriptions, online messages, or staff notes — all unstructured text. Text classification can automatically triage incoming reports by severity, type (physical, verbal, cyberbullying), and urgency, ensuring nothing sits unreviewed on a principal's desk. This directly addresses the under-reporting and under-addressing mechanism by surfacing high-risk cases immediately.",
+      "opportunity_sketch": "An AI triage layer that classifies every submitted incident report by severity and type, routing critical cases to a designated responder within minutes rather than days.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Serial bullies and repeat victimisation patterns are hard to detect when incidents are siloed across campuses and handled informally. Anomaly detection applied to incident logs can flag students who appear repeatedly as accused parties across unconnected reports — a signal that would otherwise be invisible without a centralised, analytical view. This directly counters serial bullies continuing unpunished.",
+      "opportunity_sketch": "A cross-campus incident analytics layer that flags repeat-offender patterns and unusual concentrations of reports from specific locations or peer groups, triggering a formal review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of anti-bullying campaigns, bystander training materials, and structured investigation templates is a direct contributor to weak infrastructure. Text generation can produce age-appropriate prevention content, investigation procedure guides, parent communication templates, and victim support letters at scale — work that currently does not happen due to capacity constraints.",
+      "opportunity_sketch": "An AI content library that generates and regularly refreshes anti-bullying campaign materials, staff investigation checklists, and parent/student communication templates tailored to each school's context.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Fear of retaliation keeps incidents unreported because students must approach an adult directly. A confidential, always-available conversational agent gives students (and bystanders) a low-barrier channel to report incidents anonymously, collecting structured details through guided dialogue that a principal or welfare officer can review later. This directly addresses under-reporting.",
+      "opportunity_sketch": "A school-branded anonymous reporting chatbot accessible via student portal or mobile, guiding students through incident reporting and routing structured summaries to a welfare officer dashboard.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Investigations are cursory because principals lack process support — no workflows, no reminders, no documentation trail. A task automation agent can orchestrate the investigation workflow: logging the report, scheduling interviews, sending templated communications to parents, tracking deadlines, and archiving outcomes. This builds the institutional capacity that currently does not exist without hiring a dedicated investigator.",
+      "opportunity_sketch": "An automated bullying investigation workflow that guides staff through each required step, enforces timelines, auto-generates correspondence, and produces a completed case file for compliance records.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

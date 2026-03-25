@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-curriculum-implementation-resource-availability-dup",
+  "pain_point_label": "Uneven Resource & Material Availability Across Sites",
+  "matches": [
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Resource consumption (textbooks, lab supplies, digital licences) follows predictable seasonal and enrolment-driven patterns across 15 sites. Forecasting demand by site and term allows procurement teams to order ahead of shortfalls rather than react to them, directly addressing delayed procurement and improvised teaching. Historical usage records from even a basic inventory system are sufficient training data.",
+      "opportunity_sketch": "A forecasting layer on top of the existing inventory or ERP system that predicts site-level resource needs 1–2 terms ahead, auto-generating procurement recommendations with lead-time buffers per site.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 15 sites holding uneven stock, the core problem is sub-optimal distribution of finite physical resources — textbooks at one campus sit unused while another is short. AI-driven allocation optimises redistribution of shared or transferable resources (shared lab kits, mobile device pools, shared library titles) across sites given enrolment counts, curriculum schedules, and transport constraints. This is a textbook resource-assignment problem.",
+      "opportunity_sketch": "A cross-site resource balancing tool that ingests current inventory levels and upcoming curriculum schedules per site and recommends inter-site transfers or consolidated orders to close gaps before each term.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The procurement and inventory replenishment cycle involves many repetitive multi-step tasks: checking stock levels, generating purchase orders, routing approvals, updating inventory records across sites. An automation agent can execute this workflow end-to-end — monitoring inventory thresholds, drafting POs, routing to the right approver, and updating the system — reducing the human delays that cause resource gaps. This is the most direct attack on delayed procurement as a mechanism.",
+      "opportunity_sketch": "An autonomous procurement workflow agent that monitors a shared inventory dashboard, detects sites falling below threshold for critical resources, drafts and routes purchase orders, and posts status updates to site coordinators — without requiring a human to initiate each cycle.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Inventory records across 15 sites frequently have gaps or inaccuracies — missing items, recording errors, unexplained stock discrepancies — that make it hard to know the true state of resource availability. Anomaly detection can flag sites whose reported inventory deviates suspiciously from expected consumption patterns, surfacing data quality issues and potential loss before they cascade into classroom shortages.",
+      "opportunity_sketch": "An inventory integrity monitor that continuously compares reported stock levels against expected consumption curves per site, flagging outlier sites for a follow-up audit and improving the accuracy of the data feeding procurement decisions.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

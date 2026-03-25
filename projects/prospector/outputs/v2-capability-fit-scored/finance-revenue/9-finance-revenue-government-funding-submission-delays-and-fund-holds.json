@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-submission-delays-and-fund-holds",
+  "pain_point_label": "Submission Delays & Penalty-Triggered Fund Freezes",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain mechanism is deadline-driven, multi-step compliance workflows collapsing under thin staffing. A task automation agent can orchestrate the full liquidation pipeline.",
+      "opportunity_sketch": "An agentic workflow that triggers automatically at period close, assembles the required document package, surfaces missing items with exact deadlines, and tracks counter-signature routing across campuses.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Government audit queries and resubmission notices require formal written responses within 10-day windows. LLMs can draft technically precise responses given the notice text and supporting records.",
+      "opportunity_sketch": "A compliance drafting assistant that ingests an audit notice, retrieves relevant submission records, and generates a first-draft formal response for staff review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Supporting documents frequently arrive as scanned PDFs or handwritten forms. OCR can parse these at intake, flagging structural gaps before the submission deadline.",
+      "opportunity_sketch": "A document intake layer that scans all supporting documents, extracts key fields, and flags discrepancies or missing fields — giving staff weeks to remedy rather than discovering gaps on submission day.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Government notices must be triaged for urgency and response type. Classifying incoming communications by urgency, notice type, and required action directly addresses the notices piling up failure mode.",
+      "opportunity_sketch": "An inbox classifier that categorizes incoming government communications, extracts the response deadline, and routes each notice to the correct campus finance contact.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Historical patterns can train a risk model that flags high-risk submissions 4-6 weeks in advance, enabling proactive resource reallocation.",
+      "opportunity_sketch": "A submission risk dashboard that scores each pending liquidation cycle by freeze probability, surfacing the top at-risk submissions to the CFO monthly.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With 1-2 FTE per campus and multiple overlapping deadlines, an AI scheduling optimizer can distribute workload to prevent crunch-time collapse.",
+      "opportunity_sketch": "A compliance calendar optimizer that ingests all government fund deadlines, estimates prep hours per claim type, and outputs a week-by-week staffing allocation plan.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-talent-acquisition-reference-verification-delays-dup",
+  "pain_point_label": "Reference & Credential Verification Delays",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The verification process is a multi-step workflow — initiate requests, track responses, flag missing items, escalate, update HR records — that AI can orchestrate across email, web portals, and internal systems. Philippine DepEd credential lookups and employer contact sequences are exactly the kind of multi-system, branching workflow task automation agents handle. This directly attacks the 3-6 week delay by parallelizing outreach and removing manual follow-up.",
+      "opportunity_sketch": "An agent that auto-sends verification requests to listed employers and DepEd portals, tracks response status, sends escalation nudges, and writes a structured verification summary to the HRIS — alerting HR only when human review is needed.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Candidates submit credential documents (DepEd certificates, LET board exam results, transcripts, employment certificates) as scanned PDFs or images. OCR and form-field extraction digitizes these into structured records instantly, replacing manual data entry and enabling automated cross-checks against known certificate formats. This is the critical first step before any verification logic can run.",
+      "opportunity_sketch": "A document ingestion pipeline that parses uploaded credential scans, extracts key fields (name, license number, issuing body, dates), and populates a structured candidate record — flagging documents that appear altered or unreadable for human review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Reference letters, employment certificates, and government documents contain named entities (employer names, dates of service, job titles, license numbers) that need to be extracted and matched against the candidate's own declarations. Automated NER on already-digitized credential text surfaces discrepancies — e.g., mismatched dates or institution names — that would otherwise require manual comparison.",
+      "opportunity_sketch": "An extraction layer that pulls structured attributes from digitized credential text and compares them against the candidate's application form, generating a discrepancy report that HR reviews rather than doing the matching manually.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Not all hires carry equal compliance risk — a teacher with incomplete credentials in a regulated subject (e.g., Special Education) poses a different risk than an administrative hire. A risk model can score each candidate's verification completeness and role-sensitivity, letting the operator prioritize who must be fully cleared before Day 1 vs. who can be conditionally onboarded. This directly addresses the compliance risk of onboarding staff before checks complete.",
+      "opportunity_sketch": "A risk scoring model that combines role type, subject area, credential completeness, and school regulatory exposure to produce a 'safe-to-onboard' score — routing high-risk hires to mandatory hold and low-risk hires to conditional start with a defined cure window.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Many previous employers in provincial networks are unreachable by phone but may have an online presence (DepEd school directories, SEC registrations, Facebook pages, LinkedIn). A research agent can autonomously search public sources to corroborate employer existence, locate contact details, and cross-reference professional license numbers against PRC online verification — reducing reliance on phone calls entirely.",
+      "opportunity_sketch": "An agent that takes a candidate's declared employment history, searches PRC license databases and public registries to verify credentials autonomously, and returns a structured evidence package with source links — cutting manual phone outreach for a significant share of applicants.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

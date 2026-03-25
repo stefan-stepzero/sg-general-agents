@@ -1,0 +1,55 @@
+{
+  "cell": {
+    "cellNum": 17,
+    "subCategory": "Decision-Making & Accountability",
+    "domain": "Governance & Leadership",
+    "heat": 51,
+    "oppScore": 23
+  },
+  "ideas": [
+    {
+      "name": "Board Pack Generator",
+      "one_liner": "Automatically synthesises governance documents, accreditation evidence, and committee reports into structured board papers aligned with Catholic education and multi-stakeholder governance frameworks.",
+      "problem": "Boards at CSPD (Catholic schools) and PHINMA (multicampus) spend weeks manually compiling board papers from fragmented governance sources—accreditation reports, committee minutes, policy updates, financial summaries—each requiring distinct formatting for diocesan approval, government compliance, and international funder expectations (WISE, Rising Academies). Off-the-shelf board software doesn't handle education-specific regulatory formats.",
+      "ai_technique": "Text generation with domain-aware templates",
+      "how_it_works": "Ingests scanned/text accreditation evidence (CHED matrices, AITSL standards compliance), committee reports, and operational dashboards. Generates board-ready summaries with appropriate sections for policy approval, fiduciary accountability, and stakeholder communication—sensitive to governance structure (Catholic trustee boards vs. foundation-backed vs. publicly traded).",
+      "target_companies": ["cspd", "phinma", "school-for-life", "wise"],
+      "buyer_persona": "Board Secretary / Principal / Governance Officer",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Governance Classifier",
+      "one_liner": "Routes board submissions, policy approvals, and audit findings to appropriate oversight bodies based on compliance type and escalation thresholds.",
+      "problem": "Multi-stakeholder governance at PHINMA, WISE, Rising Academies, and School for Life requires routing documents to the right oversight body—diocesan structures (CSPD), government regulators (CHED for Philippines, NESA for Australian schools), accreditation boards, and investor/funder committees. Manual classification creates delays and compliance risks.",
+      "ai_technique": "Text classification with multi-label hierarchical routing",
+      "how_it_works": "Classifies incoming governance documents (board submissions, audit reports, policy change notices) by regulatory type (Catholic governance, government compliance, accreditation evidence, financial reporting) and urgency. Routes to board committee, compliance officer, accreditation liaison, or external regulator queue with escalation flags for anomalies.",
+      "target_companies": ["phinma", "cspd", "wise", "school-for-life", "ipeople"],
+      "buyer_persona": "Governance Officer / Compliance Manager / Board Secretary",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Governance Anomaly Detector",
+      "one_liner": "Flags unusual patterns in board decision timelines, audit finding resolution rates, and procurement approvals to surface governance integrity risks.",
+      "problem": "PHINMA (publicly traded, ASX-equivalent governance obligations) and WISE (Qatar Foundation accountability) face reputational and regulatory risk if governance processes drift—board decisions delayed unexpectedly, audit findings not resolved, procurement approvals bunched or inconsistent. Current board management software doesn't provide education-specific anomaly detection.",
+      "ai_technique": "Anomaly detection on board management system event logs and timelines",
+      "how_it_works": "Ingests board decision records, committee meeting dates, audit report timelines, and procurement approval logs. Detects anomalies: policy approval cycles that lengthen unexpectedly, audit findings that stall, spending authorisation patterns that deviate from normal, board member absenteeism spikes. Surfaces integrity risks and governance health trends.",
+      "target_companies": ["phinma", "wise"],
+      "buyer_persona": "Audit Committee Chair / Chief Governance Officer",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Governance Evidence Dashboard",
+      "one_liner": "Transforms accreditation reports, policy documents, and committee records into a unified governance dashboard indexed by regulatory requirement.",
+      "problem": "Education governance involves multiple concurrent regulatory regimes—Catholic diocesan oversight (CSPD), government accreditation (CHED, NESA), international funders (WISE), and ASX-equivalent obligations (PHINMA). Leadership currently assembles evidence manually across systems, missing cross-regulator alignment and audit trails.",
+      "ai_technique": "Data transformation and structuring with education-specific taxonomy mapping",
+      "how_it_works": "Extracts governance requirements from CHED accreditation matrices, AITSL teaching standards, diocesan policy expectations, and funder reporting templates. Maps evidence from board papers, committee reports, and policy documents to each requirement. Displays as a live dashboard showing compliance status, evidence location, and audit trails.",
+      "target_companies": ["phinma", "school-for-life", "cspd"],
+      "buyer_persona": "Principal / Rector / Accreditation Lead",
+      "tier": "module",
+      "confidence": "medium"
+    }
+  ]
+}

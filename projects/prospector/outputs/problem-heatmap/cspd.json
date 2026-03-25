@@ -1,0 +1,1111 @@
+{
+  "company_id": "cspd",
+  "company_name": "Catholic Schools Parramatta Diocese",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.26,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.2,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD holds dominant market position (1-in-4 Western Sydney students) with community/mission-driven reputation-led enrolment and no outbound sales — low brand recognition is structurally implausible for a 70+ year institution with geographic moat."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Enrolment is driven by Catholic identity and multi-generational loyalty, not content-marketing funnels; 'ENROL NOW' CTA on homepage suggests demand-capture is functional, and no signals of prospect engagement failures exist."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Non-selective systemic school with stable enrolments and Western Sydney population growth tailwind — no evidence of conversion friction or stalled enrolment decision cycles at profile date."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD's segment is structurally defined (Catholic families in Diocese of Parramatta boundary) with a well-understood community profile; no evidence of segment misidentification or wasted acquisition effort."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.28,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "ELC-to-school and mid-year transfer attrition is generically plausible for any large school system, but no profile signals indicate early-stage enrolment drop-off as an active concern; diocese boundary and community loyalty reduce risk."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Student disengagement is a known education sector issue, but CSPD's LIFTED student leadership forum and active wellbeing EGM portfolio suggest this is actively managed; no specific disengagement crisis signals in profile."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "K-12 education has inherent multi-year retention (students enrolled for 13 years); family-initiated withdrawal is not a primary strategic concern given stable enrolments and geographic moat."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No negative public sentiment signals identified; 'Parents as Partners' program and mission-driven brand suggest active relationship investment, though parent expectation management across 80 schools is generically plausible."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.1,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0,
+              "rubric_level": "na",
+              "reasoning": "CSPD is structurally bounded to the Diocese of Parramatta — geographic expansion outside the diocese boundary is canonically impossible; new school builds are within the existing geographic footprint (Westmead)."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "ELC expansion already extends the pipeline to 0-5 age group; CSPD's mission mandate constrains segment opportunism — no profile signals of segment gaps or adjacent market aspiration."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "School of Now (SoN) already provides a blended/online channel for specialist subjects; further channel development is structurally unlikely for a face-to-face education institution with geographic moat."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "CSPD is not expanding into new markets; the Uplift framework is an internal capability initiative for existing schools, not a market adaptation challenge."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.45,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states Commonwealth + NSW State recurrent grants constitute 'majority of revenue' with CSNSW 2024-2029 needs-based arrangement; any policy change to school funding formulae 'directly threatens operating viability' — this is a named structural dependency, constituting strong circumstantial evidence of concentration risk."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CSPD is a nonprofit with a stable government-funded model; no profile evidence of strategic intent to develop alternative revenue models, though SoN could theoretically be monetised beyond internal use."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "CSNSW 2024-2029 arrangement provides funding certainty within this period, but post-2029 continuity depends on federal/state policy — mature education funding is stable but perpetual policy exposure makes this a converging contextual concern for any large government-funded nonprofit."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Revenue streams are simple (grants + fees + BGA capital grants) and well-understood; no evidence of complex multi-stream management challenges or cannibalization between funding sources."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.54,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.56,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke structure across 80 schools with TechOne/FACES platforms in a 'transitional' tech stack, and basic-to-intermediate analytics maturity strongly implies manual administrative processes that could be automated; Uplift framework rollout adds coordination burden."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Legacy institution (70+ years) with heavy regulatory reporting obligations, nine-EGM portfolio structure, and NESA compliance requirements creates high likelihood of historically accumulated process redundancy across 80 schools."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke with central office (9 EGMs) coordinating Uplift delivery across 80 semi-autonomous school principals creates multiple handoff boundaries; 'Data intelligence' EGM suggests recognised need for better information flow between system and schools."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Uplift framework was explicitly launched to address inconsistent teaching practice across 80 schools — the profile directly signals that execution variance in instructional delivery is the primary strategic problem Patrick Ellis is hired to solve."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Approval bottlenecks plausible in nine-EGM governance structure and diocese canonical authority over key decisions, but no specific evidence of throughput constraints affecting operational delivery."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.52,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Stack classified as 'transitional' with TechOne and FACES as vendor-managed platforms; 70+ year institution with IT team of ~15-25 staff managing 80+ campuses makes accumulated technical debt highly likely without direct evidence of specific legacy failures."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile notes 'Data intelligence' EGM portfolio exists specifically, 'data and research' underpins Uplift, and analytics is classified as 'basic-to-intermediate'; multiple vendor platforms (TechOne, FACES, LMS, SoN) across 80 schools with no unified data warehouse signal directly implies integration siloing."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No public system outages or reliability incidents identified; vendor-managed cloud-capable platforms reduce reliability risk, though 80-campus distributed infrastructure creates generic exposure."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Security posture rated 'intermediate' with 'low' confidence in profile; IT team of ~15-25 staff managing 80 campuses with MacBooks/Chromebooks for 43,000 students (minors) makes infrastructure security gaps likely by sector norms without specific incident evidence."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Analytics described as 'basic-to-intermediate' and not yet 'ML-ready at scale'; Patrick Ellis's mandate includes 'build assessment and data infrastructure' and 'data visibility for school leaders' — the contact intelligence directly names tooling gaps as his deployment problem."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.44,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Active capital works (new Westmead primary school opening 2026) and Western Sydney population growth in growth corridors (Penrith, Blacktown, Marsden Park) are directly named as expansion drivers in the profile — capacity gaps exist."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Uplift framework is described as 'system-wide' and 'most significant curriculum initiative in recent history' — rolling out evidence-based teaching across 80 schools with 4,500 staff is directly a service delivery scalability problem for Patrick Ellis."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Nine-EGM portfolio structure with simultaneous capital works, Uplift rollout, digital transformation, and teacher pipeline investment implies competing resource allocation across strategic priorities in a fixed-cost-heavy nonprofit."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CSPD is confined to Diocese boundary and already operates 80 schools across the region; geographic coverage gaps are plausible in specific growth corridors (Marsden Park named as a gap) but profile doesn't explicitly confirm service absence."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Education service delivery has no physical supply chain in the traditional sense; curriculum resources and IT procurement are the closest analogue but show no supply constraint signals in the profile."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.66,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "The Uplift framework launch is explicitly described as addressing the need for consistent instructional standards across 80 schools — the profile directly names standards inconsistency as the central problem Uplift was designed to solve."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Patrick Ellis's mandate includes 'assessment and data infrastructure to measure learning outcomes' — this directly implies current quality control mechanisms for instructional delivery are insufficient or immature."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Uplift is described as launching to address consistency across 80 schools — the profile directly implies cross-site instructional variance is an active, known problem; hub-and-spoke structure with semi-autonomous principals makes variance structurally endemic."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile states analytics is 'basic-to-intermediate,' 'not yet ML-ready at scale,' and Patrick Ellis's mandate explicitly includes 'build assessment and data infrastructure to measure learning outcomes' — direct evidence of outcome measurement gaps."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Pattern of 'rising academic outcomes' and Uplift launching suggest improvement trajectory, but 80 semi-autonomous schools with historically variable practice implies some quality culture diffusion; no direct evidence of metric gaming or compliance theater."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.35,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.28,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD is a mature institution with 70+ years of embedded community demand; the Uplift pivot to evidence-based teaching is a deliberate improvement, not a sign that the core educational offering misread needs."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD serves a well-defined, captive segment (Catholic families in Diocese catchment) with stable enrolments; no signals of serving the wrong audience or attempting to be everything to everyone."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "NSW curriculum reform (2022-2027), parent expectations for technology-augmented learning, and AI entering education create evolving needs pressure; the Uplift initiative is a response to this, suggesting one weak signal that needs have evolved."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile cites 'rising academic outcomes' suggesting the core educational offering is delivering value; no evidence of adoption failures or retention based on value insufficiency."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.22,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Homepage tagline ('where every child belongs, learns and thrives') and Catholic identity positioning are clearly articulated; mission-driven brand with six explicit strategic pillars demonstrates high value proposition clarity."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "All Catholic diocesan schools share similar curriculum, values and NESA requirements, creating some convergence pressure, but faith identity moat and geographic monopoly prevent commoditisation at the institutional level."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No evidence that CSPD is differentiating on dimensions families don't value; faith formation + academic outcomes + community are the primary axes and directly match the stated segment profile."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Geographic boundary, canonical authority, government funding ties, and multi-generational community loyalty create highly defensible differentiation that is structurally difficult to replicate."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.53,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Evidence-first, pragmatic innovation posture plus diocese governance approval layers plus NESA curriculum registration requirements create structural friction for rapid curriculum iteration; Uplift was a multi-year design process before launch."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "LIFTED AI forum described as 'values-focused, not deployment-focused' and AI posture classified as 'exploring' — converging evidence of a weak systematic innovation pipeline for next-generation learning tools despite strategic intent."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Tech stack classified as 'transitional' and analytics as 'not yet ML-ready at scale'; LMS and SoN platforms are vendor-managed which limits customization; technical debt drag on curriculum platform evolution is plausible but not directly evidenced."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Uplift's explicit grounding in 'Science of Learning, Cognitive Load Theory, Science of Reading, Rosenshine's Principles' directly implies prior instructional approaches were not sufficiently evidence-based — a form of relevance decay being actively addressed."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.38,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multiple digital platforms (LMS, SoN, MacBooks/Chromebooks across 90%+ of secondary schools) create usability variance risk for students and teachers; no specific usability complaints evidenced but transitional tech stack is one weak signal."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Uplift rollout requires teacher onboarding to new frameworks and digital tools — onboarding friction for ~4,500 staff across 80 schools is generically plausible but not specifically evidenced as a failure mode."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "CSPD serves diverse Western Sydney communities including Filipino, Indian, Pacific Islander, Latin American families; language and cultural accessibility is generically plausible for a non-selective school with this demographic profile, but no direct evidence of accessibility failures."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Teacher workload in evidence-based teaching frameworks (Uplift) can create high effort-to-value perception during transition; Australian teaching sector workload concerns are well-documented, providing one weak sectoral signal."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission-first Catholic identity, wellbeing EGM portfolio, and 'Parents as Partners' program suggest active investment in emotional experience quality; no trust-eroding signals in profile."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.55,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.52,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states 'sector-wide teacher shortages' as 'the primary human capital constraint' and references the Teacher Scholarship Program (30 places, 2026) as active response — direct evidence of sourcing reach limitations for NESA-accredited teachers."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile rates employer brand as 'strong-in-niche' but this is a niche-specific strength; sector-wide teacher shortages mean even strong employer brands face attraction challenges, and CSPD's Catholic mission restricts the attractable pool to values-aligned candidates."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "NESA accreditation requirement for teachers provides structural selection criteria; no evidence of selection quality failures, though hiring 4,500+ staff across 80 schools creates generic assessment consistency risk."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Government-funded nonprofit bound by CSNSW collective agreements cannot differentiate on salary against independent school sector or high-demand private sectors; teacher shortage context means offer competitiveness is a converging sectoral concern."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "80 schools each hiring teachers independently plus central coordination creates governance complexity in hiring; no direct evidence but scale and distributed model make process efficiency challenges likely."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.52,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke structure with school-level career ceiling (Principal) and limited central office roles creates promotion bottleneck for teachers; Teacher Scholarship Program signals active pipeline investment, suggesting awareness of the challenge."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Sector-wide teacher workload and burnout pressures are well-documented in Australian education; Uplift implementation adds change burden on top of existing classroom demands; converging pattern without direct CSPD-specific burnout evidence."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Government collective agreement constrains compensation differentiation; modest recognition budget typical of nonprofit education sector; Bishop's Awards and mission-based recognition exist but cannot fully substitute for market-rate compensation in competitive teacher market."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "80 school principals as middle managers create high variance in management quality across the system; no evidence of systemic poor manager quality but scale of distributed leadership makes this generically plausible."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Mission-driven Catholic identity creates strong purpose alignment for values-aligned staff, but teacher shortages and sector burnout trends suggest belonging/purpose alone cannot fully retain staff experiencing workload strain; Uplift change program adds additional belonging risk for resistant teachers."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.68,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Uplift framework launch and Patrick Ellis's mandate to build teacher capability implies existing skills gap identification was insufficient — the system is now investing in evidence-based teaching precisely because capability gaps exist; 'Data intelligence' EGM portfolio suggests systematic gap analysis is developing but immature."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Patrick Ellis's mandate explicitly includes 'build professional development systems for teacher capability uplift' and the Uplift framework itself is a system-wide PD initiative — direct evidence that learning and training delivery for 4,500 teachers across 80 schools is a primary active challenge."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Patrick Ellis was externally hired from CECG rather than promoted internally, suggesting limited internal pipeline for senior learning outcomes leadership; ICT traineeship and teacher scholarship programs are active but pipeline depth for EGM-level succession is not evidenced."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "AI posture is 'exploring,' analytics is 'basic-to-intermediate,' Digital Learning Specialist Teacher role is embedded at school level specifically to address digital literacy gaps, and ICT traineeships are active — multiple converging direct signals of digital upskilling as an active challenge."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.5,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission Enhancement Team, Bishop's Awards, and Catholic values deeply embedded across all strategic pillars suggest strong values-behavior alignment; no evidence of toxic behavioral norms or leadership-culture gaps."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Nine-EGM structure reporting to CEO plus 80 semi-autonomous school principals creates complexity; 2023 incorporation as company limited by guarantee was a governance modernisation suggesting prior structural limitations; hub-and-spoke topology creates inherent coordination challenges."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Central system office coordinating Uplift and data initiatives across 80 schools with principals retaining delegated authority creates structural communication challenges; 'Data intelligence' EGM and Uplift coaching infrastructure are active investments suggesting recognised information flow problems."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Simultaneous transformation agenda (Uplift rollout, data infrastructure build, new EGM hire, capital works) imposed on a legacy institution with evidence-first culture is a strong convergence pattern for change fatigue; education sector internationally shows high change-resistance in system-wide curriculum reform programs."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Catholic social teaching and Project Compassion demonstrate equity orientation; Western Sydney diverse community (Filipino, Indian, Pacific Islander, Latin American) served by a predominantly faith-based institution creates some structural inclusion tension but no direct evidence of equity gaps in practice."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.51,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.56,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No public NESA compliance failures, audit findings, or corrective action plans identified; Policy Central page suggests documented policy infrastructure in place; generic plausibility for any 80-school system."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "NSW curriculum reform (2022-2027) is explicitly cited in the profile as driving change; Uplift is directly a response to curriculum standards evolution; NESA registration requirements for 80 schools under ongoing reform create a directly evidenced regulatory change adaptation challenge."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "NESA registration for 80 schools is described as operationally critical ('loss of registration for any campus would be operationally catastrophic') — maintaining accreditation across 80 sites during curriculum reform and leadership transition is a converging concern."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly lists NESA, NSW Education Act, Commonwealth Schools Funding Act, Child Protection, Privacy Act, CSNSW funding accountability, Catholic Church governance, and ASIC reporting as active obligations — heavy multi-framework reporting burden across 80 schools."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Regulatory burden is rated 'heavy' in the profile with six overlapping regulatory frameworks; IT team of ~15-25 staff supporting 80 campuses with basic-to-intermediate systems creates structural compliance capacity strain."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.4,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No public litigation signals identified; nonprofit education with stable funding is not a high-litigation profile, though child safety incidents in Catholic institutions nationally create generic background exposure."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "80 schools procuring EdTech vendors, capital works contractors, and service providers without named specialist vendor relationships creates generic contractual exposure; CSNSW collective agreement governs teacher employment at scale."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "4,500 staff across 80 sites with NESA accreditation requirements, child protection obligations, and collective bargaining creates ongoing employment law exposure typical for large education employers; no specific disputes evidenced."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD is an education service provider purchasing curriculum resources rather than developing IP; IP risk is structurally low for a non-IP-intensive institution."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Operating 80 campuses with 43,000 students including minors under duty of care obligations creates professional indemnity and liability exposure typical for large education institutions; company limited by guarantee (2023) creates ASIC governance liability dimension."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.6,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Security posture rated 'intermediate' with 'low' confidence in profile; IT team of ~15-25 staff managing MacBooks and Chromebooks for 43,000 students across 80 campuses without evidence of advanced SOC or zero-trust architecture converges on moderate cyber risk."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly lists Privacy Act (student data for minors) and PPIPA obligations; handling 43,000 students' data across LMS, SoN, TechOne, FACES platforms without named DPO or privacy program creates moderate compliance risk."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Analytics is 'basic-to-intermediate,' 'Data intelligence' EGM portfolio exists precisely to build data capability, Patrick Ellis's mandate includes 'assessment and data infrastructure' — multiple converging signals that data governance and quality are active capability gaps being addressed."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Multiple vendor platforms (TechOne, FACES, LMS, SoN, unknown EdTech vendors listed as profile gap) handling 43,000 students' data creates third-party data risk typical for a transitional-stack education institution."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "No evidence of a dedicated CISO or breach response team; IT team is ~15-25 staff focused on platform administration rather than security operations; intermediate security posture without advanced incident response capability is sector-typical for this scale."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.48,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile lists Child Protection obligations (Working with Children Checks, mandatory reporting) as a core operational dependency; Catholic Church nationally faces ongoing scrutiny for child safeguarding; 43,000 students including minors across 80 campuses creates inherent duty-of-care complexity."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Catholic Church brand nationally carries reputational risk from historical child abuse crisis; no CSPD-specific incidents identified, but institutional association with the broader Church creates latent media exposure risk that mission-driven positioning cannot fully insulate."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CEO background (former St Vincent de Paul Society CEO), public annual reports, and strong values culture suggest ethical governance is actively maintained; no fraud, conflicts of interest, or whistleblower signals found."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Government funding certainty (CSNSW 2024-2029) and board chaired by Elizabeth Crouch AM signal strong funder confidence; diocese canonical authority relationship and ASIC incorporation add stakeholder complexity that requires active management."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.39,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.33,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Government funding formulae (SRS model) effectively constrain per-student funding — any policy change reduces revenue without ability to raise fees proportionally; school fees noted as 'modest by sector standards' with limited upward flexibility."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Fixed-cost-heavy structure (4,500 staff + 80+ campuses + capital works) with labor costs tied to collective agreements and rising construction costs for Westmead school; Western Sydney teacher market tightness creates upward wage pressure within fixed-funding model."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Revenue mix (government grants + fees + capital grants) is stable and structurally determined; no evidence of shift toward lower-margin programs or activities."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Nonprofit education funded by grants does not price to value; value capture in the commercial sense is structurally inapplicable to this funding model."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.42,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Government-backed nonprofit with CSNSW 2024-2029 funding certainty and Block Grant Authority for capital — no evidence of capital access challenges; BGA capital grants pipeline is the primary capital mechanism."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Government grant timing mismatches (Commonwealth vs State, term-start vs rolling) and capital works draw-down create potential cash flow timing challenges generic to all large school systems; no distress signals."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous Uplift rollout, data infrastructure build, Westmead capital works, teacher scholarship program, and ICT traineeship investment within a fixed-grant budget creates genuine capital allocation prioritisation challenge; no documented framework for investment decisions visible in profile."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Government funding accountability to Commonwealth and NSW, Catholic Church canonical authority, and ASIC reporting as a CLG create multi-stakeholder funder management; profile shows no evidence of funder relationship strain."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.43,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Annual reports published publicly and ASIC-registered CLG suggests functional financial reporting; TechOne is the named ERP platform, providing financial reporting capability; no evidence of reporting failures."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Government-funded nonprofit with predictable SRS-formula revenue has lower forecasting complexity than commercial entities; CSNSW 2024-2029 certainty further reduces forecast risk within the current period."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Per-school, per-student cost transparency is generically difficult in large Catholic diocesan systems; profile notes 'Data intelligence' EGM exists but analytics is 'basic-to-intermediate,' making school-level unit economics visibility likely incomplete."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Five-year strategic plan exists indicating structured planning capability; CSNSW funding cycle provides multi-year budget horizon; no evidence of dysfunctional budget processes."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.4,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Concentration risk in government grants is explicitly named in operational dependencies — Commonwealth + NSW grants constitute majority of revenue; any policy change to SRS model or CSNSW arrangement is a named systemic exposure."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CLG structure with published annual reports and government funding accountability suggests functional financial compliance; no audit findings or financial compliance failures identified."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Board chaired by Elizabeth Crouch AM with professional directors and nine-EGM structure suggests reasonable internal control framework; no fraud or control failure signals; distributed 80-campus operation creates generic segregation-of-duties complexity."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CLG structure (2023) is appropriate for the organisation type; no complex subsidiary structure or tax optimization opportunities evident; government-funded nonprofit has limited financial structure optimisation levers."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.39,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.43,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Simultaneous transformation initiatives — Uplift rollout (80 schools), data infrastructure build, Westmead capital works, digital upskilling, teacher pipeline, and AI exploration — in a large institution with fixed government funding creates genuine priority overload risk."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Nine-EGM portfolio structure and Patrick Ellis's recent hire (Dec 2025, 3 months in) across a system with prior strategy create potential alignment friction; no evidence of active leadership misalignment but new leadership configuration makes it generically plausible."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Five-year strategy (2024) and Uplift launch (2025) are recent; translating system-level strategy into instructional change across 80 semi-autonomous schools is the defining execution challenge — Patrick Ellis is hired specifically to close this gap."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Catholic identity is Strategic Pillar 1 and Mission Enhancement Team actively maintains faith mission; CEO's former-SVP-Society background reinforces mission primacy; no evidence of drift away from core Catholic educational mission."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.25,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Geographic moat and religious identity moat are structurally stable; government school system improvement and independent school growth are generic competitive pressures but don't directly erode CSPD's Catholic identity advantage."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "AI-augmented homeschooling, online education alternatives, and non-denominational private schools are generic new threats to traditional K-12, but CSPD's community moat makes displacement by new entrants structurally unlikely at scale."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD operates in a defined geographic monopoly with stable enrolments and no evidence of competitive intelligence failures affecting strategic decisions."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD holds dominant position (1-in-4 Western Sydney students) with enrolment growth tailwind from population growth; market position is not stagnating."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.4,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "CSPD is not undergoing a business model transition — the grant-funded direct-delivery model is stable; Uplift is a service improvement initiative, not a business model change."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Data intelligence EGM, Uplift digital framework deployment, assessment infrastructure build, and 'exploring' AI posture across 80 schools with a transitional tech stack represent a directly evidenced technology-led transformation challenge at strategic scale."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "2023 CLG incorporation was a structural governance modernisation; the nine-EGM structure appears settled; no evidence of active restructuring beyond the Patrick Ellis hire (new EGM portfolio)."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI forum was 'values-focused, not deployment-focused' and AI posture is 'exploring'; innovation posture is 'pragmatic/evidence-driven, not early adopter' — the innovation strategy is cautious but not absent; risk of core Uplift work crowding out next-generation innovation investment."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No existential crisis, financial distress, or reputational catastrophe identified in the profile; transformation is strategic and proactive, not crisis-driven."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.48,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "CSPD operates within CSNSW, CECG, and Catholic Church ecosystem; no evidence of partnership breakdowns, though EdTech vendor relationships are unnamed gaps in the profile."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Patrick Ellis's prior role at CECG (Catalyst framework) and CSPD's analogous Uplift initiative suggests the EdTech and Catholic education ecosystem strategy is actively developing; no evidence of ecosystem orchestration failure but strategy is nascent."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "CSPD's funding is directly dependent on Commonwealth + NSW government policy; CSNSW advocacy role, NSW curriculum reform participation, and government funding accountability create active policy relationship management requirements."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Bishop's Awards, Project Compassion, Education Mass, and 'Parents as Partners' demonstrate active community engagement; no evidence of social license failures or community relationship deterioration."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.41,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.32,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Board chaired by Elizabeth Crouch AM with professional directors; CLG structure with modern board governance since 2023; no evidence of skills gaps or composition concerns, though Catholic Church affiliation may constrain director selection pool."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Active five-year strategy and public annual reports suggest an engaged, functional board; no evidence of rubber-stamping, factionalism, or disengagement."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "CEO Jack de Groot has public strategic voice and the board approved ambitious five-year plan and Uplift — no evidence of micromanagement or adversarial dynamics."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "2023 CLG incorporation was a governance modernisation from a prior structure; Policy Central documented policy infrastructure exists; dual governance (Catholic Church canonical authority + CLG board) creates inherent framework complexity requiring active management."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.43,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Jack de Groot as CEO with public strategic voice, mission-first background (former SVP Society CEO), and visible external representation through Catholic education media shows no signs of leadership limitation."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Nine-EGM structure with Patrick Ellis as a new external hire (Dec 2025) integrating into established executive team creates generic cohesion risk during onboarding period; no evidence of dysfunction but transition dynamics are plausible."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "EGM portfolios beyond Patrick Ellis and Jackson Chan (IT) are not publicly documented — five of nine EGMs have unconfirmed backgrounds, creating potential functional capability gaps in areas like data science, digital transformation, and modern HR at system scale."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Patrick Ellis joined December 2025 (3 months in at profile date) in a critical Uplift mandate role; externally hired from CECG rather than promoted internally; new leader onboarding risk during a major system-wide transformation initiative is a converging concern."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.48,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke with delegated principal autonomy vs central system authority on Uplift creates inherent decision rights ambiguity; diocese canonical authority adds a third governance layer; three-tier structure (CEO/EGM/principal) creates overlapping mandate risk."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Nine-EGM committee governance, Catholic Church canonical approval requirements, and board oversight as a CLG create multiple approval layers that structurally slow decisions; evidence-first culture reinforces deliberative rather than agile decision-making."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Data intelligence is explicitly a dedicated EGM portfolio, analytics is 'basic-to-intermediate,' and Patrick Ellis's mandate includes 'data visibility for school leaders' — multiple converging signals that decision information flow from schools to system level is currently insufficient."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Semi-autonomous principals with delegated authority create accountability diffusion risk for system-wide initiatives like Uplift; no direct evidence of follow-through failures but hub-and-spoke makes systemic accountability challenging."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Evidence-first, pragmatic culture ('adopts when clear evidence and ROI') and deliberate external hire from CECG analogous context suggest high decision quality orientation; no evidence of systematic poor judgment."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.4,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Bishop of Parramatta holds canonical authority over Catholic education in the diocese — this is a structural power entrenchment that is institutionally designed rather than a governance failure, but creates a constraint on board/CEO autonomy."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Mission Enhancement Team and Catholic Church hierarchy could function as informal governance layers; no evidence of back-channel decision-making or informal veto holders undermining formal governance."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Patrick Ellis holds the Uplift mandate which is the system's primary strategic initiative; if he exits within 12 months of joining, the transformation agenda faces significant continuity risk — one named individual owns critical external relationships and framework knowledge."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Annual reports published, CLG governance is transparent; but data analytics maturity being 'basic-to-intermediate' means school-level performance data is not systematically visible across the system, creating de facto information asymmetry between central office and schools."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "quality-consistency-site-variance",
+      "skills-development-technology-upskilling",
+      "revenue-diversification-concentration",
+      "skills-development-learning-delivery",
+      "process-efficiency-execution-variance"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 0,
+      "high": 13,
+      "medium": 56,
+      "low": 71,
+      "na": 1
+    }
+  }
+}

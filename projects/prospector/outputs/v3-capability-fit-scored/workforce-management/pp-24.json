@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-compensation-benefits-end-of-service-disputes-dup",
+  "pain_point_label": "End-of-Service & Separation Settlements Disputes",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The root cause of disputes is the absence of clear, written policy on gratuity computation, unused leave payout, and separation tiers — an LLM can draft these policies from labor code inputs and operator-specific rules. For a multi-site education operator subject to DepEd and DOLE frameworks, generating legally-grounded separation policy templates, computation worksheets in prose, and individualized final settlement letters eliminates the ambiguity that triggers escalations.",
+      "opportunity_sketch": "A policy-generation tool that takes labor law parameters (DOLE rules, DepEd portability rules, school employment tier) and outputs a complete End-of-Service Policy document and per-employee settlement computation narrative for HR approval and staff communication.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "HR officers at multi-site education operators must navigate overlapping sources — DOLE Labor Code, DepEd MOVs, individual school employment contracts, and internal policies — to answer 'what is this employee owed?' RAG grounds the answer in retrieved source documents rather than hallucinated figures, reducing computation errors and providing citable references that hold up if a case reaches DOLE. This directly addresses the compliance risk and delayed-final-payroll mechanisms.",
+      "opportunity_sketch": "An HR knowledge assistant that lets staff query 'compute final pay for a Grade 6 teacher, 8 years tenure, voluntary resignation, with 14 unused leave days' and returns a step-by-step computation citing the exact policy clause and labor code article supporting each line item.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The pain description explicitly mentions contingent liability recognized too late and cash flow shocks — leadership is blindsided by large settlements because no early-warning system exists. A risk model trained on employee tenure, employment type (end-of-contract vs permanent), accrued leave balance, and prior dispute history can score each departing employee's settlement as high/medium/low risk for DOLE escalation and flag cases for proactive resolution before they become formal complaints.",
+      "opportunity_sketch": "A separation risk dashboard that scores every active notice-to-resign or contract-end event, surfaces the estimated liability range, and prompts HR to initiate pre-clearance conversations with high-risk cases — converting reactive firefighting into planned budget provisioning.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-regression",
+      "capability_label": "Regression & Quantitative Estimation",
+      "match_rationale": "Final settlement value is a continuous numeric quantity derived from tenure, salary, leave balance, employment classification, and applicable entitlement rules — a classic regression estimation problem. An AI-assisted computation engine removes human arithmetic error and standardizes how each input variable is weighted, directly addressing the disputed-computation mechanism and delayed final payroll caused by manual recalculation cycles.",
+      "opportunity_sketch": "An automated settlement estimator that ingests HRIS fields (hire date, separation date, salary history, leave ledger, employment type) and outputs a line-item final pay computation with confidence bounds, replacing ad-hoc spreadsheets that vary by campus HR officer.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The delayed final payroll problem is fundamentally a multi-step workflow failure: separation notice received → leave balance confirmed → salary arrears computed → gratuity calculated → approval obtained → payroll released. Each handoff introduces days of lag. A task automation agent can orchestrate this end-to-end — pulling data from HRIS, triggering computation, routing the approval chain, and issuing the final pay advice — within a defined SLA, eliminating the weeks-to-months delay that drives DOLE filings.",
+      "opportunity_sketch": "An end-of-service workflow agent that activates on resignation or contract-end events, autonomously collects required data from connected HR and payroll systems, generates the computation document, routes it for dual approval, and releases payment instructions — with an audit trail admissible in DOLE proceedings.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

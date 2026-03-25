@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "workforce-management-workforce-planning-retention-no-attrition-analytics-dup",
+  "pain_point_label": "Blind Spot: No Attrition Root Cause Analysis",
+  "matches": [
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Employee attrition likelihood is a canonical propensity modeling use case — the model ingests per-employee features (campus, tenure, role, performance, salary band, workload proxies) and outputs a churn probability score. For a multi-site education operator this directly addresses the inability to intervene before good staff leave, by surfacing at-risk individuals weeks or months before they exit. The data needed (HR records, payroll, scheduling) typically already exists in fragmented systems and can be unified without major new infrastructure.",
+      "opportunity_sketch": "An attrition early-warning model that scores every employee monthly, flags high-risk staff to campus principals, and triggers a check-in workflow — replacing reactive rehiring with proactive retention outreach.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Exit data today is anecdotal or stored in inconsistent formats — spreadsheets, email threads, paper forms, informal manager notes. Before any root-cause analysis can happen, this scattered semi-structured data must be normalized into a consistent schema (exit reason categories, campus, role, tenure bucket, date). AI-assisted ETL can map heterogeneous exit records to a unified schema without manual re-entry, making the historical signal recoverable. This is a prerequisite capability that unlocks cohort analysis.",
+      "opportunity_sketch": "A one-time (and ongoing) ingestion pipeline that parses legacy exit records from varied formats into a standardized attrition database, enabling the first-ever cohort breakdowns by campus, discipline, and tenure.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Where exit interviews do exist (even as sparse email replies or manager notes), their free-text content contains the actual root causes — culture complaints, salary dissatisfaction, workload grievances, management conflicts. Text classification can automatically tag each exit record with one or more attrition driver categories, turning anecdotal text into structured signal. For an education operator with partial exit interview coverage, this converts previously lost qualitative data into a countable, trend-able dataset.",
+      "opportunity_sketch": "An exit feedback classifier that reads any free-text departure note and assigns standardized driver tags (compensation, workload, management, career growth, relocation), building a structured attrition driver registry over time.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Even when cohort data and exit patterns are available, leadership needs digestible narratives rather than raw tables. Summarization can condense a quarter's worth of attrition events — by campus, grade, or tenure band — into a concise board-ready briefing that highlights recurring themes and compares against prior periods. This addresses the specific pain that departures are treated as individual choices rather than institutional signals, by packaging the aggregate story in a format executives will actually read.",
+      "opportunity_sketch": "A quarterly attrition briefing generator that ingests structured exit data and produces a 1-page narrative per campus — key drivers, trend vs. prior quarter, cohorts of concern — delivered automatically to principals and HR.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The current process breaks down because exit data collection is manual and inconsistently executed — when a staff member resigns, no one reliably triggers an exit interview, logs reasons, or updates the HR system. A task automation agent can orchestrate the full offboarding data-capture workflow: detecting a resignation event, sending a structured exit survey, chasing non-responses, parsing replies, and writing structured records to the HR system. This closes the data collection gap at the source rather than trying to recover lost signal after the fact.",
+      "opportunity_sketch": "An automated offboarding workflow agent that fires on any resignation event, administers a short digital exit questionnaire, parses responses, and populates the attrition database — ensuring 100% exit data capture going forward without HR manual effort.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

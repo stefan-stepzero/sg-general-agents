@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-payment-timing-liquidity",
+  "pain_point_label": "Supplier Payment Timing & Liquidity Mismatch",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core dysfunction is reactive, manual AP processing: invoice pile-up, no systematic due-date tracking, and political payment prioritization. A task automation agent can ingest invoices as they arrive, extract key fields (supplier, due date, discount cutoff, contract terms), queue them in a priority-ordered ledger, and trigger payment-run recommendations on a defined schedule — eliminating the episodic, relationship-driven approach. This directly replaces the manual tracking process that causes missed discounts and supplier escalations.",
+      "opportunity_sketch": "An AP automation agent that monitors inbound invoices, maintains a live payment priority queue ranked by due date and discount deadlines, and generates a weekly payment-run recommendation for finance sign-off — replacing informal tracking with a systematic, auditable workflow.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.7
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "The school's inability to predict when payables will be discharged creates unpredictable cash flow, which in turn causes payment delays when cash is insufficient at the moment invoices are due. A time series forecasting model trained on historical payment patterns, seasonal enrollment receipts, and payroll cycles can project cash availability 30-60 days ahead, allowing finance to schedule payment runs proactively rather than reactively. This is the upstream fix — without cash visibility, even a systematic AP queue cannot prevent payment delays.",
+      "opportunity_sketch": "A cash flow forecasting model that projects weekly cash positions against AP obligations, surfacing periods where the organization risks missing payment terms and enabling preemptive action (e.g., drawing on credit, deferring discretionary spend) before suppliers are impacted.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.05
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain point explicitly calls out fraud risk: suppliers requesting payment to personal accounts, emergence of informal payment facilitators, and traceability gaps on remittances. An anomaly detection model can flag payment requests that deviate from established patterns — unusual bank account numbers, account changes for known suppliers, payment amounts inconsistent with contract terms, or payment methods outside normal channels. In an emerging-market context where informal agents are already inserting themselves, this is a high-value control.",
+      "opportunity_sketch": "An AP fraud detection layer that flags incoming payment requests deviating from established supplier profiles (account numbers, payment methods, amount ranges), routing anomalous requests for manual review before disbursement — reducing exposure to diverted payments.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.7
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Supplier payment prioritization is currently political rather than systematic, but it is genuinely a constraint satisfaction problem: given limited cash availability, which invoices should be paid in this run to minimize penalty exposure, preserve discount capture, and maintain supply continuity? A constraint-based optimizer can encode cash-available, due dates, discount cutoffs, supplier criticality, and contract penalty terms into a weekly payment allocation recommendation — producing defensible, policy-driven outputs rather than relationship-driven ones.",
+      "opportunity_sketch": "A payment prioritization engine that takes the available cash position and open AP ledger each week and returns an optimal payment batch that maximizes discount capture and minimizes penalty risk, with an audit trail showing exactly why each supplier was paid or deferred.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.7
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Invoice pile-up is partly a digitization problem: in emerging-market education operators, many supplier invoices arrive as paper documents, handwritten receipts, or PDFs with inconsistent formatting. Without structured extraction, due dates cannot be tracked systematically. OCR and invoice parsing turns these unstructured documents into structured AP records with supplier name, invoice date, due date, amount, and line items — the prerequisite for any downstream prioritization or forecasting capability.",
+      "opportunity_sketch": "An invoice ingestion pipeline using document OCR and parsing to extract structured fields from paper and PDF invoices, feeding directly into the AP ledger with due dates and amounts populated — eliminating manual data entry as the bottleneck that causes invoice pile-up.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

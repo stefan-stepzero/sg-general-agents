@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "payroll-supplementary-item-backlog",
+  "pain_point_label": "Supplementary Payroll Item Backlog & Delays",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a manual, multi-step approval workflow — exactly what task automation agents address. Each supplementary item (overtime claim, bonus, exit pay) can be routed through an AI-driven pipeline that validates inputs, triggers approvals from the right managers, chases outstanding sign-offs, and pushes confirmed items to payroll without human orchestration of each step. For a 500+ staff multi-site operator, this eliminates the backlog that accumulates when HR staff must manually track and nudge each claim across campuses.",
+      "opportunity_sketch": "An agentic workflow that ingests supplementary pay requests (from timesheets, HR forms, or resignation triggers), auto-calculates entitlements, routes for approval to the correct authority level, and on approval prepares a structured payroll input — with status visible to all parties throughout.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Supplementary payroll items often arrive in inconsistent formats — spreadsheet dumps from campus managers, email-based overtime logs, paper timesheets photographed and emailed. AI-assisted data transformation can normalize these semi-structured inputs into a clean, consistent payroll schema, removing the manual re-entry step that slows processing and introduces errors. For a multi-site operator, this is high-value because each campus may use slightly different templates or tracking conventions.",
+      "opportunity_sketch": "A transformation layer that accepts diverse supplementary pay submissions and outputs a standardized, validated payroll record ready for the approval queue — reducing the time HR spends reformatting and reconciling submissions from 10+ campuses.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Many education operators still receive overtime claims and exit documentation as scanned forms or PDF attachments. OCR and form extraction can digitize these directly into the payroll system, eliminating the manual data-entry bottleneck that creates backlog. This is especially relevant for final pay on staff exit, where signed separation documents must be processed quickly to avoid staff relations friction.",
+      "opportunity_sketch": "A document ingestion tool that parses submitted overtime forms, allowance adjustment requests, and exit clearance documents via OCR, extracting key fields (staff ID, hours, rates, effective dates) and feeding them directly into the payroll workflow without manual transcription.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "HR and payroll staff at each campus frequently need to answer questions about entitlements — what is the correct overtime rate for a part-time teacher who worked a public holiday, or what is the final pay timeline for a resigned employee on probation. These answers are buried in employment agreements, award schedules, and HR policy documents. A RAG system over these documents reduces the lookup time that delays calculation and approval, and ensures consistent answers across all campuses.",
+      "opportunity_sketch": "A policy Q&A tool for payroll administrators that retrieves and synthesizes the applicable award conditions, employment contract clauses, and internal policies relevant to a specific supplementary pay calculation — surfacing citations so staff can act confidently without escalating to HR leads for every edge case.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "In a 500+ staff multi-site operator, supplementary pay claims are a known leakage vector — duplicate overtime submissions, inflated hours, or claims submitted for periods when a staff member was on leave. Anomaly detection over historical payroll and attendance data can flag statistically unusual claims before they enter the approval queue, protecting the organization without slowing legitimate processing.",
+      "opportunity_sketch": "An anomaly detection layer that compares each submitted overtime or bonus claim against the staff member's attendance records, historical claim patterns, and campus-level norms — flagging outliers for human review while auto-approving routine, clean submissions.",
+      "impact": 3,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Staff who have submitted overtime or bonus claims, or who are exiting the organization, frequently follow up with HR to check status — generating repetitive inquiry load that further slows the payroll team. A conversational agent can handle status queries and provide real-time updates, freeing HR staff to focus on processing rather than responding to chasers. This also directly addresses the staff relations friction caused by final pay delays.",
+      "opportunity_sketch": "A self-service HR chatbot that staff can query for the current status of their pending supplementary pay claims, expected disbursement date, and what documentation is outstanding — integrated with the workflow system so answers are live and accurate.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

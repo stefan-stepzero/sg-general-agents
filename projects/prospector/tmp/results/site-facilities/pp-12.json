@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "site-facilities-cleaning-grounds-cleaning-staff-recruitment-training-and-turnover-is-destabilizing-dup",
+  "pain_point_label": "Cleaning and Gardening Staff Recruitment, Training, and Turnover Create Service Disruptions",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The core pain mechanism is that cleaning knowledge lives in experienced staff's heads and disappears when they leave. Text generation can externalize that tacit knowledge into durable, campus-specific SOPs, onboarding checklists, and cleaning guides — capturing which rooms need extra attention, which products to use where, and equipment operation steps. This directly breaks the fragile dependency on informal shadowing by converting it into reusable written artifacts.",
+      "opportunity_sketch": "A tool where a facilities manager (or departing senior staff) answers structured prompts, and the system generates a polished, campus-specific cleaning operations manual and role-specific onboarding guide that new hires can follow from day one.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Even if SOPs exist, new cleaning staff in the Philippines often have low literacy comfort with dense documents. A RAG system over campus-specific procedure documents lets a new staff member ask in plain language — 'what do I use on the gym floor?' or 'how often does the canteen need deep cleaning?' — and get a grounded, specific answer rather than hunting through manuals. This reduces the time-to-competency for new hires and reduces the load on supervisors as informal trainers.",
+      "opportunity_sketch": "A mobile-friendly chatbot (accessible via phone) backed by the operator's campus SOPs, answering new staff questions about procedures, products, and area-specific requirements — available 24/7 without requiring a senior staff member to be present.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Turnover is chronically high but not entirely unpredictable — attendance patterns, tenure milestones, shift change requests, and contract type are signals that precede departure. A propensity model trained on historical HR data can score each cleaning staff member's attrition likelihood, giving facilities managers a few weeks of advance warning to begin recruitment or accelerate knowledge transfer before a departure creates a gap. For a 500+ staff operator with multiple campuses, even catching 30% of departures early has significant operational value.",
+      "opportunity_sketch": "An HR dashboard add-on that flags cleaning and grounds staff with high attrition probability based on behavioral signals, prompting the facilities manager to conduct a retention check-in or initiate a replacement hire before the position goes vacant.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Multi-campus operators face the compounding problem that a vacancy at one site cannot easily be covered by staff from another unless scheduling is coordinated. Resource allocation optimization can generate cross-campus coverage plans when vacancies occur — identifying which staff have capacity, which campuses have flexibility, and how to redistribute cleaning assignments to maintain minimum standards at all sites while a replacement is sourced. This converts a reactive scramble into a managed response.",
+      "opportunity_sketch": "A scheduling tool that, when a cleaning vacancy is flagged, automatically proposes a temporary redistribution plan across the campus network — assigning available staff to the highest-priority areas and generating a revised schedule for the affected site.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

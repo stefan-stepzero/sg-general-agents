@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "teaching-learning-curriculum-implementation-stakeholder-communication-dup",
+  "pain_point_label": "Weak Instructor-Administrator Feedback Loop on Curriculum Changes",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When DepEd/TESDA policy updates arrive, administrators must translate dense regulatory language into actionable classroom guidance. AI text generation can automatically produce teacher-facing briefs, implementation checklists, and FAQs directly from policy documents — closing the trickle-down gap without requiring manual drafting by overwhelmed curriculum coordinators.",
+      "opportunity_sketch": "A tool that ingests official policy PDFs and auto-drafts structured 'what this means for your classroom' memos, reducing the time from policy release to teacher-ready communication from weeks to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "DepEd/TESDA circulars and curriculum revision documents are lengthy and technical; teachers lack time to parse them. Summarization directly addresses the trickle-down failure by condensing policy updates into digestible highlights, removing the administrator as a required bottleneck for translation.",
+      "opportunity_sketch": "Automated summarization pipeline that processes new government circulars and curriculum revision memos into 1-page teacher digests, tagged by subject area and grade level, distributed on release.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Teachers submitting feedback on resource gaps or content conflicts through any channel (email, form, chat) need their inputs triaged and routed to the right administrator or curriculum lead. Text classification can automatically tag, prioritize, and route teacher-flagged issues by subject, urgency, and type — replacing the current silence with a structured response loop.",
+      "opportunity_sketch": "A feedback intake system where teacher submissions are automatically classified by topic (resource gap, content conflict, training need) and urgency, then routed to the responsible admin with SLA tracking.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Teachers who need to understand how a new curriculum revision affects their specific subject or year level must search across multiple policy documents, memos, and prior circulars — a process they currently lack time or guidance to do. A RAG system grounded in the school's curriculum document corpus allows teachers to ask natural-language questions and receive cited, accurate answers, replacing the need to escalate every question to an administrator.",
+      "opportunity_sketch": "An internal curriculum Q&A assistant where teachers ask questions like 'What does the new TESDA circular mean for Grade 11 cookery?' and receive grounded answers with source citations, reducing admin query load and improving teacher self-service.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "A structured feedback loop requires more than a one-shot form — teachers need to describe resource gaps and content conflicts in context, ask clarifying questions, and confirm their concern was understood. A conversational agent can conduct a structured intake dialogue, probe for specifics, and produce a clean structured report for administrators, turning informal complaints into actionable data.",
+      "opportunity_sketch": "A curriculum feedback chatbot that guides teachers through a structured intake conversation, collects specifics about the gap or conflict, and auto-generates a formal report delivered to the relevant curriculum lead — creating the structured channel that currently doesn't exist.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full feedback loop involves multiple steps: receiving a policy update, parsing it, generating teacher briefs, distributing them, collecting teacher responses, routing gaps to admins, and tracking resolution. A task automation agent can orchestrate this end-to-end workflow across document stores, email, and school management systems — replacing a manual, easily-dropped chain of handoffs.",
+      "opportunity_sketch": "An automated curriculum change management pipeline that triggers on new policy document uploads: summarizes, generates school-specific implementation notes, distributes to relevant staff, collects acknowledgments, and escalates unresolved flags to leadership — all without manual coordination.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

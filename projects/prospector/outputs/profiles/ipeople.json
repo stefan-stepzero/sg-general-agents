@@ -1,0 +1,324 @@
+{
+  "entity": "iPeople Inc",
+  "ticker": "PSE:IPO",
+  "website": "ipeople.com.ph",
+  "profile_date": "2026-03-11",
+  "known_contact": "Fred Ayala (President & COO)",
+  "executive_summary": "iPeople Inc (PSE:IPO) is the Philippine education holding company owned jointly by the Yuchengco Group (House of Investments) and Ayala Corporation, operating a portfolio of 7+ institutions spanning STEM-focused higher education (Mapúa University), blended/digital learning, affordable K-12, and teacher training — serving approximately 74,000 students as of 2024-25. The company is in an active scaling phase: revenue grew 18% and earnings 31% in FY2024, enrollment grew 10%, and Ayala deepened its stake to 36.3% in mid-2025, signaling continued conglomerate commitment. iPeople is positioning aggressively as the Philippines' AI-forward education leader — launching the country's first BS AI Engineering program, integrating Coursera GenAI tools across 45,000 students, and building international partnerships with Arizona State University and Alibaba Cloud. The flagship Mapúa University celebrates its centennial in 2025 with strong third-party validation (ABET accreditation, QS Asia top-100 in SEA), and the group's consolidation moves (APEC Schools merged into NTC) signal a deliberate rollup-and-scale strategy. Contact Fred Ayala is the operational face and primary decision-maker bridging both conglomerate shareholders.",
+  "dimensions": {
+    "industry_vertical": {
+      "primary_sector": {
+        "value": "Education",
+        "evidence": "iPeople is a pure-play education holding company operating universities, colleges, K-12 schools, and a digital college across the Philippines. Website self-description: 'drives investments in the education sector.' PSE-listed under education sector.",
+        "confidence": "high"
+      },
+      "vertical_niche": {
+        "value": "Higher Education (STEM/Tech-focused) + K-12 Private Education + EdTech/Blended Learning",
+        "evidence": "Core asset Mapúa University is the Philippines' premier engineering and technology university (ABET-accredited). Portfolio spans: undergraduate STEM university (Mapúa), blended/digital college (MMDC), affordable K-12 (NTC/APEC merged), teacher education (NTC), regional university (UNC). Coursera AI partnership and BS AI Engineering program confirm edtech orientation.",
+        "confidence": "high"
+      },
+      "value_chain_position": {
+        "value": "End-service provider / direct education delivery",
+        "evidence": "iPeople owns and operates the institutions directly — it is the school, not a curriculum supplier, platform vendor, or distributor. Students pay tuition directly to iPeople-owned schools. Mapúa Malayan Digital College and Coursera partnership add a platform-augmented layer but delivery remains institutional.",
+        "confidence": "high"
+      },
+      "industry_maturity": {
+        "value": "Growth — accelerating consolidation phase",
+        "evidence": "Philippine higher education market: USD 154M in 2025, projected USD 847M by 2034 (CAGR ~20%). 1,714 private HEIs competing — fragmented market ripe for consolidation. Government quality-raising reforms (EDCOM 2, CHED) are squeezing weaker operators and favoring institutionally capable groups like iPeople. Industry is growing but not yet mature — TAM expansion driven by demographics, rising STEM demand, and digital learning adoption.",
+        "confidence": "high"
+      }
+    },
+    "business_model": {
+      "revenue_model": {
+        "value": "Tuition-based recurring revenue (per-semester enrollment fees) with supplemental ancillary income",
+        "evidence": "Education companies in the Philippines generate revenue through tuition and fees charged per semester/year. iPeople FY2024 revenue PHP 5.32B derived from 74,000 enrolled students across 7+ institutions. No pricing page or publicly disclosed breakdown, but the model is structurally recurring — students re-enroll annually over multi-year programs (4-6 years for degrees). Dividend yield of 2-3.6% and 28-31% payout ratio confirm stable, recurring cash generation.",
+        "confidence": "high"
+      },
+      "delivery_model": {
+        "value": "Physical campus delivery (multi-site) with blended/online augmentation",
+        "evidence": "Primary delivery is in-person campus instruction at multiple physical campuses: Mapúa Manila (flagship), MMCL (Laguna), MMCM (Mindanao), NTC campuses, UNC (Naga). Mapúa Malayan Digital College (MMDC) is the online/blended vehicle. Coursera partnership supplements classroom instruction with digital AI-powered content — students earn 20-30% of credits through Coursera.",
+        "confidence": "high"
+      },
+      "cost_structure": {
+        "value": "Fixed-cost-heavy; asset-intensive (facilities, faculty, accreditation infrastructure)",
+        "evidence": "Universities are structurally fixed-cost-heavy: campus buildings, faculty salaries, laboratory equipment, accreditation compliance. New building groundbreaking in Cabuyao/Laguna and Mindanao expansion confirm ongoing capex. House of Investments disclosed P22B capex plan through 2026. EBITDA margin of 28.68% is healthy but reflects the fixed-cost infrastructure base. Enrollment growth (10% YoY) drives operating leverage.",
+        "confidence": "high"
+      },
+      "network_effects": {
+        "value": "Brand/reputation moat + accreditation switching costs + institutional relationship moats",
+        "evidence": "Mapúa's 100-year brand, ABET accreditation (first in Southeast Asia), and QS/THE rankings create significant reputation moats that take decades to build. Students choose Mapúa specifically for the accreditation value (international recognition, licensure exam pass rates). ABET accreditation itself has high switching costs — losing it would be catastrophic. Multi-campus network creates geographic reach advantages. No pure network effects (more students don't directly increase value for others), but strong brand and credential moats.",
+        "confidence": "high"
+      },
+      "key_dependencies": {
+        "value": "Regulation-dependent (CHED licensing) + government subsidy flows (RA 10931/UNIFAST TES) + talent-market-dependent (faculty) + campus infrastructure + partner-dependent (ASU, Coursera, Alibaba Cloud)",
+        "evidence": "CHED (Commission on Higher Education) licenses all Philippine HEIs — iPeople cannot operate without CHED recognition and program accreditation. RA 10931 (Universal Access to Quality Tertiary Education Act) funnels PHP 20,000/year per qualifying student in private HEIs via UNIFAST Tertiary Education Subsidy (TES) — government is a meaningful indirect revenue source; policy changes or budget cuts (PHP 67B allocated for 2026) would impact enrollment affordability and tuition flow. Faculty quality directly determines ABET/CHED accreditation status. Multi-campus physical infrastructure (Manila, Laguna, Mindanao, Naga) is operationally non-negotiable. International partnerships (ASU, Coursera, Alibaba Cloud) are integral to AI curriculum differentiation — these are contractual dependencies, not just relationships. PSE listing creates capital market dependency for governance and investor confidence.",
+        "confidence": "high"
+      }
+    },
+    "scale_resources": {
+      "headcount_band": {
+        "value": "Mid-Enterprise (1,001–2,500) — confirmed 1,895 employees as of December 31, 2024",
+        "evidence": "iPeople Inc disclosed 1,895 employees as of December 31, 2024, per PSE/SEC filings and StockAnalysis data. This represents a 2.54% YoY increase (+47 employees) from 2023. Headcount covers faculty and administrative staff across all group institutions (Mapúa, NTC, UNC, MMCL, MMCM, MMDC). The 74,000-student base at roughly 39:1 student-to-employee ratio reflects reliance on part-time/adjunct faculty supplementing full-time staff.",
+        "confidence": "high"
+      },
+      "revenue_band": {
+        "value": "Enterprise ($100M+) — PHP 5.32B FY2024 (~USD 95M at ~56 PHP/USD)",
+        "evidence": "FY2024 revenue: PHP 5.32 billion (+18.49% YoY). TTM revenue: PHP 5.97 billion (~USD 107M). Earnings: PHP 844M FY2024, PHP 1.04B TTM. All data from stockanalysis.com statistics confirmed by multiple Philippine business media.",
+        "confidence": "high"
+      },
+      "capitalization": {
+        "value": "Publicly traded on PSE (Philippine Stock Exchange); conglomerate-backed",
+        "evidence": "PSE:IPO listed company. Market cap PHP 6.13B as of Dec 2025. Majority owned by House of Investments (Yuchengco Group) and Ayala Corporation (36.3%). No VC or PE dependency — funded through public markets, retained earnings, and parent conglomerate capital. P22B capex plan disclosed through 2026 from House of Investments. No immediate funding/runway risk.",
+        "confidence": "high"
+      },
+      "asset_intensity": {
+        "value": "Asset-heavy (multi-campus physical infrastructure across 4+ Philippine regions)",
+        "evidence": "Owns and operates multiple physical campuses: Manila (flagship), Laguna, Mindanao, Naga (UNC), NTC campuses. New building groundbreaking in Cabuyao, Laguna. Planned Mindanao expansion. NTC expansion to Bulacan approved. Laboratory equipment required for ABET-accredited engineering programs. P22B parent capex plan signals sustained infrastructure investment.",
+        "confidence": "high"
+      },
+      "financial_health": {
+        "value": "Profitable, accelerating growth, positive cash flow, conservative leverage",
+        "evidence": "FY2024: revenue +18%, earnings +31%, EBITDA margin 28.68%. TTM earnings PHP 1.04B. Dividend yield 2-3.66%, payout ratio 28-31% (implies significant retained earnings). PE ratio ~6x suggests market discount vs growth rate. ROE 6.49%, ROIC 4.48% (moderate — reflects asset-heavy base). No signs of leverage distress. Stock +3.17% over 52 weeks — stable, not distressed.",
+        "confidence": "high"
+      },
+      "company_age": {
+        "value": "Legacy (20+ years as iPeople; Mapúa University 100+ years)",
+        "evidence": "Mapúa University founded 1925 — celebrated centennial January 2025. iPeople Inc as the holding company has operated under various forms for decades; AC Education merger completed May 2, 2019. National Teachers College and University of Nueva Caceres are also multi-decade institutions. The holding entity structure is relatively newer but the underlying institutions are legacy.",
+        "confidence": "high"
+      },
+      "customer_base_scale": {
+        "value": "Large (74,000 enrolled students, 2024-25), growing 10% YoY",
+        "evidence": "74,000 total students for AY2024-25 confirmed by multiple sources. +10% YoY growth. NTC post-merger: 24,000+ students (K-12, college, grad). Mapúa group (flagship + MMCL + MMCM + MMDC): estimated 40,000+. UNC: regional footprint. Coursera partnership serves 45,000 students annually (overlapping with enrolled base). 54% of enrollment from affordable segment.",
+        "confidence": "high"
+      }
+    },
+    "growth_phase": {
+      "phase": {
+        "value": "Scaling — active geographic and portfolio expansion with concurrent consolidation",
+        "evidence": "Multiple simultaneous expansion signals: (1) new campus buildings in Laguna and Mindanao; (2) NTC expansion to Bulacan approved; (3) APEC/NTC merger to create larger consolidated entity; (4) Mapúa School of Medicine launched Dec 2024; (5) enrollment +10% YoY to 74K; (6) revenue +18%, earnings +31% FY2024; (7) Ayala deepened stake to 36.3% in Aug 2025. Not optimization-phase — too much active geographic expansion and M&A. Not pre-PMF — proven model with century-old flagship. Classic scaling-via-rollup pattern.",
+        "confidence": "high"
+      }
+    },
+    "market_position": {
+      "customer_segment": {
+        "value": "Consumer (individual students and families) — bifurcated: premium (Mapúa) and affordable/mass-market (NTC, APEC segment)",
+        "evidence": "Primary buyers are Filipino students and their families paying tuition. 54% of enrollment from affordable segment (APEC/NTC). 46% from premium tier (Mapúa, MMCL, MMCM, UNC). No B2B/enterprise sales motion; education is a direct-to-consumer service. Government scholarships (CHED UniFAST, SUC vouchers) may add government as indirect payer in some cases.",
+        "confidence": "high"
+      },
+      "competitive_stance": {
+        "value": "Market leader in STEM private HE (Philippines); niche specialist with rollup growth strategy",
+        "evidence": "Mapúa: ABET-accredited (first in SEA), QS top-100 in Southeast Asia, CHED Centers of Excellence in Engineering and IT. First BS AI Engineering in Philippines. Ranked #2 in Asia among Coursera Campus partners for GenAI enrollments. These are market-leading, not challenger, positions in the STEM/engineering segment. In affordable education (NTC/APEC), more of a volume player competing on accessibility. Overall: dominant in its chosen STEM niche, consolidating the affordable tier.",
+        "confidence": "high"
+      },
+      "gtm_motion": {
+        "value": "Brand/reputation-led (inbound) supplemented by academic partnership distribution",
+        "evidence": "No evidence of outbound sales team or traditional marketing push. Education is primarily reputation-led — students seek out Mapúa for the ABET brand and engineering track record. International partnerships (ASU, Coursera) generate press coverage and third-party credibility that drive enrollment demand. Website has no pricing page, consistent with reputation-pull rather than offer-push. No affiliate or channel partners for student acquisition.",
+        "confidence": "medium"
+      },
+      "customer_concentration": {
+        "value": "Highly diversified — 74,000 individual student accounts, no material concentration",
+        "evidence": "74,000 enrolled students across 7+ institutions and 4+ geographic regions. No single student represents meaningful revenue concentration. Government scholarship programs (if any) could represent bundled revenue but no evidence of material government contract dependency. Classic consumer education revenue distribution.",
+        "confidence": "high"
+      },
+      "pricing_position": {
+        "value": "Dual-tier: mid-market premium (Mapúa) + value/affordable (NTC/APEC segment)",
+        "evidence": "Mapúa University is positioned as premium quality at a relative mid-market price point vs. Ateneo/DLSU (the top-tier premium universities). APEC Schools (now NTC) explicitly targeted affordable K-12. 54% of enrollment from the affordable segment. The 'premium-affordable' intersection is iPeople's stated positioning — quality accreditations at accessible price points vs. pure elite pricing.",
+        "confidence": "medium"
+      }
+    },
+    "org_structure": {
+      "leadership_model": {
+        "value": "Dual-principal professional management (Yuchengco Chairman/CEO + Ayala President/COO) under conglomerate board oversight",
+        "evidence": "Dr. Reynaldo Vea (Yuchengco side): Chairman & CEO since Feb 2022. Fred Ayala (Ayala Group side): President, COO & Director since Feb 2022. Classic Philippine conglomerate JV governance structure. Neither is a founder in the startup sense — both are professional managers representing institutional shareholders. Board-driven at the macro level (HI + Ayala Corp as controlling shareholders); operationally run by professional executives.",
+        "confidence": "high"
+      },
+      "org_shape": {
+        "value": "Divisional (holding company with semi-autonomous institutional subsidiaries)",
+        "evidence": "iPeople Inc is the listed holding entity. Each institution (Mapúa University via Malayan Education System Inc, NTC, UNC, MMCL, MMCM, MMDC) operates as a subsidiary or affiliate with its own board/president. Fred Ayala also serves as President & CEO of NTC directly — suggests some operational consolidation at the top. Hub-and-spoke: iPeople HQ + institution subsidiaries.",
+        "confidence": "high"
+      },
+      "workforce_model": {
+        "value": "Multi-site co-located (campus-based faculty and staff across 4+ Philippine regions)",
+        "evidence": "Education is inherently location-bound. Campuses in Metro Manila, Laguna, Mindanao, and Naga (Bicol). Faculty and administrative staff are campus-resident. No evidence of remote-first or distributed work model — the physical campus IS the product. Careers page emphasizes in-person community and collaboration culture.",
+        "confidence": "high"
+      },
+      "talent_profile": {
+        "value": "Domain-expert-heavy (faculty: engineers, educators, researchers) + operations-heavy (campus administration)",
+        "evidence": "ABET accreditation requires qualified engineering faculty with industry experience and/or graduate degrees. Mapúa's engineering focus means significant PhD/MS faculty. NTC's teacher education focus requires licensed professional teachers. Administrative operations at scale (registrar, finance, student services, facilities) across 7+ institutions. Tech talent is an emerging priority given AI curriculum push but not yet the dominant profile.",
+        "confidence": "high"
+      }
+    },
+    "tech_maturity": {
+      "stack_generation": {
+        "value": "Transitional — Coursera-powered LMS with AI capabilities (plagiarism detection, auto-grading), expanding from 15K to 45K students; mix of custom in-house apps, Moodle, Blackboard Learn, and modern EdTech integrations",
+        "evidence": "Confirmed platforms: Moodle LMS (Mapua), Blackboard Learn (MMCL), custom admissions portal with Cardinal EDGE, CARDINAL Plus RFID system, Mapua digital toolkit (Ally, EAC Visual Data, Engage, MapuaX), Coursera API integration expanding from 15K to 45K students with AI-powered features (plagiarism detection, auto-grading), WordPress corporate site. LinkedIn research confirms Coursera-powered LMS as primary modern platform layer with active scaling. MMDC has more modern cloud-native stack.",
+        "confidence": "medium"
+      },
+      "engineering_practices": {
+        "value": "Minimal to basic — no CTO at holding company level; Director of IT at campus level (Joselito Sol Cruz); outsourced-first approach via Coursera partnership",
+        "evidence": "iPeople is an education holding company. LinkedIn research confirms no CTO at holding company level. Director of IT identified at campus level (Joselito Sol Cruz). Outsourced-first approach leverages Coursera partnership for AI-powered content delivery (expanding from 15K to 45K students). Has internal IT function for in-house applications (admissions portal, CARDINAL Plus, MapuaX suite). Sophisticated EdTech consumer (Coursera, Blackboard, Alibaba Cloud) but not a software product builder. No CI/CD, DevOps, or formal engineering org evidence.",
+        "confidence": "medium"
+      },
+      "data_infrastructure": {
+        "value": "ERP-native reporting with centralized SIS and Coursera analytics; basic to intermediate",
+        "evidence": "CARDINAL Plus RFID captures student logs, grades, guidance records, schedules. PSE-listed quarterly reporting requires consolidated financial data. Coursera partnership provides learning analytics across 45K students. LinkedIn research confirms centralized SIS architecture and Coursera analytics as primary data layer. No centralized data warehouse, BI platform, or ML-in-production beyond Coursera analytics. 74K students across 7+ institutions requires enterprise-grade SIS. Data maturity is operational, not analytically advanced.",
+        "confidence": "low-medium"
+      },
+      "security_posture": {
+        "value": "Basic to intermediate (assumed — regulated Philippine HEI with student data obligations under Data Privacy Act)",
+        "evidence": "Philippine Data Privacy Act (RA 10173) applies — NPC registration and data protection officer required for student personal data across 74K enrollees. Quality Matters (QM) certification for online courses implies some standards for digital delivery integrity. No public evidence of SOC2, ISO27001, penetration testing programs, or dedicated security engineering. WordPress corporate site and Moodle LMS have standard security update cadences. Online enrollment system and Cardinal EDGE handle admissions assessment data — basic web security hygiene assumed.",
+        "confidence": "low"
+      }
+    },
+    "operating_environment": {
+      "regulatory_burden": {
+        "value": "Heavy — multi-regulator: CHED (higher ed), DepEd (K-12), PSE/SEC (listed company), ABET (international), NPC (data privacy)",
+        "evidence": "All Philippine HEIs require CHED program recognition and institutional accreditation. K-12 schools (NTC/APEC) are DepEd-regulated. ABET accreditation involves rigorous ongoing US-based engineering curriculum standards. PSE listing requires SEC filings, quarterly disclosures, PSE governance compliance. EDCOM 2 reforms and CHED program reviews are actively reshaping regulatory requirements. Philippine Competitions Commission (PCC) reviewed and cleared the Ayala stake increase — M&A is also regulated.",
+        "confidence": "high"
+      },
+      "geographic_scope": {
+        "value": "Single-country national (Philippines) with international partnership reach",
+        "evidence": "All physical campuses are in the Philippines: Metro Manila, Laguna, Mindanao, Naga (Bicol), with NTC expansion to Bulacan. Revenue is domestic. International partnerships (ASU, Coursera) are content/curriculum partnerships, not operational geographic expansion. No campuses outside the Philippines. ASU partnership enables international enrollment as a pathway, but operational footprint is national.",
+        "confidence": "high"
+      },
+      "macro_sensitivity": {
+        "value": "Recession-resistant with mild demographic sensitivity; partially forex-exposed on curriculum partnerships",
+        "evidence": "Education is a basic service — enrollment tends to be recession-resistant in the Philippines (rising demand as economic stress drives upskilling). Philippine youth bulge supports sustained demand. However, premium education is somewhat income-sensitive; affordable segment (54%) provides recession hedge. Forex exposure: Coursera and ASU partnerships likely priced in USD — PHP depreciation increases partnership costs. Physical expansion capex is peso-denominated.",
+        "confidence": "medium"
+      },
+      "governance_obligations": {
+        "value": "Publicly traded (PSE) + conglomerate-controlled (dual controlling shareholders: Yuchengco Group + Ayala Corp)",
+        "evidence": "PSE:IPO listing imposes SEC reporting, quarterly disclosures, PSE corporate governance requirements, and minority shareholder protections. House of Investments (Yuchengco) holds majority control; Ayala Corp holds 36.3%. Dual controlling shareholders create a governance structure where major decisions require alignment between two Philippine conglomerate families — adding governance complexity and deliberateness to strategic moves. PCC oversight of ownership changes was demonstrated in the Aug 2025 stake increase.",
+        "confidence": "high"
+      }
+    },
+    "culture_brand": {
+      "innovation_posture": {
+        "value": "Fast-follower to bleeding-edge (relative to Philippine HE peer set); pragmatic on institutional change",
+        "evidence": "Within the Philippine higher education context, iPeople/Mapúa is clearly at the innovation frontier: first BS AI Engineering in PH, #2 in Asia for GenAI enrollments on Coursera, first QM-certified institution in PH, first ABET-accredited in SEA. These are genuine first-mover positions. However, the pace of change in a 100-year-old university system is inherently bounded by accreditation cycles, faculty tenure, and regulatory approval timelines. Innovation posture is high relative to Philippine HE but bounded by institutional constraints.",
+        "confidence": "high"
+      },
+      "brand_positioning": {
+        "value": "Thought-leader / visionary (Mapúa flagship) + mission-driven / accessible (affordable segment brands)",
+        "evidence": "Mapúa: positions as the Philippines' engineering excellence and AI-forward university. Centennial messaging, ASU partnership, ABET accreditation all reinforce 'world-class Philippine engineering.' Website describes sustainability mission as 'partner in nation-building.' Careers page: 'values-driven community united by a passion to make a meaningful impact.' Affordable segment (NTC/APEC) brand positions on accessibility and teacher education mission. Dual brand personality — prestige + mission.",
+        "confidence": "high"
+      },
+      "public_values": {
+        "value": "Values-prominent (mission-driven with nation-building rhetoric; sustainability commitments; dual social mission of excellence + accessibility)",
+        "evidence": "Website sustainability page: 'partner in nation-building particularly in providing quality and accessible education across all segments of society.' Careers page emphasizes 'integrity, responsibility, and innovation.' Sustainability engage page frames education as collective social responsibility. 54% affordable enrollment aligns stated accessibility mission with actual enrollment mix. Yuchengco Group has a history of social mission framing in its education investments (RCBC, House of Investments).",
+        "confidence": "high"
+      },
+      "employer_brand": {
+        "value": "Strong-in-niche (attractive employer for Filipino educators and education professionals; Ayala/Yuchengco conglomerate pedigree is a talent draw)",
+        "evidence": "Careers page active with open roles. 'Values-driven community' and 'meaningful impact' language targets mission-motivated professionals. Ayala Group affiliation is a significant employer brand amplifier in the Philippines — Ayala is consistently rated a top employer. Mapúa's century-old reputation and international accreditations attract quality faculty. However, not a top employer for tech talent — that is an emerging gap given AI curriculum ambitions.",
+        "confidence": "medium"
+      }
+    }
+  },
+  "contact_context": {
+    "name": "Fred Ayala",
+    "full_name": "Alfredo 'Fred' Antonio I. Ayala",
+    "title": "President, COO, and Director — iPeople Inc; President & CEO — National Teachers College",
+    "background": "Harvard MBA; BA Brown University; Managing Director of Ayala Group. Led AC Education before the 2019 merger with iPeople. ASU Global Fellow (Philippines). Represents Ayala Corporation's interests in iPeople.",
+    "role_significance": "Fred Ayala is the operational decision-maker for iPeople — not the board chair (that's Dr. Vea) but the executive running day-to-day strategy, partnerships, and expansion. His Ayala Group network and Harvard MBA signal a sophisticated, internationally-oriented executive. The Coursera, ASU, and Alibaba Cloud partnerships are consistent with initiatives he would have championed. He is the right person for partnerships, strategic initiatives, and external relationships.",
+    "conversation_entry_points": [
+      "AI-forward curriculum strategy (BS AI Engineering, Coursera GenAI, ASU AI integration)",
+      "Physical expansion plans (Laguna, Mindanao, Bulacan)",
+      "NTC post-merger integration and growth strategy",
+      "International accreditation and rankings ambitions",
+      "Affordable education scale and social impact mission"
+    ]
+  },
+  "gaps": [
+    "Revenue breakdown by institution not available (Mapúa vs NTC vs UNC vs MMCL etc.)",
+    "Annual Report PDF (2024) not directly accessible — detailed capex, debt, and segment P&L unavailable",
+    "NTC post-merger (Oct 2025) integration status and first combined financials not yet available",
+    "APEC Schools brand fate post-merger unclear — brand retention or full NTC rebrand",
+    "H2 2025 and full-year 2025 financial results not confirmed — most data is FY2024 or late-2024 TTM",
+    "Core SIS (student information system) vendor unknown — LMS vendors confirmed (Moodle, Blackboard), but ERP/SIS backbone unidentified",
+    "Data security / privacy compliance program maturity unknown — no evidence of ISO27001, SOC2, or active NPC audit status",
+    "Competitive positioning vs. other Philippine education groups (Ateneo system, DLSU, PHINMA Education, SM-backed schools) not directly researched",
+    "Fred Ayala's specific 2026 strategic priorities not available from direct quotes — inferred from news",
+    "Homepage of ipeople.com.ph timed out during site scan — content not captured",
+    "No pricing/tuition schedule publicly available for structured comparison",
+    "UNIFAST TES revenue contribution as % of total tuition unknown — material but unquantified"
+  ],
+  "data_quality_score": {
+    "overall": 0.795,
+    "passing_threshold": 0.7,
+    "method": "semantic-rubric-haiku",
+    "dimensions": {
+      "industry-vertical": 0.9,
+      "business-model": 0.575,
+      "scale-resources": 0.943,
+      "growth-phase": 0.595,
+      "market-position": 0.814,
+      "org-structure": 0.938,
+      "tech-maturity": 0.599,
+      "operating-environment": 0.899,
+      "culture-brand": 0.819
+    },
+    "strong_dimensions": {
+      "industry-vertical": {
+        "label": "Industry & Vertical",
+        "score": 0.9
+      },
+      "scale-resources": {
+        "label": "Scale & Resources",
+        "score": 0.943
+      },
+      "market-position": {
+        "label": "Market Position",
+        "score": 0.814
+      },
+      "org-structure": {
+        "label": "Org Structure",
+        "score": 0.938
+      },
+      "operating-environment": {
+        "label": "Operating Environment",
+        "score": 0.899
+      },
+      "culture-brand": {
+        "label": "Culture & Brand",
+        "score": 0.819
+      }
+    },
+    "weak_dimensions": {
+      "business-model": {
+        "label": "Business Model",
+        "score": 0.575,
+        "research_questions": [
+          "What is iPeople Inc's revenue mix — is it project-based, retainer, subscription, or blended?",
+          "What structural moats or switching costs does iPeople Inc have beyond brand/relationships?",
+          "What are iPeople Inc's critical operational dependencies — platform, talent pipeline, regulatory, or funding?"
+        ]
+      },
+      "growth-phase": {
+        "label": "Growth Phase",
+        "score": 0.595,
+        "research_questions": [
+          "Is iPeople Inc actively scaling (new markets, hiring) or optimizing (margins, retention, efficiency)?",
+          "What growth milestones has iPeople Inc hit in the last 2 years — new geographies, products, partnerships?",
+          "Is iPeople Inc preparing for any ownership transition (acquisition, IPO, leadership succession)?"
+        ]
+      },
+      "tech-maturity": {
+        "label": "Tech Maturity",
+        "score": 0.599,
+        "research_questions": [
+          "What core technology does iPeople Inc use internally — custom-built, off-the-shelf, or minimal?",
+          "Does iPeople Inc have engineering/product teams, or is tech outsourced/minimal?",
+          "What data infrastructure exists — spreadsheets, BI dashboards, data warehouse, or ML-ready pipelines?"
+        ]
+      }
+    },
+    "total_properties_scored": 36
+  },
+  "sources": {
+    "site_scan": "ipeople.com.ph — 8 pages scanned (2026-03-11); homepage timed out",
+    "web_research": "26 sources including Philstar, BusinessWorld, Manila Bulletin, Manila Times, StockAnalysis, IMARC, dotdailydose, BIlyonaryo, Manila Standard, Newsbytes.ph, ASU Global, Alibaba Cloud blog, PCC, and ipeople.com.ph annual report reference",
+    "gap_fill_research": "Additional sources (2026-03-11): StockAnalysis PSE:IPO employees page (1,895 headcount confirmed), Mapúa University IT advisory (Facebook — in-house applications confirmation), mcl.edu.ph student portal (Blackboard Learn at MMCL), mapua.edu.ph tech toolkit page (Ally, EAC Visual Data, Engage, MapúaX, Cardinal EDGE, CARDINAL Plus RFID), UNIFAST.gov.ph (RA 10931 TES subsidy structure), Manila Insight (AY 2025-2026 online enrollment)",
+    "data_freshness": "Financial data primarily FY2024 (to March 2025 reporting) and TTM as of late 2025. News current to March 11, 2026. Headcount as of December 31, 2024."
+  }
+}

@@ -1,0 +1,577 @@
+{
+  "company_id": "acasus",
+  "company_name": "Acasus",
+  "total_properties": 38,
+  "items": [
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-primary-sector",
+        "label": "Primary Sector",
+        "description": "The top-level industry category the company belongs to, mapped to standard classifications (NAICS/GICS-like). INCLUDES: technology, healthcare, financial services, education, manufacturing, retail/e-commerce, logistics/transportation, energy, media/entertainment, professional services, real estate, agriculture. EXCLUDES: vertical specialization within sector (covered by vertical-niche), multi-industry conglomerates (use primary revenue source).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Professional Services",
+        "evidence": "Acasus is a consulting firm delivering advisory and implementation support to governments and multilateral organisations. Homepage headline: 'world's leading impact-consultancy'. No product revenue or software licensing visible.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-niche",
+        "label": "Vertical Niche",
+        "description": "The specific sub-sector or niche that further constrains the company's problem space. INCLUDES: vertical specialization (e.g., 'edtech for K-12' within education, 'cold chain logistics' within logistics), domain-specific regulations and standards, specialized customer expectations, niche-specific competitive dynamics. EXCLUDES: the broad sector itself (covered by primary-sector), the company's specific product (that's a strategic choice, not a profile property).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "International Development Consulting — Public Sector Reform (Health & Education in LMICs)",
+        "evidence": "Service lines: Change Strategy, Management & Leadership, Tech & Implementation, Education & Health. Case studies reference Punjab vaccination, Nigeria polio, Mozambique, Peru. Website explicitly positions in global health system reform, vaccine delivery, education transformation, and political advocacy in developing-country contexts.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-value-chain-position",
+        "label": "Value Chain Position",
+        "description": "Where the company sits in its industry's value chain, determining upstream/downstream dependencies and power dynamics. INCLUDES: upstream supplier/manufacturer, midstream distributor/processor, downstream retailer/end-service-provider, platform/infrastructure layer, picks-and-shovels provider. EXCLUDES: the company's internal operations structure (covered by org-structure), specific supplier relationships (transient state).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "End-service-provider / embedded delivery partner",
+        "evidence": "Acasus does not sell to intermediaries — it is contracted directly by governments and multilaterals to deliver reform programs. Positioning emphasises on-the-ground delivery ('The courage to be on the ground, wherever we are needed') not upstream research or downstream training products.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "industry-vertical-market-maturity",
+        "label": "Industry Maturity",
+        "description": "The lifecycle stage of the industry itself (not the company), which determines whether problems are about category creation, competition, or commoditization. INCLUDES: nascent/emerging (category doesn't exist yet), growth (expanding TAM, many entrants), mature (established players, incremental growth), declining (shrinking demand, consolidation). EXCLUDES: the company's own growth phase (covered by growth-phase), technology adoption curves (covered by tech-maturity).",
+        "parent_id": "industry-vertical",
+        "parent_label": "Industry & Vertical"
+      },
+      "profile_fill": {
+        "value": "Mature",
+        "evidence": "International development consulting is a decades-old sector with established players (Palladium, DAI, Oxford Policy Management). The LMIC public sector reform niche is competitive but stable. Web research notes 'global education consulting market projected to grow through 2031' but the aid-funded segment faces headwinds from US foreign aid contraction.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-revenue-model",
+        "label": "Revenue Model",
+        "description": "The primary mechanism by which the company generates revenue, determining cash flow patterns, growth levers, and financial risk profile. INCLUDES: recurring subscription (SaaS, memberships), transactional/per-use, marketplace commissions/take-rate, advertising/attention monetization, licensing/IP, professional services/consulting, hardware/physical product sales, hybrid models (primary + secondary). EXCLUDES: pricing levels or tiers (tactical), revenue amount (covered by scale-resources).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Professional services / project-based consulting fees",
+        "evidence": "No subscription product, no SaaS, no pricing page. Revenue model is inferred as contract-based engagements with governments and multilateral funders. No pricing page exists on the site.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-delivery-model",
+        "label": "Delivery Model",
+        "description": "How value reaches the customer, determining operational complexity, scalability ceiling, and margin structure. INCLUDES: pure software product (self-serve), managed service (software + human delivery), marketplace/platform (connecting supply and demand), consulting/professional services (human-delivered), physical product (manufacturing + distribution), hybrid (e.g., SaaS + services). EXCLUDES: distribution channels (covered by market-position), technology stack (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Consulting / professional services (human-delivered, embedded)",
+        "evidence": "Site describes delivery of management interventions, stakeholder capacity building, data-driven implementation, and deployment of software solutions — all framed as advisory and embedded delivery, not a self-serve product. Firm explicitly positions on embedded, on-the-ground delivery as differentiator.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-cost-structure",
+        "label": "Cost Structure",
+        "description": "The shape of the company's cost base, determining breakeven dynamics, scaling economics, and vulnerability to volume changes. INCLUDES: fixed-cost-heavy (infrastructure, R&D, facilities) vs variable-cost-heavy (COGS, services delivery), capital intensity, gross margin band (high-margin software vs low-margin logistics), key cost drivers. EXCLUDES: absolute cost amounts (covered by scale-resources), specific vendor costs (transient).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Variable-cost-heavy (people-driven)",
+        "evidence": "With ~265 staff delivering services across 6 continents, Acasus's cost base is dominated by people costs. Asset-light: no manufacturing, no physical inventory. High variable component tied to project delivery teams.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-network-effects",
+        "label": "Moat & Network Effects",
+        "description": "Whether the business model has inherent defensibility through network effects, switching costs, or other structural advantages that shape competitive dynamics. INCLUDES: direct network effects (more users = more value), indirect/cross-side network effects (marketplace), data network effects, high switching costs, regulatory moats, economies of scale, brand/trust moats, no meaningful moat. EXCLUDES: competitive positioning against specific rivals (covered by market-position), IP/patents (tactical asset, not structural model property).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Brand/trust moat + switching costs (relationship-based)",
+        "evidence": "No network effects or data moats evident. Moat derives from (1) track record and sector reputation (World Health Summit presence, published results), (2) embedded relationships with government clients, (3) 80%-local-talent model which creates trust and access that competitors struggle to replicate quickly. High switching costs once embedded in a multi-year reform program.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "business-model-key-dependencies",
+        "label": "Key Operational Dependencies",
+        "description": "Critical external dependencies that the business model structurally relies on, determining platform risk, supply chain vulnerability, and partner leverage. INCLUDES: platform-dependent (built on AWS/Shopify/Salesforce ecosystem, app store distribution), supply-chain-dependent (physical materials, manufacturing partners), partner-dependent (channel partners, integration partners, OEM relationships), talent-market-dependent (requires scarce specialized skills), regulation-dependent (business exists because of regulatory requirement), self-contained (minimal critical external dependencies). EXCLUDES: specific vendor names (evidence, not structure), internal operational processes (covered by org-structure), technology stack choices (covered by tech-maturity).",
+        "parent_id": "business-model",
+        "parent_label": "Business Model"
+      },
+      "profile_fill": {
+        "value": "Talent-market-dependent + regulation/aid-funding-dependent",
+        "evidence": "Business requires scarce specialist talent (development professionals with field experience in LMICs) and depends heavily on government and multilateral aid budgets (FCDO, World Bank, Gates Foundation tier). US foreign aid cuts represent a structural sector risk, though Acasus's specific funder mix is undisclosed. No platform or supply-chain dependency.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-headcount",
+        "label": "Headcount Band",
+        "description": "The number of employees, determining organizational complexity thresholds and process needs. INCLUDES: solo/micro (1-10), small (11-50), medium (51-200), large (201-1000), enterprise (1000+). Key thresholds: ~15 (need first managers), ~50 (need HR/process), ~150 (Dunbar limit — need formal structure), ~500 (need middle management layer). EXCLUDES: contractor/freelancer headcount, team composition (covered by org-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Large (201–1000)",
+        "evidence": "Multiple third-party sources converge on 230–265 staff as of late 2025. LeadIQ cited ~265 as of July 2025 (up 22% year-over-year from ~217); RocketReach company profile records 231 employees. ZoomInfo and Growjo model ~138 using per-employee revenue formulas — methodologically weaker for a global field-delivery firm and not averaged in. LinkedIn company page lists 51–200 (lagging indicator). The CEO transition article (Acasus.com, 2025) explicitly confirms 'significant' growth 'in team size' over the prior 18 months. Engineering/IT department alone is ~24 people (Budapest). Best estimate: 230–265 staff across 6 continents, with field teams confirmed active in Pakistan, Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, and Bahrain as of 2025 job postings.",
+        "confidence": "medium",
+        "note": "Third-party estimate; Acasus does not publish headcount officially. 230–265 is the most defensible range from aggregator data."
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-revenue-band",
+        "label": "Revenue Band",
+        "description": "Annual revenue range, determining financial gravity and the scale of problems worth solving. INCLUDES: pre-revenue, early revenue (<$1M ARR), growth ($1M-$10M), scale ($10M-$100M), enterprise ($100M+). Relevant because a $500K problem is existential at $2M ARR but a rounding error at $200M. EXCLUDES: profitability (covered by financial-health), revenue model type (covered by business-model).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Scale ($10M–$100M), estimated mid-range ~$35M",
+        "evidence": "LeadIQ (July 2025) and Tracxn (2025 profile) independently cite ~$35M annual revenue — the most recent and most consistently sourced figure. Growjo's $3.8M outlier uses a per-employee revenue formula calibrated to generic consulting; not applicable to a government-reform boutique with high day-rates and multi-year contracts. The $35M figure is directionally consistent with 230–265 staff at blended development-sector billing rates of $130–170/hr fully-loaded average, which is the norm for embedded-delivery LMIC consultancies. No audited financials are public. The CEO transition article confirms the firm has grown 'significantly in projects' over the prior 18 months, consistent with revenue growth alongside headcount growth.",
+        "confidence": "low-medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-capitalization",
+        "label": "Capitalization & Runway",
+        "description": "The company's financial fuel — funding raised, cash reserves, and burn rate — determining time horizon for problem-solving and risk tolerance. INCLUDES: bootstrapped/self-funded, angel/seed, Series A-C, late-stage/PE-backed, public, grant-funded (nonprofit). Also includes runway (months of cash at current burn). EXCLUDES: revenue (covered by revenue-band), investor identity or terms (transient), debt structure details.",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Bootstrapped / private partnership (no external funding)",
+        "evidence": "No funding rounds found on Crunchbase, Tracxn. Swiss holding company structure (Acasus Holding AG, Baar, ZUG) consistent with private consulting partnership. No VC, PE, or grant-funded (nonprofit) indicators found.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-asset-intensity",
+        "label": "Asset Intensity",
+        "description": "The degree to which the company depends on physical or capital assets, determining capex needs, operational leverage, and infrastructure risk. INCLUDES: asset-light (software, consulting), asset-medium (small inventory, leased facilities), asset-heavy (manufacturing, logistics fleets, real estate, data centers). EXCLUDES: the nature of those assets (industry-specific), cost structure ratios (covered by business-model-cost-structure).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Asset-light",
+        "evidence": "Services business, no physical manufacturing, no fleet, no data centres identified. Swiss holding entity and operating entity are the main corporate assets.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-financial-health",
+        "label": "Financial Health",
+        "description": "The company's current financial sustainability and trajectory, determining urgency of problems and risk tolerance. INCLUDES: profitability status (profitable, break-even, loss-making), cash flow direction (positive, negative, volatile), burn rate relative to revenue (sustainable, moderate burn, high burn), debt-to-equity posture (unleveraged, moderately leveraged, highly leveraged), growth trajectory signals (accelerating, steady, decelerating, contracting). EXCLUDES: revenue amount (covered by revenue-band), funding source (covered by capitalization), cost structure shape (covered by business-model-cost-structure), specific financial events (evidence, not profile dimension).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Appears healthy and growing (profitability unknown)",
+        "evidence": "22% headcount growth year-over-year to mid-2025 is a strong growth signal. No distress indicators — no layoffs, no restructuring announcements, no adverse press. Swiss corporate auditor change (Feb 2026) is a minor compliance signal, significance unclear. No audited financials available.",
+        "confidence": "low-medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-company-age",
+        "label": "Company Age",
+        "description": "How long the company has existed, determining institutional memory, legacy obligations, brand equity, and organizational inertia — independent of growth phase (a 50-year-old company can be scaling a new product; a 2-year-old can be in turnaround). INCLUDES: nascent (0-2 years), young (3-7 years), established (8-20 years), legacy (20+ years). EXCLUDES: growth phase (covered by growth-phase), founding story or origin (narrative, not structural).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Established (8–20 years)",
+        "evidence": "Founded 2013 by Fenton Whelan. As of 2026, ~13 years old. Founder describes '20+ years working on large-scale public sector reform' (personal track record predates Acasus).",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "scale-resources-customer-base-scale",
+        "label": "Customer / User Base Scale",
+        "description": "The size of the company's customer or user base, independent of revenue — determining support burden, feedback volume, network effects strength, and product decisions. INCLUDES: micro (<100 customers/users), small (100-1K), medium (1K-10K), large (10K-100K), massive (100K+). Distinguishes paying customers from free users where relevant. EXCLUDES: revenue per customer (derived from revenue band + base scale), customer segment type (covered by market-position), customer concentration (covered by market-position).",
+        "parent_id": "scale-resources",
+        "parent_label": "Scale & Resources"
+      },
+      "profile_fill": {
+        "value": "Micro-to-small in number (large in impact scope)",
+        "evidence": "Consulting engagements are typically government or multilateral clients — a small number of large, multi-year contracts. No volume of customers disclosed. Historical case studies reference Punjab (Pakistan), Nigeria, Peru, Mozambique — consistent with a handful of major contracts at any time.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "growth-phase-scaling",
+        "label": "Growth Phase",
+        "description": "PMF achieved, now growing aggressively. Problems center on execution speed, hiring, infrastructure, and maintaining quality under growth. INCLUDES: rapid customer acquisition, team scaling, process formalization, market expansion, channel development. EXCLUDES: companies growing slowly by choice (those are in optimization), companies scaling revenue but not org (may be optimization with good unit economics).",
+        "parent_id": "growth-phase",
+        "parent_label": "Growth Phase"
+      },
+      "profile_fill": {
+        "value": "Scaling",
+        "evidence": "Confirmed by multiple signals: (1) Acasus's own CEO transition article states the firm 'has grown significantly — in projects, in team size, and in the impact delivered alongside government partners' over the 18 months to mid-2025. (2) Headcount grew ~22% year-over-year (217→265) against a contracting aid sector, implying active client-side expansion. (3) Active job postings in 2025 span 10+ countries — Pakistan, Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, Bahrain — significantly wider geographic footprint than historical case studies alone. (4) Leadership transition from founder-CEO to professional CEO (Jonny Barty) is a classic scaling milestone; Barty's mandate explicitly includes 'driving team growth.' (5) Budapest engineering team continues active hiring (Data Engineer role open). The pattern is expansion-first, not optimization — best characterised as active scaling with the professionalisation infrastructure (CEO hire, shared services hub, data platform) now in place to support it.",
+        "confidence": "medium-high"
+      },
+      "is_growth_phase_single": true
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-segment",
+        "label": "Target Customer Segment",
+        "description": "The primary buyer profile, determining sales cycle, contract size, support expectations, and decision-making complexity. INCLUDES: enterprise (large organizations, complex procurement), mid-market/SMB (small-medium businesses), consumer/prosumer (individuals), government/public sector, nonprofit/NGO, developer/technical buyer. EXCLUDES: industry of the customer (that's industry-vertical from the customer's perspective), specific customer names.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Government / public sector + multilateral organisations (NGO/international)",
+        "evidence": "Service lines explicitly target governments seeking to reform health and education systems. Clients implied by case studies: national governments (Pakistan, Nigeria, Peru, Mozambique) and likely multilateral funders (UNICEF, Gavi, World Bank tier — inferred from vaccine delivery and health system work). No private sector clients visible.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-competitive-stance",
+        "label": "Competitive Stance",
+        "description": "The company's position relative to competitors in its primary market, determining strategic pressure and available moves. INCLUDES: category creator/first-mover, market leader (dominant share), strong challenger (growing share), niche specialist (defensible segment), fast follower (competing on execution), commodity player (competing on price). EXCLUDES: specific competitor names, market share percentages (quantitative detail beyond profiling).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Niche specialist (defensible segment)",
+        "evidence": "Acasus positions against larger generalist development consultancies (Palladium, DAI) on delivery depth and LMIC-local talent (80% from served countries). Not attempting to be market leader by volume — competing on quality and embeddedness in a defined niche (delivery-focused reform in health/education LMICs).",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-gtm-motion",
+        "label": "Go-to-Market Motion",
+        "description": "The primary mechanism for acquiring and expanding customers, determining sales team structure, marketing spend, and growth bottlenecks. INCLUDES: product-led growth (self-serve, freemium), sales-led (outbound, enterprise sales team), marketing-led (inbound, content, demand gen), channel/partner-led (resellers, integrators, OEM), community-led (open source, developer evangelism). EXCLUDES: specific marketing tactics (transient), pricing strategy (covered implicitly by business-model).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Relationship/reputation-led (no formal sales motion visible)",
+        "evidence": "No sales team, pricing, or inbound demand-gen infrastructure visible on site. Thought leadership (articles, podcasts, sector forums) is the primary visibility vehicle. Sector conferences (World Health Summit, Harvard Africa Health Conference) signal relationship-driven business development. Typical for government-facing professional services.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-customer-concentration",
+        "label": "Customer Concentration",
+        "description": "The distribution of revenue across the customer base, determining revenue risk and negotiating dynamics. INCLUDES: highly concentrated (top 5 customers = >50% revenue), moderately concentrated (top 20 = >50%), diversified (no customer >5%), single-customer dependent (government contract, anchor client). EXCLUDES: customer satisfaction or retention rates (those are outcomes, not profile properties), specific customer identities.",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Moderately concentrated (government contract model, but wider than previously estimated)",
+        "evidence": "Active 2025 job postings confirm concurrent field operations in at least 10 countries: Pakistan (multiple provinces), Chad, DRC, Mozambique, Somalia, Afghanistan, Ethiopia, Nigeria, Sudan, and Bahrain. Each country-level program is a separate government client engagement, suggesting 10–15+ concurrent major programs — wider than the 5–10 estimate from historical case studies. By nature of the business (large, multi-year government contracts), individual engagements are large, so revenue remains concentrated by contract — but the breadth of active geographies in 2025 reduces single-client dependence risk compared to a narrower portfolio. Acasus appears on DevelopmentAid's supplier database; not among FCDO's top contractors in Devex 2024/25 league tables — suggesting no single dominant funder. USAID exposure not confirmed but the 2025 country mix (Pakistan, Afghanistan, sub-Saharan Africa) overlaps with USAID priority geographies. No client revenue distribution data disclosed.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "market-position-pricing-position",
+        "label": "Pricing Position",
+        "description": "Where the company sits on the price-value spectrum in its market, determining margin expectations, customer expectations, and competitive vulnerability. INCLUDES: premium/luxury (highest price, differentiated value), mid-market (competitive pricing, balanced value), value/low-cost (price-driven, volume-dependent), freemium (free tier + paid conversion), usage-based/transparent (pay-for-what-you-use). EXCLUDES: specific price points (too granular), revenue model mechanics (covered by business-model-revenue-model), competitive stance (covered by competitive-stance — a niche specialist can be premium or low-cost).",
+        "parent_id": "market-position",
+        "parent_label": "Market Position"
+      },
+      "profile_fill": {
+        "value": "Premium / mid-market for development sector",
+        "evidence": "Acasus positions as 'world's leading impact-consultancy' and competes with Palladium, DAI, and Oxford Policy Management. DevelopmentAid sector norms for senior development consultants run $800–$1,500/day; boutique firms with embedded-delivery models and measurable outcome track records typically command the upper end. The implied blended revenue per employee ($35M / ~250 staff = ~$140K/employee), while lower than McKinsey-tier, is solidly above the development-sector norm for field-heavy teams — consistent with day rates at the upper mid-market ($1,000–$1,400/day for senior staff). Acasus's brand emphasis on results ('Punjab vaccination 50%→90% in two years'), thought leadership at World Health Summit and Harvard Africa Health Conference, and simultaneous operations across 10+ countries all support premium-niche positioning. No day rates or contract values are publicly disclosed.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-leadership",
+        "label": "Leadership Model",
+        "description": "Who drives decisions and how, determining speed of change, strategic coherence, and succession risk. INCLUDES: solo founder, co-founder team, founder + professional CEO, professional management (no founders), board-driven/PE-controlled, family-owned/dynasty, cooperative/distributed governance. EXCLUDES: leadership quality or effectiveness (that's an outcome), specific people, board composition details.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Founder transitioning to professional management (founder + professional CEO)",
+        "evidence": "Fenton Whelan founded Acasus in 2013 and served as CEO for ~12 years. In 2025 he transitioned to Founder & Chair, with internally-promoted Jonny Barty (10 years at Acasus, formerly Deputy CEO) becoming CEO. Whelan retains strategic influence and equity. Classic founder + professional CEO dual structure.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-shape",
+        "label": "Organizational Shape",
+        "description": "The structural topology of teams and reporting lines, determining communication overhead, autonomy, and coordination costs. INCLUDES: flat/minimal hierarchy, functional silos (engineering, sales, ops), divisional (by product, geography, customer), matrix (dual reporting), squad/tribe model, hub-and-spoke (central team + satellite). EXCLUDES: headcount within teams (covered by scale-resources), remote/co-located (covered by workforce-model).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Hub-and-spoke / functional with field teams",
+        "evidence": "Swiss holding entity (HQ), field delivery teams across 6 continents. Site implies functional service lines (Change Strategy, Management & Leadership, Tech & Implementation, Education & Health). Exact org topology not publicly documented.",
+        "confidence": "low-medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-workforce-model",
+        "label": "Workforce Model",
+        "description": "How and where the workforce is deployed, determining collaboration patterns, talent access, and operational constraints. INCLUDES: fully co-located (single office), multi-office, remote-first, hybrid, heavily outsourced/contracted, franchise/distributed-operator model. EXCLUDES: headcount numbers (covered by scale-resources), team org chart (covered by org-shape), office locations (covered by operating-environment).",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Globally distributed, field-deployed",
+        "evidence": "Staff operate across 6 continents. 80% are from the countries Acasus serves — a deliberate talent strategy that implies distributed, largely field-based workforce. Swiss HQ for corporate/leadership functions.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "org-structure-talent-profile",
+        "label": "Talent Profile",
+        "description": "The dominant skill composition of the workforce, determining what the company can execute on and where capability gaps create problems. INCLUDES: engineering/product-heavy, sales/marketing-heavy, operations-heavy, balanced, domain-expert-heavy (e.g., PhD researchers, licensed professionals), generalist/early-stage (everyone does everything). EXCLUDES: individual skill levels, hiring pipeline details (transient), compensation structure.",
+        "parent_id": "org-structure",
+        "parent_label": "Organizational Structure"
+      },
+      "profile_fill": {
+        "value": "Domain-expert-heavy (development professionals, public sector specialists)",
+        "evidence": "Leadership backgrounds: Oxford Arabic → McKinsey public sector (Whelan); 15+ years development field operations (Barty). Site calls for 'people excited to be at the forefront of the global challenge to improve the life of millions.' Podcast guests: project managers and directors with LMIC field experience. Tech capability exists (data systems, software deployment service line) but is secondary to domain expertise.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-stack-generation",
+        "label": "Stack Generation",
+        "description": "The age and architectural paradigm of the core technology stack, determining modernization burden and integration flexibility. INCLUDES: legacy/mainframe (pre-cloud, monolithic), transitional (cloud-migrating, partially modernized), cloud-native (microservices, containerized), cutting-edge (AI-native, serverless-first), no-code/low-code (built on platforms, not custom code), minimal tech (non-tech company with basic tools). EXCLUDES: specific language/framework choices, frontend vs backend distinction (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Tech-enabled consulting with a real internal engineering function (not a pure advisory shop)",
+        "evidence": "Website confirms four sub-capabilities under Tech & Implementation: (1) Development of Data Systems to Deliver Change, (2) Data-Driven Implementation, (3) Deployment of Software Solutions, (4) Pioneering Systems Design. The Budapest hub (opened 2020) houses a dedicated Data and Engineering department of ~24 people led by Nikolett Korompai (Head of Data and Engineering) — a genuine engineering hire with prior experience at IBM Budapest Lab (Ustream), Continental, and Telenor. RocketReach technology profile independently confirms Acasus uses 35 tracked technologies including Amazon S3, AWS, and Angular — corroborating the Google Cloud + Angular frontend stack inferred from job postings. The Slintel technology profile adds React, G Suite, Google Tag Manager, and HTML/CSS/JS to the confirmed client-facing stack. Active Data Engineer hiring continues (Budapest, 2025) requiring SQL, Python, automated ETL experience. The corporate website uses Squarespace/ButterCMS (low-complexity), confirming internal-facing tech is deliberately lightweight. No SaaS product, no GitHub public presence found.",
+        "confidence": "medium-high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-engineering-practices",
+        "label": "Engineering Practices",
+        "description": "The maturity of development and delivery practices, determining release velocity, reliability, and ability to change safely. INCLUDES: ad-hoc/manual (no CI, manual deploys), basic (source control, some testing), intermediate (CI/CD, code review, staging environments), advanced (automated testing, feature flags, observability, SRE), elite (continuous deployment, chaos engineering, platform engineering). EXCLUDES: team size (covered by scale-resources), specific tools (too granular).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Small but structured engineering team; client-delivery-focused, not product-focused",
+        "evidence": "RocketReach confirms Acasus's IT/Engineering department at 24 employees within a total 231-person company — making engineering ~10% of total headcount, meaningful for a consulting firm. Team roles include: Head of Data and Engineering (Nikolett Korompai, Budapest), Data Analyst Team Lead (Tamás Varga, departed to Sanofi after 4 years), Full Stack Developers, Full Stack Engineers, Data Engineers, Technical Project Manager, Support Engineers, Data Evaluators. The team builds BI platforms and ETL pipelines for government clients — client-side dashboards for health/education program management. Active Data Engineer hiring in 2025 confirms the function is intact and growing. Job postings require Python, SQL, ETL automation, Hungarian+English fluency (all Budapest-based roles). RocketReach technology profile confirms 35 tracked tools in use including AWS/S3, Angular, and React. This is a delivery engineering function, not a product R&D team — no evidence of unit tests, CI/CD pipelines, or open-source contributions.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-data-infrastructure",
+        "label": "Data Infrastructure",
+        "description": "The sophistication of the company's data collection, storage, and analytics capabilities, determining ability to make data-driven decisions and leverage AI/ML. INCLUDES: no structured data (spreadsheets, ad-hoc), basic analytics (BI dashboards, SQL), data warehouse (structured ETL, historical analysis), modern data stack (real-time, streaming, ML-ready), AI/ML in production (models deployed, feedback loops). EXCLUDES: what data is collected (domain-specific), data privacy compliance (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Structured data and analytics capability (client-facing BI/ETL on AWS/Google Cloud); internal tooling lightweight",
+        "evidence": "Acasus builds and deploys data infrastructure for government clients: ETL pipelines, BI dashboards (Tableau confirmed from Tamás Varga's public Tableau profile), and data visualisation platforms described as 'end-to-end BI solutions.' Client-facing infrastructure spans Google Cloud and AWS (Amazon S3 confirmed by RocketReach tech profile, published in 2025). Frontend stack confirmed to include Angular and React for dashboard delivery. G Suite is in active use (RocketReach/Slintel), suggesting Google Workspace for internal collaboration. Active hiring for Data Engineers with Python/SQL/ETL experience (Budapest, 2025) confirms ongoing investment. Internal infrastructure is deliberately lightweight — Squarespace/ButterCMS for the corporate site. The dual cloud presence (GCP + AWS) suggests the stack is shaped by client environment requirements rather than a single internal standard.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "tech-maturity-security-posture",
+        "label": "Security Posture",
+        "description": "The maturity of the company's security practices and infrastructure, determining vulnerability to threats and compliance readiness. INCLUDES: minimal (no formal security, reactive only), basic (firewalls, antivirus, password policies), intermediate (vulnerability scanning, incident response plan, access controls), advanced (SOC, penetration testing, zero-trust architecture, compliance certifications like SOC2/ISO27001), security-first (security as product feature, bug bounties, security engineering team). EXCLUDES: specific threats faced (outcome of profile, not the profile itself), regulatory requirements (covered by operating-environment).",
+        "parent_id": "tech-maturity",
+        "parent_label": "Technical Maturity"
+      },
+      "profile_fill": {
+        "value": "Basic (standard for professional services; no enterprise security certifications found)",
+        "evidence": "Corporate site uses Cloudflare Rocket Loader for performance/security. No SOC2, ISO27001, Cyber Essentials, or security-first positioning found in public materials. Consistent with a professional services firm at this scale delivering bespoke government analytics, not hosting sensitive patient or financial data on a proprietary platform. Government client contracts may impose data handling requirements that are not publicly visible.",
+        "confidence": "low-medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-regulatory-burden",
+        "label": "Regulatory Burden",
+        "description": "The intensity and complexity of regulatory compliance the company must navigate, determining legal costs, operational constraints, and barrier to entry/change. INCLUDES: minimal regulation (most SaaS), moderate (data privacy — GDPR, CCPA), heavy (financial services — SEC, banking regs), very heavy (healthcare — HIPAA, FDA; defense — ITAR), industry-specific licensing requirements. EXCLUDES: the specific regulations (too granular), compliance program maturity (that's internal — covered by security-posture or org-structure).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Moderate (Swiss corporate law + international aid procurement rules)",
+        "evidence": "Swiss holding entity (Acasus Holding AG, Baar, ZUG) subject to Swiss corporate law. Operating in developing countries requires compliance with local labour laws and international procurement rules (World Bank, UN). No healthcare data regulations (they advise systems, not process patient data). No HIPAA/FDA equivalent burden.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-geographic-scope",
+        "label": "Geographic Scope",
+        "description": "The geographic footprint of the company's operations and markets, determining complexity of multi-jurisdiction management. INCLUDES: single-city/local, single-country/national, regional (e.g., EU, APAC), global/multi-continent. Also: whether operations (not just sales) span geographies. EXCLUDES: specific country names (too granular for profiling), workforce location (covered by org-structure-workforce-model).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Global / multi-continent",
+        "evidence": "Described as operating across 6 continents. Historical case studies in Pakistan, Nigeria, Peru, Mozambique, DRC. HQ in Switzerland. Website describes staff 'on the ground, wherever we are needed.'",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-macro-sensitivity",
+        "label": "Macroeconomic Sensitivity",
+        "description": "How exposed the company is to macroeconomic cycles, interest rates, and external economic shocks, determining planning horizon and risk profile. INCLUDES: recession-resistant (essential services, government), cyclical (construction, luxury, advertising), interest-rate-sensitive (real estate, fintech), commodity-dependent (energy, agriculture), forex-exposed (multi-currency operations). EXCLUDES: the company's financial health (covered by scale-resources), specific economic forecasts.",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Aid-budget-dependent (government-spending-sensitive)",
+        "evidence": "Revenue depends on government and multilateral aid budgets. US foreign aid contraction (Trump administration, 45.5% drop in global health job postings per Devex) is a material sector risk. Acasus appears primarily FCDO/World Bank/bilateral-funded rather than USAID-dependent, which may provide insulation — but this is unconfirmed. Not cyclical in the commercial sense; sensitive to geopolitical and donor-policy cycles.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "operating-environment-governance-obligations",
+        "label": "Governance Obligations",
+        "description": "Special obligations arising from the company's legal structure, ownership, or mission that constrain decision-making beyond normal commercial logic. INCLUDES: publicly traded (SEC reporting, quarterly pressure), B-corp/social enterprise (mission constraints), nonprofit (donor accountability, tax-exempt rules), government-owned/state-backed, VC-backed with board governance, cooperative/member-owned, family trust. EXCLUDES: internal corporate governance practices (covered by org-structure), regulatory compliance (covered by regulatory-burden).",
+        "parent_id": "operating-environment",
+        "parent_label": "Operating Environment"
+      },
+      "profile_fill": {
+        "value": "Private partnership (founder-controlled, no external board oversight visible)",
+        "evidence": "Private Swiss company structure. No VC board, no public company obligations, no B-corp certification found. Founder retains Chair role. A separate Acasus Foundation entity exists but appears dormant/in liquidation.",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-innovation-posture",
+        "label": "Innovation Posture",
+        "description": "How the company relates to change, experimentation, and new approaches — determining adoption speed, risk tolerance in product/tech decisions, and internal resistance to transformation. INCLUDES: bleeding-edge (first-mover, high experimentation tolerance, 'move fast and break things'), fast-follower (adopts proven innovations quickly, moderate risk), pragmatic (adopts when clear ROI, evidence-driven), conservative (stability-first, change-averse, proven-only), regulated-cautious (would innovate but constrained by compliance burden). EXCLUDES: specific innovation projects (evidence), R&D budget (covered by cost-structure), technology stack choices (covered by tech-maturity — innovation posture is cultural, not technical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Pragmatic / evidence-driven",
+        "evidence": "Whelan's public AI framing at World Health Summit: 'We don't have a technology problem; we have an accountability problem.' Calls for rigour, results-tied funding, local data ownership. This is not a bleeding-edge or fast-follower posture — it is deliberate, evidence-first. Site tagline: 'Brave Change' with emphasis on courage and delivery over innovation rhetoric.",
+        "confidence": "medium-high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-brand-positioning",
+        "label": "Brand Positioning & Tone",
+        "description": "The company's public identity and how it presents itself to market, determining customer expectations, talent attraction profile, and partnership dynamics. INCLUDES: thought-leader/visionary (shaping the category narrative), trust/reliability-first (emphasizing stability, enterprise-safe), disruptor/challenger (positioning against incumbents), community/mission-driven (purpose over profit in messaging), technical/craft-oriented (engineering excellence as brand), invisible/B2B-infrastructure (brand-minimal, product speaks). EXCLUDES: specific marketing copy (evidence), visual identity (too granular), brand awareness level (outcome of effort, not posture).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Thought-leader / mission-driven challenger",
+        "evidence": "Positions as 'world's leading impact-consultancy' and 'Brave Change.' Active thought leadership: articles on DRC zero-dose children, measles surges, AI accountability. Podcast series. World Health Summit and Harvard Africa Health Conference presence. Explicitly challenges sector norms (AI hype, advisory-only models).",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-public-values",
+        "label": "Public Values & Mission",
+        "description": "The degree to which the company's stated values and mission constrain or guide its decisions, determining stakeholder expectations and strategic flexibility. INCLUDES: mission-driven (mission constrains commercial decisions — e.g., Patagonia, nonprofits), values-prominent (publicly stated values that influence hiring/partnerships but don't override commercial logic), commercially pragmatic (values exist but are secondary to growth/profit), values-silent (no meaningful public values stance). EXCLUDES: governance obligations (covered by operating-environment — this is about cultural identity, not legal structure), specific ESG metrics (too granular).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Mission-driven (mission guides commercial decisions)",
+        "evidence": "Homepage: 'We believe expertise alone cannot change the world, that it also takes courage.' Careers: 'forefront of the global challenge to improve the life of millions.' 80% local staff policy is a values-driven constraint on talent strategy. Foundation entity (even if dormant) signals mission intent. Acasus does not present as a purely commercial firm.",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "taxonomy_node": {
+        "id": "culture-brand-employer-brand",
+        "label": "Employer Brand & Talent Signal",
+        "description": "How the company is perceived as an employer, determining talent pipeline quality, retention dynamics, and the type of people who self-select in. INCLUDES: top-tier employer (attracts top talent, strong reputation — e.g., FAANG-tier), strong-in-niche (well-known in specific domain — e.g., Jane Street in quant, Stripe in payments), growing/scrappy (attracts risk-tolerant builders), stable/reliable (attracts people seeking predictability), struggling/unknown (difficulty attracting talent, high turnover signals). EXCLUDES: specific Glassdoor scores (evidence), compensation levels (covered by org-structure implicitly), specific hiring practices (tactical).",
+        "parent_id": "culture-brand",
+        "parent_label": "Culture & Brand Signals"
+      },
+      "profile_fill": {
+        "value": "Strong-in-niche (development sector), mixed internally",
+        "evidence": "Glassdoor: 3.4/5 overall, 72% recommend, 4.1/5 compensation, 2.7/5 work-life balance (69 reviews). Negative themes: work-life balance, founder management style described as 'not mature and open' by some, reported favoritism. External reputation is strong — sector visibility, measurable results. Internal reputation is mixed but within normal range for high-intensity development boutiques. CEO transition may shift internal culture.",
+        "confidence": "medium-high",
+        "note": null
+      }
+    }
+  ]
+}

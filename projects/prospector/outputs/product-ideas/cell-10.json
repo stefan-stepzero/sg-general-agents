@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Inquiry Intent Classifier",
+    "one_liner": "Classifies inbound SMS, WhatsApp, and email inquiries from prospective students into intent buckets (admission interest, fee query, accommodation need, complaint).",
+    "problem": "Rising Academies and iPeople manage thousands of inbound messages across channels in price-sensitive markets where rapid response drives conversion. Staff manually read messages to route to correct team (admissions, finance, housing, support). Slow triage means lost leads and poor student experience. Generic CRM tools don't understand education-specific intent signals (e.g., 'scholarship kya hai' = fee assistance inquiry).",
+    "ai_technique": "Text classification (intent detection) with multilingual support",
+    "how_it_works": "Train on samples of tagged messages in English, Tagalog, Swahili (language-dependent per geography). Classify into education-specific buckets: enrollment-process, fee-assistance, accommodation, program-mismatch, complaint, duplicate. Route auto-tagged high-confidence messages to correct queue; flag low-confidence for human review. Measure conversion uplift by intent class.",
+    "target_companies": ["rising", "ipeople"],
+    "buyer_persona": "Admissions Director / Student Services Manager",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Dropout Risk Forecaster",
+    "one_liner": "Predicts student dropout risk at key lifecycle moments (post-admission, mid-semester, before renewal) and recommends intervention.",
+    "problem": "iPeople and Rising face high student churn in price-sensitive segments where family financial stress or program mismatch drive dropout. Identifying at-risk students early enough for intervention (fee relief, counseling, curriculum adjustment) is critical to retention and revenue. Manual flags based on single factors miss multi-factor risk patterns. Multi-year cohort tracking is tedious.",
+    "ai_technique": "Time-series classification (logistic regression + survival analysis)",
+    "how_it_works": "Feature engineering on student data: enrollment demographics, course performance, SMS engagement patterns, payment history (late payments, partial payments), inferred financial stress proxies. Train on historical cohorts with known dropout labels and timing. Score all enrolled students. Dashboard shows high-risk cohorts and timing windows (e.g., 'Finance students at risk of dropout 2 weeks post-payment deadline'). Suggest interventions per risk profile.",
+    "target_companies": ["ipeople", "rising"],
+    "buyer_persona": "Student Retention Manager / Academic Dean",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Cohort Conversion Funnel Forecaster",
+    "one_liner": "Forecasts conversion through inquiry → application → enrollment stages for specific academic programs and cohorts.",
+    "problem": "PHINMA and iPeople plan hiring, curriculum capacity, and marketing spend based on enrollment forecasts, but funnel conversion rates vary by program, season, and geography. Enrollment managers rely on historical averages that miss year-on-year trend and leading-indicator signals (inquiry volume, application quality, competitor moves). Forecast misses lead to over-hiring or program under-utilization.",
+    "ai_technique": "Time-series forecasting (seasonal ARIMA + exogenous drivers)",
+    "how_it_works": "Model inquiry-to-application and application-to-enrollment conversion by program and time window, accounting for seasonality (intake cycles), day-of-week effects, and exogenous drivers (marketing spend, competitor tuition changes, inferred economic indicators). Forecast next quarter's expected enrollments with confidence intervals. Flag programs with declining conversion. Compare vs. capacity to flag over/under-hiring risk.",
+    "target_companies": ["ipeople", "phinma"],
+    "buyer_persona": "Enrollment Manager / VP of Admissions",
+    "tier": "feature",
+    "confidence": "high"
+  },
+  {
+    "name": "Student Engagement Summarizer",
+    "one_liner": "Synthesizes multi-channel student engagement signals (portal login, LMS activity, SMS opens, event attendance) into simple risk flags.",
+    "problem": "Education organizations track student engagement across disconnected systems (LMS, mobile app, event ticketing, SMS), but lack unified view. Instructors and support staff manually piece together signals ('I haven't seen her log into LMS; does she attend events?'). Early warning of disengagement is available but scattered, leading to missed intervention timing.",
+    "ai_technique": "Data aggregation + rule-based risk scoring",
+    "how_it_works": "Pipe engagement signals from LMS, mobile app, email, SMS, and event system into unified student timeline. Define engagement profile for each program (e.g., 'STEM students should log in 3x/week, attend lab 1x/week'). Flag deviation from profile as 'warning' or 'critical.' Summarize flags in student card for advisor: 'Low LMS activity past 2 weeks but strong event attendance — may indicate content delivery issue.' Link to targeted support offerings.",
+    "target_companies": ["ipeople", "phinma", "rising"],
+    "buyer_persona": "Student Success Coach / Academic Advisor",
+    "tier": "feature",
+    "confidence": "medium"
+  }
+]

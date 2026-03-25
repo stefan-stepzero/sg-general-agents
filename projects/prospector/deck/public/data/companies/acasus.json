@@ -1,0 +1,1111 @@
+{
+  "company_id": "acasus",
+  "company_name": "Acasus",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.41,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.25,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Acasus has strong brand within the LMIC public sector reform niche — thought leadership at World Health Summit and Harvard Africa Health Conference, active podcast, published articles. No evidence of awareness gaps; GTM is explicitly relationship/reputation-led. Sector visibility appears adequate for the narrow ICP. Score 0.3 for generic plausibility that any boutique faces awareness ceilings."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Acasus's engagement model is relationship-driven and deeply embedded — not a digital funnel model. No evidence of poor content resonance; thought leadership framing is sophisticated (AI-as-accountability framing by Whelan). Structurally unlikely to have engagement quality problems in the B2G relationship sales context. Score 0.2 as merely unlikely but not impossible."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Government procurement has long decision cycles and complex bid processes — conversion friction is inherent to the sector. Profile notes no formal sales infrastructure ('no sales team, pricing, or inbound demand-gen infrastructure visible'). Generic sector plausibility without specific evidence of conversion failure. Score 0.3."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Profile shows clear ICP focus: governments and multilaterals in LMIC health/education reform. Active operations confirmed in 10+ specific geographies. No evidence of misdirected acquisition effort. Score 0.2 — possible but no signals."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.35,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Acasus's government clients are large, multi-year engagements — early attrition is structurally uncommon. However, the expanding 10+ country footprint with newer programs (Chad, Sudan, Bahrain) could include programs still in early phases where relationship dropout is possible. Score 0.3 for generic plausibility; no specific evidence."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Long-tenured clients (Punjab vaccination, Nigeria polio) suggest strong retention. No evidence of engagement decay. Score 0.3 — theoretically possible in any multi-year program as reform fatigue sets in, but no specific signals."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely based on converging contextual factors). Profile explicitly states aid-budget dependence and notes US foreign aid contraction as material sector risk. The 'aid-budget-dependent' operating environment combined with 'moderately concentrated' customer base creates structural renewal risk at program end. The USAID geographic overlap (Pakistan, Afghanistan, sub-Saharan Africa) raises the risk further even if unconfirmed. Converging factors: sector headwinds + concentrated client base + program-cycle funding model. Score 0.5 as likely."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Acasus's moat is described as relationship-based with high switching costs once embedded. Track record of measurable outcomes (Punjab 50%→90% vaccination) supports satisfaction maintenance. One weak signal: Glassdoor internal dissatisfaction (2.7/5 work-life balance) could reflect in service quality perception by clients, but this is highly indirect. Score 0.3."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.43,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely based on convergent contextual factors). Active scaling into 10+ countries confirmed. The CEO mandate explicitly includes 'driving team growth' — geographic expansion is part of this. New geographies (Chad, Sudan, Bahrain) imply entry barriers being navigated: local regulatory differences, cultural adaptation, establishing in-country relationships from scratch. Scaling boutique in expansion mode — geographic entry challenges are highly likely. Score 0.5."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Acasus is strongly focused on public sector health/education in LMICs — no evidence of adjacent segment exploration (private sector, different service lines). Bahrain as an atypical geography (Gulf, higher-income) could signal segment probing, but this is speculative. Score 0.4 for one weak signal of possible adjacent exploration."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Acasus goes direct to government clients — no intermediary channel. The Head of Partnerships role (Ahmed Razzak) suggests some channel/partnership development activity, but no evidence of channel development problems. Score 0.3 for generic plausibility."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely based on converging factors). Rapid expansion into 10+ diverse geographies (from Pakistan to Chad to Bahrain) requires adapting delivery model for vastly different governance systems, health infrastructure levels, and cultural contexts. 80% local staff model is a mitigant, but scaling into new country contexts at pace introduces fit challenges. Converging factors: expansion pace + heterogeneous geographies + embedded delivery model that requires local calibration. Score 0.5."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.63,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Applying high (direct evidence). Profile explicitly states funder mix is undisclosed, that business depends on government and multilateral aid budgets, and that US foreign aid cuts represent material sector risk. Profile notes USAID geographic overlap (Pakistan, Afghanistan, sub-Saharan Africa) which may not be confirmed exposure but is a direct concern. The profile's 'gaps' section explicitly flags funder/client mix as a key unknown and the operating environment section identifies aid-budget dependency as the primary macro sensitivity. Multiple data points converge: undisclosed funder mix + geopolitical aid contraction headwinds + project-based model with no recurring revenue. Score 0.8 for direct evidence of structural concentration and active sector-level risk materializing."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely based on converging factors). Acasus is purely project-based consulting with no subscription, product, or licensing revenue. Budapest data/engineering team builds client-facing BI/ETL systems — a potential vector for productization but no evidence of this being pursued. CEO transition mandate ('drive team growth') is about volume, not model innovation. Converging factors: single revenue model + sector headwinds creating pressure to diversify + engineering capability that could enable model transition. Score 0.5."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Applying high (strong circumstantial evidence + 3 converging indicators). (1) Revenue model entirely dependent on aid budgets subject to political cycles. (2) Profile explicitly names US foreign aid contraction (45.5% drop in sector job postings per Devex) as material sector risk. (3) USAID exposure possible but unconfirmed in active geographies. (4) Project-based model creates funding gaps between contract renewals. (5) No reserves, endowment, or recurring revenue buffer visible. Structural vulnerability to aid cycle disruption is near-certain. Score 0.7 for strong circumstantial evidence without the profile explicitly naming this as an active current crisis."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Managing 10–15+ concurrent government programs across 10+ countries in radically different contexts (health vs education, various maturity levels) at scale requires sophisticated portfolio management. The profile notes 'no client revenue distribution data' and funder mix is undisclosed — indicating limited visibility into portfolio balance. Score 0.5 for likely given the operational complexity and scaling phase."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.44,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.48,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely based on converging factors). Acasus manages field operations across 10+ countries — coordinating field teams, reporting, procurement approvals, and data collection across distributed environments. Profile notes internal infrastructure is 'deliberately lightweight' (Squarespace/ButterCMS for corp site). Engineering team builds client-facing tools, not internal operations automation. Converging factors: scale of distributed operations + lightweight internal infrastructure posture + growth pace that outstrips internal tooling. Score 0.5."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Founder-to-professional-CEO transition is a classic moment when process proliferation from founder-era ad hoc approaches becomes visible. Glassdoor reviews noting founder management style issues suggest some process immaturity in the pre-Barty era. One weak signal — not enough to elevate higher. Score 0.4."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Hub-and-spoke org with Swiss HQ, Budapest shared services center, Pakistan office, and 10+ field country teams creates numerous coordination boundaries. Profile describes 'unclear org topology' and 'hub-and-spoke/functional with field teams' — multi-entity coordination at this scale almost certainly produces handoff challenges. Score 0.5."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely based on converging factors). Delivering reforms across 10+ countries with different government clients, cultural contexts, and local staff introduces high inherent execution variance risk. Profile explicitly positions differentiation on 'delivery depth' and 'measurable outcomes' — implying quality consistency is a core challenge to manage. Converging factors: geographic diversity + local staff (80%) with varying training + scaling pace that outstrips standardization capability + no visible quality management infrastructure. Score 0.6 as very likely given pattern."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). CEO transition and rapid scaling suggest leadership bandwidth as a bottleneck. New CEO (Barty) inheriting multiple concurrent programs across 10+ countries creates potential for approval and oversight bottlenecks. Score 0.4 for one weak signal."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.4,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Company is 13 years old with a Budapest engineering team that has been operating since 2020 with modern stack (AWS, GCP, Angular, TypeScript). No legacy system signals. Internal infrastructure is deliberately lightweight. Score 0.3 for generic plausibility at 13-year company age."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Operations span 10+ countries with likely different local tools, data collection methods, and reporting systems. Profile notes engineering team builds client-facing ETL pipelines — but internal integration is lightweight. Multi-country field operations without robust internal integration platforms almost certainly produce data silos across programs. Score 0.5."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Modern cloud stack (AWS/GCP). No outage signals. Asset-light. Score 0.3 — any tech organization faces reliability concerns but no specific evidence here."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Profile explicitly states 'no SOC2/ISO27001 found' and characterizes security posture as 'basic.' For a firm handling government data across 10+ countries on AWS/GCP, this is a weak but real signal. Score 0.4 for one weak signal."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Internal tooling is 'deliberately lightweight' while managing complex multi-country operations. Field teams in LMICs (Chad, DRC, Somalia, Afghanistan) likely have connectivity constraints requiring offline-capable tools. Profile mentions engineering focus is on client-facing tools, not internal ops. Converging factors: operational complexity + lightweight internal tools posture + field conditions that demand robust tooling. Score 0.5."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.36,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.0,
+              "rubric_level": "na",
+              "reasoning": "Applying N/A. Acasus is a pure professional services firm with no physical manufacturing, no equipment utilization constraints, and no facility-dependent output. Physical capacity limits are structurally impossible as a binding constraint for this org type. Score 0.0."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Applying high (strong circumstantial evidence + 3 converging indicators). (1) Acasus explicitly differentiates on 'embedded delivery' — a high-touch, bespoke model that resists standardization. (2) 22% headcount growth YoY indicates scaling the delivery model is happening but creates strain. (3) CEO transition mandate explicitly names 'driving team growth' suggesting scaling the model is a current challenge. (4) Each new geography requires building local relationships and hiring local talent (80% local staff policy), limiting how fast the model can scale. Score 0.7."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Managing 10–15+ concurrent programs across 10+ countries, each with distinct resource needs, while simultaneously scaling headcount creates significant resource allocation complexity. Profile notes 'shared services centre' in Budapest — a structural response to resource contention. Active hiring across multiple roles in 2025 suggests allocation pressure. Score 0.6."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Acasus operates across 6 continents but is still building coverage. Profile notes that 2025 job postings reveal a wider footprint than historical case studies implied — suggesting coverage expansion is ongoing and gaps are being actively addressed. Some geographies (e.g., Latin America beyond Peru) appear underserved. Score 0.5."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.0,
+              "rubric_level": "na",
+              "reasoning": "Applying N/A. Acasus is a pure consulting/professional services firm with no physical supply chain, inventory, or materials inputs. Supply chain problems are structurally impossible for this org type. Score 0.0."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.52,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Acasus positions itself on delivery quality and measurable outcomes across 10+ heterogeneous country contexts. Profile notes 'unclear org topology' and 'hub-and-spoke/functional' structure that relies on local execution. Rapid scaling (22% YoY) with new country teams entering the fold requires formal quality standards — but no quality management infrastructure is visible in the profile. Score 0.6 as very likely for a fast-scaling embedded delivery firm."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). No quality control systems or processes are mentioned in the profile. The Budapest data team builds measurement tools for clients, but whether internal QC mechanisms exist for program delivery is unknown. Score 0.5 — likely for an organization scaling rapidly across heterogeneous delivery contexts."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Applying high (strong circumstantial evidence + 3 converging indicators). (1) 10+ active country programs with distinct government clients, local staff, and delivery conditions. (2) 80% local staff policy means delivery teams are culturally distinct — high inherent variance. (3) Scaling from ~217 to ~265 staff over 18 months introduces new teams into programs. (4) Profile explicitly emphasizes delivery consistency and measurable outcomes as differentiators, implying it is a challenge to maintain. Score 0.7."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Acasus explicitly positions on measurable outcomes (Punjab vaccination 50%→90%), and the Budapest engineering team builds BI dashboards and ETL pipelines for government clients. This is a relative strength vs. peers. However, at 10+ concurrent programs, standardizing outcome measurement across different government data ecosystems is a real challenge. Score 0.4 — one weak signal of scale-driven measurement complexity."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Glassdoor reviews reference founder management style described as 'not mature and open' and report favoritism — these are weak signals of cultural ownership issues. The founder stepping back from CEO is a structural response, but cultural inertia may persist under new CEO. Score 0.4."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.32,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.25,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Acasus has a 13-year track record with documented, validated outcomes (Punjab vaccination). Service design is co-created with government clients through embedded delivery. No evidence of need misread — if anything, the embedded model is specifically designed to avoid this. Score 0.2."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Profile shows clear and consistent ICP: governments and multilaterals in LMIC health/education reform. 13 years of track record in this segment. No signals of targeting mismatch. Score 0.2."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). AI is transforming what governments expect from reform consultancies — Whelan explicitly engages with AI at a thought leadership level, signaling awareness. The question of whether Acasus's service offering is keeping pace with AI-augmented governance expectations is a weak signal. Profile notes AI adoption depth is 'ambiguous.' Score 0.4."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Punjab vaccination track record and active 10+ country programs with government renewals strongly suggest value delivery is sufficient to retain and expand relationships. Score 0.2."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.35,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Profile shows clear positioning: 'Brave Change,' embedded delivery, measurable outcomes, 80% local staff. Thought leadership is coherent. However, competing with Palladium and DAI on 'we're better at delivery' is a proposition that requires constant articulation. Score 0.3 — no specific evidence of clarity gaps."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Profile acknowledges 'competitive and stable' sector with established players (Palladium, DAI, OPM). The embedded delivery model is differentiating today, but competitors could adopt similar models. One weak signal: profile describes sector as 'mature' and Acasus as competing on quality in a niche — commoditization pressure exists at the sector level. Score 0.4."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Acasus differentiates on delivery depth, measurable outcomes, and 80% local staff — axes that explicitly respond to government client needs in reform contexts. Whelan's AI-as-accountability framing suggests alignment with what clients actually care about. Score 0.2."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Profile explicitly states moat is 'brand/trust + relationship-based switching costs' with 'medium' confidence. No network effects or data moats. The 80% local talent model creates barriers but competitors could replicate. Track record moat is only as defensible as continued results. Converging factors: relationship-based moat (dependent on key individuals) + no structural/IP moats + high-touch model that could be imitated. Score 0.5."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.4,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Professional services methodology evolves through project learning rather than sprint cycles. No evidence of slow iteration — but also no evidence of a systematic methodology refresh process. Score 0.3."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Profile notes AI adoption depth is 'ambiguous' for Acasus. Whelan's thought leadership engages with AI at a conceptual level but 'whether Acasus is building internal AI tools, running client pilots, or partnering with vendors is not publicly visible.' Budapest engineering team (AWS, GCP, Python) is the likely locus. Converging factors: sector AI disruption pressure + unclear internal innovation roadmap + resource-constrained boutique context. Score 0.5."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Budapest team uses modern stack (GCP, AWS, Angular, TypeScript) suggesting limited legacy drag. Data analyst team lead departure (Tamas Varga to Sanofi after 4 years) is a weak knowledge-loss signal. Score 0.3."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). The international development sector is undergoing significant shifts: AI in governance, donor policy changes (US aid cuts), evolving theories of change in health system strengthening. Profile notes Whelan's pragmatic/evidence-driven innovation posture — 'not a bleeding-edge or fast-follower posture.' Converging factors: sector transformation pace + conservative innovation posture + risk that methodology becomes dated vs AI-augmented alternatives. Score 0.5."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.3,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Acasus's 'product' is embedded consulting — usability in the UX sense applies mainly to client-facing dashboards and BI tools. Budapest team builds Tableau dashboards for government clients — some generic usability pressure exists. Score 0.3."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Government program onboarding involves complex relationship setup, local team hiring, and system integration. No specific signals of friction beyond what is inherent to the model. Score 0.3."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Operating in LMICs with populations facing digital literacy and connectivity constraints. Client-facing tools (dashboards, data systems) deployed in these environments face accessibility challenges. No specific evidence. Score 0.3."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Acasus's embedded delivery model requires significant government counterpart effort — they must participate in reform programs, provide data, engage with Acasus teams. In resource-constrained LMIC contexts, high counterpart burden can reduce program uptake. Score 0.4 for one weak signal."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Acasus's entire positioning is built on trust, courage, and 'brave change.' Long-tenured relationships and 80% local staff model specifically addresses cultural trust. Track record of maintained partnerships suggests strong trust maintenance. Score 0.2."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.51,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.44,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Acasus requires scarce specialist talent — 'development professionals with field experience in LMICs' — explicitly flagged in profile as a key operational dependency. Active hiring across 10+ geographies simultaneously in 2025. Profile notes 80% local staff policy limits the pool to in-country candidates for field roles. Converging factors: scarce specialist talent pool + distributed multi-country hiring + 22% YoY growth requiring high hiring velocity + 80% local staff constraint. Score 0.6."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Glassdoor 3.4/5 overall with 2.7/5 work-life balance and negative reviews about founder management style. Profile characterizes employer brand as 'strong-in-niche (development sector), mixed internally.' The CEO transition may improve but the Glassdoor profile exists and is visible. One weak signal. Score 0.4."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Head of Recruitment & HR (Dóra Forgács) is a named leadership team member, suggesting dedicated function. No evidence of selection failures. Score 0.3."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Glassdoor shows 4.1/5 on compensation — above average, so not a crisis. However, competing for scarce LMIC field-experienced professionals against larger firms (Palladium, DAI, World Bank direct employment) and private sector (Sanofi hired Acasus's Data Analyst Team Lead) creates competition. Profile notes 'bootstrapped/private partnership' — no PE/VC behind to fund above-market salaries. Score 0.5."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Scaling from ~217 to ~265 staff across 10+ countries in 18 months implies high hiring volume. Dedicated HR head (Forgács) exists. No specific process efficiency failure signals, but distributed multi-geography hiring at pace creates structural process pressure. Score 0.4."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.5,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Glassdoor reviews reference founder management style issues. In a boutique firm with a flat hierarchy and founder at the top for 12 years, career advancement pathways are typically limited. CEO Jonny Barty being 'internally promoted after 10 years' suggests some progression is possible, but is a slow pathway. Converging factors: small firm + founder-dominated structure (until recently) + Glassdoor career progression signals. Score 0.5."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Applying high (direct evidence). Glassdoor explicitly scores work-life balance at 2.7/5 — well below the 3.5/5 sector average. Negative reviews explicitly cite 'work-life balance' as a top concern. Field work in conflict-affected and resource-poor settings (DRC, Somalia, Afghanistan, Sudan) is inherently high-stress. Profile characterizes employer brand as 'mixed internally.' Direct evidence: Glassdoor 2.7/5 WLB score cited by profile. Score 0.7."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Glassdoor 4.1/5 on compensation — above average, suggesting compensation is not a primary issue. However, favoritism is mentioned in reviews, which is a weak signal of inequitable recognition. Score 0.4."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely based on pattern). Glassdoor explicitly references founder management style described as 'not mature and open' and reports favoritism. These are direct manager relationship signals at the leadership level. CEO transition may change this, but cultural patterns tend to persist. Score 0.6."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Mission-driven firm with explicit 'forefront of the global challenge to improve the life of millions' messaging. Staff drawn to development work are typically purpose-motivated. However, field conditions (DRC, Somalia, Sudan) and Glassdoor dissatisfaction could erode even purpose-driven belonging. Score 0.3 — mitigated by strong mission alignment."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.49,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Rapid scaling (22% YoY) with simultaneous expansion into new geographies and AI disruption to the sector creates a complex skills demand picture. Profile notes active hiring for Data Engineers and Frontend Devs in Budapest — but no evidence of systematic workforce planning beyond reactive hiring to project demand. Score 0.5."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). No training infrastructure or L&D programs are mentioned in the profile. For a firm scaling rapidly into new geographies with 80% local staff who may not have worked in Acasus's methodology, onboarding and training is likely ad hoc. One weak signal: absence of any mention of L&D investment in a 250+ person firm. Score 0.4."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Profile's active CEO transition is direct evidence of leadership succession pressure — Barty was internally promoted after 10 years, which worked, but it's a single example. Multiple senior positions named (9 leaders for 250+ staff) with significant functional gaps (no COO, no Head of Delivery visible). Geographic leadership thin: Pakistan has two Project Directors, but other active countries (Chad, DRC, Somalia) have no named leaders. Score 0.6."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). AI is reshaping government reform consulting. Profile flags AI adoption depth as 'ambiguous' for Acasus — Whelan engages at thought leadership level but internal AI capability building is unclear. Field teams working in LMICs likely have lower digital literacy requirements, but the engineering team and method teams need AI upskilling. Score 0.5."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.58,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Glassdoor explicitly reports founder management style as 'not mature and open' and notes favoritism — direct evidence of a gap between stated values ('Brave Change,' mission-driven) and behavioral practice internally. CEO transition may address this, but cultural patterns lag structural changes. Score 0.6."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Profile explicitly notes 'unclear org topology' and 'hub-and-spoke / functional with field teams' with 'low-medium' confidence — indicating the org structure is not well-documented even to external researchers. Rapid scaling + founder-to-professional-CEO transition + multi-geography operations = high structural design pressure. Score 0.6."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Coordinating between Swiss HQ, Budapest shared services, Pakistan office, and 10+ field country teams across 6 continents creates significant internal communication challenges. Profile notes no internal digital infrastructure investment. Distributed field teams in challenging environments (DRC, Afghanistan, Somalia) face connectivity constraints. Score 0.6."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Organization is mid-transition: new CEO, scaling phase, US aid headwinds requiring possible strategy adaptation. Glassdoor notes founder management style as 'not mature and open' — founder-era culture may resist changes Barty needs to implement. CEO transition is itself a major change event. Converging factors: simultaneous scaling + leadership transition + sector disruption + cultural inertia signals. Score 0.6."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). 80% local staff policy is a strong equity signal — but the leadership team (9 named leaders) appears to be predominantly Western European/Swiss (Whelan: Oxford/McKinsey, Barty: 15+ years development, Gyurcsek: Hungary, ter Weele: Netherlands, Forgács: Budapest). Tension between 80% local workforce and Western-dominant leadership is a pattern issue in international development firms. Score 0.5."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.37,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.32,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). No compliance gap citations, audit findings, or enforcement actions visible in profile. Swiss corporate entity subject to Swiss law — no distress signals. Score 0.2."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Operating across 10+ jurisdictions with different regulatory environments. US foreign aid policy changes (45.5% drop in sector job postings) represent a major regulatory/policy change requiring adaptation. Swiss auditor change in Feb 2026 is a minor signal. Score 0.4 for one significant policy change signal."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Professional services consultancy in international development — not a licensed sector requiring formal accreditation. No evidence of accreditation requirements. Score 0.2."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Swiss corporate entity with annual filing requirements. Operating across 10+ country jurisdictions each with local employment law and procurement reporting requirements. February 2026 auditor change at Swiss holding company is a weak signal. Score 0.4."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Operating across 10+ jurisdictions creates real compliance burden. No dedicated compliance function visible in leadership team. Finance Director (ter Weele) likely manages this. For a 250-person firm operating in fragile states, compliance capacity may be understaffed. Score 0.4."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.32,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). No litigation signals, adverse press, or dispute proceedings found in profile. Swiss corporate structure. Score 0.2."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Government contracts in developing countries often have complex scope definitions and performance criteria. Profile notes 'no pricing, contract size, or deal structure data available' — opacity in commercial terms is a weak signal. Operating in fragile states (DRC, Afghanistan, Sudan) creates contract continuity risks. Score 0.4."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Employing ~250 staff across 10+ jurisdictions including fragile states with complex labor laws. 80% local staff implies local employment contracts in each jurisdiction. No specific employment law exposure signals, but scale and geography create structural risk. Score 0.4."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). Professional services firm — primary IP is methodology and knowledge assets. No product, no software for sale, no patent portfolio. Government clients typically own deliverable IP. Score 0.2."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Operating in fragile states (DRC, Afghanistan, Somalia, Sudan) creates professional liability exposure from project outcomes. No SOC2/ISO27001 found. No professional indemnity or insurance disclosure visible. Score 0.4."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.44,
+          "problems": {
+            "data-privacy-security-cyber-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Profile explicitly states security posture is 'basic — no SOC2/ISO27001 found.' Engineering team handles government data on AWS/GCP. Operating in geopolitically sensitive environments (Afghanistan, DRC) creates threat actor exposure. Converging factors: basic security posture confirmed + sensitive government data + high-threat geographies + no formal security certifications. Score 0.5."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Swiss HQ subject to Swiss nDSG (revised data protection law, 2023) and GDPR-adjacent obligations for EU data subjects (Budapest staff, EU interactions). Profile notes no specific privacy compliance infrastructure. Government health/education data in LMICs may include sensitive beneficiary data. Score 0.4."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Building ETL pipelines and BI dashboards for governments across 10+ countries, each with different data standards and quality. Profile notes dual cloud presence (GCP + AWS) 'shaped by client environment requirements' — implying fragmented data environments without a unified governance layer. Score 0.5."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). AWS and GCP are third-party processors for government client data. No formal third-party risk management program visible. Score 0.4."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). No breach response plan visible. Basic security posture confirmed. Given scale and sensitivity of government data handled, this is a gap but no evidence of inadequacy being tested. Score 0.4."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.41,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Operating in conflict-affected states (DRC, Somalia, Afghanistan, Sudan) with field staff raises duty of care obligations. Staff security in high-risk geographies is a real operational concern. No safeguarding incident signals, but structural exposure exists. Score 0.4."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). No adverse media found. 'World's leading impact-consultancy' positioning and thought leadership at World Health Summit is positive. Score 0.3."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Glassdoor reviews mention favoritism — a weak integrity signal. Operating in countries with high corruption risk (DRC, Afghanistan, Nigeria) creates structural exposure. No specific allegations found. Score 0.4."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). US foreign aid contraction creates funder confidence uncertainty for the whole sector. Acasus's funder mix is undisclosed — if USAID-exposed, stakeholder confidence among remaining funders about organizational resilience becomes a concern. CEO transition (founder stepping back) introduces board/funder questions about continuity. Score 0.5."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.46,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). US foreign aid contraction creates buyer-side budget pressure on government and multilateral clients, potentially forcing Acasus to compete harder on price for shrinking contract pools. Profile notes sector competition with Palladium, DAI — larger firms can absorb margin compression more easily. Converging factors: sector headwinds + aid budget contraction + no pricing data visible suggesting limited pricing leverage. Score 0.5."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). 22% YoY headcount growth in a people-cost-heavy business increases fixed cost base. Operating in high-complexity environments (fragile states) adds operational overhead. If revenue growth doesn't outpace headcount growth, margin deterioration follows. No financials available to verify, but structural pressure is likely. Score 0.5."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Aid cuts may force reliance on lower-margin, smaller engagements as larger programs are cut. No visibility into current margin mix. One weak signal from sector dynamics. Score 0.4."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Profile notes Budapest engineering team builds client-facing data systems — but no evidence this generates additional billable revenue beyond the core program contract. Methodology and IP developed across 10+ programs likely isn't systematically monetized. Converging factors: IP not commercialized + data capabilities potentially underpriced + no evidence of premium pricing for tech-augmented delivery. Score 0.5."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.5,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Bootstrapped private partnership — no VC/PE. No funding round pressure. Swiss holding structure implies retained earnings financing. No distress signals. Score 0.3."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Project-based consulting fees paid on government procurement timelines — notoriously slow in LMICs and multilateral contexts (World Bank, FCDO payment cycles). Simultaneous scaling into 10+ countries requires pre-funding of field teams before invoicing. Profile notes revenue ~$35M with ~250 staff — tight if payment cycles extend. Converging factors: government payment cycle delays + rapid scaling requiring upfront investment + no credit facility or investor capital to bridge. Score 0.6."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Simultaneously investing in: Budapest engineering team hiring, new geography expansion, leadership team professionalisation (CEO transition), and delivering 10+ concurrent programs. Bootstrapped — no external capital to fund suboptimal allocation. Competing investment needs without a formal capital allocation framework likely. Score 0.5."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Acasus depends on government and multilateral funders for revenue — funder relations IS the business development function. US aid cuts create funder relationship pressure. CEO transition requires maintaining funder confidence through leadership change. Profile explicitly flags funder/client mix opacity as a gap. Score 0.6."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.53,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Private company, no audited financials published. Finance Director (ter Weele) is a named leader. Swiss corporate law requires accounts. No specific reporting gap signals but the profile's data quality score for scale/resources is 0.67 — indicating limited financial visibility even externally. Score 0.4."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Aid-budget-dependent revenue is inherently difficult to forecast due to donor policy cycles and government procurement timelines. US foreign aid contraction creates significant scenario uncertainty. Simultaneous expansion across 10+ geographies compounds forecasting complexity. No evidence of sophisticated financial modeling infrastructure. Score 0.6."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). No client revenue distribution data, no margin data by program, no pricing data. Profile explicitly flags 'no pricing, contract size, or deal structure data available' and 'no client revenue distribution data' as gaps. For a firm with 10–15+ concurrent programs of varying scale and margin, unit economics visibility is likely very limited. Score 0.6."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Scaling while managing complex project portfolio across 10+ geographies with government payment timing uncertainty makes budgeting inherently difficult. No evidence of sophisticated budgeting infrastructure. CEO transition creates budget ownership questions. Score 0.5."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.45,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Applying high (strong circumstantial evidence + 3 converging indicators). (1) Profile explicitly names aid-budget dependency as primary macro sensitivity. (2) US foreign aid contraction (45.5% drop in sector job postings per Devex) is a confirmed sector-level shock. (3) Multi-currency operations (CHF HQ, USD contracts likely, local currencies in 10+ countries) create FX exposure. (4) Funder mix undisclosed — could be heavily concentrated in one donor type. (5) Active geographies overlap with USAID priority zones raising potential concentration. Score 0.7."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Swiss corporate law compliance. February 2026 auditor change is a minor signal (could be routine rotation). No compliance failure signals. Score 0.3."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Founder-dominated private company for 12 years transitioning to professional management — founder-era internal controls tend to be informal. No internal audit function mentioned. Glassdoor favoritism signal is a weak proxy for control environment concerns. Score 0.4."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Swiss holding company structure (Acasus Holding AG, Baar, ZUG) in a low-tax Swiss canton — already structurally optimized to some degree. Acasus Foundation status unclear (possibly dormant/liquidating) which may create structural complexity. Score 0.4."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.44,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.49,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Acasus is simultaneously: scaling geographically (10+ countries), transitioning CEO, building Budapest engineering team, managing 10–15+ active programs, navigating sector headwinds from US aid cuts. For a bootstrapped boutique without dedicated strategy function, initiative proliferation is likely. Score 0.5."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Founder (Whelan, now Chair) and professional CEO (Barty) dual structure creates inherent tension — founder vision vs. professional management priorities. Glassdoor notes founder management style issues. The transition is recent (2025). Classic founder/CEO misalignment risk during transition period. Score 0.5."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Profile notes 'unclear org topology' and distributed global operations. CEO's mandate ('drive team growth') is operational rather than strategic — suggests execution is the focus but formal strategy-to-execution cascading infrastructure may be thin. Score 0.5."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). CEO transition from founder to professional management is a classic mission drift risk moment — professional CEOs sometimes optimize for growth over mission purity. Profile notes founder 'retains strategic influence and equity' as a counterbalance. One weak signal given the transition dynamic. Score 0.4."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.44,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Acasus's differentiation rests on embedded delivery, measurable outcomes, and 80% local staff. Larger firms (Palladium, DAI) have resources to replicate the embedded model. AI-augmented delivery could level the analytical capabilities advantage. Converging factors: relationship-based moat + replicable model + sector AI disruption + aid headwinds that commoditize the market. Score 0.5."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). AI consulting firms and GovTech platforms are entering the government reform space. US aid cuts are forcing new entrants to compete for remaining FCDO/World Bank contracts. Whelan's AI-accountability framing suggests awareness but 'ambiguous' internal AI adoption suggests possible slow response. Score 0.5."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). No market intelligence function or competitive monitoring infrastructure visible in profile. Relationship-led firm likely relies on network intelligence rather than systematic scanning. Score 0.4."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (generic plausibility). Acasus is actively expanding (22% headcount growth, 10+ countries). No market stagnation signals — the opposite. Score 0.3."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.42,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Aid sector disruption from US cuts creates pressure to develop alternative revenue models. Budapest engineering team could enable a productized SaaS or data-platform offering, but no evidence of this being pursued. Converging factors: sector headwinds pressuring current model + engineering capability enabling transition + bootstrapped firm without capital to fund exploration. Score 0.5."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). AI is transforming how governments receive and use reform advice. Profile flags AI adoption as 'ambiguous' internally. Budapest engineering team is the plausible AI development locus, but no AI capability roadmap is visible. Converging factors: sector AI disruption + undefined internal AI strategy + engineering team capability that could lead transformation. Score 0.5."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). CEO transition + geographic expansion + Budapest shared services center growth + professionalization of management all suggest structural reorganization is underway or needed. Profile notes org structure is 'unclear' even to external researchers — a signal of structural definition gap. Score 0.5."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Profile characterizes innovation posture as 'pragmatic/evidence-driven' — not a bleeding-edge innovator. AI adoption depth 'ambiguous.' For a firm in a disrupting sector, conservative innovation posture is a weak signal of innovation strategy gaps. Score 0.4."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Applying low (unlikely). No crisis event in Acasus's history. No restructuring, no reputational crisis, no financial distress signals. Founder transition is planned, not crisis-driven. Score 0.2."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.46,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Head of Partnerships (Ahmed Razzak) is a named leadership team member — suggesting active partnership activity. Managing multilateral relationships (World Bank, UNICEF-tier, bilateral donors) alongside government clients creates complex partnership governance. No specific failure signals, but scale of concurrent partnerships likely creates management challenges. Score 0.5."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Acasus doesn't appear to have a deliberate ecosystem strategy beyond direct client relationships. No marketplace, platform, or partner ecosystem visible. The Budapest data team could anchor an ecosystem play but this isn't evident. Score 0.4."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). US aid policy shift (Trump administration) is a direct policy relationship challenge. Acasus needs to navigate relationships with FCDO, World Bank, bilateral donors as primary funders/context-setters. CEO transition at a moment of sector policy disruption creates relationship management pressure. Score 0.5."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Acasus Foundation appears dormant/in liquidation — a weak signal of reduced community engagement ambitions. Thought leadership at World Health Summit and Harvard Africa Health Conference suggests sector stakeholder engagement is maintained. Score 0.4."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.56,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.46,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Private company with founder as Chair — no independent board visible. No VC/PE board representation. Profile notes 'no external board oversight visible' as a confirmed characteristic. Governance obligations described as 'private partnership (founder-controlled).' A 250-person firm managing complex government contracts across 10+ countries without documented independent board oversight has governance composition risk. Score 0.5."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). No board information available — governance is private. Founder as Chair controlling the governance function is a weak signal of board engagement being less meaningful than governance best practice would suggest. Score 0.4."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Founder-as-Chair + newly-appointed professional CEO (Barty) is a classic tense board-management dynamic. Founder retains 'strategic influence and equity' while Barty has operational mandate. Glassdoor notes founder management style as 'not mature and open.' This dual-power structure during transition creates high probability of board-management interface tension. Score 0.6."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Private founder-controlled company — governance framework is likely informal. No board committees, terms of reference, or formal governance documentation visible. Score 0.4."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.6,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Jonny Barty was promoted from within after 10 years at Acasus — strong domain knowledge but first CEO role. Managing a scaling organization across 10+ crisis-affected countries while navigating sector disruption requires broad executive capability. No evidence of specific limitation, but first-time CEO in a complex scaling context is an inherent risk. Score 0.5."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Leadership transition from Whelan to Barty with Whelan remaining as Chair creates potential for shadow leadership dynamics. 9 named leaders with geographic distribution (Switzerland, Budapest, Pakistan) adds cohesion challenges. Glassdoor notes on leadership culture are a weak signal. Score 0.5."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Leadership team (9 leaders for 250+ staff) has no named: COO, Head of Strategy, Head of Technology/CTO, Head of Delivery. The org runs 10–15+ programs across 10+ countries with no visible COO or delivery leadership function. Budapest team has an engineering head but no technology strategy leader. Score 0.6 for multiple missing functional leadership roles evident in team structure."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Applying high (direct evidence). Profile directly describes the leadership transition: Whelan stepped back from CEO to Founder & Chair in 2025, with Barty taking CEO role. This is an active, ongoing transition event. Profile explicitly identifies this as a 'classic scaling milestone' — confirming it is a structured transition but also noting the dual-power structure. Direct evidence: the transition is the subject of the profile's executive summary, the CEO transition article is cited as a primary source, and the risks of transition are explicitly analyzed. Score 0.8."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.5,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Founder-as-Chair + new CEO + unclear org structure = ambiguous decision authority. Profile notes 'exact org topology not publicly documented.' Glassdoor notes favoritism suggesting informal power structures override formal authority. Classic founder-transition ambiguity where it is unclear which decisions Whelan still influences vs. Barty owns. Score 0.6."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Distributed organization with no COO visible and unclear org structure. Government program decisions must often be made in the field under time pressure. Founder-to-CEO transition creates potential approval uncertainty. Score 0.5."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Managing 10–15+ programs across 10+ geographies without a formal COO or delivery function creates information aggregation challenges. Field teams in LMICs with connectivity constraints may not surface operational reality to Swiss HQ in real time. Score 0.5."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (likely). Distributed global firm with Glassdoor notes on favoritism — a weak accountability signal. No OKR, performance management, or accountability framework visible in profile. Founder-era organizations often have informal accountability norms. Score 0.5."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Applying moderate-low (one weak signal). Whelan's thought leadership framing (evidence-driven, accountability-focused) and 13-year track record suggest good judgment at the top. Glassdoor culture signals are a weak proxy for organizational decision quality issues. Score 0.4."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.64,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Private Swiss company with founder as Chair retaining 'strategic influence and equity.' No independent board visible. No external capital providers with governance rights. Profile explicitly describes governance as 'private partnership (founder-controlled, no external board oversight visible).' Converging factors: founder retains Chair + equity + strategic influence + private structure with no countervailing governance forces. Score 0.6."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Founder stepping back from CEO but retaining Chair role with 'strategic influence' is a textbook shadow governance structure. Glassdoor explicitly mentions favoritism — a signal of informal power channels. Profile notes founder's AI thought leadership positioning suggests continued active external influence separate from formal CEO role. Score 0.6."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Applying high (direct evidence + multiple data points). (1) Profile explicitly notes 'when engaging Whelan, note he speaks fluently about AI' — positioning Whelan as the primary intellectual capital. (2) Whelan is the named thought leader at World Health Summit and Harvard conferences. (3) Barty's CEO appointment is described relative to Whelan's tenure. (4) Profile's executive summary centers on Whelan's transition as the primary narrative. (5) 13-year founder-CEO holds sector relationships, thought leadership identity, and founding vision. Score 0.8 for direct evidence of key-person dependency on Whelan even after the CEO transition."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Applying moderate (very likely). Private company with no public financials, undisclosed funder mix, no pricing data, and unclear org structure. Profile's data quality score for scale/resources is 0.67 — indicating even professional researchers cannot get financial visibility. Employees likely have similarly limited visibility into organizational health. Score 0.6."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "revenue-diversification-concentration",
+      "leadership-capability-transition",
+      "power-transparency-key-person",
+      "revenue-diversification-sustainability",
+      "capacity-scaling-service-scalability"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 0,
+      "high": 8,
+      "medium": 99,
+      "low": 32,
+      "na": 2
+    }
+  }
+}

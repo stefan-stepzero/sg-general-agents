@@ -1,0 +1,301 @@
+{
+  "_meta": {
+    "research_date": "2026-03-25",
+    "researcher": "data-collector-agent",
+    "sources_searched": [
+      "Catholic Schools Parramatta Diocese 2025",
+      "CSPD Uplift framework Catholic Schools Parramatta",
+      "Patrick Ellis Catholic Schools Parramatta",
+      "Westmead Catholic primary school 2026",
+      "Catholic Schools NSW funding 2025 Gonski CSNSW",
+      "NESA Catholic schools requirements 2025 NSW",
+      "site:parra.catholic.edu.au 2025 2026",
+      "Catholic Schools Parramatta enterprise agreement 2025",
+      "Catholic Schools Parramatta HSC results 2025",
+      "Catholic Schools Parramatta Reconciliation Action Plan 2025",
+      "Catholic Schools Parramatta Canvas LMS 2024 2025"
+    ]
+  },
+  "leadership": [
+    {
+      "name": "Jack de Groot",
+      "role": "Chief Executive Officer, Catholic Schools Parramatta Diocese",
+      "date": "January 2023",
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/our-chief-executive-officer",
+      "detail": "Started as CEO in January 2023. Previously CEO of St Vincent de Paul Society NSW (from 2016), CEO of Caritas Australia for 13 years, and Group Leader of Mission for St Vincent's Health Australia. Holds board memberships at University of Notre Dame, St John of God Health Care, and Caritas Australia."
+    },
+    {
+      "name": "Patrick Ellis",
+      "role": "Executive General Manager, Learning Outcomes, Catholic Schools Parramatta Diocese",
+      "date": "circa late 2025 (role advertised with deadline September 12, 2025)",
+      "source_url": "https://anzuk.education/au/browse-jobs/executive-general-manager-learning-outcomes/",
+      "detail": "Confirmed as EGM Learning Outcomes on the CSPD leadership page. Role recruited via ANZUK Executive (Simon Withers, NSW State Manager). LinkedIn post from Ellis: 'Great to be back at Catholic Schools Parramatta Diocese and look forward to working with the 80 school communities across the diocese to support high quality, evidence based teaching and learning #Uplift'. Previously Education Lead at Catholic Education Canberra-Goulburn (CECG); 20 years in Catholic Education leadership across Parramatta, Wilcannia-Forbes, and Canberra-Goulburn."
+    },
+    {
+      "name": "Rob Beetson",
+      "role": "Executive General Manager, Legal, Governance & Risk",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Member of CSPD Executive Leadership Team."
+    },
+    {
+      "name": "Greg Elliott",
+      "role": "Executive General Manager, Quality & Performance",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Member of CSPD Executive Leadership Team."
+    },
+    {
+      "name": "Gerard Giesekam",
+      "role": "Executive General Manager, Finance & Infrastructure",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Member of CSPD Executive Leadership Team."
+    },
+    {
+      "name": "Daniel Lynch",
+      "role": "Executive General Manager, People & Culture",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Member of CSPD Executive Leadership Team."
+    },
+    {
+      "name": "Elizabeth Scully",
+      "role": "Executive General Manager, Communications & Engagement",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Signed the St Vincent de Paul Society NSW formalised partnership on behalf of CSPD on September 16, 2025."
+    },
+    {
+      "name": "Mark Smith",
+      "role": "Executive General Manager, Mission",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Member of CSPD Executive Leadership Team."
+    },
+    {
+      "name": "Frances Waterford",
+      "role": "Executive General Manager, Information Technology (also titled Chief Information Officer / Director Technology and Information Services)",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Background includes Cancer Council NSW, ICT Design Performance and Alignment, and Origin Energy."
+    },
+    {
+      "name": "Dianne Van Berlo",
+      "role": "Executive General Manager, Student Support",
+      "date": null,
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers",
+      "detail": "Member of CSPD Executive Leadership Team."
+    },
+    {
+      "name": "Lisa Crampton",
+      "role": "Head of Primary Learning, CSPD",
+      "date": "August 2025",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/08/12/02/36/annual-ann-d-clark-lecture-inspires-action-to-connect-research-with-classroom-teaching",
+      "detail": "Announced CSPD's new Effective Learning and Teaching Model at the 2025 Ann D Clark Lecture. Quoted: 'Learning should form us, inform us and transform us.'"
+    },
+    {
+      "name": "Julianne Regan",
+      "role": "Principal, Sacred Heart Primary Westmead (new Darcy Road campus)",
+      "date": "Term 3, 2026 (effective)",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives/westmead-catholic-community",
+      "detail": "Appointed to lead the merged school at the new Darcy Road campus."
+    }
+  ],
+  "new_schools": [
+    {
+      "name": "Sacred Heart Primary Westmead (new campus)",
+      "location": "2 Darcy Road, Westmead, NSW",
+      "status": "Opening Term 3, 2026. Merger of Sacred Heart Primary Westmead (Ralph Street) and Mother Teresa Primary Westmead.",
+      "date": "Term 3, 2026",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives/westmead-catholic-community",
+      "detail": "Single four-stream K-6 school replacing two existing primary schools. New three-storey building at 2 Darcy Road. Context: Catholic schools in Westmead have been turning away more than 500 enrolment applicants every year. The Westmead Catholic Community precinct also includes Catherine McAuley Westmead, Parramatta Marist High School, and Sacred Heart Parish. Three-storey car park and additional drop-off area also under construction. Sacred Heart Church and Parish Centre on the same site targeted for late 2026 completion."
+    },
+    {
+      "name": "Ambrose Early Learning and School Age Care Centre",
+      "location": "2 Darcy Road, Westmead, NSW",
+      "status": "Planned, opening 2027",
+      "date": "2027",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives/westmead-catholic-community",
+      "detail": "New early learning and school age care centre co-located on the Westmead Catholic Community campus."
+    }
+  ],
+  "initiatives": [
+    {
+      "name": "Uplift — System-Wide Teaching and Learning Framework",
+      "detail": "CSPD's new system-wide approach to teaching and learning, launched August 2025. Endorsed by Dr Jenny Donovan (inaugural CEO, Australian Education Research Organisation AERO) at the 2025 Ann D Clark Lecture in Penrith. Grounded in evidence-based teaching: explicit instruction, formative assessment, structured literacy. Moves away from open-plan classroom designs. Implemented across 80 schools for 43,000 students. Aligned with NSW Government curriculum reforms. Patrick Ellis (EGM Learning Outcomes) publicly associated with the framework via LinkedIn.",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/08/12/02/36/annual-ann-d-clark-lecture-inspires-action-to-connect-research-with-classroom-teaching"
+    },
+    {
+      "name": "Five-Year Strategic Plan (2024–2029)",
+      "detail": "Announced October 4, 2024 at Rooty Hill, attended by 80 school principals. Six pillars: (1) Mission — Catholic by nature, not by name only; (2) People — high performance culture; (3) Quality — strong academic achievement via evidence-based teaching; (4) Relevance — breadth of opportunity; (5) Sustainability — financial stewardship and scalable systems; (6) Trust — integrity, accountability and transparency. Vision: 'Enriching the lives of our students through education grounded in excellence, inclusivity and Catholic tradition.' Jack de Groot: 'detailed, earnest and ambitious.' Based on extensive consultation with principals, staff and families.",
+      "source_url": "https://cathnews.com/2024/10/04/parramatta-schools-announce-new-five-year-strategy/"
+    },
+    {
+      "name": "Effective Learning and Teaching Model",
+      "detail": "New system-wide model announced by Head of Primary Learning Lisa Crampton at the August 2025 Ann D Clark Lecture. Operationalises the Uplift framework using Catholic tradition and cognitive science. Core philosophy: 'learning should form us, inform us and transform us.'",
+      "source_url": "https://catholicoutlook.org/the-move-to-evidence-based-teaching-in-our-catholic-schools-annual-ann-d-clark-lecture-inspires-teachers/"
+    },
+    {
+      "name": "St Vincent de Paul Society NSW Formal Partnership",
+      "detail": "Formalised September 16, 2025. CSPD became the first school-based education provider in NSW to formalise a partnership with St Vincent de Paul Society NSW. Signed by Elizabeth Scully (CSPD) and Sam Crosby (St Vinnies NSW Executive Director). Encompasses: Vinnies Van volunteering, Mini Vinnies groups, Winter/Christmas appeals, School Sleepouts, Return and Earn recycling, and the Vinnies Service Medallion for secondary students.",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/09/18/23/26/western-sydney-catholic-schools-and-st-vincent-de-paul-society-nsw-serving-our-communities"
+    },
+    {
+      "name": "Mobile Phone Ban — All 80 Schools",
+      "detail": "Announced November 18, 2025. Effective from the beginning of the 2026 school year. Applies to all 80 CSPD schools. Most schools already had informal restrictions. Exceptions for medical necessity. Aligns with Australia's social media ban for children under 16 (December 2025). CEO Jack de Groot: 'Consistent restrictions with clear parameters are necessary to support both students and staff.'",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/11/18/00/22/western-sydney-catholic-schools-hold-the-phone"
+    },
+    {
+      "name": "Innovate Reconciliation Action Plan 2025–2027",
+      "detail": "Launched July 23, 2025 at The Colebee Centre, Doonside. CSPD's second RAP, at Innovate level. Artwork created by Amy Allerton (Gumbaynggirr and Bundjalung woman) in collaboration with 90 First Nations students and staff. Attendees included Edmond Atalla MP, Sharon Cooke (CSNSW State Manager Aboriginal Education), and Aunty Carol Cooper.",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/08/12/04/18/cspd-launches-innovate-reconciliation-action-plan-2025-2027"
+    },
+    {
+      "name": "Free Education for Aboriginal and Torres Strait Islander Families",
+      "detail": "From 2026, CSPD is waiving school fees for all Aboriginal and Torres Strait Islander families across all 80 schools as part of Closing the Gap and Reconciliation commitments.",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives"
+    },
+    {
+      "name": "Canvas LMS System-Wide Deployment",
+      "detail": "Canvas (Instructure) deployed as the system-wide LMS across all CSPD schools. Accessible from any device. Features include grading, announcements, course discussions, and parent visibility. Supported by a dedicated CSPD Canvas team for school leadership support and custom course design. Canvas catalog available for staff professional learning.",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives/canvas"
+    },
+    {
+      "name": "LIFTED Student Leaders Forum — AI Focus",
+      "detail": "June 2025, held at West HQ, Rooty Hill. More than 100 Year 12 student leaders explored the impact of AI on society and their role in shaping an ethical and inclusive future.",
+      "source_url": "https://catholicoutlook.org/student-leaders-tackle-the-future-of-ai/"
+    },
+    {
+      "name": "HSC 2025 — Four First-in-Course State-Toppers",
+      "detail": "December 2025. Four CSPD students achieved First-in-Course: Emily Gonzalez (Catherine McAuley Westmead, Studies of Religion I), Mankirat Kaur (Santa Sophia Catholic College Gables, English Standard), Nicholas McKewen (Gilroy Catholic College, Mathematics Standard 1), Nishika Talusani (Caroline Chisholm College Glenmore Park, PDHPE). 20 NSW All Rounders system-wide. Parramatta Marist ranked 44th in NSW (29.3% Band 6), highest-ranked Catholic systemic school.",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/12/17/01/59/four-western-sydney-catholic-school-students-top-the-state-in-hsc"
+    }
+  ],
+  "regulatory": [
+    {
+      "change": "NSW-wide mobile phone restrictions in schools",
+      "impact": "CSPD implemented a system-wide mobile phone ban from the start of the 2026 school year, aligning with broader NSW government direction and Australia's social media ban for under-16s introduced December 2025.",
+      "date": "November 2025 (announced); January 2026 (effective)",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/11/18/00/22/western-sydney-catholic-schools-hold-the-phone"
+    },
+    {
+      "change": "NESA Teacher Accreditation — ongoing compliance requirements",
+      "impact": "All CSPD teachers must hold current NESA accreditation and NSW Working with Children Check. Primary classroom and RE secondary teachers additionally require Religious Education accreditation (undergraduate 6 units or postgraduate 4 units). CSNSW provides NESA Financial Viability Services for school registration.",
+      "date": "Ongoing, 2025",
+      "source_url": "https://www.csnsw.catholic.edu.au/school-management/teacher-accreditation"
+    },
+    {
+      "change": "NSW Curriculum Reform — explicit teaching mandate",
+      "impact": "CSPD's five-year strategy and Uplift framework explicitly align with NSW Government curriculum reforms, emphasising explicit teaching and moving away from open-plan classroom designs across all 80 schools.",
+      "date": "October 2024 (strategy launch); August 2025 (Uplift launch)",
+      "source_url": "https://cathnews.com/2024/10/04/parramatta-schools-announce-new-five-year-strategy/"
+    }
+  ],
+  "funding": [
+    {
+      "detail": "NSW Catholic Schools System (which includes CSPD) received forecast $3.65 billion in recurrent funding from Commonwealth and NSW State governments in 2024. Schools also raised an estimated $550 million from school fees and $100 million from other private income. Under the Australian Education Act 2013, all approved authorities must fund schools via a needs-based funding arrangement. Loadings make up approximately 24% of total funding.",
+      "source_url": "https://www.csnsw.catholic.edu.au/funding-of-nsw-catholic-schools-system/"
+    },
+    {
+      "detail": "NSW Needs-Based Funding Arrangement 2024–2029 published by Catholic Schools NSW. Covers distribution of government funding to approximately 227,000 students across ~550 systemic Catholic schools in NSW under the Gonski framework.",
+      "source_url": "https://www.csnsw.catholic.edu.au/system/files/2024-09/NSWCSS-Needs-Based-Funding-Arrangement-2024-to-2029.pdf"
+    },
+    {
+      "detail": "NSW and ACT Catholic Systemic Schools Enterprise Agreement 2025 approved by 99% of CSPD employees (vote closed October 31, 2025). Teacher pay increases: 3% from Oct 2024 (paid), 3% from Oct 2025, 3% from Oct 2026. General Employees: 4% from Jul 2024, 3% from Jul 2025, 3% from Jul 2026. Improved parental leave and superannuation. Three days annual ceremonial leave for Aboriginal and Torres Strait Islander employees. Cost-of-living adjustment clause if inflation exceeds 4.5% in 2026.",
+      "source_url": "https://www.ieu.asn.au/catholic-systemic-vote-for-new-eas/"
+    },
+    {
+      "detail": "CSPD waiving school fees for all Aboriginal and Torres Strait Islander families from 2026 as part of Closing the Gap and Reconciliation commitments.",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives"
+    }
+  ],
+  "technology": [
+    {
+      "detail": "Canvas (Instructure) deployed as CSPD's system-wide Learning Management System across all 80 schools. Features: student access from any device, teacher grading and communication, parent visibility. Supported by dedicated CSPD Canvas team. Canvas catalog available for professional learning.",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives/canvas"
+    },
+    {
+      "detail": "Classm8 referenced as a learning management platform in use within CSPD schools.",
+      "source_url": "https://www.parra.catholic.edu.au/learning"
+    },
+    {
+      "detail": "Grace — CSPD staff intranet platform.",
+      "source_url": "https://www.parra.catholic.edu.au/learning"
+    },
+    {
+      "detail": "CSPD AI policy: 'domed approach' — students only access CSPD-approved platforms and AI programs; open generative AI chatbots (e.g. ChatGPT) are blocked. All tools operate under the CSPD system umbrella.",
+      "source_url": "https://www.catholicvoice.org.au/catholic-schools-put-guardrails-on-ai/"
+    },
+    {
+      "detail": "Device procurement: CSPD has negotiated education deals through partner Compnow for BYOD devices aligned to CSPD specifications.",
+      "source_url": "https://shop.compnow.com.au/school/parraceo"
+    },
+    {
+      "detail": "IT Traineeship program offered by CSPD — career kickstart pathway for students in information technology.",
+      "source_url": "https://www.parra.catholic.edu.au/about/key-initiatives"
+    },
+    {
+      "detail": "Frances Waterford is EGM Information Technology. Previously titled CIO / Director Technology and Information Services. Background: Cancer Council NSW, ICT Design Performance and Alignment, Origin Energy.",
+      "source_url": "https://www.parra.catholic.edu.au/about/our-leadership/executive-general-managers"
+    }
+  ],
+  "media": [
+    {
+      "headline": "Detailed, earnest and ambitious: Catholic Schools announces new strategy",
+      "date": "2024-10-03",
+      "sentiment": "positive",
+      "source_url": "https://catholicoutlook.org/detailed-earnest-and-ambitious-catholic-schools-announces-new-strategy/",
+      "summary": "Catholic Outlook coverage of CSPD's five-year strategic plan launch at Rooty Hill. Jack de Groot described the plan as 'detailed, earnest and ambitious,' setting six priorities across Western Sydney and the Blue Mountains."
+    },
+    {
+      "headline": "Parramatta schools announce new five-year strategy",
+      "date": "2024-10-04",
+      "sentiment": "positive",
+      "source_url": "https://cathnews.com/2024/10/04/parramatta-schools-announce-new-five-year-strategy/",
+      "summary": "CathNews coverage of the October 2024 strategy launch with 80 school principals present. Strategy aims for excellence, inclusivity, and Catholic tradition."
+    },
+    {
+      "headline": "The move to evidence-based teaching in our Catholic schools: Annual Ann D Clark Lecture inspires teachers",
+      "date": "2025-08",
+      "sentiment": "positive",
+      "source_url": "https://catholicoutlook.org/the-move-to-evidence-based-teaching-in-our-catholic-schools-annual-ann-d-clark-lecture-inspires-teachers/",
+      "summary": "2025 Ann D Clark Lecture in Penrith. Dr Jenny Donovan (AERO CEO) endorsed CSPD's Uplift framework. Lisa Crampton announced the new Effective Learning and Teaching Model."
+    },
+    {
+      "headline": "Western Sydney Catholic Schools hold the phone",
+      "date": "2025-11-18",
+      "sentiment": "neutral",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/11/18/00/22/western-sydney-catholic-schools-hold-the-phone",
+      "summary": "CSPD announces system-wide mobile phone ban effective 2026 across all 80 schools, aligned with Australia's social media ban for under-16s."
+    },
+    {
+      "headline": "Western Sydney Catholic Schools and St Vincent de Paul Society NSW serving our communities",
+      "date": "2025-09-18",
+      "sentiment": "positive",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/09/18/23/26/western-sydney-catholic-schools-and-st-vincent-de-paul-society-nsw-serving-our-communities",
+      "summary": "CSPD becomes first school-based education provider in NSW to formalise a partnership with St Vincent de Paul Society NSW, signed September 16, 2025."
+    },
+    {
+      "headline": "CSPD Launches Innovate Reconciliation Action Plan 2025–2027",
+      "date": "2025-07-23",
+      "sentiment": "positive",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/08/12/04/18/cspd-launches-innovate-reconciliation-action-plan-2025-2027",
+      "summary": "Launch of CSPD's second Reconciliation Action Plan at The Colebee Centre, Doonside, with community leaders including MPs and Aboriginal elders."
+    },
+    {
+      "headline": "Four Western Sydney Catholic School Students top the state in HSC",
+      "date": "2025-12-17",
+      "sentiment": "positive",
+      "source_url": "https://www.parra.catholic.edu.au/whats-on/latest-news/2025/12/17/01/59/four-western-sydney-catholic-school-students-top-the-state-in-hsc",
+      "summary": "Four CSPD students achieved First-in-Course in 2025 HSC. 20 NSW All Rounders across the system. Parramatta Marist ranked 44th in NSW (highest-ranked Catholic systemic school)."
+    },
+    {
+      "headline": "Catholic systemic schools EA: 98% YES vote",
+      "date": "2025-10-31",
+      "sentiment": "positive",
+      "source_url": "https://www.ieu.asn.au/catholic-systemic-vote-for-new-eas/",
+      "summary": "IEU reports 98% approval across nine NSW/ACT Catholic dioceses for new enterprise agreement. CSPD achieved 99% approval. Pay rises of 3% annually 2024–2026 for teachers."
+    }
+  ]
+}

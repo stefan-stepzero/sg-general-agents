@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "compliance-qa-regulatory-filings-fragmented-submission-tracking-dup",
+  "pain_point_label": "Fragmented Submission Tracking Across Agencies",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core dysfunction is a multi-step workflow spread across spreadsheets, email, and independent campus actions with no orchestration layer. A task automation agent can own the full submission lifecycle: pulling due dates from agency calendars, routing submission tasks to the correct campus coordinator, tracking acknowledgment, and escalating overdue items — eliminating the manual email-chain coordination that causes missed deadlines and duplicates.",
+      "opportunity_sketch": "An agent-driven compliance calendar that ingests regulatory schedules for DepEd, BIR, PSA, PRC, and LGUs, assigns tasks to campus staff, tracks completion status, and triggers escalations — replacing the spreadsheet-and-email system with an auditable workflow.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Multi-campus filing schedules involve overlapping deadlines across agencies and campuses, with shared staff and finite submission windows. Constraint satisfaction can compute a valid, conflict-free master submission calendar that respects agency deadlines, campus capacity, and staff availability — the exact combinatorial problem that spreadsheets fail to solve at scale.",
+      "opportunity_sketch": "A scheduling optimizer that takes all regulatory filing deadlines across agencies and campuses as inputs and produces an assigned, conflict-free submission plan, flagging resource bottlenecks before they cause missed filings.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate submissions are a specific anomaly: the same campus filing the same report to the same agency within a short window, or two campuses submitting under the same entity identifier. An anomaly detection layer over the submission log can flag these duplicates and near-duplicates in real time, catching them before they generate penalties.",
+      "opportunity_sketch": "A duplicate-detection module that monitors the submission log and raises alerts when a filing matches a recently submitted record by agency, campus, period, and document type — preventing penalty-triggering duplicate submissions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once a unified tracker exists, compliance officers still need to produce status narratives for board reports, audit responses, and agency correspondence explaining late or amended filings. LLM text generation can draft these communications from structured submission data, reducing the manual writing burden that accompanies any compliance event.",
+      "opportunity_sketch": "Auto-drafted compliance status reports and agency correspondence generated from the tracker's structured data, ready for review and submission — cutting the hours spent writing explanatory narratives per filing cycle.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

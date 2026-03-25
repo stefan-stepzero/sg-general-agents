@@ -1,0 +1,263 @@
+{
+  "cspd": {
+    "name": "Catholic Schools Parramatta Diocese",
+    "generated_date": "2026-03-25",
+    "opportunities": [
+      {
+        "id": "opp-1",
+        "title": "Structured Curriculum Resource Library to Accelerate Uplift Framework Adoption",
+        "pain_point": "The Uplift framework launched August 2025 across 80 schools and ~3,760 teaching staff with no published curriculum resource library, no confirmed external evaluation partner, and no dedicated EGM in post at launch (Patrick Ellis appointed September 2025). CSPD's 2023 Annual Report identifies NAPLAN numeracy gaps as a strategic priority ('imperative to increase transition from Strong to Exceeding'). The 2023 employee engagement data (69% score, 53% response rate) and self-identified 'communication gaps' signal prior difficulty with system-wide change adoption — a direct execution risk for Uplift. The absence of pre-built instructional materials means teachers carry the planning burden at precisely the moment they are being asked to change their practice.",
+        "market_evidence": "CECG's Catalyst program — the direct methodological ancestor of Uplift, run by CSPD's new EGM Patrick Ellis before he joined — produced 5,400+ curriculum resources for primary English and Mathematics in partnership with Ochre Education, saving teachers up to 6 hours per week. Deloitte Access Economics was engaged as external evaluator from Day 1 and published findings in 2024 showing 75% reading proficiency vs 66% national average and 13 of the top 20 ACT 'making the most difference' schools being CECG schools. MACS Vision for Instruction (2024, one year ahead of Uplift) showed early-adopter schools improving NAPLAN numeracy by up to 46 percentage points. BCE's AI-assisted lesson planning pilot saved 9.3 hours per teacher per week. The market-solutions pattern is clear: structured resources + external evaluation = credible outcomes within 3 years.",
+        "opportunity": "Engage CSPD to design and commission a structured curriculum resource library for the Uplift framework — covering primary English and Mathematics at minimum — using a co-development model with CSPD's internal Canvas team and subject matter experts. Simultaneously, structure an external evaluation engagement (modelled on CECG/Deloitte) that establishes a pre-Uplift NAPLAN baseline and measures outcomes at 12-, 24-, and 36-month intervals. Deliverables: resource standards framework, authoring workflow, initial resource set across K-6 priority subjects, and an evaluation protocol with data collection cadence. This directly reduces teacher cognitive load during transition and creates the credibility evidence CSPD will need for stakeholder reporting by 2027-2028.",
+        "why_now": "Patrick Ellis joined as EGM Learning Outcomes in September 2025 — he carries direct muscle memory from CECG's Catalyst build and will immediately recognise the resource gap. The first post-Uplift NAPLAN cycle will be conducted in 2026, creating a hard deadline for establishing a baseline. MACS's VFI is already producing early data (2025) that CSPD will be benchmarked against publicly. The window to establish an evaluation baseline before the first results cycle is narrow.",
+        "who_cares": {
+          "buyer": "Patrick Ellis, EGM Learning Outcomes — direct accountability for Uplift outcomes; Greg Elliott, EGM Quality & Performance — responsible for performance metrics and system improvement",
+          "user": "School principals and classroom teachers across 80 schools; the internal CSPD Canvas team who would co-develop and host resources"
+        },
+        "confidence": "high",
+        "confidence_reasoning": "Pain confirmed by three sources (CSPD Annual Report NAPLAN admission, signals file int-risk-2, engagement score). CECG peer has validated the exact approach with measurable outcomes (75% reading proficiency, 6 hrs/week teacher saving). MACS corroborates at larger scale. Timing signal is hard-edged (2026 NAPLAN cycle, Patrick Ellis in post). The only gap is confirming CSPD does not already have a resource library in development — not confirmed in public sources but absence of announcement makes it unlikely.",
+        "sources": [
+          "CSPD Annual Report 2023 p.22 (NAPLAN numeracy gap)",
+          "CSPD Annual Report 2023 p.38 (engagement score, communication gaps)",
+          "signals.json (int-risk-2: Uplift implementation consistency)",
+          "pain-points.json (tl-1: Uplift rollout consistency risk)",
+          "market-solutions.json (CECG Catalyst: 5,400+ resources, 6hrs/week saving, Deloitte evaluation)",
+          "market-solutions.json (MACS VFI: 46 percentage point NAPLAN improvement)",
+          "lookalikes.json (CECG Catalyst outcomes, Patrick Ellis background)",
+          "web-research.json (Patrick Ellis hire, Uplift launch August 2025)"
+        ],
+        "ai_capabilities": [
+          { "category": "Generation", "capability": "Text Generation", "application": "Authoring structured lesson plans and assessment items aligned to the Australian Curriculum and Uplift explicit instruction framework" },
+          { "category": "Extraction & Structuring", "capability": "Summarization & Condensation", "application": "Distilling CECG's 5,400+ Catalyst resources into adaptation templates calibrated to CSPD's school context and student demographics" },
+          { "category": "Search & Retrieval", "capability": "Retrieval-Augmented Generation (RAG)", "application": "Enabling teachers to query the resource library in natural language and receive Uplift-aligned lesson materials grounded in the canonical resource set" },
+          { "category": "Extraction & Structuring", "capability": "Data Transformation & Structuring", "application": "Mapping existing Canvas assessment data to a pre-Uplift NAPLAN baseline schema for the external evaluation protocol" }
+        ]
+      },
+      {
+        "id": "opp-2",
+        "title": "AI-Assisted Teacher Workload Reduction Programme Within the Domed Policy Framework",
+        "pain_point": "CSPD's 69% employee engagement score (53% response rate, 2023) identifies work-life balance as a key gap, and the NSW teacher shortage (ext-risk-2, score 0.60) is the highest-probability external risk to CSPD's operations. The Inter-Diocesan Teacher Workforce Working Group met five times in 2024 — a clear signal of urgency. The Uplift framework adds professional learning obligations to already-stretched teachers during its rollout phase. CSPD currently blocks all open generative AI ('domed' approach) and has no announced AI-for-teacher-workload programme. At a system of 3,760 teachers facing structured curriculum change, the compounding effect of pedagogical transformation + administrative burden + shortage market is a material retention risk.",
+        "market_evidence": "BCE deployed M365 Copilot to 12,500 educators — the world's largest K-12 generative AI rollout — and a trial at St Francis College Crestmead measured 9.3 hours saved per teacher per week. Eight pilot schools using AI-assisted teaching grew NAPLAN scores from 490 to 555 (2023 to 2024), with Year 3 improving 7.22% against a state average decline of 0.57%. BCE's custom Copilot Studio solution was grounded in Catholic values — directly showing that AI deployment within a values-aligned governance model is feasible, not in contradiction with CSPD's mission. CECG's 5,400+ structured curriculum resources achieved a parallel outcome through non-AI means (6 hrs/week saving), confirming teacher time relief is achievable within a Catholic system.",
+        "opportunity": "Design and pilot a CSPD-specific AI-for-teachers programme that operates entirely within the existing 'domed' governance model — targeting administrative tasks, lesson planning adaptation for Uplift, and formative assessment feedback generation rather than student-facing open AI. Deliverables: approved AI tool selection (M365 Copilot or equivalent Catholic-values-grounded alternative), a teacher pilot cohort design (modelled on BCE's St Francis trial), data collection protocol measuring hours saved and teacher sentiment, and a governance framework extending the 'domed' model to teacher-facing tools. The programme is distinct from student AI access — preserving CSPD's safeguarding posture while unlocking teacher-side productivity.",
+        "why_now": "BCE's Copilot outcomes (published August 2025) are now the benchmark the NSW Catholic sector will use when evaluating AI investment. The 2025 EA (99% approval) locked in 3% annual pay rises — adding ~$19m/year to the salary base — meaning retention is now financially critical, not just operationally. CSPD's teacher workforce planning window before the shortage deepens further (projected to 2030) makes 2026 the correct intervention point. The EGM IT Frances Waterford (elevated to EGM level in 2023) has private-sector ICT background and will understand the ROI framing.",
+        "who_cares": {
+          "buyer": "Frances Waterford, EGM Information Technology (CIO) — technology investment decisions; Daniel Lynch, EGM People & Culture — workforce retention and engagement strategy",
+          "user": "All 3,760 teaching staff; primarily class teachers in the Uplift implementation cohort"
+        },
+        "confidence": "high",
+        "confidence_reasoning": "Pain confirmed by multiple independent sources (engagement score, teacher shortage data, EA cost signal). BCE peer has validated the approach with published quantitative outcomes in an Australian Catholic school context — the closest available analogue. The 'domed' AI policy creates a natural entry point (offer a within-policy solution rather than challenging the policy). The only gap is confirming CSPD's M365 licensing position and whether CSNSW has a diocesan-level Copilot arrangement already in negotiation — not confirmed in public sources.",
+        "sources": [
+          "CSPD Annual Report 2023 p.38 (engagement, work-life balance)",
+          "signals.json (ext-risk-2: teacher shortage, score 0.60)",
+          "signals.json (int-risk-5: staff engagement)",
+          "signals.json (internal: EA 2025 salary cost)",
+          "pain-points.json (tl-2: teacher cognitive load and retention risk)",
+          "pain-points.json (wf-1: structural teacher shortage)",
+          "market-solutions.json (BCE Copilot: 9.3hrs/week, NAPLAN +7.22% Year 3)",
+          "lookalikes.json (BCE M365 Copilot rollout)",
+          "CSNSW Annual Report 2024 p.30 p.73 (teacher workforce)"
+        ],
+        "ai_capabilities": [
+          { "category": "Generation", "capability": "Text Generation", "application": "Generating lesson plan adaptations for the Uplift framework from a teacher's existing materials — reducing planning time from hours to minutes" },
+          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating administrative tasks such as report drafting, parent communication templates, and assessment result summaries within the M365 governance boundary" },
+          { "category": "Search & Retrieval", "capability": "Retrieval-Augmented Generation (RAG)", "application": "Grounding Copilot responses in CSPD-approved curriculum and Uplift resources so teachers receive policy-safe, contextually accurate answers" }
+        ]
+      },
+      {
+        "id": "opp-3",
+        "title": "Principal-Facing Analytics Layer to Turn Canvas Data into System-Level Intelligence",
+        "pain_point": "Uplift is grounded in formative assessment, but CSPD has no confirmed system-level analytics platform translating Canvas assessment data into principal- or system-level insights. The scorecard rates 'Data Intelligence for School Improvement' as 'on-track' (not strong) specifically because 'the depth of analytics infrastructure is not visible from external evidence.' Canvas is deployed system-wide and generates rich assessment data — but without an analytics layer above it, that data stays inside individual classrooms. CSPD's former Director of Data Intelligence role was elevated to EGM level in 2023, signalling strategic intent — but no published technology roadmap or analytics infrastructure investment is documented. Principals cannot currently benchmark their schools against system averages or NAPLAN trends in real time.",
+        "market_evidence": "CEWA's LEADing Lights platform integrates student performance, attendance, wellbeing, HR, and finance data across 164 schools, providing real-time principal Power BI dashboards with NAPLAN and WACE benchmarking — aiming to move from 'big picture analytics' to 'moment in time, individual person recommendations.' CSNSW itself deployed an Azure Databricks + Power BI platform serving all 11 NSW dioceses, saving 6-8 weeks annually in data reconciliation — CSPD is already one of the 11 connected dioceses. This means a CSPD-specific analytics layer does not need to be built from scratch: it can be built on top of the CSNSW Azure infrastructure already in place, adding school-level and student-level pedagogical analytics on top of the census-compliance foundation.",
+        "opportunity": "Engage CSPD to design a school-improvement analytics layer — scoped to the Canvas LMS data already in production — that surfaces formative assessment trends, proficiency progression, and NAPLAN benchmark comparisons to principals and the EGM Learning Outcomes. Phase 1: diagnostic audit of what Canvas data is currently exported, what the CSNSW Azure Databricks platform already provides, and where the intelligence gap sits. Phase 2: principal dashboard design (Power BI or Canvas-native analytics) with system-average benchmarks and school-vs-system comparisons. Phase 3: Uplift implementation tracking — which schools are showing assessment improvement patterns consistent with framework adoption, giving Patrick Ellis an early signal of where to direct support.",
+        "why_now": "The first post-Uplift NAPLAN cycle in 2026 will generate data CSPD needs to interpret at system level. Without analytics infrastructure in place before that cycle, the results will be difficult to act on. The CSNSW Azure Databricks foundation (already serving CSPD) means the build cost is incremental, not greenfield. Frances Waterford's elevation to EGM IT in 2023 and private-sector ICT background make her a natural buyer for a capability that demonstrates measurable return on the technology investment.",
+        "who_cares": {
+          "buyer": "Frances Waterford, EGM Information Technology — technology platform and data infrastructure investment; Patrick Ellis, EGM Learning Outcomes — needs system-level implementation data to direct Uplift support resources",
+          "user": "80 school principals (primary consumers of dashboards); the system analytics team under the EGM IT; Greg Elliott, EGM Quality & Performance"
+        },
+        "confidence": "high",
+        "confidence_reasoning": "Pain confirmed by scorecard ('on-track' not 'strong' on data intelligence), market-solutions analysis (explicitly calls out the analytics gap), and the absence of any announced analytics platform in public sources. CEWA has validated the model at comparable scale (operational, principal dashboards working). CSNSW's Azure Databricks platform confirms the infrastructure foundation exists — making this an incremental build not a greenfield investment. Timing signal is hard (2026 NAPLAN cycle). The main gap is confirming CSPD's actual activation level on the CSNSW platform, which requires a discovery conversation.",
+        "sources": [
+          "scorecard.json (Data Intelligence for School Improvement — on-track not strong)",
+          "pain-points.json (tl-3: no formative assessment analytics layer)",
+          "market-solutions.json (CEWA LEADing Lights: principal dashboards, real-time benchmarking)",
+          "market-solutions.json (CSNSW Azure Databricks: 6-8 weeks saved, 257,000 students)",
+          "lookalikes.json (CEWA LEADing Lights platform)",
+          "profile.json (technology: Canvas system-wide, Frances Waterford EGM IT)",
+          "signals.json (internal: Canvas LMS rollout)"
+        ],
+        "ai_capabilities": [
+          { "category": "Extraction & Structuring", "capability": "Data Transformation & Structuring", "application": "Transforming raw Canvas formative assessment exports into a normalised schema compatible with the CSNSW Azure Databricks platform for school-level aggregation" },
+          { "category": "Prediction & Forecasting", "capability": "Propensity & Behavioral Modeling", "application": "Identifying which schools are at risk of Uplift under-adoption based on assessment submission patterns and proficiency progression rates" },
+          { "category": "Generation", "capability": "Text Generation", "application": "Auto-generating principal narrative summaries from dashboard data — translating statistical trends into plain-language school improvement observations" }
+        ]
+      },
+      {
+        "id": "opp-4",
+        "title": "Operational Cost Efficiency Programme — Back-Office Systems Integration for the Sustainability Pillar",
+        "pain_point": "CSPD recorded a -$20.6m operating deficit in 2023, with salaries at 71.6% of expenditure. The 2025 EA locks in a further ~$19m per annum in salary cost increases — roughly matching the entire deficit — through 2026. Capital outflows ($85.9m in 2023) exceed capital revenues ($36.2m) by $49.7m annually. The 2024-2029 strategy's 'Sustainability' pillar is the stated response but no efficiency targets or system integration plans are documented publicly. CSPD runs at least three distinct platforms (Canvas, Classm8, Grace intranet) and almost certainly has fragmented finance and HR systems across 80+ schools — a pattern that at comparable scale consistently generates material avoidable overhead.",
+        "market_evidence": "MACS announced a SAP S/4HANA Cloud + SAP SuccessFactors ERP transformation via Infosys in July 2025 — explicitly framed as consolidating HR, finance, and operations across ~300 schools onto a single cloud platform, with 'AI-readiness' as an explicit goal. CEWA resolved the same fragmentation post-2020 governance restructure using Freshservice for ITSM and Microsoft cloud for data management, with schools subsequently requesting access to the centralised tooling. CSNSW's Azure Databricks platform already saves 6-8 weeks per diocese annually in compliance reporting — a proof point that system-level integration reduces overhead even at the reporting layer.",
+        "opportunity": "Conduct a back-office systems diagnostic across CSPD's finance, HR, facilities, and IT service management functions — mapping current platform fragmentation, manual process overhead, and integration gaps. Produce a prioritised efficiency roadmap tied to the Sustainability pillar, with identified cost reduction or cost avoidance opportunities quantified. Likely scope areas: HR/payroll integration (particularly relevant given EA complexity and payroll escalation), IT service management consolidation (CEWA Freshservice model), and finance system rationalisation. This is a discovery-to-roadmap engagement, not a system implementation — scoped to identify the efficiency opportunity before a capital investment decision.",
+        "why_now": "The 2025 EA has crystallised the forward salary cost commitment — the financial pressure is now locked in and quantifiable. The governance restructure (company limited by guarantee from January 2023) creates a clean organisational mandate for professional back-office operations analogous to the private sector — different from the pre-2023 Diocesan Schools Council model. Gerard Giesekam (EGM Finance & Infrastructure) is CSPD's representative on the CSNSW Finance Working Group — indicating engagement with sector-wide financial management innovation. MACS's ERP announcement (July 2025) puts the question on the sector agenda.",
+        "who_cares": {
+          "buyer": "Gerard Giesekam, EGM Finance & Infrastructure — P&L accountability and capital programme oversight; Jack de Groot, CEO — Sustainability pillar delivery",
+          "user": "System finance and HR teams; school principals and business managers dealing with administrative overhead"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain confirmed by the operating deficit (hard financial data), the EA salary escalation (locked in), and the multi-platform technology profile (evidenced but not fully mapped). MACS has validated the ERP approach at comparable scale but outcome data is not yet published (announced July 2025, implementation ongoing). CEWA validates the ITSM component with qualitative outcomes. The specific fragmentation severity at CSPD is unknown — finance and HR system state is not visible in public sources. Confidence is medium because the pain is real but the efficiency quantum is unconfirmed without a diagnostic.",
+        "sources": [
+          "CSPD Annual Report 2023 p.44-45 (operating deficit, salary costs)",
+          "signals.json (int-risk-1: structural deficit, score 0.70)",
+          "signals.json (internal: EA 2025 salary cost)",
+          "pain-points.json (fin-1: structural operating deficit)",
+          "market-solutions.json (MACS SAP ERP transformation)",
+          "market-solutions.json (CEWA Freshservice ITSM)",
+          "profile.json (technology: Canvas, Classm8, Grace — platform fragmentation)",
+          "profile.json (leadership: Gerard Giesekam EGM Finance)"
+        ],
+        "ai_capabilities": [
+          { "category": "Extraction & Structuring", "capability": "Entity & Attribute Extraction", "application": "Extracting and reconciling employee, payroll, and cost-centre data from fragmented HR and finance platforms into a unified diagnostic data model" },
+          { "category": "Classification & Detection", "capability": "Anomaly & Fraud Detection", "application": "Flagging duplicate or inconsistent records across disconnected school-level systems during the back-office diagnostic audit" },
+          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating routine finance and HR reporting workflows — such as payroll reconciliation and compliance submissions — currently handled manually across 80 schools" }
+        ]
+      },
+      {
+        "id": "opp-5",
+        "title": "LBOTE Student Support Framework — Uplift Adaptation for EAL/D Learners at Scale",
+        "pain_point": "CSPD has 53.4% LBOTE students — materially above the NSW Catholic sector average of 36% and the highest proportion among the researched peer systems. No peer has published a validated system-level EAL/D support model at comparable demographic concentration. The Uplift framework (explicit instruction, structured literacy) is founded on evidence-based methods that generally support EAL/D learners, but adaptation for non-English-speaking home students is not documented in any available CSPD source. The online assessment cost-recovery transition from July 2025 adds cost burden specifically to schools disproportionately serving LBOTE students who rely on diagnostic assessments. Low-to-mid fee Islamic and evangelical Christian schools in western Sydney are explicitly targeting LBOTE families — CSPD's most distinctive demographic is also its most contested segment.",
+        "market_evidence": "The market-solutions file explicitly identifies this as a gap: 'No peer has published a credible solution to the LBOTE student support challenge at scale. This is CSPD's most distinctive structural characteristic and no market solution exists that has been validated at comparable scale.' This is an unaddressed design problem — which is simultaneously a risk (no validated model to copy) and a differentiation opportunity (CSPD could be the system that develops and publishes the model, strengthening its community positioning against faith-based competitors). BCE's AI-assisted learning pilot and CECG's structured curriculum resources provide building blocks that could be adapted for EAL/D contexts.",
+        "opportunity": "Design an EAL/D-specific adaptation of the Uplift curriculum resources and professional learning framework — identifying where structured literacy and explicit instruction approaches require modification for students with English as an additional language. Scope: diagnostic review of current EAL/D resourcing across CSPD schools; mapping of Uplift materials against EAL/D pedagogy evidence base; co-design with CSPD's Wellbeing Directorate and community engagement leads; production of adapted instructional resources for the highest-prevalence language communities. Position the outputs as a publishable CSPD innovation — creating reputational value with LBOTE families and differentiating from competitors who lack the demographic insight to develop this.",
+        "why_now": "Low-to-mid fee independent schools are growing at 3.3%/year in CSPD's catchment, specifically targeting LBOTE families. The Uplift framework launch (August 2025) creates a natural integration point — the adaptation work must happen before the resource library is finalised to avoid expensive retrofitting. The 2026 Aboriginal and Torres Strait Islander fee waiver (Innovate RAP) signals CSPD's willingness to make material equity commitments. Dianne Van Berlo (EGM Student Support) is the natural executive lead.",
+        "who_cares": {
+          "buyer": "Dianne Van Berlo, EGM Student Support — LBOTE and equity student support; Patrick Ellis, EGM Learning Outcomes — Uplift resource quality",
+          "user": "EAL/D specialist teachers and class teachers across CSPD's highest-LBOTE schools; school principals in Blacktown, Parramatta, and Cumberland LGAs"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain is evidenced by structural demographic data (53.4% LBOTE — hard ACARA figure) and competitor threat (independent schools growing at 3.3%/year targeting this cohort). However, no peer has validated a solution at this scale, meaning there is no direct case study to cite. The opportunity is real and strategically significant, but confidence is medium because the solution requires original design work rather than adaptation of a proven peer model — execution risk is higher and CSPD's current internal EAL/D capability is not documented in public sources.",
+        "sources": [
+          "profile.json (LBOTE 53.4%; sector average 36%)",
+          "CSNSW Annual Report 2024 p.13-16 (LBOTE sector data)",
+          "signals.json (demographic: LBOTE indicator)",
+          "pain-points.json (ss-2: 53.4% LBOTE with no validated system-level model)",
+          "market-solutions.json (gaps: LBOTE peer gap — no validated solution at scale)",
+          "competitors.json (Islamic and evangelical Christian schools targeting LBOTE families)",
+          "signals.json (ext-risk-5: online assessment cost recovery, EAL/D diagnostic burden)"
+        ],
+        "ai_capabilities": [
+          { "category": "Generation", "capability": "Text Generation", "application": "Generating EAL/D-adapted versions of Uplift lesson materials — adjusting vocabulary, scaffolding, and worked examples for specific language community profiles" },
+          { "category": "Classification & Detection", "capability": "Text Classification", "application": "Classifying students' written assessment responses to detect EAL/D-specific language patterns that teachers can use to differentiate instruction" },
+          { "category": "Search & Retrieval", "capability": "Recommendation Systems", "application": "Surfacing contextually appropriate Uplift resources to teachers based on the language background profile of their specific class cohort" }
+        ]
+      },
+      {
+        "id": "opp-6",
+        "title": "Parent Communication and Reporting Innovation — Activating Canvas Data for Richer Family Engagement",
+        "pain_point": "CSPD has Canvas LMS deployed system-wide with parent-facing visibility features and six years of TTFM longitudinal survey data — the infrastructure for richer, more frequent parent communication exists. However, no reporting innovation or parent communication programme is documented for CSPD. The Five-Year Strategic Plan's 'Relevance' pillar explicitly prioritises student and family experience, but no specific programme addresses this at the reporting and communication level. The 'domed' approach to technology means parents receive communications within CSPD-mediated channels — raising the stakes for making those channels substantive.",
+        "market_evidence": "SCS announced a school reporting overhaul in February 2026, with its executive director declaring parents 'short-changed' by current twice-yearly academic reports; a new framework assessing creativity, discernment, resilience, practical wisdom, and problem-solving alongside academic results is under development with Boston College researchers. This directly signals that parent reporting is becoming a sector-wide differentiator and competitive battleground. SCS is 12+ months ahead on this agenda. CSPD has Canvas already deployed — the question is whether it is being used to its communication potential or just as a gradebook and LMS.",
+        "opportunity": "Design a CSPD parent communication programme built on the Canvas foundation: (1) audit current Canvas parent-facing feature activation across all 80 schools, identifying schools where parental visibility is underutilised; (2) develop a communication framework that goes beyond grades to include learning progress indicators aligned with the Uplift framework (explicit instruction mastery, formative assessment progress); (3) pilot enhanced reporting at 5-10 schools before system-wide rollout. This is not a technology procurement — it is a programme design and change management engagement, leveraging infrastructure already paid for.",
+        "why_now": "SCS's February 2026 announcement creates a competitive timing signal — the window to match the sector before SCS's new framework is live is roughly 12-18 months. The Uplift framework launch (August 2025) creates a natural new communication narrative: parents can be told what Uplift means for their child's learning, and progress within the framework can be communicated through Canvas. The 'Relevance' pillar is newly active, creating organisational mandate.",
+        "who_cares": {
+          "buyer": "Elizabeth Scully, EGM Communications & Engagement — community and parent communication; Jack de Groot, CEO — Relevance pillar of Five-Year Strategic Plan",
+          "user": "School principals and class teachers (who produce reports); parents across CSPD's 49,577-student cohort"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain is inferred from competitive gap (SCS announced a programme; CSPD has not) and the coverage check against the Relevance pillar — not from explicit CSPD self-identification of this as a problem. Canvas deployment is confirmed system-wide but current activation level is unknown. SCS's programme is still in development (no outcome data). Confidence is medium because the competitive signal is real and the infrastructure enabler exists, but direct evidence of CSPD experiencing parent communication dissatisfaction is not available in public sources.",
+        "sources": [
+          "market-solutions.json (SCS school reporting overhaul — Boston College, Feb 2026)",
+          "competitors.json (SCS Magis 2033, reporting overhaul)",
+          "profile.json (technology: Canvas with parental visibility feature)",
+          "pain-points.json (ext-1: parent reporting undifferentiated vs peer innovation)",
+          "profile.json (strategic_initiatives: Five-Year Strategic Plan Relevance pillar)",
+          "scorecard.json (Student Wellbeing & Voice TTFM — outcomes not published)"
+        ],
+        "ai_capabilities": [
+          { "category": "Generation", "capability": "Text Generation", "application": "Generating personalised narrative progress summaries for parents from Canvas assessment data — going beyond grades to describe a child's learning trajectory in plain language" },
+          { "category": "Extraction & Structuring", "capability": "Summarization & Condensation", "application": "Condensing a term's worth of Canvas formative assessment records into a parent-ready overview aligned to Uplift framework milestones" },
+          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating report generation and distribution workflows so teachers approve rather than write each report, reducing preparation time per student" }
+        ]
+      },
+      {
+        "id": "opp-7",
+        "title": "System-to-School Communication and Leadership Visibility Programme for Strategic Initiative Adoption",
+        "pain_point": "The 2023 Annual Report explicitly identifies 'need for greater System Leader visibility' and 'better communication' as staff feedback themes (p.38). CSPD is simultaneously implementing the Uplift framework, the Five-Year Strategic Plan, a new governance model, the Wellbeing Directorate, and multiple capital projects — all across 80 schools with a 69% engagement score and 47% non-response rate. The new company limited by guarantee structure, while governance-sound, increases perceived distance between the ELT and individual school communities. Initiative fatigue at the school level is a real risk when multiple system-level programmes arrive simultaneously without clear sequencing or two-way dialogue structures.",
+        "market_evidence": "SCS's school reporting overhaul (February 2026) is in part a communication investment — the framing ('parents short-changed') signals that school-community communication quality is now a competitive variable, not just an internal HR matter. CECG's Catalyst programme explicitly invested in teacher communities of practice and professional learning infrastructure — the market-solutions pattern consistently shows that successful system-wide pedagogical reform requires structured communication feedback loops (principal forums, school improvement networks, structured principal coaching) not just top-down broadcast.",
+        "opportunity": "Design a system-to-school communication architecture for the Uplift implementation period: (1) structured principal community of practice (monthly, chaired by Patrick Ellis and Lisa Crampton) with a documented feedback loop to the ELT; (2) school implementation health check framework — a lightweight self-assessment principals complete quarterly, surfacing barriers before they become rollout failures; (3) Grace intranet content and cadence review to determine whether it supports two-way exchange or is purely broadcast. This is a change management and communication design engagement, not a technology build. Deliverable is a communication protocol and governance structure, not a platform.",
+        "why_now": "Uplift is in its first full implementation year (2026). The window to establish communication cadences before implementation fragmentation sets in is now. Patrick Ellis and Greg Elliott are both newly in post — they have the organisational appetite to shape how the system communicates about learning outcomes. The 99% EA approval (October 2025) indicates staff trust in leadership, creating a favourable climate for structured engagement.",
+        "who_cares": {
+          "buyer": "Patrick Ellis, EGM Learning Outcomes — needs a feedback mechanism to assess Uplift adoption; Jack de Groot, CEO — leader visibility is a personal accountability item from 2023 staff feedback",
+          "user": "80 school principals; system EGMs; school leadership teams managing change adoption"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain confirmed by explicit self-identification in the 2023 Annual Report (unusual candour — this is not inferred). CECG's success with Catalyst is partly attributable to professional learning community infrastructure. However, no peer has published a specific case study on system-to-school communication architecture as a distinct programme — the evidence is pattern-based rather than a single validated solution. Confidence is medium because the pain is confirmed but the solution design is less precedented than resource library or analytics approaches.",
+        "sources": [
+          "CSPD Annual Report 2023 p.38 (system leader visibility, communication gaps)",
+          "signals.json (int-risk-2: Uplift implementation consistency)",
+          "signals.json (int-risk-5: staff engagement)",
+          "pain-points.json (net-1: system-to-school communication gap)",
+          "market-solutions.json (CECG Catalyst: professional learning community infrastructure)",
+          "competitors.json (SCS school reporting — communication as competitive variable)"
+        ],
+        "ai_capabilities": [
+          { "category": "Extraction & Structuring", "capability": "Summarization & Condensation", "application": "Synthesising principal quarterly self-assessments into a system-level implementation health report for ELT review — surfacing patterns across 80 schools" },
+          { "category": "Classification & Detection", "capability": "Text Classification", "application": "Categorising and prioritising staff feedback themes from the Grace intranet and quarterly check-ins to identify emerging implementation blockers" },
+          { "category": "Generation", "capability": "Text Generation", "application": "Drafting system leader communications, principal briefings, and community of practice agendas tailored to current Uplift implementation milestones" }
+        ]
+      },
+      {
+        "id": "opp-8",
+        "title": "Enrolment Demand Conversion Strategy — Retaining Families Turned Away During Capacity Constraints",
+        "pain_point": "More than 500 families are turned away annually from Westmead Catholic schools alone — these are families actively seeking CSPD enrolment who are forced to alternatives. With the new Sacred Heart Primary Westmead campus opening Term 3 2026 and CBGA capital grants funding the Schofields corridor, CSPD is adding capacity — but if turned-away families have permanently enrolled elsewhere, the capacity will not fill to potential. CSPD's long-run enrolment CAGR of 0.71% (2008-2025) underperforms the NSW Catholic sector rate of ~1.25%, partly reflecting this structural demand leakage. Low-to-mid fee independent schools growing at 3.3%/year are actively winning families CSPD cannot accommodate, and once enrolled, families rarely transfer.",
+        "market_evidence": "No peer in this study has published a demand conversion or re-engagement model for turned-away families. This is an identified market gap. The competitor data is instructive: independent schools' advantage is partly 'responsiveness to parent preferences' — suggesting that the manner in which CSPD communicates with waitlisted families (or doesn't) is a differentiator. CSPD's Canvas deployment with parent-facing communication features provides an infrastructure channel, but there is no evidence it is being used for prospective family engagement before enrolment.",
+        "opportunity": "Design a waitlist engagement and demand retention programme: (1) a structured communication sequence for families on capacity waitlists, including regular updates on construction timelines, confirmation of priority placement when capacity opens, and interim engagement with the CSPD community (school events, parish connections); (2) a data capture process to track which waitlisted families enrol elsewhere vs. return when places become available; (3) coordination with the Elizabeth Scully (EGM Communications & Engagement) team to ensure the Westmead campus opening is treated as a re-enrolment marketing event, not just a construction milestone. This is a CRM-light engagement design, not a technology platform build.",
+        "why_now": "Sacred Heart Primary Westmead opens Term 3 2026 — the immediate window for the Westmead corridor families. The Schofields CBGA capital grant projects are also in delivery. If CSPD does not have a waitlist re-engagement programme in place before Term 1 2026 enrolments close, the new campus will open into a market where turned-away families have already settled at alternatives. The 2025 Innovate RAP and free fees for First Nations families from 2026 create additional community engagement touchpoints in the same corridor.",
+        "who_cares": {
+          "buyer": "Elizabeth Scully, EGM Communications & Engagement — parent and community relations; Jack de Groot, CEO — enrolment growth is a strategic and financial priority",
+          "user": "School principals and enrolment officers at capacity-constrained schools; families on current waitlists"
+        },
+        "confidence": "low",
+        "confidence_reasoning": "The excess demand (500+ turned away) is confirmed by public source data. The enrolment leakage risk is logically sound. However, no peer has validated a demand retention model in this context, and CSPD's specific waitlist management processes are not documented in public sources. The opportunity is plausible and timely, but it rests on an inference about what CSPD is not doing rather than confirmed evidence of a gap — lowering confidence to low. Confidence would increase with a single discovery conversation confirming current waitlist management practice.",
+        "sources": [
+          "signals.json (demographic: Westmead unmet demand — 500+ turned away annually)",
+          "scorecard.json (Unmet Demand / Capacity Pressure — watch status)",
+          "pain-points.json (en-1: infrastructure capacity cannot absorb excess demand)",
+          "pain-points.json (en-2: independent school sector growing faster in same catchment)",
+          "competitors.json (low-to-mid fee independent schools: 3.3%/year growth, parent responsiveness)",
+          "profile.json (strategic_initiatives: Westmead campus Term 3 2026)",
+          "CSNSW Annual Report 2024 p.98 (CBGA Schofields grant)"
+        ],
+        "ai_capabilities": [
+          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating the waitlist communication sequence — status updates, construction milestone notifications, and priority confirmation letters — without manual intervention from enrolment officers" },
+          { "category": "Generation", "capability": "Text Generation", "application": "Generating personalised re-engagement messages for waitlisted families timed to the Westmead campus opening, incorporating family-specific waitlist tenure and preferred school" },
+          { "category": "Prediction & Forecasting", "capability": "Propensity & Behavioral Modeling", "application": "Scoring waitlisted families by likelihood of re-engagement based on tenure, communication response patterns, and proximity to new capacity sites" }
+        ]
+      }
+    ]
+  },
+  "acasus": {
+    "name": "Acasus",
+    "opportunities": []
+  },
+  "phinma": {
+    "name": "PHINMA Education",
+    "opportunities": []
+  },
+  "kinetic": {
+    "name": "Kinetic",
+    "opportunities": []
+  },
+  "ipeople": {
+    "name": "iPeople Inc",
+    "opportunities": []
+  },
+  "rising": {
+    "name": "Rising Academies",
+    "opportunities": []
+  },
+  "school-for-life": {
+    "name": "School for Life",
+    "opportunities": []
+  },
+  "wise": {
+    "name": "WISE",
+    "opportunities": []
+  }
+}

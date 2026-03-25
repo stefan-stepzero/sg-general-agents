@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "student-support-sen-sped-accommodation-assistive-tech-underfunding-dup",
+  "pain_point_label": "Inadequate Access to Assistive Technology & Materials",
+  "matches": [
+    {
+      "capability_id": "generation-audio",
+      "capability_label": "Audio & Speech Generation",
+      "match_rationale": "Text-to-speech (TTS) directly replaces costly audiobook licenses and screen-reader software for visually impaired and dyslexic students. A multi-site operator can deploy a single TTS pipeline that converts any curriculum text into accessible audio on demand, eliminating per-title audiobook procurement costs. This is technically mature, low-cost via API, and requires no custom model training.",
+      "opportunity_sketch": "A platform that ingests any curriculum document (PDF, DOCX) and generates natural-sounding audio narrations for dyslexic and visually impaired students, replacing expensive commercial audiobook and screen-reader licenses across all campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "LLMs can auto-generate adapted versions of curriculum materials — simplified language for cognitive disabilities, large-print formatting instructions, and plain-text equivalents for tactile learning guides — replacing the manual labor of specialist staff adapting each document. Multi-site operators pay staff per hour to manually adapt materials; AI dramatically reduces that unit cost. This directly addresses the budget constraint on adapted materials.",
+      "opportunity_sketch": "An AI adaptation engine that takes standard curriculum text and produces multiple accessible variants (simplified language, large-print-ready, symbol-augmented) at near-zero marginal cost, scaling across all campuses without additional specialist headcount.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "OCR and document parsing can convert printed or scanned curriculum materials into machine-readable text, which is the prerequisite step before TTS, large-print reformatting, or Braille translation. Many education operators have legacy printed resources that cannot be adapted until digitized. This removes a key bottleneck for hearing-impaired and visually impaired students who need digital-first formats.",
+      "opportunity_sketch": "A document ingestion pipeline that scans and OCRs all printed curriculum materials into structured digital text, feeding downstream accessible format generators and eliminating the manual re-typing burden on support staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "An end-to-end accessible materials pipeline — ingest curriculum document, detect student disability profile, select adaptation type (audio, simplified text, large print), generate the adapted artifact, and deliver to the student — requires multi-step orchestration with branching logic that goes beyond single-step generation. This automation reduces the specialist staff time spent managing each accommodation request across multiple campuses. It also creates an auditable workflow that satisfies compliance requirements around SEN accommodations.",
+      "opportunity_sketch": "An autonomous accommodation fulfilment agent that accepts a teacher or coordinator's request, pulls the relevant curriculum content, applies the correct accessibility transformation for the student's profile, and delivers the adapted material — replacing a multi-day manual process with a minutes-long automated one.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-procurement-payables-three-way-matching-chaos",
+  "pain_point_label": "Three-Way Invoice Matching Breakdown Across Multiple Sites",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Campus warehouse staff create physical delivery records that never make it into central systems — OCR and document parsing can digitize handwritten or printed goods-received notes, supplier delivery dockets, and physical POs at the point of receipt. This directly addresses the missing digital delivery proof that forces email chains weeks after delivery. For a 15-campus education operator this is feasible via a mobile scan-and-submit workflow requiring no ERP overhaul.",
+      "opportunity_sketch": "Campus staff photograph or scan delivery slips on a mobile app; AI extracts quantities, item codes, and supplier info into a structured record that feeds directly into the central payables queue for three-way matching.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate invoice submissions, quantity discrepancies between PO/delivery/invoice, and invoices submitted without matched POs are all anomaly detection problems — the AI learns normal invoice patterns per supplier and flags deviations such as invoice quantity 25% above PO, same invoice number re-submitted, or an invoice referencing a campus that never raised a PO. This directly counters the intentional short-delivery and resubmission tactics normalized in emerging market supplier relationships. Leadership-visible because it quantifies financial leakage in dollar terms.",
+      "opportunity_sketch": "An anomaly scoring layer sits between invoice receipt and payment approval, surfacing a daily exceptions dashboard showing flagged invoices with deviation type, estimated amount at risk, and recommended hold or escalate action.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.5
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Invoices, POs, and delivery notes each contain key-value fields — supplier ID, PO number, line-item quantities, unit prices, campus codes — that must be extracted and correlated across three separate documents. AI entity extraction applied to digitized versions of all three legs enables automated field-level matching without manual lookup. Document types are structured and repetitive, making high extraction accuracy achievable with relatively small training sets for this operator.",
+      "opportunity_sketch": "Every inbound invoice is parsed for structured fields; extracted values are automatically cross-referenced against the PO and digitized delivery record, producing a match confidence score and a line-item variance report for the AP team.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.75
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The three-way match process is inherently a multi-step workflow: receive invoice, retrieve PO, retrieve delivery confirmation, compare fields, flag exceptions, route for approval or hold. An automation agent orchestrates all these steps across fragmented systems — email inbox, ERP, shared drives, campus submissions — replacing the manual email chain that currently takes weeks. The agent handles branching logic: auto-approve clean matches, escalate discrepancies, and request missing delivery proof from the responsible campus coordinator.",
+      "opportunity_sketch": "An AP automation agent ingests invoices from email or supplier portal, queries the ERP for the linked PO, checks the delivery confirmation repository, runs the match, and either clears the invoice for payment or opens a structured exception ticket routed to the relevant campus — all without human intervention for clean matches.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4.25
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Delivery records, POs, and invoices exist in different formats across campus files, email attachments, and ERP exports — schema mapping and format normalization unifies these into a single canonical record structure for matching. This is the essential data plumbing layer that enables downstream matching and anomaly detection to work reliably across all 15 sites without requiring a full ERP consolidation project.",
+      "opportunity_sketch": "A transformation pipeline normalizes all incoming procurement documents into a standard schema (supplier, PO reference, line items, quantities, site code, date) regardless of source format, feeding a central matching engine used by both the AP team and any anomaly detection layer.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.85
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

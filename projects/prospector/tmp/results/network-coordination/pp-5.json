@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-curriculum-standards-duplicate-work-dup",
+  "pain_point_label": "Duplicate Curriculum Development Across Sites",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Each campus wastes significant staff time drafting lesson plans, assessment rubrics, and curriculum documents from scratch. AI text generation can produce high-quality, standards-aligned curriculum materials — lesson plans, unit outlines, assessment items — from a shared specification, eliminating redundant authoring across 10+ sites. The government requirement framing is consistent enough that templated generation is well-suited.",
+      "opportunity_sketch": "A curriculum generation tool where network staff specify a learning objective and year level, and AI produces a fully drafted lesson plan and assessment aligned to the relevant government standard — deposited directly into a shared central curriculum bank.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "A central curriculum bank is only useful if teachers can find and adapt relevant materials quickly. RAG enables staff at any campus to ask natural-language questions — 'do we have a Year 8 fractions unit aligned to the new curriculum?' — and get synthesized answers grounded in the existing shared repository. This reduces both duplicate creation and the barrier to reusing existing work. It directly addresses the 'no central curriculum bank' mechanism.",
+      "opportunity_sketch": "A curriculum knowledge base where teachers query existing materials in plain language and receive a synthesized answer with citations to the most relevant existing units, lesson plans, or assessments — with a one-click option to generate a gap-filled variant.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "When building a central curriculum bank from 10+ sites' existing materials, someone must review, de-duplicate, and assess quality across a large volume of documents. Summarization AI can rapidly condense each site's existing curriculum documents into structured overviews, enabling a curriculum coordinator to quickly identify overlap, gaps, and quality differences — without reading thousands of pages. This is the prerequisite audit step before consolidation.",
+      "opportunity_sketch": "An ingestion pipeline that summarizes all existing campus curriculum documents into a standardized one-page profile per unit, enabling a central curriculum team to compare coverage and quality across sites in days rather than months.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "With curriculum documents spread across sites in inconsistent formats and naming conventions, there is no shared taxonomy. Text classification can automatically tag and categorize existing curriculum materials by year level, subject, strand, and curriculum standard — the first step to making a shared bank navigable and preventing future duplication. It also enables quality-tier labeling to surface the best materials.",
+      "opportunity_sketch": "An automated curriculum tagger that ingests uploaded lesson plans or unit outlines and classifies them by subject, year level, curriculum strand, and quality indicator — so the central bank is structured and searchable from day one.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Consolidating curriculum from 10+ sites into a shared bank involves a repeatable multi-step workflow: ingest documents from each site's storage, parse and classify them, deduplicate near-identical materials, flag quality issues, and load approved materials into the central repository. A task automation agent can run this end-to-end without manual orchestration, and also automate the submission/review/approval loop when new materials are created centrally.",
+      "opportunity_sketch": "A curriculum consolidation agent that periodically sweeps each campus's shared drive, classifies and deduplicates materials, routes flagged items to a curriculum coordinator for approval, and publishes approved materials to the central bank — all without manual coordination steps.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

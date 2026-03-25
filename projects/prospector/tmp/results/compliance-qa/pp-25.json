@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "compliance-qa-inspection-response-document-assembly-bottleneck-dup",
+  "pain_point_label": "Document Assembly and Verification Bottleneck",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step workflow: identify required documents, locate them across campus systems, request missing items, chase non-responders, collate, verify for completeness, and package for submission. A task automation agent can orchestrate this entire sequence autonomously — triggering requests to campus teams, tracking response status, flagging gaps, and assembling the final evidence bundle. This directly eliminates the compliance officer's manual coordination and chasing role.",
+      "opportunity_sketch": "An inspection-response agent that, upon receiving an inspector's document request, automatically queries each campus system, sends templated collection requests with deadlines, monitors completion, flags missing or outdated documents, and produces a consolidated evidence package — reducing 100+ person-hours to a supervised review step.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Many of the requested documents — facility maintenance logs, older attendance records, signed disciplinary files, teacher credential certificates — may exist as scanned PDFs or image files rather than digital records. OCR and form extraction converts these into machine-readable structured data, enabling automated verification of completeness and currency. Without this digitization layer, downstream automation and consistency checks cannot function.",
+      "opportunity_sketch": "A document ingestion pipeline that applies OCR and field extraction to scanned compliance documents across all campuses, normalizing them into a searchable structured store that the evidence assembly workflow can query reliably.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once documents are digitized, entity extraction can pull key attributes — credential expiry dates, attendance period coverage, teacher names, license numbers, facility inspection dates — and surface them as structured metadata. This lets the compliance officer instantly verify whether submitted documents actually cover the required date ranges and personnel, catching gaps before submission rather than during inspector review.",
+      "opportunity_sketch": "An attribute extraction layer applied to the assembled evidence bundle that produces a verification manifest: for each document category, it lists coverage dates, named parties, and flags any attributes that fall outside the required range or are missing.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Documents from different campuses arrive in different formats, templates, and schemas — one campus exports attendance as a CSV, another as a formatted PDF table, another as a spreadsheet. Transformation AI normalizes these heterogeneous inputs into a consistent schema, making cross-campus collation and completeness verification automated rather than manually reconciled. This directly addresses the inconsistency problem that causes inspectors to probe deeper.",
+      "opportunity_sketch": "A normalization service that accepts attendance records, financial statements, and disciplinary files in any format from each campus and outputs standardized structured records ready for evidence packaging and cross-campus consistency checks.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Inspectors conduct deeper probes when they detect discrepancies — mismatched dates, attendance figures inconsistent with financial records, credential expiry gaps. An anomaly detection layer applied to the assembled evidence package can identify these cross-document inconsistencies before submission, giving the compliance team a chance to reconcile or explain them proactively rather than being caught in the audit.",
+      "opportunity_sketch": "A pre-submission consistency checker that scans the assembled evidence bundle for anomalies — attendance figures that don't match enrollment records, credential dates that contradict payroll records, financial statements with unexplained gaps — producing a discrepancy report for the compliance officer to resolve.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-semantic",
+      "capability_label": "Semantic Search",
+      "match_rationale": "A significant share of the assembly time is spent locating the right document version across disparate campus systems and shared drives. Semantic search over an indexed document corpus allows the compliance team or an agent to query 'current teacher credential for [name] at [campus]' and retrieve the correct document by meaning rather than requiring exact filenames or manual folder navigation. This eliminates the hunting and re-requesting cycle.",
+      "opportunity_sketch": "A compliance document search layer that indexes all campus-held evidence documents and lets the central team (or an automated agent) retrieve the most current, relevant version of any required document by natural language query — cutting initial locate-and-retrieve time from hours to seconds.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Compliance officers must write cover letters, gap-explanation narratives, and evidence submission summaries to accompany the assembled documents. When documents are incomplete or outdated, they also need to draft remediation notes for inspectors. Text generation can produce these structured narratives from the metadata and extracted document attributes, saving hours of writing per inspection cycle.",
+      "opportunity_sketch": "A submission narrative generator that, given a structured evidence manifest and any flagged gaps, drafts the compliance submission cover letter and gap-explanation sections in inspector-expected format, ready for officer review and sign-off.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

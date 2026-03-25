@@ -1,0 +1,3655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%8D%3C/text%3E%3C/svg%3E">
+<title>Prospector — Company Intelligence</title>
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #13161e;
+  --surface2: #1b1f2b;
+  --surface3: #232838;
+  --border: #262b3a;
+  --border-subtle: #1e2230;
+  --text: #e8eaf0;
+  --text-secondary: #b0b4c4;
+  --text-muted: #6b7194;
+  --accent: #7b93ff;
+  --accent-bright: #94a8ff;
+  --accent-dim: #3d4f8a;
+  --accent-glow: rgba(123, 147, 255, 0.08);
+  --green: #34d399;
+  --green-dim: rgba(52, 211, 153, 0.12);
+  --amber: #f59e0b;
+  --amber-dim: rgba(245, 158, 11, 0.12);
+  --red: #f87171;
+  --red-dim: rgba(248, 113, 113, 0.12);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.25);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.app { display: flex; min-height: 100vh; }
+
+.sidebar {
+  width: 260px;
+  background: var(--surface);
+  border-right: 1px solid var(--border-subtle);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 50;
+}
+
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+.main {
+  margin-left: 260px;
+  flex: 1;
+  padding: 40px 48px;
+  max-width: 1080px;
+}
+
+/* Sidebar */
+.sidebar-brand {
+  padding: 24px 20px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar h1 {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0;
+  color: var(--accent-bright);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.sidebar .subtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 0;
+  margin-top: 4px;
+}
+
+.sidebar nav { padding: 12px 0; }
+
+.nav-section {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  padding: 20px 20px 6px;
+}
+
+.nav-section:first-child { padding-top: 4px; }
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+  text-decoration: none;
+  margin: 1px 0;
+}
+
+.nav-item:hover {
+  background: var(--accent-glow);
+  color: var(--text-secondary);
+}
+
+.nav-item.active {
+  background: var(--accent-glow);
+  color: var(--accent-bright);
+  border-left-color: var(--accent);
+  font-weight: 600;
+}
+
+.nav-item .badge {
+  margin-left: auto;
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: var(--surface2);
+  font-weight: 600;
+}
+
+.nav-item.active .badge { background: var(--accent-dim); color: var(--accent-bright); }
+
+/* Content — page-based navigation */
+.view { display: none; }
+.view.active { display: block; animation: viewFadeIn 0.25s ease; }
+@keyframes viewFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 28px 0 12px;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Dimension groups */
+.dim-group {
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.dim-group.pass { border-left: 3px solid var(--green); }
+.dim-group.warn { border-left: 3px solid var(--amber); }
+.dim-group.fail { border-left: 3px solid var(--red); }
+
+.dim-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--surface);
+  cursor: pointer;
+  user-select: none;
+}
+
+.dim-group-header:hover { background: var(--surface2); }
+
+.dim-group-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dim-group-score {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.dim-group-score.pass { color: var(--green); }
+.dim-group-score.warn { color: var(--amber); }
+.dim-group-score.fail { color: var(--red); }
+
+.dim-group-body {
+  display: none;
+  padding: 0;
+}
+
+.dim-group.open .dim-group-body { display: block; }
+.dim-group.open .dim-group-header { border-bottom: 1px solid var(--border); }
+
+/* Dimension grid */
+.dim-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0;
+}
+
+.dim-card {
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 14px;
+}
+
+.dim-card:last-child { border-bottom: none; }
+
+.dim-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.dim-value {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.dim-evidence {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Confidence badges */
+.confidence {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.confidence.high { background: var(--green-dim); color: var(--green); }
+.confidence.medium { background: var(--amber-dim); color: var(--amber); }
+.confidence.low { background: var(--red-dim); color: var(--red); }
+
+/* Summary card */
+.summary-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* Contact card */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+}
+
+.contact-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.contact-name { font-weight: 600; font-size: 14px; }
+.contact-title { font-size: 12px; color: var(--text-muted); }
+
+/* Overview grid */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.overview-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.overview-card:hover {
+  border-color: var(--accent-dim);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.overview-card .company-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.overview-card .company-type {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.overview-card .company-contact {
+  font-size: 12px;
+  color: var(--accent);
+}
+
+/* Data quality */
+.quality-bar {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.quality-segment {
+  height: 4px;
+  flex: 1;
+  border-radius: 2px;
+  background: var(--border);
+}
+
+.quality-segment.filled { background: var(--accent); }
+
+/* Details toggle */
+details { margin-bottom: 8px; }
+details summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 6px 0;
+}
+details summary:hover { color: var(--text); }
+details[open] summary { color: var(--accent); }
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Score bars */
+.score-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.score-label {
+  width: 140px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.score-bar-bg {
+  flex: 1;
+  height: 8px;
+  background: var(--surface2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.score-bar-fill.pass { background: var(--green); }
+.score-bar-fill.warn { background: var(--amber); }
+.score-bar-fill.fail { background: var(--red); }
+
+.score-num {
+  width: 36px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.score-num.pass { color: var(--green); }
+.score-num.warn { color: var(--amber); }
+.score-num.fail { color: var(--red); }
+
+/* Overall score badge */
+.overall-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.overall-score.pass { color: var(--green); }
+.overall-score.warn { color: var(--amber); }
+.overall-score.fail { color: var(--red); }
+
+/* Research questions */
+.question-card {
+  background: rgba(248, 113, 113, 0.06);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.question-dim {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--red);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.question-dim .score-badge {
+  font-size: 10px;
+  background: rgba(248, 113, 113, 0.15);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.question-list {
+  list-style: none;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.question-list li::before {
+  content: '?';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  background: rgba(248, 113, 113, 0.15);
+  color: var(--red);
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* Overview score indicator */
+.overview-card .score-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.overview-card .score-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.score-dot.pass { background: var(--green); }
+.score-dot.warn { background: var(--amber); }
+.score-dot.fail { background: var(--red); }
+
+/* Heatmap */
+.heatmap-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.heatmap-table th {
+  padding: 8px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.heatmap-table th:first-child {
+  text-align: left;
+  width: 180px;
+}
+
+.heatmap-table td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.heatmap-table td:first-child {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  padding-left: 8px;
+}
+
+.heatmap-cell {
+  display: inline-block;
+  width: 42px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.heatmap-cell:hover { transform: scale(1.15); }
+
+.hm-hot { background: rgba(234, 120, 36, 0.45); color: #f59e0b; }
+.hm-warm { background: rgba(234, 160, 60, 0.3); color: #d4a44a; }
+.hm-cool { background: rgba(200, 170, 100, 0.15); color: #9a8a60; }
+.hm-cold { background: rgba(139, 143, 163, 0.08); color: var(--text-muted); }
+
+/* Problem clusters */
+.cluster-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s;
+}
+
+.cluster-card:hover { border-color: var(--accent-dim); }
+
+.cluster-card .cluster-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.cluster-card .cluster-domain {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.cluster-companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cluster-chip {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.cluster-chip.hot { background: var(--amber-dim); color: var(--amber); }
+.cluster-chip.warm { background: rgba(234, 160, 60, 0.1); color: #d4a44a; }
+
+/* Problem list in company view */
+.problem-group {
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.problem-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: var(--surface);
+  cursor: pointer;
+  user-select: none;
+}
+
+.problem-group-header:hover { background: var(--surface2); }
+
+.problem-group-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.problem-group-avg {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.problem-group-body {
+  display: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.problem-group.open .problem-group-body { display: block; }
+
+.problem-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.problem-item:last-child { border-bottom: none; }
+
+.problem-score-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.problem-item .problem-name {
+  font-weight: 500;
+  min-width: 0;
+}
+
+.problem-item .problem-reasoning {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.problem-score-val {
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+  width: 32px;
+  text-align: right;
+}
+
+/* Report sections */
+.report-section {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.section-link {
+  font-size: 13px;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.section-link:hover { text-decoration: underline; }
+
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+/* Mini heatmap on home page */
+.mini-heatmap {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.mini-heatmap th {
+  padding: 6px 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.mini-heatmap th:first-child { text-align: left; }
+
+.mini-heatmap td {
+  padding: 4px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.mini-heatmap td:first-child {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  padding-left: 4px;
+}
+
+.mini-cell {
+  display: inline-block;
+  width: 32px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Top cluster preview */
+.cluster-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.cluster-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(234, 120, 36, 0.1);
+  border: 1px solid rgba(234, 120, 36, 0.2);
+  color: #f59e0b;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cluster-tag:hover {
+  background: rgba(234, 120, 36, 0.2);
+  transform: translateY(-1px);
+}
+
+.cluster-tag .tag-count {
+  font-weight: 700;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+/* Enhanced overview cards */
+.overview-card .problem-peek {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.problem-pip {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgba(234, 120, 36, 0.15);
+  color: #f59e0b;
+}
+
+.problem-pip.warm {
+  background: rgba(234, 160, 60, 0.1);
+  color: #d4a44a;
+}
+
+/* Analysis tables */
+.analysis-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.analysis-table th {
+  padding: 10px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 1;
+}
+
+.analysis-table th { text-align: center; }
+
+.analysis-table td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.analysis-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Left-align text columns in ranked tables */
+.analysis-table.ranked-table th:nth-child(-n+3),
+.analysis-table.ranked-table td:nth-child(2),
+.analysis-table.ranked-table td:nth-child(3) { text-align: left; }
+
+.analysis-table tr:hover { background: var(--surface2); }
+
+.analysis-table .rank-cell {
+  font-weight: 700;
+  color: var(--text-muted);
+  width: 36px;
+  text-align: center;
+}
+
+.analysis-table .avg-cell {
+  font-weight: 700;
+  width: 50px;
+}
+
+.analysis-table .hot-cell {
+  width: 50px;
+  font-weight: 600;
+}
+
+/* Sticky section nav */
+.section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 12, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 10px 0;
+  margin: -8px 0 24px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.section-nav a {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: var(--text-muted);
+  text-decoration: none;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.section-nav a:hover {
+  color: var(--accent-bright);
+  border-color: var(--accent-dim);
+  background: var(--accent-glow);
+}
+
+.analysis-section {
+  margin-bottom: 36px;
+  scroll-margin-top: 52px;
+}
+
+.analysis-section h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.analysis-section .section-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.scroll-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Similarity matrix */
+.sim-cell {
+  display: inline-block;
+  width: 38px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sim-high { background: rgba(108, 138, 255, 0.3); color: var(--accent); }
+.sim-mid { background: rgba(108, 138, 255, 0.15); color: #8b9fdd; }
+.sim-low { background: rgba(139, 143, 163, 0.1); color: var(--text-muted); }
+.sim-self { background: var(--surface2); color: var(--text-muted); }
+
+/* Specificity badges */
+.spec-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.spec-high { background: rgba(234, 120, 36, 0.2); color: #ea7824; }
+.spec-mid { background: rgba(212, 164, 74, 0.2); color: #d4a44a; }
+.spec-low { background: rgba(139, 143, 163, 0.15); color: var(--text-muted); }
+
+/* ── Report narrative styles ── */
+.report-hero {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.report-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.report-hero h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #f0f1f5 0%, var(--accent-bright) 60%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.report-hero .subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+.report-hero .meta {
+  margin-top: 20px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.narrative-section {
+  margin-bottom: 64px;
+  scroll-margin-top: 52px;
+}
+
+.narrative-section h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.015em;
+}
+
+.narrative-section .section-num {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 6px;
+  padding: 2px 8px;
+  background: var(--accent-glow);
+  border-radius: var(--radius-sm);
+}
+
+.narrative-body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 720px;
+}
+
+.narrative-body p {
+  margin-bottom: 18px;
+}
+
+.narrative-body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.narrative-body .callout {
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+  background: var(--accent-glow);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 24px 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.narrative-body .insight {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  margin: 20px 0;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s;
+}
+
+.narrative-body .insight:hover {
+  border-color: var(--accent-dim);
+}
+
+.narrative-body .insight-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 36px;
+  opacity: 0.6;
+}
+
+.narrative-body .insight-text {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.narrative-body .insight-text .headline {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 14px;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.product-card .product-header {
+  padding: 28px 28px 0;
+}
+
+.product-card .product-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 28px 28px 4px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text) 0%, var(--accent-bright) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.product-card .product-tagline {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 28px 0;
+  line-height: 1.5;
+}
+
+.product-card .product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  font-size: 13px;
+  padding: 0 28px 28px;
+}
+
+.product-card .product-grid > div {
+  padding: 16px 16px 16px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.product-card .product-grid > div:nth-child(even) {
+  padding-left: 16px;
+  border-left: 1px solid var(--border-subtle);
+}
+
+.product-card .product-grid > div:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.product-card .product-grid dt {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.product-card .product-grid dd {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.appendix-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--accent-bright);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--accent-glow);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.appendix-link:hover {
+  background: rgba(123, 147, 255, 0.15);
+  border-color: var(--accent-dim);
+}
+
+/* Mobile hamburger */
+.mobile-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-header h1 { font-size: 16px; color: var(--accent); }
+
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.sidebar.open { transform: translateX(0); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .mobile-header { display: flex; }
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 200;
+    width: 260px;
+  }
+  .sidebar.open { transform: translateX(0); }
+  .main { margin-left: 0; padding: 16px; padding-top: 64px; max-width: 100%; }
+  .report-hero h1 { font-size: 22px; }
+  .report-hero .subtitle { font-size: 14px; }
+  .chart-row { grid-template-columns: 1fr; }
+  .kpi-row { flex-direction: column; }
+  .kpi-card { min-width: auto; }
+  .product-card .product-grid { grid-template-columns: 1fr; }
+  .narrative-body .insight { flex-direction: column; }
+  .narrative-body [style*="grid-template-columns: 1fr 1fr 1fr"],
+  .narrative-body [style*="grid-template-columns:1fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+  .dim-grid { grid-template-columns: 1fr; }
+  .stats-row { flex-direction: column; }
+  h2 { font-size: 20px; }
+  .mini-heatmap { font-size: 9px; }
+  .scroll-table-wrapper { margin: 0 -16px; border-radius: 0; }
+  .section-nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .analysis-table { font-size: 10px; }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .sidebar { width: 220px; }
+  .main { margin-left: 220px; padding: 24px 20px; }
+  .chart-row { grid-template-columns: 1fr; }
+}
+
+/* Print */
+@media print {
+  .sidebar, .mobile-header { display: none; }
+  .main { margin-left: 0; }
+  .card { break-inside: avoid; }
+  .mini-heatmap { font-size: 9px; }
+}
+
+
+/* Chart containers */
+.chart-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.chart-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.chart-box .chart-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.chart-box .chart-subtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.chart-box canvas {
+  max-height: 260px;
+}
+
+/* KPI callout cards */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  margin: 16px 28px;
+}
+
+.kpi-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dim));
+}
+
+.kpi-card .kpi-value {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.kpi-card .kpi-label {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.kpi-card .kpi-shift {
+  font-size: 10px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.kpi-card.kpi-hot .kpi-value { color: var(--amber); }
+.kpi-card.kpi-warm .kpi-value { color: #d4a44a; }
+
+/* Assumptions box */
+.assumptions-box {
+  background: var(--amber-dim);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  border-left: 3px solid var(--amber);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 18px;
+  margin: 0 28px 8px;
+}
+
+.assumptions-title {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+
+.assumptions-list {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.assumptions-list li {
+  margin-bottom: 5px;
+}
+
+.assumptions-list li:last-child {
+  margin-bottom: 0;
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="mobile-header">
+  <h1>Prospector</h1>
+  <button class="hamburger" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+</div>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <h1>Prospector</h1>
+      <div class="subtitle">Company Intelligence Dashboard</div>
+    </div>
+    <nav>
+      <div class="nav-section">Report</div>
+      <a class="nav-item" href="#view-report">Report</a>
+      <div class="nav-section">Appendix</div>
+      <a class="nav-item" href="#view-overview">Dashboard</a>
+      <a class="nav-item" href="#view-heatmap">Problem Heatmap</a>
+      <a class="nav-item" href="#view-analysis">Analysis</a>
+      <a class="nav-item" href="#view-capabilities">AI Capabilities</a>
+      <a class="nav-item" href="#view-opportunities">Opportunities</a>
+      <a class="nav-item" href="#view-product-ideas">Product Ideas</a>
+      <div class="nav-section">Companies</div>
+      <div id="company-nav"></div>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <!-- Overview / Report Home -->
+    <!-- Report / Presentation -->
+    <div class="view active" id="view-report">
+      <div class="report-hero">
+        <h1>5 AI Products for the Education Sector</h1>
+        <div class="subtitle">Purpose-built solutions for the problems education leaders are already trying to solve — backed by profiling 8 organisations across 141 problems and 34 AI capabilities.</div>
+        <div class="meta">Prospector Intelligence Report — March 2026 — StepZero</div>
+      </div>
+      <div id="report-narrative">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading report...
+        </div>
+      </div>
+    </div>
+
+    <div class="view" id="view-overview">
+      <h2>Prospector Intelligence Report</h2>
+      <p class="page-subtitle">Education sector — 8 organizations profiled and analyzed for AI opportunity mapping</p>
+
+      <!-- Key stats -->
+      <div id="report-stats" class="stats-row"></div>
+
+      <!-- Problem Heatmap Preview -->
+      <div class="report-section">
+        <div class="section-header">
+          <h3>Problem Heatmap</h3>
+          <span class="section-link" onclick="showView('heatmap')">Full analysis</span>
+        </div>
+        <div class="card" style="overflow-x: auto;">
+          <div id="mini-heatmap-container"></div>
+        </div>
+      </div>
+
+      <!-- Top Problem Clusters -->
+      <div class="report-section">
+        <div class="section-header">
+          <h3>Top Problem Clusters</h3>
+          <span class="section-link" onclick="showView('heatmap')">See all clusters</span>
+        </div>
+        <p class="page-subtitle" style="margin-bottom:12px">Problems shared across 3+ companies — strongest product opportunity signals</p>
+        <div id="home-clusters"></div>
+      </div>
+
+      <!-- Company Cards -->
+      <div class="report-section">
+        <div class="section-header">
+          <h3>Company Profiles</h3>
+        </div>
+        <div id="overview-grid" class="overview-grid">
+          <div class="loading">
+            <div class="loading-spinner"></div>
+            Loading profiles...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Problem Heatmap -->
+    <div class="view" id="view-heatmap">
+      <h2>Problem Heatmap</h2>
+      <p class="page-subtitle">141 leadership problems scored against company profiles — higher = more relevant</p>
+      <div id="heatmap-content">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading heatmap data...
+        </div>
+      </div>
+    </div>
+
+    <!-- Analysis -->
+    <div class="view" id="view-analysis">
+      <h2>Cross-Company Analysis</h2>
+      <p class="page-subtitle">Ranked sub-categories, problem clusters, and company similarity — all scored data, no interpretation</p>
+      <div id="analysis-content">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading analysis...
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Capabilities -->
+    <div class="view" id="view-capabilities">
+      <h2>AI Capability × Problem Fit</h2>
+      <p class="page-subtitle">30 AI capabilities scored against 8 problem domains — where can specialized AI solutions address real leadership problems?</p>
+      <div id="capabilities-content">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading capability data...
+        </div>
+      </div>
+    </div>
+
+    <!-- Opportunities (Cross-Analysis) -->
+    <div class="view" id="view-opportunities">
+      <h2>Opportunity Map</h2>
+      <p class="page-subtitle">Problem heat × AI capability fit × leader salience — where hot problems meet differentiated AI solutions</p>
+      <div id="opportunities-content">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading cross-analysis...
+        </div>
+      </div>
+    </div>
+
+    <div class="view" id="view-product-ideas">
+      <h2>Product Ideas — Scored &amp; Ranked</h2>
+      <p class="page-subtitle">54 unique AI product concepts from 20 opportunity cells — scored on 9 criteria across Desirability, Feasibility, Viability, and Builder Fit</p>
+      <div id="product-ideas-content">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading product ideas...
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+const PROFILES_DIR = '../outputs/profiles/';
+const HEATMAP_DIR = '../outputs/problem-heatmap/';
+const COMPANIES = [
+  'acasus', 'ipeople', 'phinma', 'school-for-life',
+  'cspd', 'wise', 'kinetic', 'rising'
+];
+
+const profiles = {};
+const heatmaps = {};
+const capabilityFit = {};
+
+const DOMAIN_ORDER = [
+  'growth-market', 'operations-delivery', 'product-service', 'talent-people',
+  'risk-compliance', 'financial', 'strategy-direction', 'governance-leadership'
+];
+
+// Leader salience: how front-of-mind is this domain for a typical leader?
+// Tier 1 (1.0) = always thinking about it
+// Tier 2 (0.7) = board/stakeholder-driven, periodic
+// Tier 3 (0.5) = background until something breaks
+const SALIENCE = {
+  'growth-market': 1.0,
+  'financial': 1.0,
+  'talent-people': 1.0,
+  'strategy-direction': 0.7,
+  'governance-leadership': 0.7,
+  'operations-delivery': 0.5,
+  'risk-compliance': 0.5,
+  'product-service': 0.5,
+};
+
+function hmClass(score) {
+  if (score >= 0.6) return 'hm-hot';
+  if (score >= 0.4) return 'hm-warm';
+  if (score >= 0.25) return 'hm-cool';
+  return 'hm-cold';
+}
+
+function problemDotClass(score) {
+  if (score >= 0.7) return 'background: #ea7824';
+  if (score >= 0.4) return 'background: #d4a44a';
+  if (score >= 0.2) return 'background: #9a8a60';
+  return 'background: var(--text-muted)';
+}
+
+// Helper: extract all problems from a heatmap (handles both v1 flat and v2 sub_categories)
+function getAllProblems(hm) {
+  const all = [];
+  for (const [domId, dom] of Object.entries(hm.domains)) {
+    if (dom.sub_categories) {
+      for (const [subId, sub] of Object.entries(dom.sub_categories)) {
+        for (const [probId, prob] of Object.entries(sub.problems)) {
+          all.push({ probId, ...prob, subId, subLabel: sub.label, domId, domLabel: dom.domain_label });
+        }
+      }
+    } else if (dom.problems) {
+      for (const [probId, prob] of Object.entries(dom.problems)) {
+        all.push({ probId, ...prob, subId: prob.parent, subLabel: prob.parent, domId, domLabel: dom.domain_label });
+      }
+    }
+  }
+  return all;
+}
+
+// Helper: get sub-category order for a domain
+function getSubCats(hm, domId) {
+  const dom = hm.domains[domId];
+  if (!dom) return [];
+  if (dom.sub_categories) return Object.entries(dom.sub_categories);
+  // v1 fallback: group problems by parent
+  const groups = {};
+  if (dom.problems) {
+    for (const [pid, p] of Object.entries(dom.problems)) {
+      const key = p.parent || 'other';
+      if (!groups[key]) groups[key] = { label: p.parent || domId, problems: {} };
+      groups[key].problems[pid] = p;
+    }
+    // compute sub_avg
+    for (const g of Object.values(groups)) {
+      const vals = Object.values(g.problems).map(p => p.score);
+      g.sub_avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+    }
+  }
+  return Object.entries(groups);
+}
+
+function renderHeatmapView() {
+  const container = document.getElementById('heatmap-content');
+  const loaded = Object.keys(heatmaps);
+  if (loaded.length === 0) return;
+
+  const companyNames = {};
+  loaded.forEach(id => { companyNames[id] = heatmaps[id].company_name || id; });
+
+  // Build level-2 heatmap table (32 sub-categories)
+  let tableHtml = '<table class="heatmap-table"><thead><tr><th>Sub-Category</th>';
+  loaded.forEach(id => { tableHtml += `<th>${companyNames[id]}</th>`; });
+  tableHtml += '</tr></thead><tbody>';
+
+  for (const domId of DOMAIN_ORDER) {
+    const firstHm = heatmaps[loaded[0]];
+    const domLabel = firstHm.domains[domId] ? firstHm.domains[domId].domain_label : domId;
+
+    // Domain header row
+    tableHtml += `<tr style="background:var(--surface)"><td colspan="${loaded.length + 1}" style="font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.04em;color:var(--accent);padding:10px 8px 6px">${domLabel}</td></tr>`;
+
+    // Sub-category rows
+    const subCats = getSubCats(firstHm, domId);
+    for (const [subId, sub] of subCats) {
+      tableHtml += `<tr><td style="padding-left:16px">${sub.label}</td>`;
+      loaded.forEach(id => {
+        const subs = getSubCats(heatmaps[id], domId);
+        const match = subs.find(([sid]) => sid === subId);
+        const avg = match ? match[1].sub_avg : 0;
+        const pct = Math.round(avg * 100);
+        tableHtml += `<td><span class="heatmap-cell ${hmClass(avg)}">${pct}</span></td>`;
+      });
+      tableHtml += '</tr>';
+    }
+  }
+  tableHtml += '</tbody></table>';
+
+  // Rubric legend
+  let rubricHtml = `
+    <div class="card" style="margin-bottom:24px">
+      <div class="card-title" style="margin-bottom:8px">Scoring Rubric</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;font-size:12px">
+        <div><span class="heatmap-cell hm-cold" style="width:auto;padding:0 8px">0</span> N/A — structurally impossible</div>
+        <div><span class="heatmap-cell hm-cold" style="width:auto;padding:0 8px">10-20</span> Low — no evidence, unlikely</div>
+        <div><span class="heatmap-cell hm-cool" style="width:auto;padding:0 8px">30-40</span> Moderate-Low — weak indirect signals</div>
+        <div><span class="heatmap-cell hm-warm" style="width:auto;padding:0 8px">50-60</span> Moderate — contextual factors suggest likely</div>
+        <div><span class="heatmap-cell hm-hot" style="width:auto;padding:0 8px">70-80</span> High — direct evidence or 3+ indicators</div>
+        <div><span class="heatmap-cell hm-hot" style="width:auto;padding:0 8px">90-100</span> Critical — explicitly named as active problem</div>
+      </div>
+    </div>`;
+
+  // Problem clusters
+  const problemScores = {};
+  loaded.forEach(id => {
+    const probs = getAllProblems(heatmaps[id]);
+    const compName = companyNames[id];
+    probs.forEach(p => {
+      if (!problemScores[p.probId]) {
+        problemScores[p.probId] = { label: p.label, subLabel: p.subLabel, domLabel: p.domLabel, companies: [] };
+      }
+      problemScores[p.probId].companies.push({ id, name: compName, score: p.score });
+    });
+  });
+
+  const clusters = Object.entries(problemScores)
+    .map(([id, data]) => {
+      const relevant = data.companies.filter(c => c.score >= 0.5);
+      const avg = data.companies.reduce((s, c) => s + c.score, 0) / data.companies.length;
+      return { id, ...data, relevantCount: relevant.length, avg };
+    })
+    .filter(c => c.relevantCount >= 3)
+    .sort((a, b) => b.relevantCount - a.relevantCount || b.avg - a.avg)
+    .slice(0, 15);
+
+  let clustersHtml = '<h3>Top Problem Clusters</h3><p class="page-subtitle" style="margin-bottom:16px">Problems relevant (score >= 0.5) to 3+ companies — potential product opportunities</p>';
+  for (const cluster of clusters) {
+    const chips = cluster.companies
+      .filter(c => c.score >= 0.4)
+      .sort((a, b) => b.score - a.score)
+      .map(c => {
+        const cls = c.score >= 0.6 ? 'hot' : 'warm';
+        return `<span class="cluster-chip ${cls}">${c.name} ${Math.round(c.score * 100)}</span>`;
+      }).join('');
+    clustersHtml += `
+      <div class="cluster-card">
+        <div class="cluster-domain">${cluster.domLabel} > ${cluster.subLabel}</div>
+        <div class="cluster-title">${cluster.label}</div>
+        <div class="cluster-companies">${chips}</div>
+      </div>`;
+  }
+
+  const heatmapNav = `
+    <nav class="section-nav">
+      <a href="#hm-rubric">Rubric</a>
+      <a href="#hm-table">Heatmap Table</a>
+      <a href="#hm-clusters">Problem Clusters</a>
+    </nav>`;
+
+  container.innerHTML = heatmapNav
+    + `<div id="hm-rubric" class="analysis-section">${rubricHtml}</div>`
+    + `<div id="hm-table" class="analysis-section">${tableHtml}</div>`
+    + `<div id="hm-clusters" class="analysis-section">${clustersHtml}</div>`;
+}
+
+function renderCompanyProblems(id) {
+  const hm = heatmaps[id];
+  if (!hm) return '';
+
+  let html = '<h3>Problem Relevance</h3>';
+  for (const domId of DOMAIN_ORDER) {
+    const dom = hm.domains[domId];
+    if (!dom) continue;
+
+    const avg = dom.domain_avg;
+    const subCats = getSubCats(hm, domId);
+
+    // Count high problems across all sub-categories
+    let highCount = 0;
+    subCats.forEach(([, sub]) => {
+      Object.values(sub.problems).forEach(p => { if (p.score >= 0.6) highCount++; });
+    });
+
+    // Build items grouped by sub-category
+    let itemsHtml = '';
+    for (const [subId, sub] of subCats) {
+      const subAvg = sub.sub_avg || 0;
+      const problems = Object.entries(sub.problems).sort((a, b) => b[1].score - a[1].score);
+
+      itemsHtml += `<div style="padding:8px 14px 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--accent);border-bottom:1px solid var(--border);background:var(--surface)">${sub.label} <span style="float:right;color:${subAvg >= 0.5 ? 'var(--amber)' : 'var(--text-muted)'}">${Math.round(subAvg * 100)}%</span></div>`;
+
+      itemsHtml += problems.map(([pid, p]) => `
+        <div class="problem-item">
+          <div class="problem-score-dot" style="${problemDotClass(p.score)}"></div>
+          <div style="flex:1;min-width:0">
+            <div class="problem-name">${p.label}</div>
+            <div class="problem-reasoning">${p.reasoning}${p.rubric_level ? ' <span style="opacity:0.5">[' + p.rubric_level + ']</span>' : ''}</div>
+          </div>
+          <div class="problem-score-val" style="color:${p.score >= 0.7 ? '#ea7824' : p.score >= 0.4 ? '#d4a44a' : 'var(--text-muted)'}">${Math.round(p.score * 100)}</div>
+        </div>
+      `).join('');
+    }
+
+    html += `
+      <div class="problem-group" onclick="this.classList.toggle('open')">
+        <div class="problem-group-header">
+          <span class="problem-group-title">${dom.domain_label}${highCount ? ' (' + highCount + ' hot)' : ''}</span>
+          <span class="problem-group-avg" style="color:${avg >= 0.5 ? '#d4a44a' : 'var(--text-muted)'}">${Math.round(avg * 100)}%</span>
+        </div>
+        <div class="problem-group-body" onclick="event.stopPropagation()">
+          ${itemsHtml}
+        </div>
+      </div>`;
+  }
+  return html;
+}
+
+function renderAnalysisView() {
+  const container = document.getElementById('analysis-content');
+  const loaded = Object.keys(heatmaps);
+  if (loaded.length === 0) return;
+
+  const companyNames = {};
+  loaded.forEach(id => { companyNames[id] = heatmaps[id].company_name || id; });
+  const shortNames = {};
+  loaded.forEach(id => { shortNames[id] = (companyNames[id] || id).split(' ')[0]; });
+
+  // ── Section 1: Sub-Category Ranking ──
+  const subRows = [];
+  for (const domId of DOMAIN_ORDER) {
+    const firstDom = heatmaps[loaded[0]].domains[domId];
+    if (!firstDom || !firstDom.sub_categories) continue;
+    for (const [subId, sub] of Object.entries(firstDom.sub_categories)) {
+      const row = { domLabel: firstDom.domain_label, subLabel: sub.label, scores: {} };
+      let sum = 0;
+      loaded.forEach(id => {
+        const s = heatmaps[id].domains[domId]?.sub_categories?.[subId];
+        const avg = s ? s.sub_avg : 0;
+        row.scores[id] = avg;
+        sum += avg;
+      });
+      row.avg = sum / loaded.length;
+      row.hotCount = loaded.filter(id => row.scores[id] >= 0.5).length;
+      subRows.push(row);
+    }
+  }
+  subRows.sort((a, b) => b.avg - a.avg);
+
+  let subTableHtml = `<div class="scroll-table-wrapper"><table class="analysis-table ranked-table">
+    <thead><tr>
+      <th style="width:30px">#</th><th>Domain</th><th>Sub-Category</th><th>Avg</th><th>Hot</th>`;
+  loaded.forEach(id => { subTableHtml += `<th>${shortNames[id]}</th>`; });
+  subTableHtml += '</tr></thead><tbody>';
+  subRows.forEach((r, i) => {
+    subTableHtml += `<tr>
+      <td class="rank-cell">${i + 1}</td>
+      <td style="font-size:11px;color:var(--text-muted)">${r.domLabel}</td>
+      <td>${r.subLabel}</td>
+      <td class="avg-cell" style="color:${r.avg >= 0.5 ? '#ea7824' : r.avg >= 0.4 ? '#d4a44a' : 'var(--text-muted)'}">${Math.round(r.avg * 100)}</td>
+      <td class="hot-cell" style="color:${r.hotCount >= 5 ? '#ea7824' : r.hotCount >= 3 ? '#d4a44a' : 'var(--text-muted)'}">${r.hotCount}/8</td>`;
+    loaded.forEach(id => {
+      const s = r.scores[id];
+      const pct = Math.round(s * 100);
+      subTableHtml += `<td><span class="mini-cell ${hmClass(s)}">${pct}</span></td>`;
+    });
+    subTableHtml += '</tr>';
+  });
+  subTableHtml += '</tbody></table></div>';
+
+  // ── Section 2: Problem-Level Clusters ──
+  const probMap = {};
+  loaded.forEach(id => {
+    const probs = getAllProblems(heatmaps[id]);
+    probs.forEach(p => {
+      if (!probMap[p.probId]) {
+        probMap[p.probId] = { label: p.label, subLabel: p.subLabel, domLabel: p.domLabel, scores: {} };
+      }
+      probMap[p.probId].scores[id] = p.score;
+    });
+  });
+
+  const probRows = Object.entries(probMap).map(([pid, data]) => {
+    const vals = loaded.map(id => data.scores[id] || 0);
+    const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+    const hotCount = vals.filter(v => v >= 0.5).length;
+    return { pid, ...data, avg, hotCount };
+  });
+  probRows.sort((a, b) => b.hotCount - a.hotCount || b.avg - a.avg);
+  const topProbs = probRows.filter(r => r.hotCount >= 3).slice(0, 40);
+
+  let probTableHtml = `<div class="scroll-table-wrapper"><table class="analysis-table ranked-table">
+    <thead><tr>
+      <th style="width:30px">#</th><th>Problem</th><th>Sub-Category</th><th>Avg</th><th>Hot</th>`;
+  loaded.forEach(id => { probTableHtml += `<th>${shortNames[id]}</th>`; });
+  probTableHtml += '</tr></thead><tbody>';
+  topProbs.forEach((r, i) => {
+    probTableHtml += `<tr>
+      <td class="rank-cell">${i + 1}</td>
+      <td>${r.label}</td>
+      <td style="font-size:11px;color:var(--text-muted)">${r.domLabel} > ${r.subLabel}</td>
+      <td class="avg-cell" style="color:${r.avg >= 0.5 ? '#ea7824' : r.avg >= 0.4 ? '#d4a44a' : 'var(--text-muted)'}">${Math.round(r.avg * 100)}</td>
+      <td class="hot-cell" style="color:${r.hotCount >= 5 ? '#ea7824' : r.hotCount >= 3 ? '#d4a44a' : 'var(--text-muted)'}">${r.hotCount}/8</td>`;
+    loaded.forEach(id => {
+      const s = r.scores[id] || 0;
+      const pct = Math.round(s * 100);
+      probTableHtml += `<td><span class="mini-cell ${hmClass(s)}">${pct}</span></td>`;
+    });
+    probTableHtml += '</tr>';
+  });
+  probTableHtml += '</tbody></table></div>';
+
+  // ── Section 3: Company Similarity Matrix ──
+  // Cosine similarity on problem score vectors
+  function cosineSim(a, b) {
+    let dot = 0, magA = 0, magB = 0;
+    for (let i = 0; i < a.length; i++) {
+      dot += a[i] * b[i];
+      magA += a[i] * a[i];
+      magB += b[i] * b[i];
+    }
+    magA = Math.sqrt(magA);
+    magB = Math.sqrt(magB);
+    return (magA && magB) ? dot / (magA * magB) : 0;
+  }
+
+  const allProbIds = Object.keys(probMap);
+  const vectors = {};
+  loaded.forEach(id => {
+    vectors[id] = allProbIds.map(pid => probMap[pid].scores[id] || 0);
+  });
+
+  let simHtml = '<table class="analysis-table"><thead><tr><th></th>';
+  loaded.forEach(id => { simHtml += `<th>${shortNames[id]}</th>`; });
+  simHtml += '</tr></thead><tbody>';
+  loaded.forEach(idA => {
+    simHtml += `<tr><td style="font-weight:600">${shortNames[idA]}</td>`;
+    loaded.forEach(idB => {
+      if (idA === idB) {
+        simHtml += '<td><span class="sim-cell sim-self">--</span></td>';
+      } else {
+        const sim = cosineSim(vectors[idA], vectors[idB]);
+        const pct = Math.round(sim * 100);
+        const cls = sim >= 0.85 ? 'sim-high' : sim >= 0.75 ? 'sim-mid' : 'sim-low';
+        simHtml += `<td><span class="sim-cell ${cls}">${pct}</span></td>`;
+      }
+    });
+    simHtml += '</tr>';
+  });
+  simHtml += '</tbody></table>';
+
+  // ── Section 4: Domain averages per company ──
+  let domTableHtml = '<table class="analysis-table"><thead><tr><th>Domain</th>';
+  loaded.forEach(id => { domTableHtml += `<th>${shortNames[id]}</th>`; });
+  domTableHtml += '<th>Avg</th><th>Hot</th></tr></thead><tbody>';
+  for (const domId of DOMAIN_ORDER) {
+    const firstDom = heatmaps[loaded[0]].domains[domId];
+    if (!firstDom) continue;
+    let sum = 0;
+    let hot = 0;
+    domTableHtml += `<tr><td>${firstDom.domain_label}</td>`;
+    loaded.forEach(id => {
+      const avg = heatmaps[id].domains[domId]?.domain_avg || 0;
+      sum += avg;
+      if (avg >= 0.5) hot++;
+      const pct = Math.round(avg * 100);
+      domTableHtml += `<td><span class="mini-cell ${hmClass(avg)}">${pct}</span></td>`;
+    });
+    const totalAvg = sum / loaded.length;
+    domTableHtml += `<td class="avg-cell" style="color:${totalAvg >= 0.5 ? '#ea7824' : '#d4a44a'}">${Math.round(totalAvg * 100)}</td>`;
+    domTableHtml += `<td class="hot-cell">${hot}/8</td></tr>`;
+  }
+  domTableHtml += '</tbody></table>';
+
+  // ── Section 5: Salience-Weighted Sub-Category Ranking ──
+  const salTiers = { 1.0: 'Front-of-mind', 0.7: 'Board-driven', 0.5: 'Background' };
+  const weightedSubRows = subRows.map(r => {
+    // Find the domain ID for this sub-category row
+    let domSalience = 0.5;
+    for (const domId of DOMAIN_ORDER) {
+      const firstDom = heatmaps[loaded[0]].domains[domId];
+      if (firstDom && firstDom.domain_label === r.domLabel) {
+        domSalience = SALIENCE[domId] || 0.5;
+        break;
+      }
+    }
+    const weighted = r.avg * domSalience;
+    return { ...r, salience: domSalience, weighted };
+  });
+  weightedSubRows.sort((a, b) => b.weighted - a.weighted);
+
+  let salTableHtml = `<div class="scroll-table-wrapper"><table class="analysis-table ranked-table">
+    <thead><tr>
+      <th style="width:30px">#</th><th>Domain</th><th>Sub-Category</th>
+      <th>Raw</th><th>Sal.</th><th>Wtd</th><th style="width:30px">\u0394</th>`;
+  loaded.forEach(id => { salTableHtml += `<th>${shortNames[id]}</th>`; });
+  salTableHtml += '</tr></thead><tbody>';
+
+  // Pre-compute raw ranks for delta column
+  const rawRankMap = {};
+  subRows.forEach((r, i) => { rawRankMap[r.subLabel] = i + 1; });
+
+  weightedSubRows.forEach((r, i) => {
+    const rawRank = rawRankMap[r.subLabel];
+    const delta = rawRank - (i + 1);
+    const deltaStr = delta > 0 ? `<span style="color:#2a9d4e">\u25B2${delta}</span>`
+                   : delta < 0 ? `<span style="color:#d45050">\u25BC${Math.abs(delta)}</span>`
+                   : '<span style="color:var(--text-muted)">\u2013</span>';
+    const salLabel = r.salience === 1.0 ? '1.0' : r.salience === 0.7 ? '.70' : '.50';
+    const salColor = r.salience === 1.0 ? '#ea7824' : r.salience === 0.7 ? '#d4a44a' : 'var(--text-muted)';
+
+    salTableHtml += `<tr>
+      <td class="rank-cell">${i + 1}</td>
+      <td style="font-size:11px;color:var(--text-muted)">${r.domLabel}</td>
+      <td>${r.subLabel}</td>
+      <td class="avg-cell">${Math.round(r.avg * 100)}</td>
+      <td style="color:${salColor};font-weight:600">${salLabel}</td>
+      <td class="avg-cell" style="color:${r.weighted >= 0.35 ? '#ea7824' : r.weighted >= 0.25 ? '#d4a44a' : 'var(--text-muted)'}; font-weight:700">${Math.round(r.weighted * 100)}</td>
+      <td>${deltaStr}</td>`;
+    loaded.forEach(id => {
+      const s = r.scores[id];
+      const pct = Math.round(s * 100);
+      salTableHtml += `<td><span class="mini-cell ${hmClass(s)}">${pct}</span></td>`;
+    });
+    salTableHtml += '</tr>';
+  });
+  salTableHtml += '</tbody></table></div>';
+
+  // Salience legend
+  const salLegend = `<div style="display:flex;gap:16px;margin:8px 0 4px;font-size:11px">
+    <span><strong style="color:#ea7824">1.0</strong> Front-of-mind (Growth, Financial, Talent)</span>
+    <span><strong style="color:#d4a44a">0.7</strong> Board-driven (Strategy, Governance)</span>
+    <span><strong style="color:var(--text-muted)">0.5</strong> Background (Operations, Risk, Product)</span>
+  </div>`;
+
+  // ── Assemble ──
+  container.innerHTML = `
+    <nav class="section-nav">
+      <a href="#a-domains">Domain Averages</a>
+      <a href="#a-subcats">Sub-Category Ranking</a>
+      <a href="#a-clusters">Problem Clusters</a>
+      <a href="#a-similarity">Company Similarity</a>
+      <a href="#a-salience">Salience-Weighted</a>
+    </nav>
+
+    <div class="analysis-section" id="a-domains">
+      <h3>1. Domain Averages</h3>
+      <div class="section-note">8 problem domains averaged across all companies. "Hot" = companies where domain average >= 0.50.</div>
+      <div class="scroll-table-wrapper">${domTableHtml}</div>
+    </div>
+
+    <div class="analysis-section" id="a-subcats">
+      <h3>2. Sub-Category Ranking</h3>
+      <div class="section-note">All 32 sub-categories ranked by cross-company average. "Hot" = companies where sub-category average >= 0.50. Per-company scores shown.</div>
+      ${subTableHtml}
+    </div>
+
+    <div class="analysis-section" id="a-clusters">
+      <h3>3. Problem Clusters</h3>
+      <div class="section-note">Terminal problems scored >= 0.50 ("moderate" or above) in 3+ companies. Ranked by breadth (hot count), then average score. Showing top 40.</div>
+      ${probTableHtml}
+    </div>
+
+    <div class="analysis-section" id="a-similarity">
+      <h3>4. Company Similarity</h3>
+      <div class="section-note">Cosine similarity of full 141-problem score vectors. Higher = more similar problem profiles. Companies with similar profiles may share opportunities.</div>
+      <div class="scroll-table-wrapper">${simHtml}</div>
+    </div>
+
+    <div class="analysis-section" id="a-salience">
+      <h3>5. Salience-Weighted Ranking</h3>
+      <div class="section-note">Sub-categories re-ranked by (raw score × leader salience weight). Salience reflects how front-of-mind a domain is for a typical leader — not importance, but attention. \u0394 shows rank change vs raw ranking.</div>
+      ${salLegend}
+      ${salTableHtml}
+    </div>
+  `;
+}
+
+const CAP_FIT_DIR = '../outputs/capability-fit/';
+const CAP_CATEGORIES = ['generation', 'extraction', 'classification', 'prediction', 'search-retrieval', 'optimization', 'agents'];
+
+const DOMAIN_LABELS = {
+  'growth-market': 'Growth & Market',
+  'operations-delivery': 'Operations & Delivery',
+  'product-service': 'Product & Service',
+  'talent-people': 'Talent & People',
+  'risk-compliance': 'Risk & Compliance',
+  'financial': 'Financial',
+  'strategy-direction': 'Strategy & Direction',
+  'governance-leadership': 'Governance & Leadership',
+};
+
+function renderCapabilitiesView() {
+  const container = document.getElementById('capabilities-content');
+  const cats = Object.keys(capabilityFit);
+  if (cats.length === 0) return;
+
+  // Flatten all capabilities
+  const allCaps = [];
+  for (const catId of CAP_CATEGORIES) {
+    const cat = capabilityFit[catId];
+    if (!cat) continue;
+    for (const [capId, cap] of Object.entries(cat.capabilities)) {
+      const row = { capId, label: cap.label, catLabel: cat.category_label, domains: {} };
+      let fitSum = 0;
+      for (const domId of DOMAIN_ORDER) {
+        const d = cap.domains[domId] || { fit: 0, specificity: 'low', reasoning: '' };
+        row.domains[domId] = d;
+        fitSum += d.fit;
+      }
+      row.avgFit = fitSum / DOMAIN_ORDER.length;
+      row.highSpecCount = DOMAIN_ORDER.filter(d => (cap.domains[d]?.specificity || 'low') === 'high').length;
+      allCaps.push(row);
+    }
+  }
+
+  // ── Section 1: Capability × Domain heatmap ──
+  let tableHtml = '<table class="analysis-table"><thead><tr><th style="text-align:left">Capability</th>';
+  DOMAIN_ORDER.forEach(d => {
+    const short = DOMAIN_LABELS[d].split(' ')[0];
+    tableHtml += `<th>${short}</th>`;
+  });
+  tableHtml += '<th>Avg</th></tr></thead><tbody>';
+
+  let lastCat = '';
+  for (const catId of CAP_CATEGORIES) {
+    const cat = capabilityFit[catId];
+    if (!cat) continue;
+    // Category header row
+    tableHtml += `<tr style="background:var(--surface)"><td colspan="${DOMAIN_ORDER.length + 2}" style="font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.04em;color:var(--accent);padding:10px 8px 6px">${cat.category_label}</td></tr>`;
+    for (const [capId, cap] of Object.entries(cat.capabilities)) {
+      const row = allCaps.find(r => r.capId === capId);
+      tableHtml += `<tr><td style="padding-left:16px;text-align:left">${cap.label}</td>`;
+      DOMAIN_ORDER.forEach(domId => {
+        const d = cap.domains[domId] || { fit: 0, specificity: 'low' };
+        const pct = Math.round(d.fit * 100);
+        const specDot = d.specificity === 'high' ? ' \u2666' : d.specificity === 'mid' ? ' \u2022' : '';
+        tableHtml += `<td><span class="heatmap-cell ${hmClass(d.fit)}" title="${d.reasoning || ''}">${pct}${specDot}</span></td>`;
+      });
+      tableHtml += `<td style="font-weight:600;color:${row.avgFit >= 0.5 ? '#ea7824' : 'var(--text-muted)'}">${Math.round(row.avgFit * 100)}</td></tr>`;
+    }
+  }
+  tableHtml += '</tbody></table>';
+
+  // ── Section 2: Top opportunities (high fit + high specificity) ──
+  const opps = [];
+  allCaps.forEach(cap => {
+    DOMAIN_ORDER.forEach(domId => {
+      const d = cap.domains[domId];
+      if (d.fit >= 0.5 && d.specificity === 'high') {
+        opps.push({
+          capLabel: cap.label,
+          catLabel: cap.catLabel,
+          domLabel: DOMAIN_LABELS[domId],
+          domId,
+          fit: d.fit,
+          reasoning: d.reasoning,
+        });
+      }
+    });
+  });
+  opps.sort((a, b) => b.fit - a.fit);
+
+  let oppsHtml = '<table class="analysis-table ranked-table"><thead><tr><th>#</th><th>AI Capability</th><th>Problem Domain</th><th>Fit</th><th>Why</th></tr></thead><tbody>';
+  opps.forEach((o, i) => {
+    oppsHtml += `<tr>
+      <td class="rank-cell">${i + 1}</td>
+      <td>${o.capLabel}<br><span style="font-size:10px;color:var(--text-muted)">${o.catLabel}</span></td>
+      <td>${o.domLabel}</td>
+      <td><span class="heatmap-cell ${hmClass(o.fit)}">${Math.round(o.fit * 100)}</span></td>
+      <td style="font-size:11px;max-width:300px">${o.reasoning}</td>
+    </tr>`;
+  });
+  oppsHtml += '</tbody></table>';
+
+  // ── Section 3: Domain receptivity (which domains have the most high-spec capability fits?) ──
+  let domRecHtml = '<table class="analysis-table"><thead><tr><th style="text-align:left">Domain</th><th>Avg Fit</th><th>High-Spec Fits</th><th>Top Capabilities</th></tr></thead><tbody>';
+  DOMAIN_ORDER.forEach(domId => {
+    let fitSum = 0;
+    let highSpecs = [];
+    allCaps.forEach(cap => {
+      const d = cap.domains[domId];
+      fitSum += d.fit;
+      if (d.specificity === 'high' && d.fit >= 0.5) {
+        highSpecs.push({ label: cap.label, fit: d.fit });
+      }
+    });
+    highSpecs.sort((a, b) => b.fit - a.fit);
+    const avgFit = fitSum / allCaps.length;
+    const topCaps = highSpecs.slice(0, 3).map(c => `<span class="cluster-chip warm">${c.label} ${Math.round(c.fit * 100)}</span>`).join(' ');
+    domRecHtml += `<tr>
+      <td style="text-align:left;font-weight:500">${DOMAIN_LABELS[domId]}</td>
+      <td><span class="mini-cell ${hmClass(avgFit)}">${Math.round(avgFit * 100)}</span></td>
+      <td style="font-weight:600;color:${highSpecs.length >= 5 ? '#ea7824' : 'var(--text-muted)'}">${highSpecs.length}</td>
+      <td style="text-align:left">${topCaps || '<span style="color:var(--text-muted)">—</span>'}</td>
+    </tr>`;
+  });
+  domRecHtml += '</tbody></table>';
+
+  // ── Legend ──
+  const legend = `<div style="display:flex;gap:16px;margin-bottom:16px;font-size:11px;flex-wrap:wrap">
+    <span>Specificity: <strong style="color:#ea7824">\u2666 high</strong> (specialized build needed)</span>
+    <span><strong style="color:#d4a44a">\u2022 mid</strong> (needs customization)</span>
+    <span><span style="color:var(--text-muted)">unmarked = low</span> (generic SaaS feature)</span>
+  </div>`;
+
+  container.innerHTML = `
+    <nav class="section-nav">
+      <a href="#cap-matrix">Fit Matrix</a>
+      <a href="#cap-opps">High-Spec Opportunities</a>
+      <a href="#cap-domains">Domain Receptivity</a>
+    </nav>
+
+    <div class="analysis-section" id="cap-matrix">
+      <h3>1. Capability × Domain Fit Matrix</h3>
+      <div class="section-note">30 AI capabilities scored against 8 problem domains. Cell = fit score (0-100). Markers show specificity — whether this needs a purpose-built solution.</div>
+      ${legend}
+      <div class="scroll-table-wrapper">${tableHtml}</div>
+    </div>
+
+    <div class="analysis-section" id="cap-opps">
+      <h3>2. High-Specificity Opportunities</h3>
+      <div class="section-note">Capability × domain pairs where fit >= 50 AND specificity = high. These are problems that AI can solve but require specialized solutions — not something a generic SaaS can bolt on.</div>
+      <div class="scroll-table-wrapper">${oppsHtml}</div>
+    </div>
+
+    <div class="analysis-section" id="cap-domains">
+      <h3>3. Domain Receptivity</h3>
+      <div class="section-note">Which problem domains have the most high-specificity AI capability fits? Higher = more opportunities for specialized AI solutions.</div>
+      <div class="scroll-table-wrapper">${domRecHtml}</div>
+    </div>
+  `;
+}
+
+let crossAnalysis = null;
+
+const NARRATIVE_DIR = '../outputs/narrative-sections/';
+const NARRATIVE_FILES = ['exec-market', 'findings', 'products', 'playbook', 'feature-pipeline'];
+
+async function loadNarrative() {
+  const container = document.getElementById('report-narrative');
+  const sections = {};
+  for (const name of NARRATIVE_FILES) {
+    try {
+      const resp = await fetch(NARRATIVE_DIR + name + '.html');
+      if (resp.ok) sections[name] = await resp.text();
+    } catch (e) {
+      console.log('Narrative section not available:', name);
+    }
+  }
+
+  if (Object.keys(sections).length === 0) {
+    container.innerHTML = '<div class="section-note" style="padding:40px 0">Narrative sections not yet generated.</div>';
+    return;
+  }
+
+  // Lead with recommendations, defence after
+  let html = '';
+
+  // Products first — the point
+  if (sections['products']) html += sections['products'];
+
+  // Playbook — who to talk to
+  if (sections['playbook']) html += sections['playbook'];
+
+  // Feature pipeline — the scored backlog
+  if (sections['feature-pipeline']) html += sections['feature-pipeline'];
+
+  // Then the defence: why these recommendations
+  if (sections['exec-market']) html += sections['exec-market'];
+
+  // Live mini heatmap as supporting evidence
+  html += '<div class="narrative-section" id="rpt-heatmap-embed"><div id="report-mini-heatmap"></div></div>';
+
+  // Findings — the analytical backup
+  if (sections['findings']) html += sections['findings'];
+
+  // Appendix links
+  html += `
+    <div class="narrative-section" id="rpt-appendix">
+      <div class="section-num">Appendix</div>
+      <h2>Supporting Data</h2>
+      <div class="narrative-body">
+        <p>All findings are backed by structured analytical data. Click through to explore.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px">
+          <a class="appendix-link" style="padding:16px;font-size:13px;display:block" onclick="showView('heatmap')">
+            <strong>Problem Heatmap</strong><br><span style="color:var(--text-muted)">141 problems x 8 companies</span>
+          </a>
+          <a class="appendix-link" style="padding:16px;font-size:13px;display:block" onclick="showView('analysis')">
+            <strong>Analysis</strong><br><span style="color:var(--text-muted)">Rankings, clusters, similarity, salience</span>
+          </a>
+          <a class="appendix-link" style="padding:16px;font-size:13px;display:block" onclick="showView('capabilities')">
+            <strong>AI Capabilities</strong><br><span style="color:var(--text-muted)">34 capabilities x 8 domains</span>
+          </a>
+          <a class="appendix-link" style="padding:16px;font-size:13px;display:block" onclick="showView('opportunities')">
+            <strong>Opportunities</strong><br><span style="color:var(--text-muted)">Cross-analysis + company briefs</span>
+          </a>
+          <a class="appendix-link" style="padding:16px;font-size:13px;display:block" onclick="showView('product-ideas')">
+            <strong>Product Ideas — Scored</strong><br><span style="color:var(--text-muted)">54 features ranked on 9 criteria</span>
+          </a>
+        </div>
+      </div>
+    </div>`;
+
+  // Build section nav
+  const navItems = [];
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html;
+  tmp.querySelectorAll('.narrative-section[id]').forEach(sec => {
+    const h2 = sec.querySelector('h2');
+    if (h2) navItems.push({ id: sec.id, label: h2.textContent });
+  });
+
+  const navHtml = navItems.length > 0
+    ? '<nav class="section-nav">' + navItems.map(s => `<a href="#${s.id}">${s.label}</a>`).join('') + '</nav>'
+    : '';
+
+  container.innerHTML = navHtml + html;
+
+  // Populate live mini heatmap inside the report
+  const hmEl = document.getElementById('report-mini-heatmap');
+  if (hmEl && Object.keys(heatmaps).length > 0) {
+    const loaded = Object.keys(heatmaps);
+    const compNames = {};
+    loaded.forEach(id => { compNames[id] = (heatmaps[id].company_name || id).split(' ')[0]; });
+
+    let tbl = '<div style="overflow-x:auto"><table class="analysis-table" style="font-size:11px"><thead><tr><th style="text-align:left">Sub-Category</th>';
+    loaded.forEach(id => { tbl += `<th>${compNames[id]}</th>`; });
+    tbl += '</tr></thead><tbody>';
+
+    // Show top 10 sub-categories by cross-company avg
+    const subRows = [];
+    for (const domId of DOMAIN_ORDER) {
+      const firstDom = heatmaps[loaded[0]].domains[domId];
+      if (!firstDom || !firstDom.sub_categories) continue;
+      for (const [subId, sub] of Object.entries(firstDom.sub_categories)) {
+        let sum = 0;
+        const scores = {};
+        loaded.forEach(id => {
+          const s = heatmaps[id].domains[domId]?.sub_categories?.[subId]?.sub_avg || 0;
+          scores[id] = s;
+          sum += s;
+        });
+        subRows.push({ label: sub.label, domLabel: firstDom.domain_label, avg: sum / loaded.length, scores });
+      }
+    }
+    subRows.sort((a, b) => b.avg - a.avg);
+
+    subRows.slice(0, 12).forEach(r => {
+      tbl += `<tr><td style="text-align:left">${r.label}<br><span style="font-size:9px;color:var(--text-muted)">${r.domLabel}</span></td>`;
+      loaded.forEach(id => {
+        const s = r.scores[id];
+        tbl += `<td><span class="mini-cell ${hmClass(s)}">${Math.round(s * 100)}</span></td>`;
+      });
+      tbl += '</tr>';
+    });
+    tbl += '</tbody></table></div>';
+    tbl += '<div style="text-align:right;margin-top:8px"><a class="appendix-link" onclick="showView(\'heatmap\')">Full heatmap (32 sub-categories) &rarr;</a></div>';
+    hmEl.innerHTML = '<h3 style="font-size:14px;margin-bottom:8px">Hottest Sub-Categories</h3>' + tbl;
+  }
+
+  // Render charts
+  renderReportCharts();
+
+  // Populate feature pipeline table from scored data
+  const pipelineTable = document.getElementById('rpt-pipeline-table');
+  if (pipelineTable) {
+    try {
+      const resp = await fetch('../outputs/product-ideas-scored.json');
+      if (resp.ok) {
+        const pData = await resp.json();
+        const top10 = (pData.ideas || []).slice(0, 10);
+        const productColors = {
+          'Staffroom': '#7b93ff', 'Enrolflow': '#34d399', 'GrantLens': '#f59e0b',
+          'SectorPulse': '#a78bfa', 'BoardBrief': '#f87171', 'Independent': '#6b7194'
+        };
+        let tbl = '<table class="analysis-table"><thead><tr>' +
+          '<th style="width:30px">#</th><th style="width:50px">Score</th>' +
+          '<th style="text-align:left">Feature</th><th>Product</th>' +
+          '<th style="text-align:left">One-Liner</th><th>Domain</th>' +
+          '</tr></thead><tbody>';
+        top10.forEach((idea, i) => {
+          const ws = idea.weighted_score || 0;
+          const parent = idea.tier1_parent || 'Independent';
+          const pColor = productColors[parent] || '#6b7194';
+          const scoreColor = ws > 55 ? 'var(--green)' : ws >= 40 ? 'var(--amber)' : 'var(--red)';
+          const scoreBg = ws > 55 ? 'var(--green-dim)' : ws >= 40 ? 'var(--amber-dim)' : 'var(--red-dim)';
+          tbl += '<tr>' +
+            '<td style="color:var(--text-muted);font-size:11px">' + (i + 1) + '</td>' +
+            '<td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-weight:700;font-size:13px;color:' + scoreColor + ';background:' + scoreBg + '">' + ws + '</span></td>' +
+            '<td style="text-align:left;font-weight:600;white-space:nowrap">' + (idea.name || '') + '</td>' +
+            '<td><span style="font-size:10px;font-weight:600;color:' + pColor + ';padding:2px 8px;border:1px solid ' + pColor + '33;border-radius:10px;white-space:nowrap">' + parent + '</span></td>' +
+            '<td style="text-align:left;font-size:11px;color:var(--text-secondary);max-width:300px">' + (idea.one_liner || '') + '</td>' +
+            '<td style="font-size:11px">' + (idea._cellDomain || '') + '</td>' +
+            '</tr>';
+        });
+        tbl += '</tbody></table>';
+        pipelineTable.innerHTML = tbl;
+      }
+    } catch (e) {
+      console.log('Pipeline data not available');
+    }
+  }
+}
+
+function renderReportCharts() {
+  const loaded = Object.keys(heatmaps);
+  if (loaded.length === 0) return;
+
+  const chartDefaults = {
+    color: '#8b8fa3',
+    borderColor: '#2d3140',
+    font: { family: '-apple-system, BlinkMacSystemFont, system-ui, sans-serif' },
+  };
+  Chart.defaults.color = chartDefaults.color;
+  Chart.defaults.borderColor = chartDefaults.borderColor;
+
+  // ── Chart 1: Domain heat radar (inject after exec-market) ──
+  const radarContainer = document.getElementById('rpt-market') || document.getElementById('rpt-exec');
+  if (radarContainer) {
+    const chartDiv = document.createElement('div');
+    chartDiv.className = 'chart-row';
+    chartDiv.innerHTML = `
+      <div class="chart-box">
+        <div class="chart-title">Problem Heat by Domain</div>
+        <div class="chart-subtitle">Cross-company average (8 orgs, 0–100 scale). Higher = more acute pain.</div>
+        <canvas id="chart-domain-heat"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title">AI Capability Fit by Domain</div>
+        <div class="chart-subtitle">Average fit of 34 AI capabilities per domain. Only mid/high specificity capabilities included.</div>
+        <canvas id="chart-cap-fit"></canvas>
+      </div>`;
+    radarContainer.appendChild(chartDiv);
+
+    // Domain heat radar
+    const domLabels = DOMAIN_ORDER.map(d => {
+      const dom = heatmaps[loaded[0]].domains[d];
+      return dom ? dom.domain_label.split(' ')[0] : d;
+    });
+    const domAvgs = DOMAIN_ORDER.map(domId => {
+      const sum = loaded.reduce((s, id) => s + (heatmaps[id].domains[domId]?.domain_avg || 0), 0);
+      return Math.round((sum / loaded.length) * 100);
+    });
+
+    new Chart(document.getElementById('chart-domain-heat'), {
+      type: 'radar',
+      data: {
+        labels: domLabels,
+        datasets: [{
+          label: 'Avg Problem Heat (0–100)',
+          data: domAvgs,
+          backgroundColor: 'rgba(234, 120, 36, 0.15)',
+          borderColor: '#ea7824',
+          borderWidth: 2,
+          pointBackgroundColor: '#ea7824',
+          pointRadius: 4,
+        }]
+      },
+      options: {
+        scales: {
+          r: {
+            beginAtZero: true, max: 70,
+            grid: { color: '#2d3140' },
+            angleLines: { color: '#2d3140' },
+            ticks: { stepSize: 20, backdropColor: 'transparent', font: { size: 10 } },
+            pointLabels: { font: { size: 11, weight: '600' } },
+          }
+        },
+        plugins: {
+          legend: { display: true, position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } },
+        },
+      }
+    });
+
+    // Capability fit radar
+    if (Object.keys(capabilityFit).length > 0) {
+      const capDomAvgs = DOMAIN_ORDER.map(domId => {
+        let sum = 0, count = 0;
+        for (const catId of CAP_CATEGORIES) {
+          const cat = capabilityFit[catId];
+          if (!cat) continue;
+          for (const cap of Object.values(cat.capabilities)) {
+            const d = cap.domains[domId];
+            if (d && d.specificity !== 'low') { sum += d.fit; count++; }
+          }
+        }
+        return count > 0 ? Math.round((sum / count) * 100) : 0;
+      });
+
+      new Chart(document.getElementById('chart-cap-fit'), {
+        type: 'radar',
+        data: {
+          labels: domLabels,
+          datasets: [{
+            label: 'Avg AI Capability Fit % (mid+high specificity only)',
+            data: capDomAvgs,
+            backgroundColor: 'rgba(108, 138, 255, 0.15)',
+            borderColor: '#6c8aff',
+            borderWidth: 2,
+            pointBackgroundColor: '#6c8aff',
+            pointRadius: 4,
+          }]
+        },
+        options: {
+          scales: {
+            r: {
+              beginAtZero: true, max: 100,
+              grid: { color: '#2d3140' },
+              angleLines: { color: '#2d3140' },
+              ticks: { stepSize: 25, backdropColor: 'transparent', font: { size: 10 } },
+              pointLabels: { font: { size: 11, weight: '600' } },
+            }
+          },
+          plugins: {
+            legend: { display: true, position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } },
+          },
+        }
+      });
+    }
+  }
+
+  // ── Chart 2: Company comparison bar chart (inject after findings) ──
+  const findingsEl = document.getElementById('rpt-findings');
+  if (findingsEl) {
+    const chartDiv = document.createElement('div');
+    chartDiv.className = 'chart-row';
+    chartDiv.style.gridTemplateColumns = '1fr';
+    chartDiv.innerHTML = `
+      <div class="chart-box">
+        <div class="chart-title">Hot Sub-Categories per Company</div>
+        <div class="chart-subtitle">Count of sub-categories scoring 50+ out of 100. Higher = more pain points across domains.</div>
+        <canvas id="chart-company-hot" style="max-height:200px"></canvas>
+      </div>`;
+    findingsEl.appendChild(chartDiv);
+
+    const compNames = loaded.map(id => (heatmaps[id].company_name || id).split(' ')[0]);
+    const hotCounts = loaded.map(id => {
+      let count = 0;
+      for (const domId of DOMAIN_ORDER) {
+        const dom = heatmaps[id].domains[domId];
+        if (!dom || !dom.sub_categories) continue;
+        for (const sub of Object.values(dom.sub_categories)) {
+          if (sub.sub_avg >= 0.5) count++;
+        }
+      }
+      return count;
+    });
+
+    new Chart(document.getElementById('chart-company-hot'), {
+      type: 'bar',
+      data: {
+        labels: compNames,
+        datasets: [{
+          label: 'Sub-categories scoring 50+ (out of 32)',
+          data: hotCounts,
+          backgroundColor: hotCounts.map(c => c >= 15 ? '#ea7824' : c >= 10 ? '#d4a44a' : '#8b8fa3'),
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        scales: {
+          x: {
+            beginAtZero: true,
+            grid: { color: '#2d3140' },
+            ticks: { font: { size: 10 } },
+            title: { display: true, text: 'Number of hot sub-categories', color: '#8b8fa3', font: { size: 11 } },
+          },
+          y: { grid: { display: false }, ticks: { font: { size: 11, weight: '600' } } },
+        },
+        plugins: {
+          legend: { display: true, position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } },
+        },
+      }
+    });
+  }
+
+  // ── Inject KPI cards + key assumptions into product cards ──
+  const productMeta = {
+    'Staffroom': {
+      owner: 'Chief People Officer / Director of Education',
+      kpis: [
+        { value: '18%', label: 'Teacher Attrition', shift: 'Target: under 10%' },
+        { value: '45d', label: 'Time to Fill Vacancy', shift: 'Target: under 20 days' },
+        { value: '23%', label: 'CPD Completion Rate', shift: 'Target: above 80%' },
+        { value: '6hrs', label: 'Appraisal Admin / Teacher', shift: 'Target: under 1hr' },
+      ],
+      assumptions: [
+        'HR and appraisal data can be exported from existing systems (TechOne, FACES, HRIS) in structured formats — CSV at minimum',
+        'Principals and school leaders will adopt a dashboard if it saves time on compliance paperwork, not just because it exists',
+        'Teacher registration databases (NESA, DepEd, CHED) are accessible via export or API — not locked behind legacy portals with no data out',
+        'Attrition signals are detectable 6–12 months before departure from patterns in appraisal, absence, and CPD data',
+      ],
+    },
+    'Enrolflow': {
+      owner: 'Head of Admissions / CFO',
+      kpis: [
+        { value: '34%', label: 'Inquiry-to-Enrol Rate', shift: 'Target: above 50%' },
+        { value: '±22%', label: 'Enrolment Forecast Error', shift: 'Target: under 5%' },
+        { value: '11%', label: 'First-Year Dropout', shift: 'Target: under 5%' },
+        { value: '$840', label: 'Cost per Enrolled Student', shift: 'Target: under $400' },
+      ],
+      assumptions: [
+        'Inquiry-to-enrol behaviour in informal channels (SMS, WhatsApp) contains classifiable intent signals — not just noise',
+        'Sufficient historical enrolment data exists (3+ intake cycles) to train a yield forecast better than the admissions team\'s intuition',
+        'Schools are willing to share anonymised enrolment data cross-institution to improve forecast accuracy over time',
+        'The admissions buyer has budget authority or can co-fund with the CFO — this is not an IT purchase',
+      ],
+    },
+    'GrantLens': {
+      owner: 'CFO / Grants Manager',
+      kpis: [
+        { value: '120hrs', label: 'Annual Reporting Effort', shift: 'Target: under 20hrs' },
+        { value: '3', label: 'Compliance Gaps Found Late', shift: 'Target: zero' },
+        { value: '67%', label: 'Grant Utilisation Rate', shift: 'Target: above 90%' },
+        { value: '8wk', label: 'Audit Prep Cycle', shift: 'Target: under 2 weeks' },
+      ],
+      assumptions: [
+        'Grant agreements and funding determinations are available as searchable documents (PDF/Word) — not locked in email threads or verbal commitments',
+        'Compliance obligations can be extracted into structured rules — they are written explicitly, not implied by custom and practice',
+        'Finance teams will trust AI-cited answers enough to reduce (not replace) manual document review within 2–3 months of use',
+        'The compliance ontology built for one jurisdiction (e.g. Australian Commonwealth grants) transfers with moderate effort to another (e.g. DFAT donor conditions)',
+      ],
+    },
+    'SectorPulse': {
+      owner: 'CEO / Head of Strategy',
+      kpis: [
+        { value: '3mo', label: 'Policy Response Lag', shift: 'Target: under 2 weeks' },
+        { value: '12%', label: 'Partnership Conversion', shift: 'Target: above 30%' },
+        { value: '40hrs', label: 'Landscape Research / Quarter', shift: 'Target: under 4hrs' },
+        { value: '2', label: 'Missed Funding Rounds / Year', shift: 'Target: zero' },
+      ],
+      assumptions: [
+        'Leadership teams will use a self-service research tool rather than defaulting to hiring a consultant or asking a junior staff member',
+        'Public education policy documents and research reports are available in sufficient volume and quality to build a useful corpus',
+        'Cross-document synthesis (not just single-doc summary) is the actual value — if leaders only need one-doc answers, ChatGPT is good enough',
+        'The curated corpus is defensible — a competitor cannot replicate it without equivalent domain expertise and client feedback loops',
+      ],
+    },
+    'BoardBrief': {
+      owner: 'Board Chair / Company Secretary',
+      kpis: [
+        { value: '16hrs', label: 'Board Pack Prep Time', shift: 'Target: under 3hrs' },
+        { value: '40%', label: 'Decisions Deferred to Next Meeting', shift: 'Target: under 10%' },
+        { value: '0', label: 'Cross-Regulator Visibility', shift: 'Target: real-time dashboard' },
+        { value: '6mo', label: 'Succession Planning Horizon', shift: 'Target: 24 months' },
+      ],
+      assumptions: [
+        'Board packs and committee papers are digitised and shareable — not restricted by confidentiality rules that prevent any AI processing',
+        'Company Secretaries and CFOs (not board members themselves) are the actual buyers — board members approve but don\'t procure',
+        'The 18–24 month sales cycle is viable for a consulting-first GTM — the business can sustain the patience required',
+        'Regulatory vocabulary across jurisdictions (CHED, NESA, PSE, diocesan governance) is different enough that generic tools fail, but similar enough that one product can serve multiple markets',
+      ],
+    },
+  };
+
+  document.querySelectorAll('.product-name').forEach(el => {
+    const name = el.textContent.trim();
+    const product = productMeta[name];
+    if (!product) return;
+
+    const ownerHtml = `<div style="font-size:11px;color:var(--text-muted);margin:12px 28px 4px;padding:0"><span style="color:var(--accent);font-weight:600;font-size:9px;text-transform:uppercase;letter-spacing:0.06em">Problem owner</span><br>${product.owner}</div>`;
+    const kpiHtml = ownerHtml + '<div class="kpi-row">' + product.kpis.map(k =>
+      `<div class="kpi-card">
+        <div class="kpi-value">${k.value}</div>
+        <div class="kpi-label">${k.label}</div>
+        <div class="kpi-shift">${k.shift}</div>
+      </div>`
+    ).join('') + '</div>';
+
+    const assumptionsHtml = `<div class="assumptions-box">
+      <div class="assumptions-title">Key Assumptions</div>
+      <ul class="assumptions-list">${product.assumptions.map(a => `<li>${a}</li>`).join('')}</ul>
+    </div>`;
+
+    // Insert after the tagline
+    const tagline = el.nextElementSibling;
+    if (tagline) tagline.insertAdjacentHTML('afterend', kpiHtml + assumptionsHtml);
+  });
+}
+
+function renderOpportunitiesView() {
+  const container = document.getElementById('opportunities-content');
+  if (!crossAnalysis) return;
+  const cx = crossAnalysis;
+  const companyNames = {};
+  Object.keys(heatmaps).forEach(id => { companyNames[id] = (heatmaps[id]?.company_name || id).split(' ')[0]; });
+
+  // ── Section 1: Top Opportunity Nodes ──
+  let nodesHtml = `<div class="scroll-table-wrapper"><table class="analysis-table ranked-table">
+    <thead><tr>
+      <th>#</th><th>Problem Area</th><th>Domain</th>
+      <th>Heat</th><th>Sal</th><th>Cap Fit</th><th>Opp</th><th>Hot In</th><th>Top Capabilities</th>
+    </tr></thead><tbody>`;
+  cx.top_opportunities.forEach((o, i) => {
+    const hotCos = Object.entries(o.perCompany)
+      .filter(([, v]) => v >= 0.5)
+      .sort((a, b) => b[1] - a[1])
+      .map(([id, v]) => `<span class="cluster-chip ${v >= 0.6 ? 'hot' : 'warm'}">${companyNames[id] || id} ${Math.round(v * 100)}</span>`)
+      .join(' ');
+    const caps = o.topCapabilities.slice(0, 3)
+      .map(c => `<span class="spec-badge spec-${c.specificity}">${c.label}</span>`)
+      .join(' ');
+    nodesHtml += `<tr>
+      <td class="rank-cell">${i + 1}</td>
+      <td>${o.label}</td>
+      <td style="font-size:11px;color:var(--text-muted)">${o.domLabel}</td>
+      <td><span class="mini-cell ${hmClass(o.problemHeat / 100)}">${o.problemHeat}</span></td>
+      <td style="font-weight:600;color:${o.salience >= 1.0 ? '#ea7824' : o.salience >= 0.7 ? '#d4a44a' : 'var(--text-muted)'}">${o.salience}</td>
+      <td>${o.bestCapFit}</td>
+      <td style="font-weight:700;color:${o.opportunityScore >= 35 ? '#ea7824' : o.opportunityScore >= 25 ? '#d4a44a' : 'var(--text-muted)'}">${o.opportunityScore}</td>
+      <td style="text-align:left">${hotCos}</td>
+      <td style="text-align:left">${caps}</td>
+    </tr>`;
+  });
+  nodesHtml += '</tbody></table></div>';
+
+  // ── Section 2: Product Clusters ──
+  let clustersHtml = '';
+  cx.product_clusters.slice(0, 12).forEach((c, i) => {
+    const areas = c.problemAreas
+      .sort((a, b) => b.heat - a.heat)
+      .slice(0, 6)
+      .map(a => `<span class="cluster-chip ${a.heat >= 50 ? 'hot' : 'warm'}">${a.subLabel} ${a.heat}</span>`)
+      .join(' ');
+    const cos = c.companies
+      .map(id => `<span style="font-size:11px;margin-right:4px">${companyNames[id] || id}</span>`)
+      .join(' ');
+    clustersHtml += `
+      <div class="cluster-card" style="margin-bottom:12px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <div class="cluster-title">${c.capLabel}</div>
+          <span class="spec-badge spec-${c.specificity}">${c.specificity} specificity</span>
+        </div>
+        <div class="cluster-domain">${c.catLabel} — ${c.companyCount} companies, ${c.problemAreas.length} problem areas</div>
+        <div style="margin:8px 0">${areas}</div>
+        <div style="color:var(--text-muted);font-size:11px">Companies: ${cos}</div>
+      </div>`;
+  });
+
+  // ── Section 3: Per-Company Briefs ──
+  let briefsHtml = '';
+  for (const [id, brief] of Object.entries(cx.company_briefs)) {
+    const hotSubs = brief.hotSubCategories.slice(0, 8).map(s => {
+      const caps = s.topCapabilities.slice(0, 2).map(c =>
+        `<span class="spec-badge spec-${c.specificity}" style="font-size:8px">${c.label}</span>`
+      ).join(' ');
+      return `<tr>
+        <td style="text-align:left">${s.label}</td>
+        <td style="font-size:11px;color:var(--text-muted)">${s.domLabel}</td>
+        <td><span class="mini-cell ${hmClass(s.score / 100)}">${s.score}</span></td>
+        <td style="text-align:left">${caps}</td>
+      </tr>`;
+    }).join('');
+
+    const topProbs = brief.topProblems.slice(0, 5).map(p =>
+      `<div style="font-size:11px;margin-bottom:4px">
+        <span class="mini-cell ${hmClass(p.score)}" style="margin-right:4px">${Math.round(p.score * 100)}</span>
+        <strong>${p.label}</strong>
+        <span style="color:var(--text-muted)"> — ${p.domLabel} > ${p.subLabel}</span>
+        ${p.reasoning ? `<div style="color:var(--text-muted);margin-top:2px;padding-left:40px">${p.reasoning}</div>` : ''}
+      </div>`
+    ).join('');
+
+    briefsHtml += `
+      <div class="card" style="margin-bottom:16px">
+        <div class="card-header">
+          <div class="card-title">${brief.name}</div>
+          <span style="font-size:12px;color:var(--text-muted)">${brief.hotSubCategories.length} hot areas, ${brief.problemCount} high problems</span>
+        </div>
+        <table class="analysis-table" style="margin-bottom:12px">
+          <thead><tr><th style="text-align:left">Hot Sub-Category</th><th>Domain</th><th>Score</th><th style="text-align:left">Best AI Capabilities</th></tr></thead>
+          <tbody>${hotSubs}</tbody>
+        </table>
+        <div style="padding:0 6px">
+          <div style="font-size:11px;font-weight:600;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px">Top Problems</div>
+          ${topProbs}
+        </div>
+      </div>`;
+  }
+
+  // ── Section 4: Formula explanation ──
+  const formulaHtml = `<div class="card" style="font-size:12px;line-height:1.7">
+    <div class="card-title" style="margin-bottom:8px">Scoring Formula</div>
+    <div><strong>Opportunity Score</strong> = Problem Heat (cross-company avg) × Leader Salience × Best Capability Fit</div>
+    <div style="margin-top:8px;display:flex;gap:20px;flex-wrap:wrap">
+      <span><strong>Problem Heat</strong> — avg sub-category score across 8 companies (0–100)</span>
+      <span><strong>Salience</strong> — 1.0 (front-of-mind) / 0.7 (board-driven) / 0.5 (background)</span>
+      <span><strong>Cap Fit</strong> — best-matching AI capability fit for the domain (0–100), education-context-aware</span>
+    </div>
+  </div>`;
+
+  container.innerHTML = `
+    <nav class="section-nav">
+      <a href="#opp-nodes">Opportunity Nodes</a>
+      <a href="#opp-clusters">Product Clusters</a>
+      <a href="#opp-briefs">Company Briefs</a>
+      <a href="#opp-formula">Scoring Formula</a>
+    </nav>
+
+    <div class="analysis-section" id="opp-formula">
+      ${formulaHtml}
+    </div>
+
+    <div class="analysis-section" id="opp-nodes">
+      <h3>1. Top Opportunity Nodes</h3>
+      <div class="section-note">Sub-categories ranked by opportunity score (heat × salience × capability fit). Shows which problem areas have the strongest combination of real pain, leader attention, and AI addressability.</div>
+      ${nodesHtml}
+    </div>
+
+    <div class="analysis-section" id="opp-clusters">
+      <h3>2. Product Clusters</h3>
+      <div class="section-note">AI capabilities grouped by the problem areas they serve across 3+ companies. Each cluster represents a potential product that addresses multiple pain points.</div>
+      ${clustersHtml}
+    </div>
+
+    <div class="analysis-section" id="opp-briefs">
+      <h3>3. Per-Company Opportunity Briefs</h3>
+      <div class="section-note">Each company's hottest problem areas paired with the AI capabilities best suited to address them. Use as the basis for company-specific pitch decks.</div>
+      ${briefsHtml}
+    </div>
+  `;
+}
+
+function confidenceBadge(level) {
+  if (!level) return '';
+  return `<span class="confidence ${level}">${level}</span>`;
+}
+
+function scoreClass(score) {
+  if (score >= 0.7) return 'pass';
+  if (score >= 0.5) return 'warn';
+  return 'fail';
+}
+
+function renderScoreBar(label, score) {
+  const cls = scoreClass(score);
+  const pct = Math.round(score * 100);
+  return `
+    <div class="score-row">
+      <span class="score-label">${label}</span>
+      <div class="score-bar-bg"><div class="score-bar-fill ${cls}" style="width:${pct}%"></div></div>
+      <span class="score-num ${cls}">${pct}%</span>
+    </div>`;
+}
+
+function renderScoreCard(dqs) {
+  if (!dqs || !dqs.dimensions) return '';
+  const overall = typeof dqs.overall === 'number' ? dqs.overall : dqs.overall;
+  const cls = scoreClass(overall);
+  const dimLabels = {
+    'industry-vertical': 'Industry & Vertical',
+    'business-model': 'Business Model',
+    'scale-resources': 'Scale & Resources',
+    'growth-phase': 'Growth Phase',
+    'market-position': 'Market Position',
+    'org-structure': 'Org Structure',
+    'tech-maturity': 'Tech Maturity',
+    'operating-environment': 'Operating Environment',
+    'culture-brand': 'Culture & Brand',
+  };
+  const dimOrder = Object.keys(dimLabels);
+
+  let barsHtml = '';
+  for (const key of dimOrder) {
+    const score = dqs.dimensions[key];
+    if (score !== undefined) {
+      barsHtml += renderScoreBar(dimLabels[key] || key, score);
+    }
+  }
+
+  // Research questions for weak dimensions
+  let questionsHtml = '';
+  if (dqs.weak_dimensions && Object.keys(dqs.weak_dimensions).length > 0) {
+    questionsHtml = '<h3>Research Gaps</h3>';
+    for (const [key, dim] of Object.entries(dqs.weak_dimensions)) {
+      if (dim.research_questions && dim.research_questions.length > 0) {
+        questionsHtml += `
+          <div class="question-card">
+            <div class="question-dim">${dim.label} <span class="score-badge">${Math.round(dim.score * 100)}%</span></div>
+            <ul class="question-list">
+              ${dim.research_questions.map(q => `<li>${q}</li>`).join('')}
+            </ul>
+          </div>`;
+      }
+    }
+  }
+
+  return `
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Data Quality Score</div>
+        <div class="overall-score ${cls}">${Math.round(overall * 100)}%</div>
+      </div>
+      <div class="score-grid">${barsHtml}</div>
+    </div>
+    ${questionsHtml}`;
+}
+
+function initials(name) {
+  return name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+}
+
+function renderDimension(label, dim) {
+  if (!dim) return '';
+  const val = typeof dim === 'object' ? dim.value : dim;
+  const evidence = typeof dim === 'object' ? dim.evidence : '';
+  const conf = typeof dim === 'object' ? dim.confidence : '';
+  return `
+    <div class="dim-card">
+      <div class="dim-label">${label}</div>
+      <div class="dim-value">${val || 'Unknown'} ${confidenceBadge(conf)}</div>
+      ${evidence ? `<div class="dim-evidence">${evidence}</div>` : ''}
+    </div>
+  `;
+}
+
+function renderCompanyView(id, profile) {
+  const p = profile;
+  const dims = p.dimensions || p.profile || {};
+  const contacts = p.known_contacts || (p.contacts ? p.contacts : []);
+  if (p.known_contact) contacts.push(p.known_contact);
+
+  const contactsHtml = (Array.isArray(contacts) ? contacts : [contacts]).map(c => {
+    if (!c || !c.name) return '';
+    return `
+      <div class="contact">
+        <div class="contact-avatar">${initials(c.name)}</div>
+        <div>
+          <div class="contact-name">${c.name}</div>
+          <div class="contact-title">${c.title || ''} ${c.relationship_context ? '— ' + c.relationship_context : ''}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Group dimensions by parent with scores
+  const dimGroupLabels = {
+    'industry_vertical': 'Industry & Vertical',
+    'business_model': 'Business Model',
+    'scale_resources': 'Scale & Resources',
+    'growth_phase': 'Growth Phase',
+    'market_position': 'Market Position',
+    'org_structure': 'Org Structure',
+    'tech_maturity': 'Tech Maturity',
+    'operating_environment': 'Operating Environment',
+    'culture_brand': 'Culture & Brand',
+  };
+
+  const dqs = p.data_quality_score;
+  const dimScores = dqs?.dimensions || {};
+
+  let dimensionsHtml = '';
+  for (const [groupKey, group] of Object.entries(dims)) {
+    if (typeof group !== 'object' || group === null) continue;
+
+    const groupLabel = dimGroupLabels[groupKey] || groupKey.replace(/_/g, ' ');
+    const scoreKey = groupKey.replace(/_/g, '-');
+    const score = dimScores[scoreKey];
+    const cls = score !== undefined ? (score >= 0.7 ? 'pass' : score >= 0.5 ? 'warn' : 'fail') : '';
+    const scorePct = score !== undefined ? Math.round(score * 100) + '%' : '';
+
+    let propsHtml = '';
+    if (group.value !== undefined) {
+      // Single dimension (like growth_phase)
+      propsHtml = renderDimension(groupKey.replace(/_/g, ' '), group);
+    } else {
+      for (const [dimKey, dim] of Object.entries(group)) {
+        propsHtml += renderDimension(dimKey.replace(/_/g, ' '), dim);
+      }
+    }
+
+    dimensionsHtml += `
+      <div class="dim-group ${cls}" onclick="this.classList.toggle('open')">
+        <div class="dim-group-header">
+          <span class="dim-group-title">${groupLabel}</span>
+          <span class="dim-group-score ${cls}">${scorePct}</span>
+        </div>
+        <div class="dim-group-body" onclick="event.stopPropagation()">
+          ${propsHtml}
+        </div>
+      </div>`;
+  }
+
+  const gapsHtml = (p.gaps || []).map(g => `<li>${g}</li>`).join('');
+
+  const navItems = [
+    `<a href="#${id}-summary">Summary</a>`,
+    `<a href="#${id}-quality">Quality</a>`,
+    contactsHtml ? `<a href="#${id}-contacts">Contacts</a>` : '',
+    `<a href="#${id}-dims">Dimensions</a>`,
+    `<a href="#${id}-problems">Problems</a>`,
+    gapsHtml ? `<a href="#${id}-gaps">Gaps</a>` : '',
+  ].filter(Boolean).join('');
+
+  return `
+    <div class="view" id="view-${id}">
+      <h2>${p.company_name || id}</h2>
+      <p class="page-subtitle">${p.website || ''}</p>
+      <nav class="section-nav">${navItems}</nav>
+
+      <div class="analysis-section" id="${id}-summary">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Executive Summary</div>
+          </div>
+          <div class="summary-text">${p.executive_summary || 'No summary available.'}</div>
+        </div>
+      </div>
+
+      <div class="analysis-section" id="${id}-quality">
+        ${renderScoreCard(p.data_quality_score)}
+      </div>
+
+      ${contactsHtml ? `
+        <div class="analysis-section" id="${id}-contacts">
+          <h3>Known Contacts</h3>
+          ${contactsHtml}
+        </div>
+      ` : ''}
+
+      <div class="analysis-section" id="${id}-dims">
+        <h3>Profile Dimensions</h3>
+        ${dimensionsHtml || '<div class="card"><div class="card-title">Profile data loading...</div></div>'}
+      </div>
+
+      <div class="analysis-section" id="${id}-problems">
+        <div id="problems-${id}"></div>
+      </div>
+
+      ${gapsHtml ? `
+        <div class="analysis-section" id="${id}-gaps">
+          <details>
+            <summary>Data Gaps (${p.gaps.length})</summary>
+            <div class="card" style="margin-top: 8px;">
+              <ul style="padding-left: 16px; font-size: 13px; color: var(--text-muted);">${gapsHtml}</ul>
+            </div>
+          </details>
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+function renderOverview() {
+  const grid = document.getElementById('overview-grid');
+  const loaded = Object.keys(profiles);
+
+  if (loaded.length === 0) {
+    grid.innerHTML = '<div class="loading"><div class="loading-spinner"></div>Loading profiles...</div>';
+    return;
+  }
+
+  // Stats
+  const statsEl = document.getElementById('report-stats');
+  const hmLoaded = Object.keys(heatmaps);
+  const avgQuality = loaded.reduce((s, id) => {
+    const dqs = profiles[id].data_quality_score;
+    return s + (typeof dqs === 'object' ? (dqs.overall || 0) : 0);
+  }, 0) / loaded.length;
+
+  let totalHigh = 0;
+  let hottestDomain = { name: '', avg: 0 };
+  if (hmLoaded.length > 0) {
+    hmLoaded.forEach(id => {
+      const s = heatmaps[id].summary;
+      if (s) totalHigh += (s.problem_count_by_relevance.high || 0);
+    });
+    // Find hottest domain across all companies
+    for (const domId of DOMAIN_ORDER) {
+      let sum = 0;
+      hmLoaded.forEach(id => {
+        const dom = heatmaps[id].domains[domId];
+        if (dom) sum += dom.domain_avg;
+      });
+      const avg = sum / hmLoaded.length;
+      if (avg > hottestDomain.avg) {
+        const label = heatmaps[hmLoaded[0]].domains[domId]?.domain_label || domId;
+        hottestDomain = { name: label, avg };
+      }
+    }
+  }
+
+  statsEl.innerHTML = `
+    <div class="stat-card"><div class="stat-value">${loaded.length}</div><div class="stat-label">Companies Profiled</div></div>
+    <div class="stat-card"><div class="stat-value">${Math.round(avgQuality * 100)}%</div><div class="stat-label">Avg Profile Quality</div></div>
+    <div class="stat-card"><div class="stat-value">141</div><div class="stat-label">Problems Scored</div></div>
+    <div class="stat-card"><div class="stat-value">${totalHigh}</div><div class="stat-label">High-Relevance Hits</div></div>
+    <div class="stat-card"><div class="stat-value" style="font-size:16px;line-height:2">${hottestDomain.name || '...'}</div><div class="stat-label">Hottest Domain</div></div>
+  `;
+
+  // Mini heatmap
+  renderMiniHeatmap();
+
+  // Home clusters
+  renderHomeClusters();
+
+  // Company cards with problem peek
+  grid.innerHTML = loaded.map(id => {
+    const p = profiles[id];
+    const dims = p.dimensions || p.profile || {};
+    const sector = dims.industry_vertical?.primary_sector?.value || '';
+    const phase = dims.growth_phase?.value || (typeof dims.growth_phase === 'string' ? dims.growth_phase : '');
+    const contacts = p.known_contacts || (p.contacts ? p.contacts : p.known_contact ? [p.known_contact] : []);
+    const contactName = Array.isArray(contacts) ? contacts[0]?.name : contacts?.name;
+
+    const dqs = p.data_quality_score;
+    const overallScore = typeof dqs === 'object' ? dqs.overall : dqs;
+    const scorePct = overallScore ? Math.round(overallScore * 100) : null;
+    const sCls = overallScore ? (overallScore >= 0.7 ? 'pass' : overallScore >= 0.5 ? 'warn' : 'fail') : '';
+    const weakCount = dqs?.weak_dimensions ? Object.keys(dqs.weak_dimensions).length : 0;
+
+    // Top 3 problems from heatmap
+    let problemPeek = '';
+    const hm = heatmaps[id];
+    if (hm) {
+      const topProbs = hm.summary.top_problems.slice(0, 3).map(pid => {
+        for (const dom of Object.values(hm.domains)) {
+          if (dom.problems && dom.problems[pid]) return dom.problems[pid].label;
+          if (dom.sub_categories) {
+            for (const sub of Object.values(dom.sub_categories)) {
+              if (sub.problems && sub.problems[pid]) return sub.problems[pid].label;
+            }
+          }
+        }
+        return pid;
+      });
+      problemPeek = `<div class="problem-peek">${topProbs.map(l => `<span class="problem-pip">${l}</span>`).join('')}</div>`;
+    }
+
+    return `
+      <div class="overview-card" onclick="showView('${id}')">
+        <div class="company-name">${p.company_name || id}</div>
+        <div class="company-type">${sector}${phase ? ' — ' + phase : ''}</div>
+        ${contactName ? `<div class="company-contact">${contactName}</div>` : ''}
+        ${scorePct ? `<div class="score-indicator"><span class="score-dot ${sCls}"></span> ${scorePct}% quality${weakCount ? ` — ${weakCount} gap${weakCount > 1 ? 's' : ''}` : ''}</div>` : ''}
+        ${problemPeek}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderMiniHeatmap() {
+  const container = document.getElementById('mini-heatmap-container');
+  const loaded = Object.keys(heatmaps);
+  if (loaded.length === 0) {
+    container.innerHTML = '<p style="color:var(--text-muted);font-size:13px;padding:12px">Heatmap data loading...</p>';
+    return;
+  }
+
+  const companyNames = {};
+  loaded.forEach(id => { companyNames[id] = (heatmaps[id].company_name || id).split(' ')[0]; });
+
+  let html = '<table class="mini-heatmap"><thead><tr><th>Domain</th>';
+  loaded.forEach(id => { html += `<th>${companyNames[id]}</th>`; });
+  html += '</tr></thead><tbody>';
+
+  for (const domId of DOMAIN_ORDER) {
+    const label = heatmaps[loaded[0]].domains[domId]?.domain_label || domId;
+    html += `<tr><td>${label}</td>`;
+    loaded.forEach(id => {
+      const dom = heatmaps[id].domains[domId];
+      const avg = dom ? dom.domain_avg : 0;
+      const pct = Math.round(avg * 100);
+      html += `<td><span class="mini-cell ${hmClass(avg)}">${pct}</span></td>`;
+    });
+    html += '</tr>';
+  }
+  html += '</tbody></table>';
+  container.innerHTML = html;
+}
+
+function renderHomeClusters() {
+  const container = document.getElementById('home-clusters');
+  const loaded = Object.keys(heatmaps);
+  if (loaded.length === 0) {
+    container.innerHTML = '<p style="color:var(--text-muted);font-size:13px">Loading...</p>';
+    return;
+  }
+
+  const companyNames = {};
+  loaded.forEach(id => { companyNames[id] = heatmaps[id].company_name || id; });
+
+  const problemScores = {};
+  loaded.forEach(id => {
+    const probs = getAllProblems(heatmaps[id]);
+    probs.forEach(p => {
+      if (!problemScores[p.probId]) {
+        problemScores[p.probId] = { label: p.label, subLabel: p.subLabel, domLabel: p.domLabel, companies: [] };
+      }
+      problemScores[p.probId].companies.push({ id, name: companyNames[id], score: p.score });
+    });
+  });
+
+  const clusters = Object.entries(problemScores)
+    .map(([id, data]) => {
+      const relevant = data.companies.filter(c => c.score >= 0.5);
+      const avg = data.companies.reduce((s, c) => s + c.score, 0) / data.companies.length;
+      return { id, ...data, relevantCount: relevant.length, avg };
+    })
+    .filter(c => c.relevantCount >= 3)
+    .sort((a, b) => b.relevantCount - a.relevantCount || b.avg - a.avg)
+    .slice(0, 8);
+
+  container.innerHTML = clusters.map(c => {
+    const chips = c.companies
+      .filter(co => co.score >= 0.4)
+      .sort((a, b) => b.score - a.score)
+      .map(co => {
+        const cls = co.score >= 0.6 ? 'hot' : 'warm';
+        return `<span class="cluster-chip ${cls}">${co.name} ${Math.round(co.score * 100)}</span>`;
+      }).join('');
+    return `
+      <div class="cluster-card">
+        <div class="cluster-domain">${c.domLabel} > ${c.subLabel}</div>
+        <div class="cluster-title">${c.label} <span style="color:var(--text-muted);font-weight:400;font-size:12px">(${c.relevantCount} companies)</span></div>
+        <div class="cluster-companies">${chips}</div>
+      </div>`;
+  }).join('');
+}
+
+function renderNav() {
+  const nav = document.getElementById('company-nav');
+  nav.innerHTML = Object.keys(profiles).map(id => {
+    const p = profiles[id];
+    return `<a class="nav-item" href="#view-${id}">${p.company_name || id}</a>`;
+  }).join('');
+}
+
+function showView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  const target = document.getElementById('view-' + id);
+  if (target) { target.classList.add('active'); window.scrollTo(0, 0); }
+  const navItem = document.querySelector(`.nav-item[href="#view-${id}"]`);
+  if (navItem) navItem.classList.add('active');
+  // Close mobile sidebar
+  document.getElementById('sidebar').classList.remove('open');
+}
+
+// Nav click handlers
+document.addEventListener('click', e => {
+  const navItem = e.target.closest('.nav-item[href]');
+  if (navItem) {
+    e.preventDefault();
+    const id = navItem.getAttribute('href').replace('#view-', '');
+    showView(id);
+  }
+});
+
+// Close sidebar when clicking outside on mobile
+document.addEventListener('click', e => {
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && !e.target.closest('.hamburger')) {
+    sidebar.classList.remove('open');
+  }
+});
+
+// Load profiles and heatmaps
+async function loadProfiles() {
+  for (const id of COMPANIES) {
+    try {
+      const resp = await fetch(PROFILES_DIR + id + '.json');
+      if (resp.ok) {
+        profiles[id] = await resp.json();
+
+        // Add company view to DOM
+        const main = document.querySelector('.main');
+        main.insertAdjacentHTML('beforeend', renderCompanyView(id, profiles[id]));
+      }
+    } catch (e) {
+      console.log(`Profile not yet available: ${id}`);
+    }
+  }
+  renderOverview();
+  renderNav();
+
+  // Load heatmap data
+  for (const id of COMPANIES) {
+    try {
+      const resp = await fetch(HEATMAP_DIR + id + '.json');
+      if (resp.ok) {
+        heatmaps[id] = await resp.json();
+        // Inject problems into company view
+        const el = document.getElementById('problems-' + id);
+        if (el) el.innerHTML = renderCompanyProblems(id);
+      }
+    } catch (e) {
+      console.log(`Heatmap not yet available: ${id}`);
+    }
+  }
+  renderHeatmapView();
+  renderAnalysisView();
+  // Re-render overview now that heatmap data is available
+  renderOverview();
+
+  // Load capability fit data
+  for (const catId of CAP_CATEGORIES) {
+    try {
+      const resp = await fetch(CAP_FIT_DIR + catId + '.json');
+      if (resp.ok) capabilityFit[catId] = await resp.json();
+    } catch (e) {
+      console.log(`Capability fit not yet available: ${catId}`);
+    }
+  }
+  console.log('Capability fit loaded:', Object.keys(capabilityFit).length, 'categories');
+  try {
+    renderCapabilitiesView();
+  } catch (e) {
+    console.error('renderCapabilitiesView error:', e);
+    document.getElementById('capabilities-content').innerHTML = '<div style="color:red;padding:20px">Error rendering: ' + e.message + '</div>';
+  }
+
+  // Load cross-analysis
+  try {
+    const resp = await fetch('../outputs/cross-analysis.json');
+    if (resp.ok) {
+      crossAnalysis = await resp.json();
+      renderOpportunitiesView();
+    }
+  } catch (e) {
+    console.log('Cross-analysis not yet available');
+  }
+
+  // Load narrative report sections
+  await loadNarrative();
+
+  // Load scored product ideas
+  try {
+    const resp = await fetch('../outputs/product-ideas-scored.json');
+    if (resp.ok) {
+      const data = await resp.json();
+      renderProductIdeasView(data);
+    }
+  } catch (e) {
+    console.log('Product ideas not yet available');
+  }
+}
+
+function renderProductIdeasView(data) {
+  const container = document.getElementById('product-ideas-content');
+  if (!data || !data.ideas) return;
+
+  const ideas = data.ideas;
+  const products = ['Staffroom', 'Enrolflow', 'GrantLens', 'SectorPulse', 'BoardBrief'];
+  const allProducts = [...products, 'Independent'];
+  const productColors = {
+    'Staffroom': '#7b93ff', 'Enrolflow': '#34d399', 'GrantLens': '#f59e0b',
+    'SectorPulse': '#a78bfa', 'BoardBrief': '#f87171', 'Independent': '#6b7194'
+  };
+
+  // Stats row
+  const byProd = data.by_product || {};
+  let html = `<div style="display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap">
+    <div class="kpi-card" style="flex:1;min-width:90px"><div class="kpi-value" style="font-size:22px">${data.deduped_count}</div><div class="kpi-label">Unique Ideas</div></div>
+    <div class="kpi-card" style="flex:1;min-width:90px"><div class="kpi-value" style="font-size:22px">${data.removed_count}</div><div class="kpi-label">Duplicates Removed</div></div>
+    <div class="kpi-card" style="flex:1;min-width:90px"><div class="kpi-value" style="font-size:22px;color:var(--green)">${data.tier_breakdown.tier1}</div><div class="kpi-label">Tier 1 (&gt;55)</div></div>
+    <div class="kpi-card" style="flex:1;min-width:90px"><div class="kpi-value" style="font-size:22px;color:var(--amber)">${data.tier_breakdown.tier2}</div><div class="kpi-label">Tier 2 (40-55)</div></div>
+    <div class="kpi-card" style="flex:1;min-width:90px"><div class="kpi-value" style="font-size:22px;color:var(--text-muted)">${data.tier_breakdown.tier3}</div><div class="kpi-label">Tier 3 (&lt;40)</div></div>
+    <div class="kpi-card" style="flex:1;min-width:90px"><div class="kpi-value" style="font-size:22px">${data.score_range.max}</div><div class="kpi-label">Top Score / 72</div></div>
+  </div>`;
+
+  // Product breakdown bar
+  html += `<div style="margin-bottom:24px">
+    <div style="font-size:11px;color:var(--text-muted);font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.06em">Feature Backlog by Product</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      ${allProducts.map(p => {
+        const count = byProd[p] || 0;
+        if (!count) return '';
+        const color = productColors[p] || 'var(--text-muted)';
+        return '<div style="display:flex;align-items:center;gap:8px">' +
+          '<div style="width:10px;height:10px;border-radius:50%;background:' + color + '"></div>' +
+          '<span style="font-size:12px;font-weight:600">' + p + '</span>' +
+          '<span style="font-size:12px;color:var(--text-muted)">' + count + '</span></div>';
+      }).join('')}
+    </div>
+  </div>`;
+
+  // Filter bar
+  html += `<div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;align-items:center">
+    <div style="font-size:11px;color:var(--text-muted);font-weight:600">FILTER:</div>
+    <select id="ideas-product-filter" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer">
+      <option value="">All products</option>
+      ${allProducts.map(p => '<option value="' + p + '">' + p + ' (' + (byProd[p]||0) + ')</option>').join('')}
+    </select>
+    <select id="ideas-tier-filter" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer">
+      <option value="">All tiers</option>
+      <option value="tier1">Tier 1 (&gt;55)</option>
+      <option value="tier2">Tier 2 (40-55)</option>
+      <option value="tier3">Tier 3 (&lt;40)</option>
+    </select>
+    <select id="ideas-domain-filter" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer">
+      <option value="">All domains</option>
+      ${[...new Set(ideas.map(i => i._cellDomain))].sort().map(d => '<option value="' + d + '">' + d + '</option>').join('')}
+    </select>
+    <div id="ideas-count" style="font-size:12px;color:var(--text-muted);margin-left:auto">${ideas.length} ideas</div>
+  </div>`;
+
+  // Scoring legend — compact, toggleable
+  html += `<details style="margin-bottom:16px">
+    <summary style="font-size:11px;color:var(--text-muted);cursor:pointer;padding:8px 0;user-select:none"><strong style="color:var(--text-secondary)">Scoring rubric</strong> (max 72) — click to expand</summary>
+    <div style="padding:10px 16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:11px;color:var(--text-muted);line-height:2;margin-top:4px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px">
+        <div><strong style="color:var(--green)">3x</strong> Problem Severity — how acute is the daily pain?</div>
+        <div><strong style="color:var(--accent)">2x</strong> Buyer Clarity — named role with budget?</div>
+        <div><strong style="color:var(--accent)">2x</strong> Time to Value — ROI within one school term?</div>
+        <div><strong style="color:var(--accent)">2x</strong> Build Feasibility — ship v1 in 3 months?</div>
+        <div><strong style="color:var(--accent)">2x</strong> Data Access — data exists in accessible formats?</div>
+        <div><strong style="color:var(--text-muted)">1x</strong> Business Model — clear pricing/revenue?</div>
+        <div><strong style="color:var(--text-muted)">1x</strong> Defensibility — domain moat vs GPT wrapper?</div>
+        <div><strong style="color:var(--accent)">2x</strong> Agentic Suitability — needs multi-step orchestration?</div>
+        <div><strong style="color:var(--text-muted)">1x</strong> Greenfield Advantage — net-new SaaS, not plugin?</div>
+      </div>
+    </div>
+  </details>`;
+
+  // Master-detail layout: table left, detail right
+  html += `<div id="ideas-master-detail" style="display:grid;grid-template-columns:1fr;gap:0;position:relative">
+    <div id="ideas-table-wrap" class="scroll-table-wrapper"></div>
+    <div id="idea-detail-panel" style="display:none"></div>
+  </div>`;
+
+  container.innerHTML = html;
+
+  function tierColor(s) { return s > 55 ? 'var(--green)' : s >= 40 ? 'var(--amber)' : 'var(--red)'; }
+  function tierBg(s) { return s > 55 ? 'var(--green-dim)' : s >= 40 ? 'var(--amber-dim)' : 'var(--red-dim)'; }
+
+  let activeRow = -1;
+
+  function renderTable(filtered) {
+    let tbl = `<table class="analysis-table" id="ideas-table"><thead><tr>
+      <th style="width:28px">#</th>
+      <th style="width:44px">Score</th>
+      <th style="text-align:left;min-width:160px">Name</th>
+      <th>Product</th>
+      <th>Domain</th>
+      <th style="text-align:left;width:100px">Scores</th>
+      </tr></thead><tbody>`;
+
+    filtered.forEach((idea, i) => {
+      const ws = idea.weighted_score || 0;
+      const parent = idea.tier1_parent || 'Independent';
+      const pColor = productColors[parent] || '#6b7194';
+      const sc = idea.scores || {};
+      const dupeCount = idea.duplicate_count ? '<span style="font-size:9px;color:var(--text-muted);margin-left:4px" title="Merged from ' + idea.duplicate_count + ' duplicate ideas">x' + idea.duplicate_count + '</span>' : '';
+      const isActive = i === activeRow;
+      const rowBg = isActive ? 'var(--accent-glow)' : (i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.015)');
+
+      // Mini sparkline
+      const scoreKeys = ['problem_severity','buyer_clarity','time_to_value','build_feasibility','data_access','business_model','defensibility','agentic_suitability','greenfield_advantage'];
+      const scoreLabels = ['Sev','Buy','TtV','Bld','Dat','Biz','Def','Agt','Grn'];
+      const sparkline = scoreKeys.map((k, si) => {
+        const v = sc[k] || 0;
+        const barColor = v >= 4 ? 'var(--green)' : v >= 3 ? 'var(--amber)' : 'var(--red)';
+        return '<div title="' + scoreLabels[si] + ': ' + v + '/5" style="display:inline-block;width:7px;height:' + (v * 4 + 2) + 'px;background:' + barColor + ';border-radius:1px;margin-right:1px;vertical-align:bottom"></div>';
+      }).join('');
+
+      tbl += `<tr data-idx="${i}" style="cursor:pointer;background:${rowBg};transition:background 0.15s" onmouseenter="this.style.background='var(--accent-glow)'" onmouseleave="this.style.background='${rowBg}'">
+        <td style="color:var(--text-muted);font-size:10px">${i + 1}</td>
+        <td><span style="display:inline-block;padding:2px 7px;border-radius:10px;font-weight:700;font-size:12px;color:${tierColor(ws)};background:${tierBg(ws)}">${ws}</span></td>
+        <td style="text-align:left"><div style="font-weight:600;font-size:12px;white-space:nowrap">${idea.name || ''}${dupeCount}</div><div style="font-size:10px;color:var(--text-muted);margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.4">${idea.one_liner || ''}</div></td>
+        <td><span style="font-size:9px;font-weight:600;color:${pColor};padding:2px 6px;border:1px solid ${pColor}44;border-radius:8px;white-space:nowrap">${parent}</span></td>
+        <td style="font-size:10px;color:var(--text-muted)">${(idea._cellDomain || '').replace(' & ', ' &amp; ')}</td>
+        <td style="line-height:1">${sparkline}</td>
+        </tr>`;
+    });
+    tbl += '</tbody></table>';
+    document.getElementById('ideas-table-wrap').innerHTML = tbl;
+    document.getElementById('ideas-count').textContent = filtered.length + ' ideas';
+
+    // Attach click handlers
+    document.querySelectorAll('#ideas-table tbody tr').forEach(tr => {
+      tr.addEventListener('click', () => {
+        const idx = parseInt(tr.dataset.idx);
+        showIdeaDetail(idx);
+      });
+    });
+  }
+
+  // Detail panel — renders inline between table rows or as side panel
+  window._ideasFiltered = ideas;
+  function showIdeaDetail(idx) {
+    const idea = window._ideasFiltered[idx];
+    if (!idea) return;
+
+    // Toggle off if clicking same row
+    if (activeRow === idx) {
+      activeRow = -1;
+      document.getElementById('idea-detail-panel').style.display = 'none';
+      renderTable(window._ideasFiltered);
+      return;
+    }
+    activeRow = idx;
+
+    const panel = document.getElementById('idea-detail-panel');
+    const sc = idea.scores || {};
+    const parent = idea.tier1_parent || 'Independent';
+    const pColor = productColors[parent] || '#6b7194';
+    const ws = idea.weighted_score || 0;
+
+    const scoreRows = [
+      { key: 'problem_severity', label: 'Problem Severity', weight: '3x', lens: 'Desirability' },
+      { key: 'buyer_clarity', label: 'Buyer Clarity', weight: '2x', lens: 'Desirability' },
+      { key: 'time_to_value', label: 'Time to Value', weight: '2x', lens: 'Desirability' },
+      { key: 'build_feasibility', label: 'Build Feasibility', weight: '2x', lens: 'Feasibility' },
+      { key: 'data_access', label: 'Data Access', weight: '2x', lens: 'Feasibility' },
+      { key: 'business_model', label: 'Business Model', weight: '1x', lens: 'Viability' },
+      { key: 'defensibility', label: 'Defensibility', weight: '1x', lens: 'Viability' },
+      { key: 'agentic_suitability', label: 'Agentic Suitability', weight: '2x', lens: 'Builder Fit' },
+      { key: 'greenfield_advantage', label: 'Greenfield Advantage', weight: '1x', lens: 'Builder Fit' },
+    ];
+
+    const scoresHtml = scoreRows.map(r => {
+      const v = sc[r.key] || 0;
+      const dots = [1,2,3,4,5].map(d =>
+        '<span style="display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:2px;background:' +
+        (d <= v ? (v >= 4 ? 'var(--green)' : v >= 3 ? 'var(--amber)' : 'var(--red)') : 'var(--surface3)') + '"></span>'
+      ).join('');
+      return '<div style="display:flex;align-items:center;gap:6px;padding:3px 0;border-bottom:1px solid var(--border-subtle)">' +
+        '<span style="width:120px;font-size:10px;color:var(--text-secondary)">' + r.label + '</span>' +
+        '<span style="width:22px;font-size:9px;color:var(--text-muted)">' + r.weight + '</span>' +
+        '<span>' + dots + '</span>' +
+        '<span style="font-size:9px;color:var(--text-muted);margin-left:auto">' + r.lens + '</span></div>';
+    }).join('');
+
+    const aka = idea.also_known_as && idea.also_known_as.length
+      ? '<div style="font-size:9px;color:var(--text-muted);margin-top:6px">Also generated as: ' + idea.also_known_as.join(', ') + '</div>'
+      : '';
+
+    const companies = (idea.target_companies || []).join(', ');
+
+    panel.innerHTML = `<div style="background:var(--surface);border:1px solid var(--accent-dim);border-radius:var(--radius);padding:20px;position:relative;animation:viewFadeIn 0.2s ease">
+      <button onclick="activeRow=-1;document.getElementById('idea-detail-panel').style.display='none'" style="position:absolute;top:10px;right:14px;background:none;border:none;color:var(--text-muted);font-size:16px;cursor:pointer;padding:4px 8px;border-radius:4px;transition:color 0.15s" onmouseenter="this.style.color='var(--text)'" onmouseleave="this.style.color='var(--text-muted)'">&times;</button>
+
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+        <span style="padding:2px 8px;border-radius:10px;font-weight:700;font-size:14px;color:${tierColor(ws)};background:${tierBg(ws)}">${ws}/72</span>
+        <h3 style="font-size:16px;font-weight:700;margin:0">${idea.name}</h3>
+        <span style="font-size:9px;font-weight:600;color:${pColor};padding:2px 8px;border:1px solid ${pColor}44;border-radius:10px">${parent}</span>
+      </div>
+      <p style="font-size:12px;color:var(--text-secondary);margin-bottom:8px;line-height:1.5">${idea.one_liner || ''}</p>
+      ${aka}
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px">
+        <div>
+          <div style="font-size:9px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">Problem</div>
+          <p style="font-size:11px;line-height:1.6;color:var(--text-secondary)">${idea.problem || ''}</p>
+        </div>
+        <div>
+          <div style="font-size:9px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">How It Works</div>
+          <p style="font-size:11px;line-height:1.6;color:var(--text-secondary)">${idea.how_it_works || ''}</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px">
+        <div>
+          <div style="font-size:9px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">Score Breakdown</div>
+          ${scoresHtml}
+        </div>
+        <div>
+          <div style="font-size:9px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">Metadata</div>
+          <div style="font-size:11px;line-height:1.9;color:var(--text-secondary)">
+            <div><strong>Buyer:</strong> ${idea.buyer_persona || 'TBD'}</div>
+            <div><strong>AI Technique:</strong> ${idea.ai_technique || 'TBD'}</div>
+            <div><strong>Companies:</strong> ${companies || 'TBD'}</div>
+            <div><strong>Domain:</strong> ${idea._cellDomain || ''} — ${idea._cellSubCategory || ''}</div>
+            <div><strong>Cell Heat:</strong> ${idea._cellHeat || ''} · <strong>Opp Score:</strong> ${idea._cellOppScore || ''}</div>
+          </div>
+          ${idea.scoring_rationale ? '<div style="margin-top:10px;padding:8px 10px;background:var(--accent-glow);border:1px solid var(--accent-dim);border-radius:var(--radius-sm);font-size:10px;color:var(--text-secondary);line-height:1.5"><strong style="color:var(--accent)">Rationale:</strong> ' + idea.scoring_rationale + '</div>' : ''}
+        </div>
+      </div>
+    </div>`;
+
+    panel.style.display = 'block';
+
+    // Move panel to appear right after the clicked row
+    const clickedRow = document.querySelector('#ideas-table tbody tr[data-idx="' + idx + '"]');
+    if (clickedRow) {
+      // Insert panel after the clicked row's parent table
+      const tableWrap = document.getElementById('ideas-table-wrap');
+      tableWrap.parentNode.insertBefore(panel, tableWrap.nextSibling);
+
+      // Scroll the panel into view smoothly, positioning it near the top
+      setTimeout(() => {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 50);
+    }
+
+    // Re-render table to update active row highlight
+    renderTable(window._ideasFiltered);
+  }
+  window.showIdeaDetail = showIdeaDetail;
+
+  renderTable(ideas);
+
+  // Filter handlers
+  function applyFilters() {
+    let filtered = ideas;
+    const prodVal = document.getElementById('ideas-product-filter').value;
+    const tierVal = document.getElementById('ideas-tier-filter').value;
+    const domVal = document.getElementById('ideas-domain-filter').value;
+    if (prodVal === 'Independent') filtered = filtered.filter(i => !i.tier1_parent);
+    else if (prodVal) filtered = filtered.filter(i => i.tier1_parent === prodVal);
+    if (tierVal === 'tier1') filtered = filtered.filter(i => i.weighted_score > 55);
+    else if (tierVal === 'tier2') filtered = filtered.filter(i => i.weighted_score >= 40 && i.weighted_score <= 55);
+    else if (tierVal === 'tier3') filtered = filtered.filter(i => i.weighted_score < 40);
+    if (domVal) filtered = filtered.filter(i => i._cellDomain === domVal);
+    window._ideasFiltered = filtered;
+    activeRow = -1;
+    document.getElementById('idea-detail-panel').style.display = 'none';
+    renderTable(filtered);
+  }
+
+  document.getElementById('ideas-product-filter').addEventListener('change', applyFilters);
+  document.getElementById('ideas-tier-filter').addEventListener('change', applyFilters);
+  document.getElementById('ideas-domain-filter').addEventListener('change', applyFilters);
+}
+
+loadProfiles();
+</script>
+</body>
+</html>

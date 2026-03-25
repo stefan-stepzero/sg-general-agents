@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-safety-security-safety-compliance-inspections-and-certifications-lag-dup",
+  "pain_point_label": "Fire Safety, Electrical Compliance, and Statutory Certifications Lag or Are Incomplete",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step administrative workflow — tracking expiry dates, triggering contractor engagement, chasing documentation, and submitting to DepEd/LGU — currently handled inconsistently by individual site managers. A task automation agent can own this workflow end-to-end: monitor certification calendars, auto-generate contractor requests, route remediation tasks, and confirm document receipt. This directly addresses the distributed-responsibility failure mode that causes lapses.",
+      "opportunity_sketch": "An agent that ingests all certification records across campuses, monitors upcoming and overdue expiry dates, automatically dispatches renewal reminders to site managers and contractors, and tracks remediation steps to closure — surfacing a live compliance status dashboard for the central operations team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Each campus carries a composite compliance risk profile based on certificate ages, inspection history, remediation backlogs, and contractor responsiveness. A risk scoring model can rank campuses by likelihood of failing an upcoming regulatory inspection, enabling the operations team to prioritize attention before a lapse becomes a violation. This moves the organization from reactive firefighting to proactive risk triage.",
+      "opportunity_sketch": "A risk dashboard that scores each campus monthly on compliance risk — factoring in days-to-expiry for each certificate type, past remediation cycle time, and number of open deficiencies — so the central team knows which sites need intervention before a DepEd or BFP visit.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Compliance documents — fire safety certificates, electrical inspection reports, DepEd certifications — exist as PDFs and scanned forms spread across site manager files. Parsing these to extract certificate type, issuing authority, issue date, and expiry date is a prerequisite for any centralized compliance tracking system. OCR and form extraction converts scattered paper and image records into structured data that can feed monitoring and alerting workflows.",
+      "opportunity_sketch": "An ingestion pipeline where site managers upload scanned certificates; the system extracts key fields (cert type, expiry, issuing body, campus) automatically and populates a central compliance register — eliminating the manual data-entry step that currently blocks centralization.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When a compliance gap is identified — either ahead of an inspection or during remediation — the organization must produce formal correspondence: contractor engagement letters, remediation status reports to DepEd or LGU, internal escalation memos, and parent communications about safety assurance. Drafting these accurately and promptly under time pressure is a recurring bottleneck. AI text generation can produce contextually appropriate drafts from structured compliance data, reducing response lag.",
+      "opportunity_sketch": "Auto-generated remediation status letters and regulatory response drafts triggered when a certificate lapses — pulling in the specific campus, certificate type, expiry date, and remediation steps taken — ready for site manager review and dispatch within minutes rather than days.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "During a regulatory inspection or internal audit, compliance officers need to rapidly locate and produce specific certificates, inspection reports, and remediation records across all campuses. Today these are scattered and hard to produce on demand. A RAG system over the compliance document corpus enables instant retrieval of specific records with citation — answering queries like 'show me all electrical certifications for Campus X expiring in the next 90 days' or 'what was the last fire inspection finding for Campus Y.'",
+      "opportunity_sketch": "A compliance document Q&A tool where auditors and operations staff can query the full certificate repository in natural language, getting cited answers with links to source documents — replacing hours of manual file search during inspection preparation or regulatory response.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

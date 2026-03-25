@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-alumni-engagement-contact-isolation-dup",
+  "pain_point_label": "Alumni Treated as Isolated Individuals, Not Networks",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Alumni records in a CRM or SIS are structured tabular data (graduation year, program, location, employer, career stage). A classification model can segment alumni into meaningful cohorts — by industry cluster, career stage, geographic region, or engagement tier — replacing the current undifferentiated mass-email approach. This directly addresses the core pain: no systematic segmentation.",
+      "opportunity_sketch": "An alumni segmentation engine that ingests structured alumni data and outputs labeled cohort assignments (e.g., 'early-career tech, Sydney metro'), enabling targeted communication and matching workflows.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The pain point is precisely that alumni are treated as isolated individuals rather than a network — meaning the relationship layer (shared cohort, same employer sector, mentorship compatibility with current students) is invisible. Knowledge extraction can map entity-to-entity relationships from alumni profiles, LinkedIn data, or survey text to build an explicit network graph of who knows whom, who works where, and who overlaps with current students' career interests.",
+      "opportunity_sketch": "An alumni relationship graph builder that extracts entity links from profile text and structured records, surfacing dormant mentorship pathways and peer referral chains the institution can activate.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "Once alumni are profiled, the institution needs to proactively match students to alumni mentors and alumni to peer networks without requiring either party to search manually. Recommendation surfacing alumni-to-student mentorship pairings or peer job referral candidates based on shared attributes (program, industry, location, career stage) directly addresses the 'no mechanism to surface mentorship or referrals' exclusion in the pain description.",
+      "opportunity_sketch": "A mentorship-matching recommender that proactively suggests student–alumni pairings for mentorship or job referrals, triggered by student profile updates or graduation milestones.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "One concrete symptom of the pain is mass emails sent to all 10k alumni regardless of relevance. Text generation enables personalized, segment-aware email copy that speaks to the specific cohort, industry, or career stage of the recipient — replacing one-size-fits-all blasts. This is technically straightforward, requires only segmentation data as input, and has a direct measurable outcome (open/click rates).",
+      "opportunity_sketch": "A dynamic alumni communication engine that generates personalized email variants per cohort segment, referencing relevant alumni milestones, local events, or career-stage-appropriate calls to action.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Turning a fragmented alumni database into an active network requires orchestrated multi-step workflows: enriching alumni records from LinkedIn or public sources, triggering segmented outreach at lifecycle moments (graduation anniversaries, career transitions), routing mentorship requests to matched alumni, and logging responses back to CRM. A task automation agent can own this pipeline end-to-end, replacing the manual effort that currently makes segmentation impractical.",
+      "opportunity_sketch": "An alumni lifecycle automation agent that monitors triggers (new student enrollment, alumni career change, event proximity), executes the appropriate outreach workflow, and updates CRM records — running continuously without staff intervention.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "workforce-management-deployment-scheduling-contract-type-opacity-dup",
+  "pain_point_label": "Ambiguous Contract Types & Deployment Rights",
+  "matches": [
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "HR staff and principals constantly need to know whether a specific contract type permits cross-campus redeployment, what constitutes an involuntary transfer under a given contract, and what the applicable policy is. RAG over the operator's HR policy corpus, employment contracts, and labor regulations can surface grounded, citation-backed answers instantly rather than escalating to HR or legal. This directly addresses the 'no transparent policy codified in system' pain and the principal uncertainty on deployment rights.",
+      "opportunity_sketch": "An internal HR policy Q&A tool where principals type natural-language questions ('Can I redeploy a probationary teacher from Campus A to Campus B?') and receive answers grounded in the actual policy documents, contracts, and labor code provisions, with citations.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Each employee record has a contract type, term dates, campus assignment, and deployment clauses buried in unstructured contract documents. Extracting these as structured key-value pairs (contract_type, deployment_scope, redeployment_consent_clause, term_end_date) from the raw documents creates the data foundation needed to surface deployment rights at scale and prevent disputes. Without this structured extraction, no downstream policy-enforcement or search solution can function.",
+      "opportunity_sketch": "A pipeline that ingests all employee contract PDFs, extracts structured contract attributes, and populates a master HR database with deployment-rights fields that principals and HR can query before making assignment decisions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a codified, human-readable policy is itself a root cause of disputes. AI can draft clear, plain-language policy documents that define deployment rights by contract type, define 'involuntary transfer,' and map out grievance procedures — work that HR teams perpetually defer. For a 500+ staff operator with mixed contract types, getting this policy authored and maintained is a direct pain reducer.",
+      "opportunity_sketch": "An AI-assisted policy drafting workflow where HR inputs contract type parameters and labor code references, and the system generates a structured Deployment Rights Policy document ready for legal review and codification into the HR system.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "When principals need to fill a vacancy or reorganize staffing across campuses, the valid assignment options are constrained by contract type, deployment scope, consent requirements, and labor rules simultaneously. A constraint-satisfaction layer can enumerate which staff are legally deployable to which campuses under which conditions, reducing principal guesswork and pre-empting grievances before a transfer is initiated.",
+      "opportunity_sketch": "A staffing assignment tool where a principal inputs a role vacancy at Campus B, and the system returns a list of eligible staff from across the network with each person's deployment eligibility status and any required steps (consent form, HR approval), derived from contract constraint rules.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

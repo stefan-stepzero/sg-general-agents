@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-budgeting-planning-allocation-contention",
+  "pain_point_label": "Opaque Shared Cost Allocation & Principal Accountability",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Principals dispute allocation not just because numbers are wrong but because they lack narrative context explaining what's included and why. AI can generate per-site allocation explainer reports that translate cost pool logic, driver choices, and variance commentary into plain language each principal can understand and challenge constructively. This directly attacks the trust deficit by making the 'black box' legible.",
+      "opportunity_sketch": "An automated monthly report generator that produces a site-level cost allocation narrative for each principal — 'Your site was allocated $X for central IT this period because you have Y headcount, which is Z% of the network total' — reducing post-close dispute volume.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Shared-service cost pools often exist across incompatible formats: finance ERP line items, HR headcount exports, facilities spreadsheets, and IT ticketing data all use different schemas. AI-assisted schema mapping and normalization can consolidate these into a unified allocation model, making driver recalculation reproducible and auditable rather than ad-hoc each period.",
+      "opportunity_sketch": "A data pipeline that ingests heterogeneous cost-driver source files (payroll exports, square-footage registers, FTE counts) and maps them to a canonical allocation schema, enabling consistent period-over-period comparisons and reducing manual reconciliation effort.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The contention over allocation drivers (headcount vs. revenue vs. FTE vs. floor area) is fundamentally an optimization problem: which combination of drivers produces the most defensible, equitable distribution of shared costs across sites given each site's actual consumption profile. AI can evaluate multiple driver combinations against fairness and incentive-alignment objectives, replacing ad-hoc political choices with a model-backed recommendation.",
+      "opportunity_sketch": "An allocation driver optimizer that tests multiple cost-driver combinations against a defined fairness metric (e.g., minimizing variance between allocated cost and estimated actual consumption) and recommends the driver mix for each cost pool during annual planning — giving CFOs an evidence base to defend allocation methodology to principals.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-regression",
+      "capability_label": "Regression & Quantitative Estimation",
+      "match_rationale": "Setting site-level overhead budgets is difficult because central costs fluctuate and allocation rules amplify small changes into large per-site swings. A regression model trained on historical cost pool behaviour, network-wide activity drivers, and site growth trajectories can produce estimated allocation amounts for each site during planning season, reducing the 'surprise' factor and giving principals a more credible forward view to budget against.",
+      "opportunity_sketch": "A planning-season allocation estimator that predicts each site's likely shared-cost burden for the coming year, with confidence intervals, enabling principals to plan controllable costs against a stable overhead estimate rather than a politically derived placeholder.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Finance teams and principals frequently need to interrogate past allocation decisions — 'Why did central HR costs spike in Q2?', 'What changed in the IT allocation methodology last year?' — but this institutional knowledge is buried across budget memos, board papers, and email threads. A RAG system over the organisation's finance document corpus allows principals to self-serve answers to allocation questions, reducing the CFO team's dispute-handling burden.",
+      "opportunity_sketch": "An internal finance Q&A assistant grounded in the organisation's historical budget documents, allocation policy memos, and variance reports — letting principals ask natural-language questions about their site's cost burden and receive cited, traceable answers rather than waiting for finance team responses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end allocation process — pulling cost pool actuals, fetching driver data from HR/facilities systems, computing allocations, updating site P&Ls, and distributing reports — is a multi-step workflow currently done manually by finance analysts each period. An automation agent can execute this pipeline autonomously, enforcing a consistent, auditable methodology and eliminating the manual rework that introduces inconsistencies principals then dispute.",
+      "opportunity_sketch": "A monthly close automation agent that orchestrates the full shared-cost allocation cycle: pulling source data from ERP and HR systems, applying the agreed driver model, generating site-level P&L entries, and distributing allocation breakdown reports to principals — reducing close cycle time and removing human error from methodology application.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

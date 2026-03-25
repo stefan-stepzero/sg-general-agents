@@ -1,0 +1,1111 @@
+{
+  "company_id": "rising",
+  "company_name": "Rising Academies",
+  "scored_at": "2026-03-11",
+  "method": "sonnet-rubric-v2",
+  "rubric_version": "v2-strict",
+  "domains": {
+    "growth-market": {
+      "domain_label": "Growth & Market",
+      "domain_avg": 0.49,
+      "sub_categories": {
+        "acquisition": {
+          "label": "Acquisition & Demand",
+          "sub_avg": 0.35,
+          "problems": {
+            "acquisition-awareness": {
+              "label": "Market Awareness & Reach",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Rising has strong brand in its niche (Anthropic case study, World's Best School Prizes, MIT Solve) but operates in Sub-Saharan Africa where market awareness outside the impact-investor/government-procurement circuit is limited; one weak signal is the profile noting Rori targets 1M users by 2027 from ~150K current, implying significant awareness gap to close."
+            },
+            "acquisition-engagement": {
+              "label": "Engagement Quality",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of engagement quality problems; profile confirms Rori has 150K+ users and published RCT efficacy, suggesting strong engagement, but B2G government procurement sales cycles are inherently slow which could mask engagement quality issues — generic plausibility only."
+            },
+            "acquisition-conversion": {
+              "label": "Conversion Effectiveness",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "B2G government sales (Rwanda, Liberia, Sierra Leone, Ghana) involve multi-year policy-driven cycles and MoU negotiations; profile notes Nigeria and Kenya as new expansion markets with sparse operational detail, converging with the scaling phase and complex procurement dynamics to make conversion friction very likely without direct evidence."
+            },
+            "acquisition-targeting": {
+              "label": "Segment Targeting",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile shows clear, deliberate segment targeting: government Ministries of Education as primary B2G buyer and low-income families as secondary; extremely unlikely this is a problem given evidence-based GTM."
+            }
+          }
+        },
+        "retention": {
+          "label": "Retention & Churn",
+          "sub_avg": 0.38,
+          "problems": {
+            "retention-onboarding": {
+              "label": "Early-Stage Attrition",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Rori delivered via WhatsApp in low-bandwidth environments serving students with limited digital literacy; profile notes Rori targets 1M users from ~150K, implying early drop-off risk; convergence of low-bandwidth delivery, literacy constraints, and EdTech sector norms makes early attrition very plausible without direct evidence."
+            },
+            "retention-engagement-decay": {
+              "label": "Ongoing Engagement Decay",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "WhatsApp-native tutoring in low-income markets faces habitual use challenges; profile cites 18-month FasterMath evaluation implying longitudinal tracking, but sustaining daily engagement among students in low-income Sub-Saharan contexts is structurally difficult — pattern-based moderate without direct evidence of decay."
+            },
+            "retention-renewal": {
+              "label": "Renewal & Re-commitment Failure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly identifies government contract renewals (Rwanda MINEDUC, Liberia) as a key dependency and notes non-renewal of any single country contract is 'material'; this is a near-direct statement of renewal risk, constituting strong circumstantial evidence."
+            },
+            "retention-satisfaction": {
+              "label": "Relationship & Satisfaction Erosion",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "No evidence of satisfaction erosion; published RCT evidence (0.36 SD effect size), government contract expansion, and 10-year track record suggest strong satisfaction; merely unlikely given mission-driven model."
+            }
+          }
+        },
+        "market-expansion": {
+          "label": "Market Expansion",
+          "sub_avg": 0.6,
+          "problems": {
+            "market-expansion-geographic": {
+              "label": "Geographic & Regional Entry",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly notes Nigeria and Kenya as new expansion markets with 'sparse operational detail,' and describes active scaling to Rwanda after Sierra Leone/Ghana/Liberia — multi-jurisdiction education regulation, localization, and government relationship requirements in each new country are explicitly named dependencies, constituting strong circumstantial evidence of geographic entry challenges."
+            },
+            "market-expansion-segment": {
+              "label": "Segment Discovery & Entry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Rising is transitioning from pure school operator to AI product (Rori/Tari) licensing — this dual-model creates segment adaptation challenges; profile notes Rori targeting government licensing versus prior B2C school model, suggesting active segment entry effort without confirming difficulty."
+            },
+            "market-expansion-channel": {
+              "label": "Channel Development",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies WhatsApp as sole delivery channel for Rori/Tari with explicit single-channel risk; Anthropic partnership described as providing 'new B2B/B2G distribution channel credibility,' directly signaling that channel development is actively needed and in progress."
+            },
+            "market-expansion-adaptation": {
+              "label": "Offer Adaptation & Fit",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes curriculum delivers in Sierra Leone, Ghana, Liberia, and Rwanda with different Ministry of Education requirements; WhatsApp delivery constrained by 2G/3G connectivity gaps in rural areas — converging contextual factors (4-country ops, literacy variation, connectivity gaps) make offer adaptation challenges very likely."
+            }
+          }
+        },
+        "revenue-diversification": {
+          "label": "Revenue & Funding Diversification",
+          "sub_avg": 0.68,
+          "problems": {
+            "revenue-diversification-concentration": {
+              "label": "Source Concentration Risk",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly states: 'Rwanda MINEDUC, Liberia, Sierra Leone, Ghana MoUs are the B2G revenue backbone' and 'non-renewal of any single country contract is material' — this is direct evidence of source concentration risk in 3-4 government contracts representing majority B2G revenue."
+            },
+            "revenue-diversification-new-models": {
+              "label": "New Model Development",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes Rising as 'in transition from pure operator toward product/tech company' and notes Rori SaaS licensing 'under development as standalone' — direct evidence of active new model development challenge; very likely given the structural shift underway."
+            },
+            "revenue-diversification-sustainability": {
+              "label": "Funding Sustainability & Continuity",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states Rising is 'subsidised social enterprise in transition toward earned-revenue model, currently loss-making'; philanthropic grants described as historically subsidising R&D with LEVI, Gates, Mulago named; the dependency on philanthropic pipeline that 'must be maintained until B2G revenue achieves sustainability' is direct evidence of funding continuity risk."
+            },
+            "revenue-diversification-portfolio": {
+              "label": "Portfolio Balance & Management",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies four distinct revenue streams (tuition, B2G contracts, philanthropic grants, emerging SaaS) running simultaneously; profile notes mixed cost structures (variable-heavy operations vs fixed-heavy AI R&D) — convergence of four streams at different maturity stages makes portfolio balance management very plausible."
+            }
+          }
+        }
+      }
+    },
+    "operations-delivery": {
+      "domain_label": "Operations & Delivery",
+      "domain_avg": 0.51,
+      "sub_categories": {
+        "process-efficiency": {
+          "label": "Process Efficiency",
+          "sub_avg": 0.46,
+          "problems": {
+            "process-efficiency-automation-gaps": {
+              "label": "Automation Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes RisingFaster as 'teacher-delivered structured curriculum with coaching — a managed service model' — field operations in 4 countries with 900+ schools and a primarily manual teacher-coaching model strongly suggests automation gaps in operational reporting, attendance tracking, and curriculum delivery monitoring."
+            },
+            "process-efficiency-redundant-steps": {
+              "label": "Redundant & Unnecessary Steps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No specific evidence; multi-country social enterprise in scaling phase generically plausible for redundant processes but nothing in profile specifically suggests this."
+            },
+            "process-efficiency-handoff-failures": {
+              "label": "Handoff & Integration Failures",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes hub-and-spoke structure with central leadership team and 4 country operations running simultaneously; dual value chain positions (school operator + tech product) with Rori/Tari requiring HQ-to-country coordination — convergence of distributed multi-country ops and dual business models makes handoff failures very likely."
+            },
+            "process-efficiency-execution-variance": {
+              "label": "Execution Variance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile identifies 'cross-site and cross-team variance' as an active concern, explicitly noting quality control mechanisms and the 900+ school network with coaching-dependent delivery model; the quality-consistency sub-category of this same taxonomy is directly signaled by their investment in RCT evidence measurement — strong circumstantial evidence that execution variance across 900+ schools in 4 countries is a real challenge."
+            },
+            "process-efficiency-throughput-bottlenecks": {
+              "label": "Throughput Bottlenecks",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes active hiring of Senior Engineers and CTO is recent hire — scaling phase with small engineering team (12-18 people) building AI products while managing 900+ schools creates plausible throughput constraints; one weak signal exists."
+            }
+          }
+        },
+        "technology-infrastructure": {
+          "label": "Technology & Infrastructure",
+          "sub_avg": 0.42,
+          "problems": {
+            "technology-infrastructure-legacy-systems": {
+              "label": "Legacy Systems & Technical Debt",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes AI-native stack (MERN + Elixir + Claude API) with CTO hired recently; 12-year-old organization in education sector likely has some legacy operational systems but no evidence of this problem specifically."
+            },
+            "technology-infrastructure-integration-silos": {
+              "label": "Integration & Data Silos",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes dual operating models (managed school service + AI product) with separate technology stacks; 4 country operations likely running different operational tools; convergence of multi-country distributed ops with hybrid business model strongly suggests data silos between school operations and AI product data."
+            },
+            "technology-infrastructure-reliability": {
+              "label": "Reliability & Performance",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly identifies WhatsApp and Anthropic/Claude API as single-point dependencies with 'outage or pricing change is a single-point risk' — this near-direct statement of reliability dependency risk constitutes strong converging evidence of reliability vulnerability."
+            },
+            "technology-infrastructure-security-gaps": {
+              "label": "Infrastructure Security Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile rates security posture as 'intermediate' with KCS membership as the primary evidence; KCS is child safeguarding standards, not infrastructure security — one weak signal that security gaps may exist given intermediate posture rating."
+            },
+            "technology-infrastructure-tooling-gaps": {
+              "label": "Digital Tooling Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 900+ schools with field-based delivery teams across 4 countries; profile identifies 'basic connectivity infrastructure' as a key dependency with '2G/3G mobile data access' constraints in rural Sierra Leone and Liberia — convergence of field delivery scale with connectivity constraints makes operational digital tooling gaps likely."
+            }
+          }
+        },
+        "capacity-scaling": {
+          "label": "Capacity & Scaling",
+          "sub_avg": 0.6,
+          "problems": {
+            "capacity-scaling-physical-limits": {
+              "label": "Physical & Facility Limits",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes Rising 'likely leases rather than owns facilities' and operates asset-medium model; school facility constraints are a generic sector risk but no specific evidence of physical limits being a current pain point."
+            },
+            "capacity-scaling-service-scalability": {
+              "label": "Service Delivery Scalability",
+              "score": 0.8,
+              "rubric_level": "high",
+              "reasoning": "Profile directly describes RisingFaster as 'teacher-delivered structured curriculum with coaching — a managed service model' and the Series A is explicitly to 'double student reach'; the fundamental tension between a coaching-dependent managed service model and doubling reach is a direct evidence of scalability challenge."
+            },
+            "capacity-scaling-resource-allocation": {
+              "label": "Resource Allocation Constraints",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes dual business model (school operator + AI product) with mixed cost structures; 'transitioning from pure operator toward product/tech company' while operating 900+ schools creates direct resource allocation tension — multiple converging contextual factors make this very likely."
+            },
+            "capacity-scaling-geographic-coverage": {
+              "label": "Geographic Coverage Gaps",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile identifies 'basic connectivity infrastructure — Rori/Tari require 2G/3G mobile data access; infrastructure gaps in rural Sierra Leone and Liberia constrain product reach' as a named key dependency — this is near-direct evidence of geographic coverage gaps affecting operations."
+            },
+            "capacity-scaling-supply-chain": {
+              "label": "Supply Chain Limitations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile identifies 'West Africa teacher and coach pipeline' as a key dependency with 'constrained talent supply in markets with limited supply' — one direct signal that supply chain (teacher/coach pipeline) is a real constraint, though framed as talent rather than traditional supply chain."
+            }
+          }
+        },
+        "quality-consistency": {
+          "label": "Quality & Consistency",
+          "sub_avg": 0.52,
+          "problems": {
+            "quality-consistency-standards-enforcement": {
+              "label": "Standards Definition & Enforcement",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "900+ schools across 4 countries with coaching-dependent delivery model; profile notes investment in published RCT evidence specifically to measure quality — convergence of scale, geographic distribution, and coaching dependency makes standards enforcement likely challenging without direct evidence of failure."
+            },
+            "quality-consistency-control-mechanisms": {
+              "label": "Quality Control Mechanisms",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 18-month FasterMath evaluation and published RCTs indicating strong measurement orientation; however, the sheer scale of 900+ schools with field coaches in 4 low-income country contexts makes quality control mechanisms a converging concern."
+            },
+            "quality-consistency-site-variance": {
+              "label": "Cross-Site & Cross-Team Variance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile describes 900+ schools across Sierra Leone, Ghana, Liberia, and Rwanda with hub-and-spoke structure and field coaches; 4 distinct regulatory and cultural environments with distributed delivery teams — 3+ converging indicators (scale, geography, distributed field delivery, country variation) constitute strong circumstantial evidence."
+            },
+            "quality-consistency-outcome-measurement": {
+              "label": "Outcome Measurement Gaps",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile explicitly highlights extensive outcome measurement as a core strength: published RCTs (arXiv:2402.09809), 18-month longitudinal evaluations, LEVI cohort membership, ML feedback loops — outcome measurement is a stated competitive advantage, making this problem extremely unlikely."
+            },
+            "quality-consistency-culture-ownership": {
+              "label": "Quality Culture & Ownership Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes 'evidence-driven' culture and B Corp mission alignment; no signals of quality culture problems; generic plausibility only for a distributed field organization at scale."
+            }
+          }
+        }
+      }
+    },
+    "product-service": {
+      "domain_label": "Product & Service",
+      "domain_avg": 0.37,
+      "sub_categories": {
+        "product-market-fit": {
+          "label": "Product-Market Fit",
+          "sub_avg": 0.23,
+          "problems": {
+            "product-market-fit-need-misread": {
+              "label": "Need Misread",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "Profile confirms PMF via published RCT (0.36 SD effect size), government contracts at scale, and 150K+ Rori users — overwhelming evidence of correct need identification makes this extremely unlikely."
+            },
+            "product-market-fit-segment-mismatch": {
+              "label": "Segment Mismatch",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile describes deliberate, validated targeting of Sub-Saharan African governments and low-income families; 10-year track record and scaling contracts confirm segment match — unlikely but not structurally impossible given new market entries."
+            },
+            "product-market-fit-evolving-needs": {
+              "label": "Evolving Needs Drift",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "AI education landscape is evolving rapidly; profile notes Rori/Tari are early-stage products being actively built — generic plausibility that user needs could evolve faster than the product, but no evidence of current drift."
+            },
+            "product-market-fit-value-gap": {
+              "label": "Core Value Gap",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "RCT evidence (0.36 SD) and government contract scaling confirm strong value delivery; profile notes $5/student/year pricing is deliberately affordable — value gap is unlikely but generically plausible for new markets like Nigeria/Kenya."
+            }
+          }
+        },
+        "differentiation": {
+          "label": "Differentiation & Positioning",
+          "sub_avg": 0.33,
+          "problems": {
+            "differentiation-value-prop-clarity": {
+              "label": "Value Proposition Clarity",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile describes clear, evidence-based value proposition: 'RCT evidence base that most competitors lack,' Anthropic partnership, WhatsApp-native delivery — multiple distinct, articulable differentiators make this problem unlikely."
+            },
+            "differentiation-commodity-convergence": {
+              "label": "Commodity Convergence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes Africa EdTech market growing at 11-19% CAGR with 'many entrants'; one weak signal that commodity pressure could emerge as competitors enter, but Rising's moat layers (RCT evidence, government relationships, Anthropic partnership) currently prevent this."
+            },
+            "differentiation-wrong-axis": {
+              "label": "Wrong Differentiation Axis",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile confirms differentiation on evidence-rigour, affordability, and WhatsApp-native delivery — all validated by government procurement decisions; no evidence of wrong-axis differentiation."
+            },
+            "differentiation-defensibility": {
+              "label": "Differentiation Defensibility",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile identifies 4 moat layers but notes Anthropic partnership dependency and WhatsApp single-channel risk; the profile explicitly describes 'differentiation dependent on a single person or partnership' risk via Anthropic — one direct weak signal."
+            }
+          }
+        },
+        "product-evolution": {
+          "label": "Product Evolution & Innovation",
+          "sub_avg": 0.43,
+          "problems": {
+            "product-evolution-iteration-velocity": {
+              "label": "Iteration Velocity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes engineering team of 12-18 actively hiring; CTO (Aggarwal) is a recent hire; Rori/Tari are early products with Tari 'launched July 2025 per Anthropic partnership' — small team building two AI products simultaneously while managing 900+ school operations creates strong convergence toward velocity constraints."
+            },
+            "product-evolution-innovation-pipeline": {
+              "label": "Innovation Pipeline",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes pragmatic-to-bleeding-edge innovation posture with Anthropic partnership and published research — evidence of active innovation pipeline; unlikely to be a problem currently."
+            },
+            "product-evolution-technical-debt-drag": {
+              "label": "Technical Debt Drag",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes MERN + Elixir stack with recent CTO hire; AI-native stack suggests no legacy debt on the Rori/Tari side, but 12-year organization may have operational system debt — one weak signal from organizational age."
+            },
+            "product-evolution-relevance-decay": {
+              "label": "Relevance Decay",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI education tools risk rapid relevance decay as the field evolves at pace; profile notes Rori targets 1M users by 2027 and Anthropic is co-developing — dependency on a single AI vendor's roadmap creates plausible relevance risk if Claude API capabilities diverge from educational needs."
+            }
+          }
+        },
+        "user-experience": {
+          "label": "User & Beneficiary Experience",
+          "sub_avg": 0.5,
+          "problems": {
+            "user-experience-usability": {
+              "label": "Usability & Interaction Design",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "WhatsApp-native delivery is deliberately chosen for low-friction access; profile confirms WhatsApp was selected because 'conventional EdTech reaches <5% of our students' — usability is actively mitigated by channel choice, though text-based tutoring in low-literacy contexts has inherent UX constraints."
+            },
+            "user-experience-onboarding": {
+              "label": "Onboarding Friction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Rori serves students in low-income Sub-Saharan contexts with variable literacy and digital experience; WhatsApp delivery reduces barriers but first-use setup and initial engagement with an AI math tutor in local languages creates plausible onboarding friction — multiple converging contextual factors."
+            },
+            "user-experience-accessibility": {
+              "label": "Accessibility & Inclusion",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly names 'infrastructure gaps in rural Sierra Leone and Liberia constrain product reach' and '2G/3G connectivity requirements' as explicit access barriers — this is near-direct evidence of accessibility and inclusion gaps in the user base."
+            },
+            "user-experience-effort-value": {
+              "label": "Effort-to-Value Ratio",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "WhatsApp-based interaction requires students to actively message an AI tutor; in low-literacy contexts the cognitive load could be high — one weak signal from the delivery model but no direct evidence of effort-to-value ratio problems."
+            },
+            "user-experience-emotional-trust": {
+              "label": "Emotional & Trust Experience",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "AI tutoring in culturally diverse Sub-Saharan contexts with children involves significant trust and emotional design considerations; profile notes KCS (Keeping Children Safe) membership signaling awareness of child welfare; convergence of AI + child users + cultural diversity makes emotional/trust experience challenges likely."
+            }
+          }
+        }
+      }
+    },
+    "talent-people": {
+      "domain_label": "Talent & People",
+      "domain_avg": 0.55,
+      "sub_categories": {
+        "hiring-recruitment": {
+          "label": "Hiring & Recruitment",
+          "sub_avg": 0.54,
+          "problems": {
+            "hiring-recruitment-sourcing-reach": {
+              "label": "Sourcing & Reach",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly identifies 'West Africa teacher and coach pipeline — the RisingFaster managed service depends on recruiting in markets with constrained talent supply' as a named key dependency — this is very close to direct evidence of sourcing difficulty for the core field workforce."
+            },
+            "hiring-recruitment-employer-brand": {
+              "label": "Employer Brand & Attraction",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile rates employer brand as 'strong-in-niche' for mission-aligned talent in international development/EdTech; CTO Aggarwal attracted from VC-backed EdTech background — strong niche brand but limited reach beyond impact/development talent pool; one weak signal that commercial engineering talent is harder to attract."
+            },
+            "hiring-recruitment-selection-assessment": {
+              "label": "Selection & Assessment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No direct evidence of selection quality problems; profile shows successful leadership hires (CTO, COO, CSO); generic plausibility for distributed multi-country hiring."
+            },
+            "hiring-recruitment-offer-competitiveness": {
+              "label": "Offer Competitiveness",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile confirms pre-profitability status with $2-8M estimated budget; social enterprise mission constrains commercial compensation levels; operating in West Africa where salaries are lower but competing with development sector organizations for local talent and with global tech firms for engineering talent — 3+ converging indicators of compensation competitiveness challenge."
+            },
+            "hiring-recruitment-process-efficiency": {
+              "label": "Hiring Process Efficiency",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multi-country distributed hiring across Sierra Leone, Ghana, Liberia, Rwanda plus technical hires for Rori/Tari — one weak signal from geographic distribution complexity but no direct evidence of process problems."
+            }
+          }
+        },
+        "retention-engagement": {
+          "label": "Retention & Engagement",
+          "sub_avg": 0.48,
+          "problems": {
+            "retention-engagement-career-growth": {
+              "label": "Career Growth & Progression",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "501-1,000 employee organization at Series A stage with flat hub-and-spoke structure; profile notes COO and CSO backgrounds 'not publicly detailed' suggesting relatively small senior leadership layer — converging factors of org size, stage, and mission-driven culture make limited advancement paths likely."
+            },
+            "retention-engagement-work-experience": {
+              "label": "Work Experience & Satisfaction",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Field delivery in Sub-Saharan Africa with constrained talent market, pre-profitability organization, and high mission intensity — profile notes 'operations-heavy' workforce with significant field delivery burden; these converging contextual factors make work experience pressures likely."
+            },
+            "retention-engagement-reward-recognition": {
+              "label": "Reward & Recognition",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms pre-profitability ('currently loss-making') with social enterprise mission constraining commercial pay structures; operating in low-income country contexts but competing for talent — convergence of financial constraints and mission-constrained compensation model makes reward gaps very likely."
+            },
+            "retention-engagement-manager-relationship": {
+              "label": "Manager Relationship",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Distributed field operations with coaches managing teachers across 900+ schools; hub-and-spoke model with country directors — one weak signal from scale of distributed management relationships but no direct evidence of quality issues."
+            },
+            "retention-engagement-belonging-purpose": {
+              "label": "Belonging & Purpose",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile describes strong mission-driven culture, B Corp certification, and 10-year co-founder retention; public values explicitly stated as 'mission constrains commercial decisions' — mission clarity is a core strength making belonging/purpose deficits unlikely."
+            }
+          }
+        },
+        "skills-development": {
+          "label": "Skills & Development",
+          "sub_avg": 0.55,
+          "problems": {
+            "skills-development-gap-identification": {
+              "label": "Skills Gap Identification & Workforce Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes active transition from school operator to AI product company requiring new capability sets; Series A growth mandate to 'double student reach' while building AI products simultaneously — convergence of dual business model transition and rapid scaling creates likely workforce planning challenges."
+            },
+            "skills-development-learning-delivery": {
+              "label": "Learning & Training Delivery",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies teacher training as a core competency (RisingFaster curriculum delivery) — this is Rising's product; but the 900+ school network scaling means internal teacher professional development must scale proportionally; Tari (teacher AI assistant) explicitly designed to address teacher development, suggesting existing gaps."
+            },
+            "skills-development-leadership-pipeline": {
+              "label": "Leadership Pipeline & Succession",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes co-founder transition from CEO to Chairman with Dobrowolski as new CEO — this was successfully executed; but COO and CSO backgrounds 'not publicly detailed' and recent CTO hire suggests thin bench in some leadership functions; convergence of scaling phase and limited senior layer creates pipeline concerns."
+            },
+            "skills-development-technology-upskilling": {
+              "label": "Technology & Digital Upskilling",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 501-1,000 employees predominantly field operations staff working with conventional pedagogy, now needing to support Tari (AI teacher assistant) adoption; the explicit purpose of Tari is to build teacher capacity — this directly implies existing technology/digital upskilling gaps in the teacher workforce."
+            }
+          }
+        },
+        "culture-organization": {
+          "label": "Culture & Organization",
+          "sub_avg": 0.42,
+          "problems": {
+            "culture-organization-values-alignment": {
+              "label": "Values & Behavioral Alignment",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile describes strong, consistent mission values evidenced by B Corp certification, Skidmore's public writing, and 10-year founding team retention; values-behavioral alignment is described as a strength, not a problem."
+            },
+            "culture-organization-structural-design": {
+              "label": "Structural & Organizational Design",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 'hub-and-spoke' structure with central leadership and 4 country operations alongside a separate AI product function (Rori/Tari) — dual business model running on a hub-and-spoke structure designed for school operations creates structural tension; organization is professionalizating post-Series A."
+            },
+            "culture-organization-collaboration-communication": {
+              "label": "Collaboration & Communication",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-country distributed workforce across Sierra Leone, Ghana, Liberia, Rwanda with central HQ coordination; profile notes dual business models requiring coordination between school operations and AI product teams — convergence of geographic distribution and dual-model complexity makes cross-functional communication challenges likely."
+            },
+            "culture-organization-change-capacity": {
+              "label": "Change Capacity & Adaptability",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 'three major milestones in rapid succession' (Series A, CEO transition, Anthropic partnership) plus active geographic expansion to Nigeria/Kenya — organization is absorbing multiple simultaneous changes; change fatigue is plausible without direct evidence."
+            },
+            "culture-organization-inclusion-equity": {
+              "label": "Inclusion & Equity",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes COO Zaheera Soomar and partial UK-based leadership (Skidmore) operating in Sub-Saharan African contexts; B Corp certification implies governance of equity; one weak signal that leadership representation relative to served communities could be a tension point."
+            }
+          }
+        }
+      }
+    },
+    "risk-compliance": {
+      "domain_label": "Risk & Compliance",
+      "domain_avg": 0.52,
+      "sub_categories": {
+        "regulatory-compliance": {
+          "label": "Regulatory & Accreditation",
+          "sub_avg": 0.56,
+          "problems": {
+            "regulatory-compliance-gap-remediation": {
+              "label": "Compliance Gap Remediation",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of active compliance gaps or audit findings; profile describes KCS membership and B Corp certification as active compliance — generic plausibility for multi-jurisdiction operator."
+            },
+            "regulatory-compliance-change-adaptation": {
+              "label": "Regulatory Change Adaptation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly identifies 'moderate-to-heavy — multi-jurisdiction education regulation + child safeguarding + AI data governance' as regulatory burden; 4 countries each with Ministry of Education oversight plus evolving AI governance frameworks — multiple converging indicators make regulatory change adaptation very likely challenging."
+            },
+            "regulatory-compliance-accreditation-maintenance": {
+              "label": "Accreditation & Standards Maintenance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "B Corp certification requires third-party re-verification; KCS membership requires standards adherence across 900+ schools; 4-country school licensing requirements — convergence of multiple accreditation obligations at scale makes maintenance a real challenge."
+            },
+            "regulatory-compliance-reporting-obligations": {
+              "label": "Compliance Reporting & Obligations",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Series A from Klett Group with 'likely board seats' creates investor reporting obligations; LEVI/Gates grant terms require impact reporting; 4 Ministry of Education partnerships require compliance reporting — convergence of multiple reporting frameworks makes this a likely operational challenge."
+            },
+            "regulatory-compliance-capacity-burden": {
+              "label": "Compliance Capacity & Burden",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile confirms 'moderate-to-heavy regulatory burden' across 4 jurisdictions with education regulation, child safeguarding, AI data governance, and B Corp obligations, combined with pre-profitability financial constraints and 501-1,000 employee organization — 3+ converging indicators (multi-jurisdiction, AI/child data, financial constraints) strongly suggest compliance capacity is stretched."
+            }
+          }
+        },
+        "legal-exposure": {
+          "label": "Legal Exposure",
+          "sub_avg": 0.38,
+          "problems": {
+            "legal-exposure-litigation-disputes": {
+              "label": "Litigation & Active Disputes",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile notes 'no independent negative coverage found' and describes consistently positive stakeholder relationships; no evidence of active litigation — unlikely given mission alignment and track record."
+            },
+            "legal-exposure-contractual-commercial": {
+              "label": "Contractual & Commercial Risk",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies B2G contracts (Rwanda, Liberia, Sierra Leone, Ghana) with complex government terms, Anthropic API dependency with pricing risk, and WhatsApp dependency on Meta policies — convergence of government contract complexity and platform dependency contracts makes commercial risk very likely."
+            },
+            "legal-exposure-employment-law": {
+              "label": "Employment Law Exposure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Operations in 4 Sub-Saharan African countries each with distinct employment law frameworks; 501-1,000 employee multi-country organization — one contextual signal of employment law complexity without evidence of specific exposure."
+            },
+            "legal-exposure-intellectual-property": {
+              "label": "Intellectual Property Risk",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes Rori/Tari AI products built on Claude API with Anthropic partnership — IP ownership in co-developed AI products is a sector-standard risk; one weak signal but no evidence of active disputes."
+            },
+            "legal-exposure-liability-insurance": {
+              "label": "Liability & Insurance Exposure",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Operator of schools serving 300,000+ children in Sub-Saharan Africa with child safeguarding obligations; AI tutoring of minors via WhatsApp with data implications; KCS membership signals awareness of duty of care — converging factors of child welfare liability and AI product liability make insurance adequacy a plausible gap."
+            }
+          }
+        },
+        "data-privacy-security": {
+          "label": "Data, Privacy & Security",
+          "sub_avg": 0.6,
+          "problems": {
+            "data-privacy-security-cybersecurity-posture": {
+              "label": "Cybersecurity Posture",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile rates security posture as 'intermediate — not enterprise-grade SOC2' despite handling student data for 300,000+ children; AI product via WhatsApp creates additional attack surface; convergence of child data, AI APIs, and intermediate security posture makes cybersecurity a likely gap."
+            },
+            "data-privacy-security-privacy-compliance": {
+              "label": "Privacy & Consent Compliance",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly identifies 'AI product (Rori/Tari) involves child data and WhatsApp delivery — additional data governance considerations' as a named regulatory dimension; operating AI tutoring for minors across 4 African jurisdictions with evolving AI governance frameworks — 3+ converging indicators constitute strong circumstantial evidence of privacy compliance risk."
+            },
+            "data-privacy-security-governance-quality": {
+              "label": "Data Governance & Quality",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes ML/NLP in production with structured research data pipelines — strong data infrastructure for research; but 4-country operations likely have heterogeneous data capture quality across 900+ schools; convergence of distributed ops and production ML makes data governance quality a likely challenge."
+            },
+            "data-privacy-security-third-party-risk": {
+              "label": "Third-Party Data Risk",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly identifies 'Anthropic/Claude API — ~95% of Tari interactions and Rori AI powered by Claude' and 'WhatsApp — sole delivery channel' as single-point risks — both are third-party data processing relationships with child data flowing through external platforms; near-direct evidence of third-party data risk."
+            },
+            "data-privacy-security-breach-response": {
+              "label": "Breach Preparedness & Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile rates security posture as 'intermediate' without SOC2 certification; 300,000+ student records in a distributed multi-country operation — convergence of child data sensitivity and intermediate security posture makes breach preparedness a plausible gap."
+            }
+          }
+        },
+        "reputation-safeguarding": {
+          "label": "Reputation & Safeguarding",
+          "sub_avg": 0.53,
+          "problems": {
+            "reputation-safeguarding-duty-of-care": {
+              "label": "Safeguarding & Duty of Care",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile directly notes KCS (Keeping Children Safe) membership joined November 2024 for 900+ schools serving 250,000+ students — the explicit joining of a child safeguarding network signals active awareness of duty of care obligations and likely prior gaps; this is close to direct evidence."
+            },
+            "reputation-safeguarding-public-trust-media": {
+              "label": "Public Trust & Media Exposure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 'no independent negative coverage found' and describes positive media including Anthropic case study; mission-driven model with B Corp certification — public trust is currently strong; generic risk plausibility only."
+            },
+            "reputation-safeguarding-ethical-conduct": {
+              "label": "Ethical Conduct & Integrity",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of ethical conduct concerns; B Corp certification and mission-driven values actively constrain ethical risk; generic plausibility for any organization but no signals of specific concern."
+            },
+            "reputation-safeguarding-stakeholder-confidence": {
+              "label": "Stakeholder & Partner Confidence",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes moderately concentrated revenue (3-4 government contracts) as 'material' risk; successful Series A, Anthropic partnership, and government expansions indicate current stakeholder confidence is strong — one weak signal that government contract concentration creates vulnerability to confidence erosion."
+            }
+          }
+        }
+      }
+    },
+    "financial": {
+      "domain_label": "Financial",
+      "domain_avg": 0.57,
+      "sub_categories": {
+        "revenue-margin": {
+          "label": "Revenue & Margin Pressure",
+          "sub_avg": 0.53,
+          "problems": {
+            "revenue-margin-pricing-power": {
+              "label": "Pricing Power Erosion",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly describes Rising as 'value/low-cost positioning, not a premium play' with Rori at $5/student/year 'designed for affordability' — the structural low-price positioning in low-income markets with government buyers who have extreme price sensitivity creates very likely pricing power constraints."
+            },
+            "revenue-margin-cost-structure": {
+              "label": "Cost Structure Deterioration",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 'variable-heavy for school operations; increasingly fixed-heavy for AI product R&D' — active cost structure shift with high R&D costs (CTO hire, Anthropic API, research partnerships) while maintaining 501-1,000 person school operation; convergence of dual cost structures and pre-profitability status makes cost structure management very likely challenging."
+            },
+            "revenue-margin-mix-shift": {
+              "label": "Revenue Mix Degradation",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes intentional shift from tuition-based (low margin) toward B2G contracts and AI SaaS — this is a positive mix shift; one weak signal that the transition period creates mixed margin pressure during the shift."
+            },
+            "revenue-margin-value-capture": {
+              "label": "Value Capture Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes Rori delivers RCT-proven 0.36 SD learning gains at $5/student/year — this represents potentially significant value under-pricing; 'Liberia increased learning 60% without raising costs' suggests value capture may lag value delivery; convergence of mission-constrained pricing and strong efficacy evidence makes value capture failure very plausible."
+            }
+          }
+        },
+        "capital-funding": {
+          "label": "Capital & Funding",
+          "sub_avg": 0.6,
+          "problems": {
+            "capital-funding-access": {
+              "label": "Capital Access & Terms",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile confirms $4.25M Series A closed 2024; impact investor ecosystem (Klett, UBS Optimus, Mulago) actively engaged — current capital access appears functional but the 'patient, mission-aligned capital' requirement is structurally constrained; moderate given active fundraising evident."
+            },
+            "capital-funding-liquidity": {
+              "label": "Liquidity & Cash Flow",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile explicitly states organization is 'currently loss-making' with significant payroll burn (501-1,000 employees) and dependence on philanthropic pipeline 'that must be maintained until B2G revenue achieves sustainability' — 3+ converging indicators (pre-profitability, grant cycles, multi-country payroll) constitute direct evidence of cash flow management pressure."
+            },
+            "capital-funding-allocation": {
+              "label": "Capital Allocation",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes competing investment needs: scaling 900+ school network vs AI product R&D vs geographic expansion to Nigeria/Kenya — Series A of $4.25M must fund multiple simultaneous strategic bets; convergence of limited capital and competing priorities makes allocation challenges very likely."
+            },
+            "capital-funding-stakeholder-management": {
+              "label": "Investor & Funder Relations",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 'multiple stakeholders with conflicting financial expectations': impact investors (Klett, UBS Optimus), philanthropic funders (LEVI, Gates, Mulago), B Corp governance obligations, and grant reporting requirements — convergence of multiple capital provider types with different return expectations makes stakeholder management very likely complex."
+            }
+          }
+        },
+        "financial-visibility": {
+          "label": "Financial Visibility & Planning",
+          "sub_avg": 0.55,
+          "problems": {
+            "financial-visibility-reporting": {
+              "label": "Financial Reporting Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'no revenue figures publicly disclosed' and 'no financial statements publicly available' — while partial privacy is expected, combined with estimated rather than confirmed revenue figures, 4-country multi-entity structure suggests financial reporting complexity; convergence of multi-jurisdiction and data confidence gaps."
+            },
+            "financial-visibility-forecasting": {
+              "label": "Forecasting & Modeling",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes 'low' confidence on financial health and revenue band estimates ($2-8M range with wide uncertainty); organization managing 4 revenue streams (tuition, B2G, grants, SaaS) with different timing patterns — convergence of revenue uncertainty, multiple stream types, and grant-cycle timing makes reliable forecasting very likely challenging."
+            },
+            "financial-visibility-unit-economics": {
+              "label": "Unit Economics Opacity",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes 'gross margin profile improving as AI products scale' but explicitly acknowledges 'mixed cost structures' between school operations and AI R&D — understanding unit economics across two structurally different business models with very different cost profiles is likely opaque; convergence of dual-model and pre-profitability status."
+            },
+            "financial-visibility-budgeting": {
+              "label": "Budgeting & Resource Planning",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Multi-country organization (4 countries) with multiple revenue types (grants with specific terms, government contracts, tuition, emerging SaaS) and dual cost models — budget coordination across 4 country operations with different currencies and grant restrictions creates likely planning complexity."
+            }
+          }
+        },
+        "financial-risk-controls": {
+          "label": "Financial Risk & Controls",
+          "sub_avg": 0.58,
+          "problems": {
+            "financial-risk-controls-market-exposure": {
+              "label": "Market & Concentration Exposure",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly identifies 'currency risk across 4 different African currencies plus USD-denominated grant funding' and 'revenue concentrated in 3-4 government contracts' — these are explicitly named financial risks constituting direct evidence of market and concentration exposure."
+            },
+            "financial-risk-controls-compliance": {
+              "label": "Financial Compliance & Audit",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "B Corp certification requires governance standards; Series A implies audit readiness — some compliance infrastructure exists; generic plausibility for multi-jurisdiction organization but no specific evidence of audit findings."
+            },
+            "financial-risk-controls-internal": {
+              "label": "Internal Controls & Governance",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Pre-profitability social enterprise at Series A stage with 501-1,000 employees across 4 countries; the profile confidence gap on financial health ('low' confidence) suggests limited financial controls maturity — convergence of organizational stage, size, and geographic complexity."
+            },
+            "financial-risk-controls-structural": {
+              "label": "Financial Structure & Optimization",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "4-country Africa operations with different currency regimes, mixed entity types (schools, government contracts, AI product licensing), and multi-funder capital structure — convergence of structural complexity and social enterprise constraints makes financial structure optimization a likely challenge."
+            }
+          }
+        }
+      }
+    },
+    "strategy-direction": {
+      "domain_label": "Strategy & Direction",
+      "domain_avg": 0.42,
+      "sub_categories": {
+        "strategic-clarity": {
+          "label": "Strategic Clarity & Alignment",
+          "sub_avg": 0.43,
+          "problems": {
+            "strategic-clarity-priority-overload": {
+              "label": "Priority Overload & Focus Failure",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes simultaneous execution of: school network scaling (700→900+ schools), Rwanda MINEDUC expansion, Rori targeting 1M users, Tari launch, Nigeria/Kenya new market entry, Series A deployment — 'three major milestones in rapid succession' plus multiple simultaneous growth bets creates direct evidence pattern for priority overload."
+            },
+            "strategic-clarity-leadership-misalignment": {
+              "label": "Strategic Misalignment Among Leaders",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes smooth co-founder CEO transition with both Skidmore (Executive Chairman) and Dobrowolski (CEO) framing transition in aligned mission terms; no evidence of leadership misalignment; new CTO, COO, CSO additions without conflict signals."
+            },
+            "strategic-clarity-execution-gap": {
+              "label": "Strategy-Execution Gap",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes multiple ambitious targets (1M Rori users by 2027, double student reach) with limited operational detail on execution mechanisms; 'sparse operational detail' on Nigeria/Kenya expansion — convergence of ambitious targets, limited executive bandwidth, and distributed execution model creates likely strategy-execution gap."
+            },
+            "strategic-clarity-mission-drift": {
+              "label": "Mission Drift & Identity Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Transition from school operator to AI product company creates structural mission tension; profile notes 'Rori AI product targeting 1M+ users' vs original mission of quality school operations in Sub-Saharan Africa — one weak signal that commercial AI product scaling could drift from founding mission."
+            }
+          }
+        },
+        "competitive-positioning": {
+          "label": "Competitive Positioning",
+          "sub_avg": 0.38,
+          "problems": {
+            "competitive-positioning-advantage-erosion": {
+              "label": "Competitive Advantage Erosion",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes 4 distinct moat layers (RCT evidence, government relationships, Anthropic partnership, data network effects); current differentiation is strong — one weak signal from fast-moving Africa EdTech market and potential for competitors to replicate WhatsApp-native delivery."
+            },
+            "competitive-positioning-new-threats": {
+              "label": "New Threat Response",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Africa EdTech market projected to grow from $7.3B to $19.2B — multiple new entrants expected; profile notes 'many entrants' in growing market; converging contextual factors of high-growth market with many entrants targeting same government buyers makes new threat response a likely ongoing challenge."
+            },
+            "competitive-positioning-market-intelligence": {
+              "label": "Market Intelligence Gaps",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes research-oriented organization with published RCTs and LEVI cohort membership; evidence-driven culture suggests systematic market scanning — unlikely to have significant market intelligence gaps."
+            },
+            "competitive-positioning-market-stagnation": {
+              "label": "Market Position Stagnation",
+              "score": 0.2,
+              "rubric_level": "low",
+              "reasoning": "Profile confirms active scaling (school count growing, Rwanda MINEDUC expanding, Rori targeting 1M users, new countries) — clear evidence of market position advancement, making stagnation extremely unlikely."
+            }
+          }
+        },
+        "transformation": {
+          "label": "Transformation & Change",
+          "sub_avg": 0.52,
+          "problems": {
+            "transformation-business-model": {
+              "label": "Business Model Transition",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Profile directly describes Rising as 'in transition from pure operator toward product/tech company' with Rori SaaS licensing as standalone product development — this is the central strategic narrative of the organization, constituting near-direct evidence of active business model transition challenge."
+            },
+            "transformation-technology": {
+              "label": "Technology-Led Transformation",
+              "score": 0.7,
+              "rubric_level": "high",
+              "reasoning": "Anthropic partnership, CTO hire, Rori/Tari AI product development, and WhatsApp-native architecture represent a technology-led organizational transformation; profile describes this as the core growth thesis — 3+ converging indicators (CTO hire, Anthropic partnership, dual product build) constitute strong circumstantial evidence of active technology transformation challenges."
+            },
+            "transformation-structural": {
+              "label": "Structural Reorganization",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "CEO transition completed smoothly; new CTO, COO, CSO in place; no evidence of major structural reorganization challenges beyond the natural professionalization — one weak signal from the professionalization phase post-Series A."
+            },
+            "transformation-innovation-strategy": {
+              "label": "Innovation Strategy Failure",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes active innovation (Rori, Tari, Anthropic partnership); 'pragmatic-to-bleeding-edge' innovation posture with published research — no evidence of innovation strategy failure; generic plausibility only."
+            },
+            "transformation-post-crisis": {
+              "label": "Post-Crisis Recovery",
+              "score": 0.1,
+              "rubric_level": "low",
+              "reasoning": "Profile describes organization founded during Ebola crisis (resilience signal), not currently in crisis; Series A, CEO transition, and Anthropic partnership all described positively — structurally inapplicable to current trajectory."
+            }
+          }
+        },
+        "partnerships-ecosystem": {
+          "label": "Partnerships & Ecosystem",
+          "sub_avg": 0.48,
+          "problems": {
+            "partnerships-ecosystem-alliance-management": {
+              "label": "Alliance & Partnership Management",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile identifies Anthropic as a critical single-point dependency (~95% of AI product interactions), WhatsApp/Meta as sole distribution, and Klett Group as lead investor — managing these highly asymmetric partnerships (small social enterprise vs. large tech companies and Europe's largest education company) creates very plausible alliance management challenges."
+            },
+            "partnerships-ecosystem-ecosystem-strategy": {
+              "label": "Ecosystem Strategy",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes Anthropic partnership as providing 'new ecosystem credibility' — active ecosystem positioning underway; one weak signal that the current ecosystem is over-dependent on two platforms (WhatsApp, Claude API)."
+            },
+            "partnerships-ecosystem-policy-regulatory": {
+              "label": "Policy & Regulatory Relationships",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "B2G model makes government relationship management central to the strategy; profile confirms Rwanda MINEDUC, Liberia, Sierra Leone, Ghana as active government relationships with Nigeria/Kenya expansion — managing policy relationships across 4-6 governments simultaneously is a converging complexity factor."
+            },
+            "partnerships-ecosystem-community-stakeholder": {
+              "label": "Community & Stakeholder Engagement",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes positive stakeholder engagement with LEVI, Gates, Mulago, Anthropic, KCS — active community of practice participation; one weak signal that rapid scaling and new market entry could strain community engagement capacity."
+            }
+          }
+        }
+      }
+    },
+    "governance-leadership": {
+      "domain_label": "Governance & Leadership",
+      "domain_avg": 0.44,
+      "sub_categories": {
+        "board-effectiveness": {
+          "label": "Board & Governance Effectiveness",
+          "sub_avg": 0.4,
+          "problems": {
+            "board-effectiveness-composition": {
+              "label": "Board Composition & Diversity Gaps",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile notes Series A with 'likely board seats' from Klett Group but does not detail board composition; for a B2G education social enterprise expanding in Africa, appropriate local African governance representation is a contextual concern — one weak signal without direct evidence."
+            },
+            "board-effectiveness-engagement": {
+              "label": "Board Engagement & Dynamics",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of board dysfunction; Series A governance is nascent — generic plausibility for a recently-professionalized board with mixed investor types (Klett Group, UBS Optimus, impact investors)."
+            },
+            "board-effectiveness-management-relationship": {
+              "label": "Board-Management Relationship",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Klett Group as 'Europe's largest education company' as lead investor alongside a mission-driven social enterprise creates potential for strategic tension between commercial investor expectations and mission constraints — one weak signal."
+            },
+            "board-effectiveness-governance-framework": {
+              "label": "Governance Framework & Structure",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Organization describes B Corp obligations, LEVI/Gates grant terms, investor board governance, and KCS standards — multiple governance frameworks in nascent integration; Series A-stage professionalization of governance is ongoing; one weak signal from governance complexity."
+            }
+          }
+        },
+        "leadership-capability": {
+          "label": "Executive Leadership Capability",
+          "sub_avg": 0.43,
+          "problems": {
+            "leadership-capability-ceo": {
+              "label": "CEO & Top Leader Limitations",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes Dobrowolski as co-founder operational from day one, transitioning from operational role to CEO — co-founder as new CEO scaling a 900+ school network + AI product company simultaneously represents a meaningful leadership stage transition; one weak signal without evidence of specific limitations."
+            },
+            "leadership-capability-team-cohesion": {
+              "label": "Executive Team Cohesion & Dynamics",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes new C-suite assembly (CTO, COO, CSO all recent additions); no evidence of dysfunction; new team cohesion building is a generic risk for recently assembled executive teams."
+            },
+            "leadership-capability-functional-gaps": {
+              "label": "Functional Leadership Gaps",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile explicitly notes 'COO (Zaheera Soomar) and CSO (George Cowell) backgrounds not publicly detailed' and the CTO is a recent hire — gaps in visible functional leadership capability at an organization scaling AI products and 900+ schools simultaneously; convergence of new team and scale demands."
+            },
+            "leadership-capability-transition": {
+              "label": "Leadership Transition & Succession",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile describes Skidmore transitioning from CEO (10 years) to Executive Chairman with Dobrowolski as new CEO — the transition itself is described as smooth, but maintaining dual founder presence (Skidmore as active Chairman, Dobrowolski as CEO) creates classic dual-authority tension risk; convergence of recent transition and founder-remains-active pattern."
+            }
+          }
+        },
+        "decision-accountability": {
+          "label": "Decision-Making & Accountability",
+          "sub_avg": 0.44,
+          "problems": {
+            "decision-accountability-rights-clarity": {
+              "label": "Decision Rights & Authority Clarity",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Dual co-founder presence (CEO + Executive Chairman) with newly assembled C-suite (CTO, COO, CSO) in rapidly scaling organization across 4 countries — decision rights between CEO and Executive Chairman role and between HQ and country operations create plausible ambiguity; converging organizational factors."
+            },
+            "decision-accountability-process-speed": {
+              "label": "Decision Process & Speed",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "B Corp governance obligations and multi-stakeholder (government, investors, funders) accountability structure could slow decisions — one weak signal but no direct evidence of decision speed problems."
+            },
+            "decision-accountability-information-flow": {
+              "label": "Decision Information Flow",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Hub-and-spoke structure with 4 country operations and HQ; profile confidence gaps on financial health and key operational details suggest information flow from field to headquarters may be constrained — convergence of distributed ops and reported data gaps."
+            },
+            "decision-accountability-follow-through": {
+              "label": "Accountability & Follow-Through",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Multiple ambitious targets (1M Rori users, double student reach) in scaling phase; no evidence of follow-through failures — generic plausibility for scaling social enterprise with limited accountability infrastructure."
+            },
+            "decision-accountability-quality-judgment": {
+              "label": "Decision Quality & Judgment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "Profile describes evidence-driven culture with published RCTs and research partnerships; leadership team has strong domain credentials — no evidence of poor decision quality; generic plausibility only."
+            }
+          }
+        },
+        "power-transparency": {
+          "label": "Power Concentration & Transparency",
+          "sub_avg": 0.45,
+          "problems": {
+            "power-transparency-structural-entrenchment": {
+              "label": "Structural Power Entrenchment",
+              "score": 0.3,
+              "rubric_level": "moderate-low",
+              "reasoning": "No evidence of structural entrenchment mechanisms; CEO transition demonstrates governance flexibility; B Corp certification constrains entrenchment — unlikely given demonstrated governance mobility."
+            },
+            "power-transparency-shadow-governance": {
+              "label": "Informal Power & Shadow Governance",
+              "score": 0.4,
+              "rubric_level": "moderate-low",
+              "reasoning": "Skidmore remains active as Executive Chairman after 10 years as CEO while Dobrowolski leads as CEO — classic dual-founder dynamic where informal authority of long-tenured founder may influence decisions outside formal structures; one weak signal."
+            },
+            "power-transparency-key-person": {
+              "label": "Key-Person Executive Dependency",
+              "score": 0.6,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes Skidmore as 'public thought leader' and 'Mulago Rainer Arnhold Fellow' with 10-year CEO history; Anthropic partnership is partly attributed to Skidmore's public positioning; convergence of founder prominence, external relationships built on individual credibility, and recent leadership transition creates very plausible key-person dependency on Skidmore."
+            },
+            "power-transparency-information-asymmetry": {
+              "label": "Organizational Transparency & Information Asymmetry",
+              "score": 0.5,
+              "rubric_level": "moderate",
+              "reasoning": "Profile notes multiple financial data gaps ('no revenue figures publicly disclosed,' 'no financial statements,' 'valuation not disclosed') alongside investor board governance — while some financial opacity is expected, combined with multi-stakeholder reporting requirements creates information asymmetry risk between management and funders/board."
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_problems": [
+      "revenue-diversification-concentration",
+      "revenue-diversification-sustainability",
+      "capacity-scaling-service-scalability",
+      "capital-funding-liquidity",
+      "financial-risk-controls-market-exposure"
+    ],
+    "problem_count_by_relevance": {
+      "critical": 0,
+      "high": 15,
+      "medium": 65,
+      "low": 61,
+      "na": 0
+    }
+  }
+}

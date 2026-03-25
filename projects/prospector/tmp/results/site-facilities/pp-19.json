@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "site-facilities-campus-it-infrastructure-internet-connectivity-outages-and-poor-reliability-dup",
+  "pain_point_label": "Internet Connectivity Outages and Poor Reliability Disrupt Teaching and Operations",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Network telemetry (latency, packet loss, throughput) across campus routers can be continuously monitored for anomalous patterns that signal an impending or active outage — far earlier than a teacher reporting a problem. For a multi-site operator, centralized anomaly detection across all campuses turns reactive firefighting into proactive alerting, which is the core gap described.",
+      "opportunity_sketch": "A network monitoring agent ingests per-campus connectivity metrics and flags anomalies in real time, triggering alerts to central IT before users experience full outages — enabling faster response and pattern-based ISP accountability.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-time-series",
+      "capability_label": "Time Series Forecasting",
+      "match_rationale": "Bandwidth demand at campuses follows predictable cycles tied to enrollment periods, exam schedules, and class timetables. Forecasting demand surges enables proactive capacity management — scheduling bandwidth-intensive tasks (backups, video streaming, bulk downloads) outside peak windows, and providing evidence for ISP SLA negotiations.",
+      "opportunity_sketch": "A demand forecasting model trained on historical campus bandwidth logs predicts high-load periods and auto-schedules maintenance tasks or triggers throttling policies, reducing performance degradation during critical instructional or exam windows.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Each campus can be scored on connectivity risk based on factors like ISP diversity (single vs. multiple providers), geographic remoteness, historical outage frequency, absence of backup connectivity, and SLA strength. This gives leadership a ranked view of which campuses are most operationally vulnerable and where to prioritize investment in failover solutions.",
+      "opportunity_sketch": "A campus connectivity risk scorecard — updated monthly from outage logs and ISP contract data — surfaces the highest-risk sites for leadership review and informs decisions on cellular failover budgets or ISP renegotiation priorities.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "When an outage is detected, the current process is informal and slow — local staff handle it ad hoc, central IT may not be notified for hours, and there is no tracking. A task automation agent can execute a structured escalation workflow: log the incident, notify the right IT contact, attempt automated diagnostics (ping tests, ISP status checks), escalate if unresolved within SLA windows, and close the ticket once restored.",
+      "opportunity_sketch": "An outage response automation agent monitors connectivity health, auto-creates incident tickets on detection, dispatches notifications to campus coordinators and central IT, runs a triage checklist (router restart, ISP status API check), and generates a post-incident summary report — eliminating the informal, untraceable handling described.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Education operators in the Philippines dealing with chronic ISP unreliability face ISP disputes, insurance or government reporting requirements, and staff communication during outages — all requiring written documentation. AI text generation can produce ISP dispute letters citing SLA violations, incident reports for accreditation audits, and staff/parent communications during outages, reducing administrative burden on campus staff who currently handle this informally.",
+      "opportunity_sketch": "A template-driven text generation tool that drafts ISP escalation letters, structured outage incident reports (with timestamps, affected systems, instructional impact), and stakeholder notifications — turning ad hoc manual writing into a consistent, audit-ready documentation process.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

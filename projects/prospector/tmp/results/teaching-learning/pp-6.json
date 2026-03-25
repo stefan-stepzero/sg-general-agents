@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-classroom-instruction-attendance-dropout-dup",
+  "pain_point_label": "Chronic Absenteeism & Dropout Without Early Intervention",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Chronic absenteeism is fundamentally an anomaly detection problem — students whose attendance patterns deviate from expected behavior need to be flagged before the pattern becomes a crisis. A multi-site operator with 10-15 campuses needs automated detection of abnormal absence streaks, not manual review. This directly addresses the 'patterns of absence not flagged until crisis' mechanism.",
+      "opportunity_sketch": "An anomaly detection layer over the SIS/attendance system that flags students whose absence frequency, clustering, or trajectory deviates significantly from cohort baselines — surfaced as a daily alert dashboard for each site coordinator.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Dropout risk prediction is a canonical propensity modeling problem — given student features (attendance trend, grade trajectory, demographics, engagement signals), predict the probability that a specific student will disenroll within 30-60 days. This directly addresses the 'dropout risk not predicted early' and 'tuition-bearing students disappearing without follow-up' mechanisms. Education has well-established labeled datasets for this.",
+      "opportunity_sketch": "A dropout propensity model trained on historical enrollment, attendance, and academic data that scores every active student weekly and routes high-risk students to a counselor or outreach queue, prioritized by tuition-bearing status.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The 'no systematic parent outreach' and manual cross-site tracking burden are workflow automation problems, not just prediction problems. An autonomous agent can trigger outreach sequences (SMS, email, staff task creation) when a student crosses an absence threshold, eliminating the manual coordination across 10-15 sites. This directly addresses administrative staff spending time tracking rather than intervening.",
+      "opportunity_sketch": "An outreach automation agent that monitors attendance feeds, detects threshold breaches, drafts and sends templated parent notifications, logs contact attempts, and escalates to a staff follow-up task if no response is received within 48 hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Parent outreach communications need to be personalized, context-sensitive, and appropriately toned — a generic SMS blast is less effective than a message that references the student's name, number of absences, and a specific call to action. Text generation enables at-scale personalized outreach without staff drafting each message manually, supporting the 'no systematic parent outreach' gap.",
+      "opportunity_sketch": "An LLM-powered message composer that generates personalized parent/guardian outreach messages (SMS, email) using student-specific absence data, adjusting tone based on severity level and prior contact history.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Before propensity modeling, students can be classified into risk tiers (low/medium/high/critical) using structured attendance and engagement features — this is simpler to implement and explain to staff than a continuous score model. Multi-site operators can apply different intervention protocols by tier without needing staff to interpret raw probabilities.",
+      "opportunity_sketch": "A risk-tier classification model that segments every student into four intervention bands each week based on attendance rate, absence streaks, and prior-term patterns, feeding directly into site-level coordination workflows.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

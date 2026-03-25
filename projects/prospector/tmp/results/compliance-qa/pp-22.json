@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-internal-audit-risk-based-prioritization-absence-dup",
+  "pain_point_label": "Absence of Risk-Based Audit Prioritization",
+  "matches": [
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "This is the core capability match: the pain point is explicitly about estimating the probability and severity of adverse compliance outcomes across campuses. AI risk scoring can ingest financial size, DepEd warning history, error rates, budget controls, and enrollment figures to produce a composite risk score per campus per compliance domain. This directly replaces equal-weight distribution with a data-driven prioritization layer that surfaces genuinely high-risk sites.",
+      "opportunity_sketch": "A campus risk scoring model that ingests structured campus attributes (budget size, regulatory history, control maturity indicators, staff turnover) and outputs a ranked audit priority list updated each quarter, feeding directly into the internal audit team's annual plan.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Before continuous risk scores are meaningful, campuses need to be bucketed into audit priority tiers (e.g., high / medium / low) across multiple compliance domains. Structured classification on tabular campus-level features (financial controls maturity, headcount, incident history, last audit date, revenue) can segment campuses into actionable tiers even with limited training data, using an ensemble or rules-augmented ML model. This is a prerequisite segmentation step to the prioritization workflow.",
+      "opportunity_sketch": "A classification model that tags each campus-domain pair with a priority tier each semester, generating a heat map of audit urgency that the 1-2 person audit team uses to build their schedule.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once risk scores and priority tiers are computed, the audit team needs to communicate the rationale for prioritization decisions to campus principals and leadership — without a dedicated report writer on the team. LLM text generation can produce narrative audit planning memos, risk justification summaries, and board-ready compliance risk narratives from structured scoring inputs. This converts data outputs into defensible, human-readable documents that reduce friction in stakeholder communication.",
+      "opportunity_sketch": "An LLM layer that ingests the campus risk score table and outputs a quarterly 'Audit Plan Rationale' memo per campus, explaining why each site was prioritized or deferred — suitable for sharing with principals and DepEd if questioned.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "With only 1-2 internal auditors covering 10-15 campuses and multiple compliance domains, the pain point is fundamentally a constrained resource allocation problem: which auditor goes to which campus, for how many days, covering which domains, in which order. AI-driven scheduling can optimize audit calendar allocation given risk scores, auditor availability, travel constraints between campuses, and regulatory deadlines — directly solving the equal-distribution failure mode.",
+      "opportunity_sketch": "An audit scheduling optimizer that takes the risk-ranked campus list, auditor capacity (days/month), travel time between campuses, and mandatory DepEd windows as constraints, and outputs an optimized 12-month audit calendar with domain coverage per site.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end audit prioritization workflow — pulling campus data from multiple systems (finance, HR, DepEd portal, prior audit records), scoring risk, generating the audit plan, and distributing notifications to campus principals — spans multiple systems and steps that today are done manually or not at all. A task automation agent can orchestrate this pipeline: data pull → risk model inference → plan generation → memo creation → calendar update → notification, running quarterly without manual coordination by the overloaded audit staff.",
+      "opportunity_sketch": "A quarterly audit-planning automation agent that wakes on a schedule, aggregates cross-system campus data, runs the risk model, generates the audit calendar and memos, and dispatches assignments to auditors and notifications to campus heads — reducing planning cycle from weeks to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

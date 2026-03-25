@@ -1,0 +1,141 @@
+{
+  "entity": "WISE - World Innovation Summit for Education",
+  "research_date": "2026-03-11",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2025-11-24",
+          "title": "WISE 12 Summit launches in Doha",
+          "summary": "The 12th edition of WISE ran November 24-25, 2025 at Qatar National Convention Centre. Theme: 'Humanity.io: Human Values at the Heart of Education'. Over 4,000 attendees, 200+ speakers. 60+ core sessions. Speakers included Nobel economist Abhijit Banerjee, Mo Gawdat, X Prize CEO Anousheh Ansari, and author Laila Lalami.",
+          "source": "https://thepeninsulaqatar.com/article/24/11/2025/wise-12-summit-launches-in-doha-bringing-global-education-leaders-together-under-the-theme-humanityio-human-values-at-the-heart-of-education"
+        },
+        {
+          "date": "2025-11-25",
+          "title": "Sheikha Moza awards $1M WISE Prize for Education at WISE 12",
+          "summary": "Three winners split $1M prize. 1st ($500K): TUMO Center for Creative Technologies (Armenia) for its TUMO Path AI learning programme. 2nd ($300K): Iqrali.jo (Jordan), Arabic child development. 3rd ($200K): Darsel, maths chatbot for lower-income countries. Each of 6 finalists also received $125K to develop a minimum viable product before the summit.",
+          "source": "https://al-fanarmedia.org/2025/11/3-education-innovators-receive-1-million-in-wise-prize-awards/"
+        },
+        {
+          "date": "2025-11-25",
+          "title": "WISE 12 ends with commitments to human-centred education",
+          "summary": "Closing session featured both outgoing CEO Stavros Yiannouka and incoming CEO Dr. Asyia Kazmi. Key warning: AI tools risk creating inequality if deployed without adequate data governance, teacher training, and curriculum alignment. Euronews coverage noted summit's call that 'technology must not outpace human learning'.",
+          "source": "https://al-fanarmedia.org/2025/12/wise-12-summit-ends-with-pleas-to-keep-innovation-human-centred/"
+        },
+        {
+          "date": "2025-11-24",
+          "title": "WISE and IIE release Global AI in Higher Education report at WISE 12",
+          "summary": "The WISE-IIE Global Consortium on Artificial Intelligence and Higher Education for Workforce Development released its inaugural report 'Navigating Skills Adaptation: Integrating AI in Higher Education' covering 7 countries (Qatar, Colombia, Ghana, India, Kazakhstan, Spain, USA).",
+          "source": "https://al-fanarmedia.org/2025/11/wise-iie-release-first-insights-from-consortium-on-ai-and-higher-ed/"
+        },
+        {
+          "date": "2025-12-01",
+          "title": "Dr. Asyia Kazmi officially becomes WISE CEO",
+          "summary": "Dr. Asyia Kazmi, OBE, assumed role as WISE CEO on December 1, 2025, succeeding Stavros Yiannouka who led WISE since 2012.",
+          "source": "https://edugist.org/dr-asyia-kazmi-assumes-role-as-wises-new-ceo-steering-global-education-innovation/"
+        },
+        {
+          "date": "2024-09-17",
+          "title": "WISE announces AI Research Consortium at UN General Assembly week",
+          "summary": "WISE and IIE formally launched the Global Consortium on AI and Higher Education in New York during UNGA. Seven universities across 7 countries enrolled as partners.",
+          "source": "https://www.iie.org/news/iie-wise-launch-international-research-consortium-ai-in-higher-education/"
+        }
+      ],
+      "synthesis": "WISE 12 (November 2025) was the most prominent recent event, a major biennial gathering with 4,000+ attendees focused on AI ethics and human-centred education. The concurrent leadership transition (Yiannouka to Kazmi) marks a generational shift. The $1M prize and the IIE AI research consortium report were headline deliverables. WISE is clearly pivoting toward AI-in-education as its central research and convening theme.",
+      "confidence": "high"
+    },
+    "industry": {
+      "synthesis": "WISE occupies a distinctive niche in the global education innovation ecosystem: a state-backed (Qatar Foundation) think tank-plus-convening platform with genuine convening authority (heads of state-level patronage from Sheikha Moza, high-profile speakers), a credible $1M prize that attracts global applicants, and a growing research programme. Its closest peers are Brookings CUE (most cited global think tank on education), HundrED (curation and innovation cataloguing, Finnish), ASU GSV Summit (U.S.-focused, more commercial EdTech), and the Jacobs Foundation (funder). WISE differentiates on global south coverage, Gulf state funding, and biennial summit convening. A noted criticism in the literature is that WISE-backed innovations can skew toward access and efficiency gains rather than deep pedagogical transformation. The 2025 summit partnership with HundrED (Education House in Doha) signals growing ecosystem collaboration rather than competition.",
+      "confidence": "medium-high"
+    },
+    "financial": {
+      "synthesis": "WISE has no independent disclosed financials — it is a unit of Qatar Foundation, a state-affiliated non-profit funded by Qatar's hydrocarbon endowment. Qatar Foundation's broader education spending runs into hundreds of millions annually (e.g. ~$405M/yr for Education City international university campuses). WISE's own operational budget is not publicly disclosed. However, quantifiable financial signals include: (1) $1M prize fund disbursed biennially; (2) $125K MVP grants per finalist (6 finalists = $750K per cycle); (3) funding of multi-country research consortia with IIE. Qatar Foundation has committed over $6.7 billion to Education City construction since 2006. WISE itself is funded as a programmatic unit — no revenue model, endowment, or external fundraising visible. Its funding security is effectively sovereign-level through QF.",
+      "confidence": "medium"
+    },
+    "technology": {
+      "ai_adoption": "active",
+      "synthesis": "WISE has moved AI in education from background theme to central programmatic priority as of 2024-2025. Key signals: (1) Launched a formal Global Research Consortium on AI and Higher Education with IIE and 7 universities across 5 continents (Sept 2024), producing its first report at WISE 12; (2) WISE 12 theme 'Humanity.io' explicitly frames AI as the central challenge for education; (3) Prize finalists included AI-powered learning tools (TUMO's AI model, Darsel's maths chatbot); (4) High-level roundtable at WISE 12 specifically on scaling AI in real education systems; (5) Incoming CEO Kazmi led EdTech and AI-driven learning initiatives at Gates Foundation. Positioning is measured and values-led ('human-centred AI') rather than boosterist — aligned with UNESCO and OECD framing. No internal AI tooling for WISE's own operations is visible in public sources.",
+      "confidence": "high"
+    },
+    "reputation": {
+      "synthesis": "WISE enjoys strong institutional credibility: backed by Qatar Foundation (itself chaired by Sheikha Moza bint Nasser, a globally respected education philanthropist), draws senior multilateral and government figures, receives coverage in FT, Euronews, Al-Fanar, and global EdTech press. The biennial summit attracts 4,000+ attendees and 200+ speakers of genuine seniority. Reputation risks are limited but exist: (1) As a Gulf-state-funded body, it is occasionally scrutinised for soft-power optics (Qatar using education philanthropy for international reputation); (2) A substantive criticism in education literature notes WISE-recognised innovations prioritise access/efficiency over pedagogical depth; (3) Operating in a biennial cycle limits year-round relevance. Overall sentiment in coverage reviewed is positive-to-neutral with no controversy identified in recent cycles.",
+      "confidence": "medium-high"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Dr. Asyia Kazmi, OBE",
+          "title": "CEO, WISE",
+          "tenure_start": "2025-12-01",
+          "background": "Over 30 years in education across government, philanthropy, and international development. Prior role: Global Education Policy Lead, Bill & Melinda Gates Foundation (overseeing EdTech and AI-driven learning at scale). Earlier: PwC management consultant leading the $1bn Girls' Education Challenge (UK FCDO); Senior HM Inspector at Ofsted; project director at UK Department for Education; senior education adviser at DFID. Also: teacher and teacher coach in London for ~15 years. Doctorate in Education (mathematics teaching) from UCL Institute of Education; Masters in Applied Mathematics from Imperial College London. OBE awarded 2022 (Queen's New Year Honours) for services to girls' education.",
+          "notes": "First woman to lead WISE. Gates Foundation background gives strong AI/EdTech credibility. Africa focus explicitly stated as priority. Signals WISE shifting toward more implementation/impact orientation."
+        },
+        {
+          "name": "Stavros N. Yiannouka",
+          "title": "Former CEO, WISE (2012-2025); Non-Executive Director, Blue Diagonal Capital Ltd",
+          "tenure_start": "2012-08-01",
+          "tenure_end": "2025-11-30",
+          "background": "Led WISE from its early-stage build-out through 12 summits over 13 years. Prior to WISE: Executive Vice-Dean, Lee Kuan Yew School of Public Policy, National University of Singapore (2005-2012), where he drove an ambitious growth strategy. Before that: McKinsey & Company (2000-2005), serving public and private sector clients in Singapore, Indonesia, South Korea, and Canada (finance, healthcare, education). Started career as corporate lawyer in the City of London (1995-1998) at Gouldens and Mayer Brown & Platt. Education: MBA with Distinction, London Business School; LLB with Honours, University of Bristol.",
+          "notes": "Current status post-WISE unclear from public sources — his WISE biography page remains live but he is not known to have announced a new full-time role. Sits on board of Blue Diagonal Capital (Cyprus-registered, emerging markets fixed income fund manager) as independent NED and Remuneration Committee member — a pre-existing governance role, not a new role taken after WISE. Remains speaker/thought leader in global education circles. WEF Agenda Contributor."
+        },
+        {
+          "name": "Sheikha Moza bint Nasser",
+          "title": "Chairperson, Qatar Foundation (WISE patron/principal)",
+          "background": "Co-founder of Qatar Foundation. UNESCO Special Envoy for Basic and Higher Education. Presents the WISE Prize personally at each summit. Central to WISE's convening authority and global gravitas.",
+          "notes": "Not operationally involved in WISE management but her patronage is WISE's most important reputational asset."
+        }
+      ],
+      "synthesis": "WISE has just undergone a significant leadership transition. Stavros Yiannouka, who built WISE from 2012 and is a well-networked education/policy figure with McKinsey and LKY School background, departed after 13 years. Dr. Asyia Kazmi (OBE, Gates Foundation, UCL doctorate) takes over with a stronger implementation and EdTech credential, signalling WISE's intent to move from convening and thought leadership toward demonstrable programme impact, particularly in AI-in-education and girls'/low-income learner access. Stavros's continued role at Blue Diagonal Capital (independent NED) is a minor governance position at a Cyprus-based EM fixed income fund — not related to his education career.",
+      "confidence": "high"
+    }
+  },
+  "sources_consulted": [
+    "https://wise-qatar.org/wise-12/",
+    "https://wise-qatar.org/",
+    "https://www.qf.org.qa/research/world-innovation-summit-for-education-wise",
+    "https://www.qf.org.qa/events/wise-12-summit",
+    "https://al-fanarmedia.org/2025/11/wise-12-exclusive-interview-with-wise-ceo-reimagining-education-for-humanity-in-the-age-of-ai/",
+    "https://al-fanarmedia.org/2025/11/wise-12-summit-to-explore-need-for-human-values-in-learning-in-age-of-ai/",
+    "https://al-fanarmedia.org/2025/11/wise-12-opens-with-call-for-human-values-to-be-at-heart-of-education/",
+    "https://al-fanarmedia.org/2025/11/3-education-innovators-receive-1-million-in-wise-prize-awards/",
+    "https://al-fanarmedia.org/2025/12/wise-12-summit-ends-with-pleas-to-keep-innovation-human-centred/",
+    "https://thepeninsulaqatar.com/article/24/11/2025/wise-12-summit-launches-in-doha-bringing-global-education-leaders-together-under-the-theme-humanityio-human-values-at-the-heart-of-education",
+    "https://thepeninsulaqatar.com/article/25/11/2025/qatar-foundation-leads-global-dialogue-on-access-to-learning-and-the-future-of-universities-at-wise-12-summit",
+    "https://www.qatar-tribune.com/article/206354/nation/wise-12-ends-with-commitments-to-human-centred-education/amp",
+    "https://www.qatar-tribune.com/article/205524/nation/qfs-wise-and-iie-release-global-research-on-future-of-skills-in-higher-education/amp",
+    "https://www.euronews.com/next/2025/11/27/technology-must-not-outpace-human-learning-doha-education-summit-warns",
+    "https://www.gulf-times.com/article/715600/qatar/wise-12-to-take-place-from-monday-with-over-4000-participants",
+    "https://edugist.org/dr-asyia-kazmi-assumes-role-as-wises-new-ceo-steering-global-education-innovation/",
+    "https://www.wise-qatar.org/biography/stavros-n-yiannouka/",
+    "https://www.wise-qatar.org/ar/biography/dr-asyia-kazmi/",
+    "https://edtechhub.org/team/asyia-kazmi/",
+    "https://www.lidji.org/post/dr-asyia-kazmi-obe-gates-foundation-s-global-education-policy-lead",
+    "https://www.asugsvsummit.com/speakers/dr-asyia-kazmi-obe",
+    "https://bluediagonalcapital.com/node/24",
+    "https://bluediagonalcapital.com/",
+    "https://www.linkedin.com/in/snyiannouka/",
+    "https://www.iie.org/news/iie-wise-launch-international-research-consortium-ai-in-higher-education/",
+    "https://wise-qatar.org/navigating-skills-adaptation-integrating-ai-in-higher-education-global-consortium-on-artificial-intelligence-and-higher-education-for-workforce-development/",
+    "https://www.wise-qatar.org/app/uploads/2024/09/press-release_wise-announces-ai-research-consortium-in-ny-091724.pdf",
+    "https://www.wise-qatar.org/app/uploads/2025/11/iie-wise-report_integrating-ai_2025-1.pdf",
+    "https://www.fenews.co.uk/edtech/qfs-wise-announces-six-finalists-for-the-2024-2025-wise-prize-for-education/",
+    "https://www.edtechinnovationhub.com/news/wise-reveals-six-global-finalists/",
+    "https://foundation.hundred.org/en/articles/wise-and-hundred-to-celebrate-global-education-innovators-at-education-house-in-doha-in-november",
+    "https://edugist.org/wise-and-hundred-to-host-education-house-in-doha-showcasing-global-innovations-in-learning/",
+    "https://www.qatar.northwestern.edu/news/articles/2025/11-wise-2025.html",
+    "https://www.qna.org.qa/en/news/news-details?id=ceo-of-wise-12-tells-qna-summit-focuses-on-three-key-pillars-to-address-current-opportunities-and-challenges-in-education&date=25/11/2025",
+    "https://www.weforum.org/agenda/authors/stavros-n-yiannouka/",
+    "https://en.wikipedia.org/wiki/Qatar_Foundation",
+    "https://gettingsmart.com/2025/01/14/wise-recognizes-innovative-projects-from-around-the-world/"
+  ],
+  "gaps": [
+    "WISE's operating budget and annual staff headcount are not publicly disclosed — financials are consolidated within Qatar Foundation's non-public accounts.",
+    "Stavros Yiannouka's next full-time role (if any) after leaving WISE in November 2025 is not yet confirmed in public sources as of this research date.",
+    "No detail available on WISE's internal AI tool adoption for its own operations (as opposed to AI-in-education programming).",
+    "Exact number of staff at WISE is not publicly available.",
+    "WISE 13 dates/location have not been announced (next summit expected 2027 given biennial cadence).",
+    "Asyia Kazmi's specific priorities and programmatic changes for WISE post-December 2025 are not yet detailed beyond broad statements about AI, Africa focus, and innovation-to-impact.",
+    "No independent impact evaluation of WISE Prize alumni organisations is available in public domain.",
+    "Qatar Foundation's political/soft-power scrutiny (e.g. academic freedom concerns) was noted as a reputational risk context but not specifically applied to WISE in recent coverage."
+  ]
+}

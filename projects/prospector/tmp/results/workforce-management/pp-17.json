@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "workforce-management-professional-development-delivery-logistics-dup",
+  "pain_point_label": "Training Delivery & Logistics Friction",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of an LMS or learning record means there is no scalable mechanism to produce asynchronous training materials — written modules, scenario walkthroughs, practice prompts, and reflective exercises that staff can consume without traveling. Text generation directly addresses the 'no blended/asynchronous option' pain by producing reusable, campus-specific training content at low marginal cost. For a 500+ staff operator with inconsistent regional trainers, AI-generated content creates a quality floor that overrides individual trainer variance.",
+      "opportunity_sketch": "An AI-authored micro-learning content engine that converts existing workshop slide decks and trainer notes into structured self-study modules, scenario-based practice, and follow-up nudge sequences delivered asynchronously to staff on-campus.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-audio",
+      "capability_label": "Audio & Speech Generation",
+      "match_rationale": "Regional trainer inconsistency is a named pain; TTS voice cloning can standardize the delivery of training narration across campuses, replacing the variable quality of live trainers with a consistent, on-demand audio layer. This pairs with asynchronous content to eliminate travel and coverage gaps without requiring staff to read dense text. For multi-site education operators with varying digital literacy, audio-first delivery lowers the access barrier.",
+      "opportunity_sketch": "AI-narrated training modules generated from approved scripts, allowing staff to listen through headphones during prep periods on-campus — no travel, no scheduling conflict, consistent pedagogy across all sites.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Post-training behavior reversion by week 3 is a direct consequence of zero follow-up reinforcement. A conversational agent can act as an ongoing practice partner — prompting staff with scenario questions, checking understanding, and providing feedback weeks after the initial training event. This directly attacks the 'no sustained behavior change' pain mechanism in a way that no static content can. Multi-turn dialogue enables spaced repetition and adaptive reinforcement tailored to each staff member's responses.",
+      "opportunity_sketch": "A conversational coaching agent deployed via messaging or a lightweight web app that sends weekly scenario prompts, responds to staff practice answers, and escalates unresolved gaps to a line manager — functioning as a persistent post-training reinforcement layer.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Compliance tracking for audits is listed as incomplete, and post-training follow-up is absent — both are workflow gaps that a task automation agent can close end-to-end. An agent can automatically log training completions, generate compliance certificates, send follow-up nudges at scheduled intervals, escalate non-completions to managers, and compile audit-ready records without manual coordination. This addresses the operational logistics friction directly rather than just the learning quality problem.",
+      "opportunity_sketch": "An automated training operations agent that orchestrates the full training lifecycle: enrollment confirmation, completion tracking, certificate issuance, post-training check-in scheduling, and audit report generation — eliminating the manual coordination burden that currently causes tracking gaps.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "With no LMS or learning record, institutional knowledge about training content, pedagogical approaches, and past workshop materials is siloed or lost. A RAG system built over existing training documents, policy manuals, and curriculum frameworks gives staff instant access to authoritative answers on-campus without waiting for a trainer visit. This directly reduces the travel-dependency by making expert knowledge queryable at any time from any site.",
+      "opportunity_sketch": "A staff knowledge assistant that indexes all training materials, curriculum guides, and compliance documentation, allowing any staff member to ask 'how do I implement this new method?' and receive a grounded, cited answer drawn from approved institutional content.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Coverage gaps when staff leave campus for training are a named operational pain — the scheduling problem of 'who covers which class when trainer X is off-site' is exactly a resource allocation and scheduling problem. An AI scheduling optimizer can plan training attendance in staggered cohorts that maintain minimum coverage ratios across campuses, reducing the disruption cost of off-site professional development. For a 500+ staff multi-site operator with complex shift patterns, manual scheduling of training cohorts is a recurring friction point.",
+      "opportunity_sketch": "A training cohort scheduler that ingests staff timetables and coverage requirements, then generates staggered attendance plans ensuring no campus drops below minimum staffing thresholds during any training period — reducing both coverage anxiety and the temptation to cancel training.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

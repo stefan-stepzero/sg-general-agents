@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-site-expansion-integration-startup-readiness-dup",
+  "pain_point_label": "New Campus Launch Readiness & Curriculum Deployment",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "New campus launches require generating a large volume of standardized documents — onboarding guides, curriculum syllabi summaries, faculty orientation materials, and launch communications — rapidly and consistently to network standards. Without AI, this assembly is ad-hoc and time-consuming, leading to incomplete preparation for first cohorts.",
+      "opportunity_sketch": "An AI-assisted launch content generator that produces campus-specific versions of onboarding packets, welcome communications, and curriculum guides from network templates in hours rather than weeks.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Curriculum materials exist across multiple sources (shared drives, legacy campuses, vendor portals) and newly hired faculty cannot quickly locate or assemble the right resources to network standards. A RAG system grounded in the operator's curriculum corpus lets faculty ask natural-language questions and receive authoritative, cited answers about what materials to use and how.",
+      "opportunity_sketch": "A curriculum knowledge base assistant where faculty at a new campus can query 'What do I need for Week 3 of the foundational literacy module?' and receive structured, source-linked answers drawn from the network's existing materials.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "A campus launch involves dozens of interdependent steps across HR, curriculum, facilities, and IT — each with dependencies that, when unresolved, cascade into launch delays and under-prepared first cohorts. An orchestration agent can track task completion, surface unresolved dependencies, trigger stakeholder reminders, and flag at-risk milestones automatically, replacing the ad-hoc checklist problem.",
+      "opportunity_sketch": "A launch readiness automation agent that ingests a go-live checklist template, tracks completion status across systems, sends automated nudges to responsible parties, and produces a real-time readiness dashboard for network leadership.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Assembling a coherent curriculum package for a new campus requires satisfying multiple simultaneous constraints: regulatory requirements, faculty competency coverage, available materials, sequencing dependencies, and cohort start dates. AI constraint solving can automatically identify a valid curriculum configuration from the network's library that meets all hard requirements for a given campus context.",
+      "opportunity_sketch": "A curriculum configuration tool that, given a campus profile (grade levels, student population, regulatory jurisdiction, available faculty), automatically assembles a compliant, complete curriculum package from the network's resource library.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-multi",
+      "capability_label": "Multi-Agent Systems",
+      "match_rationale": "Campus launch readiness spans multiple domains simultaneously — curriculum assembly, faculty onboarding, compliance verification, and logistics coordination — each requiring different expertise and data sources. A multi-agent system with specialized sub-agents for each domain, coordinated by a launch orchestrator, can parallelize and cross-check readiness across all tracks simultaneously.",
+      "opportunity_sketch": "A launch readiness multi-agent pipeline where a curriculum agent, an HR onboarding agent, and a compliance agent each run independently and surface blockers to a coordinating launch manager agent that produces a unified go/no-go readiness report.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

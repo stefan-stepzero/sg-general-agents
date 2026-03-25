@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "finance-revenue-government-funding-ringfencing-allocation-complexity",
+  "pain_point_label": "Grant Ringfencing & Cross-Campus Allocation Complexity",
+  "matches": [
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Grant ringfencing is fundamentally a constraint satisfaction problem: each dollar must be assigned to a grant budget where eligibility rules (use restrictions, campus scope, allowable cost categories) form hard constraints, while maximizing recovery of shared costs is a soft objective. A multi-campus operator with 3-7 campuses and mixed grant portfolios has a configuration space too large for manual reasoning — a teacher splitting time across two campuses funded by different grants, shared utilities, and administrative overhead all need valid simultaneous assignments. This is exactly the class of problems constraint solvers excel at: find a combination where no hard constraint is violated and soft preferences are maximized.",
+      "opportunity_sketch": "A grant allocation engine that ingests cost items, staff time-splits, and grant eligibility rules, then outputs a defensible allocation table across campuses and grants — with audit trail showing which constraint justified each assignment. Finance staff review and approve; the system regenerates when inputs change.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once allocation decisions are made, the finance team must document the methodology for auditors — explaining why 60% of the principal's salary was charged to DepEd vs. 40% to LGU, and why that approach is consistent with grant terms. Writing defensible, regulation-aware allocation methodology narratives is exactly what LLMs do well: translating structured allocation data into coherent prose justifications. This directly addresses the audit finding risk and the CFO's discomfort with cross-grant charging.",
+      "opportunity_sketch": "An allocation memo generator that takes a completed allocation table plus grant terms as input and produces a structured narrative document suitable for auditor review — including methodology rationale, eligibility citations, and consistency statements across cost categories.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The current workflow is multi-step, error-prone, and manual: collect actuals from each campus, apply allocation rules from a spreadsheet no one fully understands, check against grant budgets, identify ineligible expenses, restate as needed, and prepare for audit. An automation agent can orchestrate this workflow — pulling actuals from accounting systems, applying rule-based eligibility checks, flagging mismatches, routing exceptions to the responsible accountant, and triggering restatement workflows. This directly attacks the 'complex spreadsheets with allocation rules that no one fully understands' manifestation.",
+      "opportunity_sketch": "A monthly close agent that ingests cost actuals across campuses, applies grant eligibility rules, produces a draft allocation with exception flags for human review, and outputs audit-ready documentation — replacing the ad-hoc spreadsheet process with a governed, repeatable workflow.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "A significant portion of the clawback risk comes from ineligible expenses being inadvertently charged to restricted grant budgets — a pattern that is detectable as an anomaly relative to established allocation norms and grant terms. An anomaly detection system trained on historical allocation patterns can flag unusual expense-to-grant assignments before they are submitted for reimbursement, catching errors like a capital expense charged to a grant restricted to operating costs or a salary charged at a ratio inconsistent with time-split documentation.",
+      "opportunity_sketch": "A real-time or batch expense screening system that scores each cost item against its assigned grant budget, flagging assignments that deviate from historical norms or violate eligibility rules — giving the finance team an early-warning layer before auditor review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Grant terms, DepEd circulars, GASTPE implementing rules, and LGU memoranda of agreement are dense regulatory documents that finance staff must interpret to determine what is and is not an allowable expense. Today this knowledge lives in printed documents or institutional memory. A RAG system over the operator's grant document corpus would let an accountant ask 'Is the principal's salary an allowable charge under GASTPE?' and get a grounded, cited answer — reducing interpretation errors and auditor findings caused by misreading eligibility rules.",
+      "opportunity_sketch": "A grant compliance Q&A tool built on the operator's library of grant agreements, implementing rules, and DepEd/LGU circulars — enabling finance staff to query eligibility rules in natural language and receive answers with source citations, reducing misallocation from interpretation errors.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Shared-cost allocation — assigning what fraction of the principal's salary, the accountant's time, or the electricity bill belongs to each grant — is a resource allocation problem: limited shared resources must be distributed across multiple funding buckets subject to eligibility and documentation constraints. AI-assisted resource allocation models can optimize these splits to maximize legitimate grant recovery while respecting ringfencing rules, replacing the conservative under-allocation default that leaves budgets siloed.",
+      "opportunity_sketch": "A shared-cost allocation optimizer that takes staff time records, utility consumption, and overhead costs as inputs and recommends defensible allocation splits across grants per campus — maximizing reimbursable recovery within documented constraints.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

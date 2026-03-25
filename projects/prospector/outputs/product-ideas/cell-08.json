@@ -1,0 +1,71 @@
+{
+  "cell": {
+    "cellNum": 8,
+    "subCategory": "Capital & Funding",
+    "domain": "Financial",
+    "heat": 49,
+    "oppScore": 35
+  },
+  "ideas": [
+    {
+      "name": "Funder Requirement Navigator",
+      "one_liner": "Interactive Q&A assistant over funding agreements and donor policy documents to guide capital project planning and compliance.",
+      "problem": "Acasus, Rising Academies, and School for Life pursue capital projects (building expansion, equipment purchase) funded by multilateral donors or government grants. Each funder has unique eligibility rules, procurement requirements, and reporting timelines scattered across lengthy agreements. Project teams waste time searching documents to determine if a project is eligible or compliant.",
+      "ai_technique": "Retrieval-Augmented Generation (funder-requirement-specific)",
+      "how_it_works": "Ingest funder agreements (World Bank, African Development Bank, government grants) with eligibility criteria, procurement rules, approval timelines, and reporting requirements. Enable project managers to query: 'Is solar panel installation eligible under this grant?' 'What is the procurement timeline for equipment >$50k?' Use RAG to return cited answers from funder documents. Output: funder requirement checklist for project planning, approval timeline roadmap.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Project Manager or Director of Planning",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Funder Acquittal Synthesizer",
+      "one_liner": "Summarizes funder acquittal reports and audit findings into executive briefs highlighting compliance gaps and remediation needs.",
+      "problem": "Acasus (development consulting), Rising Academies, and School for Life submit financial and technical reports to funders and undergo regular audits. Audit reports identify compliance findings and remediation actions scattered across lengthy documents. Leadership struggles to understand audit impact and required follow-up without reading full reports.",
+      "ai_technique": "Summarization & Condensation (audit-compliance-focused)",
+      "how_it_works": "Ingest funder acquittal reports, audit findings, and management responses. Automatically extract compliance findings, risk ratings (critical, major, minor), and required remediation actions. Generate 2-page executive brief for CFO and Board highlighting top findings, remediation timeline, and resource implications. Output: audit issue tracker with due dates and responsible parties.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "CFO or Audit Committee Chair",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Capital Fundraising Pipeline",
+      "one_liner": "Tracks fundraising progress by initiative, maps funding gaps to funder eligibility, and recommends next-best funder prospects.",
+      "problem": "Rising Academies and School for Life pursue expansion capital through diverse funder relationships (government grants, multilateral development banks, philanthropic trusts). Without systematic tracking, funding gap analysis is ad-hoc. Team doesn't know whether a shortfall can be filled by an existing funder relationship or requires new prospect development.",
+      "ai_technique": "Structured Data Classification + Recommendation Systems",
+      "how_it_works": "Model capital projects (expansion, equipment, infrastructure) with funding requirements and progress. Track funder eligibility by project type and geography. As funding gaps emerge, recommend best-fit funders based on: (a) prior relationship strength; (b) funder's strategic fit (focus country, sector, instrument); (c) project eligibility. Output: funding roadmap by project, funder engagement priorities, gap-filling recommendation.",
+      "target_companies": [
+        "rising",
+        "school-for-life",
+        "acasus"
+      ],
+      "buyer_persona": "Chief Development Officer or Fundraising Manager",
+      "tier": "module",
+      "confidence": "medium"
+    },
+    {
+      "name": "Capital Project Risk Monitor",
+      "one_liner": "Flags risks (cost overruns, timeline slippage, funder compliance violations) in active capital projects before they escalate.",
+      "problem": "Acasus-supported institutions and Rising Academies run concurrent capital projects with tight funder timelines and budgets. Cost and schedule overruns are common but discovered too late for remediation. Compliance violations (e.g., procurement rule breach) can trigger funder sanctions or fund claw-back.",
+      "ai_technique": "Time Series Forecasting + Risk Scoring (project-specific)",
+      "how_it_works": "Ingest capital project data: budget, schedule, spend-to-date, procurement status, funder milestone dates. Track cost burn rate and schedule progress against baseline. Flag early warning indicators: (a) spend trajectory exceeding 110% of budgeted pace; (b) schedule slip >4 weeks; (c) procurement delays >2 months. Score compliance risk (funder requirements vs. actual practice). Output: project health dashboard with risk alerts, remediation recommendation.",
+      "target_companies": [
+        "acasus",
+        "rising",
+        "school-for-life"
+      ],
+      "buyer_persona": "Chief Operations Officer or Project Director",
+      "tier": "feature",
+      "confidence": "medium"
+    }
+  ]
+}

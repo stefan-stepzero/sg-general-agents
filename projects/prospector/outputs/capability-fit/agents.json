@@ -1,0 +1,231 @@
+{
+  "category": "agents",
+  "category_label": "Autonomous Agents & Orchestration",
+  "capabilities": {
+    "agents-conversational": {
+      "label": "Conversational Agents",
+      "domains": {
+        "growth-market": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Student and family enrollment agents are a strong fit for Rising Academies (low-cost West Africa schools) and PHINMA (affordable HE Philippines) where admissions staff are stretched thin and first-generation applicants need guided intake. WISE conference also benefits from attendee/sponsor engagement bots. Specificity is high because generic CRM chatbots don't handle multi-language, low-literacy, or SMS-first contexts these orgs require."
+        },
+        "operations-delivery": {
+          "fit": 0.65,
+          "specificity": "high",
+          "reasoning": "Internal staff support agents handling policy queries, scheduling, and administrative guidance have real value across multi-site distributed workforces (Rising Academies teachers across West Africa, CSPD's 100+ Catholic schools). Generic helpdesks don't handle education-specific processes — timetabling, attendance, student welfare escalations. Particularly relevant for School for Life and Kinetic (student accommodation queries)."
+        },
+        "product-service": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "For Kinetic (student accommodation SaaS), an embedded conversational agent handling maintenance requests, room queries, and billing FAQs is a natural product feature. iPeople (STEM HE) could deploy student learning support agents. These orgs are selling services to students — conversational agents at the service interface are directly monetizable, not just operational. High specificity because student service workflows differ markedly from generic customer service."
+        },
+        "talent-people": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Talent problem heat is highest (52) for these orgs, but conversational agents don't solve educator recruitment directly. Value exists in onboarding Q&A for new teachers and HR policy guidance in low-resource contexts (Rising Academies, School for Life). However, HRIS adoption is patchy and the workforce is domain-expert-heavy — agents work better as supplementary support than primary HR channel."
+        },
+        "risk-compliance": {
+          "fit": 0.70,
+          "specificity": "high",
+          "reasoning": "Child safety and mandatory reporting are legally non-negotiable across all eight companies. A conversational agent that guides staff through incident reporting, mandatory notification thresholds, and escalation procedures in real time is genuinely differentiated — and liability-reducing. Generic compliance chatbots don't encode child protection frameworks (Australian, Filipino, West African regulatory specifics). CSPD and School for Life face the sharpest exposure here."
+        },
+        "financial": {
+          "fit": 0.42,
+          "specificity": "low",
+          "reasoning": "Finance in these orgs is traditional and relationship-managed. Government funding dependency means budget queries are policy-constrained, not self-serve. Conversational agents add limited value over existing finance team access; sensitivity concerns further limit adoption in cost-conscious, compliance-heavy environments."
+        },
+        "strategy-direction": {
+          "fit": 0.30,
+          "specificity": "low",
+          "reasoning": "Strategy is shaped by founder-led or board-led deliberation in these orgs. Conversational agents that surface strategic information exist, but generic LLM tools already cover this and leadership teams in transitional-tech orgs are unlikely to delegate strategic reasoning to an agent interface."
+        },
+        "governance-leadership": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Governance heat is high (52) for this group, but it is driven by board oversight, accreditation bodies, and government relationships — not information access. Conversational agents don't address the power-dynamic and relationship nature of governance problems in Catholic school systems (CSPD), government-funded LMICs programs (Acasus), or Qatar-based institutions (WISE)."
+        }
+      }
+    },
+    "agents-task-automation": {
+      "label": "Task Automation Agents",
+      "domains": {
+        "growth-market": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Enrollment pipeline automation and scholarship lead nurturing have value for PHINMA and iPeople, but these orgs are not running sophisticated growth stacks. Most growth is driven by community reputation, government partnerships, and physical presence — not automated digital funnels. Kinetic (SaaS) is the exception where automated lead-to-lease pipeline automation would create real value."
+        },
+        "operations-delivery": {
+          "fit": 0.88,
+          "specificity": "high",
+          "reasoning": "Operations problem heat is third highest (49) and the profile is perfect for task automation: multi-site delivery (Rising Academies across West Africa, CSPD's 100+ schools), legacy systems, limited IT staff, and high-volume repetitive workflows (attendance reporting, exam scheduling, facilities requests, government reporting). Task automation agents that bridge legacy SIS/ERP systems with operational workflows would address genuine pain without requiring engineering teams to build custom integrations."
+        },
+        "product-service": {
+          "fit": 0.62,
+          "specificity": "mid",
+          "reasoning": "Kinetic's student accommodation SaaS is the clearest product fit — automated maintenance ticketing, room allocation, contract generation. iPeople and PHINMA have service delivery processes that could be automated (enrollment confirmation, transcript requests, fee reminders). However, most of these orgs are not software companies, so automation agents must be deployable without engineering teams."
+        },
+        "talent-people": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Talent is the highest-heat domain (52). Task automation agents for teacher recruitment pipelines, contract generation, leave management, and CPD scheduling directly address the educator workforce crisis all eight companies face. Particularly high value in high-volume low-margin contexts: Rising Academies hiring at scale across West Africa, PHINMA managing large affordable HE campuses. These orgs lack HRIS sophistication — automation agents that work across email, spreadsheets, and basic HR tools are the right abstraction."
+        },
+        "risk-compliance": {
+          "fit": 0.85,
+          "specificity": "high",
+          "reasoning": "Risk heat is 47. Compliance automation in education covers child safety reporting, accreditation evidence collection, government funding audits, and safeguarding documentation — all high-stakes and repetitive. Acasus operates across LMICs with complex donor reporting. CSPD faces Catholic Education Office reporting. Rising Academies manages MoE relationships across multiple West African governments. Automated evidence collection and regulatory report generation is genuinely differentiated and reduces exposure to accreditation failure."
+        },
+        "financial": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Financial heat is 45 and the pain is specific: government funding drawdowns, multi-campus fee collection, donor reporting, and grant acquittal. Task automation for fee reminder workflows, government grant reporting, and multi-entity financial consolidation addresses real pain in orgs like PHINMA (multi-campus HE), Acasus (grant-funded consulting), and WISE (event-cycle revenue). Low-overhead automation that doesn't require ERP customization is the right fit."
+        },
+        "strategy-direction": {
+          "fit": 0.35,
+          "specificity": "low",
+          "reasoning": "Strategy in these orgs is board-driven and relational. Task automation agents don't meaningfully accelerate strategic decision-making in transitional-tech, domain-expert-led organizations. Mild value in automating strategic planning template population or OKR tracking — not a primary buy."
+        },
+        "governance-leadership": {
+          "fit": 0.60,
+          "specificity": "high",
+          "reasoning": "Governance heat is 52. Board reporting, accreditation self-study compilation, and stakeholder communication in these complex multi-stakeholder environments (government funders, Catholic diocese, international donors) require coordinated documentation at scale. Task automation for board pack assembly and compliance reporting cycle management is a genuine pain point that generic document tools don't address with the depth education governance requires."
+        }
+      }
+    },
+    "agents-research": {
+      "label": "Research & Analysis Agents",
+      "domains": {
+        "growth-market": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Market research agents could support Kinetic's competitive intelligence (student accommodation SaaS market) and Acasus's donor landscape mapping. But most orgs in this group grow through government relationships and community trust, not data-driven market expansion. Research agents are a secondary tool for the few commercially oriented players (Kinetic, WISE)."
+        },
+        "operations-delivery": {
+          "fit": 0.58,
+          "specificity": "mid",
+          "reasoning": "Benchmarking against peer education systems, curriculum research, and supplier/vendor analysis benefit from research agents, but operational teams in these orgs are already stretched and research outcomes need to feed into decision-ready formats. Value is real but requires organizational bandwidth to act on findings."
+        },
+        "product-service": {
+          "fit": 0.65,
+          "specificity": "mid",
+          "reasoning": "Kinetic and iPeople would benefit from research agents tracking EdTech competitor features, student housing market trends, and STEM education innovations. For the non-SaaS orgs, service design research (community needs analysis for School for Life, LMIC education outcome research for Acasus and Rising Academies) is genuinely high value but episodic rather than continuous."
+        },
+        "talent-people": {
+          "fit": 0.68,
+          "specificity": "high",
+          "reasoning": "Educator labor market research is critically underserved in LMICs and low-cost education markets. Research agents that continuously monitor teacher supply, salary benchmarks, qualification pathways, and retention drivers across West Africa, Philippines, and Australia would give Rising Academies, PHINMA, and CSPD a genuine strategic advantage in the talent market. No platform currently provides this cross-market education workforce intelligence."
+        },
+        "risk-compliance": {
+          "fit": 0.78,
+          "specificity": "high",
+          "reasoning": "Regulatory change monitoring across multiple jurisdictions is a real pain point: Australian child safety law updates (CSPD, School for Life), Philippine CHED/DepEd policy changes (iPeople, PHINMA), LMIC ministry of education directives (Rising Academies, Acasus), and Qatar education authority regulations (WISE). A research agent that tracks and synthesizes regulatory changes across these jurisdictions with education-sector specificity is highly differentiated and directly reduces accreditation and compliance risk."
+        },
+        "financial": {
+          "fit": 0.62,
+          "specificity": "high",
+          "reasoning": "Donor landscape research, government funding cycle monitoring, and grant opportunity identification are genuine pain points for Acasus (development consulting), Rising Academies (donor-dependent), and School for Life (community funding). Research agents that track ODA budget cycles, foundation giving priorities, and education sector funding flows provide intelligence these orgs currently lack."
+        },
+        "strategy-direction": {
+          "fit": 0.75,
+          "specificity": "high",
+          "reasoning": "Strategy heat is 47. These orgs face complex multi-stakeholder strategic environments: LMIC education system reform (Acasus), affordable HE positioning in emerging markets (PHINMA, iPeople), global education agenda tracking (WISE). Research agents synthesizing education policy trends, donor priorities, academic research, and government strategy documents would directly support the evidence-based strategy-making these orgs aspire to but currently struggle to resource."
+        },
+        "governance-leadership": {
+          "fit": 0.60,
+          "specificity": "high",
+          "reasoning": "Board-level governance in these orgs requires intelligence on regulatory environment, peer institution performance, and stakeholder landscape. Research agents that compile sector benchmarking reports, accreditation body guidance updates, and governance best practice from comparable education systems (Catholic diocesan networks, affordable HE systems) would support genuine governance improvement in ways that generic research tools don't provide."
+        }
+      }
+    },
+    "agents-coding": {
+      "label": "Code & Development Agents",
+      "domains": {
+        "growth-market": {
+          "fit": 0.18,
+          "specificity": "low",
+          "reasoning": "These orgs are not running digital marketing engineering operations. Growth is relationship- and community-driven. No engineering team exists to leverage coding agents for growth tooling. Essentially no fit."
+        },
+        "operations-delivery": {
+          "fit": 0.38,
+          "specificity": "low",
+          "reasoning": "Some value exists in automating data pipeline scripts or lightweight tooling for operations staff who use spreadsheets — but only where there is any technical staff at all. Kinetic (SaaS) is the exception. For Rising Academies, CSPD, School for Life — no engineering team means coding agents create no leverage."
+        },
+        "product-service": {
+          "fit": 0.55,
+          "specificity": "mid",
+          "reasoning": "Kinetic is a SaaS company and coding agents would meaningfully accelerate their product development cycle. iPeople may have some technical capacity for STEM platform development. For the remaining six orgs, product/service delivery is not software-driven, so coding agents have no applicability."
+        },
+        "talent-people": {
+          "fit": 0.15,
+          "specificity": "low",
+          "reasoning": "No meaningful fit. These orgs hire educators, administrators, and development consultants — not engineers. Coding agents don't address educator recruitment, professional development, or workforce planning in any of these organizations."
+        },
+        "risk-compliance": {
+          "fit": 0.25,
+          "specificity": "low",
+          "reasoning": "Compliance in these orgs is process and policy, not code. There is no engineering team to implement automated compliance tooling. Even where lightweight scripting could help (audit data extraction), these orgs lack the technical staff to deploy or maintain it."
+        },
+        "financial": {
+          "fit": 0.22,
+          "specificity": "low",
+          "reasoning": "Financial operations rely on legacy ERPs, spreadsheets, and external accounting firms. No in-house financial engineering capability exists. Coding agents have no pathway to adoption in these financial environments."
+        },
+        "strategy-direction": {
+          "fit": 0.12,
+          "specificity": "low",
+          "reasoning": "Strategy is entirely non-technical in these education sector orgs. Coding agents have no fit."
+        },
+        "governance-leadership": {
+          "fit": 0.10,
+          "specificity": "low",
+          "reasoning": "Governance is a human, relational, and regulatory domain across all eight companies. Coding agents are irrelevant."
+        }
+      }
+    },
+    "agents-multi": {
+      "label": "Multi-Agent Systems",
+      "domains": {
+        "growth-market": {
+          "fit": 0.52,
+          "specificity": "mid",
+          "reasoning": "Multi-agent enrollment pipelines (research agent identifying prospect segments + conversational agent nurturing inquiries + automation agent updating SIS) could benefit Kinetic and PHINMA. However, the orchestration overhead and technical deployment complexity is disproportionate to what most of these orgs can absorb. Applicable only to the more commercially mature players."
+        },
+        "operations-delivery": {
+          "fit": 0.82,
+          "specificity": "high",
+          "reasoning": "The highest operational complexity is in distributed multi-site delivery: Rising Academies across hundreds of West African schools, CSPD's 100+ Catholic schools, PHINMA's multi-campus network. Multi-agent systems that coordinate attendance monitoring, teacher deployment, resource allocation, and government reporting across sites in parallel — with a supervisor agent aggregating and escalating anomalies — are the right architecture for this problem. No single-agent or SaaS solution handles this cross-site operational intelligence."
+        },
+        "product-service": {
+          "fit": 0.60,
+          "specificity": "mid",
+          "reasoning": "Kinetic's SaaS product could benefit from multi-agent systems coordinating student onboarding, accommodation management, and resident lifecycle. iPeople's STEM platform could use coordinated learning analytics, curriculum adaptation, and student support agents. But deployment complexity limits adoption to the two most technically capable orgs in this group."
+        },
+        "talent-people": {
+          "fit": 0.72,
+          "specificity": "high",
+          "reasoning": "Multi-agent talent pipelines — research agent scanning teacher labor markets, screening agent evaluating applications, onboarding agent orchestrating documentation and induction — could transform educator hiring at scale for Rising Academies, PHINMA, and CSPD. The volume of teacher hiring at these orgs (hundreds per year) justifies orchestration complexity. No EdTech HR platform provides multi-agent coordination across sourcing, screening, and onboarding for frontline educator roles in low-resource contexts."
+        },
+        "risk-compliance": {
+          "fit": 0.80,
+          "specificity": "high",
+          "reasoning": "Multi-agent compliance systems are the right fit for orgs operating under multiple simultaneous regulatory regimes. Acasus manages donor reporting + host-country MoE compliance + organizational governance simultaneously. CSPD faces Australian education regulation + Catholic Education Office oversight + child protection frameworks. A supervisor-worker architecture where specialized agents monitor each regulatory domain and a compliance coordinator synthesizes and escalates is genuinely novel and addresses a real structural pain point. No compliance SaaS serves this multi-framework education-specific need."
+        },
+        "financial": {
+          "fit": 0.65,
+          "specificity": "high",
+          "reasoning": "Multi-campus/multi-entity financial consolidation is a real pain for PHINMA and Acasus (multi-project grant accounting). Agent teams handling data extraction from disparate systems, reconciliation, variance flagging, and narrative generation for government and donor reports could compress reporting cycles significantly. However, adoption requires a finance lead willing to pilot AI orchestration — a cultural stretch for most orgs in this group."
+        },
+        "strategy-direction": {
+          "fit": 0.60,
+          "specificity": "high",
+          "reasoning": "Strategy at WISE (global education summit) and Acasus (education development consulting) involves synthesizing global education research, government policy, donor priorities, and on-the-ground program data. A multi-agent system where research agents cover different domains (academic literature, policy documents, donor strategies, field data) and a synthesis agent produces strategic intelligence reports is genuinely differentiated for these specific orgs — even if not broadly applicable across all eight."
+        },
+        "governance-leadership": {
+          "fit": 0.55,
+          "specificity": "high",
+          "reasoning": "Board intelligence systems that coordinate agents monitoring accreditation requirements, regulatory changes, stakeholder sentiment, and peer institution performance — then synthesize into governance briefings — address the governance heat (52) in a novel way. Conservative adoption expected given the relationship-driven nature of governance in Catholic, LMIC, and government-adjacent education contexts, but the architecture is sound and the problem is real."
+        }
+      }
+    }
+  }
+}

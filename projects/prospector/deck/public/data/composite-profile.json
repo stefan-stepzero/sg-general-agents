@@ -1,0 +1,120 @@
+{
+  "company_count": 8,
+  "companies": [
+    {
+      "website": "https://www.acasus.com"
+    },
+    {
+      "website": "parra.catholic.edu.au"
+    },
+    {
+      "website": "ipeople.com.ph"
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "dimension_summary": {
+    "industry_vertical": {
+      "primary_sector": "Education (4/8); Professional Services (1/8); Technology / B2B SaaS (1/8)",
+      "vertical_niche": "International Development Consulting — Public Sector Reform (Health & Education in LMICs) (1/8); Catholic systemic K-12 education (faith-based, government-funded, non-selective) (1/8); Higher Education (STEM/Tech-focused) + K-12 Private Education + EdTech/Blended Learning (1/8)",
+      "value_chain_position": "End-service-provider / embedded delivery partner (1/8); End-service-provider (direct educator) (1/8); End-service provider / direct education delivery (1/8)",
+      "industry_maturity": "Mature (2/8); Growth — accelerating consolidation phase (1/8); Mature with consolidation dynamics (1/8)"
+    },
+    "business_model": {
+      "revenue_model": "Professional services / project-based consulting fees (1/8); Grant-funded (government) + fee supplement (modest school fees) (1/8); Tuition-based recurring revenue (per-semester enrollment fees) with supplemental ancillary income (1/8)",
+      "delivery_model": "Consulting / professional services (human-delivered, embedded) (1/8); Direct service delivery (human-delivered education + blended/online supplement) (1/8); Physical campus delivery (multi-site) with blended/online augmentation (1/8)",
+      "cost_structure": "Variable-cost-heavy (people-driven) (1/8); Fixed-cost-heavy (people-intensive, facilities-intensive) (1/8); Fixed-cost-heavy; asset-intensive (facilities, faculty, accreditation infrastructure) (1/8)",
+      "moat_and_network_effects": "Brand/trust moat + switching costs (relationship-based) (1/8); Geographic catchment moat + religious affiliation loyalty + government funding ties + institutional accreditation barrier (1/8); Multi-layered moat: deep switching costs + procurement lock-in + data scale advantages + community flywheel (1/8)",
+      "key_operational_dependencies": "Talent-market-dependent + regulation/aid-funding-dependent (1/8); Government funding (Commonwealth + NSW recurrent grants) + NESA compliance + diocese governance + teacher supply pipeline (1/8); University IT infrastructure + higher education sector health + cloud/hosting infrastructure + Volaris capital allocation (1/8)",
+      "network_effects": "Brand/reputation moat + accreditation switching costs + institutional relationship moats (1/8); High switching costs (dominant moat) + moderate data network effects (1/8); multi-layer moat: regulatory accreditation barrier + brand/reputation flywheel + campus network density + government-subsidy dependency lock-in (1/8)",
+      "key_dependencies": "Regulation-dependent (CHED licensing) + government subsidy flows (RA 10931/UNIFAST TES) + talent-market-dependent (faculty) + campus infrastructure + partner-dependent (ASU, Coursera, Alibaba Cloud) (1/8); Regulation-adjacent (HE sector funding/demand) + talent-market-dependent + parent-capital-dependent (1/8); CHED accreditation + government tuition subsidies + campus infrastructure + faculty licensure pipeline + Indonesian joint venture structures (1/8)"
+    },
+    "scale_resources": {
+      "headcount_band": "Large (201–1000) (1/8); Enterprise (1000+) (1/8); Mid-Enterprise (1,001–2,500) — confirmed 1,895 employees as of December 31, 2024 (1/8)",
+      "revenue_band": "Scale ($10M–$100M), estimated mid-range ~$35M (1/8); Enterprise ($100M+) (1/8); Enterprise ($100M+) — PHP 5.32B FY2024 (~USD 95M at ~56 PHP/USD) (1/8)",
+      "capitalization": "Bootstrapped / private partnership (no external funding) (1/8); Government-grant-funded nonprofit (company limited by guarantee since 2023) (1/8); Publicly traded on PSE (Philippine Stock Exchange); conglomerate-backed (1/8)",
+      "asset_intensity": "Asset-light (1/8); Asset-heavy (80 school campuses + 6 ELC sites + capital works) (1/8); Asset-heavy (multi-campus physical infrastructure across 4+ Philippine regions) (1/8)",
+      "financial_health": "Appears healthy and growing (profitability unknown) (1/8); Stable / sustainable (government-backed, no distress signals) (1/8); Profitable, accelerating growth, positive cash flow, conservative leverage (1/8)",
+      "company_age": "Established (8–20 years) (1/8); Legacy (20+ years) (1/8); Legacy (20+ years as iPeople; Mapúa University 100+ years) (1/8)",
+      "customer_base_scale": "Micro-to-small in number (large in impact scope) (1/8); Large (10K–100K) (1/8); Large (74,000 enrolled students, 2024-25), growing 10% YoY (1/8)",
+      "headcount": "Enterprise (1,000+) (1/8); mid-market to large enterprise (3,500–5,000 FTE across the network) (1/8); 501–1,000 employees (LinkedIn self-reported) (1/8)",
+      "customer_user_base_scale": "Small-medium (350+ paying institutional customers; 425,000–700,000+ student bed-spaces; 180 million bed-nights/year; 20+ countries) (1/8); Massive (100K+) — 300,000+ students across 900+ schools; 150,000+ Rori AI users; 4 national government partnerships (1/8); Large — 35,000+ diverse community members, 150,000+ engaged followers, 12,000+ cumulative summit attendees across 12 editions, 4,000+ per biennial cycle (1/8)"
+    },
+    "growth_phase": {
+      "_flat": "Scaling (1/8); Mature / Optimization — with an active strategic transformation layer (1/8); Mature/Optimization with deliberate inorganic growth layer (1/8)",
+      "phase": "Scaling — active geographic and portfolio expansion with concurrent consolidation (1/8)",
+      "primary_phase": "active geographic scaling — acquisition-led, multi-country, backed by PE capital (1/8)",
+      "secondary_phase": "exit / transition (IPO optionality) (1/8)"
+    },
+    "market_position": {
+      "target_customer_segment": "Government / public sector + multilateral organisations (NGO/international) (1/8); Families with K-12 children in Western Sydney seeking Catholic faith-based education — primarily middle-income households in growing suburban corridors (Blacktown, Penrith, Camden, Hills District, Hawkesbury, Blue Mountains) (1/8); Enterprise and mid-market — higher education institutions (universities, colleges) and private PBSA operators (1/8)",
+      "competitive_stance": "Niche specialist (defensible segment) (1/8); Market leader (dominant share in Catholic education in Western Sydney) (1/8); Market leader in STEM private HE (Philippines); niche specialist with rollup growth strategy (1/8)",
+      "gtm_motion": "Relationship/reputation-led (no formal sales motion visible) (1/8); Community/mission-driven + reputation-led enrolment (1/8); Brand/reputation-led (inbound) supplemented by academic partnership distribution (1/8)",
+      "customer_concentration": "Moderately concentrated (government contract model, but wider than previously estimated) (1/8); Diversified (no single customer >5%) (1/8); Highly diversified — 74,000 individual student accounts, no material concentration (1/8)",
+      "pricing_position": "Premium / mid-market for development sector (1/8); Mid-market / accessible (modest fees, below independent school sector) (1/8); Dual-tier: mid-market premium (Mapúa) + value/affordable (NTC/APEC segment) (1/8)",
+      "customer_segment": "Consumer (individual students and families) — bifurcated: premium (Mapúa) and affordable/mass-market (NTC, APEC segment) (1/8); consumer (individual students) — specifically lower-income first-generation college students (1/8); Primary: Sub-Saharan African governments (Ministries of Education) seeking measurable school quality improvement at low per-pupil cost. Secondary: low-income families in West Africa choosing affordable private schools. Tertiary: impact investors and philanthropic funders. (1/8)"
+    },
+    "org_structure": {
+      "leadership_model": "Founder transitioning to professional management (founder + professional CEO) (1/8); Professional management (CEO + EGM structure) with board governance (1/8); Dual-principal professional management (Yuchengco Chairman/CEO + Ayala President/COO) under conglomerate board oversight (1/8)",
+      "org_shape": "Hub-and-spoke / functional with field teams (1/8); Hub-and-spoke (central system office + 80 school principals) (1/8); Divisional (holding company with semi-autonomous institutional subsidiaries) (1/8)",
+      "workforce_model": "Globally distributed, field-deployed (1/8); Multi-site / distributed (80+ co-located campuses across Western Sydney) (1/8); Multi-site co-located (campus-based faculty and staff across 4+ Philippine regions) (1/8)",
+      "talent_profile": "Domain-expert-heavy (development professionals, public sector specialists) (1/8); Domain-expert-heavy (licensed teaching professionals) + operations support (1/8); Domain-expert-heavy (faculty: engineers, educators, researchers) + operations-heavy (campus administration) (1/8)"
+    },
+    "tech_maturity": {
+      "stack_generation": "Modern cloud stack (Google Cloud, Angular, TypeScript, AWS, Webpack) powering a real internal engineering function (1/8); Transitional (TechOne and FACES platforms, vendor-managed, cloud-capable; MacBooks/Chromebooks across 90%+ of secondary schools) (1/8); Transitional — Coursera-powered LMS with AI capabilities (plagiarism detection, auto-grading), expanding from 15K to 45K students; mix of custom in-house apps, Moodle, Blackboard Learn, and modern EdTech integrations (1/8)",
+      "engineering_practices": "Small dedicated engineering team (~8-15 core engineers within ~24 IT/Engineering staff); Head of Data & Engineering leads; hiring Data Engineers and Frontend Devs in Budapest (1/8); IT operations team (~15-25 staff) led by Head of Technology Services (Jackson Chan, ex-Qantas/Vodafone); ICT traineeships active; not a software engineering organisation (1/8); Minimal to basic — no CTO at holding company level; Director of IT at campus level (Joselito Sol Cruz); outsourced-first approach via Coursera partnership (1/8)",
+      "data_infrastructure": "Structured data and analytics capability (client-facing BI/ETL on AWS/Google Cloud); ETL pipelines, Tableau dashboards; internal tooling lightweight (1/8); Basic-to-intermediate analytics (BI dashboards + student progress tracking; not yet ML-ready at scale) (1/8); ERP-native reporting with centralized SIS and Coursera analytics; basic to intermediate (1/8)",
+      "security_posture": "Basic (no SOC2/ISO27001 found; standard for professional services at this scale) (1/8); Intermediate (institutional compliance baseline expected for government-funded education) (1/8); Basic to intermediate (assumed — regulated Philippine HEI with student data obligations under Data Privacy Act) (1/8)"
+    },
+    "operating_environment": {
+      "regulatory_burden": "Moderate (Swiss corporate law + international aid procurement rules) (1/8); Heavy (education regulation + child safety + privacy + government funding compliance) (1/8); Heavy — multi-regulator: CHED (higher ed), DepEd (K-12), PSE/SEC (listed company), ABET (international), NPC (data privacy) (1/8)",
+      "geographic_scope": "Global / multi-continent (1/8); Single-region / sub-national (Western Sydney and Blue Mountains, NSW Australia) (1/8); Single-country national (Philippines) with international partnership reach (1/8)",
+      "macro_sensitivity": "Aid-budget-dependent (government-spending-sensitive) (1/8); Recession-resistant (government-funded essential service) (1/8); Recession-resistant with mild demographic sensitivity; partially forex-exposed on curriculum partnerships (1/8)",
+      "governance_obligations": "Private partnership (founder-controlled, no external board oversight visible) (1/8); Nonprofit (company limited by guarantee) + Catholic Church governance + government accountability (1/8); Publicly traded (PSE) + conglomerate-controlled (dual controlling shareholders: Yuchengco Group + Ayala Corp) (1/8)"
+    },
+    "culture_brand": {
+      "innovation_posture": "Pragmatic / evidence-driven (1/8); Pragmatic / evidence-driven (adopts when clear evidence and ROI, not early adopter) (1/8); Fast-follower to bleeding-edge (relative to Philippine HE peer set); pragmatic on institutional change (1/8)",
+      "brand_positioning": "Thought-leader / mission-driven challenger (1/8); Community/mission-driven (Catholic identity + student flourishing + social justice) (1/8); Thought-leader / visionary (Mapúa flagship) + mission-driven / accessible (affordable segment brands) (1/8)",
+      "public_values": "Mission-driven (mission guides commercial decisions) (1/8); Mission-driven (Catholic values and faith formation are non-negotiable constraints on all decisions) (1/8); Values-prominent (mission-driven with nation-building rhetoric; sustainability commitments; dual social mission of excellence + accessibility) (1/8)",
+      "employer_brand": "Strong-in-niche (development sector), mixed internally (1/8); Strong-in-niche (well-regarded Catholic education employer in Western Sydney) (1/8); Strong-in-niche (attractive employer for Filipino educators and education professionals; Ayala/Yuchengco conglomerate pedigree is a talent draw) (1/8)",
+      "public_values_mission": "Three explicit values: Innovation, Collaboration, Sustainability — backed by Green Team and SME Climate Pledge commitment (1/8)"
+    }
+  },
+  "problem_heat_by_domain": {
+    "growth-market": {
+      "label": "Growth & Market",
+      "cross_company_avg": 42
+    },
+    "operations-delivery": {
+      "label": "Operations & Delivery",
+      "cross_company_avg": 49
+    },
+    "product-service": {
+      "label": "Product & Service",
+      "cross_company_avg": 38
+    },
+    "talent-people": {
+      "label": "Talent & People",
+      "cross_company_avg": 52
+    },
+    "risk-compliance": {
+      "label": "Risk & Compliance",
+      "cross_company_avg": 47
+    },
+    "financial": {
+      "label": "Financial",
+      "cross_company_avg": 45
+    },
+    "strategy-direction": {
+      "label": "Strategy & Direction",
+      "cross_company_avg": 47
+    },
+    "governance-leadership": {
+      "label": "Governance & Leadership",
+      "cross_company_avg": 52
+    }
+  }
+}

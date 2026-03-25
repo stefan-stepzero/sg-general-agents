@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-examination-administration-results-analytics-gaps-dup",
+  "pain_point_label": "Poor Exam Results Analysis & No Actionable Performance Insights",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Exam results across campuses typically exist in disparate formats — spreadsheets, SIS exports, paper-scanned CSVs — that must be normalized before any analysis is possible. AI-assisted ETL can map heterogeneous result schemas into a unified structure, eliminating weeks of manual compilation by admin staff. This directly addresses the 'results processed manually' and 'admin staff spending weeks on result compilation' pain mechanisms.",
+      "opportunity_sketch": "An ingestion pipeline that accepts raw result files from multiple campus SIS sources, maps them to a canonical schema, flags anomalies, and loads a clean analytics-ready dataset — reducing result processing time from weeks to hours.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Item-level question performance data (percent correct per question, by cohort) is structured tabular data that can be classified into difficulty bands, flagged items, and curriculum alignment categories. This directly enables the 'item analysis' that is currently missing — identifying which questions consistently caused struggle across campuses or teachers.",
+      "opportunity_sketch": "A question-level classification layer that tags each exam item as mastered/developing/struggling per cohort, surfacing which specific topics or question types are underperforming and need instructional attention.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Historical exam results per student, combined with attendance, assignment completion, and prior scores, provide sufficient features to model each student's likelihood of failing an upcoming assessment. This directly addresses the 'predictive analytics for student performance' gap — shifting from retrospective reporting to proactive identification of at-risk students before exams occur.",
+      "opportunity_sketch": "A student-level early-warning model that scores each enrolled student's likelihood of underperforming in the next assessment cycle, enabling teachers and counselors to intervene before results are published.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once results data is structured and trends are computed, synthesizing those findings into readable performance narratives for heads of department, campus principals, and the board is a high-friction manual task. LLM generation can produce these reports automatically — comparing performance across subjects, teachers, and campuses — addressing the 'limited visibility for instructional improvement' pain at the leadership communication layer.",
+      "opportunity_sketch": "Automated post-exam performance briefs generated per campus and per subject, written in natural language for department heads and school leadership, derived directly from the analytics dataset — no manual interpretation required.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The end-to-end exam results workflow — collect files, validate, transform, compute item analytics, generate trend reports, distribute to stakeholders — is a multi-step process currently executed manually across several staff members. A task automation agent can orchestrate all these steps from result receipt to distributed insight, eliminating the weeks of admin overhead that currently delay actionable analysis.",
+      "opportunity_sketch": "A results pipeline agent that triggers on file upload, runs transformation and classification steps, computes subject/teacher/campus trends, generates narrative reports, and delivers them to the right stakeholders — completing in hours what currently takes weeks.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

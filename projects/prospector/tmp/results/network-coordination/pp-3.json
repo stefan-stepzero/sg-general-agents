@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "network-coordination-decision-rights-ad-hoc-escalation-dup",
+  "pain_point_label": "Ad-Hoc Escalation & Lack of Delegation Framework",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of a documented decision authority matrix is itself a documentation problem — AI can generate RACI charts, delegation policy templates, and decision rights frameworks tailored to a multi-campus education operator's org structure. This directly addresses the root cause: no written framework exists to reference. Education operators typically have role patterns (campus principal, regional director, finance lead) that AI can use as inputs to produce draft frameworks for human review.",
+      "opportunity_sketch": "An AI-assisted tool that interviews the leadership team (via structured prompts) and generates a draft decision authority matrix and escalation policy document, ready for board ratification. Could be packaged as a one-time consulting deliverable or a recurring governance health check.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The informal power patterns driving unpredictable escalation routing exist in the organization's communications, meeting notes, email threads, and prior decisions — but are never formalized. Knowledge extraction can parse this corpus to surface the de-facto decision authority network: who actually approves what, which relationships carry weight, and where bottlenecks cluster. This evidence base is exactly what operators need before designing a formal delegation framework.",
+      "opportunity_sketch": "Ingest historical email/ticket/meeting-note data and produce a structured map of decision relationships — who initiates, who approves, who is cc'd — surfacing the informal authority graph that leadership can then formalize or override in policy.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Staff uncertainty about who to ask manifests as inbound requests (emails, help desk tickets, Slack messages) being routed to the wrong person or escalated unnecessarily. Text classification can automatically triage these requests by decision type (HR, finance, curriculum, facilities) and map them to the correct authority level, reducing misdirected escalations. For a 500+ staff network, this has high volume and immediate operational impact.",
+      "opportunity_sketch": "An email/ticket triage layer that classifies incoming decisions by type and urgency, then routes them to the appropriate authority level with an explanation — reducing CEO/board escalation volume by surfacing which requests are within campus or regional authority.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Once a delegation framework exists (or even partially exists across policy docs, bylaws, employment agreements), staff need to be able to query it in natural language to get a clear answer about who has authority. RAG grounds the answer in the actual policy corpus rather than hallucinating, and can cite the specific clause or document that grants authority — directly addressing 'staff unsure who to ask.' This is especially valuable in a multi-campus operator where policies may differ slightly by site.",
+      "opportunity_sketch": "A 'decision authority assistant' — staff type a question like 'Can the campus principal approve a $15k facilities repair?' and get a cited, grounded answer drawn from the delegation matrix, employment policy, and board charter. Could be a Slack bot or intranet widget.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "The 'staff unsure who to ask' problem is inherently a dialogue problem — staff need to describe a situation and get guidance, not just search a document. A conversational agent can ask clarifying questions (budget size? reversible decision? which campus?), apply the delegation rules, and provide a clear routing answer. Multi-turn dialogue handles the ambiguity inherent in real governance questions better than a single-turn search or lookup.",
+      "opportunity_sketch": "An internal governance assistant (Slack or Teams bot) that staff consult when unsure about decision authority — it walks them through a brief Q&A, identifies the correct approver, and logs the interaction for governance audit purposes.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The unpredictable escalation routing is a workflow problem: requests arrive without a defined path, get forwarded ad-hoc, and land on the wrong desk. A task automation agent can intercept escalation requests, classify the decision type, check it against the authority matrix, and route it to the correct approver — with escalation only triggered if the request genuinely exceeds delegated authority. This replaces the informal routing with a governed, auditable workflow.",
+      "opportunity_sketch": "An escalation automation layer that sits in front of the leadership inbox: classifies the decision, applies the authority matrix, routes to the correct approver, and only surfaces items to the CEO/board that genuinely require that level — tracking approval status and SLA across the network.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

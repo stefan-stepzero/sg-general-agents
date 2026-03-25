@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-curriculum-implementation-pacing-synchronization-dup",
+  "pain_point_label": "Pacing Guide Misalignment & Semester Slippage",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Pacing slippage follows a detectable pattern: campuses that fall behind show diverging signals (assessment completion rates, attendance, grade distributions) relative to the expected curriculum timeline. An anomaly detection model trained on historical campus performance data could flag sites deviating from the expected pacing trajectory before end-of-year cramming becomes inevitable. This directly addresses the 'poor visibility into where each campus stands' mechanism.",
+      "opportunity_sketch": "A dashboard that ingests weekly assessment submission and grade data per campus, flags sites whose pacing velocity is statistically behind schedule, and surfaces alerts to curriculum directors in time to intervene — not just at year-end reviews.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When pacing slippage is identified, curriculum teams must communicate adjustments — revised pacing calendars, catch-up schedules, and guidance to campus leads — across multiple sites. Drafting these materials is time-consuming and inconsistent across a 500+ staff network. AI text generation can produce standardized, campus-specific pacing update memos, remediation timeline documents, and end-of-semester catch-up guides from structured pacing data.",
+      "opportunity_sketch": "Given a campus's current curriculum position and remaining weeks, auto-generate a customized catch-up pacing guide with week-by-week topic sequencing and suggested consolidation points, ready for the curriculum coordinator to review and send.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core of the pacing problem is a scheduling and sequencing failure: no shared pacing calendar means each campus decides locally how to allocate instructional time across curriculum units. AI-assisted scheduling can optimize a shared pacing calendar across campuses, accounting for school-day counts, holidays, remedial insertion points, and assessment windows — while respecting constraints like mandated curriculum sequence and minimum time-on-topic requirements. This directly addresses the 'no shared pacing calendar across campuses' root cause.",
+      "opportunity_sketch": "A pacing calendar optimizer that takes the curriculum scope-and-sequence, each campus's academic calendar (holidays, event days), and required assessment dates, then outputs a synchronized multi-campus pacing plan with built-in buffer weeks and flags when remedial additions would push units past the term boundary.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Keeping a live cross-campus pacing tracker requires pulling data from multiple systems (LMS completion records, grade books, assessment platforms), normalizing it, and updating a shared view — a multi-step workflow that currently falls to coordinators manually. A task automation agent can execute this pipeline on a scheduled basis: extract data from each campus's LMS, compute pacing position against the master calendar, update a shared tracker, and trigger notifications when sites fall below threshold. This addresses both the visibility gap and the manual overhead that causes it.",
+      "opportunity_sketch": "An automated weekly pipeline agent that connects to campus LMS APIs, computes each site's curriculum coverage percentage vs. expected pacing, updates a shared operations dashboard, and sends a digest email to regional leads — requiring zero manual data collection.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Semester slippage is a predictable behavioral pattern at the campus level: campuses with certain characteristics (teacher experience mix, prior-year slippage history, student absence rates) are systematically more likely to fall behind. A propensity model trained on historical pacing and campus feature data could score each campus's likelihood of slippage at the start of a term, enabling proactive support allocation rather than reactive crisis management at year-end.",
+      "opportunity_sketch": "A term-start risk model that scores each campus's slippage probability using prior-year pacing performance, staff turnover, and enrollment volatility — allowing the curriculum team to assign additional coaching or check-in cadences to high-risk sites before problems emerge.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

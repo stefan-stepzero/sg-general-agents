@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-pastoral-counseling-referral-ecosystem-gaps-dup",
+  "pain_point_label": "Weak External Referral & Follow-up Ecosystem",
+  "matches": [
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Counselors lack structured knowledge of which external providers accept uninsured students or offer sliding-scale fees in the Philippines. A RAG system over a curated provider directory (NGOs, psychiatrists, crisis lines, fee structures) lets counselors query in natural language and receive grounded, citation-backed answers specific to their region and student demographics. This directly addresses the 'counselors don't know which providers accept uninsured students' mechanism.",
+      "opportunity_sketch": "A counselor-facing query tool: 'Which providers near Cebu accept uninsured minors for family therapy?' returns ranked providers with fee info, contact details, and intake process — sourced from a maintained directory updated by the school network's welfare team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Parents drop follow-ups partly due to friction: not knowing how to navigate the referral process, confusion about costs, and stigma-driven avoidance. A conversational agent can guide parents through the referral pathway in a non-judgmental, private channel (SMS or app), answering questions about providers, costs, appointment scheduling, and normalizing help-seeking. Multi-turn dialogue is essential here — a single response doesn't replace the sustained engagement needed to move a hesitant parent to action.",
+      "opportunity_sketch": "A WhatsApp or SMS-accessible agent (in Filipino/Cebuano) that walks parents through selecting a provider, answers cost/stigma concerns, sends appointment reminders, and collects soft follow-up signals ('Did your child attend?') — reducing dropout from the referral chain.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Follow-up is ad-hoc because there is no workflow: referrals are made verbally or via paper, no system triggers a check-in, and no one owns the tracking loop. A task automation agent can execute the follow-up workflow autonomously — sending check-in messages to parents at set intervals, escalating non-responses to the school counselor, logging outcomes to a case record, and closing the loop when attendance is confirmed. This directly addresses the 'no way to track whether a referred student actually attended' mechanism.",
+      "opportunity_sketch": "An automated post-referral workflow: upon referral entry, the agent schedules parent outreach at Day 3, Day 7, and Day 21; logs responses; flags non-attenders to the counselor dashboard; and generates a monthly referral-completion report for the welfare coordinator.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "Matching a student to the right external provider requires weighing multiple factors simultaneously: location, cost, provider specialty, student age, presenting issue (anxiety vs. trauma vs. family conflict), and insurance status. A recommendation system trained on successful past referrals and provider profiles can surface the most contextually appropriate providers for a given student profile — without the counselor needing to manually sift a fragmented directory. This addresses both the 'counselors don't know which providers' mechanism and improves referral quality.",
+      "opportunity_sketch": "A 'next-best provider' recommender embedded in the counselor's case management tool: given student profile fields (age, issue type, location, insurance), it ranks top 3 external providers with match-score rationale, enabling faster and better-fit warm handoffs.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Parents drop follow-ups for predictable reasons — cost, stigma, prior no-show behavior, travel distance — that can be modeled from student/family attributes available at referral time. A propensity model that scores each referral for 'likelihood of dropout' enables counselors to proactively intensify support (more check-ins, cost-navigation assistance) for high-risk referrals rather than applying uniform follow-up effort to all cases.",
+      "opportunity_sketch": "A referral dropout risk score generated at the moment of referral, surfaced in the counselor dashboard with the top contributing factors (e.g., 'distance to provider > 10km', 'prior no-show'), triggering a tiered follow-up protocol for high-risk cases.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

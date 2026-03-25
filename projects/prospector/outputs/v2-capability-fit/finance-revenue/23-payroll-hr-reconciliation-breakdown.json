@@ -1,0 +1,59 @@
+{
+  "pain_point_id": "payroll-hr-reconciliation-breakdown",
+  "pain_point_label": "Payroll-to-HR Reconciliation Breakdown",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core pain is that discrepancies between HR master data and payroll ledger are only discovered after payroll is processed — a classic anomaly detection use case. An AI model trained on historical payroll runs can flag employees whose pay grade, active status, or headcount record deviates from expected patterns before the run is finalized. For a 500+ staff multi-site operator, where staff churn and reassignments are frequent, automated pre-run anomaly scoring directly addresses the delayed-discovery failure mode.",
+      "opportunity_sketch": "A pre-payroll validation layer that scores each payroll record against current HR master data and surfaces high-risk discrepancies (missing staff, duplicate entries, salary grade mismatches) for a payroll officer to review before processing — replacing the post-hoc manual reconciliation.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 5,
+      "composite_score": 4.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Payroll-to-HR reconciliation is a multi-step workflow: pull headcount changes from the HRIS, cross-reference against the payroll ledger, identify deltas, generate exception reports, and route for approval — all steps a task automation agent can execute autonomously before each payroll run. Multi-site education operators typically run this reconciliation manually across spreadsheets from multiple campus HR administrators, making it a high-value automation target with clear ROI.",
+      "opportunity_sketch": "An automated reconciliation agent that runs 48 hours before each payroll cycle, ingests HR change feeds and payroll ledger exports, matches records, and produces a categorized exception report (new hires not in payroll, leavers still active, grade mismatches) delivered to the finance manager for sign-off.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "A root cause of reconciliation breakdown in multi-site education operators is that HR data and payroll data live in different systems with mismatched schemas, field naming conventions, and employee ID formats — each campus may export slightly differently. AI-assisted schema mapping and normalization can standardize these feeds into a canonical reconciliation-ready format, eliminating the manual cleanup step that currently precedes comparison.",
+      "opportunity_sketch": "An ETL pipeline with AI-assisted field mapping that ingests HR exports from multiple campus systems and payroll ledger exports, normalizes them to a shared schema, and feeds a reconciliation engine — removing the manual spreadsheet-wrangling step from each payroll cycle.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once discrepancies are identified, payroll teams must communicate exceptions to campus HR administrators and document resolutions for audit trails. AI text generation can auto-draft exception notifications, reconciliation summary reports for leadership, and audit documentation — reducing the administrative overhead that makes reconciliation burdensome beyond just the matching logic.",
+      "opportunity_sketch": "Auto-generated exception notification emails to campus HR contacts and a structured reconciliation summary report for the CFO after each payroll run, drafted from the structured exception data with no manual writing required.",
+      "impact": 2,
+      "feasibility": 5,
+      "visibility": 2,
+      "composite_score": 2.45
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code", "generation-image", "generation-audio", "generation-video",
+    "generation-synthetic-data", "extraction-media-parsing", "extraction-entity",
+    "extraction-summarization", "extraction-knowledge", "classification-text",
+    "classification-visual", "classification-structured", "classification-audio",
+    "prediction-time-series", "prediction-propensity", "prediction-risk",
+    "prediction-regression", "search-semantic", "search-rag", "search-recommendation",
+    "search-multimodal", "optimization-resource", "optimization-routing",
+    "optimization-pricing", "optimization-experiment", "optimization-constraint",
+    "agents-conversational", "agents-research", "agents-coding", "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

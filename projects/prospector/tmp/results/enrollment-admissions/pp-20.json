@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "enrollment-admissions-reenrollment-campaigns-late-outreach-dup",
+  "pain_point_label": "Late or Reactive Re-enrollment Communication",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Re-enrollment campaigns rely heavily on written communication — emails, letters, reminder notices, and early-bird incentive messaging. Multi-site operators struggle to produce timely, compelling content across multiple campuses and family segments without bottlenecking on communications staff. AI text generation enables rapid drafting of sequenced campaign messaging tailored to re-enrollment stage, family segment, and campus.",
+      "opportunity_sketch": "A campaign content library tool that auto-generates a full re-enrollment email sequence (early-bird, reminder, urgency, deadline) customized by campus, grade level, and family communication history — deployed weeks before deadlines rather than days.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The core problem is reactive outreach — operators wait for deadlines rather than identifying at-risk families early. Propensity models trained on prior-year re-enrollment data (payment history, engagement signals, sibling enrollment, attendance) can flag families likely to churn or delay, enabling proactive outreach weeks before campaigns launch. This directly addresses the 'families unaware until reminded' and 'rushed communication' symptoms.",
+      "opportunity_sketch": "A re-enrollment risk score generated per family each term, surfaced in the admissions CRM, triggering personalized outreach workflows for families flagged as low-propensity to re-enroll — shifting teams from reactive to proactive.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Late re-enrollment campaigns often stem from manual coordination failures — nobody triggers the campaign early because the workflow depends on staff remembering to act. A task automation agent can monitor enrollment databases, detect families with open re-enrollment status as a deadline approaches, and autonomously trigger sequenced outreach across email and SMS channels without manual initiation. This removes the human dependency that causes lateness.",
+      "opportunity_sketch": "An automated re-enrollment pipeline that monitors enrollment status daily, segments families by outreach stage, fires personalized communications on a pre-set schedule starting 8-10 weeks before deadline, and escalates unresponsive families to admissions staff for personal follow-up.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "optimization-experiment",
+      "capability_label": "Experiment Design & Optimization",
+      "match_rationale": "Multi-site operators running re-enrollment campaigns across many campuses have a natural A/B testing surface — different message timing, incentive framing, and channel mixes can be tested across cohorts. Without systematic experimentation, campaigns repeat the same reactive pattern each year. AI-driven experiment design can identify which early-bird incentive structures, send times, and message sequences maximize early re-enrollment commitment rates.",
+      "opportunity_sketch": "A campaign optimization layer that runs multi-armed bandit tests across re-enrollment message variants and timing schedules each cycle, automatically promoting the best-performing sequences and building institutional knowledge about what drives early family commitment.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

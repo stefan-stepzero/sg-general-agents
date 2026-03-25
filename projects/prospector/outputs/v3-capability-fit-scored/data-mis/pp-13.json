@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "data-mis-reporting-analytics-finance-enrollment-mismatch-dup",
+  "pain_point_label": "Finance & Enrollment Reporting Misalignment",
+  "matches": [
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core pain is unreconciled discrepancies between two systems — tuition posted with no matching student record, or enrolled students with no revenue entry. Anomaly detection directly targets this: given paired finance/SIS records, it flags rows that deviate from expected patterns (e.g., enrolled-but-no-tuition, tuition-but-no-enrollment). This replaces the quarterly manual reconciliation with continuous automated flagging. Education operators already have the structured data in both systems; no new data infrastructure is needed.",
+      "opportunity_sketch": "An AI reconciliation engine that ingests nightly exports from the finance system and SIS, computes expected pairings, and surfaces mismatches as a prioritized exception queue — replacing the quarterly spreadsheet exercise with a daily or weekly automated report.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The finance system and SIS use different schemas, identifiers, and timing conventions — tuition entries reference billing IDs while the SIS uses student/enrollment IDs, and revenue recognition timestamps differ from enrollment dates. AI-assisted schema mapping and normalization can create a unified canonical record that links the two systems without a full ERP integration. This is the prerequisite layer that enables reconciliation, and it is squarely in scope: semi-structured data from two systems needs reshaping to a common schema.",
+      "opportunity_sketch": "A lightweight ETL layer using AI-assisted field mapping that normalizes and joins finance and SIS exports into a single reconciliation dataset, handling ID translation, date alignment, and amount normalization — delivered as a scheduled pipeline or on-demand report.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Beyond flagging mismatches, the operator needs to understand the category of each discrepancy — timing lag, data entry error, bad debt misclassification, or legitimate revenue/enrollment gap. A structured classification model trained on historical reconciliation outcomes can automatically label each exception row (e.g., 'revenue-recognition-lag', 'student-record-missing', 'bad-debt-misclassified'), enabling the finance team to triage and resolve exceptions by type rather than investigating each one from scratch.",
+      "opportunity_sketch": "A classifier that categorises each flagged reconciliation exception into a predefined taxonomy of discrepancy types, so the finance team can bulk-resolve common patterns (e.g., all timing-lag entries) and focus manual effort on genuinely unusual cases.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The reconciliation workflow has multiple sequential steps: extract data from both systems, normalize fields, match records, flag exceptions, categorise them, update bad-debt status, and generate a summary report. This is a textbook multi-step business workflow with branching logic (matched vs. unmatched, lag vs. error vs. genuine gap). A task automation agent can orchestrate the full pipeline end-to-end — replacing a quarterly manual process with a continuous automated one that only surfaces items requiring human judgement.",
+      "opportunity_sketch": "An end-to-end reconciliation agent that runs on a nightly or weekly schedule: pulls exports from both systems, runs matching and anomaly detection, classifies exceptions, auto-resolves known patterns (e.g., clears delinquent flags for re-enrolled students), and emails a summary exception report to the finance team.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Government funding claims and board reporting require narrative explanations of enrollment-revenue variances. Finance teams currently write these manually and must reconcile the numbers before writing. Once the reconciliation data is clean, an LLM can auto-draft the variance narrative — explaining why revenue recognition lags enrollment at each campus, summarising bad debt aging by cohort, and flagging funding claim discrepancies in plain language for sign-off by finance leadership.",
+      "opportunity_sketch": "Auto-generated variance commentary attached to each reconciliation report: a short narrative per campus that explains the delta between SIS enrollment and finance revenue for the period, suitable for board packs or government funding submissions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

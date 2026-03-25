@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-accreditation-accreditor-interpretation-variance-dup",
+  "pain_point_label": "Accreditor Interpretation Variance Across Programs",
+  "matches": [
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Accreditor standards (ACSEE, ACPE, AACN) are dense documents with overlapping but distinct language. A RAG system grounded in the actual standards text lets compliance staff query 'how does ACPE define clinical hours?' and receive a cited, accurate answer — directly preventing the misinterpretation that triggers corrective action. Unlike keyword search, it handles paraphrased or ambiguous queries against multi-accreditor corpora simultaneously.",
+      "opportunity_sketch": "A compliance Q&A assistant that indexes all active accreditor handbooks and school policy documents, answering requirement questions with source citations and flagging when multiple accreditors define the same concept differently.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core problem is that overlapping requirements from different accreditors are stored in separate documents with no explicit cross-reference. Knowledge extraction can systematically pull requirement triples (accreditor → standard → specific rule) and build a structured cross-accreditor map, making conflicts and gaps machine-readable rather than dependent on staff memory. This directly surfaces the 'clinical hours counted differently by ACSEE vs school policy' class of conflict.",
+      "opportunity_sketch": "An automated pipeline that ingests accreditor standards PDFs and outputs a structured requirements graph, enabling side-by-side comparison of how each body defines shared concepts like clinical hours, credit loads, or faculty qualifications.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Once requirements are structured, each curriculum element or policy statement can be classified as compliant/non-compliant against each accreditor's standard. This turns a manual audit-prep process into an automated screening pass that flags misalignments before an external auditor does. The multi-label nature (one curriculum element, multiple accreditors) is well within standard NLP classification capability.",
+      "opportunity_sketch": "A curriculum compliance screener that takes course descriptions or policy text as input and outputs a per-accreditor compliance label with a confidence score, surfacing misalignments for human review before submission cycles.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The institution can be scored on the probability of a compliance finding per program-accreditor pair based on historical corrective action data, curriculum change frequency, and standards update recency. This converts reactive discovery (auditor finds non-compliance) into proactive prioritization of which programs to review first. The 'months of corrective action' consequence makes the adverse outcome concrete enough to build a meaningful risk model.",
+      "opportunity_sketch": "A program-level compliance risk dashboard that scores each degree program against its accreditor on a rolling basis, factoring in curriculum changes, accreditor standard updates, and prior audit findings — enabling the compliance team to triage their limited review time.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When non-compliance is identified, drafting corrective action plans (CAPs) for each accreditor is a high-effort, format-specific writing task. Each accreditor (ACSEE, ACPE, AACN) has distinct CAP templates and preferred language. AI text generation can draft CAPs from structured finding inputs, reducing the months-consuming documentation burden and ensuring format compliance with each body's submission requirements.",
+      "opportunity_sketch": "A CAP drafting assistant that takes a structured compliance gap description as input and generates a formatted corrective action plan tailored to the specific accreditor's template, tone, and required attestation language.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full compliance monitoring cycle — detect accreditor standard updates, map changes to affected curricula, flag conflicts, route to program directors for review, and track resolution — is a multi-step workflow currently done manually and inconsistently. A task automation agent can orchestrate this end-to-end, ensuring no update to an accreditor standard falls through the cracks across the institution's multiple programs.",
+      "opportunity_sketch": "An accreditor change-monitoring agent that watches for published standards updates, automatically maps changes to relevant programs, generates a draft impact assessment, and creates review tasks for the responsible compliance officer — closing the loop from detection to resolution tracking.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

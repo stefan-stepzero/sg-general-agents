@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-project-change-budget-overruns-delays-dup",
+  "pain_point_label": "Project Budget Overruns, Timeline Slippage & Scope Creep",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site education operators lack formal project scoping artifacts — statements of work, change request forms, risk registers, and board-level status reports are either absent or informally drafted. LLM-based text generation can produce structured project charters, change control documentation templates, and executive status narratives from structured inputs, directly countering informal scoping and lack of change control. This is feasible without deep integration — it operates on inputs staff already have (budgets, timelines, vendor quotes).",
+      "opportunity_sketch": "An AI-assisted project intake tool that generates a formal project charter, risk register, and change control policy document from a short brief submitted by an IT or operations lead — reducing reliance on verbal estimates and informal scope agreements.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Budget overruns and timeline slippage in education IT projects follow recognizable patterns: informal scoping, integration complexity, competing priorities, and vendor change orders. A risk scoring model trained on project attributes (scope size, integration count, vendor type, team bandwidth) could flag high-risk projects at intake before commitments are made. Multi-site operators running several concurrent projects stand to benefit significantly — leadership currently has no early-warning signal.",
+      "opportunity_sketch": "A project risk scoring tool that takes structured project parameters at intake (estimated budget, integration dependencies, staff headcount, vendor type) and outputs a risk tier with flagged risk factors — surfaced to IT leadership before approval to trigger scrutiny or change control requirements.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Vendor contracts, change orders, statements of work, and integration specifications are often lengthy documents that IT staff skim rather than read carefully — leading to missed scope implications and surprise costs. Summarization of these documents into concise risk-tagged briefs would surface scope creep triggers and change order clauses before they become problems. This directly addresses the 'vendor change orders not negotiated' failure mode.",
+      "opportunity_sketch": "An AI document review tool that summarizes vendor contracts and change orders, highlighting scope assumptions, integration dependencies, and cost escalation clauses — delivered as a one-page brief to IT project managers before sign-off.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pain point involves a chain of governance failures: no formal scope document, no change control workflow, no budget tracking alerts, no vendor negotiation process. A task automation agent could orchestrate the project governance workflow — triggering scope review requests when change orders arrive, routing approval requests, generating budget variance alerts, and logging scope changes — replacing the informal verbal processes that currently fail. Multi-site operators have enough project volume to justify this overhead.",
+      "opportunity_sketch": "An AI project governance agent that monitors project intake forms, budget tracking sheets, and vendor communications to automatically trigger change control workflows, draft escalation summaries for leadership, and flag budget burn rates against original estimates.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

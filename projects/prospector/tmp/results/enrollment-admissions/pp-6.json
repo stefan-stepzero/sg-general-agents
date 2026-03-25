@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "enrollment-admissions-application-processing-document-verification-dup",
+  "pain_point_label": "Slow & Inconsistent Document Verification",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Families submit documents as scanned PDFs, photos, or image files. OCR and form field extraction can digitize and parse these submissions automatically, eliminating manual data entry and enabling downstream verification logic. For a multi-site operator, this creates a consistent digitization layer regardless of which campus receives the submission.",
+      "opportunity_sketch": "An AI-powered document ingestion pipeline that OCRs submitted PDFs and photos (birth certificates, immunization records, transcripts), extracts key fields, and flags documents that are illegible or missing required content before a human ever touches the file.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once documents are digitized, entity extraction can pull specific attributes — student name, date of birth, expiry dates on vaccinations, issuing authority — and map them to checklist fields. This directly addresses the inconsistency problem by applying the same extraction logic across all campuses rather than relying on individual staff judgment.",
+      "opportunity_sketch": "A verification layer that extracts structured attributes from parsed documents and auto-populates the enrollment checklist, highlighting any field that doesn't match expected values (e.g., name mismatch between ID and application form).",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "After text is extracted from submitted documents, a classifier can determine document type (proof of identity, proof of address, immunization record, etc.) and completeness status (valid, expired, wrong document type, illegible). This standardizes the categorization step that currently varies by campus and staff member.",
+      "opportunity_sketch": "An AI classifier that receives extracted text from a submitted file and outputs document type and a validity verdict (accepted / rejected / needs review), feeding directly into an automated checklist tracker per application.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The manual back-and-forth with families to request missing documents is a significant time sink. AI text generation can draft personalized, context-specific outreach messages that reference exactly which documents are missing or why a submission was rejected, reducing staff drafting time and improving family clarity.",
+      "opportunity_sketch": "An automated family communication module that generates tailored emails or SMS messages listing the exact missing or invalid documents per application, with instructions for resubmission — triggered by checklist status rather than written by staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full document verification workflow — intake, parse, classify, check against checklist, flag gaps, notify family, escalate overdue items — is a multi-step process with branching logic that a task automation agent can orchestrate end-to-end. This directly addresses the absence of automated reminders and escalation described in the pain point.",
+      "opportunity_sketch": "An enrollment document agent that monitors submission queues across all campuses, routes documents through parsing and classification steps, updates application status, sends reminder communications at configurable intervals, and escalates to admissions managers when submissions are overdue beyond a threshold.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

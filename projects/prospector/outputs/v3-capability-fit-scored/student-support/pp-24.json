@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "student-support-extracurricular-cocurricular-safeguarding-capacity-gaps-dup",
+  "pain_point_label": "Weak Safeguarding & Duty-of-Care Oversight in Off-Campus Activities",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Off-campus activity forms are described as generic and risk assessments as cursory — these are exactly the document types that text generation can systematically improve. An LLM can draft activity-specific safeguarding checklists, risk assessment templates, and pre-trip briefing documents tailored to activity type, age group, and venue, replacing the current one-size-fits-all approach.",
+      "opportunity_sketch": "A template generation tool where coordinators input activity type, student ages, and destination and receive a fully populated, activity-specific risk assessment and consent form with safeguarding clauses pre-filled and highlighted for review.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 64.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "When incident reports, parent complaints, or staff notes do exist, they are likely unstructured text across emails and forms. Text classification can triage these inputs by severity, category (injury, harassment, abuse, transportation incident), and urgency, ensuring nothing falls through the cracks and high-risk signals are escalated immediately.",
+      "opportunity_sketch": "An intake classifier that processes incoming incident reports and welfare concerns from off-campus activities, assigns a severity tier, routes to the appropriate safeguarding lead, and flags patterns across repeated low-severity reports that may indicate a systemic issue.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The pain point describes a structural absence of risk evaluation for off-campus activities — ratio of adults to students not standardized, venues unvetted, transportation unscreened. A risk scoring model could assess each planned activity against known risk factors (activity type, student vulnerability indicators, venue familiarity, staff credentials, trip duration) to produce a composite risk score that determines approval routing and supervision requirements.",
+      "opportunity_sketch": "A pre-activity risk scoring engine where trip coordinators submit activity parameters and receive an automated risk score with a rationale — low-risk trips proceed with standard sign-off, medium/high-risk trips are escalated to the safeguarding lead for enhanced review before approval.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core systemic failure described is the absence of a centralized safeguarding protocol and audit loop for off-campus activities — a multi-step workflow problem. A task automation agent could orchestrate the end-to-end compliance workflow: triggering pre-trip checklist completion, verifying staff credential records, confirming adult-to-student ratios, sending reminders, logging confirmations, and creating an auditable record — replacing the current ad hoc, parallel system.",
+      "opportunity_sketch": "An off-campus activity compliance agent that, upon trip creation, automatically initiates a checklist workflow across relevant staff, tracks completion status, escalates overdue items, and produces a compliance certificate that must be signed before departure is authorized.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 2,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "One-to-one coaching in private spaces without supervision is a specific high-risk pattern. Anomaly detection applied to scheduling and location data can flag sessions that deviate from expected patterns — unscheduled private sessions, sessions occurring outside normal hours or approved venues, or coaches with unusual session frequency relative to peers — surfacing supervision risks before incidents occur.",
+      "opportunity_sketch": "A behavioral monitoring layer over the activity scheduling system that flags statistical outliers in session location, timing, and frequency for one-to-one coaching arrangements, producing a weekly digest of anomalies for the safeguarding coordinator to review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "enrollment-admissions-marketing-outreach-digital-execution-dup",
+  "pain_point_label": "Weak Digital Marketing Execution & Attribution",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Multi-site operators struggle to maintain a consistent, high-quality social media and web content cadence across campuses with limited marketing staff. AI text generation can produce on-brand social posts, SEO-optimized landing page copy, ad copy, and email nurture sequences at scale — directly addressing the inconsistent presence and poor organic visibility components of the pain. For education operators, this means each site can have locally relevant content without hiring site-specific copywriters.",
+      "opportunity_sketch": "A content generation tool that produces campaign-specific social posts, Google Ads copy, and SEO page content for each campus, using enrollment season prompts and local program details as inputs — deployed via a simple web UI or CMS integration.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "A core attribution problem is that inquiry sources are often ambiguous — leads come in through contact forms, phone calls, or chat without clear campaign tagging. Text classification can automatically label inbound inquiry text (form submissions, chat transcripts, email subjects) by source intent, campaign theme, or channel origin, enabling downstream attribution analysis. For a 500-staff operator juggling multiple campaigns, this replaces manual tagging that never happens consistently.",
+      "opportunity_sketch": "An inbox/CRM enrichment layer that classifies every inbound inquiry message by detected source signal (paid ad, organic search, referral, event), feeding a unified attribution dashboard without requiring UTM discipline from staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Even with weak attribution, operators accumulate inquiry and enrollment data over multiple cohorts. Propensity modeling can identify which lead characteristics (source, program interest, demographics, engagement depth) predict actual enrollment conversion, allowing marketing spend to be redirected toward higher-converting channels and audiences. This directly addresses the 'no integrated lead tracking to measure which campaigns convert' dimension of the pain.",
+      "opportunity_sketch": "A lead scoring model trained on historical inquiry-to-enrollment data that ranks new leads by conversion likelihood and surfaces which campaign sources historically produce enrolled students, giving marketing teams a conversion-optimized channel mix recommendation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The attribution gap is partly an execution and process problem: staff do not consistently tag leads, update CRM records, or log campaign sources — the manual steps fall through the cracks at busy multi-site operators. A task automation agent can orchestrate lead capture across channels (form submissions, chatbot conversations, call tracking) and automatically write structured attribution records into the CRM, closing the tracking loop without requiring staff discipline. It can also automate the scheduling and posting of AI-generated content across sites.",
+      "opportunity_sketch": "An end-to-end inquiry pipeline agent that ingests leads from web forms, chatbots, and paid channel webhooks, enriches each record with source classification and campaign tags, and writes to the CRM — eliminating the manual data entry step where attribution breaks down.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "optimization-experiment",
+      "capability_label": "Experiment Design & Optimization",
+      "match_rationale": "Multi-site operators running campaigns across campuses and programs have a natural multi-arm testing opportunity but rarely have the analytical capacity to design and interpret A/B tests rigorously. AI-assisted experiment design (Bayesian optimization, multi-armed bandits) can allocate budget and test variants across channels automatically, replacing the ad-hoc 'run two ads and see which gets more clicks' approach with statistically principled optimization. This directly improves marketing execution quality and ROI measurement.",
+      "opportunity_sketch": "A campaign optimization layer that continuously allocates ad spend and content variants across sites using a multi-armed bandit, surfacing winning messages and channels with statistical confidence — replacing spreadsheet-based campaign reviews with automated experimentation.",
+      "pain_salience": 3,
+      "adoption_likelihood": 2,
+      "build_complexity": 2,
+      "composite_score": 9.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

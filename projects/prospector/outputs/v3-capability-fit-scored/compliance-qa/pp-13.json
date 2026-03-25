@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-teacher-registration-cpd-cpd-hour-tracking-verification-dup",
+  "pain_point_label": "CPD Hour Tracking and Verification Across Programs",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "CPD attestation documents arrive as PDFs, scanned certificates, or photos from external providers and conferences. These documents must be converted into machine-readable records before any verification or tracking can occur. OCR and form-field extraction directly addresses the digitization bottleneck where HR receives paper or image-based proof that cannot be entered into a system without manual effort.",
+      "opportunity_sketch": "An ingestion pipeline that accepts uploaded CPD certificates and attestation documents, extracts provider name, date, hours, and accreditation code via document parsing, and feeds the structured output into a centralized compliance tracker.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Once CPD documents are digitized, the specific data points that matter — CPD provider name, accreditation status, program title, CPD hours awarded, completion date, teacher name — must be extracted as discrete key-value pairs. Entity extraction turns parsed certificate text into structured records that can be matched against DepEd-approved provider lists and aggregated per teacher per year.",
+      "opportunity_sketch": "A layer on top of document parsing that extracts structured CPD record fields from certificate text, flags missing or ambiguous fields for HR review, and automatically validates the provider against a known-accredited list.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Not all CPD submissions are equivalent — some come from DepEd-accredited providers, some from professional boards, some from unaccredited vendors or informal workshops. Text classification can label each submitted CPD record as valid/invalid/needs-review against compliance rules, and can also flag whether the CPD category (e.g., teaching practice vs. content knowledge) satisfies the specific sub-hour requirements of the teacher's specialization.",
+      "opportunity_sketch": "An automated triage layer that classifies each incoming CPD submission by validity category and compliance sub-type, surfacing only ambiguous cases to HR for manual review and auto-approving clear-cut valid submissions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain point explicitly surfaces that teachers self-report CPD and 10-20% are found non-compliant at inspection — a pattern consistent with both accidental errors and deliberate inflation. Anomaly detection can flag statistically unusual CPD submissions: duplicate certificates across teachers, providers with suspiciously high hourly grants, submission timing clustering near deadlines, or CPD hours that appear before a program's accreditation date.",
+      "opportunity_sketch": "A fraud and error detection module that scores each CPD submission for anomalousness — duplicate certificate IDs, providers not on the accreditation registry, implausibly high single-day hour claims — and routes flagged records to HR before they are counted toward a teacher's annual total.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The operator's core exposure is inspection non-compliance: entering an audit period with staff whose CPD hours will not pass. Risk scoring can estimate, months before the compliance deadline, which teachers are on track to be non-compliant based on hours logged to date, historical submission patterns, and their specialization's requirements — enabling targeted remediation before the audit rather than corrective action after.",
+      "opportunity_sketch": "A per-teacher compliance risk dashboard that scores each staff member's likelihood of failing the annual CPD audit based on hours logged, typical completion rate trajectories, and deadline proximity, prompting HR to issue targeted reminders or recommend specific upcoming trainings.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full CPD verification workflow spans multiple steps: document ingestion, OCR, entity extraction, provider accreditation lookup, aggregation against per-teacher targets, reminder dispatch, and corrective action flagging. Each step exists today as a manual HR handoff. A task automation agent can orchestrate the entire pipeline end-to-end — from a teacher uploading a certificate to the compliance dashboard being updated — without human intervention for clean cases.",
+      "opportunity_sketch": "An end-to-end CPD compliance automation agent that processes incoming certificate uploads, validates against accreditation registries, updates the centralized tracker, notifies teachers of acceptance or rejection, and escalates borderline cases to HR — all autonomously, with humans only reviewing exceptions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-cross-campus-allocation",
+  "pain_point_label": "Cross-campus aid allocation & transfer rules",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The 8-12 hrs/month per group award cycle is almost entirely procedural: read enrollment data, apply allocation rules, update campus ledgers, generate reconciliation reports, and respond to sponsor queries. An automation agent can orchestrate this end-to-end workflow across multiple systems, replacing the manual multi-step process with a governed, auditable pipeline.",
+      "opportunity_sketch": "An award-cycle agent that triggers on award activation, pulls campus enrollment figures, runs allocation logic, posts to each campus ledger, detects conflicts, and produces a sponsor-ready utilization report — reducing cycle effort from hours to minutes of human review.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 4
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Group scholarship slots (e.g., 50 slots across 3 campuses) are fundamentally a resource allocation problem: distributing a finite award pool across campuses based on enrollment demand, campus policy, and utilization history. AI-driven allocation can replace manual spreadsheet negotiation with an optimized distribution that respects policy constraints and dynamically rebalances as enrollment shifts.",
+      "opportunity_sketch": "An allocation engine that ingests group award parameters, campus enrollment data, and policy rules, then proposes and locks an optimal slot distribution — with rebalancing triggers when campus demand shifts mid-cycle.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.65
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Duplicate posting — where both student and admin record the same transfer benefit — and cross-campus double-counting are precisely the kind of abnormal patterns anomaly detection is designed to catch. The model can learn normal posting patterns per award type and flag deviations (same student, same award, two campus ledgers) before they compound into reconciliation problems.",
+      "opportunity_sketch": "A real-time posting monitor that scores each aid transaction against historical norms, surfacing duplicate or inconsistent cross-campus postings to a finance reviewer before month-end close — replacing the current manual cross-system reconciliation pass.",
+      "impact": 4,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.6
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Transfer rules — award portability, credit continuation, balance carry, and duplicate-posting prevention — are a multi-constraint satisfaction problem where each student transfer must simultaneously satisfy campus policy, sponsor terms, system deduplication rules, and ledger integrity requirements. A constraint solver can encode these rules explicitly and flag or block any transfer configuration that violates them.",
+      "opportunity_sketch": "A transfer eligibility engine that evaluates each student campus-move against all active award constraints, returning a pass/fail decision with the specific rule driving any block — eliminating manual governance decisions and reducing duplicate-posting risk to near-zero.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 3,
+      "composite_score": 3.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Sponsor queries on award utilization (did the money reach the intended campus?) currently require manual cross-campus data assembly. A text generation layer can synthesize multi-campus ledger data into a clear, sponsor-ready narrative response — reducing response time from days to minutes.",
+      "opportunity_sketch": "An auto-drafted sponsor response generator that pulls posting records from all relevant campuses and produces a formatted utilization summary, ready for finance staff to review and send.",
+      "impact": 2,
+      "feasibility": 4,
+      "visibility": 2,
+      "composite_score": 2.5
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

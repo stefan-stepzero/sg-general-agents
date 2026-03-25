@@ -1,0 +1,217 @@
+{
+  "entity": "Rising Academies",
+  "research_date": "2026-03-11",
+  "findings": {
+    "news": {
+      "items": [
+        {
+          "date": "2025-07",
+          "headline": "Rising Academies partners with Anthropic to power AI for impact",
+          "summary": "Formal partnership announced with Anthropic; Claude powers both Rori (student math tutor) and the newly launched Tari (teacher AI assistant), both delivered via WhatsApp. 150,000+ students reached across Ghana, Sierra Leone, Nigeria, Kenya, Rwanda.",
+          "source": "https://www.risingacademies.com/risingnews/rising-partners-with-anthropic-to-power-ai-for-impact"
+        },
+        {
+          "date": "2024-11-18",
+          "headline": "Rising Academies joins Keeping Children Safe (KCS) global network",
+          "summary": "Formal membership in KCS international safeguarding standards network, covering 900+ schools and 250,000+ students. Reflects governance maturation ahead of scale.",
+          "source": "https://www.risingacademies.com/risingnews/rising-academies-and-keeping-children-safe-join-forces-to-strengthen-child-safeguarding-practices-in-educationnbsp"
+        },
+        {
+          "date": "2024-11",
+          "headline": "Expanded Rwanda MINEDUC MoU: RisingFaster to 120 schools / 60,000 students",
+          "summary": "Following two years of the Elimu-Soko pilot, Rwanda's Ministry of Education signed new MoU. FasterReading and FasterMath program to scale from pilot to 120 schools reaching 60,000 students. Over 95% of pilot teachers said they would recommend the program.",
+          "source": "https://www.risingacademies.com/risingnews/rising-and-mineduc-rwanda-sign-a-new-mou-to-extend-the-risingfaster-remedial-program-to-more-schools"
+        },
+        {
+          "date": "2024",
+          "headline": "Series A financing of $4.25M closed, led by Klett Group",
+          "summary": "First institutional equity round. Lead investor Klett Kita & Schule GmbH (part of Klett Group, Europe's largest education company, celebrating 125 years in 2024). Co-investors: UBS Optimus Foundation, King Philanthropies, Dovetail Impact Foundation, Solon Capital Holdings. Goal: double student reach while improving quality.",
+          "source": "https://africabusinesscommunities.com/finance/rising-academies-to-close-series-a-investment-of-425m-led-by-klett-kita-and-schule-gmbh/"
+        },
+        {
+          "date": "2024",
+          "headline": "Paul Skidmore transitions to Executive Chairman; Stephanie Dobrowolski becomes CEO",
+          "summary": "After 10 years as CEO, Skidmore steps back to part-time Executive Chairman. Co-founder Dobrowolski appointed CEO. Skidmore's family relocated to UK cited as personal driver.",
+          "source": "https://www.risingacademies.com/risingnews/a-message-from-our-founders"
+        },
+        {
+          "date": "2024",
+          "headline": "Rising Academy Waterloo named Top 3 finalist for World's Best School Prizes 2024",
+          "summary": "Prizes founded by T4 Education in collaboration with Accenture, American Express and Lemann Foundation. One of the world's most prestigious education prizes.",
+          "source": "https://www.risingacademies.com/awards-recognition"
+        },
+        {
+          "date": "2024-07",
+          "headline": "18-month FasterMath evaluation shows 0.22 SD improvement in math proficiency",
+          "summary": "Rigorous evaluation concluding July 2024 demonstrated substantial positive effect on students' math proficiency at 0.22 standard deviations improvement in overall math outcomes.",
+          "source": "https://www.risingacademies.com/impact"
+        },
+        {
+          "date": "2025-2026",
+          "headline": "Larger Rori RCT study planned for Academic Year 2025/26",
+          "summary": "Preparations underway for a larger randomized controlled trial of Rori AI math tutor. Current evidence base strong; RCT to provide more definitive efficacy data.",
+          "source": "https://www.risingacademies.com/risingnews"
+        }
+      ],
+      "synthesis": "Rising Academies had a busy 2024-2025 with three major milestones in quick succession: a Series A equity close, a CEO transition, and an Anthropic AI partnership. The Rwanda MINEDUC expansion reflects growing government willingness to pay for their model — a critical signal for financial sustainability. The Anthropic partnership is the highest-profile AI endorsement yet (Anthropic published a customer case study). School count grew from 700 to 900+ within this period. All public signals are positive.",
+      "confidence": "high"
+    },
+    "industry": {
+      "synthesis": "Rising Academies operates at the intersection of two markets: low-cost private school management in Sub-Saharan Africa, and Africa EdTech. The broader Africa EdTech market was ~$7.3B in 2025 and is projected to reach $19.2B by 2034 (CAGR ~11-19%). The structural tailwinds are strong: 500M+ smartphone users, high mobile penetration, chronic public school underperformance, and donor/government appetite for PPP models. The competitive landscape includes Bridge International Academies (now rebranded, operating in Kenya/Uganda/Nigeria/India at much larger scale but controversy-laden) and a range of curriculum and teacher-support EdTechs. Rising's differentiator is its multi-channel strategy: it runs affordable private schools AND sells government partnership programs (Liberia, Rwanda, Ghana, Sierra Leone), making it more resilient than pure-play private school operators. The trend toward low-bandwidth, WhatsApp-native EdTech (Rori/Tari) is well-aligned with the market's mobile-first direction. Government partnerships at scale — with Rwanda and Liberia paying for the model — validate that the 'sell to governments' revenue stream is real and growing. Key market risk: donor funding dependency for AI product development (LEVI/Gates funding for Rori). Key opportunity: Rori's $5/student/year cost point is potentially the most scalable education intervention on the continent.",
+      "confidence": "high"
+    },
+    "financial": {
+      "rounds": [
+        {
+          "type": "Series A",
+          "amount_usd": 4250000,
+          "date": "2024",
+          "lead_investor": "Klett Kita & Schule GmbH (Klett Group)",
+          "co_investors": ["UBS Optimus Foundation", "King Philanthropies Inc", "Dovetail Impact Foundation", "Solon Capital Holdings"]
+        },
+        {
+          "type": "Pre-Series A / early investors (prior rounds)",
+          "amount_usd": null,
+          "date": "pre-2024",
+          "investors": ["FINCA Ventures", "Dovetail Impact Foundation", "King Philanthropies", "Solon Capital Partners", "Mulago Foundation (portfolio + surge grant ~$1M over 2 years)"]
+        }
+      ],
+      "revenue_model": "Hybrid: (1) tuition fees from affordable private schools in Sierra Leone and Ghana; (2) government partnership contracts — Liberia, Rwanda, Sierra Leone, Ghana pay Rising to manage or support government schools; (3) Rori AI product licensing (in development as standalone SaaS); (4) philanthropic grants for R&D (LEVI/Gates for Rori RCT).",
+      "unit_economics_signals": "RisingFaster program costs as low as $5/student/year at government scale. Rori intervention similarly ~$5/student/year. Liberia: increased learning 60% without raising costs for government. These signals suggest efficient unit economics for the program delivery side, though private school margins in West Africa are thin.",
+      "total_disclosed_funding": "~$4.25M equity (Series A) + undisclosed earlier rounds + grants. Total likely $6-10M+ across all capital but not publicly confirmed.",
+      "growth_trajectory": "School count: 700+ (2023 known context) → 900+ (late 2024/2025). Students: 270,000-300,000. Countries: 4 (Sierra Leone, Liberia, Ghana, Rwanda). Rori users: 40,000+ active (2024), target 1M+ by 2027 and 5M+ by 2030. Series A intent: double student reach.",
+      "synthesis": "Rising is a capital-light, impact-first social enterprise that has now crossed into equity financing with a strategic investor (Klett Group) from the education sector — not a typical VC. This signals they are positioning for sustainable scale rather than hypergrowth-and-exit. The Klett investment is notable: it brings sectoral expertise and potential distribution partnerships in Europe alongside the capital. Total equity raised is modest ($4.25M Series A) for a company of this footprint, suggesting lean operations. The Rwanda and Liberia government-pays models are the key financial proof points: if governments pay and scale, Rising can achieve financial sustainability independent of donor grants.",
+      "confidence": "medium-high"
+    },
+    "technology": {
+      "ai_adoption": "advanced",
+      "products": [
+        {
+          "name": "Rori",
+          "type": "AI student math tutor",
+          "delivery": "WhatsApp chatbot (text + audio)",
+          "ai_stack": "Claude (Anthropic) + NLP/ML; earlier versions used rule-based + LLM hybrid",
+          "scale": "40,000+ active users (2024); 150,000+ across the Anthropic partnership announcement",
+          "efficacy": "Effect size 0.36-0.37 SD improvement in math; 11 percentage point higher scores vs control (N=1,000 Ghana schools); equivalent to ~1 extra year of learning. Cost: ~$5/student/year.",
+          "target": "Students, grades primary-secondary, Ghana and Sierra Leone primarily; expanding to Nigeria, Kenya, Rwanda",
+          "rct_planned": "Larger RCT planned for AY 2025/26",
+          "site": "https://rori.ai/"
+        },
+        {
+          "name": "Tari",
+          "type": "AI teacher assistant",
+          "delivery": "WhatsApp chatbot",
+          "ai_stack": "Claude (Anthropic) — ~95% of interactions powered by Claude",
+          "features": "Proactively initiates conversations with teachers on lesson planning; private subject knowledge support; maintains multi-message conversations; AI-native experience",
+          "status": "Launched 2025"
+        },
+        {
+          "name": "RisingFaster",
+          "type": "Structured literacy and numeracy program (FasterReading + FasterMath)",
+          "delivery": "Teacher-delivered curriculum with coaching support",
+          "ai_stack": "Not AI-native; structured pedagogy",
+          "scale": "750+ schools across Sierra Leone, Liberia, Ghana, Rwanda; 250,000+ students"
+        }
+      ],
+      "infrastructure": "WhatsApp-native delivery by design — bypasses need for laptops, high-speed internet; low-bandwidth text/audio; pay-as-you-go data compatible. Conventional edtech reaches <5% of their target students.",
+      "anthropic_partnership": "Formal partnership announced July 2025. Anthropic published Rising Academies as a customer case study on claude.com. Claude powers both Rori and Tari.",
+      "cto": "Shabnam Aggarwal — first CTO hired; prior: founded KleverKid (VC-backed India EdTech); entrepreneur-in-residence at Dimagi (global digital health tech). Speaks at CNBC/MasterCard Foundation panels on EdTech.",
+      "synthesis": "Rising Academies is at the 'advanced' end of AI adoption for an African education NGO/social enterprise. Rori is among the most rigorously evaluated AI tutoring tools in the Global South, with published RCT evidence (arXiv:2402.09809) and a formal Anthropic partnership. Tari extends AI to teacher support — less common and potentially higher-leverage than student-facing tools alone. The WhatsApp delivery architecture is a genuine innovation: it sidesteps the infrastructure gap that kills most EdTech in low-income markets. The AI roadmap is credible and accelerating.",
+      "confidence": "high"
+    },
+    "reputation": {
+      "awards_and_recognition": [
+        "World's Best School Prizes 2024 — Rising Academy Waterloo named Top 3 finalist (T4 Education/Accenture/American Express/Lemann Foundation)",
+        "Mulago Foundation Rainer Arnhold Fellow — Paul Skidmore",
+        "MIT Solve winner — Rori (Rising On Air Interactive)",
+        "HUNDRED innovation recognition — Rori",
+        "Anthropic customer case study — significant brand endorsement from leading AI company",
+        "LEVI (Learning Engineering Virtual Institute / Gates-funded) — research partnership and funding for Rori RCT"
+      ],
+      "media_and_thought_leadership": "Paul Skidmore has a public intellectual presence: Medium blog ('The Learning Crisis is Dead... Long live Foundational Learning'), Institute for Global Change contributor, Airbel Impact Lab featured speaker. Rising actively publishes impact evidence and is transparent about model iterations and scaling challenges.",
+      "third_party_evaluations": "Multiple independent evaluations published: arXiv paper on Rori RCT (Ghana, 2024), R4D reading evaluation, LEVI-funded studies. This is notably more rigorous than most EdTech operators in their market.",
+      "stakeholder_sentiment": "Government partners (Rwanda MINEDUC, Liberia) are expanding rather than exiting — strongest positive signal. Teacher NPS extremely high (95%+ would recommend RisingFaster). Student qualitative feedback on Rori positive ('It has built my confidence'). No significant public controversies found specific to Rising; occasional sector-level criticism of low-cost private education PPP models (mainly directed at Bridge International) has some read-across risk.",
+      "b_corp_status": "Certified B Corp — reinforces mission-alignment and governance credibility for donors, impact investors, and government partners.",
+      "synthesis": "Reputation is strong and improving. Rising has carved out a position as one of the more rigorous, transparent, and evidence-driven operators in African education. The Anthropic partnership elevates their tech credibility significantly. The CEO transition (Skidmore to Dobrowolski) appears managed well — no public turbulence. The main reputational risk is the broader sector tension around private operators in public education systems, but Rising's government-partnership model positions them better than purely commercial operators like Bridge.",
+      "confidence": "high"
+    },
+    "leadership": {
+      "key_people": [
+        {
+          "name": "Paul Skidmore",
+          "title": "Co-founder, Executive Chairman (formerly CEO until 2024)",
+          "background": "Princeton MPA (2008). Helped set up Tony Blair Africa Governance Initiative in Rwanda; Director of Projects and Deputy CEO at AGI. Co-founded Rising with Dobrowolski in 2014 in Sierra Leone during Ebola crisis. Rainer Arnhold Fellow (Mulago Foundation). Public writer and speaker on foundational learning. Relocated to UK ~2024, triggering CEO transition.",
+          "social": "X: @pjskids | Medium: pauljskidmore | LinkedIn: paul-rising | Institute for Global Change contributor",
+          "connection_to_org": "Still active as Executive Chairman; ideological founder and public face of research/thought leadership"
+        },
+        {
+          "name": "Stephanie Dobrowolski",
+          "title": "CEO (appointed 2024), Co-founder",
+          "background": "Social intervention researcher in UK and Canada before moving to Sierra Leone to co-found Rising in 2014. Has been operational from day one. Now leading the full organization as CEO with Paul stepping back.",
+          "connection_to_org": "Day-to-day operational leader; longest-tenured co-founder now at the helm"
+        },
+        {
+          "name": "Shabnam Aggarwal",
+          "title": "Chief Technology Officer",
+          "background": "Founded KleverKid (VC-backed EdTech startup, India). Entrepreneur-in-residence at Dimagi (global digital health/mobile data collection). First CTO hired at Rising. Leads content and digital division including Rori and Tari development. Public speaker on EdTech for displaced youth (CNBC/MasterCard Foundation panel).",
+          "connection_to_org": "Leads all technology products and digital strategy"
+        },
+        {
+          "name": "Zaheera Soomar",
+          "title": "Chief Operating Officer",
+          "background": "Listed in Rising Academy Network management team. Limited public information found.",
+          "connection_to_org": "Operations lead"
+        },
+        {
+          "name": "George Cowell",
+          "title": "Chief Strategy Officer",
+          "background": "Listed in Rising Academy Network management team. Limited public information found.",
+          "connection_to_org": "Strategy lead"
+        }
+      ],
+      "synthesis": "Leadership team is founder-led with a thoughtful transition underway. Skidmore remains involved as Executive Chairman but has handed daily control to Dobrowolski, his co-founder who knows the organization equally well — low disruption risk. The CTO hire (Aggarwal) was a deliberate step to professionalize the tech function, and the timing aligns with the Rori/Tari product build-out. The team has been together for 10 years in a difficult operating environment — high cohesion and mission alignment. Skidmore's public intellectual role (writing, speaking, AGI background) continues to elevate the org's profile beyond what a 900-school Africa operator would typically command.",
+      "confidence": "high"
+    }
+  },
+  "sources_consulted": [
+    "https://www.risingacademies.com/risingnews",
+    "https://www.risingacademies.com/impact",
+    "https://www.risingacademies.com/risingnews/series-a-ta5ea",
+    "https://africabusinesscommunities.com/finance/rising-academies-to-close-series-a-investment-of-425m-led-by-klett-kita-and-schule-gmbh/",
+    "https://www.risingacademies.com/risingnews/rising-partners-with-anthropic-to-power-ai-for-impact",
+    "https://claude.com/customers/rising-academies",
+    "https://rori.ai/",
+    "https://learning-engineering-virtual-institute.org/teams/rising-academy-network/",
+    "https://arxiv.org/abs/2402.09809",
+    "https://www.mulagofoundation.org/portfolio/rising-academies",
+    "https://www.mulagofoundation.org/rainer-arnhold-fellow/paul-skidmore",
+    "https://www.risingacademies.com/risingnews/a-message-from-our-founders",
+    "https://www.risingacademies.com/risingnews/rising-and-mineduc-rwanda-sign-a-new-mou-to-extend-the-risingfaster-remedial-program-to-more-schools",
+    "https://www.risingacademies.com/awards-recognition",
+    "https://www.risingacademies.com/risingnews/rising-academies-and-keeping-children-safe-join-forces-to-strengthen-child-safeguarding-practices-in-educationnbsp",
+    "https://www.keepingchildrensafe.global/blog/2024/11/18/rising-academies/",
+    "https://pitchbook.com/profiles/company/458160-76",
+    "https://www.crunchbase.com/organization/rising-academy-network",
+    "https://za.linkedin.com/in/shabnamaggarwal",
+    "https://rocketreach.co/rising-academy-network-management_b4568ad7fca04df9",
+    "https://www.imarcgroup.com/africa-edtech-market",
+    "https://medium.com/included-vc/edtech-in-africa-between-promise-and-reality-59c34c42a3b4",
+    "https://solve.mit.edu/solutions/50853",
+    "https://hundred.org/en/innovations/rori",
+    "https://ebm.ai/rising-academies-rori/",
+    "https://edtechinsiders.substack.com/p/breaking-claude-for-education-launches",
+    "https://pauljskidmore.medium.com/4-the-learning-crisis-is-dead-c9e84f782257",
+    "https://medium.com/airbel/paul-skidmore-on-the-radical-transformation-to-education-in-fragile-states-f1aa0694809"
+  ],
+  "gaps": [
+    "Total cumulative funding across all rounds not publicly disclosed — Series A ($4.25M) is the only confirmed equity figure; pre-Series A grants and equity unclear",
+    "Valuation not publicly disclosed (PitchBook profile exists but behind paywall)",
+    "Tari (teacher AI assistant) launch date and current scale not precisely confirmed beyond 'announced July 2025 partnership'",
+    "Zaheera Soomar (COO) and George Cowell (CSO) backgrounds not publicly detailed",
+    "Revenue figures, margins, and path-to-profitability not disclosed",
+    "Nigeria and Kenya operations referenced in Anthropic case study but limited detail on scale/model in those countries",
+    "Rori 2025/26 large RCT results not yet available (study in progress)",
+    "Details of Mulago Foundation surge grant amount and terms not confirmed",
+    "No independent negative coverage of Rising specifically found — reputational risks may be under-surfaced"
+  ]
+}

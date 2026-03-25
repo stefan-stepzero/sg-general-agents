@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Prospector — Pain Point Landscape</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #13161e;
+  --surface2: #1b1f2b;
+  --surface3: #232838;
+  --border: #262b3a;
+  --border-subtle: #1e2230;
+  --text: #e8eaf0;
+  --text-secondary: #b0b4c4;
+  --text-muted: #6b7194;
+  --accent: #7b93ff;
+  --accent-bright: #94a8ff;
+  --green: #34d399;
+  --green-dim: rgba(52, 211, 153, 0.12);
+  --amber: #f59e0b;
+  --amber-dim: rgba(245, 158, 11, 0.12);
+  --red: #f87171;
+  --red-dim: rgba(248, 113, 113, 0.12);
+  --radius: 10px;
+  --radius-sm: 6px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.app { display: flex; min-height: 100vh; }
+.sidebar {
+  width: 280px;
+  background: var(--surface);
+  border-right: 1px solid var(--border-subtle);
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  overflow-y: auto;
+  z-index: 50;
+}
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+.main { margin-left: 280px; flex: 1; padding: 32px 40px; max-width: 1000px; }
+
+/* Sidebar */
+.sidebar-brand { padding: 20px 16px 16px; border-bottom: 1px solid var(--border-subtle); }
+.sidebar-brand h1 { font-size: 15px; font-weight: 700; letter-spacing: -0.02em; }
+.sidebar-brand .sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+.archetype-tabs { padding: 12px 12px 0; }
+.arch-tab {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  text-align: left;
+  margin-bottom: 2px;
+}
+.arch-tab.active { background: var(--surface3); color: var(--text); }
+.arch-tab.disabled { opacity: 0.4; cursor: default; }
+
+.sidebar-section { padding: 12px 12px; }
+.sidebar-section-title {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 0 4px;
+  margin-bottom: 6px;
+}
+
+.filter-group { margin-bottom: 12px; }
+.filter-label { font-size: 11px; color: var(--text-muted); margin-bottom: 4px; padding: 0 4px; }
+.filter-row { display: flex; gap: 4px; padding: 0 4px; }
+.filter-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-muted);
+}
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.filter-btn:hover:not(.active) { border-color: var(--text-muted); color: var(--text-secondary); }
+
+select.filter-select {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-family: inherit;
+  margin: 0 4px;
+}
+
+.area-nav { list-style: none; }
+.area-nav li {
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+}
+.area-nav li:hover { background: var(--surface2); }
+.area-nav li.active { background: var(--surface3); color: var(--accent-bright); }
+.area-nav .count { font-size: 10px; color: var(--text-muted); }
+
+/* Stats bar */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  text-align: center;
+}
+.stat-value { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
+.stat-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+
+/* Treemap */
+#treemap-container {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+#treemap-container h2 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+#treemap-container .note { font-size: 11px; color: var(--text-muted); margin-bottom: 12px; }
+
+/* Pain point list */
+.pp-list { margin-bottom: 24px; }
+.pp-item {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.pp-item:hover { border-color: var(--border); }
+.pp-item.expanded { border-color: var(--accent); }
+.pp-header {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px 50px;
+  align-items: center;
+  gap: 8px;
+}
+.pp-label { font-size: 13px; font-weight: 500; }
+.pp-area-tag {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-top: 2px;
+}
+.pp-metric {
+  text-align: center;
+  font-size: 11px;
+}
+.pp-metric .val { font-size: 15px; font-weight: 700; display: block; }
+.pp-detail {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  display: none;
+}
+.pp-item.expanded .pp-detail { display: block; }
+
+.match-row {
+  display: grid;
+  grid-template-columns: 160px 44px 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 12px;
+  align-items: baseline;
+}
+.match-row:last-child { border-bottom: none; }
+.match-cap { font-weight: 500; color: var(--text-secondary); }
+.match-score-chip {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+.match-sketch { color: var(--text-muted); }
+.match-dims { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+/* Capability bars */
+#cap-bars {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.cap-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.cap-label { width: 170px; text-align: right; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
+.cap-bar-bg { flex: 1; height: 16px; background: var(--surface2); border-radius: 3px; overflow: hidden; position: relative; }
+.cap-bar-fill { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
+.cap-stat { width: 80px; font-size: 11px; color: var(--text-muted); flex-shrink: 0; }
+
+/* Archetype placeholder */
+.placeholder-card {
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 48px;
+  text-align: center;
+  color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <h1>Prospector v3</h1>
+      <div class="sub">Pain Point Landscape</div>
+    </div>
+
+    <div class="archetype-tabs">
+      <button class="arch-tab active" data-arch="edu-operator">Multi-site Education Operator</button>
+      <button class="arch-tab disabled">Education SaaS Vendor</button>
+      <button class="arch-tab disabled">Upstream Advisory / Convening</button>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">View</div>
+      <div class="filter-group">
+        <div class="filter-row">
+          <button class="filter-btn active" data-view="landscape">Landscape</button>
+          <button class="filter-btn" data-view="top-opps">Top Opps</button>
+          <button class="filter-btn" data-view="capabilities">Capabilities</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Sort by</div>
+      <div class="filter-group">
+        <div class="filter-row">
+          <button class="filter-btn active" data-sort="salience">Salience</button>
+          <button class="filter-btn" data-sort="score">Top Score</button>
+          <button class="filter-btn" data-sort="matches">Matches</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Filter: Min Salience</div>
+      <div class="filter-group">
+        <div class="filter-row">
+          <button class="filter-btn" data-min-sal="0">All</button>
+          <button class="filter-btn" data-min-sal="3">3+</button>
+          <button class="filter-btn active" data-min-sal="4">4+</button>
+          <button class="filter-btn" data-min-sal="5">5</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-section" id="area-nav-section">
+      <div class="sidebar-section-title">Process Areas</div>
+      <ul class="area-nav" id="area-nav"></ul>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <!-- Stats -->
+    <div class="stats-bar" id="stats-bar"></div>
+
+    <!-- Treemap -->
+    <div id="treemap-container">
+      <h2>Pain Landscape</h2>
+      <div class="note">Treemap: area = match count, color = top composite score. Click to filter.</div>
+      <div id="treemap"></div>
+    </div>
+
+    <!-- Pain point list -->
+    <div id="pp-list-header" style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+      <h2 style="font-size:16px;font-weight:700;" id="list-title">Pain Points</h2>
+      <span style="font-size:12px;color:var(--text-muted);" id="list-count"></span>
+    </div>
+    <div class="pp-list" id="pp-list"></div>
+
+    <!-- Capability view (hidden by default) -->
+    <div id="cap-bars" style="display:none;">
+      <h2 style="font-size:14px;font-weight:600;margin-bottom:4px;">AI Capability Signal Strength</h2>
+      <div class="note" style="font-size:11px;color:var(--text-muted);margin-bottom:14px;">
+        Bar width = match count across all pain points. Color = average composite score.
+      </div>
+      <div id="cap-bars-content"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let DATA = null;
+let state = {
+  view: 'landscape',
+  sort: 'salience',
+  minSalience: 4,
+  areaFilter: null
+};
+
+function scoreColor(s) {
+  if (s >= 60) return '#34d399';
+  if (s >= 40) return '#f59e0b';
+  if (s >= 20) return '#fb923c';
+  return '#6b7194';
+}
+
+function scoreColorHex(s) {
+  if (s >= 60) return [52, 211, 153];
+  if (s >= 40) return [245, 158, 11];
+  if (s >= 20) return [251, 146, 60];
+  return [107, 113, 148];
+}
+
+// Load data
+fetch('/outputs/report-data.json')
+  .then(r => r.json())
+  .then(data => {
+    DATA = data;
+    initApp();
+  });
+
+function initApp() {
+  renderStats();
+  renderAreaNav();
+  renderTreemap();
+  renderList();
+  bindEvents();
+}
+
+function getFilteredPPs() {
+  let pps = DATA.painPoints.filter(p => p.maxSalience >= state.minSalience);
+  if (state.areaFilter) pps = pps.filter(p => p.area === state.areaFilter);
+
+  if (state.sort === 'salience') pps.sort((a, b) => b.maxSalience - a.maxSalience || b.topScore - a.topScore);
+  else if (state.sort === 'score') pps.sort((a, b) => b.topScore - a.topScore || b.maxSalience - a.maxSalience);
+  else if (state.sort === 'matches') pps.sort((a, b) => b.matchCount - a.matchCount || b.topScore - a.topScore);
+
+  return pps;
+}
+
+function renderStats() {
+  const s = DATA.summary;
+  const html = [
+    { val: s.totalPainPoints, label: 'Pain Points', color: 'var(--accent)' },
+    { val: s.totalMatches.toLocaleString(), label: 'AI Matches', color: 'var(--green)' },
+    { val: s.highScoreOpps, label: 'High-Score (≥60)', color: 'var(--amber)' },
+    { val: s.highSaliencePains, label: 'High-Salience (≥4)', color: 'var(--red)' }
+  ].map(s => `
+    <div class="stat-card">
+      <div class="stat-value" style="color:${s.color};">${s.val}</div>
+      <div class="stat-label">${s.label}</div>
+    </div>`).join('');
+  document.getElementById('stats-bar').innerHTML = html;
+}
+
+function renderAreaNav() {
+  const nav = document.getElementById('area-nav');
+  const items = [{ id: null, label: 'All Areas', count: DATA.painPoints.length }]
+    .concat(DATA.areas.map(a => ({ id: a.id, label: a.label, count: a.ppCount })));
+
+  nav.innerHTML = items.map(a => `
+    <li data-area="${a.id}" class="${a.id === state.areaFilter ? 'active' : ''}">
+      <span>${a.label}</span>
+      <span class="count">${a.count}</span>
+    </li>`).join('');
+}
+
+function renderTreemap() {
+  const container = document.getElementById('treemap');
+  container.innerHTML = '';
+  const width = container.clientWidth || 900;
+  const height = 240;
+
+  // Build hierarchy
+  const treeData = {
+    name: 'root',
+    children: DATA.areas.map(a => ({
+      name: a.label,
+      id: a.id,
+      value: a.totalMatches,
+      avgScore: a.avgTopScore,
+      ppCount: a.ppCount
+    }))
+  };
+
+  const root = d3.hierarchy(treeData).sum(d => d.value);
+  d3.treemap().size([width, height]).padding(2).round(true)(root);
+
+  const svg = d3.select(container).append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  const nodes = svg.selectAll('g')
+    .data(root.leaves())
+    .join('g')
+    .attr('transform', d => `translate(${d.x0},${d.y0})`)
+    .style('cursor', 'pointer')
+    .on('click', (e, d) => {
+      state.areaFilter = state.areaFilter === d.data.id ? null : d.data.id;
+      renderAreaNav();
+      renderList();
+      renderTreemap();
+    });
+
+  nodes.append('rect')
+    .attr('width', d => d.x1 - d.x0)
+    .attr('height', d => d.y1 - d.y0)
+    .attr('rx', 4)
+    .attr('fill', d => {
+      const [r, g, b] = scoreColorHex(d.data.avgScore);
+      const selected = state.areaFilter === d.data.id;
+      return `rgba(${r},${g},${b},${selected ? 0.5 : 0.2})`;
+    })
+    .attr('stroke', d => state.areaFilter === d.data.id ? scoreColor(d.data.avgScore) : 'transparent')
+    .attr('stroke-width', 2);
+
+  nodes.each(function(d) {
+    const w = d.x1 - d.x0;
+    const h = d.y1 - d.y0;
+    if (w < 60 || h < 30) return;
+
+    const g = d3.select(this);
+    const shortLabel = d.data.name.length > 20 && w < 140
+      ? d.data.name.substring(0, 18) + '...'
+      : d.data.name;
+
+    g.append('text')
+      .attr('x', 6).attr('y', 14)
+      .attr('font-size', '10px')
+      .attr('font-weight', '600')
+      .attr('fill', '#e8eaf0')
+      .text(shortLabel);
+
+    if (h > 40) {
+      g.append('text')
+        .attr('x', 6).attr('y', 28)
+        .attr('font-size', '10px')
+        .attr('fill', '#6b7194')
+        .text(`${d.data.ppCount} pains · avg ${Math.round(d.data.avgScore)}`);
+    }
+  });
+}
+
+function renderList() {
+  const pps = getFilteredPPs();
+  const maxShow = state.view === 'top-opps' ? 25 : 100;
+  const shown = pps.slice(0, maxShow);
+
+  document.getElementById('list-title').textContent =
+    state.view === 'top-opps' ? 'Top Opportunities' : 'Pain Points';
+  document.getElementById('list-count').textContent =
+    `${shown.length} of ${pps.length}`;
+
+  const listEl = document.getElementById('pp-list');
+  listEl.innerHTML = shown.map((pp, i) => {
+    const areaLabel = (DATA.areas.find(a => a.id === pp.area) || {}).label || pp.area;
+    return `
+    <div class="pp-item" data-idx="${i}">
+      <div class="pp-header">
+        <div>
+          <div class="pp-label">${pp.label}</div>
+          <div class="pp-area-tag">${areaLabel}</div>
+        </div>
+        <div class="pp-metric">
+          <span class="val" style="color:${pp.maxSalience >= 4 ? 'var(--red)' : pp.maxSalience >= 3 ? 'var(--amber)' : 'var(--text-muted)'};">${pp.maxSalience}</span>
+          Pain
+        </div>
+        <div class="pp-metric">
+          <span class="val" style="color:${scoreColor(pp.topScore)};">${pp.topScore}</span>
+          Score
+        </div>
+        <div class="pp-metric">
+          <span class="val">${pp.matchCount}</span>
+          Caps
+        </div>
+      </div>
+      <div class="pp-detail">
+        ${pp.matches.slice(0, 5).map(m => `
+          <div class="match-row">
+            <div class="match-cap">${m.capLabel}</div>
+            <div><span class="match-score-chip" style="background:${scoreColor(m.score)}22;color:${scoreColor(m.score)};">${m.score}</span></div>
+            <div>
+              <div class="match-sketch">${m.sketch || ''}</div>
+              <div class="match-dims">P:${m.pain} A:${m.adoption} B:${m.build}</div>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Expand/collapse
+  listEl.querySelectorAll('.pp-item').forEach(el => {
+    el.addEventListener('click', () => el.classList.toggle('expanded'));
+  });
+}
+
+function renderCapabilities() {
+  const caps = Object.entries(DATA.capabilities)
+    .map(([id, c]) => ({ id, ...c }))
+    .sort((a, b) => b.avgScore - a.avgScore);
+
+  const maxCount = Math.max(...caps.map(c => c.count));
+  const content = document.getElementById('cap-bars-content');
+  content.innerHTML = caps.map(c => {
+    const pct = (c.count / maxCount) * 100;
+    return `
+    <div class="cap-row">
+      <div class="cap-label">${c.label}</div>
+      <div class="cap-bar-bg">
+        <div class="cap-bar-fill" style="width:${pct}%;background:${scoreColor(c.avgScore)};opacity:0.7;"></div>
+      </div>
+      <div class="cap-stat">${c.count} @ ${c.avgScore}</div>
+    </div>`;
+  }).join('');
+}
+
+function bindEvents() {
+  // View buttons
+  document.querySelectorAll('[data-view]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-view]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.view = btn.dataset.view;
+
+      const showList = state.view !== 'capabilities';
+      document.getElementById('treemap-container').style.display = showList ? '' : 'none';
+      document.getElementById('pp-list').style.display = showList ? '' : 'none';
+      document.getElementById('pp-list-header').style.display = showList ? '' : 'none';
+      document.getElementById('cap-bars').style.display = showList ? 'none' : '';
+
+      if (state.view === 'capabilities') renderCapabilities();
+      else renderList();
+    });
+  });
+
+  // Sort buttons
+  document.querySelectorAll('[data-sort]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.sort = btn.dataset.sort;
+      renderList();
+    });
+  });
+
+  // Salience filter
+  document.querySelectorAll('[data-min-sal]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-min-sal]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.minSalience = parseInt(btn.dataset.minSal);
+      renderList();
+    });
+  });
+
+  // Area nav
+  document.getElementById('area-nav').addEventListener('click', e => {
+    const li = e.target.closest('li');
+    if (!li) return;
+    const area = li.dataset.area === 'null' ? null : li.dataset.area;
+    state.areaFilter = area;
+    renderAreaNav();
+    renderList();
+    renderTreemap();
+  });
+}
+</script>
+</body>
+</html>

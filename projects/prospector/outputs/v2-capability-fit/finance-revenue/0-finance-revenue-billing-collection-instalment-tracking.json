@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-instalment-tracking",
+  "pain_point_label": "Instalment Plan & Partial Payment Reconciliation",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pain point is fundamentally a multi-step workflow: when a partial payment arrives, the system must identify the relevant family account, apply it against the correct instalment line, recompute outstanding balances across downstream invoices, flag any drift from scheduled totals, and trigger family notification — all currently done manually across spreadsheets and apps. A task automation agent can execute this reconciliation pipeline autonomously on each payment event. For a 500+ staff operator managing thousands of accounts, this directly eliminates the manual tracking drift that accumulates by month 3.",
+      "opportunity_sketch": "An agent that listens to payment receipts (via API or file import), applies each payment to the correct instalment schedule, recalculates outstanding balances across all affected invoices, and flags accounts where actual receipts diverge from recorded state — producing a daily reconciled ledger without staff intervention.",
+      "impact": 5,
+      "feasibility": 3,
+      "visibility": 5,
+      "composite_score": 4.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Payment data arrives in semi-structured forms — bank remittances, mobile app exports, manual spreadsheet entries — each with inconsistent schemas (partial amounts, split references, missing instalment IDs). AI-assisted data transformation can normalize these heterogeneous inputs into a canonical instalment-payment schema before reconciliation, which is the root cause of the accounting drift described. This is technically feasible because the inputs have structure; they just lack a consistent mapping to the target schema.",
+      "opportunity_sketch": "A transformation layer that ingests payment files from multiple sources (bank feeds, mobile apps, manual CSVs), maps each entry to the canonical instalment schema (family ID, invoice ID, instalment number, amount applied), and outputs a clean staging table ready for balance computation.",
+      "impact": 3,
+      "feasibility": 4,
+      "visibility": 3,
+      "composite_score": 3.25
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The core operational nightmare described is the inability to distinguish families who are genuinely behind from those who have paid but whose accounting is out of sync. Anomaly detection trained on instalment state (expected vs. actual cumulative receipts, timing deviation, partial-payment patterns) can flag accounts where the recorded balance is abnormal relative to payment history — surfacing sync failures before they become collection disputes. This directly addresses the collection team's problem of acting on corrupted data.",
+      "opportunity_sketch": "A model that scores each family account daily on instalment-state consistency — flagging accounts where the ratio of actual receipts to recorded outstanding balance is statistically anomalous — giving the collection team a prioritized list of accounting errors to resolve before contacting families.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When a family's payment schedule changes due to hardship (job loss, scholarship adjustment), staff must manually draft payment plan amendment notices and recalculation summaries for families. Text generation can automate the production of these personalised communications — incorporating exact new instalment amounts, revised due dates, and outstanding balances — reducing the per-family administrative burden of schedule modifications at scale.",
+      "opportunity_sketch": "A generation step within the reconciliation workflow that produces personalised payment plan amendment letters for each affected family whenever a schedule change is recorded, using current balance and new schedule data as inputs.",
+      "impact": 2,
+      "feasibility": 5,
+      "visibility": 2,
+      "composite_score": 2.7
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Families on instalment plans vary significantly in payment reliability. A propensity model trained on historical instalment compliance patterns (partial payment frequency, schedule change requests, timing of first-instalment delays) can predict which families are likely to miss upcoming instalments — enabling proactive outreach rather than reactive collection. For a multi-site operator with thousands of accounts, this shifts the collection team from firefighting to early intervention.",
+      "opportunity_sketch": "A weekly propensity score per family account predicting likelihood of missing the next instalment, based on payment history and schedule deviation signals — surfaced as a prioritised collection call list segmented by risk tier.",
+      "impact": 4,
+      "feasibility": 3,
+      "visibility": 4,
+      "composite_score": 3.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

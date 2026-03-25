@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Audit Trail Anomaly Detector",
+    "one_liner": "Flags unusual financial transactions and control exceptions in TechOne/NESA ledgers before period-end close.",
+    "problem": "Finance directors at PHINMA and Rising Academies manually review thousands of journal entries during quarterly closes to spot unauthorized transfers, misclassified grant spend, or fee-waiver anomalies across campuses. Education orgs cannot simply auto-reject transactions like retail banks — they must preserve audit trails and balance mission-driven discretion (scholarship approvals, donor restrictions). Current ERP controls are rigid and generate false positives.",
+    "ai_technique": "Anomaly detection (unsupervised learning on historical transaction patterns)",
+    "how_it_works": "Model learns normal transaction patterns per campus/cost-center (e.g., typical faculty salary ranges, grant draw-down rhythms, utility spend seasonality). Flags outliers with explainability: 'This transfer exceeds historical peer average by 3 standard deviations' or 'Grant spend rate 20% ahead of drawdown schedule.' User approves/rejects with single click, feeding back into model.",
+    "target_companies": ["phinma", "rising", "school-for-life"],
+    "buyer_persona": "Finance Controller / CFO",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Compliance Document Classifier",
+    "one_liner": "Auto-routes financial documents (invoices, grant reports, payroll records) to correct compliance bucket (restricted spend, audit-ready, archivable).",
+    "problem": "Education organizations managing government grants, donor funds, and restricted endowments face overlapping compliance rules. A single invoice may be audit-relevant under government funding rules, donor restrictions, and institutional policies. Staff manually tag documents, leading to misclassification and compliance risk. PHINMA's multi-campus structure and Rising's government funding add complexity.",
+    "ai_technique": "Multi-label text classification on policy-document pairs",
+    "how_it_works": "Train classifier on samples of correctly classified documents tagged with compliance categories (e.g., 'government-auditable', 'restricted-donor-spend', 'salary-freeze-exempt'). Model learns patterns in invoice text, cost-center, requestor role, fund source. Routes new documents with confidence scores. Finance team reviews low-confidence buckets; high-confidence route automatically.",
+    "target_companies": ["phinma", "rising"],
+    "buyer_persona": "Compliance Officer / Internal Audit Manager",
+    "tier": "feature",
+    "confidence": "high"
+  },
+  {
+    "name": "Budget Variance Explainer",
+    "one_liner": "Summarizes variance explanations from department heads into cohesive finance board narratives.",
+    "problem": "Each school or department fills out budget variance forms ('Why did utility spend spike 15%? Why is recruitment behind?'). Finance rolls these up into board packs, but summaries are repetitive, verbose, or contradictory. Controllers spend hours rewriting narratives. Risk of inconsistent messaging to boards and funders.",
+    "ai_technique": "Abstractive summarization with entity preservation",
+    "how_it_works": "Aggregate variance explanations by category (utilities, payroll, program spend, etc.). Identify common themes and outliers. Generate concise summary preserving key variance drivers, quantified impacts, and remediation plans. Highlight consensus vs. conflicting explanations across campuses. Finance team edits output before board submission.",
+    "target_companies": ["phinma", "rising", "school-for-life"],
+    "buyer_persona": "Finance Director / Chief Accountant",
+    "tier": "feature",
+    "confidence": "medium"
+  },
+  {
+    "name": "Control Efficacy Auditor",
+    "one_liner": "Tests whether designed financial controls (approval limits, segregation of duties) are actually working across distributed campuses.",
+    "problem": "Large education networks like PHINMA design control matrices (e.g., 'transfers >$10K require two signatories') but decentralized campuses run different systems and practices. Internal audit teams cannot scale manual testing. Growing compliance burden (government funding, accreditation) demands evidence that controls are not just documented but enforced.",
+    "ai_technique": "Rule-based logic + statistical testing on transaction logs",
+    "how_it_works": "Encode control rules into executable queries on TechOne/financial system logs. Auto-scan all transactions to detect violations (single signatory on >$10K transfers, same person approving and processing, etc.). Generate violations report with campus, transaction, user, and remediation. Finance runs quarterly to certify control environment.",
+    "target_companies": ["phinma", "rising"],
+    "buyer_persona": "Internal Audit Director",
+    "tier": "module",
+    "confidence": "high"
+  }
+]

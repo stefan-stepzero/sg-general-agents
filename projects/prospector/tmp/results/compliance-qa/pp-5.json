@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-regulatory-filings-third-party-accountant-dependency-dup",
+  "pain_point_label": "Over-Reliance on External Accountants for Compliance",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "The core reason filings are outsourced is internal teams lack confidence in data format correctness — their source data (payroll exports, enrollment records, fee ledgers) exists in inconsistent schemas and needs normalization to match BIR/DepEd/CHED filing templates. AI-assisted ETL can map internal data formats to the exact field structures and validation rules required by each regulatory form, eliminating the formatting step that accountants currently perform manually. This directly attacks the root cause: format uncertainty is the blocker, not accounting expertise.",
+      "opportunity_sketch": "A configuration-driven data pipeline that ingests school ERP/accounting exports, applies schema-mapping rules per filing type (e.g. BIR 1601-C, DepEd EBEIS enrollment reports), validates field constraints, and outputs a filing-ready structured file — reducing the accountant's role to final sign-off rather than data preparation.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Errors in filings are not caught until agencies respond — meaning the organization has no internal pre-submission validation layer. Anomaly detection can flag outlier values in prepared filings (unusually large deductions, zero-reported months, enrollment figures that deviate from historical trend) before submission, catching the same errors currently surfaced by regulators days or weeks later. For a 500+ staff multi-site operator, cross-site data inconsistencies are a major source of filing errors that pattern-based anomaly detection handles well.",
+      "opportunity_sketch": "A pre-submission validation engine that runs each prepared filing against historical benchmarks and cross-site norms, producing a flagged report of suspicious values for internal review — shifting error detection from reactive (agency response) to proactive (before submission).",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Beyond the structured data filings, compliance submissions often require accompanying narrative explanations, management representations, or cover letters to regulatory agencies in prescribed formats. Internal teams currently rely on accountants for these too, partly because drafting formal regulatory language is unfamiliar territory. LLM-based text generation can produce compliant boilerplate and narrative sections (e.g. explanations of year-over-year variance, representations of data accuracy) that internal staff can review and sign off on rather than outsource entirely.",
+      "opportunity_sketch": "A library of regulatory letter and narrative templates for common Philippine education compliance filings (BIR, DepEd, SEC), auto-populated from structured data inputs, giving internal teams draft-ready documents that reduce dependence on accountants for anything beyond professional sign-off.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full filing cycle — pulling data from multiple campus systems, consolidating it, formatting it per regulatory schema, running validation checks, generating the filing document, and routing it for approval — is a multi-step workflow with branching logic (different rules per filing type, per agency, per campus). A task automation agent can orchestrate this end-to-end, replacing the 5-10 day accountant turnaround with an automated pipeline that completes the preparatory work in hours and routes only the final review step to a human. This directly attacks both the cost and turnaround dimensions of the pain.",
+      "opportunity_sketch": "An automated compliance filing pipeline agent that runs on a trigger (e.g. monthly payroll close), pulls data from school ERP systems across all campuses, formats and validates filings per each agency's requirements, and delivers a review-ready package to the internal compliance officer — reducing accountant engagement to final attestation only.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Internal teams lack confidence partly because they don't know the current regulatory requirements — BIR circulars, DepEd orders, and CHED memoranda change frequently and are voluminous. A RAG system over the corpus of current Philippine education regulatory documents would let internal staff ask specific questions ('What is the current deadline for BIR Form 1604-C?' or 'What supporting documents are required for CHED enrollment reporting?') and get cited answers, building internal capability and reducing the need to phone an accountant for basic compliance queries.",
+      "opportunity_sketch": "A compliance knowledge assistant trained on BIR, DepEd, CHED, and SEC issuances relevant to private education operators, enabling internal finance and admin staff to self-serve answers to regulatory questions — reducing accountant dependency for the interpretive layer, not just the filing mechanics.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 4,
+      "composite_score": 48.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

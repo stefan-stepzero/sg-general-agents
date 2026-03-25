@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "finance-revenue-financial-aid-multi-scheme-reconciliation",
+  "pain_point_label": "Multi-scheme account posting & reconciliation",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Multi-step workflow: ingest disbursement records, apply scheme-specific posting rules, sequence postings, flag variances.",
+      "opportunity_sketch": "An agent that ingests batch disbursement files from each scheme, maps each credit to the correct account type, and produces a variance report.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Orphaned credits, over/under-postings, and mismatched amounts can be flagged intra-month rather than at month-end.",
+      "opportunity_sketch": "A model scoring each new posting transaction for anomaly likelihood and surfacing suspected mis-postings in near real-time.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Each scheme delivers disbursement data in its own format that must be normalized to a canonical schema.",
+      "opportunity_sketch": "A transformation layer normalizing raw disbursement exports into a unified posting record schema.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Finance staff need reconciliation memos and campus-level variance summaries after automated runs.",
+      "opportunity_sketch": "Automated generation of month-end reconciliation memos and variance summaries from structured reconciliation output.",
+      "pain_salience": 2,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 40
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

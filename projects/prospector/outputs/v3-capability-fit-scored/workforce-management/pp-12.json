@@ -1,0 +1,107 @@
+{
+  "pain_point_id": "workforce-management-performance-evaluation-data-absence-dup",
+  "pain_point_label": "Absence of Objective Performance Data",
+  "matches": [
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Evaluation cycles drag across 4-6 weeks partly because reviewers must sift through disparate written records, self-appraisals, and email threads to form a picture of a staff member. Summarization can compress existing text artifacts — observation notes, prior review comments, parent communications — into concise evidence dossiers that reviewers can act on without extended back-and-forth. For a 500+ staff operator this directly reduces cycle time without requiring new data pipelines.",
+      "opportunity_sketch": "An AI-assisted review prep tool that ingests a staff member's folder (prior appraisals, manager notes, any existing written feedback) and outputs a one-page evidence summary ready for the evaluation meeting, flagging gaps where evidence is thin.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Performance data exists in scattered, semi-structured forms — attendance registers, LMS logs, timetable records, incident logs — but none of it is mapped to a common staff-performance schema. Transformation AI can normalize and join these sources into structured staff performance records, creating the evidence base that evaluations currently lack. This is feasible for an operator with basic SIS/LMS systems without requiring custom ML models.",
+      "opportunity_sketch": "A lightweight ETL layer that pulls from existing school systems (attendance, gradebook, timetabling) and outputs a per-staff structured profile updated each term, feeding directly into the evaluation workflow.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "The pain explicitly includes the absence of an early warning system for underperformers. Once structured staff activity data exists (attendance, lesson delivery frequency, student outcome trends by teacher), anomaly detection can flag staff whose metrics deviate significantly from peer cohorts before the annual evaluation cycle, turning a rear-view mirror process into a proactive one. This is technically feasible once even basic operational data is consolidated.",
+      "opportunity_sketch": "A staff early-warning dashboard that continuously monitors operational metrics per educator and surfaces statistically unusual patterns — e.g., a teacher whose class attendance rates are two standard deviations below site average — for a line manager to investigate.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Parent surveys and learner sentiment instruments exist in many education operators but results sit unread in spreadsheets or email inboxes. Text classification can automatically score sentiment, urgency, and topic from free-text survey responses, linking coded feedback to specific staff members so it can be incorporated as evidence in evaluations. This directly addresses the stated absence of a parent/learner feedback loop.",
+      "opportunity_sketch": "An automated survey triage pipeline that classifies parent and student free-text responses by sentiment and maps them to staff member IDs, producing a per-staff sentiment trend card available to evaluators during the review cycle.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "A major friction point is the 4-6 weeks of clarification back-and-forth during evaluation cycles. Text generation can draft structured evaluation narratives from structured data inputs (attendance scores, student outcome summaries, coded survey results), giving reviewers a starting draft to react to rather than a blank form to fill, dramatically compressing the documentation phase. Education HR teams are already familiar with AI-assisted writing tools, lowering the trust barrier.",
+      "opportunity_sketch": "An evaluation draft assistant that takes a staff member's structured performance data and outputs a completed first-draft appraisal form with evidence citations, which the line manager then edits and approves rather than writing from scratch.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Stalled promotion decisions and absent early warning systems both stem from an inability to predict staff trajectory. With structured historical data (attendance patterns, output metrics, sentiment scores), propensity models can estimate attrition likelihood and promotion readiness at the individual staff level, giving HR a prioritized action list rather than waiting for the annual cycle to surface issues. Feasible once the data transformation layer is in place.",
+      "opportunity_sketch": "A staff health score model that predicts, per educator, their probability of voluntary departure within 12 months and their readiness for promotion, surfaced as a ranked list for HR to act on between formal evaluation cycles.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The evaluation cycle involves multiple sequential steps: collecting self-appraisals, chasing clarifications, aggregating supporting evidence, routing for sign-off, and updating HR records. A task automation agent can orchestrate this entire workflow autonomously — sending reminders, pulling data from source systems, escalating stalled reviews, and updating the HR system on completion — directly attacking the 4-6 week cycle time.",
+      "opportunity_sketch": "An evaluation workflow agent that manages the full appraisal cycle end-to-end: triggering self-appraisal collection, aggregating evidence, routing drafts to reviewers, chasing overdue responses, and closing records in the HR system once approved.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 7
+}

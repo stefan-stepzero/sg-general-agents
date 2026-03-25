@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-accreditation-corrective-action-implementation-tracking-dup",
+  "pain_point_label": "Corrective Action Plan Execution and Follow-up",
+  "matches": [
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Accreditation audit findings arrive as dense PDF or Word documents containing dozens of discrete action items, each embedding a responsible party, deadline, and evidence requirement. Extracting these as structured entities (department, owner, due date, required evidence type) from the raw findings document eliminates the manual re-entry step that currently causes items to be lost or mis-assigned before tracking even begins.",
+      "opportunity_sketch": "An extraction layer that ingests audit finding letters and outputs a structured CAP registry — each row is an action item with responsible party, deadline, and evidence specification — ready to populate a tracker or workflow tool.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "CAP responses from departments arrive in inconsistent formats — emails, Word docs, spreadsheet tabs, Google Docs — each describing progress in different language and structure. Transformation AI can normalize these semi-structured status updates into a canonical schema (item ID, completion percentage, evidence links, blockers) so the operator has a unified view rather than chasing formats across departments.",
+      "opportunity_sketch": "An intake pipeline that accepts department status submissions in any format and maps them to a normalized CAP status schema, feeding a centralized dashboard that the accreditation coordinator owns.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Operators must submit formal written CAP responses to accreditors, including narrative explanations of corrective actions, timelines, and evidence descriptions — documents that must match accreditor tone and format expectations. Generating these formal response documents from structured CAP data reduces the writing burden on compliance staff and ensures consistent, professional language across all findings.",
+      "opportunity_sketch": "A CAP document generator that takes the structured action registry plus status updates and produces formatted accreditor-ready narrative responses, progress reports, and re-audit submissions aligned to the specific accreditor's reporting template.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "The core business risk here is missing the re-audit window and losing accreditation status — an adverse outcome with severe financial and reputational consequences. Risk scoring can evaluate each open action item based on deadline proximity, department responsiveness history, evidence complexity, and current completion status to surface which items are on track to miss their deadline before they actually do.",
+      "opportunity_sketch": "A CAP risk dashboard that scores each open action item's likelihood of missing deadline weekly, flags high-risk items for the compliance director, and generates escalation alerts for items that cross a risk threshold with 30/60/90 days remaining.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain mechanism is diffused, untracked responsibility across departments with no automated follow-through — exactly the workflow orchestration problem task automation agents solve. An agent can own the CAP lifecycle: sending deadline reminders to responsible parties, routing evidence submissions for review, escalating overdue items to department heads and then to the compliance director, and updating the tracker automatically as evidence is received.",
+      "opportunity_sketch": "A CAP execution agent that monitors the action registry, sends weekly status request emails to responsible parties, ingests their replies and evidence uploads, updates completion status, and escalates items approaching their deadline — removing the compliance coordinator as manual follow-up bottleneck.",
+      "pain_salience": 5,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Department heads and faculty responsible for CAP action items are not compliance specialists — they need a low-friction interface to submit status updates, ask what evidence is required, and understand their deadlines without navigating a compliance system. A conversational agent accessible via chat or email reply lowers the barrier for distributed, non-compliance staff to engage with the tracking process.",
+      "opportunity_sketch": "A compliance assistant chatbot that department staff can query ('What do I need to submit by June 30?', 'How do I document the faculty hiring evidence?') and that accepts natural-language status updates, converting them into structured tracker entries without requiring system access.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

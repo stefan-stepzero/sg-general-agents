@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "student-support-pastoral-counseling-disclosure-documentation-gaps-dup",
+  "pain_point_label": "Poor Documentation & Continuity Across Counselor Transitions",
+  "matches": [
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Counselor case notes — even when digitized — are often verbose, disjointed, and written across multiple sessions. AI summarization can condense a student's full counseling history into a concise handoff brief so an incoming counselor immediately understands the student's context, prior disclosures, and support strategies without reading every session note. This directly attacks the 'new counselor repeats initial assessment' failure mode.",
+      "opportunity_sketch": "A 'student handoff brief' generator: intake all prior session notes for a student and produce a structured 1-page summary covering presenting concerns, interventions tried, risk flags, and recommended next steps — ready the moment a new counselor is assigned.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "A core cause of the documentation gap is that notes are physically paper-based or locked in unstructured file formats. OCR and handwriting recognition can digitize historical paper counseling records, converting them into searchable, transferable text that feeds into a case management system. Without this digitization step, any downstream AI or case management solution cannot access the existing institutional knowledge.",
+      "opportunity_sketch": "A document ingestion pipeline that scans paper counseling files via OCR/handwriting recognition, structures them by student and date, and loads them into a secure case management repository — making legacy notes accessible without manual re-entry.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Even when some digital notes exist, they are unstructured free-text across inconsistent formats (emails, Word docs, shared drives). AI-assisted transformation can normalize these semi-structured inputs into a canonical schema — student ID, session date, presenting concern, risk level, actions taken — enabling genuine case continuity tracking. This addresses the 'information silo' causal factor by imposing consistent structure across data that already partially exists in digital form.",
+      "opportunity_sketch": "An ETL layer that ingests existing digital counseling artifacts from disparate sources, maps them to a standardized case note schema, and populates a central student welfare record — enabling cross-campus and cross-counselor continuity without requiring a full system replacement up front.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full continuity workflow involves multiple steps: detecting a counselor transition event, pulling all relevant case notes for the affected students, generating handoff summaries, routing them to the incoming counselor, and flagging high-risk students for urgent follow-up. A task automation agent can orchestrate this multi-step process autonomously at the point of transition — removing the reliance on manual handoff procedures that currently fail. This directly addresses the continuity-of-care break rather than any single step in isolation.",
+      "opportunity_sketch": "A counselor transition automation agent: triggered when a counselor leaves or a student transfers campuses, it assembles the student's case history, generates a structured handoff brief, assigns the student to the next counselor in the system, and escalates any open risk flags — all without manual coordination.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Once case notes are digitized and structured, an incoming counselor needs to quickly surface relevant prior context for a student — not scroll through raw notes. A RAG system over the student's case history allows the counselor to ask natural-language questions ('What triggers has this student reported?' 'What interventions were tried last year?') and receive grounded, cited answers drawn directly from the actual records. This replaces re-assessment with informed inquiry.",
+      "opportunity_sketch": "A counselor-facing case Q&A interface: the counselor queries a student's record in plain language and receives synthesized answers with source citations from prior session notes — making historical context instantly accessible at the start of a new counseling relationship.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Within a digitized set of counseling notes, AI text classification can automatically tag each note with structured labels — risk level (low/medium/high), concern category (mental health, family, academic, behavioral), disclosure type — enabling case managers and heads of welfare to triage student populations and prioritize follow-up. This transforms unstructured narrative notes into actionable, filterable case data without requiring counselors to fill out structured forms.",
+      "opportunity_sketch": "An automatic triage layer that reads incoming session notes and applies risk level and concern-type labels, surfacing high-risk students to welfare coordinators and ensuring no urgent disclosures are buried in an unread pile.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

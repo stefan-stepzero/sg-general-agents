@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "compliance-qa-internal-audit-follow-up-remediation-gap-dup",
+  "pain_point_label": "Audit Finding Follow-up and Remediation Tracking",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core failure is that corrective action assignments fall into a black hole — no automated follow-up, no escalation, no closure confirmation. A task automation agent can orchestrate the entire remediation lifecycle: auto-create tracked action items from audit findings, send deadline reminders to campus managers, escalate overdue items to regional directors, and close items only when evidence of completion is submitted. This directly targets the 'assign and forget' breakdown that causes repeat findings.",
+      "opportunity_sketch": "An AI-driven remediation tracker ingests audit findings, assigns tasks with due dates, and automatically escalates to executives when items are overdue or when a second audit cycle approaches with open items still unresolved.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "Repeated audit findings are a leading indicator of systemic compliance failure. A risk scoring model can assess each campus's compliance posture in real time by combining open finding counts, overdue remediation rates, finding recurrence history, and finding category severity. This gives executives an objective, data-driven signal of which campuses are deteriorating before the next external audit arrives — addressing the reactive, post-hoc nature of the current process.",
+      "opportunity_sketch": "A campus-level compliance risk dashboard that scores each site weekly based on open finding age, recurrence patterns, and remediation velocity — surfacing high-risk campuses to executives before external auditors do.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Executive reporting on audit remediation status is time-consuming to produce manually and is often skipped entirely, contributing to the lack of oversight. AI text generation can automatically produce weekly or monthly remediation status narratives for board or executive review, drafted from structured tracking data — including which campuses have overdue items, what categories of findings recur, and what risk exposure exists. This creates the reporting layer that currently doesn't exist.",
+      "opportunity_sketch": "Auto-generated executive briefings and management letters summarizing open audit findings, overdue remediations by campus, and recurrence trends — produced on a scheduled cadence without manual effort from the compliance team.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Recurring findings across audit cycles represent an anomalous pattern — the same control failure persisting despite a supposed remediation. An anomaly detection system trained on audit finding history can flag when a newly logged finding closely matches a previously closed one at the same campus, signaling that the prior remediation was superficial or falsely confirmed. This addresses the specific failure mode where managers mark items closed without genuine corrective action.",
+      "opportunity_sketch": "A recurrence detection layer that compares incoming audit findings against historical finding records and flags semantic duplicates, alerting executives when the same issue reappears at a campus that supposedly resolved it.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

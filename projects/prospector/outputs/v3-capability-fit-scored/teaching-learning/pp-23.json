@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "teaching-learning-academic-progression-strand-track-selection-dup",
+  "pain_point_label": "Poor Academic Track/Strand Selection & Counseling",
+  "matches": [
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Student aptitude, academic history, assessment scores, and demographic data are structured/tabular — exactly the input type for this capability. A model can classify students into best-fit track/strand categories based on feature vectors combining grades, test results, and learning style indicators. This directly addresses the core pain: mismatches between student ability and chosen track due to absence of systematic data-driven assessment.",
+      "opportunity_sketch": "An aptitude-to-track classifier that ingests existing student records (grades, standardized test scores, attendance, extracurricular signals) and outputs a ranked fit score for each available strand, surfaced to counselors as a recommendation dashboard before enrollment decisions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "The pain includes students struggling after entering the wrong track — a behavioral outcome (academic failure, dropout, remediation demand) that propensity models are designed to predict. Per-student features (prior grades, attendance, socioeconomic proxies, strand selection) can train a model to estimate likelihood of poor performance or track-switch within a strand. This gives counselors an early-warning score at enrollment time.",
+      "opportunity_sketch": "A strand-fit propensity model that scores each incoming student's probability of struggling in their chosen track, triggering a counseling flag before the semester begins — reducing remediation load and dropout rates across sites.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Limited counselor capacity at some sites means students lack access to guidance on career implications and track options. A conversational agent can conduct structured multi-turn aptitude interviews with students, ask about strengths, interests, and career goals, and provide strand recommendations grounded in the school's academic data — extending counseling capacity without adding headcount.",
+      "opportunity_sketch": "A guided strand-selection chatbot deployed on the school portal: students answer a structured dialogue about interests and self-assessed strengths, the agent cross-references against strand requirements and historical outcome data, and outputs a personalized recommendation with career pathway context — reviewable by a counselor before finalizing.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Counselors and students lack systematic knowledge of career implications tied to each strand — this is an information access problem well-suited to RAG. A system can retrieve from a corpus of strand curricula, graduate outcomes, industry linkage data, and career pathway documents, then synthesize a grounded, citation-backed answer to queries like 'what careers does STEM strand lead to for students with my profile?'",
+      "opportunity_sketch": "A counselor and student-facing Q&A tool grounded in the operator's own strand documentation, historical graduate outcome data, and TESDA/DepEd career pathway materials — enabling consistent, evidence-based guidance across all sites without relying solely on individual counselor knowledge.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The pain includes 'no systematic data on track-to-performance fit' — meaning the operator has years of student records but no structured insight into which strand characteristics predict success. Knowledge extraction can process historical academic records and counseling notes to surface causal relationships: which prior subject performance predicts strand success, and which strand-career paths show strongest graduate outcomes.",
+      "opportunity_sketch": "A one-time (then recurring) extraction pipeline over historical student records that builds a structured knowledge graph of strand → performance → career outcome relationships, giving academic leadership the evidence base to redesign counseling protocols and strand requirements.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

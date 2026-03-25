@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "teaching-learning-examination-administration-cheating-integrity-dup",
+  "pain_point_label": "Exam Cheating & Academic Integrity Violations",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Inconsistent proctoring protocols and incomplete documentation are direct pain mechanisms that text generation addresses: standardized incident report templates, investigation checklists, and disciplinary outcome letters can all be generated from structured inputs. Multi-site operators currently produce ad-hoc documentation that varies by campus, creating legal exposure and inconsistent outcomes.",
+      "opportunity_sketch": "A tool that generates standardized academic integrity incident reports, investigation summaries, and disciplinary notice letters from structured form inputs — ensuring consistent language and process compliance across all sites.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "When written exam responses or submitted work is digitized, text classification can flag submissions that share suspiciously similar phrasing, match known paraphrasing patterns, or match AI-generated text signatures. This directly addresses the 'weak detection systems' pain mechanism across all sites using a consistent, explainable model.",
+      "opportunity_sketch": "An academic integrity screening layer that classifies submitted written work for AI-generation likelihood, plagiarism pattern matches, or collusion signals — applied consistently across campuses before grading.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Answer pattern anomalies in multiple-choice or structured exams — such as unusually high cross-student answer correlations, rapid completion times, or score distributions that deviate from historical baselines — are precisely the kind of behavioral deviations anomaly detection is designed to catch. This directly addresses 'weak detection systems' and 'delayed response to incidents.'",
+      "opportunity_sketch": "A post-exam analytics module that scores each sitting for statistical anomalies (answer copying patterns, timing outliers, score distribution shifts) and surfaces suspected integrity violations to the assessment coordinator before results are released.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The pain point explicitly names delayed response to incidents and incomplete documentation as core problems — both are workflow failures, not detection failures. A task automation agent can orchestrate the end-to-end integrity workflow: intake flagged incident → notify relevant staff → generate documentation → route to discipline committee → log outcome — eliminating the manual coordination gaps that cause delays and inconsistency across sites.",
+      "opportunity_sketch": "An academic integrity case management agent that automatically opens a case when an incident is flagged, routes it through standardized investigation and discipline steps with deadlines, and closes the loop with outcome documentation — applied uniformly across all campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

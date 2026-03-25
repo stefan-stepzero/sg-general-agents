@@ -1,0 +1,55 @@
+{
+  "cell": {
+    "cellNum": 4,
+    "subCategory": "Hiring & Recruitment",
+    "domain": "Talent & People",
+    "heat": 49,
+    "oppScore": 38
+  },
+  "ideas": [
+    {
+      "name": "Teacher Resume Parser & Matcher",
+      "one_liner": "Extracts teaching qualifications, certification, and subject specialty from unstructured CVs to automatically match candidates against open roles and qualification requirements.",
+      "problem": "CSPD, PHINMA, and School for Life post 200+ educator positions across distributed campuses annually. Recruiting teams manually review CVs to extract qualification details (degree type, subject, certification status, teaching experience). They miss qualified candidates and waste time contacting unqualified applicants. Manual extraction creates compliance risk if teaching registration is not properly verified.",
+      "ai_technique": "Structured Data Classification with resume parsing",
+      "how_it_works": "Ingests CV uploads and email attachments. Extracts: degree type and major (B.Ed, B.Sc with teaching diploma), subject specialization (STEM, languages, humanities), teaching experience (years, grade levels), state registration status (NESA, QTSB, CHED), and certifications (International Baccalaureate, Cambridge, special education). Matches against open role specifications (e.g., 'need STEM teacher, NESA-registered, 3+ years experience'). Auto-flags candidates who meet criteria and routes to hiring manager; auto-rejects obvious mismatches.",
+      "target_companies": ["cspd", "phinma", "school-for-life"],
+      "buyer_persona": "Recruiting Manager or HR Specialist responsible for educator hiring",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Predictive Hiring Pipeline Forecast",
+      "one_liner": "Forecasts teacher hiring needs 6-12 months ahead based on enrollment trends, attrition risk, and budget cycles to optimize recruitment lead time.",
+      "problem": "Rising Academies and PHINMA face unpredictable hiring demand: enrollment spikes require rapid hiring (but teacher recruitment takes 4-6 months), attrition creates mid-cycle openings (but recruitment budgets are fixed annually), and geographic expansion opens new roles. They lack visibility into future staffing needs, leading to unfilled positions or rushed, suboptimal hires.",
+      "ai_technique": "Time Series Forecasting with education staffing model",
+      "how_it_works": "Trains on historical data: enrollment by program and campus, teacher-to-student ratios, attrition rates by role and location, and hiring pipeline duration. Forecasts staffing needs by role (primary, secondary, STEM, leadership) and campus 6-12 months forward. Factors in known events (campus expansion, program launch, known retirements). Outputs hiring plan: 'need 15 primary teachers by August, 5 STEM by October, 3 principals by next July.' Enables HR to source candidates in advance, negotiate recruitment timelines, and avoid crisis hiring.",
+      "target_companies": ["rising", "phinma", "school-for-life"],
+      "buyer_persona": "Head of HR or Talent Planning Manager at multi-site education organization",
+      "tier": "feature",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teacher Interview Scoring Assistant",
+      "one_liner": "Summarizes candidate interview performance against teaching-specific competency rubrics (pedagogical approach, subject mastery, pastoral skill) to standardize hiring decisions.",
+      "problem": "Recruiting teams at CSPD and School for Life conduct 10-20 teacher interviews per open position but lack standardized evaluation rubrics. Interview notes are unstructured (email summaries, handwritten notes), making it hard to compare candidates objectively. Hiring committees debate candidate fit without structured evidence, and they sometimes hire suboptimal candidates or miss strong fits.",
+      "ai_technique": "Summarization & Condensation with competency rubric alignment",
+      "how_it_works": "Ingests unstructured interview notes (from email, recorded transcripts, or form submissions). Generates structured scoring summary against education competencies: 'Pedagogical Approach (4/5): candidate articulated inquiry-based learning philosophy, strong example given'; 'Subject Mastery (3/5): solid content knowledge but limited depth in modern curriculum context'; 'Pastoral/Classroom Management (4/5): calm under pressure, inclusive language noted'. Also flags red flags (e.g., 'showed limited awareness of NESA standards', 'poor cultural fit signals'). Enables hiring committee to compare candidates on common rubric.",
+      "target_companies": ["cspd", "school-for-life", "phinma"],
+      "buyer_persona": "Recruiting Manager or Principal involved in teacher hiring panel",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Teacher Onboarding Curriculum Builder",
+      "one_liner": "Generates customized onboarding programs based on teacher experience level, subject area, and campus context (enrollment stage, accreditation status).",
+      "problem": "New teachers at multi-site networks (Rising Academies, PHINMA, School for Life) receive ad-hoc onboarding: IT setup, building tour, syllabus overview. But onboarding is inconsistent across campuses and does not account for teacher experience (experienced hire needs different support than graduate). This leads to higher early attrition and longer time-to-productivity.",
+      "ai_technique": "Data Transformation & Structuring with personalization logic",
+      "how_it_works": "Ingests new teacher profile (years of experience, subject, prior school context, role), campus context (school maturity, curriculum stage, accreditation status, enrollment trend), and onboarding template library. Generates personalized onboarding plan: experienced external hire gets 2-week program (systems, culture, curriculum); graduate teacher gets 8-week program (teaching philosophy, peer mentoring, professional development roadmap). Includes milestones (e.g., 'deliver first observed lesson by week 3', 'meet with curriculum lead by week 2'), resources (curriculum guides, NESA standard mapping, parent communication templates), and mentorship assignment. Tracks progress and flags at-risk new hires.",
+      "target_companies": ["rising", "phinma", "school-for-life"],
+      "buyer_persona": "Onboarding Coordinator or Head of New Teacher Support",
+      "tier": "module",
+      "confidence": "medium"
+    }
+  ]
+}

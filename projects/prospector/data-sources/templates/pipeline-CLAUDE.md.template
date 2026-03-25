@@ -1,0 +1,133 @@
+# {{ORG_NAME}} Data Pipeline
+
+This pipeline builds a defensible intelligence profile for **{{ORG_NAME}}** from public data.
+
+## Org Summary
+
+| Field | Value |
+|-------|-------|
+| ID | `{{ORG_ID}}` |
+| Archetype | {{ORG_ARCHETYPE}} |
+| Sector | {{ORG_SECTOR}} |
+| Country | {{ORG_COUNTRY}} |
+| Size | {{ORG_SIZE}} |
+| Website | {{ORG_WEBSITE}} |
+| Public data | {{ORG_PUBLIC}} |
+
+## How to Run
+
+You are the orchestrator. Use the `pipeline-orchestrator` agent pattern:
+1. Check `status.json` — if it exists with content, resume from where you left off
+2. Run phases sequentially, spawning sub-agents in parallel within each phase
+3. Update `status.json` and append to `log.md` after each step
+
+## Directory Structure
+
+```
+data-sources/{{ORG_ID}}/
+{{SOURCE_FILES}}├── raw/                                 ← Phase 1 outputs
+├── assembled/                           ← Phase 2-3 outputs
+├── analysis/                            ← Phase 4-5 outputs
+└── pipeline/
+    ├── CLAUDE.md                        ← This file
+    ├── status.json                      ← Pipeline state
+    └── context/                         ← Agent briefs per task
+```
+
+## Python Tools
+
+In `P:/Projects2/sg-general-agents/projects/prospector/data-sources/tools/`:
+- `extract_pdf.py` — PDF text extraction with page ranges and keyword search
+- `filter_acara.py` — XLSX filtering with school name matching and aggregation (Australia only)
+- `acara_trends.py` — Historical enrolment trend extraction (Australia only)
+- `validate_schema.py` — Schema validation for pipeline output files
+
+Agents should call these via Bash to avoid loading large files into context.
+
+## Phases
+
+### Phase 1A: Source Extraction (1 agent, must complete first)
+
+{{PHASE_1A_DESCRIPTION}}
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-data-collector | `context/{{PHASE_1A_BRIEF}}` | `raw/{{PHASE_1A_OUTPUT}}` |
+
+**This must complete before Phase 1B** because raw extraction outputs are dependencies for subsequent agents.
+
+### Phase 1B: Supplementary Research (agents in parallel)
+
+{{PHASE_1B_DESCRIPTION}}
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-data-collector | `context/web-research-brief.md` | `raw/web-research.json` |
+{{PHASE_1B_EXTRA_ROWS}}
+
+### Phase 2: Profile & Benchmarks (2 agents in parallel)
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-profile-builder | `context/profile-brief.md` | `assembled/profile.json`, `assembled/scorecard.json` |
+| pipeline-profile-builder | `context/signals-brief.md` | `assembled/signals.json` |
+
+### Phase 3: Peer Research (1 agent)
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-peer-researcher | `context/peers-brief.md` | `assembled/lookalikes.json`, `assembled/competitors.json`, `assembled/market-solutions.json` |
+
+### Phase 4: Pain Points (1 agent)
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-pain-analyser | `context/pain-points-brief.md` | `analysis/pain-points.json` |
+
+### Phase 5: Synthesis (1 agent)
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-synthesiser | `context/synthesis-brief.md` | `analysis/opportunities.json`, `analysis/summary.json` |
+
+### Phase 6: Schema Validation
+
+Run schema validation before deploying. This step MUST pass before the deploy step.
+
+Use the `pipeline-schema-validator` agent with:
+- `ORG_ID`: `{{ORG_ID}}`
+- `ORG_DIR`: `P:/Projects2/sg-general-agents/projects/prospector/data-sources/{{ORG_ID}}`
+
+Fix any failures before continuing.
+
+## Final Step: Deploy to Site
+
+Use the merge tool for keyed JSON files, and copy for standalone files.
+
+Tool: `python P:/Projects2/sg-general-agents/projects/prospector/data-sources/tools/merge_json_key.py <target> <key> <source>`
+
+```bash
+TOOLS="P:/Projects2/sg-general-agents/projects/prospector/data-sources/tools"
+SITE="P:/Projects2/sg-general-agents/projects/prospector/site/public/data"
+ORG="P:/Projects2/sg-general-agents/projects/prospector/data-sources/{{ORG_ID}}"
+
+# Keyed merges (insert/replace the "{{ORG_ID}}" key in target files)
+python $TOOLS/merge_json_key.py $SITE/companies/pain-points-v3.json {{ORG_ID}} $ORG/analysis/pain-points.json
+python $TOOLS/merge_json_key.py $SITE/companies/opportunities.json {{ORG_ID}} $ORG/analysis/opportunities.json
+python $TOOLS/merge_json_key.py $SITE/companies/market-solutions.json {{ORG_ID}} $ORG/assembled/market-solutions.json
+python $TOOLS/merge_json_key.py $SITE/companies/indicators.json {{ORG_ID}} $ORG/assembled/signals.json
+python $TOOLS/merge_json_key.py $SITE/companies/lookalikes.json {{ORG_ID}} $ORG/assembled/lookalikes.json
+python $TOOLS/merge_json_key.py $SITE/companies/competitive-landscape.json {{ORG_ID}} $ORG/assembled/competitors.json
+
+# Direct copies (standalone files per org)
+cp $ORG/assembled/profile.json $SITE/profiles/{{ORG_ID}}.json
+cp $ORG/assembled/scorecard.json $SITE/profiles/{{ORG_ID}}-scorecard.json
+```
+
+## Core Principle
+
+**Extract, don't generate.** Every fact cites a document. Every inference states the chain. Every unknown is flagged. If you can't find something, write it as a gap — never fabricate.
+
+## Data Sources
+
+{{DATA_SOURCES_NOTES}}

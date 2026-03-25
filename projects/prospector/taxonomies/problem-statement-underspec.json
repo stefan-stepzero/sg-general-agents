@@ -1,0 +1,199 @@
+{
+  "id": "root",
+  "label": "Problem Statement Underspecification",
+  "description": "Ways a problem statement for dendrite decomposition can be underspecified — gaps, ambiguities, and unstated assumptions that cause a tree to go wrong. INCLUDES: anything about the input prompt/topic that, if left vague, leads to poor decomposition quality. EXCLUDES: problems with the decomposition process itself (tree engine mechanics, agent behaviour, validation logic). ROUTING RULE: each child is an independent dimension of underspecification — a problem statement can fail on any combination of these.",
+  "children": [
+    {
+      "id": "referent-ambiguity",
+      "label": "Referent Ambiguity",
+      "description": "The core subject term is ambiguous, polysemous, or vague — you cannot tell WHAT is being decomposed. INCLUDES: homonyms ('platform' = software/political/oil), terms with multiple technical senses ('model' = ML/business/mental), category-level vagueness ('stuff about AI'). EXCLUDES: cases where the subject is clear but its boundaries aren't (that's Scope Boundaries). EXCLUDES: unclear purpose (that's Purpose).",
+      "children": [
+        {
+          "id": "polysemy",
+          "label": "Polysemous Core Term",
+          "description": "The main noun/phrase has multiple established meanings across domains. INCLUDES: 'platform' (software vs political vs physical), 'model' (ML vs business vs mental), 'agent' (AI vs human vs chemical), 'pipeline' (data vs CI/CD vs oil). EXCLUDES: terms that are merely vague rather than having distinct senses (that's Underspecified Category Level).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "underspecified-category",
+          "label": "Underspecified Category Level",
+          "description": "The term is too broad or abstract to anchor a decomposition — it gestures at a space rather than naming a decomposable thing. INCLUDES: 'stuff about startups', 'AI things', 'education problems', 'business stuff'. EXCLUDES: terms with multiple distinct senses (that's Polysemy). The issue here is fuzziness, not multiple meanings.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "conflated-levels",
+          "label": "Conflated Levels of Analysis",
+          "description": "The statement mixes a concrete thing with an abstract analysis in a way that makes the referent ambiguous. INCLUDES: 'How React works' (the library internals? the mental model? the ecosystem?), 'Customer churn' (the event? the causes? the measurement?), 'Team productivity' (the metric? the factors? the interventions?). EXCLUDES: cases where the level is clear but the scope is wrong (that's Scope Boundaries).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        }
+      ],
+      "status": "expanded",
+      "validation": { "pass": true, "issues": [] }
+    },
+    {
+      "id": "scope-boundaries",
+      "label": "Scope Boundaries Undefined",
+      "description": "The subject is clear but WHERE it starts and stops is not — what's included vs excluded is unstated. INCLUDES: missing spatial/temporal/domain bounds ('customer churn' — all industries? B2B only?), implicit exclusions the user hasn't thought about, edge cases that could be in or out. EXCLUDES: ambiguity about what the subject IS (that's Referent Ambiguity). EXCLUDES: not knowing how deep to go (that's Granularity Target).",
+      "children": [
+        {
+          "id": "missing-inclusion-bounds",
+          "label": "Missing Inclusion Bounds",
+          "description": "The statement doesn't say what's IN scope. INCLUDES: no domain qualifier ('worksheets' — all subjects? maths only?), no temporal bound ('startup failure' — pre-product? all stages?), no population bound ('student learning' — all ages? K-6?). EXCLUDES: cases where inclusions are stated but exclusions aren't (that's Missing Exclusion Bounds).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "missing-exclusion-bounds",
+          "label": "Missing Exclusion Bounds",
+          "description": "The statement doesn't say what's OUT of scope, causing the tree to sprawl into adjacent territory. INCLUDES: no negative constraints ('maths worksheets' — does it include digital interactive apps? lesson plans? assessments?), unstated 'obvious' exclusions that aren't obvious to the decomposer. EXCLUDES: missing inclusion bounds (that's the sibling).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "fuzzy-edge-cases",
+          "label": "Fuzzy Edge Cases",
+          "description": "Inclusions and exclusions are stated but leave a contested zone at the boundary. INCLUDES: 'printable worksheets' — what about worksheets designed digitally but printed? 'K-6 maths' — what about Year 7 transition content? Boundary items that could reasonably be in or out. EXCLUDES: cases where no bounds are stated at all (that's the siblings above).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        }
+      ],
+      "status": "expanded",
+      "validation": { "pass": true, "issues": [] }
+    },
+    {
+      "id": "decomposition-axis",
+      "label": "Decomposition Axis Unspecified",
+      "description": "No signal about what KIND of breakdown to perform — the statement doesn't indicate whether children should be types, causes, phases, components, stakeholders, or dimensions. INCLUDES: topics that afford multiple valid axes ('startup failure' — by cause, by stage, by stakeholder, by severity), topics where the natural axis isn't obvious, topics where the user has an axis in mind but didn't state it. EXCLUDES: knowing the axis but not the scope (that's Scope Boundaries). EXCLUDES: knowing the axis but mixing ontological kinds within it (that's a decomposition-process problem, out of scope).",
+      "children": [
+        {
+          "id": "multiple-valid-axes",
+          "label": "Multiple Valid Axes",
+          "description": "The topic affords several legitimate decomposition axes and the statement gives no signal which one. INCLUDES: 'startup failure' (by cause / by stage / by type of startup / by severity), 'software bugs' (by root cause / by symptom / by component / by severity), 'teaching methods' (by pedagogy / by subject / by age group / by modality). EXCLUDES: topics where only one axis makes sense.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "axis-vs-instance-confusion",
+          "label": "Axis vs Instance Confusion",
+          "description": "The statement names specific items rather than an axis, making it unclear whether to decompose BY those items or decompose THE items. INCLUDES: 'React, Vue, Angular' — compare them? or decompose each? 'Sales, Marketing, Product' — decompose each department or decompose the relationships? EXCLUDES: cases where the axis is clear but multiple valid ones exist (that's Multiple Valid Axes).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "implicit-axis-mismatch",
+          "label": "Implicit Axis Mismatch",
+          "description": "The user has a specific axis in mind but the statement doesn't communicate it, causing the decomposer to pick a different one. INCLUDES: user thinking 'by implementation component' but writing 'worksheet types' (decomposer picks pedagogical types instead), user thinking 'by root cause' but writing 'project failures' (decomposer picks by consequence). EXCLUDES: cases where the user genuinely has no axis preference (that's Multiple Valid Axes).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        }
+      ],
+      "status": "expanded",
+      "validation": { "pass": true, "issues": [] }
+    },
+    {
+      "id": "purpose-unstated",
+      "label": "Purpose and Use Case Unstated",
+      "description": "WHY the decomposition is being done is unclear — the intended use changes what counts as a good tree. INCLUDES: understanding vs building vs deciding vs classifying vs auditing, who will consume the tree (developer, teacher, analyst, decision-maker), what action follows from the tree. EXCLUDES: the decomposition axis itself (that's Decomposition Axis). ROUTING: items route here when the tree's FUNCTION is unclear, not its structure.",
+      "children": [
+        {
+          "id": "understanding-vs-building",
+          "label": "Analytical vs Constructive Purpose",
+          "description": "Is the tree for understanding a domain or for building something? These produce fundamentally different trees — analytical trees decompose by concept, constructive trees decompose by buildable subsystem. INCLUDES: 'worksheet taxonomy' (to understand the space? or to architect a generator?), 'authentication methods' (to survey the field? or to pick one to implement?). EXCLUDES: cases where purpose is clear but audience isn't (that's Audience Mismatch).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "audience-mismatch",
+          "label": "Audience Mismatch",
+          "description": "Who will consume or act on the tree is unstated, leading to wrong granularity or terminology. INCLUDES: a tree for developers vs product managers vs end users, a tree for experts vs novices, a tree for a single person vs a team. EXCLUDES: not knowing the purpose at all (that's the sibling). The purpose may be clear but the READER isn't.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "action-downstream",
+          "label": "Downstream Action Unclear",
+          "description": "What happens AFTER the tree is built is unstated — the tree's value depends on what follows. INCLUDES: will nodes become tasks? categories in a database? chapters in a document? routing rules in software? If the downstream action is unclear, terminal nodes may be at the wrong granularity. EXCLUDES: granularity itself (that's Granularity Target) — this is about what the granularity should serve.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        }
+      ],
+      "status": "expanded",
+      "validation": { "pass": true, "issues": [] }
+    },
+    {
+      "id": "domain-context",
+      "label": "Domain Context Implicit",
+      "description": "The domain, field, or situational context is assumed but not declared — the decomposer may decompose for the wrong world. INCLUDES: industry assumptions ('churn' in SaaS vs telecom vs education), geographic/cultural context (AU vs US curriculum), organisational context (startup vs enterprise), technical context (web vs embedded vs mobile). EXCLUDES: ambiguity about the subject term itself (that's Referent Ambiguity) — here the term is clear but its CONTEXT isn't.",
+      "children": [
+        {
+          "id": "industry-domain",
+          "label": "Industry or Field Assumed",
+          "description": "The problem statement assumes a specific industry or academic field without stating it. INCLUDES: 'customer retention' (SaaS? retail? telecom?), 'testing strategies' (software? education? medical?), 'risk management' (financial? project? safety?). EXCLUDES: geographic assumptions (that's Geographic/Cultural Context).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "geographic-cultural",
+          "label": "Geographic or Cultural Context",
+          "description": "Location-specific or culture-specific assumptions not declared. INCLUDES: 'curriculum standards' (which country?), 'legal compliance' (which jurisdiction?), 'school year structure' (northern vs southern hemisphere), measurement units, language assumptions. EXCLUDES: industry assumptions (that's the sibling).",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "technical-context",
+          "label": "Technical or Organisational Context",
+          "description": "Assumptions about the technical stack, team size, or organisational maturity. INCLUDES: 'deployment strategies' (cloud-native? on-prem? hybrid?), 'team structure' (startup? enterprise?), 'data pipeline' (batch? streaming? what scale?). EXCLUDES: industry-level assumptions (that's Industry/Field). This is about the HOW and WITH WHAT, not the WHAT DOMAIN.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        }
+      ],
+      "status": "expanded",
+      "validation": { "pass": true, "issues": [] }
+    },
+    {
+      "id": "granularity-target",
+      "label": "Granularity Target Missing",
+      "description": "How deep or detailed the tree should go is unstated — no termination signal. INCLUDES: no indication of leaf-level abstraction ('worksheet types' — individual worksheet templates? or broad categories?), no depth constraint, no indication of what counts as 'atomic' or 'actionable'. EXCLUDES: scope breadth (that's Scope Boundaries) — this is about DEPTH, not WIDTH. EXCLUDES: downstream use (that's Purpose) — this is about the structural depth target.",
+      "children": [
+        {
+          "id": "leaf-abstraction-level",
+          "label": "Leaf Abstraction Level Unclear",
+          "description": "What counts as a terminal node is not defined. INCLUDES: should leaves be concrete instances ('addition-within-20 drill sheet') or categories ('drill sheets')? Should they be actionable items or conceptual groupings? EXCLUDES: how many levels of depth (that's Depth Budget) — this is about what the BOTTOM looks like.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        },
+        {
+          "id": "depth-budget",
+          "label": "Depth Budget Unspecified",
+          "description": "No constraint on how many levels the tree should have. INCLUDES: should it be 2 levels (broad survey) or 5 levels (deep taxonomy)? Is there a practical limit from the use case? EXCLUDES: what leaves look like (that's Leaf Abstraction Level) — this is about HOW MANY LEVELS, not what the bottom looks like.",
+          "children": [],
+          "status": "terminal",
+          "validation": { "pass": true, "issues": [] }
+        }
+      ],
+      "status": "expanded",
+      "validation": { "pass": true, "issues": [] }
+    }
+  ],
+  "status": "expanded",
+  "validation": { "pass": true, "issues": [] }
+}

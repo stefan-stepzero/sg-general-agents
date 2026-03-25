@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "compliance-qa-policy-data-privacy-policy-inconsistency-across-campuses-dup",
+  "pain_point_label": "Policy Inconsistency and Version Control Across Campuses",
+  "matches": [
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Policies scattered across Word docs, PDFs, and campus intranets are semi-structured but inconsistent — different versions, schemas, and naming conventions across campuses. AI can ingest this corpus and normalize policies into a canonical structured format (version, campus, effective date, category, content sections), making drift immediately visible. This directly addresses the control-weakness root cause: unstructured, incomparable policy documents.",
+      "opportunity_sketch": "An AI pipeline that ingests policy documents from all campus drives, extracts metadata (version, date, scope), maps them to a unified schema, and flags version mismatches across campuses — feeding a central policy registry.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Once policies are standardized, AI can continuously monitor the corpus for version drift — detecting when a campus document deviates from the approved master policy in content, date, or structure. This is precisely an anomaly-detection task: flagging documents that deviate significantly from the expected/current standard, not categorizing them into predefined labels. This closes the audit gap where inspectors find policy drift and flag it as a control weakness.",
+      "opportunity_sketch": "A monitoring agent that runs weekly comparisons of all campus policy documents against the master policy repository, generating an anomaly report listing campuses with out-of-date or modified policies for compliance officer review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "During a grievance or audit, staff and compliance officers need authoritative answers to questions like 'What is the current discipline policy for Campus B?' across a fragmented document landscape. RAG grounds answers in the verified, current policy corpus and provides citations — enabling staff to query policy intent without browsing shared drives, and ensuring answers reflect the approved version rather than a stale local copy.",
+      "opportunity_sketch": "A policy Q&A assistant that retrieves answers from the central, version-controlled policy repository with citations, replacing ad-hoc drive searches and ensuring all campuses reference the same authoritative source.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When policies need updating — due to regulatory changes, new DepEd directives, or accreditation feedback — AI can draft revised policy language from a brief spec, maintaining consistent voice and structure across all policy types. This reduces the friction of centralized policy authorship, making it practical for a small compliance team to manage a large multi-campus policy library without each campus drafting independently.",
+      "opportunity_sketch": "A policy drafting tool where the compliance officer inputs what changed (e.g., 'update financial aid policy for 2025 CHED guidelines') and AI generates a revised policy draft in the organization's standard template, ready for approval and central distribution.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The full policy governance workflow — ingest documents from campus drives, detect version mismatches, notify campus managers of required updates, confirm acknowledgement, and update the audit trail — is a multi-step workflow ideal for task automation. No single AI capability covers the end-to-end loop; an agent can orchestrate extraction, comparison, notification, and logging across systems (SharePoint, email, policy registry) to enforce centralized control without manual coordination.",
+      "opportunity_sketch": "A policy compliance agent that automatically scans campus document repositories on a schedule, compares versions against master, sends update notifications to campus managers, tracks acknowledgements, and generates a compliance dashboard for DepEd/accreditor audit readiness.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

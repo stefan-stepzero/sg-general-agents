@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Program Margin Optimizer",
+    "one_liner": "Identifies cost-reduction and revenue-per-student opportunities by program cohort and delivery modality.",
+    "problem": "Rising Academies faces margin pressure from donor dependency and must scale without proportional cost growth. Each program has different cost structure (blended learning cheaper per student than residential), enrollment risk, and revenue potential. Finance lacks visibility into program-level profitability and lever analysis. Decision-making defaults to across-the-board cuts, risking program quality and differentiation.",
+    "ai_technique": "Regression analysis (cost-driver decomposition) + sensitivity analysis",
+    "how_it_works": "Break down program costs into drivers: faculty salary, facilities (per seat), technology/platform, student support, overhead allocation. Regression across programs and cohorts to identify cost outliers ('Why is Kinshasa program 20% more expensive per student than Lagos?'). Predict margin impact of enrollment changes, fee adjustments, and delivery shifts (more blended, less residential). Generate 'cost lever' analysis: 'Moving 200 students to blended would improve margin by 12%.' Finance team uses for scenario planning.",
+    "target_companies": ["rising"],
+    "buyer_persona": "CFO / Program Director",
+    "tier": "module",
+    "confidence": "high"
+  },
+  {
+    "name": "Student Fee Default Predictor",
+    "one_liner": "Flags high-risk-of-default students before enrollment, enabling proactive financial aid and payment-plan negotiation.",
+    "problem": "Rising and affordable HE operators cannot enforce harsh collection practices (incompatible with access mission) but default rates erode margins. Identifying students likely to miss payments before enrollment allows targeted intervention: flexible payment plans, micro-scholarships, bridge programs. Current approaches rely on crude credit scoring or zip-code proxies; education context adds signals (first-gen status, employer stability, family business model).",
+    "ai_technique": "Propensity modeling (logistic regression + feature engineering)",
+    "how_it_works": "Feature engineering on applicant/student data: employment sector stability (informal vs. salaried), family size vs. household income proxy, past payment patterns, program choice (vocational vs. degree — different student profiles), cohort demographics (mature vs. direct-from-secondary). Train on historical cohorts with payment outcomes. Score applicants pre-enrollment. At-risk students offered payment plans, bridge funding, or support navigation to formal employment. Measure default rate lift.",
+    "target_companies": ["rising"],
+    "buyer_persona": "Financial Aid Director / Chief Enrollment Officer",
+    "tier": "feature",
+    "confidence": "medium"
+  },
+  {
+    "name": "Tuition Elasticity Analyzer",
+    "one_liner": "Quantifies demand elasticity by program and geography to optimize fee-setting under financial sustainability constraints.",
+    "problem": "Rising Academies and PHINMA operate in markets where tuition pricing affects access (core mission) and margin (survival). Fee increases drive enrollment loss; fee cuts increase enrollment but reduce per-student revenue. Organizations lack data-driven analysis of price-demand tradeoffs per program and cohort. Pricing decisions default to competitor benchmarking or institutional 'feel.'",
+    "ai_technique": "Econometric regression (demand elasticity estimation)",
+    "how_it_works": "Analyze historical enrollment and fee changes by program and geography. Estimate price elasticity (% enrollment change per 1% fee change). Model heterogeneity: STEM programs less elastic than humanities; urban markets more elastic than rural. Estimate revenue and margin impact of proposed fee changes. Run scenario analysis: 'If we raise STEM fees 5%, lose 3% enrollment but gain 2% margin. If we cut humanities 10%, gain 8% enrollment but lose 6% margin.' Summarize tradeoff for board decision.",
+    "target_companies": ["rising"],
+    "buyer_persona": "CFO / VP of Finance",
+    "tier": "feature",
+    "confidence": "medium"
+  },
+  {
+    "name": "Cost-Center Efficiency Benchmarker",
+    "one_liner": "Identifies cost-center outliers (administration, student services, facilities) and flags efficiency improvement opportunities vs. peers.",
+    "problem": "Multi-campus education networks like Rising lack visibility into which cost centers are efficient and which are cost-bloated. Comparing a Kinshasa campus support team to Lagos peer is manual and incomplete. Efficiency improvements are ad-hoc rather than systematic. Sustainability pressures demand accountability and transparency.",
+    "ai_technique": "Data envelopment analysis (DEA) / benchmarking",
+    "how_it_works": "Collect cost-center spend by campus: admin headcount and salary, support staff, facilities maintenance, technology. Normalize by campus size (students), revenue, and complexity (program count). Identify outlier high-cost-per-student centers. Flag for investigation: 'Kinshasa admin spending 18% of revenue vs. 12% peer average — investigate staffing ratios, procurement prices, or policy differences.' Facilitate peer-learning and cost benchmarking across campuses.",
+    "target_companies": ["rising"],
+    "buyer_persona": "CFO / VP of Operations",
+    "tier": "feature",
+    "confidence": "high"
+  }
+]

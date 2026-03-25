@@ -1,0 +1,97 @@
+[
+  {
+    "id": "acasus",
+    "company": "Acasus",
+    "contact": {
+      "name": "Fenton Whelan",
+      "title": "Founder & CEO",
+      "relationship_context": "Known contact"
+    },
+    "website": "https://www.acasus.com",
+    "notes": "200+ person consulting firm improving health and education outcomes in developing countries. Founded 2013 by ex-McKinsey public sector. Works with governments across 30+ countries. Innovative leader but consulting model, not tech company."
+  },
+  {
+    "id": "ipeople",
+    "company": "iPeople Inc",
+    "contact": {
+      "name": "Fred Ayala",
+      "title": null,
+      "relationship_context": "Known contact"
+    },
+    "website": "https://ipeople.com.ph",
+    "notes": "Philippine listed education holding company (PSE:IPO) under House of Investments / Yuchengco Group. Operates 7 institutions including Mapúa University, National Teachers College, APEC Schools. 60,000+ students. Merged with AC Education."
+  },
+  {
+    "id": "phinma",
+    "company": "Phinma Education",
+    "contact": {
+      "name": "Chito Salazar",
+      "title": null,
+      "relationship_context": "Known contact"
+    },
+    "website": "https://www.phinma.edu.ph",
+    "notes": "Education arm of Phinma Corporation. Network of 10 institutions serving 177,000+ students across Philippines and Indonesia. Focus on underserved youth, first-generation college students. Fast-growing."
+  },
+  {
+    "id": "school-for-life",
+    "company": "School for Life Foundation",
+    "contact": {
+      "name": "Annabelle Chauncy",
+      "title": "Founder",
+      "relationship_context": "Known contact"
+    },
+    "website": "https://www.schoolforlife.org.au",
+    "notes": "Australian-founded nonprofit operating in East Africa (Uganda). Founded 2008. Education, healthcare, livelihood support. 4,500+ people reached. Annabelle has OAM. Locally-led, globally-supported model."
+  },
+  {
+    "id": "cspd",
+    "company": "Catholic Schools Parramatta Diocese",
+    "contact": {
+      "name": "Patrick Ellis",
+      "title": null,
+      "relationship_context": "Known contact"
+    },
+    "website": "https://www.parra.catholic.edu.au",
+    "notes": "80 schools (56 primary, 24 secondary), 6 early learning centres, 43,000 students, 4,500 staff. Western Sydney, Australia. Diocese-level education system administration."
+  },
+  {
+    "id": "wise",
+    "company": "WISE (World Innovation Summit for Education)",
+    "contacts": [
+      {
+        "name": "Stavros Yiannouka",
+        "title": "CEO",
+        "relationship_context": "Known contact. Web research suggests he may still be CEO (not former). Verify."
+      },
+      {
+        "name": "Asyia Kazmi",
+        "title": null,
+        "relationship_context": "Known contact. Current leadership."
+      }
+    ],
+    "website": "https://wise-qatar.org",
+    "notes": "Global education innovation platform. Part of Qatar Foundation, established 2009. Biennial summit, research programs, prizes. Think tank + convening platform, not an education provider. Stavros also sits on Blue Diagonal Capital board."
+  },
+  {
+    "id": "kinetic",
+    "company": "Kinetic Software",
+    "contact": {
+      "name": "Barry Anns",
+      "title": "CEO",
+      "relationship_context": "Known contact"
+    },
+    "website": "https://kineticsoftware.com",
+    "notes": "EdTech — student accommodation and events management software for higher education. Operates in 20+ countries, managing 700,000+ student bedrooms. Has tech team. Barry previously CEO of Double First, CRO at Education Horizons Group."
+  },
+  {
+    "id": "rising",
+    "company": "Rising Academies",
+    "contact": {
+      "name": "Paul Skidmore",
+      "title": "Founder & CEO",
+      "relationship_context": "Known contact"
+    },
+    "website": "https://www.risingacademies.com",
+    "notes": "One of fastest-growing quality-focused education companies in Africa. Certified B Corp. Founded 2014 in Sierra Leone (Ebola response). 300,000 students, 700+ schools across Sierra Leone, Liberia, Ghana, Rwanda. Has tech team. Paul is ex-Tony Blair Africa Governance Initiative."
+  }
+]

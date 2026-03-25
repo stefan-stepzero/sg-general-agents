@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "external-relations-lgu-community-no-outreach-model-dup",
+  "pain_point_label": "Ad-Hoc Community Service Programs Without Systemic Model",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Community outreach programs are currently episodic and personality-dependent, meaning there is no documented framework or calendar driving them. Text generation can produce structured community service calendars, mission-linked program briefs, and service-learning curriculum integration templates — replacing tribal knowledge with repeatable, editable documents. For a 500+ staff operator, this lowers the barrier from 'whoever knows how to write this' to any administrator running a prompt.",
+      "opportunity_sketch": "An AI-assisted community engagement planner that generates annual outreach calendars, program briefs, and service-learning linkages aligned to the institution's stated mission and curriculum areas.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Outreach programs accumulate scattered reports, beneficiary feedback forms, and program narratives across multiple campuses and years, but there is no mechanism to track community beneficiary outcomes. Summarization can condense these inputs into standardized outcome reports per program cycle, surfacing what impact was claimed without requiring a full data warehouse. This directly addresses the 'no outcome tracking' gap using documents the org already produces.",
+      "opportunity_sketch": "A periodic summarization pipeline that ingests program reports and beneficiary feedback from all campuses and outputs a consolidated impact summary, ready to share with leadership or accreditation bodies.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 4,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The institution lacks linkage between outreach activities and its curriculum or mission — the relationships between programs, beneficiary types, community needs, and academic departments are implicit and undocumented. Knowledge extraction can parse existing program documents, course syllabi, and mission statements to surface these latent linkages, building the foundation for a service-learning map. This turns scattered text into an actionable relationship model without requiring manual audit.",
+      "opportunity_sketch": "A one-time or recurring extraction run over program archives and curriculum documents that outputs a graph of outreach-to-curriculum alignments, identifying which programs already qualify as service-learning and which departments are unengaged.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The absence of a systemic outreach model means routine coordination tasks — scheduling program dates, notifying departments, collecting post-program beneficiary data, and filing reports — are done ad hoc or not at all. A task automation agent can orchestrate these recurring workflow steps across systems (email, calendar, forms), removing the personality dependency by encoding the coordination logic into an automated pipeline. This is directly feasible for an education operator with standard SaaS tooling.",
+      "opportunity_sketch": "An outreach coordination agent that triggers at the start of each term to schedule programs, send reminders to participating departments, collect beneficiary count data post-event, and compile a draft impact report — without a dedicated staff coordinator.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Staff who want to design outreach programs aligned to the institution's mission and curriculum currently have no reference model to consult. A RAG system over the institution's mission documents, past program records, accreditation standards, and community needs assessments would let program coordinators ask 'what outreach programs fit our nursing curriculum?' and receive grounded, citable answers. This directly addresses the 'no linkage to curriculum or mission' gap by making institutional knowledge queryable.",
+      "opportunity_sketch": "An internal Q&A tool for community engagement staff that retrieves relevant past programs, mission clauses, and curriculum standards to support new program design — reducing dependency on institutional memory held by specific personalities.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

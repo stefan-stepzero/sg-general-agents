@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "student-support-extracurricular-cocurricular-equity-access-gaps-dup",
+  "pain_point_label": "Inequitable Access by Socioeconomic Status & Geography",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Equity gaps in co-curricular access are partly a funding and advocacy problem — operator leadership needs compelling narratives to make the case for reallocation. AI can draft equity audit reports, grant applications for rural/low-income campus programs, scholarship fund proposals, and board-facing summaries that articulate the disparity in human terms. This addresses the causal factor (lack of centralized equity design) by making the inequity visible and actionable to decision-makers who control budgets.",
+      "opportunity_sketch": "An AI-assisted equity reporting tool that auto-generates annual co-curricular equity reports per campus — participation rates, program availability, and socioeconomic gap analysis — formatted for board presentation and grant submissions.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-structured",
+      "capability_label": "Structured Data Classification",
+      "match_rationale": "Participation and program enrollment records are tabular. A classifier can segment students by campus type (urban/rural), socioeconomic proxy indicators (fee waiver status, scholarship tier), and co-curricular participation — revealing which student segments are systematically excluded. This turns diffuse anecdote ('rural campuses have less') into a scored, evidence-based equity gap map that administrators can act on.",
+      "opportunity_sketch": "A co-curricular equity segmentation model ingesting enrollment, fee-waiver, and activity participation data to score each campus's equity gap and flag high-disparity sites for targeted intervention.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "The core causal mechanism is lack of centralized co-curricular funding and equity design — a resource allocation failure. AI optimization can model how to redistribute coaches, visiting instructors, equipment, and budget across campuses to maximize program access for underserved students, subject to travel, cost, and capacity constraints. This directly attacks the structural driver rather than just measuring the gap.",
+      "opportunity_sketch": "A network-wide co-curricular resource planner that models itinerant coach schedules (visiting rural campuses), shared equipment rotations, and per-campus program funding allocations to maximize participation equity across socioeconomic and geographic segments.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Designing an equitable co-curricular calendar for a multi-site network involves satisfying many simultaneous hard constraints: coach availability, transportation windows for rural campuses, competition schedules, facility sharing agreements, scholarship fund caps, and per-campus program minimums. Constraint satisfaction AI can find valid timetables that guarantee a minimum program offering at every campus — something manual planning consistently fails to achieve for underserved sites.",
+      "opportunity_sketch": "A co-curricular timetabling engine that takes campus constraints (transport, facilities, budget tier) as inputs and outputs a network calendar guaranteeing minimum viable program access at every campus including rural and low-income sites.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Operators typically lack awareness of grant funding, external scholarship programs, virtual co-curricular platforms (online debate leagues, virtual STEM competitions), and low-cost program models that could serve rural/low-income campuses. A research agent can autonomously survey available external resources — government equity grants, NGO programs, low-cost itinerant coaching services — and synthesize a campus-by-campus opportunity brief. This is a high-value first step that requires no internal data infrastructure.",
+      "opportunity_sketch": "An autonomous research agent that, given a campus's profile (rural/urban, income tier, current program gaps), surveys available grant programs, virtual activity platforms, and partner organizations — returning a prioritized action brief for the student welfare team.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "prediction-propensity",
+      "capability_label": "Propensity & Behavioral Modeling",
+      "match_rationale": "Students who are at risk of full functional exclusion from co-curricular life can be predicted from early signals: scholarship status, rural campus flag, zero activity enrollment after first term, fee-waiver usage. A propensity model can score every student's likelihood of remaining co-curricularly excluded and trigger proactive outreach or scholarship flag — shifting from reactive discovery (student never joins anything) to early intervention.",
+      "opportunity_sketch": "A student co-curricular exclusion risk score — computed each term per student — that identifies scholarship and rural-campus students with near-zero program participation and surfaces them to counselors for targeted outreach and fee-waiver offers.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

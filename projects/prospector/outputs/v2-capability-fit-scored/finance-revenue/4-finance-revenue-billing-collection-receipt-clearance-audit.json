@@ -1,0 +1,49 @@
+{
+  "pain_point_id": "finance-revenue-billing-collection-receipt-clearance-audit",
+  "pain_point_label": "Official Receipt Issuance & Clearance Certification Bottleneck",
+  "matches": [
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Physical official receipts are handwritten or printed documents. OCR and form extraction can digitize receipt copies, payment vouchers, and historical receipt pads into structured records.",
+      "opportunity_sketch": "A receipt digitization pipeline where staff photograph or scan issued receipts; OCR extracts receipt number, amount, student ID, and date — auto-posting to the finance ledger and flagging mismatches.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Receipt series completeness audits — detecting gaps, duplicates, or out-of-sequence numbers — are precisely an anomaly detection problem over structured sequential data.",
+      "opportunity_sketch": "An automated receipt series integrity monitor that continuously checks for gaps, duplicates, or numbering anomalies across all campuses, generating a compliance report on demand.",
+      "pain_salience": 4,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 80.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Clearance certification is a multi-step workflow: verify all invoices paid, confirm all receipts issued, check outstanding balances across systems, then generate and certify the clearance document.",
+      "opportunity_sketch": "A clearance automation agent triggered by a graduation or transfer request: it queries payment history, receipt issuance log, and balance data, resolves discrepancies, and either auto-generates the clearance certificate or routes to a human.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 36.0
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Clearance certificates and BIR-compliant acknowledgment letters are structured documents with fixed content patterns. Text generation can produce these on demand from structured data.",
+      "opportunity_sketch": "A document generation module that produces clearance certificates, official acknowledgment letters, and audit-ready receipt summaries from structured payment data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 60.0
+    }
+  ],
+  "no_match_capabilities": ["generation-code","generation-image","generation-audio","generation-video","generation-synthetic-data","extraction-entity","extraction-summarization","extraction-knowledge","extraction-transformation","classification-text","classification-visual","classification-structured","classification-audio","prediction-time-series","prediction-propensity","prediction-risk","prediction-regression","search-semantic","search-rag","search-recommendation","search-multimodal","optimization-resource","optimization-routing","optimization-pricing","optimization-experiment","optimization-constraint","agents-conversational","agents-research","agents-coding","agents-multi"],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

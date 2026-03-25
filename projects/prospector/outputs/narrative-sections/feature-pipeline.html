@@ -1,0 +1,51 @@
+<div class="narrative-section" id="rpt-pipeline">
+  <span class="section-num">05</span>
+  <h2>Feature Pipeline</h2>
+  <div class="narrative-body">
+
+    <p>The five products above are portfolio-level bets. But each one is built from a stack of features &mdash; and we generated 81 candidate features by running AI ideation agents across all 20 opportunity cells. After deduplication and scoring, <strong>54 unique feature concepts</strong> remain, ranked on a 9-criterion rubric.</p>
+
+    <div class="callout"><strong>How features were scored.</strong> Each idea was evaluated on 9 criteria across four lenses: <em>Desirability</em> (problem severity 3x, buyer clarity 2x, time to value 2x), <em>Feasibility</em> (build feasibility 2x, data access 2x), <em>Viability</em> (business model 1x, defensibility 1x), and <em>Builder Fit</em> (agentic suitability 2x, greenfield advantage 1x). Maximum score: 72. Ideas scoring above 55 are Tier 1 candidates; 40&ndash;55 need one assumption validated; below 40 are parked.</div>
+
+    <p><strong>42 of 54 ideas map directly to the five products</strong> as features or modules. The remaining 12 are independent concepts &mdash; some strong enough to be standalone products, others better as consulting deliverables.</p>
+
+    <!-- Product feature counts -->
+    <div style="display:grid;grid-template-columns:repeat(6, 1fr);gap:12px;margin:24px 0">
+      <div style="text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)">
+        <div style="font-size:22px;font-weight:700;color:#7b93ff" id="pipe-staffroom-count">14</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">Staffroom</div>
+      </div>
+      <div style="text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)">
+        <div style="font-size:22px;font-weight:700;color:#34d399" id="pipe-enrolflow-count">8</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">Enrolflow</div>
+      </div>
+      <div style="text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)">
+        <div style="font-size:22px;font-weight:700;color:#f59e0b" id="pipe-grantlens-count">7</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">GrantLens</div>
+      </div>
+      <div style="text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)">
+        <div style="font-size:22px;font-weight:700;color:#f87171" id="pipe-boardbrief-count">7</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">BoardBrief</div>
+      </div>
+      <div style="text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)">
+        <div style="font-size:22px;font-weight:700;color:#a78bfa" id="pipe-sectorpulse-count">6</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">SectorPulse</div>
+      </div>
+      <div style="text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)">
+        <div style="font-size:22px;font-weight:700;color:var(--text-muted)" id="pipe-independent-count">12</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">Independent</div>
+      </div>
+    </div>
+
+    <!-- Top 10 table -->
+    <h3 style="font-size:14px;font-weight:700;margin:24px 0 12px;color:var(--text)">Top 10 Features by Weighted Score</h3>
+    <div id="rpt-pipeline-table" class="scroll-table-wrapper">
+      <!-- Populated by JS -->
+    </div>
+
+    <p style="margin-top:20px">The full scored and ranked list of 54 features &mdash; with individual score breakdowns, duplicate tracking, and product alignment &mdash; is available in the <a style="color:var(--accent);cursor:pointer" onclick="showView('product-ideas')">Product Ideas appendix</a>.</p>
+
+    <div class="callout" style="margin-top:16px"><strong>What this tells us.</strong> The top features cluster around three products: Staffroom, GrantLens, and Enrolflow. These are the strongest near-term builds. BoardBrief and SectorPulse have solid feature backlogs but longer sales cycles. The 12 independent ideas include Capital Project Risk Monitor (62/72) and Campus Operations Risk Triage (57/72) &mdash; both worth exploring as standalone consulting engagements that could evolve into products.</div>
+
+  </div>
+</div>

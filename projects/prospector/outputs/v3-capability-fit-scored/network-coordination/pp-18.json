@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-best-practice-transfer-no-learning-platform-dup",
+  "pain_point_label": "No Cross-Campus Learning Infrastructure",
+  "matches": [
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Campus leaders and high-performing sites accumulate tacit knowledge in meeting notes, reports, and communications, but without curation staff this knowledge is never distilled or shared. AI summarization can automatically condense what high-performing campuses do well — from operations reports, staff feedback, and outcome data — into transferable playbooks that other campuses can absorb quickly. This directly replaces the missing dedicated best-practice curation role.",
+      "opportunity_sketch": "An automated digest system that ingests campus reports and meeting notes weekly, summarizes high-performing practices by theme, and distributes condensed briefs to campus leaders across the network.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Without a learning platform, campus leaders have no way to query accumulated institutional knowledge — they rely on personal relationships to find out what worked elsewhere. A RAG system over internal documents (curriculum materials, operational SOPs, past improvement plans, staff training resources) enables any campus leader to ask 'how did Campus X solve X problem?' and get a grounded, cited answer from real network experience. This substitutes for ad-hoc peer networking with a scalable knowledge infrastructure.",
+      "opportunity_sketch": "An internal knowledge Q&A tool where campus leaders can query the network's collective experience — finding precedents, best practices, and documented solutions without needing personal contacts at other campuses.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The absence of dedicated curation staff means best-practice documentation is never written — high-performing sites have no mechanism for converting operational success into transferable content. AI text generation can take structured inputs (outcome data, interview notes, observation summaries) and produce ready-to-share practice guides, case studies, and workshop materials at a fraction of the cost of hiring curriculum writers. This directly addresses the gap in formatted, distributable learning content.",
+      "opportunity_sketch": "A content generation pipeline that turns campus performance data and leader interviews into formatted practice guides and network newsletters, enabling continuous best-practice publication without dedicated staff.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 48.0
+    },
+    {
+      "capability_id": "search-recommendation",
+      "capability_label": "Recommendation Systems",
+      "match_rationale": "With no structured mentoring or peer exchange, struggling campuses receive no proactive guidance toward relevant solutions from the network. A recommendation system can match struggling campuses to relevant practices, case studies, or peer mentors based on the specific profile of their challenges — without requiring a human coordinator to make those connections manually. This is a direct structural substitute for the absent formal mentoring and working-group infrastructure.",
+      "opportunity_sketch": "A network intelligence layer that profiles each campus's performance gaps and automatically surfaces the most relevant practices from high-performing peers, along with suggested peer contacts for deeper exchange.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-conversational",
+      "capability_label": "Conversational Agents",
+      "match_rationale": "Campus leaders currently rely on personal relationships to access network knowledge — a high-friction, inequitable mechanism that advantages well-connected leaders. A conversational agent acting as a 'network knowledge coach' could provide every campus leader with on-demand access to institutional knowledge, structured reflection prompts, and guided problem-solving without requiring peer availability. This scales the value of informal peer exchange to all campuses simultaneously.",
+      "opportunity_sketch": "A network knowledge assistant that campus leaders can consult asynchronously — asking operational questions, surfacing comparable situations from peer campuses, and getting structured guidance drawn from network experience.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-task-automation",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

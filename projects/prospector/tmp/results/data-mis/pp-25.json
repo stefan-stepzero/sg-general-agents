@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "data-mis-project-change-no-roadmap-dup",
+  "pain_point_label": "No Technology Roadmap or Strategic Alignment",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "The primary deliverable missing here is a structured technology roadmap document — a written artifact that links business strategy to multi-year IT investments. LLMs can generate roadmap drafts, vendor evaluation frameworks, strategic briefings, and board-ready narratives from structured inputs (budget data, campus priorities, strategic goals). This directly addresses the absence of a written strategic artifact that leadership can align around.",
+      "opportunity_sketch": "A roadmap generation tool that takes campus system inventories, budget figures, and strategic goals as inputs and produces a prioritized 3-year technology roadmap with rationale, in a format suitable for board or principal review.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "Strategic technology planning requires synthesizing external benchmarks — what peer institutions use, vendor capability comparisons, EdTech market trends, and implementation case studies. An autonomous research agent can gather this from multiple sources and produce structured findings that inform the roadmap, replacing the current reliance on personal recommendation or lowest-price selection. This directly counters the absence of capability-fit evaluation in vendor selection.",
+      "opportunity_sketch": "An agent that, given a stated technology need (e.g. LMS selection), autonomously researches top vendors, peer institution adoption patterns, and pricing, then produces a structured comparison report with a recommendation aligned to the operator's stated strategic goals.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "optimization-resource",
+      "capability_label": "Resource Allocation & Scheduling",
+      "match_rationale": "Budget is scattered across one-off projects without integrated vision — this is a resource allocation problem where competing campus demands and limited capital need to be optimally distributed against strategic priorities. AI-assisted budget allocation can model trade-offs across campuses and investment categories, enforce strategic weighting, and surface conflicts before they become sunk costs. This directly addresses the scattered-budget symptom.",
+      "opportunity_sketch": "A multi-year IT budget allocation tool that takes total available capital, campus requests, and strategic priority weights, then outputs an optimized spend plan with projected coverage and gap analysis — replacing ad hoc spreadsheet decisions.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-multi",
+      "capability_label": "Multi-Agent Systems",
+      "match_rationale": "Building a technology roadmap from scratch for a multi-site operator requires sequentially executing several distinct tasks: gathering stakeholder priorities from each campus, researching vendor options, synthesizing budget constraints, and drafting the roadmap document. These map naturally to specialized agents (research agent, synthesis agent, generation agent) orchestrated in a pipeline. A single agent cannot do all of this with sufficient depth at each stage.",
+      "opportunity_sketch": "A roadmap-building pipeline: a discovery agent gathers campus priorities via structured intake, a research agent benchmarks vendors and peer institutions, and a synthesis agent produces the final roadmap document with investment recommendations — the entire workflow executed with minimal manual coordination.",
+      "pain_salience": 4,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 19.2
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Multi-site operators accumulate scattered documentation — past vendor proposals, budget spreadsheets, board minutes, and system audit reports — that contains tacit knowledge about past decisions and their outcomes. A RAG system over this corpus lets leadership ask strategic questions ('What did we spend on LMS in 2021 and why did it fail?') and get grounded answers that inform current roadmap decisions. This converts undocumented institutional history into accessible strategic intelligence.",
+      "opportunity_sketch": "An internal knowledge Q&A tool that indexes past procurement records, system documentation, and board meeting notes, enabling principals and IT leads to query the organisation's own technology history to avoid repeating past mistakes.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

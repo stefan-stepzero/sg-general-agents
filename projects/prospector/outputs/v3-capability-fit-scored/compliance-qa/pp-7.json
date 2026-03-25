@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "compliance-qa-accreditation-student-learning-outcomes-gap-dup",
+  "pain_point_label": "Student Learning Outcomes (SLO) Assessment Data Gaps",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core problem is a fragmented, multi-step remediation workflow: locate existing assessment evidence across LMS platforms, grade books, and paper records; normalize it to a common SLO schema; identify gaps by program and campus; and produce an audit-ready evidence package. This requires multi-step decision-making across heterogeneous systems — exactly what task automation agents handle. A single-step extraction or classification tool cannot close the loop alone.",
+      "opportunity_sketch": "An agent pipeline that ingests records from LMS APIs, grade exports, and uploaded documents, maps them to the operator's SLO framework, flags missing evidence by program/cohort/year, and outputs a structured gap register with prioritized remediation tasks — reducing weeks of manual audit prep to hours.",
+      "pain_salience": 5,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 24.0
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Assessment data exists across campuses in incompatible forms — spreadsheets with different column names, LMS exports with inconsistent outcome codes, and ad-hoc rubric formats. The fundamental blocker before any analysis can occur is normalizing this heterogeneous data into a unified SLO schema. AI-assisted schema mapping handles ambiguous field names and inconsistent scoring scales that rule-based ETL cannot.",
+      "opportunity_sketch": "A transformation layer that ingests campus assessment exports in any format and maps them to a canonical SLO data model, standardizing outcome codes, scoring scales, and assessment dates — creating the unified dataset needed for gap analysis and accreditor submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Even after evidence is located and structured, accreditors require narrative summaries explaining how each program's assessment data demonstrates SLO attainment — written in accreditor-standard language. Generating these narratives from structured evidence data (outcome scores, assessment counts, trend data) is a high-value, low-risk AI application that saves significant faculty and administrator time during audit crunch.",
+      "opportunity_sketch": "A report generator that takes a program's structured SLO evidence table and produces draft narrative sections in accreditor-standard format — covering assessment methods used, aggregate student performance, and improvement actions taken — ready for faculty review before submission.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "extraction-media-parsing",
+      "capability_label": "Media Parsing & Transcription",
+      "match_rationale": "Informal assessment records at under-resourced campuses commonly exist as scanned rubrics, handwritten observation forms, paper clinical evaluations, and printed grade sheets — physically present but not digitized. OCR and document parsing can convert these artifacts into structured records, recovering historical evidence that would otherwise require manual re-entry or be written off as missing.",
+      "opportunity_sketch": "A document ingestion service where campus staff upload scanned assessment forms (rubrics, observation checklists, capstone evaluations), which are automatically parsed to extract student IDs, outcome codes, scores, and dates — populating the SLO database with retroactive evidence from physical archives.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 51.2
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Many campuses have informal assessment artifacts — instructor notes, narrative evaluations, clinical supervision logs — that contain evidence of SLO attainment but are not coded against specific outcomes. Text classification can automatically tag these records against the program's SLO taxonomy, converting unstructured qualitative evidence into countable, auditable assessment data points.",
+      "opportunity_sketch": "A classification model trained on the operator's SLO framework that processes narrative instructor notes and evaluations, tagging each passage with the learning outcomes it provides evidence for — effectively creating a coded assessment record from previously uncounted qualitative data.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "prediction-risk",
+      "capability_label": "Risk Scoring & Assessment",
+      "match_rationale": "With 500+ staff across multiple campuses and programs, leadership cannot manually assess which programs face the highest accreditation risk due to SLO data gaps. A risk scoring model can combine gap severity (missing years, missing programs), program accreditor stringency, and upcoming review cycles to prioritize where remediation resources go — turning a sprawling problem into a ranked action list.",
+      "opportunity_sketch": "A dashboard that scores each program-campus combination on accreditation risk based on SLO data completeness, time since last review, accreditor strictness, and upcoming audit schedule — enabling the compliance team to triage remediation efforts rather than address gaps uniformly.",
+      "pain_salience": 4,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}

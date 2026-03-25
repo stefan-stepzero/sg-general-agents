@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "network-coordination-best-practice-transfer-context-adaptation-neglect-dup",
+  "pain_point_label": "Failure to Adapt Practices to Local Context",
+  "matches": [
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "When a best practice is being transferred from one campus to another, an LLM can take the documented practice and rewrite it adapted to the receiving campus's documented context — student demographics, faculty capacity, resource constraints. This directly addresses the failure mode of applying a practice verbatim without modification. The output is a contextualized adaptation guide rather than a generic policy copy.",
+      "opportunity_sketch": "A tool where staff input a source practice document and target campus profile, and the system generates a localized version with explicit adaptations flagged — e.g., 'urban model assumes 3 counselors; rural campus has 1, so triage protocol must change to X.'",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "extraction-summarization",
+      "capability_label": "Summarization & Condensation",
+      "match_rationale": "Before adapting a practice, practitioners need to quickly understand what the original practice actually requires and why it works — dense policy documents, pilot reports, and outcome data across campuses are hard to digest. Summarization compresses this into actionable context that local teams can evaluate against their own situation. Without this step, adaptation is blocked by information overload.",
+      "opportunity_sketch": "Automated digests of network-wide practice documents that surface the core mechanism, required inputs, and outcomes — giving receiving campuses the essential facts needed to assess fit before adoption.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "The core of this pain point is a failure to map relationships between a practice's success conditions and the receiving campus's actual conditions. Knowledge extraction can parse existing practice documentation and campus profiles to surface causal relationships — 'this practice succeeded because X, Y, Z conditions existed' — making contextual mismatch visible before rollout. This is more precise than summarization because it preserves the dependency structure.",
+      "opportunity_sketch": "A practice-transfer readiness tool that extracts enabling conditions from successful campus case studies, maps them to target campus attributes, and flags specific gaps that require adaptation or a pilot phase.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "A RAG system grounded in the network's own practice library, campus profiles, and pilot outcomes lets curriculum/operations staff ask 'how did similar campuses adapt this practice?' and receive grounded, citation-backed answers rather than relying on institutional memory. This directly counteracts the one-size-fits-all imposition by surfacing evidence of variation and localization that already exists in the network.",
+      "opportunity_sketch": "An internal knowledge assistant where a rural campus coordinator can ask 'how was the urban reading intervention adapted for lower-staffing campuses?' and get answers drawn from the network's actual documented experience — not a generic playbook.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "An autonomous research agent can profile the receiving campus (pulling from internal data, public demographic sources, and sector research) and synthesize an adaptation brief — identifying where the source practice's assumptions break down for the target context. This is valuable because the failure mode is neglect of context research, not lack of data; the agent does the research that humans are skipping.",
+      "opportunity_sketch": "An agent that, when given a practice transfer request, autonomously gathers the receiving campus's demographic profile, staffing data, and comparable external cases, then produces a structured adaptation recommendation report for the curriculum/operations lead.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-task-automation",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

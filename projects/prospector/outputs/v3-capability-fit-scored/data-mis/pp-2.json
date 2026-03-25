@@ -1,0 +1,80 @@
+{
+  "pain_point_id": "data-mis-sis-lms-admin-user-provisioning-chaos-dup",
+  "pain_point_label": "User Provisioning & Access Management Chaos",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The core pain is a multi-step, multi-system provisioning workflow — create in SIS, sync to LMS, provision email, grant portal access, then reverse on offboarding — that currently relies on fragile HR spreadsheet batch uploads. A task automation agent can orchestrate the full provisioning lifecycle across all four systems via APIs, handling branching (new hire vs. transfer vs. departure), error detection, and rollback when a downstream system fails silently. This directly attacks the ghost-account and locked-out-user failure modes.",
+      "opportunity_sketch": "An agent triggered by HR system events (new hire, role change, termination) that autonomously provisions or deprovisions the user across SIS, LMS, email, and portal in sequence, surfacing failures for human review rather than silently skipping steps.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 3,
+      "composite_score": 28.8
+    },
+    {
+      "capability_id": "classification-anomaly",
+      "capability_label": "Anomaly & Fraud Detection",
+      "match_rationale": "Orphaned accounts and scope-creep permissions (e.g., a campus admin seeing all students globally) are precisely the kind of behavioral anomalies that diverge from expected access patterns. An anomaly detection model trained on normal role-permission baselines can flag accounts that have not been accessed in N days, permissions that exceed role norms, or users whose access footprint no longer matches their HR record. This directly addresses the expanding security surface and lack of audit trail.",
+      "opportunity_sketch": "A continuous monitoring layer that scores every active account against expected access norms for its role and campus, surfacing high-deviation accounts (orphaned, over-provisioned, never-logged-in) as a prioritized remediation queue.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "HR spreadsheet batch uploads fail because column schemas, naming conventions, and field formats are inconsistent across campuses and HR staff. AI-assisted data transformation can normalize incoming HR roster files — mapping varied column names to canonical fields, standardizing role strings, inferring missing attributes from context — before they reach the provisioning pipeline, eliminating the silent failures caused by schema mismatches.",
+      "opportunity_sketch": "A preprocessing layer that accepts ad-hoc HR spreadsheets in any format, maps them to the canonical provisioning schema, flags rows with irresolvable ambiguity, and passes clean records to the downstream provisioning workflow.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "optimization-constraint",
+      "capability_label": "Constraint Satisfaction & Configuration",
+      "match_rationale": "Role inheritance and access scope (campus admin should see only their campus's students, not all students globally) is a constraint satisfaction problem: given a user's role, campus affiliation, and system, compute the valid permission set that satisfies all hard constraints (data privacy, regulatory requirements) and soft constraints (least-privilege, operational convenience). This is not addressable by simple rule tables when roles interact across SIS, LMS, and portal in complex ways.",
+      "opportunity_sketch": "A role-permission configurator that takes a user's attributes (role, campus, employment type) and automatically derives the correct access configuration across all systems, rejecting any configuration that violates defined constraints before it is applied.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 2,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-text",
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 4
+}

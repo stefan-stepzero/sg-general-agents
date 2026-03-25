@@ -1,0 +1,71 @@
+{
+  "cell": {
+    "cellNum": 5,
+    "subCategory": "Market Expansion",
+    "domain": "Growth & Market",
+    "heat": 51,
+    "oppScore": 37
+  },
+  "ideas": [
+    {
+      "name": "Inquiry Intent Classifier",
+      "one_liner": "AI system that classifies prospective student and parent inquiries by enrollment intent and risk, automating lead prioritization for K-12 and HE operators.",
+      "problem": "Rising Academies and iPeople acquire students in price-sensitive African and Asian markets where thousands of inquiries arrive via SMS, WhatsApp, and email. Current admissions staff manually triage these, leading to slow response times and missed conversions. Student dropout-risk signals embedded in early inquiries go undetected.",
+      "ai_technique": "Text Classification (SMS/email/WhatsApp intent detection)",
+      "how_it_works": "Ingest incoming student and parent inquiries into a classifier trained on education-specific intent signals (scholarship enquiries, geographic constraints, cost concerns, prior qualifications). Flag high-intent prospects for immediate follow-up and retention-at-risk students for intervention. Output: automated lead scoring and routing to admissions staff.",
+      "target_companies": [
+        "rising",
+        "ipeople",
+        "phinma"
+      ],
+      "buyer_persona": "Director of Admissions or Enrollment Manager",
+      "tier": "feature",
+      "confidence": "high"
+    },
+    {
+      "name": "Enrollment Funnel Forecaster",
+      "one_liner": "Predicts cohort-level enrollment conversion from inquiry through application to matriculation, accounting for academic calendar seasonality and program-specific dropout patterns.",
+      "problem": "iPeople and PHINMA manage enrollment cycles where inquiry, application, and enrollment stages follow predictable but institution-specific patterns. Current forecasting relies on spreadsheets or basic CRM reports, missing education-sector nuances like exam result release dates, government scholarship allocation timelines, and program-specific completion rates.",
+      "ai_technique": "Time Series Forecasting (academic-cycle-aware)",
+      "how_it_works": "Ingest 2-3 years of enrollment history by program, academic term, and stage (inquiry→application→enrollment→retention). Apply seasonal decomposition and education-specific calendar events (exam dates, government funding announcements, school holidays). Output: enrollment forecast by cohort and program with confidence intervals, enabling enrollment managers to adjust recruitment spend and tuition planning.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "rising"
+      ],
+      "buyer_persona": "Chief Enrollment Officer or Registrar",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Student Propensity Engine",
+      "one_liner": "Classifies applicant likelihood to enroll using structured admission data (test scores, family income proxy, prior school, program choice) to guide targeted recruitment.",
+      "problem": "PHINMA's affordable HE segment and iPeople's STEM recruitment process thousands of applications annually. Admissions staff lack systematic tools to predict who will actually enroll, leading to over-recruiting some programs and under-recruiting others. Rising Academies in West Africa need to identify enrollment-likely households from demographic data to optimize community outreach.",
+      "ai_technique": "Structured Data Classification + Propensity Scoring",
+      "how_it_works": "Build classifier on historical applicant features (GPA, family income, prior school type, distance to campus, program choice, test score) predictive of enrollment. Score new applicants and segment by enrollment propensity quintile. Enable admissions teams to customize outreach (intensive for low-propensity, retention-focused for high-propensity). For Rising Academies, apply to household demographic data to identify neighborhood enrollment potential.",
+      "target_companies": [
+        "phinma",
+        "ipeople",
+        "rising"
+      ],
+      "buyer_persona": "Admissions Manager or Enrollment Strategy Lead",
+      "tier": "module",
+      "confidence": "high"
+    },
+    {
+      "name": "Recruitment ROI Analyzer",
+      "one_liner": "Estimates the causal impact of recruitment channels (ad spend, scholarship tier, school partnerships) on enrollment yield and tuition elasticity.",
+      "problem": "iPeople and PHINMA allocate recruitment budgets across channels (online ads, school partnerships, government scholarship programs) without clear ROI visibility. Marketing spend decisions are reactive rather than optimized. Tuition pricing for new programs lacks data-driven guidance on price elasticity in target markets.",
+      "ai_technique": "Regression & Quantitative Estimation (causal inference on channel contribution)",
+      "how_it_works": "Analyze enrollment data by cohort, recruitment channel, scholarship offer level, and tuition price. Apply causal inference (e.g., difference-in-differences or propensity score matching) to isolate each channel's incremental impact on conversion. Estimate price elasticity curves for different program tiers. Output: recruitment budget recommendation by channel, scenario analysis for new program pricing, and ROI per rupee/peso spent.",
+      "target_companies": [
+        "ipeople",
+        "phinma",
+        "kinetic"
+      ],
+      "buyer_persona": "Chief Marketing Officer or CFO",
+      "tier": "module",
+      "confidence": "medium"
+    }
+  ]
+}

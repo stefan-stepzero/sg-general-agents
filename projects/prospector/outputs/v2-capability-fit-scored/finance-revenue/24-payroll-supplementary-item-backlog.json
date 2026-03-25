@@ -1,0 +1,89 @@
+{
+  "pain_point_id": "payroll-supplementary-item-backlog",
+  "pain_point_label": "Supplementary Payroll Item Backlog & Delays",
+  "matches": [
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "Multi-step manual workflow of overtime/bonus claims requiring calculation, approvals, and disbursement.",
+      "opportunity_sketch": "An AI agent that ingests supplementary pay claims, validates calculations, routes for approval, and tracks status.",
+      "pain_salience": 3,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 21.6
+    },
+    {
+      "capability_id": "extraction-transformation",
+      "capability_label": "Data Transformation & Structuring",
+      "match_rationale": "Supplementary payroll items originate in semi-structured sources that need normalizing.",
+      "opportunity_sketch": "An ETL layer normalizing overtime claims, bonus submissions, and exit pay triggers into a structured payroll queue.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    },
+    {
+      "capability_id": "classification-text",
+      "capability_label": "Text Classification",
+      "match_rationale": "Incoming requests arrive with varying terminology and urgency that classification can triage.",
+      "opportunity_sketch": "Automatically classify and prioritize incoming supplementary pay requests by type and urgency.",
+      "pain_salience": 2,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 40
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Auto-generate status notifications to keep staff informed without burdening the payroll team.",
+      "opportunity_sketch": "Auto-generate status update emails triggered by workflow state changes.",
+      "pain_salience": 2,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 40
+    },
+    {
+      "capability_id": "search-rag",
+      "capability_label": "Retrieval-Augmented Generation (RAG)",
+      "match_rationale": "Payroll staff must frequently look up policy rules for edge cases.",
+      "opportunity_sketch": "A payroll policy assistant that answers calculation and entitlement questions by retrieving relevant clauses.",
+      "pain_salience": 3,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 38.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-entity",
+    "extraction-summarization",
+    "extraction-knowledge",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-semantic",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-research",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 5
+}

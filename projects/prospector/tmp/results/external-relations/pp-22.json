@@ -1,0 +1,98 @@
+{
+  "pain_point_id": "external-relations-press-pr-no-media-list-dup",
+  "pain_point_label": "No Curated Media Database or Press Contact List",
+  "matches": [
+    {
+      "capability_id": "agents-research",
+      "capability_label": "Research & Analysis Agents",
+      "match_rationale": "The core pain is the absence of a curated, segmented list of education journalists and outlets covering the Philippines. A research agent can autonomously crawl news sites, LinkedIn, bylines, and editorial pages to discover and profile reporters by beat (K-12 policy, higher ed, tech-in-ed, employment), building out the database from scratch without manual staff effort. This directly addresses the 'scrambling to identify relevant journalists' mechanism at the moment a story breaks.",
+      "opportunity_sketch": "An agent that, given a topic or story angle, autonomously searches local and national news outlets, identifies relevant journalists by beat, extracts contact signals and recent coverage, and returns a ranked, deduplicated contact sheet ready for the comms team to act on.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "extraction-entity",
+      "capability_label": "Entity & Attribute Extraction",
+      "match_rationale": "Building and maintaining a media database requires extracting structured journalist profiles — names, outlets, beats, email/social handles, recent article topics — from unstructured web content, press releases, and news archives. Entity extraction turns raw text sources into structured records that populate the contact list, solving the 'no documented list' root cause systematically rather than one-off manual searches.",
+      "opportunity_sketch": "A pipeline that ingests news articles and media pages from Philippine education coverage, extracts journalist names, outlets, beats, and contact metadata, and writes them into a structured database that staff can query when a story opportunity arises.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 4,
+      "composite_score": 25.6
+    },
+    {
+      "capability_id": "extraction-knowledge",
+      "capability_label": "Knowledge & Relationship Extraction",
+      "match_rationale": "Beyond individual journalist records, the pain includes segmentation by beat and understanding which journalists cover which intersections of topics (e.g., a reporter who covers both K-12 policy and ed-tech). Relationship extraction can map journalist–topic–outlet–recency connections into a knowledge graph, enabling the comms team to find the right contact not just by name but by thematic fit — reducing duplicate pitches across campuses.",
+      "opportunity_sketch": "A knowledge graph of Philippine education media where nodes are journalists, outlets, and topic areas, and edges encode coverage relationships and recency — queryable by story angle to surface the best-fit contacts per campus pitch.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    },
+    {
+      "capability_id": "generation-text",
+      "capability_label": "Text Generation",
+      "match_rationale": "Once a contact list exists, the duplicate/scattered pitches problem across campuses is a drafting and coordination issue. Text generation can produce tailored pitch drafts for each journalist based on their beat and recent coverage, reducing the likelihood that different campuses send generic or conflicting pitches by giving each campus a personalized, beat-aware message that signals coordination.",
+      "opportunity_sketch": "A pitch drafting tool that takes a story brief, looks up matched journalists, and generates a customized, beat-specific pitch email per contact — ensuring cross-campus outreach is coherent and differentiated rather than scattered.",
+      "pain_salience": 2,
+      "adoption_likelihood": 4,
+      "build_complexity": 5,
+      "composite_score": 32.0
+    },
+    {
+      "capability_id": "search-semantic",
+      "capability_label": "Semantic Search",
+      "match_rationale": "Once a media database is built (even partially), the problem of 'scrambling to identify relevant journalists' during a live story opportunity is a retrieval problem. Semantic search over the contact database allows staff to describe a story angle in natural language and surface the most relevant journalists and outlets by meaning, not just keyword — matching 'new vocational track announcement' to reporters who cover employment and K-12 transitions.",
+      "opportunity_sketch": "A semantic search layer over the media contact database where comms staff type a story description and instantly get a ranked list of journalists whose beat and recent coverage aligns — replacing manual scrambling with a 30-second lookup.",
+      "pain_salience": 2,
+      "adoption_likelihood": 5,
+      "build_complexity": 5,
+      "composite_score": 40.0
+    },
+    {
+      "capability_id": "agents-task-automation",
+      "capability_label": "Task Automation Agents",
+      "match_rationale": "The duplicate pitch problem across campuses is partly a coordination workflow failure — different campus PR staff acting independently without a shared source of truth or gating step. A task automation agent can enforce a pitch coordination workflow: when any campus initiates an outreach, it checks whether another campus has already pitched that journalist in a time window, flags conflicts, and routes for central approval before sending — directly addressing the 'noise from scattered pitches' mechanism.",
+      "opportunity_sketch": "A pitch coordination agent that sits between campus comms teams and outgoing media outreach: logging all pitches centrally, detecting duplicate journalist contacts across campuses within a rolling window, and flagging or blocking conflicting outreach before it goes out.",
+      "pain_salience": 2,
+      "adoption_likelihood": 3,
+      "build_complexity": 3,
+      "composite_score": 14.4
+    }
+  ],
+  "no_match_capabilities": [
+    "generation-code",
+    "generation-image",
+    "generation-audio",
+    "generation-video",
+    "generation-synthetic-data",
+    "extraction-media-parsing",
+    "extraction-summarization",
+    "extraction-transformation",
+    "classification-text",
+    "classification-visual",
+    "classification-structured",
+    "classification-anomaly",
+    "classification-audio",
+    "prediction-time-series",
+    "prediction-propensity",
+    "prediction-risk",
+    "prediction-regression",
+    "search-rag",
+    "search-recommendation",
+    "search-multimodal",
+    "optimization-resource",
+    "optimization-routing",
+    "optimization-pricing",
+    "optimization-experiment",
+    "optimization-constraint",
+    "agents-conversational",
+    "agents-coding",
+    "agents-multi"
+  ],
+  "total_evaluated": 34,
+  "total_matched": 6
+}
