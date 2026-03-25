@@ -60,7 +60,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           ))}
         </nav>
 
-        <div style={{ padding: '16px 20px', borderTop: '1px solid var(--border-subtle)', marginTop: 'auto' }}>
+        <div style={{ padding: '12px 20px', borderTop: '1px solid var(--border-subtle)', marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: 4 }}>
+          <NavLink to="/how-it-works" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`} style={{ padding: '5px 0', fontSize: 11 }}>
+            How It Works
+          </NavLink>
           <NavLink to="/appendix" style={{ fontSize: 10, color: 'var(--text-muted)', opacity: 0.5, textDecoration: 'none' }}>
             Archive
           </NavLink>

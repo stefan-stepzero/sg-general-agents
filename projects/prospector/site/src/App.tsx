@@ -9,6 +9,7 @@ import NextSteps from './pages/NextSteps'
 import OrganizationView from './pages/OrganizationView'
 import ProductIdeas from './pages/ProductIdeas'
 import Appendix from './pages/Appendix'
+import PipelineMethodology from './pages/PipelineMethodology'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/pain-points" element={<PainPoints />} />
         <Route path="/next-steps" element={<NextSteps />} />
         <Route path="/product-ideas" element={<ProductIdeas />} />
+        <Route path="/how-it-works" element={<PipelineMethodology />} />
         <Route path="/appendix" element={<Appendix />} />
       </Routes>
     </Layout>
