@@ -65,6 +65,16 @@ Agents should call these via Bash to avoid loading large files into context.
 | pipeline-data-collector | `context/web-research-brief.md` | `raw/web-research.json` |
 {{PHASE_1B_EXTRA_ROWS}}
 
+### Phase 1C: Deep Data Collection (optional, needs Phase 1A)
+
+If the bootstrap agent found granular data sources (per-school/site reports, government per-entity funding tables, census demographics), this phase downloads and extracts them. Skip if `context/deep-data-brief.md` does not exist.
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-data-collector | `context/deep-data-brief.md` | `raw/deep-data-*.json` (varies by org) |
+
+{{PHASE_1C_NOTES}}
+
 ### Phase 2: Profile & Benchmarks (2 agents in parallel)
 
 | Agent | Brief | Output |

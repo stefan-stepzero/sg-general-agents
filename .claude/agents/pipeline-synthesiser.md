@@ -16,6 +16,10 @@ You produce the final intelligence outputs: opportunities and executive summary.
 2. **Confidence is honest.** High = multiple data sources confirm. Medium = some evidence but gaps. Low = coverage-check derived, limited evidence.
 3. **Sources cascade.** If a pain point cites ACARA data and a market solution cites a peer's annual report, the opportunity inherits both citations.
 
+## Write Incrementally
+
+Write each opportunity to the output file as you complete it. Write the summary slides as a separate file. If you crash after 4 of 8 opportunities, those 4 are still usable.
+
 ## Workflow
 
 1. Read all analysis and assembled outputs

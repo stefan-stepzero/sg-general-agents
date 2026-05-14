@@ -252,5 +252,129 @@
     "solutions": [],
     "patterns": [],
     "gaps": []
+  },
+  "cecg": {
+    "name": "Catholic Education Canberra and Goulburn",
+    "generated_date": "2026-03-26",
+    "solutions": [
+      {
+        "org_name": "Catholic Schools Parramatta Diocese (CSPD)",
+        "relationship": "strategic_mirror",
+        "pain_addressed": "Inconsistent student literacy and numeracy outcomes; teachers lacking structured curriculum resources and evidence-based instructional frameworks",
+        "solution": "Uplift programme — system-wide explicit instruction rollout modelled directly on CECG's Catalyst. Launched August 2025. Patrick Ellis (former CECG Catalyst programme lead) appointed EGM Learning Outcomes to lead it. Uses same partners: Ochre Education (curriculum resources) and Shaping Minds (instructional coaching).",
+        "detail": "Uplift was designed after Patrick Ellis transferred from CECG to CSPD. The programme replicates Catalyst's three-pillar structure (curriculum resources, High Impact Teaching Practice, evidence-based assessment). CSPD serves ~40,000 students across ~80 schools in western Sydney — a denser urban context than CECG's ACT/regional NSW footprint.",
+        "outcome": "unknown",
+        "source": "https://www.parra.catholic.edu.au/; https://catholicoutlook.org/detailed-earnest-and-ambitious-catholic-schools-announces-new-strategy/",
+        "implication": "CECG is the originator of this model. CSPD's adoption is a validation signal, not a learning opportunity. CECG should position Catalyst as the national template — and track CSPD's Uplift results to demonstrate that the model transfers across different demographics. Any vendor selling tools to support Uplift at CSPD should approach CECG first as the five-year-ahead version of the same deployment."
+      },
+      {
+        "org_name": "Melbourne Archdiocese Catholic Schools (MACS)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Inconsistent instructional quality and literacy/numeracy outcomes across a large school network; need for a system-wide pedagogical framework based on the Science of Learning",
+        "solution": "Vision for Instruction (VFI) — launched February 2024, system-wide adoption of explicit instruction for literacy, mathematics, and writing across all 291 primary schools. Accompanied by curriculum resources and teacher professional development.",
+        "detail": "VFI is MACS's analogue to Catalyst, launched 4 years after CECG. System-directed rollout across ~300 schools. Uses Ochre Education mathematics units and Spelling Mastery (same as CECG). Accompanied by Vision for Engagement (screen time, wellbeing) and Vision for Leadership (school leadership capability). Chief of Education Shauna-Maree Sykes publicly attributed NAPLAN numeracy improvements to VFI.",
+        "outcome": "successful",
+        "source": "https://www.macs.vic.edu.au/News-Events/Media-Releases/2024/Vision-for-Instruction.aspx; https://cathnews.com/2025/09/18/new-way-of-teaching-sees-boost-in-naplan-results/",
+        "implication": "MACS's early 2024-2025 NAPLAN data (up to 46 percentage point improvements at early adopter schools; 13.6% increase in numeracy proficiency, 17.6% increase in reading proficiency at one reported school) provides a cross-system benchmark for what explicit instruction delivers. CECG already has 5 years of this data — MACS's results reinforce the case. MACS's companion Vision for Leadership framework suggests CECG should assess whether school leadership capability is a constraint on Catalyst deepening — a potential coaching or leadership development opportunity."
+      },
+      {
+        "org_name": "Melbourne Archdiocese Catholic Schools (MACS)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Fragmented HR, finance, and operations systems unable to support a large multi-site school network; no unified digital infrastructure to enable AI adoption or centralised reporting",
+        "solution": "SAP S/4HANA Cloud (finance/operations) + SAP SuccessFactors (HR/people) ERP transformation delivered by Infosys across all ~300 schools. Announced July 2025.",
+        "detail": "Consolidates HR, finance, and operations onto a single cloud platform. Explicit AI-readiness framing: 'paves the way to adopt generative AI applications geared towards educational outcomes.' Role-based access for all staff; streamlined communication and team communities. Wave-based rollout to allow school-level adoption.",
+        "outcome": "unknown",
+        "source": "https://www.infosys.com/newsroom/press-releases/2025/collaborates-drive-network-wide-digital-transformation.html",
+        "implication": "CECG's 2026 fee communications cite ICT as a rising cost driver, and the new ED is emphasising system-wide procurement efficiencies. CECG's current technology footprint (Microsoft Teams for Virtual Learning, Catalyst digital resource library) is modest relative to its peer systems. If CECG lacks unified back-office infrastructure, any AI adoption (signalled as a 2025 System Day discussion) will be constrained. The MACS investment signals that at CECG's scale, back-office modernisation is a prerequisite for AI readiness — a potential gap worth assessing."
+      },
+      {
+        "org_name": "Brisbane Catholic Education (BCE)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Teacher workload and time-on-task: educators spending excessive hours on administrative, planning, and marking tasks instead of teaching",
+        "solution": "Microsoft 365 Copilot deployment to 12,500 educators and support staff — largest K-12 generative AI deployment globally. Phased Jan 2025 to 2026. Grounded in a custom Catholic values chatbot (Copilot Studio).",
+        "detail": "Trial at St Francis College Crestmead showed average 9.3 hours saved per teacher per week. BCE developed a custom Copilot grounded in Catholic values for system-wide deployment across 146 schools. This is the first sector-wide generative AI deployment in a non-government school system in QLD/NSW.",
+        "outcome": "successful",
+        "source": "https://news.microsoft.com/en-au/features/brisbane-catholic-education-to-deploy-microsoft-365-copilot-to-12500-educators-and-support-staff-in-largest-rollout-for-k-12-globally/; https://cathnews.com/2025/08/06/ai-helps-boost-naplan-results-in-brisbane-catholic-schools/",
+        "implication": "CECG's Catalyst already saves teachers up to 6 hours/week via structured curriculum resources — a comparable time-saving proposition. BCE's Copilot adds another 9.3 hours/week on top of this. CECG has discussed AI in classrooms at the 2025 System Day but has not announced deployment. The BCE model suggests that the next productivity lever for CECG is generative AI tooling layered on top of the Catalyst resource library — not instead of it. Relevant to any vendor proposing AI tools to CECG."
+      },
+      {
+        "org_name": "Brisbane Catholic Education (BCE)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Demonstrating measurable academic impact of AI-assisted teaching to school leadership and community",
+        "solution": "AI-assisted teaching pilot across 8 schools — combining explicit instruction methodology with AI tools. Measured via NAPLAN scores before and after.",
+        "detail": "8 pilot schools grew NAPLAN scores from 490 to 555 points (2023 to 2024). Year 3 improved 7.22% while the Queensland state average fell 0.57%. Results published publicly and cited by CathNews. BCE Education Strategy 2025-2027 explicitly frames technology and evidence-based teaching as dual pillars.",
+        "outcome": "successful",
+        "source": "https://cathnews.com/2025/08/06/ai-helps-boost-naplan-results-in-brisbane-catholic-schools/",
+        "implication": "CECG's NAPLAN improvement story (largest positive shift of any large diocese 2019-2022) was achieved through pedagogy alone. The BCE evidence suggests that AI tools layered on top of evidence-based teaching can produce incremental NAPLAN gains even against adverse state trends. This provides a data-driven rationale for CECG's new ED David de Carvalho (former ACARA CEO, highly data-oriented) to invest in AI pedagogy tools — with BCE as the benchmark for what returns to expect."
+      },
+      {
+        "org_name": "Catholic Education Western Australia (CEWA)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Fragmented school IT service management and asset tracking across 164 geographically dispersed schools; low adoption of ITSM by staff",
+        "solution": "Freshservice ITSM platform replacing legacy email-based system. Unified asset tracking via Discovery Agent + Jamf integration. Self-service Knowledge Base for onboarding/offboarding. Team-specific dashboards tracking SLAs across all schools.",
+        "detail": "After restructuring under corporate governance in 2020, CEWA needed to centrally manage 164 schools. Workflow Automator reduced manual ticket management; Freshservice provided Discovery Agent and Jamf integration for asset lifecycle visibility across 75,000+ students. Member schools requested the same platform for their own localised IT needs.",
+        "outcome": "successful",
+        "source": "https://www.freshworks.com/customers/stories/cewa/",
+        "implication": "CECG incorporated as CACGEL in January 2025 — new corporate governance structure. ICT is cited as a rising cost driver in CECG's 2026 fee communications. If CECG's ITSM infrastructure is still managed school-by-school rather than centrally, the CEWA model offers a directly applicable solution path. Relevant for any vendor proposing centralised IT service management or asset tracking to CECG."
+      },
+      {
+        "org_name": "Catholic Education Western Australia (CEWA)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Inability to use student performance, attendance, and wellbeing data in real time to inform school leadership decisions and benchmark against system averages",
+        "solution": "LEADing Lights data platform — integrated Microsoft cloud ecosystem (Teams, Class Notebook, Office 365, Azure/Claned) enabling real-time analytics for principals: student performance, attendance, graduation rates, and wellbeing benchmarked against school, system, and NAPLAN averages.",
+        "detail": "Platform described as 'end to end digital platform for all Catholic schools in WA, encompassing communication, collaboration, finance, administration, data storage, advanced analytics, reporting and more.' Principals can investigate impact of new initiatives via live analytics. 90,000+ Microsoft 365 users across 164 schools; 1+ PB of data.",
+        "outcome": "mixed",
+        "source": "https://news.microsoft.com/en-au/features/cloud-technologies-transform-teaching-spur-self-directed-learning-boost-impact-catholic-education-western-australia/; https://leadinglights.cewa.edu.au/vision-2/",
+        "implication": "CECG's Catalyst uses DIBELS, PAT, and Phonics Screening Check for evidence-based assessment — but the data infrastructure connecting these assessments to principal decision-making is not publicly described. CEWA's LEADing Lights demonstrates what a mature Catholic system analytics layer looks like. The new ED David de Carvalho (former ACARA CEO) is deeply quantitative — a unified analytics dashboard is consistent with his stated emphasis on measurable outcomes. Potential gap for a data/analytics vendor."
+      },
+      {
+        "org_name": "Catholic Education Tasmania (CET)",
+        "relationship": "strategic_mirror",
+        "pain_addressed": "Inconsistent literacy and numeracy outcomes; teachers lacking evidence-based instructional frameworks in a smaller, geographically dispersed system",
+        "solution": "Insight into Learning programme — system-wide explicit instruction and Science of Reading/Learning implementation, modelled on CECG's Catalyst after a 2022 delegation visit.",
+        "detail": "CET leaders visited CECG schools in 2022 and returned to build Insight into Learning on the same foundations. PAT assessment data (2022-2023): schools implementing Insight outperformed non-participating schools by up to 11% across mathematics, reading, spelling, and vocabulary. All-System Day 2025 continued professional learning investment. Co-hosted National Science of Learning Summit with CECG.",
+        "outcome": "successful",
+        "source": "https://insight.catholic.tas.edu.au/news/insight-early-success/; https://catholic.tas.edu.au/newsletter/article/1365; https://insight.catholic.tas.edu.au/news/all-system-day-delivers-global-expertise-to-enhance-learning-for-2025/",
+        "implication": "CET's adoption of Catalyst as a model is the second direct validation signal (after CSPD). CECG now has two systems (CSPD and CET) plus 30 NZ school leaders who visited in 2025 all referencing Catalyst as the model. This positions CECG as a genuine national thought-leader and exportable model — not just a high-performing local system. Any knowledge-sharing, licensing, or consulting commercialisation of the Catalyst framework could be a revenue opportunity."
+      },
+      {
+        "org_name": "Catholic Schools Broken Bay (CSBB)",
+        "relationship": "structural_lookalike",
+        "pain_addressed": "Insufficient school capacity in highest-growth corridors; ageing facilities unable to support growing enrolments and modern pedagogical approaches",
+        "solution": "$300 million capital investment programme — significant upgrades to multiple schools across Central Coast and northern Sydney; precinct model restructuring around K-12 pathway hubs.",
+        "detail": "CSBB is the fastest-growing Catholic school system in NSW. The 'Shaping Tomorrow, Together in Faith' strategy (July 2025) establishes six geographic precincts with K-12 pathways, expanded ECE, modern learning spaces, and career pathway linkages. New base campus for Eileen O'Connor Catholic School; master planning for Cathedral College Wahroonga K-12 hub.",
+        "outcome": "unknown",
+        "source": "https://csbb.catholic.edu.au/news/catholic-schools-broken-bay-redefines-education-across-diocese; https://cathnews.com/2025/08/13/catholic-schools-broken-bay-reveal-changes-for-an-extraordinary-future/",
+        "implication": "CECG faces a structural variant of the same challenge in different corridors: growth in Gungahlin/Molonglo Valley, decline in Tuggeranong. CSBB's precinct model (hub schools with K-12 pathways) offers a structural template for CECG's own geographic planning. CECG's specific threat is Stromlo Forest Anglican College opening in Molonglo Valley in 2026 — the response may require a comparable capital commitment in that corridor. Relevant for any vendor proposing facilities planning, master planning, or capacity modelling services."
+      }
+    ],
+    "patterns": [
+      {
+        "label": "System-wide explicit instruction is the new Catholic sector standard",
+        "detail": "Four of six lookalikes (MACS, CET, CSPD, and via CECG itself) have now implemented or are implementing system-wide explicit instruction programmes. MACS (VFI, 2024), CET (Insight into Learning, ~2022-2023), and CSPD (Uplift, 2025) all launched after observing or drawing on CECG's Catalyst (2020). CECG is the originator. The question for CECG is no longer whether to do explicit instruction — it is how to deepen and extend it, and what the next frontier is (AI tools, secondary extension, coaching infrastructure).",
+        "count": 4
+      },
+      {
+        "label": "Generative AI for teacher productivity is the emerging next wave",
+        "detail": "BCE has deployed Microsoft 365 Copilot to 12,500 educators (largest K-12 deployment globally) with 9.3 hours/week saved per teacher and measurable NAPLAN gains in AI-supported schools. CECG has discussed AI at the 2025 System Day but has not announced deployment. MACS's ERP transformation explicitly frames AI readiness as a goal. The gap between CECG and the leading Catholic systems on AI is approximately 1-2 years.",
+        "count": 2
+      },
+      {
+        "label": "Data infrastructure investment follows pedagogy reform",
+        "detail": "CEWA (LEADing Lights), MACS (SAP ERP + analytics), and the CSNSW joint Azure Databricks/Power BI platform for NSW dioceses all represent the second-wave investment after pedagogy: building the data infrastructure to measure, benchmark, and accelerate the pedagogical transformation. CECG's Catalyst evidence base (Deloitte evaluation, DIBELS, PAT) is strong in terms of methodology but the technology platform enabling real-time analytics for 59 schools is not publicly described.",
+        "count": 3
+      },
+      {
+        "label": "Capital investment in growth corridors is a competitive necessity",
+        "detail": "CSBB is investing $300 million in facilities to defend and grow enrolments in NSW growth corridors. In the ACT, CECG's threat is more targeted: Stromlo Forest Anglican College opening in Molonglo Valley in 2026. Growth corridor competition requires proactive capital response — not just pedagogical differentiation.",
+        "count": 1
+      }
+    ],
+    "gaps": [
+      "No peer has publicly described a robust approach to allied health (speech therapy, OT) access for regional/remote students — a documented CECG challenge. This remains an unresolved gap across the sector.",
+      "No Catholic systemic peer has published a detailed model for Virtual Learning that matches CECG's Virtual Learning Collaborative (Year 11-12 access to 12 senior courses via Teams for rural/regional students). CECG may be a leader in this space but limited public benchmarking data is available.",
+      "Teacher salary competition with government schools is a documented CECG challenge but no Catholic system has published a structural solution beyond incremental pay increases and non-salary attraction (professional learning, permanency). This remains an unresolved sector-wide problem.",
+      "Transition from Catholic primary to Catholic secondary (Year 6 to Year 7) in the ACT appears to be a leakage point to independent schools (CGS, Radford, CGGS) for aspirational families — no peer has published a solution to this specific transition dynamic."
+    ]
   }
 }

@@ -5,6 +5,7 @@ const ORG_GROUPS = [
     label: 'Operators',
     description: 'Multi-site education providers',
     orgs: [
+      { id: 'cecg', name: 'CECG' },
       { id: 'cspd', name: 'CSPD' },
       { id: 'ipeople', name: 'iPeople' },
       { id: 'phinma', name: 'PHINMA' },

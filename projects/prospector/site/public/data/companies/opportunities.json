@@ -27,10 +27,26 @@
           "web-research.json (Patrick Ellis hire, Uplift launch August 2025)"
         ],
         "ai_capabilities": [
-          { "category": "Generation", "capability": "Text Generation", "application": "Authoring structured lesson plans and assessment items aligned to the Australian Curriculum and Uplift explicit instruction framework" },
-          { "category": "Extraction & Structuring", "capability": "Summarization & Condensation", "application": "Distilling CECG's 5,400+ Catalyst resources into adaptation templates calibrated to CSPD's school context and student demographics" },
-          { "category": "Search & Retrieval", "capability": "Retrieval-Augmented Generation (RAG)", "application": "Enabling teachers to query the resource library in natural language and receive Uplift-aligned lesson materials grounded in the canonical resource set" },
-          { "category": "Extraction & Structuring", "capability": "Data Transformation & Structuring", "application": "Mapping existing Canvas assessment data to a pre-Uplift NAPLAN baseline schema for the external evaluation protocol" }
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Authoring structured lesson plans and assessment items aligned to the Australian Curriculum and Uplift explicit instruction framework"
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Summarization & Condensation",
+            "application": "Distilling CECG's 5,400+ Catalyst resources into adaptation templates calibrated to CSPD's school context and student demographics"
+          },
+          {
+            "category": "Search & Retrieval",
+            "capability": "Retrieval-Augmented Generation (RAG)",
+            "application": "Enabling teachers to query the resource library in natural language and receive Uplift-aligned lesson materials grounded in the canonical resource set"
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Data Transformation & Structuring",
+            "application": "Mapping existing Canvas assessment data to a pre-Uplift NAPLAN baseline schema for the external evaluation protocol"
+          }
         ]
       },
       {
@@ -58,9 +74,21 @@
           "CSNSW Annual Report 2024 p.30 p.73 (teacher workforce)"
         ],
         "ai_capabilities": [
-          { "category": "Generation", "capability": "Text Generation", "application": "Generating lesson plan adaptations for the Uplift framework from a teacher's existing materials — reducing planning time from hours to minutes" },
-          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating administrative tasks such as report drafting, parent communication templates, and assessment result summaries within the M365 governance boundary" },
-          { "category": "Search & Retrieval", "capability": "Retrieval-Augmented Generation (RAG)", "application": "Grounding Copilot responses in CSPD-approved curriculum and Uplift resources so teachers receive policy-safe, contextually accurate answers" }
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Generating lesson plan adaptations for the Uplift framework from a teacher's existing materials — reducing planning time from hours to minutes"
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Task Automation Agents",
+            "application": "Automating administrative tasks such as report drafting, parent communication templates, and assessment result summaries within the M365 governance boundary"
+          },
+          {
+            "category": "Search & Retrieval",
+            "capability": "Retrieval-Augmented Generation (RAG)",
+            "application": "Grounding Copilot responses in CSPD-approved curriculum and Uplift resources so teachers receive policy-safe, contextually accurate answers"
+          }
         ]
       },
       {
@@ -86,9 +114,21 @@
           "signals.json (internal: Canvas LMS rollout)"
         ],
         "ai_capabilities": [
-          { "category": "Extraction & Structuring", "capability": "Data Transformation & Structuring", "application": "Transforming raw Canvas formative assessment exports into a normalised schema compatible with the CSNSW Azure Databricks platform for school-level aggregation" },
-          { "category": "Prediction & Forecasting", "capability": "Propensity & Behavioral Modeling", "application": "Identifying which schools are at risk of Uplift under-adoption based on assessment submission patterns and proficiency progression rates" },
-          { "category": "Generation", "capability": "Text Generation", "application": "Auto-generating principal narrative summaries from dashboard data — translating statistical trends into plain-language school improvement observations" }
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Data Transformation & Structuring",
+            "application": "Transforming raw Canvas formative assessment exports into a normalised schema compatible with the CSNSW Azure Databricks platform for school-level aggregation"
+          },
+          {
+            "category": "Prediction & Forecasting",
+            "capability": "Propensity & Behavioral Modeling",
+            "application": "Identifying which schools are at risk of Uplift under-adoption based on assessment submission patterns and proficiency progression rates"
+          },
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Auto-generating principal narrative summaries from dashboard data — translating statistical trends into plain-language school improvement observations"
+          }
         ]
       },
       {
@@ -115,9 +155,21 @@
           "profile.json (leadership: Gerard Giesekam EGM Finance)"
         ],
         "ai_capabilities": [
-          { "category": "Extraction & Structuring", "capability": "Entity & Attribute Extraction", "application": "Extracting and reconciling employee, payroll, and cost-centre data from fragmented HR and finance platforms into a unified diagnostic data model" },
-          { "category": "Classification & Detection", "capability": "Anomaly & Fraud Detection", "application": "Flagging duplicate or inconsistent records across disconnected school-level systems during the back-office diagnostic audit" },
-          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating routine finance and HR reporting workflows — such as payroll reconciliation and compliance submissions — currently handled manually across 80 schools" }
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Entity & Attribute Extraction",
+            "application": "Extracting and reconciling employee, payroll, and cost-centre data from fragmented HR and finance platforms into a unified diagnostic data model"
+          },
+          {
+            "category": "Classification & Detection",
+            "capability": "Anomaly & Fraud Detection",
+            "application": "Flagging duplicate or inconsistent records across disconnected school-level systems during the back-office diagnostic audit"
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Task Automation Agents",
+            "application": "Automating routine finance and HR reporting workflows — such as payroll reconciliation and compliance submissions — currently handled manually across 80 schools"
+          }
         ]
       },
       {
@@ -143,9 +195,21 @@
           "signals.json (ext-risk-5: online assessment cost recovery, EAL/D diagnostic burden)"
         ],
         "ai_capabilities": [
-          { "category": "Generation", "capability": "Text Generation", "application": "Generating EAL/D-adapted versions of Uplift lesson materials — adjusting vocabulary, scaffolding, and worked examples for specific language community profiles" },
-          { "category": "Classification & Detection", "capability": "Text Classification", "application": "Classifying students' written assessment responses to detect EAL/D-specific language patterns that teachers can use to differentiate instruction" },
-          { "category": "Search & Retrieval", "capability": "Recommendation Systems", "application": "Surfacing contextually appropriate Uplift resources to teachers based on the language background profile of their specific class cohort" }
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Generating EAL/D-adapted versions of Uplift lesson materials — adjusting vocabulary, scaffolding, and worked examples for specific language community profiles"
+          },
+          {
+            "category": "Classification & Detection",
+            "capability": "Text Classification",
+            "application": "Classifying students' written assessment responses to detect EAL/D-specific language patterns that teachers can use to differentiate instruction"
+          },
+          {
+            "category": "Search & Retrieval",
+            "capability": "Recommendation Systems",
+            "application": "Surfacing contextually appropriate Uplift resources to teachers based on the language background profile of their specific class cohort"
+          }
         ]
       },
       {
@@ -170,9 +234,21 @@
           "scorecard.json (Student Wellbeing & Voice TTFM — outcomes not published)"
         ],
         "ai_capabilities": [
-          { "category": "Generation", "capability": "Text Generation", "application": "Generating personalised narrative progress summaries for parents from Canvas assessment data — going beyond grades to describe a child's learning trajectory in plain language" },
-          { "category": "Extraction & Structuring", "capability": "Summarization & Condensation", "application": "Condensing a term's worth of Canvas formative assessment records into a parent-ready overview aligned to Uplift framework milestones" },
-          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating report generation and distribution workflows so teachers approve rather than write each report, reducing preparation time per student" }
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Generating personalised narrative progress summaries for parents from Canvas assessment data — going beyond grades to describe a child's learning trajectory in plain language"
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Summarization & Condensation",
+            "application": "Condensing a term's worth of Canvas formative assessment records into a parent-ready overview aligned to Uplift framework milestones"
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Task Automation Agents",
+            "application": "Automating report generation and distribution workflows so teachers approve rather than write each report, reducing preparation time per student"
+          }
         ]
       },
       {
@@ -197,9 +273,21 @@
           "competitors.json (SCS school reporting — communication as competitive variable)"
         ],
         "ai_capabilities": [
-          { "category": "Extraction & Structuring", "capability": "Summarization & Condensation", "application": "Synthesising principal quarterly self-assessments into a system-level implementation health report for ELT review — surfacing patterns across 80 schools" },
-          { "category": "Classification & Detection", "capability": "Text Classification", "application": "Categorising and prioritising staff feedback themes from the Grace intranet and quarterly check-ins to identify emerging implementation blockers" },
-          { "category": "Generation", "capability": "Text Generation", "application": "Drafting system leader communications, principal briefings, and community of practice agendas tailored to current Uplift implementation milestones" }
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Summarization & Condensation",
+            "application": "Synthesising principal quarterly self-assessments into a system-level implementation health report for ELT review — surfacing patterns across 80 schools"
+          },
+          {
+            "category": "Classification & Detection",
+            "capability": "Text Classification",
+            "application": "Categorising and prioritising staff feedback themes from the Grace intranet and quarterly check-ins to identify emerging implementation blockers"
+          },
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Drafting system leader communications, principal briefings, and community of practice agendas tailored to current Uplift implementation milestones"
+          }
         ]
       },
       {
@@ -225,9 +313,21 @@
           "CSNSW Annual Report 2024 p.98 (CBGA Schofields grant)"
         ],
         "ai_capabilities": [
-          { "category": "Autonomous Agents & Orchestration", "capability": "Task Automation Agents", "application": "Automating the waitlist communication sequence — status updates, construction milestone notifications, and priority confirmation letters — without manual intervention from enrolment officers" },
-          { "category": "Generation", "capability": "Text Generation", "application": "Generating personalised re-engagement messages for waitlisted families timed to the Westmead campus opening, incorporating family-specific waitlist tenure and preferred school" },
-          { "category": "Prediction & Forecasting", "capability": "Propensity & Behavioral Modeling", "application": "Scoring waitlisted families by likelihood of re-engagement based on tenure, communication response patterns, and proximity to new capacity sites" }
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Task Automation Agents",
+            "application": "Automating the waitlist communication sequence — status updates, construction milestone notifications, and priority confirmation letters — without manual intervention from enrolment officers"
+          },
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Generating personalised re-engagement messages for waitlisted families timed to the Westmead campus opening, incorporating family-specific waitlist tenure and preferred school"
+          },
+          {
+            "category": "Prediction & Forecasting",
+            "capability": "Propensity & Behavioral Modeling",
+            "application": "Scoring waitlisted families by likelihood of re-engagement based on tenure, communication response patterns, and proximity to new capacity sites"
+          }
         ]
       }
     ]
@@ -259,5 +359,349 @@
   "wise": {
     "name": "WISE",
     "opportunities": []
+  },
+  "cecg": {
+    "name": "Catholic Education Canberra and Goulburn",
+    "generated_date": "2026-03-26",
+    "framing_note": "CECG is an evidence-leader. These opportunities are framed for what comes AFTER Catalyst Phase 1 — deepening, extending, and compounding what CECG has already built. No opportunity here positions CECG as lacking basic practices. The question throughout is: what does the next frontier look like for the system that wrote the book?",
+    "opportunities": [
+      {
+        "id": "cecg-opp-01",
+        "title": "Generative AI Teacher Productivity Layer Grounded in the Catalyst Framework",
+        "pain_point": "CECG discussed AI in classrooms at the 2025 System Day but has not announced a platform, policy, or deployment. The signals file classifies AI readiness as 'watch' — CECG is 1–2 years behind peer leaders. Brisbane Catholic Education has already deployed Microsoft 365 Copilot to 12,500 educators (the largest K-12 Copilot rollout globally), measuring 9.3 hours saved per teacher per week at a pilot school and growing NAPLAN scores from 490 to 555 (2023–2024) in AI-assisted schools while the state average fell 0.57%. CECG's ICT investment is rising (cited as a 2026 fee driver) but without a named strategic direction. Critically, CECG already saves teachers up to 6 hours per week through structured curriculum resources — a generative AI layer is the logical next compounding productivity step, not a replacement for Catalyst's structured approach.",
+        "market_evidence": "BCE deployed M365 Copilot system-wide with measured outcomes: 9.3 hours/week saved per teacher (St Francis College trial), NAPLAN Year 3 up 7.22% vs state average decline of 0.57% in AI-assisted schools (CathNews, August 2025). BCE built a custom Copilot Studio chatbot grounded in Catholic values — demonstrating values-aligned AI deployment is feasible. MACS's July 2025 SAP ERP investment explicitly frames AI readiness as a goal ('paves the way to adopt generative AI applications geared towards educational outcomes'). CEWA has 90,000+ Microsoft 365 users across 164 schools as its AI-ready infrastructure foundation. No Catholic system of CECG's scale has yet failed with this approach — the question is sequencing, not risk.",
+        "opportunity": "Design and pilot a teacher-facing AI productivity programme for CECG that is explicitly positioned as a Catalyst extension, not a departure from it. Phase 1: AI tool selection and governance framework scoped to teacher-side tasks (lesson planning adaptation within the Catalyst HITP framework, formative assessment feedback drafting, communication and reporting). Phase 2: pilot cohort of 3–5 schools measuring hours saved, teacher sentiment, and any assessment signal. Phase 3: system-wide rollout with Catholic-values governance (modelled on BCE's Copilot Studio approach). The framing to CECG: this compounds the 6 hours/week Catalyst already saves — the two are additive, not competing. The new ED's background at ACARA (data systems, national assessment) and emphasis on procurement efficiency makes this a natural fit for his priorities.",
+        "why_now": "BCE's results were published publicly in August 2025 — this is now the benchmark every Australian Catholic system is measured against. CECG's 2025 System Day explicitly discussed 'where technology and AI fit into modern classrooms' (signals.json), signalling internal readiness for a proposal. New ED David de Carvalho commenced mid-2025 with fresh strategic priorities and a background at ACARA (national data systems) — the first 12–18 months is the window to influence his technology investment agenda before ICT budget cycles lock in. MACS's ERP transformation (announced July 2025) signals peers are accelerating AI-readiness investment now.",
+        "who_cares": {
+          "buyer": "David de Carvalho, Executive Director — new strategic mandate, emphasis on procurement efficiency and measurable outcomes; Patrick Ellis, Education Lead — Catalyst programme custodian, needs AI to deepen Catalyst not compete with it",
+          "user": "All 1,986 FTE teaching staff, primarily class teachers already trained in HITP who would use AI tools within the Catalyst instructional framework"
+        },
+        "confidence": "high",
+        "confidence_reasoning": "Pain confirmed by multiple independent sources: signals.json (AI watch status), scorecard.json (AI readiness watch), profile.json (ICT rising cost without strategic direction), market-solutions.json (CECG explicitly identified as 1–2 years behind BCE). BCE has published quantitative outcomes in a directly comparable Australian Catholic school context. Timing signals are hard-edged: 2025 System Day discussion, new ED in post, BCE benchmark now public. The main gap is confirming CECG's current M365 licensing level and whether any internal AI working group has already selected a platform — not confirmed in public sources.",
+        "sources": [
+          "signals.json — technology (AI watch signal, internal ICT cost watch)",
+          "scorecard.json — technology_data (AI and emerging technology readiness, watch)",
+          "pain-points.json — cecg-tl-03 (no generative AI strategy)",
+          "market-solutions.json — BCE Copilot deployment (9.3 hrs/week, NAPLAN +7.22%)",
+          "market-solutions.json — MACS ERP AI framing (July 2025)",
+          "market-solutions.json — patterns (generative AI for teacher productivity is the emerging next wave)",
+          "lookalikes.json — BCE (Microsoft 365 Copilot, 12,500 educators)",
+          "profile.json — technology_footprint (AI discussed at System Day, no investment announced)",
+          "profile.json — strategic_priorities (de Carvalho procurement efficiency)",
+          "annual-report-extract.json — catalyst-impact.pdf p.11 (6 hrs/week teacher saving baseline)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "AI drafts lesson plan variations, formative assessment feedback, and parent communication within CECG's Catalyst HITP instructional framework — teachers edit and approve rather than write from scratch."
+          },
+          {
+            "category": "Search & Retrieval",
+            "capability": "Retrieval-Augmented Generation (RAG)",
+            "application": "AI retrieves relevant sections from the 5,400+ Ochre Education curriculum resources and synthesises a targeted answer to a teacher's planning question, grounded in CECG's own resource library rather than the open internet."
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Task Automation Agents",
+            "application": "An agent handles multi-step teacher admin workflows — pulling assessment results, formatting progress reports, and drafting communication to families — so teachers spend the recovered time on instruction rather than documentation."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-02",
+        "title": "System-Level Analytics Layer to Turn Catalyst Assessment Data into Principal Intelligence",
+        "pain_point": "CECG has built best-in-sector assessment data collection infrastructure: DIBELS, PAT-R, PAT-M, Phonics Screening Check, NAPLAN, and Annual Evidence-based Improvement Planning Meetings at 100% school participation (scorecard.json rates this 'strong'). What the scorecard does not rate as strong is the analytics delivery layer — there is no publicly described platform connecting this data to real-time principal decision-making or system-level benchmarking across 59 schools. The market-solutions file explicitly flags this: 'The technology platform enabling real-time analytics for 59 schools is not publicly described.' New ED David de Carvalho is described as 'deeply quantitative' (former ACARA CEO, led the national assessment authority) — the absence of a unified analytics platform is misaligned with his known operating style and stated data emphasis.",
+        "market_evidence": "CEWA's LEADing Lights platform integrates student performance, attendance, graduation rates, and wellbeing data benchmarked against school, system, and NAPLAN averages in real time for all principals across 164 schools — described as enabling principals to 'investigate the impact of new initiatives via live analytics' (market-solutions.json). Outcome is rated 'mixed' (platform works, cultural adoption is the harder problem). CSNSW deployed an Azure Databricks + Power BI platform serving all 11 NSW dioceses, saving 6–8 weeks annually in data reconciliation — CECG's NSW schools may already be partially connected to this infrastructure. MACS's July 2025 SAP ERP investment similarly cites unified data infrastructure as an AI-readiness prerequisite.",
+        "opportunity": "Engage CECG to design a school-improvement analytics layer above their existing assessment data collection — connecting DIBELS, PAT, and NAPLAN results to a principal-facing dashboard that benchmarks each school against system averages and flags early-warning patterns (students below expected trajectory, schools diverging from Catalyst adoption metrics). Phase 1: diagnostic audit of what data currently flows from assessment tools into what systems, and whether CECG's NSW schools participate in the CSNSW Azure Databricks platform. Phase 2: principal dashboard design — system-average benchmarks, school-vs-system comparisons, year-on-year Catalyst adoption tracking. Phase 3: ED/system-level view for central office: network-wide pattern detection, identification of which schools need coaching support, and longitudinal outcome tracking for the summative Deloitte evaluation. The pitch to de Carvalho: this is the infrastructure ACARA builds nationally — CECG can have the equivalent for its own 59 schools.",
+        "why_now": "De Carvalho commenced mid-2025 with explicitly data-oriented leadership priorities. The Deloitte formative evaluation ended March 2024 — any summative evaluation will require the infrastructure to produce clean longitudinal data. CECG is entering a Catalyst Phase 2 deepening cycle; without analytics visibility the system cannot know which schools are sustaining progress and which are regressing. The MACS and CEWA peer investments (both publicly announced in 2025) signal this is the investment wave peers are executing now.",
+        "who_cares": {
+          "buyer": "David de Carvalho, Executive Director — former ACARA CEO, will immediately recognise the national assessment infrastructure analogy; Patrick Ellis, Education Lead — needs system-level data to direct coaching resources efficiently",
+          "user": "59 school principals (primary dashboard consumers); CECG central office analytics or IT team; Deloitte (if a summative evaluation is recommissioned)"
+        },
+        "confidence": "high",
+        "confidence_reasoning": "Pain confirmed by scorecard (assessment collection strong, analytics delivery not rated), market-solutions.json (explicit flag of analytics gap and de Carvalho data orientation), and profile.json (technology/data system contracts listed as a known gap). CEWA has validated the principal analytics model at comparable scale. De Carvalho's background (ACARA CEO) is a strong a priori signal that analytics infrastructure will be a personal priority. Timing signal exists (new ED in post, Deloitte evaluation ended, need for summative evidence). The main unknown is current SIS and data infrastructure specifics — confirming those requires a discovery conversation.",
+        "sources": [
+          "scorecard.json — technology_data (data-driven improvement infrastructure, strong rating with analytics delivery gap noted)",
+          "pain-points.json — cecg-tl-04 (missing system-level analytics layer)",
+          "market-solutions.json — CEWA LEADing Lights (real-time principal analytics, outcome mixed)",
+          "market-solutions.json — patterns (data infrastructure investment follows pedagogy reform)",
+          "profile.json — gaps (technology/data system contracts not disclosed)",
+          "profile.json — known_contact (David de Carvalho — former ACARA CEO, data-oriented)",
+          "lookalikes.json — CEWA LEADing Lights and MACS SAP ERP",
+          "annual-report-extract.json — cecg-annual-report-2024.pdf p.23 (100% assessment schedule completion)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Prediction & Forecasting",
+            "capability": "Propensity & Behavioral Modeling",
+            "application": "The analytics layer models which students are at risk of falling below proficiency thresholds based on early DIBELS and PAT trajectory data, surfacing early-warning flags to principals before a student reaches crisis point."
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Data Transformation & Structuring",
+            "application": "Assessment data from DIBELS, PAT-R, PAT-M, and Phonics Screening Check — currently collected in separate systems — is normalised into a unified schema so all 59 schools can be compared on consistent dimensions in a single principal dashboard."
+          },
+          {
+            "category": "Search & Retrieval",
+            "capability": "Semantic Search",
+            "application": "Principals query the analytics platform in natural language ('How does my Year 2 reading performance compare to the system average this term?') and receive accurate answers drawn from the aggregated assessment data."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-03",
+        "title": "Catalyst Sustainability Infrastructure — Structured Onboarding and Coaching at Scale for New Teachers",
+        "pain_point": "Catalyst's Phase 1 adoption metrics are exceptional: 88.6% of 1,500+ teachers use HITP daily, 92.4% believe it merits continued focus (2025 System Day survey). But the same survey reveals 16.7% would not sustain HITP use beyond formal requirements — one in six teachers is compliance-driven, not intrinsically motivated. With 90%+ retention implying ~200 teacher departures per year, approximately 200 new teachers must be inducted into Catalyst annually without a publicly described structured onboarding pathway. Patrick Ellis — the Catalyst programme architect — has moved to CSPD. The Deloitte evaluation is formative only; no summative evidence yet proves gains are self-sustaining without continued central resourcing. This is not a problem unique to CECG: every system that has achieved strong initial adoption faces the same sustainability inflection.",
+        "market_evidence": "CSPD's Uplift programme (launched August 2025, modelled on Catalyst by Patrick Ellis) faces an earlier version of this exact problem — no published onboarding pathway for new staff has been confirmed. MACS's Vision for Instruction (launched 2024, 4 years behind Catalyst) is building its induction infrastructure now — NAPLAN early results show improvements at adopter schools but MACS has not yet published any teacher onboarding or sustainability model. Catholic Education Tasmania's Insight into Learning programme (PAT data showing 11% outperformance vs non-participating schools) has sustained two years post-adoption, providing early evidence that the model can hold. The market has not yet produced a purpose-built AI-assisted HITP coaching tool — CECG is positioned to build the reference implementation.",
+        "opportunity": "Design an AI-assisted teacher onboarding and coaching system for Catalyst sustainability — specifically targeting: (1) new teacher induction into HITP (replacing the informal mentoring that currently scales poorly), (2) ongoing coaching nudges for the 16.7% who are compliance-driven rather than intrinsically motivated, and (3) differentiated support for rural Goulburn diocese teachers who cannot easily access in-person coaching from Shaping Minds. Deliverables: a structured HITP digital learning pathway (micro-credential format, mapped to CECG's own HITP standards); an AI coaching assistant that gives teachers in-the-moment feedback on lesson structure aligned to Catalyst principles; an analytics view tracking individual teacher adoption trajectories over time. Framing: this is not remediation — it is institutionalising the programme so Catalyst can survive any individual departure, including the new ED, and scale to any new school that joins the system.",
+        "why_now": "Patrick Ellis's departure to CSPD is the most visible manifestation of the key-person risk (signals.json, int-r2). The concurrent ED transition (Fox to Betts to de Carvalho) removed the second named champion. CECG is at the exact moment — high adoption, institutional memory partially dispersed — where sustainability infrastructure either gets built or the programme begins to regress. De Carvalho's faith-formation framing of Catalyst (rather than pure outcomes data) may actually accelerate this: a coaching system aligned to the 'Pilgrims of Hope' and transcendentals framing of the 2025 System Day is consistent with his stated priorities.",
+        "who_cares": {
+          "buyer": "Patrick Ellis, Education Lead — directly accountable for Catalyst continuity and the most likely internal champion post-Fox; David de Carvalho, Executive Director — programme sustainability is a governance and risk question for the new board structure",
+          "user": "New teachers joining CECG each year (~200 per annum based on 10% attrition of 1,986 FTE); the 16.7% of existing teachers who are compliance-driven; Shaping Minds coaches (as a tool complement, not replacement)"
+        },
+        "confidence": "high",
+        "confidence_reasoning": "Pain confirmed by multiple independent sources: the 16.7% compliance-driver figure from the 2025 System Day survey itself, the Deloitte formative evaluation (summative pending), the documented Patrick Ellis departure, and the annual attrition mathematics (~200 teachers/year requiring induction). The pain is CECG-specific and data-confirmed, not inferred. No peer has published a purpose-built AI solution to this exact problem — which positions this as a first-mover opportunity rather than a catch-up play. The framing aligns with both the new ED's governance priorities and the Education Lead's programme stewardship responsibilities.",
+        "sources": [
+          "pain-points.json — cecg-tl-01 (Catalyst sustainability at depth)",
+          "web-research.json — catalyst.cg.catholic.edu.au 2025 System Day (88.6% daily, 16.7% compliance-driven)",
+          "annual-report-extract.json — catalyst-deloitte-evaluation.pdf (formative evaluation, summative pending)",
+          "profile.json — leadership_team (Patrick Ellis — Education Lead, departed to CSPD)",
+          "signals.json — int-r2 (Patrick Ellis key person risk, score 0.40)",
+          "signals.json — internal (teacher permanency, 90%+ retention, attrition calculation)",
+          "annual-report-extract.json — cecg-annual-report-2024.pdf p.25 (staffing shortages, CRT-as-FTE)",
+          "lookalikes.json — CET (Insight into Learning — 2-year sustainability evidence)",
+          "market-solutions.json — CET (PAT 11% outperformance, outcome successful)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Conversational Agents",
+            "application": "A conversational coaching agent walks new teachers through HITP lesson design step by step, answering questions about Catalyst principles and offering real-time feedback on their lesson structure — available 24/7 without requiring a Shaping Minds visit."
+          },
+          {
+            "category": "Prediction & Forecasting",
+            "capability": "Propensity & Behavioral Modeling",
+            "application": "The system identifies teachers showing early compliance-driven adoption patterns (using HITP only when observed, not consistently) and flags them to the Education Lead for targeted coaching before disengagement becomes entrenched."
+          },
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "The onboarding pathway generates personalised HITP practice scenarios for each new teacher based on their year level, subject domain, and school context — ensuring rural Goulburn diocese teachers receive content as relevant as ACT metro teachers."
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Summarization & Condensation",
+            "application": "The system synthesises each teacher's coaching interaction history and assessment progression into a concise quarterly coaching summary for the Education Lead, replacing manual tracking across hundreds of individual teacher journeys."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-04",
+        "title": "Catalyst Phase 2 — Extending the Evidence-Based Framework to Secondary and Writing Domains",
+        "pain_point": "Catalyst's validated outcomes are concentrated in primary literacy (K–6 reading: DIBELS, Phonics Screening Check, proficient readers 75% vs 66% national) and early mathematics (K–6 Mathematics curriculum resources, PAT-M). There is no public evidence of a validated Catalyst framework for secondary English or Mathematics, for writing as a distinct domain (separate from reading), or for STEM. The 2025 System Day featured Natalie Wexler (a writing instruction specialist), signalling internal awareness of the writing gap — but no programme has been announced. CECG's secondary schools (Year 7–12 colleges) generate the highest-value family decisions, are the site of the Year 6–7 transition leakage to independent schools, and are the level where Canberra Grammar, CGGS (IB Diploma), and Radford directly compete.",
+        "market_evidence": "MACS's Vision for Instruction (2024) focused on primary literacy and mathematics — the same Phase 1 scope as Catalyst — and published early NAPLAN results. MACS has not yet published a secondary extension or writing framework, meaning no peer has cracked this problem at scale. CECG's invitation of Natalie Wexler (whose Knowledge in Colour framework addresses writing as knowledge-building) for a system workshop in November 2025 (co-hosted with Think Forward Educators) is the closest available signal of where CECG is looking for Phase 2. BCE's AI-assisted teaching pilot (490 to 555 NAPLAN points at pilot schools) spanned primary years — no secondary extension data published. The sector gap is confirmed: no Australian Catholic system has published a secondary or writing extension to an explicit instruction primary framework.",
+        "opportunity": "Partner with CECG to design the Catalyst Phase 2 scope — focusing on two domains where evidence base exists and CECG has already signalled interest: (1) evidence-based writing instruction (Knowledge in Colour / Wexler framework integrated into Catalyst's HITP structure) and (2) secondary explicit instruction extension (Years 7–10 initially, where transition retention is at risk). Deliverables: Phase 2 scope document and resource audit; writing instruction curriculum resource set aligned to CECG's existing Ochre Education partnership format; HITP adaptation for secondary teaching contexts; an evaluation design extending the Deloitte methodology to the new domains. Framing: CECG is 5 years ahead of MACS, 5 years ahead of CSPD, and 2+ years ahead of CET in primary literacy — Phase 2 cements that lead before peers catch up to Phase 1.",
+        "why_now": "The Natalie Wexler workshop (November 2025) is an explicit public signal that CECG is actively exploring writing instruction. MACS will complete its first full year of VFI implementation in 2025 and will begin looking at secondary extension in 2026 — CECG has a narrow window to extend its lead before peers reach the same question. The Year 6–7 transition leakage to independent schools (a confirmed gap in market-solutions.json) is most acutely felt at CECG's secondary colleges — a strong secondary Catalyst programme is the clearest counter-offer to families considering Canberra Grammar or Radford.",
+        "who_cares": {
+          "buyer": "Patrick Ellis, Education Lead — programme custodian and the person who must build Phase 2; David de Carvalho, Executive Director — Phase 2 is the growth strategy that sustains CECG's national differentiation under his leadership",
+          "user": "Secondary teachers at CECG's Year 7–12 colleges; school principals at secondary level; Shaping Minds coaches extending coaching methodology to secondary contexts"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain confirmed by multiple sources (no secondary Catalyst framework exists, Wexler workshop signal, Year 7 transition leakage). However, the opportunity is forward-looking: CECG has not yet publicly committed to Phase 2 scope or timeline, and the exact form of any engagement is not confirmed. The Wexler workshop is a strong timing signal but remains indirect evidence of commissioning intent. The main gaps: whether CECG has an internal Phase 2 roadmap in development, and whether any budget allocation has been made.",
+        "sources": [
+          "pain-points.json — cecg-tl-02 (Catalyst scope confined to literacy and early mathematics)",
+          "profile.json — catalyst_profile (core_components — K-6 scope confirmed)",
+          "profile.json — strategic_priorities (Natalie Wexler PD, November 2025)",
+          "market-solutions.json — patterns (system-wide explicit instruction is the new Catholic sector standard; secondary extension is the unresolved next question)",
+          "lookalikes.json — MACS VFI (primary-only scope, no secondary extension published)",
+          "pain-points.json — cecg-eg-02 (Year 6–7 transition leakage to independent schools)",
+          "competitors.json — Canberra Grammar, CGGS (IB Diploma), Radford College",
+          "web-research.json — catalyst.cg.catholic.edu.au Natalie Wexler workshop November 2025"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "AI generates writing instruction lesson sequences for secondary teachers, applying Natalie Wexler's knowledge-building principles within CECG's HITP structure — providing a ready-to-use resource library for a domain where no Catalyst materials currently exist."
+          },
+          {
+            "category": "Classification & Detection",
+            "capability": "Text Classification",
+            "application": "Student writing samples are automatically assessed against a rubric aligned to the Catalyst writing framework, giving teachers structured diagnostic information at scale rather than relying on manual holistic marking."
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Knowledge & Relationship Extraction",
+            "application": "The system extracts knowledge-structure patterns from successful secondary writing samples to build a corpus of exemplars, enabling CECG to identify what distinguishes high-quality knowledge-building writing at each year level."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-05",
+        "title": "Allied Health Telehealth Model for Rural and Regional Goulburn Diocese Schools",
+        "pain_point": "CECG enrols 5,670 students with disability — 24.8% of total enrolments, nearly double the estimated national Catholic school average of 10–15%. The annual report explicitly identifies allied health access (speech therapy, occupational therapy) in regional and rural schools as a named challenge that is unresolved. The 27 Goulburn diocese schools across 88,000 km² — serving communities including Adelong, Bombala, Grenfell, Lake Cargelligo, and West Wyalong — face compounded barriers: geographic isolation plus staffing shortages plus a high disability prevalence rate. CECG already operates a successful virtual delivery model (the Virtual Learning Collaborative for Year 11–12 students, led by award-winning Dr Wendy Mockler), demonstrating that the organisation has the technology and institutional capability to deliver services remotely. Extending that capability to allied health is the unresolved adjacency.",
+        "market_evidence": "The market-solutions gaps section confirms: 'No peer has publicly described a robust approach to allied health (speech therapy, OT) access for regional/remote students — a documented CECG challenge.' This is a genuine sector gap, not a problem that has been solved elsewhere. CECG's own VLC is the closest analogue in the sector — a virtual delivery model for a service previously inaccessible in rural communities. CEWA's LEADing Lights platform integrates student wellbeing data alongside academic data for principal decision-making — a related but distinct capability showing the sector is investing in integrated support infrastructure. The YMCA WA School Ready MOU for ELCs (profile.json) signals CECG is already looking for external partnerships to address early intervention gaps.",
+        "opportunity": "Design a telehealth-enabled allied health delivery model for CECG's Goulburn diocese schools — building on the technical and operational foundations of the existing VLC. Phase 1: audit of current allied health access across Goulburn diocese schools (which schools have access, at what frequency, through what model). Phase 2: telehealth delivery platform design — integrating speech and language assessment tools, OT screening instruments, and asynchronous review capability for contracted allied health professionals. Phase 3: integration with the Catalyst assessment framework, so allied health observations feed into the same evidence-based planning cycle that governs academic interventions. The framing: CECG already has 9.3% above-national-average disability enrolment as a mission commitment — this is the infrastructure investment to resource that commitment equitably across the full geographic footprint.",
+        "why_now": "Dr Wendy Mockler's 2025 Rural and Remote Education Advocate Award brought visibility to CECG's regional equity commitment and will have elevated internal conversations about scaling rural service delivery. CECG's MOU with YMCA WA School Ready for ELCs (launched 2025) shows active partner-seeking for early intervention models. The governance transition to CACGEL (incorporated company structure from January 2025) may give CECG cleaner legal footing to enter commercial partnerships for allied health delivery than the prior Commission structure permitted.",
+        "who_cares": {
+          "buyer": "David de Carvalho, Executive Director — this sits at the intersection of Catholic inclusion mission and procurement efficiency (telehealth is cheaper than fly-in allied health); Wendy Mockler, Virtual Learning Coordinator — already the demonstrated internal champion for rural virtual delivery",
+          "user": "Students with disability in Goulburn diocese schools; classroom teachers and support staff in rural schools who currently carry intervention load without specialist support"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain is confirmed by the annual report (allied health access explicitly named as a challenge), profile.json (geographic and disability data), and market-solutions.json (sector gap confirmed — no peer has solved this). The VLC operational precedent is strong evidence that CECG has the organisational capability to execute. However, confidence is medium because: (1) no peer has validated a specific allied health telehealth model in an Australian Catholic school context, making outcome predictions less certain; (2) regulatory and funding complexity for allied health delivery across ACT and NSW jurisdictions is significant; and (3) CECG has not publicly signalled this as an imminent investment priority.",
+        "sources": [
+          "pain-points.json — cecg-wf-02 (rural and regional allied health shortages)",
+          "pain-points.json — cecg-ssw-01 (24.8% disability enrolment rate)",
+          "profile.json — challenges (allied health access in regional and rural schools)",
+          "profile.json — dimensions (88,000 km² footprint, 27 NSW schools)",
+          "annual-report-extract.json — cecg-annual-report-2024.pdf pp.15–17 (disability enrolment data)",
+          "market-solutions.json — gaps (allied health sector gap — no peer has described a solution)",
+          "profile.json — strategic_priorities (Virtual Learning Collaborative, YMCA WA MOU)",
+          "web-research.json — region.com.au 2025 (Dr Wendy Mockler 2025 Rural and Remote Education Advocate Award)",
+          "scorecard.json — catholic_mission (inclusion metric — 24.8% vs 10–15% national)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Media Parsing & Transcription",
+            "application": "Speech and language assessment sessions conducted via telehealth are automatically transcribed and structured, giving allied health professionals a documented record of each session without manual note-taking during the assessment itself."
+          },
+          {
+            "category": "Classification & Detection",
+            "capability": "Structured Data Classification",
+            "application": "Student assessment results from speech and OT screening tools are automatically classified into intervention priority tiers, so limited specialist hours are directed to the students with highest need across the Goulburn diocese school network."
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Task Automation Agents",
+            "application": "A scheduling and coordination agent manages telehealth appointment booking, allied health professional rostering across Goulburn diocese schools, and follow-up intervention reminders — removing the administrative overhead that currently falls on classroom teachers."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-06",
+        "title": "Enrolment Intelligence Platform — Network Planning and Growth Corridor Strategy",
+        "pain_point": "CECG has no school in the Molonglo Valley — the ACT's fastest-growing residential corridor — and Stromlo Forest Anglican College opens there in February 2026. The signals file rates this as a high external risk (ext-r1, score 0.72): 'The risk is not just of share loss but of being permanently locked out of a growth corridor by a well-resourced competitor with a 5-year head start on a new student cohort.' Simultaneously, Tuggeranong (southern ACT) is declining, with 12 of 20 government schools projected to shrink by 2035, yet CECG has schools in this corridor. The system's geographic mismatch between school capacity and enrolment demand (growing north, declining south) will compound if not actively modelled and managed. CECG lacks any publicly described enrolment modelling or network planning platform.",
+        "market_evidence": "Catholic Schools Broken Bay (CSBB) is investing $300 million in capital to defend and grow enrolment share in NSW growth corridors — establishing a precinct model with K-12 pathways designed around demographic projections (market-solutions.json). While CECG's scale does not require equivalent capital, the underlying principle is the same: growth corridor competition requires proactive modelling, not reactive response. CEWA's LEADing Lights platform surfaces real-time attendance and enrolment data benchmarked against system averages, enabling principals and central office to detect enrolment trend divergence early. No Catholic system has published a forward-looking enrolment modelling and site-selection methodology combining demographic projections, competitor openings, and network optimisation — this remains a sector gap.",
+        "opportunity": "Build an enrolment intelligence platform for CECG that combines: (1) ACT and NSW demographic projection data (ABS population projections by suburb, school-age cohort modelling for Molonglo Valley, Gungahlin, and Tuggeranong corridors); (2) competitor capacity and trajectory data (Stromlo Forest Anglican College growth schedule, ACT government school openings); (3) CECG's own per-school enrolment trends by year level; and (4) an optimisation model for network planning decisions — where to invest in new capacity, where to rationalise. Phase 1 deliverable: a 10-year demand and supply model for CECG's ACT network. Phase 2: an ongoing monitoring dashboard that updates as demographic data and competitor activity changes. Framing to de Carvalho: this is the ACARA MySchool data lens applied to CECG's own network — a tool that quantifies the Molonglo Valley risk precisely enough to support a board-level capital investment decision.",
+        "why_now": "Stromlo Forest Anglican College opens February 2026 — CECG has months, not years, to quantify the exposure and begin planning a response. The CACGEL incorporation (January 2025) creates the governance structure that could authorise a capital response; a data-driven network plan is the prerequisite for any such authorisation. New ED de Carvalho commencing mid-2025 will be conducting his first full strategic planning cycle in 2026 — this is the window to place a network planning tool in front of the board before priorities are set.",
+        "who_cares": {
+          "buyer": "David de Carvalho, Executive Director — first strategic planning cycle; CACGEL board — capital investment decisions are now a board-level governance responsibility under the new incorporated structure",
+          "user": "Central planning and strategy team at CECG; school principals in growth and declining corridors who need forward visibility for staffing and capacity decisions"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain is confirmed by multiple independent sources: signals.json (ext-r1 score 0.72 high risk, geographic mismatch signal), competitors.json (Stromlo Forest Anglican College detail), scorecard.json (geographic enrolment risk watch). The Molonglo Valley threat is clearly documented and time-sensitive. However, confidence is medium because: (1) CECG may have internal network planning capability not visible from public sources; (2) the capital decision to open a new school in Molonglo Valley depends on factors (financial reserves, land availability, ACT government approvals) that are not confirmed from available data; (3) no peer has published a validated enrolment intelligence platform model at CECG's scale that this opportunity can point to as proof.",
+        "sources": [
+          "pain-points.json — cecg-eg-01 (no CECG school in Molonglo Valley)",
+          "signals.json — ext-r1 (Stromlo Forest Anglican College, score 0.72, high risk)",
+          "signals.json — demographic (ACT geographic enrolment divergence — growth vs decline zones)",
+          "competitors.json — Stromlo Forest Anglican College (opening February 2026, 400+ expressions of interest)",
+          "scorecard.json — enrolment_health (geographic enrolment risk, watch)",
+          "market-solutions.json — CSBB $300m capital investment (network growth corridor strategy)",
+          "profile.json — competitive_environment (Molonglo Valley growth, Tuggeranong decline)",
+          "profile.json — strategic_priorities (CACGEL governance — board now accountable for capital decisions)",
+          "acara-trends.json — ACARA Historical 2008–2025 (enrolment trend data)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Prediction & Forecasting",
+            "capability": "Time Series Forecasting",
+            "application": "The platform projects school-age population growth by suburb over a 10-year horizon, combining ABS birth cohort data and migration patterns to forecast where demand for CECG school places will be concentrated in 2028, 2030, and 2035."
+          },
+          {
+            "category": "Optimization & Planning",
+            "capability": "Resource Allocation & Scheduling",
+            "application": "Given CECG's school network, projected enrolment demand, and capital constraints, an optimisation model recommends where to invest in new capacity and where to manage decline — replacing ad hoc network decisions with a data-driven allocation framework."
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Research & Analysis Agents",
+            "application": "An agent continuously monitors competitor school announcements, ACT government planning applications, and demographic release data to update CECG's network model when material changes occur — eliminating the need for manual environmental scanning."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-07",
+        "title": "Secondary Transition Retention Programme — Keeping CECG Primary Families at the Year 7 Threshold",
+        "pain_point": "The ACT independent sector is now larger than the Catholic systemic sector by enrolment share (20.4% vs 19.3% as of 2025), and grew at 11x the Catholic systemic rate in 2024–2025 (2.55% vs 0.23%). The market-solutions file explicitly names 'transition from Catholic primary to Catholic secondary in the ACT' as an unresolved sector gap: 'appears to be a leakage point to independent schools for aspirational families — no peer has published a solution to this specific transition dynamic.' Canberra Grammar School is fully enrolled through 2026, taking applications for 2027 and 2028. Radford College (similar fee band to CECG) is fully enrolled at all year levels. Canberra Girls Grammar offers IB Diploma — a curriculum differentiation CECG cannot replicate. CECG's Catalyst results are strongest in primary years; the secondary value proposition is comparatively less differentiated.",
+        "market_evidence": "No peer Australian Catholic system has published a structured Year 6-to-Year 7 retention programme that demonstrably reduces leakage to independent secondary schools — this is confirmed as a sector gap. However, the analogous problem of primary-to-secondary transition exists in independent school systems, and several have used personalised communication programmes, peer-to-peer family referral schemes, and differentiated secondary programme marketing to address it. BCE's education strategy (2025–2027) treats 'transformational experiences' as the core enrolment proposition — suggesting experience-first positioning is the emerging sector response. CECG's Catalyst outcomes data (13 of top 20 ACT 'Making a Difference' schools are CECG schools) is directly relevant to aspirational families but is not currently packaged as a secondary transition proposition.",
+        "opportunity": "Design a Year 6-to-Year 7 transition retention programme for CECG — comprising: (1) an AI-assisted personalised communication journey for families of Year 5 and Year 6 students explaining CECG secondary college outcomes, Catalyst results at secondary level, and the co-curricular and faith formation offerings; (2) a data-informed identification of families most at risk of choosing independent alternatives (based on school location relative to independent school catchments, sibling patterns, and enquiry behaviour); (3) a structured Year 7 secondary open programme experience that directly addresses the differentiation gaps (IB alternative: explaining CECG's outcomes-based curriculum; co-curricular: highlighting specific programmes at each college). Phase 1: family communication audit and risk segmentation. Phase 2: personalised outreach journey design. Phase 3: Year 7 cohort analysis 12 months post-launch measuring retention rate improvement.",
+        "why_now": "Stromlo Forest Anglican College opens February 2026 — it is a K-12 pathway school, meaning it will absorb families from ELC who then never transition to CECG at any year level. This accelerates the transition leakage risk from secondary entry to primary entry. New ED de Carvalho has publicly emphasised affordability and community — both directly relevant to a retention proposition for families considering whether the CECG secondary fee premium is justified against free government alternatives or higher-fee independent alternatives.",
+        "who_cares": {
+          "buyer": "David de Carvalho, Executive Director — enrolment growth and community positioning are explicit strategic priorities; CECG secondary college principals — directly accountable for Year 7 intake numbers",
+          "user": "CECG's admissions and enrolment team; primary school principals who are the first point of contact for departing Year 6 families; families of current CECG Year 5 and 6 students"
+        },
+        "confidence": "medium",
+        "confidence_reasoning": "Pain confirmed by sector share data (competitors.json), market-solutions.json (explicitly named as unsolved gap), and the strength of independent competitor enrolment pipelines (CGS fully enrolled through 2026). The opportunity is real and time-sensitive. Confidence is medium rather than high because: (1) the solution involves CRM and communication programme design rather than a validated education technology deployment — execution risk is higher; (2) CECG's actual Year 6–7 transition rate is unknown from public data (no per-school data available), so the size of the problem is unquantified; (3) no peer has validated this specific intervention in an ACT context.",
+        "sources": [
+          "pain-points.json — cecg-eg-02 (Year 6–7 transition leakage to independent schools)",
+          "competitors.json — Canberra Grammar School, CGGS, Radford College (fully enrolled, competitive positioning)",
+          "competitors.json — market_context (ACT sector shares, independent vs Catholic systemic growth rates)",
+          "signals.json — ext-r3 (independent sector structural share gain, score 0.58)",
+          "market-solutions.json — gaps (Year 6–7 transition leakage — no peer has published a solution)",
+          "profile.json — competitive_environment (independent sector growing 2.7x faster than Catholic)",
+          "profile.json — strategic_priorities (de Carvalho affordability and community emphasis)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Prediction & Forecasting",
+            "capability": "Propensity & Behavioral Modeling",
+            "application": "The system scores each Year 5 and Year 6 family on their likelihood of transitioning to an independent secondary school based on school location relative to independent school catchments, sibling history, and engagement signals — so the admissions team prioritises outreach where it matters most."
+          },
+          {
+            "category": "Generation",
+            "capability": "Text Generation",
+            "application": "Personalised transition communication letters and emails are generated for each family, referencing their child's year level, the specific CECG secondary college relevant to their suburb, and tailored messaging addressing the most common reasons families consider independent alternatives."
+          },
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Conversational Agents",
+            "application": "A conversational agent on the CECG enrolment portal answers prospective Year 7 family questions about secondary colleges, curriculum, Catalyst outcomes, and fees — available outside office hours when families are typically researching school choices."
+          }
+        ]
+      },
+      {
+        "id": "cecg-opp-08",
+        "title": "Catalyst IP Formalisation and Knowledge-Sharing Platform for National and International Partners",
+        "pain_point": "CECG is the originator of Australia's most rigorously validated Catholic school improvement model. Two domestic systems have adopted Catalyst as their template (CSPD via Uplift, CET via Insight into Learning). Thirty New Zealand school leaders visited 10 CECG schools in May 2025. CECG co-presented at the Australian Catholic Education Conference (August 2025) to 200+ delegates. The signals file classifies Catalyst national adoption as a positive internal indicator with 'potential international licensing or consulting revenue stream.' Yet no formal IP protection, licensing model, or structured knowledge-sharing platform exists from available public evidence. The risk is that the model diffuses without commercial return and CECG's differentiation erodes as CET, CSPD, and eventually MACS reach comparable adoption levels.",
+        "market_evidence": "The market-solutions patterns section notes: 'Any vendor selling tools to support Uplift at CSPD should approach CECG first as the five-year-ahead version of the same deployment.' CET's adoption following a 2022 delegation visit demonstrates that the informal knowledge-sharing model already works — but transfers institutional knowledge without any structured commercial arrangement. The NZ visit in May 2025 suggests international appetite exists. No Catholic education system in Australia has formalised a consulting or licensing business for its pedagogical model — this is a genuine first-mover space. The CACGEL incorporation (registered company from January 2025) creates the legal structure that could support a commercial knowledge-sharing entity for the first time.",
+        "opportunity": "Design a structured Catalyst knowledge-sharing and consulting model for CECG — comprising: (1) IP audit to determine what CECG owns, what Ochre Education owns, and what is in the public domain within the Catalyst framework; (2) a tiered engagement model for domestic and international Catholic systems wanting to adopt Catalyst principles (from delegation visits with structured debrief to full consulting engagements to licensed resource access); (3) a digital knowledge-sharing platform for systems that have already adopted the model (CET, potentially CSPD) to share implementation data and professional learning — creating a network CECG convenes and curates. Framing: de Carvalho's background at the National Catholic Education Commission gives him direct visibility into peer system needs nationally. His NCEC role is the network through which a formalised Catalyst consulting offer would propagate most efficiently.",
+        "why_now": "De Carvalho commenced mid-2025 — his NCEC background means he personally knows the decision-makers at every Australian Catholic education system. The NZ visit in May 2025 (while he was still incoming as ED) demonstrates international demand that will intensify under his leadership. CACGEL's registered company structure (from January 2025) makes IP licensing and consulting commercially feasible in a way the prior Commission structure was not. The risk of inaction: if CECG does not formalise by 2027, MACS will reach Phase 1 adoption and become a peer, eroding CECG's thought-leadership position regardless.",
+        "who_cares": {
+          "buyer": "David de Carvalho, Executive Director — NCEC connections make him the natural convener of a national network; Patrick Ellis, Education Lead — the internal subject matter expert who would anchor any consulting or training engagement",
+          "user": "Catholic education systems nationally and internationally that want to adopt the Catalyst model (CET, CSPD as current adopters; MACS, CSBB, NZ Catholic Education as potential adopters)"
+        },
+        "confidence": "low",
+        "confidence_reasoning": "The demand signals are real (CET adoption, CSPD adoption, NZ visit, ACEC presentation). However, confidence is low because: (1) no formal commercialisation plan is confirmed in public sources — this is a coverage-check opportunity, not a confirmed pain point with direct evidence; (2) the IP ownership question (CECG vs Ochre Education) is unresolved and could constrain the model significantly; (3) de Carvalho's public emphasis on faith-over-metrics may mean he prioritises knowledge-sharing as mission rather than revenue; (4) CECG's size constrains the capacity available to run a consulting function alongside its primary school system obligations. This is a genuine opportunity but one requiring deeper discovery before it can be confirmed.",
+        "sources": [
+          "pain-points.json — cecg-ext-01 (Catalyst as national IP — no formal commercialisation model)",
+          "signals.json — internal (Catalyst national adoption positive signal)",
+          "market-solutions.json — patterns (CSPD, CET adoptions confirm Catalyst as sector template)",
+          "market-solutions.json — CET (outcome successful, Insight into Learning based on CECG visit)",
+          "profile.json — catalyst_profile (national_recognition — Grattan, CIS, Noel Pearson, NZ delegation)",
+          "profile.json — key_partnerships (Ochre Education — IP relationship not confirmed)",
+          "web-research.json — catalyst.cg.catholic.edu.au showcasing NZ delegation (May 2025)",
+          "profile.json — known_contact (de Carvalho — former NCEC CEO, national Catholic education network)"
+        ],
+        "ai_capabilities": [
+          {
+            "category": "Autonomous Agents & Orchestration",
+            "capability": "Research & Analysis Agents",
+            "application": "An agent continuously monitors what peer Catholic systems are publishing about their implementation of Catalyst-adjacent programmes, surfaces insights to CECG's Catalyst team, and generates quarterly market intelligence summaries on where the sector is relative to CECG's own programme maturity."
+          },
+          {
+            "category": "Search & Retrieval",
+            "capability": "Retrieval-Augmented Generation (RAG)",
+            "application": "A knowledge platform built on the Catalyst resource library enables partner systems (CET, CSPD) to query CECG's implementation evidence base — surfacing specific case studies, data, and resources relevant to their own implementation questions without requiring a CECG staff member to manually respond."
+          },
+          {
+            "category": "Extraction & Structuring",
+            "capability": "Summarization & Condensation",
+            "application": "Implementation reports, Deloitte evaluation findings, and NAPLAN trend analyses are automatically condensed into structured evidence briefs suitable for use in consulting engagements with new partner systems — saving Patrick Ellis hours of manual synthesis per client."
+          }
+        ]
+      }
+    ]
   }
 }

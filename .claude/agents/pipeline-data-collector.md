@@ -37,6 +37,10 @@ python .../tools/acara_trends.py <xlsx> --schools schools.json --output output.j
 
 NEVER use the Read tool on files larger than 1MB (PDFs, XLSX files). Always use the Python tools via Bash instead. The source files can be 29MB+ and will fail or blow your context if read directly.
 
+## Write Incrementally
+
+Write partial results to the output file as you go — don't accumulate everything in context. After each meaningful extraction step, update the output file. If you crash or run out of turns, the partial output is still usable by downstream agents.
+
 ## Workflow
 
 1. Read your brief (provided in the prompt) to understand what to extract and from which files

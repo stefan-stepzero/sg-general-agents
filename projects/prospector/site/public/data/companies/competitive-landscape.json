@@ -811,5 +811,198 @@
         "context": "WISE share undisclosed. Operational stability guaranteed."
       }
     ]
+  },
+  "cecg": {
+    "name": "Catholic Education Canberra and Goulburn",
+    "market": "K-12 school education — ACT and southern NSW (Catholic systemic, independent, and government sectors)",
+    "market_size": "ACT K-12 school market (Feb 2025): Government 60.2% (50,159 students), Independent 20.4% (17,015 students), Catholic systemic 19.3% (16,085 students). Growth rates Feb 2024-2025: Independent +2.55%, Government +2.51%, Catholic systemic +0.23%.",
+    "position": "Second-largest non-government school system in the ACT; holds 19.3% of ACT school enrolments",
+    "position_detail": "CECG operates 59 schools (27,186 students) across ACT and southern NSW. Within the ACT, it holds 19.3% market share (16,085 students) vs government 60.2% and independent 20.4%. CECG's Catalyst programme is the most rigorously evaluated pedagogical initiative in Australian Catholic education and is its primary competitive differentiator.",
+    "advantages": [
+      {
+        "label": "Catalyst programme — independently validated outcomes",
+        "detail": "Largest positive NAPLAN shift of any large Australian diocese (2019–2022); 75% reading proficiency vs 66% national average; 13/20 top ACT 'Making a Difference' schools. Deloitte-evaluated, not self-reported."
+      },
+      {
+        "label": "Mission-aligned inclusion model",
+        "detail": "24.8% of students have a disability — nearly double the national Catholic average — signalling genuine inclusion commitment that builds community loyalty."
+      },
+      {
+        "label": "Governance credibility",
+        "detail": "Incorporated as CACGEL from January 2025 with skills-based board; new ED (de Carvalho) is former ACARA and NESA CEO — highest-credibility educational leadership appointment in the sector."
+      },
+      {
+        "label": "Strong enrolment momentum",
+        "detail": "+10.9% growth since 2019; +2.6% YoY 2024–2025, significantly outperforming the ACT Catholic sector average of +0.23%."
+      }
+    ],
+    "disadvantages": [
+      {
+        "label": "Teacher salary gap vs ACT government schools",
+        "detail": "ACT government starting salary reaching $91,396 by 2026 — highest in Australia — creates persistent recruitment and retention pressure CECG cannot fully close with non-financial benefits alone."
+      },
+      {
+        "label": "No presence in highest-growth ACT corridor",
+        "detail": "Molonglo Valley (Wright, Whitlam, Denman Prospect) is the ACT's fastest-growing residential area and CECG has no school there. Stromlo Forest Anglican College opening February 2026 will capture this growth."
+      },
+      {
+        "label": "Financial opacity",
+        "detail": "2024 annual report financial statements are scanned image pages — no revenue/expenditure figures publicly available. Limits outside-in financial assessment."
+      }
+    ],
+    "competitors": [
+      {
+        "name": "ACT Government Schools (ACT Education Directorate)",
+        "positioning": "government | fees: free | ACT",
+        "differentiation": "The dominant market force in the ACT. Government schools hold 60.2% of ACT enrolments (50,159 students, February 2025 census). Independent schools grew enrolments 2.55% and Catholic sector only 0.23% in the year to February 2025 â€” the ACT government sector grew 2.51% over the same period. ACT government starting teacher salary reaching $91,396 by 2026 (highest in Australia) creates persistent teacher recruitment pressure for CECG. The 'enrolment bubble' (demographic growth from the 2010s) is now flowing through to high school and college years â€” government high school enrolments grew 1.9% and colleges grew 3.5% in 2024-2025. The ACT Directorate is also capping out-of-area enrolments at six oversubscribed public schools, which may redirect demand toward Catholic schools in some corridors.",
+        "relationship": "direct_competitor",
+        "org_name": "ACT Government Schools (ACT Education Directorate)",
+        "relationship_type": "direct_competitor",
+        "geography": "ACT",
+        "sector": "government",
+        "fee_level": "free",
+        "enrolment_trend": "growing",
+        "key_threat": "The dominant market force in the ACT. Government schools hold 60.2% of ACT enrolments (50,159 students, February 2025 census). Independent schools grew enrolments 2.55% and Catholic sector only 0.23% in the year to February 2025 â€” the ACT government sector grew 2.51% over the same period. ACT government starting teacher salary reaching $91,396 by 2026 (highest in Australia) creates persistent teacher recruitment pressure for CECG. The 'enrolment bubble' (demographic growth from the 2010s) is now flowing through to high school and college years â€” government high school enrolments grew 1.9% and colleges grew 3.5% in 2024-2025. The ACT Directorate is also capping out-of-area enrolments at six oversubscribed public schools, which may redirect demand toward Catholic schools in some corridors.",
+        "recent_moves": [
+          "ACT government starting teacher salary reaching $91,396 by 2026 â€” highest in Australia; creates persistent salary gap vs CECG (3-3.5% increases in 2024)",
+          "February 2025 census: government sector holds 60.2% of ACT enrolments â€” stable dominant share",
+          "ACT high school enrolments grew 1.9% and college enrolments grew 3.5% Feb 2024 to Feb 2025 as the demographic bubble reaches secondary years",
+          "Out-of-area enrolment caps imposed at six oversubscribed government schools â€” may redirect some families to Catholic alternatives in those suburbs"
+        ],
+        "source": "https://www.act.gov.au/__data/assets/pdf_file/0011/2875367/2025-ACT-schools-census-February.pdf; https://region.com.au 2025 (re teacher salaries)"
+      },
+      {
+        "name": "Canberra Grammar School (CGS)",
+        "positioning": "independent | fees: high | ACT (Red Hill; boarding)",
+        "differentiation": "The leading ACT independent school and CECG's most prominent secondary competitor for aspirational families. Co-educational Anglican day and boarding school, Pre-School to Year 12, approaching centenary in 2029. Approximately 2,250 students including 143 boarders. Fully enrolled at all year levels for 2026; accepting applications for 2027 and 2028 â€” a strong demand signal. Fees significantly higher than CECG: $24,825â€“$29,050 (primary), $33,705â€“$34,880 (secondary), plus boarding from $28,950â€“$34,100. The fee premium positions CGS as a different market segment, but aspirational ACT families choosing between CECG secondary schools and CGS are a real segment â€” particularly for families valuing academic results and co-curricular breadth. CGS has a strong boarding offering attracting NSW regional students who would otherwise potentially attend CECG regional colleges.",
+        "relationship": "direct_competitor",
+        "org_name": "Canberra Grammar School (CGS)",
+        "relationship_type": "direct_competitor",
+        "geography": "ACT (Red Hill; boarding)",
+        "sector": "independent",
+        "fee_level": "high",
+        "enrolment_trend": "stable",
+        "key_threat": "The leading ACT independent school and CECG's most prominent secondary competitor for aspirational families. Co-educational Anglican day and boarding school, Pre-School to Year 12, approaching centenary in 2029. Approximately 2,250 students including 143 boarders. Fully enrolled at all year levels for 2026; accepting applications for 2027 and 2028 â€” a strong demand signal. Fees significantly higher than CECG: $24,825â€“$29,050 (primary), $33,705â€“$34,880 (secondary), plus boarding from $28,950â€“$34,100. The fee premium positions CGS as a different market segment, but aspirational ACT families choosing between CECG secondary schools and CGS are a real segment â€” particularly for families valuing academic results and co-curricular breadth. CGS has a strong boarding offering attracting NSW regional students who would otherwise potentially attend CECG regional colleges.",
+        "recent_moves": [
+          "2024 Annual Report published â€” full content not accessible via web but enrolment at ~2,250 students confirmed across sources",
+          "Fully enrolled at all year levels for 2026; accepting 2027 and 2028 applications â€” indicates sustained high demand",
+          "Fee schedule 2026: primary $24,825â€“$29,050 / secondary $33,705â€“$34,880 / boarding $28,950â€“$34,100 (weekly basis) â€” well above CECG fee levels"
+        ],
+        "source": "https://cgs.act.edu.au/enquiries/enrolment-process/; https://www.goodschools.com.au/compare-schools/in-red-hill-2603/canberra-grammar-school/fees; https://en.wikipedia.org/wiki/Canberra_Grammar_School"
+      },
+      {
+        "name": "Canberra Girls Grammar School (CGGS)",
+        "positioning": "independent | fees: high | ACT (City/Deakin/Garran campuses)",
+        "differentiation": "Leading ACT independent school for girls, Year 3 to Year 12 plus junior campus. Approximately 1,300+ students across three campuses. Anglican school offering both IB Diploma and standard HSC. Boarding up to 80 students. CGGS competes for CECG's secondary school girls in inner and southern Canberra â€” particularly at the Year 7 transition point where families consider alternatives to CECG secondary colleges. IB Diploma offering differentiates CGGS from CECG which does not offer IB.",
+        "relationship": "direct_competitor",
+        "org_name": "Canberra Girls Grammar School (CGGS)",
+        "relationship_type": "direct_competitor",
+        "geography": "ACT (City/Deakin/Garran campuses)",
+        "sector": "independent",
+        "fee_level": "high",
+        "enrolment_trend": "stable",
+        "key_threat": "Leading ACT independent school for girls, Year 3 to Year 12 plus junior campus. Approximately 1,300+ students across three campuses. Anglican school offering both IB Diploma and standard HSC. Boarding up to 80 students. CGGS competes for CECG's secondary school girls in inner and southern Canberra â€” particularly at the Year 7 transition point where families consider alternatives to CECG secondary colleges. IB Diploma offering differentiates CGGS from CECG which does not offer IB.",
+        "recent_moves": [
+          "Offering IB Primary Years Programme and IB Diploma Programme (Years 11-12); candidate school for IB MYP (Years 6-9) â€” a curriculum differentiation CECG cannot match",
+          "Three-campus model expanding capacity in Canberra's inner suburbs",
+          "2024 Annual Report published (available on Issuu)"
+        ],
+        "source": "https://www.cggs.act.edu.au/; https://en.wikipedia.org/wiki/Canberra_Girls_Grammar_School; https://issuu.com/canberragirlsgrammarschool/docs/2024_annual_report"
+      },
+      {
+        "name": "Radford College",
+        "positioning": "independent | fees: medium | ACT (Bruce)",
+        "differentiation": "Mid-fee Anglican K-12 co-educational day school in Canberra's inner-north. Over 2,100 students, Pre-Kindergarten to Year 12. Fully enrolled in all year levels for 2026. Strategic Plan 'A Vision for Our Future 2021-2025' running to end of current period. Radford occupies a similar fee band to CECG's secondary colleges (medium fees, not as premium as CGS) and competes for families seeking structured faith-based education in the inner-north Canberra corridor. CECG has several primary schools feeding into this area (St Thomas Aquinas Charnwood, Good Shepherd Primary) with Year 7 transition creating potential diversion to Radford.",
+        "relationship": "direct_competitor",
+        "org_name": "Radford College",
+        "relationship_type": "direct_competitor",
+        "geography": "ACT (Bruce)",
+        "sector": "independent",
+        "fee_level": "medium",
+        "enrolment_trend": "stable",
+        "key_threat": "Mid-fee Anglican K-12 co-educational day school in Canberra's inner-north. Over 2,100 students, Pre-Kindergarten to Year 12. Fully enrolled in all year levels for 2026. Strategic Plan 'A Vision for Our Future 2021-2025' running to end of current period. Radford occupies a similar fee band to CECG's secondary colleges (medium fees, not as premium as CGS) and competes for families seeking structured faith-based education in the inner-north Canberra corridor. CECG has several primary schools feeding into this area (St Thomas Aquinas Charnwood, Good Shepherd Primary) with Year 7 transition creating potential diversion to Radford.",
+        "recent_moves": [
+          "Fully enrolled at all year levels for 2026 â€” strong demand signal",
+          "Over 2,100 students across Pre-K to Year 12",
+          "Strategic Plan 2021-2025 ending; new strategic plan expected for 2026 onwards"
+        ],
+        "source": "https://www.radford.act.edu.au/enrolment; https://en.wikipedia.org/wiki/Radford_College"
+      },
+      {
+        "name": "Stromlo Forest Anglican College",
+        "positioning": "independent | fees: medium | ACT (Wright / Molonglo Valley)",
+        "differentiation": "New school opening in the ACT's highest-growth residential corridor â€” the Molonglo Valley (Wright, Whitlam, Denman Prospect). Opening February 2026 with Early Learning and K-Year 6; adding Years 7-8 in 2027 ahead of schedule in response to parent demand. Eventual capacity of 1,850 students. Over 400 expressions of interest received before opening. This is CECG's most acute direct competitive threat: the Molonglo Valley is precisely where CECG's own enrolment growth is concentrated and where CECG's St Jude's Weston Creek primary school is the closest existing school. A new Anglican mid-fee school with a full K-12 pathway in the same corridor directly draws from CECG's growth pipeline at the critical primary school entry point.",
+        "relationship": "direct_competitor",
+        "org_name": "Stromlo Forest Anglican College",
+        "relationship_type": "direct_competitor",
+        "geography": "ACT (Wright / Molonglo Valley)",
+        "sector": "independent",
+        "fee_level": "medium",
+        "enrolment_trend": "growing",
+        "key_threat": "New school opening in the ACT's highest-growth residential corridor â€” the Molonglo Valley (Wright, Whitlam, Denman Prospect). Opening February 2026 with Early Learning and K-Year 6; adding Years 7-8 in 2027 ahead of schedule in response to parent demand. Eventual capacity of 1,850 students. Over 400 expressions of interest received before opening. This is CECG's most acute direct competitive threat: the Molonglo Valley is precisely where CECG's own enrolment growth is concentrated and where CECG's St Jude's Weston Creek primary school is the closest existing school. A new Anglican mid-fee school with a full K-12 pathway in the same corridor directly draws from CECG's growth pipeline at the critical primary school entry point.",
+        "recent_moves": [
+          "Opening February 2026 with Early Learning and K-Year 2 in Wright; expanding to Year 6 by 2026 and Years 7-8 by 2027",
+          "400+ expressions of interest received before opening",
+          "Buildings planned to 5 storeys; construction continuing through 2030; full K-12 operational by approximately 2030",
+          "High school years added one year early due to parent demand â€” faster growth trajectory than originally planned"
+        ],
+        "source": "https://www.canberratimes.com.au/story/9154634/stromlo-forest-anglican-college-to-open-high-school-early/; https://stromlo.act.edu.au/; https://www.canberratimes.com.au/story/8092932/new-anglican-school-in-wright-to-open-in-2026/"
+      },
+      {
+        "name": "Daramalan College",
+        "positioning": "Catholic independent | fees: medium | ACT (Dickson)",
+        "differentiation": "Catholic independent secondary college (Years 7-12), co-educational, 1,505 students. Governed by the Marist Brothers â€” independent of CECG's archdiocesan governance despite sharing Catholic identity. Competes for the same Catholic families in north Canberra who might otherwise choose CECG's St Edmund's or Merici College. The 'Catholic independent' category is a nuanced competitor: shared Catholic values reduce adversarial marketing, but governance and fee differences make families choose. Acceptance fee $600 for Year 7 placement. One of three congregational schools technically within CECG's network count but independently governed.",
+        "relationship": "adjacent_competitor",
+        "org_name": "Daramalan College",
+        "relationship_type": "adjacent_competitor",
+        "geography": "ACT (Dickson)",
+        "sector": "Catholic independent",
+        "fee_level": "medium",
+        "enrolment_trend": "stable",
+        "key_threat": "Catholic independent secondary college (Years 7-12), co-educational, 1,505 students. Governed by the Marist Brothers â€” independent of CECG's archdiocesan governance despite sharing Catholic identity. Competes for the same Catholic families in north Canberra who might otherwise choose CECG's St Edmund's or Merici College. The 'Catholic independent' category is a nuanced competitor: shared Catholic values reduce adversarial marketing, but governance and fee differences make families choose. Acceptance fee $600 for Year 7 placement. One of three congregational schools technically within CECG's network count but independently governed.",
+        "recent_moves": [
+          "1,505 student enrolment confirmed 2025",
+          "Enrolment for Year 7 and Year 11 closes May 30 each year; current-year places available on vacancy basis"
+        ],
+        "source": "https://www.daramalan.act.edu.au/enrolments/; https://en.wikipedia.org/wiki/Daramalan_College"
+      },
+      {
+        "name": "Marist College Canberra",
+        "positioning": "Catholic independent | fees: medium | ACT (Pearce)",
+        "differentiation": "Catholic independent secondary school (Years 7-12), boys school, 1,826 students. Governed by the Marist Brothers, independent of CECG governance. Competes for Catholic boys in southern Canberra (Woden/Weston corridor) who might otherwise attend CECG's Marist College Canberra is in fact the same institution â€” it is one of the three congregational schools in CECG's count. Clarification: Marist College Canberra (Pearce) is one of the three congregational schools listed in CECG's 59-school count. It is governed by the Marists independently but is technically within the CECG system umbrella for reporting. The competitive dynamic is nuanced â€” families choosing between CECG's own archdiocesan secondary colleges and this congregational school within the system. Annual tuition $7,185â€“$11,286; student-teacher ratio 12:1.",
+        "relationship": "adjacent_competitor",
+        "org_name": "Marist College Canberra",
+        "relationship_type": "adjacent_competitor",
+        "geography": "ACT (Pearce)",
+        "sector": "Catholic independent",
+        "fee_level": "medium",
+        "enrolment_trend": "stable",
+        "key_threat": "Catholic independent secondary school (Years 7-12), boys school, 1,826 students. Governed by the Marist Brothers, independent of CECG governance. Competes for Catholic boys in southern Canberra (Woden/Weston corridor) who might otherwise attend CECG's Marist College Canberra is in fact the same institution â€” it is one of the three congregational schools in CECG's count. Clarification: Marist College Canberra (Pearce) is one of the three congregational schools listed in CECG's 59-school count. It is governed by the Marists independently but is technically within the CECG system umbrella for reporting. The competitive dynamic is nuanced â€” families choosing between CECG's own archdiocesan secondary colleges and this congregational school within the system. Annual tuition $7,185â€“$11,286; student-teacher ratio 12:1.",
+        "recent_moves": [
+          "1,826 student enrolment confirmed 2025; 145 teaching staff, 12:1 student-teacher ratio",
+          "2025 fee schedule: $7,185â€“$11,286 annual tuition by year level",
+          "2026 enrolment intake closed; limited places available in some year levels"
+        ],
+        "source": "https://www.maristc.act.edu.au/enrolments; https://www.goodschools.com.au/compare-schools/in-pearce-2607/marist-college-canberra; https://media.digistormhosting.com.au/mcc-au-act-102-website-2025/documents/2025-School-Fee-Schedule.pdf"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "ACT market share (Feb 2025)",
+        "value": "19.3% (16,085 students)",
+        "context": "Catholic systemic share of total ACT school enrolments. Government 60.2%, independent 20.4%."
+      },
+      {
+        "label": "ACT Catholic sector YoY growth (Feb 2024–2025)",
+        "value": "+0.23%",
+        "context": "CECG's ACARA data shows +2.6% growth — significantly outperforming the ACT Catholic sector aggregate, suggesting CECG is gaining within-segment share."
+      },
+      {
+        "label": "Independent sector growth (national, 2021–2025)",
+        "value": "+15.3%",
+        "context": "vs Catholic sector +5.7%. Independent sector is the dominant growth story in Australian schooling, creating structural headwinds for all Catholic systems."
+      }
+    ],
+    "generated_date": "2026-03-26"
   }
 }

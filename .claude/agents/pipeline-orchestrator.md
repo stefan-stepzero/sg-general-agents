@@ -59,6 +59,8 @@ If an agent fails or returns incomplete output:
 3. Do NOT retry the same agent more than once
 4. If a Phase 1 agent fails, continue with other Phase 1 agents — downstream phases will work with whatever data is available and note gaps
 5. If a critical dependency is missing (e.g. no `school-names.json` means ACARA can't filter), log it and skip the dependent agent
+6. If a sub-agent returns empty or minimal results, check if it wrote partial output to its target file — use whatever it produced
+7. For web-heavy phases (peer research, deep data), if the agent times out, mark the phase as "partial" in status.json and continue to the next phase — downstream agents should work with whatever data is available
 
 ## Logging
 

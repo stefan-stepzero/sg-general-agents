@@ -110,6 +110,18 @@ curl -L -o "P:/Projects2/sg-general-agents/projects/prospector/data-sources/{ORG
 
 If a file requires login or is behind a paywall, note it as "requires access" — do not skip silently.
 
+## Step 2B: Research Granular / Deep Data Sources
+
+After the main data collection, search for granular per-site sources that would support Phase 1C:
+
+1. **Per-school/campus/site reports** — many education systems publish individual annual reports with per-site financials. Search for URL patterns like `{org-domain}/annual-report/{school-name}.pdf`
+2. **Government per-entity funding tables** — search `education.gov.au` (AU), `education.gov.ph` (PH), `Companies House` (UK) for per-entity financial data
+3. **Census/demographic data** — identify the geographic catchment (LGAs, provinces, counties) and note available census data sources (ABS for Australia, PSA for Philippines, ONS for UK)
+4. **Charity/nonprofit commission filings** — ACNC (AU), Charity Commission (UK), IRS 990 (US), SEC (PH public companies)
+5. **Individual school/site reports** — check if the org publishes per-site reports at predictable URLs
+
+If ANY of these exist, generate a `context/deep-data-brief.md` with download/extraction instructions. If none are found, skip Phase 1C in the pipeline.
+
 ## Step 3: Create Folder Structure
 
 ```bash

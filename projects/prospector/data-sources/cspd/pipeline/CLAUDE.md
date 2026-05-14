@@ -54,6 +54,14 @@ Agents should call these via Bash to avoid loading large files into context.
 | pipeline-data-collector | `context/acara-brief.md` | `raw/acara-extract.json`, `raw/acara-trends.json` |
 | pipeline-data-collector | `context/web-research-brief.md` | `raw/web-research.json` |
 
+### Phase 1C: Deep Data Collection (1 agent, needs Phase 1A school names)
+
+| Agent | Brief | Output |
+|-------|-------|--------|
+| pipeline-data-collector | `context/deep-data-brief.md` | `raw/asr-financials.json`, `raw/funding-tables.json`, `raw/abs-demographics.json` |
+
+Downloads and extracts per-school financials from 80 individual school annual reports, Commonwealth/State funding tables, and ABS Census demographics. Provides granular financial data that the system-level annual report doesn't break down.
+
 ### Phase 2: Profile & Benchmarks (2 agents in parallel)
 
 | Agent | Brief | Output |

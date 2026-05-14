@@ -710,5 +710,214 @@
         "detail": "Mission-driven staff but limited career progression in a 20-100 person organization. Burnout from global scope on small team."
       }
     ]
+  },
+  "cecg": {
+    "name": "Catholic Education Canberra and Goulburn",
+    "sub_archetype": "Catholic Diocesan School System",
+    "sub_archetype_detail": "Mid-sized Australian Catholic systemic school authority operating across ACT and southern NSW, serving 27,000+ students across 59 schools under archdiocesan governance.",
+    "defining_traits": [
+      "Catholic systemic school system with archdiocesan governance",
+      "K-12 plus early learning, government-funded, multi-site",
+      "System-wide Science of Learning / explicit instruction programme (Catalyst)",
+      "Operates across two jurisdictions (ACT + NSW)",
+      "25%+ students with disability — deep inclusion model"
+    ],
+    "lookalikes": [
+      {
+        "name": "Catholic Schools Parramatta Diocese (CSPD)",
+        "hq": "Western Sydney and Blue Mountains, NSW — ~80 schools, ~40,000 students, ~6,500 staff",
+        "relationship_type": "strategic_mirror",
+        "detail": "Similarities: Catholic systemic school system (not independent); K-12 plus early learning, multi-site; Government-funded (Commonwealth + NSW state grants) | Differences: CSPD is significantly larger (~80 schools vs 59); CSPD's demographic is higher-density urban western Sydney vs CECG's ACT+rural NSW",
+        "org_name": "Catholic Schools Parramatta Diocese (CSPD)",
+        "geography": "Western Sydney and Blue Mountains, NSW",
+        "scale": "~80 schools, ~40,000 students, ~6,500 staff",
+        "key_similarities": [
+          "Catholic systemic school system (not independent)",
+          "K-12 plus early learning, multi-site",
+          "Government-funded (Commonwealth + NSW state grants)",
+          "Launched Uplift programme in August 2025 â€” system-wide explicit instruction directly modelled on CECG's Catalyst",
+          "Patrick Ellis (former CECG Education Lead / Catalyst programme lead) now EGM Learning Outcomes at CSPD",
+          "Both use Ochre Education as curriculum resource partner",
+          "Both use Shaping Minds as instructional coaching provider",
+          "Both are incorporating governance reforms (CSPD became CSPD Limited in 2023; CECG became CACGEL in 2025)"
+        ],
+        "key_differences": [
+          "CSPD is significantly larger (~80 schools vs 59)",
+          "CSPD's demographic is higher-density urban western Sydney vs CECG's ACT+rural NSW",
+          "CSPD has a much higher LBOTE student population (~53.4% vs ~13.3% for CECG)",
+          "CECG is the originator of the Catalyst/Uplift model â€” CSPD is the follower, 5 years behind",
+          "CSPD is under NSW regulatory regime; CECG spans both ACT and NSW jurisdictions"
+        ],
+        "recent_investments": [
+          "Uplift programme launch August 2025 â€” system-wide explicit instruction across 80+ schools, modelled directly on CECG Catalyst",
+          "Patrick Ellis appointed EGM Learning Outcomes to lead Uplift â€” transferred directly from CECG",
+          "BCE-style technology strategy being assessed (CSPD's CIO role elevated November 2023)"
+        ],
+        "source": "https://www.parra.catholic.edu.au/; https://catholicoutlook.org/detailed-earnest-and-ambitious-catholic-schools-announces-new-strategy/; profile.json (CECG context notes on Patrick Ellis and CSPD relationship)"
+      },
+      {
+        "name": "Melbourne Archdiocese Catholic Schools (MACS)",
+        "hq": "Melbourne metropolitan area and regional Victoria — ~300 schools, ~120,000 students, ~18,000 staff",
+        "relationship_type": "structural_lookalike",
+        "detail": "Similarities: Catholic systemic school system, archdiocesan governance; K-12 systemic schools, government-funded; System-wide pedagogical transformation (Vision for Instruction, launched February 2024) closely parallels CECG's Catalyst â€” also based on Science of Learning, explicit instruction, and structured curriculum resources | Differences: Much larger scale (~300 schools vs 59); Victoria state jurisdiction only (vs CECG spanning ACT and NSW)",
+        "org_name": "Melbourne Archdiocese Catholic Schools (MACS)",
+        "geography": "Melbourne metropolitan area and regional Victoria",
+        "scale": "~300 schools, ~120,000 students, ~18,000 staff",
+        "key_similarities": [
+          "Catholic systemic school system, archdiocesan governance",
+          "K-12 systemic schools, government-funded",
+          "System-wide pedagogical transformation (Vision for Instruction, launched February 2024) closely parallels CECG's Catalyst â€” also based on Science of Learning, explicit instruction, and structured curriculum resources",
+          "Both use Ochre Education curriculum resources and Spelling Mastery",
+          "Both have introduced companion engagement/wellbeing frameworks alongside instruction reform"
+        ],
+        "key_differences": [
+          "Much larger scale (~300 schools vs 59)",
+          "Victoria state jurisdiction only (vs CECG spanning ACT and NSW)",
+          "MACS launched its explicit instruction reform 4 years after CECG â€” VFI in 2024 vs Catalyst in 2020",
+          "MACS is investing in SAP S/4HANA Cloud + SuccessFactors ERP transformation (July 2025) â€” CECG has no equivalent announced"
+        ],
+        "recent_investments": [
+          "Vision for Instruction (VFI) â€” launched February 2024, system-wide explicit instruction across all 291 primary schools. Early adopter schools showed NAPLAN improvements of up to 46 percentage points. Ochre Education mathematics units and Spelling Mastery cited in early results.",
+          "Vision for Engagement (VFE) â€” companion framework addressing screen time, student wellbeing, and conditions for learning",
+          "Vision for Leadership â€” third pillar of MACS 2030 strategy addressing school leadership capability",
+          "SAP S/4HANA Cloud + SAP SuccessFactors ERP transformation (announced July 2025, delivered by Infosys) â€” consolidating HR, finance, and operations across ~300 schools onto a single cloud platform with explicit AI-readiness goal"
+        ],
+        "source": "https://www.macs.vic.edu.au/News-Events/Media-Releases/2024/Vision-for-Instruction.aspx; https://cathnews.com/2025/09/18/new-way-of-teaching-sees-boost-in-naplan-results/; https://www.infosys.com/newsroom/press-releases/2025/collaborates-drive-network-wide-digital-transformation.html"
+      },
+      {
+        "name": "Brisbane Catholic Education (BCE)",
+        "hq": "Brisbane metropolitan area and surrounding regions, Queensland — ~146 schools, ~77,000 students",
+        "relationship_type": "structural_lookalike",
+        "detail": "Similarities: Catholic systemic school system, archdiocesan governance; K-12 plus early learning, government-funded; Evidence-based teaching and learning strategy | Differences: Significantly larger than CECG (~146 schools vs 59); Queensland regulatory regime",
+        "org_name": "Brisbane Catholic Education (BCE)",
+        "geography": "Brisbane metropolitan area and surrounding regions, Queensland",
+        "scale": "~146 schools, ~77,000 students",
+        "key_similarities": [
+          "Catholic systemic school system, archdiocesan governance",
+          "K-12 plus early learning, government-funded",
+          "Evidence-based teaching and learning strategy",
+          "Comparable systemic structure and governance model"
+        ],
+        "key_differences": [
+          "Significantly larger than CECG (~146 schools vs 59)",
+          "Queensland regulatory regime",
+          "BCE has made the largest AI investment of any Australian Catholic system â€” Microsoft 365 Copilot to 12,500 educators (largest K-12 Copilot rollout globally); CECG has not announced comparable AI deployment"
+        ],
+        "recent_investments": [
+          "Microsoft 365 Copilot deployment to 12,500 educators and support staff â€” largest K-12 Copilot rollout globally; phased Jan 2025 to 2026. Trial at St Francis College Crestmead showed average 9.3 hours saved per teacher per week.",
+          "Custom AI chatbot (Copilot Studio, grounded in Catholic values) deployed system-wide across 146 schools",
+          "AI-assisted teaching pilot â€” 8 pilot schools grew NAPLAN scores from 490 to 555 points (2023 to 2024); Year 3 improved 7.22% while state average fell 0.57%",
+          "BCE Education Strategy 2025-2027 â€” 'transformational experiences via emerging technology and evidence-based teaching'; 1,900 staff inputs and 100+ student voices"
+        ],
+        "source": "https://news.microsoft.com/en-au/features/brisbane-catholic-education-to-deploy-microsoft-365-copilot-to-12500-educators-and-support-staff-in-largest-rollout-for-k-12-globally/; https://cathnews.com/2025/08/06/ai-helps-boost-naplan-results-in-brisbane-catholic-schools/; https://www.bne.catholic.edu.au/aboutus/Documents/BCE%20Strategic%20Plan%202025-2027.pdf"
+      },
+      {
+        "name": "Catholic Education Western Australia (CEWA)",
+        "hq": "Western Australia (statewide) — ~164 schools, ~76,000 students",
+        "relationship_type": "structural_lookalike",
+        "detail": "Similarities: Catholic systemic school system, archdiocesan governance; K-12 systemic schools, government-funded; Multi-site system spanning metro and regional contexts | Differences: Larger scale (~164 schools vs 59); WA regulatory regime only",
+        "org_name": "Catholic Education Western Australia (CEWA)",
+        "geography": "Western Australia (statewide)",
+        "scale": "~164 schools, ~76,000 students",
+        "key_similarities": [
+          "Catholic systemic school system, archdiocesan governance",
+          "K-12 systemic schools, government-funded",
+          "Multi-site system spanning metro and regional contexts",
+          "Vision for Learning framework (revised 2025) â€” emphasises evidence-based learning and whole-person development"
+        ],
+        "key_differences": [
+          "Larger scale (~164 schools vs 59)",
+          "WA regulatory regime only",
+          "CEWA is known for digital infrastructure leadership â€” network upgrade (400%+ speed increase), Microsoft 365 at 90,000+ users, multi-cloud strategy; CECG's technology footprint is more modest",
+          "CECG's Catalyst programme has stronger external evaluation rigour (Deloitte) than anything CEWA has published for its Vision for Learning"
+        ],
+        "recent_investments": [
+          "LEADing Lights platform â€” integrated Microsoft cloud ecosystem (Teams, Class Notebook, Office 365, Azure) enabling real-time data on student performance, attendance, and wellbeing, benchmarked against school, system, and NAPLAN averages. Principals can assess impact of new initiatives via live analytics.",
+          "High-speed network upgrade (Orro solution) â€” dual NBN fibre plus 4G to all 150+ schools; 400%+ connection speed increase to improve digital learning services",
+          "Freshservice ITSM platform â€” replaced legacy email-based IT ticketing; unified asset tracking, self-service knowledge base for 75,000+ students, team-specific dashboards for SLA adherence across 164 schools",
+          "Microsoft 365 data resilience (Veeam, 2025) â€” multi-cloud backup strategy for 90,000+ users and 1+ PB of data on M365",
+          "Vision for Learning framework revised 2025 â€” 'Excellence for Success through high quality, evidence-based learning and teaching' aligned to CECWA Strategic Initiatives 2030"
+        ],
+        "source": "https://news.microsoft.com/en-au/features/cloud-technologies-transform-teaching-spur-self-directed-learning-boost-impact-catholic-education-western-australia/; https://www.freshworks.com/customers/stories/cewa/; https://orro.group/press-release/wa-catholic-schools-to-benefit-from-high-speed-network-deal-2/; https://www.intelligentciso.com/2025/08/18/catholic-education-wa-boosts-microsoft-365-resilience-with-veeam/"
+      },
+      {
+        "name": "Catholic Education Tasmania (CET)",
+        "hq": "Tasmania (statewide) — ~40 schools, ~20,000 students",
+        "relationship_type": "strategic_mirror",
+        "detail": "Similarities: Catholic systemic school system, smaller scale â€” closest to CECG's actual size; Launched 'Insight into Learning' programme modelled directly on CECG's Catalyst after a 2022 delegation visit to CECG schools; Same explicit instruction / Science of Learning / Science of Reading foundations | Differences: Tasmania state jurisdiction only; Insight into Learning is approximately 2 years behind Catalyst in maturity",
+        "org_name": "Catholic Education Tasmania (CET)",
+        "geography": "Tasmania (statewide)",
+        "scale": "~40 schools, ~20,000 students",
+        "key_similarities": [
+          "Catholic systemic school system, smaller scale â€” closest to CECG's actual size",
+          "Launched 'Insight into Learning' programme modelled directly on CECG's Catalyst after a 2022 delegation visit to CECG schools",
+          "Same explicit instruction / Science of Learning / Science of Reading foundations",
+          "Both co-hosted the National Science of Learning Summit in April 2023",
+          "Rural and regional school contexts alongside metro, similar to CECG's ACT+regional NSW model"
+        ],
+        "key_differences": [
+          "Tasmania state jurisdiction only",
+          "Insight into Learning is approximately 2 years behind Catalyst in maturity",
+          "CET has not published external independent evaluation at the same rigour as CECG's Deloitte engagement",
+          "Smaller total scale â€” fewer schools than CECG"
+        ],
+        "recent_investments": [
+          "Insight into Learning programme â€” system-wide explicit instruction and Science of Reading implementation, modelled on Catalyst after 2022 CECG visit. PAT assessment data (2022-2023) showed schools adopting the programme outperforming non-participating schools by up to 11% across mathematics, reading, spelling, and vocabulary domains.",
+          "All-System Day 2025 â€” global expertise delivered to all CET educators; continued investment in professional learning infrastructure",
+          "Co-hosted Teaching Matters / National Science of Learning Summit 2024 with Grattan Institute experts"
+        ],
+        "source": "https://insight.catholic.tas.edu.au/news/insight-early-success/; https://insight.catholic.tas.edu.au/news/all-system-day-delivers-global-expertise-to-enhance-learning-for-2025/; https://catholic.tas.edu.au/newsletter/article/1365"
+      },
+      {
+        "name": "Catholic Schools Broken Bay (CSBB)",
+        "hq": "Northern Sydney and Central Coast, NSW — ~44 schools, ~15,000 students",
+        "relationship_type": "structural_lookalike",
+        "detail": "Similarities: Catholic systemic school system, mid-size â€” closer to CECG's scale than MACS or BCE; K-12 systemic schools, government-funded NSW; Described as the fastest-growing Catholic school system in NSW â€” mirrors CECG's enrolment growth trajectory | Differences: NSW regulatory regime only; CSBB's growth is concentrated on Central Coast and northern Sydney; CECG's growth is in ACT northern suburbs",
+        "org_name": "Catholic Schools Broken Bay (CSBB)",
+        "geography": "Northern Sydney and Central Coast, NSW",
+        "scale": "~44 schools, ~15,000 students",
+        "key_similarities": [
+          "Catholic systemic school system, mid-size â€” closer to CECG's scale than MACS or BCE",
+          "K-12 systemic schools, government-funded NSW",
+          "Described as the fastest-growing Catholic school system in NSW â€” mirrors CECG's enrolment growth trajectory",
+          "Facing the same pressures: independent sector competition, capital requirements in growth corridors"
+        ],
+        "key_differences": [
+          "NSW regulatory regime only",
+          "CSBB's growth is concentrated on Central Coast and northern Sydney; CECG's growth is in ACT northern suburbs",
+          "CSBB has announced a $300 million capital investment programme â€” significantly larger than anything CECG has publicly announced",
+          "CSBB's 'Shaping Tomorrow, Together in Faith' strategy (July 2025) focuses on capital and precinct restructure; CECG's strategic identity is led by Catalyst pedagogy"
+        ],
+        "recent_investments": [
+          "$300 million capital investment â€” significant upgrades to multiple schools across Central Coast to meet enrolment demand; master planning for K-12 pathway precincts (Cathedral College Wahroonga hub, Eileen O'Connor Catholic School relocation)",
+          "'Shaping Tomorrow, Together in Faith' five-year strategy (July 2025) â€” six precinct model with K-12 pathways, expanded Early Childhood Education, modern learning spaces",
+          "Enrolment growth identified as system-wide priority â€” new primary and secondary capacity being built in growth corridors"
+        ],
+        "source": "https://csbb.catholic.edu.au/news/catholic-schools-broken-bay-redefines-education-across-diocese; https://cathnews.com/2025/08/13/catholic-schools-broken-bay-reveal-changes-for-an-extraordinary-future/; https://csbb.catholic.edu.au/about-us/building-our-schools"
+      }
+    ],
+    "common_pain_points": [
+      {
+        "pain": "Teacher recruitment and retention in competition with government school salary premiums",
+        "prevalence": "universal",
+        "detail": "All mid-sized Catholic systems in Australia face salary competition from state/territory government schools. ACT government starting salary ($91,396 by 2026) is highest in Australia, creating persistent recruitment pressure for CECG."
+      },
+      {
+        "pain": "Independent sector market share pressure in growth corridors",
+        "prevalence": "common",
+        "detail": "Independent school enrolments grew 15.3% nationally 2021–2025 vs Catholic sector 5.7%. New Anglican and non-denominational schools entering Catholic systems' highest-growth corridors."
+      },
+      {
+        "pain": "Fragmented data infrastructure limiting system-level insight",
+        "prevalence": "common",
+        "detail": "Most mid-sized Catholic systems lack unified data platforms to track student progress, teacher performance, and resource utilisation across all schools in real time."
+      },
+      {
+        "pain": "Demonstrating ROI on professional learning investment",
+        "prevalence": "common",
+        "detail": "Large-scale pedagogical transformation programmes (Catalyst, VFI, Uplift) require sustained investment in coaching, resources, and assessment. Boards and funders increasingly require measurable outcome evidence."
+      }
+    ],
+    "generated_date": "2026-03-26"
   }
 }

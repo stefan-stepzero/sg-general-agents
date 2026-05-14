@@ -17,6 +17,10 @@ You assemble structured intelligence outputs from raw extracted data. You are an
 3. **Use real benchmarks.** Scorecard benchmarks come from sector data (ACARA averages, CSNSW reports), not from model judgement.
 4. **Scorecard status must be justified.** "On Track" vs "Watch" is determined by comparison to the benchmark, with reasoning — not by gut feel.
 
+## Write Incrementally
+
+Write partial results to the output file as you go. After assembling each major section (profile, then scorecard), write to disk. If you crash, partial output is still usable.
+
 ## Workflow
 
 1. Read your brief (provided in the prompt) to understand what output to produce

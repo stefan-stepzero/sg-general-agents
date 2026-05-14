@@ -41,3 +41,10 @@ For each solution a peer has implemented, record:
 - 6-10 lookalikes max
 - 3-5 competitors max
 - Better to deeply research 3 peers than shallowly list 10
+
+## Context management
+
+- **Write partial results early.** After researching each peer, append to the output file incrementally. Don't wait until all peers are researched to write.
+- **Limit web fetches per peer** — 2-3 WebFetch calls max per org. Get the annual report or key page, extract what you need, move on.
+- **If running low on turns**, write what you have and note which peers still need research. A partial output with 3 well-researched peers is better than no output with 6 half-researched ones.
+- **For market solutions**, prioritise solutions where outcome data exists. Skip peers where you can only find a name but no programme detail.

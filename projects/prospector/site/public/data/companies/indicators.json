@@ -881,5 +881,438 @@
         "detail": "Convening impact is hard to measure. ROI narrative to QF depends on soft metrics (attendees, media mentions, community size) rather than hard outcomes."
       }
     ]
+  },
+  "cecg": {
+    "name": "Catholic Education Canberra and Goulburn",
+    "org_id": "cecg",
+    "assembled_date": "2026-03-26",
+    "external_indicators": [
+      {
+        "category": "demographic",
+        "indicator": "ACT population growth rate",
+        "value": "~1.05% per annum (2024 actuals); projections to 700,000 by 2050",
+        "signal": "watch",
+        "detail": "ACT population is growing but at ~1.05% p.a. — slower than the national rate and significantly slower than western Sydney (3-4%). This provides a modest enrolment tailwind but not a structural demand surge. Birth rates are expected to decline; growth is predominantly from net migration, which skews the population older and more transient.",
+        "source": "web-research.json > demographic_trends (act.gov.au/our-canberra/latest-news)"
+      },
+      {
+        "category": "demographic",
+        "indicator": "ACT geographic enrolment divergence — growth zones vs decline zones",
+        "value": "Molonglo Valley and Gungahlin growing; Tuggeranong declining (12 of 20 government schools projected to shrink by 2035)",
+        "signal": "watch",
+        "detail": "CECG's school network spans both high-growth northern corridors (where new families are concentrating) and declining southern suburbs. Network capacity planning is needed to match supply to shifting demand within the ACT footprint.",
+        "source": "web-research.json > demographic_trends (canberratimes.com.au/story/9178661)"
+      },
+      {
+        "category": "demographic",
+        "indicator": "CECG total system enrolment trend (18-year ACARA series)",
+        "value": "27,186 in 2025 vs 24,615 in 2019 (+10.4%); 2025 YoY growth 2.6%",
+        "signal": "positive",
+        "detail": "CECG enrolments have grown every year since 2020 after a flat-to-declining period 2009-2019. The 2025 figure of 27,186 represents the highest recorded total and outperforms the underlying ACT population growth rate. The 2025 YoY growth rate of 2.6% is the highest in the 18-year series.",
+        "source": "acara-trends.json (ACARA School Profile Historical 2008-2025)"
+      },
+      {
+        "category": "demographic",
+        "indicator": "Independent school sector share growth nationally",
+        "value": "Independent schools +15.3% nationally 2021-2025; Catholic +5.7%; Government -0.4%",
+        "signal": "negative",
+        "detail": "The independent sector is growing at 2.7x the Catholic rate nationally. In the ACT specifically, ACT public school enrolments are declining as independents rise. CECG faces structural sector share pressure from premium independent schools (Canberra Grammar, Radford, St Edmund's) which compete for the same secondary-age families.",
+        "source": "web-research.json > demographic_trends (abs.gov.au/statistics/people/education/schools) and competition (canberratimes.com.au/story/9007005)"
+      },
+      {
+        "category": "demographic",
+        "indicator": "Regional NSW (Goulburn diocese) school-age population",
+        "value": "27 NSW schools, 7,245 students; flat or modest growth (3% in 2024 vs ACT 1%)",
+        "signal": "neutral",
+        "detail": "NSW enrolments grew 3% in 2024 vs ACT 1%, suggesting NSW schools are holding or slightly outperforming. However, many Goulburn diocese schools are in small rural towns (Adelong, Bombala, Grenfell, Lake Cargelligo) with limited structural population tailwinds. Small school viability is an ongoing watch item.",
+        "source": "annual-report-extract.json > system_stats (cecg-annual-report-2024.pdf pp.15-17)"
+      },
+      {
+        "category": "market",
+        "indicator": "Stromlo Forest Anglican College opening (Molonglo Valley)",
+        "value": "ELC + Kindergarten opens Feb 2026; full K-12 by 2029 (1,850 student capacity)",
+        "signal": "negative",
+        "detail": "Stromlo Forest Anglican College is a purpose-built, well-resourced new independent school opening directly in Molonglo Valley — the ACT's fastest-growing corridor and CECG's primary near-term enrolment opportunity zone. It will grow through the year levels in parallel with the suburb's demographic maturation, making it a persistent structural competitor over a 5+ year horizon.",
+        "source": "web-research.json > competition (canberratimes.com.au/story/9154634)"
+      },
+      {
+        "category": "market",
+        "indicator": "ACT Government public school expansion program",
+        "value": "5 new public schools opened 2022-2025; Aunty Agnes Shea HS (Taylor) opened 2025; P-6 school at Strathnairn (Ginninderry) opens 2026",
+        "signal": "negative",
+        "detail": "The ACT Government is actively building public school capacity in the same northern growth corridors where CECG would benefit from enrolment growth. Each new public school captures a portion of the incoming young family cohort before CECG can. ACT already has higher-than-average public school attendance rates vs other states.",
+        "source": "web-research.json > act_policy and competition (education.act.gov.au)"
+      },
+      {
+        "category": "market",
+        "indicator": "Catholic market share in ACT vs national",
+        "value": "Catholic sector ACT growth 0.23% (recent data); national Catholic growth 5.7% (2021-2025)",
+        "signal": "watch",
+        "detail": "CECG's ACT market share growth is modest compared to national Catholic sector trends and substantially below the independent sector. This is consistent with the ACT's high public school preference and strong independent competitor presence, but it means CECG cannot rely on passive enrolment growth from demographic trends alone.",
+        "source": "web-research.json > demographic_trends (abs.gov.au)"
+      },
+      {
+        "category": "regulatory",
+        "indicator": "Better and Fairer Schools Agreement (BFSA) 2025-2034 commenced",
+        "value": "Commonwealth commits to 80%+ SRS for non-government schools; 3.1% SRS indexation in 2025; Year 1 phonics check and numeracy check mandated",
+        "signal": "positive",
+        "detail": "BFSA reform requirements (phonics check, evidence-based teaching, wellbeing support, teacher retention) are broadly aligned with what CECG's Catalyst programme is already doing. This means CECG is likely compliant from day one at lower cost than dioceses that have not invested in similar frameworks. The 3.1% indexation provides modest funding uplift.",
+        "source": "web-research.json > act_policy (education.gov.au/recurrent-funding-schools)"
+      },
+      {
+        "category": "regulatory",
+        "indicator": "Gonski-era funding reductions (legacy effect)",
+        "value": "Described as 'severe funding reductions' by outgoing ED Ross Fox",
+        "signal": "negative",
+        "detail": "Fox's departure statement explicitly cited Gonski reforms as having created severe funding reductions during his tenure, indicating CECG experienced a real funding contraction. The BFSA trajectory appears more stable, but the legacy impact on financial reserves and operating capacity is unquantified (financial statements not extractable from annual report PDF).",
+        "source": "web-research.json > funding (cathnews.com/2024/10/14)"
+      },
+      {
+        "category": "funding",
+        "indicator": "Commonwealth SRS funding (2025 recurrent)",
+        "value": "Catholic schools nationally receive $10.4bn in 2025; 80%+ SRS from Commonwealth; 3.1% indexation",
+        "signal": "positive",
+        "detail": "BFSA provides a stable funding floor for the 2025-2034 decade. ACT non-government schools receive Commonwealth and ACT Territory grants (ACT is a territory, not a state, with a different funding formula). Schools previously funded above the target share will be transitioned smoothly to target by 2029.",
+        "source": "web-research.json > funding (education.gov.au/recurrent-funding-schools)"
+      },
+      {
+        "category": "workforce",
+        "indicator": "ACT public school teacher starting salary",
+        "value": "$91,396 starting salary by 2026 — highest in Australia",
+        "signal": "negative",
+        "detail": "ACT Government enterprise agreement (July 2023) locked in the highest starting teacher salary in Australia by 2026. CECG faces a structural pay disadvantage when competing with the public sector for new teachers and graduates. The 3-3.5% CECG teacher salary increase in 2024 was explicitly cited as a cost driver for the 2026 fee increase, suggesting CECG is at or near its limits of salary-based competition.",
+        "source": "web-research.json > act_policy and workforce (region.com.au/why-the-act-was-spared)"
+      },
+      {
+        "category": "workforce",
+        "indicator": "ACT public school staffing levels",
+        "value": "ACT public schools entered 2025 effectively fully staffed (~25 vacancies across 4,000 teachers)",
+        "signal": "negative",
+        "detail": "The ACT public sector has resolved its teacher shortage by offering Australia's highest salaries, reduced hours, and 60% casual loading. This tightens the available teacher pool for CECG — teachers who previously might have moved between sectors are now retained by the public sector. No equivalent CECG staffing data is available for direct comparison.",
+        "source": "web-research.json > workforce (region.com.au/what-teacher-shortage)"
+      },
+      {
+        "category": "technology",
+        "indicator": "AI in schools — regulatory and adoption context",
+        "value": "AI discussed at CECG 2025 System Day; no specific AI policy or platform investment announced",
+        "signal": "watch",
+        "detail": "AI classroom integration is on CECG's agenda (discussed at the 2025 System Day as part of the Catalyst framework), but no specific AI product, policy framework, or procurement decision has been publicly announced. This is a gap signal — CECG has not yet publicly committed to a platform or governance approach for AI in classrooms.",
+        "source": "web-research.json > technology (catalyst.cg.catholic.edu.au/defining-the-journey-for-2025-system-day)"
+      }
+    ],
+    "internal_indicators": [
+      {
+        "category": "market",
+        "indicator": "CECG system enrolment growth (ACARA 2025)",
+        "value": "27,186 total enrolments in 2025 (ACARA); 22,912 systemic enrolments per 2024 annual report census",
+        "signal": "positive",
+        "detail": "ACARA data (including congregational schools) shows 27,186 enrolments in 2025, a 2.6% YoY increase and +10.4% from 2019. Annual report August 2024 census recorded 22,912 systemic students across 56 schools. Both figures confirm enrolment growth is real and accelerating. The gap between ACARA total and annual report systemic count reflects congregational school students counted separately by CECG.",
+        "source": "acara-trends.json (ACARA School Profile 2008-2025); annual-report-extract.json > system_stats (cecg-annual-report-2024.pdf)"
+      },
+      {
+        "category": "market",
+        "indicator": "Catalyst programme — national and international adoption",
+        "value": "CET Tasmania adopted Catalyst model (2022 visit → Insight into Learning programme); NZ delegation 30 leaders May 2025; co-presented at Australian Catholic Education Conference Aug 2025",
+        "signal": "positive",
+        "detail": "CECG is the originator of a nationally recognised explicit instruction model. Catholic Education Tasmania's improved NAPLAN results following Catalyst adoption provide external validation. NZ Catholic delegation in May 2025 indicates potential international licensing or consulting opportunity. CSPD's Uplift programme was also modelled on Catalyst. This positions CECG as a thought leader with potential IP/consulting revenue stream.",
+        "source": "web-research.json > catalyst_updates (insight.catholic.tas.edu.au; catalyst.cg.catholic.edu.au/showcasing-catalyst-welcoming-new-zealand)"
+      },
+      {
+        "category": "market",
+        "indicator": "Catalyst — student outcome results",
+        "value": "Top 4 improved diocese for 9 of 10 NAPLAN domains vs national average 2019-2023; largest positive shift of any large diocese 2019-2022; DIBELS 75%+ K-2 students at low risk of reading difficulty",
+        "signal": "positive",
+        "detail": "NAPLAN data shows CECG achieved the largest positive shift of any large Australian diocese between 2019 and 2022, and remained in the top 4 improved dioceses for 9 of 10 domains in 2023. DIBELS composite shows 75%+ of K-2 students at low risk of future reading difficulties. 13 of top 20 ACARA 'Making a Difference' schools in ACT 2023/24 are CECG schools. These are verified figures from source documents.",
+        "source": "annual-report-extract.json > catalyst_references (catalyst-impact.pdf pp.8, 10); web-research.json > catalyst_updates"
+      },
+      {
+        "category": "workforce",
+        "indicator": "Teacher permanency conversion programme",
+        "value": "800 temporary teachers being moved to permanency; ~85% converted by December 2024",
+        "signal": "positive",
+        "detail": "CECG's strategic decision to convert contract teachers to permanent staff reduces turnover and supports retention. Staff retention levels over 90% are reported. This directly addresses the workforce instability risk and may be a competitive differentiator for teacher recruitment against the public sector's higher salaries.",
+        "source": "annual-report-extract.json > strategic_priorities and challenges (cecg-annual-report-2024.pdf p.25)"
+      },
+      {
+        "category": "workforce",
+        "indicator": "Catalyst teacher engagement levels",
+        "value": "88.6% integrate HITP daily; 92.4% believe it merits continued focus; 97% would recommend HITP to colleagues; 79% would not go back to previous teaching approach",
+        "signal": "positive",
+        "detail": "Teacher engagement surveys at System Day 2025 and Deloitte evaluation show very high commitment to the Catalyst framework. These are unusually high scores for a system-wide change programme. Catalyst may function as a non-salary retention mechanism — teachers report professional satisfaction and time savings of up to 6 hours/week.",
+        "source": "web-research.json > catalyst_updates (catalyst.cg.catholic.edu.au/defining-the-journey-for-2025-system-day); annual-report-extract.json > catalyst_impact results (catalyst-deloitte-evaluation.pdf p.7)"
+      },
+      {
+        "category": "workforce",
+        "indicator": "Staffing challenge — system-wide shortages (addressed)",
+        "value": "Employed casual relief teachers on full-time basis to address shortages, particularly in regional schools",
+        "signal": "watch",
+        "detail": "The 2024 annual report identifies system-wide staffing shortages as a named challenge, addressed through a CRT-as-FTE model. This is a workaround, not a structural fix. Regional schools remain most exposed. The permanency conversion programme partially addresses this but the underlying challenge of competing with ACT public sector salaries remains.",
+        "source": "annual-report-extract.json > challenges (cecg-annual-report-2024.pdf p.25)"
+      },
+      {
+        "category": "funding",
+        "indicator": "2026 fee increases above CPI",
+        "value": "Primary: 5.3-10% increase; secondary: 3.5-7.5%; family maintenance levy capping at $1,000",
+        "signal": "watch",
+        "detail": "Fee increases significantly above CPI have attracted media scrutiny (Region Canberra, neutral-to-mildly critical tone). CECG attributed the increases to ICT costs, insurance, teacher salary increases, and a fee harmonisation programme across primary schools. ED de Carvalho positioned it as '$10 a day per child' for primary. The optics risk is real given ACT families already face high cost of living and have public school and independent school alternatives.",
+        "source": "web-research.json > funding and new_initiatives (region.com.au/catholic-school-fees-are-going-up)"
+      },
+      {
+        "category": "funding",
+        "indicator": "Financial statements — not extractable",
+        "value": "Revenue, expenditure, and government grants data not available (scanned PDF pages)",
+        "signal": "neutral",
+        "detail": "Annual report financial statements (pages 34-41) are scanned image pages with no extractable text. No revenue, expenditure, or surplus/deficit figures can be confirmed. This is a data gap, not a signal in itself.",
+        "source": "annual-report-extract.json > financial_summary (cecg-annual-report-2024.pdf)"
+      },
+      {
+        "category": "technology",
+        "indicator": "Virtual learning programme (senior secondary)",
+        "value": "Third year of operation in 2025; 60-100 students annually; 7+ schools; 12 courses offered via Microsoft Teams",
+        "signal": "positive",
+        "detail": "CECG's virtual learning programme solves a real equity and access problem for regional and rural Year 11-12 students who would otherwise leave their communities. Led by an award-winning coordinator (Dr Wendy Mockler, 2025 Rural and Remote Education Advocate Award). Uses Microsoft Teams. This is a scalable workforce efficiency model as well as an equity initiative.",
+        "source": "web-research.json > new_initiatives and workforce (region.com.au/access-and-equity-virtual-learning-program)"
+      },
+      {
+        "category": "technology",
+        "indicator": "Catalyst digital resource library (Ochre partnership)",
+        "value": "5,400+ curriculum resources (K-6 English and Mathematics); Knowledge Pack 3.0 released July 2024 (60+ curated items)",
+        "signal": "positive",
+        "detail": "CECG and Ochre Education have co-developed 5,400+ curriculum resources available via an online library. These are reportedly the most-downloaded resources on the Catalyst site. Knowledge Packs (three versions) serve as teacher professional learning collections. Ochre has since partnered with Smartgrade for an impact assessment platform — CECG may benefit from this capability.",
+        "source": "web-research.json > technology (catalyst.cg.catholic.edu.au/collaborating-to-transform-curriculum; edtechinnovationhub.com)"
+      },
+      {
+        "category": "technology",
+        "indicator": "ICT investment trend",
+        "value": "ICT cited as a rising cost driver in 2026 fee communications",
+        "signal": "watch",
+        "detail": "CECG explicitly named ICT as a driver of cost increases justifying the 2026 fee rises. This confirms ongoing investment in school-level technology infrastructure but no specific system (SIS, LMS, or assessment platform) is publicly named. The nature and scale of technology investment is not transparent from available sources.",
+        "source": "web-research.json > funding (region.com.au/catholic-school-fees-are-going-up)"
+      },
+      {
+        "category": "regulatory",
+        "indicator": "CECG unique dual-jurisdiction position",
+        "value": "Only Catholic education system in Australia operating across both a state (NSW) and a territory (ACT)",
+        "signal": "watch",
+        "detail": "CECG operates under two different education regulatory frameworks simultaneously — ACT (territory) and NSW (state). This creates compliance complexity, dual reporting requirements, and different funding formula implications. It is also a differentiated capability and signals organisational maturity in managing regulatory complexity.",
+        "source": "annual-report-extract.json > raw_quotes p.15 (cecg-annual-report-2024.pdf)"
+      },
+      {
+        "category": "market",
+        "indicator": "Governance transformation to CACGEL (1 Jan 2025)",
+        "value": "CECG incorporated as Catholic Archdiocese of Canberra and Goulburn Education Limited from 1 January 2025",
+        "signal": "positive",
+        "detail": "Transition from Catholic Education Commission (established 1983) to a registered not-for-profit company with skills-based board enhances governance transparency and lay participation. This is a significant structural change that modernises accountability and may improve access to capital or commercial partnerships. It occupied substantial Commission attention in 2024.",
+        "source": "web-research.json > new_initiatives (cgcatholic.org.au/about/our-archbishop); annual-report-extract.json > strategic_priorities (cecg-annual-report-2024.pdf pp.6, 8)"
+      }
+    ],
+    "external_risks": [
+      {
+        "id": "ext-r1",
+        "label": "Stromlo Forest Anglican College — direct competition in Molonglo Valley growth corridor",
+        "score": 0.72,
+        "level": "high",
+        "reasoning": "SFAC is a fully funded, purpose-built Anglican school opening in the ACT's highest-growth residential corridor, staged to reach 1,850 students by 2029. Molonglo Valley is precisely where CECG needs new enrolments to grow. CECG has no school in the Molonglo Valley catchment currently. The risk is not just of share loss but of being permanently locked out of a growth corridor by a well-resourced competitor with a 5-year head start on a new student cohort.",
+        "domain": "market",
+        "sub": "competition / enrolment",
+        "source": "web-research.json > competition (canberratimes.com.au/story/9154634)"
+      },
+      {
+        "id": "ext-r2",
+        "label": "ACT public teacher salary escalation — structural recruitment disadvantage",
+        "score": 0.65,
+        "level": "high",
+        "reasoning": "ACT public schools will pay the highest starting teacher salary in Australia ($91,396 by 2026). CECG's 3-3.5% salary increases are clearly insufficient to close this gap. While Catalyst and permanency conversion provide non-salary retention levers, the recruitment disadvantage for new graduates entering a tight labour market is real and documented. ACT public sector has already resolved its shortage, meaning fewer teachers in the available pool.",
+        "domain": "workforce",
+        "sub": "teacher recruitment and retention",
+        "source": "web-research.json > act_policy and workforce (region.com.au/why-the-act-was-spared; region.com.au/what-teacher-shortage)"
+      },
+      {
+        "id": "ext-r3",
+        "label": "Independent sector structural share gain — long-term market erosion",
+        "score": 0.58,
+        "level": "medium",
+        "reasoning": "National data shows independent schools growing 2.7x faster than Catholic schools (15.3% vs 5.7%, 2021-2025). In the ACT, ACT public enrolments are declining while independents rise. CECG's own ACT Catholic growth is modest at 0.23%. The structural preference for independent schooling among ACT's higher-income, more secular demographic is a medium-term share erosion risk. Catalyst outcomes may partially counteract this if marketed effectively, but no evidence of that translation yet.",
+        "domain": "market",
+        "sub": "sector share / competition",
+        "source": "web-research.json > demographic_trends and competition (abs.gov.au; canberratimes.com.au/story/9007005)"
+      },
+      {
+        "id": "ext-r4",
+        "label": "ACT school-age demographic shift — geographic mismatch with CECG network",
+        "score": 0.5,
+        "level": "medium",
+        "reasoning": "12 of 20 ACT government schools in Tuggeranong are projected to shrink by 2035, and growth is concentrated in Molonglo Valley and along the light rail corridor to Woden. CECG has schools in declining catchments (southern suburbs) and no presence in Molonglo Valley. Without network expansion in growth zones or rationalisation in decline zones, CECG faces an increasing geographic mismatch between school capacity and enrolment demand.",
+        "domain": "demographic",
+        "sub": "population shift / network fit",
+        "source": "web-research.json > demographic_trends (canberratimes.com.au/story/9178661)"
+      },
+      {
+        "id": "ext-r5",
+        "label": "Fee increases above CPI — parent affordability pressure and reputational risk",
+        "score": 0.42,
+        "level": "medium",
+        "reasoning": "2026 fee increases of 5.3-10% (primary) and 3.5-7.5% (secondary) have attracted neutral-to-critical media coverage. Families facing cost-of-living pressure in the ACT may reconsider Catholic schooling when public alternatives are free and well-resourced. The risk is manageable if increases are temporary (harmonisation) but ongoing cost pressures (ICT, insurance, salaries) suggest above-CPI fees are structural, not one-off. ED de Carvalho's affordability messaging is noted but untested.",
+        "domain": "funding",
+        "sub": "fee pressure / enrolment risk",
+        "source": "web-research.json > funding and new_initiatives (region.com.au/catholic-school-fees-are-going-up)"
+      },
+      {
+        "id": "ext-r6",
+        "label": "Gonski funding trajectory — lingering exposure to future reform",
+        "score": 0.35,
+        "level": "low",
+        "reasoning": "The BFSA 2025-2034 provides a stable funding framework for the medium term, but Gonski-era funding reductions were described as 'severe' and impacted CECG's operating model under Fox's tenure. A future federal government could revisit non-government school funding arrangements. Score is low given the 10-year agreement, but not zero given the precedent of the Gonski 2.0 reductions.",
+        "domain": "funding",
+        "sub": "government policy / regulatory",
+        "source": "web-research.json > funding (cathnews.com/2024/10/14; education.gov.au)"
+      },
+      {
+        "id": "ext-r7",
+        "label": "Catalyst IP diffusion — competitive advantage erosion as model is adopted widely",
+        "score": 0.38,
+        "level": "low",
+        "reasoning": "CSPD modelled Uplift on Catalyst; Catholic Education Tasmania launched Insight into Learning after a 2022 CECG visit; NZ Catholic Education is studying the model. As Catalyst diffuses, CECG's differentiation as a thought leader erodes unless it continues to innovate ahead of adopters. The risk is not existential (enrolment outcomes remain internally valid) but the external reputation advantage shrinks over time.",
+        "domain": "market",
+        "sub": "programme differentiation / competitive moat",
+        "source": "web-research.json > catalyst_updates (insight.catholic.tas.edu.au; catalyst.cg.catholic.edu.au/showcasing-catalyst-welcoming-new-zealand)"
+      }
+    ],
+    "internal_risks": [
+      {
+        "id": "int-r1",
+        "label": "Leadership transition — dual turnover at ED level (Fox out, Betts interim, de Carvalho incoming mid-2025)",
+        "score": 0.6,
+        "level": "high",
+        "reasoning": "CECG had three different people in the ED role across a 12-month window (Fox resigned Oct 2024, Betts interim from Jan 2025, de Carvalho commencing mid-2025). This is significant instability at the apex of a 56-school system during a period that includes incorporation as CACGEL, above-CPI fee increases, and continued Catalyst expansion. De Carvalho has strong national credentials (ACARA CEO, NESA CEO, NCEC CEO) but has not previously run a diocesan school system. Risk is elevated in the first 12-18 months.",
+        "domain": "governance",
+        "sub": "leadership continuity",
+        "source": "web-research.json > leadership (cathnews.com/2024/10/14; cathnews.com/2024/11/01; cathnews.com/2025/02/24)"
+      },
+      {
+        "id": "int-r2",
+        "label": "Patrick Ellis key person risk — Catalyst programme continuity",
+        "score": 0.4,
+        "level": "medium",
+        "reasoning": "Patrick Ellis is Education Lead and the named driver of Catalyst's external partnerships (NZ delegation, CET conference presentation). His departure risk (originally flagged as a possible move to CSPD) is not confirmed — he remains at CECG as of August 2025 per web sources. However, his visibility in every major Catalyst external engagement makes him a key person. If Ellis were to leave, the programme's external expansion and internal momentum could be disrupted. Score is moderate because: (1) departure is unconfirmed, (2) Catalyst has broad teacher engagement making it less single-person dependent, and (3) Deloitte evaluation framework provides structural continuity.",
+        "domain": "workforce",
+        "sub": "key person / programme continuity",
+        "source": "web-research.json > leadership (catalyst.cg.catholic.edu.au/showcasing-catalyst-welcoming-new-zealand; insight.catholic.tas.edu.au)"
+      },
+      {
+        "id": "int-r3",
+        "label": "Financial opacity — inability to verify revenue, expenditure or surplus from published annual report",
+        "score": 0.45,
+        "level": "medium",
+        "reasoning": "Financial statements in the 2024 annual report are scanned image pages with no extractable text, so no revenue, expenditure, government grant, or surplus/deficit figures are verifiable from the primary source. This is a due-diligence gap. CECG's incorporation as CACGEL from Jan 2025 may improve financial disclosure going forward, but current financial health cannot be independently assessed. The Gonski funding reduction history, above-CPI fee increases, and ICT cost escalation suggest a system under financial pressure, but severity is unquantifiable without data.",
+        "domain": "funding",
+        "sub": "financial health / transparency",
+        "source": "annual-report-extract.json > financial_summary (cecg-annual-report-2024.pdf)"
+      },
+      {
+        "id": "int-r4",
+        "label": "Regional school viability — access to therapy, staffing, and enrolment fragility",
+        "score": 0.5,
+        "level": "medium",
+        "reasoning": "The annual report explicitly identifies access to allied health therapy (speech, occupational therapy) in regional schools as a challenge, and staffing shortages as disproportionately affecting regional campuses. Many Goulburn diocese schools are in small rural towns (Adelong, Bombala, Grenfell, Lake Cargelligo, West Wyalong) where the school-age population is flat or declining. Small school viability is a recurring issue across rural Catholic systems in Australia.",
+        "domain": "workforce",
+        "sub": "regional operations / small school risk",
+        "source": "annual-report-extract.json > challenges (cecg-annual-report-2024.pdf pp.24-25)"
+      },
+      {
+        "id": "int-r5",
+        "label": "Governance transition complexity — CACGEL incorporation operational risk",
+        "score": 0.3,
+        "level": "low",
+        "reasoning": "Transitioning 56 schools, 1,505 FTE teachers, and all operations into a new corporate structure from 1 January 2025 was described as occupying 'much of the Commission's attention in 2024'. New governance brings benefits (modern accountability, potential commercial partnerships) but also risk: unclear obligations, potential for board-management tension under new structure, and an incoming ED unfamiliar with the new entity. Risk is low because the transition is now complete and CACGEL is operational.",
+        "domain": "governance",
+        "sub": "structural transition",
+        "source": "web-research.json > new_initiatives (cgcatholic.org.au); annual-report-extract.json > strategic_priorities (cecg-annual-report-2024.pdf pp.6, 8)"
+      },
+      {
+        "id": "int-r6",
+        "label": "Catalyst scale vs depth trade-off — risk of programme dilution as it expands nationally",
+        "score": 0.33,
+        "level": "low",
+        "reasoning": "Catalyst is deepening internally (Knowledge Pack 3.0, Deloitte evaluation, Tom Bennett workshop, Wexler co-hosting) while simultaneously expanding externally (NZ, Tasmania, national conference). There is a programme management risk that the external thought leadership activity absorbs capacity that should be sustaining and deepening internal outcomes. 88.6% daily HITP integration (from 2025 System Day) is strong but not 100%, suggesting some schools or teachers are not yet fully embedded. Score is low because the evidence base remains strong.",
+        "domain": "programme",
+        "sub": "programme fidelity / scale",
+        "source": "web-research.json > catalyst_updates (catalyst.cg.catholic.edu.au/defining-the-journey-for-2025-system-day; catalyst.cg.catholic.edu.au/the-impact)"
+      }
+    ],
+    "news_items": [
+      {
+        "headline": "Man of faith, humanity, and family to head education in Canberra-Goulburn Archdiocese",
+        "date": "2025-02-24",
+        "summary": "David de Carvalho appointed permanent Executive Director of CECG, commencing mid-2025. Former CEO of ACARA, NESA, and National Catholic Education Commission. Archbishop Prowse welcomed the appointment. De Carvalho has signalled focus on affordability and procurement efficiencies.",
+        "source": "https://cathnews.com/2025/02/24/man-of-faith-humanity-and-family-to-head-education-in-canberra-goulburn-archdiocese/"
+      },
+      {
+        "headline": "Pam Betts appointed as Interim Executive Director",
+        "date": "2024-11-01",
+        "summary": "Former Executive Director of Catholic Education Brisbane came out of retirement to serve as Interim ED from 6 January 2025 while the Board recruited a permanent replacement for Ross Fox.",
+        "source": "https://cathnews.com/2024/11/01/canberra-education-appoints-interim-executive-director/"
+      },
+      {
+        "headline": "Praise for outgoing Catholic education leader",
+        "date": "2024-10-14",
+        "summary": "Ross Fox resigned after eight years as Executive Director. His tenure saw record enrolments and the launch of Catalyst. Archbishop Prowse praised his navigation of Gonski funding reductions. Catalyst described as an outstanding success.",
+        "source": "https://cathnews.com/2024/10/14/praise-for-outgoing-catholic-education-leader/"
+      },
+      {
+        "headline": "Catholic school fees are going up beyond CPI in 2026. Here's why",
+        "date": "2025",
+        "summary": "Region Canberra reported primary fee increases of 5.3-10% and secondary increases of 3.5-7.5% for 2026. CECG cited ICT costs, insurance, teacher salary increases, and fee harmonisation as drivers. ED de Carvalho offered affordability messaging. Tone was neutral to mildly critical.",
+        "source": "https://region.com.au/catholic-school-fees-are-going-up-beyond-cpi-in-2026-heres-why/924367/"
+      },
+      {
+        "headline": "New era in governance of Catholic Education (CACGEL incorporation)",
+        "date": "2025-01-01",
+        "summary": "CECG incorporated as Catholic Archdiocese of Canberra and Goulburn Education Limited (CACGEL) from 1 January 2025, transitioning from the Catholic Education Commission structure established in 1983. New skills-based board with enhanced lay participation and corporate accountability.",
+        "source": "https://cgcatholic.org.au/about/our-archbishop/addresses-and-statements/new-era-in-governance-of-ce/"
+      },
+      {
+        "headline": "Showcasing Catalyst — Welcoming New Zealand",
+        "date": "2025-05-21",
+        "summary": "Thirty school leaders and teachers from Catholic Education New Zealand visited 10 CECG schools over three days to observe High Impact Teaching Practice (HITP) in action. Education Lead Patrick Ellis led the delegation. Confirms growing international interest in Catalyst as an exportable model. Ellis confirmed still at CECG as of this date.",
+        "source": "https://catalyst.cg.catholic.edu.au/showcasing-catalyst-welcoming-new-zealand/"
+      },
+      {
+        "headline": "A Tale of Two Systems — CECG and Catholic Education Tasmania at Australian Catholic Education Conference",
+        "date": "2025-08-28",
+        "summary": "Patrick Ellis co-presented with Jennifer White (CET) in a session before 200+ delegates at the ACEC in Cairns. CET's Insight into Learning programme (modelled on Catalyst) showed NAPLAN improvement across all domains. CECG confirmed as the national originator of the explicit instruction movement in Catholic education.",
+        "source": "https://insight.catholic.tas.edu.au/news/sharing-our-success-story-at-the-australian-catholic-education-conference-2025/"
+      },
+      {
+        "headline": "2025 CECG System Day — over 2,000 educators participate",
+        "date": "2025-02-03",
+        "summary": "System Day featured keynotes from Natalie Wexler and Professor Daniel Willingham. Survey of 1,500+ teachers: 88.6% integrate HITP daily; 92.4% believe it merits continued focus; 83.3% would sustain use beyond formal requirements. Theme was 'Pilgrims of Hope'.",
+        "source": "https://catalyst.cg.catholic.edu.au/defining-the-journey-for-2025-system-day/"
+      },
+      {
+        "headline": "Stromlo Forest Anglican College to open high school early",
+        "date": "2024",
+        "summary": "New independent Anglican school in Molonglo Valley (Wright) opening February 2026 with ELC and Kindergarten, growing to K-12 by 2029 with final capacity of 1,850 students. Direct competitor in ACT's highest-growth residential corridor where CECG has no current school.",
+        "source": "https://www.canberratimes.com.au/story/9154634/stromlo-forest-anglican-college-to-open-high-school-early/"
+      },
+      {
+        "headline": "Access and equity: Virtual learning program opens up possibilities for regional students",
+        "date": "2025",
+        "summary": "Dr Wendy Mockler won the 2025 Rural and Remote Education Advocate Award from Professional Teachers' Council NSW for her work coordinating CECG's virtual learning programme. Programme in third year of operation, serving 60-100 students annually across 7+ rural schools via Microsoft Teams.",
+        "source": "https://region.com.au/access-and-equity-virtual-learning-program-opens-up-possibilities-for-regional-students/846712/"
+      },
+      {
+        "headline": "Educators urged to place faith before success",
+        "date": "2025-08-12",
+        "summary": "CathNews covered de Carvalho addressing Catholic educators, calling on them to place the Gospel — rather than conventional success metrics — as the guiding principle for their work. Early signal of his strategic priorities and communications style as incoming ED.",
+        "source": "https://cathnews.com/2025/08/12/educators-urged-to-place-faith-before-success/"
+      },
+      {
+        "headline": "Natalie Wexler workshop co-hosted by CECG (November 2025)",
+        "date": "2025-11-07",
+        "summary": "CECG co-hosted two Natalie Wexler workshops at St Mary MacKillop College Canberra with Think Forward Educators. Sessions covered knowledge gap and writing instruction. Continued external expert investment in literacy and professional learning beyond the annual System Day.",
+        "source": "https://catalyst.cg.catholic.edu.au/natalie-wexler-workshop/"
+      }
+    ]
   }
 }

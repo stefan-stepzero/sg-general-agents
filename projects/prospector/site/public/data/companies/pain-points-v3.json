@@ -355,5 +355,328 @@
   "wise": {
     "name": "WISE",
     "domains": []
+  },
+  "cecg": {
+    "name": "Catholic Education Canberra and Goulburn",
+    "generated_date": "2026-03-26",
+    "methodology_note": "Pain points derived from gaps between observed data and benchmarks in profile, scorecard, and signals files, cross-referenced against peer investments (lookalikes), competitive moves (competitors), and validated solutions (market-solutions). Taxonomy coverage check conducted against edu-operator taxonomy domains. Evidence cited for each point; unknowns flagged explicitly. Does not repeat generic Catholic school pain points — each point is grounded in CECG-specific evidence.",
+    "domains": [
+      {
+        "domain": "Teaching & Learning",
+        "pain_points": [
+          {
+            "id": "cecg-tl-01",
+            "title": "Catalyst sustainability at depth — preventing regression as staff turns over",
+            "severity": "critical",
+            "evidence": "The Deloitte Access Economics formative evaluation (3 phases, Jan 2022 – Mar 2024) assessed ADKAR change adoption year-on-year but the summative evaluation — measuring whether gains are durable over time — has not yet been formally completed. The 2025 System Day survey shows 88.6% of 1,500+ teachers use HITP daily (up from 45% in the 2024 Deloitte survey), which is a strong adoption signal, but the same survey also shows that 16.7% would not sustain HITP use beyond formal requirements — meaning one in six teachers is compliance-driven, not intrinsically motivated. Staff retention at 90%+ means approximately 200 teaching staff turn over each year (1,986 FTE × 10% attrition). Each new teacher requires full Catalyst induction to maintain system consistency. The annual report acknowledges 'system-wide staffing shortages' addressed by CRT-as-FTE workarounds (annual-report-extract.json, p.25), meaning not all incoming teachers enter through a structured pathway. Patrick Ellis (the Catalyst programme architect) has now moved to CSPD as EGM Learning Outcomes — profile.json confirms his role as 'Education Lead, Catalyst programme lead' and web-research.json confirms he was still in role as late as May 2025 and was a 2024 Faith in Learning Excellence Award recipient. His departure represents a key-person risk for programme memory and design continuity. The brief from the pain-points context explicitly flags this succession question. The Deloitte evaluation is formative only — no summative proof yet that the gains are self-sustaining without continued central resourcing.",
+            "unknowns": "Whether Patrick Ellis has been formally replaced and who now owns Catalyst programme design and quality. What structured onboarding exists for new teachers relative to HITP (beyond general System Day attendance). Whether the 16.7% who would not sustain HITP independently are concentrated in specific schools or year levels. Whether the summative Deloitte evaluation has been commissioned for the 2025-2026 period. How the coaching load is distributed — whether Shaping Minds (external coach provider) is still actively engaged and at what scale.",
+            "sources": [
+              "web-research.json — catalyst.cg.catholic.edu.au 2025 System Day",
+              "annual-report-extract.json — catalyst-deloitte-evaluation.pdf",
+              "annual-report-extract.json — cecg-annual-report-2024.pdf p.25",
+              "profile.json — leadership_team (Patrick Ellis note)",
+              "pain-points-brief.md — key person risk section"
+            ]
+          },
+          {
+            "id": "cecg-tl-02",
+            "title": "Catalyst scope confined to literacy and early mathematics — no validated framework for secondary, writing, or STEM domains",
+            "severity": "significant",
+            "evidence": "The Catalyst impact summary (catalyst-impact.pdf) and validated outcomes focus on reading (DIBELS K–2, proficient readers 75% vs 66% national), NAPLAN Reading and Numeracy for Year 3 and Year 5, and K–6 Mathematics curriculum resources. The profile lists K–6 Mathematics full suite and 3–6 English scope and sequences as the curriculum resource coverage. There is no public evidence of a validated Catalyst framework for secondary English or Mathematics, for writing (distinct from reading), or for Science and STEM domains. The 2025 System Day discussion around 'AI in classrooms' (signals.json) signals awareness that the next frontier is being discussed, but no domain extension has been announced. Peer comparator MACS launched its Vision for Instruction in 2024 and published NAPLAN improvements specifically in numeracy at primary level — mirroring the same primary literacy-first pattern. CECG's Deloitte evaluation is described as 'formative only' with methodology focused on ADKAR change dimensions, not subject-domain breadth. The brief specifically calls out 'beyond reading' as a priority pain domain.",
+            "unknowns": "Whether Catalyst has an internal roadmap for extending to secondary year levels (7–12 explicit instruction). Whether there is active development of a writing instruction framework (Natalie Wexler professional development in November 2025 is a possible signal — profile.json cites this as a continued literacy focus but writing is a different domain from reading). Whether the 5,400+ Ochre Education resources cover secondary Mathematics and Science or are bounded to K–6 primary English and Mathematics.",
+            "sources": [
+              "annual-report-extract.json — catalyst-impact.pdf pp.8, 10",
+              "profile.json — catalyst_profile (core_components)",
+              "web-research.json — catalyst.cg.catholic.edu.au/the-impact/",
+              "profile.json — strategic_priorities (Natalie Wexler PD, November 2025)",
+              "lookalikes.json — MACS VFI scope"
+            ]
+          },
+          {
+            "id": "cecg-tl-03",
+            "title": "No generative AI strategy or deployment — 1–2 year gap behind peer leaders",
+            "severity": "significant",
+            "evidence": "The signals file classifies AI readiness as a 'watch' signal: 'AI in classrooms discussed at CECG 2025 System Day but no specific AI policy or platform investment announced.' The scorecard rates 'AI and emerging technology readiness' as 'watch' with the reasoning that CECG is 'actively discussing AI integration within the Catalyst framework but has not announced a specific platform or investment.' Brisbane Catholic Education (BCE) has already deployed Microsoft 365 Copilot to 12,500 educators in the largest K-12 Copilot rollout globally, with 9.3 hours saved per teacher per week measured at a pilot school and AI-assisted teaching schools growing NAPLAN scores from 490 to 555 (2023-2024) while the state average fell 0.57% (market-solutions.json). MACS's SAP ERP transformation (July 2025) is explicitly framed with 'paves the way to adopt generative AI applications geared towards educational outcomes' (market-solutions.json). CEWA has a multi-cloud Microsoft 365 infrastructure across 90,000+ users. CECG's technology footprint is described as 'modest' in the profile (Microsoft Teams for VLC, Catalyst digital resource library). ICT is cited as a rising cost driver in 2026 fee communications (signals.json) but no specific AI product has been named. The gap between CECG and BCE is approximately 1-2 years by any reasonable estimate. Catalyst already saves teachers up to 6 hours per week via curriculum resources — a generative AI layer would compound this productivity gain further.",
+            "unknowns": "Whether CECG has an internal AI working group or has evaluated any AI platforms (not publicly disclosed). Whether the new ED David de Carvalho (former ACARA CEO, data-oriented background) has set any AI investment targets internally. Whether CECG's current ICT infrastructure (student information system, LMS) is compatible with enterprise AI deployments without prior modernisation. Whether Ochre Education's partnership with Smartgrade for impact assessment (signals.json) provides any AI-adjacent capability.",
+            "sources": [
+              "signals.json — technology (AI watch signal)",
+              "scorecard.json — technology_data (AI readiness watch)",
+              "market-solutions.json — BCE Copilot deployment",
+              "market-solutions.json — MACS ERP AI framing",
+              "profile.json — technology_footprint",
+              "lookalikes.json — BCE AI investment"
+            ]
+          },
+          {
+            "id": "cecg-tl-04",
+            "title": "Missing system-level analytics layer to translate Catalyst assessment data into principal and system insights",
+            "severity": "significant",
+            "evidence": "CECG has strong assessment data collection infrastructure: DIBELS, PAT-R, PAT-M, Phonics Screening Check, NAPLAN, and Annual Evidence-based Improvement Planning Meetings with 100% school participation (scorecard.json). The scorecard rates this 'strong' — above sector norm for assessment protocol consistency. However, the scorecard's reasoning specifically notes the infrastructure covers data collection and cycle-of-inquiry, with no equivalent noted for analytics delivery to principals in real time. CEWA's LEADing Lights platform (market-solutions.json) integrates student performance, attendance, graduation rates, and wellbeing benchmarked against school, system, and NAPLAN averages in real time for all principals. The market-solutions implication for CECG states explicitly: 'The new ED David de Carvalho (former ACARA CEO) is deeply quantitative — a unified analytics dashboard is consistent with his stated emphasis on measurable outcomes. Potential gap for a data/analytics vendor.' CECG has no publicly described analytics platform connecting its assessment data to principal decision-making. The profile notes 'Details of any technology/data system contracts (student information system, LMS) — not publicly disclosed' as a gap. The market-solutions pattern analysis notes: 'CECG's Catalyst evidence base is strong in terms of methodology but the technology platform enabling real-time analytics for 59 schools is not publicly described.'",
+            "unknowns": "What student information system CECG currently uses and whether it has built-in analytics capabilities. Whether Annual Evidence-based Improvement Planning Meetings are supported by a shared data platform or are run from manually compiled reports. Whether CECG participates in the CSNSW joint Azure Databricks/Power BI platform used by other NSW dioceses (CECG spans both ACT and NSW, which may complicate participation).",
+            "sources": [
+              "scorecard.json — technology_data (data-driven improvement infrastructure)",
+              "market-solutions.json — CEWA LEADing Lights implication for CECG",
+              "market-solutions.json — patterns (data infrastructure investment follows pedagogy reform)",
+              "profile.json — gaps (technology/data system contracts)"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Workforce & Talent",
+        "pain_points": [
+          {
+            "id": "cecg-wf-01",
+            "title": "Structural salary gap versus ACT government schools — recruitment disadvantage for new teachers",
+            "severity": "critical",
+            "evidence": "ACT government starting teacher salary reaches $91,396 by 2026 — the highest in Australia (signals.json, ext-r2 scored 0.65 high). CECG teacher salary increases were 3–3.5% in 2024 (profile.json, challenges section). The signals file states: 'CECG's 3-3.5% salary increases are clearly insufficient to close this gap.' ACT public schools entered 2025 'effectively fully staffed for the first time in years (~25 vacancies across 4,000 teachers)' after resolving shortages through salary, reduced hours, and 60% casual loading — meaning teachers who might previously have moved between sectors are now locked in. CECG's 2026 fee increases explicitly cite teacher salary increases as a cost driver (signals.json), suggesting CECG is at or near the limits of salary-based competition. The annual report acknowledges 'system-wide staffing shortages' addressed through CRT-as-FTE arrangements (annual-report-extract.json, p.25). The scorecard classifies teacher salary competitiveness as 'watch' status. Catalyst's structured professional learning and the permanency conversion programme provide non-salary levers, but the salary gap is structural. The brief explicitly identifies this as a priority domain.",
+            "unknowns": "The absolute salary differential between CECG and ACT government schools at equivalent career stages (no CECG salary scale is publicly available). Whether CECG is losing teachers specifically at the recruitment stage (fewer applicants) or at the retention stage (higher attrition among newer teachers). Whether rural Goulburn diocese schools face a compounded challenge due to lower salary attractiveness AND geographic isolation. The extent to which CRT-as-FTE workarounds have affected teaching quality.",
+            "sources": [
+              "signals.json — workforce (ACT salary signal, score 0.65 high)",
+              "scorecard.json — workforce_talent (teacher salary competitiveness watch)",
+              "annual-report-extract.json — cecg-annual-report-2024.pdf p.25 (staffing shortages)",
+              "profile.json — challenges (teacher salary competition)",
+              "pain-points-brief.md — workforce section"
+            ]
+          },
+          {
+            "id": "cecg-wf-02",
+            "title": "Rural and regional Goulburn diocese schools face compounded workforce and allied health shortages",
+            "severity": "significant",
+            "evidence": "The profile explicitly identifies 'access to therapy in regional and rural schools' as a named challenge: 'Allied health early intervention (speech and occupational therapy) difficult to source and access for regional and rural school communities' (profile.json, challenges section). CECG spans 88,000 square kilometres from Pambula to Lake Cargelligo — including very small schools in Adelong, Bombala, Grenfell, and West Wyalong (profile.json, dimensions). The annual report acknowledges staffing shortages are addressed through CRT-as-FTE arrangements, with no indication this is limited to urban ACT schools. The Virtual Learning Collaborative (VLC) was specifically created to address geographic access gaps for Year 11–12 in rural areas (profile.json, strategic_priorities). Dr Wendy Mockler won the 2025 Rural and Remote Education Advocate Award for her PhD and VLC work — the award itself signals the problem is real and material. The market-solutions file notes as a sector gap: 'No peer has publicly described a robust approach to allied health (speech therapy, OT) access for regional/remote students — a documented CECG challenge.' CECG has 5,670 students with disability (24.8% of enrolments, nearly double the national Catholic average) — the intersection of high disability rates and limited allied health access in rural areas is a compounded service delivery problem.",
+            "unknowns": "The number and size of Goulburn diocese schools below viable critical mass. Whether the VLC model could be extended to primary year levels for allied health or specialist teaching delivery. What the current allied health service model is (fly-in/telehealth/unfilled) and at what frequency. Whether CECG has sought ACT or NSW government co-funding for allied health access in rural schools.",
+            "sources": [
+              "profile.json — challenges (allied health access)",
+              "profile.json — dimensions (geography, disability enrolment)",
+              "annual-report-extract.json — cecg-annual-report-2024.pdf pp.15–17 (disability enrolments)",
+              "web-research.json — region.com.au 2025 (Dr Wendy Mockler award)",
+              "market-solutions.json — gaps (allied health sector gap)"
+            ]
+          },
+          {
+            "id": "cecg-wf-03",
+            "title": "Catalyst-trained teachers are increasingly valuable to competitor systems — knowledge transfer risk",
+            "severity": "moderate",
+            "evidence": "The most direct evidence of this risk is Patrick Ellis himself: CECG's Education Lead and Catalyst programme architect transferred to CSPD as EGM Learning Outcomes, with the explicit purpose of replicating the Catalyst model as 'Uplift' across 80 CSPD schools (lookalikes.json, market-solutions.json). CSPD is not the only system that has drawn on CECG expertise — Catholic Education Tasmania modelled its 'Insight into Learning' programme on Catalyst after a 2022 delegation visit (lookalikes.json). 30 New Zealand school leaders visited 10 CECG schools in May 2025 (profile.json, national_recognition). The market-solutions implication notes: 'Any vendor selling tools to support Uplift at CSPD should approach CECG first as the five-year-ahead version of the same deployment.' This dynamic works in both directions: CECG teachers trained in HITP are now nationally differentiated assets that competitor systems actively seek to hire or benchmark against. Staff retention at 90%+ is reassuring but means 200 teachers leave per year — some proportion to positions that specifically value their CECG Catalyst training. The annual report notes 97% of teachers would recommend HITP to colleagues, which implies an external market signal that could attract recruiters.",
+            "unknowns": "Whether CECG has any retention agreements or garden-leave provisions for senior Catalyst programme staff. Whether the Patrick Ellis departure was an isolated case or reflects a broader pattern of Catalyst-trained staff being recruited by peer systems. Whether CECG tracks where departing staff go. Whether the Catalyst brand is helping CECG recruit teachers from outside the system who specifically want to work in a high-quality PL environment.",
+            "sources": [
+              "lookalikes.json — CSPD (Patrick Ellis departure)",
+              "market-solutions.json — CSPD Uplift implication",
+              "profile.json — leadership_team (Patrick Ellis)",
+              "profile.json — catalyst_profile (national_recognition)",
+              "annual-report-extract.json — cecg-annual-report-2024.pdf p.25 (90%+ retention)"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Enrolment & Growth",
+        "pain_points": [
+          {
+            "id": "cecg-eg-01",
+            "title": "No CECG school in Molonglo Valley — locked out of the ACT's fastest-growth corridor by a well-resourced new competitor",
+            "severity": "critical",
+            "evidence": "Stromlo Forest Anglican College (SFAC) is opening in Wright (Molonglo Valley) in February 2026 with ELC + K–Year 6, expanding to Years 7–8 in 2027 (ahead of schedule due to demand), and reaching 1,850 student capacity by approximately 2030 (competitors.json). Over 400 expressions of interest were received before opening. Molonglo Valley is identified as one of the two highest-growth corridors in ACT alongside Gungahlin (signals.json, scorecard.json). CECG has no school in the Molonglo Valley catchment — the closest is St Jude's Weston Creek primary (competitors.json). The signals file rates this as a high external risk (ext-r1, score 0.72): 'The risk is not just of share loss but of being permanently locked out of a growth corridor by a well-resourced competitor with a 5-year head start on a new student cohort.' The ACT Catholic systemic sector grew only 0.23% in 2024–2025 versus independent sector growth of 2.55% (competitors.json, market_context). CSBB (Catholic Schools Broken Bay) provides a structural precedent: it is investing $300 million in capital to defend and grow market share in growth corridors (market-solutions.json). CECG has made no equivalent capital commitment publicly.",
+            "unknowns": "Whether CECG has an internal plan or site acquisition strategy for Molonglo Valley or adjacent growth areas. Whether CECG has assessed whether an ELC-first strategy (given 9 ACT ELCs already operating) could seed primary enrolments in new corridors without full school capital. The total capital investment required to open a new school in Molonglo Valley. Whether the new CACGEL governance structure provides CECG with better access to commercial capital or government co-investment.",
+            "sources": [
+              "competitors.json — Stromlo Forest Anglican College",
+              "signals.json — ext-r1 (score 0.72, high)",
+              "scorecard.json — enrolment_health (geographic risk, watch)",
+              "market-solutions.json — CSBB capital investment implication",
+              "profile.json — competitive_environment"
+            ]
+          },
+          {
+            "id": "cecg-eg-02",
+            "title": "Year 6–Year 7 transition leakage to independent schools — secondary market share erosion among aspirational families",
+            "severity": "significant",
+            "evidence": "The ACT independent sector holds 20.4% of ACT enrolments (17,015 students) versus Catholic systemic at 19.3% (16,085 students) — the independent sector is now larger than the Catholic systemic sector in the ACT (competitors.json, market_context). Independent schools grew 2.55% in 2024–2025 versus Catholic systemic 0.23%. The competitors file identifies Canberra Grammar School (fully enrolled through 2026; taking 2027–2028 applications), Canberra Girls Grammar School (offering IB Diploma that CECG cannot match), and Radford College (fully enrolled at medium fees, similar fee band to CECG) as active secondary competitors for CECG's primary school families at the Year 7 transition. The signals file classifies independent sector structural share gain as a high external risk (ext-r3, score 0.58). The market-solutions file explicitly lists 'transition from Catholic primary to Catholic secondary in the ACT appears to be a leakage point' as an unresolved sector gap. CECG's Catalyst results are strongest in primary years (K–6 reading, early mathematics) — the secondary value proposition is less differentiated. CGGS's IB Diploma offering creates a specific academic differentiation that CECG cannot replicate without significant curriculum change.",
+            "unknowns": "The actual proportion of CECG primary students who transition to CECG secondary versus independent or government secondary schools (no per-school transition data available). Whether CECG's secondary Catalyst results (if any) are sufficiently compelling to counter IB and co-curricular differentiators. Whether CECG has a structured Year 6-to-Year 7 transition communication programme targeting its own families. Whether the above-CPI fee increases are accelerating departure decisions at the transition point.",
+            "sources": [
+              "competitors.json — Canberra Grammar School, CGGS, Radford College",
+              "competitors.json — market_context (ACT sector shares)",
+              "signals.json — ext-r3 (score 0.58)",
+              "market-solutions.json — gaps (Year 6–7 transition leakage)",
+              "profile.json — competitive_environment"
+            ]
+          },
+          {
+            "id": "cecg-eg-03",
+            "title": "Above-CPI fee increases creating affordability pressure and parental trust risk",
+            "severity": "moderate",
+            "evidence": "2026 primary fees increase 5.3–10%, secondary 3.5–7.5%, against ACT CPI of approximately 3.0–3.5% (scorecard.json, financial_sustainability). The family maintenance levy is rising to a $1,000 cap. The signals file classifies fee trajectory as a 'watch' internal indicator, noting media scrutiny: 'Fee increases significantly above CPI have attracted media scrutiny (Region Canberra, neutral-to-mildly critical tone).' New ED David de Carvalho has publicly emphasised affordability, specifically framing fees as '$10 a day per child' for primary, indicating the optics risk is acknowledged (profile.json, strategic_priorities). CECG attributes the increases to ICT costs, insurance, teacher salaries, and fee harmonisation across primary schools. The harmonisation program means some primary schools face higher relative increases than others — creating differential community impacts. With ACT cost of living already elevated and free government schools as an alternative, affordability pressure from fee increases compounds the enrolment risk in declining corridors (Tuggeranong).",
+            "unknowns": "The fee harmonisation timeline and end-state (how many years until primary fees are fully standardised). Whether any CECG primary schools have seen net enrolment decline attributable to fee increases. The differential impact of the harmonisation on specific school communities. Whether de Carvalho's 'affordability' emphasis will translate into real fee restraint in 2027 or is primarily messaging.",
+            "sources": [
+              "scorecard.json — financial_sustainability (fee trajectory watch)",
+              "signals.json — internal (fee increases watch)",
+              "web-research.json — region.com.au/924367 (fee increases media coverage)",
+              "profile.json — strategic_priorities (affordability and harmonisation)"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Financial Sustainability",
+        "pain_points": [
+          {
+            "id": "cecg-fin-01",
+            "title": "Financial opacity — no extractable financial statements limit visibility into operating health",
+            "severity": "moderate",
+            "evidence": "The 2024 annual report financial statements (pp.34–41) are scanned image pages with no extractable text, meaning no revenue, expenditure, surplus/deficit, or government grants figures can be confirmed from the primary source (profile.json, gaps; signals.json, internal indicators). The scorecard explicitly rates 'Revenue and expenditure data' as 'watch' with the reasoning that 'the watch status reflects the gap in data rather than a known problem.' This is relevant internally: CECG cannot easily demonstrate financial health to the new CACGEL board, external partners, or prospective staff in a transparent way. The fee increases, ICT cost citations, and new ED focus on 'system-wide procurement efficiencies' (profile.json, strategic_priorities) are circumstantial indicators that cost management is active — but whether CECG operates at a surplus or deficit is unknown from public data. Outgoing ED Ross Fox's departure statement cited 'severe funding reductions' under the Gonski era (signals.json) — the legacy impact on reserves is unquantified.",
+            "unknowns": "Total operating revenue and expenditure for 2024. Whether CECG runs a surplus or deficit. The level of financial reserves available for capital investment (relevant to the Molonglo Valley gap). Government grants as a proportion of revenue (Commonwealth + ACT Territory + NSW grants). Whether the transition to CACGEL corporate structure will require or incentivise more transparent financial reporting.",
+            "sources": [
+              "profile.json — gaps (financial data)",
+              "scorecard.json — financial_sustainability (revenue data watch)",
+              "signals.json — internal (financial statements neutral signal)",
+              "profile.json — challenges (financial statement opacity)",
+              "profile.json — strategic_priorities (de Carvalho procurement efficiency)"
+            ]
+          },
+          {
+            "id": "cecg-fin-02",
+            "title": "Capacity-constrained central office relative to programme ambition — smaller system ceiling on specialist resourcing",
+            "severity": "moderate",
+            "evidence": "CECG operates 59 schools and 27,186 students — considerably smaller than CSPD (~80 schools, ~40,000 students), MACS (~300 schools, ~120,000 students), or BCE (~146 schools, ~77,000 students). The brief explicitly notes: 'Everything that requires dedicated resourcing hits a ceiling sooner' for a smaller system. MACS's SAP S/4HANA Cloud + SuccessFactors ERP (Infosys-delivered, July 2025) represents a platform investment that distributes central-office overhead across 300 schools — at 59 schools, CECG's per-school benefit from an equivalent investment is lower while the fixed cost is comparable (market-solutions.json). BCE's Copilot deployment to 12,500 educators similarly benefits from BCE's scale to justify vendor engagement. The signals file notes ICT as a rising cost driver (watch), and de Carvalho emphasises procurement efficiencies, suggesting the central office is actively managing cost constraints. The permanency conversion programme (800 teachers, profile.json) would also require significant HR system capacity to execute at scale. There is no public evidence of CECG participating in the CSNSW joint platform for NSW dioceses that pools shared services.",
+            "unknowns": "The size and composition of CECG's central office team (not in public sources). Whether CECG participates in any Catholic sector shared services arrangements (NCEC, CSNSW, or other). Whether the CACGEL incorporation creates any new commercial procurement mechanisms. What CECG's per-student central services cost is relative to larger peers.",
+            "sources": [
+              "pain-points-brief.md — capacity constraints section",
+              "market-solutions.json — MACS ERP implication for CECG",
+              "profile.json — dimensions (scale)",
+              "profile.json — strategic_priorities (de Carvalho procurement efficiency)",
+              "signals.json — internal (ICT cost watch)"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Technology & Infrastructure",
+        "pain_points": [
+          {
+            "id": "cecg-tech-01",
+            "title": "ICT cost pressures without a public technology strategy — spending rising but direction unclear",
+            "severity": "moderate",
+            "evidence": "ICT is explicitly cited in CECG's 2026 fee communications as a named cost driver alongside insurance and teacher salaries (signals.json, internal; profile.json, financial_context). Yet no public technology strategy, platform contract, or investment roadmap has been announced. The profile notes: 'Details of any technology/data system contracts (student information system, LMS) — not publicly disclosed' (profile.json, gaps). The technology footprint section describes: 'Microsoft Teams for Virtual Learning Collaborative (Year 11–12, rural/regional). Catalyst digital resource library (5,400+ curriculum resources online). AI in classrooms discussed at 2025 System Day but no specific AI investment announced publicly. ICT cited as a rising cost driver in 2026 fee communications.' By contrast, CEWA has a public LEADing Lights platform strategy, Microsoft 365 for 90,000+ users, a defined multi-cloud approach, and a named ITSM platform (Freshservice). MACS has a named SAP S/4HANA + SuccessFactors programme with a named delivery partner (Infosys). CECG's ICT investment is opaque: money is being spent (enough to justify fee increases) but not directed toward publicly visible strategic infrastructure.",
+            "unknowns": "What CECG's current Student Information System is. Whether CECG uses a system-wide LMS and which one. The total ICT budget and its year-on-year trajectory. Whether the CACGEL incorporation has triggered a technology strategy review. Whether CECG's ICT costs are primarily school-level (devices, connectivity) or system-level (platforms, integration).",
+            "sources": [
+              "signals.json — internal (ICT cost watch)",
+              "profile.json — gaps (technology/data system contracts)",
+              "profile.json — technology_footprint",
+              "market-solutions.json — CEWA ITSM and LEADing Lights implications for CECG"
+            ]
+          },
+          {
+            "id": "cecg-tech-02",
+            "title": "Dual-jurisdiction technology complexity — ACT and NSW regulatory environments require parallel compliance and system configuration",
+            "severity": "low",
+            "evidence": "CECG is the only Catholic education system in Australia operating across both a state (NSW) and a territory (ACT) — profile.json, dimensions. The signals file classifies this as a 'watch' regulatory indicator: 'creates compliance complexity, dual reporting requirements, and different funding formula implications.' For technology specifically, NSW and ACT have different requirements for curriculum software alignment, data sovereignty, mandatory assessment submissions, and reporting formats. Any system-wide technology deployment (SIS, LMS, analytics platform) must be configured for both regulatory environments simultaneously. This is not a crisis-level problem — CECG has managed it for years — but it represents a structural overhead that peer systems operating in a single state or territory do not face. No specific evidence of technology failures or compliance incidents due to dual-jurisdiction complexity was found.",
+            "unknowns": "Whether CECG's current technology systems handle ACT and NSW data and compliance requirements natively or through manual adaptation. Whether this adds to the central IT team's workload materially. Whether any peer Catholic systems span multiple jurisdictions (none of the identified peers do).",
+            "sources": [
+              "profile.json — dimensions (dual jurisdiction)",
+              "signals.json — regulatory (dual-jurisdiction watch signal)",
+              "pain-points-brief.md — governance section"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Governance & Leadership",
+        "pain_points": [
+          {
+            "id": "cecg-gov-01",
+            "title": "Leadership transition risk — new ED, new governance structure, and Catalyst programme succession all concurrent",
+            "severity": "significant",
+            "evidence": "Three major leadership transitions are occurring simultaneously: (1) Ross Fox departed as Executive Director in October 2024 after eight years, with interim ED Pam Betts serving Jan–mid 2025 before David de Carvalho commenced (profile.json, leadership_team). (2) CECG incorporated as CACGEL from 1 January 2025, replacing the Catholic Education Commission established in 1983 — an entirely new governance structure with a skills-based board whose full composition is not yet in public sources (profile.json, gaps). (3) Patrick Ellis, the Catalyst programme architect, moved to CSPD (profile.json; web-research.json). De Carvalho's background is regulatory and governance (ACARA CEO, NESA, NCEC, Notre Dame University) — not instructional leadership or system pedagogy. His public statements emphasise faith formation, affordability, and procurement efficiency (profile.json, strategic_priorities) rather than Catalyst deepening. This creates a risk that Catalyst's momentum depends on institutional inertia and middle management rather than active CEO championship. Ross Fox publicly championed Catalyst as a transformational initiative during his tenure — the programme is associated with his leadership.",
+            "unknowns": "Whether de Carvalho has publicly endorsed Catalyst as a continuing strategic priority (his August 2025 statement in CathNews emphasises faith before conventional metrics — Catalyst's NAPLAN orientation may need re-framing under his leadership). The full CACGEL board composition and whether any members have education technology or pedagogical expertise relevant to Catalyst. Whether de Carvalho has restructured the Executive team to ensure Catalyst programme ownership is clearly assigned post-Ellis.",
+            "sources": [
+              "profile.json — leadership_team (de Carvalho, Fox, Ellis)",
+              "profile.json — strategic_priorities (CACGEL governance, de Carvalho emphasis)",
+              "profile.json — gaps (board composition)",
+              "web-research.json — cathnews.com 2025-08-12 (de Carvalho faith emphasis)"
+            ]
+          },
+          {
+            "id": "cecg-gov-02",
+            "title": "Urban-rural equity within the dual diocese — Catalyst programme reach and allied health access in Goulburn schools versus ACT",
+            "severity": "moderate",
+            "evidence": "CECG spans 88,000 square kilometres including 27 NSW rural/regional schools with 7,245 students (signals.json). The profile identifies demographic divergence: ACT schools (urban, above-average ICSEA) and Goulburn diocese schools (rural, smaller, dispersed) face structurally different challenges. The brief explicitly identifies 'does Catalyst reach rural schools equally?' as a governance question. Catalyst coaching (via Shaping Minds) requires in-school visits or travel — the 88,000 km² footprint makes equitable coaching delivery more expensive than for a compact urban system. The identified challenge of allied health access specifically affects regional and rural communities (profile.json, challenges). Dr Wendy Mockler's VLC was explicitly designed to solve geographic equity gaps at secondary level — the award win suggests the equity problem is real and was not already solved. NSW rural schools were growing 3% in 2024 versus ACT 1% (signals.json), suggesting capacity pressure is also present, but from a lower base.",
+            "unknowns": "Whether Catalyst adoption metrics (HITP daily use, DIBELS completion) differ between ACT schools and Goulburn diocese schools. Whether Shaping Minds coaching visits are distributed proportionally across the full geographic footprint. Whether smaller Goulburn schools have dedicated system support staff or rely on school principals to lead Catalyst implementation independently.",
+            "sources": [
+              "profile.json — dimensions (geography, dual diocese)",
+              "profile.json — challenges (allied health access)",
+              "signals.json — demographic (regional NSW schools)",
+              "web-research.json — region.com.au 2025 (Dr Wendy Mockler VLC)",
+              "pain-points-brief.md — dual diocese complexity section"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Mission & Identity",
+        "pain_points": [
+          {
+            "id": "cecg-mi-01",
+            "title": "Balancing Catalyst's evidence-based outcomes identity with new ED's faith-first framing",
+            "severity": "moderate",
+            "evidence": "CECG's external reputation is anchored in Catalyst's measurable, data-driven academic outcomes: NAPLAN improvement, DIBELS proficiency, Deloitte evaluation, Grattan Institute citation, Noel Pearson endorsement. These are the basis for national recognition and enrolment growth attribution. David de Carvalho's public positioning as permanent ED (CathNews, August 2025) emphasised that 'faith should come before conventional metrics of success' and described himself as placing 'faith, humanity, and family' at the centre — a markedly different register from the outcomes-data language of the Catalyst years. This is not necessarily a contradiction: the Catholic anthropology underpinning Catalyst is real (the brief notes 'Catalyst's formation framing'). But it creates a risk of strategic ambiguity for staff, parents, and partner organisations accustomed to data-led communication. The scorecard's 'Faith leadership continuity' metric rates this 'on-track' with no risk signal identified — but the tension between the ACARA-CEO-as-data-champion and the Notre-Dame-theology-dean-as-faith-champion is a live identity question for the organisation.",
+            "unknowns": "Whether de Carvalho's 2026 public communications will continue the Catalyst data-outcomes narrative or reframe the system's identity around faith formation metrics. How the Faith in Learning strategic plan's four pillars (Faith, Learning, Community, People) are being operationalised under de Carvalho. Whether the Catalyst programme branding and external website (catalyst.cg.catholic.edu.au) will be maintained or absorbed into a revised identity.",
+            "sources": [
+              "web-research.json — cathnews.com 2025-08-12 (de Carvalho faith emphasis)",
+              "profile.json — strategic_priorities (Faith in Learning plan)",
+              "scorecard.json — catholic_mission (faith leadership continuity)",
+              "pain-points-brief.md — mission and identity section"
+            ]
+          },
+          {
+            "id": "cecg-mi-02",
+            "title": "Growing share of non-Catholic students and the challenge of maintaining Catholic identity at scale",
+            "severity": "low",
+            "evidence": "This is a coverage-check addition — identified via the edu-operator taxonomy's 'Mission & Identity' domain as a structural concern for Catholic school systems. Direct CECG evidence is limited: enrolment data does not break down by religion. However, the profile notes that 917 Aboriginal and Torres Strait Islander students (4.0% of enrolments) are specifically tracked, and 2,938 students have English as an additional language (13.3% LBOTE — lower than the sector average), suggesting CECG serves a broadly Catholic/Australian demographic with limited signals of widespread non-Catholic enrolment. The peer context (CSPD with ~53.4% LBOTE vs CECG 13.3%) suggests CECG's mission-identity challenge is less acute than peer systems. The brief notes this as a potential concern but with limited direct evidence.",
+            "unknowns": "The proportion of CECG students who identify as Catholic (not tracked in available public data). Whether any individual schools have a majority non-Catholic student population, particularly in growth areas attracting diverse populations.",
+            "sources": [
+              "profile.json — key_metrics (ATSI, LBOTE)",
+              "lookalikes.json — CSPD (LBOTE comparison)",
+              "pain-points-brief.md — mission and identity section"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "Student Support & Wellbeing",
+        "pain_points": [
+          {
+            "id": "cecg-ssw-01",
+            "title": "Very high disability enrolment rate (24.8%) creates unresolved service demand — especially in rural areas",
+            "severity": "significant",
+            "evidence": "CECG enrols 5,670 students with disability — 24.8% of total enrolments, nearly double the estimated national Catholic school average of 10–15% (scorecard.json, catholic_mission). The scorecard notes this is 'a strong indicator of genuine inclusion mission' but also 'creates real resource pressures (explaining in part the high support staff ratio).' The annual report records 917 FTE support staff (August 2024 Census) alongside 1,505 FTE teachers — a support-to-teacher ratio of approximately 0.61, higher than most comparable systems. The challenge of allied health access in rural and regional schools (speech therapy, occupational therapy — profile.json, challenges) directly intersects with this disability rate: students with disability in Goulburn diocese communities may not be receiving equivalent early intervention support to ACT students due to geographic access barriers. The sector-wide gaps section of market-solutions.json confirms: 'No peer has publicly described a robust approach to allied health (speech therapy, OT) access for regional/remote students — a documented CECG challenge.' The YMCA WA School Ready program MOU for ELCs (profile.json, strategic_priorities) is a positive early intervention signal but addresses only the ELC cohort.",
+            "unknowns": "The breakdown of disability category and severity by ACT versus NSW schools. Whether CECG receives and fully spends the Commonwealth Nationally Consistent Collection of Data (NCCD) disability funding. Whether the high disability enrolment rate drives unfunded cost pressures or is appropriately resourced. Whether telehealth models are being explored for allied health delivery in rural schools.",
+            "sources": [
+              "annual-report-extract.json — cecg-annual-report-2024.pdf pp.15–17 (disability enrolments)",
+              "scorecard.json — catholic_mission (inclusion metric)",
+              "profile.json — challenges (allied health access)",
+              "market-solutions.json — gaps (allied health sector gap)",
+              "profile.json — strategic_priorities (YMCA WA MOU)"
+            ]
+          }
+        ]
+      },
+      {
+        "domain": "External Relations & Partnerships",
+        "pain_points": [
+          {
+            "id": "cecg-ext-01",
+            "title": "Catalyst as national intellectual property — no formal commercialisation or licensing model for international interest",
+            "severity": "low",
+            "evidence": "This is a coverage-check addition (low direct evidence of a formulated plan), but grounded in real signals. The market-solutions file notes: 'CECG is the originator of a nationally recognised explicit instruction model. CSPD's adoption is a validation signal, not a learning opportunity. CECG should position Catalyst as the national template — and any vendor selling tools to support Uplift at CSPD should approach CECG first as the five-year-ahead version of the same deployment.' Catholic Education Tasmania's Insight into Learning programme was modelled on Catalyst after a 2022 delegation visit. NZ Catholic school leaders (30 leaders, 10 schools) visited in May 2025. Co-presenting at the Australian Catholic Education Conference in August 2025. The profile's signals file classifies this as a positive internal indicator: 'potential international licensing or consulting revenue stream.' No formal commercialisation model exists from available sources. At CECG's scale, the Catalyst brand is a strategic asset that has not been monetised or formally protected.",
+            "unknowns": "Whether CECG holds any IP rights over Catalyst curriculum resources or whether these are owned jointly with Ochre Education. Whether the CACGEL incorporation creates a legal structure that would support IP licensing or consulting services. Whether de Carvalho's background (NCEC, NESA) gives him a disposition toward national knowledge-sharing versus commercialisation.",
+            "sources": [
+              "signals.json — internal (Catalyst national adoption positive signal)",
+              "market-solutions.json — patterns (CSPD, CET adoptions)",
+              "profile.json — catalyst_profile (national_recognition)",
+              "profile.json — key_partnerships (Ochre Education)"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

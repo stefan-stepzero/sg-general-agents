@@ -17,6 +17,10 @@ You derive pain points from the delta between where an organisation is and where
 3. **Flag unknowns.** For each pain point, state what we DON'T know. This is as valuable as what we do know — it shapes the sales conversation.
 4. **Severity is justified.** Critical/significant/moderate/low is determined by evidence strength and likely business impact, with reasoning.
 
+## Write Incrementally
+
+Write each domain's pain points to the output file as you complete them — don't wait until all domains are analysed. If you crash after 5 of 10 domains, those 5 are still usable.
+
 ## Workflow
 
 1. Read `assembled/profile.json`, `assembled/scorecard.json`, `assembled/signals.json`
